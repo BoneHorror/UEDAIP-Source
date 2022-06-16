@@ -1,0 +1,40 @@
+</COMMENT Establishing Shot for Terran Level 1x>
+
+</DISPLAYTIME 0>
+</VIDEO interstitials\TR5010.webm>
+</SOUND interstitials\sounds\scHD_Interstitial_Terran_Swipe.wav>
+</TEXTBOX>
+UED CAMPAIGN: THE IRON FIST
+
+Since the conflict began in the Koprulu sector, the ruling council of the United Earth Directorate has closely monitored its wayward Terran colonies. 
+Having witnessed the steady advancement of the Zerg infestation and the maneuverings of the Protoss throughout the Colonies, the ruling council has finally agreed to take control over the war-torn sector. 
+</PAGE>
+
+</DISPLAYTIME 0>
+</VIDEO interstitials\TR5020.webm>
+</TEXTBOX>
+Learning that a new Zerg Overmind has manifested itself upon the planet Char, the UED has sent its greatest Admiral, Gerard DuGalle, to capture the creature. 
+</PAGE>
+
+</DISPLAYTIME 0>
+</VIDEO interstitials\TR5030.webm>
+</SOUND interstitials\sounds\scHD_Interstitials_Terran_Swipe2.wav>
+</TEXTBOX>
+As Captain of the UED fleet under DuGalle, your objective will be to storm the Terran Dominion and depose of its dictator, Emperor Mengsk I.
+</PAGE>
+
+</DISPLAYTIME 0>
+</VIDEOAUTOPROCEED interstitials\TR5035.webm>
+</SOUND interstitials\sounds\scHD_Interstitial_Terran_Out.wav>
+</PAGE>
+
+</COMMENT #############################################################>
+</DISPLAYTIME 8000>
+</BACKGROUND glue\palpbx\XProtosB.pcx>
+</FONTCOLOR glue\palpbx\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"FIRST STRIKE" 
+
+UED Flagship Aleksander, High Orbit over the planet Braxis; Outlying Dominion stronghold
+</PAGE>

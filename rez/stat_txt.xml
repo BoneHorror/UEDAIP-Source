@@ -1,0 +1,6631 @@
+<strings>
+    <string>
+        <id>FIRST_UNIT_STRING</id>
+        <value>Terran Marine</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_1</id>
+        <value>Terran Ghost</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_2</id>
+        <value>Terran Vulture</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_3</id>
+        <value>Terran Goliath</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_4</id>
+        <value>Goliath Turret</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_5</id>
+        <value>Terran Siege Tank</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_6</id>
+        <value>Tank Turret</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_7</id>
+        <value>Terran SCV</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_8</id>
+        <value>Terran Wraith</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_9</id>
+        <value>Terran Science Vessel</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_10</id>
+        <value>UED EMP Soldier</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_11</id>
+        <value>Terran Dropship</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_12</id>
+        <value>Terran Battlecruiser</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_13</id>
+        <value>Spider Mine</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_14</id>
+        <value>Nuclear Missile</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_15</id>
+        <value>Terran Civilian</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_16</id>
+        <value>UED Phantom</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_17</id>
+        <value>UED Todesritter</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_18</id>
+        <value>Todesritter Turret</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_19</id>
+        <value>UED Scorpion</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_20</id>
+        <value>Captured Marine</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_21</id>
+        <value>UED Skywing</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_22</id>
+        <value>Magellan</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_23</id>
+        <value>UED Panzer</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_24</id>
+        <value>Schmalturm Turret</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_25</id>
+        <value>UED Panzer</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_26</id>
+        <value>Schmalturm Turret</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_27</id>
+        <value>Arcturus Mengsk</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_28</id>
+        <value>Hyperion</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_29</id>
+        <value>Terran Battlecruiser</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_30</id>
+        <value>Terran Siege Tank</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_31</id>
+        <value>Tank Turret</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_32</id>
+        <value>Terran Firebat</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_33</id>
+        <value>Scanner Sweep</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_34</id>
+        <value>UED Medic</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_35</id>
+        <value>Zerg Larva</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_36</id>
+        <value>Zerg Egg</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_37</id>
+        <value>Zerg Zergling</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_38</id>
+        <value>Zerg Hydralisk</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_39</id>
+        <value>Zerg Ultralisk</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_40</id>
+        <value>Zerg Broodling</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_41</id>
+        <value>Zerg Drone</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_42</id>
+        <value>Zerg Overlord</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_43</id>
+        <value>Zerg Mutalisk</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_44</id>
+        <value>Zerg Guardian</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_45</id>
+        <value>Zerg Queen</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_46</id>
+        <value>Zerg Defiler</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_47</id>
+        <value>Zerg Scourge</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_48</id>
+        <value>Torrasque</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_49</id>
+        <value>Matriarch</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_50</id>
+        <value>Infested Terran</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_51</id>
+        <value>Infested Kerrigan</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_52</id>
+        <value>Unclean One</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_53</id>
+        <value>Hunter Killer</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_54</id>
+        <value>Devouring One</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_55</id>
+        <value>Kukulza</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_56</id>
+        <value>UED Steel Legionnaire</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_57</id>
+        <value>Yggdrasill</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_58</id>
+        <value>UED Valkyrie</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_59</id>
+        <value>Cocoon</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_60</id>
+        <value>Protoss Corsair</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_61</id>
+        <value>Protoss Dark Templar</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_62</id>
+        <value>Zerg Devourer</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_63</id>
+        <value>Protoss Dark Archon</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_64</id>
+        <value>Protoss Probe</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_65</id>
+        <value>Protoss Zealot</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_66</id>
+        <value>Protoss Dragoon</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_67</id>
+        <value>Protoss High Templar</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_68</id>
+        <value>Protoss Archon</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_69</id>
+        <value>Protoss Shuttle</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_70</id>
+        <value>Protoss Scout</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_71</id>
+        <value>Protoss Arbiter</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_72</id>
+        <value>Protoss Carrier</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_73</id>
+        <value>Protoss Interceptor</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_74</id>
+        <value>Protoss Revenant</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_75</id>
+        <value>Zeratul</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_76</id>
+        <value>Tassadar/Zeratul</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_77</id>
+        <value>UED Valhalla</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_78</id>
+        <value>Fenix</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_79</id>
+        <value>Protoss High Templar</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_80</id>
+        <value>Mojo</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_81</id>
+        <value>Warbringer</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_82</id>
+        <value>Gantrithor</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_83</id>
+        <value>Protoss Reaver</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_84</id>
+        <value>Protoss Observer</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_85</id>
+        <value>Protoss Scarab</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_86</id>
+        <value>Protoss Arbiter</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_87</id>
+        <value>Aldaris</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_88</id>
+        <value>Artanis</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_89</id>
+        <value>Rhynadon</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_90</id>
+        <value>Bengalaas</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_91</id>
+        <value>Unused</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_92</id>
+        <value>Protoss Hornet</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_93</id>
+        <value>Scantid</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_94</id>
+        <value>Kakaru</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_95</id>
+        <value>Ragnasaur</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_96</id>
+        <value>Ursadon</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_97</id>
+        <value>Zerg Lurker Egg</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_98</id>
+        <value>Raszagal</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_99</id>
+        <value>Samir Duran</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_100</id>
+        <value>Alexei Stukov</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_101</id>
+        <value>Map Revealer</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_102</id>
+        <value>Gerard DuGalle</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_103</id>
+        <value>Zerg Lurker</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_104</id>
+        <value>Infested Duran</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_105</id>
+        <value>Disruption Field</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_106</id>
+        <value>Terran Command Center</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_107</id>
+        <value>Terran Comsat Station</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_108</id>
+        <value>Terran Nuclear Silo</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_109</id>
+        <value>Terran Supply Depot</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_110</id>
+        <value>Terran Refinery</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_111</id>
+        <value>Terran Barracks</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_112</id>
+        <value>Terran Academy</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_113</id>
+        <value>Terran Factory</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_114</id>
+        <value>Terran Starport</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_115</id>
+        <value>Terran Control Tower</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_116</id>
+        <value>Terran Science Facility</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_117</id>
+        <value>Terran Covert Ops</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_118</id>
+        <value>Terran Physics Lab</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_119</id>
+        <value>Unused Terran Bldg</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_120</id>
+        <value>Terran Machine Shop</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_121</id>
+        <value>Unused Terran Bldg</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_122</id>
+        <value>Terran Engineering Bay</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_123</id>
+        <value>Terran Armory</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_124</id>
+        <value>Terran Missile Turret</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_125</id>
+        <value>Terran Bunker</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_126</id>
+        <value>Norad II</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_127</id>
+        <value>Ion Cannon</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_128</id>
+        <value>Uraj Crystal</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_129</id>
+        <value>Khalis Crystal</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_130</id>
+        <value>Infested Command Center</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_131</id>
+        <value>Zerg Hatchery</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_132</id>
+        <value>Zerg Lair</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_133</id>
+        <value>Zerg Hive</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_134</id>
+        <value>Zerg Nydus Canal</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_135</id>
+        <value>Zerg Hydralisk Den</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_136</id>
+        <value>Zerg Defiler Mound</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_137</id>
+        <value>Zerg Greater Spire</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_138</id>
+        <value>Zerg Queen's Nest</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_139</id>
+        <value>Zerg Evolution Chamber</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_140</id>
+        <value>Zerg Ultralisk Cavern</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_141</id>
+        <value>Zerg Spire</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_142</id>
+        <value>Zerg Spawning Pool</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_143</id>
+        <value>Zerg Creep Colony</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_144</id>
+        <value>Zerg Spore Colony</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_145</id>
+        <value>Unused Zerg Bldg</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_146</id>
+        <value>Zerg Sunken Colony</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_147</id>
+        <value>Zerg Overmind</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_148</id>
+        <value>Zerg Overmind</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_149</id>
+        <value>Zerg Extractor</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_150</id>
+        <value>Mature Chrysalis</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_151</id>
+        <value>Zerg Cerebrate</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_152</id>
+        <value>Zerg Cerebrate Daggoth</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_153</id>
+        <value>Unused Zerg Bldg 5</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_154</id>
+        <value>Protoss Nexus</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_155</id>
+        <value>Protoss Robotics Facility</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_156</id>
+        <value>Protoss Pylon</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_157</id>
+        <value>Protoss Assimilator</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_158</id>
+        <value>Protoss Unused</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_159</id>
+        <value>Protoss Observatory</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_160</id>
+        <value>Protoss Gateway</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_161</id>
+        <value>Protoss Unused</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_162</id>
+        <value>Protoss Photon Cannon</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_163</id>
+        <value>Protoss Citadel of Adun</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_164</id>
+        <value>Protoss Cybernetics Core</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_165</id>
+        <value>Protoss Templar Archives</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_166</id>
+        <value>Protoss Forge</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_167</id>
+        <value>Protoss Stargate</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_168</id>
+        <value>Stasis Cell/Prison</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_169</id>
+        <value>Protoss Fleet Beacon</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_170</id>
+        <value>Protoss Arbiter Tribunal</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_171</id>
+        <value>Protoss Robotics Support Bay</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_172</id>
+        <value>Protoss Shield Battery</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_173</id>
+        <value>Khaydarin Crystal Formation</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_174</id>
+        <value>Protoss Temple</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_175</id>
+        <value>Xel'Naga Temple</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_176</id>
+        <value>Mineral Field</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_177</id>
+        <value>Mineral Field</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_178</id>
+        <value>Mineral Field</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_179</id>
+        <value>Cave</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_180</id>
+        <value>Cave-in</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_181</id>
+        <value>Cantina</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_182</id>
+        <value>Mining Platform</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_183</id>
+        <value>Independent Command Center</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_184</id>
+        <value>Independent Starport</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_185</id>
+        <value>Jump Gate</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_186</id>
+        <value>Ruins</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_187</id>
+        <value>Kyadarin Crystal Formation</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_188</id>
+        <value>Vespene Geyser</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_189</id>
+        <value>Warp Gate</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_190</id>
+        <value>Psi Disrupter</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_191</id>
+        <value>Zerg Marker</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_192</id>
+        <value>Terran Marker</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_193</id>
+        <value>Protoss Marker</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_194</id>
+        <value>Zerg Beacon</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_195</id>
+        <value>Terran Beacon</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_196</id>
+        <value>Protoss Beacon</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_197</id>
+        <value>Zerg Flag Beacon</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_198</id>
+        <value>Terran Flag Beacon</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_199</id>
+        <value>Protoss Flag Beacon</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_200</id>
+        <value>Power Generator</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_201</id>
+        <value>Overmind Cocoon</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_202</id>
+        <value>Dark Swarm</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_203</id>
+        <value>Floor Missile Trap</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_204</id>
+        <value>Floor Hatch (UNUSED)</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_205</id>
+        <value>Left Upper Level Door</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_206</id>
+        <value>Right Upper Level Door</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_207</id>
+        <value>Left Pit Door</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_208</id>
+        <value>Right Pit Door</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_209</id>
+        <value>Floor Gun Trap</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_210</id>
+        <value>Left Wall Missile Trap</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_211</id>
+        <value>Left Wall Flame Trap</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_212</id>
+        <value>Right Wall Missile Trap</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_213</id>
+        <value>Right Wall Flame Trap</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_214</id>
+        <value>Start Location</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_215</id>
+        <value>Flag</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_216</id>
+        <value>Young Chrysalis</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_217</id>
+        <value>Psi Emitter</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_218</id>
+        <value>Data Disc</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_219</id>
+        <value>Khaydarin Crystal</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_220</id>
+        <value>Mineral Chunk</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_221</id>
+        <value>Mineral Chunk</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_222</id>
+        <value>Vespene Orb</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_223</id>
+        <value>Vespene Orb</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_224</id>
+        <value>Vespene Sac</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_225</id>
+        <value>Vespene Sac</value>
+    </string>
+    <string>
+        <id>FIRST_UNIT_STRING_226</id>
+        <value>Vespene Tank</value>
+    </string>
+    <string>
+        <id>LAST_UNIT_STRING</id>
+        <value>Vespene Tank</value>
+    </string>
+    <string>
+        <id>STR_MARINE_GUN</id>
+        <value>Gauss Rifle</value>
+    </string>
+    <string>
+        <id>STR_RAYNOR_MARINE_GUN</id>
+        <value>Gauss Rifle</value>
+    </string>
+    <string>
+        <id>STR_GHOST_GUN</id>
+        <value>C-10 Canister Rifle</value>
+    </string>
+    <string>
+        <id>STR_KERRIGAN_GHOST_GUN</id>
+        <value>Sitruc Laser Rifle</value>
+    </string>
+    <string>
+        <id>STR_VULTURE_GRENADE</id>
+        <value>Fragmentation Grenade</value>
+    </string>
+    <string>
+        <id>STR_RAYNOR_VULTURE_GRENADE</id>
+        <value>"Venom" Laser</value>
+    </string>
+    <string>
+        <id>STR_GOLIATH_GUN</id>
+        <value>Twin Autocannons</value>
+    </string>
+    <string>
+        <id>STR_GOLIATH_MISSILE</id>
+        <value>Hellfire Missile Pack</value>
+    </string>
+    <string>
+        <id>STR_SCHEZAR_GOLIATH_GUN</id>
+        <value>Gatling Guns</value>
+    </string>
+    <string>
+        <id>STR_SCHEZAR_GOLIATH_MISSILE</id>
+        <value>Hellfire Missile Pack</value>
+    </string>
+    <string>
+        <id>STR_TANK_CANNON</id>
+        <value>Arclite Cannon</value>
+    </string>
+    <string>
+        <id>STR_DUKE_TANK_CANNON</id>
+        <value>Arclite Cannon</value>
+    </string>
+    <string>
+        <id>STR_SCV_GUN</id>
+        <value>Fusion Cutter</value>
+    </string>
+    <string>
+        <id>STR_SCV_WELD</id>
+        <value>Fusion Cutter</value>
+    </string>
+    <string>
+        <id>STR_WRAITH_MISSILE</id>
+        <value>Gemini Missiles</value>
+    </string>
+    <string>
+        <id>STR_WRAITH_LASER</id>
+        <value>Burst Lasers</value>
+    </string>
+    <string>
+        <id>STR_KAZANSKI_WRAITH_MISSILE</id>
+        <value>HEAT Rockets</value>
+    </string>
+    <string>
+        <id>STR_KAZANSKI_WRAITH_LASER</id>
+        <value>Charon Rockets</value>
+    </string>
+    <string>
+        <id>STR_CRUISER_GND</id>
+        <value>ATS Laser Battery</value>
+    </string>
+    <string>
+        <id>STR_CRUISER_AIR</id>
+        <value>ATA Laser Battery</value>
+    </string>
+    <string>
+        <id>STR_NORAD_CRUISER_GND</id>
+        <value>ATS Laser Battery</value>
+    </string>
+    <string>
+        <id>STR_NORAD_CRUISER_AIR</id>
+        <value>ATA Laser Battery</value>
+    </string>
+    <string>
+        <id>STR_HYPERION_CRUISER_GND</id>
+        <value>ATS Laser Battery</value>
+    </string>
+    <string>
+        <id>STR_HYPERION_CRUISER_AIR</id>
+        <value>ATA Laser Battery</value>
+    </string>
+    <string>
+        <id>STR_FIREBAT_FLAME</id>
+        <value>Flame Thrower</value>
+    </string>
+    <string>
+        <id>STR_MONTAG_FIREBAT_FLAME</id>
+        <value>Shock Repeater</value>
+    </string>
+    <string>
+        <id>STR_SIEGE_CANNON</id>
+        <value>Arclite Shock Cannon</value>
+    </string>
+    <string>
+        <id>STR_DUKE_SIEGE_CANNON</id>
+        <value>105mm KwK L/28</value>
+    </string>
+    <string>
+        <id>STR_TURRET_MISSILE</id>
+        <value>Longbolt Missile</value>
+    </string>
+    <string>
+        <id>STR_NUKE</id>
+        <value>Nuclear Strike</value>
+    </string>
+    <string>
+        <id>STR_EMP_SHOCKWAVE</id>
+        <value>EMP Shockwave</value>
+    </string>
+    <string>
+        <id>STR_ZERGLING_MELEE</id>
+        <value>Claws</value>
+    </string>
+    <string>
+        <id>STR_D_O_ZERGLING_MELEE</id>
+        <value>Claws</value>
+    </string>
+    <string>
+        <id>STR_INFKERR_MELEE</id>
+        <value>Claws</value>
+    </string>
+    <string>
+        <id>STR_HYDRA_SPINE</id>
+        <value>Needle Spines</value>
+    </string>
+    <string>
+        <id>STR_HUNTER_HYDRA_SPINE</id>
+        <value>Needle Spines</value>
+    </string>
+    <string>
+        <id>STR_ULTRA_MELEE</id>
+        <value>Kaiser Blades</value>
+    </string>
+    <string>
+        <id>STR_TORRASQUE_ULTRA_MELEE</id>
+        <value>Kaiser Blades</value>
+    </string>
+    <string>
+        <id>STR_BROOD_SPORE</id>
+        <value>Toxic Spores</value>
+    </string>
+    <string>
+        <id>STR_DRONE_SPINE</id>
+        <value>Spines</value>
+    </string>
+    <string>
+        <id>STR_MUTALISK_ACID</id>
+        <value>Acid Spray</value>
+    </string>
+    <string>
+        <id>STR_KUKULZA_MUTALISK_ACID</id>
+        <value>Acid Spray</value>
+    </string>
+    <string>
+        <id>STR_GUARDIAN_SPINE</id>
+        <value>Acid Spore</value>
+    </string>
+    <string>
+        <id>STR_KUKULZA_GUARDIAN_SPINE</id>
+        <value>Acid Spore</value>
+    </string>
+    <string>
+        <id>STR_QUEEN_SPORE</id>
+        <value>Glave Wurm</value>
+    </string>
+    <string>
+        <id>STR_MATRIARCH_QUEEN_SPORE</id>
+        <value>Glave Wurm</value>
+    </string>
+    <string>
+        <id>STR_DEFILER_ACID</id>
+        <value>Venom</value>
+    </string>
+    <string>
+        <id>STR_U_O_DEFILER_ACID</id>
+        <value>Venom</value>
+    </string>
+    <string>
+        <id>STR_AVENGER_SPINE</id>
+        <value>Suicide</value>
+    </string>
+    <string>
+        <id>STR_SCOLONY_SPORE</id>
+        <value>Seeker Spores</value>
+    </string>
+    <string>
+        <id>STR_LURKER_TENTACLE</id>
+        <value>Subterranean Tentacle</value>
+    </string>
+    <string>
+        <id>STR_INFESTED_SAP</id>
+        <value>Suicide</value>
+    </string>
+    <string>
+        <id>STR_PROBE_GUN</id>
+        <value>Particle Beam</value>
+    </string>
+    <string>
+        <id>STR_ZEALOT_MELEE</id>
+        <value>Psi Blades</value>
+    </string>
+    <string>
+        <id>STR_FENIX_ZEALOT_MELEE</id>
+        <value>Psi Blades</value>
+    </string>
+    <string>
+        <id>STR_DTEMPLAR_MELEE</id>
+        <value>Warp Blades</value>
+    </string>
+    <string>
+        <id>STR_ZERATUL_MELEE</id>
+        <value>Warp Blades</value>
+    </string>
+    <string>
+        <id>STR_DRAGOON_CANNON</id>
+        <value>Phase Disruptor</value>
+    </string>
+    <string>
+        <id>STR_FENIX_DRAGOON_CANNON</id>
+        <value>Phase Bomb</value>
+    </string>
+    <string>
+        <id>STR_TEMPLAR_GUN</id>
+        <value>Psi Assault</value>
+    </string>
+    <string>
+        <id>STR_TASSADAR_TEMPLAR_GUN</id>
+        <value>Psi Assault</value>
+    </string>
+    <string>
+        <id>STR_ARCHON_PSI</id>
+        <value>Psionic Shockwave</value>
+    </string>
+    <string>
+        <id>STR_TZ_ARCHON_PSI</id>
+        <value>Wunderwaffe</value>
+    </string>
+    <string>
+        <id>STR_SHUTTLE_GUN</id>
+        <value>Anti-matter Torpedoes</value>
+    </string>
+    <string>
+        <id>STR_SCOUT_GUN</id>
+        <value>Dual Photon Blasters</value>
+    </string>
+    <string>
+        <id>STR_SCOUT_MISSILE</id>
+        <value>Anti-matter Missiles</value>
+    </string>
+    <string>
+        <id>STR_MOJO_SCOUT_GUN</id>
+        <value>Dual Photon Blasters</value>
+    </string>
+    <string>
+        <id>STR_MOJO_SCOUT_MISSILE</id>
+        <value>Anti-matter Missiles</value>
+    </string>
+    <string>
+        <id>STR_ARBITER_CANNON</id>
+        <value>Phase Disruptor Cannon</value>
+    </string>
+    <string>
+        <id>STR_DANIMOTH_ARBITER_CANNON</id>
+        <value>Phase Disruptor Cannon</value>
+    </string>
+    <string>
+        <id>STR_FIGHTER_GUN</id>
+        <value>Pulse Cannon</value>
+    </string>
+    <string>
+        <id>STR_PHOTON_GUN_GND</id>
+        <value>STS Photon Cannon</value>
+    </string>
+    <string>
+        <id>STR_PHOTON_GUN_AIR</id>
+        <value>STA Photon Cannon</value>
+    </string>
+    <string>
+        <id>STR_SCARAB</id>
+        <value>Scarab</value>
+    </string>
+    <string>
+        <id>STR_CARGO_MISSILE</id>
+        <value>Repeater Cannon</value>
+    </string>
+    <string>
+        <id>STR_GUNSHIP_GUN</id>
+        <value>Laser Battery</value>
+    </string>
+    <string>
+        <id>STR_GUNSHIP_MISSILE</id>
+        <value>Tormentor Missiles</value>
+    </string>
+    <string>
+        <id>STR_GUNSHIP_BOMB</id>
+        <value>Neutron Discharge</value>
+    </string>
+    <string>
+        <id>STR_RAIDER_GUN</id>
+        <value>Raider Gun</value>
+    </string>
+    <string>
+        <id>STR_BIKER_GRENADE</id>
+        <value>Flechette Grenade</value>
+    </string>
+    <string>
+        <id>STR_TRAP_GUN</id>
+        <value>Twin Autocannons</value>
+    </string>
+    <string>
+        <id>STR_TRAP_MISSILE</id>
+        <value>Hellfire Missile Pack</value>
+    </string>
+    <string>
+        <id>STR_TRAP_FLAME</id>
+        <value>Flame Thrower</value>
+    </string>
+    <string>
+        <id>STR_NO_WEAPON</id>
+        <value>Undefined Weapon Name</value>
+    </string>
+    <string>
+        <id>STR_STIMPACK_TECH</id>
+        <value>Stim Packs</value>
+    </string>
+    <string>
+        <id>STR_MAGNAPULSE</id>
+        <value>Lockdown</value>
+    </string>
+    <string>
+        <id>STR_EMP_TECH</id>
+        <value>EMP Shockwave</value>
+    </string>
+    <string>
+        <id>STR_MINES_TECH</id>
+        <value>Spider Mines</value>
+    </string>
+    <string>
+        <id>STR_SCANNER_TECH</id>
+        <value>Scanner Sweep</value>
+    </string>
+    <string>
+        <id>STR_SIEGE_TECH</id>
+        <value>Tank Siege Mode</value>
+    </string>
+    <string>
+        <id>STR_DEFMATRIX_TECH</id>
+        <value>Defensive Matrix</value>
+    </string>
+    <string>
+        <id>STR_IRRADIATE_TECH</id>
+        <value>Irradiate</value>
+    </string>
+    <string>
+        <id>STR_YAMATO_GUN</id>
+        <value>Yamato Gun</value>
+    </string>
+    <string>
+        <id>STR_SHIP_CLOAK_TECH</id>
+        <value>Cloaking Field</value>
+    </string>
+    <string>
+        <id>STR_MAN_CLOAK_TECH</id>
+        <value>Personnel Cloaking</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_STIM</id>
+        <value>tResearch Stim Pack Tech
+(Marine and Firebat ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_MAGNA</id>
+        <value>lResearch Lockdown
+(Ghost ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_EMP</id>
+        <value>eResearch EMP Shockwave
+(Science Vessel ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_MINES</id>
+        <value>mResearch Spider Mines
+(Vulture and Scorpion ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_SIEGE</id>
+        <value>sResearch Siege Tech
+(Siege Tank ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_DEFMTX</id>
+        <value>mResearch Defensive Matrix
+(Science Vessel ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_IRRADIATE</id>
+        <value>iResearch Irradiate
+(Science Vessel ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_YAMATO</id>
+        <value>yResearch Yamato Gun
+(Battlecruiser ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_SHIP_CLOAK</id>
+        <value>cResearch Cloaking Field
+(Wraith ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_MAN_CLOAK</id>
+        <value>cResearch Personnel Cloaking
+(Ghost ability)</value>
+    </string>
+    <string>
+        <id>STR_USESTIM</id>
+        <value>tUse Stim Packs
+Halves attack cooldown, increases movement speed by 50% for 296 frames</value>
+    </string>
+    <string>
+        <id>STR_USEMAGNA</id>
+        <value>lLockdown
+Immobilizes target Mechanical unit for 408 frames</value>
+    </string>
+    <string>
+        <id>STR_USEMINES</id>
+        <value>iUse Spider Mines</value>
+    </string>
+    <string>
+        <id>STR_SCANNERSWEEP</id>
+        <value>sScanner Sweep (Detector)
+Reveals target area for a few seconds</value>
+    </string>
+    <string>
+        <id>STR_SIEGE_MODE</id>
+        <value>oSiege Mode</value>
+    </string>
+    <string>
+        <id>STR_TANK_MODE</id>
+        <value>oTank Mode</value>
+    </string>
+    <string>
+        <id>STR_DEFMTX</id>
+        <value>dActivate Defensive Matrix
+Protects the target unit from 250 damage over 1344 frames</value>
+    </string>
+    <string>
+        <id>STR_USEEMP</id>
+        <value>eActivate EMP Shockwave
+Removes Shields and Energy of units in an area around the detonation</value>
+    </string>
+    <string>
+        <id>STR_IRRADIATE</id>
+        <value>iIrradiate
+Deals 250 damage over 600 frames to Biological units in an area around the target</value>
+    </string>
+    <string>
+        <id>STR_YAMATO</id>
+        <value>yYamato Gun
+Deals 260 + 130 Explosive damage in a very small area around a unit</value>
+    </string>
+    <string>
+        <id>STR_CLOAK</id>
+        <value>cCloak</value>
+    </string>
+    <string>
+        <id>STR_DECLOAK</id>
+        <value>cDecloak</value>
+    </string>
+    <string>
+        <id>STR_STIM_REQ</id>
+        <value>Stim Packs:
+   Research at Academy</value>
+    </string>
+    <string>
+        <id>STR_MAGNA_REQ</id>
+        <value>Lockdown:
+   Research at Covert Ops</value>
+    </string>
+    <string>
+        <id>STR_MINE_REQ</id>
+        <value>Spider Mines:
+   Research at Machine Shop</value>
+    </string>
+    <string>
+        <id>STR_SIEGE_REQ</id>
+        <value>Siege Mode:
+   Research at Machine Shop</value>
+    </string>
+    <string>
+        <id>STR_DEFMTX_REQ</id>
+        <value>Defensive Matrix:
+   Research at Science Facility</value>
+    </string>
+    <string>
+        <id>STR_EMP_REQ</id>
+        <value>EMP Shockwave:
+   Research at Science Facility</value>
+    </string>
+    <string>
+        <id>STR_IRRADIATE_REQ</id>
+        <value>Irradiate:
+   Research at Science Facility</value>
+    </string>
+    <string>
+        <id>STR_YAMATO_REQ</id>
+        <value>Yamato Gun:
+   Research at Physics Lab</value>
+    </string>
+    <string>
+        <id>STR_SHIP_CLOAK_REQ</id>
+        <value>Cloaking Field:
+   Research at Control Tower</value>
+    </string>
+    <string>
+        <id>STR_MAN_CLOAK_REQ</id>
+        <value>Personnel Cloaking:
+   Research at Covert Ops</value>
+    </string>
+    <string>
+        <id>STR_BURROW_TECH</id>
+        <value>Burrowing</value>
+    </string>
+    <string>
+        <id>STR_INFEST_TECH</id>
+        <value>Infestation</value>
+    </string>
+    <string>
+        <id>STR_BROODLING_TECH</id>
+        <value>Spawn Broodling</value>
+    </string>
+    <string>
+        <id>STR_PLAGUE_TECH</id>
+        <value>Dark Swarm</value>
+    </string>
+    <string>
+        <id>STR_PARASITE_TECH</id>
+        <value>Parasite</value>
+    </string>
+    <string>
+        <id>STR_BLOODBOIL_TECH</id>
+        <value>Plague</value>
+    </string>
+    <string>
+        <id>STR_CONSUME_TECH</id>
+        <value>Consume</value>
+    </string>
+    <string>
+        <id>STR_ENSNARE_TECH</id>
+        <value>Ensnare</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_BURROW</id>
+        <value>bEvolve Burrow
+(Ground unit ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_INFEST</id>
+        <value>iEvolve Infestation
+(Queen ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_INFBROOD</id>
+        <value>bEvolve Spawn Broodling
+(Queen ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_PLAGUE</id>
+        <value>sEvolve Dark Swarm
+(Defiler ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_PARASITE</id>
+        <value>rEvolve Parasite
+(Queen ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_BLOODBOIL</id>
+        <value>gEvolve Plague
+(Defiler ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_ENSNARE</id>
+        <value>eEvolve Ensnare
+(Queen ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_CONSUME</id>
+        <value>cEvolve Consume
+(Defiler ability)</value>
+    </string>
+    <string>
+        <id>STR_BURROW</id>
+        <value>uBurrow</value>
+    </string>
+    <string>
+        <id>STR_DEBURROW</id>
+        <value>uUnburrow</value>
+    </string>
+    <string>
+        <id>STR_INFEST</id>
+        <value>iInfest Terran Command Center</value>
+    </string>
+    <string>
+        <id>STR_INFBROOD</id>
+        <value>bSpawn Broodlings
+Instantly kills target Biological or Mechanical unit to spawn two Broodlings</value>
+    </string>
+    <string>
+        <id>STR_PLAGUE</id>
+        <value>wDark Swarm
+Creates an area of impenetrable Fog that Ranged units cannot attack into</value>
+    </string>
+    <string>
+        <id>STR_PARASITE</id>
+        <value>rParasite
+Causes target unit to share its vision with your Brood</value>
+    </string>
+    <string>
+        <id>STR_BLOODBOIL</id>
+        <value>gPlague
+Degenerates 295 Health over 600 frames for units infested in an area</value>
+    </string>
+    <string>
+        <id>STR_CONSUME</id>
+        <value>cConsume
+Sacrifices a Zerg unit to gain 50 Energy</value>
+    </string>
+    <string>
+        <id>STR_KERRIGAN_CONSUME</id>
+        <value>uConsume
+Sacrifices a Zerg unit to gain 50 Energy</value>
+    </string>
+    <string>
+        <id>STR_ENSNARE</id>
+        <value>eEnsnare
+Covers units with sticky goo in an area, slowing their movement speed by 50% and increasing their cooldowns by 25%
+(Rounded down, lasts 600 frames)</value>
+    </string>
+    <string>
+        <id>STR_BURROW_REQ</id>
+        <value>Burrow:
+   Evolve at Hatchery</value>
+    </string>
+    <string>
+        <id>STR_INFEST_REQ</id>
+        <value>Infest:
+   Evolve at Queen's Nest</value>
+    </string>
+    <string>
+        <id>STR_INFBROOD_REQ</id>
+        <value>Spawn Broodlings:
+   Evolve at Queen's Nest
+   Can't be used if controlling more than 64 Broodlings</value>
+    </string>
+    <string>
+        <id>STR_PLAGUE_REQ</id>
+        <value>Dark Swarm:
+   Evolve at Defiler Mound</value>
+    </string>
+    <string>
+        <id>STR_PARASITE_REQ</id>
+        <value>Parasite:
+   Evolve at Queen's Nest</value>
+    </string>
+    <string>
+        <id>STR_BLOODBOIL_REQ</id>
+        <value>Plague:
+   Evolve at Defiler Mound</value>
+    </string>
+    <string>
+        <id>STR_CONSUME_REQ</id>
+        <value>Consume:
+     Evolve at Defiler Mound</value>
+    </string>
+    <string>
+        <id>STR_ENSNARE_REQ</id>
+        <value>Ensnare:
+   Evolve at Queen's Nest</value>
+    </string>
+    <string>
+        <id>STR_PSISTORM_TECH</id>
+        <value>Psionic Storm</value>
+    </string>
+    <string>
+        <id>STR_HALLUCINATION_TECH</id>
+        <value>Hallucination</value>
+    </string>
+    <string>
+        <id>STR_RECALL_TECH</id>
+        <value>Recall</value>
+    </string>
+    <string>
+        <id>STR_STASIS_TECH</id>
+        <value>Stasis Field</value>
+    </string>
+    <string>
+        <id>STR_ARCHON_TECH</id>
+        <value>Archon Warp</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_PSISTORM</id>
+        <value>pDevelop Psionic Storm
+(Templar ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_HALLUCINATION</id>
+        <value>hDevelop Hallucination
+(Templar ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_RECALL</id>
+        <value>rDevelop Recall
+(Arbiter ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_STASIS</id>
+        <value>sDevelop Stasis Field
+(Arbiter ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_SUMMON_ARCHON</id>
+        <value>aDevelop Archon Warp
+(Templar ability)</value>
+    </string>
+    <string>
+        <id>STR_PSISTORM</id>
+        <value>tPsionic Storm
+Deals up to 135 area damage over time
+(9 every 7 frames, lasts 120 frames)</value>
+    </string>
+    <string>
+        <id>STR_HALLUCINATION</id>
+        <value>lHallucination
+Creates two fragile Hallucinations of the target unit</value>
+    </string>
+    <string>
+        <id>STR_RECALL</id>
+        <value>rRecall
+Recalls units from an Area to the Caster after a small delay</value>
+    </string>
+    <string>
+        <id>STR_STASIS</id>
+        <value>tStasis Field
+Freezes units in an area in time after a small delay;
+lasts 1056 frames</value>
+    </string>
+    <string>
+        <id>STR_MAKE_P_ARCHON</id>
+        <value>rArchon Warp</value>
+    </string>
+    <string>
+        <id>STR_PSISTORM_REQ</id>
+        <value>Psionic Storm:
+   Develop at Templar Archives</value>
+    </string>
+    <string>
+        <id>STR_HALLUC_REQ</id>
+        <value>Hallucination:
+   Develop at Templar Archives</value>
+    </string>
+    <string>
+        <id>STR_RECALL_REQ</id>
+        <value>Recall:
+   Develop at Arbiter Tribunal</value>
+    </string>
+    <string>
+        <id>STR_STASIS_REQ</id>
+        <value>Stasis Field:
+   Develop at Arbiter Tribunal</value>
+    </string>
+    <string>
+        <id>STR_ARCHON0_REQ</id>
+        <value>Archon Warp:
+   Research at Templar Archives</value>
+    </string>
+    <string>
+        <id>STR_ARCHON1_REQ</id>
+        <value>Archon Warp:
+   Select 2 or more Templars</value>
+    </string>
+    <string>
+        <id>STR_T_ARMOR</id>
+        <value>Terran Infantry Armour</value>
+    </string>
+    <string>
+        <id>STR_T_VEHICLE_PLATING</id>
+        <value>Terran Vehicle Plating</value>
+    </string>
+    <string>
+        <id>STR_T_SHIP_PLATING</id>
+        <value>Terran Ship Plating</value>
+    </string>
+    <string>
+        <id>STR_Z_CARAPACE</id>
+        <value>Zerg Carapace</value>
+    </string>
+    <string>
+        <id>STR_Z_PLATING</id>
+        <value>Zerg Flyer Carapace</value>
+    </string>
+    <string>
+        <id>STR_P_ARMOR</id>
+        <value>Protoss Armor</value>
+    </string>
+    <string>
+        <id>STR_P_PLATING</id>
+        <value>Protoss Plating</value>
+    </string>
+    <string>
+        <id>STR_T_MAN_GUNS</id>
+        <value>Terran Infantry Weapons</value>
+    </string>
+    <string>
+        <id>STR_T_VEHICLE_GUNS</id>
+        <value>Terran Vehicle Weapons</value>
+    </string>
+    <string>
+        <id>STR_T_SHIP_GUNS</id>
+        <value>Terran Ship Weapons</value>
+    </string>
+    <string>
+        <id>STR_Z_MELEE_ATTACKS</id>
+        <value>Zerg Melee Attacks</value>
+    </string>
+    <string>
+        <id>STR_Z_MISSILE_ATTACKS</id>
+        <value>Zerg Missile Attacks</value>
+    </string>
+    <string>
+        <id>STR_Z_FLYER_ATTACKS</id>
+        <value>Zerg Flyer Attacks</value>
+    </string>
+    <string>
+        <id>STR_P_GND_WEAPONS</id>
+        <value>Protoss Ground Weapons</value>
+    </string>
+    <string>
+        <id>STR_P_AIR_WEAPONS</id>
+        <value>Protoss Air Weapons</value>
+    </string>
+    <string>
+        <id>STR_P_SHIELDS</id>
+        <value>Plasma Shields</value>
+    </string>
+    <string>
+        <id>STR_MARINE_GUN_RANGE</id>
+        <value>U-238 Shells</value>
+    </string>
+    <string>
+        <id>STR_VULTURE_SPEED</id>
+        <value>Ion Thrusters</value>
+    </string>
+    <string>
+        <id>STR_WRAITH_WEAPON</id>
+        <value>Dragon Catalyst</value>
+    </string>
+    <string>
+        <id>STR_VESSEL_ENERGY</id>
+        <value>Titan Reactor</value>
+    </string>
+    <string>
+        <id>STR_GHOST_SIGHT</id>
+        <value>Ocular Implants</value>
+    </string>
+    <string>
+        <id>STR_GHOST_ENERGY</id>
+        <value>Moebius Reactor</value>
+    </string>
+    <string>
+        <id>STR_WRAITH_ENERGY</id>
+        <value>Apollo Reactor</value>
+    </string>
+    <string>
+        <id>STR_CRUISER_ENERGY</id>
+        <value>Colossus Reactor</value>
+    </string>
+    <string>
+        <id>STR_OVERLORD_TRANSPORT</id>
+        <value>Ventral Sacs</value>
+    </string>
+    <string>
+        <id>STR_OVERLORD_SIGHT</id>
+        <value>Antennae</value>
+    </string>
+    <string>
+        <id>STR_OVERLORD_SPEED</id>
+        <value>Pneumatized Carapace</value>
+    </string>
+    <string>
+        <id>STR_ZERGLING_SPEED</id>
+        <value>Metabolic Boost</value>
+    </string>
+    <string>
+        <id>STR_ZERGLING_ATTACK_SPEED</id>
+        <value>Adrenal Glands</value>
+    </string>
+    <string>
+        <id>STR_HYDRALISK_SPEED</id>
+        <value>Muscular Augments</value>
+    </string>
+    <string>
+        <id>STR_HYDRALISK_ATTACK_RANGE</id>
+        <value>Grooved Spines</value>
+    </string>
+    <string>
+        <id>STR_QUEEN_ENERGY</id>
+        <value>Gamete Meiosis</value>
+    </string>
+    <string>
+        <id>STR_DEFILER_ENERGY</id>
+        <value>Metasynaptic Node</value>
+    </string>
+    <string>
+        <id>STR_DRAGOON_ATTACK_RANGE</id>
+        <value>Singularity Charge</value>
+    </string>
+    <string>
+        <id>STR_ZEALOT_SPEED</id>
+        <value>Leg Enhancements</value>
+    </string>
+    <string>
+        <id>STR_SCARAB_DAMAGE</id>
+        <value>Scarab, Probe and Hornet Damage</value>
+    </string>
+    <string>
+        <id>STR_REAVER_CAPACITY</id>
+        <value>Reaver Capacity</value>
+    </string>
+    <string>
+        <id>STR_SHUTTLE_SPEED</id>
+        <value>Gravitic Drive</value>
+    </string>
+    <string>
+        <id>STR_OBSERVER_SIGHT</id>
+        <value>Sensor Array</value>
+    </string>
+    <string>
+        <id>STR_OBSERVER_SPEED</id>
+        <value>Gravitic Boosters</value>
+    </string>
+    <string>
+        <id>STR_TEMPLAR_ENERGY</id>
+        <value>Khaydarin Amulet</value>
+    </string>
+    <string>
+        <id>STR_SCOUT_SIGHT</id>
+        <value>Apial Sensors</value>
+    </string>
+    <string>
+        <id>STR_SCOUT_SPEED</id>
+        <value>Gravitic Thrusters</value>
+    </string>
+    <string>
+        <id>STR_CARRIER_CAPACITY</id>
+        <value>Carrier Capacity</value>
+    </string>
+    <string>
+        <id>STR_ARBITER_ENERGY</id>
+        <value>Khaydarin Core</value>
+    </string>
+    <string>
+        <id>STR_UP_T_ARMOR</id>
+        <value>aUpgrade Infantry Armor</value>
+    </string>
+    <string>
+        <id>STR_UP_T_VEHICLE_PLATING</id>
+        <value>pUpgrade Vehicle Plating</value>
+    </string>
+    <string>
+        <id>STR_UP_T_SHIP_PLATING</id>
+        <value>hUpgrade Ship Plating</value>
+    </string>
+    <string>
+        <id>STR_UP_Z_CARAPACE</id>
+        <value>cEvolve Carapace</value>
+    </string>
+    <string>
+        <id>STR_UP_Z_PLATING</id>
+        <value>cEvolve Flyer Carapace and Regen</value>
+    </string>
+    <string>
+        <id>STR_UP_P_ARMOR</id>
+        <value>aUpgrade Ground Armor</value>
+    </string>
+    <string>
+        <id>STR_UP_P_PLATING</id>
+        <value>aUpgrade Plating</value>
+    </string>
+    <string>
+        <id>STR_UP_T_MAN_GUNS</id>
+        <value>wUpgrade Infantry Weapons</value>
+    </string>
+    <string>
+        <id>STR_UP_T_VEHICLE_GUNS</id>
+        <value>wUpgrade Vehicle Weapons</value>
+    </string>
+    <string>
+        <id>STR_UP_T_SHIP_GUNS</id>
+        <value>sUpgrade Ship Weapons</value>
+    </string>
+    <string>
+        <id>STR_UP_Z_MELEE_ATTACKS</id>
+        <value>mUpgrade Melee Attacks</value>
+    </string>
+    <string>
+        <id>STR_UP_Z_MISSILE_ATTACKS</id>
+        <value>aUpgrade Missile Attacks</value>
+    </string>
+    <string>
+        <id>STR_UP_Z_FLYER_ATTACKS</id>
+        <value>aUpgrade Flyer Attacks</value>
+    </string>
+    <string>
+        <id>STR_UP_P_GND_WEAPONS</id>
+        <value>wUpgrade Ground Weapons</value>
+    </string>
+    <string>
+        <id>STR_UP_P_AIR_WEAPONS</id>
+        <value>wUpgrade Air Weapons</value>
+    </string>
+    <string>
+        <id>STR_UP_P_SHIELDS</id>
+        <value>sUpgrade Plasma Shields</value>
+    </string>
+    <string>
+        <id>STR_UP_MARINE_GUN_RANGE</id>
+        <value>uResearch U-238 Shells
+(Increases Marine attack range)</value>
+    </string>
+    <string>
+        <id>STR_UP_VULTURE_SPEED</id>
+        <value>iResearch Ion Thrusters
+(Faster Vulture and Scorpion movement)</value>
+    </string>
+    <string>
+        <id>STR_UP_WRAITH_WEAPON</id>
+        <value>dResearch Dragon Catalyst
+(Increases Yamato damage by +130)</value>
+    </string>
+    <string>
+        <id>STR_UP_VESSEL_ENERGY</id>
+        <value>tResearch Titan Reactor
+(+50 Science Vessel energy)</value>
+    </string>
+    <string>
+        <id>STR_UP_GHOST_SIGHT</id>
+        <value>oResearch Ocular Implants
+(Increase Sniper sight range, Ghost ammo explosion damage)</value>
+    </string>
+    <string>
+        <id>STR_UP_GHOST_ENERGY</id>
+        <value>mResearch Moebius Reactor
+(+50 Ghost energy)</value>
+    </string>
+    <string>
+        <id>STR_UP_WRAITH_ENERGY</id>
+        <value>aResearch Apollo Reactor
+(+50 Wraith energy)</value>
+    </string>
+    <string>
+        <id>STR_UP_CRUISER_ENERGY</id>
+        <value>cResearch Colossus Reactor
+(+50 Battlecruiser energy)</value>
+    </string>
+    <string>
+        <id>STR_UP_OVERLORD_TRANSPORT</id>
+        <value>vEvolve Ventral Sacs
+(Transporting for Overlord)</value>
+    </string>
+    <string>
+        <id>STR_UP_OVERLORD_SIGHT</id>
+        <value>aEvolve Antennae
+(Increase Overlord sight range)</value>
+    </string>
+    <string>
+        <id>STR_UP_OVERLORD_SPEED</id>
+        <value>pEvolve Pneumatized Carapace
+(Faster Overlord movement)</value>
+    </string>
+    <string>
+        <id>STR_UP_ZERGLING_SPEED</id>
+        <value>mEvolve Metabolic Boost
+(Faster Zergling movement)</value>
+    </string>
+    <string>
+        <id>STR_UP_ZERGLING_ATTACK_SPEED</id>
+        <value>aEvolve Adrenal Glands
+(Faster Zergling Attack)</value>
+    </string>
+    <string>
+        <id>STR_UP_HYDRALISK_SPEED</id>
+        <value>mEvolve Muscular Augments
+(Faster Hydralisk movement)</value>
+    </string>
+    <string>
+        <id>STR_UP_HYDRALISK_ATTACK_RANGE</id>
+        <value>gEvolve Grooved Spines
+(Increase Hydralisk attack range)</value>
+    </string>
+    <string>
+        <id>STR_UP_QUEEN_ENERGY</id>
+        <value>gEvolve Gamete Meiosis
+(Increased Queen energy capacity and regen)</value>
+    </string>
+    <string>
+        <id>STR_UP_DEFILER_ENERGY</id>
+        <value>mEvolve Metasynaptic Node
+(Increased Defiler energy capacity)</value>
+    </string>
+    <string>
+        <id>STR_UP_DRAGOON_ATTACK_RANGE</id>
+        <value>sDevelop Singularity Charge
+(Increase Dragoon attack range, Revenant attack speed)</value>
+    </string>
+    <string>
+        <id>STR_UP_ZEALOT_SPEED</id>
+        <value>lDevelop Leg Enhancements
+(Faster Zealot movement)</value>
+    </string>
+    <string>
+        <id>STR_UP_SCARAB_DAMAGE</id>
+        <value>sUpgrade Robotics Damage
+(Increases damage of Probes, Hornets and Reavers)</value>
+    </string>
+    <string>
+        <id>STR_UP_REAVER_CAPACITY</id>
+        <value>cIncrease Reaver Capacity
+(+5 Max Scarabs)</value>
+    </string>
+    <string>
+        <id>STR_UP_SHUTTLE_SPEED</id>
+        <value>gDevelop Gravitic Drive
+(Faster Shuttle movement)</value>
+    </string>
+    <string>
+        <id>STR_UP_OBSERVER_SIGHT</id>
+        <value>sDevelop Sensor Array
+(Increase Observer sight range)</value>
+    </string>
+    <string>
+        <id>STR_UP_OBSERVER_SPEED</id>
+        <value>gDevelop Gravitic Booster
+(Faster Observer movement)</value>
+    </string>
+    <string>
+        <id>STR_UP_TEMPLAR_ENERGY</id>
+        <value>kDevelop Khaydarin Amulet
+(+50 Templar energy, +3 Templar damage)</value>
+    </string>
+    <string>
+        <id>STR_UP_SCOUT_SIGHT</id>
+        <value>aDevelop Apial Sensors
+(Increase Scout sight range and attack speed)</value>
+    </string>
+    <string>
+        <id>STR_UP_SCOUT_SPEED</id>
+        <value>gDevelop Gravitic Thrusters
+(Faster Scout movement)</value>
+    </string>
+    <string>
+        <id>STR_UP_CARRIER_CAPACITY</id>
+        <value>cIncrease Carrier Capacity
+(+4 Max Interceptors)</value>
+    </string>
+    <string>
+        <id>STR_UP_ARBITER_ENERGY</id>
+        <value>kDevelop Khaydarin Core
+(+50 Arbiter energy, +1 Arbiter damage)</value>
+    </string>
+    <string>
+        <id>STR_UP_TARMOR_REQ</id>
+        <value>Infantry Armor L1 Require:
+   Nothing</value>
+    </string>
+    <string>
+        <id>STR_UP_TARMOR_REQ_1</id>
+        <value>Infantry Armor L2 Require:
+   Science Facility</value>
+    </string>
+    <string>
+        <id>STR_UP_TARMOR_REQ_2</id>
+        <value>Infantry Armor L3 Require:
+   Science Facility</value>
+    </string>
+    <string>
+        <id>STR_UP_TMANGUNS_REQ</id>
+        <value>Infantry Weapons L1 Require:
+   Nothing</value>
+    </string>
+    <string>
+        <id>STR_UP_TMANGUNS_REQ_1</id>
+        <value>Infantry Weapons L2 Require:
+   Science Facility</value>
+    </string>
+    <string>
+        <id>STR_UP_TMANGUNS_REQ_2</id>
+        <value>Infantry Weapons L3 Require:
+   Science Facility</value>
+    </string>
+    <string>
+        <id>STR_UP_TVEHICLEGUNS_REQ</id>
+        <value>Vehicle Weapons L1 Require:
+   Nothing</value>
+    </string>
+    <string>
+        <id>STR_UP_TVEHICLEGUNS_REQ_1</id>
+        <value>Vehicle Weapons L2 Require:
+   Science Facility</value>
+    </string>
+    <string>
+        <id>STR_UP_TVEHICLEGUNS_REQ_2</id>
+        <value>Vehicle Weapons L3 Require:
+   Science Facility</value>
+    </string>
+    <string>
+        <id>STR_UP_TVEHICLEPLATING_REQ</id>
+        <value>Vehicle Plating L1 Requires:
+   Nothing</value>
+    </string>
+    <string>
+        <id>STR_UP_TVEHICLEPLATING_REQ_1</id>
+        <value>Vehicle Plating L2 Requires:
+   Science Facility</value>
+    </string>
+    <string>
+        <id>STR_UP_TVEHICLEPLATING_REQ_2</id>
+        <value>Vehicle Plating L3 Requires:
+   Science Facility</value>
+    </string>
+    <string>
+        <id>STR_UP_TSHIPGUNS_REQ</id>
+        <value>Ship Weapons L1 Require:
+   Nothing</value>
+    </string>
+    <string>
+        <id>STR_UP_TSHIPGUNS_REQ_1</id>
+        <value>Ship Weapons L2 Require:
+   Science Facility</value>
+    </string>
+    <string>
+        <id>STR_UP_TSHIPGUNS_REQ_2</id>
+        <value>Ship Weapons L3 Require:
+   Science Facility</value>
+    </string>
+    <string>
+        <id>STR_UP_TSHIPPLATING_REQ</id>
+        <value>Ship Plating L1 Requires:
+   Nothing</value>
+    </string>
+    <string>
+        <id>STR_UP_TSHIPPLATING_REQ_1</id>
+        <value>Ship Plating L2 Requires:
+   Science Facility</value>
+    </string>
+    <string>
+        <id>STR_UP_TSHIPPLATING_REQ_2</id>
+        <value>Ship Plating L3 Requires:
+   Science Facility</value>
+    </string>
+    <string>
+        <id>STR_UP_ZMELEE_REQ</id>
+        <value>Melee Attacks L1 Require:
+   Nothing</value>
+    </string>
+    <string>
+        <id>STR_UP_ZMELEE_REQ_1</id>
+        <value>Melee Attacks L2 Require:
+   Lair</value>
+    </string>
+    <string>
+        <id>STR_UP_ZMELEE_REQ_2</id>
+        <value>Melee Attacks L3 Require:
+   Hive</value>
+    </string>
+    <string>
+        <id>STR_UP_ZMISSILE_REQ</id>
+        <value>Missile Attacks L1 Require:
+   Nothing</value>
+    </string>
+    <string>
+        <id>STR_UP_ZMISSILE_REQ_1</id>
+        <value>Missile Attacks L2 Require:
+   Lair</value>
+    </string>
+    <string>
+        <id>STR_UP_ZMISSILE_REQ_2</id>
+        <value>Missile Attacks L3 Require:
+   Hive</value>
+    </string>
+    <string>
+        <id>STR_UP_ZARMOR_REQ</id>
+        <value>Carapace L1 Requires:
+   Nothing</value>
+    </string>
+    <string>
+        <id>STR_UP_ZARMOR_REQ_1</id>
+        <value>Carapace L2 Requires:
+   Lair</value>
+    </string>
+    <string>
+        <id>STR_UP_ZARMOR_REQ_2</id>
+        <value>Carapace L3 Requires:
+   Hive</value>
+    </string>
+    <string>
+        <id>STR_UP_ZFLYERATTACKS_REQ</id>
+        <value>Flyer Attacks L1 Require:
+   Nothing</value>
+    </string>
+    <string>
+        <id>STR_UP_ZFLYERATTACKS_REQ_1</id>
+        <value>Flyer Attacks L2 Require:
+   Lair</value>
+    </string>
+    <string>
+        <id>STR_UP_ZFLYERATTACKS_REQ_2</id>
+        <value>Flyer Attacks L3 Require:
+   Hive</value>
+    </string>
+    <string>
+        <id>STR_UP_ZCARAPACE_REQ</id>
+        <value>Flyer Carapace L1 Requires:
+   Nothing</value>
+    </string>
+    <string>
+        <id>STR_UP_ZCARAPACE_REQ_1</id>
+        <value>Flyer Carapace L2 Requires:
+   Lair</value>
+    </string>
+    <string>
+        <id>STR_UP_ZCARAPACE_REQ_2</id>
+        <value>Flyer Carapace L3 Requires:
+   Hive</value>
+    </string>
+    <string>
+        <id>STR_UP_ZERGLINGATTACKSPEED_REQ</id>
+        <value>Adrenal Glands Require:
+   Hive</value>
+    </string>
+    <string>
+        <id>STR_UP_PGNDWEAPONS_REQ</id>
+        <value>Ground Weapons L1 Require:
+   Nothing</value>
+    </string>
+    <string>
+        <id>STR_UP_PGNDWEAPONS_REQ_1</id>
+        <value>Ground Weapons L2 Require:
+   Templar Archives</value>
+    </string>
+    <string>
+        <id>STR_UP_PGNDWEAPONS_REQ_2</id>
+        <value>Ground Weapons L3 Require:
+   Templar Archives</value>
+    </string>
+    <string>
+        <id>STR_UP_PAIRWEAPONS_REQ</id>
+        <value>Air Weapons L1 Require:
+   Nothing</value>
+    </string>
+    <string>
+        <id>STR_UP_PAIRWEAPONS_REQ_1</id>
+        <value>Air Weapons L2 Require:
+   Fleet Beacon</value>
+    </string>
+    <string>
+        <id>STR_UP_PAIRWEAPONS_REQ_2</id>
+        <value>Air Weapons L3 Require:
+   Fleet Beacon</value>
+    </string>
+    <string>
+        <id>STR_UP_PGNDARMOR_REQ</id>
+        <value>Ground Armor L1 Requires:
+   Nothing</value>
+    </string>
+    <string>
+        <id>STR_UP_PGNDARMOR_REQ_1</id>
+        <value>Ground Armor L2 Requires:
+   Templar Archives</value>
+    </string>
+    <string>
+        <id>STR_UP_PGNDARMOR_REQ_2</id>
+        <value>Ground Armor L3 Requires:
+   Templar Archives</value>
+    </string>
+    <string>
+        <id>STR_UP_PAIRARMOR_REQ</id>
+        <value>Plating L1 Requires:
+   Nothing</value>
+    </string>
+    <string>
+        <id>STR_UP_PAIRARMOR_REQ_1</id>
+        <value>Plating L2 Requires:
+   Fleet Beacon</value>
+    </string>
+    <string>
+        <id>STR_UP_PAIRARMOR_REQ_2</id>
+        <value>Plating L3 Requires:
+   Fleet Beacon</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ</id>
+        <value>Shields L1 Require:
+   Nothing</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_1</id>
+        <value>Shields L2 Require:
+   Cybernetics Core or Armory</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_2</id>
+        <value>Shields L3 Require:
+   Cybernetics Core or Armory</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_3</id>
+        <value>Recruit</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_4</id>
+        <value>Private</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_5</id>
+        <value>Private</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_6</id>
+        <value>Corporal</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_7</id>
+        <value>Specialist</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_8</id>
+        <value>Sergeant</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_9</id>
+        <value>First Sergeant</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_10</id>
+        <value>Master Sergeant</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_11</id>
+        <value>Warrant Officer</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_12</id>
+        <value>Captain</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_13</id>
+        <value>Major</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_14</id>
+        <value>Lt Commander</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_15</id>
+        <value>First Sergeant</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_16</id>
+        <value>Sergeant Major</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_17</id>
+        <value>Colonel</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_18</id>
+        <value>Commodore</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_19</id>
+        <value>Infested Slave</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_20</id>
+        <value>Lieutenant</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_21</id>
+        <value>General</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_22</id>
+        <value>Captain Raynor</value>
+    </string>
+    <string>
+        <id>STR_UP_PSHIELDS_REQ_23</id>
+        <value>General Duke</value>
+    </string>
+    <string>
+        <id>STR_HERO_BC_RANK</id>
+        <value>Admiral</value>
+    </string>
+    <string>
+        <id>STR_GANTRITHOR_RANK</id>
+        <value>Tassadar</value>
+    </string>
+    <string>
+        <id>STR_INTERCEPTOR</id>
+        <value>Interceptors</value>
+    </string>
+    <string>
+        <id>STR_ESCAPE</id>
+        <value>ESC</value>
+    </string>
+    <string>
+        <id>STR_MAKE_Z_ZERGLING</id>
+        <value>zMorph to Zerglings
+(Rabid prowler strain)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_Z_HYDRALISK</id>
+        <value>hMorph to Hydralisk
+(Multi-purpose warrior strain)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_Z_ULTRALISK</id>
+        <value>uMorph to Ultralisk
+(Chitinous behemoth strain)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_Z_DRONE</id>
+        <value>dMorph to Drone
+(Worker strain)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_Z_OVERLORD</id>
+        <value>oMorph to Overlord
+(Supply unit, detector and basic transport)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_Z_MUTALID</id>
+        <value>mMorph to Mutalisk
+(Agile multi-purpose flyer strain)</value>
+    </string>
+    <string>
+        <id>STR_GUARDIAN_ASPECT</id>
+        <value>gGuardian Aspect
+(Anti-ground siege strain)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_Z_QUEEN</id>
+        <value>qMorph to Queen
+(Support caster strain)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_Z_DEFILER</id>
+        <value>fMorph to Defiler
+(Area control caster strain)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_Z_AVENGER</id>
+        <value>sMorph to Scourge
+(Suicidal anti-air strain)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_Z_INFESTED</id>
+        <value>iTrain Infested Terran
+(Suicidal anti-ground unit that explodes on death)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_T_MARINE</id>
+        <value>mTrain Marine
+(Basic multi-purpose infantry)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_T_GHOST</id>
+        <value>gTrain Ghost
+(Specialist infantry that can cloak and launch Nukes)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_T_FIREBAT</id>
+        <value>fTrain Firebat
+(Armored infantry that can quickly dispatch small units in CQC)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_T_VULTURE</id>
+        <value>vBuild Vulture
+(Speedy raider vehicle that can lay mines)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_T_GOLIATH</id>
+        <value>gBuild Goliath
+(Multi-purpose mecha)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_T_TANK</id>
+        <value>tBuild Siege Tank
+(Fragile siege vehicle)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_T_SCV</id>
+        <value>sBuild SCV
+(Basic worker unit)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_T_WRAITH</id>
+        <value>wBuild Wraith
+(Agile multi-purpose fighter that can cloak)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_T_VESSEL</id>
+        <value>vBuild Science Vessel
+(Fragile specialist caster)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_T_DROPSHIP</id>
+        <value>dBuild Dropship
+(Basic transport spaceship)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_T_BCRUISER</id>
+        <value>bBuild Battlecruiser
+(Slow and massive combat support battleship)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_T_NUKE</id>
+        <value>nArm Nuclear Silo
+(Deals 500 or 2/3rds of max HP (whichever is higher) damage on explosion)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_P_OBSERVER</id>
+        <value>oBuild Observer
+(Invisible robotic detector)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_P_PROBE</id>
+        <value>pBuild Probe
+(Basic robotic worker)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_P_ZEALOT</id>
+        <value>zWarp in Zealot
+(Bulky melee infantry, counts as both Khalai and Nerazim)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_P_DRAGOON</id>
+        <value>dWarp in Dragoon
+(Multi-purpose ranged warrior used by the Khalai)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_P_TEMPLAR</id>
+        <value>tWarp in High Templar
+(Khalai support caster, can merge into Archons)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_P_SHUTTLE</id>
+        <value>sBuild Shuttle
+(Basic robotic transport)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_P_SCOUT</id>
+        <value>sWarp in Scout
+(Khalai heavy fighter spaceship)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_P_ARBITER</id>
+        <value>aWarp in Arbiter
+(Advanced Khalai support caster that cloaks nearby units, regenerates own shields and energy on attack)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_P_CARRIER</id>
+        <value>cWarp in Carrier
+(Huge Khalai spaceships that can support planetary battles via mass-produced robotic fighter units)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_P_INTERCEPTOR</id>
+        <value>iBuild Interceptor
+(Small robotic fighter)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_P_REAVER</id>
+        <value>vBuild Reaver
+(Slow robotic artillery crawler)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_P_SCARAB</id>
+        <value>rBuild Scarab
+(Explosive robotic ammunition with a collision avoidance system)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_N_BIKER</id>
+        <value>bHire Merc Biker</value>
+    </string>
+    <string>
+        <id>STR_MAKE_N_GUNSHIP</id>
+        <value>gHire Merc Gunship</value>
+    </string>
+    <string>
+        <id>STR_MAKE_N_RAIDER</id>
+        <value>rHire Raider</value>
+    </string>
+    <string>
+        <id>STR_BLD_HATCHERY</id>
+        <value>hMutate into Hatchery</value>
+    </string>
+    <string>
+        <id>STR_BLD_CREEP_COLONY</id>
+        <value>cMutate into Creep Colony</value>
+    </string>
+    <string>
+        <id>STR_BLD_ZEXTRACTOR</id>
+        <value>eMutate into Extractor</value>
+    </string>
+    <string>
+        <id>STR_BLD_SPAWNING</id>
+        <value>sMutate into Spawning Pool</value>
+    </string>
+    <string>
+        <id>STR_BLD_EVO_CHAMBER</id>
+        <value>vMutate into Evolution Chamber</value>
+    </string>
+    <string>
+        <id>STR_BLD_HYDRA_DEN</id>
+        <value>dMutate into Hydralisk Den</value>
+    </string>
+    <string>
+        <id>STR_BLD_NYDUS</id>
+        <value>nMutate into Nydus Canal</value>
+    </string>
+    <string>
+        <id>STR_BLD_SPIRE</id>
+        <value>sMutate into Spire</value>
+    </string>
+    <string>
+        <id>STR_BLD_NEST</id>
+        <value>qMutate into Queen's Nest</value>
+    </string>
+    <string>
+        <id>STR_BLD_ULTRA_CAVERN</id>
+        <value>uMutate into Ultralisk Cavern</value>
+    </string>
+    <string>
+        <id>STR_BLD_DEFILER_MOUND</id>
+        <value>dMutate into Defiler Mound</value>
+    </string>
+    <string>
+        <id>STR_BLD_LAIR</id>
+        <value>lMutate into Lair</value>
+    </string>
+    <string>
+        <id>STR_BLD_HIVE</id>
+        <value>hMutate into Hive</value>
+    </string>
+    <string>
+        <id>STR_BLD_GREATERSPIRE</id>
+        <value>gMutate into Greater Spire</value>
+    </string>
+    <string>
+        <id>STR_BLD_SPORE_COLONY</id>
+        <value>eMutate into Spore Colony</value>
+    </string>
+    <string>
+        <id>STR_BLD_SUNKEN_COLONY</id>
+        <value>uMutate into Sunken Colony</value>
+    </string>
+    <string>
+        <id>STR_NYDUS_EXIT</id>
+        <value>nPlace Nydus Canal Exit</value>
+    </string>
+    <string>
+        <id>STR_BLD_NEXUS</id>
+        <value>nWarp in Nexus</value>
+    </string>
+    <string>
+        <id>STR_BLD_PYLON</id>
+        <value>pWarp in Pylon</value>
+    </string>
+    <string>
+        <id>STR_BLD_ASSIMILATOR</id>
+        <value>aWarp in Assimilator</value>
+    </string>
+    <string>
+        <id>STR_BLD_GATEWAY</id>
+        <value>gWarp in Gateway</value>
+    </string>
+    <string>
+        <id>STR_BLD_FORGE</id>
+        <value>fWarp in Forge</value>
+    </string>
+    <string>
+        <id>STR_BLD_PHOTON</id>
+        <value>cWarp in Photon Cannon</value>
+    </string>
+    <string>
+        <id>STR_BLD_CYBER_CORE</id>
+        <value>yWarp in Cybernetics Core</value>
+    </string>
+    <string>
+        <id>STR_BLD_SHIELDBATT</id>
+        <value>bWarp in Shield Battery</value>
+    </string>
+    <string>
+        <id>STR_BLD_ROBOTICS</id>
+        <value>rWarp in Robotics Facility</value>
+    </string>
+    <string>
+        <id>STR_BLD_OBSERVATORY</id>
+        <value>oWarp in Observatory</value>
+    </string>
+    <string>
+        <id>STR_BLD_CITADEL</id>
+        <value>cWarp in Citadel of Adun</value>
+    </string>
+    <string>
+        <id>STR_BLD_ARCHIVES</id>
+        <value>tWarp in Templar Archives</value>
+    </string>
+    <string>
+        <id>STR_BLD_STARGATE</id>
+        <value>sWarp in Stargate</value>
+    </string>
+    <string>
+        <id>STR_BLD_FLEET_BEACON</id>
+        <value>fWarp in Fleet Beacon</value>
+    </string>
+    <string>
+        <id>STR_BLD_TRIBUNAL</id>
+        <value>aWarp in Arbiter Tribunal</value>
+    </string>
+    <string>
+        <id>STR_BLD_ROBOTICS_BAY</id>
+        <value>bWarp in Robotics Support Bay</value>
+    </string>
+    <string>
+        <id>STR_BLD_TCOMMANDCTR</id>
+        <value>cBuild Command Center</value>
+    </string>
+    <string>
+        <id>STR_BLD_DEPOT</id>
+        <value>sBuild Supply Depot</value>
+    </string>
+    <string>
+        <id>STR_BLD_REFINERY</id>
+        <value>rBuild Refinery</value>
+    </string>
+    <string>
+        <id>STR_BLD_BARRACKS</id>
+        <value>bBuild Barracks</value>
+    </string>
+    <string>
+        <id>STR_BLD_ENGINEERING</id>
+        <value>eBuild Engineering Bay</value>
+    </string>
+    <string>
+        <id>STR_BLD_TURRET</id>
+        <value>tBuild Missile Turret</value>
+    </string>
+    <string>
+        <id>STR_BLD_ACADEMY</id>
+        <value>aBuild Academy</value>
+    </string>
+    <string>
+        <id>STR_BLD_PILLBOX</id>
+        <value>uBuild Bunker</value>
+    </string>
+    <string>
+        <id>STR_BLD_FACTORY</id>
+        <value>fBuild Factory</value>
+    </string>
+    <string>
+        <id>STR_BLD_TSTARPORT</id>
+        <value>sBuild Starport</value>
+    </string>
+    <string>
+        <id>STR_BLD_SCIENCE_FAC</id>
+        <value>iBuild Science Facility</value>
+    </string>
+    <string>
+        <id>STR_BLD_ARMORY</id>
+        <value>aBuild Armory</value>
+    </string>
+    <string>
+        <id>STR_BLD_COMSAT</id>
+        <value>cBuild Comsat Station</value>
+    </string>
+    <string>
+        <id>STR_BLD_SILO</id>
+        <value>nBuild Nuclear Silo</value>
+    </string>
+    <string>
+        <id>STR_BLD_DOCKS</id>
+        <value>cBuild Control Tower</value>
+    </string>
+    <string>
+        <id>STR_BLD_COVERT_OPS</id>
+        <value>cBuild Covert Ops</value>
+    </string>
+    <string>
+        <id>STR_BLD_PHYSICS</id>
+        <value>pBuild Physics Lab</value>
+    </string>
+    <string>
+        <id>STR_BLD_MACHINE</id>
+        <value>cBuild Machine Shop</value>
+    </string>
+    <string>
+        <id>STR_MOVE</id>
+        <value>mMove</value>
+    </string>
+    <string>
+        <id>STR_STOP</id>
+        <value>sStop</value>
+    </string>
+    <string>
+        <id>STR_ATTACK</id>
+        <value>aAttack</value>
+    </string>
+    <string>
+        <id>STR_PATROL</id>
+        <value>pPatrol</value>
+    </string>
+    <string>
+        <id>STR_HOLD</id>
+        <value>hHold Position</value>
+    </string>
+    <string>
+        <id>STR_WAYPOINTS</id>
+        <value>wWay Points</value>
+    </string>
+    <string>
+        <id>STR_LAND</id>
+        <value>lLand</value>
+    </string>
+    <string>
+        <id>STR_LIFTOFF</id>
+        <value>lLiftoff</value>
+    </string>
+    <string>
+        <id>STR_RALLYPOINT</id>
+        <value>rSet Rally Point</value>
+    </string>
+    <string>
+        <id>STR_RECHARGE</id>
+        <value>rRecharge Shields</value>
+    </string>
+    <string>
+        <id>STR_SELECT_LARVA</id>
+        <value>sSelect Larva</value>
+    </string>
+    <string>
+        <id>STR_GATHER</id>
+        <value>gGather</value>
+    </string>
+    <string>
+        <id>STR_RETURN</id>
+        <value>cReturn Cargo</value>
+    </string>
+    <string>
+        <id>STR_REPAIR</id>
+        <value>rRepair</value>
+    </string>
+    <string>
+        <id>STR_BUILD</id>
+        <value>bBuild Structure</value>
+    </string>
+    <string>
+        <id>STR_BLD_ADVANCED</id>
+        <value>vBuild Advanced Structure</value>
+    </string>
+    <string>
+        <id>STR_MUTATE</id>
+        <value>bBasic Mutation</value>
+    </string>
+    <string>
+        <id>STR_MUTATE_ADV</id>
+        <value>vAdvanced Mutation</value>
+    </string>
+    <string>
+        <id>STR_MORPH_ADV</id>
+        <value>vAdvanced Morph</value>
+    </string>
+    <string>
+        <id>STR_PICKUP</id>
+        <value>lLoad</value>
+    </string>
+    <string>
+        <id>STR_UNLOAD</id>
+        <value>uUnload All</value>
+    </string>
+    <string>
+        <id>STR_NUKESTRIKE</id>
+        <value>nNuclear Strike</value>
+    </string>
+    <string>
+        <id>STR_PLACE_COP</id>
+        <value>pPlace COP</value>
+    </string>
+    <string>
+        <id>STR_CANCELESC</id>
+        <value>ESC - Cancel</value>
+    </string>
+    <string>
+        <id>STR_CANCEL</id>
+        <value>ESC - Cancel</value>
+    </string>
+    <string>
+        <id>STR_CANCELCONSTRUCTION</id>
+        <value>ESC - Cancel Construction</value>
+    </string>
+    <string>
+        <id>STR_CANCELUNIT</id>
+        <value>ESC - Cancel Unit Training</value>
+    </string>
+    <string>
+        <id>STR_CANCELUPGRADE</id>
+        <value>ESC - Cancel Upgrade</value>
+    </string>
+    <string>
+        <id>STR_CANCELRESEARCH</id>
+        <value>ESC - Cancel Research</value>
+    </string>
+    <string>
+        <id>STR_CANCELLAST</id>
+        <value>ESC - Cancel Last</value>
+    </string>
+    <string>
+        <id>STR_CANCELADDON</id>
+        <value>ESC - Cancel Addon</value>
+    </string>
+    <string>
+        <id>STR_EGGREVERT</id>
+        <value>ESC - Cancel Morph</value>
+    </string>
+    <string>
+        <id>STR_DRONEREVERT</id>
+        <value>ESC - Cancel Mutation</value>
+    </string>
+    <string>
+        <id>STR_DRONECANCELINFESTATION</id>
+        <value>ESC - Cancel Infestation</value>
+    </string>
+    <string>
+        <id>STR_CANCELBLDGMORPH</id>
+        <value>ESC - Cancel Mutation</value>
+    </string>
+    <string>
+        <id>STR_CANCELNUKESTRIKE</id>
+        <value>ESC - Cancel Nuclear Strike</value>
+    </string>
+    <string>
+        <id>STR_HALT_CONSTRUCTION</id>
+        <value>ESC - Halt Construction</value>
+    </string>
+    <string>
+        <id>STR_GHOST_REQ</id>
+        <value>Ghost Requires:
+   Academy
+   Science Facility with
+   attached Covert Ops</value>
+    </string>
+    <string>
+        <id>STR_FIREBAT_REQ</id>
+        <value>Firebat Requires:
+   Academy</value>
+    </string>
+    <string>
+        <id>STR_GOLIATH_REQ</id>
+        <value>Goliath Requires:
+   Armory</value>
+    </string>
+    <string>
+        <id>STR_TANK_REQ</id>
+        <value>Siege Tank Requires:
+   Attached Machine Shop</value>
+    </string>
+    <string>
+        <id>STR_VESSEL_REQ</id>
+        <value>Science Vessel Requires:
+   Attached Control Tower
+   Science Facility</value>
+    </string>
+    <string>
+        <id>STR_DROPSHIP_REQ</id>
+        <value>Dropship Requires:
+   Attached Control Tower</value>
+    </string>
+    <string>
+        <id>STR_BCRUISER_REQ</id>
+        <value>Battlecruiser Requires:
+   Attached Control Tower
+   Science Facility with
+   attached Physics Lab</value>
+    </string>
+    <string>
+        <id>STR_COMSAT_REQ</id>
+        <value>Comsat Station Requires:
+   Academy</value>
+    </string>
+    <string>
+        <id>STR_SILO_REQ</id>
+        <value>Nuclear Silo Requires:
+   Science Facility with
+   attached Covert Ops</value>
+    </string>
+    <string>
+        <id>STR_BARRACKS_REQ</id>
+        <value>Barracks Requires:
+   Command Center</value>
+    </string>
+    <string>
+        <id>STR_ACADEMY_REQ</id>
+        <value>Academy Requires:
+   Barracks</value>
+    </string>
+    <string>
+        <id>STR_FACTORY_REQ</id>
+        <value>Factory Requires:
+   Barracks</value>
+    </string>
+    <string>
+        <id>STR_STARPORT_REQ</id>
+        <value>Starport Requires:
+   Factory</value>
+    </string>
+    <string>
+        <id>STR_SCIENCE_FAC_REQ</id>
+        <value>Science Facility Requires:
+   Starport</value>
+    </string>
+    <string>
+        <id>STR_ENGINEERING_REQ</id>
+        <value>Engineering Bay Requires:
+   Command Center</value>
+    </string>
+    <string>
+        <id>STR_ARMORY_REQ</id>
+        <value>Armory Requires:
+   Factory</value>
+    </string>
+    <string>
+        <id>STR_TURRET_REQ</id>
+        <value>Missile Turret Requires:
+   Engineering Bay</value>
+    </string>
+    <string>
+        <id>STR_PILLBOX_REQ</id>
+        <value>Bunker Requires:
+   Barracks</value>
+    </string>
+    <string>
+        <id>STR_DRAGOON_REQ</id>
+        <value>Dragoon Requires:
+   Cybernetics Core</value>
+    </string>
+    <string>
+        <id>STR_TEMPLAR_REQ</id>
+        <value>Templar Requires:
+   Templar Archives</value>
+    </string>
+    <string>
+        <id>STR_ARBITER_REQ</id>
+        <value>Arbiter Requires:
+   Arbiter Tribunal</value>
+    </string>
+    <string>
+        <id>STR_CARRIER_REQ</id>
+        <value>Carrier Requires:
+   Fleet Beacon</value>
+    </string>
+    <string>
+        <id>STR_REAVER_REQ</id>
+        <value>Reaver Requires:
+   Robotics Support Bay</value>
+    </string>
+    <string>
+        <id>STR_OBSERVER_REQ</id>
+        <value>Observer Requires:
+   Observatory</value>
+    </string>
+    <string>
+        <id>STR_GATEWAY_REQ</id>
+        <value>Gateway Requires:
+   Nexus</value>
+    </string>
+    <string>
+        <id>STR_FORGE_REQ</id>
+        <value>Forge Requires:
+   Nexus</value>
+    </string>
+    <string>
+        <id>STR_PHOTONBATT_REQ</id>
+        <value>Photon Cannon Requires:
+   Forge</value>
+    </string>
+    <string>
+        <id>STR_SHIELDBATT_REQ</id>
+        <value>Shield Battery Requires:
+   Gateway</value>
+    </string>
+    <string>
+        <id>STR_CYBER_CORE_REQ</id>
+        <value>Cybernetics Core Requires:
+   Gateway</value>
+    </string>
+    <string>
+        <id>STR_ROBOTICS_REQ</id>
+        <value>Robotics Facility Requires:
+   Cybernetics Core</value>
+    </string>
+    <string>
+        <id>STR_STARGATE_REQ</id>
+        <value>Stargate Requires:
+   Cybernetics Core</value>
+    </string>
+    <string>
+        <id>STR_CITADEL_REQ</id>
+        <value>Citadel of Adun Requires:
+   Cybernetics Core</value>
+    </string>
+    <string>
+        <id>STR_OBSERVATORY_REQ</id>
+        <value>Observatory Requires:
+   Robotics Facility</value>
+    </string>
+    <string>
+        <id>STR_ROBOTICS_BAY_REQ</id>
+        <value>Robotics Support Bay Requires:
+   Robotics Facility</value>
+    </string>
+    <string>
+        <id>STR_FLEET_BEACON_REQ</id>
+        <value>Fleet Beacon Requires:
+   Stargate</value>
+    </string>
+    <string>
+        <id>STR_ARCHIVES_REQ</id>
+        <value>Templar Archives Require:
+   Citadel of Adun</value>
+    </string>
+    <string>
+        <id>STR_TRIBUNAL_REQ</id>
+        <value>Arbiter Tribunal Requires:
+   Stargate
+   Templar Archives</value>
+    </string>
+    <string>
+        <id>STR_ZERGLING_REQ</id>
+        <value>Zerglings Require:
+   Spawning Pool</value>
+    </string>
+    <string>
+        <id>STR_HYDRALISK_REQ</id>
+        <value>Hydralisk Requires:
+   Hydralisk Den</value>
+    </string>
+    <string>
+        <id>STR_ULTRALISK_REQ</id>
+        <value>Ultralisk Requires:
+   Ultralisk Cavern</value>
+    </string>
+    <string>
+        <id>STR_MUTALID_REQ</id>
+        <value>Mutalisk Requires:
+   Spire</value>
+    </string>
+    <string>
+        <id>STR_GUARDIAN_REQ</id>
+        <value>Guardian Aspect Requires:
+   Greater Spire</value>
+    </string>
+    <string>
+        <id>STR_QUEEN_REQ</id>
+        <value>Queen Requires:
+   Queen's Nest</value>
+    </string>
+    <string>
+        <id>STR_DEFILER_REQ</id>
+        <value>Defiler Requires:
+   Defiler Mound</value>
+    </string>
+    <string>
+        <id>STR_AVENGER_REQ</id>
+        <value>Scourge Require:
+   Spire</value>
+    </string>
+    <string>
+        <id>STR_LAIR_REQ</id>
+        <value>Lair Requires:
+   Spawning Pool</value>
+    </string>
+    <string>
+        <id>STR_HIVE_REQ</id>
+        <value>Hive Requires:
+   Queen's Nest</value>
+    </string>
+    <string>
+        <id>STR_NYDUS_REQ</id>
+        <value>Nydus Canal Requires:
+   Hive</value>
+    </string>
+    <string>
+        <id>STR_HYDRA_DEN_REQ</id>
+        <value>Hydralisk Den Requires:
+   Spawning Pool</value>
+    </string>
+    <string>
+        <id>STR_SPIRE_REQ</id>
+        <value>Spire Requires:
+   Lair</value>
+    </string>
+    <string>
+        <id>STR_GREATERSPIRE_REQ</id>
+        <value>Greater Spire Requires:
+   Hive</value>
+    </string>
+    <string>
+        <id>STR_NEST_REQ</id>
+        <value>Queen's Nest Requires:
+   Lair</value>
+    </string>
+    <string>
+        <id>STR_EVO_CHAMBER_REQ</id>
+        <value>Evolution Chamber Requires:
+   Hatchery</value>
+    </string>
+    <string>
+        <id>STR_ULTRA_CAVERN_REQ</id>
+        <value>Ultralisk Cavern Requires:
+   Hive</value>
+    </string>
+    <string>
+        <id>STR_DEFILER_MOUND_REQ</id>
+        <value>Defiler Mound Requires:
+   Hive</value>
+    </string>
+    <string>
+        <id>STR_SPAWNING_REQ</id>
+        <value>Spawning Pool Requires:
+   Hatchery</value>
+    </string>
+    <string>
+        <id>STR_SPORE_REQ</id>
+        <value>Spore Colony Requires:
+   Evolution Chamber</value>
+    </string>
+    <string>
+        <id>STR_SUNKEN_REQ</id>
+        <value>Sunken Colony Requires:
+   Spawning Pool</value>
+    </string>
+    <string>
+        <id>STR_CARRIERATTACK_REQ</id>
+        <value>Carrier Attack:
+   Build Interceptors</value>
+    </string>
+    <string>
+        <id>STR_REAVERATTACK_REQ</id>
+        <value>Reaver Attack:
+   Build Scarabs</value>
+    </string>
+    <string>
+        <id>STR_NUKE_REQ</id>
+        <value>Nuclear Strike Requires:
+   Armed Nuclear Silo</value>
+    </string>
+    <string>
+        <id>STR_NOT_IMPLEMENTED</id>
+        <value>Not Implemented</value>
+    </string>
+    <string>
+        <id>STR_MARK</id>
+        <value>mk</value>
+    </string>
+    <string>
+        <id>STR_KILLS_LBL</id>
+        <value>Kills:</value>
+    </string>
+    <string>
+        <id>STR_UPGRADING_LBL</id>
+        <value>Evolving</value>
+    </string>
+    <string>
+        <id>STR_UPGRADING_LBL_1</id>
+        <value>Upgrading</value>
+    </string>
+    <string>
+        <id>STR_UPGRADING_LBL_2</id>
+        <value>Upgrading</value>
+    </string>
+    <string>
+        <id>STR_RESEARCHING_LBL</id>
+        <value>Evolving</value>
+    </string>
+    <string>
+        <id>STR_RESEARCHING_LBL_1</id>
+        <value>Researching</value>
+    </string>
+    <string>
+        <id>STR_RESEARCHING_LBL_2</id>
+        <value>Developing</value>
+    </string>
+    <string>
+        <id>STR_BUILDING_LBL</id>
+        <value>Morphing</value>
+    </string>
+    <string>
+        <id>STR_BUILDING_LBL_1</id>
+        <value>Building</value>
+    </string>
+    <string>
+        <id>STR_BUILDING_LBL_2</id>
+        <value>Opening Warp Gate</value>
+    </string>
+    <string>
+        <id>STR_BUILDING2_LBL</id>
+        <value>Morphing</value>
+    </string>
+    <string>
+        <id>STR_BUILDING2_LBL_1</id>
+        <value>Building</value>
+    </string>
+    <string>
+        <id>STR_BUILDING2_LBL_2</id>
+        <value>Building</value>
+    </string>
+    <string>
+        <id>STR_DAMAGE_LBL</id>
+        <value>Damage:</value>
+    </string>
+    <string>
+        <id>STR_ARMOR_LBL</id>
+        <value>Armor:</value>
+    </string>
+    <string>
+        <id>STR_SHIELD_LBL</id>
+        <value>Shields:</value>
+    </string>
+    <string>
+        <id>STR_MINING_DELAY_LBL</id>
+        <value>Mining Delay:</value>
+    </string>
+    <string>
+        <id>STR_PRODUCTION_LBL</id>
+        <value>Production </value>
+    </string>
+    <string>
+        <id>STR_UNIT_PTR</id>
+        <value>Unit Ptr:</value>
+    </string>
+    <string>
+        <id>STR_CURR_ORDER</id>
+        <value>Current Order:</value>
+    </string>
+    <string>
+        <id>STR_DELAY_ORDER</id>
+        <value>Next Order:</value>
+    </string>
+    <string>
+        <id>STR_PERCENT</id>
+        <value>% Complete</value>
+    </string>
+    <string>
+        <id>STR_ORDER_LBL</id>
+        <value>Order:</value>
+    </string>
+    <string>
+        <id>STR_ADDINGON_LBL</id>
+        <value>Mutating</value>
+    </string>
+    <string>
+        <id>STR_ADDINGON_LBL_1</id>
+        <value>Adding On</value>
+    </string>
+    <string>
+        <id>STR_ADDINGON_LBL_2</id>
+        <value>Opening Warp Rift</value>
+    </string>
+    <string>
+        <id>STR_SUMMONING_LBL</id>
+        <value>Summoning</value>
+    </string>
+    <string>
+        <id>STR_INTERCEPTORS_LBL</id>
+        <value>Interceptors</value>
+    </string>
+    <string>
+        <id>STR_SCARABS_LBL</id>
+        <value>Scarabs</value>
+    </string>
+    <string>
+        <id>STR_NUKES_LBL</id>
+        <value>Nukes</value>
+    </string>
+    <string>
+        <id>STR_MINES_LBL</id>
+        <value>Spider Mines</value>
+    </string>
+    <string>
+        <id>STR_NEXTLVL</id>
+        <value>Next Level:</value>
+    </string>
+    <string>
+        <id>STR_MINERALS_LBL</id>
+        <value>Minerals:</value>
+    </string>
+    <string>
+        <id>STR_GASES_LBL</id>
+        <value>Vespene Gas:</value>
+    </string>
+    <string>
+        <id>STR_DEPLETED</id>
+        <value>Depleted</value>
+    </string>
+    <string>
+        <id>STR_CONSTRUCTION</id>
+        <value>Mutating</value>
+    </string>
+    <string>
+        <id>STR_CONSTRUCTION_1</id>
+        <value>Under Construction</value>
+    </string>
+    <string>
+        <id>STR_CONSTRUCTION_2</id>
+        <value>Opening Warp Rift</value>
+    </string>
+    <string>
+        <id>STR_CANCEL_UNIT_s</id>
+        <value>Cancel Morph (%s)</value>
+    </string>
+    <string>
+        <id>STR_CANCEL_UNIT_s_1</id>
+        <value>Cancel Construction (%s)</value>
+    </string>
+    <string>
+        <id>STR_CANCEL_UNIT_s_2</id>
+        <value>Cancel Warp (%s)</value>
+    </string>
+    <string>
+        <id>STR_CANCEL_UPGRADE</id>
+        <value>Cancel Upgrade</value>
+    </string>
+    <string>
+        <id>STR_CANCEL_RESEARCH</id>
+        <value>Cancel Research</value>
+    </string>
+    <string>
+        <id>STR_CANCEL_MORPH</id>
+        <value>Cancel Morph</value>
+    </string>
+    <string>
+        <id>STR_UNLOAD_UNIT_s</id>
+        <value>Unload Unit (%s)</value>
+    </string>
+    <string>
+        <id>STR_MULTISELECT_HELP</id>
+        <value>Click: Select Unit
+Shift+Click: Deselect Unit
+Ctrl+Click: Select Unit Type</value>
+    </string>
+    <string>
+        <id>STR_SHOW_TERRAIN</id>
+        <value>Show Terrain in Minimap (Tab)</value>
+    </string>
+    <string>
+        <id>STR_HIDE_TERRAIN</id>
+        <value>Hide Terrain in Minimap (Tab)</value>
+    </string>
+    <string>
+        <id>STR_DIPLOMACY</id>
+        <value>Diplomacy</value>
+    </string>
+    <string>
+        <id>STR_MESSAGING</id>
+        <value>Messaging</value>
+    </string>
+    <string>
+        <id>STR_GAMEMENU_HELP</id>
+        <value>Game Menu (F10)</value>
+    </string>
+    <string>
+        <id>STR_UNI_FOOD_PROVIDED</id>
+        <value>Control Provided:</value>
+    </string>
+    <string>
+        <id>STR_UNI_FOOD_PROVIDED_1</id>
+        <value>Supplies Provided:</value>
+    </string>
+    <string>
+        <id>STR_UNI_FOOD_PROVIDED_2</id>
+        <value>Psi Provided:</value>
+    </string>
+    <string>
+        <id>STR_FOOD_PROVIDED</id>
+        <value>Total Control:</value>
+    </string>
+    <string>
+        <id>STR_FOOD_PROVIDED_1</id>
+        <value>Total Supplies:</value>
+    </string>
+    <string>
+        <id>STR_FOOD_PROVIDED_2</id>
+        <value>Total Psi:</value>
+    </string>
+    <string>
+        <id>STR_FOOD_USED</id>
+        <value>Control Used:</value>
+    </string>
+    <string>
+        <id>STR_FOOD_USED_1</id>
+        <value>Supplies Used:</value>
+    </string>
+    <string>
+        <id>STR_FOOD_USED_2</id>
+        <value>Psi Used:</value>
+    </string>
+    <string>
+        <id>STR_FOOD_MAX</id>
+        <value>Control Max:</value>
+    </string>
+    <string>
+        <id>STR_FOOD_MAX_1</id>
+        <value>Supplies Max:</value>
+    </string>
+    <string>
+        <id>STR_FOOD_MAX_2</id>
+        <value>Psi Max:</value>
+    </string>
+    <string>
+        <id>STR_PARASITE_LBL</id>
+        <value>Parasite Detected</value>
+    </string>
+    <string>
+        <id>STR_DISABLED_LBL</id>
+        <value>Disabled</value>
+    </string>
+    <string>
+        <id>STR_DISABLED_LBL_1</id>
+        <value>Disabled</value>
+    </string>
+    <string>
+        <id>STR_DISABLED_LBL_2</id>
+        <value>Unpowered</value>
+    </string>
+    <string>
+        <id>STR_DETECTOR_LBL</id>
+        <value>Detector</value>
+    </string>
+    <string>
+        <id>STR_HALLUCINATION_LBL</id>
+        <value>Hallucination</value>
+    </string>
+    <string>
+        <id>STR_LB_LABEL</id>
+        <value>Units</value>
+    </string>
+    <string>
+        <id>STR_LB_LABEL_1</id>
+        <value>Units</value>
+    </string>
+    <string>
+        <id>STR_LB_LABEL_2</id>
+        <value>Resources</value>
+    </string>
+    <string>
+        <id>STR_LB_LABEL_3</id>
+        <value>Kills</value>
+    </string>
+    <string>
+        <id>STR_LB_LABEL_4</id>
+        <value>Score</value>
+    </string>
+    <string>
+        <id>STR_LB_DELTA_LABEL</id>
+        <value>Units to go</value>
+    </string>
+    <string>
+        <id>STR_LB_DELTA_LABEL_1</id>
+        <value>Units to go</value>
+    </string>
+    <string>
+        <id>STR_LB_DELTA_LABEL_2</id>
+        <value>Resources to go</value>
+    </string>
+    <string>
+        <id>STR_LB_DELTA_LABEL_3</id>
+        <value>Kills to go</value>
+    </string>
+    <string>
+        <id>STR_LB_DELTA_LABEL_4</id>
+        <value>Score to go</value>
+    </string>
+    <string>
+        <id>STR_RETURN_ERR</id>
+        <value>Nowhere to return to...can't return.</value>
+    </string>
+    <string>
+        <id>STR_NEED_FOOD_ERR</id>
+        <value>Too many underlings...create more Overlords.</value>
+    </string>
+    <string>
+        <id>STR_NEED_FOOD_ERR_1</id>
+        <value>Not enough supplies...build more Supply Depots.</value>
+    </string>
+    <string>
+        <id>STR_NEED_FOOD_ERR_2</id>
+        <value>Not enough psi...build more Pylons.</value>
+    </string>
+    <string>
+        <id>STR_FOOD_LIMIT_ERR</id>
+        <value>Underling limit exceeded.</value>
+    </string>
+    <string>
+        <id>STR_FOOD_LIMIT_ERR_1</id>
+        <value>Supply limit exceeded.</value>
+    </string>
+    <string>
+        <id>STR_FOOD_LIMIT_ERR_2</id>
+        <value>Psi limit exceeded.</value>
+    </string>
+    <string>
+        <id>STR_NEED_MINERALS_ERR</id>
+        <value>Not enough minerals...mine more minerals.</value>
+    </string>
+    <string>
+        <id>STR_NEED_GASES_ERR</id>
+        <value>Not enough Vespene gases....harvest more gas.</value>
+    </string>
+    <string>
+        <id>STR_RESOURCES_TOO_CLOSE_ERR</id>
+        <value>You can't build next to minerals or geysers.</value>
+    </string>
+    <string>
+        <id>STR_INVISIBLE_UNIT_ERR</id>
+        <value>An undetected unit is in the way.</value>
+    </string>
+    <string>
+        <id>STR_BOUNDS_ERR</id>
+        <value>You can't build off the map.</value>
+    </string>
+    <string>
+        <id>STR_COP_ERR</id>
+        <value>You can't build near the edge of the map.</value>
+    </string>
+    <string>
+        <id>STR_NO_BUILD_ERR</id>
+        <value>You can't build there.</value>
+    </string>
+    <string>
+        <id>STR_EXPLORE_ERR</id>
+        <value>You must explore there first.</value>
+    </string>
+    <string>
+        <id>STR_FOGGED_ERR</id>
+        <value>You must currently be able to see the location.</value>
+    </string>
+    <string>
+        <id>STR_REFINERY_ERR</id>
+        <value>Could not build there, find a Vespene Geyser to build on.</value>
+    </string>
+    <string>
+        <id>STR_NEEDS_CREEP_ERR</id>
+        <value>You must build on the Creep.</value>
+    </string>
+    <string>
+        <id>STR_PYLON_TOO_FAR_ERR</id>
+        <value>You must build near a Pylon.</value>
+    </string>
+    <string>
+        <id>STR_CANT_REACH_ERR</id>
+        <value>Couldn't reach the building site.</value>
+    </string>
+    <string>
+        <id>STR_CANT_LAND_ERR</id>
+        <value>You can't land there.</value>
+    </string>
+    <string>
+        <id>STR_NEED_MANA_ERR</id>
+        <value>Not enough energy.</value>
+    </string>
+    <string>
+        <id>STR_NEED_MANA_ERR_1</id>
+        <value>Not enough energy.</value>
+    </string>
+    <string>
+        <id>STR_NEED_MANA_ERR_2</id>
+        <value>Not enough energy.</value>
+    </string>
+    <string>
+        <id>STR_HARVEST_ERR</id>
+        <value>Nothing to harvest. Find a Mine or a Vespene Geyser.</value>
+    </string>
+    <string>
+        <id>STR_HARVEST_ERR_1</id>
+        <value>Nothing to harvest. Find a Mine, or build a Refinery at a Vespene Geyser.</value>
+    </string>
+    <string>
+        <id>STR_HARVEST_ERR_2</id>
+        <value>Nothing to harvest. Find a Mine, or build an Assimilator at a Vespene Geyser.</value>
+    </string>
+    <string>
+        <id>STR_INFEST_ERR</id>
+        <value>Must target severely damaged Terran Command Center.</value>
+    </string>
+    <string>
+        <id>STR_MAX_WAYPOINTS_ERR</id>
+        <value>Unit's waypoint list is full.</value>
+    </string>
+    <string>
+        <id>STR_MAX_ORDERS_ERR</id>
+        <value>Unable to add order.</value>
+    </string>
+    <string>
+        <id>STR_ORDERS_LOW_SUPPLY_ERR</id>
+        <value>Running low on orders, your last order was not processed.</value>
+    </string>
+    <string>
+        <id>STR_STIMPACK_ERR</id>
+        <value>Not enough life remaining.</value>
+    </string>
+    <string>
+        <id>STR_DEPLETED_ERR</id>
+        <value>Vespene Geyser depleted.</value>
+    </string>
+    <string>
+        <id>STR_CANT_TARGET</id>
+        <value>Invalid target.</value>
+    </string>
+    <string>
+        <id>STR_CANT_TARGET_BLDG</id>
+        <value>Unable to target structure.</value>
+    </string>
+    <string>
+        <id>STR_CANT_TARGET_GRND</id>
+        <value>Must target units.</value>
+    </string>
+    <string>
+        <id>STR_CANNOT_ATTACK_ERR</id>
+        <value>Unable to attack target.</value>
+    </string>
+    <string>
+        <id>STR_DMATRIX_ERR</id>
+        <value>Invalid target.</value>
+    </string>
+    <string>
+        <id>STR_LOCKDOWN_ERR</id>
+        <value>Must target mechanical units.</value>
+    </string>
+    <string>
+        <id>STR_IRRADIATE_ERR</id>
+        <value>Invalid target.</value>
+    </string>
+    <string>
+        <id>STR_REPAIR_ERR</id>
+        <value>Must target damaged mechanical units or damaged complete buildings.</value>
+    </string>
+    <string>
+        <id>STR_REPAIR2_ERR</id>
+        <value>Must target Terran units.</value>
+    </string>
+    <string>
+        <id>STR_PARASITE_ERR</id>
+        <value>Invalid target.</value>
+    </string>
+    <string>
+        <id>STR_BROODLING_ERR</id>
+        <value>Must target non-robotic ground units.</value>
+    </string>
+    <string>
+        <id>STR_MINES_ERR</id>
+        <value>Must target ground.</value>
+    </string>
+    <string>
+        <id>STR_OUT_OF_RANGE_ERR</id>
+        <value>Target out of range.</value>
+    </string>
+    <string>
+        <id>STR_TOO_CLOSE_ERR</id>
+        <value>Target is too close.</value>
+    </string>
+    <string>
+        <id>STR_FERRY1_ERR</id>
+        <value>Can only pick up your own transportable units.</value>
+    </string>
+    <string>
+        <id>STR_FERRY2_ERR</id>
+        <value>Not enough room for unit.</value>
+    </string>
+    <string>
+        <id>STR_HARVEST1_ERR</id>
+        <value>Must gather from a Mineral Field or Vespene Geyser.</value>
+    </string>
+    <string>
+        <id>STR_HARVEST2_ERR</id>
+        <value>Morph an Extractor there first.</value>
+    </string>
+    <string>
+        <id>STR_HARVEST2_ERR_1</id>
+        <value>Build a Refinery there first.</value>
+    </string>
+    <string>
+        <id>STR_HARVEST2_ERR_2</id>
+        <value>Build an Assimilator there first.</value>
+    </string>
+    <string>
+        <id>STR_HARVEST3_ERR</id>
+        <value>Must gather gases from your own geyser.</value>
+    </string>
+    <string>
+        <id>STR_CONSUME_ERR</id>
+        <value>Invalid target.</value>
+    </string>
+    <string>
+        <id>STR_PLAGUE_ERR</id>
+        <value>Invalid target.</value>
+    </string>
+    <string>
+        <id>STR_HALLUCINATION_ERR</id>
+        <value>Invalid target.</value>
+    </string>
+    <string>
+        <id>STR_STASISED_ERR</id>
+        <value>Units in stasis can't be targeted.</value>
+    </string>
+    <string>
+        <id>STR_MINE_TARGET_UNIT</id>
+        <value>Must target non-hovering ground units.</value>
+    </string>
+    <string>
+        <id>STR_MINE_TARGET_GRND</id>
+        <value>Must target passable terrain.</value>
+    </string>
+    <string>
+        <id>STR_ORDER_DIE</id>
+        <value>Die</value>
+    </string>
+    <string>
+        <id>STR_ORDER_FIZZLE</id>
+        <value>Fizzle</value>
+    </string>
+    <string>
+        <id>STR_ORDER_STOP</id>
+        <value>Stop</value>
+    </string>
+    <string>
+        <id>STR_ORDER_GUARD</id>
+        <value>Guard</value>
+    </string>
+    <string>
+        <id>STR_ORDER_GUARD_PLAY</id>
+        <value>Player Guard</value>
+    </string>
+    <string>
+        <id>STR_ORDER_TURRET_GUARD</id>
+        <value>Turret Guard</value>
+    </string>
+    <string>
+        <id>STR_ORDER_GUARD_BUNKER</id>
+        <value>Bunker Guard</value>
+    </string>
+    <string>
+        <id>STR_ORDER_IGNORE</id>
+        <value>Ignore</value>
+    </string>
+    <string>
+        <id>STR_ORDER_CARRIER_IGNORE</id>
+        <value>Carrier Ignore</value>
+    </string>
+    <string>
+        <id>STR_ORDER_CARRIER_STOP</id>
+        <value>Carrier Stop</value>
+    </string>
+    <string>
+        <id>STR_ORDER_TRILOBYTE_STOP</id>
+        <value>Reaver Stop</value>
+    </string>
+    <string>
+        <id>STR_ORDER_ATTACK</id>
+        <value>Attack</value>
+    </string>
+    <string>
+        <id>STR_ORDER_ATTACK_UNIT</id>
+        <value>Attack Unit</value>
+    </string>
+    <string>
+        <id>STR_ORDER_ATTACK_FIXED_RNGE</id>
+        <value>Attack Fixed Range</value>
+    </string>
+    <string>
+        <id>STR_ORDER_MOVE_ATTACK_UNIT</id>
+        <value>Move Attack Unit</value>
+    </string>
+    <string>
+        <id>STR_ORDER_ATTACK_TILE</id>
+        <value>Attack Tile</value>
+    </string>
+    <string>
+        <id>STR_ORDER_ATTACK_HOVER</id>
+        <value>Hover</value>
+    </string>
+    <string>
+        <id>STR_ORDER_ATTACK_MOVE</id>
+        <value>Attack Move</value>
+    </string>
+    <string>
+        <id>STR_ORDER_ATTACK_MOVE_EP</id>
+        <value>Atk Move EP</value>
+    </string>
+    <string>
+        <id>STR_ORDER_HARASS_MOVE_EP</id>
+        <value>Harass Move</value>
+    </string>
+    <string>
+        <id>STR_ORDER_AI_PATROL</id>
+        <value>AI Patrol</value>
+    </string>
+    <string>
+        <id>STR_ORDER_TOWER</id>
+        <value>Tower</value>
+    </string>
+    <string>
+        <id>STR_ORDER_VULTURE_MINE</id>
+        <value>Vulture Mine</value>
+    </string>
+    <string>
+        <id>STR_ORDER_CARRIER_ATTACK</id>
+        <value>Carrier Attack</value>
+    </string>
+    <string>
+        <id>STR_ORDER_CARRIER_ATTACK_MOVE</id>
+        <value>Carrier Attack Move</value>
+    </string>
+    <string>
+        <id>STR_ORDER_STAY_IN_RANGE</id>
+        <value>Stay In Range</value>
+    </string>
+    <string>
+        <id>STR_ORDER_TURRET_ATTACK</id>
+        <value>Turret Attack</value>
+    </string>
+    <string>
+        <id>STR_ORDER_NOTHING</id>
+        <value>Nothing</value>
+    </string>
+    <string>
+        <id>STR_ORDER_DRONE_START_BUILD</id>
+        <value>Drone Start Build</value>
+    </string>
+    <string>
+        <id>STR_ORDER_DRONE_BUILD</id>
+        <value>Drone Build</value>
+    </string>
+    <string>
+        <id>STR_ORDER_DRONE_ATTACK_UNIT</id>
+        <value>Drone Attack Unit</value>
+    </string>
+    <string>
+        <id>STR_ORDER_DRONE_INFEST</id>
+        <value>Infest Mine</value>
+    </string>
+    <string>
+        <id>STR_ORDER_BUILD</id>
+        <value>Build</value>
+    </string>
+    <string>
+        <id>STR_ORDER_BUILDPROTOSS</id>
+        <value>Build Protoss</value>
+    </string>
+    <string>
+        <id>STR_ORDER_PYLON_BUILD</id>
+        <value>Pylon Build</value>
+    </string>
+    <string>
+        <id>STR_ORDER_CONSTRUCT_BLDG</id>
+        <value>Construct Building</value>
+    </string>
+    <string>
+        <id>STR_ORDER_REPAIR</id>
+        <value>Repair</value>
+    </string>
+    <string>
+        <id>STR_ORDER_PLACE_ADDON</id>
+        <value>Place Add-On</value>
+    </string>
+    <string>
+        <id>STR_ORDER_BUILD_ADDON</id>
+        <value>Build Add-On</value>
+    </string>
+    <string>
+        <id>STR_ORDER_TRAIN</id>
+        <value>Train</value>
+    </string>
+    <string>
+        <id>STR_ORDER_ZERG_BIRTH</id>
+        <value>Zerg Birth</value>
+    </string>
+    <string>
+        <id>STR_ORDER_MORPH</id>
+        <value>Morph</value>
+    </string>
+    <string>
+        <id>STR_ORDER_ZERG_BLDG_MORPH</id>
+        <value>Zerg Building Morph</value>
+    </string>
+    <string>
+        <id>STR_ORDER_BUILDSELF</id>
+        <value>Build Self</value>
+    </string>
+    <string>
+        <id>STR_ORDER_BUILDSELFZERG</id>
+        <value>Zerg Build Self</value>
+    </string>
+    <string>
+        <id>STR_ORDER_ENTER_NYDUS</id>
+        <value>Enter Nydus Canal</value>
+    </string>
+    <string>
+        <id>STR_ORDER_BUILDSELFPROTOSS</id>
+        <value>Protoss Build Self</value>
+    </string>
+    <string>
+        <id>STR_ORDER_FOLLOW</id>
+        <value>Follow</value>
+    </string>
+    <string>
+        <id>STR_ORDER_CARRIER</id>
+        <value>Carrier</value>
+    </string>
+    <string>
+        <id>STR_ORDER_CARRIER_FIGHT</id>
+        <value>Carrier Fight</value>
+    </string>
+    <string>
+        <id>STR_ORDER_REAVER</id>
+        <value>Reaver</value>
+    </string>
+    <string>
+        <id>STR_ORDER_REAVER_ATTACK</id>
+        <value>Reaver Attack</value>
+    </string>
+    <string>
+        <id>STR_ORDER_REAVER_FIGHT</id>
+        <value>Reaver Fight</value>
+    </string>
+    <string>
+        <id>STR_ORDER_REAVER_HOLD</id>
+        <value>Reaver Hold</value>
+    </string>
+    <string>
+        <id>STR_ORDER_TRAIN_FIGHTER</id>
+        <value>Train Fighter</value>
+    </string>
+    <string>
+        <id>STR_ORDER_STRAFE_UNIT</id>
+        <value>Strafe Unit</value>
+    </string>
+    <string>
+        <id>STR_ORDER_TRILOBYTER</id>
+        <value>Scarab</value>
+    </string>
+    <string>
+        <id>STR_ORDER_RETURN</id>
+        <value>Return</value>
+    </string>
+    <string>
+        <id>STR_ORDER_DRONE_LAND</id>
+        <value>Drone Land</value>
+    </string>
+    <string>
+        <id>STR_ORDER_BLDG_LAND</id>
+        <value>Building Land</value>
+    </string>
+    <string>
+        <id>STR_ORDER_BLDG_LIFT_OFF</id>
+        <value>Building Lift Off</value>
+    </string>
+    <string>
+        <id>STR_ORDER_DRONE_LIFT_OFF</id>
+        <value>Drone Lift Off</value>
+    </string>
+    <string>
+        <id>STR_ORDER_LIFT_OFF</id>
+        <value>Lift Off</value>
+    </string>
+    <string>
+        <id>STR_ORDER_RESEARCH_TECH</id>
+        <value>Reasearch Tech</value>
+    </string>
+    <string>
+        <id>STR_ORDER_UPGRADE</id>
+        <value>Upgrade</value>
+    </string>
+    <string>
+        <id>STR_ORDER_LARVA</id>
+        <value>Larva</value>
+    </string>
+    <string>
+        <id>STR_ORDER_SPAWN_LARVA</id>
+        <value>Spawning Larva</value>
+    </string>
+    <string>
+        <id>STR_ORDER_HARVEST</id>
+        <value>Harvest</value>
+    </string>
+    <string>
+        <id>STR_ORDER_HARVEST_GAS</id>
+        <value>Harvest Gas</value>
+    </string>
+    <string>
+        <id>STR_ORDER_RETURN_GAS</id>
+        <value>Return Gas</value>
+    </string>
+    <string>
+        <id>STR_ORDER_HARVEST_MINERALS</id>
+        <value>Harvest Minerals</value>
+    </string>
+    <string>
+        <id>STR_ORDER_RETURN_MINERALS</id>
+        <value>Return Minerals</value>
+    </string>
+    <string>
+        <id>STR_ORDER_ENTER_TRANSPORT</id>
+        <value>Enter Transport</value>
+    </string>
+    <string>
+        <id>STR_ORDER_PICK_UP</id>
+        <value>Pick Up</value>
+    </string>
+    <string>
+        <id>STR_ORDER_POWERUP</id>
+        <value>Powerup</value>
+    </string>
+    <string>
+        <id>STR_ORDER_SIEGEMODE</id>
+        <value>Siege Mode</value>
+    </string>
+    <string>
+        <id>STR_ORDER_TANKMODE</id>
+        <value>Tank Mode</value>
+    </string>
+    <string>
+        <id>STR_ORDER_WATCHTARGET</id>
+        <value>Watch Target</value>
+    </string>
+    <string>
+        <id>STR_ORDER_INIT_SPREAD_CREEP</id>
+        <value>Initing Creep Growth</value>
+    </string>
+    <string>
+        <id>STR_ORDER_STOP_SPREAD_CREEP</id>
+        <value>Stopping Creep Growth</value>
+    </string>
+    <string>
+        <id>STR_ORDER_SPREAD_CREEP</id>
+        <value>Spread Creep</value>
+    </string>
+    <string>
+        <id>STR_ORDER_GUARDIANASPECT</id>
+        <value>Guardian Aspect</value>
+    </string>
+    <string>
+        <id>STR_ORDER_SUMMON_ARCHON</id>
+        <value>Warping Archon</value>
+    </string>
+    <string>
+        <id>STR_ORDER_SUMMON_COMPLETE</id>
+        <value>Completing Archon Summon</value>
+    </string>
+    <string>
+        <id>STR_ORDER_HOLDPOS</id>
+        <value>Hold Position</value>
+    </string>
+    <string>
+        <id>STR_ORDER_CLOAK</id>
+        <value>Cloak</value>
+    </string>
+    <string>
+        <id>STR_ORDER_DECLOAK</id>
+        <value>Decloak</value>
+    </string>
+    <string>
+        <id>STR_ORDER_UNLOAD</id>
+        <value>Unload</value>
+    </string>
+    <string>
+        <id>STR_ORDER_MOVE_UNLOAD</id>
+        <value>Move Unload</value>
+    </string>
+    <string>
+        <id>STR_ORDER_YAMATO</id>
+        <value>Fire Yamato Gun</value>
+    </string>
+    <string>
+        <id>STR_ORDER_MAGNAPULSE</id>
+        <value>Magna Pulse</value>
+    </string>
+    <string>
+        <id>STR_ORDER_BURROW</id>
+        <value>Burrow</value>
+    </string>
+    <string>
+        <id>STR_ORDER_BURROWED</id>
+        <value>Burrowed</value>
+    </string>
+    <string>
+        <id>STR_ORDER_DEBURROW</id>
+        <value>Unburrow</value>
+    </string>
+    <string>
+        <id>STR_ORDER_CAST_PARASITE</id>
+        <value>Cast Parasite</value>
+    </string>
+    <string>
+        <id>STR_ORDER_SUMMON_BROODLINGS</id>
+        <value>Summon Broodlings</value>
+    </string>
+    <string>
+        <id>STR_ORDER_EMP_SHOCKWAVE</id>
+        <value>EMP Shockwave</value>
+    </string>
+    <string>
+        <id>STR_ORDER_LOCKDOWN</id>
+        <value>Lockdown</value>
+    </string>
+    <string>
+        <id>STR_ORDER_NUKE_WAIT</id>
+        <value>Nuke Wait</value>
+    </string>
+    <string>
+        <id>STR_ORDER_NUKE_TRAIN</id>
+        <value>Nuke Train</value>
+    </string>
+    <string>
+        <id>STR_ORDER_NUKE_LAUNCH</id>
+        <value>Nuke Launch</value>
+    </string>
+    <string>
+        <id>STR_ORDER_NUKE_PAINT</id>
+        <value>Nuke Paint</value>
+    </string>
+    <string>
+        <id>STR_ORDER_NUKE_UNIT</id>
+        <value>Nuke Unit</value>
+    </string>
+    <string>
+        <id>STR_ORDER_NUKE_GROUND</id>
+        <value>Nuke Ground</value>
+    </string>
+    <string>
+        <id>STR_ORDER_NUKE_TRACK</id>
+        <value>Nuke Track</value>
+    </string>
+    <string>
+        <id>STR_ORDER_ARBITER</id>
+        <value>Initializing Arbiter</value>
+    </string>
+    <string>
+        <id>STR_ORDER_CLOAK_NEIGHBORS</id>
+        <value>Cloaking nearby units</value>
+    </string>
+    <string>
+        <id>STR_ORDER_PLACE_MINE</id>
+        <value>Place Mine</value>
+    </string>
+    <string>
+        <id>STR_ORDER_RCLICK</id>
+        <value>Right Click Action</value>
+    </string>
+    <string>
+        <id>STR_ORDER_LCLICK</id>
+        <value>Left Click Action</value>
+    </string>
+    <string>
+        <id>STR_ORDER_SAP_UNIT</id>
+        <value>Sap Unit</value>
+    </string>
+    <string>
+        <id>STR_ORDER_SAP_LOC</id>
+        <value>Sap Location</value>
+    </string>
+    <string>
+        <id>STR_ORDER_TELEPORT</id>
+        <value>Teleport</value>
+    </string>
+    <string>
+        <id>STR_ORDER_TELEPORT_LOC</id>
+        <value>Teleport to Location</value>
+    </string>
+    <string>
+        <id>STR_ORDER_PLACE_SCANNER</id>
+        <value>Place Scanner</value>
+    </string>
+    <string>
+        <id>STR_ORDER_SCANNER</id>
+        <value>Scanner</value>
+    </string>
+    <string>
+        <id>STR_ORDER_DEF_MAT</id>
+        <value>Defensive Matrix</value>
+    </string>
+    <string>
+        <id>STR_ORDER_UNDO_FLYER</id>
+        <value>Reset Collision</value>
+    </string>
+    <string>
+        <id>STR_ORDER_UNDO_TRANSPARENT_WORKER</id>
+        <value>Reset Collision</value>
+    </string>
+    <string>
+        <id>STR_ORDER_PATROL</id>
+        <value>Patrol</value>
+    </string>
+    <string>
+        <id>STR_ORDER_COMP_AI</id>
+        <value>Computer AI</value>
+    </string>
+    <string>
+        <id>STR_ORDER_GUARD_POST</id>
+        <value>Guard Post</value>
+    </string>
+    <string>
+        <id>STR_ORDER_RESCUE_PASSIVE</id>
+        <value>Rescue Passive</value>
+    </string>
+    <string>
+        <id>STR_ORDER_NEUTRAL</id>
+        <value>Neutral</value>
+    </string>
+    <string>
+        <id>STR_ORDER_COMP_RETURN</id>
+        <value>Computer Return</value>
+    </string>
+    <string>
+        <id>STR_ORDER_JUICE_INIT</id>
+        <value>Initing Psi Provider</value>
+    </string>
+    <string>
+        <id>STR_ORDER_SELF_DESTRUCT</id>
+        <value>Self Destructing</value>
+    </string>
+    <string>
+        <id>STR_ORDER_DECAY_CREEP</id>
+        <value>Decaying creep</value>
+    </string>
+    <string>
+        <id>STR_ORDER_RECHARGE</id>
+        <value>Recharge Shields</value>
+    </string>
+    <string>
+        <id>STR_ORDER_SHIELD_BATTERY</id>
+        <value>Shield Battery</value>
+    </string>
+    <string>
+        <id>STR_ORDER_RALLY_POINT</id>
+        <value>Rally Point</value>
+    </string>
+    <string>
+        <id>STR_ORDER_CTF_COP_INIT</id>
+        <value>CTF COP Init</value>
+    </string>
+    <string>
+        <id>STR_ORDER_CTF_COP</id>
+        <value>CTF COP</value>
+    </string>
+    <string>
+        <id>STR_ORDER_CRITTER</id>
+        <value>Critter</value>
+    </string>
+    <string>
+        <id>STR_ORDER_HIDDEN_GUN</id>
+        <value>Hidden Gun</value>
+    </string>
+    <string>
+        <id>STR_ORDER_OPEN_DOOR</id>
+        <value>Open Door</value>
+    </string>
+    <string>
+        <id>STR_ORDER_CLOSE_DOOR</id>
+        <value>Close Door</value>
+    </string>
+    <string>
+        <id>STR_ORDER_HIDE_TRAP</id>
+        <value>Hide Trap</value>
+    </string>
+    <string>
+        <id>STR_ORDER_REVEAL_TRAP</id>
+        <value>Reveal Trap</value>
+    </string>
+    <string>
+        <id>STR_ORDER_ENABLE_DOODAD</id>
+        <value>Enable Doodad</value>
+    </string>
+    <string>
+        <id>STR_ORDER_DISABLE_DOODAD</id>
+        <value>Disable Doodad</value>
+    </string>
+    <string>
+        <id>STR_ORDER_PROTOSS_WARP_IN</id>
+        <value>Warp In</value>
+    </string>
+    <string>
+        <id>STR_ORDER_HIDESUICIDE</id>
+        <value>Hide and Suicide</value>
+    </string>
+    <string>
+        <id>STR_ORDER_FATAL</id>
+        <value>Fatal</value>
+    </string>
+    <string>
+        <id>STR_NUKE_DETECT</id>
+        <value>Nuclear launch detected.</value>
+    </string>
+    <string>
+        <id>AI_CUSTOM_TERRAN</id>
+        <value>Terran Custom Level</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_LO</id>
+        <value>Terran Campaign Easy</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_MED</id>
+        <value>Terran Campaign Medium</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_HI</id>
+        <value>Terran Campaign Difficult</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_AREA</id>
+        <value>Terran Campaign Area Town</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_3</id>
+        <value>Terran 3 - Zerg Town</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_5</id>
+        <value>Terran 5 - Terran Main Town</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_5H</id>
+        <value>Terran 5 - Terran Harvest Town</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_6</id>
+        <value>Terran 6 - Air Attack Zerg</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_6B</id>
+        <value>Terran 6 - Ground Attack Zerg</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_6C</id>
+        <value>Terran 6 - Zerg Support Town</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_7</id>
+        <value>Terran 7 - Bottom Zerg Town</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_7S</id>
+        <value>Terran 7 - Right Zerg Town</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_7M</id>
+        <value>Terran 7 - Middle Zerg Town</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_8</id>
+        <value>Terran 8 - Confederate Town</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_9L</id>
+        <value>Terran 9 - Light Attack</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_9H</id>
+        <value>Terran 9 - Heavy Attack</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_10</id>
+        <value>Terran 10 - Confederate Towns</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_11Z</id>
+        <value>Terran 11 - Zerg Town</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_11PS</id>
+        <value>Terran 11 - Lower Protoss Town</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_11P</id>
+        <value>Terran 11 - Upper Protoss Town</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_12N</id>
+        <value>Terran 12 - Nuke Town</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_12P</id>
+        <value>Terran 12 - Phoenix Town</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_12T</id>
+        <value>aBuild UED Panzer
+(Bulky slow-firing support vehicle)</value>
+    </string>
+    <string>
+        <id>AI_CUSTOM_PROTOSS</id>
+        <value>hBuild Hornet
+(Light multi-purpose robotic flyer that ignores armor)</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_LO</id>
+        <value>Hornet Requires:
+Stargate</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_MED</id>
+        <value>UED Panzer Requires:
+Attached Machine Shop</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_HI</id>
+        <value>Kukulza Requires:
+Spire</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_AREA</id>
+        <value>aMorph Kukulza
+(Powerful Mutalisk strain with an empowered Glaive Wurm)</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_1</id>
+        <value>Revenant Requires:
+Cybernetics Core
+Citadel of Adun</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_2</id>
+        <value>eWarp in Revenant
+(Resurrected Dark Templar warrior hidden in shadows, has a powerful melee attack)</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_3</id>
+        <value>UED Todesritter Requires:
+Armory</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_3R</id>
+        <value>eBuild UED Todesritter
+(Heavy, slow moving mech that can use Charon Rockets)</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_3G</id>
+        <value>sBuild UED Scorpion
+(Slow firing raider unit that can lay mines)</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_4</id>
+        <value>UED EMP Soldier Requires:
+Academy</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_4B</id>
+        <value>UED Phantom Requires:
+Academy, Covert Ops</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_5I</id>
+        <value>aTrain UED Steel Legionnaire
+(Unrelenting, heavy infantry units)</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_5B</id>
+        <value>tTrain UED Phantom
+(Elite sniper unit that can become invisible but can't access Nukes)</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_6</id>
+        <value>eTrain UED EMP Soldier
+(Frontline infantry that releases an EMP blast on death)</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_7</id>
+        <value>UED Valhalla Requires:
+Science Facility
+Attached Control Tower</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_7B</id>
+        <value>sBuild UED Skywing
+(Light rocket fighter that can use Charon Rockets, Detector)</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_7S</id>
+        <value>aBuild UED Valhalla
+(Experimental capital ship)</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_8</id>
+        <value>Dragon Catalyst Requires:
+Yamato Gun Research</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_8B</id>
+        <value>Protoss 8 - Right Protoss Town</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_8D</id>
+        <value>Protoss 8 - Protoss Defenders</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_9</id>
+        <value>Protoss 9 - Ground Zerg</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_9W</id>
+        <value>Protoss 9 - Air Zerg</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_9Y</id>
+        <value>Protoss 9 - Spell Zerg</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_10</id>
+        <value>Protoss 10 - Mini-Towns</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_10C</id>
+        <value>Protoss 10 - Mini-Town Master</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_10O</id>
+        <value>Protoss 10 - Overmind Defenders</value>
+    </string>
+    <string>
+        <id>AI_CUSTOM_ZERG</id>
+        <value>Zerg Custom Level</value>
+    </string>
+    <string>
+        <id>AI_ZERG_LO</id>
+        <value>Zerg Campaign Easy</value>
+    </string>
+    <string>
+        <id>AI_ZERG_MED</id>
+        <value>Zerg Campaign Medium</value>
+    </string>
+    <string>
+        <id>AI_ZERG_HI</id>
+        <value>Zerg Campaign Difficult</value>
+    </string>
+    <string>
+        <id>AI_ZERG_AREA</id>
+        <value>Zerg Campaign Area Town</value>
+    </string>
+    <string>
+        <id>AI_ZERG_1</id>
+        <value>Zerg 1 - Terran Town</value>
+    </string>
+    <string>
+        <id>AI_ZERG_2</id>
+        <value>Zerg 2 - Protoss Town</value>
+    </string>
+    <string>
+        <id>AI_ZERG_3</id>
+        <value>Zerg 3 - Terran Town</value>
+    </string>
+    <string>
+        <id>AI_ZERG_4</id>
+        <value>Zerg 4 - Right Terran Town</value>
+    </string>
+    <string>
+        <id>AI_ZERG_4S</id>
+        <value>Zerg 4 - Lower Terran Town</value>
+    </string>
+    <string>
+        <id>AI_ZERG_5</id>
+        <value>Zerg 5 - incomplete</value>
+    </string>
+    <string>
+        <id>AI_ZERG_6</id>
+        <value>Zerg 6 - Protoss Town</value>
+    </string>
+    <string>
+        <id>AI_ZERG_7G</id>
+        <value>Zerg 7 - Ground Town</value>
+    </string>
+    <string>
+        <id>AI_ZERG_7A</id>
+        <value>Zerg 7 - Air Town</value>
+    </string>
+    <string>
+        <id>AI_ZERG_7S</id>
+        <value>Zerg 7 - Support Town</value>
+    </string>
+    <string>
+        <id>AI_ZERG_8S</id>
+        <value>Zerg 8 - Scout Town</value>
+    </string>
+    <string>
+        <id>AI_ZERG_8T</id>
+        <value>Zerg 8 - Templar Town</value>
+    </string>
+    <string>
+        <id>AI_ZERG_9</id>
+        <value>Zerg 9 - Teal Protoss</value>
+    </string>
+    <string>
+        <id>AI_ZERG_9YL</id>
+        <value>Zerg 9 - Left Yellow Protoss</value>
+    </string>
+    <string>
+        <id>AI_ZERG_9YR</id>
+        <value>Zerg 9 - Right Yellow Protoss</value>
+    </string>
+    <string>
+        <id>AI_ZERG_9OL</id>
+        <value>Zerg 9 - Left Orange Protoss</value>
+    </string>
+    <string>
+        <id>AI_ZERG_9OR</id>
+        <value>Zerg 9 - Right Orange Protoss</value>
+    </string>
+    <string>
+        <id>AI_ZERG_10TL</id>
+        <value>k&#4;Crystal Transducers
+Arbiters regenerate a small amount of Shields and Energy when attacking</value>
+    </string>
+    <string>
+        <id>AI_ZERG_10TR</id>
+        <value>k&#4;Precision Aim
+Skywing Targeting Lasers deal 4+1 Normal damage, benefit from Vehicle Weapons upgrades</value>
+    </string>
+    <string>
+        <id>AI_ZERG_10YL</id>
+        <value>k&#4;Neutron Discharge
+Revenants deal 45+3 single-target Explosive Damage when attacking units in Melee range
+Revenants regain 8 Shields whenever they use Neutron Discharge</value>
+    </string>
+    <string>
+        <id>AI_ZERG_10YR</id>
+        <value>k&#4;Reactive Regeneration
+Sunken Colonies regenerate at double the rate of other Zerg buildings when Tissue Mending is researched</value>
+    </string>
+    <string>
+        <id>AI_ZERG_10R</id>
+        <value>k&#4;Always Strikes Twice
+Valhalla attacks benefit from Plasma Shield upgrades, recover part of their damage as Shields, and deal their damage in two increments</value>
+    </string>
+    <string>
+        <id>AI_DEFAULT_STAGING</id>
+        <value>k&#4;Delayed Payload
+Ghosts' rounds deal 2 additional true damage shortly after penetrating their targets.
+Researching Ocular Implants lets Ghosts identify weakspots in their targets' armor (+2 damage)</value>
+    </string>
+    <string>
+        <id>AI_SUICIDE_MISSION</id>
+        <value>k&#4;HEAT Ammunition
+Panzer attacks deal additional 28+2 normal damage against their primary target
+Panzers can benefit from a Machine Shop upgrade that enables their shields
+Panzers attack 20% faster on full shields</value>
+    </string>
+    <string>
+        <id>AI_SUICIDE_RANDOM</id>
+        <value>k&#4;Unholy Champion
+Todesritters attack faster the longer they keep attacking ground targets, and shoot continuously while moving towards their target</value>
+    </string>
+    <string>
+        <id>AI_DECLARE_ENEMY</id>
+        <value>k&#4;Destiny
+EMP Troopers explode on death, depleting nearby units' shields and energy</value>
+    </string>
+    <string>
+        <id>AI_DECLARE_ALLY</id>
+        <value>k&#4;Rocket Pods
+This unit can use Charon Rockets after they are unlocked by Advanced Rocketry</value>
+    </string>
+    <string>
+        <id>AI_MOVE_TEMPLAR</id>
+        <value>k&#4;Volatile Growth
+Hunter Killers rapidly regenerate their tissues, and spew bursts of acid goblets</value>
+    </string>
+    <string>
+        <id>AI_BECOME_RESCUE</id>
+        <value>k&#4;Shadow Mending
+Zeratul can use void energies to mend the tissues and platings of nearby warriors</value>
+    </string>
+    <string>
+        <id>AI_ENTER_A_BUNKER</id>
+        <value>k&#4;Forged in Flames
+Fenix can adapt to various combat conditions by using different weapons based on range, and inspires nearby units to attack faster</value>
+    </string>
+    <string>
+        <id>AI_VALUE_THIS_AREA</id>
+        <value>k&#4;Fear
+This unit makes some nearby enemies scared, slowing their attack speed</value>
+    </string>
+    <string>
+        <id>AI_CLEAR_COMBAT</id>
+        <value>k&#4;Unchained
+All disables and slows last half as long on this unit</value>
+    </string>
+    <string>
+        <id>AI_DEBUG_1</id>
+        <value>Ensnare:
+   Research at Covert Ops</value>
+    </string>
+    <string>
+        <id>AI_DEBUG_2</id>
+        <value>eResearch Ensnare
+(Phantom ability)</value>
+    </string>
+    <string>
+        <id>AI_DEBUG_3</id>
+        <value>Hallucination:
+   Research at Science Facility</value>
+    </string>
+    <string>
+        <id>AI_DEBUG_4</id>
+        <value>hResearch Hallucination
+(Valhalla ability)</value>
+    </string>
+    <string>
+        <id>AI_DEBUG_5</id>
+        <value>Psionic Storm:
+   Develop at Science Facility</value>
+    </string>
+    <string>
+        <id>AI_DEBUG_1_LOC</id>
+        <value>pResearch Psionic Storm
+(Valhalla ability)</value>
+    </string>
+    <string>
+        <id>AI_DEBUG_2_LOC</id>
+        <value>aSalvage
+(IMMEDIATELY DESTROYS this unit and refunds 25% of its mineral cost)</value>
+    </string>
+    <string>
+        <id>AI_DEBUG_3_LOC</id>
+        <value>Debug Script 3 (location)</value>
+    </string>
+    <string>
+        <id>AI_DEBUG_4_LOC</id>
+        <value>Debug Script 4 (location)</value>
+    </string>
+    <string>
+        <id>AI_DEBUG_5_LOC</id>
+        <value>Debug Script 5 (location)</value>
+    </string>
+    <string>
+        <id>DDS_BAD_BLDG</id>
+        <value>Structure</value>
+    </string>
+    <string>
+        <id>DDS_BAD_BLDG2CONC</id>
+        <value>Structure Wall</value>
+    </string>
+    <string>
+        <id>DDS_BAD_CLIFF</id>
+        <value>Cliff</value>
+    </string>
+    <string>
+        <id>DDS_BAD_HIDIRT</id>
+        <value>High Dirt</value>
+    </string>
+    <string>
+        <id>DDS_BAD_LOGRASS</id>
+        <value>Grass</value>
+    </string>
+    <string>
+        <id>DDS_BAD_HIGRASS</id>
+        <value>High Grass</value>
+    </string>
+    <string>
+        <id>DDS_BAD_LODIRT</id>
+        <value>Dirt</value>
+    </string>
+    <string>
+        <id>DDS_BAD_RUBBLE</id>
+        <value>Rocky Ground</value>
+    </string>
+    <string>
+        <id>DDS_BAD_CONCRETE</id>
+        <value>Asphalt</value>
+    </string>
+    <string>
+        <id>DDS_BAD_WATER</id>
+        <value>Water</value>
+    </string>
+    <string>
+        <id>DDS_BAD_WATERCLF</id>
+        <value>Coastal Cliff</value>
+    </string>
+    <string>
+        <id>DDS_JUNG_JUNGLE</id>
+        <value>Jungle</value>
+    </string>
+    <string>
+        <id>DDS_HIGH_JUNGLE</id>
+        <value>High Jungle</value>
+    </string>
+    <string>
+        <id>DDS_JUNG_RUINS</id>
+        <value>Ruins</value>
+    </string>
+    <string>
+        <id>DDS_HIGH_RUINS</id>
+        <value>High Ruins</value>
+    </string>
+    <string>
+        <id>DDS_JUNG_BLDG2JUNG</id>
+        <value>Temple Wall</value>
+    </string>
+    <string>
+        <id>DDS_HIGH_BLDG2JUNG</id>
+        <value>High Temple Wall</value>
+    </string>
+    <string>
+        <id>DDS_PLAT_DDDARK</id>
+        <value>Dark Platform</value>
+    </string>
+    <string>
+        <id>DDS_PLAT_DDHIGHBLD</id>
+        <value>High Plating</value>
+    </string>
+    <string>
+        <id>DDS_PLAT_DDLOWBLD</id>
+        <value>Plating</value>
+    </string>
+    <string>
+        <id>DDS_PLAT_DDLOWNBLD</id>
+        <value>Platform</value>
+    </string>
+    <string>
+        <id>DDS_PLAT_DDPLATCLIF</id>
+        <value>Platform Wall</value>
+    </string>
+    <string>
+        <id>DDS_PLAT_DDPLATPIT</id>
+        <value>Low Platform</value>
+    </string>
+    <string>
+        <id>DDS_PLAT_DDPLATPITCLIFF</id>
+        <value>Low Platform Wall</value>
+    </string>
+    <string>
+        <id>DDS_PLAT_DDRUSTYEDGE</id>
+        <value>Rusty Pit Wall</value>
+    </string>
+    <string>
+        <id>DDS_PLAT_DDRUSTYPIT</id>
+        <value>Rusty Pit</value>
+    </string>
+    <string>
+        <id>DDS_PLAT_DDSOLARPANEL</id>
+        <value>Solar Array</value>
+    </string>
+    <string>
+        <id>DDS_ASH_DDLOWASH</id>
+        <value>Dirt</value>
+    </string>
+    <string>
+        <id>DDS_ASH_DDHIGHASH</id>
+        <value>High Dirt</value>
+    </string>
+    <string>
+        <id>DDS_ASH_DDROCKS</id>
+        <value>Shale</value>
+    </string>
+    <string>
+        <id>DDS_ASH_HIGHCLIFF</id>
+        <value>Cliff</value>
+    </string>
+    <string>
+        <id>DDS_INSTALL_DDCLEAN</id>
+        <value>Floor</value>
+    </string>
+    <string>
+        <id>DDS_INSTALL_DDCLEAN2ROOF</id>
+        <value>Wall</value>
+    </string>
+    <string>
+        <id>DDS_INSTALL_DDDIRT</id>
+        <value>Substructure</value>
+    </string>
+    <string>
+        <id>DDS_INSTALL_DDDIRT2CLEAN</id>
+        <value>Substructure Wall</value>
+    </string>
+    <string>
+        <id>DDS_INSTALL_DDWALK</id>
+        <value>Plating</value>
+    </string>
+    <string>
+        <id>DDS_BAD_BRIDGE</id>
+        <value>Bridges</value>
+    </string>
+    <string>
+        <id>DDS_JUNGLE_BRIDGES</id>
+        <value>Bridges</value>
+    </string>
+    <string>
+        <id>DDS_PLAT_WALKWAY</id>
+        <value>Elevated Catwalk Ramps</value>
+    </string>
+    <string>
+        <id>DDS_PLAT_BRIDGES</id>
+        <value>Bridges</value>
+    </string>
+    <string>
+        <id>DDS_DESERT_WATER</id>
+        <value>Tar</value>
+    </string>
+    <string>
+        <id>DDS_DESERT_WATERCLIFF</id>
+        <value>Tar Cliff</value>
+    </string>
+    <string>
+        <id>DDS_DESERT_HARDPAN</id>
+        <value>Dirt</value>
+    </string>
+    <string>
+        <id>DDS_DESERT_DRIEDMUD</id>
+        <value>Dried Mud</value>
+    </string>
+    <string>
+        <id>DDS_DESERT_SANDDUNES</id>
+        <value>Sand Dunes</value>
+    </string>
+    <string>
+        <id>DDS_DESERT_ROCKYGROUND</id>
+        <value>Rocky Ground</value>
+    </string>
+    <string>
+        <id>DDS_DESERT_RUINS</id>
+        <value>Crags</value>
+    </string>
+    <string>
+        <id>DDS_DESERT_SANDYSUNKEN</id>
+        <value>Sandy Sunken Pit</value>
+    </string>
+    <string>
+        <id>DDS_DESERT_RESOURCE</id>
+        <value>Compound</value>
+    </string>
+    <string>
+        <id>DDS_DESERT_HIGHDIRT</id>
+        <value>High Dirt</value>
+    </string>
+    <string>
+        <id>DDS_DESERT_HIGHSANDDUNES</id>
+        <value>High Sand Dunes</value>
+    </string>
+    <string>
+        <id>DDS_DESERT_HIGHRUINS</id>
+        <value>High Crags</value>
+    </string>
+    <string>
+        <id>DDS_DESERT_HIGHSANDSUNKEN</id>
+        <value>High Sandy Sunken Pit</value>
+    </string>
+    <string>
+        <id>DDS_DESERT_HIGHRESOURCE</id>
+        <value>High Compound</value>
+    </string>
+    <string>
+        <id>DDS_ICE_WATER</id>
+        <value>Water</value>
+    </string>
+    <string>
+        <id>DDS_ICE_SNOW</id>
+        <value>Snow</value>
+    </string>
+    <string>
+        <id>DDS_ICE_MUD</id>
+        <value>Moguls</value>
+    </string>
+    <string>
+        <id>DDS_ICE_ROUGHSNOW</id>
+        <value>Dirt</value>
+    </string>
+    <string>
+        <id>DDS_ICE_ROCKYSNOW</id>
+        <value>Rocky Snow</value>
+    </string>
+    <string>
+        <id>DDS_ICE_SNOWYRUINS</id>
+        <value>Grass</value>
+    </string>
+    <string>
+        <id>DDS_ICE_SUNKENICE</id>
+        <value>Ice</value>
+    </string>
+    <string>
+        <id>DDS_ICE_OUTPOST</id>
+        <value>Outpost</value>
+    </string>
+    <string>
+        <id>DDS_ICE_HIGHSNOW</id>
+        <value>High Snow</value>
+    </string>
+    <string>
+        <id>DDS_ICE_HIGHROUGHSNOW</id>
+        <value>High Dirt</value>
+    </string>
+    <string>
+        <id>DDS_ICE_HIGHSNOWYRUINS</id>
+        <value>High Grass</value>
+    </string>
+    <string>
+        <id>DDS_ICE_HIGHSUNKENICE</id>
+        <value>High Ice</value>
+    </string>
+    <string>
+        <id>DDS_ICE_HIGHOUTPOST</id>
+        <value>High Outpost</value>
+    </string>
+    <string>
+        <id>DDS_TWILIGHT_WATER</id>
+        <value>Water</value>
+    </string>
+    <string>
+        <id>DDS_TWILIGHT_DIRT</id>
+        <value>Dirt</value>
+    </string>
+    <string>
+        <id>DDS_TWILIGHT_MUD</id>
+        <value>Mud</value>
+    </string>
+    <string>
+        <id>DDS_TWILIGHT_CRACKEDICE</id>
+        <value>Crushed Rock</value>
+    </string>
+    <string>
+        <id>DDS_TWILIGHT_CREVICE</id>
+        <value>Crevices</value>
+    </string>
+    <string>
+        <id>DDS_TWILIGHT_ANCIENTRUINS</id>
+        <value>Flagstones</value>
+    </string>
+    <string>
+        <id>DDS_TWILIGHT_SUNKENGROUND</id>
+        <value>Sunken Ground</value>
+    </string>
+    <string>
+        <id>DDS_TWILIGHT_COMPOUND</id>
+        <value>Basilica</value>
+    </string>
+    <string>
+        <id>DDS_TWILIGHT_HIGHDIRT</id>
+        <value>High Dirt</value>
+    </string>
+    <string>
+        <id>DDS_TWILIGHT_HIGHCRACKEDICE</id>
+        <value>High Crushed Rock</value>
+    </string>
+    <string>
+        <id>DDS_TWILIGHT_HIGHANCIENTRUINS</id>
+        <value>High Flagstones</value>
+    </string>
+    <string>
+        <id>DDS_TWILIGHT_HIGHSUNKENGROUND</id>
+        <value>High Sunken Ground</value>
+    </string>
+    <string>
+        <id>DDS_TWILIGHT_HIGHCOMPOUND</id>
+        <value>High Basilica</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_SUPER</id>
+        <value>Terran Campaign Insane</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_SUPER</id>
+        <value>Protoss Campaign Insane</value>
+    </string>
+    <string>
+        <id>AI_ZERG_SUPER</id>
+        <value>Zerg Campaign Insane</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_ED1</id>
+        <value>Terran 1 - Electronic Distribution</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_ED2</id>
+        <value>Terran 2 - Electronic Distribution</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_ED3</id>
+        <value>Terran 3 - Electronic Distribution</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_SW1</id>
+        <value>Terran 1 - Shareware</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_SW2</id>
+        <value>Terran 2 - Shareware</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_SW3</id>
+        <value>Terran 3 - Shareware</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_SW4</id>
+        <value>Terran 4 - Shareware</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_SW5</id>
+        <value>Terran 5 - Shareware</value>
+    </string>
+    <string>
+        <id>STR_STORM_MISSILE</id>
+        <value>Halo Rockets</value>
+    </string>
+    <string>
+        <id>STR_DEVOURER_PUKE</id>
+        <value>Corrosive Acid</value>
+    </string>
+    <string>
+        <id>STR_LURKER_SPINES</id>
+        <value>Subterranean Spines</value>
+    </string>
+    <string>
+        <id>STR_CORSAIR_LASER</id>
+        <value>Neutron Flare</value>
+    </string>
+    <string>
+        <id>STR_MIND_CONTROL</id>
+        <value>Mind Control</value>
+    </string>
+    <string>
+        <id>STR_HEAL_TECH</id>
+        <value>Healing</value>
+    </string>
+    <string>
+        <id>STR_CURE_TECH</id>
+        <value>Restoration</value>
+    </string>
+    <string>
+        <id>STR_MYOPIA_TECH</id>
+        <value>Optical Flare</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_CURE</id>
+        <value>rResearch Restoration
+(Medic ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_MYOPIA</id>
+        <value>fResearch Optical Flare
+(Medic ability)</value>
+    </string>
+    <string>
+        <id>STR_HEAL</id>
+        <value>aHeal
+Heals 2 HP per 1 Energy for the affected Organic unit</value>
+    </string>
+    <string>
+        <id>STR_CURE</id>
+        <value>rRestoration
+Removes all negative debuffs from the target unit</value>
+    </string>
+    <string>
+        <id>STR_MYOPIA</id>
+        <value>fOptical Flare
+Reduces the target units' Vision Range to 0, removes its Detection</value>
+    </string>
+    <string>
+        <id>STR_CURE_REQ</id>
+        <value>Restoration:
+   Research at Academy</value>
+    </string>
+    <string>
+        <id>STR_MYOPIA_REQ</id>
+        <value>Optical Flare:
+   Research at Academy</value>
+    </string>
+    <string>
+        <id>STR_LURKERASPECT</id>
+        <value>Lurker Aspect</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_LURKERASPECT</id>
+        <value>lEvolve Lurker Aspect
+(Hydralisk ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_LURKERASPECT_REQ</id>
+        <value>Lurker Aspect:
+   Requires Lair</value>
+    </string>
+    <string>
+        <id>STR_DISRUPTOR_TECH</id>
+        <value>Disruption Web</value>
+    </string>
+    <string>
+        <id>STR_MINDCONTROL_TECH</id>
+        <value>Mind Control</value>
+    </string>
+    <string>
+        <id>STR_SUMMON_DARCHON_TECH</id>
+        <value>Dark Archon Meld</value>
+    </string>
+    <string>
+        <id>STR_PSYFEEDBACK_TECH</id>
+        <value>Feedback</value>
+    </string>
+    <string>
+        <id>STR_PARALIZE</id>
+        <value>Maelstrom</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_DISRUPTOR</id>
+        <value>dDevelop Disruption Web
+(Corsair ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_MINDCONTROL</id>
+        <value>mDevelop Mind Control
+(Dark Archon ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_PSYFEEDBACK</id>
+        <value>fDevelop Feedback
+(Dark Archon ability)</value>
+    </string>
+    <string>
+        <id>STR_RSRCH_PARALIZE</id>
+        <value>eDevelop Maelstrom
+(Dark Archon ability)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_P_DARCHON</id>
+        <value>rDark Archon Meld</value>
+    </string>
+    <string>
+        <id>STR_DISRUPTOR</id>
+        <value>dDisruption Web
+Creates a weapon-disabling zone on the ground</value>
+    </string>
+    <string>
+        <id>STR_MINDCONTROL</id>
+        <value>cMind Control
+Dominates the target unit to fight for you</value>
+    </string>
+    <string>
+        <id>STR_PSYFEEDBACK</id>
+        <value>fFeedback
+Shocks the target Caster, removing all Energy and dealing that much damage</value>
+    </string>
+    <string>
+        <id>STR_USEPARALIZE</id>
+        <value>eMaelstrom
+Incapacitates Organic units in an area for 176 frames</value>
+    </string>
+    <string>
+        <id>STR_DISRUPTOR_REQ</id>
+        <value>Disruption Web:
+   Develop at Fleet Beacon</value>
+    </string>
+    <string>
+        <id>STR_MINDCONTROL_REQ</id>
+        <value>Mind Control:
+   Research at Templar Archives</value>
+    </string>
+    <string>
+        <id>STR_DARCHON0_REQ</id>
+        <value>Dark Archon Meld:
+   Research at Templar Archives</value>
+    </string>
+    <string>
+        <id>STR_DARCHON1_REQ</id>
+        <value>Dark Archon Warp:
+   Select 2 or more Dark Templars</value>
+    </string>
+    <string>
+        <id>STR_PSYFEEDBACK_REQ</id>
+        <value>Feedback:
+   No requirement</value>
+    </string>
+    <string>
+        <id>STR_PARALIZE_REQ</id>
+        <value>Maelstrom:
+   Develop at Templar Archives</value>
+    </string>
+    <string>
+        <id>STR_MEDIC_ENERGY</id>
+        <value>Caduceus Reactor</value>
+    </string>
+    <string>
+        <id>STR_MISSILE_BOOST</id>
+        <value>Advanced Rocketry</value>
+    </string>
+    <string>
+        <id>STR_ULTRA_SPEED</id>
+        <value>Anabolic Synthesis</value>
+    </string>
+    <string>
+        <id>STR_ULTRA_ARMOR</id>
+        <value>Chitinous Plating</value>
+    </string>
+    <string>
+        <id>STR_CORSAIR_ENERGY</id>
+        <value>Argus Jewel</value>
+    </string>
+    <string>
+        <id>STR_DARCHON_ENERGY</id>
+        <value>Argus Talisman</value>
+    </string>
+    <string>
+        <id>STR_UP_MEDIC_ENERGY</id>
+        <value>dResearch Caduceus Reactor
+(Provides Medics with rapid regeneration below 25 energy, limits max energy to 100)</value>
+    </string>
+    <string>
+        <id>STR_UP_T_MISSILE_BOOST</id>
+        <value>cResearch Advanced Rocketry
+(Enhances units that use rockets)</value>
+    </string>
+    <string>
+        <id>STR_UP_Z_ULTRA_SPEED</id>
+        <value>aEvolve Anabolic Synthesis
+(Faster Ultralisk Movement
+Faster Ultralisk regen on creep)</value>
+    </string>
+    <string>
+        <id>STR_UP_Z_ULTRA_ARMOR</id>
+        <value>cEvolve Chitinous Plating
+(Improved Ultralisk Armor)</value>
+    </string>
+    <string>
+        <id>STR_UP_CORSAIR_ENERGY</id>
+        <value>jDevelop Argus Jewel
+(+50 Corsair energy)</value>
+    </string>
+    <string>
+        <id>STR_UP_DARCHON_ENERGY</id>
+        <value>tDevelop Argus Talisman
+(+50 Dark Archon max energy 
+HP and Mana Regen for Nerazim
+Decreased Khalai Shield Regen)</value>
+    </string>
+    <string>
+        <id>STR_UP_T_MISSILE_BOOST_REQ</id>
+        <value>Research Charon Rocket Battery:
+   Requires Armory</value>
+    </string>
+    <string>
+        <id>STR_DEVOURER_ASPECT</id>
+        <value>dDevourer Aspect
+(Anti-air support strain)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_Z_LURKER</id>
+        <value>lMorph to Lurker
+(Ambusher strain)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_T_MEDIC</id>
+        <value>cTrain Medic
+(Support healer caster)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_T_FRIGATE</id>
+        <value>yBuild Valkyrie
+(Anti-air area control frigate)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_P_CORSAIR</id>
+        <value>oWarp in Corsair
+(Anti-air area denial fighter)</value>
+    </string>
+    <string>
+        <id>STR_MAKE_P_DTEMPLAR</id>
+        <value>kWarp in Dark Templar
+(Invisible Nerazim warrior)</value>
+    </string>
+    <string>
+        <id>STR_MEDIC_REQ</id>
+        <value>UED Medic Requires:
+   Academy</value>
+    </string>
+    <string>
+        <id>STR_FRIGATE_REQ</id>
+        <value>UED Valkyrie Requires:
+   Attached Control Tower
+   Armory</value>
+    </string>
+    <string>
+        <id>STR_DTEMPLAR_REQ</id>
+        <value>Dark Templar Requires:
+   Templar Archives</value>
+    </string>
+    <string>
+        <id>STR_DEVOURER_REQ</id>
+        <value>Devourer Aspect Requires:
+   Greater Spire</value>
+    </string>
+    <string>
+        <id>STR_LURKER_REQ</id>
+        <value>Lurker Aspect:
+   Evolve at Hydralisk Den</value>
+    </string>
+    <string>
+        <id>STR_MYOPIA_LBL</id>
+        <value>Blind</value>
+    </string>
+    <string>
+        <id>STR_CRUNCHY_DAMAGE</id>
+        <value>Acid Spores</value>
+    </string>
+    <string>
+        <id>STR_MISSILESTORM_LBL</id>
+        <value>per rocket</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK</id>
+        <value>Recruit</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_1</id>
+        <value>Private</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_2</id>
+        <value>Private</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_3</id>
+        <value>1st Lieutenant</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_4</id>
+        <value>Corporal</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_5</id>
+        <value>Specialist</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_6</id>
+        <value>Sergeant</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_7</id>
+        <value>First Sergeant</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_8</id>
+        <value>Master Sergeant</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_9</id>
+        <value>Warrant Officer</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_10</id>
+        <value>Captain</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_11</id>
+        <value>Major</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_12</id>
+        <value>First Sergeant</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_13</id>
+        <value>Sergeant Major</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_14</id>
+        <value>Colonel</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_15</id>
+        <value>Commodore</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_16</id>
+        <value>Lt Commander</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_17</id>
+        <value>Infested Slave</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_18</id>
+        <value>Lieutenant</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_19</id>
+        <value>General</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_20</id>
+        <value>Captain Raynor</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_21</id>
+        <value>General Duke</value>
+    </string>
+    <string>
+        <id>STR_FIRST_TERRAN_RANK_22</id>
+        <value>Admiral</value>
+    </string>
+    <string>
+        <id>STR_HEAL_ERR</id>
+        <value>Must target injured non-mechanical ground units</value>
+    </string>
+    <string>
+        <id>STR_MINDCONTROL_ERR</id>
+        <value>Invalid target.</value>
+    </string>
+    <string>
+        <id>STR_MINDCONTROL_TARGET_ERR</id>
+        <value>Must target enemy units</value>
+    </string>
+    <string>
+        <id>STR_PARALIZE_ERR</id>
+        <value>Must target non-mechanical units.</value>
+    </string>
+    <string>
+        <id>STR_MYOPIA_ERR</id>
+        <value>Unable to target structure.</value>
+    </string>
+    <string>
+        <id>STR_PSYFEEDBACK_ERR</id>
+        <value>Must target units with energy.</value>
+    </string>
+    <string>
+        <id>STR_ORDER_MEDIC</id>
+        <value>Medic</value>
+    </string>
+    <string>
+        <id>STR_ORDER_MEDIC_HEAL</id>
+        <value>Medic Heal</value>
+    </string>
+    <string>
+        <id>STR_ORDER_MEDIC_CURE</id>
+        <value>Restoration</value>
+    </string>
+    <string>
+        <id>STR_ORDER_CAST_DISRUPTOR</id>
+        <value>Cast Disruption Web</value>
+    </string>
+    <string>
+        <id>STR_ORDER_MINDCONTROL</id>
+        <value>Cast Mind Control</value>
+    </string>
+    <string>
+        <id>STR_ORDER_SUMMON_DARCHON</id>
+        <value>Warping Dark Archon</value>
+    </string>
+    <string>
+        <id>STR_ORDER_PSYFEEDBACK</id>
+        <value>Cast Feedback</value>
+    </string>
+    <string>
+        <id>STR_ORDER_MYOPIA</id>
+        <value>Cast Optical Flare</value>
+    </string>
+    <string>
+        <id>STR_ORDER_PARALIZE</id>
+        <value>Cast Shockwave</value>
+    </string>
+    <string>
+        <id>STR_ORDER_MEDIC_HEALMOVE</id>
+        <value>Heal Move</value>
+    </string>
+    <string>
+        <id>STR_ORDER_MEDIC_HOLDPOS</id>
+        <value>Medic Hold Position</value>
+    </string>
+    <string>
+        <id>STR_ORDER_JUNK_YARD_DOG</id>
+        <value>Junk Yard Dog</value>
+    </string>
+    <string>
+        <id>AI_CUSTOM_TERRANX</id>
+        <value>Terran Expansion Custom Level</value>
+    </string>
+    <string>
+        <id>AI_CUSTOM_PROTOSSX</id>
+        <value>Protoss Expansion Custom Level</value>
+    </string>
+    <string>
+        <id>AI_CUSTOM_ZERGX</id>
+        <value>Zerg Expansion Custom Level</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B1A</id>
+        <value>Brood Wars Protoss 1 - Town A</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B1B</id>
+        <value>Brood Wars Protoss 1 - Town B</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B1C</id>
+        <value>Brood Wars Protoss 1 - Town C</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B1D</id>
+        <value>Brood Wars Protoss 1 - Town D</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B1E</id>
+        <value>Brood Wars Protoss 1 - Town E</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B1F</id>
+        <value>Brood Wars Protoss 1 - Town F</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B2A</id>
+        <value>Brood Wars Protoss 2 - Town A</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B2B</id>
+        <value>Brood Wars Protoss 2 - Town B</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B2C</id>
+        <value>Brood Wars Protoss 2 - Town C</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B2D</id>
+        <value>Brood Wars Protoss 2 - Town D</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B2E</id>
+        <value>Brood Wars Protoss 2 - Town E</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B2F</id>
+        <value>Brood Wars Protoss 2 - Town F</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B3A</id>
+        <value>Brood Wars Protoss 3 - Town A</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B3B</id>
+        <value>Brood Wars Protoss 3 - Town B</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B3C</id>
+        <value>Brood Wars Protoss 3 - Town C</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B3D</id>
+        <value>Brood Wars Protoss 3 - Town D</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B3E</id>
+        <value>Brood Wars Protoss 3 - Town E</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B3F</id>
+        <value>Brood Wars Protoss 3 - Town F</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B4A</id>
+        <value>Brood Wars Protoss 4 - Town A</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B4B</id>
+        <value>Brood Wars Protoss 4 - Town B</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B4C</id>
+        <value>Brood Wars Protoss 4 - Town C</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B4D</id>
+        <value>Brood Wars Protoss 4 - Town D</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B4E</id>
+        <value>Brood Wars Protoss 4 - Town E</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B4F</id>
+        <value>Brood Wars Protoss 4 - Town F</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B5A</id>
+        <value>Brood Wars Protoss 5 - Town A</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B5B</id>
+        <value>Brood Wars Protoss 5 - Town B</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B5C</id>
+        <value>Brood Wars Protoss 5 - Town C</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B5D</id>
+        <value>Brood Wars Protoss 5 - Town D</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B5E</id>
+        <value>Brood Wars Protoss 5 - Town E</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B5F</id>
+        <value>Brood Wars Protoss 5 - Town F</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B6A</id>
+        <value>Brood Wars Protoss 6 - Town A</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B6B</id>
+        <value>Brood Wars Protoss 6 - Town B</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B6C</id>
+        <value>Brood Wars Protoss 6 - Town C</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B6D</id>
+        <value>Brood Wars Protoss 6 - Town D</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B6E</id>
+        <value>Brood Wars Protoss 6 - Town E</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B6F</id>
+        <value>Brood Wars Protoss 6 - Town F</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B7A</id>
+        <value>Brood Wars Protoss 7 - Town A</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B7B</id>
+        <value>Brood Wars Protoss 7 - Town B</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B7C</id>
+        <value>Brood Wars Protoss 7 - Town C</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B7D</id>
+        <value>Brood Wars Protoss 7 - Town D</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B7E</id>
+        <value>Brood Wars Protoss 7 - Town E</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B7F</id>
+        <value>Brood Wars Protoss 7 - Town F</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B8A</id>
+        <value>Targeting Laser</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B8B</id>
+        <value>Brood Wars Protoss 8 - Town B</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B8C</id>
+        <value>Brood Wars Protoss 8 - Town C</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B8D</id>
+        <value>Brood Wars Protoss 8 - Town D</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B8E</id>
+        <value>Brood Wars Protoss 8 - Town E</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_B8F</id>
+        <value>Brood Wars Protoss 8 - Town F</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B1A</id>
+        <value>Brood Wars Terran 1 - Town A</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B1B</id>
+        <value>Brood Wars Terran 1 - Town B</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B1C</id>
+        <value>Brood Wars Terran 1 - Town C</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B1D</id>
+        <value>Brood Wars Terran 1 - Town D</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B1E</id>
+        <value>Brood Wars Terran 1 - Town E</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B1F</id>
+        <value>Brood Wars Terran 1 - Town F</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B2A</id>
+        <value>Brood Wars Terran 2 - Town A</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B2B</id>
+        <value>Brood Wars Terran 2 - Town B</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B2C</id>
+        <value>Brood Wars Terran 2 - Town C</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B2D</id>
+        <value>Brood Wars Terran 2 - Town D</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B2E</id>
+        <value>Brood Wars Terran 2 - Town E</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B2F</id>
+        <value>Brood Wars Terran 2 - Town F</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B3A</id>
+        <value>Brood Wars Terran 3 - Town A</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B3B</id>
+        <value>Brood Wars Terran 3 - Town B</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B3C</id>
+        <value>Brood Wars Terran 3 - Town C</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B3D</id>
+        <value>Brood Wars Terran 3 - Town D</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B3E</id>
+        <value>Brood Wars Terran 3 - Town E</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B3F</id>
+        <value>Brood Wars Terran 3 - Town F</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B4A</id>
+        <value>Brood Wars Terran 4 - Town A</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B4B</id>
+        <value>Brood Wars Terran 4 - Town B</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B4C</id>
+        <value>Brood Wars Terran 4 - Town C</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B4D</id>
+        <value>Brood Wars Terran 4 - Town D</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B4E</id>
+        <value>Brood Wars Terran 4 - Town E</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B4F</id>
+        <value>Brood Wars Terran 4 - Town F</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B5A</id>
+        <value>Brood Wars Terran 5 - Town A</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B5B</id>
+        <value>Brood Wars Terran 5 - Town B</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B5C</id>
+        <value>Brood Wars Terran 5 - Town C</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B5D</id>
+        <value>Brood Wars Terran 5 - Town D</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B5E</id>
+        <value>Brood Wars Terran 5 - Town E</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B5F</id>
+        <value>Brood Wars Terran 5 - Town F</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B6A</id>
+        <value>Brood Wars Terran 6 - Town A</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B6B</id>
+        <value>Brood Wars Terran 6 - Town B</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B6C</id>
+        <value>Brood Wars Terran 6 - Town C</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B6D</id>
+        <value>Brood Wars Terran 6 - Town D</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B6E</id>
+        <value>Brood Wars Terran 6 - Town E</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B6F</id>
+        <value>Brood Wars Terran 6 - Town F</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B7A</id>
+        <value>Brood Wars Terran 7 - Town A</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B7B</id>
+        <value>Brood Wars Terran 7 - Town B</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B7C</id>
+        <value>Brood Wars Terran 7 - Town C</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B7D</id>
+        <value>Brood Wars Terran 7 - Town D</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B7E</id>
+        <value>Brood Wars Terran 7 - Town E</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B7F</id>
+        <value>Brood Wars Terran 7 - Town F</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B8A</id>
+        <value>Brood Wars Terran 8 - Town A</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B8B</id>
+        <value>Brood Wars Terran 8 - Town B</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B8C</id>
+        <value>Brood Wars Terran 8 - Town C</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B8D</id>
+        <value>Brood Wars Terran 8 - Town D</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B8E</id>
+        <value>iTrain Civilian</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_B8F</id>
+        <value>Brood Wars Terran 8 - Town F</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B1A</id>
+        <value>Brood Wars Zerg 1 - Town A</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B1B</id>
+        <value>Brood Wars Zerg 1 - Town B</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B1C</id>
+        <value>Brood Wars Zerg 1 - Town C</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B1D</id>
+        <value>Brood Wars Zerg 1 - Town D</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B1E</id>
+        <value>Brood Wars Zerg 1 - Town E</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B1F</id>
+        <value>Brood Wars Zerg 1 - Town F</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B2A</id>
+        <value>Brood Wars Zerg 2 - Town A</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B2B</id>
+        <value>Brood Wars Zerg 2 - Town B</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B2C</id>
+        <value>Brood Wars Zerg 2 - Town C</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B2D</id>
+        <value>Brood Wars Zerg 2 - Town D</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B2E</id>
+        <value>Brood Wars Zerg 2 - Town E</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B2F</id>
+        <value>Brood Wars Zerg 2 - Town F</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B3A</id>
+        <value>Brood Wars Zerg 3 - Town A</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B3B</id>
+        <value>Brood Wars Zerg 3 - Town B</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B3C</id>
+        <value>Brood Wars Zerg 3 - Town C</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B3D</id>
+        <value>Brood Wars Zerg 3 - Town D</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B3E</id>
+        <value>Brood Wars Zerg 3 - Town E</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B3F</id>
+        <value>Brood Wars Zerg 3 - Town F</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B4A</id>
+        <value>Brood Wars Zerg 4 - Town A</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B4B</id>
+        <value>Brood Wars Zerg 4 - Town B</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B4C</id>
+        <value>Brood Wars Zerg 4 - Town C</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B4D</id>
+        <value>Brood Wars Zerg 4 - Town D</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B4E</id>
+        <value>Brood Wars Zerg 4 - Town E</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B4F</id>
+        <value>Brood Wars Zerg 4 - Town F</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B5A</id>
+        <value>Brood Wars Zerg 5 - Town A</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B5B</id>
+        <value>Brood Wars Zerg 5 - Town B</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B5C</id>
+        <value>Brood Wars Zerg 5 - Town C</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B5D</id>
+        <value>Brood Wars Zerg 5 - Town D</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B5E</id>
+        <value>Brood Wars Zerg 5 - Town E</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B5F</id>
+        <value>Brood Wars Zerg 5 - Town F</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B6A</id>
+        <value>Brood Wars Zerg 6 - Town A</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B6B</id>
+        <value>Brood Wars Zerg 6 - Town B</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B6C</id>
+        <value>Brood Wars Zerg 6 - Town C</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B6D</id>
+        <value>Brood Wars Zerg 6 - Town D</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B6E</id>
+        <value>Brood Wars Zerg 6 - Town E</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B6F</id>
+        <value>Brood Wars Zerg 6 - Town F</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B7A</id>
+        <value>Brood Wars Zerg 7 - Town A</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B7B</id>
+        <value>Brood Wars Zerg 7 - Town B</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B7C</id>
+        <value>Brood Wars Zerg 7 - Town C</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B7D</id>
+        <value>Brood Wars Zerg 7 - Town D</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B7E</id>
+        <value>Brood Wars Zerg 7 - Town E</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B7F</id>
+        <value>Brood Wars Zerg 7 - Town F</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B8A</id>
+        <value>Brood Wars Zerg 8 - Town A</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B8B</id>
+        <value>Brood Wars Zerg 8 - Town B</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B8C</id>
+        <value>Brood Wars Zerg 8 - Town C</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B8D</id>
+        <value>Brood Wars Zerg 8 - Town D</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B8E</id>
+        <value>Brood Wars Zerg 8 - Town E</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B8F</id>
+        <value>Brood Wars Zerg 8 - Town F</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B9A</id>
+        <value>Brood Wars Zerg 9 - Town A</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B9B</id>
+        <value>aEvolve Bone Mastery
+(New Broodlings don't expire, max 64 Broodlings.
+Broodlings move faster on Creep)</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B9C</id>
+        <value>Bone Mastery</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B9D</id>
+        <value>Bone Mastery Requires:
+    Spawn Broodlings
+	Hive</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B9E</id>
+        <value>eResearch Thunder Boosters
+(EMP Troopers move faster, dash when targeting nearby units)</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B9F</id>
+        <value>Thunder Boosters</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B10A</id>
+        <value>Thunder Boosters Require:
+    Academy</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B10B</id>
+        <value>gResearch Gotterdammerung
+(Enables Shield regen for Panzers
+Panzers shoot 20% faster on Full Shields)</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B10C</id>
+        <value>Gotterdammerung</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B10D</id>
+        <value>Gotterdammerung Requires:
+    Machine Shop</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B10E</id>
+        <value>Research Charon Rocket Battery:
+   Requires Armory</value>
+    </string>
+    <string>
+        <id>AI_ZERG_B10F</id>
+        <value>Research Charon Rocket Battery:
+   Requires Armory</value>
+    </string>
+    <string>
+        <id>AI_ZERG_LOX</id>
+        <value>Lateral Spikes Require:
+    Lurker Aspect Research, Hive</value>
+    </string>
+    <string>
+        <id>AI_ZERG_MEDX</id>
+        <value>eEvolve Lateral Spikes
+(Lurkers move and burrow faster)</value>
+    </string>
+    <string>
+        <id>AI_ZERG_HIX</id>
+        <value>Bionanites</value>
+    </string>
+    <string>
+        <id>AI_ZERG_AREAX</id>
+        <value>Bionanites Require:
+    Stim Packs</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_LOX</id>
+        <value>bResearch Bionanites
+(Nanites repair and heal units around Science Vessels at the cost of slowing down energy regen
+Multiple nanite fields interfere with eachother and damage other Vessels)</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_MEDX</id>
+         <value>Crystalline Cores</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_HIX</id>
+         <value>Crystalline Cores Require:
+		 Templar Archives</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_AREAX</id>
+         <value>rDevelop Crystaline Cores
+(Faster Robotic unit movement, Casters cannot gain or keep Energy)</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_LOX</id>
+        <value>Tissue Mending</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_MEDX</id>
+        <value>One with the Khala</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_HIX</id>
+        <value>oDevelop One with the Khala
+(Khalai units restore shields to nearby Khalai units after attacking, 
+slower Nerazim shield regen and combat Robotics movement)</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_AREAX</id>
+        <value>Expansion Terran Campaign Area Town</value>
+    </string>
+    <string>
+        <id>AI_TERRAN_SUPERX</id>
+        <value>nEvolve Tissue Mending
+(Units and Colonies on Creep regenerate life faster
+bonus doubled for Burrowed units)</value>
+    </string>
+    <string>
+        <id>AI_PROTOSS_SUPERX</id>
+        <value>Staballoy Armor</value>
+    </string>
+    <string>
+        <id>AI_ZERG_SUPERX</id>
+        <value>aResearch Staballoy Armor
+(Mechanical unit regen)</value>
+    </string>
+    <string>
+        <id>AI_SET_COMMAND_TARGET</id>
+        <value>Field Hospitals</value>
+    </string>
+    <string>
+        <id>AI_SET_UNIT_PATROL</id>
+        <value>dResearch Field Hospitals
+(Bio regen aura for Barracks)</value>
+    </string>
+    <string>
+        <id>AI_ENTER_TRANSPORTSTR</id>
+        <value>Acid Reabsorption</value>
+    </string>
+    <string>
+        <id>AI_EXIT_TRANSPORTSTR</id>
+        <value>Acid Reabsorption Requires:
+   Hive</value>
+    </string>
+    <string>
+        <id>AI_SHAREVISION_0</id>
+        <value>aEvolve Acid Reabsorption
+(Faster Hydralisk Attack)</value>
+    </string>
+    <string>
+        <id>AI_SHAREVISION_1</id>
+        <value>Voracity</value>
+    </string>
+    <string>
+        <id>AI_SHAREVISION_2</id>
+        <value>Voracity Requires:
+   Defiler Mound</value>
+    </string>
+    <string>
+        <id>AI_SHAREVISION_3</id>
+        <value>oEvolve Voracity
+(Ultralisks heal on attack, heal more on creep)</value>
+    </string>
+    <string>
+        <id>AI_SHAREVISION_4</id>
+        <value>Panacea</value>
+    </string>
+    <string>
+        <id>AI_SHAREVISION_5</id>
+        <value>Panacea Requires:
+	Stim Packs Research</value>
+    </string>
+    <string>
+        <id>AI_SHAREVISION_6</id>
+        <value>nResearch Panacea
+(Stimmed units regenerate Health over buff duration depending on Infantry Armor upgrades)</value>
+    </string>
+    <string>
+        <id>AI_SHAREVISION_7</id>
+        <value>Advanced Mechanics</value>
+    </string>
+    <string>
+        <id>AI_UNSHAREVISION_0</id>
+        <value>Advanced Mechanics Require:
+	Science Facility</value>
+    </string>
+    <string>
+        <id>AI_UNSHAREVISION_1</id>
+        <value>cResearch Advanced Mechanics
+(Vultures attack faster, Goliaths move faster, Siege Tanks deploy faster)</value>
+    </string>
+    <string>
+        <id>AI_UNSHAREVISION_2</id>
+        <value>Safety Protocols</value>
+    </string>
+    <string>
+        <id>AI_UNSHAREVISION_3</id>
+         <value>aResearch Safety Protocols
+(Phantom, Scorpion, EMP Soldier, Skywing and Todesritter regenerate shields at a higher rate)</value>
+    </string>
+    <string>
+        <id>AI_UNSHAREVISION_4</id>
+        <value>Parasitic Symbiosis</value>
+    </string>
+    <string>
+        <id>AI_UNSHAREVISION_5</id>
+        <value>pEvolve Parasitic Symbiosis
+(Devourers spawn a Scourge on death)</value>
+    </string>
+    <string>
+        <id>AI_UNSHAREVISION_6</id>
+        <value>Overclocking</value>
+    </string>
+    <string>
+        <id>AI_UNSHAREVISION_7</id>
+        <value>Overclocking Requires:
+	Science Facility</value>
+    </string>
+    <string>
+        <id>AI_NUKE_HERESTR</id>
+        <value>oResearch Overclocking
+(Wraiths consume energy on attack, attack faster above 25 energy)</value>
+    </string>
+    <string>
+        <id>AI_HARASS_HERESTR</id>
+        <value>AI Harass Here</value>
+    </string>
+    <string>
+        <id>AI_STR_JUNK_YARD_DOG</id>
+        <value>Lateral Spikes</value>
+    </string>
+    <string>
+        <id>STR_VIEWPLAYERS</id>
+        <value>View Players</value>
+    </string>
+    <string>
+        <id>STR_PLAYBACK_HELP_SPEEDUP</id>
+        <value>uSpeed Up</value>
+    </string>
+    <string>
+        <id>STR_PLAYBACK_HELP_PLAY</id>
+        <value>pPlay</value>
+    </string>
+    <string>
+        <id>STR_PLAYBACK_HELP_PAUSE</id>
+        <value>pPause</value>
+    </string>
+    <string>
+        <id>STR_PLAYBACK_HELP_SLOWDOWN</id>
+        <value>dSlow Down</value>
+    </string>
+    <string>
+        <id>STR_REPLAY_PROGRESS</id>
+        <value>Replay Progress</value>
+    </string>
+    <string>
+        <id>STR_REPLAY_PAUSED</id>
+        <value>Paused</value>
+    </string>
+    <string>
+        <id>STR_UNLIMITED</id>
+        <value>Unlimited</value>
+    </string>
+    <string>
+        <id>STR_REPLAY_SEEKING</id>
+        <value>Seeking To: %s</value>
+    </string>
+    <string>
+        <id>STR_APM_COL_PLAYER</id>
+        <value>Player</value>
+    </string>
+    <string>
+        <id>STR_APM_COL_APM</id>
+        <value>APM</value>
+    </string>
+    <string>
+        <id>STR_APM_COL_EPM</id>
+        <value>EPM</value>
+    </string>
+		<string>
+        <id>FIRST_UNIT_STRING-261</id>
+        <value>Taar Atril</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-262</id>
+        <value>Jim Raynor</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-263</id>
+        <value>Norad II</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-264</id>
+        <value>Confederate Battlecruiser</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-265</id>
+        <value>Leviathan</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-266</id>
+        <value>Graff Zeppelin</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-267</id>
+        <value>Bismarck</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-268</id>
+        <value>Stalingrad</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-269</id>
+        <value>UNUSED</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-270</id>
+        <value>Infested Kerrigan</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-271</id>
+        <value>Infested Kerrigan</value>
+    </string>
+</strings>
