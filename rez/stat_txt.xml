@@ -1349,7 +1349,9 @@ Halves attack cooldown, increases movement speed by 50% for 296 frames</value>
     <string>
         <id>STR_USEMAGNA</id>
         <value>lLockdown
-Immobilizes target Mechanical unit for 408 frames</value>
+Immobilizes target Mechanical unit for 408 frames
+Damages mechanical parts, dealing 20 health damage
+over the effect duration</value>
     </string>
     <string>
         <id>STR_USEMINES</id>
@@ -1975,7 +1977,7 @@ lasts 1056 frames</value>
     <string>
         <id>STR_UP_GHOST_SIGHT</id>
         <value>oResearch Ocular Implants
-(Increase Sniper sight range, Ghost ammo explosion damage)</value>
+(Increase Sniper sight and attack range, Ghost ammo explosion damage)</value>
     </string>
     <string>
         <id>STR_UP_GHOST_ENERGY</id>
@@ -4782,7 +4784,7 @@ Valhalla attacks benefit from Plasma Shield upgrades, recover part of their dama
     <string>
         <id>AI_DEFAULT_STAGING</id>
         <value>k&#4;Delayed Payload
-Ghosts' rounds deal 2 additional true damage shortly after penetrating their targets.
+Ghosts' rounds deal 3 additional true damage shortly after penetrating their targets.
 Researching Ocular Implants lets Ghosts identify weakspots in their targets' armor (+2 damage)</value>
     </string>
     <string>
