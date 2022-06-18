@@ -16018,6 +16018,9 @@ LockdownHitLocal00:
 	wait           	2
 	playfram       	11
 	wait           	2
+	if unit.hitpoints < 512 goto LocOverSkip
+	set unit.hitpoints = unit.hitpoints-256
+LocOverSkip:
 	playfram       	12
 	wait           	2
 	playfram       	11
