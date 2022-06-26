@@ -2677,11 +2677,13 @@ lasts 1056 frames</value>
     </string>
     <string>
         <id>STR_BLD_LAIR</id>
-        <value>lMutate into Lair</value>
+        <value>lMutate into Lair
+		(Increases Larvae respawn rate)</value>
     </string>
     <string>
         <id>STR_BLD_HIVE</id>
-        <value>hMutate into Hive</value>
+        <value>hMutate into Hive
+		(Increases Larvae respawn rate)</value>
     </string>
     <string>
         <id>STR_BLD_GREATERSPIRE</id>
@@ -4791,8 +4793,7 @@ Researching Ocular Implants lets Ghosts identify weakspots in their targets' arm
         <id>AI_SUICIDE_MISSION</id>
         <value>k&#4;HEAT Ammunition
 Panzer attacks deal additional 28+2 normal damage against their primary target
-Panzers can benefit from a Machine Shop upgrade that enables their shields
-Panzers attack 20% faster on full shields</value>
+Panzers can benefit from an upgrade that enables their shields and attack 20% faster on full shields</value>
     </string>
     <string>
         <id>AI_SUICIDE_RANDOM</id>
