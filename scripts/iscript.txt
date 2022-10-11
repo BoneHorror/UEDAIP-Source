@@ -15479,11 +15479,19 @@ AirAttkInit    	[NONE]
 # ----------------------------------------------------------------------------- #
 
 PhaseDisruptorInit:
+#	set spritelocal x_off = bullet_x_off # Commented out parts are used for Ulrezaj's Risen
+#	set spritelocal y_off = bullet_y_off
 	playsnd        	99	# Bullet\DragBull.wav
 	wait           	1
 	sigorder       	1
 	wait           	1
 PhaseDisruptorGndAttkInit:
+	#if bullet.weapon_id  == 128  goto uPhaseD
+	#if bullet.weapon_id == 78 goto uPhaDir
+	#if bullet.weapon_id == 145 goto uPhaseD
+	#if bullet.weapon_id == 146 goto uPhaseD
+	if bullet.weapon_id == 121 goto rPhaseD
+	if bullet.weapon_id == 137 goto rPhaseD
 	playfram       	0
 	wait           	1
 	playfram       	1
@@ -15495,14 +15503,64 @@ PhaseDisruptorGndAttkInit:
 	playfram       	4
 	wait           	1
 	goto           	PhaseDisruptorGndAttkInit
+	
+#uPhaseD:
+#	set bullet.order_target_x = bullet.order_target_x + x_off
+#	set flingy.move_target_x = flingy.move_target_x + x_off
+#	set bullet.order_target_y = bullet.order_target_y + y_off
+#	set flingy.move_target_y = flingy.move_target_y + y_off
+#	playfram       	5
+#	wait           	1
+#	playfram       	6
+#	wait           	1
+#	playfram       	7
+#	wait           	1
+#	playfram       	8
+#	wait           	1
+#	playfram       	9
+#	wait           	1
+#	goto           	uPhaseD
 
+rPhaseD:
+	playfram       	10
+	wait           	1
+	playfram       	11
+	wait           	1
+	playfram       	12
+	wait           	1
+	playfram       	13
+	wait           	1
+	playfram       	14
+	wait           	1
+	goto           	rPhaseD
+
+#uPhaDir:
+#	playfram       	5
+#	wait           	1
+#	playfram       	6
+#	wait           	1
+#	playfram       	7
+#	wait           	1
+#	playfram       	8
+#	wait           	1
+#	playfram       	9
+#	wait           	1
+#	goto           	uPhaDir
+	
 PhaseDisruptorDeath:
 	if bullet.weapon_id == 67 goto FnxPDeath
+	if bullet.weapon_id == 145 goto uPhaseDPowerfulDeath
 	imgol          	427 0 0	# Unknown427 (thingy\HKexplod.grp)
 	domissiledmg   	
 	wait           	1
 	end            	
 
+uPhaseDPowerfulDeath:
+	imgol          	444 0 0	
+	domissiledmg   	
+	wait           	1
+	end            	
+	
 FnxPDeath:
 	imgol          	427 0 0	# Unknown427 (thingy\HKexplod.grp)
 	wait			3
@@ -15511,7 +15569,7 @@ FnxPDeath:
 	domissiledmg   	
 	wait           	1
 	end            	
-
+	
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
 # 524 Unknown524 (bullet\epbBul.grp)
@@ -17833,7 +17891,14 @@ Death          	long01
 # ----------------------------------------------------------------------------- #
 
 AntiMatterMissileHitInit:
+	tmprmgraphicstart
 	playsnd        	8	# Misc\ExploMed.wav
+	wait			1
+	if sprite.has_bullet == false goto AMSkipBulletCheck
+	#if (bullet.weapon_id  == 128) || (bullet.weapon_id == 78) || (bullet.weapon_id == 142) || (bullet.weapon_id == 145) || (bullet.weapon_id == 146) goto uExplod
+	if (bullet.weapon_id  == 121) || (bullet.weapon_id == 137) goto rExplod #Revenant special explosion proj
+AMSkipBulletCheck:
+	tmprmgraphicend
 	playfram       	0
 	wait           	1
 	playfram       	1
@@ -17864,7 +17929,70 @@ AntiMatterMissileHitInit:
 	wait           	1
 	end            	
 
+#uExplod:
+#	tmprmgraphicend
+#	playfram       	14
+#	wait           	1
+#	playfram       	15
+#	wait           	1
+#	playfram       	16
+#	wait           	1
+#	playfram       	17
+#	wait           	1
+#	playfram       	18
+#	wait           	1
+#	playfram       	19
+#	wait           	1
+#	playfram       	20
+#	wait           	1
+#	playfram       	21
+#	wait           	1
+#	playfram       	22
+#	wait           	1
+#	playfram       	23
+#	wait           	1
+#	playfram       	24
+#	wait           	1
+#	playfram       	25
+#	wait           	1
+#	playfram       	26
+#	wait           	1
+#	playfram       	27
+#	wait           	1
+#	end       
 
+rExplod:
+	tmprmgraphicend
+	playfram       	28
+	wait           	1
+	playfram       	29
+	wait           	1
+	playfram       	30
+	wait           	1
+	playfram       	31
+	wait           	1
+	playfram       	32
+	wait           	1
+	playfram       	33
+	wait           	1
+	playfram       	34
+	wait           	1
+	playfram       	35
+	wait           	1
+	playfram       	36
+	wait           	1
+	playfram       	37
+	wait           	1
+	playfram       	38
+	wait           	1
+	playfram       	39
+	wait           	1
+	playfram       	40
+	wait           	1
+	playfram       	41
+	wait           	1
+	end       
+	
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
 # 443 ScarabTrail (thingy\HKTrail.grp)
