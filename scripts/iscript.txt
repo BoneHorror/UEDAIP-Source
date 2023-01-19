@@ -15562,13 +15562,11 @@ uPhaseDPowerfulDeath:
 	end            	
 	
 FnxPDeath:
-	imgol          	427 0 0	# Unknown427 (thingy\HKexplod.grp)
+	imgol          	444 0 0	# ScarabExplosion (thingy\psaExplo.grp)
 	wait			3
-	playsnd        	7	# Misc\ExploLrg.wav
-	imgol          	213 0 0	# ProtossBuildingExplosionSmall (thingy\tBangS.grp)       
 	domissiledmg   	
 	wait           	1
-	end            	
+	end              	
 	
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
@@ -18115,10 +18113,13 @@ CursorMarkerGndAttkInit:
 IsId           	289
 Type           	1
 Init           	long00
-Death          	long00
+Death          	SelCircleDeath
 .headerend
 # ----------------------------------------------------------------------------- #
 
+SelCircleDeath:
+	wait           	1
+	end           
 
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
