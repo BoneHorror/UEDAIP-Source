@@ -81,7 +81,7 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_20</id>
-        <value>Captured Marine</value>
+        <value>Infested Marine</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_21</id>
@@ -1545,7 +1545,7 @@ Creates an area of impenetrable Fog that Ranged units cannot attack into</value>
     <string>
         <id>STR_PARASITE</id>
         <value>rParasite
-Causes target unit to share its vision with your Brood</value>
+Target unit shares its vision with your Brood</value>
     </string>
     <string>
         <id>STR_BLOODBOIL</id>
@@ -1673,7 +1673,7 @@ Recalls units from an Area to the Caster after a small delay</value>
     <string>
         <id>STR_STASIS</id>
         <value>tStasis Field
-Freezes units in an area in time after a small delay;
+Freezes units in time within an area, after a small delay;
 lasts 1056 frames</value>
     </string>
     <string>
@@ -2633,69 +2633,83 @@ lasts 1056 frames</value>
     </string>
     <string>
         <id>STR_BLD_HATCHERY</id>
-        <value>hMutate into Hatchery</value>
+        <value>hMutate into Hatchery
+(Produces Larvae capable of morphing into different Zerg strains)</value>
     </string>
     <string>
         <id>STR_BLD_CREEP_COLONY</id>
-        <value>cMutate into Creep Colony</value>
+        <value>cMutate into Creep Colony
+(Morphs into defensive structures. Can be placed off-creep.)</value>
     </string>
     <string>
         <id>STR_BLD_ZEXTRACTOR</id>
-        <value>eMutate into Extractor</value>
+        <value>eMutate into Extractor
+(Vespene harvesting structure)</value>
     </string>
     <string>
         <id>STR_BLD_SPAWNING</id>
-        <value>sMutate into Spawning Pool</value>
+        <value>sMutate into Spawning Pool
+(Allows morphing Zerglings from Larvae)</value>
     </string>
     <string>
         <id>STR_BLD_EVO_CHAMBER</id>
-        <value>vMutate into Evolution Chamber</value>
+        <value>vMutate into Evolution Chamber
+(Contains ground Zerg evolutions)</value>
     </string>
     <string>
         <id>STR_BLD_HYDRA_DEN</id>
-        <value>dMutate into Hydralisk Den</value>
+        <value>dMutate into Hydralisk Den
+(Allows morphing Hydralisks from Larvae)</value>
     </string>
     <string>
         <id>STR_BLD_NYDUS</id>
-        <value>nMutate into Nydus Canal</value>
+        <value>nMutate into Nydus Canal
+(Zerg underground travel network)</value>
     </string>
     <string>
         <id>STR_BLD_SPIRE</id>
-        <value>sMutate into Spire</value>
+        <value>sMutate into Spire
+(Allows morphing Scourge and Mutalisks from Larvae. Contains flyer evolutions.)</value>
     </string>
     <string>
         <id>STR_BLD_NEST</id>
-        <value>qMutate into Queen's Nest</value>
+        <value>qMutate into Queen's Nest
+(Allows morphing Queens from Larvae)</value>
     </string>
     <string>
         <id>STR_BLD_ULTRA_CAVERN</id>
-        <value>uMutate into Ultralisk Cavern</value>
+        <value>uMutate into Ultralisk Cavern
+(Allows morphing Ultralisks from Larvae)</value>
     </string>
     <string>
         <id>STR_BLD_DEFILER_MOUND</id>
-        <value>dMutate into Defiler Mound</value>
+        <value>dMutate into Defiler Mound
+(Allows morphing Defilers from Larvae)</value>
     </string>
     <string>
         <id>STR_BLD_LAIR</id>
         <value>lMutate into Lair
-		(Increases Larvae respawn rate)</value>
+(Enables Zerg to morph advanced structures)</value>
     </string>
     <string>
         <id>STR_BLD_HIVE</id>
         <value>hMutate into Hive
-		(Increases Larvae respawn rate)</value>
+(Enables Zerg to morph more advanced structures)</value>
     </string>
     <string>
         <id>STR_BLD_GREATERSPIRE</id>
-        <value>gMutate into Greater Spire</value>
+        <value>gMutate into Greater Spire
+(Allows Mutalisks to morph into Devourers and Guardians)</value>
     </string>
     <string>
         <id>STR_BLD_SPORE_COLONY</id>
-        <value>eMutate into Spore Colony</value>
+        <value>eMutate into Spore Colony
+(Anti-air defensive structure)</value>
     </string>
     <string>
         <id>STR_BLD_SUNKEN_COLONY</id>
-        <value>uMutate into Sunken Colony</value>
+        <value>uMutate into Sunken Colony
+(Anti-ground defensive structure)</value>
     </string>
     <string>
         <id>STR_NYDUS_EXIT</id>
@@ -2703,139 +2717,173 @@ lasts 1056 frames</value>
     </string>
     <string>
         <id>STR_BLD_NEXUS</id>
-        <value>nWarp in Nexus</value>
+        <value>nWarp in Nexus
+(Structure that warps in Probes)</value>
     </string>
     <string>
         <id>STR_BLD_PYLON</id>
-        <value>pWarp in Pylon</value>
+        <value>pWarp in Pylon
+(Provides supply, as well as power for nearby buildings)</value>
     </string>
     <string>
         <id>STR_BLD_ASSIMILATOR</id>
-        <value>aWarp in Assimilator</value>
+        <value>aWarp in Assimilator
+(Vespene-harvesting structure)</value>
     </string>
     <string>
         <id>STR_BLD_GATEWAY</id>
-        <value>gWarp in Gateway</value>
+        <value>gWarp in Gateway
+(Structure that warps in Protoss infantry units)</value>
     </string>
     <string>
         <id>STR_BLD_FORGE</id>
-        <value>fWarp in Forge</value>
+        <value>fWarp in Forge
+(Structure that upgrades Protoss infantry weapons and protection)</value>
     </string>
     <string>
         <id>STR_BLD_PHOTON</id>
-        <value>cWarp in Photon Cannon</value>
+        <value>cWarp in Photon Cannon
+(Versatile defensive structure)</value>
     </string>
     <string>
         <id>STR_BLD_CYBER_CORE</id>
-        <value>yWarp in Cybernetics Core</value>
+        <value>yWarp in Cybernetics Core
+(Structure that upgrades Protoss plating and air weapons)</value>
     </string>
     <string>
         <id>STR_BLD_SHIELDBATT</id>
-        <value>bWarp in Shield Battery</value>
+        <value>bWarp in Shield Battery
+(Structure that can restore shields of nearby units. More effective when near multiple Pylons.)</value>
     </string>
     <string>
         <id>STR_BLD_ROBOTICS</id>
-        <value>rWarp in Robotics Facility</value>
+        <value>rWarp in Robotics Facility
+(Structure that warps in Robotic units)</value>
     </string>
     <string>
         <id>STR_BLD_OBSERVATORY</id>
-        <value>oWarp in Observatory</value>
+        <value>oWarp in Observatory
+(Allows warping Observers)</value>
     </string>
     <string>
         <id>STR_BLD_CITADEL</id>
-        <value>cWarp in Citadel of Adun</value>
+        <value>cWarp in Citadel of Adun
+(Allows upgrading Khalai units and Zealots)</value>
     </string>
     <string>
         <id>STR_BLD_ARCHIVES</id>
-        <value>tWarp in Templar Archives</value>
+        <value>tWarp in Templar Archives
+(Allows warping Templar)</value>
     </string>
     <string>
         <id>STR_BLD_STARGATE</id>
-        <value>sWarp in Stargate</value>
+        <value>sWarp in Stargate
+(Structure that warps in Protoss ships)</value>
     </string>
     <string>
         <id>STR_BLD_FLEET_BEACON</id>
-        <value>fWarp in Fleet Beacon</value>
+        <value>fWarp in Fleet Beacon
+(Allows warping Carriers)</value>
     </string>
     <string>
         <id>STR_BLD_TRIBUNAL</id>
-        <value>aWarp in Arbiter Tribunal</value>
+        <value>aWarp in Arbiter Tribunal
+(Allows warping Arbiters)</value>
     </string>
     <string>
         <id>STR_BLD_ROBOTICS_BAY</id>
-        <value>bWarp in Robotics Support Bay</value>
+        <value>bWarp in Robotics Support Bay
+(Allows upgrading Robotic units and warping Reavers)</value>
     </string>
     <string>
         <id>STR_BLD_TCOMMANDCTR</id>
-        <value>cBuild Command Center</value>
+        <value>cBuild Command Center
+(Builds SCVs, can have an attachment)</value>
     </string>
     <string>
         <id>STR_BLD_DEPOT</id>
-        <value>sBuild Supply Depot</value>
+        <value>sBuild Supply Depot
+(Salvageable supply structure)</value>
     </string>
     <string>
         <id>STR_BLD_REFINERY</id>
-        <value>rBuild Refinery</value>
+        <value>rBuild Refinery
+(Allows for Vespene harvesting)</value>
     </string>
     <string>
         <id>STR_BLD_BARRACKS</id>
-        <value>bBuild Barracks</value>
+        <value>bBuild Barracks
+(Trains infantry units)</value>
     </string>
     <string>
         <id>STR_BLD_ENGINEERING</id>
-        <value>eBuild Engineering Bay</value>
+        <value>eBuild Engineering Bay
+(Researches Infantry upgrades)</value>
     </string>
     <string>
         <id>STR_BLD_TURRET</id>
-        <value>tBuild Missile Turret</value>
+        <value>tBuild Missile Turret
+(Anti-air defensive structure)</value>
     </string>
     <string>
         <id>STR_BLD_ACADEMY</id>
-        <value>aBuild Academy</value>
+        <value>aBuild Academy
+(Researches advanced Infantry tech)</value>
     </string>
     <string>
         <id>STR_BLD_PILLBOX</id>
-        <value>uBuild Bunker</value>
+        <value>uBuild Bunker
+(Fits and protects up to 4 Infantry units)</value>
     </string>
     <string>
         <id>STR_BLD_FACTORY</id>
-        <value>fBuild Factory</value>
+        <value>fBuild Factory
+(Assembles vehicles)</value>
     </string>
     <string>
         <id>STR_BLD_TSTARPORT</id>
-        <value>sBuild Starport</value>
+        <value>sBuild Starport
+(Assembles starships)</value>
     </string>
     <string>
         <id>STR_BLD_SCIENCE_FAC</id>
-        <value>iBuild Science Facility</value>
+        <value>iBuild Science Facility
+(Researches advanced tech)</value>
     </string>
     <string>
         <id>STR_BLD_ARMORY</id>
-        <value>aBuild Armory</value>
+        <value>aBuild Armory
+(Researches Vehicle and Ship upgrades)</value>
     </string>
     <string>
         <id>STR_BLD_COMSAT</id>
-        <value>cBuild Comsat Station</value>
+        <value>cBuild Comsat Station
+(Can be used to briefly reveal distant areas and cloaked units)</value>
     </string>
     <string>
         <id>STR_BLD_SILO</id>
-        <value>nBuild Nuclear Silo</value>
+        <value>nBuild Nuclear Silo
+(Can store Nuclear Missiles to be used by Ghosts)</value>
     </string>
     <string>
         <id>STR_BLD_DOCKS</id>
-        <value>cBuild Control Tower</value>
+        <value>cBuild Control Tower
+(Contains components needed for advanced Ship construction)</value>
     </string>
     <string>
         <id>STR_BLD_COVERT_OPS</id>
-        <value>cBuild Covert Ops</value>
+        <value>cBuild Covert Ops
+(Contains components needed for Sniper training)</value>
     </string>
     <string>
         <id>STR_BLD_PHYSICS</id>
-        <value>pBuild Physics Lab</value>
+        <value>pBuild Physics Lab
+(Contains components needed for battleship construction)</value>
     </string>
     <string>
         <id>STR_BLD_MACHINE</id>
-        <value>cBuild Machine Shop</value>
+        <value>cBuild Machine Shop
+(Contains components needed for advanced Vehicle construction)</value>
     </string>
     <string>
         <id>STR_MOVE</id>
@@ -4828,7 +4876,7 @@ Fenix can adapt to various combat conditions by using different weapons based on
     <string>
         <id>AI_VALUE_THIS_AREA</id>
         <value>k&#4;Fear
-This unit makes some nearby enemies scared, slowing their attack speed</value>
+This unit horrifies some nearby enemies, slowing their attack speed</value>
     </string>
     <string>
         <id>AI_CLEAR_COMBAT</id>
@@ -5301,7 +5349,7 @@ Removes all negative debuffs from the target unit</value>
     <string>
         <id>STR_MYOPIA</id>
         <value>fOptical Flare
-Reduces the target units' Vision Range to 0, removes its Detection</value>
+Reduces target units' Vision Range to 1, prevents it from Detecting</value>
     </string>
     <string>
         <id>STR_CURE_REQ</id>

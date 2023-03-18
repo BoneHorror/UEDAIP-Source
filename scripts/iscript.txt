@@ -5826,7 +5826,6 @@ Goliath_Base_StarEditInit:
 	playfram       	0x77	# frame set 7
 	goto           	Goliath_Base_Local00
 
-
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
 # 235 GoliathTurret (terran\goliathT.grp)
@@ -5851,9 +5850,8 @@ SpecialState1  	[NONE]
 # ----------------------------------------------------------------------------- #
 
 Goliath_Turret_Init:
-    wait            2
-	if ground_cooldown == 0 goto set_attacked
-Return:
+	set spritelocal attacked = 0
+    wait            1
     if unit_id == 18 goto uGoliath_Turret_Init
     playfram        0x77    # frame set 7
     goto            long00
@@ -5874,10 +5872,6 @@ uGoliath_Turret_Idle:
 	set spritelocal attacked = 0
 	playfram        306 # frame set 7
     goto            long00
-
-set_attacked:
-	set spritelocal attacked = 0
-	goto Return
 
 Goliath_Turret_GndAttkInit:
     if unit_id == 18 goto uGoliath_Turret_GndAttkInit
@@ -11444,6 +11438,7 @@ FnxAttkRpt:
 	playfram       	0x187	# frame set 23
 	wait           	1
 	attackwith     	1
+	set unit.air_cooldown = 55 #in dat weapon 2 (air) is set to same range as this, but its cooldown is still the one that is set against air targets. to work around this, iscript directly sets cd so that we don't have OP aa bombs
 	playfram       	0x176	# frame set 22
 	wait           	1
 	playfram       	0x165	# frame set 21
@@ -15384,6 +15379,7 @@ DualPhotonBlasterHitInit:
 	sigorder       	1
 	wait           	1
 DualPhotonBlasterHitDeath:
+	if bullet.weapon_id == 79 || bullet.weapon_id == 92 || bullet.weapon_id == 87 goto SilentBlasterNoDmg
 	playfram       	0
 	playsnd        	66	# Bullet\BlastGn2.wav
 	domissiledmg   	
@@ -15404,7 +15400,20 @@ DualPhotonBlasterHitDeath:
 	wait           	1
 	end            	
 
+SilentBlasterNoDmg:
+	randcondjmp    	128 SilentBlasterVar
+	playfram       	0
+	wait           	1
+	playfram       	1
+	wait           	1
+	end        
 
+SilentBlasterVar:
+	playfram       	4
+	wait           	1
+	playfram       	5
+	wait           	1
+	end  
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
 # 521 Unknown521 (bullet\hks.grp)
@@ -15460,6 +15469,7 @@ PulseCannonGndAttkInit:
 
 PulseCannonDeath:
 	playsnd        	9	# Misc\ExploSm.wav
+	imgol          	519 0 0	# Photon Blasters img
 	domissiledmg   	
 	wait           	1
 	end            	
@@ -17603,35 +17613,55 @@ ShieldOverlayDeath:
 .headerstart
 IsId           	277
 Type           	1
-Init           	Unknown277Init
-Death          	long01
+Init           	AuraInit
+Death          	AuraDeath
 .headerend
 # ----------------------------------------------------------------------------- #
 
-Unknown277Init:
-	playsnd        	9	# Misc\ExploSm.wav
+AuraInit:
 	playfram       	0
+AuraIdle:
+	wait			3
+	playfram 		1
+	wait			3
+	playfram 		2
+	wait			3
+	playfram 		3
+	wait			3
+	playfram 		4
+	wait			3
+	playfram       	0
+	goto AuraIdle
+	
+AuraDeath:
 	wait           	1
-	playfram       	1
-	wait           	1
-	playfram       	2
-	wait           	1
-	playfram       	3
-	wait           	1
-	playfram       	4
-	wait           	1
-	playfram       	5
-	wait           	1
-	playfram       	6
-	wait           	1
-	playfram       	7
-	wait           	1
-	playfram       	8
-	wait           	1
-	playfram       	9
-	wait           	1
-	end            	
+	end          
+	
+#Aura regen here
 
+#Unknown277Init:
+#	playsnd        	9	# Misc\ExploSm.wav
+#	playfram       	0
+#	wait           	1
+#	playfram       	1
+#	wait           	1
+#	playfram       	2
+#	wait           	1
+#	playfram       	3
+#	wait           	1
+#	playfram       	4
+#	wait           	1
+#	playfram       	5
+#	wait           	1
+#	playfram       	6
+#	wait           	1
+#	playfram       	7
+#	wait           	1
+#	playfram       	8
+#	wait           	1
+#	playfram       	9
+#	wait           	1
+#	end 
 
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
@@ -18286,25 +18316,25 @@ LasersHitDeath:
 .headerstart
 IsId           	295
 Type           	1
-Init           	Unknown295Init
-Death          	Unknown295Death
+Init           	AuraInit
+Death          	AuraDeath
 .headerend
 # ----------------------------------------------------------------------------- #
 
-Unknown295Init:
-	playfram       	0
-	wait           	1
-	playfram       	1
-	wait           	1
-	playfram       	2
-	wait           	1
-	playfram       	3
-	wait           	1
-	playfram       	4
-	wait           	1
-Unknown295Death:
-	wait           	1
-	end            	
+#Unknown295Init:
+#	playfram       	0
+#	wait           	1
+#	playfram       	1
+#	wait           	1
+#	playfram       	2
+#	wait           	1
+#	playfram       	3
+#	wait           	1
+#	playfram       	4
+#	wait           	1
+#Unknown295Death:
+#	wait           	1
+#	end            	
 
 
 # ----------------------------------------------------------------------------- #
