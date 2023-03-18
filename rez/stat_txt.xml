@@ -2689,12 +2689,12 @@ lasts 1056 frames</value>
     <string>
         <id>STR_BLD_LAIR</id>
         <value>lMutate into Lair
-(Enables Zerg to morph advanced structures)</value>
+(Enables Zerg to morph advanced structures and increases Larvae spawn rate)</value>
     </string>
     <string>
         <id>STR_BLD_HIVE</id>
         <value>hMutate into Hive
-(Enables Zerg to morph more advanced structures)</value>
+(Enables Zerg to morph more advanced structures and increases Larvae spawn rate)</value>
     </string>
     <string>
         <id>STR_BLD_GREATERSPIRE</id>
@@ -6470,8 +6470,8 @@ slower Nerazim shield regen and combat Robotics movement)</value>
     <string>
         <id>AI_TERRAN_SUPERX</id>
         <value>nEvolve Tissue Mending
-(Units and Colonies on Creep regenerate life faster
-bonus doubled for Burrowed units)</value>
+(Units and Colonies on Creep regenerate life faster.
+Bonus doubled for Burrowed units)</value>
     </string>
     <string>
         <id>AI_PROTOSS_SUPERX</id>
