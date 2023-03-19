@@ -1,0 +1,414 @@
+<strings>
+    <string>
+        <id>STR_TIP_TUT1</id>
+        <value>UED forces will often be able to access both their Colonial and elite troops.</value>
+    </string>
+    <string>
+        <id>STR_TIP_T1</id>
+        <value>In UEDAIP Vanilla, balance is intentionally different from Brood Wars - this part of the mod attempts to explore how each race could've looked just before they've met and developed more efficient weapons.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G1</id>
+        <value>To toggle subtitles on or off, go to MENU. Under OPTIONS, select SOUND and click on the box marked TOGGLE SUBTITLES.</value>
+    </string>
+    <string>
+        <id>STR_TIP_T2</id>
+        <value>Some maps will read saved data from an earlier map. This may let you gain some extra units, upgrades, or influence one of your opponents in some way.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G2</id>
+        <value>Most commands in the game have hot keys.  These keys are denoted by the highlighted letter in the text of the command button.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G3</id>
+        <value>To restart a mission, choose END MISSION from the menu.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G4</id>
+        <value>Mission objectives may be viewed at any time by choosing MISSION OBJECTIVES from the menu.</value>
+    </string>
+    <string>
+        <id>STR_TIP_T3</id>
+        <value>Enemies in UEDAIP will often expand if allowed to, and benefit from the extra resources that they can gather. Be careful to not let enemy production get out of hand.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G5</id>
+        <value>Terran Vultures can lay Spider Mines: select a Vulture unit, then select the MINE button and designate an area of ground as the target.</value>
+    </string>
+    <string>
+        <id>STR_TIP_Ga</id>
+        <value>Queue up to five units at the same time by selecting a building, then clicking on the button of the unit you wish to queue.</value>
+    </string>
+    <string>
+        <id>STR_TIP_T4</id>
+        <value>Ghosts deal two types of damage per attack and receive further damage bonuses from Ocular Implants.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G6</id>
+        <value>In some missions, you must return specific units to a particular location, designated by a glowing Command Point Marker, called a \"Beacon.\"</value>
+    </string>
+    <string>
+        <id>STR_TIP_G7</id>
+        <value>When building a Terran Command Center, Protoss Nexus, or Zerg Hatchery, try to place it as close to resources as possible.</value>
+    </string>
+    <string>
+        <id>STR_TIP_T5</id>
+        <value>Your enemies may sometimes only develop certain tech if they're allowed to get a new base.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G8</id>
+        <value>Cancel any unit in a queue by clicking on its icon in the construction \"pipeline\" display.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G9</id>
+        <value>Toggle the terrain information on and off in the Mini Map by pressing \\4TAB\\1.</value>
+    </string>
+    <string>
+        <id>STR_TIP_T6</id>
+        <value>Sometimes, you may need to focus on the objectives instead of spreading your forces too thin.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G10</id>
+        <value>Toggle the Mini Map between Team Color Identification and Friend-or-Foe recognition modes by pressing \\4SHIFT+TAB\\1.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G11</id>
+        <value>When using the MOVE command, your units will ignore enemy units as they travel to their destination.  In this way, you can also use the MOVE command to retreat.</value>
+    </string>
+    <string>
+        <id>STR_TIP_T7</id>
+        <value>Your enemy may sometimes try to bypass your defences or catch you off-guard with drops. Be mindful of enemy transports.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G12</id>
+        <value>Move your units with the ATTACK command when you wish them to engage enemy forces along the way.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G13</id>
+        <value>You can adjust the sound, music, and speech in the SOUND menu.</value>
+    </string>
+    <string>
+        <id>STR_TIP_T8</id>
+        <value>In UEDAIP Vanilla, Yamato Cannons deal splash damage around their main target.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G14</id>
+        <value>You can adjust the game speed, mouse speed, and other speed settings in the SPEED menu.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G15</id>
+        <value>In single player games, you can speed up or slow down the game by pressing the \\4+\\1 or \\4-\\1 keys.</value>
+    </string>
+    <string>
+        <id>STR_TIP_T9</id>
+        <value>The more overwhelming the army, the less severe the losses. Make sure you're not just throwing your units into a meatgrinder.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G16</id>
+        <value>Deselect an individual unit from a group by holding down the \\4SHIFT\\1 key while selecting that unit.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G17</id>
+        <value>To single out a unit from within a group, either select the individual unit, or select that unit's wireframe from the status display.</value>
+    </string>
+    <string>
+        <id>STR_TIP_T10</id>
+        <value>The Ion Cannon will fire over all units flying over open space. Its projectile has a significant delay at long ranges, but is absolutely devastating if it hits.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G18</id>
+        <value>Load units into a transport using the MOVE command. The transport will automatically move to meet the units.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G19</id>
+        <value>Unload units from a transport by clicking the UNLOAD ALL button and selecting an unloading area. Unload an individual unit by clicking on its wireframe.</value>
+    </string>
+    <string>
+        <id>STR_TIP_Z1</id>
+        <value>All Zerg buildings, except the Hatchery, Creep Colony and Extractor, must be constructed on creep. Creep can be created by building a Hatchery or a Creep Colony.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G20</id>
+        <value>You can designate targets for your commands (MOVE, ATTACK, GATHER, etc.) using the Mini Map.  In this way, you can send units to distant locations without having to scroll the Main Screen.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G21</id>
+        <value>Click and drag in the Mini Map to rapidly scroll your view in the main screen.</value>
+    </string>
+    <string>
+        <id>STR_TIP_Z2</id>
+        <value>Daggoth's Tiamat Brood has access to powerful Sunken Colonies and Hunter Killers, that regenerate their health with incredible speed.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G22</id>
+        <value>To select a unit's previous group, hold down the \\4ALT\\1 key while selecting that unit.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G23</id>
+        <value>SAVE your game frequently. If you find yourself in a desperate situation, you can go back and LOAD your game before you got into this whole mess.</value>
+    </string>
+    <string>
+        <id>STR_TIP_Z3</id>
+        <value>The Baelrog Brood receives resources from sacrifices, as well as from killing enemy units.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G24</id>
+        <value>Use the Campaign Editor, found on the Main Menu, to build your own maps and edit unit variables.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G25</id>
+        <value>You can turn off unit responses in the SOUND menu.</value>
+    </string>
+    <string>
+        <id>STR_TIP_Z4</id>
+        <value>Groups of enemies that are hostile to eachother can fight eachother without your intervention.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G26</id>
+        <value>The \\4SHIFT\\1 key allows you to chain together multiple commands. Hold down the SHIFT key while issuing commands; the unit will finish each task before proceeding to the next.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G27</id>
+        <value>You can use the PATROL command to setup a patrol route for your units.  While in patrol mode your units will attack any enemy units that they see.</value>
+    </string>
+    <string>
+        <id>STR_TIP_Z5</id>
+        <value>Use ALT+S to quickly save a mission and ALT+L to quickly load a mission.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G28</id>
+        <value>Stationary combat units are assumed to be on guard: if they see an enemy unit they will automatically engage it.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G29</id>
+        <value>Using the HOLD POSITION command, units will remain stationary, even if attacked, and attack enemy units within their range.</value>
+    </string>
+    <string>
+        <id>STR_TIP_Z6</id>
+        <value>Kerrigan is a very powerful hero that can kill groups of units on her own, but even she can fall without support.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G30</id>
+        <value>You can setup convoys by selecting your escorts and telling them to MOVE onto the unit you want escorted.  They will then follow the designated unit.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G31</id>
+        <value>To send messages to your opponent during multiplayer games, press \\4Enter\\1, type in your message and press \\4Enter\\1 again.</value>
+    </string>
+    <string>
+        <id>STR_TIP_Z7</id>
+        <value>Offense is the best defense. Exploit gaps in enemy defense to take out enemy bases before they can hit you with their full might.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G32</id>
+        <value>You can form alliances during a multiplayer game using the DIPLOMACY button on the Command Console.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G33</id>
+        <value>During multiplayer games, allies achieve a shared victory only if all surviving allies have selected ALLIED VICTORY from the DIPLOMACY MENU.</value>
+    </string>
+    <string>
+        <id>STR_TIP_Z8</id>
+        <value>Some Dark Templar may try to run straight past your units, or even use Shuttles to escape. Make sure to maintain good vision of each exit.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G34</id>
+        <value>In a multiplayer game, allies can share their fog of war information once all members of the alliance select SHARE VISION from the DIPLOMACY MENU.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G35</id>
+        <value>Pressing \\4CTRL-S\\1 will toggle the sound on or off.  \\4CTRL-M\\1 will toggle the music on or off.</value>
+    </string>
+    <string>
+        <id>STR_TIP_Z9</id>
+        <value>The Shelak Tribe has powerful High Templar that can use Psionic Storms to make their fellow warriors more powerful.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G36</id>
+        <value>To surrender during a campaign or multiplayer game, use the SURRENDER button in the OPTIONS menu.</value>
+    </string>
+    <string>
+        <id>STR_TIP_Z10</id>
+        <value>In some missions, you may have an increased supply cap.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G37</id>
+        <value>Keep the path between the Command Center and available resources clear.  Obstacles slow the rate at which resources can be returned.</value>
+    </string>
+    <string>
+        <id>STR_TIP_P1</id>
+        <value>Be mindful of ambushes! The Zerg may try to get some troops behind you as you move around the map.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G38</id>
+        <value>To save your current position on the map, press \\4Shift-F2\\1. To recall that position at any time, press \\4F2\\1. You can save up to three views using keys F2-F4 in this manner.</value>
+    </string>
+    <string>
+        <id>STR_TIP_P2</id>
+        <value>Enemy Zerg can use Nydus Canals to produce units. Destroying them will slow down their production.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G39</id>
+        <value>Different units are designed to work together and support each other. Combinations are more effective than a force composed of a single unit type.</value>
+    </string>
+    <string>
+        <id>STR_TIP_P3</id>
+        <value>Specific enemies will have specific ways in which they try to defeat you. Keep in mind what Broods, Squadrons or Tribes you're up against.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G40</id>
+        <value>Hold down \\4CTRL\\1 while selecting a unit to select all units of the same type within your view.</value>
+    </string>
+    <string>
+        <id>STR_TIP_P4</id>
+        <value>When controlling multiple races, remember that upgrading them both may stretch you thin on resources.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G41</id>
+        <value>Double-click a unit to select all units of the same type within your view.</value>
+    </string>
+    <string>
+        <id>STR_TIP_P5</id>
+        <value>Destroying any of the abandoned Terran installations throughout the map will put you on Duke's radar.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G42</id>
+        <value>Pressing the space bar will center the screen on the location of your last transmission.</value>
+    </string>
+    <string>
+        <id>STR_TIP_P6</id>
+        <value>Use ALT+S to quickly save a mission and ALT+L to quickly load a mission.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G43</id>
+        <value>To save your currently selected group of units, press \\4CTRL-1\\1. To recall that group at any time, press \\0041\\1. You can save up to ten groups using keys 1 through 0 in this manner. This also works for buildings.</value>
+    </string>
+    <string>
+        <id>STR_TIP_P7</id>
+        <value>Your allies can help, but they are often not strong enough to win on their own.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G44</id>
+        <value>In a multiplayer game, pressing \\4SHIFT-ENTER\\1 sends your message to all players.</value>
+    </string>
+    <string>
+        <id>STR_TIP_P8</id>
+        <value>Arbiters are expensive and replacing them clogs up enemy production. Try focusing them down with speedy units whenever you can.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G45</id>
+        <value>In a multiplayer game, pressing \\4CTRL-ENTER\\1 sends a message that is exclusive to your allies.</value>
+    </string>
+    <string>
+        <id>STR_TIP_P9</id>
+        <value>Enemy casters will try to disrupt your armies whenever possible. Sometimes spreading out your units may be the only possible course.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G46</id>
+        <value>Units caught in an Arbiter's Stasis Field can neither attack nor be attacked for the duration of the spell.</value>
+    </string>
+    <string>
+        <id>STR_TIP_P10</id>
+        <value>The Overmind will defend fiercely, use special Zerg strains, and react with large groups of units even to small attack forces.</value>
+    </string>
+    <string>
+        <id>STR_TIP_G47</id>
+        <value>In Greed and Slaughter Mutiplayer games, a leaderboard displays the current leader. Press \\4CTRL-R\\1 to toggle between displaying the leader, and displaying all players.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XP1</id>
+        <value>Aiur Zerg will chase you relentlessly as you alert more and more Broods to your presence.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XP2</id>
+        <value>Each Protoss faction - the Khalai, the Nerazim and Robotics - has a faction-specific upgrade that improves its units while debuffing others.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XP3</id>
+        <value>The Keller Brood has Zerg strains with highly-evolved Psionics, which allows them to perform such feats as even conjuring Hallucinations.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XP4</id>
+        <value>Firebats are highly effective against Plasma Shields.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XP5</id>
+        <value>The UED is a completely separate faction in UEDAIP, with many new units. Beware of their AoE damage and hard-hitting specialists.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XP6</id>
+        <value>Zerg protecting the Overmind will often be able to use fearsome heroic Zerg strains, such as the Hunter Killer or the Torrasque.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XP7</id>
+        <value>Mind Controlling enemy units will instantly grant you access to some upgrades and abilities researched for the turncoat unit.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XP8</id>
+        <value>Use your allies as a way to preserve your own resources.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XT1</id>
+        <value>UED units often have long cooldowns or awkward ranges that work well when combining forces, but can leave them lagging behind other races when you focus only on one unit type.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XT2</id>
+        <value>Use Phantom's large burst to quickly eliminate enemy threats.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XT3</id>
+        <value>You can use Autocast and Easycast settings, set from the "Autocast Settings.scx" map, to have an AI script help you utilize caster units.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XT4</id>
+        <value>Scout early and scout often. What seems like a free base can be very well taken by your opponent a minute or two later.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XT5a</id>
+        <value>Protect your Mechanical troops with Bio forces and Medics to avoid getting completely locked down.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XT5b</id>
+        <value>Ensnared Battlecruisers can be easily outmanouvered by most anti-air units. Furthermore, you can use EMP on groups of cruisers to prevent them from casting Yamato.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XT6</id>
+        <value>Valkyrie damage is upgraded via "Advanced Rocketry". Level 1 also provides Valkyries with one extra set of rockets in their salvo.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XT8</id>
+        <value>Your opponents can produce units directly from Nydus Canals. Destroying Nydus Canals will directly hurt enemy production.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XZ1</id>
+        <value>If Autocast is enabled, some caster units will activate a temporary aura just before dying, that uses up their remaining energy in exchange for some buff.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XZ3</id>
+        <value>Kel-Morians will fight more fiercely as you steal more and more minerals.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XZ4</id>
+        <value>Infested Terrans explode even when killed. Focus ones positioned in-between enemy forces to quickly clear groups of enemy units.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XZ5</id>
+        <value>Fenix and Duke can be very hands-on leaders.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XZ6</id>
+        <value>Devourers combined with Queens can massively slow enemy air units' attack speed.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XZ7</id>
+        <value>Defilers can use their anti-air attack to help you defend from groups of enemy Air units.</value>
+    </string>
+    <string>
+        <id>STR_TIP_XZ8</id>
+        <value>In warfare, sending a force up against an enemy with superior firepower is an easy way of pointlessly sacrificing lives of soldiers.</value>
+    </string>
+    <string>
+        <id>STR_LAST_TIP</id>
+        <value>&lt;&lt;PLACEHOLDER&gt;&gt;</value>
+    </string>
+</strings>

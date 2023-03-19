@@ -1,0 +1,4892 @@
+[
+  {
+    "id": "gluGameLobby-1",
+    "Key": "gluGameLobby-1",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluGameLobby-2",
+    "Key": "gluGameLobby-2",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluMain-10",
+    "Key": "gluMain-10",
+    "Value": "l[\\u0004L\\u0001ogin]"
+  },
+  {
+    "id": "netdlg-8",
+    "Key": "netdlg-8",
+    "Value": "time between when you click the"
+  },
+  {
+    "id": "netdlg-9",
+    "Key": "netdlg-9",
+    "Value": "mouse and when a unit responds to"
+  },
+  {
+    "id": "netdlg-12",
+    "Key": "netdlg-12",
+    "Value": "but smooths network performance for"
+  },
+  {
+    "id": "netdlg-13",
+    "Key": "netdlg-13",
+    "Value": "systems with slow or 'lossy' network"
+  },
+  {
+    "id": "netdlg-14",
+    "Key": "netdlg-14",
+    "Value": "connections."
+  },
+  {
+    "id": "gluBattlenetCreateGameScreen-3",
+    "Key": "gluBattlenetCreateGameScreen-3",
+    "Value": "Using UDP port: %d."
+  },
+  {
+    "id": "allyfltr-20",
+    "Key": "allyfltr-20",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-21",
+    "Key": "allyfltr-21",
+    "Value": "Allied Victory"
+  },
+  {
+    "id": "gluMain-17",
+    "Key": "gluMain-17",
+    "Value": "\\u0005Single Player"
+  },
+  {
+    "id": "msnstat2-15",
+    "Key": "msnstat2-15",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat2-20",
+    "Key": "msnstat2-20",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat2-21",
+    "Key": "msnstat2-21",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat2-22",
+    "Key": "msnstat2-22",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-15",
+    "Key": "msnstat4-15",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-20",
+    "Key": "msnstat4-20",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-21",
+    "Key": "msnstat4-21",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-22",
+    "Key": "msnstat4-22",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-15",
+    "Key": "msnstat6-15",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-20",
+    "Key": "msnstat6-20",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-21",
+    "Key": "msnstat6-21",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-22",
+    "Key": "msnstat6-22",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-19",
+    "Key": "msnstats-19",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-20",
+    "Key": "msnstats-20",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-21",
+    "Key": "msnstats-21",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-22",
+    "Key": "teamfltr-22",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-23",
+    "Key": "teamfltr-23",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-48",
+    "Key": "teamfltr-48",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-49",
+    "Key": "teamfltr-49",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-50",
+    "Key": "teamfltr-50",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-51",
+    "Key": "teamfltr-51",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-52",
+    "Key": "teamfltr-52",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "abrtmenu-8",
+    "Key": "abrtmenu-8",
+    "Value": "q\\u0004Q\\u0001uit (Draw)"
+  },
+  {
+    "id": "abrtmenu-9",
+    "Key": "abrtmenu-9",
+    "Value": "e\\u0004E\\u0001xit Replay"
+  },
+  {
+    "id": "abrtmenu-10",
+    "Key": "abrtmenu-10",
+    "Value": "q\\u0004Q\\u0001uit"
+  },
+  {
+    "id": "allyfltr-12",
+    "Key": "allyfltr-12",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-13",
+    "Key": "allyfltr-13",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-32",
+    "Key": "allyfltr-32",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-33",
+    "Key": "allyfltr-33",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-34",
+    "Key": "allyfltr-34",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gamemenu-8",
+    "Key": "gamemenu-8",
+    "Value": "jMission Ob\\u0004j\\u0001ectives"
+  },
+  {
+    "id": "gamemenu-9",
+    "Key": "gamemenu-9",
+    "Value": "e\\u0004E\\u0001nd Mission"
+  },
+  {
+    "id": "gamemenu-10",
+    "Key": "gamemenu-10",
+    "Value": "Game Menu"
+  },
+  {
+    "id": "gamemenu-social",
+    "Key": "gamemenu-social",
+    "Value": "cSo\\u0004c\\u0001ial"
+  },
+  {
+    "id": "gluCmpgn-9",
+    "Key": "gluCmpgn-9",
+    "Value": "Terran Campaign\\nincomplete"
+  },
+  {
+    "id": "gluExpCmpgn-9",
+    "Key": "gluExpCmpgn-9",
+    "Value": "Protoss Campaign\\nincomplete"
+  },
+  {
+    "id": "gluJoin-11",
+    "Key": "gluJoin-11",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluJoin-13",
+    "Key": "gluJoin-13",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluJoin-14",
+    "Key": "gluJoin-14",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluJoin-16",
+    "Key": "gluJoin-16",
+    "Value": "gCreate \\u0004G\\u0001ame"
+  },
+  {
+    "id": "gluJoin-17",
+    "Key": "gluJoin-17",
+    "Value": "Using UDP ports: %d and %d."
+  },
+  {
+    "id": "gluMain-9",
+    "Key": "gluMain-9",
+    "Value": "rShow C\\u0004r\\u0001edits"
+  },
+  {
+    "id": "gluMain-18",
+    "Key": "gluMain-18",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat2-7",
+    "Key": "msnstat2-7",
+    "Value": "Score"
+  },
+  {
+    "id": "msnstat2-12",
+    "Key": "msnstat2-12",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat2-13",
+    "Key": "msnstat2-13",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat2-14",
+    "Key": "msnstat2-14",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-7",
+    "Key": "msnstat4-7",
+    "Value": "Score"
+  },
+  {
+    "id": "msnstat4-12",
+    "Key": "msnstat4-12",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-13",
+    "Key": "msnstat4-13",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-14",
+    "Key": "msnstat4-14",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-7",
+    "Key": "msnstat6-7",
+    "Value": "Score"
+  },
+  {
+    "id": "msnstat6-12",
+    "Key": "msnstat6-12",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-13",
+    "Key": "msnstat6-13",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-14",
+    "Key": "msnstat6-14",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-11",
+    "Key": "msnstats-11",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-12",
+    "Key": "msnstats-12",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-13",
+    "Key": "msnstats-13",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "netdlg-5",
+    "Key": "netdlg-5",
+    "Value": "e\\u0004E\\u0001xtra high latency"
+  },
+  {
+    "id": "netdlg-6",
+    "Key": "netdlg-6",
+    "Value": "Network Options"
+  },
+  {
+    "id": "netdlg-10",
+    "Key": "netdlg-10",
+    "Value": "the click."
+  },
+  {
+    "id": "options-7",
+    "Key": "options-7",
+    "Value": "n\\u0004N\\u0001etwork"
+  },
+  {
+    "id": "options-8",
+    "Key": "options-8",
+    "Value": "Game Options"
+  },
+  {
+    "id": "snd_dlg-6",
+    "Key": "snd_dlg-6",
+    "Value": "s\\u0004S\\u0001ubtitles On"
+  },
+  {
+    "id": "snd_dlg-7",
+    "Key": "snd_dlg-7",
+    "Value": "Music Volume"
+  },
+  {
+    "id": "snd_dlg-10",
+    "Key": "snd_dlg-10",
+    "Value": "min"
+  },
+  {
+    "id": "snd_dlg-11",
+    "Key": "snd_dlg-11",
+    "Value": "max"
+  },
+  {
+    "id": "snd_dlg-12",
+    "Key": "snd_dlg-12",
+    "Value": "max"
+  },
+  {
+    "id": "snd_dlg-13",
+    "Key": "snd_dlg-13",
+    "Value": "Sound Options"
+  },
+  {
+    "id": "spd_dlg-7",
+    "Key": "spd_dlg-7",
+    "Value": "slow"
+  },
+  {
+    "id": "spd_dlg-8",
+    "Key": "spd_dlg-8",
+    "Value": "slow"
+  },
+  {
+    "id": "spd_dlg-12",
+    "Key": "spd_dlg-12",
+    "Value": "fast"
+  },
+  {
+    "id": "spd_dlg-13",
+    "Key": "spd_dlg-13",
+    "Value": "fast"
+  },
+  {
+    "id": "spd_dlg-14",
+    "Key": "spd_dlg-14",
+    "Value": "fast"
+  },
+  {
+    "id": "spd_dlg-15",
+    "Key": "spd_dlg-15",
+    "Value": "Speed Settings"
+  },
+  {
+    "id": "spd_dlg-16",
+    "Key": "spd_dlg-16",
+    "Value": "sUse Mouse \\u0004S\\u0001caling"
+  },
+  {
+    "id": "spd_dlg-17",
+    "Key": "spd_dlg-17",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-14",
+    "Key": "teamfltr-14",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-15",
+    "Key": "teamfltr-15",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-40",
+    "Key": "teamfltr-40",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-41",
+    "Key": "teamfltr-41",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-42",
+    "Key": "teamfltr-42",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-43",
+    "Key": "teamfltr-43",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-44",
+    "Key": "teamfltr-44",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "timeout-10",
+    "Key": "timeout-10",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "timeout-11",
+    "Key": "timeout-11",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "tips_dlg-4",
+    "Key": "tips_dlg-4",
+    "Value": "x"
+  },
+  {
+    "id": "tips_dlg-5",
+    "Key": "tips_dlg-5",
+    "Value": "s\\u0004S\\u0001how Tips at Startup"
+  },
+  {
+    "id": "tips_dlg-6",
+    "Key": "tips_dlg-6",
+    "Value": "StarCraft Tips"
+  },
+  {
+    "id": "video-4",
+    "Key": "video-4",
+    "Value": "e\\u0004E\\u0001nable Vertical Sync"
+  },
+  {
+    "id": "video-5",
+    "Key": "video-5",
+    "Value": "nE\\u0004n\\u0001able FPS Cap"
+  },
+  {
+    "id": "video-7",
+    "Key": "video-7",
+    "Value": "iW\\u0004i\\u0001ndowed (Fullscreen)"
+  },
+  {
+    "id": "video-11",
+    "Key": "video-11",
+    "Value": "min"
+  },
+  {
+    "id": "video-12",
+    "Key": "video-12",
+    "Value": "max"
+  },
+  {
+    "id": "video-13",
+    "Key": "video-13",
+    "Value": "max"
+  },
+  {
+    "id": "voice-6",
+    "Key": "voice-6",
+    "Value": "Record Volume"
+  },
+  {
+    "id": "voice-7",
+    "Key": "voice-7",
+    "Value": "Playback Volume"
+  },
+  {
+    "id": "voice-14",
+    "Key": "voice-14",
+    "Value": "max"
+  },
+  {
+    "id": "voice-15",
+    "Key": "voice-15",
+    "Value": "Voice Options"
+  },
+  {
+    "id": "wmission-8",
+    "Key": "wmission-8",
+    "Value": "The server will determine the result soon."
+  },
+  {
+    "id": "abrtmenu-4",
+    "Key": "abrtmenu-4",
+    "Value": "xE\\u0004x\\u0001it Program"
+  },
+  {
+    "id": "abrtmenu-5",
+    "Key": "abrtmenu-5",
+    "Value": "End Mission"
+  },
+  {
+    "id": "abrtmenu-6",
+    "Key": "abrtmenu-6",
+    "Value": "s\\u0004S\\u0001urrender"
+  },
+  {
+    "id": "abrtmenu-7",
+    "Key": "abrtmenu-7",
+    "Value": "v\\u0004V\\u0001ictory"
+  },
+  {
+    "id": "allyfltr-4",
+    "Key": "allyfltr-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-5",
+    "Key": "allyfltr-5",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-24",
+    "Key": "allyfltr-24",
+    "Value": "Shared"
+  },
+  {
+    "id": "allyfltr-25",
+    "Key": "allyfltr-25",
+    "Value": "Vision"
+  },
+  {
+    "id": "allyfltr-26",
+    "Key": "allyfltr-26",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-27",
+    "Key": "allyfltr-27",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-28",
+    "Key": "allyfltr-28",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gamemenu-4",
+    "Key": "gamemenu-4",
+    "Value": "p\\u0004P\\u0001ause Game"
+  },
+  {
+    "id": "gamemenu-5",
+    "Key": "gamemenu-5",
+    "Value": "r\\u0004R\\u0001esume Game"
+  },
+  {
+    "id": "gamemenu-6",
+    "Key": "gamemenu-6",
+    "Value": "o\\u0004O\\u0001ptions"
+  },
+  {
+    "id": "gamemenu-7",
+    "Key": "gamemenu-7",
+    "Value": "h\\u0004H\\u0001elp"
+  },
+  {
+    "id": "gluCmpgn-6",
+    "Key": "gluCmpgn-6",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluExpCmpgn-6",
+    "Key": "gluExpCmpgn-6",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluJoin-8",
+    "Key": "gluJoin-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluJoin-10",
+    "Key": "gluJoin-10",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluJoin-15",
+    "Key": "gluJoin-15",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluMain-6",
+    "Key": "gluMain-6",
+    "Value": "c\\u0004C\\u0001ollections"
+  },
+  {
+    "id": "gluMain-15",
+    "Key": "gluMain-15",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluModemEntry-4",
+    "Key": "gluModemEntry-4",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluRdyP-4",
+    "Key": "gluRdyP-4",
+    "Value": "r\\u0004R\\u0001eplay"
+  },
+  {
+    "id": "gluRdyT-4",
+    "Key": "gluRdyT-4",
+    "Value": "r\\u0004R\\u0001eplay"
+  },
+  {
+    "id": "GluRdyZ-4",
+    "Key": "GluRdyZ-4",
+    "Value": "r\\u0004R\\u0001eplay"
+  },
+  {
+    "id": "gluScore-10",
+    "Key": "gluScore-10",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "helpmenu-4",
+    "Key": "helpmenu-4",
+    "Value": "Help Menu"
+  },
+  {
+    "id": "lmission-4",
+    "Key": "lmission-4",
+    "Value": "You were disconnected."
+  },
+  {
+    "id": "MsgFltr-4",
+    "Key": "MsgFltr-4",
+    "Value": "Send to allies"
+  },
+  {
+    "id": "MsgFltr-5",
+    "Key": "MsgFltr-5",
+    "Value": "Send to player"
+  },
+  {
+    "id": "msnstat2-4",
+    "Key": "msnstat2-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat2-9",
+    "Key": "msnstat2-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat2-10",
+    "Key": "msnstat2-10",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat2-11",
+    "Key": "msnstat2-11",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat2-30",
+    "Key": "msnstat2-30",
+    "Value": "Razings"
+  },
+  {
+    "id": "msnstat4-4",
+    "Key": "msnstat4-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-9",
+    "Key": "msnstat4-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-10",
+    "Key": "msnstat4-10",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-11",
+    "Key": "msnstat4-11",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-4",
+    "Key": "msnstat6-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-9",
+    "Key": "msnstat6-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-10",
+    "Key": "msnstat6-10",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-11",
+    "Key": "msnstat6-11",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-8",
+    "Key": "msnstats-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-9",
+    "Key": "msnstats-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-10",
+    "Key": "msnstats-10",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "netdlg-7",
+    "Key": "netdlg-7",
+    "Value": "Setting lower latency reduces the"
+  },
+  {
+    "id": "netdlg-11",
+    "Key": "netdlg-11",
+    "Value": "Higher latency increases that time,"
+  },
+  {
+    "id": "options-4",
+    "Key": "options-4",
+    "Value": "v\\u0004V\\u0001ideo"
+  },
+  {
+    "id": "options-5",
+    "Key": "options-5",
+    "Value": "g\\u0004G\\u0001ame"
+  },
+  {
+    "id": "options-6",
+    "Key": "options-6",
+    "Value": "i\\u0004I\\u0001nput"
+  },
+  {
+    "id": "quit-4",
+    "Key": "quit-4",
+    "Value": "want to exit"
+  },
+  {
+    "id": "quit-5",
+    "Key": "quit-5",
+    "Value": "StarCraft?"
+  },
+  {
+    "id": "quit2mnu-4",
+    "Key": "quit2mnu-4",
+    "Value": "Are you sure you"
+  },
+  {
+    "id": "quit2mnu-5",
+    "Key": "quit2mnu-5",
+    "Value": "want to quit"
+  },
+  {
+    "id": "quit2mnu-6",
+    "Key": "quit2mnu-6",
+    "Value": "the mission?"
+  },
+  {
+    "id": "quitrepl-4",
+    "Key": "quitrepl-4",
+    "Value": "want to exit"
+  },
+  {
+    "id": "quitrepl-5",
+    "Key": "quitrepl-5",
+    "Value": "the replay?"
+  },
+  {
+    "id": "restart-4",
+    "Key": "restart-4",
+    "Value": "want to restart"
+  },
+  {
+    "id": "restart-5",
+    "Key": "restart-5",
+    "Value": "the mission?"
+  },
+  {
+    "id": "snd_dlg-8",
+    "Key": "snd_dlg-8",
+    "Value": "Digital Volume"
+  },
+  {
+    "id": "teamfltr-4",
+    "Key": "teamfltr-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-5",
+    "Key": "teamfltr-5",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-30",
+    "Key": "teamfltr-30",
+    "Value": "Shared"
+  },
+  {
+    "id": "teamfltr-31",
+    "Key": "teamfltr-31",
+    "Value": "Vision"
+  },
+  {
+    "id": "teamfltr-32",
+    "Key": "teamfltr-32",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-33",
+    "Key": "teamfltr-33",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-34",
+    "Key": "teamfltr-34",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "timeout-6",
+    "Key": "timeout-6",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "timeout-7",
+    "Key": "timeout-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "video-9",
+    "Key": "video-9",
+    "Value": "Gamma Correction"
+  },
+  {
+    "id": "video-10",
+    "Key": "video-10",
+    "Value": "min"
+  },
+  {
+    "id": "voice-8",
+    "Key": "voice-8",
+    "Value": "Sound Mute Level"
+  },
+  {
+    "id": "wmission-5",
+    "Key": "wmission-5",
+    "Value": "o\\u0004O\\u0001K"
+  },
+  {
+    "id": "wmission-7",
+    "Key": "wmission-7",
+    "Value": "The game ended in a draw."
+  },
+  {
+    "id": "abrtmenu-1",
+    "Key": "abrtmenu-1",
+    "Value": "\\u001BPrevious (\\u0004Esc\\u0001)"
+  },
+  {
+    "id": "abrtmenu-2",
+    "Key": "abrtmenu-2",
+    "Value": "r\\u0004R\\u0001estart Mission"
+  },
+  {
+    "id": "abrtmenu-3",
+    "Key": "abrtmenu-3",
+    "Value": "q\\u0004Q\\u0001uit Mission"
+  },
+  {
+    "id": "allyfltr-1",
+    "Key": "allyfltr-1",
+    "Value": "Accept"
+  },
+  {
+    "id": "allyfltr-2",
+    "Key": "allyfltr-2",
+    "Value": "Cancel"
+  },
+  {
+    "id": "allyfltr-3",
+    "Key": "allyfltr-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-6",
+    "Key": "allyfltr-6",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-7",
+    "Key": "allyfltr-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "bigok-1",
+    "Key": "bigok-1",
+    "Value": "o\\u0004O\\u0001K"
+  },
+  {
+    "id": "cancel-1",
+    "Key": "cancel-1",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "dlgFatal-1",
+    "Key": "dlgFatal-1",
+    "Value": "o\\u0004O\\u0001K"
+  },
+  {
+    "id": "gamemenu-1",
+    "Key": "gamemenu-1",
+    "Value": "\\u001BReturn to Game (\\u0004Esc\\u0001)"
+  },
+  {
+    "id": "gamemenu-2",
+    "Key": "gamemenu-2",
+    "Value": "s\\u0004S\\u0001ave Game"
+  },
+  {
+    "id": "gamemenu-3",
+    "Key": "gamemenu-3",
+    "Value": "l\\u0004L\\u0001oad Game"
+  },
+  {
+    "id": "gluCmpgn-1",
+    "Key": "gluCmpgn-1",
+    "Value": "l\\u0004L\\u0001oad Saved"
+  },
+  {
+    "id": "gluCmpgn-2",
+    "Key": "gluCmpgn-2",
+    "Value": "rLoad \\u0004R\\u0001eplay"
+  },
+  {
+    "id": "gluCmpgn-3",
+    "Key": "gluCmpgn-3",
+    "Value": "p\\u0004P\\u0001rotoss\\n\\u0002Episode III\\u0001"
+  },
+  {
+    "id": "gluCmpgn-4",
+    "Key": "gluCmpgn-4",
+    "Value": "t\\u0004T\\u0001erran\\n\\u0002Episode I\\u0001"
+  },
+  {
+    "id": "gluCmpgn-5",
+    "Key": "gluCmpgn-5",
+    "Value": "z\\u0004Z\\u0001erg\\n\\u0002Episode II\\u0001"
+  },
+  {
+    "id": "gluCmpgn-7",
+    "Key": "gluCmpgn-7",
+    "Value": "uPlay C\\u0004u\\u0001stom"
+  },
+  {
+    "id": "gluCmpgn-8",
+    "Key": "gluCmpgn-8",
+    "Value": "Terran Campaign\\nincomplete"
+  },
+  {
+    "id": "gluCmpgn-10",
+    "Key": "gluCmpgn-10",
+    "Value": "Zerg Campaign\\nincomplete"
+  },
+  {
+    "id": "gluConn-1",
+    "Key": "gluConn-1",
+    "Value": "Select Connection"
+  },
+  {
+    "id": "gluConn-2",
+    "Key": "gluConn-2",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluConn-3",
+    "Key": "gluConn-3",
+    "Value": "u\\u0004U\\u0001pgrade"
+  },
+  {
+    "id": "gluConn-4",
+    "Key": "gluConn-4",
+    "Value": "l\\u0004L\\u0001ogin"
+  },
+  {
+    "id": "gluCreat-1",
+    "Key": "gluCreat-1",
+    "Value": "Create"
+  },
+  {
+    "id": "gluCreat-2",
+    "Key": "gluCreat-2",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluCreat-3",
+    "Key": "gluCreat-3",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluCreat-4",
+    "Key": "gluCreat-4",
+    "Value": "Game Type"
+  },
+  {
+    "id": "gluCreat-5",
+    "Key": "gluCreat-5",
+    "Value": "Subtype"
+  },
+  {
+    "id": "gluCreat-6",
+    "Key": "gluCreat-6",
+    "Value": "-"
+  },
+  {
+    "id": "gluCreat-7",
+    "Key": "gluCreat-7",
+    "Value": "+"
+  },
+  {
+    "id": "gluCustm-1",
+    "Key": "gluCustm-1",
+    "Value": "Create"
+  },
+  {
+    "id": "gluCustm-2",
+    "Key": "gluCustm-2",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluCustm-3",
+    "Key": "gluCustm-3",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluCustm-4",
+    "Key": "gluCustm-4",
+    "Value": "Game Type"
+  },
+  {
+    "id": "gluDelCh-1",
+    "Key": "gluDelCh-1",
+    "Value": "y\\u0004Y\\u0001es"
+  },
+  {
+    "id": "gluDelCh-2",
+    "Key": "gluDelCh-2",
+    "Value": "n\\u0004N\\u0001o"
+  },
+  {
+    "id": "gluDelCh-3",
+    "Key": "gluDelCh-3",
+    "Value": "Are you sure?"
+  },
+  {
+    "id": "gluEOk-1",
+    "Key": "gluEOk-1",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluEOkCancel-1",
+    "Key": "gluEOkCancel-1",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluEOkCancel-2",
+    "Key": "gluEOkCancel-2",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluExpCmpgn-1",
+    "Key": "gluExpCmpgn-1",
+    "Value": "l\\u0004L\\u0001oad Saved"
+  },
+  {
+    "id": "gluExpCmpgn-2",
+    "Key": "gluExpCmpgn-2",
+    "Value": "rLoad \\u0004R\\u0001eplay"
+  },
+  {
+    "id": "gluExpCmpgn-3",
+    "Key": "gluExpCmpgn-3",
+    "Value": "z\\u0004Z\\u0001erg\\n\\u0002Episode VI\\u0001"
+  },
+  {
+    "id": "gluExpCmpgn-4",
+    "Key": "gluExpCmpgn-4",
+    "Value": "p\\u0004P\\u0001rotoss\\n\\u0002Episode IV\\u0001"
+  },
+  {
+    "id": "gluExpCmpgn-5",
+    "Key": "gluExpCmpgn-5",
+    "Value": "eU\\u0004E\\u0001D\\n\\u0002Episode V\\u0001"
+  },
+  {
+    "id": "gluExpCmpgn-7",
+    "Key": "gluExpCmpgn-7",
+    "Value": "uPlay C\\u0004u\\u0001stom"
+  },
+  {
+    "id": "gluExpCmpgn-8",
+    "Key": "gluExpCmpgn-8",
+    "Value": "Protoss Campaign\\nincomplete"
+  },
+  {
+    "id": "gluExpCmpgn-10",
+    "Key": "gluExpCmpgn-10",
+    "Value": "Terran Campaign\\nincomplete"
+  },
+  {
+    "id": "gluGameMode-1",
+    "Key": "gluGameMode-1",
+    "Value": "o\\u0004O\\u0001riginal"
+  },
+  {
+    "id": "gluGameMode-2",
+    "Key": "gluGameMode-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluGameMode-3",
+    "Key": "gluGameMode-3",
+    "Value": "e\\u0004E\\u0001xpansion"
+  },
+  {
+    "id": "gluJoin-1",
+    "Key": "gluJoin-1",
+    "Value": "Games"
+  },
+  {
+    "id": "gluJoin-2",
+    "Key": "gluJoin-2",
+    "Value": "Game Title:"
+  },
+  {
+    "id": "gluJoin-3",
+    "Key": "gluJoin-3",
+    "Value": "Game Type:"
+  },
+  {
+    "id": "gluJoin-4",
+    "Key": "gluJoin-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluJoin-5",
+    "Key": "gluJoin-5",
+    "Value": "Map Name:"
+  },
+  {
+    "id": "gluJoin-6",
+    "Key": "gluJoin-6",
+    "Value": "Map Size:"
+  },
+  {
+    "id": "gluJoin-7",
+    "Key": "gluJoin-7",
+    "Value": "Game Speed:"
+  },
+  {
+    "id": "gluJoin-9",
+    "Key": "gluJoin-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluLoad-1",
+    "Key": "gluLoad-1",
+    "Value": "Saved Games"
+  },
+  {
+    "id": "gluLoad-2",
+    "Key": "gluLoad-2",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluLoad-3",
+    "Key": "gluLoad-3",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluLoad-4",
+    "Key": "gluLoad-4",
+    "Value": "d\\u0004D\\u0001elete"
+  },
+  {
+    "id": "gluLogin-1",
+    "Key": "gluLogin-1",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluLogin-2",
+    "Key": "gluLogin-2",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluLogin-3",
+    "Key": "gluLogin-3",
+    "Value": "n\\u0004N\\u0001ew ID"
+  },
+  {
+    "id": "gluLogin-4",
+    "Key": "gluLogin-4",
+    "Value": "d\\u0004D\\u0001elete"
+  },
+  {
+    "id": "gluLogin-5",
+    "Key": "gluLogin-5",
+    "Value": "Registry"
+  },
+  {
+    "id": "gluMain-1",
+    "Key": "gluMain-1",
+    "Value": "xE\\u0004x\\u0001it"
+  },
+  {
+    "id": "gluMain-2",
+    "Key": "gluMain-2",
+    "Value": "\\u0005Single Player"
+  },
+  {
+    "id": "gluMain-3",
+    "Key": "gluMain-3",
+    "Value": "s\\u0004S\\u0001ingle Player"
+  },
+  {
+    "id": "gluMain-4",
+    "Key": "gluMain-4",
+    "Value": "m\\u0004M\\u0001ultiplayer"
+  },
+  {
+    "id": "gluMain-5",
+    "Key": "gluMain-5",
+    "Value": "o\\u0004O\\u0001ptions"
+  },
+  {
+    "id": "gluModem-1",
+    "Key": "gluModem-1",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluModem-2",
+    "Key": "gluModem-2",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluModem-3",
+    "Key": "gluModem-3",
+    "Value": "n\\u0004N\\u0001ew Number"
+  },
+  {
+    "id": "gluModem-4",
+    "Key": "gluModem-4",
+    "Value": "d\\u0004D\\u0001elete"
+  },
+  {
+    "id": "gluModem-5",
+    "Key": "gluModem-5",
+    "Value": "gCreate \\u0004G\\u0001ame"
+  },
+  {
+    "id": "gluModem-6",
+    "Key": "gluModem-6",
+    "Value": "Tel. Numbers"
+  },
+  {
+    "id": "gluModem-7",
+    "Key": "gluModem-7",
+    "Value": "Modem"
+  },
+  {
+    "id": "gluModemEntry-1",
+    "Key": "gluModemEntry-1",
+    "Value": "Enter name:"
+  },
+  {
+    "id": "gluModemEntry-2",
+    "Key": "gluModemEntry-2",
+    "Value": "Enter number:"
+  },
+  {
+    "id": "gluModemEntry-3",
+    "Key": "gluModemEntry-3",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluModemList-1",
+    "Key": "gluModemList-1",
+    "Value": "Please select a modem:"
+  },
+  {
+    "id": "gluModemList-2",
+    "Key": "gluModemList-2",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluModemList-3",
+    "Key": "gluModemList-3",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluModemStatus-1",
+    "Key": "gluModemStatus-1",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluNewCh-1",
+    "Key": "gluNewCh-1",
+    "Value": "o\\u0004O\\u0001K"
+  },
+  {
+    "id": "gluNewCh-2",
+    "Key": "gluNewCh-2",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluNewCh-3",
+    "Key": "gluNewCh-3",
+    "Value": "Enter your name:"
+  },
+  {
+    "id": "gluPEdit-1",
+    "Key": "gluPEdit-1",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluPEdit-2",
+    "Key": "gluPEdit-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluPOk-1",
+    "Key": "gluPOk-1",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluPOkCancel-1",
+    "Key": "gluPOkCancel-1",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluPOkCancel-2",
+    "Key": "gluPOkCancel-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluPOkSplit-1",
+    "Key": "gluPOkSplit-1",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluRdyP-1",
+    "Key": "gluRdyP-1",
+    "Value": "s\\u0004S\\u0001tart"
+  },
+  {
+    "id": "gluRdyP-2",
+    "Key": "gluRdyP-2",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluRdyP-3",
+    "Key": "gluRdyP-3",
+    "Value": "tSkip \\u0004T\\u0001utorial"
+  },
+  {
+    "id": "gluRdyP-5",
+    "Key": "gluRdyP-5",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluRdyP-6",
+    "Key": "gluRdyP-6",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluRdyP-7",
+    "Key": "gluRdyP-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluRdyP-8",
+    "Key": "gluRdyP-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluRdyT-1",
+    "Key": "gluRdyT-1",
+    "Value": "s\\u0004S\\u0001tart"
+  },
+  {
+    "id": "gluRdyT-2",
+    "Key": "gluRdyT-2",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluRdyT-3",
+    "Key": "gluRdyT-3",
+    "Value": "tSkip \\u0004T\\u0001utorial"
+  },
+  {
+    "id": "gluRdyT-5",
+    "Key": "gluRdyT-5",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluRdyT-6",
+    "Key": "gluRdyT-6",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluRdyT-7",
+    "Key": "gluRdyT-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluRdyT-8",
+    "Key": "gluRdyT-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "GluRdyZ-1",
+    "Key": "GluRdyZ-1",
+    "Value": "s\\u0004S\\u0001tart"
+  },
+  {
+    "id": "GluRdyZ-2",
+    "Key": "GluRdyZ-2",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "GluRdyZ-3",
+    "Key": "GluRdyZ-3",
+    "Value": "tSkip \\u0004T\\u0001utorial"
+  },
+  {
+    "id": "GluRdyZ-5",
+    "Key": "GluRdyZ-5",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "GluRdyZ-6",
+    "Key": "GluRdyZ-6",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "GluRdyZ-7",
+    "Key": "GluRdyZ-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "GluRdyZ-8",
+    "Key": "GluRdyZ-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluScore-1",
+    "Key": "gluScore-1",
+    "Value": "vO\\u0004v\\u0001erview"
+  },
+  {
+    "id": "gluScore-2",
+    "Key": "gluScore-2",
+    "Value": "u\\u0004U\\u0001nits"
+  },
+  {
+    "id": "help-1",
+    "Key": "help-1",
+    "Value": "o\\u0004O\\u0001K"
+  },
+  {
+    "id": "help-2",
+    "Key": "help-2",
+    "Value": "StarCraft Help"
+  },
+  {
+    "id": "helpmenu-1",
+    "Key": "helpmenu-1",
+    "Value": "\\u001BPrevious (\\u0004Esc\\u0001)"
+  },
+  {
+    "id": "helpmenu-2",
+    "Key": "helpmenu-2",
+    "Value": "hKeystroke \\u0004H\\u0001elp"
+  },
+  {
+    "id": "helpmenu-3",
+    "Key": "helpmenu-3",
+    "Value": "tStarCraft \\u0004T\\u0001ips"
+  },
+  {
+    "id": "lmission-1",
+    "Key": "lmission-1",
+    "Value": "o\\u0004O\\u0001K"
+  },
+  {
+    "id": "lmission-2",
+    "Key": "lmission-2",
+    "Value": "b\\u0004B\\u0001ecome Observer"
+  },
+  {
+    "id": "lmission-3",
+    "Key": "lmission-3",
+    "Value": "You failed to\\nachieve victory!"
+  },
+  {
+    "id": "loadgame-1",
+    "Key": "loadgame-1",
+    "Value": "l\\u0004L\\u0001oad"
+  },
+  {
+    "id": "loadgame-2",
+    "Key": "loadgame-2",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "loadgame-3",
+    "Key": "loadgame-3",
+    "Value": "Load Game"
+  },
+  {
+    "id": "MsgFltr-1",
+    "Key": "MsgFltr-1",
+    "Value": "Accept"
+  },
+  {
+    "id": "MsgFltr-2",
+    "Key": "MsgFltr-2",
+    "Value": "Cancel"
+  },
+  {
+    "id": "MsgFltr-3",
+    "Key": "MsgFltr-3",
+    "Value": "Send to everyone"
+  },
+  {
+    "id": "msnstat2-1",
+    "Key": "msnstat2-1",
+    "Value": "Continue"
+  },
+  {
+    "id": "msnstat2-2",
+    "Key": "msnstat2-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat2-3",
+    "Key": "msnstat2-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat2-5",
+    "Key": "msnstat2-5",
+    "Value": "Outcome"
+  },
+  {
+    "id": "msnstat2-6",
+    "Key": "msnstat2-6",
+    "Value": "Rank"
+  },
+  {
+    "id": "msnstat2-8",
+    "Key": "msnstat2-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-1",
+    "Key": "msnstat4-1",
+    "Value": "Continue"
+  },
+  {
+    "id": "msnstat4-2",
+    "Key": "msnstat4-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-3",
+    "Key": "msnstat4-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-5",
+    "Key": "msnstat4-5",
+    "Value": "Outcome"
+  },
+  {
+    "id": "msnstat4-6",
+    "Key": "msnstat4-6",
+    "Value": "Rank"
+  },
+  {
+    "id": "msnstat4-8",
+    "Key": "msnstat4-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-1",
+    "Key": "msnstat6-1",
+    "Value": "Continue"
+  },
+  {
+    "id": "msnstat6-2",
+    "Key": "msnstat6-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-3",
+    "Key": "msnstat6-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-5",
+    "Key": "msnstat6-5",
+    "Value": "Outcome"
+  },
+  {
+    "id": "msnstat6-6",
+    "Key": "msnstat6-6",
+    "Value": "Rank"
+  },
+  {
+    "id": "msnstat6-8",
+    "Key": "msnstat6-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-1",
+    "Key": "msnstats-1",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-2",
+    "Key": "msnstats-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-3",
+    "Key": "msnstats-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-4",
+    "Key": "msnstats-4",
+    "Value": "Outcome"
+  },
+  {
+    "id": "msnstats-5",
+    "Key": "msnstats-5",
+    "Value": "Rank"
+  },
+  {
+    "id": "msnstats-6",
+    "Key": "msnstats-6",
+    "Value": "Score"
+  },
+  {
+    "id": "msnstats-7",
+    "Key": "msnstats-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "netdlg-1",
+    "Key": "netdlg-1",
+    "Value": "o\\u0004O\\u0001K"
+  },
+  {
+    "id": "netdlg-2",
+    "Key": "netdlg-2",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "netdlg-3",
+    "Key": "netdlg-3",
+    "Value": "l\\u0004L\\u0001ow latency"
+  },
+  {
+    "id": "netwait-1",
+    "Key": "netwait-1",
+    "Value": "Cancel"
+  },
+  {
+    "id": "netwait-2",
+    "Key": "netwait-2",
+    "Value": "Waiting for response from remote system..."
+  },
+  {
+    "id": "objctdlg-1",
+    "Key": "objctdlg-1",
+    "Value": "\\u001BPrevious (\\u0004Esc\\u0001)"
+  },
+  {
+    "id": "objctdlg-2",
+    "Key": "objctdlg-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "ok-1",
+    "Key": "ok-1",
+    "Value": "o\\u0004O\\u0001K"
+  },
+  {
+    "id": "okcancel-1",
+    "Key": "okcancel-1",
+    "Value": "o\\u0004O\\u0001K"
+  },
+  {
+    "id": "okcancel-2",
+    "Key": "okcancel-2",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "options-1",
+    "Key": "options-1",
+    "Value": "\\u001BPrevious (\\u0004Esc\\u0001)"
+  },
+  {
+    "id": "options-2",
+    "Key": "options-2",
+    "Value": "pS\\u0004p\\u0001eed"
+  },
+  {
+    "id": "options-3",
+    "Key": "options-3",
+    "Value": "s\\u0004S\\u0001ound"
+  },
+  {
+    "id": "quit-1",
+    "Key": "quit-1",
+    "Value": "xE\\u0004x\\u0001it Program"
+  },
+  {
+    "id": "quit-2",
+    "Key": "quit-2",
+    "Value": "\\u001BCancel (\\u0004Esc\\u0001)"
+  },
+  {
+    "id": "quit-3",
+    "Key": "quit-3",
+    "Value": "Are you sure you"
+  },
+  {
+    "id": "quit2mnu-1",
+    "Key": "quit2mnu-1",
+    "Value": "q\\u0004Q\\u0001uit Mission"
+  },
+  {
+    "id": "quit2mnu-2",
+    "Key": "quit2mnu-2",
+    "Value": "oBecome \\u0004O\\u0001bserver"
+  },
+  {
+    "id": "quit2mnu-3",
+    "Key": "quit2mnu-3",
+    "Value": "\\u001BCancel (\\u0004Esc\\u0001)"
+  },
+  {
+    "id": "quitrepl-1",
+    "Key": "quitrepl-1",
+    "Value": "e\\u0004E\\u0001xit Replay"
+  },
+  {
+    "id": "quitrepl-2",
+    "Key": "quitrepl-2",
+    "Value": "\\u001BCancel (\\u0004Esc\\u0001)"
+  },
+  {
+    "id": "quitrepl-3",
+    "Key": "quitrepl-3",
+    "Value": "Are you sure you"
+  },
+  {
+    "id": "restart-1",
+    "Key": "restart-1",
+    "Value": "r\\u0004R\\u0001estart Mission"
+  },
+  {
+    "id": "restart-2",
+    "Key": "restart-2",
+    "Value": "\\u001BCancel (\\u0004Esc\\u0001)"
+  },
+  {
+    "id": "restart-3",
+    "Key": "restart-3",
+    "Value": "Are you sure you"
+  },
+  {
+    "id": "savegame-1",
+    "Key": "savegame-1",
+    "Value": "s\\u0004S\\u0001ave"
+  },
+  {
+    "id": "savegame-2",
+    "Key": "savegame-2",
+    "Value": "d\\u0004D\\u0001elete"
+  },
+  {
+    "id": "savegame-3",
+    "Key": "savegame-3",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "savegame-4",
+    "Key": "savegame-4",
+    "Value": "Save Game"
+  },
+  {
+    "id": "snd_dlg-1",
+    "Key": "snd_dlg-1",
+    "Value": "o\\u0004O\\u0001K"
+  },
+  {
+    "id": "snd_dlg-2",
+    "Key": "snd_dlg-2",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "snd_dlg-3",
+    "Key": "snd_dlg-3",
+    "Value": "u\\u0004U\\u0001nit Speech On"
+  },
+  {
+    "id": "snd_dlg-4",
+    "Key": "snd_dlg-4",
+    "Value": "aUnit \\u0004A\\u0001cknowledgements On"
+  },
+  {
+    "id": "snd_dlg-5",
+    "Key": "snd_dlg-5",
+    "Value": "b\\u0004B\\u0001uilding Sounds On"
+  },
+  {
+    "id": "snd_dlg-9",
+    "Key": "snd_dlg-9",
+    "Value": "min"
+  },
+  {
+    "id": "spd_dlg-1",
+    "Key": "spd_dlg-1",
+    "Value": "o\\u0004O\\u0001K"
+  },
+  {
+    "id": "spd_dlg-2",
+    "Key": "spd_dlg-2",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "spd_dlg-3",
+    "Key": "spd_dlg-3",
+    "Value": "Game Speed"
+  },
+  {
+    "id": "spd_dlg-4",
+    "Key": "spd_dlg-4",
+    "Value": "Mouse Scroll"
+  },
+  {
+    "id": "spd_dlg-5",
+    "Key": "spd_dlg-5",
+    "Value": "Key Scroll"
+  },
+  {
+    "id": "spd_dlg-6",
+    "Key": "spd_dlg-6",
+    "Value": "m\\u0004M\\u0001ouse Sensitivity"
+  },
+  {
+    "id": "spd_dlg-9",
+    "Key": "spd_dlg-9",
+    "Value": "slow"
+  },
+  {
+    "id": "spd_dlg-10",
+    "Key": "spd_dlg-10",
+    "Value": "slow"
+  },
+  {
+    "id": "spd_dlg-11",
+    "Key": "spd_dlg-11",
+    "Value": "fast"
+  },
+  {
+    "id": "statport-1",
+    "Key": "statport-1",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statres-1",
+    "Key": "statres-1",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "stat_f10-1",
+    "Key": "stat_f10-1",
+    "Value": "\\u0079MENU"
+  },
+  {
+    "id": "teamfltr-1",
+    "Key": "teamfltr-1",
+    "Value": "Accept"
+  },
+  {
+    "id": "teamfltr-2",
+    "Key": "teamfltr-2",
+    "Value": "Cancel"
+  },
+  {
+    "id": "teamfltr-3",
+    "Key": "teamfltr-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-6",
+    "Key": "teamfltr-6",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-7",
+    "Key": "teamfltr-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "timeout-1",
+    "Key": "timeout-1",
+    "Value": "Drop Players"
+  },
+  {
+    "id": "timeout-2",
+    "Key": "timeout-2",
+    "Value": "Waiting for players:"
+  },
+  {
+    "id": "tips_dlg-1",
+    "Key": "tips_dlg-1",
+    "Value": "o\\u0004O\\u0001K"
+  },
+  {
+    "id": "tips_dlg-2",
+    "Key": "tips_dlg-2",
+    "Value": "p\\u0004P\\u0001revious Tip"
+  },
+  {
+    "id": "tips_dlg-3",
+    "Key": "tips_dlg-3",
+    "Value": "n\\u0004N\\u0001ext Tip"
+  },
+  {
+    "id": "titledlg-1",
+    "Key": "titledlg-1",
+    "Value": "Copyright \\u00A9 1998-{CurrentYear} Blizzard Entertainment. All rights reserved."
+  },
+  {
+    "id": "titledlg-2",
+    "Key": "titledlg-2",
+    "Value": "Loading"
+  },
+  {
+    "id": "video-1",
+    "Key": "video-1",
+    "Value": "o\\u0004O\\u0001K"
+  },
+  {
+    "id": "video-2",
+    "Key": "video-2",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "video-3",
+    "Key": "video-3",
+    "Value": "bEnable \\u0004B\\u0001ilinear Filtering"
+  },
+  {
+    "id": "video-6",
+    "Key": "video-6",
+    "Value": "w\\u0004W\\u0001indowed"
+  },
+  {
+    "id": "voice-1",
+    "Key": "voice-1",
+    "Value": "o\\u0004O\\u0001K"
+  },
+  {
+    "id": "voice-2",
+    "Key": "voice-2",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "voice-3",
+    "Key": "voice-3",
+    "Value": "s\\u0004S\\u0001end and receive"
+  },
+  {
+    "id": "voice-4",
+    "Key": "voice-4",
+    "Value": "r\\u0004R\\u0001eceive only"
+  },
+  {
+    "id": "voice-5",
+    "Key": "voice-5",
+    "Value": "d\\u0004D\\u0001isable voice chat"
+  },
+  {
+    "id": "voice-9",
+    "Key": "voice-9",
+    "Value": "min"
+  },
+  {
+    "id": "voice-10",
+    "Key": "voice-10",
+    "Value": "min"
+  },
+  {
+    "id": "voice-11",
+    "Key": "voice-11",
+    "Value": "min"
+  },
+  {
+    "id": "voice-12",
+    "Key": "voice-12",
+    "Value": "max"
+  },
+  {
+    "id": "wmission-1",
+    "Key": "wmission-1",
+    "Value": "v\\u0004V\\u0001ictory"
+  },
+  {
+    "id": "wmission-2",
+    "Key": "wmission-2",
+    "Value": "e\\u0004E\\u0001nd Mission"
+  },
+  {
+    "id": "wmission-3",
+    "Key": "wmission-3",
+    "Value": "c\\u0004C\\u0001ontinue Playing"
+  },
+  {
+    "id": "wmission-4",
+    "Key": "wmission-4",
+    "Value": "Congratulations!\\nYou are victorious!"
+  },
+  {
+    "id": "wmission-6",
+    "Key": "wmission-6",
+    "Value": "You were disconnected."
+  },
+  {
+    "id": "gluBattlenetChat-1",
+    "Key": "gluBattlenetChat-1",
+    "Value": "c\\u0004C\\u0001reate"
+  },
+  {
+    "id": "gluBattlenetChat-2",
+    "Key": "gluBattlenetChat-2",
+    "Value": "j\\u0004J\\u0001oin"
+  },
+  {
+    "id": "gluBattlenetChat-3",
+    "Key": "gluBattlenetChat-3",
+    "Value": "r\\u0004R\\u0001anked"
+  },
+  {
+    "id": "gluBattlenetChat-4",
+    "Key": "gluBattlenetChat-4",
+    "Value": "l\\u0004L\\u0001adder"
+  },
+  {
+    "id": "gluBattlenetChat-5",
+    "Key": "gluBattlenetChat-5",
+    "Value": "q\\u0004Q\\u0001uit"
+  },
+  {
+    "id": "gluBattlenetChat-6",
+    "Key": "gluBattlenetChat-6",
+    "Value": "n\\u0004N\\u0001ews"
+  },
+  {
+    "id": "gluBattlenetChat-7",
+    "Key": "gluBattlenetChat-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluBattlenetCreateToonPopup-1",
+    "Key": "gluBattlenetCreateToonPopup-1",
+    "Value": "New profile"
+  },
+  {
+    "id": "gluBattlenetLinkToonPopup-1",
+    "Key": "gluBattlenetLinkToonPopup-1",
+    "Value": "Link profile"
+  },
+  {
+    "id": "gluBattlenetPopup-1",
+    "Key": "gluBattlenetPopup-1",
+    "Value": "Working...."
+  },
+  {
+    "id": "gluBattlenetPopup-2",
+    "Key": "gluBattlenetPopup-2",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluBattlenetPopup-3",
+    "Key": "gluBattlenetPopup-3",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluBattlenetPopupSquad-1",
+    "Key": "gluBattlenetPopupSquad-1",
+    "Value": "Working...."
+  },
+  {
+    "id": "gluBattlenetPopupSquad-2",
+    "Key": "gluBattlenetPopupSquad-2",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluBattlenetPopupSquad-3",
+    "Key": "gluBattlenetPopupSquad-3",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluBattlenetToonRegistry-1",
+    "Key": "gluBattlenetToonRegistry-1",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluBattlenetToonRegistry-2",
+    "Key": "gluBattlenetToonRegistry-2",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluBattlenetToonRegistry-3",
+    "Key": "gluBattlenetToonRegistry-3",
+    "Value": "n\\u0004N\\u0001ew"
+  },
+  {
+    "id": "gluBattlenetToonRegistry-4",
+    "Key": "gluBattlenetToonRegistry-4",
+    "Value": "d\\u0004D\\u0001elete"
+  },
+  {
+    "id": "gluBattlenetToonRegistry-5",
+    "Key": "gluBattlenetToonRegistry-5",
+    "Value": "Registry"
+  },
+  {
+    "id": "gluBattlenetToonRegistry-8",
+    "Key": "gluBattlenetToonRegistry-8",
+    "Value": "l\\u0004L\\u0001ink"
+  },
+  {
+    "id": "gluBattlenetToonRegistry-9",
+    "Key": "gluBattlenetToonRegistry-9",
+    "Value": "You have no profiles attached to this account.\\n\\nPlease create a \\u0004New\\u0002 account or \\u0004Link\\u0002 an existing one."
+  },
+  {
+    "id": "gluBattlenetToonRegistry-10",
+    "Key": "gluBattlenetToonRegistry-10",
+    "Value": "<GATEWAY>"
+  },
+  {
+    "id": "gluJoinMultiBattlenet-1",
+    "Key": "gluJoinMultiBattlenet-1",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluJoinMultiBattlenet-2",
+    "Key": "gluJoinMultiBattlenet-2",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluJoinMultiBattlenet-3",
+    "Key": "gluJoinMultiBattlenet-3",
+    "Value": "gCreate \\u0004G\\u0001ame"
+  },
+  {
+    "id": "gluJoinMultiBattlenet-4",
+    "Key": "gluJoinMultiBattlenet-4",
+    "Value": "Using UDP port: %d."
+  },
+  {
+    "id": "gluMain-7",
+    "Key": "gluMain-7",
+    "Value": "iView \\u0004I\\u0001ntro"
+  },
+  {
+    "id": "gluMain-8",
+    "Key": "gluMain-8",
+    "Value": "h\\u0004H\\u0001otkeys"
+  },
+  {
+    "id": "gluScene-1",
+    "Key": "gluScene-1",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-22",
+    "Key": "allyfltr-22",
+    "Value": "Alliances"
+  },
+  {
+    "id": "allyfltr-23",
+    "Key": "allyfltr-23",
+    "Value": "Allies"
+  },
+  {
+    "id": "allyfltr-29",
+    "Key": "allyfltr-29",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-30",
+    "Key": "allyfltr-30",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-31",
+    "Key": "allyfltr-31",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluMain-23",
+    "Key": "gluMain-23",
+    "Value": "\\u0005Campaign Editor"
+  },
+  {
+    "id": "msnstat2-17",
+    "Key": "msnstat2-17",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat2-18",
+    "Key": "msnstat2-18",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat2-19",
+    "Key": "msnstat2-19",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat2-24",
+    "Key": "msnstat2-24",
+    "Value": "Units"
+  },
+  {
+    "id": "msnstat2-25",
+    "Key": "msnstat2-25",
+    "Value": "Buildings"
+  },
+  {
+    "id": "msnstat2-26",
+    "Key": "msnstat2-26",
+    "Value": "Gold"
+  },
+  {
+    "id": "msnstat2-27",
+    "Key": "msnstat2-27",
+    "Value": "Lumber"
+  },
+  {
+    "id": "msnstat2-28",
+    "Key": "msnstat2-28",
+    "Value": "Oil"
+  },
+  {
+    "id": "msnstat2-29",
+    "Key": "msnstat2-29",
+    "Value": "Kills"
+  },
+  {
+    "id": "msnstat4-17",
+    "Key": "msnstat4-17",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-18",
+    "Key": "msnstat4-18",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-19",
+    "Key": "msnstat4-19",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-24",
+    "Key": "msnstat4-24",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-25",
+    "Key": "msnstat4-25",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-26",
+    "Key": "msnstat4-26",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-27",
+    "Key": "msnstat4-27",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-28",
+    "Key": "msnstat4-28",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-29",
+    "Key": "msnstat4-29",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-30",
+    "Key": "msnstat4-30",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-31",
+    "Key": "msnstat4-31",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-33",
+    "Key": "msnstat4-33",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-34",
+    "Key": "msnstat4-34",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-35",
+    "Key": "msnstat4-35",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-36",
+    "Key": "msnstat4-36",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-37",
+    "Key": "msnstat4-37",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-38",
+    "Key": "msnstat4-38",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-39",
+    "Key": "msnstat4-39",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-40",
+    "Key": "msnstat4-40",
+    "Value": "Units"
+  },
+  {
+    "id": "msnstat4-42",
+    "Key": "msnstat4-42",
+    "Value": "Gold"
+  },
+  {
+    "id": "msnstat4-43",
+    "Key": "msnstat4-43",
+    "Value": "Lumber"
+  },
+  {
+    "id": "msnstat4-44",
+    "Key": "msnstat4-44",
+    "Value": "Oil"
+  },
+  {
+    "id": "msnstat4-45",
+    "Key": "msnstat4-45",
+    "Value": "Kills"
+  },
+  {
+    "id": "msnstat4-46",
+    "Key": "msnstat4-46",
+    "Value": "Razings"
+  },
+  {
+    "id": "msnstat6-17",
+    "Key": "msnstat6-17",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-18",
+    "Key": "msnstat6-18",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-19",
+    "Key": "msnstat6-19",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-24",
+    "Key": "msnstat6-24",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-25",
+    "Key": "msnstat6-25",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-26",
+    "Key": "msnstat6-26",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-27",
+    "Key": "msnstat6-27",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-28",
+    "Key": "msnstat6-28",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-29",
+    "Key": "msnstat6-29",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-30",
+    "Key": "msnstat6-30",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-31",
+    "Key": "msnstat6-31",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-33",
+    "Key": "msnstat6-33",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-34",
+    "Key": "msnstat6-34",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-35",
+    "Key": "msnstat6-35",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-36",
+    "Key": "msnstat6-36",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-37",
+    "Key": "msnstat6-37",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-38",
+    "Key": "msnstat6-38",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-39",
+    "Key": "msnstat6-39",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-40",
+    "Key": "msnstat6-40",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-42",
+    "Key": "msnstat6-42",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-43",
+    "Key": "msnstat6-43",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-44",
+    "Key": "msnstat6-44",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-45",
+    "Key": "msnstat6-45",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-46",
+    "Key": "msnstat6-46",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-47",
+    "Key": "msnstat6-47",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-48",
+    "Key": "msnstat6-48",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-49",
+    "Key": "msnstat6-49",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-51",
+    "Key": "msnstat6-51",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-52",
+    "Key": "msnstat6-52",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-53",
+    "Key": "msnstat6-53",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-54",
+    "Key": "msnstat6-54",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-55",
+    "Key": "msnstat6-55",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-56",
+    "Key": "msnstat6-56",
+    "Value": "Units"
+  },
+  {
+    "id": "msnstat6-57",
+    "Key": "msnstat6-57",
+    "Value": "Buildings"
+  },
+  {
+    "id": "msnstat6-58",
+    "Key": "msnstat6-58",
+    "Value": "Gold"
+  },
+  {
+    "id": "msnstat6-60",
+    "Key": "msnstat6-60",
+    "Value": "Oil"
+  },
+  {
+    "id": "msnstat6-61",
+    "Key": "msnstat6-61",
+    "Value": "Kills"
+  },
+  {
+    "id": "msnstat6-62",
+    "Key": "msnstat6-62",
+    "Value": "Razings"
+  },
+  {
+    "id": "msnstats-16",
+    "Key": "msnstats-16",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-17",
+    "Key": "msnstats-17",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-18",
+    "Key": "msnstats-18",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-23",
+    "Key": "msnstats-23",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-24",
+    "Key": "msnstats-24",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-25",
+    "Key": "msnstats-25",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-26",
+    "Key": "msnstats-26",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-27",
+    "Key": "msnstats-27",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-28",
+    "Key": "msnstats-28",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-29",
+    "Key": "msnstats-29",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-30",
+    "Key": "msnstats-30",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-32",
+    "Key": "msnstats-32",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-33",
+    "Key": "msnstats-33",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-34",
+    "Key": "msnstats-34",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-35",
+    "Key": "msnstats-35",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-36",
+    "Key": "msnstats-36",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-37",
+    "Key": "msnstats-37",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-38",
+    "Key": "msnstats-38",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-39",
+    "Key": "msnstats-39",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-41",
+    "Key": "msnstats-41",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-42",
+    "Key": "msnstats-42",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-43",
+    "Key": "msnstats-43",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-44",
+    "Key": "msnstats-44",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-45",
+    "Key": "msnstats-45",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-46",
+    "Key": "msnstats-46",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-47",
+    "Key": "msnstats-47",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-48",
+    "Key": "msnstats-48",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-50",
+    "Key": "msnstats-50",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-51",
+    "Key": "msnstats-51",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-52",
+    "Key": "msnstats-52",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-53",
+    "Key": "msnstats-53",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-54",
+    "Key": "msnstats-54",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-55",
+    "Key": "msnstats-55",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-56",
+    "Key": "msnstats-56",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-57",
+    "Key": "msnstats-57",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-59",
+    "Key": "msnstats-59",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-60",
+    "Key": "msnstats-60",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-61",
+    "Key": "msnstats-61",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-62",
+    "Key": "msnstats-62",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-63",
+    "Key": "msnstats-63",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-64",
+    "Key": "msnstats-64",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-65",
+    "Key": "msnstats-65",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-66",
+    "Key": "msnstats-66",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-68",
+    "Key": "msnstats-68",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-69",
+    "Key": "msnstats-69",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-70",
+    "Key": "msnstats-70",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-71",
+    "Key": "msnstats-71",
+    "Value": "Units"
+  },
+  {
+    "id": "msnstats-72",
+    "Key": "msnstats-72",
+    "Value": "Buildings"
+  },
+  {
+    "id": "msnstats-73",
+    "Key": "msnstats-73",
+    "Value": "Gold"
+  },
+  {
+    "id": "msnstats-74",
+    "Key": "msnstats-74",
+    "Value": "Lumber"
+  },
+  {
+    "id": "msnstats-75",
+    "Key": "msnstats-75",
+    "Value": "Oil"
+  },
+  {
+    "id": "msnstats-77",
+    "Key": "msnstats-77",
+    "Value": "Razings"
+  },
+  {
+    "id": "teamfltr-24",
+    "Key": "teamfltr-24",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-25",
+    "Key": "teamfltr-25",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-26",
+    "Key": "teamfltr-26",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-27",
+    "Key": "teamfltr-27",
+    "Value": "Allied Victory"
+  },
+  {
+    "id": "teamfltr-28",
+    "Key": "teamfltr-28",
+    "Value": "Alliances"
+  },
+  {
+    "id": "teamfltr-29",
+    "Key": "teamfltr-29",
+    "Value": "Allies"
+  },
+  {
+    "id": "teamfltr-35",
+    "Key": "teamfltr-35",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-36",
+    "Key": "teamfltr-36",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-37",
+    "Key": "teamfltr-37",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-38",
+    "Key": "teamfltr-38",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-39",
+    "Key": "teamfltr-39",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-45",
+    "Key": "teamfltr-45",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-46",
+    "Key": "teamfltr-46",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-47",
+    "Key": "teamfltr-47",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-53",
+    "Key": "teamfltr-53",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-54",
+    "Key": "teamfltr-54",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-55",
+    "Key": "teamfltr-55",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluConn-7",
+    "Key": "gluConn-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluGameMode-4",
+    "Key": "gluGameMode-4",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "GLUHIST-1",
+    "Key": "GLUHIST-1",
+    "Value": "Select starting mission:"
+  },
+  {
+    "id": "GLUHIST-2",
+    "Key": "GLUHIST-2",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "GLUHIST-3",
+    "Key": "GLUHIST-3",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluPEdit-3",
+    "Key": "gluPEdit-3",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluPOkCancel-3",
+    "Key": "gluPOkCancel-3",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluRdyP-12",
+    "Key": "gluRdyP-12",
+    "Value": "\\n\\nNo briefing data"
+  },
+  {
+    "id": "gluRdyP-13",
+    "Key": "gluRdyP-13",
+    "Value": "Objectives"
+  },
+  {
+    "id": "gluRdyT-12",
+    "Key": "gluRdyT-12",
+    "Value": "\\n\\nNo briefing data"
+  },
+  {
+    "id": "gluRdyT-13",
+    "Key": "gluRdyT-13",
+    "Value": "Objectives"
+  },
+  {
+    "id": "GluRdyZ-12",
+    "Key": "GluRdyZ-12",
+    "Value": "\\n\\nNo briefing data"
+  },
+  {
+    "id": "GluRdyZ-13",
+    "Key": "GluRdyZ-13",
+    "Value": "Objectives"
+  },
+  {
+    "id": "gluScene-2",
+    "Key": "gluScene-2",
+    "Value": "X"
+  },
+  {
+    "id": "gluScore-3",
+    "Key": "gluScore-3",
+    "Value": "tS\\u0004t\\u0001ructures"
+  },
+  {
+    "id": "msnstat4-41",
+    "Key": "msnstat4-41",
+    "Value": "Buildings"
+  },
+  {
+    "id": "msnstat6-59",
+    "Key": "msnstat6-59",
+    "Value": "Lumber"
+  },
+  {
+    "id": "msnstats-76",
+    "Key": "msnstats-76",
+    "Value": "Kills"
+  },
+  {
+    "id": "objctdlg-3",
+    "Key": "objctdlg-3",
+    "Value": "Mission Objectives"
+  },
+  {
+    "id": "ptextbox-1",
+    "Key": "ptextbox-1",
+    "Value": "Message:"
+  },
+  {
+    "id": "ptextbox-2",
+    "Key": "ptextbox-2",
+    "Value": "To Allies:"
+  },
+  {
+    "id": "ptextbox-3",
+    "Key": "ptextbox-3",
+    "Value": "To All:"
+  },
+  {
+    "id": "ptextbox-5",
+    "Key": "ptextbox-5",
+    "Value": "To %s:"
+  },
+  {
+    "id": "textbox-6",
+    "Key": "textbox-6",
+    "Value": "To {name}:"
+  },
+  {
+    "id": "statport-2",
+    "Key": "statport-2",
+    "Value": " "
+  },
+  {
+    "id": "statres-8",
+    "Key": "statres-8",
+    "Value": "Observing"
+  },
+  {
+    "id": "ttextbox-1",
+    "Key": "ttextbox-1",
+    "Value": "Message:"
+  },
+  {
+    "id": "ttextbox-2",
+    "Key": "ttextbox-2",
+    "Value": "To Allies:"
+  },
+  {
+    "id": "ttextbox-3",
+    "Key": "ttextbox-3",
+    "Value": "To All:"
+  },
+  {
+    "id": "ttextbox-5",
+    "Key": "ttextbox-5",
+    "Value": "To %s:"
+  },
+  {
+    "id": "ztextbox-1",
+    "Key": "ztextbox-1",
+    "Value": "Message:"
+  },
+  {
+    "id": "ztextbox-2",
+    "Key": "ztextbox-2",
+    "Value": "To Allies:"
+  },
+  {
+    "id": "ztextbox-3",
+    "Key": "ztextbox-3",
+    "Value": "To All:"
+  },
+  {
+    "id": "ztextbox-5",
+    "Key": "ztextbox-5",
+    "Value": "To %s:"
+  },
+  {
+    "id": "allyfltr-8",
+    "Key": "allyfltr-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-9",
+    "Key": "allyfltr-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-10",
+    "Key": "allyfltr-10",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-11",
+    "Key": "allyfltr-11",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-14",
+    "Key": "allyfltr-14",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-15",
+    "Key": "allyfltr-15",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-16",
+    "Key": "allyfltr-16",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-17",
+    "Key": "allyfltr-17",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-18",
+    "Key": "allyfltr-18",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "allyfltr-19",
+    "Key": "allyfltr-19",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "bigok-2",
+    "Key": "bigok-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "cancel-2",
+    "Key": "cancel-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "dfinale-1",
+    "Key": "dfinale-1",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "dlgFatal-2",
+    "Key": "dlgFatal-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "dlgFatal-3",
+    "Key": "dlgFatal-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "finaldlg-1",
+    "Key": "finaldlg-1",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluConn-5",
+    "Key": "gluConn-5",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluConn-6",
+    "Key": "gluConn-6",
+    "Value": "l[\\u0004L\\u0001ogin]"
+  },
+  {
+    "id": "gluEOk-2",
+    "Key": "gluEOk-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluEOkCancel-3",
+    "Key": "gluEOkCancel-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluPOk-2",
+    "Key": "gluPOk-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluPOkSplit-2",
+    "Key": "gluPOkSplit-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluPOkSplit-3",
+    "Key": "gluPOkSplit-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluRdyP-9",
+    "Key": "gluRdyP-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluRdyP-10",
+    "Key": "gluRdyP-10",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluRdyP-11",
+    "Key": "gluRdyP-11",
+    "Value": "Waiting for other players"
+  },
+  {
+    "id": "gluRdyT-9",
+    "Key": "gluRdyT-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluRdyT-10",
+    "Key": "gluRdyT-10",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluRdyT-11",
+    "Key": "gluRdyT-11",
+    "Value": "Waiting for other players"
+  },
+  {
+    "id": "GluRdyZ-9",
+    "Key": "GluRdyZ-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "GluRdyZ-10",
+    "Key": "GluRdyZ-10",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "GluRdyZ-11",
+    "Key": "GluRdyZ-11",
+    "Value": "Waiting for other players"
+  },
+  {
+    "id": "minimap-1",
+    "Key": "minimap-1",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "minimap-2",
+    "Key": "minimap-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "minimap-3",
+    "Key": "minimap-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat2-16",
+    "Key": "msnstat2-16",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat2-23",
+    "Key": "msnstat2-23",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-16",
+    "Key": "msnstat4-16",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-23",
+    "Key": "msnstat4-23",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat4-32",
+    "Key": "msnstat4-32",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-16",
+    "Key": "msnstat6-16",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-23",
+    "Key": "msnstat6-23",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-32",
+    "Key": "msnstat6-32",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-41",
+    "Key": "msnstat6-41",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstat6-50",
+    "Key": "msnstat6-50",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-14",
+    "Key": "msnstats-14",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-15",
+    "Key": "msnstats-15",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-22",
+    "Key": "msnstats-22",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-31",
+    "Key": "msnstats-31",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-40",
+    "Key": "msnstats-40",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-49",
+    "Key": "msnstats-49",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-58",
+    "Key": "msnstats-58",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "msnstats-67",
+    "Key": "msnstats-67",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "ok-2",
+    "Key": "ok-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "okcancel-3",
+    "Key": "okcancel-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "ptextbox-4",
+    "Key": "ptextbox-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnn-1",
+    "Key": "statbtnn-1",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnn-2",
+    "Key": "statbtnn-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnn-3",
+    "Key": "statbtnn-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnn-4",
+    "Key": "statbtnn-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnn-5",
+    "Key": "statbtnn-5",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnn-6",
+    "Key": "statbtnn-6",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnn-7",
+    "Key": "statbtnn-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnn-8",
+    "Key": "statbtnn-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnn-9",
+    "Key": "statbtnn-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnn-10",
+    "Key": "statbtnn-10",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnn-11",
+    "Key": "statbtnn-11",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnn-12",
+    "Key": "statbtnn-12",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnn-13",
+    "Key": "statbtnn-13",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnp-1",
+    "Key": "statbtnp-1",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnp-2",
+    "Key": "statbtnp-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnp-3",
+    "Key": "statbtnp-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnp-4",
+    "Key": "statbtnp-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnp-5",
+    "Key": "statbtnp-5",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnp-6",
+    "Key": "statbtnp-6",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnp-7",
+    "Key": "statbtnp-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnp-8",
+    "Key": "statbtnp-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnp-9",
+    "Key": "statbtnp-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnt-1",
+    "Key": "statbtnt-1",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnt-2",
+    "Key": "statbtnt-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnt-3",
+    "Key": "statbtnt-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnt-4",
+    "Key": "statbtnt-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnt-5",
+    "Key": "statbtnt-5",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnt-6",
+    "Key": "statbtnt-6",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnt-7",
+    "Key": "statbtnt-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnt-8",
+    "Key": "statbtnt-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnt-9",
+    "Key": "statbtnt-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnz-1",
+    "Key": "statbtnz-1",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnz-2",
+    "Key": "statbtnz-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnz-3",
+    "Key": "statbtnz-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnz-4",
+    "Key": "statbtnz-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnz-5",
+    "Key": "statbtnz-5",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnz-6",
+    "Key": "statbtnz-6",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnz-7",
+    "Key": "statbtnz-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnz-8",
+    "Key": "statbtnz-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnz-9",
+    "Key": "statbtnz-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-1",
+    "Key": "statdata-1",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-2",
+    "Key": "statdata-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-3",
+    "Key": "statdata-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-4",
+    "Key": "statdata-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-5",
+    "Key": "statdata-5",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-6",
+    "Key": "statdata-6",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-7",
+    "Key": "statdata-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-8",
+    "Key": "statdata-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-9",
+    "Key": "statdata-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-10",
+    "Key": "statdata-10",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-11",
+    "Key": "statdata-11",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-12",
+    "Key": "statdata-12",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-13",
+    "Key": "statdata-13",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-14",
+    "Key": "statdata-14",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-15",
+    "Key": "statdata-15",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-16",
+    "Key": "statdata-16",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-17",
+    "Key": "statdata-17",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-18",
+    "Key": "statdata-18",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-19",
+    "Key": "statdata-19",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-20",
+    "Key": "statdata-20",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-21",
+    "Key": "statdata-21",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-22",
+    "Key": "statdata-22",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-23",
+    "Key": "statdata-23",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-24",
+    "Key": "statdata-24",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-25",
+    "Key": "statdata-25",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-26",
+    "Key": "statdata-26",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-27",
+    "Key": "statdata-27",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-28",
+    "Key": "statdata-28",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-29",
+    "Key": "statdata-29",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-30",
+    "Key": "statdata-30",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-31",
+    "Key": "statdata-31",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-32",
+    "Key": "statdata-32",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-33",
+    "Key": "statdata-33",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-34",
+    "Key": "statdata-34",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-35",
+    "Key": "statdata-35",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-36",
+    "Key": "statdata-36",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-37",
+    "Key": "statdata-37",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-38",
+    "Key": "statdata-38",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-39",
+    "Key": "statdata-39",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-40",
+    "Key": "statdata-40",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-41",
+    "Key": "statdata-41",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-42",
+    "Key": "statdata-42",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-43",
+    "Key": "statdata-43",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-44",
+    "Key": "statdata-44",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-45",
+    "Key": "statdata-45",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-46",
+    "Key": "statdata-46",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-47",
+    "Key": "statdata-47",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-48",
+    "Key": "statdata-48",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-49",
+    "Key": "statdata-49",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-50",
+    "Key": "statdata-50",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-51",
+    "Key": "statdata-51",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-52",
+    "Key": "statdata-52",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-53",
+    "Key": "statdata-53",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-54",
+    "Key": "statdata-54",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-55",
+    "Key": "statdata-55",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-56",
+    "Key": "statdata-56",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statdata-57",
+    "Key": "statdata-57",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statfluf-1",
+    "Key": "statfluf-1",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-1",
+    "Key": "StatLB-1",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-2",
+    "Key": "StatLB-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-3",
+    "Key": "StatLB-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-4",
+    "Key": "StatLB-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-5",
+    "Key": "StatLB-5",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-6",
+    "Key": "StatLB-6",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-7",
+    "Key": "StatLB-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-8",
+    "Key": "StatLB-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-9",
+    "Key": "StatLB-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-10",
+    "Key": "StatLB-10",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-11",
+    "Key": "StatLB-11",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-12",
+    "Key": "StatLB-12",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-13",
+    "Key": "StatLB-13",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-14",
+    "Key": "StatLB-14",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-15",
+    "Key": "StatLB-15",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-16",
+    "Key": "StatLB-16",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-17",
+    "Key": "StatLB-17",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-18",
+    "Key": "StatLB-18",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-19",
+    "Key": "StatLB-19",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-20",
+    "Key": "StatLB-20",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-21",
+    "Key": "StatLB-21",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-22",
+    "Key": "StatLB-22",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-23",
+    "Key": "StatLB-23",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-24",
+    "Key": "StatLB-24",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-25",
+    "Key": "StatLB-25",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-26",
+    "Key": "StatLB-26",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-27",
+    "Key": "StatLB-27",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-28",
+    "Key": "StatLB-28",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-29",
+    "Key": "StatLB-29",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-30",
+    "Key": "StatLB-30",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-31",
+    "Key": "StatLB-31",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-32",
+    "Key": "StatLB-32",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-33",
+    "Key": "StatLB-33",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-34",
+    "Key": "StatLB-34",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "StatLB-35",
+    "Key": "StatLB-35",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statres-2",
+    "Key": "statres-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statres-3",
+    "Key": "statres-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statres-4",
+    "Key": "statres-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statres-5",
+    "Key": "statres-5",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statres-6",
+    "Key": "statres-6",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statres-7",
+    "Key": "statres-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statwire-1",
+    "Key": "statwire-1",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-8",
+    "Key": "teamfltr-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-9",
+    "Key": "teamfltr-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-10",
+    "Key": "teamfltr-10",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-11",
+    "Key": "teamfltr-11",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-12",
+    "Key": "teamfltr-12",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-13",
+    "Key": "teamfltr-13",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-16",
+    "Key": "teamfltr-16",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-17",
+    "Key": "teamfltr-17",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-18",
+    "Key": "teamfltr-18",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-19",
+    "Key": "teamfltr-19",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-20",
+    "Key": "teamfltr-20",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "teamfltr-21",
+    "Key": "teamfltr-21",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "timeout-3",
+    "Key": "timeout-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "timeout-4",
+    "Key": "timeout-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "timeout-5",
+    "Key": "timeout-5",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "timeout-8",
+    "Key": "timeout-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "timeout-9",
+    "Key": "timeout-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "timeout-12",
+    "Key": "timeout-12",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "timeout-13",
+    "Key": "timeout-13",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "timeout-14",
+    "Key": "timeout-14",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "timeout-15",
+    "Key": "timeout-15",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "ttextbox-4",
+    "Key": "ttextbox-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "wait-1",
+    "Key": "wait-1",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "ztextbox-4",
+    "Key": "ztextbox-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluScore-4",
+    "Key": "gluScore-4",
+    "Value": "r\\u0004R\\u0001esources"
+  },
+  {
+    "id": "gluScore-5",
+    "Key": "gluScore-5",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluScore-6",
+    "Key": "gluScore-6",
+    "Value": "s\\u0004S\\u0001ave Replay"
+  },
+  {
+    "id": "gluScore-7",
+    "Key": "gluScore-7",
+    "Value": "w\\u0004W\\u0001atch Replay"
+  },
+  {
+    "id": "MsgFltr-6",
+    "Key": "MsgFltr-6",
+    "Value": "Messaging"
+  },
+  {
+    "id": "netdlg-4",
+    "Key": "netdlg-4",
+    "Value": "h\\u0004H\\u0001igh latency"
+  },
+  {
+    "id": "video-8",
+    "Key": "video-8",
+    "Value": "f\\u0004F\\u0001ullscreen"
+  },
+  {
+    "id": "voice-13",
+    "Key": "voice-13",
+    "Value": "max"
+  },
+  {
+    "id": "minimap-7",
+    "Key": "minimap-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "minimap-8",
+    "Key": "minimap-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "minimap-9",
+    "Key": "minimap-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluSimpleCheckoutPopup-4",
+    "Key": "gluSimpleCheckoutPopup-4",
+    "Value": "X"
+  },
+  {
+    "id": "gluBattlenetChat-9",
+    "Key": "gluBattlenetChat-9",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluBattlenetLeaderboardScreen-2",
+    "Key": "gluBattlenetLeaderboardScreen-2",
+    "Value": "\\u001B"
+  },
+  {
+    "id": "gluBattlenetLeaderboardScreen-3",
+    "Key": "gluBattlenetLeaderboardScreen-3",
+    "Value": "\\u001B"
+  },
+  {
+    "id": "gluBattlenetUserProfileScreen-2",
+    "Key": "gluBattlenetUserProfileScreen-2",
+    "Value": "\\u001B"
+  },
+  {
+    "id": "gluBattlenetUserProfileScreen-3",
+    "Key": "gluBattlenetUserProfileScreen-3",
+    "Value": "\\u001B"
+  },
+  {
+    "id": "gluBattlenetChat-10",
+    "Key": "gluBattlenetChat-10",
+    "Value": "q\\u0004Q\\u0001uit"
+  },
+  {
+    "id": "apm_dlg-4",
+    "Key": "apm_dlg-4",
+    "Value": "d\\u0004D\\u0001isplay APM In Game"
+  },
+  {
+    "id": "apm_dlg-5",
+    "Key": "apm_dlg-5",
+    "Value": "u\\u0004U\\u0001se Effective APM Values (EPM)"
+  },
+  {
+    "id": "apm_dlg-6",
+    "Key": "apm_dlg-6",
+    "Value": "s\\u0004S\\u0001how Both Values (APM/EPM)"
+  },
+  {
+    "id": "apm_dlg-7",
+    "Key": "apm_dlg-7",
+    "Value": "Alert When Below:"
+  },
+  {
+    "id": "apm_dlg-8",
+    "Key": "apm_dlg-8",
+    "Value": "tColor \\u0004T\\u0001ext"
+  },
+  {
+    "id": "apm_dlg-9",
+    "Key": "apm_dlg-9",
+    "Value": "p\\u0004P\\u0001lay Sound"
+  },
+  {
+    "id": "apm_dlg-10",
+    "Key": "apm_dlg-10",
+    "Value": "Hotkeys Profile"
+  },
+  {
+    "id": "apm_dlg-11",
+    "Key": "apm_dlg-11",
+    "Value": "b\\u0004B\\u0001rood War"
+  },
+  {
+    "id": "apm_dlg-12",
+    "Key": "apm_dlg-12",
+    "Value": "mCusto\\u0004m\\u0001"
+  },
+  {
+    "id": "gameopt_dlg-8",
+    "Key": "gameopt_dlg-8",
+    "Value": "Game Options"
+  },
+  {
+    "id": "gluBattlenetLeaderboardScreen-1",
+    "Key": "gluBattlenetLeaderboardScreen-1",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluBattlenetMatchmakingToastScreen-1",
+    "Key": "gluBattlenetMatchmakingToastScreen-1",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluBattlenetMatchmakingToastScreen-2",
+    "Key": "gluBattlenetMatchmakingToastScreen-2",
+    "Value": "p\\u0004P\\u0001lay Again?"
+  },
+  {
+    "id": "gluBattlenetMatchmakingToastScreen-3",
+    "Key": "gluBattlenetMatchmakingToastScreen-3",
+    "Value": "i\\u0004I\\u0001nvite Player (WIP)"
+  },
+  {
+    "id": "gluSimpleCheckoutPopup-1",
+    "Key": "gluSimpleCheckoutPopup-1",
+    "Value": "X"
+  },
+  {
+    "id": "gluSimpleCheckoutPopup-2",
+    "Key": "gluSimpleCheckoutPopup-2",
+    "Value": "X"
+  },
+  {
+    "id": "gluBattlenetUserProfileScreen-1",
+    "Key": "gluBattlenetUserProfileScreen-1",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "minimap-4",
+    "Key": "minimap-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "minimap-5",
+    "Key": "minimap-5",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "minimap-6",
+    "Key": "minimap-6",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluSimpleCheckoutPopup-3",
+    "Key": "gluSimpleCheckoutPopup-3",
+    "Value": "X"
+  },
+  {
+    "id": "gluBattlenetChat-8",
+    "Key": "gluBattlenetChat-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluMain-14",
+    "Key": "gluMain-14",
+    "Value": "iView \\u0004I\\u0001ntro"
+  },
+  {
+    "id": "gluMatchmaking-1",
+    "Key": "gluMatchmaking-1",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluMatchmaking-2",
+    "Key": "gluMatchmaking-2",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluMatchmaking-3",
+    "Key": "gluMatchmaking-3",
+    "Value": "m\\u0004M\\u0001ap Prefs"
+  },
+  {
+    "id": "video-15",
+    "Key": "video-15",
+    "Value": "e\\u0004E\\u0001nable Vertical Sync"
+  },
+  {
+    "id": "gluJoin-12",
+    "Key": "gluJoin-12",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "video-14",
+    "Key": "video-14",
+    "Value": "Video Options"
+  },
+  {
+    "id": "ptextbox-7",
+    "Key": "ptextbox-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "ttextbox-7",
+    "Key": "ttextbox-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "ztextbox-7",
+    "Key": "ztextbox-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluWebAuthenticationPopup1280-1",
+    "Key": "gluWebAuthenticationPopup1280-1",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluWebAuthenticationPopup1280-2",
+    "Key": "gluWebAuthenticationPopup1280-2",
+    "Value": "X"
+  },
+  {
+    "id": "gluWebAuthenticationPopup640-1",
+    "Key": "gluWebAuthenticationPopup640-1",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluWebAuthenticationPopup640-2",
+    "Key": "gluWebAuthenticationPopup640-2",
+    "Value": "X"
+  },
+  {
+    "id": "gluMain-11",
+    "Key": "gluMain-11",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluMain-12",
+    "Key": "gluMain-12",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluMain-13",
+    "Key": "gluMain-13",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluMain-16",
+    "Key": "gluMain-16",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluMain-19",
+    "Key": "gluMain-19",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluMain-21",
+    "Key": "gluMain-21",
+    "Value": "h\\u0004H\\u0001otkeys"
+  },
+  {
+    "id": "gluMain-20",
+    "Key": "gluMain-20",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluMain-22",
+    "Key": "gluMain-22",
+    "Value": "\\u0005Single Player"
+  },
+  {
+    "id": "apm_dlg-1",
+    "Key": "apm_dlg-1",
+    "Value": "o\\u0004O\\u0001K"
+  },
+  {
+    "id": "apm_dlg-2",
+    "Key": "apm_dlg-2",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "apm_dlg-3",
+    "Key": "apm_dlg-3",
+    "Value": "APM Tracking"
+  },
+  {
+    "id": "quitUploadWarning-1",
+    "Key": "quitUploadWarning-1",
+    "Value": "xE\\u0004x\\u0001it Program"
+  },
+  {
+    "id": "quitUploadWarning-2",
+    "Key": "quitUploadWarning-2",
+    "Value": "\\u001BCancel (\\u0004Esc\\u0001)"
+  },
+  {
+    "id": "quitUploadWarning-3",
+    "Key": "quitUploadWarning-3",
+    "Value": "UPLOAD IN PROGRESS"
+  },
+  {
+    "id": "quitUploadWarning-4",
+    "Key": "quitUploadWarning-4",
+    "Value": "Your data will not be"
+  },
+  {
+    "id": "quitUploadWarning-5",
+    "Key": "quitUploadWarning-5",
+    "Value": "backed up to the cloud"
+  },
+  {
+    "id": "quitUploadWarning-6",
+    "Key": "quitUploadWarning-6",
+    "Value": "if you exit now."
+  },
+  {
+    "id": "quitUploadWarning-7",
+    "Key": "quitUploadWarning-7",
+    "Value": "\\u0002(0 bytes remaining)"
+  },
+  {
+    "id": "quitUploadWarning-8",
+    "Key": "quitUploadWarning-8",
+    "Value": "Are you sure you"
+  },
+  {
+    "id": "quitUploadWarning-9",
+    "Key": "quitUploadWarning-9",
+    "Value": "want to exit StarCraft?"
+  },
+  {
+    "id": "gameopt_dlg-1",
+    "Key": "gameopt_dlg-1",
+    "Value": "o\\u0004O\\u0001K"
+  },
+  {
+    "id": "gameopt_dlg-2",
+    "Key": "gameopt_dlg-2",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gameopt_dlg-3",
+    "Key": "gameopt_dlg-3",
+    "Value": "tGame \\u0004T\\u0001imer"
+  },
+  {
+    "id": "gameopt_dlg-4",
+    "Key": "gameopt_dlg-4",
+    "Value": "e\\u0004E\\u0001nable Color Cycling"
+  },
+  {
+    "id": "gameopt_dlg-5",
+    "Key": "gameopt_dlg-5",
+    "Value": "a\\u0004A\\u0001nimating unit portraits"
+  },
+  {
+    "id": "gameopt_dlg-6",
+    "Key": "gameopt_dlg-6",
+    "Value": "s\\u0004S\\u0001till unit portraits"
+  },
+  {
+    "id": "gameopt_dlg-7",
+    "Key": "gameopt_dlg-7",
+    "Value": "d\\u0004D\\u0001isable unit portraits"
+  },
+  {
+    "id": "gluBattlenetCreateGameScreen-1",
+    "Key": "gluBattlenetCreateGameScreen-1",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluBattlenetCreateGameScreen-2",
+    "Key": "gluBattlenetCreateGameScreen-2",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "gluBattlenetPopupLarge-1",
+    "Key": "gluBattlenetPopupLarge-1",
+    "Value": "Working...."
+  },
+  {
+    "id": "gluBattlenetPopupLarge-2",
+    "Key": "gluBattlenetPopupLarge-2",
+    "Value": "o\\u0004O\\u0001k"
+  },
+  {
+    "id": "gluBattlenetPopupLarge-3",
+    "Key": "gluBattlenetPopupLarge-3",
+    "Value": "c\\u0004C\\u0001ancel"
+  },
+  {
+    "id": "statbtnn-14",
+    "Key": "statbtnn-14",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "chathist-1",
+    "Key": "chathist-1",
+    "Value": "o\\u0004O\\u0001K"
+  },
+  {
+    "id": "chathist-2",
+    "Key": "chathist-2",
+    "Value": "Message History"
+  },
+  {
+    "id": "statbtnbc2017-1",
+    "Key": "statbtnbc2017-1",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnbc2017-2",
+    "Key": "statbtnbc2017-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnbc2017-3",
+    "Key": "statbtnbc2017-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnbc2017-4",
+    "Key": "statbtnbc2017-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnbc2017-5",
+    "Key": "statbtnbc2017-5",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnbc2017-6",
+    "Key": "statbtnbc2017-6",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnbc2017-7",
+    "Key": "statbtnbc2017-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnbc2017-8",
+    "Key": "statbtnbc2017-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnbc2017-9",
+    "Key": "statbtnbc2017-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "dlgFatal-4",
+    "Key": "dlgFatal-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "dlgFatal-5",
+    "Key": "dlgFatal-5",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnSC_20thAnniversary-1",
+    "Key": "statbtnSC_20thAnniversary-1",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnSC_20thAnniversary-2",
+    "Key": "statbtnSC_20thAnniversary-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnSC_20thAnniversary-3",
+    "Key": "statbtnSC_20thAnniversary-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnSC_20thAnniversary-4",
+    "Key": "statbtnSC_20thAnniversary-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnSC_20thAnniversary-5",
+    "Key": "statbtnSC_20thAnniversary-5",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnSC_20thAnniversary-6",
+    "Key": "statbtnSC_20thAnniversary-6",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnSC_20thAnniversary-7",
+    "Key": "statbtnSC_20thAnniversary-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnSC_20thAnniversary-8",
+    "Key": "statbtnSC_20thAnniversary-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtnSC_20thAnniversary-9",
+    "Key": "statbtnSC_20thAnniversary-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluBattlenetChat-11",
+    "Key": "gluBattlenetChat-11",
+    "Value": "q\\u0004Q\\u0001uit"
+  },
+  {
+    "id": "statbtnbc2018-9",
+    "Key": "statbtnbc2018-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtndefault-1",
+    "Key": "statbtndefault-1",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtndefault-2",
+    "Key": "statbtndefault-2",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtndefault-3",
+    "Key": "statbtndefault-3",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtndefault-4",
+    "Key": "statbtndefault-4",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtndefault-5",
+    "Key": "statbtndefault-5",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtndefault-6",
+    "Key": "statbtndefault-6",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtndefault-7",
+    "Key": "statbtndefault-7",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtndefault-8",
+    "Key": "statbtndefault-8",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "statbtndefault-9",
+    "Key": "statbtndefault-9",
+    "Value": "<<PLACEHOLDER>>"
+  },
+  {
+    "id": "gluScore-8",
+    "Key": "gluScore-8",
+    "Value": "Total Score"
+  },
+  {
+    "id": "gluScore-9",
+    "Key": "gluScore-9",
+    "Value": "s\\u0004S\\u0001ave Replay"
+  }
+]

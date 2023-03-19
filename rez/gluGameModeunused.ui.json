@@ -1,0 +1,40 @@
+﻿{
+  "type": "DIALOG",
+  "name": "Delete",
+  "rect": [0,0,360,200],
+  "style": ["DS_MODALFRAME","WS_POPUP","WS_SYSMENU"],
+  "children": [
+    {
+      "type": "FLCBTN",
+      "content": "gluGameMode-1",
+      "id": 6,
+      "rect": [134,114,190,56],
+      "flags": ["WS_CHILD","WS_VISIBLE","WS_TABSTOP","WS_HOTKEY","FB_HTEXTCENTER","FB_VTEXTBOTTOM"],
+      "children": null
+    },
+    {
+      "type": "LTEXT",
+      "content": "gluGameMode-2",
+      "id": 2,
+      "rect": [10,10,340,140],
+      "flags": ["WS_CHILD","WS_VISIBLE","WS_GROUP","RC_BIGTEXT"],
+      "children": null
+    },
+    {
+      "type": "FLCBTN",
+      "content": "gluGameMode-3",
+      "id": 7,
+      "rect": [26,38,190,56],
+      "flags": ["WS_CHILD","WS_VISIBLE","WS_TABSTOP","WS_HOTKEY","FB_HTEXTCENTER","FB_VTEXTBOTTOM","CTRL_ENTER"],
+      "children": null
+    },
+    {
+      "type": "FLCBTN",
+      "content": "gluGameMode-4",
+      "id": 3,
+      "rect": [8,160,120,29],
+      "flags": ["WS_CHILD","WS_VISIBLE","WS_TABSTOP","WS_HOTKEY","FB_HTEXTCENTER","FB_VTEXTCENTER","CTRL_ESCAPE"],
+      "children": null
+    }
+  ]
+}
