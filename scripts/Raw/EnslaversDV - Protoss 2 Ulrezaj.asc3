@@ -1,0 +1,119 @@
+script_name Brood Wars Protoss 2 - Town A
+script_id PB2A
+
+unstart_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+creep 4
+define_max 32 harchon
+define_max 5 observer
+define_max 5 shuttle
+define_max 11 hmojo
+define_max 11 hcorsair
+define_max 21 hduran
+define_max 4 carrier
+define_max 255 hornet
+define_max 14 hzeratul
+define_max 3 dark_archon
+define_max 54 probe
+define_max 6 dark_templar
+define_max 2 harbiter
+idle_orders disablebuiltin 0 0 0 0 0 0 0
+supply 13 Set 250 Max 0 Protoss forge_fe
+build 1 probe 150
+build 1 nexus 130
+build 8 probe 120
+build 1 pylon 80
+build 10 probe 120
+build 14 probe 80
+build 3 gateway 80
+build 1 cybernetics_core 80
+build 2 stargate 80
+build 1 fleet_beacon 80
+build 1 citadel_of_adun 80
+build 1 templar_archives 80
+build 1 arbiter_tribunal 80
+build 2 robotics_facility 80
+build 1 robotics_support_bay 80
+build 1 observatory 80
+build 18 probe 80
+max_workers 18
+defensebuild_gg 2 harchon
+defenseuse_gg 2 harchon
+defensebuild_gg 1 hduran
+defenseuse_gg 1 hduran
+defensebuild_gg 1 hzeratul
+defenseuse_gg 1 hzeratul
+defensebuild_gg 1 hmojo
+defenseuse_gg 1 hmojo
+defensebuild_gg 1 hduran
+defenseuse_gg hduran
+defensebuild_ag 2 hduran
+defenseuse_ag 2 hduran
+defensebuild_ag 1 hcorsair
+defenseuse_ag 1 hcorsair
+defensebuild_ga 1 harbiter
+defenseuse_ga 1 harbiter
+defensebuild_ga 1 hmojo
+defenseuse_ga 1 hmojo
+defensebuild_ga 1 carrier
+defenseuse_ga 1 carrier
+defensebuild_aa 1 hcorsair
+defenseuse_aa 1 hcorsair
+defensebuild_aa 1 hcorsair
+defenseuse_aa 1 hcorsair
+farms_timing
+upgrade 1 p_ground_weapon 30
+upgrade 1 zealot_speed 30
+upgrade 1 p_plasma_shield 30
+upgrade 1 shuttle_speed 30
+upgrade 1 observer_speed 30
+wait 16
+
+train 6 harchon
+attack_add 6 harchon
+attack_to Loc.25 Loc.24
+attack_do
+attack_clear
+create_script fort 255 Loc.75 255 0
+
+:nriver
+start_town
+build 1 pylon 80
+wait_build 1 pylon
+build 1 gateway 80
+wait_buildstart 1 gateway
+build 2 pylon 80
+wait_build 2 pylon
+build 1 shield_battery 80
+build 1 photon_cannon 80
+build 3 pylon 80
+wait_build 3 pylon
+build 2 photon_cannon 80
+:nloop
+wait 1500
+
+goto nloop
+
+:sriver
+start_town
+build 1 pylon 80
+wait_build 1 pylon
+build 1 gateway 80
+wait_buildstart 1 gateway
+build 2 pylon 80
+wait_build 2 pylon
+build 1 shield_battery 80
+build 1 photon_cannon 80
+build 3 pylon 80
+wait_build 3 pylon
+build 2 photon_cannon 80
+:sloop
+wait 1500
+
+goto sloop
