@@ -1,0 +1,573 @@
+script_name Brood Wars Terran 1 - Town B
+script_id TB1B
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 hatchery 150
+build 1 drone 130
+build 2 hatchery 80
+build 5 drone 80
+build 1 spawning_pool 80
+build 1 lair 80
+build 1 evolution_chamber 80
+build 1 hydralisk_den 80
+build 1 queen_nest 80
+build 1 hive 80
+build 1 ultralisk_cavern 80
+build 4 creep_colony 80
+build 4 sunken_colony 80
+idle_orders DisableBuiltin 0 0 0 0 0 0 0
+define_max 60 drone
+define_max 40 zergling
+define_max 37 hydralisk
+define_max 5 lurker
+define_max 20 broodling
+define_max 30 overlord
+#shared handling instead of hydra area because I need a basic unit
+
+#define_max 10 mutalisk
+#define_max 4 guardian
+#define_max 3 devourer
+#define_max 6 scourge
+#handle in air area
+
+define_max 5 infested_terran
+
+#define_max 2 queen
+#handle in queen area
+define_max 6 ultralisk
+max_force 1066
+defensebuild_gg 2 zergling
+defenseuse_gg 2 zergling
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_ag 2 hydralisk
+defenseuse_ag 2 hydralisk
+
+multirun def_spirecheck
+#remove muta and scourge after we lose spires, separated per greater and normal
+idle_orders 11 120 1 lurker 192 Any 20 WithoutUnitFlags(Air)
+idle_orders 11 120 1 lurker 192 Any 50 WithoutUnitFlags(Air)|UnitFlags(Detector)
+idle_orders 11 120 1 lurker 192 Any 60 InCombat|WithoutUnitFlags(Air)
+idle_orders 11 120 1 lurker 192 Any 100 InCombat|WithoutUnitFlags(Air)|UnitFlags(Detector)
+supply 13 Set 220 Max 0 Zerg loop_until_base
+upgrade 1 overlord_capacity 30
+tech lurker_aspect 30
+upgrade 1 overlord_speed 30
+tech burrowing 30
+wait 50
+
+:loop_until_base
+wait 500
+
+deaths 3 Add 1 hhydralisk loop_until_base
+deaths 3 AtLeast_Call 60 hhydralisk force_codes
+bring_jump 1 AtMost 0 command_center Loc.63 loop_until_base
+multirun grand_exchange
+capt_expand
+build 13 drone 80
+max_workers 21
+defensebuild_gg 1 infested_terran
+defenseuse_gg 1 infested_terran
+defensebuild_gg 1 lurker
+defenseuse_gg 1 lurker
+upgrade 1 burrowed_regen 30
+upgrade 1 z_melee_attack 30
+wait 1835
+
+multirun remove_queen
+help_iftrouble
+call wait_attack
+call hold_attack
+train 1 ultralisk
+train 4 zergling
+attack_add 4 zergling
+attack_add 1 ultralisk
+attack_to Loc.17 Loc.55
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+build 20 drone 80
+upgrade 1 hydralisk_range 30
+upgrade 1 zergling_speed 30
+upgrade 1 z_missile_attack 30
+wait 2033
+
+call wait_attack
+call hold_attack
+train 1 hydralisk
+train 8 zergling
+train 1 lurker
+attack_add 8 zergling
+attack_add 1 lurker
+attack_to Loc.17 Loc.92
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+expand 5 expansion
+upgrade 1 z_carapace 30
+wait 2215
+
+upgrade 2 z_missile_attack 30
+upgrade 1 hydra_attack 30
+call wait_attack
+call hold_attack
+train 2 ultralisk
+attack_add 2 ultralisk
+call waypointing
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+upgrade 2 z_carapace 30
+upgrade 1 overlord_sight 30
+wait 1565
+
+upgrade 1 hydralisk_speed 30
+upgrade 1 zergling_attack 30
+upgrade 1 ultralisk_speed 30
+upgrade 1 burrowed_regen 30
+wait 1850
+
+call wait_attack
+call hold_attack
+train 24 zergling
+attack_add 24 zergling
+call waypointing
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+upgrade 2 z_melee_attack 30
+upgrade 1 lurker_speed 30
+build 1 nydus_canal 80
+expand 5 expansion
+wait 1950
+
+call wait_attack
+call hold_attack
+train 3 hydralisk
+train 2 infested_terran
+train 3 lurker
+attack_add 3 lurker
+attack_add 2 infested_terran
+call waypointing
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+upgrade 3 z_missile_attack 30
+upgrade 3 z_carapace 30
+upgrade 1 ultralisk_armor 30
+wait 1745
+
+call wait_attack
+call hold_attack
+train 30 zergling
+attack_add 30 zergling
+call waypointing
+wait 500
+
+attack_do
+attack_clear
+upgrade 3 z_melee_attack 30
+call release_attack
+wait 2066
+
+call wait_attack
+call hold_attack
+train 3 hydralisk
+train 3 lurker
+train 4 ultralisk
+attack_add 4 ultralisk
+attack_add 3 lurker
+call waypointing
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+expand 5 expansion
+build 2 nydus_canal 80
+#potentially add an expo that researches voracity after a delay?
+max_workers 255
+:kerri_loop
+wait 2455
+
+call wait_attack
+call hold_attack
+train 4 hydralisk
+train 28 zergling
+train 4 lurker
+attack_add 28 zergling
+attack_add 4 lurker
+call waypointing
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+wait 1450
+
+call wait_attack
+call hold_attack
+train 6 ultralisk
+attack_add 6 ultralisk
+call waypointing
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+wait 2250
+
+call wait_attack
+call hold_attack
+train 4 hydralisk
+train 20 zergling
+train 4 lurker
+train 2 infested_terran
+train 2 ultralisk
+attack_add 20 zergling
+attack_add 2 ultralisk
+attack_add 2 infested_terran
+attack_add 4 lurker
+call waypointing
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+expand 6 expansion
+goto kerri_loop
+
+:force_codes
+train 4 hydralisk
+train 8 zergling
+train 1 mutalisk
+attack_add 4 hydralisk
+attack_add 8 zergling
+attack_add 1 mutalisk
+attack_prepare
+wait 300
+
+attack_timeout 120
+attack_do
+attack_clear
+return
+
+:hold_attack
+deaths 3 Add 1 firebat kerri_loop
+return
+
+:release_attack
+deaths 3 Set 0 firebat kerri_loop
+return
+
+:wait_attack
+wait 16
+
+deaths 3 AtLeast 2 firebat ensure_attack
+deaths 3 Exactly 1 firebat wait_attack
+#loop if another script started an attack
+return
+
+:ensure_attack
+load_bank Ensures
+print Ensure_TwoOrMore_PleaseReportMeIfSeen
+bank_data Set 1 Ensures Ensure_TwoOrMore wait_attack
+bank_data Set 0 Ensures Ensure_Compare wait_attack
+save_bank Ensures
+deaths 3 Set 0 firebat kerri_loop
+return
+
+#:cull_timer
+#wait 16 
+#
+#deaths 3 AtLeast 181 gateway cull_timer
+#deaths 3 Add 1 gateway cull_timer
+#deaths 3 Exactly 1 firebat cull_timer
+#:cull_force
+#deaths 3 Set 0 firebat kerri_loop
+#deaths 3 AtLeast_Wait 1 firebat cull_timer
+#goto cull_timer
+##remove the forced wait if we are stuck on two attacks at once 
+
+:grand_exchange
+#fake ge - need to keep returns legal
+wait 650
+
+resources 13 AtMost Ore 850 ge_mins
+resources 13 AtMost Gas 600 ge_gas
+goto grand_exchange
+ 
+#just give a small trickle to make sure AI doesn't appear completely AFK after continuous harassment
+:ge_mins
+resources 13 Add Ore 120 grand_exchange
+wait 150
+
+goto grand_exchange
+
+
+:ge_gas
+resources 13 Add Gas 85 grand_exchange
+wait 450
+
+goto grand_exchange
+#call ge_gas
+#call ge_mins
+#time_jump 50 late_gas_detour
+#goto ge_init
+#
+#:late_gas_detour
+#resources 13 AtMost Gas 1199 ge_init
+#resources 13 AtLeast Ore 2200 ge_init
+#resources 13 Subtract Gas 200 ge_init
+#resources 13 Add Ore 266 ge_init
+#goto ge_init
+#
+#:ge_gas
+#resources 13 AtLeast Gas 600 ge_skip
+#resources 13 AtMost Ore 1099 ge_skip
+#resources 13 Subtract Ore 170 ge_skip
+#resources 13 Add Gas 80 ge_skip
+#return
+#
+#:ge_mins
+#resources 13 AtMost Gas 599 ge_skip
+#resources 13 AtLeast Ore 1100 ge_skip
+#resources 13 Subtract Gas 100 ge_skip
+#resources 13 Add Ore 133 ge_skip
+#return
+#
+#:ge_skip
+#return
+
+:expansion
+start_town
+build 1 hatchery 100
+get_oldpeons 1
+wait_buildstart 1 hatchery
+build 1 drone 90
+wait_build 1 drone
+build 8 drone 80
+wait_buildstart 8 drone
+place_guard hydralisk 0
+place_guard hydralisk 2
+build 1 creep_colony 80
+max_workers 15
+build 14 drone 80
+wait_buildstart 12 drone
+build 1 sunken_colony 80
+build 2 creep_colony 80
+wait 3000
+
+place_guard scourge 0
+build 1 spore_colony 80
+if_owned defiler_mound exp_notfirst
+build 1 defiler_mound 80
+wait 15800
+
+build 1 spawning_pool 80
+wait 10000
+
+player_need 1 ultralisk_cavern
+upgrade 1 voracity 30
+max_workers 255
+:vloop
+wait 1555
+
+goto vloop
+
+:remove_queen
+wait 250
+
+deaths 3 Exactly 0 hqueen remove_queen
+define_max 1 queen
+stop
+
+:exp_notfirst
+player_need 1 defiler_mound
+wait 15800
+
+build 1 evolution_chamber 80
+wait 10000
+
+player_need 1 ultralisk_cavern
+upgrade_jump 13 Exactly voracity 1 vloop
+upgrade 1 voracity 30
+max_workers 255
+goto vloop
+
+:def_spirecheck
+wait 160
+
+notowns_jump greater_spire def_spbasic
+goto def_spirecheck
+
+:def_spbasic
+wait 8
+
+notowns_jump spire def_clear
+defenseclear_gg
+defenseclear_ag
+defenseclear_ga
+defenseclear_aa
+defensebuild_gg 2 zergling
+defenseuse_gg 2 zergling
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+defensebuild_gg 1 infested_terran
+defenseuse_gg 1 infested_terran
+defensebuild_gg 1 lurker
+defenseuse_gg 1 lurker
+#always include above
+defensebuild_gg 1 mutalisk
+defenseuse_gg 1 mutalisk
+defensebuild_ag 1 scourge
+defenseuse_ag 1 scourge
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+wait 300
+
+wait_secure
+notowns_jump spire def_clear
+wait 1150
+
+goto def_spirecheck
+
+:def_clear
+defenseclear_gg
+defenseclear_ag
+defenseclear_ga
+defenseclear_aa
+defensebuild_gg 2 zergling
+defenseuse_gg 2 zergling
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+defensebuild_gg 1 infested_terran
+defenseuse_gg 1 infested_terran
+defensebuild_gg 1 lurker
+defenseuse_gg 1 lurker
+#always include above
+wait 300
+
+wait_secure
+wait 1150
+
+goto def_spirecheck
+
+:waypointing
+wait 16
+
+#pick targets based on player presence, fallback to random otherwise
+#should not trigger ensure because this is only ran after the safeguard
+#use HULTRALISK death to force fallback
+random_jump 64 middle_approach
+random_jump 85 west_approach
+random_jump 128 south_approach
+unstart_campaign
+attack_prepare
+start_campaign
+return
+
+:nomiddle
+wait 8
+
+deaths 3 AtLeast 3 hultralisk fallback
+deaths 3 Add 1 hultralisk fallback
+random_jump 85 west_approach
+random_jump 128 south_approach
+goto waypointing
+
+:nosouth
+wait 8
+
+deaths 3 AtLeast 3 hultralisk fallback
+deaths 3 Add 1 hultralisk fallback
+random_jump 85 west_approach
+random_jump 128 middle_approach
+goto waypointing
+
+:nowest
+wait 8
+
+deaths 3 AtLeast 3 hultralisk fallback
+deaths 3 Add 1 hultralisk fallback
+random_jump 85 middle_approach
+random_jump 128 south_approach
+goto waypointing
+
+:west_approach
+wait 8
+
+bring_jump 14 AtMost 1 group_buildings Loc.66 nowest
+random_jump 85 alt_west
+attack_to Loc.102 Loc.84
+return
+
+:alt_west
+wait 8
+
+attack_to Loc.93 Loc.103
+return
+
+:south_approach
+wait 8
+
+random_jump 128 alt_south
+bring_jump 14 AtMost 3 group_buildings Loc.111 nosouth
+attack_to Loc.104 Loc.105
+return
+
+:alt_south
+wait 8
+
+bring_jump 14 AtMost 3 group_buildings Loc.114 nosouth
+attack_to Loc.106 Loc.107
+return
+
+:middle_approach
+wait 8
+
+random_jump 128 alt_middle
+bring_jump 14 AtMost 1 group_buildings Loc.113 nomiddle
+attack_to Loc.108 Loc.17
+return
+
+:alt_middle
+wait 8
+
+bring_jump 14 AtMost 1 group_buildings Loc.112 nomiddle
+attack_to Loc.109 Loc.110
+return
+
+:fallback
+deaths 3 Set 0 hultralisk waypointing
+attack_prepare
+return

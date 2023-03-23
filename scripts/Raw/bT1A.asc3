@@ -1,0 +1,602 @@
+script_name Brood Wars Terran 1 - Town A
+script_id TB1A
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 1
+wait 1
+
+build 1 command_center 150
+build 1 scv 130
+build 5 scv 80
+build 1 barracks 80
+build 1 engineering_bay 80
+build 1 academy 80
+build 1 missile_turret 80
+build 1 factory 80
+build 1 comsat_station 80
+max_force 800
+define_max 60 scv
+define_max 255 dropship
+define_max 8 firebat
+define_max 16 marine
+define_max 1 vulture
+define_max 255 goliath
+define_max 255 siege_tank
+define_max 255 wraith
+defensebuild_gg 1 marine
+defenseuse_gg 1 marine
+defensebuild_gg 1 firebat
+defenseuse_gg 1 firebat
+defensebuild_ag 1 marine
+defenseuse_ag 1 marine
+farms_timing
+wait 16
+
+multirun reinforcements
+multirun civilian_training
+multirun civilian_idle
+#issue_order 167 3 15 Loc.63 Loc.63 229 0 - JYD for civs, probably doesnt work
+#idle orders JYD (order167) for civilians (id15)
+wait 16 
+
+multirun scan_1
+multirun scan_2
+multirun scan_3
+multirun scan_4
+#scan to reveal objectives
+multirun unlock_speed
+#unlock speed when base is cleared
+multirun unlock_ghost
+wait 16
+
+#unlock ghost when base is discovered
+multirun early_armory
+#check if event unlocked armory, skip after (some death)
+multirun kmc_expocheck_1
+multirun kmc_expocheck_2
+multirun wait_for_arm
+wait 500
+
+multirun guards_top
+multirun zoo_open
+upgrade 1 marine_range 30
+train 4 marine
+attack_add 4 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_infantry_armor 30
+wait 1250
+
+upgrade 1 hospitals 30
+build 8 scv 80
+:loop_until_base
+wait 1500
+
+train 2 marine
+train 1 firebat
+attack_add 2 marine
+attack_add 1 firebat
+attack_prepare
+wait 300
+
+attack_timeout 120
+attack_do
+attack_clear
+bring_jump 1 AtMost 0 command_center Loc.63 loop_until_base
+multirun kmc_catchup_vplating1
+multirun kmc_catchup_vplating2
+multirun kmc_catchup_vweapon1
+multirun kmc_catchup_vweapon2
+multirun grand_exchange
+unstart_campaign
+upgrade 1 t_infantry_weapon 50
+build 13 scv 80
+build 1 armory 80
+build 1 machine_shop 80
+define_max 6 vulture
+define_max 6 goliath
+define_max 3 siege_tank
+define_max 10 firebat
+define_max 20 marine
+wait_buildstart 9 scv
+create_script forward_ar1 255 Loc.80 255 255
+wait 900
+
+deaths 2 Set 1 scout scan_1
+multirun zoo_bonus
+tech siege_mode 30
+tech stim_packs 30
+wait 340
+
+train 6 marine
+train 4 firebat
+attack_add 6 marine
+attack_add 4 firebat
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+defensebuild_gg 1 siege_tank
+defenseuse_gg 1 siege_tank
+upgrade 1 t_vehicle_plating 50
+wait 850
+
+train 10 marine
+train 2 siege_tank
+train 4 firebat
+attack_add 10 marine
+attack_add 4 firebat
+attack_add 2 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+multirun check_overcrowd
+multirun check_overcrowd2
+tech spider_mines 30
+create_script forward_ar2 255 Loc.18 255 255
+wait 1855
+
+train 3 firebat
+train 2 goliath
+train 6 firebat
+train 4 goliath
+train 9 firebat
+attack_add 4 goliath
+attack_add 9 firebat
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 vulture_speed 30
+upgrade 1 t_vehicle_weapon 40
+upgrade 1 vademecum 40
+wait 1650
+
+train 6 marine
+train 2 vulture
+train 10 marine
+train 4 vulture
+train 16 marine
+attack_add 16 marine
+attack_add 4 vulture
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+create_script forward_ar2 255 Loc.17 255 255
+define_max 14 firebat
+define_max 28 marine
+define_max 12 vulture
+define_max 7 goliath
+define_max 6 siege_tank
+:kmc_loop
+wait 1650
+
+train 1 siege_tank
+train 12 marine
+train 2 siege_tank
+train 4 firebat
+train 3 siege_tank
+train 15 marine
+attack_add 15 marine
+attack_add 4 firebat
+attack_add 3 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1250
+
+train 6 vulture
+train 4 goliath
+attack_add 6 vulture
+attack_add 4 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1566
+
+train 6 firebat
+train 2 goliath
+train 10 firebat
+train 6 goliath
+train 12 firebat
+attack_add 12 firebat
+attack_add 6 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1385
+
+train 2 siege_tank
+train 10 marine
+train 4 siege_tank
+train 20 marine
+attack_add 20 marine
+attack_add 4 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto kmc_loop
+
+:forward_ar1
+start_town
+build 1 factory 80
+get_oldpeons 1
+wait_build 1 factory
+build 1 missile_turret 80
+wait_build 1 missile_turret
+build 1 machine_shop 80
+random_jump 128 exp_loop
+build 1 barracks 80
+goto exp_loop
+
+:forward_ar2
+start_town
+build 1 bunker 80
+get_oldpeons 1
+wait_build 1 bunker
+build 1 barracks 80
+goto exp_loop
+
+:guards_top
+wait 50
+
+bring_jump 2 AtMost 0 command_center Loc.66 guards_top
+guard siege_tank Loc.83 1 3 60
+guard goliath Loc.84 1 3 60
+guard marine Loc.85 1 3 60
+guard marine Loc.86 1 3 60
+stop
+
+:scan_1
+wait 16
+
+deaths 1 Exactly 0 comsat_station scan_1
+issue_order 139 1 comsat_station Loc.63 Loc.25 science_facility 0
+stop
+
+:scan_2
+wait 16
+
+deaths 4 Exactly 0 comsat_station scan_2
+issue_order 139 1 comsat_station Loc.63 Loc.45 supply_depot 0
+stop
+
+:scan_3
+wait 16
+
+bring_jump 1 AtMost 0 group_men Loc.45 scan_3
+bring_jump 14 AtMost 0 defiler Loc.45 scan_3
+issue_order 139 1 comsat_station Loc.63 Loc.45 defiler 0
+wait 300
+
+bring_jump 14 AtLeast 1 defiler Loc.45 scan_3
+stop
+
+:scan_4
+wait 16
+
+deaths 3 Exactly 0 comsat_station scan_4
+issue_order 139 1 comsat_station Loc.63 Loc.120 infested_terran 0
+stop
+
+
+:unlock_speed
+wait 16
+
+bring_jump 14 AtLeast 1 group_buildings Loc.45 unlock_speed
+upgrade_jump 1 Set 17 1 reinforcements
+#vulture speed
+stop
+
+:unlock_ghost
+wait 16
+
+deaths 2 Exactly 0 covert_ops unlock_ghost
+unit_avail 1 Set Enabled ghost unlock_ghost
+unit_avail 1 Set Enabled covert_ops unlock_ghost
+stop
+
+:early_armory
+time_jump 20 skip_armory
+#replace with deaths
+wait 50
+
+notowns_jump armory early_armory
+upgrade 1 t_vehicle_plating 60
+wait 480
+
+wait_upgrades
+guard firebat Loc.73 1 3 60
+guard goliath Loc.74 1 3 60
+guard firebat Loc.75 1 3 60
+:armory_upgj
+wait 50
+
+bring_jump 1 AtLeast 1 command_center Loc.63 skip_armory
+upgrade_jump 2 AtMost t_vehicle_plating 0 armory_upgj
+upgrade_jump 1 Set t_vehicle_plating 1 reinforcements
+deaths 3 Set 1 armory armory_upgj
+:skip_armory
+stop
+
+:kmc_catchup_vplating1
+wait 50
+
+upgrade_jump 1 AtMost t_vehicle_plating 1 kmc_catchup_vplating1
+upgrade_jump 2 AtMost t_vehicle_plating 0 kmc_catchup_vplating1
+upgrade_jump 2 Set t_vehicle_plating 2 reinforcements
+stop
+
+:kmc_catchup_vplating2
+wait 50
+
+upgrade_jump 1 AtMost t_vehicle_plating 2 kmc_catchup_vplating2
+upgrade_jump 2 AtMost t_vehicle_plating 1 kmc_catchup_vplating2
+upgrade_jump 2 Set t_vehicle_plating 3 reinforcements
+stop
+
+:kmc_catchup_vweapon1
+wait 50
+
+upgrade_jump 1 AtMost t_vehicle_weapon 1 kmc_catchup_vweapon1
+upgrade_jump 2 AtMost t_vehicle_weapon 0 kmc_catchup_vweapon1
+upgrade_jump 2 Set t_vehicle_weapon 2 reinforcements
+stop
+
+:kmc_catchup_vweapon2
+wait 50
+
+upgrade_jump 1 AtMost t_vehicle_weapon 2 kmc_catchup_vweapon2
+upgrade_jump 2 AtMost t_vehicle_weapon 1 kmc_catchup_vweapon2
+upgrade_jump 2 Set t_vehicle_weapon 3 reinforcements
+stop
+
+:civilian_idle
+issue_order 166 100 15 Loc.63 Loc.63 15 0
+wait_rand 433 800
+
+goto civilian_idle
+
+:kmc_expocheck_1
+wait 50
+
+bring_jump 14 AtLeast 1 Any Loc.66 kmc_expocheck_1
+:aw1
+allies_watch 1 expansion
+wait 900
+
+try_townpoint 1 aw1
+wait 15000
+
+allies_watch 1 expansion
+stop
+
+:kmc_expocheck_2
+wait 50
+
+bring_jump 1 AtMost 2 command_center Loc.63 kmc_expocheck_2
+#:aw12
+#allies_watch 12 expansion
+#wait 900
+
+expand 2 expansion
+wait 1500
+
+#try_townpoint 2 aw12
+wait 15000
+
+expand 2 expansion
+stop
+
+:expansion
+start_town
+build 1 command_center 100
+get_oldpeons 1
+wait_buildstart 1 command_center
+build 1 scv 90
+wait_buildstart 1 scv
+build 4 scv 80
+wait_buildstart 2 scv
+build 1 missile_turret 80
+wait_buildstart 1 missile_turret
+build 1 barracks 80
+build 8 scv 80
+wait_buildstart 1 barracks
+build 1 factory 80
+wait_buildstart 1 factory
+build 1 comsat_station 80
+build 12 scv 80
+wait_build 1 factory
+build 1 machine_shop 80
+build 14 scv 80
+wait_buildstart 12 scv
+build 1 starport 80
+wait_build 1 starport
+build 1 control_tower 80
+wait_build 1 control_tower
+define_max 5 dropship
+define_max 3 wraith
+place_guard wraith 0
+check_transports
+:exp_loop
+wait 3000
+
+goto exp_loop
+
+:zoo_bonus
+wait 85
+
+bring_jump 2 AtMost 4 15 Loc.8 zoo_bonus
+upgrade_jump 1 Add t_infantry_armor 1 zoo_bonus
+upgrade_jump 1 Add t_infantry_weapon 1 zoo_bonus
+upgrade_jump 2 Add t_infantry_armor 1 zoo_bonus
+upgrade_jump 2 Add t_infantry_weapon 1 zoo_bonus
+stop
+
+:reinforcements
+wait 275
+
+:do_vul
+wait 16
+
+bring_jump 1 AtLeast 5 vulture Loc.63 do_vul
+train 1 vulture
+wait 625
+
+bring_jump 1 AtLeast 1 command_center Loc.63 exp_loop
+goto reinforcements
+
+:civilian_training
+wait_rand 160 320
+
+supply 13 AtLeast 80 Used 0 Terran civ_stage_4
+supply 13 AtLeast 50 Used 0 Terran civ_stage_3
+supply 13 AtLeast 30 Used 0 Terran civ_stage_2
+supply 13 AtLeast 10 Used 0 Terran civ_stage_1
+wait 160
+
+goto civilian_training
+
+:zoo_open
+wait 50
+
+time_jump 40 check_population
+notowns_jump 200 zoo_open
+guard marine Loc.76 1 3 60
+guard marine Loc.77 1 3 60
+guard marine Loc.78 1 3 60
+:check_population
+wait 150
+
+bring_jump 2 AtMost 7 15 Loc.79 check_population
+issue_order Move 3 15 Loc.79 Loc.53 0 0
+wait_rand 333 650
+
+:check_pop2
+wait 150
+
+bring_jump 2 AtMost 7 15 Loc.79 check_pop2
+issue_order Move 3 15 Loc.79 Loc.82 0 0
+wait_rand 333 650
+
+goto check_population
+
+:check_overcrowd
+wait 150
+
+bring_jump 2 AtMost 15 15 Loc.116 check_overcrowd
+issue_order Move 9 15 Loc.116 Loc.117 0 0
+issue_order Move 2 15 Loc.116 Loc.19 0 0
+issue_order Move 2 15 Loc.116 Loc.82 0 0
+wait_rand 333 650
+
+goto check_overcrowd
+
+:check_overcrowd2
+wait 150
+
+bring_jump 2 AtMost 18 15 Loc.122 check_overcrowd2
+issue_order Move 5 15 Loc.122 Loc.121 0 0
+issue_order Move 1 15 Loc.122 Loc.73 0 0
+issue_order Move 1 15 Loc.122 Loc.82 0 0
+wait_rand 333 650
+
+goto check_overcrowd2
+
+:wait_for_arm
+wait 50
+
+notowns_jump armory wait_for_arm
+wait 640
+
+defensebuild_gg 1 goliath
+defenseuse_gg 1 goliath
+defensebuild_ag 1 goliath
+defenseuse_ag 1 goliath
+define_max 6 goliath
+stop
+
+:civ_stage_1
+train 8 15
+#15 = terran civilian
+#beyond specific tatti - make Civs patrol
+wait_rand 350 650
+
+goto civilian_training
+
+:civ_stage_2
+train 16 15
+#15 = terran civilian
+wait_rand 350 650
+
+goto civilian_training
+
+:civ_stage_3
+train 24 15
+#15 = terran civilian
+wait_rand 550 850
+
+goto civilian_training
+
+:civ_stage_4
+train 40 15
+#15 = terran civilian
+wait_rand 950 1150
+
+goto civilian_training
+
+:grand_exchange
+wait 2650
+
+:ge_init
+wait_rand 100 145
+
+call ge_gas
+call ge_mins
+time_jump 50 late_gas_detour
+goto ge_init
+
+:late_gas_detour
+resources 13 AtMost Gas 1199 ge_init
+resources 13 AtLeast Ore 2200 ge_init
+resources 13 Subtract Gas 200 ge_init
+resources 13 Add Ore 266 ge_init
+goto ge_init
+
+:ge_gas
+resources 13 AtLeast Gas 600 ge_skip
+resources 13 AtMost Ore 1099 ge_skip
+resources 13 Subtract Ore 170 ge_skip
+resources 13 Add Gas 80 ge_skip
+return
+
+:ge_mins
+resources 13 AtMost Gas 599 ge_skip
+resources 13 AtLeast Ore 1100 ge_skip
+resources 13 Subtract Gas 100 ge_skip
+resources 13 Add Ore 133 ge_skip
+return
+
+:ge_skip
+return

@@ -1,0 +1,384 @@
+script_name Brood Wars Terran 1 - Town C
+script_id TB1C
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 hatchery 150
+build 1 drone 130
+build 5 drone 80
+build 1 spawning_pool 80
+build 1 hydralisk_den 80
+idle_orders DisableBuiltin 0 0 0 0 0 0 0
+define_max 45 drone
+define_max 30 zergling
+define_max 10 hydralisk
+define_max 3 lurker
+define_max 255 mutalisk
+define_max 255 infested_terran
+define_max 255 scourge
+define_max 255 queen
+define_max 30 overlord
+#defensebuild_gg 1 hydralisk
+max_force 606
+defenseuse_gg 1 hydralisk
+defenseuse_gg 1 zergling
+idle_orders 119 64 1 defiler 512 ultralisk 70 own|allied|notenemies|incombat
+idle_orders 119 64 1 defiler 512 zergling 30 own|allied|notenemies|incombat|Count(AtLeast 2 80 14)
+idle_orders 119 64 1 defiler 512 lurker 50 own|allied|notenemies|incombat
+idle_orders 119 64 1 hdefiler 256 ultralisk 70 own|allied|notenemies|incombat
+idle_orders 119 64 1 hdefiler 256 zergling 30 own|allied|notenemies|incombat|Count(AtLeast 3 80 14)
+idle_orders 119 64 1 hdefiler 256 lurker 50 own|allied|notenemies|incombat
+idle_orders 11 120 1 lurker 192 Any 20 WithoutUnitFlags(Air)
+idle_orders 11 120 1 lurker 192 Any 50 WithoutUnitFlags(Air)|UnitFlags(Detector)
+idle_orders 11 120 1 lurker 192 Any 60 InCombat|WithoutUnitFlags(Air)
+idle_orders 11 120 1 lurker 192 Any 100 InCombat|WithoutUnitFlags(Air)|UnitFlags(Detector)
+upgrade 1 overlord_speed 30
+tech burrowing 30
+wait 50
+
+max_workers 16
+multirun defiler_sequence
+multirun creep_sequence
+wait 5500
+
+upgrade 1 z_carapace 30
+wait 3500
+
+upgrade 1 z_melee_attack 30
+:loop_until_base
+wait 750
+
+train 2 zergling
+attack_add 2 zergling
+attack_prepare
+wait 500
+
+attack_timeout 100
+attack_do
+attack_clear
+bring_jump 1 AtMost 0 command_center Loc.63 loop_until_base
+guard_all
+multirun grand_exchange
+defensebuild_gg 1 zergling
+defensebuild_gg 2 hydralisk
+defensebuild_gg 1 lurker
+defenseuse_gg 1 lurker
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+build 12 drone 80
+build 1 lair 80
+tech lurker_aspect 30
+upgrade 1 hydralisk_speed 30
+upgrade 1 zergling_speed 30
+wait 450
+
+train 4 hydralisk
+attack_add 4 hydralisk
+attack_to Loc.18 Loc.55
+wait 500
+
+attack_do
+attack_clear
+build 1 spire 80
+wait 1750
+
+define_max 2 infested_terran
+define_max 4 mutalisk
+define_max 4 scourge
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
+upgrade 1 z_missile_attack 30
+upgrade 1 z_flyer_carapace 30
+train 10 zergling
+attack_add 10 zergling
+attack_to Loc.18 Loc.78
+wait 500
+
+attack_do
+attack_clear
+train 3 mutalisk
+attack_add 3 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1450
+
+build 4 creep_colony 80
+build 2 spore_colony 80
+build 2 sunken_colony 80
+upgrade 2 z_carapace 30
+upgrade 1 overlord_capacity 30
+train 6 hydralisk
+train 2 lurker
+attack_add 4 hydralisk
+attack_add 2 lurker
+attack_to Loc.102 Loc.93
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 burrowed_regen 30
+wait 1550
+
+define_max 4 lurker
+define_max 6 mutalisk
+define_max 20 hydralisk
+define_max 36 zergling
+do_morph 2 infested_terran
+train 12 hydralisk
+train 4 lurker
+attack_add 2 infested_terran
+attack_add 4 lurker
+attack_add 8 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 z_melee_attack 30
+upgrade 2 z_flyer_carapace 30
+wait 2050
+
+expand 2 expansion
+train 4 mutalisk
+train 14 zergling
+attack_add 4 mutalisk
+attack_add 14 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 z_missile_attack 30
+upgrade 1 z_flyer_attack 30
+build 1 queen_nest 80
+wait 2445
+
+do_morph 2 infested_terran
+train 14 hydralisk
+attack_add 2 infested_terran
+attack_add 14 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+build 1 hive 80
+upgrade 1 overlord_sight 30
+wait 1866
+
+upgrade 2 z_flyer_attack 30
+build 1 defiler_mound 80
+define_max 3 defiler
+define_max 1 hdefiler
+train 7 hydralisk
+train 4 mutalisk
+train 3 lurker
+do_morph 1 infested_terran
+attack_add 3 lurker
+attack_add 4 hydralisk
+attack_add 4 mutalisk
+attack_add 1 infested_terran
+attack_prepare
+defensebuild_ag 1 defiler
+defenseuse_ag 1 defiler
+defensebuild_gg 1 hdefiler
+defenseuse_gg 1 hdefiler
+tech consume 30
+idle_orders Consume 16 1 defiler 512 zergling 70 NotEnemies|Own|Health(LessThanPercent 80)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 16 1 defiler 512 broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 16 1 hdefiler 512 zergling 70 NotEnemies|Own|Health(LessThanPercent 80)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 16 1 hdefiler 512 broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
+wait 500
+
+attack_do
+attack_clear
+upgrade 3 z_carapace 30
+upgrade 3 z_melee_attack 30
+upgrade 3 z_missile_attack 30
+upgrade 1 zergling_attack 30
+upgrade 1 hydra_attack 30
+tech plague 30
+idle_orders 144 64 1 defiler 788 group_men 55 count(AtLeast 3 120 14) 
+idle_orders 144 64 1 defiler 512 skywing|death_knight|scorpion|wraith|science_vessel|dragoon|corsair|scout 80 incombat|count(AtLeast 3 120 14)
+idle_orders 144 64 1 defiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|devourer|guardian|ultralisk 115 incombat|count(AtLeast 2 120 14)
+idle_orders 144 64 1 defiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|ultralisk 80 incombat
+idle_orders 144 64 1 defiler 512 heavy_marine|medic|ghost|phantom|marine|firebat|vulture|zealot|hydralisk|mutalisk|revenant|dark_templar|high_templar 55 incombat|count(AtLeast 4 120 14)
+idle_orders Consume 16 1 defiler 512 zergling 70 NotEnemies|Own|Health(LessThanPercent 80)|Self(Energy(LessThanPercent 50))
+defensebuild_ag 1 defiler
+defenseuse_ag 1 defiler
+define_max 64 zergling
+max_workers 255
+place_guard hdefiler 0
+:orange_loop
+wait 500
+
+train 1 defiler
+train 1 hdefiler
+wait 850
+
+train 1 hdefiler
+train 1 defiler
+train 40 zergling
+attack_add 1 defiler
+attack_add 1 hdefiler
+attack_add 40 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2050
+
+train 6 mutalisk
+train 13 hydralisk
+attack_add 6 mutalisk
+attack_add 13 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+expand 2 expansion
+wait 1775
+
+train 1 defiler
+do_morph 2 infested_terran
+train 4 scourge
+train 12 hydralisk
+do_morph 2 infested_terran
+train 4 lurker
+attack_add 1 defiler
+attack_add 4 lurker
+attack_add 8 hydralisk
+attack_add 4 scourge
+attack_add 2 infested_terran
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1765
+
+train 1 hdefiler
+train 10 zergling
+do_morph 2 infested_terran
+train 6 hydralisk
+train 20 zergling
+train 3 lurker
+do_morph 2 infested_terran
+train 9 hydralisk
+train 24 zergling
+attack_add 24 zergling
+attack_add 1 hdefiler
+attack_add 2 infested_terran
+attack_add 3 lurker
+attack_add 6 hydralisk
+unstart_campaign
+attack_prepare
+start_campaign
+wait 300
+
+attack_do
+attack_clear
+goto orange_loop
+
+:defiler_sequence
+wait 16
+
+bring_jump 14 Exactly 0 vulture Loc.81 defiler_sequence
+bring_jump 13 Exactly 0 zergling Loc.45 skip_def
+issue_order 119 1 defiler Loc.45 Loc.118 vulture 0
+:skip_def
+stop
+
+:grand_exchange
+wait 2650
+
+:ge_init
+wait_rand 100 145
+
+call ge_gas
+call ge_mins
+time_jump 50 late_gas_detour
+goto ge_init
+
+:late_gas_detour
+resources 13 AtMost Gas 1199 ge_init
+resources 13 AtLeast Ore 2200 ge_init
+resources 13 Subtract Gas 200 ge_init
+resources 13 Add Ore 266 ge_init
+goto ge_init
+
+:ge_gas
+resources 13 AtLeast Gas 600 ge_skip
+resources 13 AtMost Ore 1099 ge_skip
+resources 13 Subtract Ore 170 ge_skip
+resources 13 Add Gas 80 ge_skip
+return
+
+:ge_mins
+resources 13 AtMost Gas 599 ge_skip
+resources 13 AtLeast Ore 1100 ge_skip
+resources 13 Subtract Gas 100 ge_skip
+resources 13 Add Ore 133 ge_skip
+return
+
+:ge_skip
+return
+
+:creep_sequence
+wait 16
+
+bring_jump 14 Exactly 0 group_men Loc.88 creep_sequence
+issue_order 43 4 creep_colony Loc.88 Loc.88 sunken_colony 0
+stop
+
+:expansion
+start_town
+build 1 hatchery 100
+get_oldpeons 1
+wait_buildstart 1 hatchery
+build 1 drone 90
+wait_build 1 drone
+build 8 drone 80
+wait_buildstart 8 drone
+build 1 creep_colony 80
+build 8 drone 80
+wait_buildstart 8 drone
+build 1 sunken_colony 80
+build 2 creep_colony 80
+max_workers 14
+wait 3000
+
+build 12 drone 80
+build 1 spore_colony 80
+wait 25800
+
+max_workers 255
+define_max 2 ultralisk
+build 1 ultralisk_cavern 80
+:vloop
+wait 3545
+
+train 2 ultralisk
+:check_at
+wait 16
+
+if_attacking breakout
+goto check_at
+:breakout
+attack_add 2 ultralisk
+wait 500
+
+goto vloop
