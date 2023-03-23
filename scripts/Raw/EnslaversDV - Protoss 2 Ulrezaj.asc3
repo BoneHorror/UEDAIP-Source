@@ -23,8 +23,17 @@ define_max 3 dark_archon
 define_max 54 probe
 define_max 6 dark_templar
 define_max 2 harbiter
+#hzeratul = u dark templar
+#harchon = u zealot
+#hmojo = u scout
+#hreaver = u reaver
+#hcarrier = u carrier
+#harbiter = u arbiter
+#hartanis = u dragoon
+#hraszagal = u corsair
+#hdugalle (?) = u dark archon
 idle_orders disablebuiltin 0 0 0 0 0 0 0
-supply 13 Set 250 Max 0 Protoss forge_fe
+supply 13 Set 250 Max 0 Protoss nriver
 build 1 probe 150
 build 1 nexus 130
 build 8 probe 120
@@ -52,7 +61,7 @@ defenseuse_gg 1 hzeratul
 defensebuild_gg 1 hmojo
 defenseuse_gg 1 hmojo
 defensebuild_gg 1 hduran
-defenseuse_gg hduran
+defenseuse_gg 1 hduran
 defensebuild_ag 2 hduran
 defenseuse_ag 2 hduran
 defensebuild_ag 1 hcorsair
@@ -80,7 +89,12 @@ attack_add 6 harchon
 attack_to Loc.25 Loc.24
 attack_do
 attack_clear
-create_script fort 255 Loc.75 255 0
+create_script nriver 255 Loc.15 255 0
+create_script sriver 255 Loc.14 255 0
+:loop
+wait 1500
+
+goto loop
 
 :nriver
 start_town
