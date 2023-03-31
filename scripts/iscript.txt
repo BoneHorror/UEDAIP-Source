@@ -6288,6 +6288,7 @@ MarineWalkingToIdle:
 MarineLocal02:
 	if unit_id == 56 goto uMarineLocal02
 	waitrand       	63 75
+	#print Current order ID: {order} #Print order debug
 	randcondjmp    	25 MarineLocal00
 	randcondjmp    	128 MarineLocal01
 	goto           	MarineLocal02
@@ -6504,6 +6505,7 @@ MarineWalking:
 	wait           	1
 	playfram       	0x88	# frame set 8
 	move           	4
+	#print Current order ID: {order} #Print order debug
 	wait           	1
 	playfram       	0x99	# frame set 9
 	move           	4
