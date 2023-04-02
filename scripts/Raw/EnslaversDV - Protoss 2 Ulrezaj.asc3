@@ -9,19 +9,20 @@ defaultbuild_off
 default_min 0
 wait 1
 
+#jump to blue support / carrier production if we don't find a nexus
+notowns_jump nexus blue_support
 creep 4
 define_max 32 harchon
 define_max 5 observer
 define_max 5 shuttle
 define_max 11 hmojo
 define_max 11 hcorsair
-define_max 21 hduran
-define_max 4 carrier
+define_max 21 h_artanis
+define_max 255 hcarrier
 define_max 255 hornet
 define_max 14 hzeratul
-define_max 3 dark_archon
+define_max 3 hdugalle
 define_max 54 probe
-define_max 6 dark_templar
 define_max 2 harbiter
 #hzeratul = u dark templar
 #harchon = u zealot
@@ -29,9 +30,9 @@ define_max 2 harbiter
 #hreaver = u reaver
 #hcarrier = u carrier
 #harbiter = u arbiter
-#hartanis = u dragoon
-#hraszagal = u corsair
-#hdugalle (?) = u dark archon
+#h_artanis = u dragoon
+#hcorsair = u corsair
+#hdugalle = u dark archon
 idle_orders disablebuiltin 0 0 0 0 0 0 0
 supply 13 Set 250 Max 0 Protoss nriver
 build 1 probe 150
@@ -46,55 +47,240 @@ build 2 stargate 80
 build 1 fleet_beacon 80
 build 1 citadel_of_adun 80
 build 1 templar_archives 80
-build 1 arbiter_tribunal 80
-build 2 robotics_facility 80
+build 1 robotics_facility 80
 build 1 robotics_support_bay 80
 build 1 observatory 80
 build 18 probe 80
 max_workers 18
 defensebuild_gg 2 harchon
 defenseuse_gg 2 harchon
-defensebuild_gg 1 hduran
-defenseuse_gg 1 hduran
+defensebuild_gg 1 h_artanis
+defenseuse_gg 1 h_artanis
 defensebuild_gg 1 hzeratul
 defenseuse_gg 1 hzeratul
 defensebuild_gg 1 hmojo
 defenseuse_gg 1 hmojo
-defensebuild_gg 1 hduran
-defenseuse_gg 1 hduran
-defensebuild_ag 2 hduran
-defenseuse_ag 2 hduran
+defensebuild_gg 1 h_artanis
+defenseuse_gg 1 h_artanis
+defensebuild_ag 2 h_artanis
+defenseuse_ag 2 h_artanis
 defensebuild_ag 1 hcorsair
 defenseuse_ag 1 hcorsair
 defensebuild_ga 1 harbiter
 defenseuse_ga 1 harbiter
 defensebuild_ga 1 hmojo
 defenseuse_ga 1 hmojo
-defensebuild_ga 1 carrier
-defenseuse_ga 1 carrier
+#defensebuild_ga 1 carrier
+#defenseuse_ga 1 carrier
+#does not use hcarriers for def
 defensebuild_aa 1 hcorsair
 defenseuse_aa 1 hcorsair
 defensebuild_aa 1 hcorsair
 defenseuse_aa 1 hcorsair
-farms_timing
+idle_orders disablebuiltin 0 0 0 0 0 0 0
+idle_orders RechargeShieldsUnit 480 3 Group_Men 1024 shield_battery 30 NotEnemies|Own|Self(Shields(LessThanPercent 25))
+idle_orders RechargeShieldsUnit 240 3 Group_Men 1024 shield_battery 40 NotEnemies|Own|Self(Shields(LessThanPercent 25))|Self(Order(Guard))
+idle_orders 10 32 1 harchon|hzeratul|hmojo 160 group_men 80 Health(LessThan 14)|WithoutUnitFlags(Air)
+idle_orders 10 32 1 hzeratul 192 drone|scv|probe 100 0
+idle_orders 10 32 2 harchon 160 drone|scv|probe 100 0
+idle_orders 10 32 3 hmojo 192 drone|scv|probe 90 0
+idle_orders 10 32 1 harchon|hzeratul|hmojo 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 120 Health(LessThan 14)
+idle_orders 10 32 1 harchon|hzeratul|hmojo 160 sunken_colony|photon_cannon 90 Health(LessThan 12)
+idle_orders 10 32 3 harchon|hzeratul|hmojo 160 group_men 90 Health(LessThan 33)|WithoutUnitFlags(Air)
+idle_orders 10 32 3 harchon|hzeratul|hmojo 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 130 Health(LessThan 33)
+idle_orders 10 32 3 harchon|hzeratul|hmojo 160 sunken_colony|photon_cannon 100 Health(LessThan 24)
+idle_orders 10 32 5 harchon|hzeratul|hmojo 160 group_men 95 Health(LessThan 60)|WithoutUnitFlags(Air)
+idle_orders 10 32 5 harchon|hzeratul|hmojo 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 135 Health(LessThan 60)
+idle_orders 10 32 5 harchon|hzeratul|hmojo 160 sunken_colony|photon_cannon|bunker 105 Health(LessThan 45)
+idle_orders 10 64 1 h_artanis 192 sunken_colony|photon_cannon|bunker 110 Health(LessThan 20)
+idle_orders 10 64 1 h_artanis 192 group_men 100 Health(LessThan 15)
+idle_orders 10 64 2 h_artanis 192 group_men 105 Health(LessThan 35)
+idle_orders 10 64 4 h_artanis 224 group_men 115 Health(LessThan 60)
+idle_orders 10 64 1 h_artanis 192 infested_terran|dark_archon|defiler 130 Health(LessThan 20)
+idle_orders 10 64 1 h_artanis 192 lurker|queen 120 Health(LessThan 20)
+idle_orders 10 512 8 h_artanis 2048 carrier 250 0
+idle_orders 10 32 1 hmojo|hcorsair 192 mutalisk|scout|corsair|scourge|wraith 110 Health(LessThan 20)
+idle_orders 10 32 3 hmojo|hcorsair 192 mutalisk|scout|corsair|scourge|wraith 135 Health(LessThan 60)
+idle_orders 10 32 1 hmojo|hcorsair 192 devourer|hnorad|battlecruiser|carrier 150 Health(LessThan 20)
+idle_orders 10 32 2 hmojo|hcorsair 192 devourer|hnorad|battlecruiser|carrier 160 Health(LessThan 40)
+idle_orders 10 32 3 hmojo|hcorsair 192 devourer|hnorad|battlecruiser|carrier 170 Health(LessThan 60)
+idle_orders 10 32 4 hmojo|hcorsair 192 devourer|hnorad|battlecruiser|carrier 190 Health(LessThan 80)
+idle_orders 10 32 1 hmojo|hcorsair 192 shuttle|observer|overlord 60 Health(LessThan 20)
+idle_orders 10 512 8 hmojo|hcorsair 2048 carrier 250 0
+idle_orders 59 80 1 hreaver 192 group_men 50 count(AtLeast 2 75 14)|WithoutUnitFlags(Air)
+idle_orders 59 80 1 hreaver 192 group_men 80 count(AtLeast 4 75 14)|WithoutUnitFlags(Air)
+idle_orders 59 1024 1 hreaver 4096 probe|drone|scv 90 count(AtLeast 2 75 14)|RandomRate(6400 12036)
+idle_orders 59 1024 1 hreaver 4096 probe|drone|scv 120 count(AtLeast 4 75 14)|RandomRate(6400 12036)
+idle_orders 59 80 2 hreaver 192 group_men 110 count(AtLeast 6 75 14)|WithoutUnitFlags(Air)
+idle_orders 10 32 1 hmojo|hcorsair|h_artanis 192 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 80 Health(LessThan 30)
+idle_orders 10 32 2 hmojo|hcorsair|h_artanis 192 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 90 Health(LessThan 60)
+wait_rand 2 3
 upgrade 1 p_ground_weapon 30
-upgrade 1 zealot_speed 30
 upgrade 1 p_plasma_shield 30
-upgrade 1 shuttle_speed 30
 upgrade 1 observer_speed 30
+multirun horror_scarabs
 wait 16
 
-train 6 harchon
-attack_add 6 harchon
+idle_orders 184 64 1 hdugalle 612 queen|science_vessel|hnorad|battlecruiser|valhalla|dark_archon 40 Energy(GreaterThanPercent,66)|Self(Energy(GreaterThan 85))
+idle_orders 184 64 1 hdugalle 612 defiler|ghost|wraith|phantom|high_templar|corsair 30 Energy(GreaterThanPercent,50)|Self(Energy(GreaterThan 145))
+idle_orders 184 0 1 hdugalle 256 group_men 80 Energy(GreaterThan,2)|Deathrattle
+train 8 harchon
+attack_add 8 harchon
 attack_to Loc.25 Loc.24
 attack_do
 attack_clear
-create_script nriver 255 Loc.15 255 0
-create_script sriver 255 Loc.14 255 0
-:loop
-wait 1500
+upgrade 1 dragoon_range 50
+wait 1785
 
-goto loop
+allies_watch 11 u_town
+train 3 hmojo
+train 2 hzeratul
+attack_add 2 hzeratul
+attack_add 3 hmojo
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+create_script nriver 255 Loc.15 255 0
+upgrade 1 p_air_weapon 30
+upgrade 1 p_armor 30
+upgrade 2 p_ground_weapon 30
+upgrade 1 zealot_speed 50
+wait 3000
+
+train 4 h_artanis
+train 6 harchon
+attack_add 4 h_artanis
+attack_add 6 harchon
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+build 2 robotics_facility 80
+panic u_town
+tech mind_control 30
+upgrade 1 shuttle_speed 30
+upgrade 1 p_plating 30
+upgrade 3 p_ground_weapon 30
+place_guard hdugalle 0
+wait 2400
+
+#idle_orders 182 780 1 hdugalle 912 ultralisk|hnorad|battlecruiser|valhalla|carrier|arbiter 30 health(GreaterThanPercent,66)
+idle_orders 182 780 1 hdugalle 912 ultralisk|hnorad|battlecruiser|valhalla|arbiter 30 health(GreaterThanPercent,66)
+idle_orders 182 780 1 hdugalle 912 lurker|siege_tank|panzer 20 health(GreaterThanPercent,66)
+idle_orders 182 780 1 hdugalle 912 queen|science_vessel|phantom 20 health(GreaterThanPercent,66)
+idle_orders 182 780 1 hdugalle 912 defiler|high_templar 10 health(GreaterThanPercent,66)
+idle_orders 182 32 1 hdugalle 256 ultralisk|battlecruiser|hnorad 80 incombat|health(GreaterThanPercent,50)
+idle_orders 182 32 1 hdugalle 256 lurker|siege_tank|valkyrie|guardian|devourer 30 incombat|health(GreaterThanPercent,80)
+idle_orders 182 0 1 hdugalle 256 group_men 80 deathrattle
+#carrier excluded because it's used as a special case here
+create_script sriver 255 Loc.8 255 0
+train 2 hcorsair
+train 2 hreaver
+train 5 h_artanis
+attack_add 2 hcorsair
+attack_add 2 hreaver
+attack_add 5 h_artanis
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+expand 3 u_town
+upgrade 1 scarab_damage 30
+upgrade 1 scout_sight 30
+upgrade 2 p_air_weapon 30
+wait 2800
+
+train 18 harchon
+attack_add 18 harchon
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+create_script sriver 255 Loc.14 255 0
+tech maelstrom 30
+upgrade 1 scout_speed 30
+upgrade 3 p_air_weapon 30
+wait 3000
+
+idle_orders 186 882 1 hdugalle 1024 group_men 80 incombat|count(AtLeast 2 60 14)|unitflags(organic)|Self(Energy(GreaterThanPercent 50))
+idle_orders 186 0 1 hdugalle 256 group_men 90 unitflags(organic)|deathrattle
+train 10 h_artanis
+train 2 hreaver
+train 2 hzeratul
+attack_add 2 hzeratul
+attack_add 10 h_artanis
+attack_add 2 hreaver
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+upgrade 2 p_plating 30
+build 1 arbiter_tribunal 80
+place_guard hdugalle 0
+wait 1515
+
+expand 4 u_town
+upgrade 3 p_plating 30
+train 1 harbiter
+train 7 h_artanis
+train 12 harchon
+attack_add 1 harbiter
+attack_add 7 h_artanis
+attack_add 12 harchon
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+:main_loop
+wait 2025
+
+train 4 hmojo
+train 8 h_artanis
+train 3 hzeratul
+attack_add 3 hzeratul
+attack_add 8 h_artanis
+attack_add 4 hmojo
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait 1433
+
+train 4 hreaver
+train 4 hcorsair
+train 10 harchon
+attack_add 4 hreaver
+attack_add 4 hcorsair
+attack_add 10 harchon
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait 2667
+
+train 1 harbiter
+train 7 h_artanis
+train 2 hdugalle
+train 12 harchon
+attack_add 1 harbiter
+attack_add 2 hdugalle
+attack_add 7 h_artanis
+attack_add 12 harchon
+attack_prepare
+wait 300
+
+attack_do
+expand 5 u_town
+goto main_loop
 
 :nriver
 start_town
@@ -131,3 +317,71 @@ build 2 photon_cannon 80
 wait 1500
 
 goto sloop
+
+:u_town
+start_town
+build 1 nexus 100
+get_oldpeons 1
+wait_buildstart 1 nexus
+build 1 pylon 80
+wait_build 1 pylon
+build 1 probe 80
+build 1 photon_cannon 80
+wait_build 1 photon_cannon
+build 1 gateway 80
+build 8 probe 80
+wait_buildstart 6 probe
+build 12 probe 80
+build 2 pylon 80
+build 2 photon_cannon 80
+:ue_loop
+wait 2250
+
+goto ue_loop
+
+:horror_scarabs
+wait 50
+
+resources 13 AtMost Ore 100 horror_scarabs
+
+issue_order 38 50 hreaver Loc.63 Loc.63 85 0
+#scarab
+goto horror_scarabs
+
+:blue_support
+multirun check_carrier
+wait 3650
+
+defensebuild_gg 2 zealot
+defenseuse_gg 2 zealot
+defensebuild_gg 1 dragoon
+defenseuse_gg 1 dragoon
+defensebuild_ag 1 dragoon
+defenseuse_ag 1 dragoon
+max_force 1400
+define_max 10 zealot
+define_max 10 dragoon
+wait 5000
+
+upgrade 1 p_armor 30
+wait 5000
+
+upgrade 1 dragoon_range 30
+upgrade 1 p_plasma_shield 30
+wait 5000
+
+upgrade 1 p_ground_weapon 30
+:blu_loop
+wait 2250
+
+goto blu_loop
+
+:check_carrier
+wait 5
+
+deaths 13 Exactly 0 hcarrier check_carrier
+deaths 13 Set 0 hcarrier check_carrier
+train 1 carrier
+wait 1000
+
+goto check_carrier
