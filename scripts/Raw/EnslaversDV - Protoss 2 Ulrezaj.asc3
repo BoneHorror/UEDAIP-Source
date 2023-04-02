@@ -129,15 +129,17 @@ attack_add 8 harchon
 attack_to Loc.25 Loc.24
 attack_do
 attack_clear
+call prepare_carrier_route
 upgrade 1 dragoon_range 50
 wait 1785
 
 allies_watch 11 u_town
+#force target player or else it can get boring
 train 3 hmojo
 train 2 hzeratul
 attack_add 2 hzeratul
 attack_add 3 hmojo
-attack_prepare
+attack_to Loc.44 Loc.45
 wait 300
 
 attack_do
@@ -158,6 +160,7 @@ wait 300
 
 attack_do
 attack_clear
+call prepare_carrier_route
 build 2 robotics_facility 80
 panic u_town
 tech mind_control 30
@@ -177,23 +180,24 @@ idle_orders 182 32 1 hdugalle 256 lurker|siege_tank|valkyrie|guardian|devourer 3
 idle_orders 182 0 1 hdugalle 256 group_men 80 deathrattle
 #carrier excluded because it's used as a special case here
 create_script sriver 255 Loc.8 255 0
+set_attacks 1
 train 2 hcorsair
 train 2 hreaver
 train 5 h_artanis
 attack_add 2 hcorsair
 attack_add 2 hreaver
 attack_add 5 h_artanis
-attack_prepare
+target_expansion
 wait 300
 
-attack_do
-attack_clear
 expand 3 u_town
 upgrade 1 scarab_damage 30
 upgrade 1 scout_sight 30
 upgrade 2 p_air_weapon 30
 wait 2800
 
+attack_do
+attack_clear
 train 18 harchon
 attack_add 18 harchon
 attack_prepare
@@ -201,30 +205,33 @@ wait 300
 
 attack_do
 attack_clear
+call prepare_carrier_route
 create_script sriver 255 Loc.14 255 0
 tech maelstrom 30
 upgrade 1 scout_speed 30
 upgrade 3 p_air_weapon 30
-wait 3000
+wait 1877
 
 idle_orders 186 882 1 hdugalle 1024 group_men 80 incombat|count(AtLeast 2 60 14)|unitflags(organic)|Self(Energy(GreaterThanPercent 50))
 idle_orders 186 0 1 hdugalle 256 group_men 90 unitflags(organic)|deathrattle
+set_attacks 1
 train 10 h_artanis
 train 2 hreaver
 train 2 hzeratul
 attack_add 2 hzeratul
 attack_add 10 h_artanis
 attack_add 2 hreaver
-attack_prepare
+target_expansion
 wait 300
 
-attack_do
-attack_clear
 upgrade 2 p_plating 30
 build 1 arbiter_tribunal 80
 place_guard hdugalle 0
+call prepare_carrier_route
 wait 1515
 
+attack_do
+attack_clear
 expand 4 u_town
 upgrade 3 p_plating 30
 train 1 harbiter
@@ -238,22 +245,22 @@ wait 300
 
 attack_do
 attack_clear
+call prepare_carrier_route
 :main_loop
 wait 2025
 
+set_attacks 1
 train 4 hmojo
 train 8 h_artanis
 train 3 hzeratul
 attack_add 3 hzeratul
 attack_add 8 h_artanis
 attack_add 4 hmojo
-attack_prepare
-wait 300
+target_expansion
+wait 1733
 
 attack_do
 attack_clear
-wait 1433
-
 train 4 hreaver
 train 4 hcorsair
 train 10 harchon
@@ -318,6 +325,46 @@ wait 1500
 
 goto sloop
 
+:prepare_carrier_route
+#available guard locations;
+# 11, 12, 13, 14, 36, 37 - north after bridge
+# 31, 32, 33 - low area south of main
+# 34, 35, 38, 39, 40, 41 - canyons
+# 42, 43, 10 - misc forts
+random_jump 85 prep_cr_1
+random_jump 128 prep_cr_2
+guard h_artanis Loc.34 1 1 80
+guard h_artanis Loc.35 1 1 80
+guard h_artanis Loc.11 1 1 80
+guard h_artanis Loc.12 1 1 80
+guard h_artanis Loc.42 1 1 80
+guard hcorsair Loc.40 1 1 80
+guard hcorsair Loc.31 1 1 80
+guard hcorsair Loc.37 1 1 80
+return
+
+:prep_cr_1
+guard h_artanis Loc.38 1 1 80
+guard h_artanis Loc.41 1 1 80
+guard h_artanis Loc.36 1 1 80
+guard h_artanis Loc.37 1 1 80
+guard h_artanis Loc.10 1 1 80
+guard hcorsair Loc.34 1 1 80
+guard hcorsair Loc.35 1 1 80
+guard hcorsair Loc.43 1 1 80
+return
+
+:prep_cr_2
+guard h_artanis Loc.14 1 1 80
+guard h_artanis Loc.35 1 1 80
+guard h_artanis Loc.32 1 1 80
+guard h_artanis Loc.33 1 1 80
+guard h_artanis Loc.43 1 1 80
+guard hcorsair Loc.13 1 1 80
+guard hcorsair Loc.14 1 1 80
+guard hcorsair Loc.33 1 1 80
+return
+
 :u_town
 start_town
 build 1 nexus 100
@@ -361,6 +408,9 @@ defenseuse_ag 1 dragoon
 max_force 1400
 define_max 10 zealot
 define_max 10 dragoon
+#dont replenish preplaced stuff in DT outpost
+define_max 255 dark_templar
+define_max 255 revenant
 wait 5000
 
 upgrade 1 p_armor 30
