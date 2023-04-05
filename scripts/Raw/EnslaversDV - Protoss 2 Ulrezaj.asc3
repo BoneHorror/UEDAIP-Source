@@ -1,7 +1,7 @@
 script_name Brood Wars Protoss 2 - Town A
 script_id PB2A
 
-unstart_campaign
+start_campaign
 wait 1
 
 start_town
@@ -11,6 +11,7 @@ wait 1
 
 #jump to blue support / carrier production if we don't find a nexus
 notowns_jump nexus blue_support
+unstart_campaign
 creep 4
 define_max 32 harchon
 define_max 5 observer
@@ -23,13 +24,14 @@ define_max 255 hornet
 define_max 14 hzeratul
 define_max 3 hdugalle
 define_max 54 probe
-define_max 2 harbiter
+define_max 2 h_aldaris
+define_max 4 hreaver
 #hzeratul = u dark templar
 #harchon = u zealot
 #hmojo = u scout
 #hreaver = u reaver
 #hcarrier = u carrier
-#harbiter = u arbiter
+#h_aldaris = u arbiter
 #h_artanis = u dragoon
 #hcorsair = u corsair
 #hdugalle = u dark archon
@@ -66,8 +68,8 @@ defensebuild_ag 2 h_artanis
 defenseuse_ag 2 h_artanis
 defensebuild_ag 1 hcorsair
 defenseuse_ag 1 hcorsair
-defensebuild_ga 1 harbiter
-defenseuse_ga 1 harbiter
+defensebuild_ga 1 h_aldaris
+defenseuse_ga 1 h_aldaris
 defensebuild_ga 1 hmojo
 defenseuse_ga 1 hmojo
 #defensebuild_ga 1 carrier
@@ -115,9 +117,10 @@ idle_orders 59 80 2 hreaver 192 group_men 110 count(AtLeast 6 75 14)|WithoutUnit
 idle_orders 10 32 1 hmojo|hcorsair|h_artanis 192 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 80 Health(LessThan 30)
 idle_orders 10 32 2 hmojo|hcorsair|h_artanis 192 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 90 Health(LessThan 60)
 wait_rand 2 3
-upgrade 1 p_ground_weapon 30
-upgrade 1 p_plasma_shield 30
-upgrade 1 observer_speed 30
+farms_timing
+upgrade 1 p_ground_weapon 40
+upgrade 1 p_plasma_shield 40
+upgrade 1 observer_speed 40
 multirun horror_scarabs
 wait 16
 
@@ -133,11 +136,11 @@ call prepare_carrier_route
 upgrade 1 dragoon_range 50
 wait 1785
 
-allies_watch 11 u_town
+allies_watch 5 u_town
 #force target player or else it can get boring
 train 3 hmojo
-train 2 hzeratul
-attack_add 2 hzeratul
+train 1 hzeratul
+attack_add 1 hzeratul
 attack_add 3 hmojo
 attack_to Loc.44 Loc.45
 wait 300
@@ -145,31 +148,32 @@ wait 300
 attack_do
 attack_clear
 create_script nriver 255 Loc.15 255 0
-upgrade 1 p_air_weapon 30
-upgrade 1 p_armor 30
-upgrade 2 p_ground_weapon 30
+upgrade 1 p_air_weapon 40
+upgrade 1 p_armor 40
+upgrade 2 p_ground_weapon 40
 upgrade 1 zealot_speed 50
 wait 3000
 
+train 2 hcorsair
 train 4 h_artanis
 train 6 harchon
 attack_add 4 h_artanis
 attack_add 6 harchon
-attack_prepare
+attack_to Loc.44 Loc.45
 wait 300
 
 attack_do
 attack_clear
 call prepare_carrier_route
 build 2 robotics_facility 80
-panic u_town
 tech mind_control 30
-upgrade 1 shuttle_speed 30
-upgrade 1 p_plating 30
-upgrade 3 p_ground_weapon 30
+upgrade 1 shuttle_speed 60
+upgrade 1 p_plating 40
+upgrade 3 p_ground_weapon 40
 place_guard hdugalle 0
-wait 2400
+wait 2135
 
+allies_watch 11 u_town
 #idle_orders 182 780 1 hdugalle 912 ultralisk|hnorad|battlecruiser|valhalla|carrier|arbiter 30 health(GreaterThanPercent,66)
 idle_orders 182 780 1 hdugalle 912 ultralisk|hnorad|battlecruiser|valhalla|arbiter 30 health(GreaterThanPercent,66)
 idle_orders 182 780 1 hdugalle 912 lurker|siege_tank|panzer 20 health(GreaterThanPercent,66)
@@ -190,14 +194,14 @@ attack_add 5 h_artanis
 target_expansion
 wait 300
 
-expand 3 u_town
-upgrade 1 scarab_damage 30
-upgrade 1 scout_sight 30
-upgrade 2 p_air_weapon 30
-wait 2800
+upgrade 1 scarab_damage 40
+upgrade 1 scout_sight 40
+upgrade 2 p_air_weapon 50
+wait 2040
 
 attack_do
 attack_clear
+upgrade 2 dragoon_range 50
 train 18 harchon
 attack_add 18 harchon
 attack_prepare
@@ -205,11 +209,20 @@ wait 300
 
 attack_do
 attack_clear
+train 4 h_artanis
+train 6 harchon
+attack_add 7 h_artanis
+attack_add 7 harchon
+attack_to Loc.54 Loc.55
+wait 300
+
+attack_do
+attack_clear
 call prepare_carrier_route
 create_script sriver 255 Loc.14 255 0
 tech maelstrom 30
-upgrade 1 scout_speed 30
-upgrade 3 p_air_weapon 30
+upgrade 1 scout_speed 40
+upgrade 3 p_air_weapon 50
 wait 1877
 
 idle_orders 186 882 1 hdugalle 1024 group_men 80 incombat|count(AtLeast 2 60 14)|unitflags(organic)|Self(Energy(GreaterThanPercent 50))
@@ -224,7 +237,9 @@ attack_add 2 hreaver
 target_expansion
 wait 300
 
-upgrade 2 p_plating 30
+upgrade 2 p_plasma_shield 40
+upgrade 2 p_plating 40
+upgrade 2 p_armor 40
 build 1 arbiter_tribunal 80
 place_guard hdugalle 0
 call prepare_carrier_route
@@ -234,10 +249,10 @@ attack_do
 attack_clear
 expand 4 u_town
 upgrade 3 p_plating 30
-train 1 harbiter
+train 1 h_aldaris
 train 7 h_artanis
 train 12 harchon
-attack_add 1 harbiter
+attack_add 1 h_aldaris
 attack_add 7 h_artanis
 attack_add 12 harchon
 attack_prepare
@@ -245,9 +260,18 @@ wait 300
 
 attack_do
 attack_clear
+train 8 hmojo
+attack_add 8 hmojo
+attack_to Loc.54 Loc.55
+wait 300
+
+attack_do
+attack_clear
 call prepare_carrier_route
+upgrade 3 p_armor 40
+upgrade 3 p_plasma_shield 40
 :main_loop
-wait 2025
+wait 1825
 
 set_attacks 1
 train 4 hmojo
@@ -272,13 +296,13 @@ wait 300
 
 attack_do
 attack_clear
-wait 2667
+wait 2267
 
-train 1 harbiter
+train 1 h_aldaris
 train 7 h_artanis
 train 2 hdugalle
 train 12 harchon
-attack_add 1 harbiter
+attack_add 1 h_aldaris
 attack_add 2 hdugalle
 attack_add 7 h_artanis
 attack_add 12 harchon
@@ -391,11 +415,12 @@ wait 50
 
 resources 13 AtMost Ore 100 horror_scarabs
 
-issue_order 38 50 hreaver Loc.63 Loc.63 85 0
+issue_order 63 50 hreaver Loc.63 Loc.63 85 0
 #scarab
 goto horror_scarabs
 
 :blue_support
+notowns_jump gateway orange_hunters
 multirun check_carrier
 wait 3650
 
@@ -435,3 +460,82 @@ train 1 carrier
 wait 1000
 
 goto check_carrier
+
+:orange_hunters
+defensebuild_gg 1 h_artanis
+defenseuse_gg 1 h_artanis
+defensebuild_ag 1 hcorsair
+defenseuse_ag 1 hcorsair
+defensebuild_aa 1 hcorsair
+defenseuse_aa 1 hcorsair
+max_force 900
+define_max 4 hcorsair
+define_max 2 h_aldaris
+wait 450
+
+multirun orange_check
+multirun orange_cash
+wait 5000
+
+upgrade 1 p_plasma_shield 30
+wait 4000
+
+upgrade 1 p_air_weapon 40
+wait 6000
+
+upgrade 1 scout_speed 30
+upgrade 2 p_air_weapon 30
+wait 5000
+
+upgrade 2 p_plasma_shield 30
+upgrade 1 p_plating 30
+wait 7500
+
+upgrade 3 p_air_weapon 30
+upgrade 3 p_plasma_shield 30
+wait 10500
+
+upgrade 1 scout_sight 30
+upgrade 2 p_plating 30
+wait 5000
+
+upgrade 3 p_plating 30
+:oh_loop
+wait 10050
+
+train 3 hcorsair
+goto oh_loop
+
+:orange_cash
+resources 13 Add Gas 200 orange_check
+resources 13 Add Ore 300 orange_check
+wait_rand 1667 2533
+
+goto orange_cash
+
+:orange_check
+wait 50
+
+bring_jump 14 AtMost 0 carrier Loc.63 orange_check
+random_jump 85 oatk_1
+random_jump 128 oatk_2
+attack_add 3 hcorsair
+attack_add 1 h_artanis
+:o_loop_arnd
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait_rand 3350 5000
+
+goto orange_check
+
+:oatk_1
+attack_add 4 hcorsair
+goto o_loop_arnd
+
+:oatk_2
+attack_add 2 hcorsair
+attack_add 2 h_artanis
+goto o_loop_arnd
