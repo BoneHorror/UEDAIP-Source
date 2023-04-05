@@ -12457,7 +12457,7 @@ ReaverWalking:
     playfram           289    # frame set 8
     move               60
 	imgol          	146 0 0	# Unknown146 (protoss\trilob.grp)
-    playsnd            1166
+    playsnd            1144
     wait               1
     playfram           153    # frame set 0
     goto               ReaverWalking
