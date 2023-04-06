@@ -11701,8 +11701,8 @@ uDragoonGndAttkInit:
 	playfram       	0x304	# frame set 21
 	wait           	1
 uDragoonGndAttkRpt:
-	if upgrade(player, 70) == 2 goto uGoonUpg2
-	if upgrade(player, 70) == 1 goto uGoonUpg
+	if upgrade(player, 33) == 2 goto uGoonUpg2
+	if upgrade(player, 33) == 1 goto uGoonUpg
 	playfram       	0x315	# frame set 22
 	wait           	1
 	playfram       	0x326	# frame set 23
@@ -11756,8 +11756,8 @@ uDragoonAirAttkInit:
 	playfram       	0x304	# frame set 21
 	wait           	1
 uDragoonAirAttkRpt:
-	if upgrade(player, 70) == 2 goto uGoonUpg2
-	if upgrade(player, 70) == 1 goto uGoonUpg
+	if upgrade(player, 33) == 2 goto uGoonUpg2
+	if upgrade(player, 33) == 1 goto uGoonUpg
 	playfram       	0x315	# frame set 22
 	wait           	1
 	playfram       	0x326	# frame set 23
@@ -11879,20 +11879,20 @@ uGoonUpg2:
 	set global bullet_x_off = 5
 	set global bullet_y_off = -8
 	wait           	1
-	fireweapon		146
-	fireweapon		146
+	attackwith		1
+	attackwith		1
 	wait           	1
-	fireweapon		146
+	attackwith		1
 	wait           	1
-	fireweapon		146
-	fireweapon		146
-	fireweapon		146
+	attackwith		1
+	attackwith		1
+	attackwith		1
 	wait           	1
-	fireweapon		146
-	fireweapon		146
+	attackwith		1
+	attackwith		1
 	wait           	1
-	fireweapon		146
-	fireweapon		146
+	attackwith		1
+	attackwith		1
 	wait           	3
 	fireweapon		145
 	wait           	1
@@ -12695,25 +12695,10 @@ uScoutAirAttkInit:
 	goto           	long00
 
 uScoutWalking:
-	if SpeedUpgradeState == 0 && upgrade(player, 42) == 0 goto uScoutSetSpeedDefault
-	if SpeedUpgradeState != 2 && upgrade(player, 42) == 1 goto uScoutSetSpeedUpgraded
-uScoutContinueWalking:
 	imgol          	142 0 0	# ScoutGlow (thingy\pscGlow.grp)
 	playfram       	0x22	# frame set 0
 	setvertpos     	0
 	goto           	long00
-	
-uScoutSetSpeedDefault:
-	set spritelocal SpeedUpgradeState = 1
-	set flingy.top_speed = 1280
-	set flingy.acceleration = 48
-	goto uScoutContinueWalking
-	
-uScoutSetSpeedUpgraded:
-	set spritelocal SpeedUpgradeState = 2
-	set flingy.top_speed = 1707
-	set flingy.acceleration = 96
-	goto uScoutContinueWalking
 
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
@@ -12998,7 +12983,6 @@ uZealotGndAttkToIdle:
 	goto              	uZealotWalkingToIdle
 
 uZealotWalking:
-	if upgrade(player, 34) == 1 goto uZWalkFast
 	move              	6 
 	wait              	1 
 	playfram          	541	# Frame set 5
@@ -13024,33 +13008,6 @@ uZealotWalking:
 	wait              	1 
 	playfram          	660	# Frame set 12
 	goto              	uZealotWalking
-	
-uZWalkFast:
-	move              	7 
-	wait              	1 
-	playfram          	541	# Frame set 5
-	move              	6
-	wait              	1 
-	playfram          	558	# Frame set 6
-	move              	7 
-	wait              	1 
-	playfram          	575	# Frame set 7
-	move              	6 
-	wait              	1 
-	playfram          	592	# Frame set 8
-	move              	7
-	wait              	1 
-	playfram          	609	# Frame set 9
-	move              	6 
-	wait              	1 
-	playfram          	626	# Frame set 10
-	move              	7 
-	wait              	1 
-	playfram          	643	# Frame set 11
-	move              	6 
-	wait              	1 
-	playfram          	660	# Frame set 12
-	goto              	uZWalkFast
 
 
 # ----------------------------------------------------------------------------- #
@@ -18652,6 +18609,9 @@ uExplod:
 	tmprmgraphicend
 	playfram       	14
 	wait           	1
+	randcondjmp    	155 uENsnd
+	playsnd        	1145	# Ulrezaj risen atk sound
+uENsnd:
 	playfram       	15
 	wait           	1
 	playfram       	16
