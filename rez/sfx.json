@@ -12633,6 +12633,17 @@
             "lengthAdjust": 0,
             "minVolume": 0,
             "ID": "SND_BLINK_ULREZAJ"
+          },
+		  {
+            "filePath": "Ulrezaj/1145risensproj.wav",
+            "priority": 1,
+            "preload": "false",
+            "unitSpeech": "false",
+            "oneAtATime": "false",
+            "neverPreempt": "false",
+            "lengthAdjust": 0,
+            "minVolume": 0,
+            "ID": "SND_RISEN_ULREZAJ"
           }
         ]
       }
