@@ -127,48 +127,46 @@ attack_do
 attack_clear
 call prepare_carrier_route
 upgrade 1 dragoon_range 50
-wait 1785
+wait 2385
 
-allies_watch 5 u_town
 #force target player or else it can get boring
 train 3 hmojo
 train 1 hzeratul
 attack_add 1 hzeratul
-attack_add 3 hmojo
+attack_add 2 hmojo
 attack_to Loc.44 Loc.45
 wait 300
 
 attack_do
 attack_clear
-multirun grand_exchange
-create_script nriver 255 Loc.15 255 0
+allies_watch 5 u_town
 upgrade 1 p_air_weapon 40
 upgrade 1 p_armor 40
-upgrade 2 p_ground_weapon 40
 upgrade 1 zealot_speed 50
 wait 3000
 
 train 2 hcorsair
 train 4 h_artanis
 train 6 harchon
-attack_add 4 h_artanis
-attack_add 6 harchon
+train 1 hreaver
+attack_add 2 h_artanis
+attack_add 2 harchon
+attack_add 1 hreaver
 attack_to Loc.44 Loc.45
 wait 300
 
 attack_do
 attack_clear
+create_script nriver 255 Loc.15 255 0
 max_force 833
-call prepare_carrier_route
 build 2 robotics_facility 80
 tech mind_control 30
-upgrade 1 shuttle_speed 60
-upgrade 1 p_plating 40
-upgrade 3 p_ground_weapon 40
+upgrade 2 p_ground_weapon 40
 place_guard hdugalle 0
-wait 2135
+wait 2535
 
-allies_watch 11 u_town
+call prepare_carrier_route
+allies_watch 12 u_town
 #idle_orders 182 780 1 hdugalle 912 ultralisk|hnorad|battlecruiser|valhalla|carrier|arbiter 30 health(GreaterThanPercent,66)
 idle_orders 182 780 1 hdugalle 912 ultralisk|hnorad|battlecruiser|valhalla|arbiter 30 health(GreaterThanPercent,66)
 idle_orders 182 780 1 hdugalle 912 lurker|siege_tank|panzer 20 health(GreaterThanPercent,66)
@@ -189,13 +187,14 @@ attack_add 5 h_artanis
 target_expansion
 wait 300
 
-upgrade 1 scarab_damage 40
-upgrade 1 scout_sight 40
-upgrade 2 p_air_weapon 50
-wait 2040
+upgrade 1 shuttle_speed 60
+upgrade 1 p_plating 40
+upgrade 3 p_ground_weapon 40
+wait 2540
 
 attack_do
 attack_clear
+multirun grand_exchange
 upgrade 2 dragoon_range 50
 train 18 harchon
 attack_add 18 harchon
@@ -218,9 +217,10 @@ attack_clear
 call prepare_carrier_route
 create_script sriver 255 Loc.14 255 0
 tech maelstrom 30
-upgrade 1 scout_speed 40
-upgrade 3 p_air_weapon 50
-wait 1877
+upgrade 1 scarab_damage 40
+upgrade 1 scout_sight 40
+upgrade 2 p_air_weapon 50
+wait 2177
 
 idle_orders 186 882 1 hdugalle 1024 group_men 80 incombat|count(AtLeast 2 60 14)|unitflags(organic)|Self(Energy(GreaterThanPercent 50))
 idle_orders 186 0 1 hdugalle 256 group_men 90 unitflags(organic)|deathrattle
@@ -234,9 +234,8 @@ attack_add 2 hreaver
 target_expansion
 wait 300
 
-upgrade 2 p_plasma_shield 40
-upgrade 2 p_plating 40
-upgrade 2 p_armor 40
+upgrade 1 scout_speed 40
+upgrade 3 p_air_weapon 50
 build 1 arbiter_tribunal 80
 place_guard hdugalle 0
 call prepare_carrier_route
@@ -246,7 +245,9 @@ wait 1515
 attack_do
 attack_clear
 expand 4 u_town
-upgrade 3 p_plating 30
+upgrade 2 p_plasma_shield 40
+upgrade 2 p_plating 40
+upgrade 2 p_armor 40
 train 1 h_aldaris
 train 7 h_artanis
 train 12 harchon
@@ -258,6 +259,7 @@ wait 300
 
 attack_do
 attack_clear
+upgrade 3 p_plating 30
 defensebuild_gg 1 hmojo
 defenseuse_gg 1 hmojo
 defensebuild_ga 1 hmojo
@@ -490,15 +492,11 @@ wait 1000
 goto check_carrier
 
 :orange_hunters
-defensebuild_gg 1 hmojo
-defenseuse_gg 1 hmojo
-defensebuild_ag 1 hcorsair
-defenseuse_ag 1 hcorsair
 defensebuild_aa 1 hcorsair
 defenseuse_aa 1 hcorsair
 max_force 400
-define_max 4 hcorsair
-define_max 2 hmojo
+define_max 2 hcorsair
+define_max 1 hmojo
 wait 450
 
 multirun orange_check
@@ -510,9 +508,15 @@ upgrade 1 p_plasma_shield 30
 wait 4000
 
 upgrade 1 p_air_weapon 40
+defensebuild_gg 1 hmojo
+defenseuse_gg 1 hmojo
+defensebuild_ag 1 hcorsair
+defenseuse_ag 1 hcorsair
 max_force 600
 wait 6000
 
+define_max 3 hcorsair
+define_max 2 hmojo
 upgrade 1 scout_speed 30
 upgrade 2 p_air_weapon 30
 wait 5000
@@ -526,6 +530,7 @@ upgrade 3 p_air_weapon 30
 upgrade 3 p_plasma_shield 30
 wait 10500
 
+define_max 4 hcorsair
 upgrade 1 scout_sight 30
 upgrade 2 p_plating 30
 wait 5000
