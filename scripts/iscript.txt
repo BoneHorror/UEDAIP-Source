@@ -18926,7 +18926,7 @@ Engines_GlowHeaderInit:
 	goto           	Engines_GlowHeaderInit
 
 uAE:
-	print ArbiterGlow
+	#print ArbiterGlow
 	engset			2
 	wait           	1
 	engset			3
