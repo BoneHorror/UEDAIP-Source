@@ -497,6 +497,8 @@ defenseuse_aa 1 hcorsair
 max_force 400
 define_max 2 hcorsair
 define_max 1 hmojo
+deaths 13 Set 0 wraith check_carrier
+#use wraiths as markers to see what are our current limits
 wait 450
 
 multirun orange_check
@@ -517,6 +519,7 @@ wait 6000
 
 define_max 3 hcorsair
 define_max 2 hmojo
+deaths 13 Set 1 wraith check_carrier
 upgrade 1 scout_speed 30
 upgrade 2 p_air_weapon 30
 wait 5000
@@ -531,6 +534,7 @@ upgrade 3 p_plasma_shield 30
 wait 10500
 
 define_max 4 hcorsair
+deaths 13 Set 2 wraith check_carrier
 upgrade 1 scout_sight 30
 upgrade 2 p_plating 30
 wait 5000
@@ -553,13 +557,15 @@ goto orange_cash
 wait 50
 
 #print orangeLooped
+deaths 13 Exactly 1 wraith oc_limit_1
+deaths 13 Exactly 2 wraith oc_limit_2
 bring_jump 5 Exactly 0 carrier Loc.63 orange_check
 #print ORANGE_GO
 random_jump 85 oatk_1
 random_jump 128 oatk_2
 #print oatk_conti
-wait_force 2 hcorsair
 wait_force 1 hmojo
+wait_force 1 hcorsair
 :o_loop_arnd
 deaths 13 Set 1 dark_templar check_carrier
 #set death. check in map to write value_area
@@ -569,11 +575,66 @@ goto orange_check
 
 :oatk_1
 #print oatk_1
-wait_force 3 hcorsair
+wait_force 2 hcorsair
 goto o_loop_arnd
 
 :oatk_2
 #print oatk_2
+wait_force 1 hcorsair
+wait_force 1 hmojo
+goto o_loop_arnd
+
+:oc_limit_1
+wait 50
+
+deaths 13 Exactly 2 wraith oc_limit_2
+bring_jump 5 Exactly 0 carrier Loc.63 oc_limit_1
+random_jump 85 oatk_1_l1
+random_jump 128 oatk_2_l1
+#print oatk_conti
+wait_force 2 hcorsair
+wait_force 1 hmojo
+:o_loop_arnd_l1
+deaths 13 Set 1 dark_templar check_carrier
+#set death. check in map to write value_area
+wait_rand 3350 5000
+
+goto oc_limit_1
+
+:oatk_1_l1
+#print oatk_1
+wait_force 2 hcorsair
+goto o_loop_arnd_l1
+
+:oatk_2_l1
+#print oatk_2
+wait_force 1 hcorsair
+wait_force 2 hmojo
+goto o_loop_arnd_l1
+
+:oc_limit_2
+wait 50
+
+bring_jump 5 Exactly 0 carrier Loc.63 oc_limit_2
+random_jump 85 oatk_1_l2
+random_jump 128 oatk_2_l2
+#print oatk_conti
+wait_force 2 hcorsair
+wait_force 1 hmojo
+:o_loop_arnd_l2
+deaths 13 Set 1 dark_templar check_carrier
+#set death. check in map to write value_area
+wait_rand 3350 5000
+
+goto oc_limit_2
+
+:oatk_1_l2
+#print oatk_1
+wait_force 3 hcorsair
+goto o_loop_arnd_l2
+
+:oatk_2_l2
+#print oatk_2
 wait_force 2 hcorsair
 wait_force 2 hmojo
-goto o_loop_arnd
+goto o_loop_arnd_l2
