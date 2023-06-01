@@ -3145,6 +3145,7 @@ HatcheryAlmostBuilt:
 HatcheryBuilt:
 	playfram       	0
 	waitrand       	2 5
+	#print Hatchery - Player {player}, Color selected: {game.player_color_choice(player)}
 HatcheryIsWorking:
 	playfram       	1
 	wait           	2
@@ -8273,6 +8274,7 @@ CommandCenterBuilt:
 	#if game.terran_supply_used(player) >= 10 goto UEDSReturn
 	#if game.minerals(player) >= 51 goto UEDSReturn
 	#if game.gas(player) >= 1 goto UEDSReturn
+	#print Command Center - Player {player}, Color selected: {game.player_color_choice(player)}
 	if game.player_color_choice(player) == 23 goto SPMissionGeneral #skip UED select and do mission specific checks
 	#if game.player_color_choice(player) == 23 goto UEDSReturn #skip UED select
 	if game.player_color_choice(player) == 22 goto UEDSRandom
