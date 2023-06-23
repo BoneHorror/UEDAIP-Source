@@ -1,0 +1,547 @@
+script_name Brood Wars Protoss 1 - Town A
+script_id PB1A
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+if_owned command_center kmc_force
+if_owned drone zerg_swarm
+#Ulrezaj helper script follows
+define_max 2 harchon
+define_max 1 hmojo
+define_max 1 hcorsair
+#hzeratul = u dark templar
+#harchon = u zealot
+#hmojo = u scout
+#hreaver = u reaver
+#hcarrier = u carrier
+#h_aldaris = u arbiter
+#h_artanis = u dragoon
+#hcorsair = u corsair
+#hdugalle = u dark archon
+multirun ai_income
+multirun ai_upgrades
+multirun ai_upg_sharing
+:helper_loop
+wait 50
+
+train 1 harchon
+wait 1200
+
+train 1 harchon
+wait 1200
+
+train 1 harchon
+train 1 hmojo
+wait 1500
+
+train 1 harchon
+wait 1200
+
+train 1 harchon
+wait 1200
+
+train 1 harchon
+train 1 hcorsair
+wait 1500
+
+goto helper_loop
+
+:ai_upgrades
+wait 2000
+
+upgrade 1 p_ground_weapon 30
+wait 2000
+
+upgrade 1 dragoon_range 30
+wait 2500
+
+upgrade 1 p_plasma_shield 30
+wait 2500
+
+upgrade 1 p_air_weapon 30
+wait 2500
+
+upgrade 1 p_armor 30
+wait 2500
+
+upgrade 2 dragoon_range 30
+wait 2500
+
+upgrade 1 p_plating 30
+upgrade 2 p_plasma_shield 30
+wait 6000
+
+upgrade 3 p_plasma_shield 30
+wait 5000
+
+stop
+
+:ai_upg_sharing
+#check if we got upgrades, if we do jump to blocks that share them with the Player (P0)
+wait 50
+
+upgrade_jump 13 Exactly_Call p_ground_weapon 1 set_u1
+upgrade_jump 13 Exactly_Call p_armor 1 set_u2
+upgrade_jump 13 Exactly_Call p_plasma_shield 1 set_u3
+upgrade_jump 13 Exactly_Call p_air_weapon 1 set_u4
+upgrade_jump 13 Exactly_Call p_plating 1 set_u5
+upgrade_jump 13 Exactly_Call dragoon_range 1 set_u6
+upgrade_jump 13 Exactly_Call dragoon_range 2 set_u7
+upgrade_jump 13 Exactly_Call p_plasma_shield 2 set_u8
+upgrade_jump 13 Exactly_Call p_plasma_shield 3 set_u9
+deaths 13 Exactly 9 marine finish_sharing
+goto ai_upg_sharing
+
+:set_u1
+wait 5
+
+upgrade_jump 13 Exactly p_ground_weapon 1 share_return
+upgrade_jump 0 Set p_ground_weapon 1 share_return
+deaths 13 Add 1 marine finish_sharing
+goto share_return
+
+:set_u2
+wait 5
+
+upgrade_jump 13 Exactly p_armor 1 share_return
+upgrade_jump 0 Set p_armor 1 share_return
+deaths 13 Add 1 marine finish_sharing
+goto share_return
+
+:set_u3
+wait 5
+
+upgrade_jump 13 Exactly p_plasma_shield 1 share_return
+upgrade_jump 0 Set p_plasma_shield 1 share_return
+deaths 13 Add 1 marine finish_sharing
+goto share_return
+
+:set_u4
+wait 5
+
+upgrade_jump 13 Exactly p_air_weapon 1 share_return
+upgrade_jump 0 Set p_air_weapon 1 share_return
+deaths 13 Add 1 marine finish_sharing
+goto share_return
+
+:set_u5
+wait 5
+
+upgrade_jump 13 Exactly p_plating 1 share_return
+upgrade_jump 0 Set p_plating 1 share_return
+deaths 13 Add 1 marine finish_sharing
+goto share_return
+
+:set_u6
+wait 5
+
+upgrade_jump 13 Exactly dragoon_range 1 share_return
+upgrade_jump 0 Set dragoon_range 1 share_return
+deaths 13 Add 1 marine finish_sharing
+goto share_return
+
+:set_u7
+wait 5
+
+upgrade_jump 13 Exactly dragoon_range 2 share_return
+upgrade_jump 0 Set dragoon_range 2 share_return
+deaths 13 Add 1 marine finish_sharing
+goto share_return
+
+:set_u8
+wait 5
+
+upgrade_jump 13 Exactly p_plasma_shield 2 share_return
+upgrade_jump 0 Set p_plasma_shield 2 share_return
+deaths 13 Add 1 marine finish_sharing
+goto share_return
+
+:set_u9
+wait 5
+
+upgrade_jump 13 Exactly p_plasma_shield 2 share_return
+upgrade_jump 0 Set p_plasma_shield 2 share_return
+deaths 13 Add 1 marine finish_sharing
+
+:share_return
+return
+
+:finish_sharing
+stop
+:kmc_force
+#basic town that only rebuilds a few buildings so that it's not too annoying for the Player to disarm
+build 1 command_center 100
+build 1 barracks 80
+build 1 engineering_bay 80
+build 1 factory 80
+build 1 machine_shop 80
+build 1 armory 80
+max_force 640
+define_max 4 wraith
+define_max 3 dropship
+define_max 10 scv
+define_max 18 marine
+define_max 4 ghost
+define_max 6 firebat
+define_max 3 siege_tank
+define_max 5 vulture
+define_max 4 goliath
+define_max 2 battlecruiser
+multirun ai_income
+defensebuild_gg 2 marine
+defenseuse_gg 2 marine
+defensebuild_gg 1 firebat
+defenseuse_gg 1 firebat
+defensebuild_gg 1 goliath
+defenseuse_gg 1 goliath
+defensebuild_ag 1 goliath
+defenseuse_ag 1 goliath
+defensebuild_ag 1 ghost
+defenseuse_ag 1 ghost
+defensebuild_ga 1 wraith
+defenseuse_ga 1 wraith
+defensebuild_aa 1 wraith
+defenseuse_aa 1 wraith
+wait 2500
+
+upgrade 1 t_infantry_armor 30
+tech siege_mode 30
+call wait_attack
+train 6 marine
+call hold_attack
+attack_add 6 marine
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 3000
+
+upgrade 1 t_vehicle_weapon 30
+upgrade 1 marine_range 30
+call wait_attack
+train 2 firebat
+train 3 goliath
+call hold_attack
+attack_add 3 goliath
+attack_add 2 firebat
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 2500
+
+upgrade 1 t_ship_weapon 30
+tech stim_packs 30
+call wait_attack
+train 2 siege_tank
+train 10 marine
+call hold_attack
+attack_add 10 marine
+attack_add 2 siege_tank
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+tech spider_mines 30
+upgrade 1 t_ship_plating 30
+upgrade 1 t_vehicle_plating 30
+upgrade 1 t_infantry_weapon 30
+:kmc_loop
+wait 1775
+
+call wait_attack
+train 4 firebat
+train 4 goliath
+train 4 marine
+call hold_attack
+attack_add 4 firebat
+attack_add 4 marine
+attack_add 4 goliath
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 2600
+
+call wait_attack
+train 14 marine
+train 2 siege_tank
+call hold_attack
+attack_add 2 siege_tank
+attack_add 14 marine
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 1450
+
+call wait_attack
+train 3 vulture
+train 2 goliath
+train 6 firebat
+call hold_attack
+attack_add 3 vulture
+attack_add 2 goliath
+attack_add 6 firebat
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+goto kmc_loop
+
+:zerg_swarm
+multirun ai_income
+build 1 hatchery 100
+build 1 drone 90
+build 11 drone 80
+build 1 spawning_pool 80
+build 1 hydralisk_den 80
+build 1 lair 80
+build 1 queen_nest 80
+player_need 1 hive
+build 1 spire 80
+build 1 greater_spire 80
+build 4 creep_colony 80
+player_need 1 evolution_chamber
+build 2 spore_colony 80
+build 2 sunken_colony 80
+define_max 18 drone
+define_max 10 zergling
+define_max 9 hydralisk
+define_max 2 lurker
+define_max 14 mutalisk
+define_max 2 hmutalisk
+define_max 5 guardian
+define_max 3 devourer
+define_max 14 scourge
+defensebuild_gg 1 mutalisk
+defenseuse_gg 1 mutalisk
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defensebuild_gg 1 hydralisk
+defensebuild_gg 1 lurker
+defenseuse_gg 1 lurker
+defensebuild_ag 2 scourge
+defenseuse_ag 2 scourge
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+defensebuild_ga 1 guardian
+defenseuse_ga 1 guardian
+defensebuild_aa 2 scourge
+defenseuse_aa 2 scourge
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 1 devourer
+defenseuse_aa 1 devourer
+upgrade 1 z_flyer_attack 30
+tech lurker_aspect 30
+wait 2150
+
+train 2 hydralisk
+attack_add 2 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 z_flyer_carapace 30
+upgrade 1 z_carapace 30
+train 3 mutalisk
+train 6 zergling
+attack_add 3 mutalisk
+attack_add 5 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 z_flyer_attack 30
+upgrade 1 z_missile_attack 30
+wait 2650
+
+train 4 mutalisk
+train 2 guardian
+attack_add 2 guardian
+attack_add 2 mutalisk
+attack_to Loc.93 Loc.92
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 zergling_speed 30
+wait 3330
+
+upgrade 3 z_flyer_attack 30
+train 5 mutalisk
+train 8 zergling
+attack_add 8 zergling
+attack_add 5 mutalisk
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 z_melee_attack 30
+wait 2810
+
+train 6 mutalisk
+train 2 hydralisk
+train 2 lurker
+train 1 devourer
+attack_add 2 lurker
+attack_add 5 mutalisk
+attack_add 1 devourer
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 z_flyer_carapace 30
+upgrade 1 para_symbiosis 30
+train 7 mutalisk
+train 3 guardian
+attack_add 4 mutalisk
+attack_add 3 guardian
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 z_missile_attack 30
+wait 3255
+
+train 6 mutalisk
+train 4 hydralisk
+train 2 lurker
+attack_add 2 lurker
+attack_add 2 hydralisk
+attack_add 6 mutalisk
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+upgrade 3 z_flyer_carapace 30
+place_guard hmutalisk 2
+wait 2435
+
+train 8 mutalisk
+attack_add 8 mutalisk
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+:purple_loop
+wait 3475
+
+train 4 mutalisk
+train 4 guardian
+train 4 scourge
+attack_add 4 scourge
+attack_add 4 guardian
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+wait 3205
+
+train 10 zergling
+train 7 mutalisk
+train 2 devourer
+attack_add 10 zergling
+attack_add 5 mutalisk
+attack_add 2 devourer
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+wait 3595
+
+train 2 hydralisk
+train 12 mutalisk
+train 1 devourer
+train 4 guardian
+train 4 scourge
+train 2 lurker
+attack_add 2 lurker
+attack_add 7 mutalisk
+attack_add 4 guardian
+attack_add 4 scourge
+attack_add 1 devourer
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+goto purple_loop
+
+:ai_income
+wait 16
+
+resources 13 Add Ore 5 ai_income
+resources 13 Add Gas 2 ai_income
+goto ai_income
+
+
+:hold_attack
+deaths 13 Add 1 firebat purple_loop
+return
+
+:release_attack
+deaths 13 Set 0 firebat purple_loop
+return
+
+:wait_attack
+wait 16
+
+deaths 13 AtLeast 2 firebat ensure_attack
+deaths 13 Exactly 1 firebat wait_attack
+#loop if another script started an attack
+return
+
+:ensure_attack
+load_bank Ensures
+print Ensure_TwoOrMore_PleaseReportMeIfSeen
+bank_data Set 1 Ensures Ensure_TwoOrMore wait_attack
+bank_data Set 0 Ensures Ensure_Compare wait_attack
+save_bank Ensures
+deaths 13 Set 0 firebat purple_loop
+return

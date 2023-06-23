@@ -1,0 +1,20 @@
+script_name Brood Wars Protoss 1 - Town C
+script_id PB1C
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 command_center 100
+build 1 engineering_bay 80
+build 1 missile_turret 80
+build 1 bunker 80
+build 6 scv 80
+:loop
+wait 1500
+
+goto loop
+
+
