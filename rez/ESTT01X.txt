@@ -11,9 +11,10 @@
 </SCREENLEFT>
 UED CAMPAIGN: THE IRON FIST
 
-Since the conflict began in the Koprulu sector, the ruling council of the United Earth Directorate has closely monitored its wayward Terran colonies. Having witnessed the steady advancement of the Zerg infestation and the maneuverings of the Protoss throughout the Colonies, the ruling council has finally agreed to take control over the war-torn sector. 
+For the longest time, Terran leaders had known that their true homeworld, a distant planet called Earth, is still out there, and that it has never truly stopped watching them. In retrospect, however, they never realized just how closely monitored they were.
+With the word of Terran Confederacy's utter demise at the hands of the Zerg and the Protoss reaching the United Earth Directorate, it has been decided that alien races with both capability and desire to wipe out entire populated worlds pose too great of a threat to Humanity itself - and must be dealt with, while said threat is still possible to contain.
 
-Learning that a new Zerg Overmind has manifested itself upon the planet Char, the UED has sent its greatest Admiral, Gerard DuGalle, to capture the creature. As Captain of the UED fleet under DuGalle, your objective will be to storm the Terran Dominion and depose of its dictator, Emperor Mengsk I.
+After an extensive research conducted into the Koprulu conflict and the warring parties, a Strategic Fleet commanded by Admiral Gerard DuGalle has been deployed with the sole objective of reclaiming Terran colonies back to UED's direct control, as well as eradicating the alien threat by any means necessary. As Captain of the UED fleet under DuGalle, you have been tasked with leading the vanguard of the UED invasion, targeting the former Confederate space. Emperor Mengsk's regime must be crushed without mercy. Faliure is not an option.
 </PAGE>
 
 </COMMENT #############################################################>
