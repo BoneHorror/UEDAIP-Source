@@ -8,11 +8,10 @@ default_min 0
 wait 1
 
 if_owned drone zerg_swarm
-wait 4600
+wait 3775
 
 call wait_attack
 train 2 wraith
-call hold_attack
 attack_add 2 wraith
 attack_prepare
 wait 300
@@ -20,11 +19,10 @@ wait 300
 attack_do
 attack_clear
 call release_attack
-wait 5000
+wait 4200
 
 call wait_attack
 train 1 battlecruiser
-call hold_attack
 attack_add 1 battlecruiser
 attack_prepare
 wait 300
@@ -37,7 +35,6 @@ wait 3000
 call wait_attack
 train 1 battlecruiser
 train 2 wraith
-call hold_attack
 attack_add 2 wraith
 attack_add 1 battlecruiser
 attack_prepare
@@ -47,11 +44,10 @@ attack_do
 attack_clear
 call release_attack
 :star_loop
-wait 8000
+wait 6000
 
 call wait_attack
 train 2 battlecruiser
-call hold_attack
 attack_add 2 battlecruiser
 attack_prepare
 wait 300
@@ -63,7 +59,6 @@ wait 2500
 
 call wait_attack
 train 4 wraith
-call hold_attack
 attack_add 4 wraith
 attack_prepare
 wait 300
@@ -86,20 +81,16 @@ wait 1500
 
 goto loop
 
-
-:hold_attack
-deaths 13 Add 1 firebat loop
-return
-
 :release_attack
-deaths 13 Set 0 firebat loop
+deaths 2 Set 0 firebat loop
 return
 
 :wait_attack
 wait 16
 
-deaths 13 AtLeast 2 firebat ensure_attack
-deaths 13 Exactly 1 firebat wait_attack
+deaths 2 AtLeast 2 firebat ensure_attack
+deaths 2 Exactly 1 firebat wait_attack
+deaths 2 Add 1 firebat loop
 #loop if another script started an attack
 return
 
@@ -109,5 +100,5 @@ print Ensure_TwoOrMore_PleaseReportMeIfSeen
 bank_data Set 1 Ensures Ensure_TwoOrMore wait_attack
 bank_data Set 0 Ensures Ensure_Compare wait_attack
 save_bank Ensures
-deaths 13 Set 0 firebat loop
+deaths 2 Set 0 firebat loop
 return

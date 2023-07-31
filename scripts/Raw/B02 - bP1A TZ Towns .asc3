@@ -31,29 +31,29 @@ multirun ai_upg_sharing
 wait 50
 
 train 1 harchon
-wait 1200
+wait 2350
 
 train 1 harchon
-wait 1200
+wait 3000
 
-train 1 harchon
+train 1 h_artanis
 train 1 hmojo
-wait 1500
+wait 2500
 
 train 1 harchon
-wait 1200
+wait 3350
 
 train 1 harchon
-wait 1200
+wait 2500
 
-train 1 harchon
+train 1 h_artanis
 train 1 hcorsair
-wait 1500
+wait 2000
 
 goto helper_loop
 
 :ai_upgrades
-wait 2000
+wait 1000
 
 upgrade 1 p_ground_weapon 30
 wait 2000
@@ -96,76 +96,78 @@ upgrade_jump 13 Exactly_Call dragoon_range 2 set_u7
 upgrade_jump 13 Exactly_Call p_plasma_shield 2 set_u8
 upgrade_jump 13 Exactly_Call p_plasma_shield 3 set_u9
 deaths 13 Exactly 9 marine finish_sharing
+#print Debug_UpgradeJump-ShareLoop
 goto ai_upg_sharing
 
 :set_u1
 wait 5
 
-upgrade_jump 13 Exactly p_ground_weapon 1 share_return
+upgrade_jump 0 Exactly p_ground_weapon 1 share_return
 upgrade_jump 0 Set p_ground_weapon 1 share_return
 deaths 13 Add 1 marine finish_sharing
-goto share_return
+#print Debug_UpgradeJump-PGroundWeapon
+return
 
 :set_u2
 wait 5
 
-upgrade_jump 13 Exactly p_armor 1 share_return
+upgrade_jump 0 Exactly p_armor 1 share_return
 upgrade_jump 0 Set p_armor 1 share_return
 deaths 13 Add 1 marine finish_sharing
-goto share_return
+return
 
 :set_u3
 wait 5
 
-upgrade_jump 13 Exactly p_plasma_shield 1 share_return
+upgrade_jump 0 Exactly p_plasma_shield 1 share_return
 upgrade_jump 0 Set p_plasma_shield 1 share_return
 deaths 13 Add 1 marine finish_sharing
-goto share_return
+return
 
 :set_u4
 wait 5
 
-upgrade_jump 13 Exactly p_air_weapon 1 share_return
+upgrade_jump 0 Exactly p_air_weapon 1 share_return
 upgrade_jump 0 Set p_air_weapon 1 share_return
 deaths 13 Add 1 marine finish_sharing
-goto share_return
+return
 
 :set_u5
 wait 5
 
-upgrade_jump 13 Exactly p_plating 1 share_return
+upgrade_jump 0 Exactly p_plating 1 share_return
 upgrade_jump 0 Set p_plating 1 share_return
 deaths 13 Add 1 marine finish_sharing
-goto share_return
+return
 
 :set_u6
 wait 5
 
-upgrade_jump 13 Exactly dragoon_range 1 share_return
+upgrade_jump 0 Exactly dragoon_range 1 share_return
 upgrade_jump 0 Set dragoon_range 1 share_return
 deaths 13 Add 1 marine finish_sharing
-goto share_return
+return
 
 :set_u7
 wait 5
 
-upgrade_jump 13 Exactly dragoon_range 2 share_return
+upgrade_jump 0 Exactly dragoon_range 2 share_return
 upgrade_jump 0 Set dragoon_range 2 share_return
 deaths 13 Add 1 marine finish_sharing
-goto share_return
+return
 
 :set_u8
 wait 5
 
-upgrade_jump 13 Exactly p_plasma_shield 2 share_return
+upgrade_jump 0 Exactly p_plasma_shield 2 share_return
 upgrade_jump 0 Set p_plasma_shield 2 share_return
 deaths 13 Add 1 marine finish_sharing
-goto share_return
+return
 
 :set_u9
 wait 5
 
-upgrade_jump 13 Exactly p_plasma_shield 2 share_return
+upgrade_jump 0 Exactly p_plasma_shield 2 share_return
 upgrade_jump 0 Set p_plasma_shield 2 share_return
 deaths 13 Add 1 marine finish_sharing
 
@@ -175,6 +177,10 @@ return
 :finish_sharing
 stop
 :kmc_force
+#set KMC goliath upgrade 
+upgrade_jump 13 Set 76 1 ai_income
+#clone for fake guard player
+upgrade_jump 6 Set 76 1 ai_income
 #basic town that only rebuilds a few buildings so that it's not too annoying for the Player to disarm
 build 1 command_center 100
 build 1 barracks 80
@@ -194,6 +200,25 @@ define_max 5 vulture
 define_max 4 goliath
 define_max 2 battlecruiser
 multirun ai_income
+upgrade_jump 13 Set 74 5 ai_income
+#campaign mining cheat
+wait 2500
+
+upgrade 1 t_infantry_armor 30
+tech siege_mode 30
+call wait_attack
+train 6 marine
+attack_add 6 marine
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+upgrade 1 t_vehicle_weapon 30
+upgrade 1 marine_range 30
+wait 1500
+
 defensebuild_gg 2 marine
 defenseuse_gg 2 marine
 defensebuild_gg 1 firebat
@@ -208,28 +233,17 @@ defensebuild_ga 1 wraith
 defenseuse_ga 1 wraith
 defensebuild_aa 1 wraith
 defenseuse_aa 1 wraith
-wait 2500
+upgrade 1 t_ship_weapon 30
+tech stim_packs 30
+wait 1500
 
-upgrade 1 t_infantry_armor 30
-tech siege_mode 30
-call wait_attack
-train 6 marine
-call hold_attack
-attack_add 6 marine
-attack_prepare
-wait 300
-
-attack_do
-attack_clear
-call release_attack
-wait 3000
-
-upgrade 1 t_vehicle_weapon 30
-upgrade 1 marine_range 30
+tech spider_mines 30
+upgrade 1 t_ship_plating 30
+upgrade 1 t_vehicle_plating 30
+upgrade 1 t_infantry_weapon 30
 call wait_attack
 train 2 firebat
 train 3 goliath
-call hold_attack
 attack_add 3 goliath
 attack_add 2 firebat
 attack_prepare
@@ -240,12 +254,12 @@ attack_clear
 call release_attack
 wait 2500
 
-upgrade 1 t_ship_weapon 30
-tech stim_packs 30
+upgrade 1 vulture_speed 30
+upgrade 2 t_vehicle_plating 30
+upgrade 2 t_infantry_weapon 30
 call wait_attack
 train 2 siege_tank
 train 10 marine
-call hold_attack
 attack_add 10 marine
 attack_add 2 siege_tank
 attack_prepare
@@ -254,10 +268,10 @@ wait 300
 attack_do
 attack_clear
 call release_attack
-tech spider_mines 30
-upgrade 1 t_ship_plating 30
-upgrade 1 t_vehicle_plating 30
-upgrade 1 t_infantry_weapon 30
+upgrade 1 vademecum 30
+upgrade 2 t_vehicle_weapon 30
+upgrade 2 t_infantry_armor 30
+upgrade 1 adv_mechanics 30
 :kmc_loop
 wait 1775
 
@@ -265,7 +279,6 @@ call wait_attack
 train 4 firebat
 train 4 goliath
 train 4 marine
-call hold_attack
 attack_add 4 firebat
 attack_add 4 marine
 attack_add 4 goliath
@@ -280,7 +293,8 @@ wait 2600
 call wait_attack
 train 14 marine
 train 2 siege_tank
-call hold_attack
+train 14 marine
+train 2 siege_tank
 attack_add 2 siege_tank
 attack_add 14 marine
 attack_prepare
@@ -295,7 +309,6 @@ call wait_attack
 train 3 vulture
 train 2 goliath
 train 6 firebat
-call hold_attack
 attack_add 3 vulture
 attack_add 2 goliath
 attack_add 6 firebat
@@ -308,7 +321,6 @@ call release_attack
 goto kmc_loop
 
 :zerg_swarm
-multirun ai_income
 build 1 hatchery 100
 build 1 drone 90
 build 11 drone 80
@@ -332,6 +344,32 @@ define_max 2 hmutalisk
 define_max 5 guardian
 define_max 3 devourer
 define_max 14 scourge
+upgrade_jump 13 Set 74 5 ai_income
+#campaign mining cheat
+upgrade 1 z_flyer_attack 30
+tech burrowing 30
+tech lurker_aspect 30
+wait 2150
+
+multirun ai_income
+train 2 hydralisk
+attack_add 2 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 z_flyer_carapace 30
+upgrade 1 z_carapace 30
+train 3 mutalisk
+train 6 zergling
+attack_add 3 mutalisk
+attack_add 5 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
 defensebuild_gg 1 mutalisk
 defenseuse_gg 1 mutalisk
 defensebuild_gg 1 zergling
@@ -351,28 +389,7 @@ defensebuild_aa 1 mutalisk
 defenseuse_aa 1 mutalisk
 defensebuild_aa 1 devourer
 defenseuse_aa 1 devourer
-upgrade 1 z_flyer_attack 30
-tech lurker_aspect 30
-wait 2150
-
-train 2 hydralisk
-attack_add 2 hydralisk
-attack_prepare
-wait 500
-
-attack_do
-attack_clear
-upgrade 1 z_flyer_carapace 30
-upgrade 1 z_carapace 30
-train 3 mutalisk
-train 6 zergling
-attack_add 3 mutalisk
-attack_add 5 zergling
-attack_prepare
-wait 500
-
-attack_do
-attack_clear
+upgrade 1 burrowed_regen 30
 upgrade 2 z_flyer_attack 30
 upgrade 1 z_missile_attack 30
 wait 2650
@@ -402,6 +419,7 @@ wait 500
 attack_do
 attack_clear
 upgrade 1 z_melee_attack 30
+upgrade 1 hydra_attack 30
 wait 2810
 
 train 6 mutalisk
@@ -418,6 +436,7 @@ wait 500
 
 attack_do
 attack_clear
+upgrade 1 lurker_speed 30
 upgrade 2 z_flyer_carapace 30
 upgrade 1 para_symbiosis 30
 train 7 mutalisk
@@ -448,6 +467,7 @@ wait 500
 attack_do
 attack_clear
 upgrade 3 z_flyer_carapace 30
+upgrade 2 z_carapace 30
 place_guard hmutalisk 2
 wait 2435
 
@@ -510,30 +530,25 @@ wait 500
 
 attack_do
 attack_clear
-call release_attack
 goto purple_loop
 
 :ai_income
 wait 16
 
-resources 13 Add Ore 5 ai_income
-resources 13 Add Gas 2 ai_income
+resources 13 Add Ore 8 ai_income
+resources 13 Add Gas 3 ai_income
 goto ai_income
 
-
-:hold_attack
-deaths 13 Add 1 firebat purple_loop
-return
-
 :release_attack
-deaths 13 Set 0 firebat purple_loop
+deaths 2 Set 0 firebat purple_loop
 return
 
 :wait_attack
 wait 16
 
-deaths 13 AtLeast 2 firebat ensure_attack
-deaths 13 Exactly 1 firebat wait_attack
+deaths 2 AtLeast 2 firebat ensure_attack
+deaths 2 Exactly 1 firebat wait_attack
+deaths 2 Add 1 firebat purple_loop
 #loop if another script started an attack
 return
 
@@ -543,5 +558,5 @@ print Ensure_TwoOrMore_PleaseReportMeIfSeen
 bank_data Set 1 Ensures Ensure_TwoOrMore wait_attack
 bank_data Set 0 Ensures Ensure_Compare wait_attack
 save_bank Ensures
-deaths 13 Set 0 firebat purple_loop
+deaths 2 Set 0 firebat purple_loop
 return
