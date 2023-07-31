@@ -2434,7 +2434,7 @@ lasts 1056 frames</value>
     </string>
     <string>
         <id>STR_GANTRITHOR_RANK</id>
-        <value>Tassadar</value>
+        <value>Cultist</value>
     </string>
     <string>
         <id>STR_INTERCEPTOR</id>
@@ -6117,107 +6117,133 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>AI_TERRAN_B7B</id>
-        <value>Brood Wars Terran 7 - Town B</value>
+        <value>eWarp in Ulrezaj's Revenge [E]
+(Melee warrior, a sacrificial cultist that explodes on death)</value>
     </string>
     <string>
         <id>AI_TERRAN_B7C</id>
-        <value>Brood Wars Terran 7 - Town C</value>
+        <value>sWarp in Ulrezaj's Shade [S]
+(Melee assassin, effective against shielded targets)</value>
     </string>
     <string>
         <id>AI_TERRAN_B7D</id>
-        <value>Brood Wars Terran 7 - Town D</value>
+        <value>fWarp in Ulrezaj's Fist [F]
+(Agile Close Air Support fighter)</value>
     </string>
     <string>
         <id>AI_TERRAN_B7E</id>
-        <value>Brood Wars Terran 7 - Town E</value>
+        <value>wWarp in Ulrezaj's Wrath [W]
+(Powerful support ship that restores shields for allied units)</value>
     </string>
     <string>
         <id>AI_TERRAN_B7F</id>
-        <value>Brood Wars Terran 7 - Town F</value>
+        <value>dWarp in Ulrezaj's Mind [D]
+(Specialist vessel, capable of using powerful mind-twisting abilities)</value>
     </string>
     <string>
         <id>AI_TERRAN_B8A</id>
-        <value>Brood Wars Terran 8 - Town A</value>
+        <value>cWarp in Ulrezaj's Cloud [C]
+(Maneuverable Air-to-Air starfighter)</value>
     </string>
     <string>
         <id>AI_TERRAN_B8B</id>
-        <value>Brood Wars Terran 8 - Town B</value>
+        <value>aBuild Ulrezaj's Horror [A]
+(A twisted siege machine capable of teleportation and regeneration)</value>
     </string>
     <string>
         <id>AI_TERRAN_B8C</id>
-        <value>Brood Wars Terran 8 - Town C</value>
+        <value>aWarp in Ulrezaj's Risen [A]
+(Powerful strider, equipped with all-purpose AoE weaponry)</value>
     </string>
     <string>
         <id>AI_TERRAN_B8D</id>
-        <value>Brood Wars Terran 8 - Town D</value>
+        <value>dWarp in Ulrezaj's Hand [D]
+(Mastermind caster that burns energy of nearby enemy specialists)</value>
     </string>
     <string>
         <id>AI_TERRAN_B8E</id>
-        <value>iTrain Civilian</value>
+        <value>aWarp in Ulrezaj's Black Talon [A]
+(Powerful capital ship, armed with heavy weaponry and variety of destructive abilities)</value>
     </string>
     <string>
         <id>AI_TERRAN_B8F</id>
-        <value>Brood Wars Terran 8 - Town F</value>
+        <value>Ulrezaj's Shade Requires:
+   Templar Archives</value>
     </string>
     <string>
         <id>AI_ZERG_B1A</id>
-        <value>Brood Wars Zerg 1 - Town A</value>
+        <value>Ulrezaj's Wrath Requires:
+   Fleet Beacon</value>
     </string>
     <string>
         <id>AI_ZERG_B1B</id>
-        <value>Brood Wars Zerg 1 - Town B</value>
+        <value>Ulrezaj's Mind Requires:
+   Arbiter Tribunal</value>
     </string>
     <string>
         <id>AI_ZERG_B1C</id>
-        <value>Brood Wars Zerg 1 - Town C</value>
+        <value>Ulrezaj's Horror Requires:
+   Robotics Support Bay</value>
     </string>
     <string>
         <id>AI_ZERG_B1D</id>
-        <value>Brood Wars Zerg 1 - Town D</value>
+        <value>Ulrezaj's Risen Requires:
+   Cybernetics Core</value>
     </string>
     <string>
         <id>AI_ZERG_B1E</id>
-        <value>Brood Wars Zerg 1 - Town E</value>
+        <value>Ulrezaj's Hand Requires:
+   Templar Archives</value>
     </string>
     <string>
         <id>AI_ZERG_B1F</id>
-        <value>Brood Wars Zerg 1 - Town F</value>
+        <value>Ulrezaj's Black Talon Requires:
+   Fleet Beacon
+   Only one Black Talon can be deployed at a time</value>
     </string>
     <string>
         <id>AI_ZERG_B2A</id>
-        <value>Brood Wars Zerg 2 - Town A</value>
+        <value>Anti-matter Missile Batteries</value>
     </string>
     <string>
         <id>AI_ZERG_B2B</id>
-        <value>Brood Wars Zerg 2 - Town B</value>
+        <value>eDevelop EMP Shockwave [E]
+(Ulrezaj's Wrath ability)</value>
     </string>
     <string>
         <id>AI_ZERG_B2C</id>
-        <value>Brood Wars Zerg 2 - Town C</value>
+        <value>EMP Shockwave:
+   Develop at Fleet Beacon</value>
     </string>
     <string>
         <id>AI_ZERG_B2D</id>
-        <value>Brood Wars Zerg 2 - Town D</value>
+        <value>k&#4;The Last Commandment
+This warrior is equipped with energy capacitors that will be detonated when it is mortally wounded, dealing 45(+3) AoE explosive damage.</value>
     </string>
     <string>
         <id>AI_ZERG_B2E</id>
-        <value>Brood Wars Zerg 2 - Town E</value>
+        <value>k&#4;Relentless Assault
+Horrors are equipped with a short-range warp device that can quickly relocate them between firing positions.</value>
     </string>
     <string>
         <id>AI_ZERG_B2F</id>
-        <value>Brood Wars Zerg 2 - Town F</value>
+        <value>k&#4;Best of Both Worlds
+Utilizing Terran EMP technology, Shades deal 50 additional damage to Plasma Shields with every attack.</value>
     </string>
     <string>
         <id>AI_ZERG_B3A</id>
-        <value>Brood Wars Zerg 3 - Town A</value>
+        <value>k&#4;No Respite
+The "Wrath" class of carriers houses a portable shield battery unit that rapidly restores shields for nearby allies.</value>
     </string>
     <string>
         <id>AI_ZERG_B3B</id>
-        <value>Brood Wars Zerg 3 - Town B</value>
+        <value>k&#4;Beacon of Decay
+Ulrezaj's hatred emanates from this unit and rends the flesh of nearby psionics, burning their energy in a large area.</value>
     </string>
     <string>
         <id>AI_ZERG_B3C</id>
-        <value>Brood Wars Zerg 3 - Town C</value>
+        <value>k&#4;Singularity Overcharge
+Singularity Charge gives special effects to Risen: At level 1, they receive extra range and fire two extra bullets. At level 2, they also launch a powerful AoE bomb, that deals 13(+1) explosive damage.</value>
     </string>
     <string>
         <id>AI_ZERG_B3D</id>
