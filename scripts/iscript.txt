@@ -1209,7 +1209,7 @@ Death          	[NONE]
 # ----------------------------------------------------------------------------- #
 
 GuardianDeathInit:
-	playfram       	0
+	#playfram       	0
 	wait           	2
 	imgol          	58 0 0	# ZergAirDeathLarge (thingy\zAirDthL.grp)
 	wait           	1
@@ -16787,7 +16787,7 @@ GlaveWurmDeath:
 GWExtend:
 	if bcount == 1 goto skipBounce
 	set bullet.bounces_remaining = 6
-	set bullet.weapon_id = 140
+	set bullet.weapon_id = 143
 	set spritelocal bcount = bcount + 1
 	goto skipBounce
 	
