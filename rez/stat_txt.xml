@@ -601,7 +601,7 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_150</id>
-        <value>Mature Chrysalis</value>
+        <value>Taar Psi Dominator</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_151</id>
@@ -805,7 +805,7 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_201</id>
-        <value>Overmind Cocoon</value>
+        <value>Overmind's Remains</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_202</id>
@@ -6708,5 +6708,9 @@ bonus doubled for Burrowed units)</value>
 	<string>
         <id>FIRST_UNIT_STRING-272</id>
         <value>Zeratul</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-273</id>
+        <value>Taar Xenowort</value>
     </string>
 </strings>
