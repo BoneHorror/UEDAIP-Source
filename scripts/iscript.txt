@@ -6412,6 +6412,7 @@ MarineGndAttkInit:
 	if unit_id == 56 goto uMarineGndAttkInit
 	playfram       	0x00	# frame set 0
 	wait           	1
+	#transform unit 1 #transform test to help neiv
 	playfram       	0x11	# frame set 1
 	wait           	1
 	playfram       	0x22	# frame set 2
