@@ -1,0 +1,241 @@
+﻿{
+  "type": "DIALOG",
+  "name": "TerranRR",
+  "rect": [0,0,640,480],
+  "style": ["DS_MODALFRAME","WS_POPUP","WS_BORDER","WS_SYSMENU"],
+  "children": [
+    {
+      "type": "FLCBTN",
+      "content": "gluRdyP-1",
+      "id": 13,
+      "rect": [417,237,217,243],
+      "flags": ["WS_VISIBLE","WS_TABSTOP","RC_BIGGERTEXT","WS_HOTKEY","FB_HTEXTCENTER","FB_VTEXTCENTER","WS_EX_TRANSPARENT","CTRL_ENTER"],
+      "children": [
+        {
+          "type": "TEXTBOX",
+          "content": "",
+          "id": 0,
+          "rect": [60,140,192,160],
+          "flags": null,
+          "children": null
+        },
+        {
+          "type": "HOTBOX",
+          "content": "",
+          "id": 0,
+          "rect": [18,39,202,160],
+          "flags": null,
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\ReadyP\\Ring.webm",
+          "id": 0,
+          "rect": [55,180,0,0],
+          "flags": ["FLC_LOOP"],
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\ReadyP\\Glow.webm",
+          "id": 0,
+          "rect": [30,0,0,0],
+          "flags": ["FLC_LOOP","FLC_FADEIN","FLC_FADED"],
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\ReadyP\\Ring.webm",
+          "id": 0,
+          "rect": [0,0,0,0],
+          "flags": ["FLC_LOOP","RC_FLC_HD"],
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\ReadyP\\Glow.webm",
+          "id": 0,
+          "rect": [0,0,0,0],
+          "flags": ["FLC_LOOP","FLC_FADEIN","FLC_FADED","RC_FLC_HD"],
+          "children": null
+        }
+      ]
+    },
+    {
+      "type": "RECT",
+      "content": "glue\\ReadyP\\P_Cancel.pcx",
+      "id": 7,
+      "rect": [472,356,168,91],
+      "flags": ["WS_VISIBLE","CTRL_TRANSLUCENT"],
+      "children": null
+    },
+    {
+      "type": "RECT",
+      "content": "glue\\ReadyP\\ObjProt.pcx",
+      "id": 6,
+      "rect": [0,214,276,259],
+      "flags": ["WS_VISIBLE","CTRL_TRANSLUCENT","RC_ANCHOR_TOPRIGHT"],
+      "children": null
+    },
+    {
+      "type": "RECT",
+      "content": "glue\\ReadyP\\ButProt.pcx",
+      "id": 5,
+      "rect": [284,388,172,92],
+      "flags": ["WS_VISIBLE","CTRL_TRANSLUCENT"],
+      "children": null
+    },
+    {
+      "type": "RECT",
+      "content": "glue\\ReadyP\\P1Prot.pcx",
+      "id": 9,
+      "rect": [0,0,464,320],
+      "flags": ["WS_VISIBLE","CTRL_TRANSLUCENT","RC_ANCHOR_TOPRIGHT"],
+      "children": null
+    },
+    {
+      "type": "RECT",
+      "content": "glue\\ReadyP\\P2Prot.pcx",
+      "id": 10,
+      "rect": [89,0,234,144],
+      "flags": ["WS_VISIBLE","CTRL_TRANSLUCENT"],
+      "children": null
+    },
+    {
+      "type": "RECT",
+      "content": "glue\\ReadyP\\P3Prot.pcx",
+      "id": 11,
+      "rect": [304,0,228,144],
+      "flags": ["WS_VISIBLE","CTRL_TRANSLUCENT"],
+      "children": null
+    },
+    {
+      "type": "RECT",
+      "content": "glue\\ReadyP\\P4Prot.pcx",
+      "id": 12,
+      "rect": [464,51,176,165],
+      "flags": ["WS_VISIBLE","CTRL_TRANSLUCENT"],
+      "children": null
+    },
+    {
+      "type": "FLCBTN",
+      "content": "gluRdyP-2",
+      "id": 14,
+      "rect": [477,419,132,22],
+      "flags": ["WS_VISIBLE","WS_TABSTOP","RC_BIGGERTEXT","WS_HOTKEY","FB_HTEXTCENTER","FB_VTEXTCENTER","CTRL_ESCAPE"],
+      "children": null
+    },
+    {
+      "type": "RECT",
+      "content": "glue\\ReadyP\\TutBtn.pcx",
+      "id": -13,
+      "rect": [44,432,220,22],
+      "flags": [],
+      "children": null
+    },
+    {
+      "type": "FLCBTN",
+      "content": "gluRdyP-3",
+      "id": 19,
+      "rect": [44,432,220,22],
+      "flags": ["WS_HOTKEY","WS_TABSTOP","RC_BIGGERTEXT","FB_HTEXTCENTER","FB_VTEXTCENTER"],
+      "children": null
+    },
+    {
+      "type": "FLCBTN",
+      "content": "gluRdyP-4",
+      "id": 20,
+      "rect": [307,406,137,28],
+      "flags": ["WS_VISIBLE","WS_HOTKEY","WS_TABSTOP","RC_BIGGERTEXT","FB_HTEXTCENTER","FB_VTEXTCENTER"],
+      "children": null
+    },
+    {
+      "type": "LTEXT",
+      "content": "gluRdyP-5",
+      "id": 15,
+      "rect": [33,98,128,118],
+      "flags": [],
+      "children": null
+    },
+    {
+      "type": "LTEXT",
+      "content": "gluRdyP-6",
+      "id": 16,
+      "rect": [183,26,128,118],
+      "flags": [],
+      "children": null
+    },
+    {
+      "type": "LTEXT",
+      "content": "gluRdyP-7",
+      "id": 17,
+      "rect": [338,26,128,118],
+      "flags": [],
+      "children": null
+    },
+    {
+      "type": "LTEXT",
+      "content": "gluRdyP-8",
+      "id": 18,
+      "rect": [479,98,128,118],
+      "flags": [],
+      "children": null
+    },
+    {
+      "type": "LTEXT",
+      "content": "gluRdyP-9",
+      "id": -10,
+      "rect": [196,181,258,113],
+      "flags": ["RC_SMALLTEXT"],
+      "children": null
+    },
+    {
+      "type": "LTEXT",
+      "content": "gluRdyP-10",
+      "id": -11,
+      "rect": [47,336,222,128],
+      "flags": ["RC_SMALLTEXT"],
+      "children": null
+    },
+    {
+      "type": "LTEXT",
+      "content": "gluRdyP-11",
+      "id": -12,
+      "rect": [284,388,172,92],
+      "flags": ["RC_BIGTEXT"],
+      "children": null
+    },
+    {
+      "type": "CTEXT",
+      "content": "gluRdyP-12",
+      "id": -14,
+      "rect": [196,181,258,113],
+      "flags": [],
+      "children": null
+    },
+    {
+      "type": "LTEXT",
+      "content": "gluRdyP-13",
+      "id": -1,
+      "rect": [47,306,222,23],
+      "flags": ["WS_VISIBLE","RC_BIGTEXT"],
+      "children": null
+    },
+    {
+      "type": "LTEXT",
+      "content": "gluRdyT-10",
+      "id": -701,
+      "rect": [295,335,120,20],
+      "flags": ["RC_SMALLTEXT"],
+      "children": null
+    },
+    {
+      "type": "COMBOBOX",
+      "content": "",
+      "id": -700,
+      "rect": [295,350,120,20],
+      "flags": ["WS_VISIBLE","WS_TABSTOP","RC_SMALLTEXT"],
+      "children": null
+    }
+  ]
+}
