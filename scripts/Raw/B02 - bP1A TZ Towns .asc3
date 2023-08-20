@@ -28,27 +28,27 @@ multirun ai_income
 multirun ai_upgrades
 multirun ai_upg_sharing
 :helper_loop
-wait 50
-
-train 1 harchon
-wait 2350
-
-train 1 harchon
-wait 3000
-
-train 1 h_artanis
-train 1 hmojo
-wait 2500
-
-train 1 harchon
-wait 3350
-
-train 1 harchon
-wait 2500
-
-train 1 h_artanis
-train 1 hcorsair
-wait 2000
+wait 500
+#
+#train 1 harchon
+#wait 2350
+#
+#train 1 harchon
+#wait 3000
+#
+#train 1 h_artanis
+#train 1 hmojo
+#wait 2500
+#
+#train 1 harchon
+#wait 3350
+#
+#train 1 harchon
+#wait 2500
+#
+#train 1 h_artanis
+#train 1 hcorsair
+#wait 2000
 
 goto helper_loop
 
@@ -540,14 +540,14 @@ resources 13 Add Gas 3 ai_income
 goto ai_income
 
 :release_attack
-deaths 2 Set 0 firebat purple_loop
+deaths 2 Set 0 98 purple_loop
 return
 
 :wait_attack
 wait 16
 
-deaths 2 AtLeast 2 firebat ensure_attack
-deaths 2 Exactly 1 firebat wait_attack
+deaths 2 AtLeast 2 98 ensure_attack
+deaths 2 Exactly 1 98 wait_attack
 deaths 2 Add 1 firebat purple_loop
 #loop if another script started an attack
 return

@@ -82,14 +82,14 @@ wait 1500
 goto loop
 
 :release_attack
-deaths 2 Set 0 firebat loop
+deaths 2 Set 0 98 loop
 return
 
 :wait_attack
 wait 16
 
-deaths 2 AtLeast 2 firebat ensure_attack
-deaths 2 Exactly 1 firebat wait_attack
+deaths 2 AtLeast 2 98 ensure_attack
+deaths 2 Exactly 1 98 wait_attack
 deaths 2 Add 1 firebat loop
 #loop if another script started an attack
 return
