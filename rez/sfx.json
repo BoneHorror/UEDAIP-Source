@@ -12644,6 +12644,17 @@
             "lengthAdjust": 0,
             "minVolume": 0,
             "ID": "SND_RISEN_ULREZAJ"
+          },
+		  {
+            "filePath": "Ulrezaj/1146hostspawn.wav",
+            "priority": 1,
+            "preload": "false",
+            "unitSpeech": "false",
+            "oneAtATime": "false",
+            "neverPreempt": "false",
+            "lengthAdjust": 0,
+            "minVolume": 0,
+            "ID": "SND_HOST_SPAWN"
           }
         ]
       }
