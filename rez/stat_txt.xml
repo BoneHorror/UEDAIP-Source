@@ -4687,15 +4687,18 @@ Yamato Gun Research</value>
     </string>
     <string>
         <id>AI_PROTOSS_8B</id>
-        <value>Protoss 8 - Right Protoss Town</value>
+        <value>k&#4;Extension of the Swarm
+When burrowed and at full energy, the Spawnsire births 4 Broodlings that seek out enemies in random directions, at the cost of 10 Energy.</value>
     </string>
     <string>
         <id>AI_PROTOSS_8D</id>
-        <value>Protoss 8 - Protoss Defenders</value>
+        <value>Spawnsire Requires:
+   Hive</value>
     </string>
     <string>
         <id>AI_PROTOSS_9</id>
-        <value>Protoss 9 - Ground Zerg</value>
+        <value>nBirth Spawnsire
+(Slow strain able to breed Broodlings)</value>
     </string>
     <string>
         <id>AI_PROTOSS_9W</id>
@@ -6712,5 +6715,21 @@ bonus doubled for Burrowed units)</value>
 	<string>
         <id>FIRST_UNIT_STRING-273</id>
         <value>Taar Xenowort</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-274</id>
+        <value>Infested Siege Tank</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-275</id>
+        <value>Infested Vulture</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-276</id>
+        <value>Infested Goliath</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-277</id>
+        <value>Zerg Spawnsire</value>
     </string>
 </strings>
