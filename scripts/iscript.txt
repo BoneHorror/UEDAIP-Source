@@ -8292,7 +8292,7 @@ TerranSel:
 	set game.unit_availability(player, 56) = 0
 	set game.unit_availability(player, 58) = 0
 	set game.unit_availability(player, 77) = 0
-	if game.protoss_supply_used(player) >= 2 goto SkipPDis1
+	if game.protoss_supply_used(player) >= 1 goto SkipPDis1
 	set game.upgrade_limit(player, 15) = 0
 SkipPDis1:	
 	set game.upgrade_limit(player, 46) = 0
@@ -8303,10 +8303,10 @@ SkipPDis1:
 	set game.upgrade_limit(player, 67) = 0
 	set game.tech_availability(player, 24) = 0
 	set game.tech_availability(player, 30) = 0
-	if game.protoss_supply_used(player) >= 2 goto SkipZDis
+	if game.zerg_supply_used(player) >= 1 goto SkipZDis
 	set game.tech_availability(player, 17) = 0
 SkipZDis:
-	if game.protoss_supply_used(player) >= 2 goto SkipPDis2
+	if game.protoss_supply_used(player) >= 1 goto SkipPDis2
 	set game.tech_availability(player, 19) = 0
 	set game.tech_availability(player, 20) = 0
 SkipPDis2:
@@ -16520,6 +16520,10 @@ AirAttkInit    	[NONE]
 # ----------------------------------------------------------------------------- #
 
 VenomInit:
+	tmprmgraphicstart	
+	trgtrangecondjmp	40 VenomLocal00
+	tmprmgraphicend	
+VenomLocal00:
 	playfram       	0x00	# frame set 0
 	wait           	1
 	sigorder       	1
