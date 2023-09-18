@@ -4920,7 +4920,8 @@ All disables and slows last half as long on this unit</value>
     </string>
     <string>
         <id>AI_DEBUG_3_LOC</id>
-        <value>Debug Script 3 (location)</value>
+        <value>k&#4;Corrosive Spores
+Unclean Ones deal damage over time to all nearby units. Higher damage dealt on max Energy</value>
     </string>
     <string>
         <id>AI_DEBUG_4_LOC</id>
