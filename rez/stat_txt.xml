@@ -4921,11 +4921,12 @@ All disables and slows last half as long on this unit</value>
     <string>
         <id>AI_DEBUG_3_LOC</id>
         <value>k&#4;Corrosive Spores
-Unclean Ones deal damage over time to all nearby units. Higher damage dealt on max Energy</value>
+Unclean Ones deal damage over time to all nearby units. Higher damage dealt on max Energy.</value>
     </string>
     <string>
         <id>AI_DEBUG_4_LOC</id>
-        <value>Debug Script 4 (location)</value>
+        <value>k&#4;Nano-mines
+Raynor's grenades reform into Spider Mines every 4th attack, up to 3 placed at a time. Whenever Raynor's mines detonate, they disperse into nanites that heal Raynor for 15 HP.</value>
     </string>
     <string>
         <id>AI_DEBUG_5_LOC</id>

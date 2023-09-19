@@ -7070,14 +7070,27 @@ uVultureInit:
 VultureGndAttkToIdle:
 	setvertpos     	1
 	waitrand       	8 10
+	if unit_id == 262 && raynor_mine_heal == 1 call RaynorMineHeal
 	setvertpos     	2
 	waitrand       	8 10
 	setvertpos     	1
 	waitrand       	8 10
+	if unit_id == 262 && raynor_mine_heal == 1 call RaynorMineHeal
 	setvertpos     	0
 	waitrand       	8 10
 	goto           	VultureGndAttkToIdle
 
+RaynorMineHeal:
+	set raynor_mine_heal = 0
+	if (unit.max_hitpoints - unit.hitpoints) < 3840 goto RaynorMaxHeal
+	set unit.hitpoints = unit.hitpoints+3840
+	return
+	
+RaynorMaxHeal:
+	set raynor_mine_heal = 0
+	set unit.hitpoints = unit.max_hitpoints
+	return
+	
 VultureDeath:
 	playsnd        	353	# Terran\VULTURE\TVuDth00.WAV
 	imgol          	332 0 0	# TerranBuildingExplosionsmall (thingy\tBangS.grp)
@@ -7095,6 +7108,7 @@ VultureWalking:
 	if unit_id == 19 goto uVultureWalking
 	playfram       	0x00	# frame set 0
 	setvertpos     	0
+	if unit_id == 262 && raynor_mine_heal == 1 call RaynorMineHeal
 	wait           	125
 	goto           	VultureGndAttkToIdle
 	
@@ -7152,9 +7166,24 @@ SpiderMineInit:
 	imgul          	259 0 0	# SpiderMineShad (terran\tsmShad.grp)
 SpiderMineWalkingToIdle:
 	playfram       	0
+	wait			1
+	#set if_uninit global raynor_active_mines = 0
+	set if_uninit spritelocal local_minecount_increment = 0
+	if local_minecount_increment == 1 goto global_minecount
 	goto           	long00
-
+	
+global_minecount:
+	set global raynor_active_mines = raynor_active_mines + 1
+	goto 			long00
+	
+RaynorMineDeath:
+	set global raynor_active_mines = raynor_active_mines - 1
+	set global raynor_mine_heal = 1
+	goto SpiderMineDeathCont
+	
 SpiderMineDeath:
+	if local_minecount_increment == 1 goto RaynorMineDeath
+SpiderMineDeathCont:
 	imgol          	429 0 0	# Spidermineexplosion (thingy\tmnExplo.grp)
 	wait           	1
 	end            	
@@ -17865,6 +17894,14 @@ FragmentationGrenadeHitInit:
 	playsndbtwn    	107 109	# Bullet\tvuHit00.wav, Bullet\tvuHit02.wav
 	playfram       	0
 	wait           	2
+	if bullet.weapon_id != 132 goto FragContinue
+	if raynor_active_mines > 2 goto FragContinue
+	if raynor_mine_counter < 3 goto FragIncrement
+	set raynor_mine_counter = 0
+	create_unit 13	 flingy.position_x flingy.position_y player with { #Spider Mine
+	local_minecount_increment = 1
+	}
+FragContinue:
 	playfram       	1
 	wait           	2
 	playfram       	2
@@ -17883,7 +17920,9 @@ FragmentationGrenadeHitInit:
 	wait           	2
 	end            	
 
-
+FragIncrement:
+	set global raynor_mine_counter = raynor_mine_counter + 1
+	goto FragContinue
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
 # 441 Fragmentationgrenadesmoke (thingy\GreSmoke.grp)
