@@ -7068,26 +7068,40 @@ uVultureInit:
 	goto           	VultureGndAttkToIdle
 
 VultureGndAttkToIdle:
+	if unit_id == 262 goto RaynorHealIdle
 	setvertpos     	1
 	waitrand       	8 10
-	if unit_id == 262 && raynor_mine_heal == 1 call RaynorMineHeal
 	setvertpos     	2
 	waitrand       	8 10
 	setvertpos     	1
 	waitrand       	8 10
-	if unit_id == 262 && raynor_mine_heal == 1 call RaynorMineHeal
 	setvertpos     	0
 	waitrand       	8 10
 	goto           	VultureGndAttkToIdle
 
+RaynorHealIdle:
+	setvertpos     	1
+	waitrand       	5 8
+	if unit_id == 262 && raynor_mine_heal == 1 call RaynorMineHeal
+	setvertpos     	2
+	waitrand       	5 8
+	if unit_id == 262 && raynor_mine_heal == 1 call RaynorMineHeal
+	setvertpos     	1
+	waitrand       	5 8
+	if unit_id == 262 && raynor_mine_heal == 1 call RaynorMineHeal
+	setvertpos     	0
+	waitrand       	5 8
+	if unit_id == 262 && raynor_mine_heal == 1 call RaynorMineHeal
+	goto RaynorHealIdle
+	
 RaynorMineHeal:
 	set raynor_mine_heal = 0
+	imgol          	970 0 0	# Unknown970 (thingy\tmeHealM.grp)
 	if (unit.max_hitpoints - unit.hitpoints) < 3840 goto RaynorMaxHeal
 	set unit.hitpoints = unit.hitpoints+3840
 	return
 	
 RaynorMaxHeal:
-	set raynor_mine_heal = 0
 	set unit.hitpoints = unit.max_hitpoints
 	return
 	
@@ -7098,19 +7112,39 @@ VultureDeath:
 	end            	
 
 VultureGndAttkInit:
+	if unit_id == 262 goto RaynorAtk
 	wait           	1
 	attackwith     	1
 	playsnd        	106	# Bullet\tvuFir00.wav
 	gotorepeatattk 	
 	goto           	VultureGndAttkToIdle
+	
+RaynorAtk:
+	nobrkcodestart
+	playsnd        	106	# Bullet\tvuFir00.wav
+	wait           	1
+	attackwith     	1
+	fireweapon		144
+	wait			3
+	playsnd        	106	# Bullet\tvuFir00.wav
+	nobrkcodeend
+	gotorepeatattk 	
+	goto           	VultureGndAttkToIdle
 
 VultureWalking:
 	if unit_id == 19 goto uVultureWalking
+	if unit_id == 262 goto RaynorWalking
 	playfram       	0x00	# frame set 0
 	setvertpos     	0
-	if unit_id == 262 && raynor_mine_heal == 1 call RaynorMineHeal
 	wait           	125
 	goto           	VultureGndAttkToIdle
+	
+RaynorWalking:
+	playfram       	0x00	# frame set 0
+	setvertpos     	0
+	if raynor_mine_heal == 1 call RaynorMineHeal
+	wait           	25
+	goto RaynorHealIdle
 	
 uVultureWalking:
 	playfram       	0x11	# frame set 0
@@ -7167,15 +7201,18 @@ SpiderMineInit:
 SpiderMineWalkingToIdle:
 	playfram       	0
 	wait			1
-	#set if_uninit global raynor_active_mines = 0
 	set if_uninit spritelocal local_minecount_increment = 0
 	if local_minecount_increment == 1 goto global_minecount
 	goto           	long00
 	
 global_minecount:
-	set global raynor_active_mines = raynor_active_mines + 1
-	goto 			long00
-	
+	set unit.flags = unit.flags | 0x00200000
+	set unit.death_timer = 200
+	set global raynor_active_mines = raynor_active_mines + 1	
+raynor_mine_shortwait:
+	wait			15
+	goto 			raynor_mine_shortwait
+
 RaynorMineDeath:
 	set global raynor_active_mines = raynor_active_mines - 1
 	set global raynor_mine_heal = 1
@@ -7185,6 +7222,7 @@ SpiderMineDeath:
 	if local_minecount_increment == 1 goto RaynorMineDeath
 SpiderMineDeathCont:
 	imgol          	429 0 0	# Spidermineexplosion (thingy\tmnExplo.grp)
+	print Explodey Mine! Active mines: {raynor_active_mines}
 	wait           	1
 	end            	
 
@@ -7220,7 +7258,7 @@ SpiderMineSpecialState1:
 	castspell      	
 	sigorder       	1
 	goto           	long00
-
+	
 SpiderMineBurrow:
 	nobrkcodestart 	
 	imgol          	423 0 0	# Unknown423 (thingy\bDust.grp)
@@ -11339,14 +11377,17 @@ DragoonLocal00:
 	wait           	2
 	playfram       	0x22	# frame set 2
 	wait           	2
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	playfram       	0x33	# frame set 3
 	wait           	2
 	playfram       	0x44	# frame set 4
 	wait           	2
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	playfram       	0x55	# frame set 5
 	wait           	2
 	playfram       	0x66	# frame set 6
 	wait           	2
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	playfram       	0x77	# frame set 7
 	wait           	2
 	playfram       	0x00	# frame set 0
@@ -15952,6 +15993,7 @@ FragmentationGrenadeInit:
 	sigorder       	1
 	wait           	1
 FragmentationGrenadeGndAttkInit:
+	if bullet.weapon_id == 144 goto RaynorGrenade
 	sprol          	310 0 0	# Fragmentationgrenadesmoke (thingy\GreSmoke.grp)
 	wait           	1
 FragmentationGrenadeLocal00:
@@ -15963,6 +16005,15 @@ FragmentationGrenadeLocal00:
 	wait           	2
 	playfram       	3
 	wait           	2
+	goto           	FragmentationGrenadeLocal00
+
+RaynorGrenade:
+	set bullet.order_target_x = bullet.order_target_x + 20
+	set flingy.move_target_x = flingy.move_target_x + 20
+	set bullet.order_target_y = bullet.order_target_y + 20
+	set flingy.move_target_y = flingy.move_target_y + 20
+	sprol          	310 0 0	# Fragmentationgrenadesmoke (thingy\GreSmoke.grp)
+	wait           	1
 	goto           	FragmentationGrenadeLocal00
 
 FragmentationGrenadeDeath:
@@ -17896,8 +17947,8 @@ FragmentationGrenadeHitInit:
 	wait           	2
 	if bullet.weapon_id != 132 goto FragContinue
 	if raynor_active_mines > 2 goto FragContinue
-	if raynor_mine_counter < 3 goto FragIncrement
-	set raynor_mine_counter = 0
+	if ray_atkuntil_mine <= 3 goto FragIncrement
+	set ray_atkuntil_mine = 0
 	create_unit 13	 flingy.position_x flingy.position_y player with { #Spider Mine
 	local_minecount_increment = 1
 	}
@@ -17921,7 +17972,7 @@ FragContinue:
 	end            	
 
 FragIncrement:
-	set global raynor_mine_counter = raynor_mine_counter + 1
+	set global ray_atkuntil_mine = ray_atkuntil_mine + 1
 	goto FragContinue
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
@@ -24663,3 +24714,8 @@ long03:
 	wait           	1
 	end            	
 
+# Freeze code below, how to reproduce unit freeze: Order unit to move in the direction of a target, start attack and interrupt it before the animation finishes; unit should be frozen, playing its idle anim with the flingy 0x2 (accelerating) flag still set
+FreezeClear: # Code needed to run this: if flingy.movement_flags & 0x2 != 0 call FreezeClear, where 0x2 is "accelerating" flag for flingy movement; yes, this checks that flag @ 0x2 is not 0 (so == 1, but that doesnt work for w/e reason and has to be written this way)
+	set flingy.movement_flags = flingy.movement_flags & !0x2 # set flag @ 0x2 to be opposite of true, ie. false
+	return
+	
