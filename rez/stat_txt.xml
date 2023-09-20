@@ -4926,7 +4926,7 @@ Unclean Ones deal damage over time to all nearby units. Higher damage dealt on m
     <string>
         <id>AI_DEBUG_4_LOC</id>
         <value>k&#4;Nano-mines
-Raynor's grenades reform into Spider Mines every 4th attack, up to 3 placed at a time. Whenever Raynor's mines detonate, they disperse into nanites that heal Raynor for 15 HP.</value>
+Raynor's grenades reform into temporary Spider Mines every 4th attack, up to 3 placed at a time. Whenever Raynor's mines detonate, they disperse into nanites that heal Raynor for 15 HP.</value>
     </string>
     <string>
         <id>AI_DEBUG_5_LOC</id>
