@@ -1258,7 +1258,11 @@ HydraliskInit:
 HydraliskWalkingToIdle:
 	playfram       	0x55	# frame set 5
 HydraliskLocal02:
-	waitrand       	63 75
+	wait			3
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	wait			25
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	waitrand       	35 47
 	randcondjmp    	25 HydraliskLocal00
 	randcondjmp    	128 HydraliskLocal01
 	goto           	HydraliskLocal02
@@ -5142,7 +5146,11 @@ GhostWalkingToIdle:
 	if unit_id == 16 goto uGhostWalkingToIdle
 	playfram       	0x33	# frame set 3
 GhostLocal02:
-	waitrand       	63 75
+	wait			3
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	wait			25
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	waitrand       	35 47
 	randcondjmp    	25 GhostLocal00
 	randcondjmp    	128 GhostLocal01
 	goto           	GhostLocal02
@@ -5390,7 +5398,11 @@ uGhostInit:
 uGhostWalkingToIdle:
 	playfram       	280	# frame set 3
 uGhostLocal02:
-	waitrand       	63 75
+	wait			3
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	wait			25
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	waitrand       	35 47
 	randcondjmp    	25 uGhostLocal00
 	randcondjmp    	128 uGhostLocal01
 	goto           	uGhostLocal02
@@ -5743,7 +5755,6 @@ Goliath_Base_WalkingToIdle:
 	goto           	Goliath_Base_Local00
 uGoliath_Base_WalkingToIdle:
 	playfram       	289	# frame set 7
-	goto           	Goliath_Base_Local00
 Goliath_Base_Local00:
 	wait           	125
 	goto           	Goliath_Base_Local00
@@ -6287,8 +6298,11 @@ MarineWalkingToIdle:
 	if unit_id == 56 goto uMarineWalkingToIdle
 	playfram       	0x44	# frame set 4
 MarineLocal02:
-	if unit_id == 56 goto uMarineLocal02
-	waitrand       	63 75
+	wait			3
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	wait			25
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	waitrand       	35 47
 	#print Current order ID: {order} #Print order debug
 	randcondjmp    	25 MarineLocal00
 	randcondjmp    	128 MarineLocal01
@@ -6529,7 +6543,11 @@ uMarineInit:
 uMarineWalkingToIdle:
 	playfram       	297	# frame set 4
 uMarineLocal02:
-	waitrand       	63 75
+	wait			3
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	wait			25
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	waitrand       	35 47
 	randcondjmp    	25 uMarineLocal00
 	randcondjmp    	128 uMarineLocal01
 	goto           	uMarineLocal02
@@ -7222,7 +7240,6 @@ SpiderMineDeath:
 	if local_minecount_increment == 1 goto RaynorMineDeath
 SpiderMineDeathCont:
 	imgol          	429 0 0	# Spidermineexplosion (thingy\tmnExplo.grp)
-	print Explodey Mine! Active mines: {raynor_active_mines}
 	wait           	1
 	end            	
 
@@ -11652,8 +11669,10 @@ SpecialState1  	[NONE]
 InterceptorInit:
 	imgul          	117 0 42	# InterceptorShad (protoss\Intercep.grp)
 	playfram       	0x00	# frame set 0
-	goto           	InterceptorWalkingToIdle
-
+InterceptorLoop:
+	wait			5
+	if unit.remaining_build_time > 5 goto InterceptorLoop
+	playsndrand    	2 102 103	# Bullet\pTrFir00.wav, Bullet\pTrFir01.wav
 InterceptorWalkingToIdle:
 	setvertpos     	1
 	waitrand       	8 10
@@ -11847,14 +11866,17 @@ HighTemplarGndAttkToIdle:
 	wait           	2
 	playfram       	0x77	# frame set 7
 	wait           	2
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	playfram       	0x88	# frame set 8
 	wait           	2
 	playfram       	0x99	# frame set 9
 	wait           	2
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	playfram       	0xaa	# frame set 10
 	wait           	2
 	playfram       	0xbb	# frame set 11
 	wait           	2
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	playfram       	0xcc	# frame set 12
 	wait           	2
 	goto           	HighTemplarGndAttkToIdle
@@ -12076,6 +12098,10 @@ SpecialState1  	ScarabSpecialState1
 
 ScarabInit:
 	playfram       	0x00	# frame set 0
+ScarabLoopUntilComplete:
+	wait			5
+	if unit.remaining_build_time > 5 goto ScarabLoopUntilComplete
+	playsndrand    	2 102 103	# Bullet\pTrFir00.wav, Bullet\pTrFir01.wav
 	goto           	long00
 
 ScarabDeath:
@@ -13265,10 +13291,10 @@ PhotonCannonLocal00:
 	goto           	long00
 
 PhotonCannonGndAttkInit:
-	playfram       	2
-	wait           	2
 	playfram       	1
-	wait           	2
+	wait           	4
+	playfram       	2
+	wait           	3
 	playfram       	3
 	wait           	2
 PhotonCannonGndAttkRpt:
@@ -13277,10 +13303,10 @@ PhotonCannonGndAttkRpt:
 	gotorepeatattk 	
 	ignorerest     	
 PhotonCannonGndAttkToIdle:
-	playfram       	1
-	wait           	2
 	playfram       	2
-	wait           	2
+	wait           	3
+	playfram       	1
+	wait           	4
 	goto           	PhotonCannonLocal00
 
 PhotonCannonWarpIn:
@@ -14350,17 +14376,20 @@ BengalaasLocal00:
 	playfram       	0x22	# frame set 2
 	wait           	2
 	playfram       	0x33	# frame set 3
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	wait           	2
 	playfram       	0x44	# frame set 4
 	wait           	2
 	playfram       	0x55	# frame set 5
 	wait           	2
 	playfram       	0x66	# frame set 6
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	wait           	2
 	playfram       	0x77	# frame set 7
 	wait           	2
 	playfram       	0x00	# frame set 0
 	wait           	2
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	goto           	BengalaasLocal00
 
 BengalaasDeath:
@@ -15566,6 +15595,10 @@ AirAttkInit    	[NONE]
 PhaseDisruptorInit:
 #	set spritelocal x_off = bullet_x_off # Commented out parts are used for Ulrezaj's Risen
 #	set spritelocal y_off = bullet_y_off
+	tmprmgraphicstart	
+	trgtrangecondjmp	20 PhaseLocal00
+	tmprmgraphicend	
+PhaseLocal00:
 	playsnd        	99	# Bullet\DragBull.wav
 	wait           	1
 	sigorder       	1
@@ -15987,6 +16020,10 @@ AirAttkInit    	[NONE]
 # ----------------------------------------------------------------------------- #
 
 FragmentationGrenadeInit:
+	tmprmgraphicstart	
+	trgtrangecondjmp	30 FragLocal00
+	tmprmgraphicend	
+FragLocal00:
 	playfram       	0
 	playsnd        	106	# Bullet\tvuFir00.wav
 	wait           	1
@@ -21961,7 +21998,11 @@ MedicInit:
 MedicLocal02:
 	playfram       	0x00	# frame set 0
 MedicLocal01:
-	waitrand       	63 75
+	wait			3
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	wait			25
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	waitrand       	35 47
 	randcondjmp    	128 MedicLocal00
 	goto           	MedicLocal01
 
