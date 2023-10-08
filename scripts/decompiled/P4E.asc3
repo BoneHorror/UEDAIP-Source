@@ -1,0 +1,242 @@
+script_name Brood Wars Protoss 4 - Town E
+script_id PB4E
+
+unstart_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 command_center 130
+build 1 scv 110
+build 18 scv 80
+build 2 barracks 80
+build 1 academy 80
+build 1 factory 80
+build 1 machine_shop 80
+build 2 starport 80
+build 2 control_tower 80
+build 1 armory 80
+build 1 engineering_bay 80
+build 2 missile_turret 80
+build 1 bunker 80
+max_force 400
+define_max 14 marine
+define_max 6 firebat
+define_max 8 wraith
+define_max 6 vulture
+define_max 4 goliath
+define_max 3 siege_tank
+define_max 255 ghost
+define_max 5 dropship
+define_max 18 scv
+check_transports
+farms_timing
+wait 4800
+
+defensebuild_gg 1 marine
+defenseuse_gg 1 marine
+defensebuild_gg 1 firebat
+defenseuse_gg 1 firebat
+defensebuild_gg 1 goliath
+defenseuse_gg 1 goliath
+defensebuild_ag 1 marine
+defenseuse_ag 1 marine
+defensebuild_ag 2 goliath
+defenseuse_ag 2 goliath
+defensebuild_ga 1 wraith
+defenseuse_ga 1 wraith
+defensebuild_aa 1 wraith
+defenseuse_aa 1 wraith
+deaths 1 Set 0 98 targeting
+train 3 marine
+train 2 firebat
+wait 1250
+
+attack_add 3 marine
+attack_add 2 firebat
+call targeting
+wait 160
+
+upgrade 1 t_infantry_weapon 30
+deaths 1 Set 1 98 targeting
+train 3 wraith
+wait 1150
+
+attack_add 3 wraith
+call targeting
+wait 160
+
+upgrade 1 marine_range 30
+upgrade 1 t_vehicle_weapon 30
+deaths 1 Set 2 98 targeting
+train 2 firebat
+train 1 goliath
+train 2 vulture
+train 1 siege_tank
+wait 1177
+
+tech siege_mode 30
+attack_add 2 firebat
+attack_add 2 goliath
+attack_add 2 vulture
+attack_add 1 siege_tank
+call targeting
+wait 160
+
+tech stim_packs 30
+upgrade 1 vulture_speed 30
+upgrade 1 t_infantry_armor 30
+upgrade 1 t_vehicle_plating 30
+deaths 1 Set 3 98 targeting
+train 6 marine
+train 4 firebat
+train 2 siege_tank
+wait 1150
+
+attack_add 6 marine
+attack_add 2 firebat
+attack_add 2 siege_tank
+call targeting
+wait 160
+
+upgrade 1 t_ship_weapon 30
+deaths 1 Set 4 98 targeting
+train 2 firebat
+train 3 siege_tank
+train 2 goliath
+train 4 marine
+wait 1025
+
+attack_add 6 marine
+attack_add 2 firebat
+attack_add 2 siege_tank
+attack_add 2 goliath
+call targeting
+wait 160
+
+tech spider_mines 30
+upgrade 1 vademecum 30
+upgrade 2 t_infantry_weapon 30
+upgrade 1 t_ship_plating 30
+deaths 1 Set 5 98 targeting
+train 6 wraith
+wait 1110
+
+attack_add 6 wraith
+call targeting
+wait 160
+
+upgrade 1 adv_mechanics 30
+upgrade 2 t_vehicle_weapon 30
+deaths 1 Set 6 98 targeting
+train 2 firebat
+train 12 marine
+train 2 goliath
+train 3 siege_tank
+attack_add 2 firebat
+attack_add 12 marine
+attack_add 2 goliath
+attack_add 3 siege_tank
+call targeting
+wait 160
+
+upgrade 2 t_infantry_armor 30
+deaths 1 Set 7 98 targeting
+train 8 marine
+train 3 firebat
+train 2 vulture
+train 2 goliath
+train 2 wraith
+wait 1285
+
+attack_add 8 marine
+attack_add 3 firebat
+attack_add 2 vulture
+attack_add 2 goliath
+attack_add 2 wraith
+call targeting
+wait 160
+
+upgrade 1 overclocking 30
+upgrade 2 t_ship_weapon 30
+deaths 1 Set 8 98 targeting
+train 3 goliath
+train 3 siege_tank
+train 4 vulture
+wait 1775
+
+attack_add 4 vulture
+attack_add 3 goliath
+attack_add 3 siege_tank
+call targeting
+wait 160
+
+upgrade 2 t_vehicle_plating 30
+deaths 1 Set 9 98 targeting
+train 7 wraith
+wait 1650
+
+attack_add 7 wraith
+call targeting
+wait 160
+
+upgrade 1 wraith_mana 30
+upgrade 2 t_ship_plating 30
+
+:block1
+deaths 1 Set 10 98 targeting
+train 2 firebat
+train 2 goliath
+train 3 siege_tank
+train 6 vulture
+wait 1233
+
+attack_add 4 firebat
+attack_add 3 vulture
+attack_add 2 goliath
+attack_add 3 siege_tank
+call targeting
+wait 160
+
+deaths 1 Set 11 98 targeting
+train 8 wraith
+wait 1925
+
+attack_add 8 wraith
+call targeting
+wait 160
+
+deaths 1 Set 12 98 targeting
+train 4 firebat
+train 3 vulture
+train 6 marine
+train 4 goliath
+train 3 siege_tank
+train 2 wraith
+wait 1815
+
+attack_add 8 marine
+attack_add 4 firebat
+attack_add 3 vulture
+attack_add 4 goliath
+attack_add 3 siege_tank
+attack_add 2 wraith
+call targeting
+wait 160
+
+goto block1
+
+:targeting
+set_attacks 1
+wait 16
+
+target_expansion
+wait 16
+
+attack_do
+attack_clear
+return
+

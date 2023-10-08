@@ -1,0 +1,101 @@
+script_name Brood Wars Zerg 1 - Town B
+script_id ZB1B
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 hatchery 80
+build 2 drone 80
+wait 4000
+
+attack_add 2 hydralisk
+attack_add 2 mutalisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait 14000
+
+attack_add 4 zergling
+attack_add 4 mutalisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait 20000
+
+attack_add 6 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait 9000
+
+attack_add 3 mutalisk
+attack_add 8 zergling
+attack_add 2 lurker
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait 24000
+
+attack_add 12 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+attack_add 20 zergling
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait 4000
+
+attack_add 4 mutalisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait 15000
+
+attack_add 3 lurker
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+attack_add 2 mutalisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+attack_add 14 zergling
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait 5000
+
+attack_add 8 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+:loop
+wait 1500
+
+goto loop

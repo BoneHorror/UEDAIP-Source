@@ -1,0 +1,39 @@
+script_name Brood Wars Protoss 1 - Town C
+script_id PB1C
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+define_max 1 scout
+max_force 500
+wait 1000
+train 1 scout
+wait_force 1 scout
+attack_add 1 scout
+attack_prepare
+attack_do
+attack_clear
+define_max 2 scout
+defensebuild_gg 1 scout
+defenseuse_gg 1 scout
+defensebuild_ag 1 scout
+defenseuse_ag 1 scout
+defensebuild_ga 1 scout
+defenseuse_ga 1 scout
+defensebuild_aa 1 scout
+defenseuse_aa 1 scout
+
+:scout_loop
+wait 16
+
+wait_force 2 scout
+attack_add 2 scout
+attack_prepare
+attack_do
+attack_clear
+goto scout_loop

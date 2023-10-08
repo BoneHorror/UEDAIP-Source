@@ -1,0 +1,26 @@
+script_name Brood Wars Zerg 2 - Town B
+script_id ZB2B
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 scv 95
+build 1 command_center 90
+build 7 scv 80
+build 1 comsat_station 80
+build 1 barracks 80
+build 1 refinery 80
+build 2 bunker 80
+build 4 missile_turret 80
+wait 160
+
+wait_build 7 scv
+build 15 scv 80
+
+:block1
+wait 1500
+
+goto block1

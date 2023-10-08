@@ -1,0 +1,775 @@
+
+script_name Brood Wars Zerg 4 - Town B
+script_id ZB4B
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+idle_orders 92 256 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 64 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 256 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 64 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+notowns_jump factory lightassault
+notowns_jump armory blitzkrieg
+notowns_jump engineering_bay mecha
+build 1 command_center 80
+build 4 scv 80
+build 2 barracks 80
+build 1 engineering_bay 80
+build 1 academy 80
+build 1 factory 80
+build 1 machine_shop 80
+build 1 armory 80
+build 1 comsat_station 80
+build 1 starport 80
+build 1 control_tower 80
+max_force 500
+define_max 8 scv
+define_max 14 heavy_marine
+define_max 4 firebat
+define_max 2 medic
+define_max 4 siege_tank
+define_max 5 death_knight
+define_max 2 skywing
+define_max 5 dropship
+define_max 255 battlecruiser
+define_max 255 science_vessel
+define_max 1 valkyrie
+define_max 255 ghost
+define_max 255 nuclear_missile
+define_max 5 scorpion
+defensebuild_gg 2 heavy_marine
+defenseuse_gg 2 heavy_marine
+defensebuild_gg 1 firebat
+defenseuse_gg 1 firebat
+defensebuild_gg 1 death_knight
+defenseuse_gg 1 death_knight
+defensebuild_gg 1 scorpion
+defenseuse_gg 1 scorpion
+defensebuild_gg 1 siege_tank
+defenseuse_gg 1 siege_tank
+defensebuild_ag 1 heavy_marine
+defenseuse_ag 1 heavy_marine
+defensebuild_ag 1 death_knight
+defenseuse_ag 1 death_knight
+defensebuild_ga 1 skywing
+defenseuse_ga 1 skywing
+defensebuild_aa 1 skywing
+defenseuse_aa 1 skywing
+multirun pylon_check
+wait 2005
+
+attack_add 3 heavy_marine
+attack_add 1 medic
+attack_add 2 death_knight
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+unstart_campaign
+upgrade 1 vulture_speed 30
+upgrade 1 t_infantry_weapon 30
+train 1 skywing
+wait 2350
+
+attack_add 3 heavy_marine
+attack_add 2 firebat
+attack_add 1 skywing
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+wait 1500
+
+attack_add 3 heavy_marine
+attack_add 1 medic
+attack_add 2 firebat
+attack_add 1 scorpion
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+tech spider_mines 30
+upgrade 1 marine_range 30
+upgrade 1 t_vehicle_weapon 30
+wait 2500
+
+attack_add 3 heavy_marine
+attack_add 2 medic
+attack_add 4 firebat
+attack_add 3 siege_tank
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+train 1 skywing
+wait 1500
+
+attack_add 2 death_knight
+attack_add 4 heavy_marine
+attack_add 1 medic
+attack_add 2 skywing
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+tech stim_packs 30
+upgrade 1 t_infantry_armor 30
+upgrade 1 t_vehicle_plating 30
+wait 2500
+
+attack_add 5 heavy_marine
+attack_add 1 medic
+attack_add 2 death_knight
+attack_add 3 scorpion
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_ship_weapon 30
+wait 1500
+
+attack_add 4 firebat
+attack_add 2 medic
+attack_add 2 siege_tank
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+train 2 skywing
+wait 1500
+
+attack_add 4 scorpion
+attack_add 2 skywing
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 medic_mana 30
+upgrade 1 t_ship_plating 30
+tech siege_mode 30
+wait 3500
+
+attack_add 9 heavy_marine
+attack_add 2 medic
+attack_add 2 scorpion
+attack_add 2 siege_tank
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+train 1 skywing
+wait 1500
+
+attack_add 4 death_knight
+attack_add 2 skywing
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 goliath_range 30
+upgrade 1 staballoy 30
+wait 3050
+
+attack_add 4 death_knight
+attack_add 2 siege_tank
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+
+:block1
+train 1 skywing
+wait 2500
+
+attack_add 2 skywing
+attack_add 2 siege_tank
+attack_add 4 heavy_marine
+attack_add 2 medic
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+wait 3350
+
+attack_add 8 heavy_marine
+attack_add 2 medic
+attack_add 6 firebat
+attack_add 3 death_knight
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+train 1 skywing
+wait 2005
+
+attack_add 2 skywing
+attack_add 5 scorpion
+attack_add 2 death_knight
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+goto block1
+
+:pylon_check
+wait 160
+
+if_owned pylon pylon_check
+define_max 6 firebat
+define_max 3 medic
+define_max 4 siege_tank
+define_max 4 skywing
+define_max 2 valkyrie
+define_max 6 scorpion
+:aggression
+wait 50
+
+if_attacking increase_att
+goto aggression
+
+:increase_att
+attack_add 2 firebat
+attack_add 1 skywing
+attack_add 1 siege_tank
+attack_add 1 scorpion
+wait_finishattack
+wait 16
+
+goto aggression
+
+:mecha
+build 1 command_center 80
+build 4 scv 80
+build 1 barracks 80
+build 2 factory 80
+build 2 machine_shop 80
+build 1 armory 80
+place_guard medic 0
+max_force 350
+define_max 8 scv
+define_max 10 heavy_marine
+define_max 3 panzer
+define_max 7 death_knight
+define_max 6 scorpion
+define_max 255 siege_tank
+defensebuild_gg 1 heavy_marine
+defenseuse_gg 1 heavy_marine
+defensebuild_gg 1 death_knight
+defenseuse_gg 1 death_knight
+defensebuild_gg 1 scorpion
+defenseuse_gg 1 scorpion
+defensebuild_gg 1 panzer
+defenseuse_gg 1 panzer
+defensebuild_ag 1 heavy_marine
+defenseuse_ag 1 heavy_marine
+defensebuild_ag 1 death_knight
+defenseuse_ag 1 death_knight
+wait 25
+
+load_bank xz3
+wait 2100
+
+attack_add 2 death_knight
+attack_to (4284,1607) (5021,1745)
+wait 500
+
+attack_do
+attack_clear
+tech siege_mode 30
+upgrade 1 t_vehicle_weapon 30
+bank_data Exactly 2 xz3 delete_teal slower_mech
+wait 3115
+
+attack_add 2 death_knight
+attack_add 2 scorpion
+attack_to (4284,1607) (5021,1745)
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_vehicle_plating 30
+wait 2635
+
+attack_add 3 scorpion
+attack_add 2 death_knight
+attack_add 1 panzer
+attack_to (4284,1607) (5021,1745)
+wait 500
+
+attack_do
+attack_clear
+tech spider_mines 30
+upgrade 1 staballoy 30
+wait 2950
+
+attack_add 1 panzer
+attack_add 2 death_knight
+attack_add 3 heavy_marine
+attack_add 1 medic
+attack_to (4284,1607) (5021,1745)
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 vulture_speed 30
+wait 3235
+
+attack_add 4 death_knight
+attack_to (4284,1607) (5021,1745)
+wait 500
+
+attack_do
+attack_clear
+wait 2880
+
+attack_add 4 scorpion
+attack_add 2 panzer
+attack_to (4284,1607) (5021,1745)
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 goliath_range 30
+train 3 panzer
+wait 3125
+
+attack_add 3 panzer
+attack_to (4284,1607) (5021,1745)
+wait 500
+
+attack_do
+attack_clear
+wait 2980
+
+attack_add 3 death_knight
+attack_add 2 panzer
+attack_add 3 scorpion
+attack_to (4284,1607) (5021,1745)
+wait 500
+
+attack_do
+attack_clear
+:mechloop
+wait 2751
+
+attack_add 5 death_knight
+attack_to (4284,1607) (5021,1745)
+wait 500
+
+attack_do
+attack_clear
+wait 3825
+
+attack_add 4 death_knight
+attack_add 4 scorpion
+attack_add 2 panzer
+attack_to (4284,1607) (5021,1745)
+wait 500
+
+attack_do
+attack_clear
+train 3 panzer
+wait 3000
+
+attack_add 3 panzer
+attack_add 2 heavy_marine
+goto mechloop
+
+:slower_mech
+bank_data Set 2 xz3 delete_teal mechloop
+wait 5500
+
+attack_add 2 death_knight
+attack_add 2 scorpion
+attack_to (4284,1607) (5021,1745)
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_vehicle_plating 30
+save_bank xz3
+wait 3500
+
+attack_add 2 scorpion
+attack_add 1 death_knight
+attack_add 1 panzer
+attack_to (4284,1607) (5021,1745)
+wait 500
+
+attack_do
+attack_clear
+tech spider_mines 30
+upgrade 1 staballoy 30
+wait 4000
+
+attack_add 1 panzer
+attack_add 1 death_knight
+attack_add 4 heavy_marine
+attack_add 1 medic
+attack_to (4284,1607) (5021,1745)
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 vulture_speed 30
+wait 3500
+
+attack_add 4 death_knight
+attack_to (4284,1607) (5021,1745)
+wait 500
+
+attack_do
+attack_clear
+wait 3800
+
+attack_add 4 scorpion
+attack_add 2 panzer
+attack_to (4284,1607) (5021,1745)
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 goliath_range 30
+train 3 panzer
+wait 4000
+
+attack_add 3 panzer
+attack_to (4284,1607) (5021,1745)
+wait 500
+
+attack_do
+attack_clear
+wait 3700
+
+attack_add 3 death_knight
+attack_add 1 panzer
+attack_add 3 scorpion
+attack_to (4284,1607) (5021,1745)
+wait 500
+
+attack_do
+attack_clear
+:mechloop2
+wait 3800
+
+attack_add 5 death_knight
+attack_to (4284,1607) (5021,1745)
+wait 500
+
+attack_do
+attack_clear
+wait 5000
+
+attack_add 4 death_knight
+attack_add 4 scorpion
+attack_add 2 panzer
+attack_to (4284,1607) (5021,1745)
+wait 500
+
+attack_do
+attack_clear
+train 2 panzer
+wait 3800
+
+attack_add 1 panzer
+attack_add 2 heavy_marine
+goto mechloop2
+
+:blitzkrieg
+build 1 command_center 80
+build 3 scv 80
+build 2 barracks 80
+build 1 engineering_bay 80
+build 1 academy 80
+build 1 comsat_station 80
+max_force 300
+define_max 8 scv
+define_max 16 heavy_marine
+define_max 19 firebat
+define_max 5 medic
+defensebuild_gg 2 heavy_marine
+defenseuse_gg 2 heavy_marine
+defensebuild_gg 2 firebat
+defenseuse_gg 2 firebat
+defensebuild_ag 1 heavy_marine
+defenseuse_ag 1 heavy_marine
+wait 160
+
+attack_add 5 heavy_marine
+attack_add 3 firebat
+attack_add 3 medic
+call Targeting
+wait 100
+
+attack_do
+attack_clear
+upgrade 1 marine_range 30
+upgrade 1 t_infantry_weapon 30
+wait 3765
+
+attack_add 6 firebat
+attack_add 1 medic
+attack_to (5807,634) (5576,1352)
+wait 100
+
+attack_do
+attack_clear
+tech stim_packs 30
+upgrade 1 t_infantry_armor 30
+wait 1200
+
+attack_add 7 heavy_marine
+attack_to (5807,634) (5576,1352)
+wait 100
+
+attack_do
+attack_clear
+attack_add 6 firebat
+attack_add 2 medic
+attack_to (5807,634) (5576,1352)
+wait 100
+
+attack_do
+attack_clear
+tech optical_flare 30
+upgrade 1 vademecum 30
+wait 2800
+
+attack_add 6 heavy_marine
+attack_add 4 medic
+attack_add 6 firebat
+attack_to (5807,634) (5576,1352)
+wait 100
+
+attack_do
+attack_clear
+upgrade 1 medic_mana 30
+wait 4000
+
+attack_add 10 heavy_marine
+attack_add 4 medic
+attack_add 8 firebat
+attack_to (5807,634) (5576,1352)
+wait 100
+
+attack_do
+attack_clear
+upgrade 1 hospitals 30
+tech restoration 30
+:blitzkriegloop
+attack_add 13 heavy_marine
+attack_add 2 medic
+attack_to (5807,634) (5576,1352)
+wait 100
+
+attack_do
+attack_clear
+attack_add 15 firebat
+attack_add 3 medic
+attack_to (5807,634) (5576,1352)
+wait 100
+
+attack_do
+attack_clear
+wait 4700
+
+attack_add 5 heavy_marine
+attack_add 2 medic
+attack_add 6 firebat
+attack_to (5807,634) (5576,1352)
+wait 100
+
+attack_do
+attack_clear
+goto blitzkriegloop
+
+:lightassault
+build 1 command_center 80
+build 4 scv 80
+build 2 barracks 80
+build 1 engineering_bay 80
+build 1 academy 80
+build 1 armory 80
+build 1 comsat_station 80
+build 1 starport 80
+build 1 control_tower 80
+multirun factorybackup
+max_force 450
+define_max 8 scv
+define_max 10 heavy_marine
+define_max 10 firebat
+define_max 3 medic
+define_max 8 skywing
+define_max 3 dropship
+define_max 1 battlecruiser
+define_max 3 valkyrie
+define_max 255 siege_tank
+defensebuild_gg 1 heavy_marine
+defenseuse_gg 1 heavy_marine
+defensebuild_gg 2 firebat
+defenseuse_gg 2 firebat
+defensebuild_gg 1 skywing
+defenseuse_gg 1 skywing
+defensebuild_ag 1 heavy_marine
+defenseuse_ag 1 heavy_marine
+defensebuild_ag 1 valkyrie
+defenseuse_ag 1 valkyrie
+defensebuild_ga 1 skywing
+defenseuse_ga 1 skywing
+defensebuild_aa 1 skywing
+defenseuse_aa 1 skywing
+defensebuild_aa 1 valkyrie
+defenseuse_aa 1 valkyrie
+upgrade 1 staballoy 30
+upgrade 1 t_infantry_armor 30
+upgrade 1 t_ship_plating 30
+upgrade 1 wraith_mana 30
+upgrade 1 marine_range 30
+wait 6050
+
+attack_add 3 heavy_marine
+attack_add 2 medic
+attack_add 4 firebat
+attack_add 4 skywing
+attack_add 2 valkyrie
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_ship_weapon 30
+upgrade 1 t_infantry_weapon 30
+upgrade 1 medic_mana 30
+tech cloaking_field 30
+wait 3600
+
+attack_add 4 skywing
+attack_add 2 valkyrie
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 t_ship_plating 30
+upgrade 2 t_infantry_weapon 30
+build 1 physics_lab 30
+wait 5000
+
+attack_add 8 heavy_marine
+attack_add 3 medic
+attack_add 3 valkyrie
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+place_guard battlecruiser 0
+upgrade 3 t_ship_plating 30
+upgrade 1 goliath_range 30
+wait 3100
+
+attack_add 6 skywing
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 t_ship_weapon 30
+upgrade 2 t_infantry_armor 30
+upgrade 1 p_plasma_shield 30
+wait 4500
+
+attack_add 1 battlecruiser
+attack_add 7 firebat
+attack_add 2 medic
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+tech yamato_gun 30
+upgrade 3 t_ship_weapon 30
+upgrade 3 t_infantry_armor 30
+wait 5050
+
+attack_add 5 heavy_marine
+attack_add 4 skywing
+attack_add 3 valkyrie
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+upgrade 3 t_infantry_weapon 30
+upgrade 2 p_plasma_shield 30
+wait 4133
+
+upgrade 1 safety_protocols 30
+:airloop
+train 6 skywing
+train 2 valkyrie
+wait_force 1 battlecruiser
+attack_add 6 skywing
+attack_add 2 valkyrie
+attack_add 1 battlecruiser
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+train 3 firebat
+train 2 medic
+train 4 heavy_marine
+wait 1500
+
+attack_add 3 firebat
+attack_add 2 medic
+attack_add 3 heavy_marine
+goto airloop
+
+:factorybackup
+wait 300
+
+notowns_jump starport rebuild
+goto factorybackup
+
+:rebuild
+build 1 factory 130
+wait_build 1 factory
+build 2 starport 80
+wait 8000
+stop
+
+:Targeting
+unstart_campaign
+attack_prepare
+start_campaign
+return

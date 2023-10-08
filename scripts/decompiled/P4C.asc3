@@ -1,0 +1,33 @@
+script_name Brood Wars Protoss 4 - Town C
+script_id PB4C
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 command_center 80
+build 8 scv 80
+build 1 bunker 80
+max_workers 18
+wait 2500
+
+build 12 scv 80
+build 1 factory 80
+wait 1877
+
+build 16 scv 80
+wait 1650
+
+build 18 scv 80
+wait 7500
+
+build 1 comsat_station 80
+wait 21050
+
+max_workers 255
+:idle_loop
+wait 1500
+
+goto idle_loop

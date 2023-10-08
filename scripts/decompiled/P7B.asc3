@@ -1,0 +1,219 @@
+script_name Brood Wars Protoss 7 - Town B
+script_id PB7B
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 nexus 110
+build 1 probe 100
+build 6 probe 80
+build 1 gateway 80
+build 1 cybernetics_core 80
+build 1 forge 80
+build 2 robotics_facility 80
+build 1 robotics_support_bay 80
+build 1 observatory 80
+build 4 photon_cannon 80
+build 1 shield_battery 80
+max_workers 20
+wait 2500
+
+build 10 probe 80
+:valk_wait1
+wait 50
+
+deaths 6 AtMost 0 valkyrie valk_wait1
+attack_add 3 dragoon
+attack_add 1 reaver
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+deaths 6 Subtract 1 valkyrie block1
+wait 2785
+
+build 16 probe 80
+:valk_wait2
+wait 50
+
+deaths 6 AtMost 0 valkyrie valk_wait2
+attack_add 1 archon
+attack_add 2 zealot
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+deaths 6 Subtract 1 valkyrie block1
+wait 2665
+
+build 20 probe 80
+:valk_wait3
+wait 50
+
+deaths 6 AtMost 0 valkyrie valk_wait3
+attack_add 2 zealot
+attack_add 2 dragoon
+attack_add 1 reaver
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+deaths 6 Subtract 1 valkyrie block1
+wait 3400
+
+:valk_wait4
+wait 50
+
+deaths 6 AtMost 0 valkyrie valk_wait4
+attack_add 2 reaver
+attack_add 3 dragoon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+deaths 6 Subtract 1 valkyrie block1
+wait 4500
+
+:valk_wait5
+wait 50
+
+deaths 6 AtMost 0 valkyrie valk_wait5
+attack_add 2 archon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+deaths 6 Subtract 1 valkyrie block1
+wait 4250
+
+:valk_wait6
+wait 50
+
+deaths 6 AtMost 0 valkyrie valk_wait6
+attack_add 7 zealot
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+deaths 6 Subtract 1 valkyrie block1
+wait 3150
+
+:valk_wait7
+wait 50
+
+deaths 6 AtMost 0 valkyrie valk_wait7
+attack_add 4 dragoon
+attack_add 1 archon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+deaths 6 Subtract 1 valkyrie block1
+wait 4500
+
+:valk_wait8
+wait 50
+
+deaths 6 AtMost 0 valkyrie valk_wait8
+attack_add 2 reaver
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+deaths 6 Subtract 1 valkyrie block1
+wait 3500
+
+:valk_wait9
+wait 50
+
+deaths 6 AtMost 0 valkyrie valk_wait9
+attack_add 5 dragoon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+deaths 6 Subtract 1 valkyrie block1
+wait 2500
+
+:valk_wait10
+wait 50
+
+deaths 6 AtMost 0 valkyrie valk_wait10
+attack_add 8 zealot
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+deaths 6 Subtract 1 valkyrie block1
+wait 2500
+
+:valk_wait11
+wait 50
+
+deaths 6 AtMost 0 valkyrie valk_wait11
+attack_add 2 archon
+attack_add 2 reaver
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+deaths 6 Subtract 1 valkyrie block1
+wait 3500
+
+:valk_wait12
+wait 50
+
+deaths 6 AtMost 0 valkyrie valk_wait12
+attack_add 3 zealot
+attack_add 2 dragoon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+deaths 6 Subtract 1 valkyrie block1
+:block1
+wait 3500
+
+:valk_wait13
+wait 50
+
+deaths 6 AtMost 0 valkyrie valk_wait13
+attack_add 2 archon
+attack_add 2 reaver
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 3 dragoon
+attack_add 1 archon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 3 zealot
+attack_add 2 dragoon
+attack_add 1 reaver
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+deaths 6 Subtract 1 valkyrie block1
+goto block1

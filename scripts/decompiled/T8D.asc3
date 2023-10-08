@@ -1,0 +1,415 @@
+script_name Brood Wars Terran 8 - Town D
+script_id TB8D
+
+unstart_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 scv 150
+build 1 command_center 130
+build 2 scv 120
+build 4 scv 80
+build 1 barracks 80
+build 1 engineering_bay 80
+build 1 academy 80
+build 1 factory 80
+build 1 machine_shop 80
+build 1 armory 80
+build 1 comsat_station 80
+build 1 starport 80
+build 1 control_tower 80
+build 1 science_facility 80
+build 1 covert_ops 80
+max_force 1400
+define_max 9 scv
+define_max 20 heavy_marine
+define_max 13 tesla_trooper
+define_max 9 phantom
+define_max 255 ghost
+define_max 255 firebat
+define_max 6 medic
+define_max 15 skywing
+define_max 255 wraith
+define_max 5 dropship
+define_max 255 battlecruiser
+define_max 3 valkyrie
+define_max 8 death_knight
+define_max 255 siege_tank
+define_max 3 science_vessel
+define_max 5 panzer
+define_max 5 valhalla
+define_max 255 vulture
+defensebuild_gg 1 heavy_marine
+defenseuse_gg 1 heavy_marine
+defensebuild_gg 1 phantom
+defenseuse_gg 1 phantom
+defensebuild_gg 1 skywing
+defenseuse_gg 1 skywing
+defensebuild_gg 1 death_knight
+defenseuse_gg 1 death_knight
+defensebuild_gg 1 panzer
+defenseuse_gg 1 panzer
+defensebuild_gg 1 tesla_trooper
+defenseuse_gg 1 tesla_trooper
+defensebuild_ag 1 heavy_marine
+defenseuse_ag 1 heavy_marine
+defensebuild_ag 1 valkyrie
+defenseuse_ag 1 valkyrie
+defensebuild_ag 1 death_knight
+defenseuse_ag 1 death_knight
+defensebuild_ag 1 skywing
+defenseuse_ag 1 skywing
+defensebuild_ga 1 skywing
+defenseuse_ga 1 skywing
+defensebuild_aa 1 skywing
+defenseuse_aa 1 skywing
+defensebuild_aa 1 valkyrie
+defenseuse_aa 1 valkyrie
+check_transports
+capt_expand
+under_attack 0
+farms_timing
+tech restoration 30
+upgrade 1 goliath_range 30
+upgrade 1 t_infantry_armor 30
+upgrade 1 t_ship_plating 30
+upgrade 1 t_vehicle_weapon 30
+idle_orders DisableBuiltin 0 0 0 0 0 0 0
+idle_orders 142 256 1 valhalla 1024 zergling|zealot 50 incombat|count(AtLeast 4 48 14)
+idle_orders 142 256 1 valhalla 1024 hydralisk|dark_templar 50 incombat|count(AtLeast 3 48 14)
+idle_orders 142 512 1 valhalla 2048 lurker|revenant|reaver 80 incombat|count(AtLeast 2 48 14)
+idle_orders 142 512 1 valhalla 1536 mutalisk|scout|corsair 60 incombat|count(AtLeast 2 48 14)
+idle_orders 142 512 1 valhalla 1536 carrier|devourer|guardian|ultralisk|infested_terran 40 incombat
+idle_orders 92 256 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 64 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 256 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 64 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+supply 13 Set 220 Max marine Terran random_forts_1
+multirun random_forts_1
+multirun random_forts_2
+multirun random_forts_3
+multirun random_forts_4
+multirun cash_giver
+wait 133
+
+train 3 phantom
+train 2 panzer
+train 10 heavy_marine
+train 3 medic
+attack_add 3 phantom
+attack_add 2 panzer
+attack_add 10 heavy_marine
+attack_add 3 medic
+call attack_selection
+wait 500
+
+attack_do
+attack_clear
+guard science_vessel Loc.102 1 7 70
+idle_orders 141 83 1 science_vessel 1024 hydralisk 10 own|allied|notenemies|incombat
+idle_orders 141 83 1 science_vessel 1024 death_knight 20 own|allied|notenemies|incombat
+idle_orders 141 83 1 science_vessel 1024 vulture 10 own|allied|notenemies|incombat
+idle_orders 141 83 1 science_vessel 1024 wraith 20 own|allied|notenemies|incombat
+idle_orders 141 83 1 science_vessel 1024 mutalisk 30 own|allied|notenemies|incombat
+idle_orders 141 83 1 science_vessel 1024 lurker 50 own|allied|notenemies|incombat
+idle_orders 141 83 1 science_vessel 1024 siege_tank 40 own|allied|notenemies|incombat
+idle_orders 141 83 1 science_vessel 1024 ultralisk 70 own|allied|notenemies|incombat
+idle_orders 141 83 1 science_vessel 1024 battlecruiser 80 own|allied|notenemies|incombat
+idle_orders 141 83 1 science_vessel 1024 valkyrie 50 own|allied|notenemies|incombat
+idle_orders 141 83 1 science_vessel 1024 devourer 40 own|allied|notenemies|incombat
+idle_orders 141 83 1 science_vessel 1024 guardian 60 own|allied|notenemies|incombat
+upgrade 1 t_ship_weapon 30
+upgrade 1 t_infantry_weapon 30
+upgrade 1 p_plasma_shield 30
+upgrade 1 medic_mana 30
+train 2 valkyrie
+train 2 medic
+train 12 tesla_trooper
+attack_add 2 valkyrie
+attack_add 12 tesla_trooper
+attack_add 2 medic
+call attack_selection
+wait 500
+
+attack_do
+attack_clear
+idle_orders 180 48 1 medic 512 Group_Men 50 Own|Allied|NotEnemies|InCombat|SpellEffects(Plague)
+idle_orders 180 48 1 medic 512 Group_Men 30 Own|Allied|NotEnemies|InCombat|SpellEffects(Ensnare)
+idle_orders 180 48 1 medic 512 Group_Men 20 Own|Allied|NotEnemies|InCombat|SpellEffects(Parasite)
+idle_orders 180 48 1 medic 512 Group_Men 40 Own|Allied|NotEnemies|SpellEffects(Plague)
+idle_orders 180 48 1 medic 512 Group_Men 10 Own|Allied|NotEnemies|SpellEffects(Parasite)
+upgrade 2 t_infantry_armor 30
+upgrade 2 t_ship_plating 30
+upgrade 2 t_vehicle_weapon 30
+upgrade 1 ghost_mana 30
+train 2 panzer
+train 2 valhalla
+train 15 heavy_marine
+train 3 medic
+train 2 panzer
+attack_add 15 heavy_marine
+attack_add 3 medic
+attack_add 2 valhalla
+attack_add 2 panzer
+call attack_selection
+wait 500
+
+attack_do
+attack_clear
+train 1 panzer
+train 6 tesla_trooper
+train 5 valhalla
+train 2 medic
+wait_force 5 valhalla
+attack_add 5 valhalla
+call attack_selection
+wait 500
+
+attack_do
+attack_clear
+guard science_vessel Loc.103 1 15 70
+tech personnel_cloaking 30
+upgrade 1 science_vessel_mana 30
+upgrade 2 t_ship_weapon 30
+upgrade 2 t_infantry_weapon 30
+upgrade 1 t_vehicle_plating 30
+train 2 death_knight
+train 10 tesla_trooper
+train 2 skywing
+train 12 tesla_trooper
+train 4 skywing
+train 2 death_knight
+train 2 medic
+attack_add 2 death_knight
+attack_add 4 skywing
+attack_add 12 tesla_trooper
+attack_add 2 medic
+call attack_selection
+wait 500
+
+attack_do
+attack_clear
+tech irradiate 30
+tech optical_flare 30
+train 2 panzer
+train 1 valhalla
+train 4 heavy_marine
+train 3 skywing
+train 6 heavy_marine
+train 4 skywing
+train 2 death_knight
+train 2 valkyrie
+train 15 heavy_marine
+attack_add 15 heavy_marine
+attack_add 2 medic
+attack_add 1 valhalla
+attack_add 4 skywing
+attack_add 2 valkyrie
+attack_add 2 death_knight
+attack_add 2 panzer
+call attack_selection
+wait 500
+
+attack_do
+attack_clear
+upgrade 3 t_infantry_armor 30
+upgrade 3 t_ship_plating 30
+upgrade 2 p_plasma_shield 30
+upgrade 1 59 30
+wait 1400
+
+idle_orders 185 60 1 medic 258 queen|defiler|overlord 80 WithoutSpellEffects(Blind)
+idle_orders 143 120 1 science_vessel 1024 infested_terran|lurker|guardian|mutalisk 120 Hp(GreaterThan 50)|WithoutSpellEffects(Irradiate)
+upgrade 1 ghost_sight 30
+upgrade 3 t_ship_weapon 30
+upgrade 3 t_infantry_weapon 30
+upgrade 2 t_vehicle_plating 30
+train 2 valhalla
+train 6 phantom
+train 3 valhalla
+train 2 medic
+attack_add 3 valhalla
+attack_add 6 phantom
+attack_add 2 medic
+attack_add 6 heavy_marine
+call attack_selection
+wait 500
+
+attack_do
+attack_clear
+upgrade 3 t_vehicle_plating 30
+upgrade 3 t_vehicle_weapon 30
+upgrade 3 p_plasma_shield 30
+:airloop
+train 3 valhalla
+train 10 skywing
+train 2 valkyrie
+attack_add 1 science_vessel
+attack_add 3 valhalla
+attack_add 10 skywing
+attack_add 2 valkyrie
+call attack_selection
+wait 500
+
+attack_do
+attack_clear
+wait 254
+
+train 3 valhalla
+train 2 panzer
+train 4 phantom
+train 6 heavy_marine
+train 2 panzer
+train 7 phantom
+train 2 medic
+train 4 panzer
+train 12 heavy_marine
+attack_add 7 phantom
+attack_add 2 medic
+attack_add 12 heavy_marine
+attack_add 4 panzer
+call attack_selection
+wait 500
+
+attack_do
+attack_clear
+train 3 valhalla
+train 2 death_knight
+train 2 panzer
+train 3 skywing
+train 4 death_knight
+train 6 skywing
+train 6 death_knight
+train 2 valkyrie
+attack_add 1 science_vessel
+attack_add 3 valhalla
+attack_add 6 death_knight
+attack_add 2 panzer
+attack_add 6 skywing
+attack_add 2 valkyrie
+call attack_selection
+wait 500
+
+attack_do
+attack_clear
+train 2 panzer
+train 7 heavy_marine
+train 2 death_knight
+train 12 heavy_marine
+train 3 skywing
+train 2 medic
+train 4 panzer
+train 4 death_knight
+train 6 skywing
+train 14 heavy_marine
+attack_add 14 heavy_marine
+attack_add 2 medic
+attack_add 4 panzer
+attack_add 4 death_knight
+attack_add 6 skywing
+call attack_selection
+wait 500
+
+attack_do
+attack_clear
+goto airloop
+
+:attack_selection
+set_attacks 2
+wait 50
+
+target_expansion
+return
+
+:random_forts_1
+wait 16
+
+bring_jump 0 AtLeast 1 sunken_colony Loc.68 random_forts_1
+wait 6440
+
+create_script fort1 255 Loc.68 255 0
+stop
+
+:random_forts_2
+wait 16
+
+bring_jump 0 AtLeast 1 sunken_colony Loc.69 random_forts_2
+wait 6440
+
+create_script fort2 255 Loc.69 255 0
+stop
+
+:random_forts_3
+wait 16
+
+bring_jump 0 AtLeast 1 sunken_colony Loc.70 random_forts_3
+wait 6440
+
+create_script fort3 255 Loc.70 255 0
+stop
+
+:random_forts_4
+wait 16
+
+bring_jump 0 AtLeast 1 sunken_colony Loc.2 random_forts_4
+wait 6440
+
+create_script fort1 255 Loc.2 255 0
+stop
+
+:fort1
+start_town
+build 1 bunker 80
+build 1 missile_turret 80
+wait 3500
+
+build 1 barracks 80
+:f1loop
+wait 1500
+
+goto f1loop
+
+:fort2
+start_town
+build 3 missile_turret 80
+build 1 starport 80
+wait 4500
+
+build 1 control_tower 80
+:f2loop
+wait 1500
+
+goto f2loop
+
+:fort3
+start_town
+build 2 bunker 80
+build 2 missile_turret 80
+wait 5500
+
+build 1 factory 80
+wait 2000
+
+build 1 machine_shop 80
+:f3loop
+wait 1500
+
+goto f3loop
+
+:cash_giver
+wait 1500
+
+give_money
+goto cash_giver

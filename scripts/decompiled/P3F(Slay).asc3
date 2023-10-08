@@ -1,0 +1,179 @@
+script_name Brood Wars Protoss 3 - Town D
+script_id PB3D
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+
+build 1 drone 80
+build 1 hatchery 80
+build 4 drone 80
+build 1 spawning_pool 80
+build 1 evolution_chamber 80
+build 1 hhydralisk_den 80
+build 2 hatchery 80
+build 1 lair 80
+build 1 queen_nest 80
+build 1 spire 80
+build 1 hive 80
+build 25 overlord 80
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defensebuild_gg 1 hhydralisk
+defenseuse_gg 1 hhydralisk
+defensebuild_gg 1 hhydralisk
+defenseuse_gg 1 hhydralisk
+defenseuse_gg 1 mutalisk
+defensebuild_ag 1 hhydralisk
+defenseuse_ag 1 hhydralisk
+defensebuild_ag 1 hhydralisk
+defenseuse_ag 1 hhydralisk
+defenseuse_ag 1 scourge
+defenseuse_ag 1 mutalisk
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
+define_max 25 drone
+define_max 5 lurker
+define_max 3 queen
+define_max 4 defiler
+define_max 24 zergling
+define_max 20 hhydralisk
+define_max 7 hhydralisk
+define_max 255 ultralisk
+define_max 13 mutalisk
+define_max 12 scourge
+define_max 255 guardian
+define_max 255 devourer
+upgrade 1 overlord_capacity 30
+upgrade 1 overlord_speed 30
+upgrade 1 z_missile_attack 30
+upgrade 1 z_flyer_attack 30
+upgrade 1 z_melee_attack 30
+upgrade 1 z_flyer_carapace 30
+upgrade 1 z_carapace 30
+upgrade 1 hhydralisk_speed 30
+upgrade 1 zergling_speed 30
+wait 1450
+
+attack_add 3 hhydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2500
+
+attack_add 8 zergling
+attack_add 2 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3500
+
+attack_add 5 hhydralisk
+attack_add 5 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3300
+
+attack_add 8 zergling
+attack_add 4 hhydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 z_missile_attack 30
+upgrade 2 z_flyer_attack 30
+upgrade 2 z_melee_attack 30
+upgrade 2 z_flyer_carapace 30
+upgrade 2 z_carapace 30
+upgrade 1 overlord_sight 30
+upgrade 1 hhydralisk_range 30
+tech ensnare 30
+wait 4500
+
+attack_add 8 mutalisk
+attack_add 5 hhydralisk
+attack_add 20 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech lurker_aspect 30
+wait 4100
+
+attack_add 3 lurker
+attack_add 12 hhydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+place_guard queen 2
+upgrade 3 z_missile_attack 30
+upgrade 3 z_flyer_attack 30
+upgrade 3 z_melee_attack 30
+upgrade 3 z_flyer_carapace 30
+upgrade 3 z_carapace 30
+wait 3500
+
+attack_add 12 hhydralisk
+attack_add 6 mutalisk
+attack_add 14 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech spawn_broodling 30
+upgrade 1 queen_mana 30
+
+:block2
+wait 2700
+
+attack_add 7 hhydralisk
+attack_add 6 mutalisk
+attack_add 20 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3600
+
+attack_add 12 hhydralisk
+attack_add 12 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3000
+
+attack_add 4 lurker
+attack_add 20 hhydralisk
+attack_prepare
+wait 150
+
+deaths 7 Add 1 valkyrie block2
+wait 350
+
+attack_do
+attack_clear
+goto block2

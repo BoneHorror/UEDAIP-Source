@@ -1,0 +1,809 @@
+script_name Brood Wars Zerg 10 - Town E
+script_id ZB0E
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 1
+wait 1
+
+build 1 command_center 150
+build 1 scv 130
+build 30 scv 80
+define_max 20 heavy_marine
+define_max 5 panzer
+define_max 8 tesla_trooper
+define_max 255 vulture
+define_max 255 ghost
+define_max 14 death_knight
+define_max 7 skywing
+define_max 50 scv
+define_max 5 dropship
+define_max 3 science_vessel
+define_max 8 valkyrie
+define_max 5 hnorad
+define_max 6 medic
+define_max 2 hsciencevessel
+define_max 4 valhalla
+define_max 6 scorpion
+define_max 255 nuclear_missile
+define_max 255 siege_tank
+idle_orders disablebuiltin 0 0 0 0 0 0 0
+multirun defense
+multirun scv
+multirun rasz_def
+multirun medic_check
+farms_timing
+transports_off
+build 2 barracks 80
+wait 120
+
+max_workers 30
+idle_orders 142 256 1 valhalla 1024 zergling|zealot|marine 50 incombat|count(AtLeast 4 48 14)
+idle_orders 142 256 1 valhalla 1024 hydralisk|dark_templar|firebat|ghost 50 incombat|count(AtLeast 3 48 14)
+idle_orders 142 512 1 valhalla 2048 lurker|revenant|reaver|siege_tank 80 incombat|count(AtLeast 2 48 14)
+idle_orders 142 512 1 valhalla 1536 mutalisk|scout|corsair|wraith 60 incombat|count(AtLeast 2 48 14)
+idle_orders 142 512 1 valhalla 1536 carrier|devourer|guardian|ultralisk|infested_terran|hnorad 40 incombat
+idle_orders 92 256 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 64 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 256 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 64 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 10 16 1 heavy_marine|tesla_trooper 192 group_men 80 Health(LessThan 12)
+idle_orders 10 16 1 heavy_marine|tesla_trooper 192 infested_terran|queen|dark_archon|defiler|lurker 120 Health(LessThan 12)
+idle_orders 10 16 1 heavy_marine|tesla_trooper 192 sunken_colony|photon_cannon 90 Health(LessThan 24)
+idle_orders 10 16 3 heavy_marine|tesla_trooper 192 group_men 90 Health(LessThan 36)
+idle_orders 10 16 3 heavy_marine|tesla_trooper 192 infested_terran|queen|dark_archon|defiler|lurker 130 Health(LessThan 36)
+idle_orders 10 16 3 heavy_marine|tesla_trooper 192 sunken_colony|photon_cannon 100 Health(LessThan 24)
+idle_orders 10 16 5 heavy_marine|tesla_trooper 192 group_men 95 Health(LessThan 65)
+idle_orders 10 16 5 heavy_marine|tesla_trooper 192 infested_terran|queen|dark_archon|defiler|lurker 135 Health(LessThan 65)
+idle_orders 10 16 5 heavy_marine|tesla_trooper 192 sunken_colony|photon_cannon 105 Health(LessThan 55)
+idle_orders 10 16 1 phantom 288 sunken_colony|photon_cannon 110 Health(LessThan 73)
+idle_orders 10 16 1 phantom 288 group_men 100 Health(LessThan 36)
+idle_orders 10 16 2 phantom 288 group_men 105 Health(LessThan 73)
+idle_orders 10 16 1 phantom 288 infested_terran|dark_archon|defiler 130 Health(LessThan 80)
+idle_orders 10 16 1 phantom 288 lurker|queen 120 Health(LessThan 50)
+idle_orders 10 16 1 panzer 180 sunken_colony|photon_cannon 110 Health(LessThan 73)
+idle_orders 10 16 1 panzer 180 group_men 100 Health(LessThan 36)|WithoutUnitFlags(Air)
+idle_orders 10 16 2 panzer 180 group_men 105 Health(LessThan 73)|WithoutUnitFlags(Air)
+idle_orders 10 16 1 panzer 180 infested_terran|dark_archon|defiler 130 Health(LessThan 80)
+idle_orders 10 16 1 panzer 180 lurker|queen 120 Health(LessThan 50)
+idle_orders 10 16 1 panzer 180 zergling|zealot|hydralisk|dark_templar 120 count(AtLeast 3 48 14)
+idle_orders 10 16 2 panzer 210 drone|scv|probe 70 0
+idle_orders 10 16 2 panzer 210 drone|scv|probe 150 Count(AtLeast 3 60 14)
+idle_orders 10 16 1 valkyrie|valhalla 224 mutalisk|scout|corsair|scourge 110 count(AtLeast 4 60 14)
+idle_orders 10 16 3 valkyrie|valhalla 260 mutalisk|scout|corsair|scourge 135 count(AtLeast 4 60 14)
+idle_orders 10 16 1 valkyrie|valhalla 224 devourer 150 Count(AtLeast 3 60 14)
+idle_orders 10 16 2 valkyrie|valhalla 255 devourer 160 Count(AtLeast 3 60 14)
+idle_orders 10 16 3 valkyrie|valhalla 265 devourer 170 Count(AtLeast 3 60 14)
+idle_orders 10 16 4 valkyrie|valhalla 300 devourer 190 Count(AtLeast 3 60 14)
+idle_orders 10 16 1 valkyrie|valhalla 224 shuttle|observer|overlord 60 count(AtLeast 3 60 14)
+idle_orders 10 16 2 skywing 224 drone|scv|probe 70 0
+idle_orders 10 16 1 skywing 224 group_men 80 Count(AtLeast 3 50 14)|WithoutUnitFlags(Air)
+idle_orders 10 16 1 skywing 224 group_men 90 Count(AtLeast 5 50 14)|WithoutUnitFlags(Air)
+idle_orders 10 16 1 valhalla 224 group_men 80 Count(AtLeast 3 64 14)
+idle_orders 10 16 1 valhalla 224 group_men 90 Count(AtLeast 5 64 14)
+idle_orders 10 16 1 death_knight 224 ultralisk|dark_archon|reaver|sunken_colony|lurker 90 Health(GreaterThanPercent 50)
+idle_orders 10 16 1 death_knight 224 ultralisk|dark_archon|reaver|sunken_colony|lurker 100 Health(GreaterThanPercent 80)
+idle_orders 10 16 2 death_knight 255 ultralisk|dark_archon|reaver|sunken_colony|lurker 130 Health(GreaterThanPercent 70)
+idle_orders 10 16 2 scorpion 224 drone|scv|probe 70 0
+idle_orders 10 16 1 scorpion 192 group_men 60 Health(LessThan 24)|WithoutUnitFlags(Air)
+idle_orders 10 16 1 scorpion 192 infested_terran|defiler|dark_archon|lurker|dark_templar 90 Health(LessThan 24)
+idle_orders 10 16 2 scorpion 224 infested_terran|defiler|dark_archon|lurker|dark_templar 90 Health(LessThan 48)
+idle_orders 10 16 1 vulture 192 group_men 60 Health(LessThan 10)
+idle_orders 10 16 1 hnorad 160 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 80 Health(LessThan 30)
+wait 25
+
+create_script supply2 255 Loc.96 255 0
+build 1 engineering_bay 80
+wait_build 1 barracks
+wait_buildstart 2 barracks
+create_script barracks 255 Loc.44 255 0
+guard heavy_marine Loc.43 7 3 60
+build 2 factory 80
+wait_buildstart 1 factory
+build 2 academy 80
+wait_buildstart 1 academy
+upgrade 1 t_infantry_armor 30
+wait_build 2 barracks
+train 2 heavy_marine
+attack_add 5 heavy_marine
+call Targeting
+attack_timeout 85
+tech stim_packs 30
+create_script supply1 255 Loc.95 255 0
+wait_build 1 academy
+defensebuild_gg 1 scorpion
+defenseuse_gg 1 scorpion
+build 1 comsat_station 80
+wait_build 1 factory
+train 2 scorpion
+build 2 machine_shop 80
+build 1 armory 80
+build 2 starport 80
+wait_buildstart 1 starport
+create_script fort1 255 Loc.71 255 0
+create_script fort2 255 Loc.72 255 0
+wait_buildstart 2 starport
+build 2 armory 80
+build 2 engineering_bay 80
+upgrade 1 t_ship_plating 30
+upgrade 1 goliath_range 30
+guard medic Loc.43 2 5 60
+guard heavy_marine Loc.36 3 2 60
+guard heavy_marine Loc.37 3 2 60
+guard heavy_marine Loc.38 3 2 60
+idle_orders 141 83 1 science_vessel 1024 heavy_marine|medic|tesla_trooper|zergling|hydralisk 10 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 20)|Self(Energy(GreaterThan 149))
+idle_orders 141 83 1 science_vessel 1024 death_knight|phantom 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 20)|Self(Energy(GreaterThan 99))
+idle_orders 141 83 1 science_vessel 1024 scorpion|vulture 15 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 20)|Self(Energy(GreaterThan 149))
+idle_orders 141 83 1 science_vessel 1024 skywing|scourge 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 20)|Self(Energy(GreaterThan 149))
+idle_orders 141 83 1 science_vessel 1024 mutalisk 30 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 20)|Self(Energy(GreaterThan 149))
+idle_orders 141 83 1 science_vessel 1024 lurker 50 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 20)
+idle_orders 141 83 1 science_vessel 1024 panzer 40 own|allied|notenemies|incombat|Health(LessThanPercent 70)|Health(GreaterThanPercent 20)
+idle_orders 141 83 1 science_vessel 1024 ultralisk|infested_terran 70 own|allied|notenemies|incombat|Health(LessThanPercent 65)|Health(GreaterThanPercent 10)
+idle_orders 141 83 1 science_vessel 1024 hnorad 80 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 5)
+idle_orders 141 83 1 science_vessel 1024 valkyrie 50 own|allied|notenemies|incombat|Health(LessThanPercent 70)|Health(GreaterThanPercent 15)
+idle_orders 141 83 1 science_vessel 1024 devourer 40 own|allied|notenemies|incombat|Health(LessThanPercent 70)|Health(GreaterThanPercent 15)
+idle_orders 141 83 1 science_vessel 1024 guardian 60 own|allied|notenemies|incombat|Health(LessThanPercent 70)|Health(GreaterThanPercent 15)
+idle_orders 141 64 1 hsciencevessel 332 heavy_marine|medic|tesla_trooper|zergling|hydralisk 10 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 20)|Self(Energy(GreaterThan 149))
+idle_orders 141 64 1 hsciencevessel 332 death_knight|phantom 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 20)|Self(Energy(GreaterThan 99))
+idle_orders 141 64 1 hsciencevessel 332 scorpion|vulture 15 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 20)|Self(Energy(GreaterThan 149))
+idle_orders 141 64 1 hsciencevessel 332 skywing|scourge 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 20)|Self(Energy(GreaterThan 149))
+idle_orders 141 64 1 hsciencevessel 332 mutalisk 30 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 20)|Self(Energy(GreaterThan 149))
+idle_orders 141 64 1 hsciencevessel 332 lurker 50 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 20)
+idle_orders 141 64 1 hsciencevessel 332 panzer 40 own|allied|notenemies|incombat|Health(LessThanPercent 70)|Health(GreaterThanPercent 20)
+idle_orders 141 64 1 hsciencevessel 332 ultralisk|infested_terran 70 own|allied|notenemies|incombat|Health(LessThanPercent 65)|Health(GreaterThanPercent 10)
+idle_orders 141 64 1 hsciencevessel 332 hnorad 80 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 5)
+idle_orders 141 64 1 hsciencevessel 332 valkyrie 50 own|allied|notenemies|incombat|Health(LessThanPercent 70)|Health(GreaterThanPercent 15)
+idle_orders 141 64 1 hsciencevessel 332 devourer 40 own|allied|notenemies|incombat|Health(LessThanPercent 70)|Health(GreaterThanPercent 15)
+idle_orders 141 64 1 hsciencevessel 332 guardian 60 own|allied|notenemies|incombat|Health(LessThanPercent 70)|Health(GreaterThanPercent 15)
+train 6 heavy_marine
+train 2 death_knight
+train 2 skywing
+attack_clear
+train 6 heavy_marine
+attack_add 6 heavy_marine
+attack_add 2 death_knight
+attack_add 2 skywing
+call Targeting
+attack_timeout 125
+wait_build 2 starport
+build 2 control_tower 80
+build 1 science_facility 80
+upgrade 1 t_infantry_weapon 30
+wait_buildstart 1 science_facility
+create_script starports 255 Loc.45 255 0
+wait_build 1 science_facility
+build 1 physics_lab 80
+build 6 missile_turret 80
+check_transports
+tech cloaking_field 30
+upgrade 1 t_ship_weapon 30
+wait 1225
+
+create_script fort3 255 Loc.70 255 0
+wait 855
+
+upgrade 2 goliath_range 30
+place_guard hsciencevessel 0
+wait 825
+
+attack_do
+attack_clear
+capt_expand
+allies_watch 16 exp
+guard hnorad (5118,1088) 1 3 60
+upgrade 1 thunder_boosters 30
+upgrade 1 p_plasma_shield 30
+train 1 hnorad
+train 2 valkyrie
+train 7 heavy_marine
+train 2 skywing
+train 9 heavy_marine
+train 1 hnorad
+wait_force 1 hnorad
+attack_add 1 hnorad
+attack_add 2 valkyrie
+attack_add 2 skywing
+call Air_Trg
+wait 500
+
+attack_do
+attack_clear
+call backstab_check
+tech yamato_gun 30
+tech emp_shockwave 30
+tech restoration 30
+upgrade 2 t_ship_weapon 30
+upgrade 2 t_ship_plating 30
+place_guard valkyrie 2
+train 2 scorpion
+train 5 medic
+train 14 heavy_marine
+train 4 scorpion
+train 5 tesla_trooper
+attack_add 14 heavy_marine
+attack_add 5 medic
+attack_add 5 tesla_trooper
+attack_add 4 scorpion
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+call backstab_check
+upgrade 1 safety_protocols 30
+upgrade 2 t_infantry_weapon 30
+upgrade 2 t_infantry_armor 30
+upgrade 1 t_vehicle_plating 30
+wait 1467
+
+train 1 hsciencevessel
+train 3 hnorad
+train 2 death_knight
+attack_add 3 hnorad
+attack_add 1 hsciencevessel
+call Air_Trg
+wait 700
+
+attack_timeout 405
+train 4 scorpion
+attack_do
+attack_clear
+call backstab_check
+upgrade 1 battlecruiser_mana 30
+upgrade 1 59 30
+upgrade 1 panzer_attack 30
+train 3 skywing
+train 2 death_knight
+train 4 skywing
+idle_orders 113 32 2 hnorad 192 ultralisk|devourer|spore_colony|hnorad|missile_turret|carrier|scout 80 InCombat|Health(GreaterThanPercent 75)
+idle_orders 113 32 1 hnorad 288 photon_cannon|bunker 70 InCombat|Health(GreaterThanPercent 75)
+idle_orders 113 32 1 hnorad 192 lurker|mutalisk|sunken_colony|guardian|reaver|archon|panzer|skywing 50 InCombat|Health(GreaterThanPercent 80)
+idle_orders 113 32 1 hnorad 256 dark_archon|science_vessel|arbiter 30 InCombat|Health(GreaterThanPercent 75)
+idle_orders 122 226 1 science_vessel 338 Group_Men 50 InCombat|Count(AtLeast 2 60 14)|Energy(GreaterThan 200)
+idle_orders 122 128 1 science_vessel 512 Group_Men 60 InCombat|Count(AtLeast 2 60 14)|Shields(GreaterThan 300)
+idle_orders 122 226 1 hsciencevessel 338 Group_Men 50 InCombat|Count(AtLeast 2 60 14)|Energy(GreaterThan 200)
+idle_orders 122 128 1 hsciencevessel 512 Group_Men 60 InCombat|Count(AtLeast 2 60 14)|Shields(GreaterThan 300)
+idle_orders 180 48 1 medic 512 Group_Men 50 Own|Allied|NotEnemies|InCombat|SpellEffects(Plague)
+idle_orders 180 48 1 medic 512 Group_Men 50 Own|Allied|NotEnemies|InCombat|SpellEffects(Maelstrom)
+idle_orders 180 48 1 medic 512 Group_Men 30 Own|Allied|NotEnemies|InCombat|SpellEffects(Ensnare)
+idle_orders 180 48 1 medic 512 Group_Men 20 Own|Allied|NotEnemies|InCombat|SpellEffects(Parasite)
+train 4 death_knight
+train 4 skywing
+train 5 death_knight
+train 4 skywing
+train 1 valhalla
+attack_add 5 death_knight
+attack_add 4 scorpion
+attack_add 4 skywing
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+call backstab_check
+train 1 science_vessel
+train 1 hsciencevessel
+tech optical_flare 30
+upgrade 1 t_vehicle_weapon 30
+train 2 death_knight
+train 2 hnorad
+train 5 death_knight
+train 2 hnorad
+train 8 death_knight
+train 2 hnorad
+guard hnorad (3566,383) 1 3 60
+upgrade 2 p_plasma_shield 30
+place_guard valhalla 0
+wait 835
+
+train 2 panzer
+attack_add 1 hsciencevessel
+train 2 hnorad
+train 7 death_knight
+attack_add 2 panzer
+attack_add 1 valhalla
+attack_add 7 death_knight
+attack_add 2 hnorad
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+call backstab_check
+upgrade 1 18 30
+idle_orders 185 256 1 medic 1024 queen|defiler|overlord|ultralisk|lurker|guardian|infested_terran 30 WithoutSpellEffects(Blind)
+idle_orders 185 32 1 medic 256 queen|defiler|overlord|ultralisk|lurker|guardian|infested_terran 70 WithoutSpellEffects(Blind)|InCombat
+wait 2565
+
+upgrade 1 science_vessel_mana 30
+upgrade 3 t_infantry_weapon 30
+upgrade 3 t_ship_weapon 30
+upgrade 3 t_infantry_armor 30
+upgrade 3 t_ship_plating 30
+upgrade 3 p_plasma_shield 30
+train 3 hnorad
+train 3 valkyrie
+train 3 valhalla
+
+attack_add 1 hsciencevessel
+attack_add 3 valhalla
+attack_add 3 hnorad
+attack_add 3 valkyrie
+call Air_Trg
+wait 500
+
+attack_timeout 398
+attack_do
+attack_clear
+place_guard valhalla 2
+call backstab_check
+wait 2115
+
+train 2 panzer
+train 11 heavy_marine
+train 2 medic
+train 6 tesla_trooper
+call add_ghosts
+attack_add 11 heavy_marine
+attack_add 2 medic
+attack_add 2 panzer
+attack_add 6 tesla_trooper
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+call backstab_check
+#upgrade 1 medic_mana 30
+#we don't really use EMP troopers all that often...
+upgrade 2 t_vehicle_weapon 30
+upgrade 2 t_vehicle_plating 30
+wait 1577
+
+upgrade 3 t_vehicle_weapon 30
+upgrade 3 t_vehicle_plating 30
+deaths 6 Add 1 valkyrie atkloop
+train 2 death_knight
+train 2 heavy_marine
+train 2 hnorad
+train 2 skywing
+train 3 death_knight
+train 6 heavy_marine
+train 4 skywing
+train 2 valkyrie
+train 4 death_knight
+train 6 skywing
+train 11 heavy_marine 
+train 4 medic
+train 2 tesla_trooper
+wait_force 2 hnorad
+call add_ghosts
+attack_add 1 hsciencevessel
+attack_add 2 hnorad
+attack_add 6 skywing
+attack_add 2 valkyrie
+attack_add 4 death_knight
+attack_add 11 heavy_marine
+attack_add 4 medic
+attack_add 2 tesla_trooper
+call Targeting
+wait 500
+
+:atkloop
+attack_do
+attack_clear
+call backstab_check
+train 3 valhalla
+train 1 hsciencevessel
+train 4 hnorad
+train 4 valkyrie
+train 4 skywing
+train 3 valhalla
+train 6 skywing
+attack_add 1 hsciencevessel
+attack_add 2 valhalla
+attack_add 4 hnorad
+attack_add 4 valkyrie
+attack_add 6 skywing
+call Air_Trg
+wait 500
+
+attack_timeout 210
+attack_do
+attack_clear
+call backstab_check
+wait 1377
+
+train 3 medic
+train 3 panzer
+train 4 heavy_marine
+train 2 valkyrie
+train 2 death_knight
+train 7 heavy_marine
+train 3 death_knight
+train 11 heavy_marine
+train 6 death_knight
+train 15 heavy_marine 
+call add_ghosts
+attack_add 2 valkyrie
+attack_add 3 panzer
+attack_add 6 death_knight
+attack_add 15 heavy_marine
+attack_add 3 medic
+call Targeting
+wait 500
+
+attack_do
+attack_clear
+call backstab_check
+wait 1213
+
+train 2 scorpion
+train 2 hnorad
+train 2 death_knight
+train 5 heavy_marine
+train 4 death_knight
+train 2 medic
+train 8 heavy_marine
+train 5 death_knight
+train 11 heavy_marine
+train 6 death_knight
+train 4 medic
+train 4 scorpion
+train 12 heavy_marine
+train 10 death_knight
+train 12 heavy_marine
+train 4 medic
+train 6 scorpion
+train 4 tesla_trooper
+attack_add 1 hsciencevessel
+prep_down 1 2 hnorad
+attack_add 14 heavy_marine
+attack_add 6 scorpion
+attack_add 4 medic
+attack_add 2 tesla_trooper
+attack_add 10 death_knight
+call Targeting
+wait 500
+
+goto atkloop
+
+:exp
+start_town
+build 1 command_center 130
+get_oldpeons 1
+wait_build 1 command_center
+build 1 scv 110
+wait_buildstart 1 scv
+get_oldpeons 7
+build 7 scv 80
+place_guard heavy_marine 0
+place_guard heavy_marine 0
+build 1 bunker 80
+wait_buildstart 1 bunker
+build 1 barracks 80
+wait_buildstart 1 barracks
+build 1 starport 80
+wait_build 1 starport
+build 1 control_tower 80
+build 1 science_facility 80
+wait_build 1 science_facility
+build 1 covert_ops 80
+wait_build 1 covert_ops
+upgrade 1 ghost_sight 30
+upgrade 1 ghost_mana 30
+tech personnel_cloaking 30
+define_max 4 phantom
+train 2 phantom
+defensebuild_ag 1 phantom
+defenseuse_ag 1 phantom
+wait 10750
+
+guard panzer Loc.110 2 1 60
+wait 18000
+
+guard panzer Loc.110 2 1 60
+:exp_loop
+wait 1500
+
+goto exp_loop
+
+:add_ghosts
+notowns_jump covert_ops return_ghosts
+attack_add 2 phantom
+:return_ghosts
+return
+
+:scv
+build 1 scv 150
+wait_build 1 scv
+build 2 scv 130
+wait_build 2 scv
+build 3 scv 110
+wait_build 3 scv
+build 4 scv 100
+wait_build 4 scv
+build 5 scv 100
+wait_build 5 scv
+build 6 scv 100
+wait_build 6 scv
+build 7 scv 100
+wait_build 7 scv
+build 10 scv 80
+wait_build 10 scv
+stop
+
+:barracks
+start_town
+build 1 barracks 80
+wait_buildstart 1 barracks
+build 3 barracks 80
+wait_buildstart 3 barracks
+:eng1
+wait 16
+
+notowns_jump engineering_bay eng1
+build 2 missile_turret 80
+wait 2500
+
+:brloop
+wait 1500
+
+goto brloop
+
+:starports
+start_town
+build 3 starport 80
+wait_build 3 starport
+build 3 control_tower 80
+wait 2500
+
+build 2 missile_turret 80
+build 1 bunker 80
+wait 1500
+
+
+:sloop
+wait 1500
+
+goto sloop
+
+:fort1
+start_town
+build 1 bunker 80
+build 2 missile_turret 80
+:f1loop
+wait 1500
+
+goto f1loop
+
+:fort2
+start_town
+build 2 missile_turret 80
+:f2loop
+wait 1500
+
+goto f2loop
+
+:fort3
+start_town
+build 2 bunker 80
+build 2 missile_turret 80
+:f3loop
+wait 1500
+
+goto f3loop
+
+:defense
+max_force 400
+multirun def_loop
+:def1
+wait 50
+
+notowns_jump starport def1
+max_force 500
+
+:def2
+wait 50
+
+notowns_jump covert_ops def2
+max_force 600
+stop
+
+:def_loop
+defenseuse_gg 1 ghost
+:bar
+wait 50
+
+notowns_jump barracks bar
+defensebuild_gg 2 heavy_marine
+defenseuse_gg 2 heavy_marine
+defensebuild_ag 2 heavy_marine
+defenseuse_ag 2 heavy_marine
+:fac
+wait 50
+
+notowns_jump machine_shop fac
+defensebuild_gg 1 tesla_trooper
+defenseuse_gg 1 tesla_trooper
+defensebuild_gg 1 panzer
+defenseuse_gg 1 panzer
+:star
+wait 50
+
+notowns_jump starport star
+defensebuild_gg 2 death_knight
+defenseuse_gg 2 death_knight
+defensebuild_ag 2 death_knight
+defenseuse_ag 2 death_knight
+defensebuild_ga 1 skywing
+defenseuse_ga 1 skywing
+defensebuild_aa 1 valkyrie
+defenseuse_aa 1 valkyrie
+defensebuild_aa 1 skywing
+defenseuse_aa 1 skywing
+:cov
+wait 50
+
+notowns_jump physics_lab cov
+defensebuild_gg 1 hnorad
+defenseuse_gg 1 hnorad
+defensebuild_ag 1 hnorad
+defenseuse_ag 1 hnorad
+defensebuild_ga 1 hnorad
+defenseuse_ga 1 hnorad
+defensebuild_aa 1 hnorad
+defenseuse_aa 1 hnorad
+:loop_def
+wait 1500
+
+goto loop_def
+
+:supply1
+start_town
+build 1 missile_turret 80
+:s1loop
+wait 1500
+
+goto s1loop
+
+
+:supply2
+start_town
+build 1 missile_turret 80
+:s2loop
+wait 1500
+
+goto s2loop
+
+:rasz_def
+wait 16
+
+deaths 1 Exactly 2 98 rasz_exec
+goto rasz_def
+
+:rasz_exec
+max_force 1600
+stop
+
+:backstab_build
+start_town
+build 1 starport 80
+wait_buildstart 1 starport
+build 1 barracks 80
+wait_buildstart 1 barracks
+build 1 factory 80
+wait_build 1 starport
+build 1 control_tower 80
+wait_build 1 factory
+build 1 machine_shop 80
+:back_b_loop
+wait 1500
+
+goto back_b_loop
+
+:backstab_check
+deaths 1 Exactly 2 98 backstab_buildup
+return
+
+:backstab_buildup
+attack_clear
+wait 625
+
+create_script backstab_build 255 Loc.102 255 0
+default_min 100
+help_iftrouble
+train 2 hnorad
+train 10 heavy_marine
+train 3 medic
+train 2 valkyrie
+train 4 skywing
+train 4 death_knight
+train 2 panzer
+wait 1625
+
+deaths 1 Set 3 98 backstab_buildup
+wait 715
+
+return
+
+:medic_check
+wait 64
+
+bring_jump 6 AtLeast 2 Medic Loc.109 random_medic
+goto medic_check
+
+:random_medic
+random_jump 85 med_1
+random_jump 128 med_2
+issue_order Move 1 medic Loc.109 Loc.106 Any 0
+goto medic_check
+
+:med_1
+issue_order Move 1 medic Loc.109 Loc.107 Any 0
+goto medic_check
+
+:med_2
+issue_order Move 1 medic Loc.109 Loc.108 Any 0
+goto medic_check
+
+:Targeting
+deaths 1 AtLeast 1 98 random_trg
+random_jump 53 Trg1
+random_jump 64 Trg2
+random_jump 85 Trg3
+random_jump 128 Trg4
+random_jump 16 random_trg
+attack_to Loc.123 Loc.124
+return
+
+:Trg1
+attack_to Loc.125 Loc.114
+return
+
+:Trg2
+attack_to Loc.126 Loc.124
+return
+
+:Trg3
+attack_to Loc.127 Loc.128
+return
+
+:Trg4
+attack_to Loc.15 Loc.121
+return
+
+:random_trg
+attack_prepare
+return
+
+:Air_Trg
+deaths 1 AtLeast 1 98 random_trg
+random_jump 64 Air3
+random_jump 85 Air1
+random_jump 128 Air2
+attack_to Loc.129 Loc.121
+return
+
+:Air1
+attack_to Loc.130 Loc.108
+return
+
+:Air2
+attack_to Loc.75 Loc.113
+return
+
+:Air3
+attack_to Loc.101 Loc.82
+return

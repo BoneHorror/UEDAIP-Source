@@ -1,0 +1,16 @@
+script_name Brood Wars Protoss 3 - Town B
+script_id PB3B
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+wait 150
+
+max_workers 1
+:idle
+wait 1500
+
+goto idle

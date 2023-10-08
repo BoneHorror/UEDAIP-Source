@@ -1,0 +1,128 @@
+script_name Brood Wars Zerg 8 - Town B
+script_id ZB8B
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 scv 150
+build 1 command_center 130
+build 4 scv 80
+build 1 barracks 80
+build 1 starport 80
+build 1 control_tower 80
+build 1 missile_turret 80
+build 1 drone 150
+build 1 hatchery 130
+build 1 spawning_pool 80
+build 1 hydralisk_den 80
+build 1 evolution_chamber 80
+build 1 lair 80
+build 1 hive 80
+build 1 spire 80
+build 1 greater_spire 80
+build 1 queen_nest 80
+build 1 ultralisk_cavern 80
+build 1 defiler_mound 80
+build 3 hatchery 80
+build 11 creep_colony 80
+build 3 sunken_colony 80
+build 8 spore_colony 80
+build 14 drone 80
+build 25 overlord 80
+place_guard medic 0
+place_guard queen 0
+multirun partialmight
+wait 160
+
+max_workers 24
+wait 6000
+
+upgrade 1 burrowed_regen 30
+multirun advancedguardism
+wait 12500
+
+upgrade 1 staballoy 30
+wait 4000
+
+place_guard defiler 0
+place_guard science_vessel 0
+wait 17500
+
+build 2 lair 80
+place_guard queen 0
+wait 19350
+
+build 3 lair 80
+wait 20650
+
+build 2 hive 80
+wait 35000
+
+build 3 hive 80
+:idleloop
+wait 1500
+
+goto idleloop
+
+:advancedguardism
+wait 19300
+
+upgrade 1 dragon_catalyst 30
+place_guard battlecruiser 0
+wait 8635
+
+place_guard siege_tank 2
+wait 4215
+
+place_guard hydralisk 1
+wait 10015
+
+place_guard hydralisk 0
+place_guard hydralisk 2
+stop
+
+:partialmight
+wait 1500
+
+notowns_jump hive check1
+goto partialmight
+:check1
+notowns_jump hatchery check2
+goto partialmight
+:check2
+notowns_jump lair check3
+goto partialmight
+:check3
+goto dunky_funtime
+
+:dunky_funtime
+remove_build 1 scv 255
+remove_build 1 command_center 255
+remove_build 4 scv 255
+remove_build 1 barracks 255
+remove_build 1 starport 255
+remove_build 1 control_tower 255
+remove_build 1 missile_turret 255
+remove_build 1 drone 255
+remove_build 1 hatchery 255
+remove_build 1 spawning_pool 255
+remove_build 1 hydralisk_den 255
+remove_build 1 evolution_chamber 255
+remove_build 1 lair 255
+remove_build 1 hive 255
+remove_build 1 spire 255
+remove_build 1 greater_spire 255
+remove_build 1 queen_nest 255
+remove_build 1 ultralisk_cavern 255
+remove_build 1 defiler_mound 255
+remove_build 3 hatchery 255
+remove_build 11 creep_colony 255
+remove_build 3 sunken_colony 255
+remove_build 8 spore_colony 255
+remove_build 5 drone 255
+remove_build 25 overlord 255
+stop
+

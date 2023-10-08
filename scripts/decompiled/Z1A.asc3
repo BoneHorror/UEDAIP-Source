@@ -1,0 +1,49 @@
+script_name Brood Wars Zerg 1 - Town A
+script_id ZB1A
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 1
+wait 1
+
+wait 180
+
+defensebuild_gg 2 broodling
+defenseuse_gg 2 broodling
+max_force 500
+define_max 4 broodling
+:sp
+wait 5
+
+notowns_jump spawning_pool sp
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+define_max 8 zergling
+define_max 2 broodling
+multirun implodes
+:hd
+wait 5
+
+notowns_jump hydralisk_den hd
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+define_max 4 hydralisk
+wait 5000
+
+define_max 10 zergling
+define_max 5 hydralisk
+define_max 4 broodling
+:loop
+wait 1500
+
+goto loop
+
+:implodes
+wait 500
+
+capt_expand
+guard_all
+goto implodes

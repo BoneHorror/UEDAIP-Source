@@ -1,0 +1,453 @@
+script_name Brood Wars Zerg 8 - Town E
+script_id ZB8E
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 nexus 150
+max_force 1200
+define_max 18 zealot
+define_max 20 probe
+define_max 3 dark_templar
+define_max 1 dark_archon
+define_max 15 revenant
+multirun money
+wait 16
+
+wait_buildstart 1 nexus
+creep 4
+build 1 pylon 80
+wait_buildstart 1 pylon
+wait 128
+
+creep 3
+build 2 pylon 80
+wait_buildstart 2 pylon
+help_iftrouble
+wait 128
+
+creep 4
+build 3 pylon 80
+wait_build 1 nexus
+build 1 probe 130
+build 1 forge 80
+build 1 gateway 80
+farms_timing
+wait 64
+
+build 4 pylon 80
+wait_buildstart 4 pylon
+build 4 probe 80
+build 2 photon_cannon 80
+wait_buildstart 2 photon_cannon
+build 2 forge 80
+wait_buildstart 2 forge
+build 2 gateway 80
+train 1 zealot
+defensebuild_gg 2 zealot
+defenseuse_gg 2 zealot
+guard zealot Loc.161 1 3 60
+guard zealot Loc.162 1 3 60
+build 5 pylon 80
+idle_orders disablebuiltin 0 0 0 0 0 0 0
+idle_orders 10 16 1 zealot|dark_templar|scout 160 group_men 80 Health(LessThan 14)
+idle_orders 10 16 1 zealot|dark_templar|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 120 Health(LessThan 14)
+idle_orders 10 16 1 zealot|dark_templar|scout 160 sunken_colony|photon_cannon 90 Health(LessThan 12)
+idle_orders 10 16 3 zealot|dark_templar|scout 160 group_men 90 Health(LessThan 33)
+idle_orders 10 16 3 zealot|dark_templar|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 130 Health(LessThan 33)
+idle_orders 10 16 3 zealot|dark_templar|scout 160 sunken_colony|photon_cannon 100 Health(LessThan 24)
+idle_orders 10 16 5 zealot|dark_templar|scout 160 group_men 95 Health(LessThan 60)
+idle_orders 10 16 5 zealot|dark_templar|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 135 Health(LessThan 60)
+idle_orders 10 16 5 zealot|dark_templar|scout 160 sunken_colony|photon_cannon|bunker 105 Health(LessThan 45)
+idle_orders 10 16 1 scout|corsair 192 mutalisk|scout|corsair|scourge|wraith 110 Health(LessThan 20)
+idle_orders 10 16 3 scout|corsair 192 mutalisk|scout|corsair|scourge|wraith 135 Health(LessThan 60)
+idle_orders 10 16 1 scout|corsair 192 devourer|battlecruiser|carrier 150 Health(LessThan 20)
+idle_orders 10 16 2 scout|corsair 192 devourer|battlecruiser|carrier 160 Health(LessThan 40)
+idle_orders 10 16 3 scout|corsair 192 devourer|battlecruiser|carrier 170 Health(LessThan 60)
+idle_orders 10 16 4 scout|corsair 192 devourer|battlecruiser|carrier 190 Health(LessThan 80)
+idle_orders 10 16 1 scout|corsair 192 shuttle|observer|overlord 60 Health(LessThan 20)
+idle_orders 10 16 1 revenant 192 mutalisk|scout|corsair|scourge|wraith 110 count(AtLeast 4 60 14)
+idle_orders 10 16 3 revenant 192 mutalisk|scout|corsair|scourge|wraith 135 count(AtLeast 4 60 14)
+idle_orders 10 16 1 revenant 192 devourer|battlecruiser|carrier 150 count(AtLeast 3 60 14)
+idle_orders 10 16 2 revenant 192 devourer|battlecruiser|carrier 160 count(AtLeast 3 60 14)
+idle_orders 10 16 3 revenant 192 devourer|battlecruiser|carrier 170 count(AtLeast 3 60 14)
+idle_orders 10 16 4 revenant 192 devourer|battlecruiser|carrier 190 count(AtLeast 3 60 14)
+idle_orders 10 16 1 revenant 192 shuttle|observer|overlord 60 count(AtLeast 3 60 14)
+idle_orders 10 16 1 revenant 192 group_men 80 count(AtLeast 5 60 14)
+idle_orders 10 16 1 revenant 192 group_men 90 count(AtLeast 7 60 14)
+idle_orders 10 16 1 hornet 192 group_men 60 Health(LessThan 11)
+idle_orders 10 16 1 hornet 192 infested_terran|defiler|dark_archon|lurker|dark_templar|ghost|siege_tank 90 Health(LessThan 12)
+idle_orders 10 16 2 hornet 192 infested_terran|defiler|dark_archon|lurker|dark_templar|ghost|siege_tank 90 Health(LessThan 22)
+idle_orders 10 16 1 hornet 192 group_men 60 Health(LessThan 5)
+idle_orders 10 16 1 scout|corsair|dragoon 160 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 80 Health(LessThan 30)
+idle_orders 10 16 2 scout|corsair|dragoon 160 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 90 Health(LessThan 60)
+wait 32
+
+upgrade 1 p_ground_weapon 30
+train 1 zealot
+build 1 cybernetics_core 80
+wait_buildstart 1 cybernetics_core
+train 4 zealot
+build 6 pylon 80
+wait_buildstart 6 pylon
+build 1 citadel_of_adun 80
+wait_buildstart 1 citadel_of_adun
+build 7 pylon 80
+wait_buildstart 7 pylon
+build 1 stargate 80
+wait_buildstart 1 stargate
+wait_build 6 pylon
+build 1 robotics_facility 80
+wait_buildstart 1 robotics_facility
+train 1 revenant
+defensebuild_gg 1 revenant
+defenseuse_gg 1 revenant
+defensebuild_ag 1 revenant
+defenseuse_ag 1 revenant
+train 8 zealot
+build 7 pylon 80
+build 12 probe 80
+attack_add 8 zealot
+call Targeting
+attack_timeout 80
+wait 700
+
+attack_do
+attack_clear
+guard_all
+multirun overmind_check_enemies
+guard revenant Loc.163 1 3 60
+guard revenant Loc.164 1 3 60
+upgrade 1 zealot_speed 80
+upgrade 1 p_plasma_shield 30
+build 3 photon_cannon 80
+build 8 pylon 80
+build 1 templar_archives 80
+train 4 zealot
+train 4 revenant
+wait_build 1 stargate
+defensebuild_gg 1 scout
+defenseuse_gg 1 scout
+defensebuild_ga 1 scout
+defenseuse_ga 1 scout
+defensebuild_ag 1 corsair
+defenseuse_ag 1 corsair
+defensebuild_aa 1 corsair
+defenseuse_aa 1 corsair
+train 2 shuttle
+build 9 pylon 80
+attack_add 4 zealot
+attack_add 4 revenant
+call Targeting
+attack_timeout 83
+wait 500
+
+attack_do
+attack_clear
+define_max 4 corsair
+define_max 7 observer
+define_max 7 shuttle
+define_max 4 scout
+define_max 14 dark_templar
+define_max 2 dark_archon
+wait_build 1 templar_archives
+idle_orders 184 64 1 dark_archon 512 group_men 20 energy(GreaterThanPercent,70)
+guard dark_templar Loc.165 1 3 60
+guard dark_templar Loc.166 1 3 60
+guard dark_templar Loc.167 1 3 60
+expand 1 expansion
+defensebuild_gg 2 dark_templar
+defenseuse_gg 2 dark_templar
+check_transports
+tech mind_control 30
+place_guard dark_archon 0
+build 10 pylon 80
+build 1 robotics_support_bay 80
+build 1 observatory 80
+build 3 gateway 80
+build 4 photon_cannon 80
+train 5 shuttle
+define_max 3 reaver
+define_max 20 zealot
+defensebuild_gg 1 reaver
+defenseuse_gg 1 reaver
+train 3 revenant
+train 3 reaver
+train 4 zealot
+wait_force 3 reaver
+wait 16
+
+attack_add 3 reaver
+attack_add 4 zealot
+call Targeting
+wait 300
+
+attack_do
+attack_clear
+train 2 zealot
+train 1 dark_templar
+wait 200
+
+idle_orders 182 1024 1 dark_archon 512 ultralisk|panzer|battlecruiser|valhalla 30 health(GreaterThanPercent,66)
+idle_orders 182 1024 1 dark_archon 512 lurker|death_knight|valkyrie|siege_tank 20 health(GreaterThanPercent,66)
+idle_orders 182 1024 1 dark_archon 512 queen|science_vessel 20 health(GreaterThanPercent,66)
+idle_orders 182 1024 1 dark_archon 512 defiler|dropship 10 health(GreaterThanPercent,66)
+idle_orders 182 16 1 dark_archon 256 ultralisk|panzer|battlecruiser 80 incombat|health(GreaterThanPercent,50)
+idle_orders 182 16 1 dark_archon 256 lurker|death_knight|valkyrie|siege_tank 30 incombat|health(GreaterThanPercent,50)
+upgrade 1 shuttle_speed 30
+upgrade 1 p_armor 30
+upgrade 1 p_plating 30
+upgrade 1 observer_speed 30
+tech maelstrom 30
+build 5 photon_cannon 80
+train 4 zealot
+train 4 dark_templar
+train 2 dark_templar
+do_morph 1 dark_archon
+attack_add 4 zealot
+attack_add 4 dark_templar
+attack_add 1 dark_archon
+call Targeting
+wait 300
+
+attack_do
+attack_clear
+create_script fort 255 Loc.140 255 0
+build 1 fleet_beacon 80
+train 4 revenant
+wait 250
+
+idle_orders 186 160 1 dark_archon 512 group_men 80 incombat|count(AtLeast 2 60 14)|unitflags(organic)
+expand 1 expansion
+upgrade 1 p_air_weapon 30
+upgrade 2 p_plasma_shield 30
+upgrade 1 scarab_damage 30
+train 8 revenant
+train 1 scout
+attack_add 8 revenant
+attack_add 1 scout
+call Targeting
+wait 300
+
+attack_do
+attack_clear
+define_max 2 carrier
+wait 200
+
+defensebuild_gg 1 carrier
+defenseuse_gg 1 carrier
+defensebuild_aa 1 carrier
+defenseuse_aa 1 carrier
+upgrade 1 reaver_capacity 30
+upgrade 2 p_plating 30
+tech disruption_web 30
+train 3 dark_templar
+train 2 reaver
+train 5 dark_templar
+train 3 reaver
+train 5 dark_templar
+train 3 revenant
+wait_force 3 reaver
+wait 16
+
+upgrade 1 dark_archon_mana 50
+attack_add 3 reaver
+attack_add 5 dark_templar
+call Targeting
+wait 300
+
+attack_do
+attack_clear
+build 2 stargate 80
+expand 1 expansion
+wait 150
+
+upgrade 2 p_ground_weapon 30
+upgrade 2 p_armor 30
+upgrade 2 p_plasma_shield 30
+upgrade 2 p_air_weapon 30
+define_max 6 hornet
+defensebuild_gg 1 hornet
+defenseuse_gg 1 hornet
+defensebuild_aa 1 hornet
+defenseuse_aa 1 hornet
+train 1 carrier
+train 3 zealot
+train 1 corsair
+train 9 zealot
+train 2 corsair
+train 3 dark_templar
+upgrade 1 carrier_capacity 70
+upgrade 2 dark_archon_mana 70
+idle_orders 181 240 1 corsair 338 hydralisk 80 incombat|count(AtLeast 2 60 3)
+idle_orders 181 180 1 corsair 512 sunken_colony|spore_colony|lurker 70 incombat
+idle_orders 181 0 0 corsair 188 zergling|hydralisk|lurker|ultralisk|sunken_colony|spore_colony 30 deathrattle
+attack_add 2 corsair
+attack_add 7 zealot
+attack_add 3 dark_templar
+call Targeting
+wait 300
+
+attack_do
+attack_clear
+upgrade 1 corsair_mana 30
+upgrade 3 p_plasma_shield 30
+upgrade 3 p_ground_weapon 30
+upgrade 3 p_armor 30
+upgrade 1 scout_sight 30
+upgrade 1 scout_speed 30
+:block1
+wait 200
+
+train 1 carrier
+train 2 reaver
+train 2 dark_templar
+do_morph 1 dark_archon
+train 13 zealot
+train 2 hornet
+train 3 dark_templar
+attack_add 2 reaver
+attack_add 1 dark_archon
+attack_add 2 dark_templar
+attack_add 13 zealot
+attack_add 1 carrier
+call Targeting
+wait 300
+
+attack_do
+attack_clear
+expand 2 expansion
+wait 100
+
+train 2 corsair
+train 4 hornet
+train 12 dark_templar
+train 4 corsair
+attack_add 2 dark_archon
+attack_add 8 dark_templar
+attack_add 4 corsair
+call Targeting
+wait 300
+
+attack_do
+attack_clear
+train 2 carrier
+train 5 revenant
+train 2 scout
+train 3 dark_templar
+train 6 hornet
+train 4 scout
+train 10 revenant
+attack_add 10 revenant
+attack_add 4 scout
+attack_add 3 dark_templar
+attack_add 6 hornet
+attack_add 1 carrier
+call Targeting
+wait 300
+
+attack_do
+attack_clear
+goto block1
+
+:fort
+start_town
+build 1 pylon 80
+wait_buildstart 1 pylon
+wait 16
+
+build 2 pylon 80
+wait_build 2 pylon
+wait 16
+
+build 1 gateway 80
+build 1 shield_battery 80
+build 1 photon_cannon 80
+build 3 pylon 80
+wait_build 3 pylon
+wait 16
+
+build 2 photon_cannon 80
+build 2 gateway 80
+wait_buildstart 2 gateway
+
+build 1 robotics_facility 80
+guard revenant Loc.160 1 3 60
+guard revenant Loc.159 1 3 60
+place_guard corsair 0
+:floop
+wait 1500
+
+goto floop
+
+:Targeting
+deaths 1 AtLeast 1 hmojo omind_focus
+attack_prepare
+return
+
+:omind_focus
+attack_to Loc.106 Loc.1
+return
+
+:money
+wait 2850
+
+give_money
+goto money
+
+:expansion
+start_town
+build 1 nexus 130
+get_oldpeons 1
+wait_buildstart 1 nexus
+build 1 pylon 80
+wait_build 1 pylon
+build 1 photon_cannon 80
+wait_build 1 nexus
+build 1 probe 110
+wait_buildstart 1 probe
+build 8 probe 80
+build 2 pylon 80
+wait_build 2 pylon
+build 2 photon_cannon 80
+random_jump 85 eb1
+random_jump 128 eb2
+goto eb3
+
+:eb1
+build 1 robotics_facility 80
+goto eloop
+
+:eb2
+build 1 stargate 80
+goto eloop
+
+:eb3
+build 1 gateway 80
+:eloop
+wait 1500
+
+goto eloop
+
+:overmind_check_enemies
+wait 50
+
+bring_jump 14 AtLeast 25 group_buildings Loc.194 overmind_check_enemies
+#loop as long as enemy has at least 25 ( a lot of ) buildings around the overmind. Unloop afterwards
+wait_rand 333 565
+
+guard revenant Loc.35 1 7 80
+guard dark_templar Loc.35 1 7 80
+guard dark_archon Loc.35 1 7 80
+wait_rand 669 1545
+
+send_suicide 0
+wait_rand 3540 6100
+
+send_suicide 0
+stop

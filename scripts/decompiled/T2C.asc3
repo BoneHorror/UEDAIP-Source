@@ -1,0 +1,39 @@
+script_name Brood Wars Terran 2 - Town C
+script_id TB2C
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+idle_orders 10 16 1 hnorad|battlecruiser|goliath 160 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 80 Health(LessThan 30)
+idle_orders 10 16 2 hnorad|battlecruiser|goliath 160 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 90 Health(LessThan 60)
+#idle_orders 115 32 1 ghost 280 carrier|reaver|hnorad|battlecruiser|siege_tank|panzer|valhalla 80 Hp(GreaterThanPercent 20)|Self(InCombat)|Self(Energy(GreaterThan 85))|UnitFlags(Mechanical)|WithoutSpellEffects(Lockdown)
+wait_train 1 battlecruiser
+attack_add 5 battlecruiser
+attack_to Loc.136 Loc.123
+wait 16
+
+attack_timeout 6
+attack_do
+attack_clear
+attack_add 4 battlecruiser
+attack_to Loc.137 Loc.123
+wait 16
+
+attack_timeout 6
+attack_do
+attack_clear
+attack_add 1 science_vessel
+attack_add 5 battlecruiser
+attack_to Loc.175 Loc.123
+wait 16
+
+attack_timeout 7
+attack_do
+attack_clear
+:loop
+wait 1500
+
+goto loop

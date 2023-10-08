@@ -1,0 +1,314 @@
+script_name Brood Wars Protoss 6 - Town D
+script_id PB6D
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 hatchery 130
+build 1 drone 110
+build 6 drone 80
+build 1 spawning_pool 80
+build 1 hydralisk_den 80
+build 1 evolution_chamber 80
+build 2 hatchery 80
+build 1 lair 80
+build 1 spire 80
+build 1 queen_nest 80
+build 1 hive 80
+build 1 ultralisk_cavern 80
+build 1 defiler_mound 80
+max_force 496
+define_max 27 drone
+define_max 16 hydralisk
+define_max 34 zergling
+define_max 6 mutalisk
+define_max 10 scourge
+define_max 255 lurker
+define_max 255 queen
+define_max 2 defiler
+define_max 2 guardian
+define_max 1 hdefiler
+define_max 255 devourer
+define_max 6 ultralisk
+farms_timing
+idle_orders DisableBuiltin 0 0 0 0 0 0 0
+idle_orders 119 64 1 defiler 512 ultralisk 70 own|allied|notenemies|incombat
+idle_orders 119 64 1 defiler 512 zergling 30 own|allied|notenemies|incombat|Count(AtLeast 3 80 14)
+idle_orders 119 64 1 defiler 512 lurker 50 own|allied|notenemies|incombat|Count(AtLeast 2 80 14)
+idle_orders 119 64 1 hdefiler 256 ultralisk 70 own|allied|notenemies|incombat
+idle_orders 119 64 1 hdefiler 256 zergling 30 own|allied|notenemies|incombat|Count(AtLeast 3 80 14)
+idle_orders 119 64 1 hdefiler 256 lurker 50 own|allied|notenemies|incombat|Count(AtLeast 2 80 14)
+tech burrowing 30
+upgrade 1 overlord_capacity 30
+upgrade 1 overlord_speed 30
+multirun ultra_debug
+wait 150
+
+build 15 drone 80
+wait 1825
+
+multirun grand_exchange
+tech consume 30
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defensebuild_gg 2 hydralisk
+defenseuse_gg 2 hydralisk
+defensebuild_gg 2 ultralisk
+defenseuse_gg 2 ultralisk
+defensebuild_ag 2 hydralisk
+defenseuse_ag 2 hydralisk
+defensebuild_ag 2 scourge
+defenseuse_ag 2 scourge
+defensebuild_ag 1 mutalisk
+defenseuse_ag 1 mutalisk
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_ga 1 guardian
+defenseuse_ga 1 guardian
+defensebuild_aa 2 scourge
+defenseuse_aa 2 scourge
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+build 18 drone 80
+wait 1000
+
+build 26 drone 80
+train 4 hydralisk
+train 6 zergling
+attack_add 4 hydralisk
+attack_add 6 zergling
+attack_to Loc.18 Loc.113
+#brown exit to right entrance
+wait 500
+
+attack_do
+attack_clear
+place_guard hdefiler 0
+idle_orders Consume 16 1 defiler 512 zergling 70 NotEnemies|Own|Health(LessThanPercent 80)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 16 1 defiler 512 broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 16 1 hdefiler 256 zergling 70 NotEnemies|Own|Health(LessThanPercent 80)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 16 1 hdefiler 256 broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
+upgrade 1 z_carapace 30
+upgrade 1 zergling_attack 30
+upgrade 1 hydralisk_range 30
+upgrade 1 ultralisk_speed 30
+wait 2865
+
+build 2 lair 80
+train 12 zergling
+train 3 ultralisk
+attack_add 12 zergling
+attack_add 3 ultralisk
+attack_to Loc.20 Loc.114
+#brown exit to blue
+wait 500
+
+attack_do
+attack_clear
+define_max 8 ultralisk
+place_guard defiler 0
+upgrade 1 z_melee_attack 30
+upgrade 1 z_missile_attack 30
+wait 4015
+
+train 24 zergling
+train 4 ultralisk
+attack_add 24 zergling
+attack_add 4 ultralisk
+attack_to Loc.20 Loc.115
+#brown exit to natural
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 hydralisk_speed 30
+upgrade 1 zergling_speed 30
+upgrade 1 ultralisk_armor 30
+define_max 14 ultralisk
+wait 5325
+
+build 2 hive 80
+train 1 hdefiler
+train 10 ultralisk
+attack_add 1 hdefiler
+attack_add 10 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+define_max 20 hydralisk
+upgrade 1 voracity 30
+upgrade 2 z_melee_attack 30
+upgrade 2 z_carapace 30
+tech plague 30
+wait 3565
+
+idle_orders 144 64 1 defiler 788 group_men 55 count(AtLeast 3 120 14) 
+idle_orders 144 64 1 defiler 512 skywing|death_knight|scorpion|wraith|science_vessel|dragoon|corsair|scout 80 incombat|count(AtLeast 3 120 14)
+idle_orders 144 64 1 defiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|devourer|guardian|ultralisk 115 incombat|count(AtLeast 2 120 14)
+idle_orders 144 64 1 defiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|ultralisk 80 incombat
+idle_orders 144 64 1 defiler 512 heavy_marine|medic|ghost|phantom|marine|firebat|vulture|zealot|hydralisk|mutalisk|revenant|dark_templar|high_templar 55 incombat|count(AtLeast 4 120 14)
+idle_orders 144 64 1 hdefiler 376 group_men 55 count(AtLeast 3 120 14) 
+idle_orders 144 64 1 hdefiler 256 skywing|death_knight|scorpion|wraith|science_vessel|dragoon|corsair|scout 80 incombat|count(AtLeast 3 120 14)
+idle_orders 144 64 1 hdefiler 256 hnorad|battlecruiser|valhalla|carrier|arbiter|devourer|guardian|ultralisk 115 incombat|count(AtLeast 2 120 14)
+idle_orders 144 64 1 hdefiler 256 hnorad|battlecruiser|valhalla|carrier|arbiter|ultralisk 80 incombat
+idle_orders 144 64 1 hdefiler 256 heavy_marine|medic|ghost|phantom|marine|firebat|vulture|zealot|hydralisk|mutalisk|revenant|dark_templar|high_templar 55 incombat|count(AtLeast 4 120 14)
+train 20 hydralisk
+train 6 ultralisk
+attack_add 20 hydralisk
+attack_add 6 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 z_flyer_carapace 30
+wait 2735
+
+attack_add 3 ultralisk
+attack_add 12 hydralisk
+attack_add 16 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 z_missile_attack 30
+upgrade 3 z_carapace 30
+upgrade 3 z_melee_attack 30
+upgrade 1 z_flyer_attack 30
+define_max 14 ultralisk
+wait 2686
+
+train 1 hdefiler
+train 12 ultralisk
+attack_add 1 hdefiler
+attack_add 12 ultralisk
+attack_prepare
+deaths 5 Add 1 zealot block1
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 z_flyer_carapace 30
+upgrade 3 z_missile_attack 30
+define_max 20 ultralisk
+wait 2140
+
+train 1 hdefiler
+train 18 ultralisk
+attack_add 1 hdefiler
+attack_add 18 ultralisk
+attack_prepare
+deaths 5 Add 2 zealot block1
+wait 500
+
+attack_do
+attack_clear
+define_max 30 hydralisk
+upgrade 2 z_flyer_attack 30
+upgrade 1 hydra_attack 30
+
+:block1
+wait 2255
+
+train 26 hydralisk
+train 6 ultralisk
+attack_add 26 hydralisk
+attack_add 6 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1300
+
+train 22 hydralisk
+attack_add 22 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1865
+
+attack_add 10 hydralisk
+attack_add 6 ultralisk
+attack_add 20 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2550
+
+train 28 zergling
+train 1 defiler
+train 10 ultralisk
+attack_add 28 zergling
+attack_add 1 defiler
+attack_add 10 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3015
+
+train 1 hdefiler
+train 15 ultralisk
+attack_add 1 hdefiler
+attack_add 15 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto block1
+
+:ultra_debug
+wait_train 32 ultralisk
+send_suicide 0
+stop
+
+:grand_exchange
+wait 2650
+
+:ge_init
+wait_rand 100 145
+
+call ge_gas
+call ge_mins
+time_jump 50 late_gas_detour
+goto ge_init
+
+:late_gas_detour
+resources 13 AtMost Gas 1199 ge_init
+resources 13 AtLeast Ore 2200 ge_init
+resources 13 Subtract Gas 200 ge_init
+resources 13 Add Ore 266 ge_init
+goto ge_init
+
+:ge_gas
+resources 13 AtLeast Gas 600 ge_skip
+resources 13 AtMost Ore 1099 ge_skip
+resources 13 Subtract Ore 170 ge_skip
+resources 13 Add Gas 80 ge_skip
+return
+
+:ge_mins
+resources 13 AtMost Gas 599 ge_skip
+resources 13 AtLeast Ore 1100 ge_skip
+resources 13 Subtract Gas 100 ge_skip
+resources 13 Add Ore 133 ge_skip
+return
+
+:ge_skip
+return
+

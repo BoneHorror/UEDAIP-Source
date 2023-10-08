@@ -1,0 +1,33 @@
+script_name Brood Wars Zerg 9 - Town E
+script_id ZB9E
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 command_center 110
+build 1 scv 90
+wait 200
+
+build 9 scv 80
+wait 50
+
+deaths 13 Exactly 1 zealot brown_factory
+:loop
+wait 4500
+
+goto loop
+
+:brown_factory
+enemyowns_jump hatchery do_factory
+wait 50
+
+goto brown_factory
+
+:do_factory
+wait 5000
+
+build 1 factory 80
+goto loop

@@ -1,0 +1,931 @@
+script_name Brood Wars Zerg 4 - Town A
+script_id ZB4A
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 scv 110
+build 1 command_center 130
+build 21 scv 80
+build 2 barracks 80
+build 1 engineering_bay 80
+build 1 academy 80
+build 2 factory 80
+build 2 machine_shop 80
+build 1 armory 80
+build 1 comsat_station 80
+build 2 starport 80
+build 2 control_tower 80
+build 1 science_facility 80
+build 1 physics_lab 80
+max_force 850
+supply 13 Set 224 Max 0 Terran bank_data
+multirun transports
+random_jump 85 death_march
+random_jump 128 squad_play
+defensebuild_gg 1 death_knight
+defenseuse_gg 1 death_knight
+defensebuild_gg 2 heavy_marine
+defenseuse_gg 2 heavy_marine
+defensebuild_gg 1 firebat
+defenseuse_gg 1 firebat
+defensebuild_gg 1 panzer
+defensebuild_ag 1 heavy_marine
+defenseuse_ag 1 heavy_marine
+defensebuild_ag 1 death_knight
+defenseuse_ag 1 death_knight
+defensebuild_ga 1 hnorad
+defenseuse_ga 1 hnorad
+defensebuild_ga 1 skywing
+defenseuse_ga 1 skywing
+defensebuild_aa 1 valkyrie
+defenseuse_aa 1 valkyrie
+defensebuild_aa 2 skywing
+defenseuse_aa 2 skywing
+defensebuild_aa 1 hnorad
+defenseuse_aa 1 hnorad
+define_max 30 scv
+define_max 4 panzer
+define_max 16 firebat
+define_max 17 heavy_marine
+define_max 6 death_knight
+define_max 3 hnorad
+define_max 10 skywing
+define_max 6 valkyrie
+define_max 255 vulture
+define_max 3 science_vessel
+define_max 1 valhalla
+define_max 8 medic
+define_max 7 dropship
+capt_expand
+check_transports
+upgrade 1 t_infantry_weapon 30
+upgrade 1 t_infantry_armor 30
+upgrade 1 t_vehicle_weapon 30
+upgrade 1 t_vehicle_plating 30
+upgrade 1 t_ship_weapon 30
+upgrade 1 t_ship_plating 30
+upgrade 2 t_infantry_weapon 30
+upgrade 2 t_infantry_armor 30
+upgrade 2 t_vehicle_weapon 30
+upgrade 2 t_vehicle_plating 30
+upgrade 2 t_ship_weapon 30
+upgrade 2 t_ship_plating 30
+idle_orders 142 256 1 valhalla 1024 zergling|zealot 50 incombat|count(AtLeast 4 48 14)
+idle_orders 142 256 1 valhalla 1024 hydralisk|dark_templar 50 incombat|count(AtLeast 3 48 14)
+idle_orders 142 512 1 valhalla 2048 lurker|revenant|reaver 80 incombat|count(AtLeast 2 48 14)
+idle_orders 142 512 1 valhalla 1536 mutalisk|scout|corsair 60 incombat|count(AtLeast 2 48 14)
+idle_orders 142 512 1 valhalla 1536 carrier|devourer|guardian|ultralisk|infested_terran 40 incombat
+idle_orders 92 256 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 2 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 64 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 2 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 256 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 2 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 64 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 2 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+multirun upgtech
+multirun bank_data
+wait 1000
+
+help_iftrouble
+wait 12200
+
+wait_force 4 heavy_marine
+wait_force 2 valkyrie
+wait_force 2 medic
+wait_force 5 firebat
+attack_add 4 heavy_marine
+attack_add 2 valkyrie
+attack_add 2 medic
+attack_add 5 firebat
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech hallucination 30
+wait 4250
+
+train 1 valhalla
+wait_force 3 hnorad
+idle_orders 148 64 1 valhalla 512 valhalla|panzer|dropship|skywing|valkyrie|death_knight|panzer 60 own|allied|notenemies|incombat
+idle_orders 148 64 1 valhalla 512 heavy_marine|tesla_trooper|scorpion|scv|medic 40 own|allied|notenemies|incombat
+idle_orders 148 64 1 valhalla 512 ultralisk|guardian|arbiter|devourer|archon|battlecruiser|carrier|siege_tank|lurker|panzer|defiler 50 incombat
+attack_add 3 hnorad
+attack_add 1 valhalla
+deaths 0 Add 1 hmojo block2
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 5450
+
+wait_force 6 death_knight
+attack_add 6 death_knight
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2250
+
+wait_force 2 panzer
+wait_force 10 heavy_marine
+wait_force 5 medic
+wait_force 4 valkyrie
+attack_add 2 panzer
+attack_add 10 heavy_marine
+attack_add 5 medic
+attack_add 4 valkyrie
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+defenseuse_gg 1 panzer
+wait 5850
+
+wait_force 3 hnorad
+wait_force 5 death_knight
+wait_force 1 panzer
+attack_add 3 hnorad
+attack_add 5 death_knight
+attack_add 1 panzer
+attack_add 1 valhalla
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+place_guard science_vessel 0
+wait 4200
+
+wait_force 8 skywing
+wait_force 12 firebat
+wait_force 5 medic
+attack_add 8 skywing
+attack_add 12 firebat
+attack_add 5 medic
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+
+:block2
+train 10 skywing
+wait 5350
+
+train 2 heavy_marine
+train 4 heavy_marine
+train 6 heavy_marine
+train 8 heavy_marine
+train 2 valkyrie
+train 10 heavy_marine
+train 12 heavy_marine
+train 4 valkyrie
+train 14 heavy_marine
+train 2 skywing
+train 16 heavy_marine
+train 2 medic
+train 4 skywing
+train 4 medic
+train 5 medic
+train 1 firebat
+train 3 firebat
+train 5 firebat
+train 6 skywing
+train 7 firebat
+train 8 firebat
+train 8 skywing
+wait_force 16 heavy_marine
+wait_force 4 valkyrie
+wait_force 5 medic
+wait_force 8 firebat
+wait_force 6 skywing
+attack_add 16 heavy_marine
+attack_add 4 valkyrie
+attack_add 5 medic
+attack_add 8 firebat
+attack_add 6 skywing
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 1 death_knight
+train 2 skywing
+train 3 death_knight
+train 4 skywing
+train 6 skywing
+train 5 death_knight
+train 8 skywing
+train 1 panzer
+train 6 death_knight
+train 2 panzer
+train 2 hnorad
+train 4 panzer
+train 3 panzer
+train 3 hnorad
+train 4 panzer
+wait_force 1 valhalla
+wait_force 6 death_knight
+wait_force 4 panzer
+wait_force 3 hnorad
+wait_force 8 skywing
+attack_add 6 death_knight
+attack_add 4 panzer
+attack_add 3 hnorad
+attack_add 8 skywing
+attack_add 1 valhalla
+deaths 0 Add 1 hmojo block2
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto block2
+
+:death_march
+defensebuild_gg 1 death_knight
+defenseuse_gg 1 death_knight
+defensebuild_gg 2 heavy_marine
+defenseuse_gg 2 heavy_marine
+defensebuild_gg 1 tesla_trooper
+defenseuse_gg 1 tesla_trooper
+defensebuild_gg 1 panzer
+defensebuild_ag 1 heavy_marine
+defenseuse_ag 1 heavy_marine
+defensebuild_ag 1 death_knight
+defenseuse_ag 1 death_knight
+defensebuild_ga 1 hnorad
+defenseuse_ga 1 hnorad
+defensebuild_ga 1 skywing
+defenseuse_ga 1 skywing
+defensebuild_aa 1 valkyrie
+defenseuse_aa 1 valkyrie
+defensebuild_aa 2 skywing
+defenseuse_aa 2 skywing
+defensebuild_aa 1 hnorad
+defenseuse_aa 1 hnorad
+define_max 21 scv
+define_max 4 panzer
+define_max 16 tesla_trooper
+define_max 255 firebat
+define_max 30 heavy_marine
+define_max 14 death_knight
+define_max 3 hnorad
+define_max 6 skywing
+define_max 4 valkyrie
+define_max 255 vulture
+define_max 2 science_vessel
+define_max 1 valhalla
+define_max 8 medic
+define_max 5 dropship
+capt_expand
+check_transports
+upgrade 1 t_infantry_weapon 30
+upgrade 1 t_infantry_armor 30
+upgrade 1 t_vehicle_weapon 30
+upgrade 1 t_vehicle_plating 30
+upgrade 1 t_ship_weapon 30
+upgrade 1 t_ship_plating 30
+upgrade 2 t_infantry_weapon 30
+upgrade 2 t_infantry_armor 30
+upgrade 2 t_vehicle_weapon 30
+upgrade 2 t_vehicle_plating 30
+upgrade 2 t_ship_weapon 30
+upgrade 2 t_ship_plating 30
+idle_orders 142 256 1 valhalla 1024 zergling|zealot 50 incombat|count(AtLeast 4 48 14)
+idle_orders 142 256 1 valhalla 1024 hydralisk|dark_templar 50 incombat|count(AtLeast 3 48 14)
+idle_orders 142 512 1 valhalla 2048 lurker|revenant|reaver 80 incombat|count(AtLeast 2 48 14)
+idle_orders 142 512 1 valhalla 1536 mutalisk|scout|corsair 60 incombat|count(AtLeast 2 48 14)
+idle_orders 142 512 1 valhalla 1536 carrier|devourer|guardian|ultralisk|infested_terran 40 incombat
+idle_orders 92 256 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 2 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 64 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 2 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 256 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 2 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 64 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 2 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+multirun upgtech
+multirun bank_data
+wait 13200
+
+wait_force 6 heavy_marine
+wait_force 2 medic
+wait_force 3 death_knight
+attack_add 6 heavy_marine
+attack_add 2 medic
+attack_add 3 death_knight
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 4250
+
+attack_add 12 heavy_marine
+attack_add 3 medic
+attack_add 4 death_knight
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 5450
+
+wait_force 9 death_knight
+attack_add 9 death_knight
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2250
+
+wait_force 2 panzer
+wait_force 10 heavy_marine
+wait_force 5 medic
+wait_force 4 death_knight
+attack_add 2 panzer
+attack_add 10 heavy_marine
+attack_add 5 medic
+attack_add 4 death_knight
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 medic_mana 30
+defenseuse_gg 1 panzer
+wait 5850
+
+wait_force 10 death_knight
+wait_force 14 heavy_marine
+attack_add 10 death_knight
+attack_add 14 heavy_marine
+attack_add 1 valhalla
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+place_guard science_vessel 0
+upgrade 1 thunder_boosters 30
+wait 5100
+
+train 5 death_knight
+wait_force 8 tesla_trooper
+wait_force 5 medic
+wait_force 8 death_knight
+wait_force 12 heavy_marine
+attack_add 8 tesla_trooper
+attack_add 5 medic
+attack_add 8 death_knight
+attack_add 12 heavy_marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+
+:block3
+train 10 death_knight
+wait 5350
+
+train 2 heavy_marine
+train 4 heavy_marine
+train 6 heavy_marine
+train 8 heavy_marine
+train 1 panzer
+train 10 heavy_marine
+train 12 heavy_marine
+train 2 panzer
+train 14 heavy_marine
+train 16 heavy_marine
+train 2 medic
+train 2 death_knight
+train 4 medic
+train 5 medic
+train 1 tesla_trooper
+train 3 tesla_trooper
+train 5 tesla_trooper
+train 4 death_knight
+train 7 tesla_trooper
+train 8 tesla_trooper
+wait_force 16 heavy_marine
+wait_force 2 panzer
+wait_force 5 medic
+wait_force 8 tesla_trooper
+wait_force 4 death_knight
+attack_add 16 heavy_marine
+attack_add 2 panzer
+attack_add 5 medic
+attack_add 8 tesla_trooper
+attack_add 4 death_knight
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 1 death_knight
+train 4 heavy_marine
+train 3 death_knight
+train 6 heavy_marine
+train 9 heavy_marine
+train 5 death_knight
+train 12 heavy_marine
+train 1 panzer
+train 6 death_knight
+train 2 panzer
+train 2 medic
+train 4 panzer
+train 3 panzer
+train 15 heavy_marine
+train 4 panzer
+wait_force 1 valhalla
+wait_force 6 death_knight
+wait_force 4 panzer
+wait_force 15 heavy_marine
+wait_force 2 medic
+attack_add 1 valhalla
+attack_add 6 death_knight
+attack_add 4 panzer
+attack_add 15 heavy_marine
+attack_add 2 medic
+deaths 0 Add 1 hmojo block2
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto block3
+
+:squad_play
+defensebuild_gg 1 heavy_marine
+defenseuse_gg 1 heavy_marine
+defensebuild_gg 1 death_knight
+defenseuse_gg 1 death_knight
+defensebuild_gg 2 heavy_marine
+defenseuse_gg 2 heavy_marine
+defensebuild_gg 1 firebat
+defenseuse_gg 1 firebat
+defensebuild_gg 1 panzer
+defensebuild_ag 2 heavy_marine
+defenseuse_ag 2 heavy_marine
+defensebuild_ag 1 death_knight
+defenseuse_ag 1 death_knight
+defensebuild_ga 1 hnorad
+defenseuse_ga 1 hnorad
+defensebuild_ga 1 skywing
+defenseuse_ga 1 skywing
+defensebuild_aa 1 valkyrie
+defenseuse_aa 1 valkyrie
+defensebuild_aa 1 skywing
+defenseuse_aa 1 skywing
+defensebuild_aa 1 hnorad
+defenseuse_aa 1 hnorad
+define_max 21 scv
+define_max 4 panzer
+define_max 16 firebat
+define_max 50 heavy_marine
+define_max 6 death_knight
+define_max 2 hnorad
+define_max 4 skywing
+define_max 4 valkyrie
+define_max 255 vulture
+define_max 3 science_vessel
+define_max 2 valhalla
+define_max 8 medic
+define_max 5 dropship
+capt_expand
+check_transports
+upgrade 1 t_infantry_weapon 30
+upgrade 1 t_infantry_armor 30
+upgrade 1 t_vehicle_weapon 30
+upgrade 1 t_vehicle_plating 30
+upgrade 1 t_ship_weapon 30
+upgrade 1 t_ship_plating 30
+upgrade 2 t_infantry_weapon 30
+upgrade 2 t_infantry_armor 30
+upgrade 2 t_vehicle_weapon 30
+upgrade 2 t_vehicle_plating 30
+upgrade 2 t_ship_weapon 30
+upgrade 2 t_ship_plating 30
+idle_orders 142 256 1 valhalla 1024 zergling|zealot 50 incombat|count(AtLeast 4 48 14)
+idle_orders 142 256 1 valhalla 1024 hydralisk|dark_templar 50 incombat|count(AtLeast 3 48 14)
+idle_orders 142 512 1 valhalla 2048 lurker|revenant|reaver 80 incombat|count(AtLeast 2 48 14)
+idle_orders 142 512 1 valhalla 1536 mutalisk|scout|corsair 60 incombat|count(AtLeast 2 48 14)
+idle_orders 142 512 1 valhalla 1536 carrier|devourer|guardian|ultralisk|infested_terran 40 incombat
+idle_orders 92 256 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 2 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 64 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 2 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 256 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 2 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 64 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 2 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+multirun upgtech
+multirun bank_data
+wait 10700
+
+train 16 heavy_marine
+train 3 medic
+train 3 firebat
+attack_add 4 heavy_marine
+attack_add 1 medic
+attack_add 1 firebat
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+attack_add 4 heavy_marine
+attack_add 1 medic
+attack_add 1 firebat
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+attack_add 4 heavy_marine
+attack_add 1 medic
+attack_add 1 firebat
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+wait 3550
+
+train 2 hnorad
+train 10 heavy_marine
+train 4 medic
+train 2 science_vessel
+train 4 firebat
+train 20 heavy_marine
+train 6 firebat
+train 2 hnorad
+attack_add 1 hnorad
+attack_add 4 heavy_marine
+attack_add 1 medic
+attack_add 2 firebat
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+attack_add 6 heavy_marine
+attack_add 1 medic
+attack_add 2 firebat
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+attack_add 10 heavy_marine
+attack_add 2 medic
+attack_add 1 hnorad
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+wait 4150
+
+train 2 death_knight
+train 9 heavy_marine
+train 3 death_knight
+train 15 heavy_marine
+train 4 death_knight
+train 24 heavy_marine
+wait_force 4 death_knight
+attack_add 1 death_knight
+attack_add 6 heavy_marine
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+attack_add 1 death_knight
+attack_add 6 heavy_marine
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+attack_add 1 death_knight
+attack_add 6 heavy_marine
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+attack_add 1 death_knight
+attack_add 6 heavy_marine
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+wait 2150
+
+wait_force 2 panzer
+wait_force 16 heavy_marine
+wait_force 4 medic
+wait_force 4 valkyrie
+attack_add 1 panzer
+attack_add 8 heavy_marine
+attack_add 2 medic
+attack_add 2 valkyrie
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+attack_add 1 panzer
+attack_add 8 heavy_marine
+attack_add 2 medic
+attack_add 2 valkyrie
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+defenseuse_gg 1 panzer
+wait 4950
+
+train 40 heavy_marine
+train 4 medic
+attack_add 1 medic
+attack_add 10 heavy_marine
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+attack_add 1 medic
+attack_add 10 heavy_marine
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+attack_add 1 medic
+attack_add 10 heavy_marine
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+attack_add 1 medic
+attack_add 10 heavy_marine
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+place_guard science_vessel 0
+wait 4200
+
+wait_force 4 skywing
+wait_force 20 heavy_marine
+wait_force 4 medic
+attack_add 2 medic
+attack_add 10 heavy_marine
+attack_add 2 skywing
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+attack_add 2 medic
+attack_add 10 heavy_marine
+attack_add 2 skywing
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+
+:block4
+train 25 heavy_marine
+train 2 skywing
+train 4 firebat
+train 1 hnorad
+train 1 panzer
+train 2 death_knight
+train 4 medic
+wait 650
+
+random_jump 53 normal_inf
+random_jump 64 bc_inf
+random_jump 85 sky_inf
+random_jump 128 fire_inf
+attack_add 1 medic
+attack_add 10 heavy_marine
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+goto block4
+:normal_inf
+attack_add 1 death_knight
+attack_add 6 heavy_marine
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+goto block4
+:bc_inf
+attack_add 10 heavy_marine
+attack_add 2 medic
+attack_add 1 hnorad
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+goto block4
+:sky_inf
+attack_add 2 medic
+attack_add 10 heavy_marine
+attack_add 2 skywing
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+goto block4
+:fire_inf
+attack_add 6 heavy_marine
+attack_add 1 medic
+attack_add 2 firebat
+attack_prepare
+wait 50
+
+attack_timeout 8
+attack_do
+attack_clear
+goto block4
+
+:upgtech
+upgrade 1 goliath_range 30
+wait 12000
+
+upgrade 3 t_ship_plating 30
+upgrade 1 p_plasma_shield 30
+wait 480
+
+wait_upgrades
+upgrade 3 t_infantry_weapon 30
+wait 480
+
+wait_upgrades
+wait 5000
+
+upgrade 2 p_plasma_shield 30
+upgrade 3 t_infantry_armor 30
+upgrade 3 t_vehicle_plating 30
+wait 480
+
+wait_upgrades
+upgrade 2 goliath_range 30
+wait 5000
+
+upgrade 3 t_ship_weapon 30
+tech irradiate 30
+wait 5500
+
+upgrade 1 panzer_attack 30
+upgrade 3 p_plasma_shield 30
+upgrade 1 science_vessel_mana 30
+wait 5000
+
+upgrade 1 battlecruiser_mana 30
+tech emp_shockwave 30
+wait 12500
+
+tech yamato_gun 30
+upgrade 1 safety_protocols 30
+upgrade 3 t_vehicle_weapon 30
+upgrade 1 staballoy 30
+wait 3300
+
+upgrade 1 18 30
+:waitloop
+wait 1500
+
+goto waitloop
+
+:bank_data
+wait 25
+
+load_bank xz3
+bank_data Exactly 1 xz3 delete_teal yes
+bank_data AtLeast 5 xz3 command_centers icc5
+bank_data Exactly 4 xz3 command_centers icc4
+bank_data Exactly 3 xz3 command_centers icc3
+bank_data Exactly 2 xz3 command_centers icc2
+bank_data Exactly 1 xz3 command_centers icc1
+bank_data Exactly 0 xz3 command_centers icc1
+save_bank xzc3
+stop
+
+:icc5
+deaths 1 Set 5 carrier icc1
+bank_data Set 5 xz3 command_centers icc1
+save_bank xz3
+stop
+
+
+:icc4
+deaths 1 Set 4 carrier icc1
+bank_data Set 4 xz3 command_centers icc1
+save_bank xz3
+stop
+
+
+:icc3
+deaths 1 Set 3 carrier icc1
+bank_data Set 3 xz3 command_centers icc1
+save_bank xz3
+stop
+
+
+:icc2
+deaths 1 Set 2 carrier icc1
+bank_data Set 2 xz3 command_centers icc1
+save_bank xz3
+stop
+
+
+:icc1
+deaths 1 Set 1 carrier icc2
+bank_data Set 1 xz3 command_centers icc1
+save_bank xz3
+stop
+
+
+:yes
+deaths 1 Set 1 hcarrier icc1
+bank_data Set 1 xz3 delete_teal icc1
+bank_data AtLeast 5 xz3 command_centers icc5
+bank_data Exactly 4 xz3 command_centers icc4
+bank_data Exactly 3 xz3 command_centers icc3
+bank_data Exactly 2 xz3 command_centers icc2
+bank_data Exactly 1 xz3 command_centers icc1
+bank_data Set 0 xz3 command_centers icc1
+save_bank xz3
+stop
+
+:transports
+train 7 dropship
+wait 2500
+
+goto transports

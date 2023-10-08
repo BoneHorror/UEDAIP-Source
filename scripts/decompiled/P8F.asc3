@@ -1,0 +1,347 @@
+script_name Brood Wars Protoss 8 - Town F
+script_id PB8F
+
+if_owned nexus dt_town
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 hatchery 130
+build 1 drone 110
+build 6 drone 80
+build 2 hatchery 80
+build 1 lair 80
+build 1 hive 80
+build 1 spire 80
+build 1 greater_spire 80
+build 1 hydralisk_den 80
+max_workers 17
+wait 1933
+
+build 12 drone 80
+wait 2500
+
+build 15 drone 80
+wait 1500
+
+build 17 drone 80
+wait 27350
+
+max_workers 255
+:block1
+wait 1500
+
+goto block1
+
+:dt_town
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+creep 4
+build 1 probe 150
+build 1 nexus 130
+build 2 nexus 80
+build 24 probe 100
+build 2 forge 80
+build 2 gateway 80
+build 1 cybernetics_core 80
+build 1 citadel_of_adun 80
+build 1 templar_archives 80
+build 1 robotics_facility 80
+build 1 stargate 80
+build 8 photon_cannon 80
+define_max 10 zealot
+define_max 5 observer
+define_max 5 shuttle
+define_max 6 scout
+define_max 5 corsair
+define_max 9 revenant
+define_max 1 carrier
+define_max 8 hornet
+define_max 9 dark_templar
+define_max 2 dark_archon
+define_max 24 probe
+defensebuild_gg 1 zealot
+defenseuse_gg 1 zealot
+defensebuild_gg 1 revenant
+defenseuse_gg 1 revenant
+defenseuse_gg 1 scout
+defenseuse_gg 1 revenant
+defensebuild_ag 1 hornet
+defenseuse_ag 1 hornet
+defensebuild_ag 1 revenant
+defenseuse_ag 1 revenant
+defenseuse_ag 1 scout
+defensebuild_ga 1 scout
+defenseuse_ga 1 scout
+defensebuild_aa 1 corsair
+defenseuse_aa 1 corsair
+idle_orders disablebuiltin 0 0 0 0 0 0 0
+max_force 700
+farms_timing
+check_transports
+under_attack 0
+wait 25
+
+multirun defense_panic
+guard_all
+wait 750
+
+set_attacks 2
+train 5 zealot
+place_guard hornet 0
+wait_force 4 zealot
+upgrade 1 p_air_weapon 30
+attack_add 4 zealot
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+idle_orders 184 64 1 dark_archon 512 queen|science_vessel 40 energy(GreaterThanPercent,66)
+idle_orders 184 64 1 dark_archon 512 defiler 30 energy(GreaterThanPercent,50)
+idle_orders 184 64 1 dark_archon 512 ghost|medic 30 energy(GreaterThanPercent,40)
+upgrade 1 shuttle_speed 30
+upgrade 1 dark_archon_mana 30
+train 2 hornet
+wait 650
+
+upgrade 1 p_plasma_shield 30
+upgrade 1 scout_speed 30
+set_attacks 2
+defensebuild_aa 1 scout
+defenseuse_aa 1 scout
+train 2 zealot
+train 2 revenant
+wait 650
+
+wait_force 2 revenant
+wait_force 2 zealot
+attack_add 2 zealot
+attack_add 1 dark_templar
+attack_add 2 revenant
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+tech disruption_web 30
+upgrade 1 p_armor 30
+upgrade 1 p_plating 30
+place_guard scout 0
+train 1 scout
+train 2 zealot
+train 2 scout
+train 2 revenant
+train 4 revenant
+train 2 corsair
+train 3 scout
+idle_orders 181 240 1 corsair 338 hydralisk|heavy_marine|phantom|death_knight 80 incombat|count(AtLeast 2 60 14)
+idle_orders 181 180 1 corsair 512 sunken_colony|spore_colony|lurker|panzer|bunker|missile_turret 70 incombat
+idle_orders 181 0 0 corsair 188 zergling|hydralisk|lurker|ultralisk|sunken_colony|spore_colony|heavy_marine|firebat|phantom|death_knight|vulture|panzer|scorpion 30 deathrattle
+set_attacks 3
+
+attack_add 3 scout
+target_expansion
+wait 300
+
+attack_do
+attack_clear
+wait 545
+
+attack_add 4 revenant
+target_expansion
+wait 300
+
+attack_do
+attack_clear
+upgrade 1 scarab_damage 30
+upgrade 1 scout_sight 30
+upgrade 1 p_ground_weapon 30
+tech mind_control 30
+attack_add 4 zealot
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 p_air_weapon 30
+upgrade 2 p_plasma_shield 30
+upgrade 1 zealot_speed 30
+wait 815
+
+train 1 scout
+train 3 zealot
+train 2 scout
+train 2 revenant
+train 3 scout
+attack_add 3 zealot
+attack_add 2 revenant
+attack_add 3 scout
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+idle_orders 182 640 1 dark_archon 1024 ultralisk|battlecruiser 30 health(GreaterThanPercent,66)
+idle_orders 182 640 1 dark_archon 1024 lurker|panzer 20 health(GreaterThanPercent,66)
+idle_orders 182 640 1 dark_archon 1024 queen|science_vessel 20 health(GreaterThanPercent,66)
+idle_orders 182 640 1 dark_archon 1024 defiler 10 health(GreaterThanPercent,66)
+idle_orders 182 16 1 dark_archon 256 ultralisk|battlecruiser 80 incombat|health(GreaterThanPercent,50)
+idle_orders 182 16 1 dark_archon 256 lurker|panzer|valkyrie|guardian|devourer 30 incombat|health(GreaterThanPercent,80)
+tech maelstrom 30
+place_guard corsair 0
+set_attacks 2
+wait 795
+
+train 2 hornet
+train 1 scout
+train 4 zealot
+train 2 scout
+train 1 corsair
+train 3 zealot
+train 3 scout
+attack_add 3 zealot
+attack_add 2 hornet
+attack_add 3 scout
+attack_add 1 corsair
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 p_plating 30
+upgrade 3 p_plasma_shield 30
+idle_orders 186 160 1 dark_archon 512 group_men 80 incombat|count(AtLeast 2 60 14)|unitflags(organic)
+:block13
+set_attacks 6
+train 2 zealot
+train 2 revenant
+train 4 hornet
+wait 825
+
+attack_add 2 zealot
+attack_add 2 revenant
+attack_add 4 hornet
+attack_add 1 dark_archon
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+train 4 scout
+wait_train 4 scout
+attack_add 4 scout
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+wait 345
+
+train 2 revenant
+train 2 zealot
+wait_force 4 zealot
+wait_force 4 revenant
+attack_add 4 revenant
+attack_add 4 zealot
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+train 1 hornet
+train 2 scout
+train 2 hornet
+train 4 scout
+wait 733
+
+attack_add 4 scout
+attack_add 2 hornet
+target_expansion
+train 4 scout
+wait 500
+
+attack_do
+attack_clear
+train 3 scout
+wait 563
+
+attack_add 3 scout
+attack_add 2 dark_templar
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+wait 670
+
+attack_do
+attack_clear
+train 2 hornet
+train 4 revenant
+train 2 scout
+wait 735
+
+attack_add 2 hornet
+attack_add 4 revenant
+attack_add 2 scout
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+goto block13
+
+:defense_panic
+wait_rand 1 3
+
+multirun decrement_workers
+:dp_checker
+wait 50
+
+deaths 13 AtMost 7 probe dp_checker
+under_attack 1
+max_force 1350
+:dp_retain
+wait 1000
+
+deaths 13 AtLeast 11 probe dp_retain
+max_force 700
+under_attack 0
+goto dp_checker
+
+:decrement_workers
+time_jump 20 dec_2
+wait 500
+
+deaths 13 AtMost 0 probe decrement_workers
+deaths 13 Subtract 1 probe decrement_workers
+goto decrement_workers
+
+:dec_2
+time_jump 33 dec_3
+wait 333
+
+deaths 13 AtMost 1 probe dec_2
+deaths 13 Subtract 2 probe dec_2
+goto dec_2
+
+:dec_3
+wait 250
+
+deaths 13 AtMost 2 probe dec_3
+deaths 13 AtLeast_Call 20 probe harsh_dec
+deaths 13 Subtract 3 probe dec_3
+goto dec_3
+
+:harsh_dec
+deaths 13 Set 10 probe dec_3
+return

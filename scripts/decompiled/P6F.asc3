@@ -1,0 +1,22 @@
+script_name Brood Wars Protoss 6 - Town F
+script_id PB6F
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 drone 150
+build 1 hatchery 130
+build 3 drone 80
+build 1 spawning_pool 80
+build 1 hydralisk_den 80
+build 3 creep_colony 80
+build 1 spore_colony 80
+build 2 sunken_colony 80
+
+:loop
+wait 1500
+
+goto loop

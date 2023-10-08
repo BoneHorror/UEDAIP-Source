@@ -1,0 +1,456 @@
+script_name Brood Wars Protoss 3 - Town E
+script_id PB3E
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 1
+wait 1
+
+
+guard_all
+build 1 drone 80
+build 1 hatchery 80
+build 3 drone 80
+build 4 hatchery 80
+build 1 spawning_pool 80
+build 1 lair 80
+build 1 evolution_chamber 80
+build 1 spire 80
+build 1 hydralisk_den 80
+build 1 queen_nest 80
+build 1 hive 80
+build 1 greater_spire 80
+build 1 ultralisk_cavern 80
+build 4 nydus_canal 80
+build 30 overlord 80
+max_force 1200
+define_max 20 drone
+define_max 92 zergling
+define_max 63 hydralisk
+define_max 10 lurker
+define_max 3 queen
+define_max 22 mutalisk
+define_max 9 guardian
+define_max 5 devourer
+define_max 14 scourge
+define_max 255 infested_terran
+define_max 255 hqueen
+define_max 13 ultralisk
+define_max 150 broodling
+defensebuild_gg 2 zergling
+defenseuse_gg 2 zergling
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_gg 1 lurker
+defenseuse_gg 1 lurker
+defensebuild_ag 2 hydralisk
+defenseuse_ag 2 hydralisk
+defensebuild_ag 1 mutalisk
+defenseuse_ag 1 mutalisk
+defensebuild_ga 1 guardian
+defenseuse_ga 1 guardian
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
+tech lurker_aspect 30
+upgrade 1 overlord_speed 30
+upgrade 1 overlord_capacity 30
+upgrade 1 z_missile_attack 30
+upgrade 1 z_flyer_attack 30
+upgrade 1 z_melee_attack 30
+upgrade 1 z_flyer_carapace 30
+upgrade 1 z_carapace 30
+upgrade 1 hydralisk_speed 30
+upgrade 1 zergling_speed 30
+upgrade 1 ultralisk_armor 30
+idle_orders 120 160 1 hydralisk 2048 zealot 20 incombat
+idle_orders 120 160 1 hydralisk 2048 dragoon 25 incombat
+idle_orders 120 160 1 hydralisk 1024 high_templar 30 0
+idle_orders 148 64 1 ultralisk 1024 hydralisk 40 own|allied|notenemies|incombat
+idle_orders 148 64 1 ultralisk 1024 mutalisk 30 own|allied|notenemies|incombat
+idle_orders 148 64 1 ultralisk 1024 lurker 70 own|allied|notenemies|incombat
+idle_orders 148 64 1 ultralisk 1024 guardian 80 own|allied|notenemies|incombat
+idle_orders 148 64 1 ultralisk 1024 devourer 50 own|allied|notenemies|incombat
+idle_orders 148 64 1 ultralisk 1024 overlord 30 own|allied|notenemies|incombat
+idle_orders 148 64 1 ultralisk 1024 queen 60 own|allied|notenemies|incombat
+idle_orders 148 64 1 ultralisk 1024 zergling 10 own|allied|notenemies|incombat
+farms_timing
+under_attack 0
+capt_expand
+supply 0 Set 300 Max 0 Zerg targeting
+wait 315
+
+train 62 zergling
+expand 2 ov_expo
+wait_force 42 zergling
+attack_add 24 zergling
+call targeting
+attack_timeout 25
+
+attack_do
+attack_clear
+train 48 zergling
+attack_add 24 zergling
+call targeting
+attack_timeout 25
+
+attack_do
+attack_clear
+wait 150
+
+attack_add 3 lurker
+attack_add 6 ultralisk
+call targeting
+wait 300
+
+attack_do
+attack_clear
+train 10 mutalisk
+train 60 hydralisk
+upgrade 1 ultralisk_speed 30
+attack_add 4 mutalisk
+attack_add 32 hydralisk
+attack_add 2 guardian
+call targeting
+attack_timeout 80
+wait 100
+
+attack_do
+attack_clear
+upgrade 1 queen_mana 30
+attack_add 18 hydralisk
+call targeting
+attack_timeout 15
+wait 100
+
+attack_do
+attack_clear
+tech spawn_broodling 30
+upgrade 2 z_missile_attack 30
+upgrade 2 z_flyer_attack 30
+upgrade 2 z_melee_attack 30
+upgrade 2 z_flyer_carapace 30
+upgrade 2 z_carapace 30
+upgrade 1 hydralisk_range 30
+train 35 hydralisk
+train 74 zergling
+wait 633
+
+attack_add 28 hydralisk
+attack_add 6 lurker
+attack_add 24 zergling
+call targeting
+wait 60
+
+attack_timeout 21
+attack_do
+attack_clear
+attack_add 50 zergling
+call targeting
+wait 60
+
+attack_timeout 21
+attack_do
+attack_clear
+train 12 mutalisk
+train 4 ultralisk
+train 10 hydralisk
+train 8 ultralisk
+wait 545
+
+attack_add 6 lurker
+attack_add 8 ultralisk
+attack_add 12 mutalisk
+call targeting
+attack_timeout 45
+
+attack_do
+attack_clear
+train 29 hydralisk
+train 2 lurker
+train 50 zergling
+train 24 broodling
+wait 380
+
+attack_add 4 hydralisk
+attack_add 12 zergling
+attack_add 2 lurker
+call targeting
+wait 32
+
+attack_timeout 8
+attack_do
+attack_clear
+tech ensnare 30
+place_guard queen 0
+idle_orders 121 160 1 queen 2048 ultralisk 50 incombat|spelleffects(parasite)
+idle_orders 121 160 1 queen 2048 lurker 30 incombat|spelleffects(parasite)
+idle_orders 121 160 1 queen 2048 zealot 20 incombat|spelleffects(parasite)
+idle_orders 121 160 1 queen 2048 dragoon 25 incombat|spelleffects(parasite)
+idle_orders 121 160 1 queen 2048 hydralisk 10 incombat|spelleffects(parasite)
+idle_orders 121 160 1 queen 1024 high_templar 30 spelleffects(parasite)
+idle_orders 121 15000 1 queen 1024 drone 30 spelleffects(parasite)
+idle_orders 120 9000 1 queen 2048 drone 10 0
+idle_orders 121 160 1 lurker 512 ultralisk 50 incombat
+idle_orders 121 160 1 lurker 512 lurker 30 incombat
+idle_orders 121 160 1 lurker 512 zealot 20 incombat
+idle_orders 121 160 1 lurker 512 dragoon 25 incombat
+idle_orders 121 160 1 lurker 512 hydralisk 10 incombat
+idle_orders 121 160 1 lurker 256 high_templar 30 0
+upgrade 3 z_missile_attack 30
+upgrade 3 z_flyer_attack 30
+upgrade 3 z_melee_attack 30
+upgrade 3 z_flyer_carapace 30
+upgrade 3 z_carapace 30
+attack_add 14 hydralisk
+attack_add 32 zergling
+attack_add 20 broodling
+call targeting
+wait 32
+
+attack_timeout 8
+attack_do
+attack_clear
+attack_add 14 hydralisk
+attack_add 32 zergling
+attack_add 20 broodling
+call targeting
+wait 32
+
+attack_timeout 16
+attack_do
+attack_clear
+attack_add 7 lurker
+attack_add 15 mutalisk
+attack_add 7 guardian
+attack_add 8 ultralisk
+attack_add 12 hydralisk
+call targeting
+attack_timeout 200
+
+attack_do
+attack_clear
+train 20 zergling
+wait 150
+
+attack_add 20 zergling
+attack_add 8 mutalisk
+attack_add 3 guardian
+call targeting
+wait 500
+
+attack_do
+attack_clear
+idle_orders 146 160 1 guardian 256 scout 30 incombat
+idle_orders 146 160 1 guardian 256 carrier 50 incombat
+idle_orders 146 160 1 guardian 256 dragoon 20 incombat
+idle_orders 146 160 1 guardian 256 archon 40 incombat
+train 38 hydralisk
+train 7 ultralisk
+train 40 zergling
+wait_force 40 zergling
+wait 150
+
+attack_add 20 zergling
+call targeting
+wait 16
+
+attack_timeout 7
+attack_do
+attack_clear
+attack_add 7 ultralisk
+attack_add 34 hydralisk
+attack_add 4 lurker
+call targeting
+wait 16
+
+attack_timeout 42
+attack_do
+attack_clear
+attack_add 20 zergling
+call targeting
+wait 16
+
+attack_timeout 7
+attack_do
+attack_clear
+attack_add 7 lurker
+attack_add 7 guardian
+call targeting
+wait 500
+
+attack_do
+attack_clear
+:block1
+deaths 0 AtLeast 2 hcarrier insane
+deaths 0 AtLeast 1 hcarrier flood
+train 5 ultralisk
+train 26 hydralisk
+train 10 mutalisk
+attack_add 4 ultralisk
+attack_add 4 lurker
+attack_add 20 hydralisk
+attack_add 6 mutalisk
+attack_add 2 guardian
+call targeting
+wait 500
+
+attack_do
+attack_clear
+deaths 0 AtLeast 2 hcarrier insane
+deaths 0 AtLeast 1 hcarrier flood
+train 12 hydralisk
+train 50 zergling
+attack_add 8 lurker
+attack_add 50 zergling
+call targeting
+wait 500
+
+attack_do
+attack_clear
+deaths 0 AtLeast 2 hcarrier insane
+deaths 0 AtLeast 1 hcarrier flood
+attack_add 8 mutalisk
+attack_add 23 hydralisk
+attack_add 4 ultralisk
+attack_add 2 devourer
+call targeting
+attack_timeout 120
+attack_do
+attack_clear
+goto block1
+
+:insane
+define_max 30 ultralisk
+train 12 ultralisk
+attack_add 12 zergling
+attack_add 2 lurker
+attack_add 6 hydralisk
+attack_add 3 mutalisk
+attack_prepare
+attack_timeout 31
+attack_do
+attack_clear
+train 4 broodling
+attack_add 14 zergling
+attack_add 2 guardian
+attack_add 7 hydralisk
+attack_add 3 mutalisk
+attack_prepare
+attack_timeout 31
+attack_do
+attack_clear
+train 18 ultralisk
+train 8 broodling
+attack_add 9 hydralisk
+attack_add 9 mutalisk
+attack_prepare
+attack_timeout 31
+attack_do
+attack_clear
+train 12 broodling
+train 24 ultralisk
+attack_add 45 zergling
+attack_add 15 broodling
+attack_prepare
+attack_timeout 31
+attack_do
+attack_clear
+train 60 broodling
+wait 150
+
+attack_add 24 ultralisk
+attack_add 30 broodling
+attack_prepare
+attack_timeout 35
+attack_do
+attack_clear
+train 12 mutalisk
+train 6 scourge
+train 24 hydralisk
+wait 15
+
+attack_add 6 mutalisk
+attack_add 10 hydralisk
+goto insane
+
+:flood
+define_max 212 broodling
+wait 1
+
+train 200 broodling
+attack_add 64 broodling
+attack_prepare
+attack_timeout 13
+attack_do
+attack_clear
+attack_rand 1 28 hydralisk
+attack_rand 0 4 ultralisk
+attack_rand 0 2 devourer
+attack_rand 0 4 guardian
+attack_rand 0 3 lurker
+attack_rand 0 6 mutalisk
+attack_prepare
+attack_timeout 60
+
+attack_do
+attack_clear
+attack_add 64 broodling
+attack_prepare
+attack_timeout 13
+attack_do
+attack_clear
+attack_add 64 broodling
+attack_prepare
+attack_timeout 13
+attack_do
+attack_clear
+goto flood
+
+:targeting
+random_jump 13 random
+random_jump 64 north
+random_jump 85 south
+random_jump 128 brown
+attack_to Loc.64 Loc.65
+return
+
+:north
+attack_to Loc.57 Loc.60
+return
+
+:south
+attack_to Loc.62 Loc.61
+return
+
+:brown
+attack_to Loc.67 Loc.68
+return
+
+:random
+attack_prepare
+return
+
+:ov_expo
+start_town
+build 1 hatchery 80
+wait 1500
+
+build 3 drone 80
+build 2 hatchery 80
+build 18 overlord 80
+build 3 creep_colony 80
+wait 3000
+
+build 2 spore_colony 80
+build 1 sunken_colony 80
+:exploop
+wait 1500
+
+goto exploop

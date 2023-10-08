@@ -1,0 +1,70 @@
+script_name Brood Wars Zerg 4 - Town F
+script_id ZB4F
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 command_center 80
+build 4 scv 80
+player_need 8 supply_depot
+player_need 1 academy
+build 1 comsat_station 80
+build 1 barracks 80
+player_need 1 factory
+player_need 1 machine_shop
+build 1 starport 80
+player_need 1 control_tower
+player_need 1 armory
+player_need 1 engineering_bay
+defensebuild_gg 1 marine
+defenseuse_gg 1 marine
+defensebuild_gg 1 vulture
+defenseuse_gg 1 vulture
+defensebuild_gg 1 firebat
+defenseuse_gg 1 firebat
+defensebuild_gg 1 siege_tank
+defensebuild_ag 1 marine
+defenseuse_ag 1 marine
+defensebuild_ag 1 goliath
+defenseuse_ag 1 goliath
+defensebuild_aa 1 wraith
+defenseuse_aa 1 wraith
+upgrade 1 marine_range 30
+upgrade 1 vulture_speed 30
+tech siege_mode 30
+wait 201
+
+build 8 scv 80
+max_workers 10
+upgrade 1 hospitals 30
+upgrade 1 t_infantry_weapon 30
+upgrade 1 t_vehicle_weapon 30
+upgrade 1 t_vehicle_plating 30
+wait 5315
+
+tech spider_mines 30
+tech stim_packs 30
+upgrade 1 t_infantry_armor 30
+upgrade 1 t_ship_weapon 30
+upgrade 1 t_ship_plating 30
+wait 4150
+
+tech cloaking_field 30
+upgrade 2 t_infantry_weapon 30
+upgrade 2 t_vehicle_weapon 30
+upgrade 2 t_vehicle_plating 30
+upgrade 1 vademecum 30
+wait 5050
+
+upgrade 1 wraith_mana 30
+upgrade 2 t_infantry_armor 30
+upgrade 2 t_ship_weapon 30
+upgrade 2 t_ship_plating 30
+upgrade 1 adv_mechanics 30
+:loop
+wait 1500
+
+goto loop

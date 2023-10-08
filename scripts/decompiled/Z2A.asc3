@@ -1,0 +1,572 @@
+script_name Brood Wars Zerg 2 - Town A
+script_id ZB2A
+
+notowns_jump command_center cutscene_fix
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 1
+wait 1
+
+build 1 scv 120
+build 1 command_center 150
+build 3 scv 80
+build 2 barracks 80
+build 1 academy 80
+build 1 engineering_bay 80
+build 2 factory 80
+build 2 machine_shop 80
+build 1 armory 80
+build 2 starport 80
+build 2 control_tower 80
+build 2 armory 80
+build 2 engineering_bay 80
+build 1 science_facility 80
+build 2 science_facility 80
+build 1 covert_ops 80
+build 1 physics_lab 80
+place_guard medic 0
+max_force 300
+defensebuild_gg 1 vulture
+defenseuse_gg 1 vulture
+defensebuild_gg 2 heavy_marine
+defenseuse_gg 2 heavy_marine
+defensebuild_gg 1 firebat
+defenseuse_gg 1 firebat
+defensebuild_gg 1 battlecruiser
+defenseuse_gg 1 battlecruiser
+defensebuild_gg 1 siege_tank
+defensebuild_ga 1 skywing
+defenseuse_ga 1 skywing
+defensebuild_ga 1 battlecruiser
+defenseuse_ga 1 battlecruiser
+defensebuild_ag 1 death_knight
+defenseuse_ag 1 death_knight
+defensebuild_ag 1 heavy_marine
+defenseuse_ag 1 heavy_marine
+defensebuild_ag 1 ghost
+defenseuse_ag 1 ghost
+defensebuild_aa 1 valkyrie
+defenseuse_aa 1 valkyrie
+defensebuild_aa 1 skywing
+defenseuse_aa 1 skywing
+define_max 55 scv
+define_max 6 vulture
+define_max 4 scorpion
+define_max 3 valkyrie
+define_max 5 siege_tank
+define_max 20 heavy_marine
+define_max 7 medic
+define_max 3 battlecruiser
+define_max 10 skywing
+define_max 2 science_vessel
+define_max 7 ghost
+define_max 2 phantom
+define_max 12 firebat
+define_max 6 death_knight
+define_max 1 nuclear_missile
+define_max 255 hsciencevessel
+unit_avail 13 Set Disabled hsciencevessel sv_check
+define_max 255 marine
+unit_avail 13 Set Disabled marine sv_check
+define_max 255 panzer
+check_transports
+capt_expand
+farms_timing
+tech restoration 30
+tech siege_mode 30
+tech spider_mines 30
+upgrade 1 t_infantry_weapon 30
+upgrade 1 t_vehicle_weapon 30
+upgrade 1 t_ship_weapon 30
+upgrade 1 t_infantry_armor 30
+multirun sv_check
+multirun tor_check
+multirun hhydra_check
+supply 13 Set 224 Max 0 Terran sv_check
+idle_orders 92 256 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 64 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 256 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 64 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+wait 200
+
+build 22 scv 80
+wait 2515
+
+prep_down 15 4 heavy_marine
+attack_add 2 medic
+prep_down 7 3 firebat
+attack_add 1 scout
+#force with attack_timeout
+attack_to Loc.141 Loc.87
+wait 32
+
+attack_timeout 100
+wait 1200
+
+deaths 0 Add 1 valkyrie block1
+attack_do
+attack_clear
+place_guard battlecruiser 0
+tech personnel_cloaking 30
+upgrade 1 vulture_speed 30
+create_script block1 255 Loc.144 255 7
+wait 2150
+
+train 4 firebat
+attack_add 4 firebat
+attack_prepare
+attack_timeout 60
+wait 300
+
+attack_do
+attack_clear
+train 1 battlecruiser
+tech stim_packs 30
+wait 1155
+
+deaths 1 Add 1 valkyrie block1
+wait 600
+
+prep_down 7 4 skywing
+prep_down 1 1 battlecruiser
+attack_to Loc.103 Loc.105
+wait 500
+
+attack_do
+attack_clear
+tech cloaking_field 30
+tech defensive_matrix 30
+train 1 science_vessel
+wait 3235
+
+prep_down 12 4 heavy_marine
+attack_add 2 medic
+prep_down 8 3 firebat
+prep_down 8 2 ghost
+prep_down 4 2 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+allies_watch 6 block1
+upgrade 1 t_vehicle_plating 30
+upgrade 1 t_ship_plating 30
+upgrade 2 t_infantry_weapon 30
+upgrade 2 t_infantry_armor 30
+tech yamato_gun 30
+place_guard science_vessel 0
+train 2 battlecruiser
+wait 2575
+
+prep_down 1 2 battlecruiser
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 1 siege_tank
+attack_to (1731,3077) (1655,3329)
+attack_do
+attack_clear
+nuke_rate 16
+build 1 nuclear_silo 80
+defenseuse_gg 1 siege_tank
+train 1 ghost
+upgrade 1 ghost_sight 30
+upgrade 1 vademecum 30
+wait 1950
+
+prep_down 7 3 skywing
+prep_down 12 6 heavy_marine
+attack_add 1 medic
+attack_add 2 phantom
+attack_to Loc.141 Loc.93
+wait 500
+
+attack_do
+attack_clear
+place_guard ghost 0
+upgrade 2 t_vehicle_weapon 30
+upgrade 2 t_ship_weapon 30
+upgrade 3 t_infantry_armor 30
+tech optical_flare 30
+wait 2650
+
+prep_down 10 8 heavy_marine
+attack_add 1 medic
+prep_down 8 4 firebat
+prep_down 8 3 skywing
+prep_down 8 2 siege_tank
+attack_to Loc.141 Loc.8
+wait 500
+
+attack_do
+attack_clear
+multirun block2
+upgrade 1 hospitals 30
+upgrade 1 goliath_range 30
+upgrade 1 battlecruiser_mana 30
+upgrade 1 science_vessel_mana 30
+train 2 battlecruiser
+wait 2250
+
+deaths 2 Add 1 valkyrie block1
+prep_down 8 10 heavy_marine
+prep_down 5 3 death_knight
+prep_down 5 2 siege_tank
+prep_down 1 2 battlecruiser
+prep_down 2 1 valkyrie
+attack_to Loc.141 Loc.87
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 t_vehicle_plating 30
+upgrade 2 t_ship_plating 30
+upgrade 3 t_infantry_weapon 30
+tech irradiate 30
+place_guard medic 0
+place_guard medic 1
+place_guard medic 2
+wait 3325
+
+prep_down 6 3 skywing
+prep_down 4 3 siege_tank
+prep_down 1 2 valkyrie
+prep_down 10 5 heavy_marine
+attack_to (2315,2581) (1498,2892)
+wait 500
+
+attack_do
+attack_clear
+train 2 battlecruiser
+wait 2750
+
+prep_down 8 9 heavy_marine
+attack_add 1 medic
+prep_down 7 6 firebat
+prep_down 1 2 battlecruiser
+attack_to Loc.141 Loc.87
+wait 500
+
+attack_do
+attack_clear
+upgrade 3 t_vehicle_plating 30
+upgrade 3 t_ship_plating 30
+wait 2300
+
+prep_down 6 9 heavy_marine
+prep_down 6 4 firebat
+prep_down 3 2 siege_tank
+prep_down 6 4 skywing
+prep_down 5 3 death_knight
+attack_to Loc.141 Loc.8
+wait 500
+
+attack_do
+attack_clear
+train 3 battlecruiser
+train 4 skywing
+wait 1500
+
+deaths 3 Add 1 valkyrie block1
+prep_down 1 3 battlecruiser
+prep_down 6 8 skywing
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 3 t_vehicle_weapon 30
+upgrade 3 t_ship_weapon 30
+tech emp_shockwave 30
+
+:block3
+random_jump 48 alt1
+random_jump 67 alt2
+wait 2215
+
+prep_down 3 2 siege_tank
+attack_add 2 medic
+prep_down 4 13 heavy_marine
+prep_down 6 2 ghost
+prep_down 4 4 firebat
+prep_down 3 4 death_knight
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 3 battlecruiser
+wait 2750
+
+prep_down 1 3 battlecruiser
+prep_down 1 2 valkyrie
+prep_down 2 4 siege_tank
+prep_down 3 5 death_knight
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 3 battlecruiser
+train 1 science_vessel
+wait 2650
+
+prep_down 1 3 battlecruiser
+prep_down 4 9 skywing
+prep_down 1 2 valkyrie
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2865
+
+prep_down 2 18 heavy_marine
+attack_add 2 phantom
+prep_down 2 8 firebat
+attack_to (2315,2581) (1498,2892)
+wait 500
+
+attack_do
+attack_clear
+goto block3
+
+:alt1
+wait 100
+random_jump 44 block3
+random_jump 67 alt2
+define_max 36 heavy_marine
+wait 3000
+
+attack_add 3 medic
+prep_down 4 17 heavy_marine
+prep_down 3 7 ghost
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 2 battlecruiser
+train 6 skywing
+wait 2000
+
+prep_down 2 3 siege_tank
+prep_down 8 10 heavy_marine
+prep_down 1 2 battlecruiser
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+prep_down 6 6 skywing
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+prep_down 6 12 heavy_marine
+prep_down 1 2 valkyrie
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2000
+
+prep_down 3 4 siege_tank
+prep_down 1 3 valkyrie
+attack_to (2315,2581) (1498,2892)
+wait 500
+
+attack_do
+attack_clear
+prep_down 8 10 heavy_marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto alt1
+
+:alt2
+wait 100
+
+random_jump 44 alt1
+random_jump 67 block3
+random_jump 128 boom
+wait 100
+
+:boomre
+define_max 6 battlecruiser
+train 4 battlecruiser
+call starport
+wait 2500
+
+prep_down 1 3 battlecruiser
+prep_down 2 4 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 6 battlecruiser
+wait 3300
+
+prep_down 1 5 battlecruiser
+prep_down 8 8 heavy_marine
+prep_down 5 5 death_knight
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 4 battlecruiser
+wait 4000
+
+prep_down 1 4 battlecruiser
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto alt2
+
+:boom
+nuke_rate 3
+goto boomre
+
+:block2
+wait 1500
+
+give_money
+goto block2
+
+:block1
+start_town
+build 1 command_center 100
+wait_build 1 command_center
+build 1 scv 80
+get_oldpeons 3
+wait 60
+
+build 3 scv 80
+wait_build 3 scv
+build 3 scv 80
+build 1 starport 80
+wait_buildstart 1 starport
+build 6 scv 80
+build 1 missile_turret 80
+wait_buildstart 1 missile_turret
+build 2 missile_turret 80
+wait_buildstart 2 missile_turret
+build 9 scv 80
+build 1 bunker 80
+build 1 control_tower 80
+build 1 factory 80
+wait_build 1 factory
+build 1 machine_shop 80
+place_guard medic 0
+
+:block4
+wait 3000
+
+call attack_loop
+attack_add 2 skywing
+attack_to (2644,3245) (1795,3545)
+wait 300
+
+attack_do
+attack_clear
+time_jump 40 block5
+goto block4
+
+:block5
+wait 2000
+
+call attack_loop
+attack_add 2 skywing
+attack_add 1 battlecruiser
+attack_to (2644,3245) (1795,3545)
+wait 300
+
+attack_do
+attack_clear
+wait 2000
+
+call attack_loop
+attack_add 4 heavy_marine
+attack_add 2 siege_tank
+attack_to (2267,3978) (1690,3861)
+wait 300
+
+attack_do
+attack_clear
+goto block5
+
+:attack_loop
+wait 16
+
+if_attacking attack_loop
+return
+
+:starport
+build 3 starport 50
+build 3 control_tower 50
+return
+
+:sv_check
+deaths 7 AtLeast 1 hmojo sv_irradiate
+wait 16
+
+goto sv_check
+
+:sv_irradiate
+issue_order 143 1 hsciencevessel (850,2050)~256 (850,2050)~256 hultralisk enemies
+stop
+
+:tor_check
+wait 300
+
+if_owned hultralisk tor_add
+enemyowns_jump hultralisk void
+time_jump 20 void
+goto tor_check
+
+:tor_add
+attack_add 1 hultralisk
+stop
+
+:hhydra_check
+wait 300
+
+if_owned hhydralisk hhydra_add
+deaths 3 AtLeast 4 hhydralisk void
+time_jump 15 void
+goto hhydra_check
+
+:hhydra_add
+attack_add 3 hhydralisk
+stop
+
+:void
+wait 16
+
+stop
+
+:cutscene_fix
+upgrade_jump 1 Set 73 1 void
+stop

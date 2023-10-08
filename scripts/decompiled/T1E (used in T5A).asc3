@@ -1,0 +1,37 @@
+script_name Brood Wars Terran 1 - Town E
+script_id TB1E
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+wait_rand 22056 36562
+build 1 command_center 100
+get_oldpeons 1
+wait_build 1 command_center
+build 1 scv 90
+get_oldpeons 1
+wait_build 1 scv
+define_max 22 scv
+get_oldpeons 3
+build 3 scv 80
+wait_buildstart 3 scv
+build 1 barracks 80
+max_workers 18
+build 11 scv 80
+wait_buildstart 1 barracks
+build 1 comsat_station 80
+build 1 factory 80
+build 18 scv 80
+wait_build 1 factory
+
+build 1 machine_shop 80
+wait 18760
+
+max_workers 255
+:loop
+wait 2375
+
+goto loop

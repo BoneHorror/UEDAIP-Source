@@ -1,0 +1,457 @@
+script_name Brood Wars Terran 5 - Town D
+script_id TB5D
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 1
+wait 1
+
+wait 25
+
+deaths 13 Set 1 217 block7
+build 1 command_center 130
+build 1 scv 110
+build 2 barracks 80
+player_need 1 engineering_bay
+build 1 academy 80
+build 1 factory 80
+build 1 machine_shop 80
+build 1 armory 80
+build 1 comsat_station 80
+build 1 science_facility 80
+build 1 physics_lab 80
+build 1 starport 80
+build 1 control_tower 80
+player_need 2 starport
+max_force 866
+define_max 30 scv
+define_max 28 marine
+define_max 10 firebat
+define_max 10 ghost
+define_max 255 medic
+define_max 13 vulture
+define_max 24 goliath
+define_max 12 siege_tank
+define_max 5 dropship
+define_max 2 science_vessel
+define_max 24 wraith
+define_max 255 valkyrie
+define_max 255 nuclear_missile
+define_max 255 hnorad
+define_max 255 264
+aicontrol global_disable_spell_focus
+aicontrol global_disable_acid_spore_focus
+aicontrol global_disable_carrier_focus
+idle_orders 92 256 2 marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 64 2 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 256 2 marine 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 64 2 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 10 16 3 marine|ghost 212 drone|scv|probe 50 0
+idle_orders 10 16 1 firebat 128 drone|scv|probe 70 0
+idle_orders 10 16 1 firebat 128 drone|scv|probe 150 count(AtLeast 2 24 14)
+defenseuse_gg 1 hnorad
+defensebuild_gg 3 marine
+defenseuse_gg 3 marine
+defensebuild_gg 1 firebat
+defenseuse_gg 1 firebat
+defensebuild_gg 2 siege_tank
+defensebuild_ag 2 goliath
+defenseuse_ag 2 goliath
+defensebuild_ag 1 marine
+defenseuse_ag 1 marine
+defenseuse_ag 1 hnorad
+defensebuild_ag 1 ghost
+defensebuild_ga 1 wraith
+defenseuse_ga 1 wraith
+defenseuse_ga 1 hnorad
+defenseuse_aa 1 hnorad
+defensebuild_aa 1 wraith
+defenseuse_aa 1 wraith
+farms_timing
+check_transports
+tech yamato_gun 30
+tech siege_mode 30
+supply 0 Set 300 Max 0 Terran block7
+upgrade_jump 0 Set 18 0 block7
+idle_orders DisableBuiltin 0 0 0 0 0 0 0
+wait 100
+
+build 3 scv 80
+unit_avail 1 Set Disabled 264 block7
+upgrade 1 t_ship_weapon 30
+upgrade 1 t_ship_plating 30
+upgrade 1 battlecruiser_mana 30
+guard 15 Loc.26 1 255 70
+guard 15 Loc.108 1 255 75
+guard 15 Loc.109 1 255 75
+guard 15 Loc.110 1 255 75
+guard 15 Loc.111 1 255 75
+guard 15 Loc.112 1 255 70
+guard 15 Loc.113 1 255 70
+guard 15 Loc.114 1 255 70
+wait_train 1 hnorad
+idle_orders 113 32 2 hnorad 356 battlecruiser|barracks|factory|starport|valhalla 80 InCombat|Hp(GreaterThanPercent 75)
+idle_orders 113 32 1 hnorad 356 valkyrie|dropship|panzer|death_knight|missile_turret|bunker 50 InCombat|Hp(GreaterThanPercent 80)
+train 4 marine
+attack_add 1 hnorad
+attack_add 4 marine
+call targeting
+
+attack_do
+attack_clear
+capt_expand
+multirun grand_exchange
+tech spider_mines 30
+tech defensive_matrix 30
+idle_orders 141 83 1 science_vessel 1024 goliath 20 own|allied|notenemies|incombat
+idle_orders 141 83 1 science_vessel 1024 vulture 10 own|allied|notenemies|incombat
+idle_orders 141 83 1 science_vessel 1024 wraith 20 own|allied|notenemies|incombat
+idle_orders 141 83 1 science_vessel 1024 siege_tank 40 own|allied|notenemies|incombat
+idle_orders 141 83 1 science_vessel 1024 hnorad 80 own|allied|notenemies|incombat
+wait 1405
+
+multirun help_request
+build 5 scv 80
+train 5 goliath
+attack_add 1 hnorad
+attack_add 5 goliath
+call targeting
+
+attack_do
+attack_clear
+tech stim_packs 30
+upgrade 2 t_ship_plating 30
+upgrade 2 t_ship_weapon 30
+upgrade 1 t_infantry_weapon 30
+wait 1475
+
+train 4 goliath
+train 4 firebat
+train 2 siege_tank
+attack_add 1 hnorad
+attack_add 4 firebat
+attack_add 4 goliath
+attack_add 2 siege_tank
+call targeting
+
+attack_do
+attack_clear
+build 8 scv 80
+upgrade 1 t_infantry_armor 30
+wait 1365
+
+train 14 marine
+attack_add 3 hnorad
+attack_add 14 marine
+call targeting
+
+attack_do
+attack_clear
+upgrade 1 marine_range 30
+upgrade 3 t_ship_plating 30
+upgrade 3 t_ship_weapon 30
+wait 2312
+
+train 6 goliath
+train 4 siege_tank
+attack_add 2 hnorad
+attack_add 6 goliath
+attack_add 4 siege_tank
+call targeting
+
+attack_do
+attack_clear
+build 12 scv 80
+tech emp_shockwave 30
+upgrade 1 18 30
+upgrade 2 t_infantry_weapon 30
+upgrade 1 t_vehicle_plating 30
+upgrade 1 t_vehicle_weapon 30
+upgrade 1 wraith_mana 30
+wait 1685
+
+deaths 0 Set 1 valkyrie block7
+train 12 goliath
+attack_add 2 hnorad
+attack_add 12 goliath
+call targeting
+
+attack_do
+attack_clear
+upgrade 1 overclocking 30
+idle_orders 122 960 1 science_vessel 1024 ghost|medic|science_vessel 60 Energy(GreaterThan 150)|RandomRate(360 1040)
+train 16 marine
+attack_add 1 hnorad
+attack_add 16 marine
+call targeting
+
+attack_do
+attack_clear
+train 8 marine
+attack_add 1 hnorad
+attack_add 8 wraith
+call targeting
+
+attack_do
+attack_clear
+upgrade 1 science_vessel_mana 30
+wait 1750
+
+attack_add 1 hnorad
+call targeting
+attack_timeout 12
+
+attack_do
+attack_clear
+attack_add 1 hnorad
+call targeting
+attack_timeout 12
+
+attack_do
+attack_clear
+attack_add 1 hnorad
+call targeting
+attack_timeout 12
+
+attack_do
+attack_clear
+upgrade 1 science_aura 30
+tech cloaking_field 30
+upgrade 1 hospitals 30
+upgrade 2 t_infantry_armor 30
+upgrade 2 t_vehicle_weapon 30
+upgrade 2 t_vehicle_plating 30
+attack_add 1 hnorad
+call targeting
+attack_timeout 12
+
+attack_do
+attack_clear
+attack_add 1 hnorad
+call targeting
+attack_timeout 12
+
+attack_do
+attack_clear
+attack_add 1 hnorad
+call targeting
+attack_timeout 12
+
+attack_do
+attack_clear
+attack_add 1 hnorad
+call targeting
+attack_timeout 12
+
+attack_do
+attack_clear
+attack_add 1 hnorad
+call targeting
+attack_timeout 12
+
+attack_do
+attack_clear
+attack_add 1 hnorad
+call targeting
+attack_timeout 12
+
+attack_do
+attack_clear
+tech irradiate 30
+upgrade 1 vademecum 30
+upgrade 3 t_infantry_armor 30
+upgrade 3 t_vehicle_weapon 30
+upgrade 3 t_vehicle_plating 30
+wait 1085
+
+train 12 marine
+train 3 siege_tank
+train 4 goliath
+train 21 marine
+train 6 siege_tank
+train 8 goliath
+attack_add 2 hnorad
+attack_add 6 siege_tank
+attack_add 21 marine
+attack_add 8 goliath
+call targeting
+
+attack_do
+attack_clear
+idle_orders 143 120 1 science_vessel 1024 ghost|medic|scv 120 WithoutSpellEffects(Irradiate)
+upgrade 3 t_infantry_weapon 30
+:block7
+wait 1350
+
+train 2 wraith
+train 3 goliath
+train 4 wraith
+train 6 goliath
+attack_add 6 goliath
+attack_add 4 wraith
+attack_add 2 hnorad
+call targeting
+
+attack_do
+attack_clear
+wait 850
+
+train 4 wraith
+train 10 firebat
+train 8 wraith
+attack_add 1 hnorad
+attack_add 8 wraith
+attack_add 10 firebat
+call targeting
+
+attack_do
+attack_clear
+wait 850
+
+train 2 goliath
+train 14 marine
+train 4 firebat
+attack_add 1 hnorad
+attack_add 14 marine
+attack_add 4 firebat
+attack_add 2 goliath
+call targeting
+
+attack_do
+attack_clear
+train 4 goliath
+train 6 siege_tank
+attack_add 1 hnorad
+attack_add 4 goliath
+attack_add 6 siege_tank
+call targeting
+
+attack_do
+attack_clear
+:neverending_cycle
+give_money
+wait 500
+
+train 16 wraith
+attack_add 2 hnorad
+attack_add 16 wraith
+call targeting
+
+attack_do
+attack_clear
+wait 560
+
+random_jump 60 neverending_cycle
+train 14 marine
+attack_add 1 hnorad
+attack_add 14 marine
+call targeting
+
+attack_do
+attack_clear
+wait 560
+
+random_jump 75 neverending_cycle
+train 2 goliath
+train 4 firebat
+train 4 siege_tank
+attack_add 1 hnorad
+attack_add 2 goliath
+attack_add 4 firebat
+attack_add 4 siege_tank
+call targeting
+
+attack_do
+attack_clear
+wait 1945
+
+random_jump 90 neverending_cycle
+attack_add 8 hnorad
+call targeting
+attack_timeout 90
+
+attack_do
+attack_clear
+goto block7
+
+:targeting
+bring_jump 6 AtLeast 3 group_men Loc.118 north_pushback
+random_jump 85 expo_target
+:standard_targeting
+unstart_campaign
+attack_prepare
+start_campaign
+return
+
+:north_pushback
+random_jump 128 n_p2
+attack_to Loc.115 Loc.117
+return
+
+:n_p2
+attack_to Loc.116 Loc.117
+return
+
+:expo_target
+bring_jump 6 AtLeast 1 command_center Loc.119 exp_n
+bring_jump 6 AtLeast 1 command_center Loc.120 exp_s
+bring_jump 6 AtLeast 1 command_center Loc.121 exp_c
+goto standard_targeting
+
+:exp_c
+attack_to Loc.117 Loc.121
+return
+
+:exp_n
+attack_to Loc.122 Loc.119
+return
+
+:exp_s
+attack_to Loc.123 Loc.120
+return
+
+:grand_exchange
+wait 2650
+
+:ge_init
+wait_rand 100 145
+
+call ge_gas
+call ge_mins
+time_jump 50 late_gas_detour
+goto ge_init
+
+:late_gas_detour
+resources 13 AtMost Gas 1199 ge_init
+resources 13 AtLeast Ore 2200 ge_init
+resources 13 Subtract Gas 200 ge_init
+resources 13 Add Ore 266 ge_init
+goto ge_init
+
+:ge_gas
+resources 13 AtLeast Gas 600 ge_skip
+resources 13 AtMost Ore 1099 ge_skip
+resources 13 Subtract Ore 170 ge_skip
+resources 13 Add Gas 80 ge_skip
+return
+
+:ge_mins
+resources 13 AtMost Gas 599 ge_skip
+resources 13 AtLeast Ore 1100 ge_skip
+resources 13 Subtract Gas 100 ge_skip
+resources 13 Add Ore 133 ge_skip
+return
+
+:ge_skip
+return
+
+:help_request
+wait 1633
+
+wait_secure
+help_iftrouble
+goto help_request
+

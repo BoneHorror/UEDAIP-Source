@@ -1,0 +1,48 @@
+script_name Brood Wars Protoss 1 - Town D
+script_id PB1D
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+define_max 2 infested_terran
+#:valk_1
+#wait 50
+#
+#deaths 0 AtMost 0 valkyrie valk_1
+#train 1 infested_terran
+#capt_expand
+#
+#:valk_2
+#wait 50
+#
+#deaths 0 AtMost 1 valkyrie valk_2
+#train 2 infested_terran
+#attack_add 1 infested_terran
+#attack_prepare
+#attack_do
+#attack_clear
+#:valk_3
+#wait 50
+#
+#deaths 0 AtMost 2 valkyrie valk_3
+#place_guard infested_terran 0
+:valk_4
+wait 50
+
+bring_jump 2 AtMost 0 group_men Loc.6 valk_4
+defensebuild_gg 1 infested_terran
+defenseuse_gg 1 infested_terran
+guard_all
+:block1
+wait 16
+
+#attack_add 1 infested_terran
+#attack_prepare
+#attack_do
+#attack_clear
+goto block1

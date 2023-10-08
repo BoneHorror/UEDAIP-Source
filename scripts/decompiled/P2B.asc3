@@ -1,0 +1,422 @@
+script_name Brood Wars Protoss 2 - Town B
+script_id PB2B
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 drone 80
+build 1 hatchery 80
+build 6 drone 80
+build 1 spawning_pool 80
+build 1 hydralisk_den 80
+build 1 evolution_chamber 80
+build 1 lair 80
+build 1 spire 80
+build 1 queen_nest 80
+build 1 hive 80
+place_guard queen 0
+max_force 750
+defensebuild_gg 2 zergling
+defenseuse_gg 2 zergling
+defensebuild_gg 4 hydralisk
+defenseuse_gg 4 hydralisk
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
+define_max 30 drone
+define_max 1 queen
+define_max 48 zergling
+define_max 40 hydralisk
+define_max 20 mutalisk
+define_max 12 scourge
+define_max 1 defiler
+farms_timing
+tech burrowing 30
+upgrade 1 overlord_capacity 30
+upgrade 1 overlord_speed 30
+upgrade 1 z_melee_attack 30
+wait 16
+
+random_jump 128 trickle
+train 20 zergling
+wait 2350
+
+train 24 zergling
+train 6 hydralisk
+attack_add 24 zergling
+attack_add 6 hydralisk
+attack_prepare
+attack_timeout 85
+wait 500
+
+attack_do
+attack_clear
+build 2 evolution_chamber 80
+wait_buildstart 2 evolution_chamber
+build 2 hatchery 80
+wait_buildstart 2 hatchery
+build 1 defiler_mound 30
+wait_buildstart 1 defiler_mound
+tech ensnare 30
+upgrade 1 zergling_speed 30
+upgrade 1 hydralisk_speed 30
+upgrade 1 z_flyer_carapace 30
+wait 3575
+
+allies_watch 7 zerg_town
+train 30 zergling
+train 4 mutalisk
+attack_add 30 zergling
+attack_add 4 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+place_guard defiler 0
+tech plague 30
+tech lurker_aspect 30
+define_max 2 lurker
+upgrade 1 z_missile_attack 30
+wait 3300
+
+train 10 zergling
+train 17 hydralisk
+train 1 lurker
+attack_add 10 zergling
+attack_add 16 hydralisk
+attack_add 1 lurker
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+defensebuild_gg 1 lurker
+defenseuse_gg 1 lurker
+tech consume 30
+upgrade 1 zergling_attack 30
+upgrade 1 z_carapace 30
+wait 3200
+
+train 26 zergling
+train 11 hydralisk
+train 2 mutalisk
+attack_add 26 zergling
+attack_add 11 hydralisk
+attack_add 2 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2715
+
+train 18 hydralisk
+attack_add 18 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 9 mutalisk
+attack_add 9 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1515
+
+train 12 hydralisk
+train 14 zergling
+attack_add 12 hydralisk
+attack_add 14 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 defiler_mana 30
+upgrade 2 z_carapace 30
+wait 3500
+
+train 28 zergling
+train 13 hydralisk
+attack_add 28 zergling
+attack_add 13 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 z_missile_attack 30
+upgrade 1 queen_mana 30
+define_max 60 hydralisk
+:flood
+expand 1 zerg_town
+wait 2500
+
+train 28 hydralisk
+train 14 mutalisk
+attack_add 28 hydralisk
+attack_add 14 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2500
+
+train 44 zergling
+train 16 hydralisk
+attack_add 44 zergling
+attack_add 16 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3000
+
+train 56 hydralisk
+attack_add 56 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto flood
+
+:trickle
+train 10 hydralisk
+wait 2350
+
+train 10 hydralisk
+attack_add 10 hydralisk
+attack_prepare
+attack_timeout 85
+wait 500
+
+attack_do
+attack_clear
+train 10 hydralisk
+attack_add 10 hydralisk
+attack_prepare
+attack_timeout 85
+wait 500
+
+attack_do
+attack_clear
+build 2 evolution_chamber 80
+wait_buildstart 2 evolution_chamber
+build 2 hatchery 80
+wait_buildstart 2 hatchery
+build 1 defiler_mound 30
+wait_buildstart 1 defiler_mound
+tech ensnare 30
+upgrade 1 zergling_speed 30
+upgrade 1 hydralisk_speed 30
+upgrade 1 z_flyer_carapace 30
+wait 3575
+
+allies_watch 7 zerg_town
+train 22 hydralisk
+attack_add 11 hydralisk
+attack_prepare
+attack_timeout 85
+wait 500
+
+attack_do
+attack_clear
+train 22 hydralisk
+attack_add 11 hydralisk
+attack_prepare
+attack_timeout 85
+wait 500
+
+attack_do
+attack_clear
+train 24 hydralisk
+attack_add 12 hydralisk
+unstart_campaign
+attack_prepare
+start_campaign
+attack_timeout 85
+wait 500
+
+attack_do
+attack_clear
+place_guard defiler 0
+tech plague 30
+upgrade 1 z_missile_attack 30
+wait 3100
+
+train 10 mutalisk
+train 10 hydralisk
+attack_add 5 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 10 hydralisk
+attack_add 10 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 5 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech lurker_aspect 30
+defensebuild_gg 1 mutalisk
+defenseuse_gg 1 mutalisk
+tech consume 30
+upgrade 1 zergling_attack 30
+upgrade 1 z_carapace 30
+wait 4500
+
+train 30 zergling
+train 20 hydralisk
+train 7 mutalisk
+attack_add 30 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 20 hydralisk
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+attack_add 7 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1250
+
+attack_add 12 hydralisk
+attack_add 14 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 defiler_mana 30
+upgrade 2 z_carapace 30
+wait 3500
+
+train 14 mutalisk
+attack_add 7 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 7 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 z_missile_attack 30
+upgrade 1 queen_mana 30
+define_max 60 hydralisk
+:tloop
+expand 1 zerg_town
+wait 2933
+
+train 14 mutalisk
+train 10 hydralisk
+attack_add 7 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 7 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 10 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 7 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2755
+
+train 44 zergling
+train 18 hydralisk
+attack_add 18 hydralisk
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+attack_add 22 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 22 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto tloop
+
+:zerg_town
+start_town
+build 1 hatchery 100
+get_oldpeons 1
+wait_build 1 hatchery
+build 1 drone 90
+wait_build 1 drone
+build 3 drone 80
+get_oldpeons 3
+wait_build 3 drone
+build 1 creep_colony 80
+build 14 drone 80
+player_need 1 spawning_pool
+wait_buildstart 5 drone
+creep 4
+build 1 creep_colony 80
+wait_build 1 creep_colony
+build 1 sunken_colony 80
+:d_loop
+wait 1500
+
+goto d_loop

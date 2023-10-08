@@ -1,0 +1,202 @@
+script_name Brood Wars Terran 1 - Town B
+script_id TB1B
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 command_center 150
+build 1 scv 130
+build 9 scv 80
+build 1 barracks 80
+build 1 academy 80
+build 1 engineering_bay 80
+build 1 missile_turret 80
+build 1 refinery 80
+defensebuild_gg 1 marine
+defenseuse_gg 1 marine
+defensebuild_ag 2 marine
+defenseuse_ag 2 marine
+max_force 1400
+define_max 12 marine
+define_max 9 firebat
+define_max 3 siege_tank
+define_max 5 goliath
+define_max 5 wraith
+define_max 13 scv
+define_max 2 dropship
+farms_timing
+wait 1425
+
+train 5 marine
+attack_add 5 marine
+attack_to Loc.28 Loc.29
+wait 500
+
+attack_do
+attack_clear
+tech stim_packs 30
+upgrade 1 t_infantry_armor 30
+defensebuild_gg 1 firebat
+defenseuse_gg 1 firebat
+build 1 factory 80
+build 2 barracks 80
+build 2 missile_turret 80
+wait 1205
+
+train 4 firebat
+train 5 marine
+attack_add 4 firebat
+attack_add 5 marine
+attack_to Loc.28 Loc.29
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 marine_range 30
+build 1 machine_shop 80
+wait 1335
+
+train 2 firebat
+train 1 siege_tank
+train 5 firebat
+attack_add 1 siege_tank
+attack_add 5 firebat
+attack_to Loc.28 Loc.29
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_infantry_weapon 30
+defensebuild_gg 1 siege_tank
+defenseuse_gg 1 siege_tank
+build 1 armory 80
+:armory_loop
+wait 50
+
+notowns_jump armory armory_loop
+train 2 marine
+train 3 goliath
+train 4 marine
+train 2 firebat
+attack_add 3 goliath
+attack_add 4 marine
+attack_add 2 firebat
+attack_to Loc.28 Loc.29
+wait 500
+
+attack_do
+attack_clear
+build 1 starport 80
+defenseuse_gg 1 goliath
+defensebuild_ag 1 goliath
+defenseuse_ag 1 goliath
+wait 1300
+
+train 3 marine
+train 2 firebat
+train 1 goliath
+attack_add 3 marine
+attack_add 2 firebat
+attack_add 1 goliath
+attack_to Loc.28 Loc.29
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_vehicle_plating 30
+upgrade 1 t_ship_plating 30
+upgrade 1 t_vehicle_weapon 30
+upgrade 1 t_ship_weapon 30
+defensebuild_aa 1 wraith
+defenseuse_aa 1 wraith
+defensebuild_ga 1 wraith
+defenseuse_ga 1 wraith
+build 1 control_tower 80
+build 1 comsat_station 80
+wait 1687
+
+train 1 siege_tank
+train 4 marine
+train 2 siege_tank
+train 8 marine
+attack_add 8 marine
+attack_add 2 siege_tank
+attack_to Loc.28 Loc.29
+wait 500
+
+attack_do
+attack_clear
+
+:block1
+wait 1345
+
+train 1 siege_tank
+train 3 firebat
+train 2 siege_tank
+train 7 firebat
+train 3 siege_tank
+attack_add 7 firebat
+attack_add 3 siege_tank
+attack_to Loc.28 Loc.29
+wait 500
+
+attack_do
+attack_clear
+wait 2007
+
+train 1 siege_tank
+train 4 marine
+train 2 firebat
+train 2 siege_tank
+train 4 firebat
+attack_add 4 marine
+attack_add 4 firebat
+attack_add 2 siege_tank
+attack_to Loc.28 Loc.29
+wait 500
+
+attack_do
+attack_clear
+train 4 wraith
+attack_add 4 wraith
+attack_to Loc.28 Loc.29
+wait 500
+
+attack_do
+attack_clear
+wait 1884
+
+train 5 marine
+train 4 goliath
+attack_add 5 marine
+attack_add 4 goliath
+attack_to Loc.28 Loc.29
+wait 500
+
+attack_do
+attack_clear
+train 1 wraith
+train 2 siege_tank
+attack_add 1 wraith
+attack_add 2 siege_tank
+attack_to Loc.28 Loc.29
+wait 500
+
+attack_do
+attack_clear
+train 1 goliath
+train 4 marine
+train 3 goliath
+attack_add 4 marine
+attack_add 3 goliath
+attack_to Loc.28 Loc.29
+wait 500
+
+attack_do
+attack_clear
+goto block1

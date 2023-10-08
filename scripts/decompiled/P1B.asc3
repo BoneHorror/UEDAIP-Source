@@ -1,0 +1,64 @@
+script_name Brood Wars Protoss 1 - Town B
+script_id PB1B
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 1
+wait 1
+
+guard_all
+max_force 303
+tech burrowing 30
+upgrade 1 overlord_speed 30
+capt_expand
+capt_expand
+
+:valk_1
+wait 50
+
+deaths 0 AtMost 0 valkyrie valk_1
+
+tech spawn_broodling 30
+upgrade 1 zergling_speed 30
+upgrade 1 z_carapace 30
+upgrade 1 overlord_capacity 30
+
+:valk_2
+wait 50
+
+deaths 0 AtMost 1 valkyrie valk_2
+train 2 queen
+tech ensnare 30
+upgrade 1 hydralisk_range 30
+
+:valk_3
+wait 50
+
+deaths 0 AtMost 2 valkyrie valk_3
+defenseuse_gg 1 zergling
+defenseuse_gg 1 hydralisk
+upgrade 2 z_carapace 30
+:valk_4
+wait 50
+
+deaths 0 AtMost 3 valkyrie valk_4
+train 3 queen
+defenseuse_gg 1 ultralisk
+upgrade 1 queen_mana 30
+upgrade 1 z_melee_attack 30
+upgrade 1 z_missile_attack 30
+upgrade 1 ultralisk_armor 30
+
+:block1
+attack_add 6 zergling
+attack_add 2 hydralisk
+attack_add 1 ultralisk
+attack_prepare
+attack_do
+attack_clear
+wait 16
+
+goto block1

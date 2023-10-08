@@ -1,0 +1,48 @@
+script_name Brood Wars Terran 6 - Town E
+script_id TB6E
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+if_owned nexus fortify
+build 1 hatchery 110
+build 1 drone 100
+build 3 drone 80
+wait 2400
+
+max_workers 14
+build 7 drone 80
+wait 4500
+
+build 12 drone 80
+wait 10500
+
+max_workers 12
+wait 10500
+
+max_workers 255
+:block1
+wait 1500
+
+goto block1
+
+:fortify
+build 2 pylon 80
+wait 1805
+
+build 2 photon_cannon 80
+wait 1045
+
+build 3 pylon 80
+wait 1505
+
+build 3 photon_cannon 80
+build 1 shield_battery 80
+
+:block2
+wait 1500
+
+goto block2

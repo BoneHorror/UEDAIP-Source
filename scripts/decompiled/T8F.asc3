@@ -1,0 +1,22 @@
+script_name Brood Wars Terran 8 - Town F
+script_id TB8F
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 barracks 80
+build 1 factory 80
+build 1 machine_shop 60
+defensebuild_gg 1 death_knight
+defenseuse_gg 1 death_knight
+defensebuild_gg 1 heavy_marine
+defenseuse_gg 1 heavy_marine
+defensebuild_aa 1 skywing
+defenseuse_aa 1 skywing
+:loop
+wait 1500
+
+goto loop

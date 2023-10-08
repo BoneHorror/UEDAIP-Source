@@ -1,0 +1,218 @@
+script_name Brood Wars Terran 3 - Town D
+script_id TB3D
+
+unstart_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+creep 4
+build 1 hatchery 150
+wait 300
+
+build 2 hatchery 80
+wait 300
+
+build 3 hatchery 80
+defenseuse_gg 1 hhydralisk
+defenseuse_ag 1 hhydralisk
+wait 1200
+
+build 1 drone 130
+build 12 drone 80
+build 1 spawning_pool 80
+max_force 900
+define_max 20 drone
+define_max 1 queen
+define_max 12 zergling
+define_max 32 hydralisk
+define_max 8 hhydralisk
+define_max 20 mutalisk
+define_max 12 scourge
+define_max 1 defiler
+farms_timing
+under_attack 0
+tech burrowing 30
+wait 1500
+
+defensebuild_gg 2 zergling
+defenseuse_gg 2 zergling
+train 8 zergling
+attack_add 4 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+build 1 hydralisk_den 80
+build 1 evolution_chamber 80
+build 1 lair 80
+train 1 hhydralisk
+wait 450
+
+train 6 hydralisk
+upgrade 1 overlord_capacity 30
+upgrade 1 overlord_speed 30
+upgrade 1 z_melee_attack 30
+upgrade 1 zergling_speed 30
+upgrade 1 hydralisk_speed 30
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+attack_add 1 hhydralisk
+attack_add 6 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+define_max 46 zergling
+build 1 creep_colony 80
+wait 250
+
+build 2 creep_colony 80
+wait 250
+
+build 3 creep_colony 80
+wait 250
+
+upgrade 1 z_missile_attack 30
+build 1 spire 80
+wait 250
+
+build 3 sunken_colony 80
+build 1 queen_nest 80
+train 20 zergling
+train 18 hydralisk
+attack_add 20 zergling
+attack_add 16 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+allies_watch 6 smallhatch
+build 1 hive 80
+build 2 evolution_chamber 80
+upgrade 1 zergling_attack 30
+upgrade 1 z_carapace 30
+upgrade 1 56 30
+train 4 mutalisk
+train 22 zergling
+train 22 hydralisk
+attack_add 20 zergling
+attack_add 22 hydralisk
+attack_add 4 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 z_flyer_carapace 30
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
+place_guard queen 2
+train 5 hhydralisk
+train 18 hydralisk
+attack_add 5 hhydralisk
+attack_add 18 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+build 1 nydus_canal 80
+train 8 hydralisk
+train 11 zergling
+attack_add 8 hydralisk
+attack_add 11 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech ensnare 30
+train 12 hydralisk
+train 14 zergling
+attack_add 12 hydralisk
+attack_add 14 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 z_carapace 30
+train 28 zergling
+train 13 hydralisk
+attack_add 28 zergling
+attack_add 13 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 z_missile_attack 30
+upgrade 1 queen_mana 30
+upgrade 1 z_flyer_attack 30
+upgrade 3 z_missile_attack 30
+upgrade 2 z_flyer_carapace 30
+upgrade 3 z_carapace 30
+upgrade 3 z_flyer_carapace 30
+:flood
+wait 500
+
+train 28 hydralisk
+train 7 mutalisk
+attack_add 28 hydralisk
+attack_add 7 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 34 zergling
+train 24 hydralisk
+attack_add 34 zergling
+attack_add 24 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 6 hhydralisk
+train 33 hydralisk
+attack_add 33 hydralisk
+attack_add 6 hhydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto flood
+
+:smallhatch
+start_town
+build 1 hatchery 100
+wait 900
+
+build 5 drone 80
+build 2 creep_colony 80
+wait 1500
+
+build 1 sunken_colony 80
+build 1 spore_colony 80
+wait 1900
+
+build 1 nydus_canal 80
+:idle
+wait 1500
+
+goto idle

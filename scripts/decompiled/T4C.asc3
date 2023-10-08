@@ -1,0 +1,436 @@
+script_name Brood Wars Terran 4 - Town C
+script_id TB4C
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 command_center 150
+build 1 scv 130
+build 1 barracks 80
+build 1 engineering_bay 80
+build 1 academy 80
+build 1 factory 80
+build 1 machine_shop 80
+build 1 armory 80
+build 1 comsat_station 80
+build 1 science_facility 80
+build 1 covert_ops 80
+max_force 700
+wait 150
+
+build 18 scv 80
+max_workers 20
+defensebuild_gg 1 marine
+defenseuse_gg 1 marine
+defensebuild_gg 1 ghost
+defenseuse_gg 1 ghost
+defensebuild_gg 2 firebat
+defenseuse_gg 2 firebat
+defensebuild_gg 1 vulture
+defenseuse_gg 1 vulture
+defensebuild_gg 1 goliath
+defenseuse_gg 1 goliath
+defensebuild_ag 2 marine
+defenseuse_ag 2 marine
+defensebuild_ag 1 goliath
+defenseuse_ag 1 goliath
+defenseuse_ag 1 ghost
+defensebuild_ga 1 wraith
+defenseuse_ga 1 wraith
+defensebuild_aa 1 wraith
+defenseuse_aa 1 wraith
+define_max 26 marine
+define_max 6 goliath
+define_max 6 firebat
+define_max 46 scv
+define_max 17 vulture
+define_max 7 siege_tank
+define_max 2 science_vessel
+define_max 12 wraith
+define_max 3 dropship
+define_max 255 battlecruiser
+define_max 255 valkyrie
+define_max 255 medic
+define_max 15 ghost
+idle_orders 92 256 2 marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 2 ghost 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 64 2 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 2 ghost 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 256 2 marine 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 2 ghost 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 64 2 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 2 ghost 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+farms_timing
+upgrade 1 t_infantry_weapon 30
+wait 50
+
+train 2 wraith
+train 1 goliath
+attack_add 2 wraith
+attack_add 1 goliath
+attack_prepare
+wait 500
+
+create_script asoutpost 255 Loc.62 255 0
+attack_do
+attack_clear
+multirun help_me
+upgrade 1 t_vehicle_weapon 30
+upgrade 1 ghost_sight 30
+tech siege_mode 30
+wait 1325
+
+allies_watch 5 expansion
+train 2 ghost
+train 1 siege_tank
+attack_add 1 siege_tank
+attack_add 2 ghost
+attack_prepare
+wait 160
+
+attack_do
+attack_clear
+wait 1350
+
+train 7 marine
+train 2 firebat
+train 1 vulture
+train 2 ghost
+attack_add 7 marine
+attack_add 2 firebat
+attack_add 1 vulture
+attack_add 2 ghost
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 vulture_speed 30
+upgrade 2 t_infantry_weapon 30
+create_script early_bunkers 255 Loc.78 255 0
+multirun siegecheck
+wait 2485
+
+train 3 firebat
+train 6 vulture
+train 3 siege_tank
+attack_add 3 firebat
+attack_add 6 vulture
+attack_add 3 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_vehicle_plating 30
+upgrade 3 t_infantry_weapon 30
+tech personnel_cloaking 30
+allies_watch 7 expansion
+wait 2550
+
+train 6 marine
+train 6 vulture
+train 2 siege_tank
+attack_add 6 marine
+attack_add 6 vulture
+attack_add 2 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_infantry_armor 30
+create_script smallfort 255 Loc.66 255 0
+wait 2350
+
+train 8 marine
+train 5 firebat
+train 4 ghost
+attack_add 8 marine
+attack_add 5 firebat
+attack_add 4 ghost
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 t_vehicle_weapon 30
+tech cloaking_field 30
+tech spider_mines 30
+wait 2455
+
+train 7 siege_tank
+attack_add 7 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 t_infantry_armor 30
+upgrade 1 t_ship_weapon 30
+wait 2350
+
+train 5 ghost
+train 10 vulture
+train 2 siege_tank
+attack_add 5 ghost
+attack_add 10 vulture
+attack_add 2 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 t_vehicle_plating 30
+wait 1650
+
+train 2 goliath
+train 7 vulture
+train 3 siege_tank
+train 4 wraith
+train 5 ghost
+attack_add 2 goliath
+attack_add 7 vulture
+attack_add 3 siege_tank
+attack_add 4 wraith
+attack_add 5 ghost
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech lockdown 30
+upgrade 3 t_infantry_armor 30
+upgrade 1 t_ship_plating 30
+upgrade 2 t_ship_weapon 30
+upgrade 2 t_ship_plating 30
+upgrade 1 overclocking 30
+max_workers 255
+:block1
+train 9 wraith
+wait 1150
+
+train 2 marine
+train 4 firebat
+train 2 goliath
+train 4 ghost
+train 3 siege_tank
+attack_add 2 marine
+attack_add 4 firebat
+attack_add 2 goliath
+attack_add 4 ghost
+attack_add 3 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 4 wraith
+attack_prepare
+
+attack_do
+attack_clear
+attack_add 3 wraith
+attack_prepare
+
+attack_do
+attack_clear
+attack_add 2 wraith
+attack_prepare
+
+attack_do
+attack_clear
+expand 2 expansion
+wait 2750
+
+train 7 vulture
+train 5 siege_tank
+train 6 wraith
+attack_add 7 vulture
+attack_add 5 siege_tank
+attack_add 6 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2135
+
+train 7 marine
+train 4 firebat
+train 6 ghost
+train 6 vulture
+train 3 siege_tank
+train 3 goliath
+attack_add 7 marine
+attack_add 4 firebat
+attack_add 6 ghost
+attack_add 6 vulture
+attack_add 3 siege_tank
+attack_add 3 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto block1
+
+:help_me
+wait 3025
+
+help_iftrouble
+goto help_me
+
+:expansion
+start_town
+build 1 command_center 100
+get_oldpeons 1
+wait_buildstart 1 command_center
+build 1 barracks 80
+wait_build 1 command_center
+build 1 scv 100
+wait_build 1 scv
+get_oldpeons 3
+build 3 scv 80
+build 1 comsat_station 80
+wait_build 1 comsat_station
+build 14 scv 80
+wait_buildstart 8 scv
+build 1 factory 80
+wait_buildstart 1 factory
+guard ghost Loc.61 1 3 50
+guard ghost Loc.60 1 3 50
+wait 850
+
+build 1 bunker 80
+place_guard science_vessel 0
+wait 300
+
+build 1 machine_shop 80
+create_script starport 255 Loc.65 255 0
+wait 1550
+
+guard ghost Loc.58 1 3 50
+guard ghost Loc.59 1 3 50
+create_script missile_fort 255 Loc.64 255 0
+:exploop
+wait 1500
+
+goto exploop
+
+:smallfort
+start_town
+build 1 bunker 80
+build 1 missile_turret 80
+wait 1000
+
+guard marine Loc.67 3 2 50
+:sfloop
+wait 1500
+
+goto sfloop
+
+:siege
+start_town
+build 1 bunker 100
+wait 500
+
+build 1 missile_turret 80
+guard ghost Loc.76 1 1 80
+guard ghost Loc.75 1 1 80
+wait 500
+
+build 2 missile_turret 80
+wait 500
+
+build 1 barracks 80
+wait 2000
+
+create_script forward_post 255 Loc.74 255 0
+:siegeloop
+wait 1500
+
+goto siegeloop
+
+:forward_post
+start_town
+build 1 bunker 80
+place_guard marine 0
+guard siege_tank Loc.77 1 1 100
+wait 2000
+
+build 2 bunker 80
+wait 1000
+
+build 1 missile_turret 80
+:post_loop
+wait 1500
+
+goto post_loop
+
+:asoutpost
+start_town
+build 1 factory 80
+wait 1800
+
+build 1 machine_shop 80
+build 1 missile_turret 80
+:asloop
+wait 1500
+
+goto asloop
+
+:starport
+start_town
+build 1 starport 80
+wait 1900
+
+build 1 control_tower 80
+wait 2500
+
+upgrade 1 wraith_mana 30
+:stloop
+wait 1500
+
+goto stloop
+
+:missile_fort
+start_town
+build 1 missile_turret 80
+wait 800
+
+build 2 missile_turret 80
+:misloop
+wait 1500
+
+goto misloop
+
+:early_bunkers
+start_town
+build 1 barracks 100
+wait 1200
+
+build 1 bunker 100
+guard marine Loc.81 3 1 100
+wait 800
+
+place_guard ghost 0
+:early_bunkers_loop
+wait 1500
+
+goto early_bunkers_loop
+
+:siegecheck
+wait 50
+
+deaths 0 AtLeast 1 valkyrie execute_siege
+goto siegecheck
+
+:execute_siege
+create_script siege 255 Loc.70 255 0
+stop

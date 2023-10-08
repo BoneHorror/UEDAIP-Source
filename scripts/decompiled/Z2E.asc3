@@ -1,0 +1,36 @@
+script_name Brood Wars Zerg 2 - Town E
+script_id ZB2E
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 command_center 80
+build 1 scv 80
+build 1 hatchery 80
+build 2 drone 80
+build 2 creep_colony 80
+build 2 sunken_colony 80
+build 1 evolution_chamber 80
+build 1 comsat_station 80
+build 1 barracks 80
+build 1 refinery 80
+build 2 missile_turret 80
+wait 25000
+
+build 4 drone 80
+build 4 scv 80
+wait 18500
+
+build 7 drone 80
+build 5 scv 80
+wait 23445
+
+build 10 drone 80
+build 6 scv 80
+:block1
+wait 1500
+
+goto block1

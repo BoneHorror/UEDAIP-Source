@@ -1,0 +1,37 @@
+script_name Brood Wars Protoss 3 - Town F
+script_id PB3F
+
+wait 25
+#THIS IS UNUSED NOW! can reuse for sth else, i'm a dummy and forgot this was already set up (and re-set it up in TB2A)
+
+#startloc deaths, later map sets to check bank - used in vZ5
+deaths 3 Exactly 1 214 z5_endingwait
+stop
+
+:z5_endingwait
+load_bank kerrigan_evo
+wait 1
+
+:z5l
+wait 16
+
+deaths 3 Exactly 1 214 z5l
+deaths 3 Exactly 2 214 biol_evo
+deaths 3 Exactly 3 214 ued_evo
+stop
+#this is just to make sure we dont get trash data somehow?
+
+:biol_evo
+bank_data Set 1 kerrigan_evo style z5l
+wait 1
+
+save_bank kerrigan_evo
+stop
+
+:ued_evo
+bank_data Set 2 kerrigan_evo style z5l
+wait 1
+
+save_bank kerrigan_evo
+stop
+

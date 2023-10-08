@@ -1,0 +1,496 @@
+script_name Brood Wars Terran 8 - Town B
+script_id TB8B
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 101
+wait 1
+
+#build 30 overlord 80
+max_force 505
+define_max 255 drone
+define_max 96 hydralisk
+define_max 72 zergling
+define_max 255 mutalisk
+define_max 255 scourge
+define_max 12 lurker
+define_max 5 queen
+define_max 3 defiler
+define_max 255 guardian
+define_max 255 devourer
+define_max 13 ultralisk
+define_max 17 infested_terran
+define_max 132 broodling
+define_max 20 hmarine
+define_max 4 hdefiler
+define_max 13 hzergling
+defensebuild_gg 2 infested_terran
+defenseuse_gg 2 infested_terran
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defenseuse_gg 1 hmarine
+defensebuild_ag 2 hydralisk
+defenseuse_ag 2 hydralisk
+defenseuse_ag 1 hmarine
+multirun hydra_wait
+idle_orders DisableBuiltin 0 0 0 0 0 0 0
+idle_orders 27 128 1 queen 512 command_center 80 health(LessThanPercent,50)
+idle_orders 146 160 1 queen 2048 wraith 30 incombat|invisible
+idle_orders 146 160 1 queen 512 battlecruiser 30 incombat
+idle_orders 135 160 1 infested_terran 1024 ghost 80 invisible
+idle_orders 10 16 3 mutalisk 160 heavy_marine|ghost|death_knight 90 Health(LessThan 27)
+idle_orders 10 16 1 mutalisk 128 heavy_marine|ghost|death_knight 70 Health(LessThan 9)
+idle_orders 10 16 2 mutalisk 128 bunker|missile_turret 100 Health(LessThan 18)
+idle_orders 10 16 1 guardian 224 group_men 60 Health(LessThan 20)
+idle_orders 10 16 2 guardian 224 group_men 80 Health(LessThan 40)
+idle_orders 10 16 3 guardian 224 group_men 90 Health(LessThan 60)
+idle_orders 10 16 5 guardian 224 group_men 110 Health(LessThan 100)
+idle_orders 10 16 1 devourer 128 group_men 60 Health(LessThan 30)
+idle_orders 10 16 2 devourer 128 group_men 70 Health(LessThan 50)
+idle_orders 10 16 1 zergling 192 infested_terran 60 InCombat
+idle_orders 10 16 6 zergling 224 panzer|death_knight|medic|siege_tank 60 InCombat
+idle_orders 10 16 1 hydralisk 192 group_men 80 Health(LessThan 8)
+idle_orders 10 16 1 hydralisk 192 panzer|phantom|ghost|death_knight|battlecruiser|skywing|science_vessel|valhalla|siege_tank 120 Health(LessThan 10)
+idle_orders 10 16 1 hydralisk 192 bunker 90 Health(LessThan 20)
+idle_orders 10 16 3 hydralisk 192 group_men 90 Health(LessThan 30)
+idle_orders 10 16 3 hydralisk 192 panzer|phantom|ghost|death_knight|battlecruiser|skywing|science_vessel|valhalla|siege_tank 130 Health(LessThan 30)
+idle_orders 10 16 3 hydralisk 192 bunker 100 Health(LessThan 20)
+idle_orders 10 16 5 hydralisk 192 panzer|phantom|ghost|death_knight|battlecruiser|skywing|science_vessel|valhalla|siege_tank 135 Health(LessThan 50)
+idle_orders 10 16 5 hydralisk 192 bunker 110 Health(LessThan 20)
+idle_orders 10 16 7 hydralisk 192 panzer|phantom|ghost|death_knight|battlecruiser|skywing|science_vessel|valhalla|siege_tank 150 Health(LessThan 65)
+idle_orders 10 16 1 scourge 224 mutalisk|scout|corsair|devourer|carrier|valhalla|science_vessel 80 Health(LessThan 110)
+idle_orders 10 16 2 scourge 250 guardian|scout|corsair|devourer|carrier|valhalla|science_vessel 80 Health(LessThan 220)
+idle_orders 10 16 3 scourge 275 devourer|carrier|valhalla|science_vessel 80 Health(LessThan 250)
+idle_orders 134 16 1 infested_terran 146 bunker 80 incombat
+idle_orders 134 16 1 infested_terran 134 death_knight 50 incombat
+idle_orders 134 16 1 infested_terran 134 siege_tank|phantom 90 incombat
+idle_orders 134 16 1 infested_terran 664 ghost 90 Invisible|incombat
+idle_orders 134 16 1 infested_terran 134 ultralisk 50 incombat
+idle_orders 135 16 1 infested_terran 134 lurker 40 incombat
+idle_orders 135 16 4 infested_terran 320 barracks|starport|factory 150 0 
+#infested terran attack overrides for priority targets
+idle_orders 135 16 1 infested_terran 160 zergling|firebat|tesla_trooper 50 incombat|count(AtLeast 6 60 14)
+idle_orders 135 16 1 infested_terran 160 hydralisk|heavy_marine 80 incombat|count(AtLeast 3 60 14)
+idle_orders 135 16 1 infested_terran 160 medic|scorpion|scv 80 incombat|count(AtLeast 3 60 14)
+idle_orders 135 16 1 infested_terran 160 medic|scorpion|scv 100 incombat|count(AtLeast 4 60 14)
+idle_orders 135 16 1 infested_terran 160 ghost|phantom 90 Invisible|incombat|count(AtLeast 2 60 14)
+idle_orders 135 16 1 infested_terran 160 ghost|phantom 110 Invisible|incombat|count(AtLeast 3 60 14)
+idle_orders 135 16 1 infested_terran 160 death_knight|panzer|siege_tank 130 incombat|count(AtLeast 2 60 14)
+idle_orders 135 16 1 infested_terran 160 death_knight|panzer|siege_tank 150 incombat|count(AtLeast 3 60 14)
+#infested terran attack overrides for groups of units
+idle_orders 10 16 5 mutalisk 200 drone|scv|probe 100 0
+idle_orders 11 160 2 lurker 192 drone|scv|probe 100 Count(AtLeast 2 40 14)
+idle_orders 10 16 2 zergling 100 drone|scv|probe 100 0
+multirun defense_check
+check_transports
+supply 13 Set 400 Max 0 Zerg red_lost
+supply 6 Set 250 Max 0 Terran red_lost
+wait 2450
+
+tech consume 30
+multirun help_request
+wait 1633
+
+idle_orders Consume 16 1 defiler 512 zergling 70 NotEnemies|Own|Health(LessThanPercent 80)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 16 1 defiler 512 broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 16 1 hdefiler 512 zergling 70 NotEnemies|Own|Health(LessThanPercent 80)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 16 1 hdefiler 512 broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
+idle_orders 119 64 1 hdefiler 512 zergling 30 own|allied|notenemies|incombat|Count(AtLeast 3 100 14)
+idle_orders 119 64 1 hdefiler 512 ultralisk 50 own|allied|notenemies|incombat|Count(AtLeast 2 100 14)
+idle_orders 119 64 1 hdefiler 512 ultralisk 30 own|notenemies|incombat
+idle_orders 119 64 1 hdefiler 512 hultralisk 70 own|notenemies|incombat
+idle_orders 119 64 1 hdefiler 512 zergling 10 own|notenemies|incombat
+idle_orders 119 64 1 hdefiler 512 lurker 40 own|notenemies|incombat
+idle_orders 119 64 1 hdefiler 512 lurker 90 own|notenemies|incombat|Count(AtLeast 2 100 14)
+idle_orders 119 64 1 hdefiler 512 hydralisk 55 own|notenemies|incombat|count(AtLeast 3 60 13)
+wait 4465
+
+guard defiler Loc.100 1 2 60
+wait 1426
+
+upgrade 1 hydralisk_speed 30
+tech spawn_broodling 30
+wait 1667
+
+idle_orders 121 8 1 queen 312 zergling|marine 5 Health(GreaterThanPercent 85)
+idle_orders 121 8 1 queen 312 hydralisk|firebat|medic|heavy_marine 40 Health(GreaterThanPercent 85)
+idle_orders 121 8 1 queen 312 lurker|siege_tank|death_knight 70 Health(GreaterThanPercent 25)
+idle_orders 121 8 1 queen 312 ultralisk|36|panzer 120 Health(GreaterThanPercent 25)
+idle_orders 121 8 1 queen 312 zealot|vulture|scorpion 30 Health(GreaterThanPercent 45)
+idle_orders 121 8 1 queen 312 dragoon|goliath|phantom 60 Health(GreaterThanPercent 45)
+idle_orders 121 8 1 queen 312 high_templar|ghost 70 Health(GreaterThanPercent 65)
+idle_orders 121 8 1 queen 312 dark_templar|tesla_trooper 50 Health(GreaterThanPercent 55)
+idle_orders 121 8 1 queen 312 drone|scv 15 Health(GreaterThanPercent 95)
+idle_orders 121 8 1 queen 312 broodling 3 Health(GreaterThanPercent 95)
+idle_orders 121 8 1 queen 312 group_men 40 deathrattle
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+wait 1825
+
+upgrade 1 bone_mastery 30
+wait 3425
+
+defensebuild_ag 2 hydralisk
+defenseuse_ag 2 hydralisk
+defensebuild_ag 2 hydralisk
+defenseuse_ag 2 hydralisk
+defensebuild_ag 2 hydralisk
+defenseuse_ag 2 hydralisk
+wait 1135
+
+unstart_campaign
+deaths 4 Set 1 valhalla defense_check
+train 4 infested_terran
+train 16 zergling
+train 20 broodling
+wait 1625
+
+defensebuild_gg 1 broodling
+defenseuse_gg 1 broodling
+defensebuild_gg 1 broodling
+defenseuse_gg 1 broodling
+defensebuild_gg 1 broodling
+defenseuse_gg 1 broodling
+defensebuild_gg 1 broodling
+defenseuse_gg 1 broodling
+attack_add 2 infested_terran
+attack_add 12 zergling
+attack_add 20 broodling
+attack_add 3 ultralisk
+attack_prepare
+wait 150
+
+attack_timeout 30
+attack_do
+attack_clear
+upgrade 1 zergling_speed 30
+place_guard defiler 0
+attack_add 36 hydralisk
+attack_add 3 infested_terran
+attack_add 22 zergling
+attack_prepare
+wait 150
+
+attack_timeout 30
+attack_do
+attack_clear
+wait 940
+
+attack_add 2 infested_terran
+attack_add 12 zergling
+attack_add 20 broodling
+attack_add 1 ultralisk
+attack_prepare
+wait 150
+
+attack_timeout 30
+attack_do
+attack_clear
+
+defensebuild_gg 1 lurker
+defenseuse_gg 1 lurker
+wait 550
+
+train 3 hydralisk
+train 3 lurker
+train 12 zergling
+train 15 hydralisk
+train 6 infested_terran
+train 40 broodling
+train 3 hdefiler
+attack_add 12 zergling
+attack_add 15 hydralisk
+attack_add 6 infested_terran
+attack_prepare
+wait 80
+
+quick_attack
+attack_do
+attack_clear
+train 6 hydralisk
+train 3 hdefiler
+train 40 broodling
+train 6 lurker
+attack_add 40 broodling
+attack_add 3 hdefiler
+attack_add 6 lurker
+attack_prepare
+wait 80
+
+quick_attack
+attack_do
+attack_clear
+upgrade 1 zergling_attack 30
+tech plague 30
+tech ensnare 30
+wait 2713
+
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|marine|vulture|heavy_marine|scorpion 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)
+idle_orders 146 0 1 queen 1024 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)
+idle_orders 146 0 1 queen 1024 dragoon|corsair|scout|dark_templar|wraith|ghost|skywing|phantom 40 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(160 540)
+idle_orders 146 0 1 queen 1024 ghost 40 WithoutSpellEffects(Ensnare)|Invisible|RandomRate(160 540)
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|dragoon|corsair|scout|dark_archon|devourer|guardian|dark_templar|goliath|siege_tank|revenant|death_knight|panzer 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(160 540)
+idle_orders 146 0 1 queen 1024 reaver|dark_archon|archon|devourer|guardian|battlecruiser|valhalla|carrier|arbiter 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)
+idle_orders 146 8 1 queen 312 group_men 30 deathrattle
+idle_orders 144 64 1 defiler 512 group_men 55 incombat|count(AtLeast 3 120 14) 
+idle_orders 144 64 1 defiler 512 skywing|death_knight|scorpion|wraith|science_vessel 80 incombat|count(AtLeast 3 120 14)
+idle_orders 144 64 1 defiler 512 battlecruiser|valhalla 115 incombat|count(AtLeast 2 120 14)
+idle_orders 144 64 1 defiler 512 battlecruiser|valhalla 80 incombat
+idle_orders 144 64 1 defiler 512 heavy_marine|medic|ghost|phantom 55 incombat|count(AtLeast 4 120 14)
+idle_orders 144 64 1 hdefiler 512 group_men 55 incombat|count(AtLeast 3 120 14) 
+idle_orders 144 64 1 hdefiler 512 skywing|death_knight|scorpion|wraith|science_vessel 80 incombat|count(AtLeast 3 120 14)
+idle_orders 144 64 1 hdefiler 512 battlecruiser|valhalla 115 incombat|count(AtLeast 2 120 14)
+idle_orders 144 64 1 hdefiler 512 battlecruiser|valhalla 80 incombat
+idle_orders 144 64 1 hdefiler 512 heavy_marine|medic|ghost|phantom 55 incombat|count(AtLeast 4 120 14)
+upgrade 1 hydralisk_range 30
+wait 5065
+
+attack_add 9 broodling
+attack_add 14 zergling
+attack_prepare
+wait 150
+
+attack_timeout 30
+attack_do
+attack_clear
+deaths 4 Set 2 valhalla defense_check
+wait 1433
+
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+train 4 ultralisk
+train 38 zergling
+attack_add 4 ultralisk
+attack_add 38 zergling
+attack_add 4 hzergling
+attack_prepare
+wait 200
+
+attack_do
+attack_clear
+tech ensnare 30
+guard defiler Loc.99 1 3 60
+train 23 hydralisk
+train 40 zergling
+attack_add 23 hydralisk
+attack_add 40 zergling
+attack_prepare
+wait 200
+
+attack_do
+attack_clear
+upgrade 1 ultralisk_speed 30
+upgrade 1 defiler_mana 30
+upgrade 1 queen_mana 30
+wait 445
+
+train 10 infested_terran
+train 6 ultralisk
+train 30 broodling
+train 5 lurker
+attack_add 10 infested_terran
+attack_add 6 ultralisk
+attack_add 30 broodling
+attack_add 2 hdefiler
+attack_add 5 lurker
+attack_prepare
+wait 200
+
+attack_do
+attack_clear
+upgrade 1 hydra_attack 30
+train 18 hydralisk
+train 7 ultralisk
+train 10 zergling
+train 10 broodling
+attack_add 18 hydralisk
+attack_add 7 ultralisk
+attack_add 10 zergling
+attack_add 8 hzergling
+attack_add 10 broodling
+attack_prepare
+wait 200
+
+attack_do
+attack_clear
+guard defiler Loc.101 1 2 60
+upgrade 1 ultralisk_armor 30
+wait 4445
+
+attack_add 9 broodling
+attack_add 14 zergling
+attack_add 3 hydralisk
+attack_prepare
+wait 150
+
+attack_timeout 30
+attack_do
+attack_clear
+deaths 4 Set 3 valhalla defense_check
+upgrade 1 voracity 30
+wait 1525
+
+define_max 27 ultralisk
+train 10 ultralisk
+train 12 hzergling
+train 24 ultralisk
+train 12 hydralisk
+attack_add 12 hzergling
+attack_add 24 ultralisk
+attack_add 12 hydralisk
+attack_add 2 hdefiler
+attack_prepare
+wait 200
+
+attack_do
+attack_clear
+attack_add 42 hydralisk
+attack_prepare
+wait 150
+
+attack_timeout 60
+attack_do
+attack_clear
+:block3
+wait 1820
+
+train 28 zergling
+train 18 hydralisk
+train 12 infested_terran
+attack_add 28 zergling
+attack_add 18 hydralisk
+attack_add 12 infested_terran
+attack_add 6 hzergling
+attack_prepare
+wait 200
+
+attack_do
+attack_clear
+train 5 infested_terran
+train 7 hydralisk
+train 3 hdefiler
+train 12 hzergling
+train 114 zergling
+attack_add 5 infested_terran
+attack_add 7 lurker
+attack_add 50 zergling
+attack_add 3 hdefiler
+attack_prepare
+wait 200
+
+attack_do
+attack_clear
+attack_add 64 zergling
+attack_prepare
+wait 32
+
+attack_timeout 6
+attack_do
+attack_clear
+attack_add 12 hzergling
+attack_prepare
+wait 32
+
+attack_timeout 6
+attack_do
+attack_clear
+wait 765
+
+train 1 defiler
+train 16 hydralisk
+train 17 ultralisk
+train 128 broodling
+attack_add 16 hydralisk
+attack_add 32 broodling
+attack_add 17 ultralisk
+attack_prepare
+attack_do
+attack_clear
+attack_add 32 broodling
+attack_prepare
+attack_timeout 5
+attack_do
+attack_clear
+attack_add 32 broodling
+attack_prepare
+attack_timeout 5
+attack_do
+attack_clear
+attack_add 32 broodling
+attack_prepare
+attack_timeout 5
+attack_do
+attack_clear
+wait 130
+
+train 92 hydralisk
+attack_add 64 hydralisk
+attack_prepare
+wait 200
+
+attack_do
+attack_clear
+attack_add 28 hydralisk
+attack_add 3 ultralisk
+attack_add 4 hzergling
+attack_add 1 hdefiler
+attack_prepare
+attack_timeout 30
+attack_do
+attack_clear
+goto block3
+
+:defense_check
+wait 16
+
+enemyowns_jump 151 brown_lost
+enemyowns_jump 152 red_lost
+goto defense_check
+
+:brown_lost
+max_force 808
+wait 1
+
+goto last_stand_1
+
+:red_lost
+max_force 808
+wait 1
+
+goto last_stand_2
+
+:last_stand_1
+wait 16
+
+enemyowns_jump 152 last_stand
+goto last_stand_1
+
+:last_stand_2
+wait 16
+
+enemyowns_jump 151 last_stand
+goto last_stand_2
+
+:last_stand
+implode
+max_force 1500
+stop
+
+:hydra_wait
+wait 16
+
+bring_jump 6 Exactly 0 Group_Men Loc.17 hydra_wait
+defenseuse_gg 1 hhydralisk
+defenseuse_ag 1 hhydralisk
+max_force 2400
+stop
+
+:help_request
+wait 1633
+
+wait_secure
+help_iftrouble
+goto help_request

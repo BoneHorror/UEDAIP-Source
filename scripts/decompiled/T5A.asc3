@@ -1,0 +1,496 @@
+script_name Brood Wars Terran 5 - Town A
+script_id TB5A
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+deaths 13 Set 1 217 block1
+build 1 command_center 130
+build 1 scv 110
+build 4 scv 80
+build 2 barracks 80
+build 1 engineering_bay 80
+build 1 academy 80
+build 2 factory 80
+build 1 machine_shop 80
+build 1 armory 80
+build 1 comsat_station 80
+build 1 science_facility 80
+build 1 covert_ops 80
+build 2 starport 80
+build 2 control_tower 80
+max_force 1000
+define_max 40 scv
+define_max 34 marine
+define_max 10 firebat
+define_max 255 ghost
+define_max 255 medic
+define_max 12 vulture
+define_max 10 goliath
+define_max 7 siege_tank
+define_max 4 dropship
+define_max 2 science_vessel
+define_max 11 wraith
+define_max 255 valkyrie
+define_max 255 battlecruiser
+define_max 255 nuclear_missile
+aicontrol global_disable_spell_focus
+aicontrol global_disable_acid_spore_focus
+aicontrol global_disable_carrier_focus
+idle_orders 92 256 3 marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 ghost 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 64 3 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 ghost 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 256 3 marine 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 ghost 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 64 3 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 ghost 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 10 16 3 marine|ghost 212 drone|scv|probe 50 0
+idle_orders 10 16 1 firebat 128 drone|scv|probe 70 0
+idle_orders 10 16 1 firebat 128 drone|scv|probe 150 count(AtLeast 2 24 14)
+farms_timing
+multirun n_matrix
+multirun civ
+allies_watch 4 red_expo
+upgrade 1 t_infantry_armor 30
+upgrade 1 t_ship_weapon 30
+upgrade 1 marine_range 30
+wait 1300
+
+multirun grand_exchange
+train 3 vulture
+attack_add 3 vulture
+call targeting
+wait 500
+
+attack_do
+attack_clear
+build 7 scv 80
+defensebuild_gg 2 siege_tank
+defenseuse_gg 2 siege_tank
+defensebuild_gg 2 vulture
+defenseuse_gg 2 vulture
+defensebuild_gg 2 marine
+defenseuse_gg 2 marine
+defensebuild_gg 1 firebat
+defenseuse_gg 1 firebat
+defensebuild_ag 2 goliath
+defenseuse_ag 2 goliath
+defensebuild_ag 1 marine
+defenseuse_ag 1 marine
+defensebuild_ga 1 wraith
+defenseuse_ga 1 wraith
+defensebuild_aa 1 wraith
+defenseuse_aa 1 wraith
+wait 2000
+
+multirun help_request
+define_max 11 ghost
+train 5 marine
+train 2 ghost
+train 1 siege_tank
+attack_add 5 marine
+attack_add 2 ghost
+attack_add 1 siege_tank
+call targeting
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_infantry_weapon 30
+upgrade 1 t_vehicle_weapon 30
+tech spider_mines 30
+tech stim_packs 30
+tech siege_mode 30
+wait 3275
+
+upgrade 1 t_vehicle_plating 30
+upgrade 1 ghost_sight 30
+defensebuild_gg 1 ghost
+defenseuse_gg 1 ghost
+defensebuild_ag 1 ghost
+defenseuse_ag 1 ghost
+build 11 scv 80
+tech cloaking_field 30
+upgrade 2 t_infantry_weapon 30
+upgrade 1 t_ship_plating 30
+upgrade 1 vulture_speed 30
+upgrade 1 vademecum 30
+wait 1075
+
+#panic red_expo
+#can't use panic in bwscript!
+train 13 marine
+train 4 vulture
+train 2 goliath
+attack_add 13 marine
+attack_add 4 vulture
+attack_add 2 goliath
+call targeting
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 wraith_mana 30
+upgrade 1 ghost_mana 30
+place_guard ghost 0
+place_guard ghost 0
+upgrade 2 t_infantry_armor 30
+upgrade 2 t_vehicle_weapon 30
+wait 2375
+
+build 14 scv 80
+train 21 marine
+train 6 vulture
+train 4 wraith
+attack_add 21 marine
+attack_add 6 vulture
+attack_add 4 wraith
+call targeting
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 hospitals 30
+upgrade 1 adv_mechanics 30
+tech lockdown 30
+upgrade 2 t_vehicle_plating 30
+upgrade 2 t_ship_weapon 30
+wait 2125
+
+train 10 firebat
+train 6 vulture
+train 6 ghost
+train 5 siege_tank
+attack_add 10 firebat
+attack_add 6 vulture
+attack_add 6 ghost
+attack_add 5 siege_tank
+call targeting
+wait 500
+
+attack_do
+attack_clear
+train 1 science_vessel
+tech irradiate 30
+upgrade 2 t_ship_plating 30
+wait 1425
+
+train 7 vulture
+train 3 siege_tank
+train 8 wraith
+train 8 firebat
+attack_add 7 vulture
+attack_add 3 siege_tank
+attack_add 8 wraith
+attack_add 8 firebat
+call targeting
+wait 500
+
+attack_do
+attack_clear
+train 2 science_vessel
+upgrade 3 t_infantry_armor 30
+upgrade 3 t_vehicle_weapon 30
+wait 1125
+
+train 7 wraith
+train 6 goliath
+attack_add 7 wraith
+attack_add 6 goliath
+call targeting
+wait 500
+
+attack_do
+attack_clear
+upgrade 3 t_vehicle_plating 30
+upgrade 3 t_infantry_weapon 30
+wait 1350
+
+train 24 marine
+train 3 ghost
+train 4 vulture
+train 4 siege_tank
+train 6 wraith
+attack_add 24 marine
+attack_add 3 ghost
+attack_add 4 vulture
+attack_add 4 siege_tank
+attack_add 6 wraith
+call targeting
+wait 500
+
+attack_do
+attack_clear
+tech emp_shockwave 30
+wait 350
+
+train 4 ghost
+train 4 vulture
+train 6 wraith
+train 10 firebat
+attack_add 10 firebat
+attack_add 4 ghost
+attack_add 4 vulture
+attack_add 6 wraith
+call targeting
+wait 36
+
+attack_do
+attack_clear
+upgrade 1 science_aura 30
+train 34 marine
+train 4 ghost
+train 6 vulture
+train 3 siege_tank
+train 6 wraith
+attack_add 34 marine
+attack_add 4 ghost
+attack_add 6 vulture
+attack_add 3 siege_tank
+attack_add 6 wraith
+call targeting
+wait 320
+
+attack_do
+attack_clear
+place_guard science_vessel 0
+:block1
+wait 1500
+
+train 11 ghost
+train 6 vulture
+train 9 wraith
+attack_add 11 ghost
+attack_add 4 vulture
+attack_add 9 wraith
+call targeting
+wait 500
+
+attack_do
+attack_clear
+wait 1850
+
+train 28 marine
+train 3 ghost
+train 4 vulture
+train 3 siege_tank
+train 6 wraith
+train 4 goliath
+train 9 firebat
+attack_add 28 marine
+attack_add 3 ghost
+attack_add 4 vulture
+attack_add 3 siege_tank
+attack_add 6 wraith
+attack_add 4 goliath
+attack_add 9 firebat
+call targeting
+wait 500
+
+attack_do
+attack_clear
+wait 1075
+
+train 28 marine
+train 5 ghost
+train 7 vulture
+train 4 siege_tank
+train 6 goliath
+attack_add 28 marine
+attack_add 5 ghost
+attack_add 7 vulture
+attack_add 4 siege_tank
+attack_add 6 goliath
+call targeting
+wait 500
+
+attack_do
+attack_clear
+goto block1
+
+:targeting
+unstart_campaign
+attack_prepare
+start_campaign
+return
+
+:n_matrix
+wait 10025
+
+:n_loop
+nuke_rate 0
+define_max 1 nuclear_missile
+wait 450
+
+define_max 2 nuclear_missile
+wait 450
+
+define_max 3 nuclear_missile
+wait 450
+
+define_max 4 nuclear_missile
+wait 450
+
+define_max 255 nuclear_missile
+wait 3899
+
+goto n_loop
+
+:civ
+issue_order 166 100 15 Loc.63 Loc.63 15 0
+train 3 15
+wait_rand 4088 11044
+
+random_jump 85 goliath
+random_jump 128 vulture
+
+random_jump 85 siege_1
+random_jump 128 siege_2
+bring_jump 3 AtMost 0 siege_tank Loc.142 civ
+issue_order 157 1 15 Loc.63 Loc.142 siege_tank Allied
+goto civ
+
+:siege_1
+bring_jump 3 AtMost 0 siege_tank Loc.140 civ
+issue_order 157 1 15 Loc.63 Loc.140 siege_tank Allied
+goto civ
+
+:siege_2
+bring_jump 3 AtMost 0 siege_tank Loc.141 civ
+issue_order 157 1 15 Loc.63 Loc.141 siege_tank Allied
+goto civ
+
+:goliath
+random_jump 85 goliath_1
+random_jump 128 goliath_2
+bring_jump 3 AtMost 0 goliath Loc.151 civ
+issue_order 157 1 15 Loc.63 Loc.151 goliath Allied
+goto civ
+
+:goliath_1
+bring_jump 3 AtMost 0 goliath Loc.147 civ
+issue_order 157 1 15 Loc.63 Loc.147 goliath Allied
+goto civ
+
+:goliath_2
+bring_jump 3 AtMost 0 goliath Loc.149 civ
+issue_order 157 1 15 Loc.63 Loc.149 goliath Allied
+goto civ
+
+:vulture
+random_jump 64 vulture_1
+random_jump 85 vulture_2
+random_jump 128 vulture_3
+bring_jump 3 AtMost 0 vulture Loc.159 civ
+issue_order 157 1 15 Loc.63 Loc.159 vulture Allied
+goto civ
+
+:vulture_1
+bring_jump 3 AtMost 0 vulture Loc.156 civ
+issue_order 157 1 15 Loc.63 Loc.156 vulture Allied
+goto civ
+
+:vulture_2
+bring_jump 3 AtMost 0 vulture Loc.157 civ
+issue_order 157 1 15 Loc.63 Loc.157 vulture Allied
+goto civ
+
+:vulture_3
+bring_jump 3 AtMost 0 vulture Loc.158 civ
+issue_order 157 1 15 Loc.63 Loc.158 vulture Allied
+goto civ
+
+:grand_exchange
+wait 2650
+
+:ge_init
+wait_rand 100 145
+
+call ge_gas
+call ge_mins
+time_jump 50 late_gas_detour
+goto ge_init
+
+:late_gas_detour
+resources 13 AtMost Gas 1199 ge_init
+resources 13 AtLeast Ore 2200 ge_init
+resources 13 Subtract Gas 200 ge_init
+resources 13 Add Ore 266 ge_init
+goto ge_init
+
+:ge_gas
+resources 13 AtLeast Gas 600 ge_skip
+resources 13 AtMost Ore 1099 ge_skip
+resources 13 Subtract Ore 170 ge_skip
+resources 13 Add Gas 80 ge_skip
+return
+
+:ge_mins
+resources 13 AtMost Gas 599 ge_skip
+resources 13 AtLeast Ore 1100 ge_skip
+resources 13 Subtract Gas 90 ge_skip
+resources 13 Add Ore 133 ge_skip
+return
+
+:ge_skip
+return
+
+:red_expo
+start_town
+build 1 command_center 130
+get_oldpeons 1
+wait_build 1 command_center
+build 1 scv 110
+wait_build 1 scv
+creep 4
+build 3 scv 80
+build 1 barracks 80
+wait_buildstart 1 barracks
+build 1 missile_turret 80
+wait_build 1 barracks
+build 1 engineering_bay 80
+wait_buildstart 1 engineering_bay
+build 1 academy 80
+wait_build 1 academy
+build 2 missile_turret 80
+wait_buildstart 2 missile_turret
+build 6 scv 80
+build 1 factory 80
+wait_buildstart 1 factory
+build 1 bunker 80
+wait_build 1 factory
+build 1 machine_shop 80
+build 1 armory 80
+wait_buildstart 1 armory
+build 1 starport 80
+wait_build 1 starport
+build 3 missile_turret 80
+build 1 control_tower 80
+wait 6500
+
+max_workers 22
+build 10 scv 80
+wait 10500
+
+build 18 scv 80
+wait 15800
+
+build 1 comsat_station 80
+max_workers 255
+:blockre
+wait 1500
+
+goto blockre
+
+:help_request
+wait 1633
+
+wait_secure
+help_iftrouble
+goto help_request

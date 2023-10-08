@@ -1,0 +1,480 @@
+script_name Brood Wars Terran 6 - Town A
+script_id TB6A
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 1
+wait 1
+
+creep 4
+build 1 probe 150
+build 3 probe 80
+build 6 photon_cannon 80
+place_guard high_templar 0
+max_force 600
+define_max 7 probe
+define_max 13 zealot
+define_max 16 dragoon
+define_max 5 shuttle
+define_max 5 observer
+define_max 8 scout
+define_max 255 corsair
+define_max 255 dark_templar
+define_max 255 dark_archon
+defensebuild_gg 1 dragoon
+defenseuse_gg 1 dragoon
+defensebuild_gg 2 zealot
+defenseuse_gg 2 zealot
+defensebuild_ag 1 dragoon
+defenseuse_ag 1 dragoon
+defensebuild_ag 1 scout
+defenseuse_ag 1 scout
+defensebuild_ga 1 scout
+defenseuse_ga 1 scout
+defensebuild_aa 1 scout
+defenseuse_aa 1 scout
+farms_timing
+capt_expand
+check_transports
+under_attack 0
+upgrade 1 p_ground_weapon 30
+upgrade 1 p_air_weapon 30
+multirun bank
+wait 16
+
+train 4 dragoon
+train 3 zealot
+attack_add 4 dragoon
+attack_add 3 zealot
+call targeting
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 p_armor 30
+wait 2550
+
+train 6 dragoon
+attack_add 6 dragoon
+call targeting
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 p_plasma_shield 30
+upgrade 1 p_plating 30
+upgrade 1 dragoon_range 30
+wait 2100
+
+notowns_jump robotics_support_bay reaver_skip
+upgrade 1 shuttle_speed 30
+defensebuild_gg 1 reaver
+defenseuse_gg 1 reaver
+define_max 4 reaver
+wait 2500
+
+notowns_jump robotics_support_bay reaver_skip
+wait 1000
+
+notowns_jump robotics_support_bay reaver_skip
+train 1 reaver
+notowns_jump robotics_support_bay reaver_skip
+train 2 reaver
+train 3 scout
+train 5 dragoon
+attack_add 3 scout
+attack_add 5 dragoon
+attack_add 2 reaver
+call targeting
+wait 500
+
+attack_do
+attack_clear
+notowns_jump robotics_support_bay reaver_skip
+upgrade 1 reaver_capacity 30
+wait 1675
+
+notowns_jump robotics_support_bay reaver_skip
+wait 1000
+
+notowns_jump robotics_support_bay reaver_skip
+train 1 reaver
+notowns_jump robotics_support_bay reaver_skip
+train 2 reaver
+train 9 dragoon
+attack_add 9 dragoon
+attack_add 2 reaver
+call targeting
+wait 500
+
+attack_do
+attack_clear
+notowns_jump robotics_support_bay reaver_skip
+upgrade 1 scarab_damage 30
+:reaver_skip
+train 2 scout
+train 5 zealot
+train 4 scout
+train 9 zealot
+call a_add_reaver_1
+attack_add 7 zealot
+attack_add 3 scout
+call targeting
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 observer_speed 30
+wait 2510
+
+notowns_jump templar_archives archon_skip
+defensebuild_gg 1 archon
+defenseuse_gg 1 archon
+defenseuse_ag 1 archon
+defensebuild_gg 1 high_templar
+define_max 4 archon
+define_max 4 high_templar
+multirun templar_ensure
+#tech hallucination 30
+#fuck hallucination
+upgrade 2 p_ground_weapon 30
+upgrade 2 p_armor 30
+notowns_jump templar_archives archon_skip
+place_guard high_templar 0
+train 1 high_templar
+notowns_jump templar_archives archon_skip
+train 2 high_templar
+notowns_jump templar_archives archon_skip
+train 3 high_templar
+notowns_jump templar_archives archon_skip
+train 4 high_templar
+wait 1250
+
+notowns_jump templar_archives archon_skip
+wait 1000
+
+notowns_jump templar_archives archon_skip
+do_morph 3 archon
+attack_add 3 archon
+notowns_jump templar_archives archon_skip
+train 11 zealot
+attack_add 11 zealot
+call targeting
+wait 650
+
+attack_do
+attack_clear
+notowns_jump citadel_of_adun owk_skip
+upgrade 1 one_with_khala 30
+:owk_skip
+notowns_jump templar_archives archon_skip
+idle_orders 148 64 1 high_templar 1024 zealot 40 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 dragoon 30 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 reaver 70 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 carrier 80 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 scout 50 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 shuttle 30 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 arbiter 60 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 zealot 40 own|allied|notenemies|incombat
+upgrade 3 p_ground_weapon 30
+upgrade 3 p_armor 30
+tech psionic_storm 30
+:archon_skip
+
+train 1 scout
+train 7 zealot
+train 2 scout
+train 9 dragoon
+train 3 scout
+call a_add_reaver_1
+attack_add 7 zealot
+attack_add 10 dragoon
+attack_add 3 scout
+call targeting
+wait 500
+
+attack_do
+attack_clear
+notowns_jump citadel_of_adun okh_skip
+upgrade 1 zealot_speed 30
+:okh_skip
+upgrade 1 observer_sight 30
+upgrade 2 p_plasma_shield 30
+wait 2550
+
+notowns_jump fleet_beacon carrier_skip
+upgrade 1 scout_sight 30
+define_max 4 carrier
+defensebuild_ga 1 carrier
+defenseuse_ga 1 carrier
+upgrade 2 p_air_weapon 30
+upgrade 2 p_plating 30
+train 3 zealot
+train 2 scout
+train 5 zealot
+train 5 scout
+train 6 zealot
+notowns_jump fleet_beacon carrier_skip
+train 1 carrier
+notowns_jump fleet_beacon carrier_skip
+train 2 carrier
+wait 480
+
+train 4 zealot
+train 2 scout
+train 6 zealot
+train 5 scout
+attack_add 2 carrier
+attack_add 5 scout
+attack_add 6 zealot
+call targeting
+wait 1000
+
+attack_do
+attack_clear
+notowns_jump fleet_beacon carrier_skip
+upgrade 1 scout_speed 30
+wait 1750
+
+notowns_jump fleet_beacon carrier_skip
+train 1 carrier
+notowns_jump fleet_beacon carrier_skip
+train 2 carrier
+notowns_jump fleet_beacon carrier_skip
+train 3 carrier
+notowns_jump fleet_beacon carrier_skip
+train 4 carrier
+attack_add 4 carrier
+call targeting
+wait 1000
+
+attack_do
+attack_clear
+notowns_jump fleet_beacon carrier_skip
+upgrade 3 p_plating 30
+upgrade 3 p_air_weapon 30
+upgrade 1 carrier_capacity 30
+:carrier_skip
+train 2 zealot
+train 8 dragoon
+call a_add_reaver_1
+call a_add_carrier_1
+attack_add 2 zealot
+attack_add 8 dragoon
+call targeting
+wait 300
+
+attack_do
+attack_clear
+notowns_jump citadel_of_adun onk_skip
+upgrade 2 one_with_khala 30
+:onk_skip
+wait 2010
+
+train 6 scout
+attack_add 6 scout
+call a_add_reaver_2
+call a_add_carrier_1
+call targeting
+attack_timeout 240
+wait 350
+
+attack_do
+attack_clear
+upgrade 3 p_plasma_shield 30
+notowns_jump arbiter_tribunal loop1
+tech stasis_field 30
+define_max 1 arbiter
+define_max 1 harbiter
+defensebuild_gg 1 harbiter
+defenseuse_gg 1 harbiter
+tech recall 30
+train 1 harbiter
+:loop1
+wait 1920
+
+train 4 zealot
+train 2 scout
+train 8 zealot
+train 4 scout
+attack_add 8 zealot
+attack_add 4 scout
+call a_add_reaver_1
+call a_add_archon_1
+call targeting
+attack_timeout 240
+wait 300
+
+attack_do
+attack_clear
+wait 2480
+
+train 12 dragoon
+attack_add 12 dragoon
+random_jump 128 carrier2
+call a_add_reaver_2
+call a_add_arbiter
+goto carrier_skip2
+:carrier2
+call a_add_carrier_2
+:carrier_skip2
+call targeting
+attack_timeout 240
+wait 300
+
+attack_do
+attack_clear
+wait 2040
+
+train 4 dragoon
+train 2 scout
+train 8 dragoon
+train 4 scout
+attack_add 4 scout
+attack_add 8 dragoon
+random_jump 128 archon2
+call a_add_reaver_2
+goto archon_skip2
+:archon2
+call a_add_archon_2
+:archon_skip2
+call targeting
+attack_timeout 240
+wait 300
+
+attack_do
+attack_clear
+goto loop1
+
+:a_add_carrier_1
+notowns_jump fleet_beacon void_call
+do_morph 1 carrier
+attack_add 1 carrier
+
+:void_call
+return
+
+:a_add_carrier_2
+notowns_jump fleet_beacon void_call
+do_morph 3 carrier
+attack_add 3 carrier
+return
+
+:a_add_archon_1
+notowns_jump templar_archives void_call
+attack_add 1 archon
+return
+
+:a_add_archon_2
+notowns_jump templar_archives void_call
+attack_add 3 archon
+return
+
+:a_add_reaver_1
+notowns_jump robotics_support_bay void_call
+do_morph 1 reaver
+attack_add 1 reaver
+return
+
+:a_add_reaver_2
+notowns_jump robotics_support_bay void_call
+do_morph 3 reaver
+attack_add 3 reaver
+return
+
+:a_add_arbiter
+notowns_jump arbiter_tribunal void_call
+do_morph 1 harbiter
+attack_add 1 harbiter
+return
+
+:targeting
+time_jump 25 random
+random_jump 32 kerrigan
+attack_to Loc.129 Loc.130
+return
+
+:random
+random_jump 85 terran
+random_jump 128 north_t
+:south_t
+random_jump 64 dominion_prep
+attack_to Loc.128 Loc.4
+return
+
+:terran
+bring_jump 6 Exactly 0 command_center Loc.113 south_t
+attack_to Loc.128 Loc.107
+return
+
+:north_t
+attack_to Loc.134 Loc.43
+return
+
+:kerrigan
+attack_to Loc.131 Loc.98
+return
+
+:dominion_prep
+attack_to Loc.136 Loc.133
+return
+
+:templar_ensure
+do_morph 4 high_templar
+wait_train 4 high_templar
+
+do_morph 4 archon
+wait_rand 1330 2650
+goto templar_ensure
+
+:bank
+wait 25
+
+load_bank bc_bank
+wait 1
+
+bank_data Exactly 1 bc_bank confed_outpost wait_for_death_prep
+wait 320
+
+bank_data Set 0 bc_bank map_won6 wait_for_death_prep
+bank_data Set 0 bc_bank confed_lives6 wait_for_death
+save_bank bc_bank
+stop
+
+:wait_for_death_prep
+bank_data Exactly 2 bc_bank confed_lives5 set_cut
+bank_data AtMost 1 bc_bank confed_lives5 void
+bank_data AtMost 0 bc_bank map_won5 void
+:set_cut
+deaths 4 Set 1 battlecruiser bank
+wait 160
+
+create_unit 264 501 4120
+wait 320
+
+bank_data Set 0 bc_bank map_won6 wait_for_death_prep
+bank_data Set 2 bc_bank confed_lives6 wait_for_death_prep
+multirun map_won
+:wait_for_death
+wait 4
+
+deaths 6 AtMost 0 264 wait_for_death 
+bank_data Set 1 bc_bank confed_lives6 wait_for_death
+wait 1
+
+save_bank bc_bank
+stop
+
+:map_won
+wait 4
+
+deaths 0 AtMost 0 127 map_won
+bank_data Set 1 bc_bank map_won6 wait_for_death_prep
+wait 1
+
+save_bank bc_bank
+:void
+stop

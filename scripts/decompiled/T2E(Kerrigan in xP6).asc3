@@ -1,0 +1,647 @@
+script_name Brood Wars Terran 2 - Town E
+script_id TB2E
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 1
+wait 1
+
+guard_all
+deaths 1 Exactly 1 189 stronger_zerg
+deaths 1 Exactly 2 189 robo_toss
+creep 4
+build 1 drone 130
+build 1 hatchery 150
+build 5 drone 80
+build 5 creep_colony 80
+build 3 hatchery 80
+build 1 evolution_chamber 80
+build 1 spawning_pool 80
+build 1 hydralisk_den 80
+transports_off
+max_force 1000
+define_max 5 revenant
+define_max 6 zealot
+define_max 7 dark_templar
+define_max 2 dark_archon
+define_max 32 zergling
+define_max 21 hydralisk
+define_max 13 mutalisk
+define_max 10 scourge
+define_max 10 drone
+defensebuild_gg 2 dark_templar
+defenseuse_gg 2 dark_templar
+defensebuild_gg 2 zealot
+defenseuse_gg 2 zealot
+defenseuse_gg 1 revenant
+defensebuild_ag 2 revenant
+defenseuse_ag 2 revenant
+defensebuild_gg 2 zergling
+defenseuse_gg 2 zergling
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+multirun ultracheck
+multirun map_end
+tech burrowing 30
+upgrade 1 overlord_speed 30
+upgrade 1 overlord_capacity 30
+idle_orders 10 640 2 dark_templar|revenant 2048 151 80 0
+idle_orders Move 320 1 dark_archon 1024 151 80 0
+multirun money
+wait 550
+
+attack_add 2 zealot
+attack_add 1 dark_templar
+attack_add 4 zergling
+attack_add 1 hydralisk
+attack_to Loc.92 Loc.112
+wait 500
+
+attack_do
+attack_clear
+wait 25
+
+load_bank xp6
+build 1 lair 80
+upgrade 1 zergling_speed 30
+upgrade 1 hydralisk_speed 30
+upgrade 1 z_carapace 30
+tech maelstrom 30
+build 3 sunken_colony 80
+wait 2350
+
+attack_add 2 zealot
+attack_add 2 revenant
+attack_add 2 dark_templar
+attack_add 10 zergling
+attack_to Loc.92 Loc.19
+wait 500
+
+attack_do
+attack_clear
+build 1 spire 80
+build 1 queen_nest 80
+
+upgrade 1 z_melee_attack 30
+upgrade 1 z_missile_attack 30
+build 2 spore_colony 80
+wait 1450
+
+attack_add 2 revenant
+attack_add 2 dark_templar
+attack_add 7 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech mind_control 30
+upgrade 1 p_ground_weapon 30
+upgrade 1 p_armor 30
+upgrade 1 p_plating 30
+upgrade 1 p_plasma_shield 30
+upgrade 2 z_carapace 30
+upgrade 1 z_flyer_carapace 30
+tech ensnare 80
+place_guard mutalisk 1
+place_guard mutalisk 2
+place_guard queen 0
+defensebuild_gg 1 mutalisk
+defenseuse_gg 1 mutalisk
+defensebuild_ag 1 mutalisk
+defenseuse_ag 1 mutalisk
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 2 scourge
+defenseuse_aa 2 scourge
+wait 1350
+
+attack_add 4 dark_templar
+attack_add 4 mutalisk
+attack_add 10 hydralisk
+attack_add 8 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 2 dark_templar
+attack_add 4 revenant
+attack_add 14 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+idle_orders 182 10054 1 dark_archon 1024 ultralisk 30 health(GreaterThanPercent,66)
+idle_orders 182 10054 1 dark_archon 1024 lurker 20 health(GreaterThanPercent,66)
+idle_orders 182 10054 1 dark_archon 1024 queen 20 health(GreaterThanPercent,66)
+idle_orders 182 10054 1 dark_archon 1024 defiler 10 health(GreaterThanPercent,66)
+idle_orders 182 16 1 dark_archon 256 ultralisk 80 incombat|health(GreaterThanPercent,50)
+idle_orders 182 16 1 dark_archon 256 lurker 30 incombat|health(GreaterThanPercent,50)
+wait 1350
+
+attack_add 8 zergling
+attack_add 3 mutalisk
+attack_add 4 hydralisk
+attack_add 2 dark_templar
+attack_add 3 zealot
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 z_flyer_carapace 30
+upgrade 1 zealot_speed 30
+upgrade 2 p_ground_weapon 30
+upgrade 2 p_armor 30
+upgrade 2 p_plasma_shield 30
+upgrade 2 z_melee_attack 30
+upgrade 2 z_missile_attack 30
+wait 1350
+
+attack_add 10 zergling
+attack_add 6 mutalisk
+attack_add 3 dark_templar
+attack_add 1 dark_archon
+attack_add 2 revenant
+attack_add 1 zealot
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 z_flyer_attack 30
+wait 1250
+
+attack_add 4 dark_templar
+attack_add 4 zealot
+attack_add 8 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech spawn_broodling 30
+upgrade 1 dark_archon_mana 30
+upgrade 1 observer_sight 30
+wait 1450
+
+attack_add 5 revenant
+attack_add 3 dark_templar
+attack_add 20 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2250
+
+attack_add 3 revenant
+attack_add 4 dark_templar
+attack_add 10 hydralisk
+attack_add 6 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 z_flyer_attack 30
+upgrade 1 queen_mana 30
+upgrade 3 p_ground_weapon 30
+upgrade 3 p_armor 30
+upgrade 3 p_plasma_shield 30
+upgrade 2 dark_archon_mana 30
+:retb
+wait 1350
+
+attack_add 4 dark_templar
+attack_add 3 revenant
+attack_add 20 zergling
+attack_add 7 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1675
+
+attack_add 2 dark_archon
+attack_add 6 zealot
+attack_add 4 revenant
+attack_add 12 hydralisk
+attack_add 8 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto retb
+
+:stronger_zerg
+creep 4
+build 1 drone 130
+build 1 hatchery 150
+build 5 drone 80
+build 5 creep_colony 80
+build 3 hatchery 80
+build 1 evolution_chamber 80
+build 1 spawning_pool 80
+build 1 hydralisk_den 80
+transports_off
+max_force 1000
+define_max 32 zergling
+define_max 30 hydralisk
+define_max 13 mutalisk
+define_max 6 guardian
+define_max 10 scourge
+define_max 10 drone
+defensebuild_gg 2 zergling
+defenseuse_gg 2 zergling
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+multirun ultracheck
+multirun map_end
+tech burrowing 30
+upgrade 1 overlord_speed 30
+upgrade 1 overlord_capacity 30
+multirun money
+wait 550
+
+attack_add 4 zergling
+attack_add 1 hydralisk
+attack_to Loc.92 Loc.112
+wait 500
+
+attack_do
+attack_clear
+wait 25
+
+load_bank xp6
+build 1 lair 80
+upgrade 1 zergling_speed 30
+upgrade 1 hydralisk_speed 30
+upgrade 1 z_carapace 30
+build 3 sunken_colony 80
+wait 2350
+
+attack_add 10 zergling
+attack_to Loc.92 Loc.19
+wait 500
+
+attack_do
+attack_clear
+build 1 spire 80
+build 1 queen_nest 80
+upgrade 1 z_melee_attack 30
+upgrade 1 z_missile_attack 30
+build 2 spore_colony 80
+wait 1450
+
+attack_add 11 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 z_carapace 30
+upgrade 1 z_flyer_carapace 30
+tech ensnare 80
+place_guard mutalisk 1
+place_guard mutalisk 2
+place_guard queen 0
+defensebuild_gg 1 mutalisk
+defenseuse_gg 1 mutalisk
+defensebuild_ag 1 mutalisk
+defenseuse_ag 1 mutalisk
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 2 scourge
+defenseuse_aa 2 scourge
+wait 1350
+
+attack_add 4 mutalisk
+attack_add 10 hydralisk
+attack_add 8 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1350
+
+attack_add 8 zergling
+attack_add 3 mutalisk
+attack_add 4 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 z_flyer_carapace 30
+upgrade 2 z_melee_attack 30
+upgrade 2 z_missile_attack 30
+wait 1350
+
+attack_add 10 zergling
+attack_add 6 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+build 1 hive 80
+upgrade 1 z_flyer_attack 30
+wait 1250
+
+attack_add 16 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+build 1 greater_spire 80
+tech spawn_broodling 30
+upgrade 3 z_flyer_carapace 30
+upgrade 3 z_melee_attack 30
+upgrade 3 z_missile_attack 30
+wait 1450
+
+defensebuild_gg 1 mutalisk
+defensebuild_gg 1 guardian
+defenseuse_gg 1 guardian
+wait 2250
+
+attack_add 10 hydralisk
+attack_add 4 guardian
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 z_flyer_attack 30
+upgrade 1 queen_mana 30
+:retstrong
+wait 1350
+
+attack_add 20 zergling
+attack_add 9 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1675
+
+attack_add 22 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1675
+
+attack_add 16 hydralisk
+attack_add 4 guardian
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto retstrong
+
+:robo_toss
+build 2 nexus 150
+build 2 nexus 80
+build 2 probe 130
+build 6 probe 80
+build 6 pylon 80
+build 1 gateway 80
+build 1 cybernetics_core 80
+build 1 forge 80
+build 3 photon_cannon 80
+build 1 robotics_facility 80
+upgrade 1 shuttle_speed 30
+upgrade 1 p_plasma_shield 30
+upgrade 1 dragoon_range 30
+upgrade 1 p_armor 30
+upgrade 1 p_plating 30
+upgrade 1 p_ground_weapon 30
+upgrade 1 p_air_weapon 30
+max_workers 14
+multirun money
+multirun map_end
+defensebuild_gg 1 dragoon
+defenseuse_gg 1 dragoon
+defensebuild_gg 1 hornet
+defenseuse_gg 1 hornet
+defenseuse_gg 1 reaver
+defensebuild_ag 1 dragoon
+defenseuse_ag 1 dragoon
+defensebuild_ga 1 scout
+defenseuse_ga 1 scout
+defensebuild_aa 1 scout
+defenseuse_aa 1 scout
+defensebuild_aa 1 hornet
+defenseuse_aa 1 hornet
+define_max 6 probe
+define_max 3 shuttle
+define_max 3 observer
+define_max 255 zealot
+define_max 12 dragoon
+define_max 3 reaver
+define_max 6 scout
+define_max 10 hornet
+idle_orders 59 16 1 reaver 128 hhydralisk 130 count(AtLeast 2 40 14)
+idle_orders 59 16 1 reaver 128 zergling 80 count(AtLeast 5 40 14)
+idle_orders 59 16 1 reaver 128 hydralisk 60 count(AtLeast 2 40 14)
+max_force 600
+wait 16
+
+attack_add 3 dragoon
+attack_to Loc.92 Loc.112
+wait 500
+
+attack_do
+attack_clear
+wait 625
+
+build 7 pylon 80
+build 1 stargate 80
+build 1 robotics_support_bay 80
+train 1 reaver
+load_bank xp6
+attack_add 3 dragoon
+attack_add 1 reaver
+attack_prepare
+build 1 citadel_of_adun 80
+wait 500
+
+attack_do
+attack_clear
+build 8 pylon 80
+upgrade 1 scarab_damage 30
+wait 2000
+
+attack_add 3 scout
+attack_add 1 reaver
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+build 9 pylon 80
+build 1 templar_archives 80
+upgrade 2 p_plasma_shield 30
+upgrade 2 p_armor 30
+upgrade 2 p_ground_weapon 30
+wait 2745
+
+attack_add 1 reaver
+attack_add 4 dragoon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2850
+
+attack_add 1 reaver
+attack_add 4 scout
+attack_add 4 dragoon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 3 p_plasma_shield 30
+upgrade 3 p_armor 30
+upgrade 3 p_ground_weapon 30
+upgrade 1 robotics_speed 30
+:block1
+wait 2500
+
+train 12 dragoon
+attack_add 12 dragoon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1500
+
+train 2 scout
+train 1 reaver
+train 4 hornet
+train 2 reaver
+attack_add 2 reaver
+attack_add 4 hornet
+attack_add 2 scout
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1500
+
+train 2 scout
+train 1 dragoon
+train 3 scout
+train 2 dragoon
+train 4 dragoon
+attack_add 3 scout
+attack_add 4 dragoon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2250
+
+train 2 hornet
+train 1 reaver
+train 2 dragoon
+train 4 hornet
+train 4 dragoon
+attack_add 4 hornet
+attack_add 1 reaver
+attack_add 4 dragoon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3000
+
+train 2 scout
+train 2 reaver
+train 4 scout
+attack_add 2 reaver
+attack_add 4 scout
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 16
+
+attack_add 2 scout
+attack_add 2 hornet
+attack_add 1 reaver
+goto block1
+
+:ultracheck
+wait 160
+
+if_attacking ultra_attack
+goto ultracheck
+
+:ultra_attack
+wait 16
+
+if_owned ultralisk execute_ultra
+goto ultracheck
+
+:execute_ultra
+attack_add 1 ultralisk
+wait_finishattack
+
+goto ultracheck
+
+:money
+wait 2850
+
+give_money
+goto money
+
+:map_end
+wait 16
+
+deaths 0 Exactly 0 151 map_end
+deaths 7 Exactly 1 151 w_end
+bank_data Set 2 xp6 xp6 w_end
+save_bank xp6
+stop
+
+:w_end
+deaths 4 Exactly 1 148 w_end_2
+bank_data Set 1 xp6 xp6 w_end
+save_bank xp6
+stop
+
+:w_end_2
+bank_data Set 0 xp6 xp6 w_end
+save_bank xp6
+stop
+

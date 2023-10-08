@@ -1,0 +1,57 @@
+script_name Brood Wars Zerg 1 - Town D
+script_id ZB1D
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+guard_all
+build 1 hatchery 80
+build 2 drone 80
+max_force 1200
+wait 500
+
+attack_add 2 infested_terran
+attack_add 3 lurker
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+place_guard defiler 0
+:loop
+wait 1000
+
+attack_add 6 zergling
+attack_add 2 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait 500
+
+attack_add 2 lurker
+attack_add 8 zergling
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+attack_add 2 infested_terran
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait 2000
+
+attack_add 12 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+goto loop

@@ -1,0 +1,55 @@
+script_name Brood Wars Zerg 8 - Town C
+script_id ZB8C
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+#if_owned overmind no shell
+if_owned 148 black_expo
+build 1 command_center 80
+build 4 scv 80
+build 1 hatchery 80
+build 1 drone 80
+build 1 barracks 80
+build 1 factory 80
+build 1 machine_shop 80
+wait 10500
+
+build 5 drone 80
+wait 10500
+
+build 8 drone 80
+wait 24450
+
+build 5 scv 80
+guard panzer Loc.191 1 1 80
+:loopC
+wait 1500
+
+goto loopC
+
+:black_expo
+build 1 hatchery 80
+build 12 drone 80
+build 1 creep_colony 80
+build 1 spore_colony 80
+build 1 hydralisk_den 80
+build 2 creep_colony 80
+build 1 sunken_colony 80
+wait 16533
+
+build 1 lair 80
+guard siege_tank Loc.190 1 1 80
+wait 8933
+
+build 1 hive 80
+guard siege_tank Loc.191 1 1 80
+:loopB
+wait 1500
+
+goto loopB
+
+

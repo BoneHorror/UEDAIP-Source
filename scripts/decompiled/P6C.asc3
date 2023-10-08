@@ -1,0 +1,862 @@
+script_name Brood Wars Protoss 6 - Town C
+script_id PB6C
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+notowns_jump nydus_canal ued_chase
+define_max 7 hhydralisk
+define_max 8 hzergling
+defensebuild_gg 1 hhydralisk
+defenseuse_gg 1 hhydralisk
+defensebuild_gg 1 hzergling
+defenseuse_gg 1 hzergling
+defensebuild_ag 1 hhydralisk
+defenseuse_ag 1 hhydralisk
+wait 11000
+
+train 1 hhydralisk
+wait_train 1 hhydralisk
+attack_add 1 hhydralisk
+attack_add 2 hzergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade_jump 0 Set z_carapace 1 block1
+upgrade_jump 0 Set z_missile_attack 1 block1
+upgrade_jump 0 Set z_melee_attack 1 block1
+wait 5770
+
+train 3 hhydralisk
+wait_train 3 hhydralisk
+attack_add 3 hhydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade_jump 0 Set z_carapace 2 block1
+upgrade_jump 0 Set z_missile_attack 2 block1
+upgrade_jump 0 Set z_melee_attack 2 block1
+wait 9800
+
+train 4 hhydralisk
+wait_train 4 hhydralisk
+attack_add 4 hhydralisk
+attack_add 2 hzergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade_jump 0 Set z_carapace 3 block1
+upgrade_jump 0 Set z_missile_attack 3 block1
+upgrade_jump 0 Set z_melee_attack 3 block1
+:block1
+wait 5500
+
+train 3 hhydralisk
+wait_train 3 hhydralisk
+attack_add 3 hhydralisk
+attack_add 4 hzergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 4 hzergling
+wait 7500
+
+train 6 hhydralisk
+wait_train 6 hhydralisk
+attack_add 6 hhydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto block1
+
+:ued_chase
+wait 25
+
+load_bank xp5
+defenseuse_gg 1 death_knight
+defenseuse_ag 1 death_knight
+defenseuse_gg 1 valhalla
+defenseuse_gg 2 heavy_marine
+defenseuse_gg 1 skywing
+defenseuse_gg 1 panzer
+defenseuse_ag 1 valkyrie
+defenseuse_ag 1 valhalla
+defenseuse_aa 1 skywing
+defenseuse_aa 1 valkyrie
+defenseuse_aa 1 valhalla
+defenseuse_ag 1 skywing
+defenseuse_ag 2 heavy_marine
+define_max 5 death_knight
+define_max 2 valhalla
+define_max 16 heavy_marine
+define_max 7 skywing
+define_max 2 valkyrie
+define_max 1 science_vessel
+define_max 22 scv
+define_max 255 dropship
+define_max 4 panzer
+define_max 255 siege_tank
+define_max 6 scorpion
+define_max 3 medic
+define_max 5 phantom
+define_max 10 tesla_trooper
+wait_build 1 scv
+build 1 command_center 150
+farms_timing
+wait_build 1 command_center
+build 1 scv 130
+build 3 scv 80
+wait_build 3 scv
+build 1 barracks 80
+wait_buildstart 1 barracks
+build 2 barracks 80
+build 7 scv 80
+build 1 engineering_bay 80
+wait_build 1 barracks
+build 1 academy 80
+defensebuild_gg 2 heavy_marine
+defensebuild_ag 2 heavy_marine
+idle_orders 92 256 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 64 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 256 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 64 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+build 1 factory 80
+wait_buildstart 1 factory
+build 2 factory 80
+train 4 heavy_marine
+wait_buildstart 2 factory
+build 2 missile_turret 80
+upgrade 1 t_infantry_weapon 30
+train 5 heavy_marine
+wait_build 2 factory
+defensebuild_gg 2 scorpion
+defenseuse_gg 2 scorpion
+defensebuild_gg 1 panzer
+build 2 machine_shop 80
+build 2 bunker 80
+build 1 starport 80
+wait_build 1 starport
+build 2 starport 80
+build 2 armory 80
+train 4 scorpion
+build 1 comsat_station 80
+train 2 panzer
+wait_build 2 starport
+defensebuild_gg 1 death_knight
+defensebuild_ag 1 death_knight
+build 2 control_tower 80
+build 1 science_facility 80
+define_max 7 dropship
+check_transports
+train 4 dropship
+defensebuild_gg 1 skywing
+defensebuild_ag 1 valkyrie
+defensebuild_aa 1 skywing
+defensebuild_aa 1 valkyrie
+upgrade 1 t_vehicle_weapon 30
+upgrade 1 t_ship_weapon 30
+upgrade 1 goliath_range 30
+default_min 1
+train 3 death_knight
+train 2 skywing
+multirun dropship_replenish
+upgrade 1 p_plasma_shield 30
+train 8 heavy_marine
+wait_build 1 science_facility
+upgrade 2 t_infantry_weapon 30
+build 1 covert_ops 80
+train 3 heavy_marine
+defensebuild_gg 1 phantom
+defenseuse_gg 1 phantom
+defensebuild_gg 1 valhalla
+defensebuild_ag 1 valhalla
+defensebuild_gg 1 valhalla
+train 2 panzer
+train 2 skywing
+train 6 heavy_marine
+train 2 medic
+attack_clear
+attack_add 2 panzer
+attack_add 6 heavy_marine
+attack_add 2 medic
+attack_to Loc.85 Loc.5
+attack_timeout 90
+attack_do
+attack_clear
+capt_expand
+tech personnel_cloaking 30
+train 4 heavy_marine
+attack_add 4 skywing
+attack_to Loc.88 Loc.5
+attack_do
+attack_clear
+upgrade 3 t_infantry_weapon 30
+upgrade 2 t_vehicle_weapon 30
+upgrade 2 t_ship_weapon 30
+upgrade 2 p_plasma_shield 30
+train 2 panzer
+attack_add 2 panzer
+attack_add 7 heavy_marine
+attack_add 2 skywing
+attack_to Loc.88 Loc.86
+train 2 skywing
+train 2 medic
+train 4 scorpion
+train 7 heavy_marine
+train 2 medic
+train 4 skywing
+attack_do
+attack_clear
+upgrade 1 t_infantry_armor 30
+upgrade 1 ghost_sight 30
+bank_data Exactly 0 xp5 infantry volkstrum
+attack_add 4 scorpion
+attack_add 8 heavy_marine
+attack_add 2 medic
+attack_to Loc.85 Loc.5
+attack_do
+attack_clear
+attack_add 4 skywing
+attack_to Loc.89 Loc.5
+attack_timeout 15
+attack_do
+attack_clear
+upgrade 3 t_vehicle_weapon 30
+upgrade 3 t_ship_weapon 30
+upgrade 2 t_infantry_armor 30
+upgrade 3 t_infantry_armor 30
+upgrade 1 t_ship_plating 30
+upgrade 1 t_vehicle_plating 30
+upgrade 2 t_ship_plating 30
+upgrade 2 t_vehicle_plating 30
+upgrade 3 t_ship_plating 30
+upgrade 3 t_vehicle_plating 30
+upgrade 3 p_plasma_shield 30
+bank_data Exactly 0 xp5 air luftwaffe
+bank_data Exactly 0 xp5 mech mechanized_assault
+:blockft
+wait 1050
+
+prep_down 2 6 death_knight
+prep_down 2 4 skywing
+attack_add 1 valhalla
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+train 2 valhalla
+train 1 science_vessel
+wait 565
+
+prep_down 1 2 valhalla
+attack_add 1 science_vessel
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+wait 912
+
+prep_down 3 11 heavy_marine
+prep_down 1 2 panzer
+attack_add 1 science_vessel
+prep_down 3 5 scorpion
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+train 2 valhalla
+train 4 death_knight
+train 2 scorpion
+train 4 skywing
+train 1 valkyrie
+prep_down 3 4 death_knight
+prep_down 3 2 scorpion
+prep_down 1 2 skywing
+prep_down 2 1 valhalla
+attack_add 1 valkyrie
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+goto blockft
+
+:volkstrum
+random_jump 85 cas_death
+upgrade 1 thunder_boosters 30
+upgrade 2 t_infantry_armor 30
+upgrade 1 t_ship_plating 30
+upgrade 1 t_vehicle_plating 30
+build 3 barracks 80
+define_max 30 heavy_marine
+define_max 7 medic
+define_max 20 tesla_trooper
+define_max 8 phantom
+wait 525
+
+train 22 heavy_marine
+train 4 medic
+attack_add 22 heavy_marine
+attack_add 4 medic
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+train 4 phantom
+train 14 heavy_marine
+train 2 medic
+attack_add 14 heavy_marine
+attack_add 4 phantom
+attack_add 2 medic
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+upgrade 3 t_infantry_armor 30
+upgrade 2 t_ship_plating 30
+upgrade 2 t_vehicle_plating 30
+upgrade 1 medic_mana 30
+tech lockdown 30
+wait 1175
+
+train 18 heavy_marine
+train 11 tesla_trooper
+train 4 medic
+attack_add 18 heavy_marine
+attack_add 11 tesla_trooper
+attack_add 4 medic
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+idle_orders 115 32 1 phantom 210 group_men 50 Hp(GreaterThanPercent 50)|Self(InCombat)|Self(Energy(GreaterThan 100))|UnitFlags(Mechanical)|WithoutSpellEffects(Lockdown)
+idle_orders 115 32 1 phantom 280 carrier|reaver|hnorad|valhalla|siege_tank|panzer 80 Hp(GreaterThanPercent 20)|Self(InCombat)|Self(Energy(GreaterThan 80))|UnitFlags(Mechanical)|WithoutSpellEffects(Lockdown)
+place_guard phantom 0
+wait 1105
+
+:volk_loop
+train 30 heavy_marine
+train 6 medic
+train 8 phantom
+attack_add 30 heavy_marine
+attack_add 6 medic
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+attack_add 8 phantom
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+wait 715
+
+train 13 tesla_trooper
+train 5 medic
+train 18 heavy_marine
+attack_add 13 tesla_trooper
+attack_add 18 heavy_marine
+attack_add 5 medic
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+goto volk_loop
+
+:cas_death
+upgrade 2 t_infantry_armor 30
+upgrade 1 t_ship_plating 30
+upgrade 1 t_vehicle_plating 30
+define_max 20 heavy_marine
+define_max 5 medic
+define_max 8 tesla_trooper
+define_max 4 phantom
+define_max 10 skywing
+define_max 3 valhalla
+wait 1223
+
+train 2 valhalla
+train 11 heavy_marine
+train 2 medic
+wait 635
+
+train 2 skywing
+attack_add 11 heavy_marine
+attack_add 2 medic
+attack_add 2 valhalla
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+train 8 skywing
+train 12 heavy_marine
+train 3 medic
+attack_add 8 heavy_marine
+attack_add 2 medic
+call attTrg
+attack_do
+attack_clear
+upgrade 3 t_infantry_armor 30
+upgrade 2 t_ship_plating 30
+upgrade 1 safety_protocols 30
+attack_add 4 skywing
+call attTrg
+attack_do
+attack_clear
+attack_add 4 heavy_marine
+attack_add 1 medic
+call attTrg
+attack_do
+attack_clear
+attack_add 4 skywing
+call attTrg
+attack_do
+attack_clear
+upgrade 2 goliath_range 30
+wait 1635
+
+upgrade 2 t_vehicle_plating 30
+upgrade 3 t_ship_plating 30
+train 4 skywing
+train 16 heavy_marine
+train 6 skywing
+train 3 medic
+attack_add 14 heavy_marine
+attack_add 6 skywing
+attack_add 3 medic
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+wait 1205
+
+train 2 valhalla
+upgrade 1 59 30
+:cas_loop
+train 11 heavy_marine
+train 2 valhalla
+train 2 scorpion
+train 22 heavy_marine
+train 3 valhalla
+train 3 medic
+train 4 scorpion
+attack_add 2 valhalla
+attack_add 12 heavy_marine
+attack_add 2 medic
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+train 1 valhalla
+train 6 heavy_marine
+train 2 medic
+train 3 phantom
+train 4 scorpion
+attack_add 1 valhalla
+attack_add 6 heavy_marine
+attack_add 2 medic
+attack_add 3 phantom
+attack_add 4 scorpion
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+train 6 scorpion
+wait 1005
+
+train 4 skywing
+train 14 heavy_marine
+train 6 skywing
+train 4 medic
+train 8 skywing
+attack_add 8 skywing
+attack_add 14 heavy_marine
+attack_add 3 medic
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+goto cas_loop
+
+:luftwaffe
+upgrade 2 t_infantry_armor 30
+upgrade 1 t_ship_plating 30
+upgrade 1 t_vehicle_plating 30
+define_max 18 heavy_marine
+define_max 4 medic
+define_max 8 tesla_trooper
+define_max 2 phantom
+define_max 12 skywing
+define_max 4 valhalla
+train 6 heavy_marine
+train 2 medic
+train 4 tesla_trooper
+train 4 skywing
+train 2 valkyrie
+attack_add 6 heavy_marine
+attack_add 2 medic
+attack_add 4 tesla_trooper
+attack_add 4 skywing
+attack_add 2 valkyrie
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+train 2 valhalla
+train 4 skywing
+train 2 valkyrie
+build 3 starport 80
+wait 1600
+
+attack_add 4 skywing
+attack_add 2 valkyrie
+attack_add 2 valhalla
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 t_ship_plating 30
+build 3 control_tower 80
+wait 2000
+
+train 2 valkyrie
+train 10 skywing
+attack_add 2 valkyrie
+attack_add 10 skywing
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+place_guard valhalla 0
+upgrade 3 t_ship_plating 30
+train 12 skywing
+wait 1100
+
+attack_add 6 skywing
+call attTrg
+attack_do
+attack_clear
+attack_add 6 skywing
+call attTrg
+attack_do
+attack_clear
+train 2 valhalla
+train 5 tesla_trooper
+train 3 valhalla
+train 7 tesla_trooper
+train 2 medic
+wait 1000
+
+attack_add 3 valhalla
+attack_add 7 tesla_trooper
+attack_add 2 medic
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+wait 650
+
+train 4 skywing
+train 5 heavy_marine
+train 8 skywing
+train 9 heavy_marine
+train 2 valkyrie
+wait 665
+
+attack_add 9 heavy_marine
+attack_add 8 skywing
+attack_add 2 valkyrie
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+wait 600
+
+upgrade 1 59 30
+:airloop
+train 9 skywing
+train 2 valkyrie
+wait_force 1 valhalla
+attack_add 9 skywing
+attack_add 2 valkyrie
+attack_add 1 valhalla
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+wait 900
+
+train 2 valhalla
+train 6 heavy_marine
+train 3 valhalla
+train 2 medic
+train 8 heavy_marine
+attack_add 3 valhalla
+attack_add 2 medic
+attack_add 8 heavy_marine
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+goto airloop
+
+:mechanized_assault
+upgrade 2 t_infantry_armor 30
+upgrade 1 t_ship_plating 30
+upgrade 1 t_vehicle_plating 30
+define_max 18 heavy_marine
+define_max 6 death_knight
+define_max 8 scorpion
+define_max 6 panzer
+define_max 3 medic
+define_max 8 tesla_trooper
+train 6 death_knight
+attack_add 6 death_knight
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 vulture_speed 30
+train 8 scorpion
+train 8 heavy_marine
+attack_add 6 scorpion
+call attTrg
+attack_do
+attack_clear
+attack_add 8 heavy_marine
+attack_add 2 scorpion
+call attTrg
+attack_do
+attack_clear
+wait 800
+
+train 2 panzer
+train 4 scorpion
+train 4 death_knight
+attack_add 4 scorpion
+attack_add 4 death_knight
+attack_add 2 panzer
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 59 30
+upgrade 2 t_vehicle_plating 30
+wait 1000
+
+train 2 panzer
+train 6 heavy_marine
+train 4 death_knight
+train 1 medic
+attack_add 2 panzer
+attack_add 4 death_knight
+attack_add 6 heavy_marine
+attack_add 1 medic
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+wait 1335
+
+train 6 death_knight
+attack_add 6 death_knight
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+upgrade 3 t_vehicle_plating 30
+wait 1115
+
+train 6 scorpion
+train 3 panzer
+attack_add 6 scorpion
+attack_add 3 panzer
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 goliath_range 30
+upgrade 1 safety_protocols 30
+train 2 panzer
+train 6 heavy_marine
+train 4 skywing
+wait 2005
+
+attack_add 6 heavy_marine
+attack_add 2 panzer
+attack_add 4 skywing
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+wait 1500
+
+train 4 death_knight
+train 2 panzer
+train 6 scorpion
+attack_add 4 death_knight
+attack_add 2 panzer
+attack_add 6 scorpion
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+:mechloop
+wait 1800
+
+train 6 death_knight
+attack_add 6 death_knight
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+wait 1305
+
+train 4 death_knight
+train 7 scorpion
+train 3 panzer
+attack_add 4 death_knight
+attack_add 7 scorpion
+attack_add 3 panzer
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+train 3 panzer
+train 8 heavy_marine
+train 5 skywing
+wait 635
+
+attack_add 3 panzer
+attack_add 4 heavy_marine
+attack_add 5 skywing
+call attTrg
+wait 500
+
+attack_do
+attack_clear
+goto mechloop
+
+:attTrg
+random_jump 165 want_expo
+:return_to_targeting
+random_jump 128 normal
+random_jump 128 sneaky
+attack_to Loc.91 Loc.92
+return
+
+:normal
+attack_to Loc.85 Loc.43
+return
+
+:sneaky
+attack_to Loc.86 Loc.92
+return
+
+:want_expo
+bring_jump 14 Exactly 0 group_buildings Loc.99 return_to_targeting
+attack_to Loc.86 Loc.98
+return
+
+:expo_getter
+wait 50
+
+bring_jump 14 AtLeast 1 group_buildings Loc.99 expo_getter
+wait 1500
+
+guard heavy_marine Loc.101 2 5 70
+guard skywing Loc.102 2 5 70
+:repeat_me
+allies_watch 1 expo
+wait 1500
+
+try_townpoint 1 repeat_me
+stop
+
+:expo
+start_town
+build 1 command_center 100
+get_oldpeons 1
+wait_buildstart 1 command_center
+get_oldpeons 2
+build 1 bunker 80
+wait_build 1 command_center
+build 1 scv 90
+build 4 scv 80
+wait_buildstart 3 scv
+build 1 barracks 80
+wait_buildstart 1 barracks
+build 1 missile_turret 80
+build 1 factory 80
+wait_buildstart 1 factory
+build 1 starport 80
+wait_build 1 starport
+build 1 machine_shop 80
+build 1 control_tower 80
+:town_Loop
+wait 1500
+
+goto town_Loop
+
+:dropship_replenish
+wait 16
+
+bring_jump 6 AtLeast 6 dropship Loc.63 dropship_replenish
+train 7 dropship
+wait_force 7 dropship
+wait 1500
+
+goto dropship_replenish
