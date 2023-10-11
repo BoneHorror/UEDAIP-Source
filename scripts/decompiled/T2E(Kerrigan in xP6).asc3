@@ -191,7 +191,6 @@ attack_do
 attack_clear
 tech spawn_broodling 30
 upgrade 1 dark_archon_mana 30
-upgrade 1 observer_sight 30
 wait 1450
 
 attack_add 5 revenant
