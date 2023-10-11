@@ -193,7 +193,7 @@ wait 1500
 goto block1
 
 :control_infra
-wait 1450
+wait 450
 
 create_script fort 255 Loc.92 255 0
 train 3 dragoon
@@ -214,6 +214,9 @@ train 4 zealot
 train 2 scout
 wait 3000
 
+create_script fort 255 Loc.95 255 0
+wait 2000
+
 create_script fort 255 Loc.90 255 0
 train 3 hornet
 train 8 zealot
@@ -224,6 +227,7 @@ train 1 reaver
 upgrade 3 p_plasma_shield 30
 wait 1500
 
+create_script fort 255 Loc.96 255 0
 goto block1
 
 :bank_p3
@@ -289,7 +293,7 @@ return
 
 :fort
 start_town
-build 1 pylon 80
+build 1 pylon 100
 place_guard dragoon 0
 wait_build 1 pylon
 creep 3
@@ -300,7 +304,7 @@ wait 1500
 goto floop
 
 :big_fort
-build 1 pylon 80
+build 1 pylon 100
 place_guard zealot 0
 wait_build 1 pylon
 creep 4
