@@ -391,6 +391,7 @@ attack_do
 attack_clear
 upgrade 2 z_flyer_attack 30
 upgrade 1 queen_mana 30
+upgrade 1 hydra_attack 30
 :retstrong
 wait 1350
 
@@ -478,6 +479,7 @@ wait 625
 
 build 7 pylon 80
 build 1 stargate 80
+build 1 observatory 80
 build 1 robotics_support_bay 80
 train 1 reaver
 load_bank xp6
@@ -514,6 +516,7 @@ wait 500
 
 attack_do
 attack_clear
+upgrade 1 observer_sight 30
 wait 2850
 
 attack_add 1 reaver
