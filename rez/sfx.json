@@ -7744,11 +7744,11 @@
           },
           {
             "filePath": "Protoss/FENIXZ/UFeYes02.WAV",
-            "priority": 1,
+            "priority": 2,
             "preload": "false",
-            "unitSpeech": "true",
+            "unitSpeech": "false",
             "oneAtATime": "false",
-            "neverPreempt": "true",
+            "neverPreempt": "false",
             "lengthAdjust": 0,
             "minVolume": 0,
             "ID": "FENIX_ZEALOT_YESSIR_2"
