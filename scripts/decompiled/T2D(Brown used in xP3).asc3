@@ -233,7 +233,9 @@ goto block1
 :bank_p3
 wait 8
 
-deaths 1 Exactly 0 98 bank_p3
+bring_jump 14 AtLeast 1 151 Loc.63 bank_p3
+deaths 7 Set 1 medic bank_cybercore
+#cerebrate
 wait 16
 
 deaths 6 AtLeast_Call 1 dragoon bank_cybercore
@@ -280,7 +282,7 @@ bank_data Set 1 xp3 bridge bank_ass
 return
 
 :bank_ass
-bank_data Set 1 xp3 ass bank_ass
+bank_data Set 1 xp3 ass bank_bridge
 return
 
 :bank_archive
