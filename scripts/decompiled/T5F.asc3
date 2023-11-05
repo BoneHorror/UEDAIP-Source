@@ -61,14 +61,7 @@ supply 13 Set 240 Max 0 Terran block1
 supply 6 Set 240 Max 0 Terran block1
 wait 16
 
-guard hnorad Loc.26 1 255 70
-guard hnorad Loc.108 1 255 70
-guard hnorad Loc.109 1 255 70
-guard hnorad Loc.110 1 255 70
-guard hnorad Loc.111 1 255 70
-guard hnorad Loc.112 1 255 70
-guard hnorad Loc.113 1 255 70
-guard hnorad Loc.114 1 255 70
+multirun shipyards
 tech siege_mode 30
 multirun grand_exchange
 wait 1335
@@ -281,6 +274,38 @@ wait 500
 attack_do
 attack_clear
 goto block1
+
+:shipyards
+random_jump 128 alt_ship_pattern
+guard hnorad Loc.26 1 255 70
+guard hnorad Loc.108 1 255 70
+guard hnorad Loc.109 1 255 70
+wait 8500
+
+guard hnorad Loc.110 1 255 70
+guard hnorad Loc.111 1 255 70
+guard hnorad Loc.112 1 255 70
+wait 12500
+
+guard hnorad Loc.113 1 255 70
+guard hnorad Loc.114 1 255 70
+stop
+
+
+:alt_ship_pattern
+guard hnorad Loc.112 1 255 70
+guard hnorad Loc.113 1 255 70
+guard hnorad Loc.114 1 255 70
+wait 9000
+
+guard hnorad Loc.26 1 255 70
+guard hnorad Loc.108 1 255 70
+guard hnorad Loc.111 1 255 70
+wait 11750
+
+guard hnorad Loc.109 1 255 70
+guard hnorad Loc.110 1 255 70
+stop
 
 :dom_mining
 start_town

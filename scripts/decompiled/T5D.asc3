@@ -95,6 +95,8 @@ guard 15 Loc.114 1 255 70
 wait_train 1 hnorad
 idle_orders 113 32 2 hnorad 356 battlecruiser|barracks|factory|starport|valhalla 80 InCombat|Hp(GreaterThanPercent 75)
 idle_orders 113 32 1 hnorad 356 valkyrie|dropship|panzer|death_knight|missile_turret|bunker 50 InCombat|Hp(GreaterThanPercent 80)
+wait 805
+
 train 4 marine
 attack_add 1 hnorad
 attack_add 4 marine
@@ -111,7 +113,8 @@ idle_orders 141 83 1 science_vessel 1024 vulture 10 own|allied|notenemies|incomb
 idle_orders 141 83 1 science_vessel 1024 wraith 20 own|allied|notenemies|incombat
 idle_orders 141 83 1 science_vessel 1024 siege_tank 40 own|allied|notenemies|incombat
 idle_orders 141 83 1 science_vessel 1024 hnorad 80 own|allied|notenemies|incombat
-wait 1405
+#these waits used to be tiny because the AI was super slow at getting BCs, but now it feels like it's near-instant; adjusting hard waits to compensate
+wait 2605
 
 multirun help_request
 build 5 scv 80
@@ -126,7 +129,7 @@ tech stim_packs 30
 upgrade 2 t_ship_plating 30
 upgrade 2 t_ship_weapon 30
 upgrade 1 t_infantry_weapon 30
-wait 1475
+wait 2575
 
 train 4 goliath
 train 4 firebat
@@ -141,7 +144,7 @@ attack_do
 attack_clear
 build 8 scv 80
 upgrade 1 t_infantry_armor 30
-wait 1365
+wait 2565
 
 train 14 marine
 attack_add 3 hnorad
@@ -153,7 +156,7 @@ attack_clear
 upgrade 1 marine_range 30
 upgrade 3 t_ship_plating 30
 upgrade 3 t_ship_weapon 30
-wait 2312
+wait 2712
 
 train 6 goliath
 train 4 siege_tank
@@ -171,7 +174,7 @@ upgrade 2 t_infantry_weapon 30
 upgrade 1 t_vehicle_plating 30
 upgrade 1 t_vehicle_weapon 30
 upgrade 1 wraith_mana 30
-wait 1685
+wait 2085
 
 deaths 0 Set 1 valkyrie block7
 train 12 goliath
