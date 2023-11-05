@@ -7,33 +7,47 @@ defaultbuild_off
 default_min 0
 wait 1
 
-idle_orders 10 16 1 hnorad|battlecruiser|goliath 160 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 80 Health(LessThan 30)
-idle_orders 10 16 2 hnorad|battlecruiser|goliath 160 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 90 Health(LessThan 60)
+sharedvision_on 6
+idle_orders 10 32 3 hnorad|battlecruiser 192 battlecruiser 80 Health(LessThan 90)
+idle_orders 10 16 2 hnorad|battlecruiser 32000 battlecruiser 90 0
 #idle_orders 115 32 1 ghost 280 carrier|reaver|hnorad|battlecruiser|siege_tank|panzer|valhalla 80 Hp(GreaterThanPercent 20)|Self(InCombat)|Self(Energy(GreaterThan 85))|UnitFlags(Mechanical)|WithoutSpellEffects(Lockdown)
 wait_train 1 battlecruiser
-attack_add 5 battlecruiser
+attack_add 8 battlecruiser
 attack_to Loc.136 Loc.123
 wait 16
 
-attack_timeout 6
+attack_timeout 5
 attack_do
 attack_clear
-attack_add 4 battlecruiser
-attack_to Loc.137 Loc.123
-wait 16
+idle_orders 113 32 2 hnorad|battlecruiser 356 battlecruiser 60 InCombat|Hp(GreaterThanPercent 75)
+idle_orders 113 32 1 hnorad|battlecruiser 356 battlecruiser 120 InCombat|count(AtLeast 2 30 14)
+idle_orders 113 32 2 hnorad|battlecruiser 356 battlecruiser 150 InCombat|count(AtLeast 3 30 14)
+idle_orders 113 32 2 hnorad|battlecruiser 356 battlecruiser 180 InCombat|count(AtLeast 4 30 14)
+multirun str_suicide
+#attack_add 4 battlecruiser
+#attack_to Loc.137 Loc.123
+#wait 16
+#
+#attack_timeout 6
+#attack_do
+#attack_clear
+wait 90
 
-attack_timeout 6
-attack_do
-attack_clear
 attack_add 1 science_vessel
 attack_add 5 battlecruiser
 attack_to Loc.175 Loc.123
 wait 16
 
-attack_timeout 7
+attack_timeout 6
 attack_do
 attack_clear
 :loop
 wait 1500
 
 goto loop
+
+:str_suicide
+wait 32
+
+send_suicide 0
+goto str_suicide

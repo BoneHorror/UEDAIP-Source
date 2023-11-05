@@ -6,7 +6,7 @@ wait 1
 
 start_town
 defaultbuild_off
-default_min 1
+default_min 0
 wait 1
 
 wait 25
@@ -26,7 +26,7 @@ build 1 physics_lab 80
 build 1 starport 80
 build 1 control_tower 80
 player_need 2 starport
-max_force 866
+max_force 1166
 define_max 30 scv
 define_max 28 marine
 define_max 10 firebat

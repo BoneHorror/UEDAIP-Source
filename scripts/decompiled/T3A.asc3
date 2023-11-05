@@ -10,9 +10,6 @@ default_min 0
 wait 1
 
 multirun gar
-wait 25
-
-load_bank bc_bank
 build 1 drone 80
 build 1 hatchery 80
 build 12 drone 80
@@ -34,7 +31,6 @@ farms_timing
 tech burrowing 30
 upgrade 1 overlord_capacity 30
 upgrade 1 overlord_speed 30
-multirun bank
 wait 1250
 
 guard ultralisk (357,304) 1 3 100
@@ -217,18 +213,6 @@ wait 6500
 
 train 1 defiler
 goto idle
-
-:bank
-wait 320
-
-bank_data Set 0 bc_bank confed_outpost idle
-:bank_loop
-wait 16
-
-deaths 0 AtMost 0 battlecruiser bank_loop
-bank_data Set 1 bc_bank confed_outpost idle
-save_bank bc_bank
-stop
 
 :SimpleTarget
 unstart_campaign
