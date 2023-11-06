@@ -20,7 +20,7 @@ build 1 armory 80
 build 1 comsat_station 80
 build 1 science_facility 80
 build 1 covert_ops 80
-max_force 700
+max_force 850
 wait 150
 
 build 18 scv 80
@@ -73,7 +73,7 @@ train 2 wraith
 train 1 goliath
 attack_add 2 wraith
 attack_add 1 goliath
-attack_prepare
+attack_to Loc.74 Loc.89
 wait 500
 
 create_script asoutpost 255 Loc.62 255 0
@@ -90,7 +90,7 @@ train 2 ghost
 train 1 siege_tank
 attack_add 1 siege_tank
 attack_add 2 ghost
-attack_prepare
+attack_to Loc.24 Loc.89
 wait 160
 
 attack_do
@@ -114,7 +114,7 @@ upgrade 1 vulture_speed 30
 upgrade 2 t_infantry_weapon 30
 create_script early_bunkers 255 Loc.78 255 0
 multirun siegecheck
-wait 2485
+wait 2285
 
 train 3 firebat
 train 6 vulture

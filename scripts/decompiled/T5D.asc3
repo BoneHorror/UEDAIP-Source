@@ -100,7 +100,7 @@ wait 805
 train 4 marine
 attack_add 1 hnorad
 attack_add 4 marine
-call targeting
+attack_to Loc.25 Loc.40
 
 attack_do
 attack_clear

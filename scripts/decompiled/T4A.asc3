@@ -22,7 +22,7 @@ build 1 armory 80
 build 1 comsat_station 80
 build 2 starport 80
 build 2 control_tower 80
-max_force 700
+max_force 850
 wait 150
 
 build 17 scv 80
@@ -84,9 +84,11 @@ wait 500
 
 attack_do
 attack_clear
+defensebuild_gg 1 firebat
+defenseuse_gg 1 firebat
 upgrade 1 marine_range 80
 create_script bunker_rush 255 Loc.79 255 0
-wait 1650
+wait 1450
 
 defensebuild_gg 1 vulture
 defenseuse_gg 1 vulture
@@ -100,8 +102,6 @@ defensebuild_gg 1 marine
 defenseuse_gg 1 marine
 defensebuild_gg 1 goliath
 defenseuse_gg 1 goliath
-defensebuild_gg 1 firebat
-defenseuse_gg 1 firebat
 defensebuild_gg 1 siege_tank
 defensebuild_ag 1 marine
 defenseuse_ag 1 marine
@@ -113,7 +113,8 @@ train 2 firebat
 attack_add 6 marine
 attack_add 2 firebat
 attack_add 1 goliath
-attack_prepare
+#topside entrance to main
+attack_to Loc.29 Loc.84
 wait 500
 
 attack_do

@@ -77,14 +77,15 @@ train 6 marine
 train 2 firebat
 attack_add 6 marine
 attack_add 2 firebat
-attack_prepare
+#from a cliff towards the bottom of the map
+attack_to (2384,3968) (816,3648)
 wait 500
 
 attack_do
 attack_clear
 expand 1 dom_mining
 upgrade 1 battlecruiser_mana 30
-wait 2277
+wait 2677
 
 train 4 firebat
 train 4 goliath
@@ -101,7 +102,7 @@ upgrade 1 t_vehicle_weapon 30
 upgrade 1 t_infantry_armor 30
 upgrade 1 t_vehicle_plating 30
 upgrade 1 t_ship_weapon 30
-wait 2267
+wait 2567
 
 train 4 firebat
 train 3 goliath
