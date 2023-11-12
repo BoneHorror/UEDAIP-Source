@@ -46,7 +46,8 @@ upgrade 1 overlord_speed 30
 upgrade 1 z_carapace 30
 upgrade 1 hydralisk_speed 30
 multirun warpgate_active
-wait_rand 655 2850
+#wait until stukov warpgate dlg
+wait 2625
 
 multirun grand_exchange
 build 8 drone 80
@@ -57,7 +58,7 @@ wait 16
 if_attacking delay1
 attack_add 6 zergling
 attack_add 3 hydralisk
-call attacktrg
+attack_to Loc.109 Loc.135
 wait 500
 
 attack_do

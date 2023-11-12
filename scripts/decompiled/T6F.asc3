@@ -18,7 +18,7 @@ wait 535
 
 build 6 drone 80
 train 3 mutalisk
-wait_rand 245 1835
+wait 3125
 
 :delay1
 wait 16
