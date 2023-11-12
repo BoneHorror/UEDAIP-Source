@@ -218,16 +218,16 @@ stop
 wait 16
 
 tech_jump 13 Exactly psionic_storm 0 ec_storm_io
-idle_orders 142 256 1 high_templar 1324 ultralisk|devourer|carrier|hnorad|battlecruiser|valkyrie|science_vessel|arbiter|reaver|panzer|siege_tank 50 incombat|count(AtLeast 2 60 14)
-idle_orders 142 128 1 high_templar 1024 hydralisk|mutalisk|guardian|wraith|scout|corsair|marine|heavy_marine|tesla_trooper|drone|probe|scv|medic|firebat|goliath|vulture|dragoon|zealot|high_templar 80 incombat|count(AtLeast 4 60 14)
-idle_orders 142 128 1 high_templar 1024 group_men 60 incombat|count(AtLeast 5 60 14)
-idle_orders 142 128 1 high_templar 1024 group_men 40 incombat|count(AtLeast 3 40 14)
+idle_orders 142 256 1 high_templar 1324 ultralisk|devourer|carrier|hnorad|battlecruiser|valkyrie|science_vessel|arbiter|reaver|panzer|siege_tank 50 incombat|count(AtLeast 2 60 14)|Count(AtMost 1 60 13)
+idle_orders 142 128 1 high_templar 1024 hydralisk|mutalisk|guardian|wraith|scout|corsair|marine|heavy_marine|tesla_trooper|drone|probe|scv|medic|firebat|goliath|vulture|dragoon|zealot|high_templar 80 incombat|count(AtLeast 4 60 14)|Count(AtMost 1 60 13)
+idle_orders 142 128 1 high_templar 1024 group_men 60 incombat|count(AtLeast 5 60 14)|Count(AtMost 1 60 13)
+idle_orders 142 128 1 high_templar 1024 group_men 40 incombat|count(AtLeast 3 40 14)|Count(AtMost 1 60 13)
 idle_orders 142 128 1 high_templar 192 group_men 40 Deathrattle
-idle_orders 142 64 1 valhalla 356 zergling|zealot|marine|heavy_marine 50 incombat|count(AtLeast 4 48 14)
-idle_orders 142 64 1 valhalla 356 hydralisk|dark_templar|dragoon|firebat|tesla_trooper|high_templar|ghost|phantom 50 incombat|count(AtLeast 3 48 14)
-idle_orders 142 128 1 valhalla 356 lurker|revenant|reaver|scorpion|death_knight|goliath 80 incombat|count(AtLeast 2 48 14)
-idle_orders 142 128 1 valhalla 356 mutalisk|scout|corsair|skywing|wraith 60 incombat|count(AtLeast 2 48 14)
-idle_orders 142 128 1 valhalla 356 carrier|devourer|guardian|ultralisk|infested_terran|valhalla|hnorad|battlecruiser|archon 40 incombat
+idle_orders 142 64 1 valhalla 356 zergling|zealot|marine|heavy_marine 50 incombat|count(AtLeast 4 48 14)|Count(AtMost 1 60 13)
+idle_orders 142 64 1 valhalla 356 hydralisk|dark_templar|dragoon|firebat|tesla_trooper|high_templar|ghost|phantom 50 incombat|count(AtLeast 3 48 14)|Count(AtMost 1 60 13)
+idle_orders 142 128 1 valhalla 356 lurker|revenant|reaver|scorpion|death_knight|goliath 80 incombat|count(AtLeast 2 48 14)|Count(AtMost 1 60 13)
+idle_orders 142 128 1 valhalla 356 mutalisk|scout|corsair|skywing|wraith 60 incombat|count(AtLeast 2 48 14)|Count(AtMost 1 60 13)
+idle_orders 142 128 1 valhalla 356 carrier|devourer|guardian|ultralisk|infested_terran|valhalla|hnorad|battlecruiser|archon 40 incombat|Count(AtMost 1 60 13)
 stop
 
 :ec_dweb_io
@@ -243,12 +243,12 @@ stop
 wait 16
 
 tech_jump 13 Exactly stasis_field 0 ec_stasis_io
-idle_orders 147 1024 1 arbiter 1536 archon|ultralisk|battlecruiser|102 40 incombat|Self(Order(3))
-idle_orders 147 1024 1 arbiter 1536 carrier|guardian|devourer|valhalla 50 incombat|Self(Order(3))
-idle_orders 147 1024 1 arbiter 1536 dark_templar|hydralisk|dragoon|zealot|mutalisk|scourge|corsair|wraith|skywing|valkyrie 30 incombat|count(AtLeast 2 48 13)|Self(Order(3))
-idle_orders 147 1024 1 arbiter 1536 dark_archon|archon|queen|defiler|ghost|science_vessel|phantom 30 incombat|Self(Order(3))
-idle_orders 147 1024 1 arbiter 1536 reaver|infested_terran|siege_tank|lurker|panzer|death_knight 50 incombat|count(AtLeast 2 48 13)|Self(Order(3))
-idle_orders 147 1024 1 arbiter 536 group_men 60 incombat|count(AtLeast 5 60 14)|Self(Order(3))
+idle_orders 147 1024 1 arbiter 1536 archon|ultralisk|battlecruiser|102 40 incombat|Self(Order(3))|Count(AtMost 1 60 13)
+idle_orders 147 1024 1 arbiter 1536 carrier|guardian|devourer|valhalla 50 incombat|Self(Order(3))|Count(AtMost 1 60 13)
+idle_orders 147 1024 1 arbiter 1536 dark_templar|hydralisk|dragoon|zealot|mutalisk|scourge|corsair|wraith|skywing|valkyrie 30 incombat|count(AtLeast 2 48 13)|Self(Order(3))|Count(AtMost 1 60 13)
+idle_orders 147 1024 1 arbiter 1536 dark_archon|archon|queen|defiler|ghost|science_vessel|phantom 30 incombat|Self(Order(3))|Count(AtMost 1 60 13)
+idle_orders 147 1024 1 arbiter 1536 reaver|infested_terran|siege_tank|lurker|panzer|death_knight 50 incombat|count(AtLeast 2 48 13)|Self(Order(3))|Count(AtMost 1 60 13)
+idle_orders 147 1024 1 arbiter 536 group_men 60 incombat|count(AtLeast 5 60 14)|Self(Order(3))|Count(AtMost 1 60 13)
 idle_orders 147 0 0 arbiter 256 group_men 80 deathrattle
 stop
 
@@ -345,18 +345,18 @@ stop
 wait 16
 
 tech_jump 13 Exactly ensnare 0 ec_ensnare_io
-idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|marine|vulture|heavy_marine|scorpion 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 45))|Self(Order(3))
-idle_orders 146 0 1 queen 1024 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 50))|Self(Order(3))
-idle_orders 146 0 1 queen 1024 dragoon|corsair|scout|dark_templar|wraith|ghost|skywing|phantom 40 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 55))|Self(Order(3))
-idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|dragoon|corsair|scout|dark_archon|devourer|guardian|dark_templar|goliath|siege_tank|revenant|death_knight|panzer 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 50))|Self(Order(3))
-idle_orders 146 0 1 queen 1024 reaver|dark_archon|archon|devourer|guardian|102|battlecruiser|valhalla|carrier|arbiter 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 45))|Self(Order(3))
-idle_orders 146 8 1 queen 312 group_men 30 deathrattle
-idle_orders 146 0 1 phantom 356 zealot|zergling|hydralisk|marine|vulture|heavy_marine|scorpion 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 45))
-idle_orders 146 0 1 phantom 356 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 50))
-idle_orders 146 0 1 phantom 356 dragoon|corsair|scout|dark_templar|wraith|ghost|skywing|phantom 40 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 55))
-idle_orders 146 0 1 phantom 356 zealot|zergling|hydralisk|dragoon|corsair|scout|dark_archon|devourer|guardian|dark_templar|goliath|siege_tank|revenant|death_knight|panzer 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 50))
-idle_orders 146 0 1 phantom 356 reaver|dark_archon|archon|devourer|guardian|hnorad|battlecruiser|valhalla|carrier|arbiter 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 45))
-idle_orders 146 8 1 phantom 256 group_men 30 deathrattle
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|marine|vulture|heavy_marine|scorpion 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 45))|Self(Order(3))|Count(AtMost 1 60 13)
+idle_orders 146 0 1 queen 1024 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 50))|Self(Order(3))|Count(AtMost 1 60 13)
+idle_orders 146 0 1 queen 1024 dragoon|corsair|scout|dark_templar|wraith|ghost|skywing|phantom 40 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 55))|Self(Order(3))|Count(AtMost 1 60 13)
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|dragoon|corsair|scout|dark_archon|devourer|guardian|dark_templar|goliath|siege_tank|revenant|death_knight|panzer 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 50))|Self(Order(3))|Count(AtMost 1 60 13)
+idle_orders 146 0 1 queen 1024 reaver|dark_archon|archon|devourer|guardian|102|battlecruiser|valhalla|carrier|arbiter 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 45))|Self(Order(3))|Count(AtMost 1 60 13)
+idle_orders 146 8 1 queen 312 group_men 30 deathrattle|Count(AtMost 2 60 13)
+idle_orders 146 0 1 phantom 356 zealot|zergling|hydralisk|marine|vulture|heavy_marine|scorpion 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 45))|Count(AtMost 1 60 13)
+idle_orders 146 0 1 phantom 356 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 50))|Count(AtMost 1 60 13)
+idle_orders 146 0 1 phantom 356 dragoon|corsair|scout|dark_templar|wraith|ghost|skywing|phantom 40 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 55))|Count(AtMost 1 60 13)
+idle_orders 146 0 1 phantom 356 zealot|zergling|hydralisk|dragoon|corsair|scout|dark_archon|devourer|guardian|dark_templar|goliath|siege_tank|revenant|death_knight|panzer 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 50))|Count(AtMost 1 60 13)
+idle_orders 146 0 1 phantom 356 reaver|dark_archon|archon|devourer|guardian|hnorad|battlecruiser|valhalla|carrier|arbiter 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 45))|Count(AtMost 1 60 13)
+idle_orders 146 8 1 phantom 256 group_men 30 deathrattle|Count(AtMost 1 60 13)
 stop
 
 :ec_consume_io
@@ -371,11 +371,11 @@ stop
 wait 16
 
 tech_jump 13 Exactly plague 0 ec_plague_io
-idle_orders 144 64 1 defiler 788 group_men 55 count(AtLeast 3 120 14) 
-idle_orders 144 64 1 defiler 512 skywing|death_knight|scorpion|wraith|science_vessel|dragoon|corsair|scout 80 incombat|count(AtLeast 3 120 14)
-idle_orders 144 64 1 defiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|devourer|guardian|ultralisk 115 incombat|count(AtLeast 2 120 14)
-idle_orders 144 64 1 defiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|ultralisk 80 incombat
-idle_orders 144 64 1 defiler 512 heavy_marine|medic|ghost|phantom|marine|firebat|vulture|zealot|hydralisk|mutalisk|revenant|dark_templar|high_templar 55 incombat|count(AtLeast 4 120 14)
+idle_orders 144 64 1 defiler 788 group_men 55 count(AtLeast 3 120 14)|Count(AtMost 1 60 13)
+idle_orders 144 64 1 defiler 512 skywing|death_knight|scorpion|wraith|science_vessel|dragoon|corsair|scout 80 incombat|count(AtLeast 3 120 14)|Count(AtMost 1 60 13)
+idle_orders 144 64 1 defiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|devourer|guardian|ultralisk 115 incombat|count(AtLeast 2 120 14)|Count(AtMost 1 60 13)
+idle_orders 144 64 1 defiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|ultralisk 80 incombat|Count(AtMost 1 60 13)
+idle_orders 144 64 1 defiler 512 heavy_marine|medic|ghost|phantom|marine|firebat|vulture|zealot|hydralisk|mutalisk|revenant|dark_templar|high_templar 55 incombat|count(AtLeast 4 120 14)|Count(AtMost 1 60 13)
 stop
 
 :hallu_io
@@ -404,7 +404,7 @@ stop
 wait 16
 
 tech_jump 13 Exactly lockdown 0 lockdown_io
-idle_orders 115 34 1 ghost 210 group_men 50 Hp(GreaterThanPercent 50)|Self(InCombat)|Self(Energy(GreaterThan 185))|UnitFlags(Mechanical)|WithoutSpellEffects(Lockdown)
+idle_orders 115 34 1 ghost 210 group_men 50 Hp(GreaterThanPercent 50)|Self(InCombat)|Self(Energy(GreaterThan 185))|UnitFlags(Mechanical)|WithoutSpellEffects(Lockdown)|Self(Order(3))
 stop
 
 :ec_hallu_io
@@ -430,8 +430,8 @@ stop
 wait 16
 
 tech_jump 13 Exactly lockdown 0 ec_lockdown_io
-idle_orders 115 32 1 ghost 210 group_men 50 Hp(GreaterThanPercent 50)|Self(InCombat)|Self(Energy(GreaterThan 150))|UnitFlags(Mechanical)|WithoutSpellEffects(Lockdown)
-idle_orders 115 32 1 ghost 280 carrier|reaver|hnorad|battlecruiser|siege_tank|panzer|valhalla|science_vessel|arbiter 80 Hp(GreaterThanPercent 20)|Self(InCombat)|Self(Energy(GreaterThan 80))|WithoutSpellEffects(Lockdown)
+idle_orders 115 32 1 ghost 210 group_men 50 Hp(GreaterThanPercent 50)|Self(InCombat)|Self(Energy(GreaterThan 150))|UnitFlags(Mechanical)|WithoutSpellEffects(Lockdown)|Self(Order(3))
+idle_orders 115 32 1 ghost 280 carrier|reaver|hnorad|battlecruiser|siege_tank|panzer|valhalla|science_vessel|arbiter 80 Hp(GreaterThanPercent 20)|Self(InCombat)|Self(Energy(GreaterThan 80))|WithoutSpellEffects(Lockdown)|Self(Order(3))
 idle_orders 115 32 1 ghost 280 dropship|shuttle 90 Hp(GreaterThanPercent 20)|Self(InCombat)|Self(Energy(GreaterThan 75))|WithoutSpellEffects(Lockdown)|Cargo(GreaterThan 1)
 stop
 
@@ -439,8 +439,8 @@ stop
 wait 16
 
 tech_jump 13 Exactly emp_shockwave 0 ec_emp_io
-idle_orders 122 226 1 science_vessel 338 Group_Men 50 InCombat|Count(AtLeast 2 60 14)|Energy(GreaterThan 200)|Self(Order(3))
-idle_orders 122 128 1 science_vessel 512 Group_Men 60 InCombat|Count(AtLeast 2 60 14)|Shields(GreaterThan 300)|Self(Order(3))
+idle_orders 122 226 1 science_vessel 338 Group_Men 50 InCombat|Count(AtLeast 2 60 14)|Energy(GreaterThan 200)|Self(Order(3))|Count(AtMost 1 60 13)
+idle_orders 122 128 1 science_vessel 512 Group_Men 60 InCombat|Count(AtLeast 2 60 14)|Shields(GreaterThan 300)|Self(Order(3))|Count(AtMost 1 60 13)
 stop 
 
 :enable
