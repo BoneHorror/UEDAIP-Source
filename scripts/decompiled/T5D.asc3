@@ -79,28 +79,29 @@ upgrade_jump 0 Set 18 0 block7
 idle_orders DisableBuiltin 0 0 0 0 0 0 0
 wait 100
 
-build 3 scv 80
+build 4 scv 80
 unit_avail 1 Set Disabled 264 block7
 upgrade 1 t_ship_weapon 30
 upgrade 1 t_ship_plating 30
 upgrade 1 battlecruiser_mana 30
+guard 15 Loc.108 1 255 70
+guard 15 Loc.109 1 255 70
+guard 15 Loc.110 1 255 70
 guard 15 Loc.26 1 255 70
-guard 15 Loc.108 1 255 75
-guard 15 Loc.109 1 255 75
-guard 15 Loc.110 1 255 75
-guard 15 Loc.111 1 255 75
+guard 15 Loc.111 1 255 70
 guard 15 Loc.112 1 255 70
 guard 15 Loc.113 1 255 70
 guard 15 Loc.114 1 255 70
 wait_train 1 hnorad
 idle_orders 113 32 2 hnorad 356 battlecruiser|barracks|factory|starport|valhalla 80 InCombat|Hp(GreaterThanPercent 75)
 idle_orders 113 32 1 hnorad 356 valkyrie|dropship|panzer|death_knight|missile_turret|bunker 50 InCombat|Hp(GreaterThanPercent 80)
-wait 805
+wait 2050
 
 train 4 marine
 attack_add 1 hnorad
 attack_add 4 marine
 attack_to Loc.25 Loc.40
+wait 300
 
 attack_do
 attack_clear

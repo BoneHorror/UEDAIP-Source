@@ -12,7 +12,6 @@ wait 1
 notowns_jump command_center lost_probe
 wait 25
 
-guard_all
 load_bank bc_bank
 build 1 command_center 130
 build 1 scv 110
@@ -72,7 +71,6 @@ upgrade 1 t_infantry_weapon 30
 upgrade 1 t_ship_plating 30
 wait 2305
 
-multirun help_request
 train 6 marine
 train 2 firebat
 attack_add 6 marine
@@ -119,6 +117,7 @@ expand 2 dom_mining
 define_max 5 hnorad
 wait 2570
 
+multirun help_request
 train 12 marine
 train 4 siege_tank
 attack_add 12 marine
@@ -278,12 +277,13 @@ goto block1
 
 :shipyards
 random_jump 128 alt_ship_pattern
-guard hnorad Loc.26 1 255 70
+
+guard hnorad Loc.110 1 255 70
 guard hnorad Loc.108 1 255 70
 guard hnorad Loc.109 1 255 70
 wait 8500
 
-guard hnorad Loc.110 1 255 70
+guard hnorad Loc.26 1 255 70
 guard hnorad Loc.111 1 255 70
 guard hnorad Loc.112 1 255 70
 wait 12500
@@ -294,18 +294,18 @@ stop
 
 
 :alt_ship_pattern
+guard hnorad Loc.108 1 255 70
+guard hnorad Loc.109 1 255 70
+guard hnorad Loc.110 1 255 70
+wait 9000
+
 guard hnorad Loc.112 1 255 70
 guard hnorad Loc.113 1 255 70
 guard hnorad Loc.114 1 255 70
-wait 9000
-
-guard hnorad Loc.26 1 255 70
-guard hnorad Loc.108 1 255 70
-guard hnorad Loc.111 1 255 70
 wait 11750
 
-guard hnorad Loc.109 1 255 70
-guard hnorad Loc.110 1 255 70
+guard hnorad Loc.26 1 255 70
+guard hnorad Loc.111 1 255 70
 stop
 
 :dom_mining
