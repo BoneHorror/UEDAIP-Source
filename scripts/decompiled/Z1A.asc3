@@ -31,6 +31,9 @@ notowns_jump hydralisk_den hd
 defensebuild_gg 1 hydralisk
 defenseuse_gg 1 hydralisk
 define_max 4 hydralisk
+wait 200
+
+implode
 wait 5000
 
 define_max 10 zergling

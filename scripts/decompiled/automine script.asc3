@@ -223,11 +223,12 @@ idle_orders 142 128 1 high_templar 1024 hydralisk|mutalisk|guardian|wraith|scout
 idle_orders 142 128 1 high_templar 1024 group_men 60 incombat|count(AtLeast 5 60 14)|Count(AtMost 1 60 13)
 idle_orders 142 128 1 high_templar 1024 group_men 40 incombat|count(AtLeast 3 40 14)|Count(AtMost 1 60 13)
 idle_orders 142 128 1 high_templar 192 group_men 40 Deathrattle
-idle_orders 142 64 1 valhalla 356 zergling|zealot|marine|heavy_marine 50 incombat|count(AtLeast 4 48 14)|Count(AtMost 1 60 13)
-idle_orders 142 64 1 valhalla 356 hydralisk|dark_templar|dragoon|firebat|tesla_trooper|high_templar|ghost|phantom 50 incombat|count(AtLeast 3 48 14)|Count(AtMost 1 60 13)
-idle_orders 142 128 1 valhalla 356 lurker|revenant|reaver|scorpion|death_knight|goliath 80 incombat|count(AtLeast 2 48 14)|Count(AtMost 1 60 13)
-idle_orders 142 128 1 valhalla 356 mutalisk|scout|corsair|skywing|wraith 60 incombat|count(AtLeast 2 48 14)|Count(AtMost 1 60 13)
-idle_orders 142 128 1 valhalla 356 carrier|devourer|guardian|ultralisk|infested_terran|valhalla|hnorad|battlecruiser|archon 40 incombat|Count(AtMost 1 60 13)
+idle_orders 142 64 1 valhalla 356 zergling|zealot|marine|heavy_marine 50 incombat|count(AtLeast 5 48 14)|Count(AtMost 1 75 13)
+idle_orders 142 64 1 valhalla 356 hydralisk|dark_templar|dragoon|firebat|tesla_trooper|high_templar|ghost|phantom 50 incombat|count(AtLeast 4 48 14)|Count(AtMost 1 75 13)
+idle_orders 142 128 1 valhalla 356 revenant|death_knight|goliath 70 incombat|count(AtLeast 2 48 14)|Count(AtMost 1 60 13)
+idle_orders 142 128 1 valhalla 356 lurker|reaver|scorpion|infested_terran 80 incombat|count(AtLeast 3 60 14)|Count(AtMost 1 60 13)
+idle_orders 142 128 1 valhalla 356 mutalisk|scout|corsair|skywing|wraith|devourer 60 incombat|count(AtLeast 3 42 14)|Count(AtMost 1 60 13)
+idle_orders 142 128 1 valhalla 356 carrier|guardian|ultralisk|valhalla|hnorad|battlecruiser|archon 40 incombat|Count(AtLeast 2 60 14|Count(AtMost 1 60 13)
 stop
 
 :ec_dweb_io
