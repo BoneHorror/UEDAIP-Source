@@ -1349,9 +1349,7 @@ Halves attack cooldown, increases movement speed by 50% for 296 frames</value>
     <string>
         <id>STR_USEMAGNA</id>
         <value>lLockdown
-Immobilizes target Mechanical unit for 408 frames
-Damages mechanical parts, dealing 20 health damage
-over the effect duration</value>
+Immobilizes target Mechanical unit for 408 frames. Damages mechanical parts, dealing 20 health damage over the effect duration</value>
     </string>
     <string>
         <id>STR_USEMINES</id>
@@ -6731,5 +6729,9 @@ bonus doubled for Burrowed units)</value>
 	<string>
         <id>FIRST_UNIT_STRING-277</id>
         <value>Zerg Spawnsire</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-278</id>
+        <value>Kenji Yamamoto</value>
     </string>
 </strings>

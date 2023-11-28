@@ -1270,7 +1270,11 @@ HydraliskInit:
 HydraliskWalkingToIdle:
 	playfram       	0x55	# frame set 5
 HydraliskLocal02:
-	waitrand       	63 75
+	wait			3
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	wait			25
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	waitrand       	35 47
 	randcondjmp    	25 HydraliskLocal00
 	randcondjmp    	128 HydraliskLocal01
 	goto           	HydraliskLocal02
@@ -8299,7 +8303,7 @@ TerranSel:
 	set game.unit_availability(player, 56) = 0
 	set game.unit_availability(player, 58) = 0
 	set game.unit_availability(player, 77) = 0
-	if game.protoss_supply_used(player) >= 2 goto SkipPDis1
+	if game.protoss_supply_used(player) >= 1 goto SkipPDis1
 	set game.upgrade_limit(player, 15) = 0
 SkipPDis1:	
 	set game.upgrade_limit(player, 46) = 0
@@ -8310,10 +8314,10 @@ SkipPDis1:
 	set game.upgrade_limit(player, 67) = 0
 	set game.tech_availability(player, 24) = 0
 	set game.tech_availability(player, 30) = 0
-	if game.protoss_supply_used(player) >= 2 goto SkipZDis
+	if game.zerg_supply_used(player) >= 1 goto SkipZDis
 	set game.tech_availability(player, 17) = 0
 SkipZDis:
-	if game.protoss_supply_used(player) >= 2 goto SkipPDis2
+	if game.protoss_supply_used(player) >= 1 goto SkipPDis2
 	set game.tech_availability(player, 19) = 0
 	set game.tech_availability(player, 20) = 0
 SkipPDis2:
@@ -11980,8 +11984,10 @@ InterceptorInit:
 	if upgrade(player, 54) == 1 goto uInterceptorInit
 	imgul          	117 0 42	# InterceptorShad (protoss\Intercep.grp)
 	playfram       	0x00	# frame set 0
-	goto           	InterceptorWalkingToIdle
-
+InterceptorLoop:
+	wait			5
+	if unit.remaining_build_time > 5 goto InterceptorLoop
+	playsndrand    	2 102 103	# Bullet\pTrFir00.wav, Bullet\pTrFir01.wav
 InterceptorWalkingToIdle:
 	if upgrade(player, 54) == 1 goto uInterceptorWalkingToIdle
 	setvertpos     	1
@@ -12024,8 +12030,10 @@ InterceptorWalking:
 uInterceptorInit:
 	imgul          	117 0 42	# InterceptorShad (protoss\Intercep.grp)
 	playfram       	0x22	# frame set 0
-	goto           	uInterceptorWalkingToIdle
-
+uInterceptorLoop:
+	wait			5
+	if unit.remaining_build_time > 5 goto uInterceptorLoop
+	playsndrand    	2 102 103	# Bullet\pTrFir00.wav, Bullet\pTrFir01.wav
 uInterceptorWalkingToIdle:
 	setvertpos     	1
 	waitrand       	8 10
@@ -12213,14 +12221,17 @@ HighTemplarGndAttkToIdle:
 	wait           	2
 	playfram       	0x77	# frame set 7
 	wait           	2
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	playfram       	0x88	# frame set 8
 	wait           	2
 	playfram       	0x99	# frame set 9
 	wait           	2
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	playfram       	0xaa	# frame set 10
 	wait           	2
 	playfram       	0xbb	# frame set 11
 	wait           	2
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	playfram       	0xcc	# frame set 12
 	wait           	2
 	goto           	HighTemplarGndAttkToIdle
@@ -12555,6 +12566,10 @@ SpecialState1  	ScarabSpecialState1
 ScarabInit:
 	wait			1
 	playfram       	0x00	# frame set 0
+ScarabLoopUntilComplete:
+	wait			5
+	if unit.remaining_build_time > 5 goto ScarabLoopUntilComplete
+	playsndrand    	2 102 103	# Bullet\pTrFir00.wav, Bullet\pTrFir01.wav
 	goto           	long00
 	
 ScarabDeath:
@@ -13813,10 +13828,10 @@ PhotonCannonLocal00:
 	goto           	long00
 
 PhotonCannonGndAttkInit:
-	playfram       	2
-	wait           	2
 	playfram       	1
-	wait           	2
+	wait           	4
+	playfram       	2
+	wait           	3
 	playfram       	3
 	wait           	2
 PhotonCannonGndAttkRpt:
@@ -13825,10 +13840,10 @@ PhotonCannonGndAttkRpt:
 	gotorepeatattk 	
 	ignorerest     	
 PhotonCannonGndAttkToIdle:
-	playfram       	1
-	wait           	2
 	playfram       	2
-	wait           	2
+	wait           	3
+	playfram       	1
+	wait           	4
 	goto           	PhotonCannonLocal00
 
 PhotonCannonWarpIn:
@@ -16151,6 +16166,10 @@ AirAttkInit    	[NONE]
 # ----------------------------------------------------------------------------- #
 
 PhaseDisruptorInit:
+	tmprmgraphicstart	
+	trgtrangecondjmp	20 PhaseLocal00
+	tmprmgraphicend	
+PhaseLocal00:
 	set spritelocal x_off = bullet_x_off #used for Ulrezaj's Risen
 	set spritelocal y_off = bullet_y_off
 	playsnd        	99	# Bullet\DragBull.wav
@@ -16572,6 +16591,10 @@ AirAttkInit    	[NONE]
 # ----------------------------------------------------------------------------- #
 
 FragmentationGrenadeInit:
+	tmprmgraphicstart	
+	trgtrangecondjmp	30 FragLocal00
+	tmprmgraphicend	
+FragLocal00:
 	playfram       	0
 	playsnd        	106	# Bullet\tvuFir00.wav
 	wait           	1
@@ -17175,6 +17198,10 @@ AirAttkInit    	[NONE]
 # ----------------------------------------------------------------------------- #
 
 VenomInit:
+	tmprmgraphicstart	
+	trgtrangecondjmp	40 VenomLocal00
+	tmprmgraphicend	
+VenomLocal00:
 	playfram       	0x00	# frame set 0
 	wait           	1
 	sigorder       	1
@@ -25739,4 +25766,10 @@ long03:
 	lowsprul       	187 0 0	# ZergBuildingRubbleSmall (thingy\ZRubbleL.grp)
 	wait           	1
 	end            	
+	
+# Freeze code below, how to reproduce unit freeze: Order unit to move in the direction of a target, start attack and interrupt it before the animation finishes; unit should be frozen, playing its idle anim with the flingy 0x2 (accelerating) flag still set
+FreezeClear: # Code needed to run this: if flingy.movement_flags & 0x2 != 0 call FreezeClear, where 0x2 is "accelerating" flag for flingy movement; yes, this checks that flag @ 0x2 is not 0 (so == 1, but that doesnt work for w/e reason and has to be written this way)
+	set flingy.movement_flags = flingy.movement_flags & !0x2 # set flag @ 0x2 to be opposite of true, ie. false
+	return
+	
 

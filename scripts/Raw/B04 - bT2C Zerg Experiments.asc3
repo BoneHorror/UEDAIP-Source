@@ -1,0 +1,215 @@
+script_name Brood Wars Terran 2 - Town C
+script_id TB2C
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 hatchery 150
+build 2 drone 130
+build 1 spawning_pool 80
+build 1 hydralisk_den 80
+build 1 evolution_chamber 80
+build 4 creep_colony 80
+build 2 sunken_colony 80
+build 2 spore_colony 80
+idle_orders DisableBuiltin 0 0 0 0 0 0 0
+define_max 2 drone
+define_max 22 zergling
+define_max 10 hydralisk
+define_max 1 lurker
+define_max 255 mutalisk
+define_max 7 infested_terran
+define_max 255 scourge
+define_max 255 queen
+define_max 5 overlord
+max_force 966
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_gg 1 infested_terran
+defenseuse_gg 1 infested_terran
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+defensebuild_ga 1 hydralisk
+defenseuse_ga 1 hydralisk
+multirun gg_check_prison
+check_transports
+tech burrowing 30
+multirun income
+wait 5215
+
+attack_add 10 zergling
+attack_to Loc.21 Loc.19
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 zergling_speed 30
+upgrade 1 z_carapace 30
+wait 3450
+
+attack_add 8 zergling
+call it_1
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+build 1 lair 80
+upgrade 1 z_melee_attack 30
+upgrade 1 hydralisk_speed 30
+wait 2700
+
+attack_add 4 hydralisk
+call simple_atk
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 hydralisk_range 30
+upgrade 1 overlord_speed 30
+wait 4205
+
+upgrade 1 overlord_capacity 30
+upgrade 2 z_carapace 30
+attack_add 12 zergling
+call it_1
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 4500
+
+attack_add 6 hydralisk
+call it_2
+call simple_atk
+wait 500
+
+attack_do
+attack_clear
+tech lurker_aspect 30
+upgrade 1 z_missile_attack 30
+upgrade 1 burrowed_regen 30
+wait 3205
+
+attack_add 14 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1504
+
+upgrade 2 z_melee_attack 30
+attack_add 4 hydralisk
+call it_2
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3000
+
+train 8 hydralisk
+train 1 lurker
+attack_add 7 hydralisk
+attack_add 1 lurker
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 overlord_sight 30
+upgrade 2 z_missile_attack 30
+wait 805
+
+call it_3
+call simple_atk
+wait 500
+
+attack_do
+attack_clear
+:z_loop
+wait 2260
+
+train 18 zergling
+train 3 hydralisk
+attack_add 18 zergling
+attack_add 3 hydralisk
+call simple_atk
+wait 500
+
+attack_do
+attack_clear
+wait 2670
+
+train 6 hydralisk
+train 1 lurker
+call it_2
+attack_add 5 hydralisk
+attack_add 1 lurker
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2505
+
+train 10 zergling
+train 5 hydralisk
+attack_add 10 zergling
+attack_add 5 hydralisk
+call it_1
+call simple_atk
+wait 500
+
+attack_do
+attack_clear
+goto z_loop
+
+:simple_atk
+unstart_campaign
+attack_prepare
+start_campaign
+return
+
+:income
+wait 40
+
+resources 13 Add Ore 5 simple_atk
+resources 13 Add Gas 2 simple_atk
+goto income
+
+:it_1
+notowns_jump 190 skip_it
+attack_add 1 infested_terran
+:skip_it
+return
+
+:it_2
+notowns_jump 190 skip_it
+attack_add 2 infested_terran
+goto skip_it
+
+:it_3
+notowns_jump 190 skip_it
+attack_add 3 infested_terran
+goto skip_it
+
+:gg_check_prison
+wait 50
+
+if_owned 190 gg_check_prison
+defenseclear_gg
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+stop

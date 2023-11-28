@@ -12655,6 +12655,17 @@
             "lengthAdjust": 0,
             "minVolume": 0,
             "ID": "SND_HOST_SPAWN"
+          },
+		  {
+            "filePath": "Protoss/bldg/pstwht00.wav",
+            "priority": 1,
+            "preload": "false",
+            "unitSpeech": "true",
+            "oneAtATime": "false",
+            "neverPreempt": "true",
+            "lengthAdjust": 0,
+            "minVolume": 0,
+            "ID": "SND_STARGATE_WHT"
           }
         ]
       }
