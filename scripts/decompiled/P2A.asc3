@@ -34,7 +34,7 @@ define_max 25 overlord
 define_max 26 zergling
 define_max 30 drone
 define_max 24 hydralisk
-define_max 8 lurker
+define_max 5 lurker
 define_max 1 queen
 define_max 12 mutalisk
 define_max 16 scourge
@@ -77,6 +77,8 @@ tech ensnare 30
 create_script fort_generator 255 Loc.33 255 0
 wait 1500
 
+train 9 hydralisk
+train 2 lurker
 attack_add 2 lurker
 attack_add 7 hydralisk
 attack_prepare
@@ -121,6 +123,8 @@ upgrade 1 z_flyer_carapace 30
 create_script fort_generator 255 Loc.32 255 0
 wait 2135
 
+train 9 mutalisk
+train 3 guardian
 attack_add 6 mutalisk
 attack_add 3 guardian
 attack_prepare
@@ -136,6 +140,8 @@ upgrade 1 ultralisk_speed 30
 create_script fort_generator 255 Loc.34 255 0
 wait 1500
 
+train 13 hydralisk
+train 3 lurker
 attack_add 10 hydralisk
 attack_add 3 lurker
 attack_add 4 mutalisk
@@ -194,6 +200,8 @@ upgrade 2 z_flyer_attack 30
 upgrade 2 z_missile_attack 30
 wait 2375
 
+train 3 mutalisk
+train 3 guardian
 attack_add 3 guardian
 attack_add 8 hydralisk
 attack_prepare
@@ -204,6 +212,8 @@ attack_clear
 upgrade 1 overlord_sight 30
 wait 2650
 
+train 5 hydralisk
+train 5 lurker
 attack_add 20 zergling
 attack_add 5 lurker
 attack_prepare
@@ -216,6 +226,8 @@ attack_clear
 expand 2 zerg_town
 wait 1335
 
+train 10 mutalisk
+train 2 guardian
 attack_add 16 zergling
 attack_add 8 mutalisk
 attack_add 2 guardian
@@ -226,6 +238,8 @@ attack_do
 attack_clear
 wait 2315
 
+train 12 hydralisk
+train 4 lurker
 attack_add 6 mutalisk
 attack_add 8 hydralisk
 attack_add 4 lurker
@@ -237,6 +251,8 @@ attack_do
 attack_clear
 wait 1425
 
+train 3 mutalisk
+train 3 guardian
 attack_add 14 zergling
 attack_add 8 hydralisk
 attack_add 3 guardian

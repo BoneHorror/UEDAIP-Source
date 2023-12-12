@@ -16,7 +16,6 @@ define_max 20 heavy_marine
 define_max 5 panzer
 define_max 8 tesla_trooper
 define_max 255 vulture
-define_max 255 ghost
 define_max 14 death_knight
 define_max 7 skywing
 define_max 50 scv
@@ -29,7 +28,14 @@ define_max 2 hsciencevessel
 define_max 4 valhalla
 define_max 6 scorpion
 define_max 255 nuclear_missile
+#block terran unit training
 define_max 255 siege_tank
+define_max 255 marine
+define_max 255 ghost
+unit_avail 13 Set Disabled siege_tank def1
+unit_avail 13 Set Disabled ghost def1
+unit_avail 13 Set Disabled marine def1
+#
 idle_orders disablebuiltin 0 0 0 0 0 0 0
 multirun defense
 multirun scv

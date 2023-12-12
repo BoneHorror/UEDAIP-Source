@@ -37,7 +37,7 @@ define_max 29 heavy_marine
 define_max 10 infested_terran
 define_max 9 medic
 define_max 6 death_knight
-define_max 8 lurker
+define_max 7 lurker
 define_max 28 hydralisk
 define_max 46 zergling
 define_max 15 mutalisk
@@ -54,7 +54,12 @@ define_max 7 scorpion
 define_max 6 valkyrie
 define_max 8 hhydralisk
 define_max 255 battlecruiser
+#block terran unit training, except siege tanks
+define_max 255 marine
 define_max 255 ghost
+unit_avail 13 Set Disabled ghost slaydef_init
+unit_avail 13 Set Disabled marine slaydef_init
+#
 farms_timing
 check_transports
 idle_orders Move 48 1 skywing|valkyrie 160 mutalisk 255 Health(GreaterThanPercent 30)|InCombat|count(AtLeast 2 120 3)|Self(SpellEffects(Irradiate))

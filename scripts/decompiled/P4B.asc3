@@ -12,6 +12,10 @@ build 1 command_center 80
 build 6 scv 80
 build 1 bunker 80
 max_workers 15
+#block UED unit training
+unit_avail 13 Set Disabled heavy_marine idle_loop
+define_max 255 heavy_marine
+#
 wait 1500
 
 build 9 scv 80

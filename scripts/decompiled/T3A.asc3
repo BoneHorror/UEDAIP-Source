@@ -27,7 +27,7 @@ define_max 54 zergling
 define_max 18 ultralisk
 define_max 11 hydralisk
 define_max 3 defiler
-farms_timing
+define_max 4 lurker
 tech burrowing 30
 upgrade 1 overlord_capacity 30
 upgrade 1 overlord_speed 30

@@ -33,7 +33,10 @@ define_max 255 ghost
 define_max 5 dropship
 define_max 18 scv
 check_transports
-farms_timing
+#block UED unit training
+unit_avail 13 Set Disabled heavy_marine block1
+define_max 255 heavy_marine
+#
 wait 4800
 
 defensebuild_gg 1 marine

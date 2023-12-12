@@ -27,6 +27,10 @@ defensebuild_gg 1 firebat
 defenseuse_gg 1 firebat
 defensebuild_ag 1 marine
 defenseuse_ag 1 marine
+#block UED unit training
+unit_avail 13 Set Disabled heavy_marine block1
+define_max 255 heavy_marine
+#
 define_max 16 scv
 define_max 255 dropship
 define_max 4 firebat

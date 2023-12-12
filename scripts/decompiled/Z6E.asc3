@@ -34,6 +34,14 @@ define_max 255 valkyrie
 define_max 6 phantom
 define_max 1 science_vessel
 define_max 255 battlecruiser
+#block terran unit training
+define_max 255 siege_tank
+define_max 255 marine
+define_max 255 ghost
+unit_avail 13 Set Disabled siege_tank block1
+unit_avail 13 Set Disabled ghost block1
+unit_avail 13 Set Disabled marine block1
+#
 defensebuild_gg 2 heavy_marine
 defenseuse_gg 2 heavy_marine
 defensebuild_gg 2 tesla_trooper
@@ -49,7 +57,6 @@ defensebuild_ag 2 heavy_marine
 defenseuse_ag 2 heavy_marine
 defensebuild_ag 1 phantom
 defenseuse_ag 1 phantom
-farms_timing
 tech restoration 30
 upgrade 1 ghost_sight 30
 upgrade 1 t_infantry_weapon 30

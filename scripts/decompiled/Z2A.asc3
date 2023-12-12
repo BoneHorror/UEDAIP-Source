@@ -74,7 +74,6 @@ unit_avail 13 Set Disabled marine sv_check
 define_max 255 panzer
 check_transports
 capt_expand
-farms_timing
 tech restoration 30
 tech siege_mode 30
 tech spider_mines 30

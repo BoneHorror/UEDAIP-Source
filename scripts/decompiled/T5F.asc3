@@ -37,6 +37,10 @@ define_max 255 wraith
 define_max 255 valkyrie
 define_max 3 hnorad
 define_max 255 nuclear_missile
+#block UED unit training
+unit_avail 13 Set Disabled heavy_marine block1
+define_max 255 heavy_marine
+#
 idle_orders 92 256 2 marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
 idle_orders 92 64 2 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
 idle_orders 92 256 2 marine 368 bunker 50 Own|NotEnemies|Self(Order(163))

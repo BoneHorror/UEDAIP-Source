@@ -110,11 +110,18 @@ define_max 1 science_vessel
 define_max 22 scv
 define_max 255 dropship
 define_max 4 panzer
-define_max 255 siege_tank
 define_max 6 scorpion
 define_max 3 medic
 define_max 5 phantom
 define_max 10 tesla_trooper
+#block terran unit training
+define_max 255 siege_tank
+define_max 255 marine
+define_max 255 ghost
+unit_avail 13 Set Disabled siege_tank block1
+unit_avail 13 Set Disabled ghost block1
+unit_avail 13 Set Disabled marine block1
+#
 wait_build 1 scv
 build 1 command_center 150
 farms_timing

@@ -34,6 +34,12 @@ define_max 30 scv
 define_max 3 medic
 define_max 4 wraith
 define_max 2 valkyrie
+#block terran unit training, except siege tanks
+define_max 255 marine
+define_max 255 ghost
+unit_avail 13 Set Disabled ghost block1
+unit_avail 13 Set Disabled marine block1
+#
 max_force 600
 defensebuild_gg 1 vulture
 defenseuse_gg 1 vulture

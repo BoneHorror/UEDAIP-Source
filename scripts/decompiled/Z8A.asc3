@@ -56,7 +56,12 @@ define_max 5 hnorad
 define_max 2 hsciencevessel
 define_max 3 valhalla
 define_max 255 nuclear_missile
+#block terran unit training, except ghosts
 define_max 255 siege_tank
+define_max 255 marine
+unit_avail 13 Set Disabled siege_tank partialmight
+unit_avail 13 Set Disabled marine partialmight
+#
 idle_orders 141 83 1 science_vessel 1024 hydralisk 10 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 20)|Self(Energy(GreaterThan 149))
 idle_orders 141 83 1 science_vessel 1024 death_knight 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 20)|Self(Energy(GreaterThan 99))
 idle_orders 141 83 1 science_vessel 1024 scorpion 10 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 20)|Self(Energy(GreaterThan 149))

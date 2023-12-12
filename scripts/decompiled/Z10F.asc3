@@ -12,14 +12,6 @@ wait 1
 notowns_jump overlord kel_morian
 build 1 command_center 150
 issue_order Land 1 infested_command_center Loc.8 Loc.27 Any 0
-#create_unit valkyrie 6071 1773
-#create_unit valkyrie 6074 1851
-#create_unit heavy_marine 6078 1495
-#create_unit heavy_marine 6074 1532
-#create_unit heavy_marine 6025 1508
-#create_unit heavy_marine 6035 1555
-#create_unit heavy_marine 6070 1586
-#create_unit heavy_marine 6033 1480
 wait_buildstart 1 command_center
 creep 3
 build 1 hatchery 130
@@ -37,7 +29,6 @@ define_max 8 skywing
 define_max 5 dropship
 define_max 255 battlecruiser
 define_max 255 science_vessel
-define_max 255 siege_tank
 define_max 2 valkyrie
 define_max 10 phantom
 define_max 255 nuclear_missile
@@ -54,6 +45,13 @@ define_max 12 scourge
 define_max 7 infested_terran
 define_max 1 hqueen
 define_max 4 ultralisk
+define_max 3 ghost
+#block terran unit training (ghosts are used later)
+define_max 255 siege_tank
+define_max 255 marine
+unit_avail 13 Set Disabled siege_tank medic_check
+unit_avail 13 Set Disabled marine medic_check
+#
 multirun rasz_def_2
 multirun medic_check
 deaths 2 Set 1 189 medic_check

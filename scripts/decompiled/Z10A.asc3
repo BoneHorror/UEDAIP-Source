@@ -26,6 +26,10 @@ define_max 2 hsciencevessel
 define_max 255 valkyrie
 define_max 255 medic
 define_max 255 nuclear_missile
+#block UED unit training
+unit_avail 13 Set Disabled heavy_marine t5a
+define_max 255 heavy_marine
+#
 idle_orders disablebuiltin 0 0 0 0 0 0 0
 idle_orders 92 256 3 marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
 idle_orders 92 256 1 ghost 368 bunker 50 Own|NotEnemies|Self(Order(Guard))

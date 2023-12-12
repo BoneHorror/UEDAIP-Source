@@ -21,6 +21,10 @@ define_max 9 ghost
 define_max 11 wraith
 define_max 5 dropship
 define_max 2 battlecruiser
+#block UED unit training
+unit_avail 13 Set Disabled heavy_marine rasz_def
+define_max 255 heavy_marine
+#
 max_force 600
 idle_orders 92 256 3 marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
 idle_orders 92 256 1 ghost 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
