@@ -66,11 +66,35 @@ if_owned valkyrie disable
 if_owned queen easycast
 #Normal code continues
 :tog_return
+call autocast_result
 wait 1
 
+load_bank difficulty_toggle
+#Load difficulty bank
+wait 1
+
+#skip toggle if we don't have 1000 Norad II (126) deaths. only set 1000 in the toggle/config map. So normally this is always skipped
+deaths 0 AtMost 999 126 dif_return
+:loop_until_unit_dif
+
+wait 2
+if_owned 15 loop_until_unit_dif
+#loop for as long as we have civ, then wait 8 frames
+wait 8
+
+if_owned medic dif_easy
+if_owned valkyrie dif_normal
+if_owned queen dif_hard
+#Normal code continues
+:dif_return
 #Continue with config, by default you would add panic casts; ignore remaining code if other races' units are owned
-bank_data Exactly 1 automine_toggle toggle void
-bank_data Exactly 2 automine_toggle toggle ec_terran
+#print reached_setdif
+bank_data Exactly_Call 0 difficulty_toggle difficulty setdif_normal
+bank_data Exactly_Call 1 difficulty_toggle difficulty setdif_easy
+bank_data Exactly_Call 2 difficulty_toggle difficulty setdif_hard
+#use 119 - unused terran bdlg - deaths as communicator for bank...
+deaths 13 Exactly 1 119 void
+deaths 13 Exactly 2 119 ec_terran
 wait 300
 
 upgrade_jump 13 Set 70 1 void
@@ -228,7 +252,7 @@ idle_orders 142 64 1 valhalla 356 hydralisk|dark_templar|dragoon|firebat|tesla_t
 idle_orders 142 128 1 valhalla 356 revenant|death_knight|goliath 70 incombat|count(AtLeast 2 48 14)|Count(AtMost 1 60 13)
 idle_orders 142 128 1 valhalla 356 lurker|reaver|scorpion|infested_terran 80 incombat|count(AtLeast 3 60 14)|Count(AtMost 1 60 13)
 idle_orders 142 128 1 valhalla 356 mutalisk|scout|corsair|skywing|wraith|devourer 60 incombat|count(AtLeast 3 42 14)|Count(AtMost 1 60 13)
-idle_orders 142 128 1 valhalla 356 carrier|guardian|ultralisk|valhalla|hnorad|battlecruiser|archon 40 incombat|Count(AtLeast 2 60 14|Count(AtMost 1 60 13)
+idle_orders 142 128 1 valhalla 356 carrier|guardian|ultralisk|valhalla|hnorad|battlecruiser|archon 40 incombat|Count(AtLeast 2 60 14)|Count(AtMost 1 60 13)
 stop
 
 :ec_dweb_io
@@ -467,6 +491,31 @@ wait 1
 save_bank automine_toggle
 deaths 0 Set 3 zergling lockdown_io
 goto tog_return
+
+:dif_easy
+bank_data Set 1 difficulty_toggle difficulty lockdown_io
+wait 1
+
+save_bank difficulty_toggle
+deaths 0 Set 1 153 lockdown_io
+#unused zerg bld (153) if we need to access this in map...
+goto dif_return
+
+:dif_normal
+bank_data Set 0 difficulty_toggle difficulty lockdown_io
+wait 1
+
+save_bank difficulty_toggle
+deaths 0 Set 0 153 lockdown_io
+goto dif_return
+
+:dif_hard
+bank_data Set 2 difficulty_toggle difficulty lockdown_io
+wait 1
+
+save_bank difficulty_toggle
+deaths 0 Set 2 153 lockdown_io
+goto dif_return
 
 :make_mine
 issue_order MoveToMinerals 30 drone Loc.149 Loc.149 177 0
@@ -897,3 +946,30 @@ idle_orders 120 8 1 hydralisk 256 dragoon 25 Incombat|WithoutSpellEffects(Parasi
 idle_orders 120 8 1 hydralisk 256 hydralisk 10 Incombat|WithoutSpellEffects(Parasite)
 idle_orders 120 8 1 hydralisk 256 high_templar 30 0
 stop
+
+:autocast_result
+bank_data Exactly 1 automine_toggle toggle aresult_1
+bank_data Exactly 2 automine_toggle toggle aresult_2
+return
+
+:aresult_1
+deaths 13 Set 1 119 void
+return
+
+:aresult_2
+deaths 13 Set 2 119 ec_terran
+return
+
+:setdif_normal
+#print normal_diff
+return
+
+:setdif_easy
+#print easy_diff
+upgrade_jump 14 Set 74 6 void
+return
+
+:setdif_hard
+#print hard_diff
+upgrade_jump 14 Set 74 7 void
+return
