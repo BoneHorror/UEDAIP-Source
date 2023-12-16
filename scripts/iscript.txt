@@ -13849,7 +13849,7 @@ PhotonCannonGndAttkToIdle:
 PhotonCannonWarpIn:
 	imgol          	185 0 0	# PhotonCannonWarpFlash (protoss\photon.grp)
 	goto           	long00
-
+	
 
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
@@ -14250,14 +14250,14 @@ IsId           	187
 Type           	20
 Init           	StasisCellInit
 Death          	TemplarArchivesDeath
-GndAttkInit    	[NONE]
-AirAttkInit    	[NONE]
+GndAttkInit    	TaarXenoWort
+AirAttkInit    	TaarXenoWort
 Unused1        	[NONE]
-GndAttkRpt     	[NONE]
-AirAttkRpt     	[NONE]
+GndAttkRpt     	TaarXenoWort
+AirAttkRpt     	TaarXenoWort
 CastSpell      	[NONE]
-GndAttkToIdle  	[NONE]
-AirAttkToIdle  	[NONE]
+GndAttkToIdle  	TaarXenoWort
+AirAttkToIdle  	TaarXenoWort
 Unused2        	[NONE]
 Walking        	[NONE]
 WalkingToIdle  	[NONE]
@@ -14274,9 +14274,19 @@ WarpIn         	[NONE]
 # ----------------------------------------------------------------------------- #
 
 StasisCellInit:
+	if unit_id == 150 goto TaarDominator
+	if unit_id == 273 goto TaarXenoWort
 	playfram       	0
 	goto           	long00
 
+TaarDominator:
+	playfram		1
+	goto long00
+	
+TaarXenoWort:
+	playfram		2
+	goto long00
+	
 
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
