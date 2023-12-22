@@ -6679,4 +6679,8 @@ Bonus doubled for Burrowed units)</value>
         <id>FIRST_UNIT_STRING-271</id>
         <value>Infested Kerrigan</value>
     </string>
+	<string>
+        <id>FIRST_UNIT_STRING-272</id>
+        <value>Tom Kazansky</value>
+    </string>
 </strings>
