@@ -1,0 +1,408 @@
+script_name Expansion Protoss Campaign Difficult
+script_id PHIx
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 nexus 150
+build 3 probe 130
+build 15 probe 80
+build 1 gateway 80
+build 1 cybernetics_core 80
+build 1 forge 80
+max_force 750
+defensebuild_gg 1 zealot
+defenseuse_gg 1 zealot
+defensebuild_gg 1 dragoon
+defenseuse_gg 1 dragoon
+defensebuild_ag 1 dragoon
+defenseuse_ag 1 dragoon
+multirun def_flags
+#default: khalai gate
+#deaths 13 Exactly 1 214 robotoss
+#deaths 13 AtLeast 2 214 khalailate
+define_max 30 zealot
+define_max 24 dragoon
+define_max 50 probe
+define_max 5 high_templar
+define_max 3 archon
+define_max 255 dark_templar
+define_max 255 dark_archon
+define_max 255 revenant
+define_max 4 scout
+define_max 2 carrier
+define_max 1 harbiter
+define_max 1 arbiter
+define_max 255 corsair
+define_max 255 hornet
+define_max 5 shuttle
+define_max 5 observer
+define_max 4 reaver
+build 2 gateway 80
+upgrade 1 p_ground_weapon 50
+wait 1460
+
+train 7 zealot
+attack_add 7 zealot
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+upgrade 1 dragoon_range 50
+upgrade 1 p_armor 40
+build 1 photon_cannon 80
+build 1 citadel_of_adun 80
+call wait_selector
+
+multirun expansion_loop
+train 6 dragoon
+train 4 zealot
+attack_add 6 dragoon
+attack_add 4 zealot
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+upgrade 1 p_plasma_shield 30
+upgrade 1 p_air_weapon 30
+upgrade 1 zealot_speed 40
+build 1 stargate 30
+build 3 gateway 30
+build 1 templar_archives 80
+build 2 photon_cannon 80
+build 1 shield_battery 80
+defensebuild_aa 1 scout
+defenseuse_aa 1 scout
+defensebuild_ga 1 scout
+defenseuse_ga 1 scout
+defensebuild_gg 1 high_templar
+defensebuild_gg 1 archon
+defenseuse_ag 1 archon
+defensebuild_ag 1 archon
+defenseuse_ag 1 archon
+call wait_selector
+
+multirun templar_ensure
+train 1 scout
+train 3 dragoon
+train 3 zealot
+train 2 scout
+train 2 high_templar
+train 6 zealot
+train 1 archon
+train 4 dragoon
+attack_add 1 archon
+attack_add 6 zealot
+attack_add 4 dragoon
+attack_add 2 scout
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+build 1 robotics_facility 80
+build 2 forge 80
+tech psionic_storm 40
+upgrade 1 p_air_weapon 40
+upgrade 1 p_plating 40
+upgrade 2 p_plasma_shield 40
+upgrade 2 p_ground_weapon 50
+upgrade 1 one_with_khala 40
+wait_build 1 robotics_facility
+build 1 robotics_support_bay 80
+build 1 observatory 80
+build 3 photon_cannon 80
+defensebuild_gg 1 reaver
+defenseuse_gg 1 reaver
+defensebuild_ag 1 hornet
+defenseuse_ag 1 hornet
+defensebuild_aa 1 hornet
+defenseuse_aa 1 hornet
+call wait_selector
+
+train 1 reaver
+train 9 dragoon
+train 2 reaver
+train 4 high_templar
+train 2 archon
+attack_add 9 dragoon
+attack_add 2 reaver
+attack_add 2 archon
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+build 4 gateway 80
+build 2 stargate 80
+build 1 fleet_beacon 80
+build 1 arbiter_tribunal 80
+upgrade 1 templar_mana 40
+upgrade 2 p_armor 40
+upgrade 3 p_ground_weapon 50
+upgrade 2 one_with_khala 40
+upgrade 1 scout_sight 30
+upgrade 1 scarab_damage 30
+defensebuild_gg 1 carrier
+defensebuild_aa 1 carrier
+defensebuild_ga 1 carrier
+defenseuse_ga 1 carrier
+call wait_selector
+
+train 1 harbiter
+train 1 scout
+train 8 zealot
+train 1 reaver
+train 16 zealot
+train 2 scout
+train 2 reaver
+attack_add 16 zealot
+attack_add 1 harbiter
+attack_add 2 scout
+attack_add 2 reaver
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+upgrade 1 shuttle_speed 30
+upgrade 1 observer_sight 30
+upgrade 1 observer_speed 40
+upgrade 3 p_armor 40
+upgrade 1 scout_speed 30
+upgrade 1 carrier_capacity 50
+upgrade 3 p_plasma_shield 40
+tech stasis_field 30
+tech recall 30
+upgrade 1 arbiter_mana 30
+:khagate_loop
+train 2 scout
+train 8 zealot
+train 4 dragoon
+train 4 scout
+train 8 dragoon
+train 12 zealot
+attack_add 12 zealot
+attack_add 4 scout
+attack_add 8 dragoon
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+call wait_selector
+
+train 1 harbiter
+train 1 reaver
+train 1 carrier
+train 2 reaver
+train 12 dragoon
+attack_add 1 harbiter
+attack_add 2 reaver
+attack_add 12 dragoon
+attack_add 1 carrier
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+call wait_selector
+
+train 4 high_templar
+train 2 archon
+train 10 zealot
+train 1 arbiter
+train 20 zealot
+train 4 high_templar
+train 3 archon
+attack_add 3 archon
+attack_add 1 arbiter
+attack_add 20 zealot
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+call wait_selector
+goto khagate_loop
+
+
+:templar_ensure
+wait_train 4 high_templar
+
+do_morph 3 archon
+wait_rand 133 850
+goto templar_ensure
+
+
+:wait_selector
+#use Ruins deaths to pick waits
+deaths 13 Exactly 0 186 wait_3000
+deaths 13 Exactly 1 186 wait_500
+deaths 13 Exactly 2 186 wait_1500
+deaths 13 Exactly 3 186 wait_5000
+deaths 13 AtLeast 4 186 wait_9000
+#this should never be reached so might as well make it loud
+print 186Deaths_Less_Than_Zero
+wait 50
+
+print CrashSoon
+wait 250
+
+fatal_error
+stop
+
+:wait_3000
+wait 3000
+return
+
+:wait_500
+wait 500
+return
+
+:wait_1500
+wait 1500
+return
+
+:wait_5000
+wait 5000
+return
+
+:wait_9000
+wait 9000
+return
+
+:attack_selector
+#use warpgate deaths to pick attack
+deaths 13 Exactly 0 189 atk_normal
+deaths 13 Exactly 1 189 atk_melee
+deaths 13 Exactly 2 189 atk_expo
+deaths 13 Exactly 3 189 atk_quick
+deaths 13 AtLeast 4 189 atk_factor
+#this should never be reached so might as well make it loud
+print 189Deaths_Less_Than_Zero
+wait 50
+
+print CrashSoon
+wait 250
+
+fatal_error
+stop
+
+:atk_normal
+attack_prepare
+return
+
+:atk_melee
+unstart_campaign
+attack_prepare
+start_campaign
+return
+
+:atk_expo
+unstart_campaign
+set_attacks 1
+target_expansion
+wait 1200
+
+start_campaign
+return
+
+:atk_quick
+unstart_campaign
+attack_prepare
+start_campaign
+attack_timeout 10
+return
+
+:atk_factor
+attack_prepare
+wait 50
+
+harass_factor 1000
+return
+
+:expansion_loop
+wait 3330
+
+#loop if 0 khaydarin crystal deaths
+deaths 13 Exactly 0 187 expansion_loop
+expand 2 protoss_town_dif
+wait_rand 5000 7500
+
+goto expansion_loop
+
+:def_flags
+wait 50
+
+#use young chrysalis deaths to jump to blocks and reset deaths, otherwise loop
+deaths 13 Exactly_Call 1 216 def_transports
+deaths 13 Exactly_Call 2 216 def_guard
+deaths 13 Exactly_Call 3 216 def_help
+deaths 13 Exactly_Call 4 216 def_capt
+deaths 13 Exactly_Call 5 216 def_min
+deaths 13 Exactly 0 216 def_flags
+print Warning_DeathsNotInRange_def_flags
+goto def_flags
+
+:def_transports
+check_transports
+deaths 13 Set 0 216 def_flags
+return
+
+:def_guard
+guard_all
+deaths 13 Set 0 216 def_flags
+return
+
+:def_help
+help_iftrouble
+deaths 13 Set 0 216 def_flags
+return
+
+:def_capt
+capt_expand
+deaths 13 Set 0 216 def_flags
+return
+
+:def_min
+default_min 1
+deaths 13 Set 0 216 def_flags
+return
+
+:protoss_town_dif
+start_town
+build 1 nexus 100
+get_oldpeons 1
+wait_build 1 nexus
+build 1 probe 90
+wait_build 1 probe
+build 12 probe 80
+max_workers 18
+build 1 pylon 80
+wait_build 1 pylon
+build 1 photon_cannon 80
+wait 5000
+
+build 2 pylon 80
+build 2 photon_cannon 80
+wait 5000
+
+build 3 pylon 80
+build 1 gateway 80
+build 1 robotics_facility 80
+build 1 stargate 80
+wait 27500
+
+max_workers 255
+:town_loop
+wait 1500
+
+goto town_loop
