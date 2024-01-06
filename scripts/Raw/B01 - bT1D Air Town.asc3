@@ -1,0 +1,276 @@
+script_name Brood Wars Terran 1 - Town D
+script_id TB1D
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+if_owned hive purple_area
+build 1 hatchery 100
+build 1 drone 90
+build 5 drone 80
+build 1 spawning_pool 80
+build 1 hydralisk_den 80
+wait 2300
+
+build 7 drone 80
+wait 13500
+
+build 12 drone 80
+max_workers 16
+wait 35450
+
+max_workers 255
+
+:orange_loop
+wait 1500
+
+goto orange_loop
+
+:purple_area
+#flyers
+build 1 hatchery 100
+build 1 drone 90
+build 5 drone 80
+player_need 1 spawning_pool
+build 1 lair 80
+build 1 queen_nest 80
+player_need 1 hive
+build 2 spire 80
+build 1 greater_spire 80
+build 3 creep_colony 80
+player_need 1 evolution_chamber
+build 2 spore_colony 80
+build 1 sunken_colony 80
+define_max 14 mutalisk
+define_max 2 hmutalisk
+define_max 5 guardian
+define_max 3 devourer
+define_max 14 scourge
+:loop_until_base
+wait 500
+
+bring_jump 1 AtMost 0 command_center Loc.63 loop_until_base
+build 11 drone 80
+max_workers 15
+defensebuild_gg 1 mutalisk
+defenseuse_gg 1 mutalisk
+defensebuild_gg 1 hmutalisk
+defenseuse_gg 1 hmutalisk
+defensebuild_gg 1 guardian
+defenseuse_gg 1 guardian
+defensebuild_ag 1 hmutalisk
+defenseuse_ag 1 hmutalisk
+defensebuild_ag 2 scourge
+defenseuse_ag 2 scourge
+defensebuild_ga 1 guardian
+defenseuse_ga 1 guardian
+defensebuild_aa 2 scourge
+defenseuse_aa 2 scourge
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 1 hmutalisk
+defenseuse_aa 1 hmutalisk
+defensebuild_aa 1 devourer
+defenseuse_aa 1 devourer
+upgrade 1 z_flyer_attack 30
+wait 4260
+
+upgrade 1 z_flyer_carapace 30
+wait 4000
+
+deaths 0 Set 1 guardian loop_until_base
+call wait_attack
+call hold_attack
+train 5 mutalisk
+attack_add 5 mutalisk
+attack_to Loc.93 Loc.94
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+upgrade 2 z_flyer_attack 30
+wait 2650
+
+call wait_attack
+call hold_attack
+train 4 mutalisk
+train 2 guardian
+attack_add 2 guardian
+attack_add 2 mutalisk
+attack_to Loc.93 Loc.92
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+place_guard hmutalisk 0
+wait 3330
+
+upgrade 3 z_flyer_attack 30
+call wait_attack
+call hold_attack
+train 1 hmutalisk
+train 5 mutalisk
+attack_add 1 hmutalisk
+attack_add 5 mutalisk
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+wait 2810
+
+call wait_attack
+call hold_attack
+train 6 mutalisk
+train 1 devourer
+attack_add 5 mutalisk
+attack_add 1 devourer
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+upgrade 2 z_flyer_carapace 30
+upgrade 1 para_symbiosis 30
+call wait_attack
+call hold_attack
+train 7 mutalisk
+train 3 guardian
+attack_add 4 mutalisk
+attack_add 3 guardian
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+wait 3255
+
+call wait_attack
+call hold_attack
+train 6 mutalisk
+attack_add 6 mutalisk
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+upgrade 3 z_flyer_carapace 30
+place_guard hmutalisk 2
+wait 2435
+
+call wait_attack
+call hold_attack
+train 2 hmutalisk
+train 8 mutalisk
+attack_add 2 hmutalisk
+attack_add 8 mutalisk
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+max_workers 255
+:purple_loop
+wait 3475
+
+call wait_attack
+call hold_attack
+train 4 mutalisk
+train 4 guardian
+train 4 scourge
+attack_add 4 scourge
+attack_add 4 guardian
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+wait 3205
+
+call wait_attack
+call hold_attack
+train 2 hmutalisk
+train 11 mutalisk
+train 2 devourer
+attack_add 2 hmutalisk
+attack_add 9 mutalisk
+attack_add 2 devourer
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+wait 3595
+
+call wait_attack
+call hold_attack
+train 12 mutalisk
+train 1 devourer
+train 4 guardian
+train 4 scourge
+train 1 hmutalisk
+attack_add 1 hmutalisk
+attack_add 7 mutalisk
+attack_add 4 guardian
+attack_add 4 scourge
+attack_add 1 devourer
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+goto purple_loop
+
+:hold_attack
+deaths 3 Add 1 firebat purple_loop
+return
+
+:release_attack
+deaths 3 Set 0 firebat purple_loop
+return
+
+:wait_attack
+wait 16
+
+deaths 3 AtLeast 2 firebat ensure_attack
+deaths 3 Exactly 1 firebat wait_attack
+#loop if another script started an attack
+return
+
+:ensure_attack
+load_bank Ensures
+print Ensure_TwoOrMore_PleaseReportMeIfSeen
+bank_data Set 1 Ensures Ensure_TwoOrMore wait_attack
+bank_data Set 0 Ensures Ensure_Compare wait_attack
+save_bank Ensures
+deaths 3 Set 0 firebat purple_loop
+return

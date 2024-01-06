@@ -1,5 +1,5 @@
-# UEDAIP Source
- Source files of the UEDAIP mod (used for Broodwar and as a baseline for other branches)
+# UEDAIP-Beyond
+Source files of the UEDAIP Beyond mod (used for the Beyond campaigns)
 
 Campaign files, Anim files (including SD and HD2), unit GRPs and Wireframes are not commited to save space
 

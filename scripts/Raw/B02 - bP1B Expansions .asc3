@@ -1,0 +1,104 @@
+script_name Brood Wars Protoss 1 - Town B
+script_id PB1B
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+if_owned drone zerg_swarm
+wait 3775
+
+call wait_attack
+train 2 wraith
+attack_add 2 wraith
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 4200
+
+call wait_attack
+train 1 battlecruiser
+attack_add 1 battlecruiser
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 3000
+
+call wait_attack
+train 1 battlecruiser
+train 2 wraith
+attack_add 2 wraith
+attack_add 1 battlecruiser
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+:star_loop
+wait 6000
+
+call wait_attack
+train 2 battlecruiser
+attack_add 2 battlecruiser
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 2500
+
+call wait_attack
+train 4 wraith
+attack_add 4 wraith
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+goto star_loop
+
+:zerg_swarm
+build 1 hatchery 100
+build 3 drone 80
+build 1 spire 80
+build 2 creep_colony 80
+build 1 spore_colony 80
+build 1 sunken_colony 80
+
+:loop
+wait 1500
+
+goto loop
+
+:release_attack
+deaths 2 Set 0 98 loop
+return
+
+:wait_attack
+wait 16
+
+deaths 2 AtLeast 2 98 ensure_attack
+deaths 2 Exactly 1 98 wait_attack
+deaths 2 Add 1 firebat loop
+#loop if another script started an attack
+return
+
+:ensure_attack
+load_bank Ensures
+print Ensure_TwoOrMore_PleaseReportMeIfSeen
+bank_data Set 1 Ensures Ensure_TwoOrMore wait_attack
+bank_data Set 0 Ensures Ensure_Compare wait_attack
+save_bank Ensures
+deaths 2 Set 0 firebat loop
+return

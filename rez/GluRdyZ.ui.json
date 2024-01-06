@@ -250,7 +250,7 @@
       "type": "LTEXT",
       "content": "gluRdyT-10",
       "id": -701,
-      "rect": [285,320,140,50],
+      "rect": [295,335,120,20],
       "flags": ["RC_SMALLTEXT"],
       "children": null
     },
@@ -258,7 +258,7 @@
       "type": "COMBOBOX",
       "content": "",
       "id": -700,
-      "rect": [285,370,140,20],
+      "rect": [295,350,120,20],
       "flags": ["WS_VISIBLE","WS_TABSTOP","RC_SMALLTEXT"],
       "children": null
     }

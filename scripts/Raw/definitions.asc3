@@ -1,0 +1,280 @@
+
+# Terran train units
+train marine = 0
+train ghost = 1
+train vulture = 2
+train goliath = 3
+train siege_tank = 5
+train wraith = 8
+train science_vessel = 9
+@spellcaster(science_vessel)
+train dropship = 11
+train battlecruiser = 12
+train nuclear_missile = 14
+train firebat = 32
+train medic = 34
+@spellcaster(medic)
+train valkyrie = 58
+train tesla_trooper = 10
+train phantom = 16
+train death_knight = 17
+train scorpion = 19
+train hmarine = 20
+train skywing = 21
+train hsciencevessel = 22
+@spellcaster(hsciencevessel)
+train panzer = 23
+train gatherous = 25
+train sikari = 26
+#train hmengsk = 27
+train cyphia = 27
+train hhyperion = 28
+train hnorad = 29
+train hduran = 99
+train hstukov = 100
+train hdugalle = 102
+#train levi = 261
+#train graf = 262
+#train bis = 263
+#train stal = 264
+#train nora = 265
+
+# Zerg train units
+train zergling = 37
+train hydralisk = 38
+train ultralisk = 39
+train mutalisk = 43
+train guardian = 44
+train queen = 45
+@spellcaster(queen)
+train defiler = 46
+@spellcaster(defiler)
+train scourge = 47
+train infested_terran = 50
+train devourer = 62
+train lurker = 103
+train broodling = 40
+train hultralisk = 48
+train hqueen = 49
+@spellcaster(hqueen)
+train hikerrigan = 51
+train hdefiler = 52
+train hhydralisk = 53
+train hzergling = 54
+train hmutalisk = 55
+train heavy_marine = 56
+train hoverlord = 57
+train hiduran = 104
+train spawnsire = 277
+
+# Protoss train units
+train corsair = 60
+train dark_templar = 61
+train dark_archon = 63
+@spellcaster(dark_archon)
+train zealot = 65
+train dragoon = 66
+train high_templar = 67
+@spellcaster(high_templar)
+train archon = 68
+train shuttle = 69
+train scout = 70
+train arbiter = 71
+train carrier = 72
+train reaver = 83
+train observer = 84
+train revenant = 74
+train hzeratul = 75
+train harchon = 76
+train valhalla = 77
+train hdragoon = 78
+train htassadar = 79
+train hmojo = 80
+train hreaver = 81
+train hcarrier = 82
+train harbiter = 86
+train h_aldaris = 87
+train h_artanis = 88
+train leader = 91
+train hornet = 92
+train hcorsair = 98
+
+
+# Terran buildings
+building scv = 7
+building command_center = 106
+building comsat_station = 107
+building nuclear_silo = 108
+building supply_depot = 109
+building refinery = 110
+building barracks = 111
+building academy = 112
+building factory = 113
+building starport = 114
+building control_tower = 115
+building science_facility = 116
+building covert_ops = 117
+building physics_lab = 118
+building machine_shop = 120
+building engineering_bay = 122
+building armory = 123
+building missile_turret = 124
+building bunker = 125
+building t_flag_beacon = 198
+
+# Zerg buildings
+building drone = 41
+building overlord = 42
+building infested_command_center = 130
+building hatchery = 131
+building lair = 132
+building hive = 133
+building nydus_canal = 134
+building hydralisk_den = 135
+building defiler_mound = 136
+building greater_spire = 137
+building queen_nest = 138
+building evolution_chamber = 139
+building ultralisk_cavern = 140
+building spire = 141
+building spawning_pool = 142
+building creep_colony = 143
+building spore_colony = 144
+building sunken_colony = 146
+building overmind = 148
+building extractor = 149
+building z_flag_beacon = 197
+
+# Protoss buildings
+building probe = 64
+building nexus = 154
+building robotics_facility = 155
+building pylon = 156
+building assimilator = 157
+building observatory = 159
+building gateway = 160
+building photon_cannon = 162
+building warden = 161
+building citadel_of_adun = 163
+building cybernetics_core = 164
+building templar_archives = 165
+building forge = 166
+building stargate = 167
+building fleet_beacon = 169
+building arbiter_tribunal = 170
+building robotics_support_bay = 171
+building shield_battery = 172
+building protoss_temple = 174
+building evolver = 182
+building piercer = 184
+building p_flag_beacon = 199
+
+# Terran upgrades
+upgrade t_infantry_armor = 0
+upgrade t_vehicle_plating = 1
+upgrade t_ship_plating = 2
+upgrade t_infantry_weapon = 7
+upgrade t_vehicle_weapon = 8
+upgrade t_ship_weapon = 9
+upgrade marine_range = 16
+upgrade vulture_speed = 17
+upgrade dragon_catalyst = 18
+upgrade science_vessel_mana = 19
+upgrade ghost_sight = 20
+upgrade ghost_mana = 21
+upgrade wraith_mana = 22
+upgrade battlecruiser_mana = 23
+upgrade thunder_boosters = 46
+upgrade medic_mana = 51
+upgrade goliath_range = 54
+upgrade panzer_attack = 58
+upgrade staballoy = 59
+upgrade hospitals = 62
+upgrade vademecum = 65
+upgrade adv_mechanics = 66
+upgrade safety_protocols = 67
+upgrade overclocking = 69
+upgrade science_aura = 72
+
+# Zerg upgrades
+upgrade z_carapace = 3
+upgrade z_flyer_carapace = 4
+upgrade z_melee_attack = 10
+upgrade z_missile_attack = 11
+upgrade z_flyer_attack = 12
+upgrade overlord_capacity = 24
+upgrade overlord_sight = 25
+upgrade overlord_speed = 26
+upgrade zergling_speed = 27
+upgrade zergling_attack = 28
+upgrade hydralisk_speed = 29
+upgrade hydralisk_range = 30
+upgrade queen_mana = 31
+upgrade defiler_mana = 32
+upgrade bone_mastery = 45
+upgrade ultralisk_armor = 52
+upgrade ultralisk_speed = 53
+upgrade burrowed_regen = 56
+upgrade hydra_attack = 63
+upgrade voracity = 64
+upgrade para_symbiosis = 68
+upgrade lurker_speed = 71
+
+# Protoss upgrades
+upgrade p_armor = 5
+upgrade p_plating = 6
+upgrade p_ground_weapon = 13
+upgrade p_air_weapon = 14
+upgrade p_plasma_shield = 15
+upgrade dragoon_range = 33
+upgrade zealot_speed = 34
+upgrade scarab_damage = 35
+upgrade reaver_capacity = 36
+upgrade shuttle_speed = 37
+upgrade observer_sight = 38
+upgrade observer_speed = 39
+upgrade templar_mana = 40
+upgrade scout_sight = 41
+upgrade scout_speed = 42
+upgrade carrier_capacity = 43
+upgrade arbiter_mana = 44
+upgrade corsair_mana = 47
+upgrade dark_archon_mana = 49
+upgrade one_with_khala = 57
+upgrade robotics_speed = 73
+
+
+# Terran tech
+tech stim_packs = 0
+tech lockdown = 1
+tech emp_shockwave = 2
+tech spider_mines = 3
+tech siege_mode = 5
+tech defensive_matrix = 6
+tech irradiate = 7
+tech yamato_gun = 8
+tech cloaking_field = 9
+tech personnel_cloaking = 10
+tech restoration = 24
+tech optical_flare = 30
+
+# Zerg tech
+tech burrowing = 11
+tech infestation = 12
+tech spawn_broodling = 13
+tech dark_swarm = 14
+tech plague = 15
+tech consume = 16
+tech ensnare = 17
+tech parasite = 18
+tech lurker_aspect = 32
+
+# Protoss tech
+tech psionic_storm = 19
+tech hallucination = 20
+tech recall = 21
+tech stasis_field = 22
+tech disruption_web = 25
+tech mind_control = 27
+tech feedback = 29
+tech maelstrom = 31

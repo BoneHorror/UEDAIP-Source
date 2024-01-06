@@ -1,0 +1,606 @@
+script_name Brood Wars Zerg 1 - Town A
+script_id ZB1A
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 1
+wait 1
+
+idle_orders disablebuiltin 0 0 0 0 0 0 0
+notowns_jump overlord yellow_handler
+#no player builds anything -> ferals don't have drones
+if_owned 201 orange_shadow
+multirun ai_income
+notowns_jump spawning_pool white_infested
+if_owned defiler_mound blue_defiler
+#:red_mutaling
+define_max 12 zergling
+define_max 5 mutalisk
+define_max 2 scourge
+defensebuild_gg 3 zergling
+defenseuse_gg 3 zergling
+defensebuild_gg 1 mutalisk
+defenseuse_gg 1 mutalisk
+defensebuild_ag 1 mutalisk
+defenseuse_ag 1 mutalisk
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+upgrade 1 z_flyer_attack 30
+wait 5200
+
+upgrade 1 z_carapace 30
+upgrade 1 zergling_speed 30
+wait 3300
+
+attack_add 5 zergling
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+upgrade 1 z_melee_attack 30
+upgrade 1 z_flyer_attack 30
+wait 2250
+
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
+attack_add 2 mutalisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+capt_expand
+:lingLoop
+attack_add 10 zergling
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait 2450
+
+attack_add 4 mutalisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait 3600
+
+attack_add 9 zergling
+attack_add 3 mutalisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+goto lingLoop
+
+:blue_defiler
+define_max 3 defiler
+define_max 16 zergling
+defensebuild_gg 2 zergling
+defenseuse_gg 2 zergling
+wait 3500
+
+idle_orders 119 64 1 defiler 512 zergling 30 own|allied|notenemies|incombat|Count(AtLeast 3 100 14)
+idle_orders 119 64 1 defiler 512 ultralisk 50 own|allied|notenemies|incombat|Count(AtLeast 2 100 14)
+idle_orders 119 64 1 defiler 512 ultralisk 30 own|notenemies|incombat
+idle_orders 119 64 1 defiler 512 hultralisk 70 own|notenemies|incombat
+idle_orders 119 64 1 defiler 512 zergling 10 own|notenemies|incombat
+idle_orders 119 64 1 defiler 512 lurker 40 own|notenemies|incombat
+idle_orders 119 64 1 defiler 512 lurker 90 own|notenemies|incombat|Count(AtLeast 2 100 14)
+idle_orders 119 64 1 defiler 512 hydralisk 55 own|notenemies|incombat|count(AtLeast 3 60 13)
+idle_orders 119 64 1 hdefiler 336 zergling 30 own|allied|notenemies|incombat|Count(AtLeast 3 100 14)
+idle_orders 119 64 1 hdefiler 336 ultralisk 50 own|allied|notenemies|incombat|Count(AtLeast 2 100 14)
+idle_orders 119 64 1 hdefiler 336 ultralisk 30 own|notenemies|incombat
+idle_orders 119 64 1 hdefiler 336 hultralisk 70 own|notenemies|incombat
+idle_orders 119 64 1 hdefiler 336 zergling 10 own|notenemies|incombat
+idle_orders 119 64 1 hdefiler 336 lurker 40 own|notenemies|incombat
+idle_orders 119 64 1 hdefiler 336 lurker 90 own|notenemies|incombat|Count(AtLeast 2 100 14)
+idle_orders 119 64 1 hdefiler 336 hydralisk 55 own|notenemies|incombat|count(AtLeast 3 60 13)
+upgrade 1 z_carapace 30
+upgrade 1 z_melee_attack 30
+upgrade 1 z_missile_attack 30
+upgrade 1 zergling_speed 30
+tech consume 30
+wait 12000
+
+defensebuild_ag 1 defiler
+defenseuse_ag 1 defiler
+attack_add 7 zergling
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+idle_orders Consume 16 1 defiler 512 zergling 70 NotEnemies|Own|Health(LessThanPercent 80)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 16 1 defiler 512 broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
+tech plague 30
+wait 4000
+
+idle_orders 144 64 1 defiler 512 group_men 55 incombat|count(AtLeast 3 120 14) 
+idle_orders 144 64 1 defiler 512 high_templar|scout|corsair|wraith|science_vessel|siege_tank|goliath 80 incombat|count(AtLeast 3 120 14)
+idle_orders 144 64 1 defiler 512 arbiter|reaver|battlecruiser|carrier 115 incombat|count(AtLeast 2 120 14)
+idle_orders 144 64 1 defiler 512 arbiter|battlecruiser|carrier 80 incombat
+idle_orders 144 64 1 defiler 512 ghost|vulture|dropship|shuttle 55 incombat|count(AtLeast 4 120 14)
+attack_add 8 zergling
+attack_add 1 defiler
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+capt_expand
+wait 8500
+
+upgrade 1 defiler_mana 30
+:bdLoop
+wait 4000
+
+attack_add 14 zergling
+attack_add 1 defiler
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+goto bdLoop
+
+:teal_spires
+define_max 6 mutalisk
+define_max 3 guardian
+define_max 4 scourge
+defensebuild_gg 1 mutalisk
+defenseuse_gg 1 mutalisk
+defensebuild_ag 1 mutalisk
+defenseuse_ag 1 mutalisk
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+wait 1520
+
+upgrade 1 z_flyer_carapace 30
+attack_add 2 mutalisk
+attack_to Loc.64 Loc.65
+wait 300
+
+attack_do
+attack_clear
+defensebuild_aa 2 scourge
+defenseuse_aa 2 scourge
+wait 2350
+
+train 2 mutalisk
+train 1 guardian
+attack_add 1 guardian
+attack_to Loc.66 Loc.65
+wait 300
+
+attack_do
+attack_clear
+defensebuild_gg 1 mutalisk
+defensebuild_gg 1 guardian
+defenseuse_gg 1 guardian
+upgrade 1 z_flyer_attack 30
+wait 3700
+
+train 2 mutalisk
+train 2 guardian
+train 2 scourge
+attack_add 2 guardian
+attack_add 2 scourge
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+capt_expand
+:SpireLoop
+wait 3000
+
+attack_add 5 mutalisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait 3000
+
+train 3 mutalisk
+train 3 guardian
+train 4 scourge
+attack_add 3 guardian
+attack_add 4 scourge
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+goto SpireLoop
+
+:orange_shadow
+define_max 7 ultralisk
+define_max 24 zergling
+define_max 16 hydralisk
+define_max 6 scourge
+define_max 6 mutalisk
+multirun orange_income
+multirun orange_shares
+aicontrol global_disable_spell_focus
+aicontrol global_disable_acid_spore_focus
+aicontrol global_disable_carrier_focus
+upgrade 1 z_carapace 30
+upgrade 1 z_melee_attack 30
+upgrade 1 z_missile_attack 30
+upgrade 1 zergling_speed 30
+upgrade 1 z_flyer_attack 30
+upgrade 1 z_flyer_carapace 30
+upgrade 1 hydralisk_speed 30
+upgrade 1 hydralisk_range 30
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defensebuild_gg 1 mutalisk
+defenseuse_gg 1 mutalisk
+defensebuild_gg 2 zergling
+defenseuse_gg 2 zergling
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_ag 1 scourge
+defenseuse_ag 1 scourge
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_aa 2 scourge
+defenseuse_aa 2 scourge
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+wait 16500
+
+attack_add 4 ultralisk
+attack_add 2 mutalisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+upgrade 1 ultralisk_speed 30
+wait 5000
+
+upgrade 1 hydra_attack 30
+upgrade 1 zergling_attack 30
+attack_add 14 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+upgrade 2 z_carapace 30
+upgrade 2 z_melee_attack 30
+upgrade 2 z_missile_attack 30
+wait 4500
+
+attack_add 20 zergling
+attack_add 3 mutalisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+capt_expand
+upgrade 2 z_flyer_attack 30
+upgrade 2 z_flyer_carapace 30
+upgrade 1 ultralisk_armor 30
+wait 3700
+
+attack_add 18 zergling
+attack_add 11 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+:shadowLoop
+wait 2800
+
+attack_add 7 ultralisk
+attack_add 3 mutalisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait 3200
+
+attack_add 18 zergling
+attack_add 9 hydralisk
+attack_add 3 mutalisk
+attack_add 4 ultralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+goto shadowLoop
+
+:brown_hydras
+define_max 11 hydralisk
+upgrade 1 hydralisk_range 30
+upgrade 1 z_missile_attack 30
+defensebuild_gg 1 hydralisk
+defenseuse_gg 2 hydralisk
+wait 3450
+
+attack_add 4 hydralisk
+attack_to Loc.67 Loc.65
+wait 300
+
+attack_do
+attack_clear
+wait 2400
+
+attack_add 3 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+defensebuild_aa 1 hydralisk
+defenseuse_aa 1 hydralisk
+upgrade 1 z_carapace 30
+wait 4200
+
+attack_add 6 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+capt_expand
+wait 2500
+
+upgrade 1 hydralisk_speed 30
+wait 3300
+
+attack_add 3 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+guard_all
+:hydraLoop
+wait 2230
+
+attack_add 8 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait 4000
+
+attack_add 11 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+goto hydraLoop
+
+:white_infested
+if_owned hydralisk_den brown_hydras
+notowns_jump queen_nest teal_spires
+define_max 6 broodling
+define_max 3 queen
+define_max 4 infested_terran
+defensebuild_gg 1 broodling
+defenseuse_gg 1 broodling
+defensebuild_gg 1 queen
+defenseuse_gg 1 queen
+max_force 325
+idle_orders 120 0 1 queen 1024 overlord|observer|science_vessel|defiler|skywing|dropship|shuttle|arbiter|valhalla|defiler|queen|ghost 30 WithoutSpellEffects(Parasite)|RandomRate(280 820)|Self(Energy(GreaterThanPercent 80))
+upgrade 1 z_carapace 30
+wait 12500
+
+attack_add 1 infested_terran
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+tech spawn_broodling 30
+upgrade 1 z_melee_attack 30
+wait 4500
+
+idle_orders 121 8 1 queen 812 zergling|marine 5 Health(GreaterThanPercent 85)
+idle_orders 121 8 1 queen 812 hydralisk|firebat|medic 40 Health(GreaterThanPercent 85)
+idle_orders 121 8 1 queen 812 lurker|siege_tank 70 Health(GreaterThanPercent 25)
+idle_orders 121 8 1 queen 812 ultralisk 120 Health(GreaterThanPercent 25)
+idle_orders 121 8 1 queen 812 zealot|vulture 30 Health(GreaterThanPercent 45)
+idle_orders 121 8 1 queen 812 dragoon|goliath 60 Health(GreaterThanPercent 45)
+idle_orders 121 8 1 queen 812 high_templar|ghost 70 Health(GreaterThanPercent 65)
+idle_orders 121 8 1 queen 812 dark_templar|revenant 50 Health(GreaterThanPercent 55)
+attack_add 4 broodling
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+tech ensnare 30
+wait 6000
+
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|marine|vulture 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 60))
+idle_orders 146 0 1 queen 1024 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 65))
+idle_orders 146 0 1 queen 1024 dragoon|corsair|scout|dark_templar|wraith|ghost 40 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 50))
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|dragoon|corsair|scout|dark_archon|devourer|guardian|dark_templar|goliath|siege_tank|revenant 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 60))
+idle_orders 146 0 1 queen 1024 reaver|dark_archon|archon|devourer|guardian|hnorad|battlecruiser|carrier|arbiter 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 40))
+idle_orders 146 8 1 queen 312 group_men 30 deathrattle
+defensebuild_gg 1 infested_terran
+defenseuse_gg 1 infested_terran
+attack_add 2 infested_terran
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+upgrade 1 bone_mastery 30
+wait 5000
+
+upgrade 1 queen_mana 30
+wait 1500
+
+capt_expand
+:infestedLoop
+attack_add 4 broodling
+attack_add 2 infested_terran
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait 6000
+
+attack_add 3 infested_terran
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait 3500
+
+goto infestedLoop
+
+:yellow_handler
+wait 10000
+
+upgrade_jump 13 Set z_carapace 1 requester_loop
+upgrade_jump 13 Set z_flyer_attack 1 requester_loop
+upgrade_jump 13 Set z_flyer_carapace 1 requester_loop
+upgrade_jump 13 Set z_melee_attack 1 requester_loop
+upgrade_jump 13 Set z_missile_attack 1 requester_loop
+upgrade_jump 13 Set zergling_speed 1 requester_loop
+upgrade_jump 13 Set hydralisk_speed 1 requester_loop
+upgrade_jump 13 Set hydralisk_range 1 requester_loop
+wait 12450
+
+upgrade_jump 13 Set z_carapace 2 requester_loop
+upgrade_jump 13 Set z_flyer_attack 2 requester_loop
+upgrade_jump 13 Set z_flyer_carapace 2 requester_loop
+upgrade_jump 13 Set z_melee_attack 2 requester_loop
+upgrade_jump 13 Set z_missile_attack 2 requester_loop
+upgrade_jump 13 Set burrowed_regen 1 requester_loop
+help_iftrouble
+wait 14700
+
+upgrade_jump 13 Set z_carapace 3 requester_loop
+upgrade_jump 13 Set z_flyer_attack 3 requester_loop
+upgrade_jump 13 Set z_flyer_carapace 3 requester_loop
+upgrade_jump 13 Set z_melee_attack 3 requester_loop
+upgrade_jump 13 Set z_missile_attack 3 requester_loop
+upgrade_jump 13 Set zergling_attack 1 requester_loop
+upgrade_jump 13 Set hydra_attack 1 requester_loop
+help_iftrouble
+:requester_loop
+wait_rand 2750 6800
+
+help_iftrouble
+goto requester_loop
+
+:orange_shares
+multirun share_hattack
+multirun share_zattack
+multirun share_carapace2
+multirun share_fcarapace2
+multirun share_air2
+multirun share_melee2
+multirun share_ranged2
+stop
+
+:share_hattack
+wait 50
+
+upgrade_jump 4 Exactly hydra_attack 0 share_hattack
+upgrade_jump 5 Set hydra_attack 1 share_hattack
+stop
+
+:share_zattack
+wait 50
+
+upgrade_jump 4 Exactly zergling_attack 0 share_zattack
+upgrade_jump 0 Set zergling_attack 1 share_zattack
+upgrade_jump 1 Set zergling_attack 1 share_zattack
+stop
+
+:share_carapace2
+wait 50
+
+upgrade_jump 4 AtMost z_carapace 1 share_carapace2
+upgrade_jump 0 Set z_carapace 2 share_carapace2
+upgrade_jump 1 Set z_carapace 2 share_carapace2
+upgrade_jump 5 Set z_carapace 2 share_carapace2
+upgrade_jump 6 Set z_carapace 2 share_carapace2
+stop
+
+:share_fcarapace2
+wait 50
+
+upgrade_jump 4 AtMost z_flyer_carapace 1 share_fcarapace2
+upgrade_jump 0 Set z_flyer_carapace 2 share_fcarapace2
+upgrade_jump 1 Set z_flyer_carapace 2 share_fcarapace2
+upgrade_jump 2 Set z_flyer_carapace 2 share_fcarapace2
+upgrade_jump 5 Set z_flyer_carapace 2 share_fcarapace2
+upgrade_jump 6 Set z_flyer_carapace 2 share_fcarapace2
+stop
+
+:share_air2
+wait 50
+
+upgrade_jump 4 AtMost z_flyer_attack 1 share_air2
+upgrade_jump 0 Set z_flyer_attack 2 share_air2
+upgrade_jump 2 Set z_flyer_attack 2 share_air2
+upgrade_jump 6 Set z_flyer_attack 2 share_air2
+stop
+
+:share_melee2
+wait 50
+
+upgrade_jump 4 AtMost z_melee_attack 1 share_melee2
+upgrade_jump 0 Set z_melee_attack 2 share_melee2
+upgrade_jump 1 Set z_melee_attack 2 share_melee2
+upgrade_jump 6 Set z_melee_attack 2 share_melee2
+stop
+
+:share_ranged2
+wait 50
+
+upgrade_jump 4 AtMost z_missile_attack 1 share_ranged2
+upgrade_jump 1 Set z_missile_attack 2 share_ranged2
+upgrade_jump 5 Set z_missile_attack 2 share_ranged2
+stop
+
+:ai_income
+wait 16
+
+resources_jump 2000 2000 income_throttle
+resources 13 Add Ore 9 ai_income
+resources 13 Add Gas 7 ai_income
+goto ai_income
+
+:income_throttle
+wait_rand 500 1500
+
+goto ai_income
+
+:orange_income
+wait 16
+
+resources 13 Add Ore 11 ai_income
+resources 13 Add Gas 9 ai_income
+goto orange_income

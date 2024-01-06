@@ -1,0 +1,159 @@
+script_name Brood Wars Terran 1 - Town F
+script_id TB1F
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+if_owned hive purple_town
+:loop_until_base_or
+wait 500
+
+bring_jump 1 AtMost 0 command_center Loc.63 loop_until_base_or
+random_call 15 or_sunken
+random_call 18 or_spore
+random_call 20 or_tech
+:or_loop
+wait 1500
+
+goto or_loop
+
+:or_sunken
+build 1 creep_colony 80
+build 1 sunken_colony 80
+return
+
+:or_spore
+build 2 creep_colony 80
+build 1 spore_colony 80
+return
+
+:or_tech
+random_jump 128 otc2
+build 1 hydralisk_den 80
+return
+
+:otc2
+build 1 spawning_pool 80
+return
+
+:purple_town
+#bone area
+build 1 hatchery 100
+build 1 drone 90
+build 5 drone 80
+player_need 1 spawning_pool
+build 1 lair 80
+build 1 queen_nest 80
+wait 10500
+
+build 9 drone 80
+max_workers 11
+:loop_until_base
+wait 500
+
+bring_jump 1 AtMost 0 command_center Loc.63 loop_until_base
+define_max 2 queen
+wait 500
+
+train 2 queen
+defenseuse_gg 1 broodling
+idle_orders 120 0 1 queen 1024 overlord|observer|science_vessel|defiler|skywing|dropship|shuttle|arbiter|valhalla|defiler|queen|ghost 30 WithoutSpellEffects(Parasite)|RandomRate(280 820)|Self(Energy(GreaterThanPercent 80))
+idle_orders 27 13 1 queen 1532 command_center 80 health(LessThanPercent,66)
+wait 4500
+
+multirun broodling_spend 
+tech spawn_broodling 30
+wait 3400
+
+
+idle_orders 121 8 1 queen 812 zergling|marine 5 Health(GreaterThanPercent 85)
+idle_orders 121 8 1 queen 812 hydralisk|firebat|medic|heavy_marine 40 Health(GreaterThanPercent 85)
+idle_orders 121 8 1 queen 812 lurker|siege_tank|death_knight 70 Health(GreaterThanPercent 25)
+idle_orders 121 8 1 queen 812 ultralisk|36|panzer 120 Health(GreaterThanPercent 25)
+idle_orders 121 8 1 queen 812 zealot|vulture|scorpion 30 Health(GreaterThanPercent 45)
+idle_orders 121 8 1 queen 812 dragoon|goliath|phantom 60 Health(GreaterThanPercent 45)
+idle_orders 121 8 1 queen 812 high_templar|ghost 70 Health(GreaterThanPercent 65)
+idle_orders 121 8 1 queen 812 dark_templar|tesla_trooper 50 Health(GreaterThanPercent 55)
+idle_orders 121 8 1 queen 1536 93|96 20 Self(Energy(GreaterThanPercent 65))|Unseen|Allied
+#broodling ursadon and scantinds to break fences, delay civ bonus
+idle_orders 121 8 1 queen 812 drone|scv 15 Health(GreaterThanPercent 95)
+idle_orders 121 8 1 queen 812 broodling 3 Health(GreaterThanPercent 95)
+idle_orders 121 8 1 queen 312 group_men 40 deathrattle
+wait 3400
+
+define_max 3 queen
+tech ensnare 30
+wait 5500
+
+train 3 queen
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|marine|vulture|heavy_marine|scorpion 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 60))
+idle_orders 146 0 1 queen 1024 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 65))
+idle_orders 146 0 1 queen 1024 dragoon|corsair|scout|dark_templar|wraith|ghost|skywing|phantom 40 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 50))
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|dragoon|corsair|scout|dark_archon|devourer|guardian|dark_templar|goliath|siege_tank|revenant|death_knight|panzer 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 60))
+idle_orders 146 0 1 queen 1024 reaver|dark_archon|archon|devourer|guardian|hnorad|battlecruiser|valhalla|carrier|arbiter 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 40))
+idle_orders 146 8 1 queen 312 group_men 30 deathrattle
+wait 2250
+
+define_max 4 queen
+wait 3710
+
+train 4 queen
+upgrade 1 queen_mana 30
+wait 3500
+
+train 4 queen
+upgrade 1 bone_mastery 30
+define_max 5 queen
+multirun broodling_spend
+defensebuild_gg 1 queen
+defenseuse_gg 1 queen
+max_workers 255
+:bone_loop
+wait_rand 9333 15500
+
+train 3 queen
+goto bone_loop
+
+:broodling_spend
+wait_train 8 broodling
+call wait_attack
+call hold_attack
+attack_add 8 broodling
+attack_prepare
+wait 500
+
+attack_timeout 90
+attack_do
+attack_clear
+call release_attack
+wait 650
+
+goto broodling_spend
+
+:hold_attack
+deaths 3 Add 1 firebat bone_loop
+return
+
+:release_attack
+deaths 3 Set 0 firebat bone_loop
+return
+
+:wait_attack
+wait 16
+
+deaths 3 AtLeast 2 firebat ensure_attack
+deaths 3 Exactly 1 firebat wait_attack
+#loop if another script started an attack
+return
+
+:ensure_attack
+load_bank Ensures
+print Ensure_TwoOrMore_PleaseReportMeIfSeen
+bank_data Set 1 Ensures Ensure_TwoOrMore wait_attack
+bank_data Set 0 Ensures Ensure_Compare wait_attack
+save_bank Ensures
+deaths 3 Set 0 firebat bone_loop
+return

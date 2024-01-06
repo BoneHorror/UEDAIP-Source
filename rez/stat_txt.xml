@@ -81,7 +81,7 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_20</id>
-        <value>Infested Marine</value>
+        <value>Jim Raynor</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_21</id>
@@ -301,11 +301,11 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_75</id>
-        <value>Zeratul</value>
+        <value>Ulrezaj's Shade</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_76</id>
-        <value>Tassadar/Zeratul</value>
+        <value>Ulrezaj's Revenge</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_77</id>
@@ -321,15 +321,15 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_80</id>
-        <value>Mojo</value>
+        <value>Ulrezaj's Fist</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_81</id>
-        <value>Warbringer</value>
+        <value>Ulrezaj's Horror</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_82</id>
-        <value>Gantrithor</value>
+        <value>Ulrezaj's Wrath</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_83</id>
@@ -349,11 +349,11 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_87</id>
-        <value>Aldaris</value>
+        <value>Ulrezaj's Mind</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_88</id>
-        <value>Artanis</value>
+        <value>Ulrezaj's Risen</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_89</id>
@@ -393,7 +393,7 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_98</id>
-        <value>Raszagal</value>
+        <value>Ulrezaj's Cloud</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_99</id>
@@ -409,7 +409,7 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_102</id>
-        <value>Gerard DuGalle</value>
+        <value>Ulrezaj's Hand</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_103</id>
@@ -601,7 +601,7 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_150</id>
-        <value>Mature Chrysalis</value>
+        <value>Taar Psi Dominator</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_151</id>
@@ -805,7 +805,7 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_201</id>
-        <value>Overmind Cocoon</value>
+        <value>Overmind's Remains</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_202</id>
@@ -2432,7 +2432,7 @@ lasts 1056 frames</value>
     </string>
     <string>
         <id>STR_GANTRITHOR_RANK</id>
-        <value>Tassadar</value>
+        <value>Cultist</value>
     </string>
     <string>
         <id>STR_INTERCEPTOR</id>
@@ -2687,12 +2687,12 @@ lasts 1056 frames</value>
     <string>
         <id>STR_BLD_LAIR</id>
         <value>lMutate into Lair
-(Enables Zerg to morph advanced structures and increases Larvae spawn rate)</value>
+(Enables Zerg to morph advanced structures)</value>
     </string>
     <string>
         <id>STR_BLD_HIVE</id>
         <value>hMutate into Hive
-(Enables Zerg to morph more advanced structures and increases Larvae spawn rate)</value>
+(Enables Zerg to morph more advanced structures)</value>
     </string>
     <string>
         <id>STR_BLD_GREATERSPIRE</id>
@@ -4685,15 +4685,18 @@ Yamato Gun Research</value>
     </string>
     <string>
         <id>AI_PROTOSS_8B</id>
-        <value>Protoss 8 - Right Protoss Town</value>
+        <value>k&#4;Extension of the Swarm
+When burrowed and at full energy, the Spawnsire births 4 Broodlings that seek out enemies in random directions, at the cost of 10 Energy.</value>
     </string>
     <string>
         <id>AI_PROTOSS_8D</id>
-        <value>Protoss 8 - Protoss Defenders</value>
+        <value>Spawnsire Requires:
+   Hive</value>
     </string>
     <string>
         <id>AI_PROTOSS_9</id>
-        <value>Protoss 9 - Ground Zerg</value>
+        <value>nBirth Spawnsire
+(Slow strain able to breed Broodlings)</value>
     </string>
     <string>
         <id>AI_PROTOSS_9W</id>
@@ -4918,13 +4921,11 @@ All disables and slows last half as long on this unit</value>
     </string>
     <string>
         <id>AI_DEBUG_3_LOC</id>
-        <value>k&#4;Corrosive Spores
-Unclean Ones deal damage over time to all nearby units. Higher damage dealt on max Energy.</value>
+        <value>Debug Script 3 (location)</value>
     </string>
     <string>
         <id>AI_DEBUG_4_LOC</id>
-        <value>k&#4;Nano-mines
-Raynor's grenades reform into temporary Spider Mines every 4th attack, up to 3 placed at a time. Whenever Raynor's mines detonate, they disperse into nanites that heal Raynor for 15 HP.</value>
+        <value>Debug Script 4 (location)</value>
     </string>
     <string>
         <id>AI_DEBUG_5_LOC</id>
@@ -6117,107 +6118,133 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>AI_TERRAN_B7B</id>
-        <value>Brood Wars Terran 7 - Town B</value>
+        <value>eWarp in Ulrezaj's Revenge [E]
+(Melee warrior, a sacrificial cultist that explodes on death)</value>
     </string>
     <string>
         <id>AI_TERRAN_B7C</id>
-        <value>Brood Wars Terran 7 - Town C</value>
+        <value>sWarp in Ulrezaj's Shade [S]
+(Melee assassin, effective against shielded targets)</value>
     </string>
     <string>
         <id>AI_TERRAN_B7D</id>
-        <value>Brood Wars Terran 7 - Town D</value>
+        <value>fWarp in Ulrezaj's Fist [F]
+(Agile Close Air Support fighter)</value>
     </string>
     <string>
         <id>AI_TERRAN_B7E</id>
-        <value>Brood Wars Terran 7 - Town E</value>
+        <value>wWarp in Ulrezaj's Wrath [W]
+(Powerful support ship that restores shields for allied units)</value>
     </string>
     <string>
         <id>AI_TERRAN_B7F</id>
-        <value>Brood Wars Terran 7 - Town F</value>
+        <value>dWarp in Ulrezaj's Mind [D]
+(Specialist vessel, capable of using powerful mind-twisting abilities)</value>
     </string>
     <string>
         <id>AI_TERRAN_B8A</id>
-        <value>Brood Wars Terran 8 - Town A</value>
+        <value>cWarp in Ulrezaj's Cloud [C]
+(Maneuverable Air-to-Air starfighter)</value>
     </string>
     <string>
         <id>AI_TERRAN_B8B</id>
-        <value>Brood Wars Terran 8 - Town B</value>
+        <value>aBuild Ulrezaj's Horror [A]
+(A twisted siege machine capable of teleportation and regeneration)</value>
     </string>
     <string>
         <id>AI_TERRAN_B8C</id>
-        <value>Brood Wars Terran 8 - Town C</value>
+        <value>aWarp in Ulrezaj's Risen [A]
+(Powerful strider, equipped with all-purpose AoE weaponry)</value>
     </string>
     <string>
         <id>AI_TERRAN_B8D</id>
-        <value>Brood Wars Terran 8 - Town D</value>
+        <value>dWarp in Ulrezaj's Hand [D]
+(Mastermind caster that burns energy of nearby enemy specialists)</value>
     </string>
     <string>
         <id>AI_TERRAN_B8E</id>
-        <value>iTrain Civilian</value>
+        <value>aWarp in Ulrezaj's Black Talon [A]
+(Powerful capital ship, armed with heavy weaponry and variety of destructive abilities)</value>
     </string>
     <string>
         <id>AI_TERRAN_B8F</id>
-        <value>Brood Wars Terran 8 - Town F</value>
+        <value>Ulrezaj's Shade Requires:
+   Templar Archives</value>
     </string>
     <string>
         <id>AI_ZERG_B1A</id>
-        <value>Brood Wars Zerg 1 - Town A</value>
+        <value>Ulrezaj's Wrath Requires:
+   Fleet Beacon</value>
     </string>
     <string>
         <id>AI_ZERG_B1B</id>
-        <value>Brood Wars Zerg 1 - Town B</value>
+        <value>Ulrezaj's Mind Requires:
+   Arbiter Tribunal</value>
     </string>
     <string>
         <id>AI_ZERG_B1C</id>
-        <value>Brood Wars Zerg 1 - Town C</value>
+        <value>Ulrezaj's Horror Requires:
+   Robotics Support Bay</value>
     </string>
     <string>
         <id>AI_ZERG_B1D</id>
-        <value>Brood Wars Zerg 1 - Town D</value>
+        <value>Ulrezaj's Risen Requires:
+   Cybernetics Core</value>
     </string>
     <string>
         <id>AI_ZERG_B1E</id>
-        <value>Brood Wars Zerg 1 - Town E</value>
+        <value>Ulrezaj's Hand Requires:
+   Templar Archives</value>
     </string>
     <string>
         <id>AI_ZERG_B1F</id>
-        <value>Brood Wars Zerg 1 - Town F</value>
+        <value>Ulrezaj's Black Talon Requires:
+   Fleet Beacon
+   Only one Black Talon can be deployed at a time</value>
     </string>
     <string>
         <id>AI_ZERG_B2A</id>
-        <value>Brood Wars Zerg 2 - Town A</value>
+        <value>Anti-matter Missile Batteries</value>
     </string>
     <string>
         <id>AI_ZERG_B2B</id>
-        <value>Brood Wars Zerg 2 - Town B</value>
+        <value>eDevelop EMP Shockwave [E]
+(Ulrezaj's Wrath ability)</value>
     </string>
     <string>
         <id>AI_ZERG_B2C</id>
-        <value>Brood Wars Zerg 2 - Town C</value>
+        <value>EMP Shockwave:
+   Develop at Fleet Beacon</value>
     </string>
     <string>
         <id>AI_ZERG_B2D</id>
-        <value>Brood Wars Zerg 2 - Town D</value>
+        <value>k&#4;The Last Commandment
+This warrior is equipped with energy capacitors that will be detonated when it is mortally wounded, dealing 45(+3) AoE explosive damage.</value>
     </string>
     <string>
         <id>AI_ZERG_B2E</id>
-        <value>Brood Wars Zerg 2 - Town E</value>
+        <value>k&#4;Relentless Assault
+Horrors are equipped with a short-range warp device that can quickly relocate them between firing positions.</value>
     </string>
     <string>
         <id>AI_ZERG_B2F</id>
-        <value>Brood Wars Zerg 2 - Town F</value>
+        <value>k&#4;Best of Both Worlds
+Utilizing Terran EMP technology, Shades deal 50 additional damage to Plasma Shields with every attack.</value>
     </string>
     <string>
         <id>AI_ZERG_B3A</id>
-        <value>Brood Wars Zerg 3 - Town A</value>
+        <value>k&#4;No Respite
+The "Wrath" class of carriers houses a portable shield battery unit that rapidly restores shields for nearby allies.</value>
     </string>
     <string>
         <id>AI_ZERG_B3B</id>
-        <value>Brood Wars Zerg 3 - Town B</value>
+        <value>k&#4;Beacon of Decay
+Ulrezaj's hatred emanates from this unit and rends the flesh of nearby psionics, burning their energy in a large area.</value>
     </string>
     <string>
         <id>AI_ZERG_B3C</id>
-        <value>Brood Wars Zerg 3 - Town C</value>
+        <value>k&#4;Singularity Overcharge
+Singularity Charge gives special effects to Risen: At level 1, they receive extra range and fire two extra bullets. At level 2, they also launch a powerful AoE bomb, that deals 13(+1) explosive damage.</value>
     </string>
     <string>
         <id>AI_ZERG_B3D</id>
@@ -6470,8 +6497,8 @@ slower Nerazim shield regen and combat Robotics movement)</value>
     <string>
         <id>AI_TERRAN_SUPERX</id>
         <value>nEvolve Tissue Mending
-(Units and Colonies on Creep regenerate life faster.
-Bonus doubled for Burrowed units)</value>
+(Units and Colonies on Creep regenerate life faster
+bonus doubled for Burrowed units)</value>
     </string>
     <string>
         <id>AI_PROTOSS_SUPERX</id>
@@ -6681,6 +6708,30 @@ Bonus doubled for Burrowed units)</value>
     </string>
 	<string>
         <id>FIRST_UNIT_STRING-272</id>
-        <value>Tom Kazansky</value>
+        <value>Zeratul</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-273</id>
+        <value>Taar Xenowort</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-274</id>
+        <value>Infested Siege Tank</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-275</id>
+        <value>Infested Vulture</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-276</id>
+        <value>Infested Goliath</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-277</id>
+        <value>Zerg Spawnsire</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-278</id>
+        <value>Kenji Yamamoto</value>
     </string>
 </strings>

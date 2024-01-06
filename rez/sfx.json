@@ -7744,11 +7744,11 @@
           },
           {
             "filePath": "Protoss/FENIXZ/UFeYes02.WAV",
-            "priority": 2,
+            "priority": 1,
             "preload": "false",
-            "unitSpeech": "false",
+            "unitSpeech": "true",
             "oneAtATime": "false",
-            "neverPreempt": "false",
+            "neverPreempt": "true",
             "lengthAdjust": 0,
             "minVolume": 0,
             "ID": "FENIX_ZEALOT_YESSIR_2"
@@ -12622,6 +12622,39 @@
             "lengthAdjust": 0,
             "minVolume": 0,
             "ID": "SND_LAST_ARTANIS_YESSIR"
+          },
+		  {
+            "filePath": "Ulrezaj/1144Blink.wav",
+            "priority": 2,
+            "preload": "false",
+            "unitSpeech": "false",
+            "oneAtATime": "false",
+            "neverPreempt": "false",
+            "lengthAdjust": 0,
+            "minVolume": 0,
+            "ID": "SND_BLINK_ULREZAJ"
+          },
+		  {
+            "filePath": "Ulrezaj/1145risensproj.wav",
+            "priority": 1,
+            "preload": "false",
+            "unitSpeech": "false",
+            "oneAtATime": "false",
+            "neverPreempt": "false",
+            "lengthAdjust": 0,
+            "minVolume": 0,
+            "ID": "SND_RISEN_ULREZAJ"
+          },
+		  {
+            "filePath": "Ulrezaj/1146hostspawn.wav",
+            "priority": 1,
+            "preload": "false",
+            "unitSpeech": "false",
+            "oneAtATime": "false",
+            "neverPreempt": "false",
+            "lengthAdjust": 0,
+            "minVolume": 0,
+            "ID": "SND_HOST_SPAWN"
           },
 		  {
             "filePath": "Protoss/bldg/pstwht00.wav",

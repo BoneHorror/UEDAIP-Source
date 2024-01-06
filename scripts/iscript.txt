@@ -154,6 +154,8 @@ SpecialState1  	[NONE]
 BroodlingInit:
 	imgul          	6 0 0	# BroodlingShad (zerg\zbrShad.grp)
 	wait			2
+	set if_uninit spritelocal bl_timer = 0
+	if bl_timer > 1 goto BroodlingDeathSet
 	if upgrade(player, 45) == 0 goto BroodlingGndAttkToIdle
 	set unit.death_timer = 0
 BroodlingGndAttkToIdle:
@@ -169,6 +171,16 @@ BroodlingDeath:
 	wait           	1
 	end            	
 
+BroodlingDeathSet:
+	issue_order 187 flingy.position_x flingy.position_y
+	if upgrade(player, 45) == 1 goto BroodlingDeathExtend
+	set unit.death_timer = bl_timer
+	goto BroodlingGndAttkToIdle
+	
+BroodlingDeathExtend:
+	set unit.death_timer = bl_timer * 3 / 2
+	goto BroodlingGndAttkToIdle
+	
 BroodlingGndAttkInit:
 	playfram       	0x77	# frame set 7
 	wait           	1
@@ -3149,7 +3161,6 @@ HatcheryAlmostBuilt:
 HatcheryBuilt:
 	playfram       	0
 	waitrand       	2 5
-	#print Hatchery - Player {player}, Color selected: {game.player_color_choice(player)}
 HatcheryIsWorking:
 	playfram       	1
 	wait           	2
@@ -5146,11 +5157,7 @@ GhostWalkingToIdle:
 	if unit_id == 16 goto uGhostWalkingToIdle
 	playfram       	0x33	# frame set 3
 GhostLocal02:
-	wait			3
-	if flingy.movement_flags & 0x2 != 0 call FreezeClear
-	wait			25
-	if flingy.movement_flags & 0x2 != 0 call FreezeClear
-	waitrand       	35 47
+	waitrand       	63 75
 	randcondjmp    	25 GhostLocal00
 	randcondjmp    	128 GhostLocal01
 	goto           	GhostLocal02
@@ -5398,11 +5405,7 @@ uGhostInit:
 uGhostWalkingToIdle:
 	playfram       	280	# frame set 3
 uGhostLocal02:
-	wait			3
-	if flingy.movement_flags & 0x2 != 0 call FreezeClear
-	wait			25
-	if flingy.movement_flags & 0x2 != 0 call FreezeClear
-	waitrand       	35 47
+	waitrand       	63 75
 	randcondjmp    	25 uGhostLocal00
 	randcondjmp    	128 uGhostLocal01
 	goto           	uGhostLocal02
@@ -5755,6 +5758,7 @@ Goliath_Base_WalkingToIdle:
 	goto           	Goliath_Base_Local00
 uGoliath_Base_WalkingToIdle:
 	playfram       	289	# frame set 7
+	goto           	Goliath_Base_Local00
 Goliath_Base_Local00:
 	wait           	125
 	goto           	Goliath_Base_Local00
@@ -6298,12 +6302,8 @@ MarineWalkingToIdle:
 	if unit_id == 56 goto uMarineWalkingToIdle
 	playfram       	0x44	# frame set 4
 MarineLocal02:
-	wait			3
-	if flingy.movement_flags & 0x2 != 0 call FreezeClear
-	wait			25
-	if flingy.movement_flags & 0x2 != 0 call FreezeClear
-	waitrand       	35 47
-	#print Current order ID: {order} #Print order debug
+	if unit_id == 56 goto uMarineLocal02
+	waitrand       	63 75
 	randcondjmp    	25 MarineLocal00
 	randcondjmp    	128 MarineLocal01
 	goto           	MarineLocal02
@@ -6426,7 +6426,6 @@ MarineGndAttkInit:
 	if unit_id == 56 goto uMarineGndAttkInit
 	playfram       	0x00	# frame set 0
 	wait           	1
-	#transform unit 1 #transform test to help neiv
 	playfram       	0x11	# frame set 1
 	wait           	1
 	playfram       	0x22	# frame set 2
@@ -6521,7 +6520,6 @@ MarineWalking:
 	wait           	1
 	playfram       	0x88	# frame set 8
 	move           	4
-	#print Current order ID: {order} #Print order debug
 	wait           	1
 	playfram       	0x99	# frame set 9
 	move           	4
@@ -6543,11 +6541,7 @@ uMarineInit:
 uMarineWalkingToIdle:
 	playfram       	297	# frame set 4
 uMarineLocal02:
-	wait			3
-	if flingy.movement_flags & 0x2 != 0 call FreezeClear
-	wait			25
-	if flingy.movement_flags & 0x2 != 0 call FreezeClear
-	waitrand       	35 47
+	waitrand       	63 75
 	randcondjmp    	25 uMarineLocal00
 	randcondjmp    	128 uMarineLocal01
 	goto           	uMarineLocal02
@@ -7086,7 +7080,6 @@ uVultureInit:
 	goto           	VultureGndAttkToIdle
 
 VultureGndAttkToIdle:
-	if unit_id == 262 goto RaynorHealIdle
 	setvertpos     	1
 	waitrand       	8 10
 	setvertpos     	2
@@ -7097,32 +7090,6 @@ VultureGndAttkToIdle:
 	waitrand       	8 10
 	goto           	VultureGndAttkToIdle
 
-RaynorHealIdle:
-	setvertpos     	1
-	waitrand       	5 8
-	if unit_id == 262 && raynor_mine_heal == 1 call RaynorMineHeal
-	setvertpos     	2
-	waitrand       	5 8
-	if unit_id == 262 && raynor_mine_heal == 1 call RaynorMineHeal
-	setvertpos     	1
-	waitrand       	5 8
-	if unit_id == 262 && raynor_mine_heal == 1 call RaynorMineHeal
-	setvertpos     	0
-	waitrand       	5 8
-	if unit_id == 262 && raynor_mine_heal == 1 call RaynorMineHeal
-	goto RaynorHealIdle
-	
-RaynorMineHeal:
-	set raynor_mine_heal = 0
-	imgol          	970 0 0	# Unknown970 (thingy\tmeHealM.grp)
-	if (unit.max_hitpoints - unit.hitpoints) < 3840 goto RaynorMaxHeal
-	set unit.hitpoints = unit.hitpoints+3840
-	return
-	
-RaynorMaxHeal:
-	set unit.hitpoints = unit.max_hitpoints
-	return
-	
 VultureDeath:
 	playsnd        	353	# Terran\VULTURE\TVuDth00.WAV
 	imgol          	332 0 0	# TerranBuildingExplosionsmall (thingy\tBangS.grp)
@@ -7130,39 +7097,18 @@ VultureDeath:
 	end            	
 
 VultureGndAttkInit:
-	if unit_id == 262 goto RaynorAtk
 	wait           	1
 	attackwith     	1
 	playsnd        	106	# Bullet\tvuFir00.wav
-	gotorepeatattk 	
-	goto           	VultureGndAttkToIdle
-	
-RaynorAtk:
-	nobrkcodestart
-	playsnd        	106	# Bullet\tvuFir00.wav
-	wait           	1
-	attackwith     	1
-	fireweapon		144
-	wait			3
-	playsnd        	106	# Bullet\tvuFir00.wav
-	nobrkcodeend
 	gotorepeatattk 	
 	goto           	VultureGndAttkToIdle
 
 VultureWalking:
 	if unit_id == 19 goto uVultureWalking
-	if unit_id == 262 goto RaynorWalking
 	playfram       	0x00	# frame set 0
 	setvertpos     	0
 	wait           	125
 	goto           	VultureGndAttkToIdle
-	
-RaynorWalking:
-	playfram       	0x00	# frame set 0
-	setvertpos     	0
-	if raynor_mine_heal == 1 call RaynorMineHeal
-	wait           	25
-	goto RaynorHealIdle
 	
 uVultureWalking:
 	playfram       	0x11	# frame set 0
@@ -7218,27 +7164,9 @@ SpiderMineInit:
 	imgul          	259 0 0	# SpiderMineShad (terran\tsmShad.grp)
 SpiderMineWalkingToIdle:
 	playfram       	0
-	wait			1
-	set if_uninit spritelocal local_minecount_increment = 0
-	if local_minecount_increment == 1 goto global_minecount
 	goto           	long00
-	
-global_minecount:
-	set unit.flags = unit.flags | 0x00200000
-	set unit.death_timer = 200
-	set global raynor_active_mines = raynor_active_mines + 1	
-raynor_mine_shortwait:
-	wait			15
-	goto 			raynor_mine_shortwait
 
-RaynorMineDeath:
-	set global raynor_active_mines = raynor_active_mines - 1
-	set global raynor_mine_heal = 1
-	goto SpiderMineDeathCont
-	
 SpiderMineDeath:
-	if local_minecount_increment == 1 goto RaynorMineDeath
-SpiderMineDeathCont:
 	imgol          	429 0 0	# Spidermineexplosion (thingy\tmnExplo.grp)
 	wait           	1
 	end            	
@@ -7275,7 +7203,7 @@ SpiderMineSpecialState1:
 	castspell      	
 	sigorder       	1
 	goto           	long00
-	
+
 SpiderMineBurrow:
 	nobrkcodestart 	
 	imgol          	423 0 0	# Unknown423 (thingy\bDust.grp)
@@ -8359,7 +8287,6 @@ CommandCenterBuilt:
 	#if game.terran_supply_used(player) >= 10 goto UEDSReturn
 	#if game.minerals(player) >= 51 goto UEDSReturn
 	#if game.gas(player) >= 1 goto UEDSReturn
-	#print Command Center - Player {player}, Color selected: {game.player_color_choice(player)}
 	if game.player_color_choice(player) == 23 goto SPMissionGeneral #skip UED select and do mission specific checks
 	#if game.player_color_choice(player) == 23 goto UEDSReturn #skip UED select
 	if game.player_color_choice(player) == 22 goto UEDSRandom
@@ -10853,11 +10780,14 @@ WarpIn         	ArbiterWarpIn
 # ----------------------------------------------------------------------------- #
 
 ArbiterInit:
+	wait			2
+	if unit_id == 87 goto uArbiterInit
 	imgul          	131 0 42	# ArbiterShad (protoss\arbiter.grp)
 	playfram       	0x00	# frame set 0
 	goto           	ArbiterGndAttkToIdle
 
 ArbiterGndAttkToIdle:
+	if unit_id == 87 goto uArbiterGndAttkToIdle
 	setvertpos     	1
 	waitrand       	8 10
 	setvertpos     	2
@@ -10869,14 +10799,17 @@ ArbiterGndAttkToIdle:
 	goto           	ArbiterGndAttkToIdle
 
 ArbiterDeath:
+	if unit_id == 87 goto uArbiterDeath
 	playsnd        	566	# Misc\ExploLrg.wav
 	imgol          	213 0 0	# ProtossBuildingExplosionSmall (thingy\tBangS.grp)
 	wait           	3
 	end            	
 
 ArbiterGndAttkInit:
+	if unit_id == 87 goto uArbiterGndAttkInit
 	setvertpos     	0
 ArbiterGndAttkRpt:
+	if unit_id == 87 goto uArbiterGndAttkRpt
 	playfram       	0x11	# frame set 1
 	wait           	1
 	nobrkcodestart 	
@@ -10936,6 +10869,7 @@ ArbiterLocal00:
 	goto           	ArbiterLocal00
 
 ArbiterCastSpell:
+	if unit_id == 87 goto uArbiterCastSpell
 	nobrkcodestart 	
 	wait           	1
 	playsnd        	548	# Protoss\ARBITER\PAbCag00.WAV
@@ -10946,6 +10880,7 @@ ArbiterCastSpell:
 	goto           	ArbiterLocal00
 
 ArbiterWalking:
+	if unit_id == 87 goto uArbiterWalking
 	imgol          	132 0 0	# ArbiterGlow (thingy\pabGlow.grp)
 	playfram       	0x00	# frame set 0
 	setvertpos     	0
@@ -10954,6 +10889,83 @@ ArbiterWalking:
 ArbiterWarpIn:
 	imgol          	133 0 0	# Unknown133 (protoss\arbiter.grp)
 	goto           	ArbiterLocal00
+
+uArbiterInit:
+	imgul          	131 0 42	# ArbiterShad (protoss\arbiter.grp)
+	playfram       	0x22	# frame set 0
+	goto           	uArbiterGndAttkToIdle
+
+uArbiterGndAttkToIdle:
+	setvertpos     	1
+	waitrand       	8 10
+	setvertpos     	2
+	waitrand       	8 10
+	setvertpos     	1
+	waitrand       	8 10
+	setvertpos     	0
+	waitrand       	8 10
+	goto           	uArbiterGndAttkToIdle
+
+uArbiterDeath:
+	playsnd        	7	# Misc\ExploLrg.wav
+	imgol          	928 0 0	# DarkArchonDeath (protoss\PdaDeath.grp)
+	wait           	3
+	end            	
+
+uArbiterGndAttkInit:
+	setvertpos     	0
+uArbiterGndAttkRpt:
+	playfram       	0x33	# frame set 1
+	wait           	1
+	nobrkcodestart 	
+	wait           	6
+	imgol          	970 0 0	# Unknown970 (thingy\tmeHealM.grp)
+	wait           	7
+	imgol          	970 0 0	# Unknown970 (thingy\tmeHealM.grp)
+	wait           	6
+	playsnd        	7	# Misc\ExploLrg.wav
+	imgol          	928 0 0	# DarkArchonDeath (protoss\PdaDeath.grp)
+	attackwith     	1
+	attackwith     	1
+	attackwith     	1
+	attackwith     	1
+	attackwith     	1
+	attackwith     	1
+	attackwith     	1
+	attackwith     	1
+	attackwith     	1
+	playfram       	0x22	# frame set 0
+	wait           	1
+	playfram       	0x33	# frame set 1
+	wait           	1
+	playfram       	0x22	# frame set 0
+	wait           	1
+	playfram       	0x33	# frame set 1
+	wait           	1
+	playfram       	0x22	# frame set 0
+	nobrkcodeend   	
+	gotorepeatattk 	
+	goto           	uArbiterLocal00
+
+uArbiterLocal00:
+	wait           	125
+	goto           	uArbiterLocal00
+
+uArbiterCastSpell:
+	nobrkcodestart 	
+	wait           	1
+	playsnd        	548	# Protoss\ARBITER\PAbCag00.WAV
+	castspell      	
+	nobrkcodeend   	
+	gotorepeatattk 	
+	sigorder       	2
+	goto           	uArbiterLocal00
+
+uArbiterWalking:
+	imgol          	132 0 0	# ArbiterGlow (thingy\pabGlow.grp)
+	playfram       	0x22	# frame set 0
+	setvertpos     	0
+	goto           	uArbiterLocal00
 
 
 # ----------------------------------------------------------------------------- #
@@ -11240,6 +11252,12 @@ WarpIn         	CarrierWarpIn
 
 CarrierInit:
 	imgulnextid    	0 42
+	wait			2
+	if unit_id == 72 goto uCarrierInit
+	playfram       	17	# frame set 0
+	goto           	long02
+
+uCarrierInit:
 	playfram       	0x00	# frame set 0
 	goto           	long02
 
@@ -11248,6 +11266,13 @@ CarrierDeath:
 	imgol          	214 0 0	# ProtossBuildingExplosionMedium (thingy\tBangL.grp)
 	wait           	3
 	end            	
+	
+uCarrierDeath:
+	if unit_id == 72 goto CarrierDeath
+	playsndbtwn		595 596
+	imgol          	928 0 0	# DarkArchonDeath (protoss\PdaDeath.grp)
+	wait			3
+	end
 
 CarrierWalking:
 	imgol          	114 0 0	# CarrierGlow (thingy\pcaGlow.grp)
@@ -11255,6 +11280,14 @@ CarrierWalking:
 
 CarrierWarpIn:
 	imgol          	115 0 0	# Unknown115 (protoss\carrier.grp)
+	goto           	long00
+	
+CarrierCastSpell:
+	nobrkcodestart 	
+	castspell      	
+	sigorder       	2
+	nobrkcodeend   	
+	gotorepeatattk 	
 	goto           	long00
 
 
@@ -11385,26 +11418,27 @@ WarpIn         	DragoonWarpIn
 # ----------------------------------------------------------------------------- #
 
 DragoonInit:
+	wait			2
 	imgul          	123 0 0	# DragoonShad (protoss\pdrShad.grp)
+	if unit_id == 88 goto uDragoonWalkingToIdle
 DragoonWalkingToIdle:
+	if unit_id == 88 goto uDragoonWalkingToIdle
 	playfram       	0x00	# frame set 0
 	waitrand       	1 3
 DragoonLocal00:
+	if unit_id == 88 goto uDragoonLocal00
 	playfram       	0x11	# frame set 1
 	wait           	2
 	playfram       	0x22	# frame set 2
 	wait           	2
-	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	playfram       	0x33	# frame set 3
 	wait           	2
 	playfram       	0x44	# frame set 4
 	wait           	2
-	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	playfram       	0x55	# frame set 5
 	wait           	2
 	playfram       	0x66	# frame set 6
 	wait           	2
-	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	playfram       	0x77	# frame set 7
 	wait           	2
 	playfram       	0x00	# frame set 0
@@ -11412,6 +11446,7 @@ DragoonLocal00:
 	goto           	DragoonLocal00
 
 DragoonDeath:
+	if unit_id == 88 goto uDragoonDeath
 	playsnd        	493	# Protoss\DRAGOON\PDrDth00.WAV
 	setfldirect    	0
 	playfram       	0x198	# frame set 24
@@ -11434,20 +11469,22 @@ DragoonDeath:
 
 DragoonGndAttkInit:
 	if unit_id == 78 goto FnxInit
+	if unit_id == 88 goto uDragoonGndAttkInit
 	playfram       	0x110	# frame set 16
 	wait           	1
 	playfram       	0x121	# frame set 17
 	wait           	1
-	#playfram       	0x132	# frame set 18
-	#wait           	1
+	playfram       	0x132	# frame set 18
+	wait           	1
 	playfram       	0x143	# frame set 19
 	wait           	1
-	#playfram       	0x154	# frame set 20
-	#wait           	1
+	playfram       	0x154	# frame set 20
+	wait           	1
 	playfram       	0x165	# frame set 21
 	wait           	1
 DragoonGndAttkRpt:
 	if unit_id == 78 goto FnxAttkRpt
+	if unit_id == 88 goto uDragoonGndAttkRpt
 	playfram       	0x176	# frame set 22
 	wait           	1
 	playfram       	0x187	# frame set 23
@@ -11459,12 +11496,13 @@ DragoonGndAttkRpt:
 	gotorepeatattk 	
 	ignorerest     	
 DragoonGndAttkToIdle:
+	if unit_id == 88 goto uDragoonGndAttkToIdle
 	wait           	1
 	playfram       	0x154	# frame set 20
 	wait           	1
 	playfram       	0x143	# frame set 19
-	#wait           	1
-	#playfram       	0x132	# frame set 18
+	wait           	1
+	playfram       	0x132	# frame set 18
 	wait           	1
 	playfram       	0x121	# frame set 17
 	wait           	1
@@ -11473,20 +11511,22 @@ DragoonGndAttkToIdle:
 
 DragoonAirAttkInit:
 	if unit_id == 78 goto FnxInit
+	if unit_id == 88 goto uDragoonAirAttkInit
 	playfram       	0x110	# frame set 16
 	wait           	1
 	playfram       	0x121	# frame set 17
 	wait           	1
-	#playfram       	0x132	# frame set 18
-	#wait           	1
+	playfram       	0x132	# frame set 18
+	wait           	1
 	playfram       	0x143	# frame set 19
 	wait           	1
-	#playfram       	0x154	# frame set 20
-	#wait           	1
+	playfram       	0x154	# frame set 20
+	wait           	1
 	playfram       	0x165	# frame set 21
 	wait           	1
 DragoonAirAttkRpt:
 	if unit_id == 78 goto FnxAttkRpt
+	if unit_id == 88 goto uDragoonAirAttkRpt
 	playfram       	0x176	# frame set 22
 	wait           	1
 	playfram       	0x187	# frame set 23
@@ -11498,12 +11538,13 @@ DragoonAirAttkRpt:
 	gotorepeatattk 	
 	ignorerest     	
 DragoonAirAttkToIdle:
+	if unit_id == 88 goto uDragoonAirAttkToIdle
 	wait           	1
 	playfram       	0x154	# frame set 20
 	wait           	1
 	playfram       	0x143	# frame set 19
-	#wait           	1
-	#playfram       	0x132	# frame set 18
+	wait           	1
+	playfram       	0x132	# frame set 18
 	wait           	1
 	playfram       	0x121	# frame set 17
 	wait           	1
@@ -11583,25 +11624,26 @@ FnxAttkToIdle:
 	goto           	DragoonWalkingToIdle
 
 DragoonWalking:
+	if unit_id == 88 goto uDragoonWalking
 	move           	5
 	wait           	1
 	playfram       	0x88	# frame set 8
-	move           	5
-	wait           	1
-	playfram       	0x99	# frame set 9
 	move           	6
 	wait           	1
+	playfram       	0x99	# frame set 9
+	move           	7
+	wait           	1
 	playfram       	0xaa	# frame set 10
-	move           	5
+	move           	7
 	wait           	1
 	playfram       	0xbb	# frame set 11
-	move           	5
+	move           	3
 	wait           	1
 	playfram       	0xcc	# frame set 12
 	move           	4
 	wait           	1
 	playfram       	0xdd	# frame set 13
-	move           	5
+	move           	4
 	wait           	1
 	playfram       	0xee	# frame set 14
 	move           	6
@@ -11614,9 +11656,280 @@ DragoonWarpIn:
 	goto           	DragoonLocal01
 
 DragoonLocal01:
+	if unit_id == 88 goto uDragoonLocal01
 	wait           	125
 	goto           	DragoonLocal01
 
+uDragoonWalkingToIdle:
+	playfram       	0x19f	# frame set 0
+	waitrand       	1 3
+uDragoonLocal00:
+	playfram       	0x1b0	# frame set 1
+	wait           	2
+	playfram       	0x1c1	# frame set 2
+	wait           	2
+	playfram       	0x1d2	# frame set 3
+	wait           	2
+	playfram       	0x1e3	# frame set 4
+	wait           	2
+	playfram       	0x1f4	# frame set 5
+	wait           	2
+	playfram       	0x205	# frame set 6
+	wait           	2
+	playfram       	0x216	# frame set 7
+	wait           	2
+	playfram       	0x19f	# frame set 0
+	wait           	2
+	goto           	uDragoonLocal00
+
+uDragoonDeath:
+	playsnd        	493	# Protoss\DRAGOON\PDrDth00.WAV
+	setfldirect    	0
+	playfram       	0x337	# frame set 24
+	wait           	2
+	playfram       	0x338	# frame set 24
+	wait           	2
+	playfram       	0x339	# frame set 24
+	wait           	2
+	playfram       	0x33a	# frame set 24
+	wait           	2
+	playfram       	0x33b	# frame set 24
+	wait           	2
+	playfram       	0x33c	# frame set 24
+	wait           	2
+	playfram       	0x33d	# frame set 24
+	wait           	2
+	imgol          	928 0 0	# DarkArchonDeath (protoss\PdaDeath.grp)
+	wait           	1
+	end            	
+
+uDragoonGndAttkInit:
+	playfram       	0x2af	# frame set 16
+	wait           	1
+	playfram       	0x2c0	# frame set 17
+	wait           	1
+	playfram       	0x2d1	# frame set 18
+	wait           	1
+	playfram       	0x2e2	# frame set 19
+	wait           	1
+	playfram       	0x2f3	# frame set 20
+	wait           	1
+	playfram       	0x304	# frame set 21
+	wait           	1
+uDragoonGndAttkRpt:
+	if upgrade(player, 33) == 2 goto uGoonUpg2
+	if upgrade(player, 33) == 1 goto uGoonUpg
+	playfram       	0x315	# frame set 22
+	wait           	1
+	playfram       	0x326	# frame set 23
+	set global bullet_x_off = 5
+	set global bullet_y_off = -8
+	wait           	1
+	attackwith     	1
+	attackwith     	1
+	wait           	1
+	attackwith     	1
+	wait           	1
+	attackwith     	1
+	wait           	1
+	attackwith     	1
+	attackwith     	1
+	wait           	1
+	attackwith     	1
+	attackwith     	1
+	wait           	3
+	attackwith     	1
+	wait           	1
+	playfram       	0x315	# frame set 22
+	wait           	1
+	playfram       	0x304	# frame set 21
+	gotorepeatattk 	
+	ignorerest     	
+uDragoonGndAttkToIdle:
+	wait           	1
+	playfram       	0x2f3	# frame set 20
+	wait           	1
+	playfram       	0x2e2	# frame set 19
+	wait           	1
+	playfram       	0x2d1	# frame set 18
+	wait           	1
+	playfram       	0x2c0	# frame set 17
+	wait           	1
+	playfram       	0x2af	# frame set 16
+	goto           	uDragoonWalkingToIdle
+
+uDragoonAirAttkInit:
+	playfram       	0x2af	# frame set 16
+	wait           	1
+	playfram       	0x2c0	# frame set 17
+	wait           	1
+	playfram       	0x2d1	# frame set 18
+	wait           	1
+	playfram       	0x2e2	# frame set 19
+	wait           	1
+	playfram       	0x2f3	# frame set 20
+	wait           	1
+	playfram       	0x304	# frame set 21
+	wait           	1
+uDragoonAirAttkRpt:
+	if upgrade(player, 33) == 2 goto uGoonUpg2
+	if upgrade(player, 33) == 1 goto uGoonUpg
+	playfram       	0x315	# frame set 22
+	wait           	1
+	playfram       	0x326	# frame set 23
+	wait           	1
+	attackwith     	1
+	attackwith     	1
+	wait           	1
+	attackwith     	1
+	wait           	1
+	attackwith     	1
+	wait           	1
+	attackwith     	1
+	attackwith     	1
+	wait           	1
+	attackwith     	1
+	attackwith     	1
+	wait           	3
+	attackwith     	1
+	wait           	1
+	playfram       	0x315	# frame set 22
+	wait           	1
+	playfram       	0x304	# frame set 21
+	gotorepeatattk 	
+	ignorerest     	
+uDragoonAirAttkToIdle:
+	wait           	1
+	playfram       	0x2f3	# frame set 20
+	wait           	1
+	playfram       	0x2e2	# frame set 19
+	wait           	1
+	playfram       	0x2d1	# frame set 18
+	wait           	1
+	playfram       	0x2c0	# frame set 17
+	wait           	1
+	playfram       	0x2af	# frame set 16
+	goto           	uDragoonWalkingToIdle
+
+uDragoonWalking:
+	move           	5
+	wait           	1
+	playfram       	0x227	# frame set 8
+	move           	6
+	wait           	1
+	playfram       	0x238	# frame set 9
+	move           	7
+	wait           	1
+	playfram       	0x249	# frame set 10
+	move           	6
+	wait           	1
+	playfram       	0x25a	# frame set 11
+	move           	5
+	wait           	1
+	playfram       	0x26b	# frame set 12
+	move           	4
+	wait           	1
+	playfram       	0x27c	# frame set 13
+	move           	4
+	wait           	1
+	playfram       	0x28d	# frame set 14
+	move           	5
+	wait           	1
+	playfram       	0x29e	# frame set 15
+	goto           	uDragoonWalking
+
+uDragoonWarpIn:
+	imgol          	125 0 0	# Unknown125 (protoss\dragoon.grp)
+	goto           	uDragoonLocal01
+
+uDragoonLocal01:
+	wait           	125
+	goto           	uDragoonLocal01
+
+uGoonUpg:
+	playfram       	0x315	# frame set 22
+	wait           	1
+	playfram       	0x326	# frame set 23
+	set global bullet_x_off = 5
+	set global bullet_y_off = -8
+	wait           	1
+	attackwith		1
+	attackwith		1
+	wait           	1
+	attackwith		1
+	wait           	1
+	attackwith		1
+	attackwith		1
+	attackwith		1
+	wait           	1
+	attackwith		1
+	attackwith		1
+	wait           	1
+	attackwith		1
+	attackwith		1
+	wait           	3
+	attackwith		1
+	wait           	1
+	playfram       	0x315	# frame set 22
+	wait           	1
+	playfram       	0x304	# frame set 21
+	gotorepeatattk 	
+	ignorerest     
+uGoonIdle:
+	wait           	1
+	playfram       	0x2f3	# frame set 20
+	wait           	1
+	playfram       	0x2e2	# frame set 19
+	wait           	1
+	playfram       	0x2d1	# frame set 18
+	wait           	1
+	playfram       	0x2c0	# frame set 17
+	wait           	1
+	playfram       	0x2af	# frame set 16
+	goto           	uDragoonWalkingToIdle
+	
+uGoonUpg2:
+	playfram       	0x315	# frame set 22
+	wait           	1
+	playfram       	0x326	# frame set 23
+	set global bullet_x_off = 5
+	set global bullet_y_off = -8
+	wait           	1
+	attackwith		1
+	attackwith		1
+	wait           	1
+	attackwith		1
+	wait           	1
+	attackwith		1
+	attackwith		1
+	attackwith		1
+	wait           	1
+	attackwith		1
+	attackwith		1
+	wait           	1
+	attackwith		1
+	attackwith		1
+	wait           	3
+	fireweapon		145
+	wait           	1
+	playfram       	0x315	# frame set 22
+	wait           	1
+	playfram       	0x304	# frame set 21
+	gotorepeatattk 	
+	ignorerest     
+uGoonIdle2:
+	wait           	1
+	playfram       	0x2f3	# frame set 20
+	wait           	1
+	playfram       	0x2e2	# frame set 19
+	wait           	1
+	playfram       	0x2d1	# frame set 18
+	wait           	1
+	playfram       	0x2c0	# frame set 17
+	wait           	1
+	playfram       	0x2af	# frame set 16
+	goto           	uDragoonWalkingToIdle
+	
 
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
@@ -11667,6 +11980,8 @@ SpecialState1  	[NONE]
 # ----------------------------------------------------------------------------- #
 
 InterceptorInit:
+	wait 			2
+	if upgrade(player, 54) == 1 goto uInterceptorInit
 	imgul          	117 0 42	# InterceptorShad (protoss\Intercep.grp)
 	playfram       	0x00	# frame set 0
 InterceptorLoop:
@@ -11674,6 +11989,7 @@ InterceptorLoop:
 	if unit.remaining_build_time > 5 goto InterceptorLoop
 	playsndrand    	2 102 103	# Bullet\pTrFir00.wav, Bullet\pTrFir01.wav
 InterceptorWalkingToIdle:
+	if upgrade(player, 54) == 1 goto uInterceptorWalkingToIdle
 	setvertpos     	1
 	waitrand       	8 10
 	setvertpos     	2
@@ -11691,6 +12007,7 @@ InterceptorDeath:
 	end            	
 
 InterceptorGndAttkInit:
+	if upgrade(player, 54) == 1 goto uInterceptorGndAttkInit
 	wait           	2
 	attackwith     	1
 	playfram       	0x11	# frame set 1
@@ -11700,13 +12017,51 @@ InterceptorGndAttkInit:
 	goto           	InterceptorGndAttkToIdle
 
 InterceptorGndAttkToIdle:
+	if upgrade(player, 54) == 1 goto uInterceptorGndAttkToIdle
 	wait           	125
 	goto           	InterceptorGndAttkToIdle
 
 InterceptorWalking:
+	if upgrade(player, 54) == 1 goto uInterceptorWalking
 	playfram       	0x00	# frame set 0
 	setvertpos     	0
 	goto           	InterceptorGndAttkToIdle
+
+uInterceptorInit:
+	imgul          	117 0 42	# InterceptorShad (protoss\Intercep.grp)
+	playfram       	0x22	# frame set 0
+uInterceptorLoop:
+	wait			5
+	if unit.remaining_build_time > 5 goto uInterceptorLoop
+	playsndrand    	2 102 103	# Bullet\pTrFir00.wav, Bullet\pTrFir01.wav
+uInterceptorWalkingToIdle:
+	setvertpos     	1
+	waitrand       	8 10
+	setvertpos     	2
+	waitrand       	8 10
+	setvertpos     	1
+	waitrand       	8 10
+	setvertpos     	0
+	waitrand       	8 10
+	goto           	uInterceptorWalkingToIdle
+
+uInterceptorGndAttkInit:
+	wait           	2
+	attackwith     	1
+	playfram       	0x33	# frame set 1
+	wait           	2
+	playfram       	0x22	# frame set 0
+	gotorepeatattk 	
+	goto           	uInterceptorGndAttkToIdle
+
+uInterceptorGndAttkToIdle:
+	wait           	125
+	goto           	uInterceptorGndAttkToIdle
+
+uInterceptorWalking:
+	playfram       	0x22	# frame set 0
+	setvertpos     	0
+	goto           	uInterceptorGndAttkToIdle
 
 
 # ----------------------------------------------------------------------------- #
@@ -12017,28 +12372,140 @@ WarpIn         	ReaverWarpIn
 # ----------------------------------------------------------------------------- #
 
 ReaverInit:
-	imgul          	145 0 0	# ReaverShad (protoss\ptrShad.grp)
+	wait			   2
+    imgul              145 0 0    # ReaverShad (protoss\ptrShad.grp)
 ReaverWalkingToIdle:
+	if unit_id == 83 goto uReaverWalkingToIdle
+    playfram           153    # frame set 0
+    goto               long00
+
+ReaverDeath:
+	if unit_id == 83 goto uReaverDeath
+    playsnd            638    # Protoss\TRILOBYTE\PTrDth00.WAV
+    imgol              928 0 0    # ProtossBuildingExplosionMedium (thingy\tBangL.grp)
+    wait               3
+    end                
+
+ReaverGndAttkInit:
+	if unit_id == 83 goto uReaverGndAttkInit
+    wait               1
+    playsndbtwn        102 103    # Bullet\pTrFir00.wav, Bullet\pTrFir01.wav
+    attackwith         1
+    wait               1
+    gotorepeatattk     
+    ignorerest         
+ReaverGndAttkToIdle:
+	if unit_id == 83 goto uReaverWalkingToIdle
+    goto               ReaverWalkingToIdle
+
+ReaverWalking:
+	if unit_id == 83 goto uReaverWalking
+    move               0
+    wait               1
+    playfram           170    # frame set 1
+    move               0
+    wait               1
+    playfram           187    # frame set 2
+    move               1
+    wait               1
+    playfram           204    # frame set 3
+    move               1
+    wait               1
+    playfram           221    # frame set 4
+    move               2
+    wait               1
+    playfram           238    # frame set 5
+    move               2
+    wait               1
+    playfram           255    # frame set 6
+    move               3
+    wait               1
+    playfram           272    # frame set 7
+    move               1
+    wait               1
+    playfram           289    # frame set 8
+    move               1
+    wait               1
+    playfram           153    # frame set 0
+    move               0
+    wait               1
+    playfram           170    # frame set 1
+    move               0
+    wait               1
+    playfram           187    # frame set 2
+    move               1
+    wait               1
+    playfram           204    # frame set 3
+    move               1
+    wait               1
+    playfram           221    # frame set 4
+    move               2
+    wait               1
+    playfram           238    # frame set 5
+    move               2
+    wait               1
+    playfram           255    # frame set 6
+    move               3
+    wait               1
+    playfram           272    # frame set 7
+    move               1
+    wait               1
+    playfram           289    # frame set 8
+    move               1
+    wait               1
+    playfram           153    # frame set 0
+    move               0
+    wait               1
+    playfram           170    # frame set 1
+    move               0
+    wait               1
+    playfram           187    # frame set 2
+    move               1
+    wait               1
+    playfram           204    # frame set 3
+    move               1
+    wait               1
+    playfram           221    # frame set 4
+    move               2
+    wait               1
+    playfram           238    # frame set 5
+    move               2
+    wait               1
+    playfram           255    # frame set 6
+    move               3
+    wait               1
+    playfram           272    # frame set 7
+    move               1
+    wait               1
+    playfram           289    # frame set 8
+    move               60
+	imgol          	146 0 0	# Unknown146 (protoss\trilob.grp)
+    playsnd            1144
+    wait               1
+    playfram           153    # frame set 0
+    goto               ReaverWalking
+	
+uReaverWalkingToIdle:
 	playfram       	0x00	# frame set 0
 	goto           	long00
 
-ReaverDeath:
+uReaverDeath:
 	playsnd        	638	# Protoss\TRILOBYTE\PTrDth00.WAV
-	imgol          	214 0 0	# ProtossBuildingExplosionMedium (thingy\tBangL.grp)
+	imgol          	214 0 0	# DarkArchonDeath (protoss\PdaDeath.grp)
 	wait           	3
 	end            	
 
-ReaverGndAttkInit:
+uReaverGndAttkInit:
 	wait           	1
 	playsndbtwn    	102 103	# Bullet\pTrFir00.wav, Bullet\pTrFir01.wav
 	attackwith     	1
 	wait           	1
 	gotorepeatattk 	
 	ignorerest     	
-ReaverGndAttkToIdle:
-	goto           	ReaverWalkingToIdle
+uReaverGndAttkToIdle:
+	goto           	uReaverWalkingToIdle
 
-ReaverWalking:
+uReaverWalking:
 	move           	0
 	wait           	1
 	playfram       	0x11	# frame set 1
@@ -12066,7 +12533,7 @@ ReaverWalking:
 	move           	6
 	wait           	1
 	playfram       	0x00	# frame set 0
-	goto           	ReaverWalking
+	goto           	uReaverWalking
 
 ReaverWarpIn:
 	imgol          	146 0 0	# Unknown146 (protoss\trilob.grp)
@@ -12097,29 +12564,41 @@ SpecialState1  	ScarabSpecialState1
 # ----------------------------------------------------------------------------- #
 
 ScarabInit:
+	wait			1
 	playfram       	0x00	# frame set 0
 ScarabLoopUntilComplete:
 	wait			5
 	if unit.remaining_build_time > 5 goto ScarabLoopUntilComplete
 	playsndrand    	2 102 103	# Bullet\pTrFir00.wav, Bullet\pTrFir01.wav
 	goto           	long00
-
+	
 ScarabDeath:
 	imgol          	444 0 0	# ScarabExplosion (thingy\psaExplo.grp)
 	wait           	1
 	end            	
 
 ScarabWalking:
+	wait			1
+	if upgrade(player, 54) == 1 goto uScarabWalking
 	setflspeed     	2048
 	move           	16
 	sprol          	373 0 0	# ScarabTrail (thingy\HKTrail.grp)
 	wait           	1
 	goto           	ScarabWalking
+	
+uScarabWalking:
+	setflspeed     	2048
+	move           	16
+	sprol          	309 0 0	# MissleTrail (thingy\smoke.grp)
+	wait           	1
+	goto           	uScarabWalking
 
 ScarabSpecialState1:
+	wait			1
 	useweapon      	82	# Scarab
 	sigorder       	1
 	goto           	long00
+
 
 
 # ----------------------------------------------------------------------------- #
@@ -12154,18 +12633,27 @@ WarpIn         	ScoutWarpIn
 # ----------------------------------------------------------------------------- #
 
 ScoutInit:
+	wait			2
+	if unit_id == 80 goto uScoutInit
 	imgul          	141 0 42	# ScoutShad (protoss\scout.grp)
 ScoutGndAttkToIdle:
+	if unit_id == 80 goto uScoutGndAttkToIdle
 	playfram       	0x00	# frame set 0
 	goto           	long02
 
 ScoutDeath:
+	if unit_id == 80 goto uScoutDeath
 	playsnd        	533	# Protoss\Scout\PScDth00.WAV
 	imgol          	213 0 0	# ProtossBuildingExplosionSmall (thingy\tBangS.grp)
 	wait           	3
 	end            	
-
+uScoutDeath:
+	playsnd        	533	# Protoss\Scout\PScDth00.WAV
+	imgol          	928 0 0	# DarkArchonDeath (protoss\PdaDeath.grp)
+	wait           	3
+	end            	
 ScoutGndAttkInit:
+	if unit_id == 80 goto uScoutGndAttkInit
 	playfram       	0x11	# frame set 1
 	wait           	1
 	attackwith     	1
@@ -12182,6 +12670,7 @@ ScoutGndAttkInit:
 	goto           	long00
 
 ScoutAirAttkInit:
+	if unit_id == 80 goto uScoutAirAttkInit
 	playfram       	0x11	# frame set 1
 	wait           	1
 	attackwith     	2
@@ -12190,6 +12679,7 @@ ScoutAirAttkInit:
 	goto           	long00
 
 ScoutWalking:
+	if unit_id == 80 goto uScoutWalking
 	imgol          	142 0 0	# ScoutGlow (thingy\pscGlow.grp)
 	playfram       	0x00	# frame set 0
 	setvertpos     	0
@@ -12198,7 +12688,44 @@ ScoutWalking:
 ScoutWarpIn:
 	imgol          	143 0 0	# Unknown143 (protoss\scout.grp)
 	goto           	long00
+	
+uScoutInit:
+	imgul          	141 0 42	# ScoutShad (protoss\scout.grp)
+	playfram		0x22
+	wait			1
+	set spritelocal SpeedUpgradeState = 0
+uScoutGndAttkToIdle:
+	playfram       	0x22	# frame set 0
+	goto           	long02
+uScoutGndAttkInit:
+	playfram       	0x33	# frame set 1
+	wait           	1
+	attackwith     	1
+	playfram       	0x22	# frame set 0
+	wait           	1
+	playfram       	0x33	# frame set 1
+	wait           	1
+	playfram       	0x22	# frame set 0
+	wait           	1
+	playfram       	0x33	# frame set 1
+	wait           	1
+	playfram       	0x22	# frame set 0
+	gotorepeatattk 	
+	goto           	long00
 
+uScoutAirAttkInit:
+	playfram       	0x33	# frame set 1
+	wait           	1
+	attackwith     	2
+	playfram       	0x22	# frame set 0
+	gotorepeatattk 	
+	goto           	long00
+
+uScoutWalking:
+	imgol          	142 0 0	# ScoutGlow (thingy\pscGlow.grp)
+	playfram       	0x22	# frame set 0
+	setvertpos     	0
+	goto           	long00
 
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
@@ -12225,9 +12752,17 @@ SpecialState1  	[NONE]
 
 ScoutEnginesInit:
 	wait           	1
+	if unit_id == 80 goto uSE
 	engframe       	0
 	wait           	1
 	engframe       	17
+	goto           	ScoutEnginesInit
+	
+uSE:
+	wait			1
+	engframe       	0x22
+	wait           	1
+	engframe       	0x33
 	goto           	ScoutEnginesInit
 
 
@@ -12266,7 +12801,7 @@ ZealotInit:
 	wait			2
 	imgul          	152 0 0	# ZealotShad (protoss\pzeShad.grp)
 ZealotWalkingToIdle:
-	if unit_id == 91 goto uZealotWalkingToIdle
+	if unit_id == 76 goto uZealotWalkingToIdle
 	playfram       	0x55	# frame set 5
 ZealotLocal02:
 	waitrand       	43 61
@@ -12337,7 +12872,7 @@ ZealotLocal08:
 	goto           	ZealotWalkingToIdle
 
 ZealotDeath:
-	if unit_id == 91 goto uZealotDeath
+	if unit_id == 76 goto uZealotDeath
 	playsnd        	678	# Protoss\ZEALOT\PZeDth00.WAV
 	setfldirect    	0
 	playfram       	0xdd	# frame set 13
@@ -12357,11 +12892,11 @@ ZealotDeath:
 	end            	
 
 ZealotGndAttkInit:
-	if unit_id == 91 goto uZealotGndAttkInit
+	if unit_id == 76 goto uZealotGndAttkInit
 	playfram       	0x00	# frame set 0
 	wait           	1
 ZealotGndAttkRpt:
-	if unit_id == 91 goto uZealotGndAttkRpt
+	if unit_id == 76 goto uZealotGndAttkRpt
 	playsndrand    	2 662 663	# Protoss\ZEALOT\pzeAtt00.WAV, Protoss\ZEALOT\pzeAtt01.WAV
 	playfram       	0x11	# frame set 1
 	wait           	1
@@ -12385,11 +12920,11 @@ ZealotGndAttkRpt:
 	gotorepeatattk 	
 	ignorerest     	
 ZealotGndAttkToIdle:
-	if unit_id == 91 goto uZealotGndAttkToIdle
+	if unit_id == 76 goto uZealotGndAttkToIdle
 	goto           	ZealotWalkingToIdle
 
 ZealotWalking:
-	if unit_id == 91 goto uZealotWalking
+	if unit_id == 76 goto uZealotWalking
 	move           	4
 	wait           	1
 	playfram       	0x55	# frame set 5
@@ -12421,7 +12956,7 @@ ZealotWarpIn:
 	goto           	ZealotLocal02
 
 uZealotWalkingToIdle:
-	playfram          	313	# Frame set 5
+	playfram          	541	# Frame set 5
 	goto              	uZealotLocal00
 
 uZealotLocal00:
@@ -12430,42 +12965,44 @@ uZealotLocal00:
 
 uZealotDeath:
 	playsnd           	678	# Protoss\ZEALOT\PZeDth00.WAV
-uZealotLocal01:
 	setfldirect       	0 
-	playfram          	449	# Frame set 13
+	imgol          	928 0 0	# DarkArchonDeath (protoss\PdaDeath.grp)
+	fireweapon      144
+	playfram          	676	# Frame set 13
 	wait              	2 
-	playfram          	774	# Frame set 13, direction 1
+	playfram          	677	# Frame set 13, direction 1
 	wait              	2 
-	playfram          	2136	# Frame set 13, direction 2
+	playfram          	678	# Frame set 13, direction 2
 	wait              	2 
-	playfram          	776	# Frame set 13, direction 3
+	playfram          	679	# Frame set 13, direction 3
 	wait              	2 
-	playfram          	777	# Frame set 13, direction 4
+	playfram          	680	# Frame set 13, direction 4
 	wait              	2 
-	playfram          	778	# Frame set 13, direction 5
+	playfram          	681	# Frame set 13, direction 5
 	wait              	2 
-	playfram          	779	# Frame set 13, direction 6
+	playfram          	682	# Frame set 13, direction 6
 	wait              	2 
 	end
 
 uZealotGndAttkInit:
-	playfram          	228	# Frame set 0
+	playfram          	456	# Frame set 0
 	wait              	1 
 uZealotGndAttkRpt:
 	playsndrand       	2 662 663	# Protoss\ZEALOT\pzeAtt00.WAV | Protoss\ZEALOT\pzeAtt01.WAV
-	playfram          	245	# Frame set 1
+	playfram          	473	# Frame set 1
 	wait              	1 
 	nobrkcodestart
-	playfram          	262	# Frame set 2
+	attackmelee       	1 664	# Protoss\ZEALOT\pzeHit00.WAV
+	playfram          	490	# Frame set 2
 	wait              	1 
-	playfram          	279	# Frame set 3
+	playfram          	507	# Frame set 3
 	wait              	1 
-	playfram          	296	# Frame set 4
+	playfram          	524	# Frame set 4
 	attackmelee       	1 664	# Protoss\ZEALOT\pzeHit00.WAV
 	wait              	1 
-	playfram          	245	# Frame set 1
+	playfram          	473	# Frame set 1
 	wait              	1 
-	playfram          	228	# Frame set 0
+	playfram          	456	# Frame set 0
 	nobrkcodeend
 	gotorepeatattk
 	ignorerest
@@ -12473,30 +13010,30 @@ uZealotGndAttkToIdle:
 	goto              	uZealotWalkingToIdle
 
 uZealotWalking:
-	move              	4 
+	move              	6 
 	wait              	1 
-	playfram          	313	# Frame set 5
-	move              	4 
+	playfram          	541	# Frame set 5
+	move              	5
 	wait              	1 
-	playfram          	330	# Frame set 6
-	move              	4 
+	playfram          	558	# Frame set 6
+	move              	6 
 	wait              	1 
-	playfram          	347	# Frame set 7
-	move              	4 
+	playfram          	575	# Frame set 7
+	move              	5
 	wait              	1 
-	playfram          	364	# Frame set 8
-	move              	4 
+	playfram          	592	# Frame set 8
+	move              	6
 	wait              	1 
-	playfram          	381	# Frame set 9
-	move              	4 
+	playfram          	609	# Frame set 9
+	move              	5 
 	wait              	1 
-	playfram          	398	# Frame set 10
-	move              	4 
+	playfram          	626	# Frame set 10
+	move              	6 
 	wait              	1 
-	playfram          	415	# Frame set 11
-	move              	4 
+	playfram          	643	# Frame set 11
+	move              	5 
 	wait              	1 
-	playfram          	432	# Frame set 12
+	playfram          	660	# Frame set 12
 	goto              	uZealotWalking
 
 
@@ -13312,7 +13849,7 @@ PhotonCannonGndAttkToIdle:
 PhotonCannonWarpIn:
 	imgol          	185 0 0	# PhotonCannonWarpFlash (protoss\photon.grp)
 	goto           	long00
-
+	
 
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
@@ -13713,14 +14250,14 @@ IsId           	187
 Type           	20
 Init           	StasisCellInit
 Death          	TemplarArchivesDeath
-GndAttkInit    	[NONE]
-AirAttkInit    	[NONE]
+GndAttkInit    	TaarXenoWort
+AirAttkInit    	TaarXenoWort
 Unused1        	[NONE]
-GndAttkRpt     	[NONE]
-AirAttkRpt     	[NONE]
+GndAttkRpt     	TaarXenoWort
+AirAttkRpt     	TaarXenoWort
 CastSpell      	[NONE]
-GndAttkToIdle  	[NONE]
-AirAttkToIdle  	[NONE]
+GndAttkToIdle  	TaarXenoWort
+AirAttkToIdle  	TaarXenoWort
 Unused2        	[NONE]
 Walking        	[NONE]
 WalkingToIdle  	[NONE]
@@ -13737,9 +14274,19 @@ WarpIn         	[NONE]
 # ----------------------------------------------------------------------------- #
 
 StasisCellInit:
+	if unit_id == 150 goto TaarDominator
+	if unit_id == 273 goto TaarXenoWort
 	playfram       	0
 	goto           	long00
 
+TaarDominator:
+	playfram		1
+	goto long00
+	
+TaarXenoWort:
+	playfram		2
+	goto long00
+	
 
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
@@ -14340,19 +14887,19 @@ RhynadonWalking:
 .headerstart
 IsId           	200
 Type           	21
-Init           	RevenantInit
-Death          	RevenantDeath
-GndAttkInit    	RevenantGndAttkInit
-AirAttkInit    	RevenantAirAttkInit
+Init           	BengalaasInit
+Death          	BengalaasDeath
+GndAttkInit    	BengalaasGndAttkInit
+AirAttkInit    	BengalaasAirAttkInit
 Unused1        	[NONE]
-GndAttkRpt     	RevenantGndAttkRpt
-AirAttkRpt     	RevenantAirAttkRpt
+GndAttkRpt     	BengalaasGndAttkRpt
+AirAttkRpt     	BengalaasAirAttkRpt
 CastSpell      	[NONE]
-GndAttkToIdle  	RevenantGndAttkToIdle
-AirAttkToIdle  	RevenantAirAttkToIdle
+GndAttkToIdle  	BengalaasGndAttkToIdle
+AirAttkToIdle  	BengalaasAirAttkToIdle
 Unused2        	[NONE]
-Walking        	RevenantWalking
-WalkingToIdle  	RevenantWalkingToIdle
+Walking        	BengalaasWalking
+WalkingToIdle  	BengalaasWalkingToIdle
 SpecialState1  	[NONE]
 SpecialState2  	[NONE]
 AlmostBuilt    	[NONE]
@@ -14361,38 +14908,35 @@ Landing        	[NONE]
 LiftOff        	[NONE]
 IsWorking      	[NONE]
 WorkingToIdle  	[NONE]
-WarpIn         	RevenantWarpIn
+WarpIn         	BengalaasWarpIn
 .headerend
 # ----------------------------------------------------------------------------- #
 
-RevenantInit:
+BengalaasInit:
 	imgul          	123 0 0	# DragoonShad (protoss\pdrShad.grp)
-RevenantWalkingToIdle:
+BengalaasWalkingToIdle:
 	playfram       	0x00	# frame set 0
 	waitrand       	1 3
-RevenantLocal00:
+BengalaasLocal00:
 	playfram       	0x11	# frame set 1
 	wait           	2
 	playfram       	0x22	# frame set 2
 	wait           	2
 	playfram       	0x33	# frame set 3
-	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	wait           	2
 	playfram       	0x44	# frame set 4
 	wait           	2
 	playfram       	0x55	# frame set 5
 	wait           	2
 	playfram       	0x66	# frame set 6
-	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	wait           	2
 	playfram       	0x77	# frame set 7
 	wait           	2
 	playfram       	0x00	# frame set 0
 	wait           	2
-	if flingy.movement_flags & 0x2 != 0 call FreezeClear
-	goto           	RevenantLocal00
+	goto           	BengalaasLocal00
 
-RevenantDeath:
+BengalaasDeath:
 	playsnd        	493	# Protoss\DRAGOON\PDrDth00.WAV
 	setfldirect    	0
 	playfram       	0x198	# frame set 24
@@ -14413,7 +14957,7 @@ RevenantDeath:
 	wait           	1
 	end            	
 
-RevenantGndAttkInit:
+BengalaasGndAttkInit:
 	playfram       	0x110	# frame set 16
 	wait           	1
 	playfram       	0x121	# frame set 17
@@ -14426,9 +14970,9 @@ RevenantGndAttkInit:
 	wait           	1
 	playfram       	0x165	# frame set 21
 	wait           	1
-	trgtrangecondjmp	48 RevenantLocal01
-RevenantGndAttkRpt:
-	trgtrangecondjmp	48 RevenantLocal01
+	trgtrangecondjmp	48 BengalaasLocal01
+BengalaasGndAttkRpt:
+	trgtrangecondjmp	48 BengalaasLocal01
 	playfram       	0x176	# frame set 22
 	wait           	1
 	playfram       	0x187	# frame set 23
@@ -14441,7 +14985,7 @@ RevenantGndAttkRpt:
 	playfram       	0x165	# frame set 21
 	gotorepeatattk 	
 	ignorerest     	
-RevenantGndAttkToIdle:
+BengalaasGndAttkToIdle:
 	wait           	1
 	playfram       	0x154	# frame set 20
 	wait           	1
@@ -14452,13 +14996,13 @@ RevenantGndAttkToIdle:
 	playfram       	0x121	# frame set 17
 	wait           	1
 	playfram       	0x110	# frame set 16
-	goto           	RevenantWalkingToIdle
+	goto           	BengalaasWalkingToIdle
 
 RevShieldSet:
 	set unit.shields = 7680
 	goto RevShieldReturn
 	
-RevenantLocal01:
+BengalaasLocal01:
 	playfram       	0x176	# frame set 22
 	wait           	1
 	playfram       	0x187	# frame set 23
@@ -14474,7 +15018,7 @@ RevShieldReturn:
 	playfram       	0x165	# frame set 21
 	gotorepeatattk 	
 	ignorerest     	
-RevenantAirAttkInit:
+BengalaasAirAttkInit:
 	playfram       	0x110	# frame set 16
 	wait           	1
 	playfram       	0x121	# frame set 17
@@ -14487,7 +15031,7 @@ RevenantAirAttkInit:
 	wait           	1
 	playfram       	0x165	# frame set 21
 	wait           	1
-RevenantAirAttkRpt:
+BengalaasAirAttkRpt:
 	playfram       	0x176	# frame set 22
 	wait           	1
 	playfram       	0x187	# frame set 23
@@ -14500,7 +15044,7 @@ RevenantAirAttkRpt:
 	playfram       	0x165	# frame set 21
 	gotorepeatattk 	
 	ignorerest     	
-RevenantAirAttkToIdle:
+BengalaasAirAttkToIdle:
 	wait           	1
 	playfram       	0x154	# frame set 20
 	wait           	1
@@ -14511,10 +15055,10 @@ RevenantAirAttkToIdle:
 	playfram       	0x121	# frame set 17
 	wait           	1
 	playfram       	0x110	# frame set 16
-	goto           	RevenantWalkingToIdle
+	goto           	BengalaasWalkingToIdle
 
-RevenantWalking:
-	move           	5
+BengalaasWalking:
+	move           	6
 	wait           	1
 	playfram       	0x88	# frame set 8
 	move           	5
@@ -14523,10 +15067,10 @@ RevenantWalking:
 	move           	5
 	wait           	1
 	playfram       	0xaa	# frame set 10
-	move           	5
+	move           	4
 	wait           	1
 	playfram       	0xbb	# frame set 11
-	move           	4
+	move           	5
 	wait           	1
 	playfram       	0xcc	# frame set 12
 	move           	4
@@ -14538,15 +15082,15 @@ RevenantWalking:
 	move           	5
 	wait           	1
 	playfram       	0xff	# frame set 15
-	goto           	RevenantWalking
+	goto           	BengalaasWalking
 
-RevenantWarpIn:
+BengalaasWarpIn:
 	imgol          	125 0 0	# Unknown125 (protoss\dragoon.grp)
-	goto           	RevenantLocal02
+	goto           	BengalaasLocal02
 
-RevenantLocal02:
+BengalaasLocal02:
 	wait           	125
-	goto           	RevenantLocal02
+	goto           	BengalaasLocal02
 
 
 # ----------------------------------------------------------------------------- #
@@ -15484,6 +16028,8 @@ DualPhotonBlasterHitInit:
 	wait           	1
 DualPhotonBlasterHitDeath:
 	if bullet.weapon_id == 79 || bullet.weapon_id == 92 || bullet.weapon_id == 87 goto SilentBlasterNoDmg
+	if bullet.weapon_id == 75 || upgrade(player, 54) == 1 goto uDInit
+	
 	playfram       	0
 	playsnd        	66	# Bullet\BlastGn2.wav
 	domissiledmg   	
@@ -15518,6 +16064,27 @@ SilentBlasterVar:
 	playfram       	5
 	wait           	1
 	end  
+	
+uDInit:
+	playfram       	8
+	playsnd        	66	# Bullet\BlastGn2.wav
+	domissiledmg   	
+	wait           	1
+	playfram       	9
+	wait           	1
+	playfram       	10
+	wait           	1
+	playfram       	11
+	wait           	1
+	playfram       	12
+	wait           	1
+	playfram       	13
+	wait           	1
+	playfram       	14
+	wait           	1
+	playfram       	15
+	wait           	1
+	end      
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
 # 521 Unknown521 (bullet\hks.grp)
@@ -15537,6 +16104,7 @@ AntiMatterMissileInit:
 	wait           	1
 	sigorder       	1
 AntiMatterMissileGndAttkInit:
+	if upgrade(player, 54) == 1 goto uAntiMatterMissileGndAttkInit
 	wait           	2
 	sprol          	373 0 0	# ScarabTrail (thingy\HKTrail.grp)
 	goto           	AntiMatterMissileGndAttkInit
@@ -15547,6 +16115,10 @@ AntiMatterMissileDeath:
 	wait           	1
 	end            	
 
+uAntiMatterMissileGndAttkInit:
+	wait			2
+	sprol          	516 0 0	# ScarabTrail (thingy\HKTrail.grp) - USES QUEEN SPELL HOLDER IMAGE! IsID 267
+	goto           	uAntiMatterMissileGndAttkInit
 
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
@@ -15562,22 +16134,33 @@ AirAttkInit    	[NONE]
 # ----------------------------------------------------------------------------- #
 
 PulseCannonInit:
-	playsnd        	65	# Bullet\BlastCan.wav
 	wait           	1
+	playsnd        	65	# Bullet\BlastCan.wav
+	if upgrade(player, 54) == 1 goto uPulseInit
 	sigorder       	1
 	wait           	1
 PulseCannonGndAttkInit:
+	if upgrade(player, 54) == 1 goto uPulseCannonGndAttkInit
 	playfram       	0x00	# frame set 0
 	wait           	1
 	goto           	PulseCannonGndAttkInit
+
+uPulseInit:
+	wait           	1
+	sigorder       	1
+	wait           	1
+uPulseCannonGndAttkInit:
+	playfram       	0x11	# frame set 0
+	wait           	1
+	goto           	uPulseCannonGndAttkInit
+
 
 PulseCannonDeath:
 	playsnd        	9	# Misc\ExploSm.wav
 	imgol          	519 0 0	# Photon Blasters img
 	domissiledmg   	
 	wait           	1
-	end            	
-
+	end      
 
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
@@ -15593,21 +16176,19 @@ AirAttkInit    	[NONE]
 # ----------------------------------------------------------------------------- #
 
 PhaseDisruptorInit:
-#	set spritelocal x_off = bullet_x_off # Commented out parts are used for Ulrezaj's Risen
-#	set spritelocal y_off = bullet_y_off
 	tmprmgraphicstart	
 	trgtrangecondjmp	20 PhaseLocal00
 	tmprmgraphicend	
 PhaseLocal00:
+	set spritelocal x_off = bullet_x_off #used for Ulrezaj's Risen
+	set spritelocal y_off = bullet_y_off
 	playsnd        	99	# Bullet\DragBull.wav
 	wait           	1
 	sigorder       	1
 	wait           	1
 PhaseDisruptorGndAttkInit:
-	#if bullet.weapon_id  == 128  goto uPhaseD
-	#if bullet.weapon_id == 78 goto uPhaDir
-	#if bullet.weapon_id == 145 goto uPhaseD
-	#if bullet.weapon_id == 146 goto uPhaseD
+	if bullet.weapon_id == 128 || bullet.weapon_id == 145 || bullet.weapon_id == 146 goto uPhaseD
+	if bullet.weapon_id == 78 goto uPhaDir
 	if bullet.weapon_id == 121 goto rPhaseD
 	if bullet.weapon_id == 137 goto rPhaseD
 	playfram       	0
@@ -15622,22 +16203,22 @@ PhaseDisruptorGndAttkInit:
 	wait           	1
 	goto           	PhaseDisruptorGndAttkInit
 	
-#uPhaseD:
-#	set bullet.order_target_x = bullet.order_target_x + x_off
-#	set flingy.move_target_x = flingy.move_target_x + x_off
-#	set bullet.order_target_y = bullet.order_target_y + y_off
-#	set flingy.move_target_y = flingy.move_target_y + y_off
-#	playfram       	5
-#	wait           	1
-#	playfram       	6
-#	wait           	1
-#	playfram       	7
-#	wait           	1
-#	playfram       	8
-#	wait           	1
-#	playfram       	9
-#	wait           	1
-#	goto           	uPhaseD
+uPhaseD:
+	set bullet.order_target_x = bullet.order_target_x + x_off
+	set flingy.move_target_x = flingy.move_target_x + x_off
+	set bullet.order_target_y = bullet.order_target_y + y_off
+	set flingy.move_target_y = flingy.move_target_y + y_off
+	playfram       	5
+	wait           	1
+	playfram       	6
+	wait           	1
+	playfram       	7
+	wait           	1
+	playfram       	8
+	wait           	1
+	playfram       	9
+	wait           	1
+	goto           	uPhaseD
 
 rPhaseD:
 	playfram       	10
@@ -15652,18 +16233,18 @@ rPhaseD:
 	wait           	1
 	goto           	rPhaseD
 
-#uPhaDir:
-#	playfram       	5
-#	wait           	1
-#	playfram       	6
-#	wait           	1
-#	playfram       	7
-#	wait           	1
-#	playfram       	8
-#	wait           	1
-#	playfram       	9
-#	wait           	1
-#	goto           	uPhaDir
+uPhaDir:
+	playfram       	5
+	wait           	1
+	playfram       	6
+	wait           	1
+	playfram       	7
+	wait           	1
+	playfram       	8
+	wait           	1
+	playfram       	9
+	wait           	1
+	goto           	uPhaDir
 	
 PhaseDisruptorDeath:
 	if bullet.weapon_id == 67 goto FnxPDeath
@@ -16030,7 +16611,6 @@ FragLocal00:
 	sigorder       	1
 	wait           	1
 FragmentationGrenadeGndAttkInit:
-	if bullet.weapon_id == 144 goto RaynorGrenade
 	sprol          	310 0 0	# Fragmentationgrenadesmoke (thingy\GreSmoke.grp)
 	wait           	1
 FragmentationGrenadeLocal00:
@@ -16042,15 +16622,6 @@ FragmentationGrenadeLocal00:
 	wait           	2
 	playfram       	3
 	wait           	2
-	goto           	FragmentationGrenadeLocal00
-
-RaynorGrenade:
-	set bullet.order_target_x = bullet.order_target_x + 20
-	set flingy.move_target_x = flingy.move_target_x + 20
-	set bullet.order_target_y = bullet.order_target_y + 20
-	set flingy.move_target_y = flingy.move_target_y + 20
-	sprol          	310 0 0	# Fragmentationgrenadesmoke (thingy\GreSmoke.grp)
-	wait           	1
 	goto           	FragmentationGrenadeLocal00
 
 FragmentationGrenadeDeath:
@@ -16909,7 +17480,7 @@ GlaveWurmDeath:
 GWExtend:
 	if bcount == 1 goto skipBounce
 	set bullet.bounces_remaining = 6
-	set bullet.weapon_id = 143
+	set bullet.weapon_id = 147
 	set spritelocal bcount = bcount + 1
 	goto skipBounce
 	
@@ -17982,14 +18553,6 @@ FragmentationGrenadeHitInit:
 	playsndbtwn    	107 109	# Bullet\tvuHit00.wav, Bullet\tvuHit02.wav
 	playfram       	0
 	wait           	2
-	if bullet.weapon_id != 132 goto FragContinue
-	if raynor_active_mines > 2 goto FragContinue
-	if ray_atkuntil_mine <= 3 goto FragIncrement
-	set ray_atkuntil_mine = 0
-	create_unit 13	 flingy.position_x flingy.position_y player with { #Spider Mine
-	local_minecount_increment = 1
-	}
-FragContinue:
 	playfram       	1
 	wait           	2
 	playfram       	2
@@ -18008,9 +18571,7 @@ FragContinue:
 	wait           	2
 	end            	
 
-FragIncrement:
-	set global ray_atkuntil_mine = ray_atkuntil_mine + 1
-	goto FragContinue
+
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
 # 441 Fragmentationgrenadesmoke (thingy\GreSmoke.grp)
@@ -18059,7 +18620,7 @@ AntiMatterMissileHitInit:
 	playsnd        	8	# Misc\ExploMed.wav
 	wait			1
 	if sprite.has_bullet == false goto AMSkipBulletCheck
-	#if (bullet.weapon_id  == 128) || (bullet.weapon_id == 78) || (bullet.weapon_id == 142) || (bullet.weapon_id == 145) || (bullet.weapon_id == 146) goto uExplod
+	if (bullet.weapon_id  == 128) || (bullet.weapon_id == 78) || (bullet.weapon_id == 142) || (bullet.weapon_id == 145) || (bullet.weapon_id == 146) goto uExplod
 	if (bullet.weapon_id  == 121) || (bullet.weapon_id == 137) goto rExplod #Revenant special explosion proj
 AMSkipBulletCheck:
 	tmprmgraphicend
@@ -18093,37 +18654,40 @@ AMSkipBulletCheck:
 	wait           	1
 	end            	
 
-#uExplod:
-#	tmprmgraphicend
-#	playfram       	14
-#	wait           	1
-#	playfram       	15
-#	wait           	1
-#	playfram       	16
-#	wait           	1
-#	playfram       	17
-#	wait           	1
-#	playfram       	18
-#	wait           	1
-#	playfram       	19
-#	wait           	1
-#	playfram       	20
-#	wait           	1
-#	playfram       	21
-#	wait           	1
-#	playfram       	22
-#	wait           	1
-#	playfram       	23
-#	wait           	1
-#	playfram       	24
-#	wait           	1
-#	playfram       	25
-#	wait           	1
-#	playfram       	26
-#	wait           	1
-#	playfram       	27
-#	wait           	1
-#	end       
+uExplod:
+	tmprmgraphicend
+	playfram       	14
+	wait           	1
+	randcondjmp    	155 uENsnd
+	playsnd        	1145	# Ulrezaj risen atk sound
+uENsnd:
+	playfram       	15
+	wait           	1
+	playfram       	16
+	wait           	1
+	playfram       	17
+	wait           	1
+	playfram       	18
+	wait           	1
+	playfram       	19
+	wait           	1
+	playfram       	20
+	wait           	1
+	playfram       	21
+	wait           	1
+	playfram       	22
+	wait           	1
+	playfram       	23
+	wait           	1
+	playfram       	24
+	wait           	1
+	playfram       	25
+	wait           	1
+	playfram       	26
+	wait           	1
+	playfram       	27
+	wait           	1
+	end            	     
 
 rExplod:
 	tmprmgraphicend
@@ -18169,6 +18733,8 @@ Death          	long01
 # ----------------------------------------------------------------------------- #
 
 AntiMatterMissileOverlayInit:
+	wait			1
+	if image.drawfunc == 0 goto uAntiMatterMissileTrail
 	playfram       	0
 	wait           	1
 	playfram       	1
@@ -18186,6 +18752,25 @@ AntiMatterMissileOverlayInit:
 	playfram       	7
 	wait           	1
 	end            	
+	
+uAntiMatterMissileTrail:
+	playfram       	8
+	wait           	1
+	playfram       	9
+	wait           	1
+	playfram       	10
+	wait           	1
+	playfram       	11
+	wait           	1
+	playfram       	12
+	wait           	1
+	playfram       	13
+	wait           	1
+	playfram       	14
+	wait           	1
+	playfram       	15
+	wait           	1
+	end            	
 
 
 # ----------------------------------------------------------------------------- #
@@ -18200,6 +18785,8 @@ Death          	long01
 # ----------------------------------------------------------------------------- #
 
 ScarabHitInit:
+	wait			1
+	if upgrade(player, 54) == 1 goto uReaInit
 	playsnd        	100	# Bullet\psaHit00.wav
 	playfram       	0
 	wait           	1
@@ -18223,6 +18810,29 @@ ScarabHitInit:
 	wait           	1
 	end            	
 
+uReaInit:
+	playsnd        	100	# Bullet\psaHit00.wav
+	playfram       	10
+	wait           	1
+	playfram       	11
+	wait           	1
+	playfram       	12
+	wait           	1
+	playfram       	13
+	wait           	1
+	playfram       	14
+	wait           	1
+	playfram       	15
+	wait           	1
+	playfram       	16
+	wait           	1
+	playfram       	17
+	wait           	1
+	playfram       	18
+	wait           	1
+	playfram       	19
+	wait           	1
+	end            	
 
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
@@ -18313,8 +18923,15 @@ SpecialState1  	[NONE]
 
 CarrierEnginesInit:
 	wait           	1
+	if unit_id == 72 goto uCE
+	engframe		0x11
 	followmaingraphic	
 	goto           	CarrierEnginesInit
+	
+uCE:
+	wait           	1
+	followmaingraphic	
+	goto           	uCE
 
 
 # ----------------------------------------------------------------------------- #
@@ -18349,11 +18966,21 @@ AlmostBuilt    	long01
 # ----------------------------------------------------------------------------- #
 
 Engines_GlowHeaderInit:
-	engset         	0
+	wait 			1
+	if unit_id == 87 goto uAE
+	engset			0
 	wait           	1
-	engset         	1
+	engset			1
 	wait           	1
 	goto           	Engines_GlowHeaderInit
+
+uAE:
+	#print ArbiterGlow
+	engset			2
+	wait           	1
+	engset			3
+	wait           	1
+	goto           	uAE
 
 
 # ----------------------------------------------------------------------------- #
@@ -20438,6 +21065,10 @@ Enable         	InstallationDoodadStarEditInit
 # ----------------------------------------------------------------------------- #
 
 InstallationDoodadInit:
+	#if has(unit) && unit_id == 276 goto InstallationDoodadDoTransform
+	#wait			1
+	#transform unit 0x23
+	#not yet used code to transform stuff into larvae - wanted to use it to infest terran mech into larva, but does not seem to work :( 
 	playfram       	0
 	goto           	long00
 
@@ -20490,6 +21121,10 @@ InstallationDoodadDisable:
 	playfram       	9
 	sigorder       	1
 	goto           	long00
+	
+#InstallationDoodadDoTransform:
+#	transform unit 0x23
+#	goto long00
 
 
 # ----------------------------------------------------------------------------- #
@@ -21632,6 +22267,7 @@ LurkerCastSpell:
 	goto           	LurkerGndAttkToIdle
 
 LurkerWalking:
+	if unit_id == 277 goto HostWalking
 	move           	4
 	wait           	1
 	playfram       	0x11	# frame set 1
@@ -21654,12 +22290,37 @@ LurkerWalking:
 	wait           	1
 	playfram       	0x00	# frame set 0
 	goto           	LurkerWalking
+	
+HostWalking:
+	move           	2
+	wait           	1
+	playfram       	0x11	# frame set 1
+	move           	3
+	wait           	1
+	playfram       	0x22	# frame set 2
+	move           	5
+	wait           	1
+	playfram       	0x33	# frame set 3
+	move           	3
+	wait           	1
+	playfram       	0x44	# frame set 4
+	move           	4
+	wait           	1
+	playfram       	0x55	# frame set 5
+	move           	5
+	wait           	1
+	playfram       	0x66	# frame set 6
+	move           	5
+	wait           	1
+	playfram       	0x00	# frame set 0
+	goto           	LurkerWalking
 
 LurkerSpecialState2:
 	playfram       	0x198	# frame set 24
 	goto           	LurkerLocal03
 
 LurkerBurrow:
+	if unit_id == 277 goto HostBurrow
 	imgol          	423 0 0	# Unknown423 (thingy\bDust.grp)
 	playsnd        	1093	# Zerg\LURKER\ZLuBurrw.wav
 	playfram       	0xbb	# frame set 11
@@ -21747,8 +22408,78 @@ LurkerUnBurrow:
 	wait           	1
 	sigorder       	4
 	goto           	LurkerWalkingToIdle
+	
+HostBurrow:
+	imgol          	423 0 0	# Unknown423 (thingy\bDust.grp)
+	playsnd        	1093	# Zerg\LURKER\ZLuBurrw.wav
+	playfram       	0xbb	# frame set 11
+	wait           	1
+	playfram       	0xcc	# frame set 12
+	wait           	2
+	playfram       	0xdd	# frame set 13
+	wait           	1
+	imgol          	423 0 0	# Unknown423 (thingy\bDust.grp)
+	playfram       	0xee	# frame set 14
+	wait           	2
+	playfram       	0xff	# frame set 15
+	wait           	1
+	playfram       	0x110	# frame set 16
+	wait           	1
+	playfram       	0x121	# frame set 17
+	wait           	2
+	playfram       	0x132	# frame set 18
+	wait           	1
+	playfram       	0x143	# frame set 19
+	wait           	1
+	imgol          	423 0 0	# Unknown423 (thingy\bDust.grp)
+	playfram       	0xee	# frame set 14
+	wait           	2
+	playfram       	0xff	# frame set 15
+	wait           	1
+	playfram       	0x110	# frame set 16
+	wait           	1
+	playfram       	0x121	# frame set 17
+	wait           	2
+	playfram       	0x132	# frame set 18
+	wait           	1
+	playfram       	0x143	# frame set 19
+	wait           	1
+	imgol          	423 0 0	# Unknown423 (thingy\bDust.grp)
+	playfram       	0x154	# frame set 20
+	wait           	2
+	playfram       	0x165	# frame set 21
+	wait           	1
+	playfram       	0x176	# frame set 22
+	wait           	1
+	playfram       	0x187	# frame set 23
+	wait           	1
+	playfram       	0x198	# frame set 24
+	wait           	1
+	sigorder       	4
+HostBurrowedLoop:
+	wait           	25
+	if unit.energy > 2559 goto HostSpawn
+	goto           	HostBurrowedLoop
 
-
+HostSpawn:
+	set unit.energy = 0
+	imgol          	107 0 0	# ZergBuildingSpawnSmall (zerg\zSpawn01.grp)
+	playsnd        	1146	# Ulrezaj\1146HostSpawn.wav
+	create_unit 40 flingy.position_x+10 flingy.position_y+10 player with {
+	bl_timer = 270
+	}
+	create_unit 40 flingy.position_x+5 flingy.position_y+5 player with {
+	bl_timer = 270
+	}
+	create_unit 40 flingy.position_x-10 flingy.position_y-10 player with {
+	bl_timer = 270
+	}
+	create_unit 40 flingy.position_x-5 flingy.position_y-5 player with {
+	bl_timer = 270
+	}
+	wait			25
+	goto HostBurrowedLoop
+	
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
 # 920 Unknown920 (zerg\zLurker.grp)
@@ -21998,11 +22729,7 @@ MedicInit:
 MedicLocal02:
 	playfram       	0x00	# frame set 0
 MedicLocal01:
-	wait			3
-	if flingy.movement_flags & 0x2 != 0 call FreezeClear
-	wait			25
-	if flingy.movement_flags & 0x2 != 0 call FreezeClear
-	waitrand       	35 47
+	waitrand       	63 75
 	randcondjmp    	128 MedicLocal00
 	goto           	MedicLocal01
 
@@ -22563,18 +23290,23 @@ WarpIn         	CorsairWarpIn
 # ----------------------------------------------------------------------------- #
 
 CorsairInit:
+	wait			2
+	if unit_id == 98 goto uCorsairInit
 	imgul          	930 0 42	# CorsairShad (protoss\corsair.grp)
 CorsairGndAttkToIdle:
+	if unit_id == 98 goto uCorsairGndAttkToIdle
 	playfram       	0x00	# frame set 0
 	goto           	long02
 
 CorsairDeath:
+	if unit_id == 98 goto uCorsairDeath
 	playsnd        	533	# Protoss\Scout\PScDth00.WAV
 	imgol          	213 0 0	# ProtossBuildingExplosionSmall (thingy\tBangS.grp)
 	wait           	3
 	end            	
 
 CorsairGndAttkInit:
+	if unit_id == 98 goto uCorsairGndAttkInit
 	nobrkcodestart 	
 	playfram       	0x11	# frame set 1
 	wait           	1
@@ -22600,6 +23332,7 @@ CorsairGndAttkInit:
 	goto           	CorsairGndAttkToIdle
 
 CorsairAirAttkInit:
+	if unit_id == 98 goto uCorsairAirAttkInit
 	nobrkcodestart 	
 	playfram       	0x11	# frame set 1
 	wait           	1
@@ -22626,6 +23359,7 @@ CorsairAirAttkInit:
 	goto           	CorsairGndAttkToIdle
 
 CorsairCastSpell:
+	if unit_id == 98 goto uCorsairCastSpell
 	playfram       	0x00	# frame set 0
 	nobrkcodestart 	
 	wait           	1
@@ -22639,6 +23373,7 @@ CorsairCastSpell:
 	goto           	CorsairGndAttkToIdle
 
 CorsairWalking:
+	if unit_id == 98 goto uCorsairWalking
 	imgol          	931 0 0	# CorsairOverlay (thingy\pcsGlow.grp)
 	playfram       	0x00	# frame set 0
 	setvertpos     	0
@@ -22646,6 +23381,93 @@ CorsairWalking:
 
 CorsairWarpIn:
 	imgol          	143 0 0	# Unknown143 (protoss\scout.grp)
+	goto           	long00
+	
+uCorsairInit:
+	imgul          	930 0 42	# CorsairShad (protoss\corsair.grp)
+uCorsairGndAttkToIdle:
+	playfram       	0x55	# frame set 0
+	goto           	long02
+
+uCorsairDeath:
+	playsnd        	533	# Protoss\Scout\PScDth00.WAV
+	imgol          	928 0 0	# DarkArchonDeath (protoss\PdaDeath.grp)
+	wait           	3
+	end            	
+
+uCorsairGndAttkInit:
+	nobrkcodestart 	
+	playfram       	0x66	# frame set 1
+	wait           	1
+	attackwith     	1
+	playfram       	0x77	# frame set 2
+	wait           	1
+	playfram       	0x88	# frame set 3
+	wait           	1
+	playfram       	0x99	# frame set 4
+	wait           	1
+	playfram       	0x66	# frame set 1
+	wait           	1
+	playfram       	0x77	# frame set 2
+	wait           	1
+	playfram       	0x88	# frame set 3
+	wait           	1
+	playfram       	0x99	# frame set 4
+	wait           	1
+	playfram       	0x55	# frame set 0
+	wait           	1
+	nobrkcodeend   	
+	gotorepeatattk 	
+	goto           	uCorsairGndAttkToIdle
+
+uCorsairAirAttkInit:
+	nobrkcodestart 	
+	playfram       	0x66	# frame set 1
+	imgol          	970 0 0	# Unknown970 (thingy\tmeHealM.grp)
+	wait           	2
+	attackwith     	2
+	wait           	2
+	attackwith     	2
+	wait           	2
+	attackwith     	2
+	playsnd        	1060	# Protoss\Corsair\PCorlasr2.wav
+	playfram       	0x77	# frame set 2
+	wait           	1
+	playfram       	0x88	# frame set 3
+	wait           	1
+	playfram       	0x99	# frame set 4
+	wait           	1
+	playfram       	0x66	# frame set 1
+	wait           	1
+	playfram       	0x77	# frame set 2
+	wait           	1
+	playfram       	0x88	# frame set 3
+	wait           	1
+	playfram       	0x99	# frame set 4
+	wait           	1
+	playfram       	0x55	# frame set 0
+	wait           	1
+	nobrkcodeend   	
+	gotorepeatattk 	
+	goto           	uCorsairGndAttkToIdle
+
+uCorsairCastSpell:
+	playfram       	0x55	# frame set 0
+	nobrkcodestart 	
+	wait           	1
+	playfram       	0x55	# frame set 0
+	wait           	1
+	playsnd        	1059	# Protoss\Corsair\PCorWeb1.wav
+	castspell      	
+	nobrkcodeend   	
+	gotorepeatattk 	
+	sigorder       	2
+	goto           	uCorsairGndAttkToIdle
+
+uCorsairWalking:
+	imgol          	931 0 0	# CorsairOverlay (thingy\pcsGlow.grp)
+	playfram       	0x55	# frame set 0
+	setvertpos     	0
 	goto           	long00
 
 
@@ -22673,11 +23495,20 @@ SpecialState1  	[NONE]
 # ----------------------------------------------------------------------------- #
 
 CorsairEnginesInit:
+	wait			1
+	if unit_id == 98 goto uSairE
 	engframe       	0
 	wait           	1
 	engframe       	17
 	wait           	1
 	goto           	CorsairEnginesInit
+	
+uSairE:
+	engframe       	0x22
+	wait           	1
+	engframe       	0x33
+	wait           	1
+	goto           	uSairE
 
 
 # ----------------------------------------------------------------------------- #
@@ -22753,18 +23584,22 @@ SpecialState1  	[NONE]
 # ----------------------------------------------------------------------------- #
 
 DarkTemplar_Unit_Init:
+	wait			2
 	playfram       	0xdd	# frame set 13
 DarkTemplar_Unit_GndAttkToIdle:
+	if unit_id == 75 goto uDarkTemplar_Unit_GndAttkToIdle
 	playfram       	0xdd	# frame set 13
 	goto           	DarkTemplar_Unit_Local00
 
 DarkTemplar_Unit_Local00:
+	if unit_id == 75 goto uDarkTemplar_Unit_Local00
 	waitrand       	63 75
 	randcondjmp    	25 DarkTemplar_Unit_Local01
 	randcondjmp    	128 DarkTemplar_Unit_Local02
 	goto           	DarkTemplar_Unit_Local00
 
 DarkTemplar_Unit_Local01:
+	if unit_id == 75 goto uDarkTemplar_Unit_Local01
 	playfram       	0x00	# frame set 0
 	wait           	1
 	playfram       	0x22	# frame set 2
@@ -22778,6 +23613,7 @@ DarkTemplar_Unit_Local01:
 	goto           	DarkTemplar_Unit_GndAttkToIdle
 
 DarkTemplar_Unit_Local02:
+	if unit_id == 75 goto uDarkTemplar_Unit_Local02
 	randcondjmp    	128 DarkTemplar_Unit_Local03
 	playfram       	0x66	# frame set 6
 	wait           	1
@@ -22800,6 +23636,7 @@ DarkTemplar_Unit_Local02:
 	goto           	DarkTemplar_Unit_GndAttkToIdle
 
 DarkTemplar_Unit_Local03:
+	if unit_id == 75 goto uDarkTemplar_Unit_Local03
 	playfram       	0x66	# frame set 6
 	wait           	1
 	turncwise      	1
@@ -22821,12 +23658,14 @@ DarkTemplar_Unit_Local03:
 	goto           	DarkTemplar_Unit_GndAttkToIdle
 
 DarkTemplar_Unit_Death:
+	if unit_id == 75 goto uDarkTemplar_Unit_Death
 	playsnd        	741	# Protoss\DARKTEMPLAR\PDTDth00.WAV
 	imgol          	153 0 0	# Unknown153 (protoss\zealot.grp)
 	wait           	1
 	end            	
 
 DarkTemplar_Unit_GndAttkInit:
+	if unit_id == 75 goto uDarkTemplar_Unit_GndAttkInit
 	playfram       	0x00	# frame set 0
 	wait           	1
 	nobrkcodestart 	
@@ -22855,12 +23694,14 @@ DarkTemplar_Unit_GndAttkInit:
 	goto           	DarkTemplar_Unit_Init
 
 DarkTemplar_Unit_CastSpell:
+	if unit_id == 75 goto uDarkTemplar_Unit_CastSpell
 	castspell      	
 	sigorder       	2
 	gotorepeatattk 	
 	goto           	DarkTemplar_Unit_Init
 
 DarkTemplar_Unit_Walking:
+	if unit_id == 75 goto uDarkTemplar_Unit_Walking
 	move           	5
 	wait           	1
 	playfram       	0xee	# frame set 14
@@ -22887,6 +23728,142 @@ DarkTemplar_Unit_Walking:
 	playfram       	0xdd	# frame set 13
 	goto           	DarkTemplar_Unit_Walking
 
+uDarkTemplar_Unit_Init:
+	playfram       	0x20f	# frame set 13
+uDarkTemplar_Unit_GndAttkToIdle:
+	playfram       	0x20f	# frame set 13
+	goto           	uDarkTemplar_Unit_Local00
+
+uDarkTemplar_Unit_Local00:
+	waitrand       	63 75
+	randcondjmp    	25 uDarkTemplar_Unit_Local01
+	randcondjmp    	128 uDarkTemplar_Unit_Local02
+	goto           	uDarkTemplar_Unit_Local00
+
+uDarkTemplar_Unit_Local01:
+	playfram       	0x132	# frame set 0
+	wait           	1
+	playfram       	0x154	# frame set 2
+	waitrand       	1 4
+	playfram       	0x165	# frame set 3
+	waitrand       	4 12
+	playfram       	0x154	# frame set 2
+	waitrand       	2 6
+	playfram       	0x132	# frame set 0
+	wait           	1
+	goto           	uDarkTemplar_Unit_GndAttkToIdle
+
+uDarkTemplar_Unit_Local02:
+	randcondjmp    	128 DarkTemplar_Unit_Local03
+	playfram       	0x198	# frame set 6
+	wait           	1
+	turnccwise     	1
+	playfram       	0x1a9	# frame set 7
+	wait           	1
+	turnccwise     	1
+	playfram       	0x1ba	# frame set 8
+	wait           	1
+	turnccwise     	1
+	playfram       	0x1cb	# frame set 9
+	wait           	1
+	turnccwise     	1
+	playfram       	0x1dc	# frame set 10
+	wait           	1
+	turnccwise     	1
+	playfram       	0x1ed	# frame set 11
+	wait           	1
+	turnccwise     	1
+	goto           	uDarkTemplar_Unit_GndAttkToIdle
+
+uDarkTemplar_Unit_Local03:
+	playfram       	0x198	# frame set 6
+	wait           	1
+	turncwise      	1
+	playfram       	0x1a9	# frame set 7
+	wait           	1
+	turncwise      	1
+	playfram       	0x1ba	# frame set 8
+	wait           	1
+	turncwise      	1
+	playfram       	0x1cb	# frame set 9
+	wait           	1
+	turncwise      	1
+	playfram       	0x1dc	# frame set 10
+	wait           	1
+	turncwise      	1
+	playfram       	0x1ed	# frame set 11
+	wait           	1
+	turncwise      	1
+	goto           	uDarkTemplar_Unit_GndAttkToIdle
+
+uDarkTemplar_Unit_Death:
+	playsnd        	741	# Protoss\DARKTEMPLAR\PDTDth00.WAV
+	imgol          	153 0 0	# Unknown153 (protoss\zealot.grp)
+	wait           	1
+	end            	
+
+uDarkTemplar_Unit_GndAttkInit:
+	playfram       	0x132	# frame set 0
+	wait           	1
+	nobrkcodestart 	
+	playfram       	0x143	# frame set 1
+	wait           	1
+	playfram       	0x154	# frame set 2
+	wait           	1
+	playfram       	0x165	# frame set 3
+	wait           	1
+	playfram       	0x176	# frame set 4
+	wait           	1
+	useweapon		129
+	attackmelee    	1 111	# Bullet\UZeFir00.wav
+	playfram       	0x187	# frame set 5
+	wait           	1
+	playfram       	0x198	# frame set 6
+	wait           	1
+	playfram       	0x1a9	# frame set 7
+	wait           	1
+	playfram       	0x1ba	# frame set 8
+	wait           	1
+	playfram       	0x1cb	# frame set 9
+	wait           	1
+	nobrkcodeend   	
+	gotorepeatattk 	
+	ignorerest     	
+	goto           	uDarkTemplar_Unit_Init
+
+uDarkTemplar_Unit_CastSpell:
+	castspell      	
+	sigorder       	2
+	gotorepeatattk 	
+	goto           	uDarkTemplar_Unit_Init
+
+uDarkTemplar_Unit_Walking:
+	move           	5
+	wait           	1
+	playfram       	0x220	# frame set 14
+	move           	6
+	wait           	1
+	playfram       	0x231	# frame set 15
+	move           	5
+	wait           	1
+	playfram       	0x242	# frame set 16
+	move           	6
+	wait           	1
+	playfram       	0x253	# frame set 17
+	move           	5
+	wait           	1
+	playfram       	0x1dc	# frame set 10
+	move           	6
+	wait           	1
+	playfram       	0x1ed	# frame set 11
+	move           	5
+	wait           	1
+	playfram       	0x1fe	# frame set 12
+	move           	6
+	wait           	1
+	playfram       	0x20f	# frame set 13
+	goto           	uDarkTemplar_Unit_Walking
+
 
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
@@ -22906,6 +23883,7 @@ NeutronFlareInit:
 	sigorder       	1
 	wait           	1
 NeutronFlareDeath:
+	if bullet.weapon_id == 116 goto uNeutronFlareDeath
 	playfram       	0
 	playsnd        	95	# Bullet\SHOCKBMB.wav
 	domissiledmg   	
@@ -22921,6 +23899,23 @@ NeutronFlareDeath:
 	playfram       	5
 	wait           	1
 	playfram       	6
+	wait           	1
+	end            	
+
+uNeutronFlareDeath:
+	playfram       	7
+	playsnd        	95	# Bullet\SHOCKBMB.wav
+	domissiledmg   	
+	wait           	1
+	playfram       	8
+	wait           	1
+	playfram       	9
+	wait           	1
+	playfram       	10
+	wait           	1
+	playfram       	11
+	wait           	1
+	playfram       	12
 	wait           	1
 	end            	
 
@@ -23977,6 +24972,9 @@ Death          	long01
 # ----------------------------------------------------------------------------- #
 
 Unknown394Init:
+	wait			1
+	if unit_id == 87 goto uArbiterUnk
+	if unit_id == 98 goto uCorsUnk
 	playfram       	0
 	wait           	1
 	playfram       	1
@@ -23996,6 +24994,30 @@ Unknown394Init:
 	playfram       	8
 	wait           	1
 	playfram       	9
+	wait           	1
+	goto           	long01
+	
+uArbiterUnk:
+	playfram       	12
+	wait           	1
+	playfram       	13
+	wait           	1
+	playfram       	14
+	wait           	1
+uCorsUnk:
+	playfram       	15
+	wait           	1
+	playfram       	16
+	wait           	1
+	playfram       	17
+	wait           	1
+	playfram       	18
+	wait           	1
+	playfram       	19
+	wait           	1
+	playfram       	20
+	wait           	1
+	playfram       	21
 	wait           	1
 	goto           	long01
 
@@ -24754,9 +25776,10 @@ long03:
 	lowsprul       	187 0 0	# ZergBuildingRubbleSmall (thingy\ZRubbleL.grp)
 	wait           	1
 	end            	
-
+	
 # Freeze code below, how to reproduce unit freeze: Order unit to move in the direction of a target, start attack and interrupt it before the animation finishes; unit should be frozen, playing its idle anim with the flingy 0x2 (accelerating) flag still set
 FreezeClear: # Code needed to run this: if flingy.movement_flags & 0x2 != 0 call FreezeClear, where 0x2 is "accelerating" flag for flingy movement; yes, this checks that flag @ 0x2 is not 0 (so == 1, but that doesnt work for w/e reason and has to be written this way)
 	set flingy.movement_flags = flingy.movement_flags & !0x2 # set flag @ 0x2 to be opposite of true, ie. false
 	return
 	
+
