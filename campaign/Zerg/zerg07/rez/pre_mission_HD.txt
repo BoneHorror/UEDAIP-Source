@@ -1,0 +1,16 @@
+</COMMENT Establishing Shot for Zerg Level 7>
+
+</FADESPEED 100>
+</DISPLAYTIME 5000>
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palzb\ZergB.pcx>
+</FONTCOLOR glue\palzb\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"THE CULLING"
+
+Primary Hive Cluster
+Planet Char
+One hour later
+</PAGE>

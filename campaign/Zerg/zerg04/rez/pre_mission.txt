@@ -1,0 +1,15 @@
+</COMMENT Establishing Shot for Zerg Level 4>
+
+</FADESPEED 100>
+</DISPLAYTIME 5000>
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palzb\ZergB.pcx>
+</FONTCOLOR glue\palzb\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"AGENT OF THE SWARM"
+
+Primary Hive Cluster
+Planet Char
+</PAGE>

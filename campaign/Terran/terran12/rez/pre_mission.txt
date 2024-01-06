@@ -1,0 +1,16 @@
+</COMMENT Establishing Shot for Terran Level 12>
+
+</FADESPEED 100>
+</DISPLAYTIME 5000>
+
+</COMMENT #############################################################>
+</BACKGROUND glue\paltc\TerranC.pcx>
+</FONTCOLOR glue\paltc\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"THE HAMMER FALLS"
+
+Command Ship Hyperion
+Holding perimeter orbit over
+Confederate Capitol World Tarsonis
+</PAGE>

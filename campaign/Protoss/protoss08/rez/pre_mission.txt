@@ -1,0 +1,26 @@
+</COMMENT Establishing Shot for Protoss Level 8>
+
+</FADESPEED 100>
+</DISPLAYTIME 20000>
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palpa\Blank.pcx>
+</FONTCOLOR glue\palpa\tfont.pcx>
+
+</SCREENLEFT>
+Tassadar was taken into Judicator custody and sentenced to stand trial for his crimes against the Conclave, all the while his forces surrender en masse, no longer capable of bearing the suffering of their own former comrades vividly felt through their innate psionic connection. 
+
+With a small band of rebels still loyal to Tassadar's cause, Fenix and Raynor have managed to evade capture by the Conclave's agents. The Dark Templar silently slip away in the chaos...
+</PAGE>
+
+</DISPLAYTIME 5000>
+</COMMENT #############################################################>
+</BACKGROUND glue\palpc\ProtossC.pcx>
+</FONTCOLOR glue\palpc\tfont.pcx>
+	
+</SCREENLOWERLEFT>
+"THE TRIAL OF TASSADAR"
+
+Protoss Command Ship Gantrithor
+Holding orbit over the planet Aiur
+</PAGE>

@@ -1,0 +1,14 @@
+</COMMENT Establishing Shot for Zerg Level 8>
+
+</FADESPEED 100>
+</DISPLAYTIME 5000>
+</COMMENT #############################################################>
+</BACKGROUND glue\palzb\ZergB.pcx>
+</FONTCOLOR glue\palzb\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"EYE FOR AN EYE"
+
+Primary Hive Cluster
+Planet Char
+</PAGE>

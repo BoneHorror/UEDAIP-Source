@@ -1,0 +1,31 @@
+</COMMENT Establishing Shot for Zerg Level 3>
+
+</DISPLAYTIME 0>
+</VIDEO interstitials\ZG2010.webm>
+</TEXTBOX>
+With the Protoss forces beaten and scattered, the Overmind's Broods return to their remote, inhospitable homeworld of Char...
+</PAGE>
+
+</DISPLAYTIME 0>
+</VIDEO interstitials\ZG2020.webm>
+</TEXTBOX>
+... unaware of the fact that they're being closely followed.
+</PAGE>
+
+</DISPLAYTIME 0>
+</VIDEOAUTOPROCEED interstitials\ZG2025.webm>
+
+</PAGE>
+
+
+</COMMENT #############################################################>
+</DISPLAYTIME 5000>
+</BACKGROUND glue\palzb\ZergB.pcx>
+</FONTCOLOR glue\palzb\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"THE NEW DOMINION"
+
+Primary Hive Cluster
+Planet Char
+</PAGE>

@@ -1,0 +1,14 @@
+</COMMENT Establishing Shot for Zerg Level 2>
+
+</FADESPEED 100>
+</DISPLAYTIME 5000>
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palza\ZergA.pcx>
+</FONTCOLOR glue\palza\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"EGRESSION"
+
+Terran Capitol World Tarsonis
+</PAGE>

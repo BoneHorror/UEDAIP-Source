@@ -1,0 +1,27 @@
+</COMMENT Establishing Shot for Zerg Level 5>
+
+</FADESPEED 100>
+</DISPLAYTIME 24000>
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palza\Blank.pcx>
+</FONTCOLOR glue\palza\tfont.pcx>
+
+</SCREENLEFT>
+Kerrigan, the newest and most powerful agent of the Overmind, has arisen from her embryonic Chrysalis, but her formidable powers are still not fully functional.
+
+Kerrigan must now seek to unravel the Ghost conditioning that keeps her powers in check. Once done, she will lead the Overmind's minions to complete domination over the unsuspecting Protoss.
+</PAGE>
+
+
+</COMMENT #############################################################>
+</DISPLAYTIME 5000>
+</BACKGROUND glue\palzb\ZergB.pcx>
+</FONTCOLOR glue\palzb\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"THE AMERIGO"
+
+Primary Hive Cluster
+Planet Char
+</PAGE>

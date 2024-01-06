@@ -1,0 +1,15 @@
+</COMMENT Establishing Shot for Terran Level 2>
+
+</FADESPEED 100>
+</DISPLAYTIME 5000>
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palta\TerranA.pcx>
+</FONTCOLOR glue\palta\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"BACKWATER STATION"
+
+Office of the Colonial Magistrate
+Mar Sara Colony
+</PAGE>

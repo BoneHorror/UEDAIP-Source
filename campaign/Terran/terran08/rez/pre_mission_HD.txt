@@ -1,0 +1,31 @@
+</DISPLAYTIME 0>
+</VIDEO interstitials\TR3010.webm>
+</TEXTBOX>
+The Zerg, lured by the Psi Emitter's signal, descended upon the unsuspecting Confederate forces and annihilated them.
+</PAGE>
+
+</DISPLAYTIME 0>
+</VIDEO interstitials\TR3020.webm>
+</TEXTBOX>
+Once again, the Protoss fleet, under the command of High Templar Tassadar, detected the Zerg and promptly headed for the planet...
+</PAGE>
+
+</DISPLAYTIME 0>
+</VIDEOAUTOPROCEED interstitials\TR3025.webm>
+</PAGE>
+
+</COMMENT Establishing Shot for Terran Level 8>
+
+</FADESPEED 100>
+</DISPLAYTIME 5000>
+
+</COMMENT #############################################################>
+</BACKGROUND glue\paltb\TerranB.pcx>
+</FONTCOLOR glue\paltb\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"BITING THE BULLET"
+
+Secret Staging Area
+Antiga Prime Colony
+</PAGE>

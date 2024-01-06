@@ -1,0 +1,723 @@
+<strings>
+    <string>
+        <id>strDELETE_ERR_s</id>
+        <value>An error occurred while deleting game '%s'</value>
+    </string>
+    <string>
+        <id>strREPLACE_ERR_s</id>
+        <value>An error occurred while replacing game '%s'</value>
+    </string>
+    <string>
+        <id>strCONFIRM_REPLACE_s</id>
+        <value>Replace the contents of game '%s'?</value>
+    </string>
+    <string>
+        <id>strCONFIRM_DELETE_s</id>
+        <value>Delete the game '%s'?</value>
+    </string>
+    <string>
+        <id>strSAVE_TOO_MANY_ERR</id>
+        <value>Cannot create any more save files.</value>
+    </string>
+    <string>
+        <id>strRESERVED_FILENAME</id>
+        <value>That file name is a reserved name. Please choose another name.</value>
+    </string>
+    <string>
+        <id>strZERG</id>
+        <value>Zerg</value>
+    </string>
+    <string>
+        <id>strTERRAN</id>
+        <value>Terran</value>
+    </string>
+    <string>
+        <id>strPROTOSS</id>
+        <value>Protoss</value>
+    </string>
+    <string>
+        <id>strRANDOM</id>
+        <value>Random</value>
+    </string>
+    <string>
+        <id>strCOMPUTER</id>
+        <value>Computer</value>
+    </string>
+    <string>
+        <id>strHOURS</id>
+        <value>hours</value>
+    </string>
+    <string>
+        <id>strHOUR</id>
+        <value>hour</value>
+    </string>
+    <string>
+        <id>strMINUTES</id>
+        <value>minutes</value>
+    </string>
+    <string>
+        <id>strMINUTE</id>
+        <value>minute</value>
+    </string>
+    <string>
+        <id>strCONTINUEWARNING</id>
+        <value>Mission completed. Continuing play with map triggers disabled.</value>
+    </string>
+    <string>
+        <id>strBADFILECHARS</id>
+        <value>*\/:&gt;&lt;|&amp;+^?"</value>
+    </string>
+    <string>
+        <id>errCANTPLACE_sdd</id>
+        <value>WARNING: Unit unplaceable! (%s) (%d,%d)</value>
+    </string>
+    <string>
+        <id>strTEAM1</id>
+        <value>Team 1</value>
+    </string>
+    <string>
+        <id>strTEAM2</id>
+        <value>Team 2</value>
+    </string>
+    <string>
+        <id>strTEAM3</id>
+        <value>Team 3</value>
+    </string>
+    <string>
+        <id>strTEAM4</id>
+        <value>Team 4</value>
+    </string>
+    <string>
+        <id>strFORCE1</id>
+        <value>Force 1</value>
+    </string>
+    <string>
+        <id>strFORCE2</id>
+        <value>Force 2</value>
+    </string>
+    <string>
+        <id>strFORCE3</id>
+        <value>Force 3</value>
+    </string>
+    <string>
+        <id>strFORCE4</id>
+        <value>Force 4</value>
+    </string>
+    <string>
+        <id>strOBSERVER</id>
+        <value>Observer</value>
+    </string>
+    <string>
+        <id>strOBSERVERS</id>
+        <value>Observers</value>
+    </string>
+    <string>
+        <id>strNATION_TERRAN_0</id>
+        <value>Terran Dominion</value>
+    </string>
+    <string>
+        <id>strNATION_TERRAN_1</id>
+        <value>Raynors Riders</value>
+    </string>
+    <string>
+        <id>strNATION_TERRAN_2</id>
+        <value>Elite Guard</value>
+    </string>
+    <string>
+        <id>strNATION_TERRAN_3</id>
+        <value>Antigan Resistance</value>
+    </string>
+    <string>
+        <id>strNATION_TERRAN_4</id>
+        <value>Delta Squadron</value>
+    </string>
+    <string>
+        <id>strNATION_TERRAN_5</id>
+        <value>Omega Squadron</value>
+    </string>
+    <string>
+        <id>strNATION_TERRAN_6</id>
+        <value>Alpha Squadron</value>
+    </string>
+    <string>
+        <id>strNATION_TERRAN_7</id>
+        <value>Epsilon Squadron</value>
+    </string>
+    <string>
+        <id>strNATION_ZERG_0</id>
+        <value>Tiamat Brood</value>
+    </string>
+    <string>
+        <id>strNATION_ZERG_1</id>
+        <value>Surtur Brood</value>
+    </string>
+    <string>
+        <id>strNATION_ZERG_2</id>
+        <value>Fenris Brood</value>
+    </string>
+    <string>
+        <id>strNATION_ZERG_3</id>
+        <value>Jormungand Brood</value>
+    </string>
+    <string>
+        <id>strNATION_ZERG_4</id>
+        <value>Garm Brood</value>
+    </string>
+    <string>
+        <id>strNATION_ZERG_5</id>
+        <value>Grendel Brood</value>
+    </string>
+    <string>
+        <id>strNATION_ZERG_6</id>
+        <value>Baelrog Brood</value>
+    </string>
+    <string>
+        <id>strNATION_ZERG_7</id>
+        <value>Leviathan Brood</value>
+    </string>
+    <string>
+        <id>strNATION_PROTOSS_0</id>
+        <value>Ara Tribe</value>
+    </string>
+    <string>
+        <id>strNATION_PROTOSS_1</id>
+        <value>Expeditionary Force</value>
+    </string>
+    <string>
+        <id>strNATION_PROTOSS_2</id>
+        <value>Akilae Tribe</value>
+    </string>
+    <string>
+        <id>strNATION_PROTOSS_3</id>
+        <value>Furinax Tribe</value>
+    </string>
+    <string>
+        <id>strNATION_PROTOSS_4</id>
+        <value>Auriga Tribe</value>
+    </string>
+    <string>
+        <id>strNATION_PROTOSS_5</id>
+        <value>Venatir Tribe</value>
+    </string>
+    <string>
+        <id>strNATION_PROTOSS_6</id>
+        <value>Shelak Tribe</value>
+    </string>
+    <string>
+        <id>strNATION_PROTOSS_7</id>
+        <value>Velari Tribe</value>
+    </string>
+    <string>
+        <id>strELIMINATED_s</id>
+        <value>%s was eliminated.</value>
+    </string>
+    <string>
+        <id>strELIMINATED_d</id>
+        <value>Player %d was eliminated.</value>
+    </string>
+    <string>
+        <id>strLEFTGAME</id>
+        <value>Player %s left the game.</value>
+    </string>
+    <string>
+        <id>strDROPPED</id>
+        <value>Player %s was dropped.</value>
+    </string>
+    <string>
+        <id>strPAUSED_sd</id>
+        <value>%s paused the game. (%d timeouts remaining)</value>
+    </string>
+    <string>
+        <id>strRESUMED_s</id>
+        <value>%s resumed the game.</value>
+    </string>
+    <string>
+        <id>strMSGSENT</id>
+        <value>* Message Sent *</value>
+    </string>
+    <string>
+        <id>strEXITBLOCKED</id>
+        <value>Building exit is blocked.</value>
+    </string>
+    <string>
+        <id>strMAXUNITS</id>
+        <value>Cannot create more units.</value>
+    </string>
+    <string>
+        <id>strCANTCREATE</id>
+        <value>Unable to create unit.</value>
+    </string>
+    <string>
+        <id>strTARGET</id>
+        <value>Select Target</value>
+    </string>
+    <string>
+        <id>strLOCATION</id>
+        <value>Select Location</value>
+    </string>
+    <string>
+        <id>strCHEATON</id>
+        <value>Cheat Enabled</value>
+    </string>
+    <string>
+        <id>strCHEATOFF</id>
+        <value>Cheat Disabled</value>
+    </string>
+    <string>
+        <id>strNEW_OBSERVER_REMOTE</id>
+        <value>%s is now playing as an observer.</value>
+    </string>
+    <string>
+        <id>strNEW_OBSERVER_LOCAL</id>
+        <value>You are now playing as an observer.</value>
+    </string>
+    <string>
+        <id>strFIRSTLATENCY_s</id>
+        <value>Player %s set network for low latency.</value>
+    </string>
+    <string>
+        <id>strFIRSTLATENCY_s_1</id>
+        <value>Player %s set network for high latency.</value>
+    </string>
+    <string>
+        <id>strFIRSTLATENCY_s_2</id>
+        <value>Player %s set network for extra high latency.</value>
+    </string>
+    <string>
+        <id>strDEFAULTNAME</id>
+        <value>Anonymous</value>
+    </string>
+    <string>
+        <id>strILLEGAL_TEAMS</id>
+        <value>Illegal number of teams.</value>
+    </string>
+    <string>
+        <id>strPLAYER_JOINED</id>
+        <value>%s has joined the game.</value>
+    </string>
+    <string>
+        <id>strPLAYER_LEFT</id>
+        <value>%s has left the game.</value>
+    </string>
+    <string>
+        <id>strPLAYER_WAS_DROPPED</id>
+        <value>%s was dropped from the game.</value>
+    </string>
+    <string>
+        <id>strIGNORING_PLAYER</id>
+        <value>Ignoring messages from %s.</value>
+    </string>
+    <string>
+        <id>strUNIGNORING_PLAYER</id>
+        <value>Accepting messages from %s.</value>
+    </string>
+    <string>
+        <id>strWHISPER_TO</id>
+        <value>&lt;To: %s&gt;</value>
+    </string>
+    <string>
+        <id>strWHISPER_FROM</id>
+        <value>&lt;From: %s&gt;</value>
+    </string>
+    <string>
+        <id>strERROR_GENERAL_NETWORK</id>
+        <value>A network error has occured.</value>
+    </string>
+    <string>
+        <id>strERROR_STANDARD_SNP</id>
+        <value>Error initializing standard.snp.  Please reinstall StarCraft.</value>
+    </string>
+    <string>
+        <id>strERROR_INITIALIZE_PROVIDER</id>
+        <value>Unable to initialize network provider.</value>
+    </string>
+    <string>
+        <id>strERROR_INVALID_DEVICE</id>
+        <value>Unable to initialize device.</value>
+    </string>
+    <string>
+        <id>strERROR_INVALID_PROVIDER</id>
+        <value>Invalid network provider.</value>
+    </string>
+    <string>
+        <id>strERROR_REGISTER_EVENTS</id>
+        <value>Unable to register events.</value>
+    </string>
+    <string>
+        <id>strERROR_INVALID_PLAYER</id>
+        <value>Invalid player.</value>
+    </string>
+    <string>
+        <id>strERROR_INVALID_CHARACTER</id>
+        <value>Invalid character.</value>
+    </string>
+    <string>
+        <id>strERROR_JOINING_GAME</id>
+        <value>Unable to join game.</value>
+    </string>
+    <string>
+        <id>strERROR_JOINING_GAME_FULL</id>
+        <value>Unable to join game - there are no available slots.</value>
+    </string>
+    <string>
+        <id>strERROR_JOINING_GAME_NOT_FOUND</id>
+        <value>Unable to join game - the game cannot be found.</value>
+    </string>
+    <string>
+        <id>strERROR_JOINING_BAD_VERSION</id>
+        <value>Unable to join game. The selected game is an incompatible version of StarCraft.</value>
+    </string>
+    <string>
+        <id>strERROR_SEND_MESSAGE</id>
+        <value>Unable to send message.</value>
+    </string>
+    <string>
+        <id>strERROR_CREATE_SINGLE</id>
+        <value>Unable to create single player game.</value>
+    </string>
+    <string>
+        <id>strERROR_INVALID_OPTIONS</id>
+        <value>Invalid game options.</value>
+    </string>
+    <string>
+        <id>strERROR_CREATE_MULTI</id>
+        <value>Unable to create multi player game.</value>
+    </string>
+    <string>
+        <id>strERROR_NO_SAVE_FILE</id>
+        <value>Save Game File Not Found.</value>
+    </string>
+    <string>
+        <id>strERROR_START_GAME_FAILED</id>
+        <value>Error launching game.</value>
+    </string>
+    <string>
+        <id>strERROR_LOAD_MAP</id>
+        <value>Error loading scenario file.</value>
+    </string>
+    <string>
+        <id>strERROR_LOADING_SAVE_FILE</id>
+        <value>Unable to load saved game file.</value>
+    </string>
+    <string>
+        <id>strERROR_NO_SAVE_SCM</id>
+        <value>Unable to load the SCM associated with this save file.</value>
+    </string>
+    <string>
+        <id>strERROR_FD_STARTUP</id>
+        <value>Unable to distribute map.</value>
+    </string>
+    <string>
+        <id>strERROR_SAVE</id>
+        <value>Unable to write save file.</value>
+    </string>
+    <string>
+        <id>strERROR_CAMPAIGN_OPTIONS</id>
+        <value>Unable to load campaign options.  Please reinstall StarCraft.</value>
+    </string>
+    <string>
+        <id>strERROR_SPAWN_CREATE_SINGLE</id>
+        <value>You must own the full version of StarCraft to play the single player campaigns.</value>
+    </string>
+    <string>
+        <id>strERROR_SPAWN_CREATE_MULTI</id>
+        <value>You must own the full version of StarCraft to create a multiplayer game.</value>
+    </string>
+    <string>
+        <id>strERROR_SPAWN_JOIN_MULTI</id>
+        <value>You can only join games created by the owner of the CD that spawned your copy.</value>
+    </string>
+    <string>
+        <id>strERROR_CAMPAIGN_LINK</id>
+        <value>Unable to find the specified campaign map.</value>
+    </string>
+    <string>
+        <id>strERROR_NOT_SUPPORTED_EUD_MAP</id>
+        <value>Sorry, this EUD map is not supported. Please report the map on the StarCraft forums.</value>
+    </string>
+    <string>
+        <id>strERROR_NOT_SUPPORTED_AT_ALL_EUD_MAP</id>
+        <value>Sorry, this EUD map is not compatible with StarCraft Remastered.</value>
+    </string>
+    <string>
+        <id>strNET_UPGRADE_FAIL</id>
+        <value>Network upgrade failed.</value>
+    </string>
+    <string>
+        <id>strSYNC_ERROR</id>
+        <value>SYNC ERROR.</value>
+    </string>
+    <string>
+        <id>strSAVING</id>
+        <value>Saving Game...
+File Name:</value>
+    </string>
+    <string>
+        <id>strSCREEN_CAPTURE_s</id>
+        <value>Screen captured to file '%s'.</value>
+    </string>
+    <string>
+        <id>strBNET_REPORT_PLAYER</id>
+        <value>%s was %s and played for %s
+</value>
+    </string>
+    <string>
+        <id>strBNET_REPORT_GAME</id>
+        <value>On map "%s":
+</value>
+    </string>
+    <string>
+        <id>strBNET_REPORT_OVERVIEW</id>
+        <value>Overall Score %u
+    %10u for %s
+    %10u for %s
+    %10u for %s
+</value>
+    </string>
+    <string>
+        <id>strBNET_REPORT_UNITS</id>
+        <value>Units Score %u
+    %10u Units %s
+    %10u Units %s
+    %10u Units %s
+</value>
+    </string>
+    <string>
+        <id>strBNET_REPORT_INFRASTRUCTURE</id>
+        <value>Structures Score %u
+    %10u Structures %s
+    %10u Structures %s
+    %10u Structures %s
+</value>
+    </string>
+    <string>
+        <id>strBNET_REPORT_RESOURCES</id>
+        <value>Resources Score %u
+    %10u %s
+    %10u %s
+    %10u %s
+</value>
+    </string>
+    <string>
+        <id>strOBJ_MELEE</id>
+        <value>Destroy all of an opponent's buildings to eliminate him.</value>
+    </string>
+    <string>
+        <id>strOBJ_GREED_2500</id>
+        <value>Accumulate 2500 ore.
+Accumulate 2500 gas.</value>
+    </string>
+    <string>
+        <id>strOBJ_GREED_5000</id>
+        <value>Accumulate 5000 ore.
+Accumulate 5000 gas.</value>
+    </string>
+    <string>
+        <id>strOBJ_GREED_7500</id>
+        <value>Accumulate 7500 ore.
+Accumulate 7500 gas.</value>
+    </string>
+    <string>
+        <id>strOBJ_GREED_10000</id>
+        <value>Accumulate 10000 ore.
+Accumulate 10000 gas.</value>
+    </string>
+    <string>
+        <id>strOBJ_SLAUGHTER</id>
+        <value>Get the most kills or razings before time runs out.</value>
+    </string>
+    <string>
+        <id>strOBJ_CTF</id>
+        <value>Capture an opponent's flag to eliminate him.</value>
+    </string>
+    <string>
+        <id>strOBJ_SUDDENDEATH</id>
+        <value>Destroy any opponent's HQs to eliminate him.</value>
+    </string>
+    <string>
+        <id>strCTF_TAKEN_s</id>
+        <value>%s had his flag taken!</value>
+    </string>
+    <string>
+        <id>strCTF_TAKEN_s_1</id>
+        <value>%s had their flag taken!</value>
+    </string>
+    <string>
+        <id>strCTF_RETURNED_s</id>
+        <value>%s had his flag return to his base.</value>
+    </string>
+    <string>
+        <id>strCTF_RETURNED_s_1</id>
+        <value>%s had their flag return to their base.</value>
+    </string>
+    <string>
+        <id>strCTF_CAPTURED_s</id>
+        <value>%s had his flag captured!</value>
+    </string>
+    <string>
+        <id>strCTF_CAPTURED_s_1</id>
+        <value>%s had their flag captured!</value>
+    </string>
+    <string>
+        <id>strVOICE_NOT_SETUP</id>
+        <value>You must configure your system for voice chat before attempting to change settings. To configure, please exit StarCraft and run the voice configuration utility "STARVOX.exe".</value>
+    </string>
+    <string>
+        <id>strVOICE_MULTI_ONLY</id>
+        <value>Voice chat settings can only be modified while you are playing a multiplayer game.</value>
+    </string>
+    <string>
+        <id>strVOICE_NODIRECTSOUND</id>
+        <value>Your system does not have DirectSound installed. Please run the setup program supplied with StarCraft to install DirectX drivers for your system.</value>
+    </string>
+    <string>
+        <id>strVOICE_VOXERRORFNF</id>
+        <value>Your system does not appear to be configured for voice chat. Please reinstall Starcraft using the install program on the Starcraft CDROM.</value>
+    </string>
+    <string>
+        <id>strVOICE_SNDALLOCATED</id>
+        <value>Another application is using audio. Please exit the other application and try running this application again.</value>
+    </string>
+    <string>
+        <id>strVOICE_VOXINTERNAL</id>
+        <value>An error occurred while attempting to initialize voice fonts: %s
+Error 0x%08x %s</value>
+    </string>
+    <string>
+        <id>strVOICE_CAPTUREINIT</id>
+        <value>An error occurred while attempting to initialize voice capture: %s
+Error 0x%08x %s</value>
+    </string>
+    <string>
+        <id>strVOICE_SNDGENERIC</id>
+        <value>An error occurred while attempting to initialize sound: %s
+Error 0x%08x %s</value>
+    </string>
+    <string>
+        <id>strVOICE_VOICEINIT</id>
+        <value>An error occurred while attempting to initialize voice playback: %s
+Error 0x%08x %s</value>
+    </string>
+    <string>
+        <id>strMUSIC_ON_NETDRIVE</id>
+        <value>ERROR: cannot play music from network drive.</value>
+    </string>
+    <string>
+        <id>strRACE_ERR_ZERG</id>
+        <value>We recommend that you complete the Terran Campaign before playing this campaign.
+
+Do you wish to play the Zerg Campaign anyway?</value>
+    </string>
+    <string>
+        <id>strRACE_ERR_PROTOSS</id>
+        <value>We recommend that you complete the Terran and Zerg Campaigns before playing this campaign.
+
+Do you wish to play the Protoss Campaign anyway?</value>
+    </string>
+    <string>
+        <id>strRACE_ERR_TERRAN_EXP</id>
+        <value>Please ignore this hardcoded error, this is vanilla and the Terran campaign is first-in-order.</value>
+    </string>
+    <string>
+        <id>strRACE_ERR_ZERG_EXP</id>
+        <value>We recommend that you complete the Terran Campaign before playing this campaign.
+
+Do you wish to play the Zerg Campaign anyway?</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_TERRAN_0</id>
+        <value>Terran Dominion</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_TERRAN_1</id>
+        <value>Raynors Riders</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_TERRAN_2</id>
+        <value>Kel-Morian Combine</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_TERRAN_3</id>
+        <value>Adrestia Drydock</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_TERRAN_4</id>
+        <value>Confederate Resistance</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_TERRAN_5</id>
+        <value>Dominion Garrison</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_TERRAN_6</id>
+        <value>Cronus Wing</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_TERRAN_7</id>
+        <value>UED Garrison</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_ZERG_0</id>
+        <value>Tiamat Brood</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_ZERG_1</id>
+        <value>Zerg Swarm</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_ZERG_2</id>
+        <value>Keller Brood</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_ZERG_3</id>
+        <value>Zerg Swarm</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_ZERG_4</id>
+        <value>Renegade Zerg</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_ZERG_5</id>
+        <value>Renegade Zerg</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_ZERG_6</id>
+        <value>Hand of Daggoth</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_ZERG_7</id>
+        <value>Leviathan Brood</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_PROTOSS_0</id>
+        <value>Dark Templar</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_PROTOSS_1</id>
+        <value>Fleet of the Matriarch</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_PROTOSS_2</id>
+        <value>Khalai Remnants</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_PROTOSS_3</id>
+        <value>Khalai Remnants</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_PROTOSS_4</id>
+        <value>Dark Templar</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_PROTOSS_5</id>
+        <value>Khalai Remnants</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_PROTOSS_6</id>
+        <value>Khalai Remnants</value>
+    </string>
+    <string>
+        <id>strNATION_EXP_PROTOSS_7</id>
+        <value>Khalai Remnants</value>
+    </string>
+</strings>

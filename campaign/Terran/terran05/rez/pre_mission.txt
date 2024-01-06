@@ -1,0 +1,31 @@
+</COMMENT Establishing Shot for Terran Level 5>
+
+</FADESPEED 100>
+</DISPLAYTIME 25000>
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palta\Blank.pcx>
+</FONTCOLOR glue\palta\tfont.pcx>
+
+</SCREENLEFT>
+In the wake of the chaos resulting from the Zerg invasion, The Sons of Korhal escaped with the stolen data discs.
+
+Fleeing to the border colony of Antiga Prime, Arcturus' group now plans its next crucial moves against the Confederacy.
+
+Thirteen hours after the evacuation of Mar Sara, Protoss warships took up orbit around the colony and unleashed a massive planetary bombardment.
+
+All life upon the surface was extinguished.
+</PAGE>
+
+
+</COMMENT #############################################################>
+</DISPLAYTIME 5000>
+</BACKGROUND glue\paltb\TerranB.pcx>
+</FONTCOLOR glue\paltb\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"REVOLUTION"
+
+Secret Staging Area
+Second moon of Antiga Prime
+</PAGE>

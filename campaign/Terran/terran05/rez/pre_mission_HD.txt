@@ -1,0 +1,37 @@
+</COMMENT Establishing Shot for Terran Level 5>
+
+</DISPLAYTIME 0>
+</VIDEO interstitials\TR2010.webm>
+</TEXTBOX>
+In the wake of the chaos resulting from the Zerg invasion, The Sons of Korhal escaped with the stolen data discs.
+</PAGE>
+
+</DISPLAYTIME 0>
+</VIDEO interstitials\TR2020.webm>
+</TEXTBOX>
+Fleeing to the border colony of Antiga Prime, Arcturus' group now plans its next crucial moves against the Confederacy.
+</PAGE>
+
+</DISPLAYTIME 0>
+</VIDEO interstitials\TR2030.webm>
+</TEXTBOX>
+Thirteen hours after the evacuation of Mar Sara, Protoss warships took up orbit around the colony and unleashed a massive planetary bombardment.
+
+All life upon the surface was extinguished.
+</PAGE>
+
+</DISPLAYTIME 0>
+</VIDEOAUTOPROCEED interstitials\TR2035.webm>
+</PAGE>
+
+</COMMENT #############################################################>
+</DISPLAYTIME 5000>
+</BACKGROUND glue\paltb\TerranB.pcx>
+</FONTCOLOR glue\paltb\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"REVOLUTION"
+
+Secret Staging Area
+Second moon of Antiga Prime
+</PAGE>

@@ -1,0 +1,16 @@
+</COMMENT Establishing Shot for Zerg Level 10>
+
+</FADESPEED 100>
+</DISPLAYTIME 5000>
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palzc\ZergC.pcx>
+</FONTCOLOR glue\palzc\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"FULL CIRCLE"
+
+Zerg Swarm
+High orbit over
+Protoss Homeworld of Aiur
+</PAGE>

@@ -1,0 +1,36 @@
+</COMMENT Establishing Shot for Zerg Level 9>
+
+</DISPLAYTIME 0>
+</VIDEO interstitials\ZG4010.webm>
+</TEXTBOX>
+Tassadar and the Dark Templar Zeratul survived Kerrigan's vicious attacks, but their Templar armies have been decimated. 
+</PAGE>
+
+</DISPLAYTIME 0>
+</VIDEO interstitials\ZG4020.webm>
+</TEXTBOX>
+Kerrigan, left behind to hunt down and eradicate the remaining Protoss warriors, begins to scour the burning wastelands of Char for her elusive prey.
+</PAGE>
+
+</DISPLAYTIME 0>
+</VIDEO interstitials\ZG4030.webm>
+</TEXTBOX>
+Meanwhile, the entirety of the extended Zerg Swarm teleported through space-time and began its long awaited invasion of the hated Protoss Homeworld of Aiur.
+</PAGE>
+
+</DISPLAYTIME 0>
+</VIDEOAUTOPROCEED interstitials\ZG4035.webm>
+</PAGE>
+
+</COMMENT #############################################################>
+</DISPLAYTIME 5000>
+</BACKGROUND glue\palzc\ZergC.pcx>
+</FONTCOLOR glue\palzc\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"THE INVASION OF AIUR"
+
+Zerg Swarm
+High orbit over
+Protoss Homeworld of Aiur
+</PAGE>

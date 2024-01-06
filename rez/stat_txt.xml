@@ -53,7 +53,7 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_13</id>
-        <value>Spider Mine</value>
+        <value>Vulture Spider Mine</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_14</id>
@@ -65,7 +65,7 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_16</id>
-        <value>UED Phantom</value>
+        <value>Sarah Kerrigan</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_17</id>
@@ -77,11 +77,11 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_19</id>
-        <value>UED Scorpion</value>
+        <value>Jim Raynor</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_20</id>
-        <value>Infested Marine</value>
+        <value>Jim Raynor</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_21</id>
@@ -93,7 +93,7 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_23</id>
-        <value>UED Panzer</value>
+        <value>Edmund Duke</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_24</id>
@@ -101,7 +101,7 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_25</id>
-        <value>UED Panzer</value>
+        <value>Edmund Duke</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_26</id>
@@ -117,7 +117,7 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_29</id>
-        <value>Terran Battlecruiser</value>
+        <value>Norad II</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_30</id>
@@ -225,7 +225,7 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_56</id>
-        <value>UED Steel Legionnaire</value>
+        <value>Kukulza</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_57</id>
@@ -241,7 +241,7 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_60</id>
-        <value>Protoss Corsair</value>
+        <value>Protoss Escort</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_61</id>
@@ -249,7 +249,7 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_62</id>
-        <value>Zerg Devourer</value>
+        <value>Zerg Gorger</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_63</id>
@@ -309,7 +309,7 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_77</id>
-        <value>UED Valhalla</value>
+        <value>Fenix</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_78</id>
@@ -317,7 +317,7 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_79</id>
-        <value>Protoss High Templar</value>
+        <value>Tassadar</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_80</id>
@@ -389,7 +389,7 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_97</id>
-        <value>Zerg Lurker Egg</value>
+        <value>Zerg Impaler Egg</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_98</id>
@@ -409,11 +409,11 @@
     </string>
     <string>
         <id>FIRST_UNIT_STRING_102</id>
-        <value>Gerard DuGalle</value>
+        <value>Terran Battlecruiser</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_103</id>
-        <value>Zerg Lurker</value>
+        <value>Zerg Impaler</value>
     </string>
     <string>
         <id>FIRST_UNIT_STRING_104</id>
@@ -907,7 +907,7 @@
         <id>FIRST_UNIT_STRING_226</id>
         <value>Vespene Tank</value>
     </string>
-    <string>
+	<string>
         <id>LAST_UNIT_STRING</id>
         <value>Vespene Tank</value>
     </string>
@@ -921,11 +921,11 @@
     </string>
     <string>
         <id>STR_GHOST_GUN</id>
-        <value>C-10 Canister Rifle</value>
+        <value>Sy-Hunter</value>
     </string>
     <string>
         <id>STR_KERRIGAN_GHOST_GUN</id>
-        <value>Sitruc Laser Rifle</value>
+        <value>C-10 Canister Rifle</value>
     </string>
     <string>
         <id>STR_VULTURE_GRENADE</id>
@@ -933,7 +933,7 @@
     </string>
     <string>
         <id>STR_RAYNOR_VULTURE_GRENADE</id>
-        <value>"Venom" Laser</value>
+        <value>Grenade Repeater</value>
     </string>
     <string>
         <id>STR_GOLIATH_GUN</id>
@@ -977,7 +977,7 @@
     </string>
     <string>
         <id>STR_KAZANSKI_WRAITH_MISSILE</id>
-        <value>HEAT Rockets</value>
+        <value>Laser Cannon</value>
     </string>
     <string>
         <id>STR_KAZANSKI_WRAITH_LASER</id>
@@ -1021,7 +1021,7 @@
     </string>
     <string>
         <id>STR_DUKE_SIEGE_CANNON</id>
-        <value>105mm KwK L/28</value>
+        <value>Hughes</value>
     </string>
     <string>
         <id>STR_TURRET_MISSILE</id>
@@ -1221,7 +1221,7 @@
     </string>
     <string>
         <id>STR_GUNSHIP_BOMB</id>
-        <value>Neutron Discharge</value>
+        <value>Bombs</value>
     </string>
     <string>
         <id>STR_RAIDER_GUN</id>
@@ -1309,7 +1309,7 @@
     <string>
         <id>STR_RSRCH_MINES</id>
         <value>mResearch Spider Mines
-(Vulture and Scorpion ability)</value>
+(Vulture ability)</value>
     </string>
     <string>
         <id>STR_RSRCH_SIEGE</id>
@@ -1349,7 +1349,7 @@ Halves attack cooldown, increases movement speed by 50% for 296 frames</value>
     <string>
         <id>STR_USEMAGNA</id>
         <value>lLockdown
-Immobilizes target Mechanical unit for 408 frames. Damages mechanical parts, dealing 20 health damage over the effect duration</value>
+Immobilizes target Mechanical unit for 408 frames</value>
     </string>
     <string>
         <id>STR_USEMINES</id>
@@ -1386,7 +1386,7 @@ Deals 250 damage over 600 frames to Biological units in an area around the targe
     <string>
         <id>STR_YAMATO</id>
         <value>yYamato Gun
-Deals 260 + 130 Explosive damage in a very small area around a unit</value>
+Deals 150 + 70 Explosive damage in an area around a target unit</value>
     </string>
     <string>
         <id>STR_CLOAK</id>
@@ -1579,8 +1579,7 @@ Covers units with sticky goo in an area, slowing their movement speed by 50% and
     <string>
         <id>STR_INFBROOD_REQ</id>
         <value>Spawn Broodlings:
-   Evolve at Queen's Nest
-   Can't be used if controlling more than 64 Broodlings</value>
+   Evolve at Queen's Nest</value>
     </string>
     <string>
         <id>STR_PLAGUE_REQ</id>
@@ -1655,8 +1654,8 @@ Covers units with sticky goo in an area, slowing their movement speed by 50% and
     <string>
         <id>STR_PSISTORM</id>
         <value>tPsionic Storm
-Deals up to 135 area damage over time
-(9 every 7 frames, lasts 120 frames)</value>
+Deals up to 160 area damage over time
+(20 every 7 frames, lasts 60 frames)</value>
     </string>
     <string>
         <id>STR_HALLUCINATION</id>
@@ -1710,7 +1709,7 @@ lasts 1056 frames</value>
     </string>
     <string>
         <id>STR_T_ARMOR</id>
-        <value>Terran Infantry Armour</value>
+        <value>Terran Infantry Armor</value>
     </string>
     <string>
         <id>STR_T_VEHICLE_PLATING</id>
@@ -1960,12 +1959,12 @@ lasts 1056 frames</value>
     <string>
         <id>STR_UP_VULTURE_SPEED</id>
         <value>iResearch Ion Thrusters
-(Faster Vulture and Scorpion movement)</value>
+(Faster Vulture movement)</value>
     </string>
     <string>
         <id>STR_UP_WRAITH_WEAPON</id>
         <value>dResearch Dragon Catalyst
-(Increases Yamato damage by +130)</value>
+(Increases Yamato damage by +70)</value>
     </string>
     <string>
         <id>STR_UP_VESSEL_ENERGY</id>
@@ -1975,7 +1974,7 @@ lasts 1056 frames</value>
     <string>
         <id>STR_UP_GHOST_SIGHT</id>
         <value>oResearch Ocular Implants
-(Increase Sniper sight and attack range, Ghost ammo explosion damage)</value>
+(Increase Sniper sight range, Ghost ammo explosion damage)</value>
     </string>
     <string>
         <id>STR_UP_GHOST_ENERGY</id>
@@ -2035,12 +2034,12 @@ lasts 1056 frames</value>
     <string>
         <id>STR_UP_DEFILER_ENERGY</id>
         <value>mEvolve Metasynaptic Node
-(Increased Defiler energy capacity)</value>
+(Increased Defiler energy capacity and regen)</value>
     </string>
     <string>
         <id>STR_UP_DRAGOON_ATTACK_RANGE</id>
         <value>sDevelop Singularity Charge
-(Increase Dragoon attack range, Revenant attack speed)</value>
+(Increase Dragoon attack range)</value>
     </string>
     <string>
         <id>STR_UP_ZEALOT_SPEED</id>
@@ -2335,12 +2334,12 @@ lasts 1056 frames</value>
     <string>
         <id>STR_UP_PSHIELDS_REQ_1</id>
         <value>Shields L2 Require:
-   Cybernetics Core or Armory</value>
+   Cybernetics Core</value>
     </string>
     <string>
         <id>STR_UP_PSHIELDS_REQ_2</id>
         <value>Shields L3 Require:
-   Cybernetics Core or Armory</value>
+   Cybernetics Core</value>
     </string>
     <string>
         <id>STR_UP_PSHIELDS_REQ_3</id>
@@ -2450,7 +2449,7 @@ lasts 1056 frames</value>
     <string>
         <id>STR_MAKE_Z_HYDRALISK</id>
         <value>hMorph to Hydralisk
-(Multi-purpose warrior strain)</value>
+(Multi-purpose durable warrior strain)</value>
     </string>
     <string>
         <id>STR_MAKE_Z_ULTRALISK</id>
@@ -2474,8 +2473,8 @@ lasts 1056 frames</value>
     </string>
     <string>
         <id>STR_GUARDIAN_ASPECT</id>
-        <value>gGuardian Aspect
-(Anti-ground siege strain)</value>
+        <value>gGuardian Aspect
+(Flyer behemoth strain)</value>
     </string>
     <string>
         <id>STR_MAKE_Z_QUEEN</id>
@@ -2500,12 +2499,12 @@ lasts 1056 frames</value>
     <string>
         <id>STR_MAKE_T_MARINE</id>
         <value>mTrain Marine
-(Basic multi-purpose infantry)</value>
+(Cheap multi-purpose infantry)</value>
     </string>
     <string>
         <id>STR_MAKE_T_GHOST</id>
         <value>gTrain Ghost
-(Specialist infantry that can cloak and launch Nukes)</value>
+(Deadly snipers that can cloak and launch Nukes)</value>
     </string>
     <string>
         <id>STR_MAKE_T_FIREBAT</id>
@@ -2525,7 +2524,7 @@ lasts 1056 frames</value>
     <string>
         <id>STR_MAKE_T_TANK</id>
         <value>tBuild Siege Tank
-(Fragile siege vehicle)</value>
+(Bulky siege vehicle)</value>
     </string>
     <string>
         <id>STR_MAKE_T_SCV</id>
@@ -2560,27 +2559,27 @@ lasts 1056 frames</value>
     <string>
         <id>STR_MAKE_P_OBSERVER</id>
         <value>oBuild Observer
-(Invisible robotic detector)</value>
+(Invisible detector)</value>
     </string>
     <string>
         <id>STR_MAKE_P_PROBE</id>
         <value>pBuild Probe
-(Basic robotic worker)</value>
+(Basic worker robot)</value>
     </string>
     <string>
         <id>STR_MAKE_P_ZEALOT</id>
         <value>zWarp in Zealot
-(Bulky melee infantry, counts as both Khalai and Nerazim)</value>
+(Durable melee infantry)</value>
     </string>
     <string>
         <id>STR_MAKE_P_DRAGOON</id>
         <value>dWarp in Dragoon
-(Multi-purpose ranged warrior used by the Khalai)</value>
+(Multi-purpose rapid-fire ranged warrior)</value>
     </string>
     <string>
         <id>STR_MAKE_P_TEMPLAR</id>
         <value>tWarp in High Templar
-(Khalai support caster, can merge into Archons)</value>
+(Combat support caster, can merge into Archons)</value>
     </string>
     <string>
         <id>STR_MAKE_P_SHUTTLE</id>
@@ -2590,17 +2589,17 @@ lasts 1056 frames</value>
     <string>
         <id>STR_MAKE_P_SCOUT</id>
         <value>sWarp in Scout
-(Khalai heavy fighter spaceship)</value>
+(Heavy fighter spaceship)</value>
     </string>
     <string>
         <id>STR_MAKE_P_ARBITER</id>
         <value>aWarp in Arbiter
-(Advanced Khalai support caster that cloaks nearby units, regenerates own shields and energy on attack)</value>
+(Advanced support caster that cloaks nearby units, regenerates own shields and energy on attack)</value>
     </string>
     <string>
         <id>STR_MAKE_P_CARRIER</id>
         <value>cWarp in Carrier
-(Huge Khalai spaceships that can support planetary battles via mass-produced robotic fighter units)</value>
+(Huge spaceships that can support planetary battles via mass-produced robotic fighter units)</value>
     </string>
     <string>
         <id>STR_MAKE_P_INTERCEPTOR</id>
@@ -2687,17 +2686,17 @@ lasts 1056 frames</value>
     <string>
         <id>STR_BLD_LAIR</id>
         <value>lMutate into Lair
-(Enables Zerg to morph advanced structures and increases Larvae spawn rate)</value>
+(Enables Zerg to morph advanced structures)</value>
     </string>
     <string>
         <id>STR_BLD_HIVE</id>
         <value>hMutate into Hive
-(Enables Zerg to morph more advanced structures and increases Larvae spawn rate)</value>
+(Enables Zerg to morph more advanced structures)</value>
     </string>
     <string>
         <id>STR_BLD_GREATERSPIRE</id>
         <value>gMutate into Greater Spire
-(Allows Mutalisks to morph into Devourers and Guardians)</value>
+(Allows Mutalisks to morph into Gorgers and Guardians)</value>
     </string>
     <string>
         <id>STR_BLD_SPORE_COLONY</id>
@@ -3306,7 +3305,8 @@ lasts 1056 frames</value>
     <string>
         <id>STR_ULTRA_CAVERN_REQ</id>
         <value>Ultralisk Cavern Requires:
-   Hive</value>
+   Hive
+   At Most 4 Ultralisk Cavern</value>
     </string>
     <string>
         <id>STR_DEFILER_MOUND_REQ</id>
@@ -4583,13 +4583,13 @@ Ctrl+Click: Select Unit Type</value>
     </string>
     <string>
         <id>AI_TERRAN_12T</id>
-        <value>aBuild UED Panzer
+        <value>pBuild UED Panzer
 (Bulky slow-firing support vehicle)</value>
     </string>
     <string>
         <id>AI_CUSTOM_PROTOSS</id>
         <value>hBuild Hornet
-(Light multi-purpose robotic flyer that ignores armor)</value>
+(Light multipurpose robotic flyer that ignores armor)</value>
     </string>
     <string>
         <id>AI_PROTOSS_LO</id>
@@ -4609,7 +4609,7 @@ Spire</value>
     <string>
         <id>AI_PROTOSS_AREA</id>
         <value>aMorph Kukulza
-(Powerful Mutalisk strain with an empowered Glaive Wurm)</value>
+(Special Mutalisk strain with increased bounce damage and double shield damage)</value>
     </string>
     <string>
         <id>AI_PROTOSS_1</id>
@@ -4619,7 +4619,7 @@ Citadel of Adun</value>
     </string>
     <string>
         <id>AI_PROTOSS_2</id>
-        <value>eWarp in Revenant
+        <value>rWarp in Revenant
 (Resurrected Dark Templar warrior hidden in shadows, has a powerful melee attack)</value>
     </string>
     <string>
@@ -4630,12 +4630,12 @@ Armory</value>
     <string>
         <id>AI_PROTOSS_3R</id>
         <value>eBuild UED Todesritter
-(Heavy, slow moving mech that can use Charon Rockets)</value>
+(Heavy, slow moving mech)</value>
     </string>
     <string>
         <id>AI_PROTOSS_3G</id>
         <value>sBuild UED Scorpion
-(Slow firing raider unit that can lay mines)</value>
+(Slow firing raider unit)</value>
     </string>
     <string>
         <id>AI_PROTOSS_4</id>
@@ -4655,23 +4655,22 @@ Academy, Covert Ops</value>
     <string>
         <id>AI_PROTOSS_5B</id>
         <value>tTrain UED Phantom
-(Elite sniper unit that can become invisible but can't access Nukes)</value>
+(Elite sniper unit)</value>
     </string>
     <string>
         <id>AI_PROTOSS_6</id>
         <value>eTrain UED EMP Soldier
-(Frontline infantry that releases an EMP blast on death)</value>
+(Shockingly effective frontline units)</value>
     </string>
     <string>
         <id>AI_PROTOSS_7</id>
         <value>UED Valhalla Requires:
-Science Facility
-Attached Control Tower</value>
+Science Facility</value>
     </string>
     <string>
         <id>AI_PROTOSS_7B</id>
         <value>sBuild UED Skywing
-(Light rocket fighter that can use Charon Rockets, Detector)</value>
+(Light rocket fighter)</value>
     </string>
     <string>
         <id>AI_PROTOSS_7S</id>
@@ -4705,7 +4704,7 @@ Yamato Gun Research</value>
     </string>
     <string>
         <id>AI_PROTOSS_10</id>
-        <value>Protoss 10 - Mini-Towns</value>
+        <value>Ion Cannon</value>
     </string>
     <string>
         <id>AI_PROTOSS_10C</id>
@@ -4805,56 +4804,49 @@ Yamato Gun Research</value>
     </string>
     <string>
         <id>AI_ZERG_10TL</id>
-        <value>k&#4;Crystal Transducers
-Arbiters regenerate a small amount of Shields and Energy when attacking</value>
+        <value>Zerg 10 - Left Teal (Attack)</value>
     </string>
     <string>
         <id>AI_ZERG_10TR</id>
-        <value>k&#4;Precision Aim
-Skywing Targeting Lasers deal 4+1 Normal damage, benefit from Vehicle Weapons upgrades</value>
+        <value>Zerg 10 - Right Teal (Support)</value>
     </string>
     <string>
         <id>AI_ZERG_10YL</id>
-        <value>k&#4;Neutron Discharge
-Revenants deal 45+3 single-target Explosive Damage when attacking units in Melee range
-Revenants regain 8 Shields whenever they use Neutron Discharge</value>
+        <value>Zerg 10 - Left Yellow (Support)</value>
     </string>
     <string>
         <id>AI_ZERG_10YR</id>
         <value>k&#4;Reactive Regeneration
-Sunken Colonies regenerate at double the rate of other Zerg buildings when Tissue Mending is researched</value>
+Sunken Colonies regenerate at double the rate of other Zerg buildings</value>
     </string>
     <string>
         <id>AI_ZERG_10R</id>
-        <value>k&#4;Always Strikes Twice
-Valhalla attacks benefit from Plasma Shield upgrades, recover part of their damage as Shields, and deal their damage in two increments</value>
+        <value>k&#4;Forged in Flames
+Fenix' shields regenerate at an extraordinary speed, increased by Plasma Shields upgrades. Fenix can revive ONCE after dying.</value>
     </string>
     <string>
         <id>AI_DEFAULT_STAGING</id>
-        <value>k&#4;Delayed Payload
-Ghosts' rounds deal 3 additional true damage shortly after penetrating their targets.
-Researching Ocular Implants lets Ghosts identify weakspots in their targets' armor (+2 damage)</value>
+        <value>k&#4;Thermal Shock
+Ghost attacks deal an additional 5 concussive damage after a small delay from when their laser strikes its target. Researching Ocular Implants lets Ghosts identify weakspots in their targets' armor (+2 damage)</value>
     </string>
     <string>
         <id>AI_SUICIDE_MISSION</id>
-        <value>k&#4;HEAT Ammunition
-Panzer attacks deal additional 28+2 normal damage against their primary target
-Panzers can benefit from an upgrade that enables their shields and attack 20% faster on full shields</value>
+        <value>k&#4;Transcendence
+When below 50% of the given resource, Tassadar rapidly exchanges Health for Shields above 50% Health, and Shields for Health above 50% Shields.</value>
     </string>
     <string>
         <id>AI_SUICIDE_RANDOM</id>
-        <value>k&#4;Unholy Champion
-Todesritters attack faster the longer they keep attacking ground targets, and shoot continuously while moving towards their target</value>
+        <value>PLACEHOLDER TOOLTIP</value>
     </string>
     <string>
         <id>AI_DECLARE_ENEMY</id>
-        <value>k&#4;Destiny
-EMP Troopers explode on death, depleting nearby units' shields and energy</value>
+        <value>k&#4;Crystal Mending
+Regenerates nearby mineral fields. Available only on Aiur.</value>
     </string>
     <string>
         <id>AI_DECLARE_ALLY</id>
-        <value>k&#4;Rocket Pods
-This unit can use Charon Rockets after they are unlocked by Advanced Rocketry</value>
+        <value>k&#4;Volatile Growth
+Daggoth's Sunken Colonies regenerate back any damaged tissues almost immediately</value>
     </string>
     <string>
         <id>AI_MOVE_TEMPLAR</id>
@@ -4868,8 +4860,8 @@ Zeratul can use void energies to mend the tissues and platings of nearby warrior
     </string>
     <string>
         <id>AI_ENTER_A_BUNKER</id>
-        <value>k&#4;Forged in Flames
-Fenix can adapt to various combat conditions by using different weapons based on range, and inspires nearby units to attack faster</value>
+        <value>k&#4;UNUSED
+Please report if seen</value>
     </string>
     <string>
         <id>AI_VALUE_THIS_AREA</id>
@@ -4878,53 +4870,46 @@ This unit horrifies some nearby enemies, slowing their attack speed</value>
     </string>
     <string>
         <id>AI_CLEAR_COMBAT</id>
-        <value>k&#4;Unchained
-All disables and slows last half as long on this unit</value>
+        <value>k&#4;Fleet Carrier
+Graff Zeppelin launches a Wraith every third attack, at the cost of 20 Vespene Gas</value>
     </string>
     <string>
         <id>AI_DEBUG_1</id>
-        <value>Ensnare:
-   Research at Covert Ops</value>
+        <value>k&#4;Forged in Flames
+Fenix can adapt to various combat conditions by using different weapons based on range, and inspires nearby units to attack faster</value>
     </string>
     <string>
         <id>AI_DEBUG_2</id>
-        <value>eResearch Ensnare
-(Phantom ability)</value>
-    </string>
-    <string>
-        <id>AI_DEBUG_3</id>
-        <value>Hallucination:
-   Research at Science Facility</value>
-    </string>
-    <string>
-        <id>AI_DEBUG_4</id>
-        <value>hResearch Hallucination
-(Valhalla ability)</value>
-    </string>
-    <string>
-        <id>AI_DEBUG_5</id>
-        <value>Psionic Storm:
-   Develop at Science Facility</value>
-    </string>
-    <string>
-        <id>AI_DEBUG_1_LOC</id>
-        <value>pResearch Psionic Storm
-(Valhalla ability)</value>
-    </string>
-    <string>
-        <id>AI_DEBUG_2_LOC</id>
-        <value>aSalvage
+         <value>aSalvage
 (IMMEDIATELY DESTROYS this unit and refunds 25% of its mineral cost)</value>
     </string>
     <string>
+        <id>AI_DEBUG_3</id>
+        <value>Debug Script 3 (general)</value>
+    </string>
+    <string>
+        <id>AI_DEBUG_4</id>
+        <value>Debug Script 4 (general)</value>
+    </string>
+    <string>
+        <id>AI_DEBUG_5</id>
+        <value>Debug Script 5 (general)</value>
+    </string>
+    <string>
+        <id>AI_DEBUG_1_LOC</id>
+        <value>Debug Script 1 (location)</value>
+    </string>
+    <string>
+        <id>AI_DEBUG_2_LOC</id>
+        <value>Debug Script 2 (location)</value>
+    </string>
+    <string>
         <id>AI_DEBUG_3_LOC</id>
-        <value>k&#4;Corrosive Spores
-Unclean Ones deal damage over time to all nearby units. Higher damage dealt on max Energy.</value>
+        <value>Debug Script 3 (location)</value>
     </string>
     <string>
         <id>AI_DEBUG_4_LOC</id>
-        <value>k&#4;Nano-mines
-Raynor's grenades reform into temporary Spider Mines every 4th attack, up to 3 placed at a time. Whenever Raynor's mines detonate, they disperse into nanites that heal Raynor for 15 HP.</value>
+        <value>Debug Script 4 (location)</value>
     </string>
     <string>
         <id>AI_DEBUG_5_LOC</id>
@@ -5300,11 +5285,11 @@ Raynor's grenades reform into temporary Spider Mines every 4th attack, up to 3 p
     </string>
     <string>
         <id>STR_DEVOURER_PUKE</id>
-        <value>Corrosive Acid</value>
+        <value>Crusher Jaws</value>
     </string>
     <string>
         <id>STR_LURKER_SPINES</id>
-        <value>Subterranean Spines</value>
+        <value>Piercing Tentacle</value>
     </string>
     <string>
         <id>STR_CORSAIR_LASER</id>
@@ -5338,18 +5323,15 @@ Raynor's grenades reform into temporary Spider Mines every 4th attack, up to 3 p
     </string>
     <string>
         <id>STR_HEAL</id>
-        <value>aHeal
-Heals 2 HP per 1 Energy for the affected Organic unit</value>
+        <value>aHeal</value>
     </string>
     <string>
         <id>STR_CURE</id>
-        <value>rRestoration
-Removes all negative debuffs from the target unit</value>
+        <value>rRestoration</value>
     </string>
     <string>
         <id>STR_MYOPIA</id>
-        <value>fOptical Flare
-Reduces target units' Vision Range to 1, prevents it from Detecting</value>
+        <value>fOptical Flare</value>
     </string>
     <string>
         <id>STR_CURE_REQ</id>
@@ -5363,16 +5345,16 @@ Reduces target units' Vision Range to 1, prevents it from Detecting</value>
     </string>
     <string>
         <id>STR_LURKERASPECT</id>
-        <value>Lurker Aspect</value>
+        <value>Impaler Aspect</value>
     </string>
     <string>
         <id>STR_RSRCH_LURKERASPECT</id>
-        <value>lEvolve Lurker Aspect
+        <value>iEvolve Impaler Aspect
 (Hydralisk ability)</value>
     </string>
     <string>
         <id>STR_RSRCH_LURKERASPECT_REQ</id>
-        <value>Lurker Aspect:
+        <value>Impaler Aspect:
    Requires Lair</value>
     </string>
     <string>
@@ -5421,8 +5403,7 @@ Reduces target units' Vision Range to 1, prevents it from Detecting</value>
     </string>
     <string>
         <id>STR_DISRUPTOR</id>
-        <value>dDisruption Web
-Creates a weapon-disabling zone on the ground</value>
+        <value>dDisruption Web</value>
     </string>
     <string>
         <id>STR_MINDCONTROL</id>
@@ -5431,13 +5412,11 @@ Dominates the target unit to fight for you</value>
     </string>
     <string>
         <id>STR_PSYFEEDBACK</id>
-        <value>fFeedback
-Shocks the target Caster, removing all Energy and dealing that much damage</value>
+        <value>fFeedback</value>
     </string>
     <string>
         <id>STR_USEPARALIZE</id>
-        <value>eMaelstrom
-Incapacitates Organic units in an area for 176 frames</value>
+        <value>eMaelstrom</value>
     </string>
     <string>
         <id>STR_DISRUPTOR_REQ</id>
@@ -5471,11 +5450,11 @@ Incapacitates Organic units in an area for 176 frames</value>
     </string>
     <string>
         <id>STR_MEDIC_ENERGY</id>
-        <value>Caduceus Reactor</value>
+        <value>Field Hospitals</value>
     </string>
     <string>
         <id>STR_MISSILE_BOOST</id>
-        <value>Advanced Rocketry</value>
+        <value>Charon Rocket Battery</value>
     </string>
     <string>
         <id>STR_ULTRA_SPEED</id>
@@ -5487,7 +5466,7 @@ Incapacitates Organic units in an area for 176 frames</value>
     </string>
     <string>
         <id>STR_CORSAIR_ENERGY</id>
-        <value>Argus Jewel</value>
+        <value>Photon Overcharge</value>
     </string>
     <string>
         <id>STR_DARCHON_ENERGY</id>
@@ -5495,19 +5474,18 @@ Incapacitates Organic units in an area for 176 frames</value>
     </string>
     <string>
         <id>STR_UP_MEDIC_ENERGY</id>
-        <value>dResearch Caduceus Reactor
-(Provides Medics with rapid regeneration below 25 energy, limits max energy to 100)</value>
+        <value>dResearch Field Hospitals
+(Bio regen aura for Barracks)</value>
     </string>
     <string>
         <id>STR_UP_T_MISSILE_BOOST</id>
-        <value>cResearch Advanced Rocketry
-(Enhances units that use rockets)</value>
+        <value>cResearch Charon Rocket Battery
+(Enables Skywings and Todesritters to use their rocket weaponry)</value>
     </string>
     <string>
         <id>STR_UP_Z_ULTRA_SPEED</id>
         <value>aEvolve Anabolic Synthesis
-(Faster Ultralisk Movement
-Faster Ultralisk regen on creep)</value>
+(Faster Ultralisk Movement and Regen)</value>
     </string>
     <string>
         <id>STR_UP_Z_ULTRA_ARMOR</id>
@@ -5522,9 +5500,7 @@ Faster Ultralisk regen on creep)</value>
     <string>
         <id>STR_UP_DARCHON_ENERGY</id>
         <value>tDevelop Argus Talisman
-(+50 Dark Archon max energy 
-HP and Mana Regen for Nerazim
-Decreased Khalai Shield Regen)</value>
+(+50 Dark Archon energy)</value>
     </string>
     <string>
         <id>STR_UP_T_MISSILE_BOOST_REQ</id>
@@ -5533,33 +5509,27 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>STR_DEVOURER_ASPECT</id>
-        <value>dDevourer Aspect
-(Anti-air support strain)</value>
+        <value>rGorger Aspect</value>
     </string>
     <string>
         <id>STR_MAKE_Z_LURKER</id>
-        <value>lMorph to Lurker
-(Ambusher strain)</value>
+        <value>iMorph to Impaler</value>
     </string>
     <string>
         <id>STR_MAKE_T_MEDIC</id>
-        <value>cTrain Medic
-(Support healer caster)</value>
+        <value>cTrain Medic</value>
     </string>
     <string>
         <id>STR_MAKE_T_FRIGATE</id>
-        <value>yBuild Valkyrie
-(Anti-air area control frigate)</value>
+        <value>yBuild Valkyrie</value>
     </string>
     <string>
         <id>STR_MAKE_P_CORSAIR</id>
-        <value>oWarp in Corsair
-(Anti-air area denial fighter)</value>
+        <value>oWarp in Escort</value>
     </string>
     <string>
         <id>STR_MAKE_P_DTEMPLAR</id>
-        <value>kWarp in Dark Templar
-(Invisible Nerazim warrior)</value>
+        <value>kWarp in Dark Templar</value>
     </string>
     <string>
         <id>STR_MEDIC_REQ</id>
@@ -5579,12 +5549,12 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>STR_DEVOURER_REQ</id>
-        <value>Devourer Aspect Requires:
+        <value>Gorger Aspect Requires:
    Greater Spire</value>
     </string>
     <string>
         <id>STR_LURKER_REQ</id>
-        <value>Lurker Aspect:
+        <value>Impaler Aspect:
    Evolve at Hydralisk Den</value>
     </string>
     <string>
@@ -5777,11 +5747,11 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>AI_PROTOSS_B1A</id>
-        <value>Brood Wars Protoss 1 - Town A</value>
+        <value>If you can see this something is wrong</value>
     </string>
     <string>
         <id>AI_PROTOSS_B1B</id>
-        <value>Brood Wars Protoss 1 - Town B</value>
+        <value>uBreed a Hunter Killer</value>
     </string>
     <string>
         <id>AI_PROTOSS_B1C</id>
@@ -6357,97 +6327,79 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>AI_ZERG_B9B</id>
-        <value>aEvolve Bone Mastery
-(New Broodlings don't expire, max 64 Broodlings.
-Broodlings move faster on Creep)</value>
+        <value>Brood Wars Zerg 9 - Town B</value>
     </string>
     <string>
         <id>AI_ZERG_B9C</id>
-        <value>Bone Mastery</value>
+        <value>Brood Wars Zerg 9 - Town C</value>
     </string>
     <string>
         <id>AI_ZERG_B9D</id>
-        <value>Bone Mastery Requires:
-    Spawn Broodlings
-	Hive</value>
+        <value>Brood Wars Zerg 9 - Town D</value>
     </string>
     <string>
         <id>AI_ZERG_B9E</id>
-        <value>eResearch Thunder Boosters
-(EMP Troopers move faster, dash when targeting nearby units)</value>
+        <value>Brood Wars Zerg 9 - Town E</value>
     </string>
     <string>
         <id>AI_ZERG_B9F</id>
-        <value>Thunder Boosters</value>
+        <value>Brood Wars Zerg 9 - Town F</value>
     </string>
     <string>
         <id>AI_ZERG_B10A</id>
-        <value>Thunder Boosters Require:
-    Academy</value>
+        <value>Brood Wars Zerg 10 - Town A</value>
     </string>
     <string>
         <id>AI_ZERG_B10B</id>
-        <value>gResearch Gotterdammerung
-(Enables Shield regen for Panzers
-Panzers shoot 20% faster on Full Shields)</value>
+        <value>Brood Wars Zerg 10 - Town B</value>
     </string>
     <string>
         <id>AI_ZERG_B10C</id>
-        <value>Gotterdammerung</value>
+        <value>Brood Wars Zerg 10 - Town C</value>
     </string>
     <string>
         <id>AI_ZERG_B10D</id>
-        <value>Gotterdammerung Requires:
-    Machine Shop</value>
+        <value>Brood Wars Zerg 10 - Town D</value>
     </string>
     <string>
         <id>AI_ZERG_B10E</id>
-        <value>Research Charon Rocket Battery:
-   Requires Armory</value>
+        <value>Brood Wars Zerg 10 - Town E</value>
     </string>
     <string>
         <id>AI_ZERG_B10F</id>
-        <value>Research Charon Rocket Battery:
-   Requires Armory</value>
+        <value>Brood Wars Zerg 10 - Town F</value>
     </string>
     <string>
         <id>AI_ZERG_LOX</id>
-        <value>Lateral Spikes Require:
-    Lurker Aspect Research, Hive</value>
+        <value>Expansion Zerg Campaign Easy</value>
     </string>
     <string>
         <id>AI_ZERG_MEDX</id>
-        <value>eEvolve Lateral Spikes
-(Lurkers move and burrow faster)</value>
+        <value>Expansion Zerg Campaign Medium</value>
     </string>
     <string>
         <id>AI_ZERG_HIX</id>
-        <value>Bionanites</value>
+        <value>Expansion Zerg Campaign Difficult</value>
     </string>
     <string>
         <id>AI_ZERG_AREAX</id>
-        <value>Bionanites Require:
-    Stim Packs</value>
+        <value>Expansion Zerg Campaign Area Town</value>
     </string>
     <string>
         <id>AI_PROTOSS_LOX</id>
-        <value>bResearch Bionanites
-(Nanites repair and heal units around Science Vessels at the cost of slowing down energy regen
-Multiple nanite fields interfere with eachother and damage other Vessels)</value>
+        <value>Expansion Protoss Campaign Easy</value>
     </string>
     <string>
         <id>AI_PROTOSS_MEDX</id>
-         <value>Crystalline Cores</value>
+        <value>Expansion Protoss Campaign Medium</value>
     </string>
     <string>
         <id>AI_PROTOSS_HIX</id>
-         <value>Crystalline Cores Require:
-		 Templar Archives</value>
+        <value>Expansion Protoss Campaign Difficult</value>
     </string>
     <string>
         <id>AI_PROTOSS_AREAX</id>
-         <value>rDevelop Crystaline Cores
-(Faster Robotic unit movement, Casters cannot gain or keep Energy)</value>
+        <value>Expansion Protoss Campaign Area Town</value>
     </string>
     <string>
         <id>AI_TERRAN_LOX</id>
@@ -6460,8 +6412,7 @@ Multiple nanite fields interfere with eachother and damage other Vessels)</value
     <string>
         <id>AI_TERRAN_HIX</id>
         <value>oDevelop One with the Khala
-(Khalai units restore shields to nearby Khalai units after attacking, 
-slower Nerazim shield regen and combat Robotics movement)</value>
+(Khalai units restore shields to nearby Khalai units after attacking)</value>
     </string>
     <string>
         <id>AI_TERRAN_AREAX</id>
@@ -6470,8 +6421,7 @@ slower Nerazim shield regen and combat Robotics movement)</value>
     <string>
         <id>AI_TERRAN_SUPERX</id>
         <value>nEvolve Tissue Mending
-(Units and Colonies on Creep regenerate life faster.
-Bonus doubled for Burrowed units)</value>
+(Faster burrowed unit and Sunken Colony regen)</value>
     </string>
     <string>
         <id>AI_PROTOSS_SUPERX</id>
@@ -6479,45 +6429,40 @@ Bonus doubled for Burrowed units)</value>
     </string>
     <string>
         <id>AI_ZERG_SUPERX</id>
-        <value>aResearch Staballoy Armor
+        <value>aUpgrade  Staballoy Armor
 (Mechanical unit regen)</value>
     </string>
     <string>
         <id>AI_SET_COMMAND_TARGET</id>
-        <value>Field Hospitals</value>
+        <value>Set Generic Command Target</value>
     </string>
     <string>
         <id>AI_SET_UNIT_PATROL</id>
-        <value>dResearch Field Hospitals
-(Bio regen aura for Barracks)</value>
+        <value>Make These Units Patrol</value>
     </string>
     <string>
         <id>AI_ENTER_TRANSPORTSTR</id>
-        <value>Acid Reabsorption</value>
+        <value>Enter Transport</value>
     </string>
     <string>
         <id>AI_EXIT_TRANSPORTSTR</id>
-        <value>Acid Reabsorption Requires:
-   Hive</value>
+        <value>Exit Transport</value>
     </string>
     <string>
         <id>AI_SHAREVISION_0</id>
-        <value>aEvolve Acid Reabsorption
-(Faster Hydralisk Attack)</value>
+        <value>Turn ON Shared Vision for Player 1</value>
     </string>
     <string>
         <id>AI_SHAREVISION_1</id>
-        <value>Voracity</value>
+        <value>Turn ON Shared Vision for Player 2</value>
     </string>
     <string>
         <id>AI_SHAREVISION_2</id>
-        <value>Voracity Requires:
-   Defiler Mound</value>
+        <value>Turn ON Shared Vision for Player 3</value>
     </string>
     <string>
         <id>AI_SHAREVISION_3</id>
-        <value>oEvolve Voracity
-(Ultralisks heal on attack, heal more on creep)</value>
+        <value>Turn ON Shared Vision for Player 4</value>
     </string>
     <string>
         <id>AI_SHAREVISION_4</id>
@@ -6535,49 +6480,43 @@ Bonus doubled for Burrowed units)</value>
     </string>
     <string>
         <id>AI_SHAREVISION_7</id>
-        <value>Advanced Mechanics</value>
+        <value>Turn ON Shared Vision for Player 8</value>
     </string>
     <string>
         <id>AI_UNSHAREVISION_0</id>
-        <value>Advanced Mechanics Require:
-	Science Facility</value>
+        <value>Turn OFF Shared Vision for Player 1</value>
     </string>
     <string>
         <id>AI_UNSHAREVISION_1</id>
-        <value>cResearch Advanced Mechanics
-(Vultures attack faster, Goliaths move faster, Siege Tanks deploy faster)</value>
+        <value>Turn OFF Shared Vision for Player 2</value>
     </string>
     <string>
         <id>AI_UNSHAREVISION_2</id>
-        <value>Safety Protocols</value>
+        <value>Turn OFF Shared Vision for Player 3</value>
     </string>
     <string>
         <id>AI_UNSHAREVISION_3</id>
-         <value>aResearch Safety Protocols
-(Phantom, Scorpion, EMP Soldier, Skywing and Todesritter regenerate shields at a higher rate)</value>
+        <value>Turn OFF Shared Vision for Player 4</value>
     </string>
     <string>
         <id>AI_UNSHAREVISION_4</id>
-        <value>Parasitic Symbiosis</value>
+        <value>Turn OFF Shared Vision for Player 5</value>
     </string>
     <string>
         <id>AI_UNSHAREVISION_5</id>
-        <value>pEvolve Parasitic Symbiosis
-(Devourers spawn a Scourge on death)</value>
+        <value>Turn OFF Shared Vision for Player 6</value>
     </string>
     <string>
         <id>AI_UNSHAREVISION_6</id>
-        <value>Overclocking</value>
+        <value>Turn OFF Shared Vision for Player 7</value>
     </string>
     <string>
         <id>AI_UNSHAREVISION_7</id>
-        <value>Overclocking Requires:
-	Science Facility</value>
+        <value>Turn OFF Shared Vision for Player 8</value>
     </string>
     <string>
         <id>AI_NUKE_HERESTR</id>
-        <value>oResearch Overclocking
-(Wraiths consume energy on attack, attack faster above 25 energy)</value>
+        <value>AI Nuke Here</value>
     </string>
     <string>
         <id>AI_HARASS_HERESTR</id>
@@ -6585,7 +6524,7 @@ Bonus doubled for Burrowed units)</value>
     </string>
     <string>
         <id>AI_STR_JUNK_YARD_DOG</id>
-        <value>Lateral Spikes</value>
+        <value>Set Unit Order To: Junk Yard Dog</value>
     </string>
     <string>
         <id>STR_VIEWPLAYERS</id>
@@ -6637,50 +6576,62 @@ Bonus doubled for Burrowed units)</value>
     </string>
 		<string>
         <id>FIRST_UNIT_STRING-261</id>
-        <value>Taar Atril</value>
-    </string>
-	<string>
-        <id>FIRST_UNIT_STRING-262</id>
-        <value>Jim Raynor</value>
-    </string>
-	<string>
-        <id>FIRST_UNIT_STRING-263</id>
-        <value>Norad II</value>
-    </string>
-	<string>
-        <id>FIRST_UNIT_STRING-264</id>
-        <value>Confederate Battlecruiser</value>
-    </string>
-	<string>
-        <id>FIRST_UNIT_STRING-265</id>
         <value>Leviathan</value>
     </string>
 	<string>
-        <id>FIRST_UNIT_STRING-266</id>
+        <id>FIRST_UNIT_STRING-262</id>
         <value>Graff Zeppelin</value>
     </string>
 	<string>
-        <id>FIRST_UNIT_STRING-267</id>
+        <id>FIRST_UNIT_STRING-263</id>
         <value>Bismarck</value>
     </string>
 	<string>
-        <id>FIRST_UNIT_STRING-268</id>
+        <id>FIRST_UNIT_STRING-264</id>
         <value>Stalingrad</value>
     </string>
 	<string>
+        <id>FIRST_UNIT_STRING-265</id>
+        <value>Norad II</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-266</id>
+        <value>Infested Kerrigan</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-267</id>
+        <value>Infested Kerrigan</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-268</id>
+        <value>Grendel Cerebrate</value>
+    </string>
+	<string>
         <id>FIRST_UNIT_STRING-269</id>
-        <value>UNUSED</value>
+        <value>Baelrog Cerebrate</value>
     </string>
 	<string>
         <id>FIRST_UNIT_STRING-270</id>
-        <value>Infested Kerrigan</value>
+        <value>Protoss Zealot</value>
     </string>
 	<string>
         <id>FIRST_UNIT_STRING-271</id>
-        <value>Infested Kerrigan</value>
+        <value>Protoss Dragoon</value>
     </string>
 	<string>
         <id>FIRST_UNIT_STRING-272</id>
-        <value>Tom Kazansky</value>
+        <value>Terran Marine</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-273</id>
+        <value>Tassadar</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-274</id>
+        <value>Protoss Shuttle</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-275</id>
+        <value>Resource Transport</value>
     </string>
 </strings>

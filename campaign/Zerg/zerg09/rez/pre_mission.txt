@@ -1,0 +1,28 @@
+</COMMENT Establishing Shot for Zerg Level 9>
+
+</FADESPEED 100>
+</DISPLAYTIME 34000>
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palza\Blank.pcx>
+</FONTCOLOR glue\palza\tfont.pcx>
+
+</SCREENLEFT>
+Tassadar and the Dark Templar Zeratul survived Kerrigan's vicious attacks, but their Templar armies have been decimated. Kerrigan, left behind to hunt down and eradicate the remaining Protoss warriors, begins to scour the burning wastelands of Char for her elusive prey.
+
+Meanwhile, the entirety of the extended Zerg Swarm teleported through space-time and began its long awaited invasion of the hated Protoss Homeworld of Aiur.
+
+</PAGE>
+
+</COMMENT #############################################################>
+</DISPLAYTIME 5000>
+</BACKGROUND glue\palzc\ZergC.pcx>
+</FONTCOLOR glue\palzc\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"THE INVASION OF AIUR"
+
+Zerg Swarm
+High orbit over
+Protoss Homeworld of Aiur
+</PAGE>

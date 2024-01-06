@@ -1,0 +1,15 @@
+</COMMENT Establishing Shot for Protoss Level 6>
+
+</FADESPEED 100>
+</DISPLAYTIME 5000>
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palpb\ProtossB.pcx>
+</FONTCOLOR glue\palpb\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"INTO THE DARKNESS"
+
+Protoss Command Ship Gantrithor
+Low orbit over the planet Char
+</PAGE>

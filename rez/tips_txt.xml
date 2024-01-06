@@ -1,7 +1,7 @@
 <strings>
     <string>
         <id>STR_TIP_TUT1</id>
-        <value>UED forces will often be able to access both their Colonial and elite troops.</value>
+        <value>Click on NEXT TIP to cycle through all available tips. You can activate this help menu at any time by clicking on the MENU button and choosing HELP.</value>
     </string>
     <string>
         <id>STR_TIP_T1</id>
@@ -89,7 +89,7 @@
     </string>
     <string>
         <id>STR_TIP_T8</id>
-        <value>In UEDAIP Vanilla, Yamato Cannons deal splash damage around their main target.</value>
+        <value>Lift-off can be used to not only secure expansions early, but also bring production structures to islands that need reinforcement.</value>
     </string>
     <string>
         <id>STR_TIP_G14</id>
@@ -101,7 +101,7 @@
     </string>
     <string>
         <id>STR_TIP_T9</id>
-        <value>The more overwhelming the army, the less severe the losses. Make sure you're not just throwing your units into a meatgrinder.</value>
+        <value>In UEDAIP Vanilla, Yamato Cannons are cheaper to cast and deal splash damage around their main target.</value>
     </string>
     <string>
         <id>STR_TIP_G16</id>
@@ -113,7 +113,7 @@
     </string>
     <string>
         <id>STR_TIP_T10</id>
-        <value>The Ion Cannon will fire over all units flying over open space. Its projectile has a significant delay at long ranges, but is absolutely devastating if it hits.</value>
+        <value>The more overwhelming the army, the less severe the losses. Make sure you're not just throwing your units into a meatgrinder - it's better to wait for some four tanks that could do some damage, instead of suiciding two of them into enemy fortifications.</value>
     </string>
     <string>
         <id>STR_TIP_G18</id>
@@ -125,7 +125,7 @@
     </string>
     <string>
         <id>STR_TIP_Z1</id>
-        <value>All Zerg buildings, except the Hatchery, Creep Colony and Extractor, must be constructed on creep. Creep can be created by building a Hatchery or a Creep Colony.</value>
+        <value>The Protoss get better and better at dealing with large groups of enemies over time. Try to swarm them early, or establish good map control to deny them effective Tier 3 unit usage.</value>
     </string>
     <string>
         <id>STR_TIP_G20</id>
@@ -137,7 +137,7 @@
     </string>
     <string>
         <id>STR_TIP_Z2</id>
-        <value>Daggoth's Tiamat Brood has access to powerful Sunken Colonies and Hunter Killers, that regenerate their health with incredible speed.</value>
+        <value>The Ion Cannon will fire over all units flying over open space. Its projectile has a significant delay at long ranges, but is absolutely devastating if it hits.</value>
     </string>
     <string>
         <id>STR_TIP_G22</id>
@@ -149,7 +149,7 @@
     </string>
     <string>
         <id>STR_TIP_Z3</id>
-        <value>The Baelrog Brood receives resources from sacrifices, as well as from killing enemy units.</value>
+        <value>All Zerg buildings, except the Hatchery, Creep Colony and Extractor, must be constructed on creep. Creep can be created by building a Hatchery or a Creep Colony.</value>
     </string>
     <string>
         <id>STR_TIP_G24</id>
@@ -161,7 +161,7 @@
     </string>
     <string>
         <id>STR_TIP_Z4</id>
-        <value>Groups of enemies that are hostile to eachother can fight eachother without your intervention.</value>
+        <value>Daggoth's Tiamat Brood has access to powerful Sunken Colonies and Hunter Killers, that regenerate their health with incredible speed.</value>
     </string>
     <string>
         <id>STR_TIP_G26</id>
@@ -173,7 +173,7 @@
     </string>
     <string>
         <id>STR_TIP_Z5</id>
-        <value>Use ALT+S to quickly save a mission and ALT+L to quickly load a mission.</value>
+        <value>The Baelrog Brood receives resources from sacrifices, as well as from killing enemy units. Make sure to keep it well-fed, or else it may want to take a bite of your Brood by force.</value>
     </string>
     <string>
         <id>STR_TIP_G28</id>
@@ -185,7 +185,7 @@
     </string>
     <string>
         <id>STR_TIP_Z6</id>
-        <value>Kerrigan is a very powerful hero that can kill groups of units on her own, but even she can fall without support.</value>
+        <value>Groups of enemies that are hostile to eachother can fight eachother without your intervention. Don't be surprised if the map state changes a bit without your knowledge!</value>
     </string>
     <string>
         <id>STR_TIP_G30</id>
@@ -197,7 +197,7 @@
     </string>
     <string>
         <id>STR_TIP_Z7</id>
-        <value>Offense is the best defense. Exploit gaps in enemy defense to take out enemy bases before they can hit you with their full might.</value>
+        <value>If you're struggling, don't be afraid to SAVE. Use ALT+S to quickly SAVE a mission and ALT+L to quickly LOAD a mission.</value>
     </string>
     <string>
         <id>STR_TIP_G32</id>
@@ -209,7 +209,7 @@
     </string>
     <string>
         <id>STR_TIP_Z8</id>
-        <value>Some Dark Templar may try to run straight past your units, or even use Shuttles to escape. Make sure to maintain good vision of each exit.</value>
+        <value>Kerrigan is a very powerful hero that can kill groups of units on her own, but even she can fall without support. Make sure to keep track of where she is, and how healthy she is!</value>
     </string>
     <string>
         <id>STR_TIP_G34</id>
@@ -221,7 +221,7 @@
     </string>
     <string>
         <id>STR_TIP_Z9</id>
-        <value>The Shelak Tribe has powerful High Templar that can use Psionic Storms to make their fellow warriors more powerful.</value>
+        <value>Offense is the best defense. Exploit gaps in enemy defense to take out enemy bases before they can hit you with their full might.</value>
     </string>
     <string>
         <id>STR_TIP_G36</id>
@@ -229,7 +229,7 @@
     </string>
     <string>
         <id>STR_TIP_Z10</id>
-        <value>In some missions, you may have an increased supply cap.</value>
+        <value>Some Dark Templar may try to run straight past your units, or even use Shuttles to escape. Make sure to maintain good vision of each exit.</value>
     </string>
     <string>
         <id>STR_TIP_G37</id>
@@ -237,7 +237,7 @@
     </string>
     <string>
         <id>STR_TIP_P1</id>
-        <value>Be mindful of ambushes! The Zerg may try to get some troops behind you as you move around the map.</value>
+        <value>The Shelak Tribe has powerful High Templar that can use Psionic Storms to make their fellow warriors more powerful.</value>
     </string>
     <string>
         <id>STR_TIP_G38</id>
@@ -245,7 +245,7 @@
     </string>
     <string>
         <id>STR_TIP_P2</id>
-        <value>Enemy Zerg can use Nydus Canals to produce units. Destroying them will slow down their production.</value>
+        <value>In some missions, you may have an increased supply cap. Use it to keep some defensive troops even while attacking - the time they afford you may come in clutch.</value>
     </string>
     <string>
         <id>STR_TIP_G39</id>
@@ -253,7 +253,7 @@
     </string>
     <string>
         <id>STR_TIP_P3</id>
-        <value>Specific enemies will have specific ways in which they try to defeat you. Keep in mind what Broods, Squadrons or Tribes you're up against.</value>
+        <value>Be mindful of ambushes! The insidious Zerg may try to get some troops behind you as you move around the map.</value>
     </string>
     <string>
         <id>STR_TIP_G40</id>
@@ -261,7 +261,7 @@
     </string>
     <string>
         <id>STR_TIP_P4</id>
-        <value>When controlling multiple races, remember that upgrading them both may stretch you thin on resources.</value>
+        <value>Enemy Zerg can use Nydus Canals to produce units. Destroying them is an extra way to slow down enemy production in some maps.</value>
     </string>
     <string>
         <id>STR_TIP_G41</id>
@@ -269,7 +269,7 @@
     </string>
     <string>
         <id>STR_TIP_P5</id>
-        <value>Destroying any of the abandoned Terran installations throughout the map will put you on Duke's radar.</value>
+        <value>Specific enemies will have specific ways in which they try to defeat you. Keep in mind what Broods, Squadrons or Tribes you're up against.</value>
     </string>
     <string>
         <id>STR_TIP_G42</id>
@@ -277,7 +277,7 @@
     </string>
     <string>
         <id>STR_TIP_P6</id>
-        <value>Use ALT+S to quickly save a mission and ALT+L to quickly load a mission.</value>
+        <value>When controlling multiple races, remember that upgrading them both may stretch you thin on resources.</value>
     </string>
     <string>
         <id>STR_TIP_G43</id>
@@ -285,7 +285,7 @@
     </string>
     <string>
         <id>STR_TIP_P7</id>
-        <value>Your allies can help, but they are often not strong enough to win on their own.</value>
+        <value>Destroying any of the abandoned Terran installations throughout the map will put you on Duke's radar - as far as he can spare anything that's not fighting the Zerg, anyway.</value>
     </string>
     <string>
         <id>STR_TIP_G44</id>
@@ -293,7 +293,7 @@
     </string>
     <string>
         <id>STR_TIP_P8</id>
-        <value>Arbiters are expensive and replacing them clogs up enemy production. Try focusing them down with speedy units whenever you can.</value>
+        <value>Infested Terrans in this installation are not quite as deadly as the ones you've met before. Nonetheless, don't be afraid to SAVE! Use ALT+S to quickly SAVE a mission and ALT+L to quickly LOAD a mission.</value>
     </string>
     <string>
         <id>STR_TIP_G45</id>
@@ -301,7 +301,7 @@
     </string>
     <string>
         <id>STR_TIP_P9</id>
-        <value>Enemy casters will try to disrupt your armies whenever possible. Sometimes spreading out your units may be the only possible course.</value>
+        <value>Infested Terrans in this installation are not quite as deadly as the ones you've met before. Nonetheless, don't be afraid to SAVE! Use ALT+S to quickly SAVE a mission and ALT+L to quickly LOAD a mission.</value>
     </string>
     <string>
         <id>STR_TIP_G46</id>
@@ -309,7 +309,7 @@
     </string>
     <string>
         <id>STR_TIP_P10</id>
-        <value>The Overmind will defend fiercely, use special Zerg strains, and react with large groups of units even to small attack forces.</value>
+        <value>Your allies can help, but they are not strong enough to win on their own. Consider them as a way to save your own resources and supply.</value>
     </string>
     <string>
         <id>STR_TIP_G47</id>
@@ -317,95 +317,95 @@
     </string>
     <string>
         <id>STR_TIP_XP1</id>
-        <value>Aiur Zerg will chase you relentlessly as you alert more and more Broods to your presence.</value>
+        <value>Arbiters are expensive and replacing them clogs up enemy production. Try focusing them down with speedy units whenever you can.</value>
     </string>
     <string>
         <id>STR_TIP_XP2</id>
-        <value>Each Protoss faction - the Khalai, the Nerazim and Robotics - has a faction-specific upgrade that improves its units while debuffing others.</value>
+        <value>Enemy casters will try to disrupt your armies whenever possible. Sometimes spreading out your units may be the only possible course.</value>
     </string>
     <string>
         <id>STR_TIP_XP3</id>
-        <value>The Keller Brood has Zerg strains with highly-evolved Psionics, which allows them to perform such feats as even conjuring Hallucinations.</value>
+        <value>The Overmind will defend fiercely, use special Zerg strains, and react with large groups of units even to small attack forces. Don't waste your warrior's lives on attacks that aren't decisive.</value>
     </string>
     <string>
         <id>STR_TIP_XP4</id>
-        <value>Firebats are highly effective against Plasma Shields.</value>
+        <value>Protoss Reavers can be used to effectively defend your base and to quickly destroy enemy towns. Keep them protected by other units, since they are slow and vulnerable.</value>
     </string>
     <string>
         <id>STR_TIP_XP5</id>
-        <value>The UED is a completely separate faction in UEDAIP, with many new units. Beware of their AoE damage and hard-hitting specialists.</value>
+        <value>Select a unit and press the \\4H\\1 key to have the unit hold-ground, which will prevent it from wandering into enemy territory.</value>
     </string>
     <string>
         <id>STR_TIP_XP6</id>
-        <value>Zerg protecting the Overmind will often be able to use fearsome heroic Zerg strains, such as the Hunter Killer or the Torrasque.</value>
+        <value>Expand and establish new bases early in the game. Having a constant supply of minerals and gas is essential to victory.</value>
     </string>
     <string>
         <id>STR_TIP_XP7</id>
-        <value>Mind Controlling enemy units will instantly grant you access to some upgrades and abilities researched for the turncoat unit.</value>
+        <value>Merge Dark Templar to create Dark Archons. Select two Dark Templars and press the DARK ARCHON MELD button to create a Dark Archon. Dark Archons have the ability to MIND CONTROL enemy units.</value>
     </string>
     <string>
         <id>STR_TIP_XP8</id>
-        <value>Use your allies as a way to preserve your own resources.</value>
+        <value>Photon Cannons can fire at both ground and air targets, making them ideal for defending your base or other locations.</value>
     </string>
     <string>
         <id>STR_TIP_XT1</id>
-        <value>UED units often have long cooldowns or awkward ranges that work well when combining forces, but can leave them lagging behind other races when you focus only on one unit type.</value>
+        <value>All Zerg buildings, except the Hatchery, Creep Colony and Extractor, must be constructed on creep. Creep can be created by building a Hatchery or a Creep Colony.</value>
     </string>
     <string>
         <id>STR_TIP_XT2</id>
-        <value>Use Phantom's large burst to quickly eliminate enemy threats.</value>
+        <value>Medics automatically HEAL nearby organic units. Mix Medics together with your Marines or Firebats to increase their life expectancy.</value>
     </string>
     <string>
         <id>STR_TIP_XT3</id>
-        <value>You can use Autocast and Easycast settings, set from the "Autocast Settings.scx" map, to have an AI script help you utilize caster units.</value>
+        <value>Use Comsat to spot for your Siege Tanks. Build a Comsat Station at your Command Center and use the SENSOR SWEEP to reveal high ground and other hidden terrain you wish your tanks to attack.</value>
     </string>
     <string>
         <id>STR_TIP_XT4</id>
-        <value>Scout early and scout often. What seems like a free base can be very well taken by your opponent a minute or two later.</value>
+        <value>Use the Medic RESTORATION ability to remove the effects of LOCKDOWN and other abnormal effects from your units.</value>
     </string>
     <string>
         <id>STR_TIP_XT5a</id>
-        <value>Protect your Mechanical troops with Bio forces and Medics to avoid getting completely locked down.</value>
+        <value>Build Missile Towers to detect enemy Ghosts and to stop Nuclear Missile attacks. You can stop the attack by killing the Ghost before the missile lands.</value>
     </string>
     <string>
         <id>STR_TIP_XT5b</id>
-        <value>Ensnared Battlecruisers can be easily outmanouvered by most anti-air units. Furthermore, you can use EMP on groups of cruisers to prevent them from casting Yamato.</value>
+        <value>Use the Ghost LOCKDOWN ability to stop Battlecruisers and other mechanical enemy troops.</value>
     </string>
     <string>
         <id>STR_TIP_XT6</id>
-        <value>Valkyrie damage is upgraded via "Advanced Rocketry". Level 1 also provides Valkyries with one extra set of rockets in their salvo.</value>
+        <value>Valkyrie Frigates have splash damage and are very effective at destroying masses of enemy air units.</value>
     </string>
     <string>
         <id>STR_TIP_XT8</id>
-        <value>Your opponents can produce units directly from Nydus Canals. Destroying Nydus Canals will directly hurt enemy production.</value>
+        <value>Block entrances to your bases with Bunkers and Supply Depots to slow down invading enemy units.</value>
     </string>
     <string>
         <id>STR_TIP_XZ1</id>
-        <value>If Autocast is enabled, some caster units will activate a temporary aura just before dying, that uses up their remaining energy in exchange for some buff.</value>
+        <value>Be mindful of ambushes! The Zerg may try to get some troops behind you as you move around the map.</value>
     </string>
     <string>
         <id>STR_TIP_XZ3</id>
-        <value>Kel-Morians will fight more fiercely as you steal more and more minerals.</value>
+        <value>Queens have the ability to INFEST a severely damaged Terran Command Center. Once infested, the Command Center is now a Zerg structure capable of building Infested Terrans that explode when attacking.</value>
     </string>
     <string>
         <id>STR_TIP_XZ4</id>
-        <value>Infested Terrans explode even when killed. Focus ones positioned in-between enemy forces to quickly clear groups of enemy units.</value>
+        <value>Use multiple Hatcheries to build a large number of forces quickly.</value>
     </string>
     <string>
         <id>STR_TIP_XZ5</id>
-        <value>Fenix and Duke can be very hands-on leaders.</value>
+        <value>Use Overlords to spot hidden Spider Mines and cloaked units.</value>
     </string>
     <string>
         <id>STR_TIP_XZ6</id>
-        <value>Devourers combined with Queens can massively slow enemy air units' attack speed.</value>
+        <value>You can build Nydus Canals on enemy Zerg Creep. This is a quick way to transport your forces for an attack.</value>
     </string>
     <string>
         <id>STR_TIP_XZ7</id>
-        <value>Defilers can use their anti-air attack to help you defend from groups of enemy Air units.</value>
+        <value>Upgrade your Ultralisks for faster movement and tougher armor.</value>
     </string>
     <string>
         <id>STR_TIP_XZ8</id>
-        <value>In warfare, sending a force up against an enemy with superior firepower is an easy way of pointlessly sacrificing lives of soldiers.</value>
+        <value>Use the Devourer's Acid Spore attack to slow down an enemy unit's rate of fire and reduce its armor. The effect is cumulative, and is best combined with other attacking forces.</value>
     </string>
     <string>
         <id>STR_LAST_TIP</id>

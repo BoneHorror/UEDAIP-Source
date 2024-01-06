@@ -1,0 +1,29 @@
+</COMMENT Establishing Shot for Terran Level 11>
+
+</FADESPEED 100>
+</DISPLAYTIME 22000>
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palta\Blank.pcx>
+</FONTCOLOR glue\palta\tfont.pcx>
+
+</SCREENLEFT>
+Like a beacon, the combined power of the Psi Emitters reached out to the far corners of the Terran Sector, luring billions of Zerg to the capitol world of Tarsonis. 
+
+The Zerg, overrunning the Confederacy's best defences, proceeded to lay waste to Tarsonis' major cities and industrial centers.
+</PAGE>
+
+
+</COMMENT #############################################################>
+</DISPLAYTIME 5000>
+
+</BACKGROUND glue\paltc\TerranC.pcx>
+</FONTCOLOR glue\paltc\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"NEW GETTYSBURG"
+
+Command Ship Hyperion
+Holding close orbit over
+Confederate Capitol World Tarsonis
+</PAGE>

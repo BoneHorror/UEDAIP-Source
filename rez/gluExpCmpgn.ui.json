@@ -1,0 +1,307 @@
+﻿{
+  "type": "DIALOG",
+  "name": "RaceSelection",
+  "rect": [0,0,640,480],
+  "style": ["DS_MODALFRAME","WS_POPUP","WS_BORDER","WS_SYSMENU"],
+  "children": [
+    {
+      "type": "RECT",
+      "content": "glue\\palcs\\backgndl.pcx",
+      "id": 12,
+      "rect": [0,0,320,480],
+      "flags": ["WS_CHILD","WS_VISIBLE","CTRL_TRANSLUCENT"],
+      "children": null
+    },
+    {
+      "type": "RECT",
+      "content": "glue\\palcs\\backgndr.pcx",
+      "id": 13,
+      "rect": [320,0,320,480],
+      "flags": ["WS_CHILD","WS_VISIBLE","CTRL_TRANSLUCENT"],
+      "children": null
+    },
+    {
+      "type": "RECT",
+      "content": "glue\\campaign\\pBotL.pcx",
+      "id": 1,
+      "rect": [0,352,436,118],
+      "flags": ["WS_CHILD","WS_VISIBLE","CTRL_TRANSLUCENT","RC_ANCHOR_TOPRIGHT"],
+      "children": null
+    },
+    {
+      "type": "RECT",
+      "content": "glue\\campaign\\pBotR.pcx",
+      "id": 3,
+      "rect": [217,370,423,70],
+      "flags": ["WS_CHILD","WS_VISIBLE","CTRL_TRANSLUCENT"],
+      "children": null
+    },
+    {
+      "type": "FLCBTN",
+      "content": "gluCmpgn-1",
+      "id": 5,
+      "rect": [243,368,189,20],
+      "flags": ["WS_CHILD","WS_VISIBLE","RC_BIGGERTEXT","WS_TABSTOP","WS_HOTKEY","FB_VTEXTCENTER","FB_HTEXTCENTER"],
+      "children": null
+    },
+    {
+      "type": "FLCBTN",
+      "content": "gluCmpgn-2",
+      "id": 11,
+      "rect": [238,443,194,20],
+      "flags": ["WS_CHILD","WS_VISIBLE","RC_BIGGERTEXT","WS_TABSTOP","WS_HOTKEY","FB_VTEXTCENTER","FB_HTEXTCENTER"],
+      "children": null
+    },
+    {
+      "type": "FLCBTN",
+      "content": "gluCmpgn-3",
+      "id": 6,
+      "rect": [391,7,238,364],
+      "flags": ["WS_VISIBLE","WS_TABSTOP","RC_BIGGERTEXT","WS_EX_TRANSPARENT","WS_HOTKEY","FB_HTEXTCENTER","FB_VTEXTCENTER"],
+      "children": [
+        {
+          "type": "TEXTBOX",
+          "content": "",
+          "id": 0,
+          "rect": [93,311,205,361],
+          "flags": null,
+          "children": null
+        },
+        {
+          "type": "HOTBOX",
+          "content": "",
+          "id": 0,
+          "rect": [58,102,205,388],
+          "flags": null,
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\campaign\\disk.webm",
+          "id": 0,
+          "rect": [71,270,0,0],
+          "flags": ["FLC_LOOP"],
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\campaign\\Prot.webm",
+          "id": 0,
+          "rect": [58,102,0,0],
+          "flags": ["FLC_LOOP","FLC_FADED","FLC_FADEIN"],
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\campaign\\ProtOn.webm",
+          "id": 0,
+          "rect": [0,0,0,0],
+          "flags": ["FLC_LOOP","FLC_MOUSEOVER"],
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\campaign\\diskprot.webm",
+          "id": 0,
+          "rect": [0,0,0,0],
+          "flags": ["FLC_LOOP","RC_FLC_HD"],
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\campaign\\Prot.webm",
+          "id": 0,
+          "rect": [0,0,0,0],
+          "flags": ["FLC_LOOP","FLC_FADED","FLC_FADEIN","RC_FLC_HD"],
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\campaign\\ProtOn.webm",
+          "id": 0,
+          "rect": [0,0,0,0],
+          "flags": ["FLC_LOOP","FLC_MOUSEOVER","RC_FLC_HD"],
+          "children": null
+        }
+      ]
+    },
+    {
+      "type": "FLCBTN",
+      "content": "gluCmpgn-4",
+      "id": 7,
+      "rect": [162,4,356,278],
+      "flags": ["WS_VISIBLE","WS_TABSTOP","RC_BIGGERTEXT","WS_EX_TRANSPARENT","FB_VTEXTCENTER","FB_HTEXTCENTER","WS_HOTKEY"],
+      "children": [
+        {
+          "type": "TEXTBOX",
+          "content": "",
+          "id": 0,
+          "rect": [105,235,210,277],
+          "flags": null,
+          "children": null
+        },
+        {
+          "type": "HOTBOX",
+          "content": "",
+          "id": 0,
+          "rect": [78,30,226,253],
+          "flags": null,
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\campaign\\disk.webm",
+          "id": 0,
+          "rect": [78,188,0,0],
+          "flags": ["FLC_LOOP"],
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\campaign\\Terr.webm",
+          "id": 0,
+          "rect": [0,30,0,0],
+          "flags": ["FLC_LOOP","FLC_FADED","FLC_FADEIN"],
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\campaign\\TerrOn.webm",
+          "id": 0,
+          "rect": [0,0,0,0],
+          "flags": ["FLC_LOOP","FLC_MOUSEOVER"],
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\campaign\\diskterr.webm",
+          "id": 0,
+          "rect": [0,0,0,0],
+          "flags": ["FLC_LOOP","RC_FLC_HD"],
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\campaign\\Terr.webm",
+          "id": 0,
+          "rect": [0,0,0,0],
+          "flags": ["FLC_LOOP","FLC_FADED","FLC_FADEIN","RC_FLC_HD"],
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\campaign\\TerrOn.webm",
+          "id": 0,
+          "rect": [0,0,0,0],
+          "flags": ["FLC_LOOP","FLC_MOUSEOVER","RC_FLC_HD"],
+          "children": null
+        }
+      ]
+    },
+    {
+      "type": "FLCBTN",
+      "content": "gluCmpgn-5",
+      "id": 8,
+      "rect": [5,41,220,330],
+      "flags": ["WS_VISIBLE","WS_TABSTOP","RC_BIGGERTEXT","WS_EX_TRANSPARENT","FB_VTEXTBOTTOM","FB_HTEXTCENTER","WS_HOTKEY"],
+      "children": [
+        {
+          "type": "HOTBOX",
+          "content": "",
+          "id": 0,
+          "rect": [11,57,148,310],
+          "flags": null,
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\campaign\\disk.webm",
+          "id": 0,
+          "rect": [28,237,0,0],
+          "flags": ["FLC_LOOP"],
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\campaign\\Zerg.webm",
+          "id": 0,
+          "rect": [11,57,0,0],
+          "flags": ["FLC_LOOP","FLC_FADED","FLC_FADEIN"],
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\campaign\\ZergOn.webm",
+          "id": 0,
+          "rect": [0,0,0,0],
+          "flags": ["FLC_LOOP","FLC_MOUSEOVER"],
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\campaign\\diskzerg.webm",
+          "id": 0,
+          "rect": [0,0,0,0],
+          "flags": ["FLC_LOOP","RC_FLC_HD"],
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\campaign\\Zerg.webm",
+          "id": 0,
+          "rect": [0,0,0,0],
+          "flags": ["FLC_LOOP","FLC_FADED","FLC_FADEIN","RC_FLC_HD"],
+          "children": null
+        },
+        {
+          "type": "FLC",
+          "content": "glue\\campaign\\ZergOn.webm",
+          "id": 0,
+          "rect": [0,0,0,0],
+          "flags": ["FLC_LOOP","FLC_MOUSEOVER","RC_FLC_HD"],
+          "children": null
+        }
+      ]
+    },
+    {
+      "type": "FLCBTN",
+      "content": "gluCmpgn-6",
+      "id": 9,
+      "rect": [470,404,158,20],
+      "flags": ["WS_VISIBLE","WS_TABSTOP","RC_BIGGERTEXT","WS_HOTKEY","FB_HTEXTCENTER","FB_VTEXTCENTER","CTRL_ESCAPE"],
+      "children": null
+    },
+    {
+      "type": "FLCBTN",
+      "content": "gluCmpgn-7",
+      "id": 10,
+      "rect": [226,404,206,20],
+      "flags": ["WS_VISIBLE","RC_BIGGERTEXT","WS_TABSTOP","WS_HOTKEY","FB_VTEXTCENTER","FB_HTEXTCENTER"],
+      "children": null
+    },
+    {
+      "type": "CTEXT",
+      "content": "gluCmpgn-8",
+      "id": -10,
+      "rect": [10,200,200,50],
+      "flags": ["RC_BIGTEXT"],
+      "children": null
+    },
+    {
+      "type": "CTEXT",
+      "content": "gluCmpgn-9",
+      "id": -11,
+      "rect": [440,200,200,50],
+      "flags": ["RC_BIGTEXT"],
+      "children": null
+    },
+    {
+      "type": "CTEXT",
+      "content": "gluCmpgn-10",
+      "id": -12,
+      "rect": [440,200,200,50],
+      "flags": ["RC_BIGTEXT"],
+      "children": null
+    }
+  ]
+}

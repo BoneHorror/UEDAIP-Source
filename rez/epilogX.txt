@@ -1,36 +1,26 @@
-</COMMENT epilogue for Starcraft Expansion>
+</COMMENT epilogue for Starcraft>
 </FADESPEED 100>
 
 </COMMENT #############################################################>
-</DISPLAYTIME 30000>
+</DISPLAYTIME 25000>
 </BACKGROUND glue\palta\Blank.pcx>
 </FONTCOLOR glue\palta\tfont.pcx>
 
 </SCREENLEFT>
 EPILOGUE
 
-Shortly after DuGalle's defeat, the remainder of the UED Fleet was overtaken by Kerrigan's forces and eradicated. Even though some vessels have reportedly been sighted scattering across the Koprulu sector, it can be reliably stated that the UED invasion has been utterly crushed - at least, for the time being.
-
-With his rag-tag fleet beaten and crippled, Arcturus Mengsk fled back to Korhal to lick his wounds and plan the reconstruction of his Terran Dominion...
+As the chaotic, swirling energies subsided, a heavy silence settled over the battlefields of Aiur. Due to Tassadar's noble sacrifice, the Overmind was now dead and the Zerg Swarms were scattered and broken. But as the heroes surveyed their once glorious homeland, they realized that their victory had cost them all but their lives. Aiur was left nothing more than a smoldering ruin. Those few Protoss who survived the final battle could only wonder what the future would hold for their race.
 </PAGE>
 
 
 </COMMENT #############################################################>
-</DISPLAYTIME 30000>
+</DISPLAYTIME 15000>
 </COMMENT change background to identical background just to force fade>
 </BACKGROUND glue\palta\Blank.pcx>
 </FONTCOLOR glue\palta\tfont.pcx>
-Artanis and the Protoss survivors returned to Shakuras to begin rebuilding their once glorious civilization, swearing to claim their revenge against the Zerg...
-
-Zeratul and James Raynor, bidding their final goodbyes, went their separate ways - the former taking his place as the new leader of the Nerazim people, while the latter searches for refuge among those he called enemies, once...
+And far away, on the distant planet Char, Kerrigan, the self-styled Queen of Blades, knew that the time of her ascension was
+at hand.
 </PAGE>
 
 
-</COMMENT #############################################################>
-</DISPLAYTIME 35000>
-</COMMENT change background to identical background just to force fade>
-</BACKGROUND glue\palta\Blank.pcx>
-</FONTCOLOR glue\palta\tfont.pcx>
-And alone, floating on a dark platform above the burnt-out planet of Char, Sarah Kerrigan, the Queen of Blades, sat and lorded over the ravenous Broods. Unable to shake the feeling that a great threat loomed just over the horizon, Kerrigan could only stare off into the vastness of space where she beheld a great void. Or perhaps a reflection of a hollow victory and of the trials yet to come...
-</PAGE>
 

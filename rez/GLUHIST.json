@@ -1,0 +1,437 @@
+﻿[
+  {
+    "id": "histTERRAN_0",
+    "Key": "histTERRAN_0",
+    "Value": "Tutorial: Boot Camp"
+  },
+  {
+    "id": "histTERRAN_1",
+    "Key": "histTERRAN_1",
+    "Value": "1. Wasteland"
+  },
+  {
+    "id": "histTERRAN_2",
+    "Key": "histTERRAN_2",
+    "Value": "2. Backwater Station"
+  },
+  {
+    "id": "histTERRAN_3",
+    "Key": "histTERRAN_3",
+    "Value": "3. Desperate Alliance"
+  },
+  {
+    "id": "histTERRAN_4",
+    "Key": "histTERRAN_4",
+    "Value": "4. The Jacobs Installation"
+  },
+  {
+    "id": "histTERRAN_5",
+    "Key": "histTERRAN_5",
+    "Value": "5. Revolution"
+  },
+  {
+    "id": "histTERRAN_6",
+    "Key": "histTERRAN_6",
+    "Value": "6. Norad II"
+  },
+  {
+    "id": "histTERRAN_7",
+    "Key": "histTERRAN_7",
+    "Value": "7. The Trump Card"
+  },
+  {
+    "id": "histTERRAN_8",
+    "Key": "histTERRAN_8",
+    "Value": "8. The Big Push"
+  },
+  {
+    "id": "histTERRAN_9",
+    "Key": "histTERRAN_9",
+    "Value": "9. New Gettysburg"
+  },
+  {
+    "id": "histTERRAN_10",
+    "Key": "histTERRAN_10",
+    "Value": "10. The Hammer Falls"
+  },
+  {
+    "id": "histTFLIC_1",
+    "Key": "histTFLIC_1",
+    "Value": "Cinematic: Wasteland Patrol"
+  },
+  {
+    "id": "histTFLIC_2",
+    "Key": "histTFLIC_2",
+    "Value": "Cinematic: The Downing of Norad II"
+  },
+  {
+    "id": "histTFLIC_3",
+    "Key": "histTFLIC_3",
+    "Value": "Cinematic: Open Rebellion"
+  },
+  {
+    "id": "histTFLIC_4",
+    "Key": "histTFLIC_4",
+    "Value": "Cinematic: The Inauguration"
+  },
+  {
+    "id": "histTFLIC_5",
+    "Key": "histTFLIC_5",
+    "Value": "Terran Cinematic 5"
+  },
+  {
+    "id": "histPROTOSS_1",
+    "Key": "histPROTOSS_1",
+    "Value": "1. First Strike"
+  },
+  {
+    "id": "histPROTOSS_2",
+    "Key": "histPROTOSS_2",
+    "Value": "2. Into the Flames"
+  },
+  {
+    "id": "histPROTOSS_3",
+    "Key": "histPROTOSS_3",
+    "Value": "3. Higher Ground"
+  },
+  {
+    "id": "histPROTOSS_4",
+    "Key": "histPROTOSS_4",
+    "Value": "4. The Hunt for Tassadar"
+  },
+  {
+    "id": "histPROTOSS_5",
+    "Key": "histPROTOSS_5",
+    "Value": "5. Choosing Sides"
+  },
+  {
+    "id": "histPROTOSS_6",
+    "Key": "histPROTOSS_6",
+    "Value": "6. Into the Darkness"
+  },
+  {
+    "id": "histPROTOSS_7",
+    "Key": "histPROTOSS_7",
+    "Value": "7. Homeland"
+  },
+  {
+    "id": "histPROTOSS_8",
+    "Key": "histPROTOSS_8",
+    "Value": "8. The Trial of Tassadar"
+  },
+  {
+    "id": "histPROTOSS_9",
+    "Key": "histPROTOSS_9",
+    "Value": "9. Shadow Hunters"
+  },
+  {
+    "id": "histPROTOSS_10",
+    "Key": "histPROTOSS_10",
+    "Value": "10. Eye of the Storm"
+  },
+  {
+    "id": "histPFLIC_1",
+    "Key": "histPFLIC_1",
+    "Value": "Cinematic: The Fall of Fenix"
+  },
+  {
+    "id": "histPFLIC_2",
+    "Key": "histPFLIC_2",
+    "Value": "Cinematic: The Ambush"
+  },
+  {
+    "id": "histPFLIC_3",
+    "Key": "histPFLIC_3",
+    "Value": "Cinematic: The Return to Aiur"
+  },
+  {
+    "id": "histPFLIC_4",
+    "Key": "histPFLIC_4",
+    "Value": "Cinematic: The Death of the Overmind"
+  },
+  {
+    "id": "histPFLIC_5",
+    "Key": "histPFLIC_5",
+    "Value": "Protoss Cinematic 5"
+  },
+  {
+    "id": "histZERG_1",
+    "Key": "histZERG_1",
+    "Value": "1. Among the Ruins"
+  },
+  {
+    "id": "histZERG_2",
+    "Key": "histZERG_2",
+    "Value": "2. Egression"
+  },
+  {
+    "id": "histZERG_3",
+    "Key": "histZERG_3",
+    "Value": "3. The New Dominion"
+  },
+  {
+    "id": "histZERG_4",
+    "Key": "histZERG_4",
+    "Value": "4. Agent of the Swarm"
+  },
+  {
+    "id": "histZERG_5",
+    "Key": "histZERG_5",
+    "Value": "5. The Amerigo"
+  },
+  {
+    "id": "histZERG_6",
+    "Key": "histZERG_6",
+    "Value": "6. The Dark Templar"
+  },
+  {
+    "id": "histZERG_7",
+    "Key": "histZERG_7",
+    "Value": "7. The Culling"
+  },
+  {
+    "id": "histZERG_8",
+    "Key": "histZERG_8",
+    "Value": "8. Eye for an Eye"
+  },
+  {
+    "id": "histZERG_9",
+    "Key": "histZERG_9",
+    "Value": "9. The Invasion of Aiur"
+  },
+  {
+    "id": "histZERG_10",
+    "Key": "histZERG_10",
+    "Value": "10. Full Circle"
+  },
+  {
+    "id": "histZFLIC_1",
+    "Key": "histZFLIC_1",
+    "Value": "Cinematic: The Dream"
+  },
+  {
+    "id": "histZFLIC_2",
+    "Key": "histZFLIC_2",
+    "Value": "Cinematic: Battle on the Amerigo"
+  },
+  {
+    "id": "histZFLIC_3",
+    "Key": "histZFLIC_3",
+    "Value": "Cinematic: The Warp"
+  },
+  {
+    "id": "histZFLIC_4",
+    "Key": "histZFLIC_4",
+    "Value": "Cinematic: The Invasion of Aiur"
+  },
+  {
+    "id": "histZFLIC_5",
+    "Key": "histZFLIC_5",
+    "Value": "Zerg Cinematic 5"
+  },
+  {
+    "id": "histTERRAN_ED0",
+    "Key": "histTERRAN_ED0",
+    "Value": "Tutorial: Boot Camp"
+  },
+  {
+    "id": "histTERRAN_ED1",
+    "Key": "histTERRAN_ED1",
+    "Value": "1. Strongarm"
+  },
+  {
+    "id": "histTERRAN_ED2",
+    "Key": "histTERRAN_ED2",
+    "Value": "2. Den of the Beast"
+  },
+  {
+    "id": "histTERRAN_ED3",
+    "Key": "histTERRAN_ED3",
+    "Value": "3. Extermination"
+  },
+  {
+    "id": "histTERRAN_SW0",
+    "Key": "histTERRAN_SW0",
+    "Value": "Tutorial: Boot Camp"
+  },
+  {
+    "id": "histTERRAN_SW1",
+    "Key": "histTERRAN_SW1",
+    "Value": "1. Strongarm"
+  },
+  {
+    "id": "histTERRAN_SW2",
+    "Key": "histTERRAN_SW2",
+    "Value": "2. The Gauntlet"
+  },
+  {
+    "id": "histTERRAN_SW3",
+    "Key": "histTERRAN_SW3",
+    "Value": "3. Den of the Beast"
+  },
+  {
+    "id": "histTERRAN_SW4",
+    "Key": "histTERRAN_SW4",
+    "Value": "4. Force of Arms"
+  },
+  {
+    "id": "histTERRAN_SW5",
+    "Key": "histTERRAN_SW5",
+    "Value": "5. Extermination"
+  },
+  {
+    "id": "histEXPPROTOSS_1",
+    "Key": "histEXPPROTOSS_1",
+    "Value": "1. Escape from Aiur"
+  },
+  {
+    "id": "histEXPPROTOSS_2",
+    "Key": "histEXPPROTOSS_2",
+    "Value": "2. Dunes of Shakuras"
+  },
+  {
+    "id": "histEXPPROTOSS_3",
+    "Key": "histEXPPROTOSS_3",
+    "Value": "3. Legacy of the Xel'Naga"
+  },
+  {
+    "id": "histEXPPROTOSS_4",
+    "Key": "histEXPPROTOSS_4",
+    "Value": "4. The Quest for Uraj"
+  },
+  {
+    "id": "histEXPPROTOSS_5",
+    "Key": "histEXPPROTOSS_5",
+    "Value": "5. The Battle of Braxis"
+  },
+  {
+    "id": "histEXPPROTOSS_6",
+    "Key": "histEXPPROTOSS_6",
+    "Value": "6. Return to Char"
+  },
+  {
+    "id": "histEXPPROTOSS_7",
+    "Key": "histEXPPROTOSS_7",
+    "Value": "7. The Insurgent"
+  },
+  {
+    "id": "histEXPPROTOSS_8",
+    "Key": "histEXPPROTOSS_8",
+    "Value": "8. Countdown"
+  },
+  {
+    "id": "histEXPTERRAN_1",
+    "Key": "histEXPTERRAN_1",
+    "Value": "1. First Strike"
+  },
+  {
+    "id": "histEXPTERRAN_2",
+    "Key": "histEXPTERRAN_2",
+    "Value": "2. The Dylarian Shipyards"
+  },
+  {
+    "id": "histEXPTERRAN_3",
+    "Key": "histEXPTERRAN_3",
+    "Value": "3. Ruins of Tarsonis"
+  },
+  {
+    "id": "histEXPTERRAN_4",
+    "Key": "histEXPTERRAN_4",
+    "Value": "4. Assault on Korhal"
+  },
+  {
+    "id": "histEXPTERRAN_5a",
+    "Key": "histEXPTERRAN_5a",
+    "Value": "5a. Emperor's Fall (Ground Zero)"
+  },
+  {
+    "id": "histEXPTERRAN_5b",
+    "Key": "histEXPTERRAN_5b",
+    "Value": "5b. Emperor's Fall (Birds of War)"
+  },
+  {
+    "id": "histEXPTERRAN_6",
+    "Key": "histEXPTERRAN_6",
+    "Value": "6. Emperor's Flight"
+  },
+  {
+    "id": "histEXPTERRAN_7",
+    "Key": "histEXPTERRAN_7",
+    "Value": "7. Patriot's Blood"
+  },
+  {
+    "id": "histEXPTERRAN_8",
+    "Key": "histEXPTERRAN_8",
+    "Value": "8. To Chain the Beast"
+  },
+  {
+    "id": "histEXPZERG_1",
+    "Key": "histEXPZERG_1",
+    "Value": "1. Vile Disruption"
+  },
+  {
+    "id": "histEXPZERG_2",
+    "Key": "histEXPZERG_2",
+    "Value": "2. Reign of Fire"
+  },
+  {
+    "id": "histEXPZERG_3",
+    "Key": "histEXPZERG_3",
+    "Value": "3. The Kel-Morian Combine"
+  },
+  {
+    "id": "histEXPZERG_4",
+    "Key": "histEXPZERG_4",
+    "Value": "4. The Liberation of Korhal"
+  },
+  {
+    "id": "histEXPZERG_5",
+    "Key": "histEXPZERG_5",
+    "Value": "5. True Colors"
+  },
+  {
+    "id": "histEXPZERG_6",
+    "Key": "histEXPZERG_6",
+    "Value": "6. Fury of the Swarm"
+  },
+  {
+    "id": "histEXPZERG_7",
+    "Key": "histEXPZERG_7",
+    "Value": "7. Drawing of the Web"
+  },
+  {
+    "id": "histEXPZERG_8",
+    "Key": "histEXPZERG_8",
+    "Value": "8. To Slay the Beast"
+  },
+  {
+    "id": "histEXPZERG_9",
+    "Key": "histEXPZERG_9",
+    "Value": "9. The Reckoning"
+  },
+  {
+    "id": "histEXPZERG_B",
+    "Key": "histEXPZERG_B",
+    "Value": "9a. Dark Origin"
+  },
+  {
+    "id": "histEXPZERG_10",
+    "Key": "histEXPZERG_10",
+    "Value": "10. Omega"
+  },
+  {
+    "id": "histEXPZFLIC_1",
+    "Key": "histEXPZFLIC_1",
+    "Value": "Cinematic: The Ascension"
+  },
+  {
+    "id": "histEXPPFLIC_1",
+    "Key": "histEXPPFLIC_1",
+    "Value": "Cinematic: Fury of the Xel'Naga"
+  },
+  {
+    "id": "histEXPTFLIC_1",
+    "Key": "histEXPTFLIC_1",
+    "Value": "Cinematic: UED Victory Report"
+  }
+]

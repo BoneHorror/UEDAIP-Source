@@ -1,0 +1,27 @@
+</FADESPEED 100>
+</DISPLAYTIME 16000>
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palta\Blank.pcx>
+</FONTCOLOR glue\palta\tfont.pcx>
+
+</SCREENLEFT>
+The Zerg, lured by the Psi Emitter's signal, descended upon the unsuspecting Confederate forces and annihilated them.
+
+</PAGE>
+
+</COMMENT Establishing Shot for Terran Level 8>
+
+</FADESPEED 100>
+</DISPLAYTIME 5000>
+
+</COMMENT #############################################################>
+</BACKGROUND glue\paltb\TerranB.pcx>
+</FONTCOLOR glue\paltb\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"BITING THE BULLET"
+
+Secret Staging Area
+Antiga Prime Colony
+</PAGE>

@@ -1,0 +1,12 @@
+</COMMENT #############################################################>
+</DISPLAYTIME 5000>
+</BACKGROUND glue\paltc\TerranC.pcx>
+</FONTCOLOR glue\paltc\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"THE BIG PUSH"
+
+Command Ship Hyperion
+Holding perimeter orbit over
+Confederate Capitol World Tarsonis
+</PAGE>

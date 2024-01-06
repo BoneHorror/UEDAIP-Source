@@ -1,0 +1,28 @@
+</COMMENT Establishing Shot for Protoss Level 4>
+
+</FADESPEED 100>
+</DISPLAYTIME 45000>
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palpa\Blank.pcx>
+</FONTCOLOR glue\palpa\tfont.pcx>
+
+</SCREENLEFT>
+The Zerg Hive cluster near the Scion province was destroyed, but the Protoss paid a high price for their victory. With four Cohorts of Praetor Fenix's contingent decimated, and the Steward of the Templar himself meeting his demise upon the battlefield, it becomes increasingly clear that the Templar order of battle is completely inadequate when faced with vastly superior numbers of even a single Zerg Brood.
+
+The Conclave, desparately searching for ways to bolster their defenses and buy much-needed time, turns their attention towards outlying Imperial enclaves - in particular, it is quickly decided that Tassadar's fleet of warships is needed back on Aiur, now more than ever. The Judicator Aldaris was ordered to find and arrest the wayward Tassadar and take command of his expeditionary corps, bringing it back to defend the homeworld from the relentless onslaught of the Zerg.
+
+Now, with only a small fleet for protection, Aldaris and the Executor have traveled to the ash world of Char, hoping that Tassadar is still somewhere to be found.
+</PAGE>
+
+</DISPLAYTIME 5000>
+</COMMENT #############################################################>
+</BACKGROUND glue\palpb\ProtossB.pcx>
+</FONTCOLOR glue\palpb\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"THE HUNT FOR TASSADAR"
+
+Protoss Command Ship Tempest
+Holding orbit over the planet Char
+</PAGE>

@@ -1,0 +1,350 @@
+<strings>
+    <string>
+        <id>histTERRAN_0</id>
+        <value>Tutorial: Boot Camp</value>
+    </string>
+    <string>
+        <id>histTERRAN_1</id>
+        <value>1. Wasteland</value>
+    </string>
+    <string>
+        <id>histTERRAN_2</id>
+        <value>2. Backwater Station</value>
+    </string>
+    <string>
+        <id>histTERRAN_3</id>
+        <value>3. Desperate Alliance</value>
+    </string>
+    <string>
+        <id>histTERRAN_4</id>
+        <value>4. The Jacobs Installation</value>
+    </string>
+    <string>
+        <id>histTERRAN_5</id>
+        <value>5. Revolution</value>
+    </string>
+    <string>
+        <id>histTERRAN_6</id>
+        <value>6. Norad II</value>
+    </string>
+    <string>
+        <id>histTERRAN_7</id>
+        <value>7. The Trump Card</value>
+    </string>
+    <string>
+        <id>histTERRAN_8</id>
+        <value>9. The Big Push</value>
+    </string>
+    <string>
+        <id>histTERRAN_9</id>
+        <value>11. New Gettysburg</value>
+    </string>
+    <string>
+        <id>histTERRAN_10</id>
+        <value>12. The Hammer Falls</value>
+    </string>
+    <string>
+        <id>histTFLIC_1</id>
+        <value>Cinematic: Wasteland Patrol</value>
+    </string>
+    <string>
+        <id>histTFLIC_2</id>
+        <value>Cinematic: The Downing of Norad II</value>
+    </string>
+    <string>
+        <id>histTFLIC_3</id>
+        <value>Cinematic: Open Rebellion</value>
+    </string>
+    <string>
+        <id>histTFLIC_4</id>
+        <value>Cinematic: The Inauguration</value>
+    </string>
+    <string>
+        <id>histTFLIC_5</id>
+        <value>8. Biting the Bullet</value>
+    </string>
+    <string>
+        <id>histPROTOSS_1</id>
+        <value>1. First Strike</value>
+    </string>
+    <string>
+        <id>histPROTOSS_2</id>
+        <value>2. Into the Flames</value>
+    </string>
+    <string>
+        <id>histPROTOSS_3</id>
+        <value>3. Higher Ground</value>
+    </string>
+    <string>
+        <id>histPROTOSS_4</id>
+        <value>4. The Hunt for Tassadar</value>
+    </string>
+    <string>
+        <id>histPROTOSS_5</id>
+        <value>5. Choosing Sides</value>
+    </string>
+    <string>
+        <id>histPROTOSS_6</id>
+        <value>6. Into the Darkness  (SD or No RTL)</value>
+    </string>
+    <string>
+        <id>histPROTOSS_7</id>
+        <value>7. Homeland</value>
+    </string>
+    <string>
+        <id>histPROTOSS_8</id>
+        <value>8. The Trial of Tassadar</value>
+    </string>
+    <string>
+        <id>histPROTOSS_9</id>
+        <value>9. Shadow Hunters</value>
+    </string>
+    <string>
+        <id>histPROTOSS_10</id>
+        <value>10. Eye of the Storm</value>
+    </string>
+    <string>
+        <id>histPFLIC_1</id>
+        <value>Cinematic: The Fall of Fenix</value>
+    </string>
+    <string>
+        <id>histPFLIC_2</id>
+        <value>Cinematic: The Ambush</value>
+    </string>
+    <string>
+        <id>histPFLIC_3</id>
+        <value>Cinematic: The Return to Aiur</value>
+    </string>
+    <string>
+        <id>histPFLIC_4</id>
+        <value>Cinematic: The Death of the Overmind</value>
+    </string>
+    <string>
+        <id>histPFLIC_5</id>
+        <value>10. Operation: Silent Scream</value>
+    </string>
+    <string>
+        <id>histZERG_1</id>
+        <value>1. Among the Ruins</value>
+    </string>
+    <string>
+        <id>histZERG_2</id>
+        <value>2. Egression</value>
+    </string>
+    <string>
+        <id>histZERG_3</id>
+        <value>3. The New Dominion</value>
+    </string>
+    <string>
+        <id>histZERG_4</id>
+        <value>4. Agent of the Swarm</value>
+    </string>
+    <string>
+        <id>histZERG_5</id>
+        <value>5. The Amerigo</value>
+    </string>
+    <string>
+        <id>histZERG_6</id>
+        <value>6. The Dark Templar</value>
+    </string>
+    <string>
+        <id>histZERG_7</id>
+        <value>7. The Culling</value>
+    </string>
+    <string>
+        <id>histZERG_8</id>
+        <value>8. Eye for an Eye</value>
+    </string>
+    <string>
+        <id>histZERG_9</id>
+        <value>9. The Invasion of Aiur</value>
+    </string>
+    <string>
+        <id>histZERG_10</id>
+        <value>10. Full Circle</value>
+    </string>
+    <string>
+        <id>histZFLIC_1</id>
+        <value>Cinematic: The Dream</value>
+    </string>
+    <string>
+        <id>histZFLIC_2</id>
+        <value>Cinematic: Battle on the Amerigo</value>
+    </string>
+    <string>
+        <id>histZFLIC_3</id>
+        <value>Cinematic: The Warp</value>
+    </string>
+    <string>
+        <id>histZFLIC_4</id>
+        <value>Cinematic: The Invasion of Aiur</value>
+    </string>
+    <string>
+        <id>histZFLIC_5</id>
+        <value>6. Into the Darkness  (RTL Enabled)</value>
+    </string>
+    <string>
+        <id>histTERRAN_ED0</id>
+        <value>Tutorial: Boot Camp</value>
+    </string>
+    <string>
+        <id>histTERRAN_ED1</id>
+        <value>1. Strongarm</value>
+    </string>
+    <string>
+        <id>histTERRAN_ED2</id>
+        <value>2. Den of the Beast</value>
+    </string>
+    <string>
+        <id>histTERRAN_ED3</id>
+        <value>3. Extermination</value>
+    </string>
+    <string>
+        <id>histTERRAN_SW0</id>
+        <value>Tutorial: Boot Camp</value>
+    </string>
+    <string>
+        <id>histTERRAN_SW1</id>
+        <value>1. Strongarm</value>
+    </string>
+    <string>
+        <id>histTERRAN_SW2</id>
+        <value>2. The Gauntlet</value>
+    </string>
+    <string>
+        <id>histTERRAN_SW3</id>
+        <value>3. Den of the Beast</value>
+    </string>
+    <string>
+        <id>histTERRAN_SW4</id>
+        <value>4. Force of Arms</value>
+    </string>
+    <string>
+        <id>histTERRAN_SW5</id>
+        <value>5. Extermination</value>
+    </string>
+    <string>
+        <id>histEXPPROTOSS_1</id>
+        <value>1. Escape from Aiur</value>
+    </string>
+    <string>
+        <id>histEXPPROTOSS_2</id>
+        <value>2. Dunes of Shakuras</value>
+    </string>
+    <string>
+        <id>histEXPPROTOSS_3</id>
+        <value>3. Legacy of the Xel'Naga</value>
+    </string>
+    <string>
+        <id>histEXPPROTOSS_4</id>
+        <value>4. The Quest for Uraj</value>
+    </string>
+    <string>
+        <id>histEXPPROTOSS_5</id>
+        <value>5. The Battle of Braxis</value>
+    </string>
+    <string>
+        <id>histEXPPROTOSS_6</id>
+        <value>6. Return to Char</value>
+    </string>
+    <string>
+        <id>histEXPPROTOSS_7</id>
+        <value>7. The Insurgent</value>
+    </string>
+    <string>
+        <id>histEXPPROTOSS_8</id>
+        <value>8. Countdown</value>
+    </string>
+    <string>
+        <id>histEXPTERRAN_1</id>
+        <value>1. First Strike</value>
+    </string>
+    <string>
+        <id>histEXPTERRAN_2</id>
+        <value>2. The Dylarian Shipyards</value>
+    </string>
+    <string>
+        <id>histEXPTERRAN_3</id>
+        <value>3. Ruins of Tarsonis</value>
+    </string>
+    <string>
+        <id>histEXPTERRAN_4</id>
+        <value>4. Assault on Korhal</value>
+    </string>
+    <string>
+        <id>histEXPTERRAN_5a</id>
+        <value>5a. Emperor's Fall (Ground Zero)</value>
+    </string>
+    <string>
+        <id>histEXPTERRAN_5b</id>
+        <value>5b. Emperor's Fall (Birds of War)</value>
+    </string>
+    <string>
+        <id>histEXPTERRAN_6</id>
+        <value>6. Emperor's Flight</value>
+    </string>
+    <string>
+        <id>histEXPTERRAN_7</id>
+        <value>7. Patriot's Blood</value>
+    </string>
+    <string>
+        <id>histEXPTERRAN_8</id>
+        <value>8. To Chain the Beast</value>
+    </string>
+    <string>
+        <id>histEXPZERG_1</id>
+        <value>1. Vile Disruption</value>
+    </string>
+    <string>
+        <id>histEXPZERG_2</id>
+        <value>2. Reign of Fire</value>
+    </string>
+    <string>
+        <id>histEXPZERG_3</id>
+        <value>3. The Kel-Morian Combine</value>
+    </string>
+    <string>
+        <id>histEXPZERG_4</id>
+        <value>4. The Liberation of Korhal</value>
+    </string>
+    <string>
+        <id>histEXPZERG_5</id>
+        <value>5. True Colors</value>
+    </string>
+    <string>
+        <id>histEXPZERG_6</id>
+        <value>6. Fury of the Swarm</value>
+    </string>
+    <string>
+        <id>histEXPZERG_7</id>
+        <value>7. Drawing of the Web</value>
+    </string>
+    <string>
+        <id>histEXPZERG_8</id>
+        <value>8. To Slay the Beast</value>
+    </string>
+    <string>
+        <id>histEXPZERG_9</id>
+        <value>9. The Reckoning</value>
+    </string>
+    <string>
+        <id>histEXPZERG_B</id>
+        <value>9a. Dark Origin</value>
+    </string>
+    <string>
+        <id>histEXPZERG_10</id>
+        <value>10. Omega</value>
+    </string>
+    <string>
+        <id>histEXPZFLIC_1</id>
+        <value>Cinematic: The Ascension</value>
+    </string>
+    <string>
+        <id>histEXPPFLIC_1</id>
+        <value>Cinematic: Fury of the Xel'Naga</value>
+    </string>
+    <string>
+        <id>histEXPTFLIC_1</id>
+        <value>Cinematic: UED Victory Report</value>
+    </string>
+</strings>

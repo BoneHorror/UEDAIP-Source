@@ -1,0 +1,38 @@
+</COMMENT Establishing Shot for Terran Level 1>
+
+</DISPLAYTIME 0>
+</VIDEO interstitials\TR1010.webm>
+</TEXTBOX>
+TERRAN CAMPAIGN: REBEL YELL
+
+In the decade since the end of the Guild Wars, the oppressive Terran Confederacy has stood unchallenged in its supremacy over colonized space.
+</PAGE>
+
+</DISPLAYTIME 0>
+</VIDEO interstitials\TR1020.webm>
+</TEXTBOX>
+All of that changed four days ago when a large alien fleet emerged from warp-space and laid waste to the unsuspecting Confederate colony of Chau Sara.
+</PAGE>
+
+</DISPLAYTIME 0>
+</VIDEO interstitials\TR1030.webm>
+</TEXTBOX>
+The Confederacy, fearing that the alien fleet's next target will be the colony of Mar Sara, has sent you to intervene. Acting as Magistrate, you are to safeguard the colonists and keep their state of panic from escalating any further.
+</PAGE>
+
+</DISPLAYTIME 0>
+</VIDEOAUTOPROCEED interstitials\TR1035.webm>
+</PAGE>
+
+</FADESPEED 100>
+</COMMENT #############################################################>
+</DISPLAYTIME 5000>
+</BACKGROUND glue\palta\TerranA.pcx>
+</FONTCOLOR glue\palta\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"WASTELAND"
+
+Office of the Colonial Magistrate
+Mar Sara Colony
+</PAGE>

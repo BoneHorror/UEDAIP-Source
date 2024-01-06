@@ -1,37 +1,36 @@
-</COMMENT Establishing Shot for Terran Level 1x>
+</COMMENT Establishing Shot for Zerg Level 1>
 
 </DISPLAYTIME 0>
-</VIDEO interstitials\TR5010.webm>
+</VIDEO interstitials\ZG1010.webm>
 </TEXTBOX>
-UED CAMPAIGN: THE IRON FIST
+ZERG CAMPAIGN: OVERMIND
 
-For the longest time, Terran leaders had known that their true homeworld, a distant planet called Earth, is still out there, and that it has never truly stopped watching them. In retrospect, however, they never realized just how closely monitored they were.
-With the word of Terran Confederacy's utter demise at the hands of the Zerg and the Protoss reaching the United Earth Directorate, it has been decided that alien races with both capability and desire to wipe out entire populated worlds pose too great of a threat to Humanity itself - and must be dealt with, while said threat is still possible to contain.
+The Swarms have crushed the meager human resistance and laid waste to nine of the thirteen Terran worlds. 
 </PAGE>
 
 </DISPLAYTIME 0>
-</VIDEO interstitials\TR5020.webm>
+</VIDEO interstitials\ZG1020.webm>
 </TEXTBOX>
-After an extensive research conducted into the Koprulu conflict and the warring parties, a Strategic Fleet commanded by Admiral Gerard DuGalle has been deployed with the sole objective of reclaiming Terran colonies back to UED's direct control, as well as eradicating the alien threat by any means necessary.
+Shortly after the fall of the Terran capitol world of Tarsonis, the main Protoss fleet abandoned the Terran Sector. 
 </PAGE>
 
 </DISPLAYTIME 0>
-</VIDEO interstitials\TR5030.webm>
+</VIDEO interstitials\ZG1030.webm>
 </TEXTBOX>
-As Captain of the UED fleet under DuGalle, you have been tasked with leading the vanguard of the UED invasion, targeting the former Confederate space. Emperor Mengsk's regime must be crushed without mercy. Faliure is not an option.
+Now, efforts continue on Tarsonis to weed out the remaining Protoss forces.
 </PAGE>
 
 </DISPLAYTIME 0>
-</VIDEOAUTOPROCEED interstitials\TR5035.webm>
+</VIDEOAUTOPROCEED interstitials\ZG1035.webm>
 </PAGE>
 
 </COMMENT #############################################################>
-</DISPLAYTIME 8000>
-</BACKGROUND glue\palpbx\XProtosB.pcx>
-</FONTCOLOR glue\palpbx\tfont.pcx>
+</DISPLAYTIME 5000>
+</BACKGROUND glue\palza\ZergA.pcx>
+</FONTCOLOR glue\palza\tfont.pcx>
 
 </SCREENLOWERLEFT>
-"FIRST STRIKE" 
+"AMONG THE RUINS"
 
-UED Flagship Aleksander, High Orbit over the planet Braxis; Outlying Dominion stronghold
+Confederate Capitol World Tarsonis
 </PAGE>

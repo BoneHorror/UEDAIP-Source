@@ -1,0 +1,16 @@
+</COMMENT Establishing Shot for Terran Level 4>
+
+</FADESPEED 100>
+</DISPLAYTIME 5000>
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palta\TerranA.pcx>
+</FONTCOLOR glue\palta\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"THE JACOBS INSTALLATION"
+
+Office of the former Colonial Magistrate
+Mar Sara Colony
+Three hours after colonial evacuation
+</PAGE>

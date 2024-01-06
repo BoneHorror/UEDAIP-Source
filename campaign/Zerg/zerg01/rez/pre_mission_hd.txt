@@ -1,0 +1,37 @@
+</COMMENT Establishing Shot for Zerg Level 1>
+
+</DISPLAYTIME 0>
+</VIDEO interstitials\ZG1010.webm>
+</TEXTBOX>
+ZERG CAMPAIGN: OVERMIND
+
+Zerg Swarms crushed meager human resistance and laid waste to nine of the thirteen Terran worlds. 
+
+</PAGE>
+
+</DISPLAYTIME 0>
+</VIDEO interstitials\ZG1020.webm>
+</TEXTBOX>
+During the assault upon the Terran capitol world of Tarsonis, the Protoss who have chased the Swarm across the Terran sector have finally met their match. They failed to engage the main force of the Zerg and are being forced to withdraw, with the hope of regrouping somewhere at the edge of the star system. 
+</PAGE>
+
+</DISPLAYTIME 0>
+</VIDEO interstitials\ZG1030.webm>
+</TEXTBOX>
+As several Cerebrates weed out the remaining Terran forces, the remainder of Swarm's Broods prepares to move onto the next stage of their master's plan.
+</PAGE>
+
+</DISPLAYTIME 0>
+</VIDEOAUTOPROCEED interstitials\ZG1035.webm>
+</PAGE>
+
+</COMMENT #############################################################>
+</DISPLAYTIME 5000>
+</BACKGROUND glue\palza\ZergA.pcx>
+</FONTCOLOR glue\palza\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"AMONG THE RUINS"
+
+Terran Capitol World Tarsonis
+</PAGE>

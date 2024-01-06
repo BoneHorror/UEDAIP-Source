@@ -1,0 +1,40 @@
+﻿{
+  "type": "DIALOG",
+  "name": "History",
+  "rect": [0,0,380,251],
+  "style": ["DS_MODALFRAME","WS_POPUP","WS_BORDER","WS_SYSMENU"],
+  "children": [
+    {
+      "type": "LTEXT",
+      "content": "GLUHIST-1",
+      "id": -1,
+      "rect": [11,11,358,20],
+      "flags": ["WS_CHILD","WS_VISIBLE","WS_GROUP","RC_SMALLTEXT"],
+      "children": null
+    },
+    {
+      "type": "FLCBTN",
+      "content": "GLUHIST-2",
+      "id": 1,
+      "rect": [65,210,123,29],
+      "flags": ["WS_CHILD","WS_VISIBLE","WS_TABSTOP","WS_HOTKEY","FB_HTEXTCENTER","FB_VTEXTCENTER","CTRL_ENTER"],
+      "children": null
+    },
+    {
+      "type": "FLCBTN",
+      "content": "GLUHIST-3",
+      "id": 3,
+      "rect": [195,210,123,29],
+      "flags": ["WS_CHILD","WS_VISIBLE","WS_TABSTOP","WS_HOTKEY","FB_HTEXTCENTER","FB_VTEXTCENTER","CTRL_ESCAPE"],
+      "children": null
+    },
+    {
+      "type": "LISTBOX",
+      "content": "",
+      "id": 6,
+      "rect": [11,39,358,162],
+      "flags": ["WS_VISIBLE","WS_TABSTOP","RC_BIGTEXT"],
+      "children": null
+    }
+  ]
+}

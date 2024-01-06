@@ -1,0 +1,15 @@
+</COMMENT Establishing Shot for Protoss Level 9>
+
+</FADESPEED 100>
+</DISPLAYTIME 5000>
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palpc\ProtossC.pcx>
+</FONTCOLOR glue\palpc\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"SHADOW HUNTERS"
+
+Protoss Command Ship Gantrithor
+Low orbit over the planet Aiur
+</PAGE>

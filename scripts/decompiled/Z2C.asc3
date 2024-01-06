@@ -1,5 +1,0 @@
-script_name Brood Wars Zerg 2 - Town C
-script_id ZB2C
-
-issue_order 34 1 scv Loc.114 Loc.10 200 Own
-stop

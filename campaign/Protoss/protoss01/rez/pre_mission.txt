@@ -1,0 +1,28 @@
+</COMMENT Establishing Shot for Protoss Level 1>
+
+</FADESPEED 100>
+</DISPLAYTIME 22000>
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palpa\Blank.pcx>
+</FONTCOLOR glue\palpa\tfont.pcx>
+
+</SCREENLEFT>
+PROTOSS CAMPAIGN: THE FALL
+
+The Zerg Overmind has succeeded in invading the Protoss Homeworld of Aiur and has embedded itself into the crust of the planet.
+
+Now, as the agents of the sinister Overmind spread chaos and destruction across the face of Aiur, the stalwart Protoss defenders prepare themselves for the coming onslaught.
+</PAGE>
+
+</COMMENT #############################################################>
+</DISPLAYTIME 5000>
+</BACKGROUND glue\palpa\ProtossA.pcx>
+</FONTCOLOR glue\palpa\tfont.pcx>
+
+</SCREENLOWERLEFT>
+"FIRST STRIKE"
+
+Citadel of the new Protoss Executor
+Two days after the Zerg invasion
+</PAGE>
