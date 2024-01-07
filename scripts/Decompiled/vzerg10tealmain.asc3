@@ -1,0 +1,528 @@
+script_name Zerg 10 - Left Teal (Attack)
+script_id Z10a
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 nexus 150
+build 4 probe 130
+build 15 probe 80
+max_workers 18
+build 2 gateway 80
+build 1 stargate 80
+build 1 cybernetics_core 80
+build 1 robotics_facility 80
+build 1 robotics_support_bay 80
+build 1 fleet_beacon 80
+multirun upgrades
+multirun defense
+multirun expalg
+multirun templedeath
+max_force 585
+define_max 20 zealot
+define_max 30 dragoon
+define_max 15 scout
+define_max 255 carrier
+define_max 2 arbiter
+define_max 3 high_templar
+define_max 255 archon
+define_max 8 reaver
+define_max 5 shuttle
+define_max 5 observer
+define_max 50 probe
+define_max 12 hornet
+idle_orders 10 16 1 zealot|dark_templar|scout 160 group_men 80 Health(LessThan 14)
+idle_orders 10 16 1 zealot|dark_templar|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 120 Health(LessThan 14)
+idle_orders 10 16 1 zealot|dark_templar|scout 160 sunken_colony|photon_cannon 90 Health(LessThan 12)
+idle_orders 10 16 3 zealot|dark_templar|scout 160 group_men 90 Health(LessThan 33)
+idle_orders 10 16 3 zealot|dark_templar|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 130 Health(LessThan 33)
+idle_orders 10 16 3 zealot|dark_templar|scout 160 sunken_colony|photon_cannon 100 Health(LessThan 24)
+idle_orders 10 16 5 zealot|dark_templar|scout 160 group_men 95 Health(LessThan 60)
+idle_orders 10 16 5 zealot|dark_templar|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 135 Health(LessThan 60)
+idle_orders 10 16 5 zealot|dark_templar|scout 160 sunken_colony|photon_cannon|bunker 105 Health(LessThan 45)
+idle_orders 10 64 1 dragoon 192 sunken_colony|photon_cannon|bunker 110 Health(LessThan 20)
+idle_orders 10 64 1 dragoon 192 group_men 100 Health(LessThan 15)
+idle_orders 10 64 2 dragoon 192 group_men 105 Health(LessThan 35)
+idle_orders 10 64 1 dragoon 192 infested_terran|dark_archon|defiler 130 Health(LessThan 20)
+idle_orders 10 64 1 dragoon 192 lurker|queen 120 Health(LessThan 20)
+idle_orders 10 64 1 archon 160 zergling|zealot|hhydralisk|hydralisk|dark_templar|ghost|high_templar|marine|firebat 150 count(AtLeast 3 48 14)
+idle_orders 10 16 1 archon 128 zergling|zealot|hhydralisk|hydralisk|dark_templar|ghost|high_templar|marine 110 count(AtLeast 2 24 14)
+idle_orders 10 16 2 archon 128 zergling|zealot|hhydralisk|hydralisk|dark_templar|ghost|high_templar|marine 130 count(AtLeast 2 24 14)
+idle_orders 10 16 1 scout|corsair 192 mutalisk|scout|corsair|scourge|wraith 110 Health(LessThan 20)
+idle_orders 10 16 3 scout|corsair 192 mutalisk|scout|corsair|scourge|wraith 135 Health(LessThan 60)
+idle_orders 10 16 1 scout|corsair 192 guardian|battlecruiser|carrier 150 Health(LessThan 20)
+idle_orders 10 16 2 scout|corsair 192 guardian|battlecruiser|carrier 160 Health(LessThan 40)
+idle_orders 10 16 3 scout|corsair 192 guardian|battlecruiser|carrier 170 Health(LessThan 60)
+idle_orders 10 16 4 scout|corsair 192 guardian|battlecruiser|carrier 190 Health(LessThan 80)
+idle_orders 10 16 1 scout|corsair 192 shuttle|observer|overlord 60 Health(LessThan 20)
+idle_orders 10 16 1 scout|corsair|dragoon 160 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 80 Health(LessThan 30)
+idle_orders 10 16 2 scout|corsair|dragoon 160 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 90 Health(LessThan 60)
+check_transports
+under_attack 0
+wait 1500
+
+attack_add 2 dragoon
+attack_to (2015,6832) (2123,7693)
+attack_do
+attack_clear
+deaths 2 Set 1 infested_command_center block1
+wait 2035
+
+train 6 dragoon
+attack_add 6 dragoon
+attack_add 2 hornet
+attack_prepare
+attack_do
+attack_clear
+deaths 1 Set 1 infested_command_center block1
+wait 3100
+
+:safe_attacking
+wait 16
+
+if_attacking safe_attacking
+train 2 scout
+train 4 dragoon
+wait_force 1 reaver
+wait 50
+
+attack_add 2 scout
+attack_add 4 dragoon
+attack_add 1 reaver
+attack_prepare
+attack_do
+attack_clear
+tech stasis_field 30
+multirun guarding
+
+:block1
+wait 4850
+
+deaths 1 AtLeast 2 hmojo at1a
+deaths 1 AtLeast 1 hmojo at1b
+deaths 2 AtLeast 2 nexus at1b
+attack_add 1 zealot
+attack_add 5 dragoon
+goto at1f
+:at1a
+attack_add 3 zealot
+attack_add 6 dragoon
+attack_add 1 reaver
+attack_add 4 scout
+goto at1f
+:at1b
+attack_add 2 zealot
+attack_add 6 dragoon
+attack_add 2 scout
+attack_add 2 hornet
+:at1f
+attack_prepare
+attack_do
+attack_clear
+deaths 1 AtLeast 2 hmojo at2a
+deaths 1 AtLeast 1 hmojo at2b
+deaths 2 AtLeast 3 nexus at2b
+wait 4500
+
+goto at2f
+
+:at2a
+attack_add 2 reaver
+wait 3500
+
+goto at2f
+
+:at2b
+
+wait 3300
+:at2f
+
+attack_add 14 dragoon
+attack_add 8 hornet
+attack_prepare
+deaths 2 Add 1 valkyrie at3a
+attack_do
+attack_clear
+wait 5250
+
+deaths 1 AtLeast 2 hmojo at3a
+deaths 1 AtLeast 1 hmojo at3b
+deaths 2 AtLeast 3 nexus at3b
+attack_add 4 zealot
+attack_add 4 dragoon
+attack_add 2 reaver
+goto at3f
+:at3a
+attack_add 6 zealot
+attack_add 6 dragoon
+attack_add 4 reaver
+goto at3f
+:at3b
+train 5 zealot
+train 5 dragoon
+train 5 reaver
+wait_force 5 reaver
+attack_add 5 zealot
+attack_add 5 dragoon
+attack_add 3 reaver
+:at3f
+attack_prepare
+attack_do
+attack_clear
+deaths 2 AtLeast 4 nexus at4p
+wait 3500
+
+goto at4skip
+:at4p
+wait 3000
+
+train 3 scout
+train 9 dragoon
+wait_force 12 dragoon
+wait_force 6 scout
+:at4skip
+attack_add 6 scout
+attack_add 12 dragoon
+attack_prepare
+attack_do
+attack_clear
+deaths 2 AtLeast 4 nexus at5p
+wait 5000
+
+goto at5skip
+:at5p
+wait 3500
+
+define_max 3 carrier
+train 3 scout
+train 1 reaver
+train 2 dragoon
+train 4 dragoon
+train 6 scout
+train 6 dragoon
+train 8 scout
+train 2 reaver
+train 1 carrier
+train 8 dragoon
+wait_force 8 scout
+wait_force 1 carrier
+wait_force 8 dragoon
+wait_force 2 reaver
+wait 50
+
+:at5skip
+define_max 3 carrier
+attack_add 8 scout
+attack_add 1 carrier
+attack_add 8 dragoon
+attack_add 2 reaver
+attack_add 4 hornet
+attack_prepare
+attack_do
+attack_clear
+wait 4000
+
+deaths 2 AtLeast 4 nexus at6p
+wait 2000
+
+goto at6skip
+:at6p
+define_max 3 carrier
+train 2 dragoon
+train 3 scout
+train 2 reaver
+train 4 dragoon
+train 6 dragoon
+train 4 reaver
+train 6 scout
+train 8 dragoon
+train 10 dragoon
+train 1 carrier
+train 1 arbiter
+train 12 dragoon
+wait_force 12 dragoon
+wait_force 1 carrier
+wait_force 4 reaver
+wait_force 6 scout
+wait 50
+
+:at6skip
+define_max 3 carrier
+attack_add 12 dragoon
+attack_add 4 reaver
+attack_add 6 scout
+attack_add 1 carrier
+attack_add 1 arbiter
+attack_add 8 hornet
+attack_prepare
+deaths 2 Add 1 valkyrie at3a
+attack_do
+attack_clear
+deaths 1 Add 1 hmojo block1
+goto block1
+
+:upgrades
+upgrade 1 shuttle_speed 30
+upgrade 1 p_plasma_shield 30
+upgrade 1 dragoon_range 30
+upgrade 1 carrier_capacity 30
+upgrade 1 scarab_damage 30
+upgrade 1 p_armor 30
+upgrade 1 p_plating 30
+upgrade 1 scout_sight 30
+upgrade 1 p_ground_weapon 30
+upgrade 1 p_air_weapon 30
+wait 480
+
+wait_upgrades
+wait 5000
+
+upgrade 1 p_ground_weapon 30
+wait 5000
+
+tech psionic_storm 30
+upgrade 1 scout_speed 30
+upgrade 2 p_plasma_shield 30
+upgrade 2 p_air_weapon 30
+upgrade 2 p_armor 30
+upgrade 2 p_plating 30
+wait 480
+
+wait_upgrades
+wait 7000
+
+upgrade 2 p_ground_weapon 30
+wait 7000
+
+upgrade 3 p_plasma_shield 30
+upgrade 3 p_air_weapon 30
+upgrade 3 p_armor 30
+upgrade 3 p_plating 30
+wait 480
+
+wait_upgrades
+wait 7000
+
+upgrade 3 p_ground_weapon 30
+wait 480
+
+stop
+
+:guarding
+wait 5000
+
+place_guard reaver 0
+place_guard reaver 2
+place_guard scout 0
+place_guard scout 1
+wait 5000
+
+place_guard scout 2
+place_guard zealot 0
+place_guard zealot 2
+wait 5000
+
+place_guard dragoon 2
+wait 5000
+
+place_guard dragoon 1
+place_guard dragoon 0
+stop
+
+:defense
+wait 1425
+
+defensebuild_gg 1 zealot
+defenseuse_gg 1 zealot
+defensebuild_gg 1 hornet
+defenseuse_gg 1 hornet
+defensebuild_ag 1 dragoon
+defenseuse_ag 1 dragoon
+defensebuild_ga 1 scout
+defenseuse_ga 1 scout
+defensebuild_aa 1 scout
+defenseuse_aa 1 scout
+:dloop1
+wait 300
+
+deaths 2 AtLeast 6 group_factories 1lost
+goto dloop1
+:1lost
+define_max 2 carrier
+max_force 785
+wait 1500
+
+defenseclear_gg
+defenseclear_ag
+defenseclear_ga
+defensebuild_gg 1 zealot
+defenseuse_gg 1 zealot
+defensebuild_gg 1 reaver
+defensebuild_gg 1 dragoon
+defenseuse_gg 1 dragoon
+defensebuild_gg 1 hornet
+defenseuse_gg 1 hornet
+defensebuild_gg 1 scout
+defenseuse_gg 1 scout
+defensebuild_ag 3 dragoon
+defenseuse_ag 3 dragoon
+defensebuild_ag 1 hornet
+defenseuse_ag 1 hornet
+defensebuild_ga 2 scout
+defenseuse_ga 2 scout
+defensebuild_ga 1 hornet
+defenseuse_ga 1 hornet
+defensebuild_aa 1 scout
+defenseuse_aa 1 scout
+:dloop2
+wait 300
+
+deaths 2 AtLeast 11 group_factories 2lost
+goto dloop2
+:2lost
+define_max 3 carrier
+max_force 1085
+wait 2500
+
+defenseclear_gg
+defenseclear_ag
+defenseclear_ga
+defenseclear_aa
+defensebuild_gg 2 dragoon
+defenseuse_gg 2 dragoon
+defensebuild_gg 1 zealot
+defenseuse_gg 1 zealot
+defensebuild_gg 2 hornet
+defenseuse_gg 2 hornet
+defensebuild_gg 1 reaver
+defenseuse_gg 1 reaver
+defenseuse_gg 1 scout
+defensebuild_gg 1 dragoon
+defenseuse_gg 1 dragoon
+defensebuild_ag 3 dragoon
+defenseuse_ag 3 dragoon
+defenseuse_ag 1 scout
+defensebuild_aa 2 scout
+defenseuse_aa 2 scout
+:dloop3
+wait 1500
+
+goto dloop3
+
+:expalg
+wait 300
+
+deaths 2 AtLeast 2 nexus expprep
+goto expalg
+
+:expprep
+guard_all
+
+:expexec
+wait 300
+
+deaths 2 AtMost 1 nexus expexec
+:capture_expansions
+wait 3500
+
+expand 1 support_town
+wait 1500
+
+try_townpoint 1 capture_expansions
+:full_scale
+wait 2500
+
+deaths 2 AtMost 2 nexus full_scale
+expand 2 support_town
+wait 1500
+
+try_townpoint 2 full_scale
+wait 15000
+
+stop
+
+:support_town
+start_town
+build 1 nexus 150
+get_oldpeons 1
+wait_build 1 nexus
+deaths 2 Subtract 1 nexus capture_expansions
+multirun probes
+player_need 2 gateway
+player_need 1 stargate
+player_need 1 cybernetics_core
+player_need 1 robotics_facility
+player_need 1 robotics_support_bay
+player_need 1 fleet_beacon
+place_guard dragoon 1
+place_guard scout 2
+place_guard zealot 0
+
+:support_loop
+wait 4500
+
+goto support_loop
+
+:probes
+build 1 probe 130
+wait_build 1 probe
+multirun pylons
+build 2 probe 80
+wait_build 2 probe
+build 3 probe 80
+wait_build 3 probe
+build 4 probe 80
+wait_build 4 probe
+build 5 probe 50
+wait_build 5 probe
+stop
+
+:pylons
+build 1 pylon 80
+wait_build 1 pylon
+build 1 photon_cannon 80
+wait_buildstart 1 photon_cannon
+build 2 pylon 80
+wait_build 2 pylon
+build 2 photon_cannon 80
+wait_build 2 photon_cannon
+random_jump 85 exp_robotics
+random_jump 128 exp_starport
+build 1 gateway 80
+build 3 pylon 80
+wait_build 3 pylon
+build 3 photon_cannon 80
+wait_build 3 photon_cannon
+stop
+
+:exp_robotics
+build 1 robotics_facility 80
+build 3 pylon 80
+wait_build 3 pylon
+build 3 photon_cannon 80
+wait_build 3 photon_cannon
+stop
+
+:exp_starport
+build 1 stargate 80
+build 3 pylon 80
+wait_build 3 pylon
+build 3 photon_cannon 80
+wait_build 3 photon_cannon
+stop
+
+
+:templedeath
+wait 224
+
+deaths 3 AtLeast 1 Protoss_Temple helpme
+goto templedeath
+
+:helpme
+under_attack 1
+stop

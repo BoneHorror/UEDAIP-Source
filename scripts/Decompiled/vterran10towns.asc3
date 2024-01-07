@@ -1,0 +1,738 @@
+script_name Terran 10 - Confederate Towns
+script_id Te10
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+notowns_jump command_center duke_supp
+multirun civilian_idle
+if_owned physics_lab battle_confed
+if_owned 190 north_confed
+build 1 command_center 150
+build 2 scv 130
+build 18 scv 80
+max_workers 18
+define_max 18 scv
+define_max 25 marine
+define_max 12 firebat
+define_max 6 wraith
+define_max 8 goliath
+define_max 8 vulture
+define_max 4 siege_tank
+define_max 255 dropship
+max_force 1200
+defensebuild_gg 1 goliath
+defenseuse_gg 1 goliath
+defensebuild_gg 1 vulture
+defenseuse_gg 1 vulture
+defensebuild_gg 1 goliath
+defenseuse_gg 1 goliath
+defensebuild_gg 1 marine
+defenseuse_gg 1 marine
+defensebuild_ag 1 goliath
+defenseuse_ag 1 goliath
+defensebuild_ag 1 marine
+defenseuse_ag 1 marine
+defensebuild_aa 1 wraith
+defenseuse_aa 1 wraith
+defensebuild_ga 1 wraith
+defenseuse_ga 1 wraith
+farms_timing
+tech siege_mode 30
+wait 25
+
+guard_all
+build 1 barracks 80
+build 1 factory 80
+build 1 starport 80
+build 1 machine_shop 80
+build 1 comsat_station 80
+build 1 control_tower 80
+build 1 engineering_bay 80
+build 1 armory 80
+wait 1215
+
+tech stim_packs 30
+upgrade 1 t_infantry_armor 30
+upgrade 1 t_vehicle_weapon 30
+attack_add 2 marine
+attack_add 2 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1050
+
+upgrade 1 t_infantry_weapon 30
+upgrade 1 t_vehicle_plating 30
+upgrade 1 t_ship_plating 30
+train 4 goliath
+attack_add 4 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 3 vulture
+tech spider_mines 30
+upgrade 1 marine_range 30
+upgrade 1 t_ship_weapon 30
+attack_add 5 vulture
+attack_add 2 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 vulture_speed 30
+upgrade 1 medic_mana 30
+:block1
+wait 1035
+
+train 2 siege_tank
+train 4 goliath
+attack_add 2 siege_tank
+attack_add 4 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1025
+
+train 20 marine
+attack_add 20 marine
+attack_add 2 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 756
+
+train 5 vulture
+train 4 wraith
+attack_add 5 vulture
+attack_add 4 wraith
+attack_add 2 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto block1
+
+:battle_confed
+build 1 command_center 150
+build 2 scv 130
+build 24 scv 80
+max_workers 24
+define_max 24 scv
+define_max 40 marine
+define_max 14 firebat
+define_max 6 siege_tank
+define_max 7 goliath
+define_max 9 wraith
+define_max 5 dropship
+define_max 3 science_vessel
+define_max 5 battlecruiser
+max_force 1200
+defensebuild_gg 2 marine
+defenseuse_gg 2 marine
+defensebuild_gg 1 battlecruiser
+defenseuse_gg 1 battlecruiser
+defensebuild_gg 1 goliath
+defenseuse_gg 1 goliath
+defenseuse_gg 1 firebat
+defensebuild_ag 1 goliath
+defenseuse_ag 1 goliath
+defensebuild_ag 1 battlecruiser
+defenseuse_ag 1 battlecruiser
+defensebuild_ag 1 marine
+defenseuse_ag 1 marine
+defensebuild_aa 1 wraith
+defenseuse_aa 1 wraith
+defensebuild_ga 1 wraith
+defenseuse_ga 1 wraith
+farms_timing
+check_transports
+tech siege_mode 30
+wait 25
+
+guard_all
+multirun help_request
+build 1 barracks 80
+build 1 factory 80
+build 1 starport 80
+build 1 machine_shop 80
+build 1 comsat_station 80
+build 1 control_tower 80
+build 1 engineering_bay 80
+build 1 armory 80
+build 1 science_facility 80
+wait 625
+
+upgrade 1 marine_range 30
+upgrade 1 vulture_speed 30
+upgrade 1 t_infantry_weapon 30
+upgrade 1 t_ship_plating 30
+upgrade 1 t_ship_weapon 30
+attack_add 1 battlecruiser
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1025
+
+train 2 goliath
+train 2 wraith
+train 4 goliath
+train 3 wraith
+attack_add 4 goliath
+attack_add 3 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_vehicle_weapon 30
+upgrade 1 t_vehicle_plating 30
+upgrade 1 t_infantry_armor 30
+tech stim_packs 30
+wait 805
+
+train 12 marine
+attack_add 12 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 505
+
+train 4 firebat
+train 4 vulture
+attack_add 4 vulture
+attack_add 4 firebat
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 303
+
+attack_add 2 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech yamato_gun 30
+tech cloaking_field 30
+upgrade 2 t_ship_plating 30
+train 2 battlecruiser
+attack_add 2 battlecruiser
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 t_ship_weapon 30
+train 2 goliath
+train 20 marine
+train 4 goliath
+train 4 firebat
+attack_add 20 marine
+attack_add 4 firebat
+attack_add 4 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 t_infantry_weapon 30
+upgrade 1 wraith_mana 30
+upgrade 1 vademecum 30
+train 3 battlecruiser
+train 2 vulture
+train 4 firebat
+attack_add 4 vulture
+attack_add 6 firebat
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 3 battlecruiser
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 medic_mana 30
+:block2
+train 3 battlecruiser
+wait 833
+
+train 33 marine
+attack_add 12 marine
+attack_add 2 battlecruiser
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 644
+
+train 4 goliath
+train 2 vulture
+attack_add 21 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 8 wraith
+attack_add 4 goliath
+attack_add 2 vulture
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 8 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 5 battlecruiser
+attack_add 5 battlecruiser
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto block2
+
+:north_confed
+build 1 command_center 150
+build 3 scv 130
+build 1 barracks 80
+build 1 factory 80
+build 1 machine_shop 80
+build 1 starport 80
+build 1 control_tower 80
+build 1 academy 80
+build 1 comsat_station 80
+build 1 armory 80
+build 1 engineering_bay 80
+build 3 missile_turret 80
+build 21 scv 80
+max_workers 21
+farms_timing
+define_max 28 marine
+define_max 6 vulture
+define_max 6 goliath
+define_max 3 siege_tank
+define_max 12 wraith
+define_max 2 dropship
+define_max 24 scv
+define_max 11 ghost
+define_max 6 firebat
+define_max 1 science_vessel
+defensebuild_gg 1 marine
+defenseuse_gg 1 marine
+defenseuse_gg 1 wraith
+defensebuild_gg 1 wraith
+defenseuse_gg 1 vulture
+defensebuild_gg 1 marine
+defenseuse_gg 1 marine
+defenseuse_gg 1 goliath
+defenseuse_gg 1 firebat
+defensebuild_ag 1 goliath
+defenseuse_ag 1 goliath
+defensebuild_ag 1 marine
+defenseuse_ag 1 marine
+defenseuse_ag 1 ghost
+defenseuse_ag 1 wraith
+defensebuild_ga 1 wraith
+defenseuse_ga 1 wraith
+defensebuild_aa 1 wraith
+defenseuse_aa 1 wraith
+max_force 840
+check_transports
+wait 25
+
+tech siege_mode 30
+upgrade 1 t_infantry_weapon 30
+upgrade 1 t_ship_weapon 30
+upgrade 1 marine_range 30
+wait 325
+
+train 3 vulture
+train 1 goliath
+train 2 wraith
+attack_add 3 vulture
+attack_add 1 goliath
+attack_add 2 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech stim_packs 30
+wait 735
+
+train 8 marine
+train 1 siege_tank
+attack_add 8 marine
+attack_add 1 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 6 wraith
+wait 865
+
+attack_add 5 wraith
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+tech cloaking_field 30
+upgrade 1 vulture_speed 30
+upgrade 1 t_ship_plating 30
+upgrade 1 t_infantry_armor 30
+wait 120
+
+train 3 vulture
+attack_add 3 vulture
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 4 goliath
+train 2 siege_tank
+attack_add 4 goliath
+attack_add 2 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech spider_mines 30
+upgrade 1 t_vehicle_weapon 30
+train 4 wraith
+wait 325
+
+train 8 wraith
+attack_add 8 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_vehicle_plating 30
+wait 525
+
+attack_add 20 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+
+:block3
+wait 725
+
+train 14 marine
+attack_add 2 siege_tank
+attack_add 14 marine
+attack_add 4 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 825
+
+attack_add 2 vulture
+attack_add 8 marine
+attack_add 6 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 8 wraith
+attack_add 8 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 575
+
+attack_add 12 marine
+attack_add 6 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto block3
+
+:duke_supp
+build 2 missile_turret 80
+build 2 bunker 80
+build 1 academy 80
+build 1 machine_shop 80
+build 1 covert_ops 80
+player_need 3 scv
+max_workers 3
+max_force 1500
+define_max 24 marine
+define_max 12 ghost
+define_max 1 goliath
+define_max 1 siege_tank
+define_max 1 vulture
+defensebuild_gg 2 marine
+defenseuse_gg 2 marine
+defensebuild_gg 1 ghost
+defenseuse_gg 1 ghost
+defensebuild_ag 2 marine
+defenseuse_ag 2 marine
+defensebuild_ag 1 ghost
+defenseuse_ag 1 ghost
+#guard goliath Loc.43 1 255 70
+#guard siege_tank Loc.43 1 255 70
+#guard vulture Loc.43 1 255 70
+#wait 50
+
+
+unit_avail 13 Set Disabled siege_tank reinforcements
+unit_avail 13 Set Disabled goliath reinforcements
+unit_avail 13 Set Disabled vulture reinforcements
+multirun reinforcements
+multirun beacon1
+multirun beacon2
+multirun beacon3
+multirun farm_check
+idle_orders 92 512 2 ghost 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 512 2 ghost 368 bunker 50 Own|NotEnemies|Self(Order(163))
+wait 16
+
+upgrade 1 marine_range 30
+upgrade 1 t_infantry_weapon 30
+wait 1500
+
+attack_add 2 ghost
+attack_add 5 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech stim_packs 30
+upgrade 1 t_infantry_armor 30
+wait 1500
+
+attack_add 15 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 ghost_sight 30
+upgrade 1 medic_mana 30
+upgrade 1 vademecum 30
+upgrade 2 t_infantry_weapon 30
+upgrade 2 t_infantry_armor 30
+:dloop
+wait 1500
+
+attack_add 6 ghost
+attack_add 12 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 850
+
+attack_add 24 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto dloop
+
+#:reinforcements_dbg
+#print LoopDebug
+:reinforcements
+#wait 275
+wait 50
+
+#bring_jump 0 AtLeast 1 siege_tank Loc.38 reinforcements_dbg
+bring_jump 0 AtMost 2 goliath Loc.38 do_gol
+bring_jump 0 AtMost 3 siege_tank|30 Loc.38 do_siege
+#30 is sieged siege tank
+random_jump 85 do_vul
+:gol_st
+random_jump 128 do_siege
+goto do_gol
+
+:do_vul
+bring_jump 0 AtLeast 4 vulture Loc.38 gol_st
+unit_avail 13 Set Disabled siege_tank reinforcements
+unit_avail 13 Set Disabled goliath reinforcements
+unit_avail 13 Set Enabled vulture reinforcements
+#guard vulture Loc.43 1 1 110
+#deaths 13 Set 1 scorpion training_wait
+#multirun training_wait
+#wait_train 1 vulture
+#deaths 13 Set 0 scorpion training_wait
+train 1 vulture
+wait 250
+
+unit_avail 13 Set Disabled siege_tank reinforcements
+unit_avail 13 Set Disabled goliath reinforcements
+unit_avail 13 Set Disabled vulture reinforcements
+wait 375
+
+goto reinforcements
+
+:do_gol
+bring_jump 0 AtLeast 7 goliath Loc.38 reinforcements
+unit_avail 13 Set Disabled siege_tank reinforcements
+unit_avail 13 Set Enabled goliath reinforcements
+unit_avail 13 Set Disabled vulture reinforcements
+#deaths 13 Set 2 scorpion training_wait
+#multirun training_wait
+#wait_train 1 goliath
+#deaths 13 Set 0 scorpion training_wait
+train 1 goliath
+wait 250
+
+unit_avail 13 Set Disabled siege_tank reinforcements
+unit_avail 13 Set Disabled goliath reinforcements
+unit_avail 13 Set Disabled vulture reinforcements
+wait 650
+
+goto reinforcements
+
+:do_siege
+bring_jump 0 AtLeast 8 siege_tank|30 Loc.38 do_gol
+unit_avail 13 Set Enabled siege_tank reinforcements
+unit_avail 13 Set Disabled goliath reinforcements
+unit_avail 13 Set Disabled vulture reinforcements
+#deaths 13 Set 3 scorpion training_wait
+#multirun training_wait
+#wait_train 1 siege_tank
+#deaths 13 Set 0 scorpion training_wait
+train 1 siege_tank
+wait 250
+
+unit_avail 13 Set Disabled siege_tank reinforcements
+unit_avail 13 Set Disabled goliath reinforcements
+unit_avail 13 Set Disabled vulture reinforcements
+wait 755
+
+goto reinforcements
+
+#:training_wait
+#deaths 13 Exactly 1 scorpion training_wait_v
+#deaths 13 Exactly 2 scorpion training_wait_g
+#deaths 13 Exactly 3 scorpion training_wait_t
+#:void
+#stop
+#
+#:training_wait_g
+#wait 8
+#
+#do_morph 1 goliath
+#deaths 13 Exactly 0 scorpion void
+#goto training_wait_g
+#
+#:training_wait_v
+#wait 8
+#
+#do_morph 1 vulture
+#deaths 13 Exactly 0 scorpion void
+#goto training_wait_v
+#
+#:training_wait_t
+#wait 8
+#
+#do_morph 1 siege_tank
+#deaths 13 Exactly 0 scorpion void
+#goto training_wait_t
+
+:beacon1
+wait 350
+
+bring_jump 14 AtLeast 1 group_buildings Loc.5 beacon1
+create_script fort 255 Loc.5 255 0
+stop
+
+:beacon2
+wait 350
+
+bring_jump 14 AtLeast 1 group_buildings Loc.3 beacon2
+create_script fort 255 Loc.3 255 0
+stop
+
+:beacon3
+wait 350
+
+bring_jump 14 AtLeast 1 group_buildings Loc.4 beacon3
+create_script fort 255 Loc.4 255 0
+stop
+
+:fort
+start_town
+build 1 command_center 150
+build 1 scv 80
+build 1 bunker 80
+build 1 missile_turret 80
+max_workers 2
+wait 3500
+
+build 1 barracks 80
+:f1loop
+wait 1500
+
+goto f1loop
+
+:farm_check
+wait 440
+
+notowns_jump command_center farm_check
+farms_timing
+stop
+
+:civilian_idle
+issue_order 166 100 15 Loc.38 Loc.38 15 0
+wait_rand 433 800
+
+goto civilian_idle
+
+:help_request
+wait 1633
+
+wait_secure
+help_iftrouble
+goto help_request
+

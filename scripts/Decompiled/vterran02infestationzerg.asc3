@@ -1,0 +1,343 @@
+script_name Terran 2 - Electronic Distribution
+script_id TED2
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 hatchery 150
+build 1 drone 130
+build 3 drone 80
+build 12 drone 80
+build 1 overlord 90
+define_max 25 drone
+define_max 20 zergling
+define_max 10 hydralisk
+define_max 1 infested_terran
+wait 25
+
+load_bank vt1
+wait 1
+
+multirun load_minerals
+#multirun fire_avail
+wait_buildstart 8 drone
+build 1 spawning_pool 80
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+multirun colony_morph
+:wait_cc
+wait 8
+
+enemyowns_jump command_center cc_done
+goto wait_cc
+
+:cc_done
+capt_expand
+max_workers 14
+max_force 303
+wait_buildstart 1 spawning_pool
+idle_orders 27 128 1 queen 512 command_center 80 health(LessThanPercent,50)|own
+under_attack 0
+wait 625
+
+creep 4
+wait_build 1 spawning_pool
+defensebuild_gg 1 infested_terran
+capt_expand
+train 1 infested_terran
+attack_add 3 zergling
+attack_add 1 infested_terran
+attack_to Loc.13 Loc.12
+wait 500
+
+attack_do
+attack_clear
+farms_timing
+build 2 creep_colony 80
+train 4 zergling
+attack_add 4 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 850
+
+train 6 zergling
+attack_add 6 zergling
+attack_to Loc.13 Loc.12
+wait 500
+
+attack_do
+attack_clear
+build 3 creep_colony 80
+wait_buildstart 3 creep_colony
+build 2 sunken_colony 80
+defenseuse_gg 1 infested_terran
+wait 1355
+
+build 1 evolution_chamber 60
+train 12 zergling
+attack_add 12 zergling
+attack_add 1 infested_terran
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 z_carapace 30
+define_max 2 infested_terran
+train 6 zergling
+attack_add 6 zergling
+attack_to Loc.13 Loc.12
+wait 500
+
+attack_do
+attack_clear
+:loop
+wait 1500
+
+train 14 zergling
+attack_add 14 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1850
+
+train 2 infested_terran
+attack_add 2 infested_terran
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto loop
+
+:colony_morph
+wait_build 1 spawning_pool
+wait 8
+
+bring_jump 14 Exactly 0 group_men Loc.16 colony_morph
+issue_order 43 1 creep_colony Loc.16 Loc.16 sunken_colony 0
+stop
+
+:load_minerals
+bank_data Exactly 1 vt1 minerals add_mins
+:unit_loader
+wait 1
+
+load_bank vt1
+wait 1
+
+bank_data AtLeast 8 vt1 vultures vult_adder8
+bank_data Exactly 7 vt1 vultures vult_adder7
+bank_data Exactly 6 vt1 vultures vult_adder6
+bank_data Exactly 5 vt1 vultures vult_adder5
+bank_data Exactly 4 vt1 vultures vult_adder4
+bank_data Exactly 3 vt1 vultures vult_adder3
+bank_data Exactly 2 vt1 vultures vult_adder2
+bank_data Exactly 1 vt1 vultures vult_adder1
+:marine_cont
+wait 1
+
+load_bank vt1
+wait 1
+
+bank_data AtLeast 15 vt1 marines mar_adder15
+bank_data Exactly 14 vt1 marines mar_adder14
+bank_data Exactly 13 vt1 marines mar_adder13
+bank_data Exactly 12 vt1 marines mar_adder12
+bank_data Exactly 11 vt1 marines mar_adder11
+bank_data Exactly 10 vt1 marines mar_adder10
+bank_data Exactly 9 vt1 marines mar_adder9
+bank_data Exactly 8 vt1 marines mar_adder8
+bank_data Exactly 7 vt1 marines mar_adder7
+bank_data Exactly 6 vt1 marines mar_adder6
+bank_data Exactly 5 vt1 marines mar_adder5
+bank_data Exactly 4 vt1 marines mar_adder4
+bank_data Exactly 3 vt1 marines mar_adder3
+bank_data Exactly 2 vt1 marines mar_adder2
+bank_data Exactly 1 vt1 marines mar_adder1
+:bank_wrapup
+wait 15
+
+save_bank vt1
+stop
+
+:vult_adder1
+deaths 6 Add 1 vulture load_minerals
+wait 1
+
+goto marine_cont
+
+:vult_adder2
+deaths 6 Add 2 vulture load_minerals
+wait 1
+
+goto marine_cont
+
+:vult_adder3
+deaths 6 Add 3 vulture load_minerals
+wait 1
+
+goto marine_cont
+
+:vult_adder4
+deaths 6 Add 4 vulture load_minerals
+wait 1
+
+goto marine_cont
+
+:vult_adder5
+deaths 6 Add 5 vulture load_minerals
+wait 1
+
+goto marine_cont
+
+:vult_adder6
+deaths 6 Add 6 vulture load_minerals
+wait 1
+
+goto marine_cont
+
+:vult_adder7
+deaths 6 Add 7 vulture load_minerals
+wait 1
+
+goto marine_cont
+
+:vult_adder8
+deaths 6 Add 8 vulture load_minerals
+wait 1
+
+goto marine_cont
+
+:mar_adder1
+deaths 6 Add 1 marine load_minerals
+wait 1
+
+save_bank vt1
+goto bank_wrapup
+
+:mar_adder2
+deaths 6 Add 2 marine load_minerals
+wait 1
+
+save_bank vt1
+goto bank_wrapup
+
+:mar_adder3
+deaths 6 Add 3 marine load_minerals
+wait 1
+
+save_bank vt1
+goto bank_wrapup
+
+:mar_adder4
+deaths 6 Add 4 marine load_minerals
+wait 1
+
+save_bank vt1
+goto bank_wrapup
+
+:mar_adder5
+deaths 6 Add 5 marine load_minerals
+wait 1
+
+save_bank vt1
+goto bank_wrapup
+
+:mar_adder6
+deaths 6 Add 6 marine load_minerals
+wait 1
+
+save_bank vt1
+goto bank_wrapup
+
+:mar_adder7
+deaths 6 Add 7 marine load_minerals
+wait 1
+
+save_bank vt1
+goto bank_wrapup
+
+:mar_adder8
+deaths 6 Add 8 marine load_minerals
+wait 1
+
+save_bank vt1
+goto bank_wrapup
+
+:mar_adder9
+deaths 6 Add 9 marine load_minerals
+wait 1
+
+save_bank vt1
+goto bank_wrapup
+
+:mar_adder10
+deaths 6 Add 10 marine load_minerals
+wait 1
+
+save_bank vt1
+goto bank_wrapup
+
+:mar_adder11
+deaths 6 Add 11 marine load_minerals
+wait 1
+
+save_bank vt1
+goto bank_wrapup
+
+:mar_adder12
+deaths 6 Add 12 marine load_minerals
+wait 1
+
+save_bank vt1
+goto bank_wrapup
+
+:mar_adder13
+deaths 6 Add 13 marine load_minerals
+wait 1
+
+save_bank vt1
+goto bank_wrapup
+
+:mar_adder14
+deaths 6 Add 14 marine load_minerals
+wait 1
+
+save_bank vt1
+goto bank_wrapup
+
+:mar_adder15
+deaths 6 Add 15 marine load_minerals
+wait 1
+
+save_bank vt1
+goto bank_wrapup
+
+
+:add_mins
+deaths 0 Set 1 ultralisk load_minerals
+goto unit_loader
+
+#:fire_avail
+#wait 16
+#
+#enemyowns_jump academy fire_enable
+#goto fire_avail
+#
+#:fire_enable
+#unit_avail 1 Set Enabled firebat fire_avail
+#unit_avail 1 Set Enabled academy fire_avail
+#unit_avail 1 Set Enabled bunker fire_avail
+#stop
+

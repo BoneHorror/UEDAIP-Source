@@ -1,0 +1,200 @@
+script_name Brood Wars Protoss 6 - Town F
+script_id PB6F
+
+multirun lz_1
+multirun lz_2
+multirun lz_3
+multirun lz_4
+multirun lz_5
+wait 1
+
+multirun lz_6
+multirun lz_7
+multirun lz_8
+multirun lz_9
+wait 1
+
+multirun lz_10
+multirun lz_11
+multirun lz_12
+multirun lz_13
+multirun lz_14
+wait 50
+
+load_bank computers
+wait 1
+
+bank_data Set 0 computers comp_1 comp_1
+bank_data Set 0 computers comp_2 comp_1
+bank_data Set 0 computers comp_3 comp_1
+wait 1
+
+save_bank computers
+wait 1
+
+#bank secret computer data
+multirun comp_1
+multirun comp_2
+multirun comp_3
+
+:loop
+wait 1500
+
+goto loop
+
+:comp_1
+wait 5
+
+bring_jump 7 Exactly 0 group_men Loc.55 comp_1
+bank_data Set 1 computers comp_1 comp_1
+save_bank computers
+print You see an outline of a creature with an egg-shaped head on the screen
+#remember to unfuck in PyAI
+stop
+
+:comp_2
+wait 5
+
+bring_jump 7 Exactly 0 group_men Loc.56 comp_2
+bank_data Set 1 computers comp_2 comp_1
+save_bank computers
+print There is a picture of a red planet on the screen
+#remember to unfuck in PyAI
+stop
+
+:comp_3
+wait 5
+
+bring_jump 7 Exactly 0 group_men Loc.122 comp_3
+bank_data Set 1 computers comp_3 comp_1
+save_bank computers
+print You hear something slithering in a nearby experiment vat - but you can't see it in the dark...
+#remember to unfuck in PyAI
+stop
+
+:lz_1
+wait 16
+
+bring_jump 7 Exactly 0 group_men Loc.81 lz_1
+reveal_area 7 Loc.82 256 RevealFull
+wait 241
+
+goto lz_1
+
+:lz_2
+wait 16
+
+bring_jump 7 Exactly 0 group_men Loc.83 lz_2
+reveal_area 7 Loc.84 256 RevealFull
+reveal_area 7 Loc.85 256 RevealFull
+wait 241
+
+goto lz_2
+:lz_3
+wait 16
+
+bring_jump 7 Exactly 0 group_men Loc.86 lz_3
+reveal_area 7 Loc.87 256 RevealFull
+reveal_area 7 Loc.88 256 RevealFull
+wait 241
+
+goto lz_3
+:lz_4
+wait 16
+
+bring_jump 7 Exactly 0 group_men Loc.89 lz_4
+reveal_area 7 Loc.91 256 RevealFull
+reveal_area 7 Loc.90 256 RevealFull
+wait 241
+
+goto lz_4
+:lz_5
+wait 16
+
+bring_jump 7 Exactly 0 group_men Loc.92 lz_5
+reveal_area 7 Loc.93 256 RevealFull
+reveal_area 7 Loc.94 256 RevealFull
+reveal_area 7 Loc.95 256 RevealFull
+reveal_area 7 Loc.96 256 RevealFull
+wait 241
+
+goto lz_5
+:lz_6
+wait 16
+
+bring_jump 7 Exactly 0 group_men Loc.97 lz_6
+reveal_area 7 Loc.98 256 RevealFull
+wait 241
+
+goto lz_6
+:lz_7
+wait 16
+
+bring_jump 7 Exactly 0 group_men Loc.99 lz_7
+reveal_area 7 Loc.100 256 RevealFull
+wait 241
+
+goto lz_7
+:lz_8
+wait 16
+
+bring_jump 7 Exactly 0 group_men Loc.101 lz_8
+reveal_area 7 Loc.102 256 RevealFull
+reveal_area 7 Loc.103 256 RevealFull
+wait 241
+
+goto lz_8
+:lz_9
+wait 16
+
+bring_jump 7 Exactly 0 group_men Loc.104 lz_9
+reveal_area 7 Loc.105 256 RevealFull
+wait 241
+
+goto lz_9
+:lz_10
+wait 16
+
+bring_jump 7 Exactly 0 group_men Loc.106 lz_10
+reveal_area 7 Loc.107 256 RevealFull
+reveal_area 7 Loc.108 256 RevealFull
+reveal_area 7 Loc.109 256 RevealFull
+wait 241
+
+goto lz_10
+:lz_11
+wait 16
+
+bring_jump 7 Exactly 0 group_men Loc.110 lz_11
+reveal_area 7 Loc.112 256 RevealFull
+wait 241
+
+goto lz_11
+:lz_12
+wait 16
+
+bring_jump 7 Exactly 0 group_men Loc.111 lz_12
+reveal_area 7 Loc.113 256 RevealFull
+reveal_area 7 Loc.114 256 RevealFull
+reveal_area 7 Loc.115 256 RevealFull
+wait 241
+
+goto lz_12
+:lz_13
+wait 16
+
+bring_jump 7 Exactly 0 group_men Loc.116 lz_13
+reveal_area 7 Loc.117 256 RevealFull
+wait 241
+
+goto lz_13
+:lz_14
+wait 16
+
+bring_jump 7 Exactly 0 group_men Loc.118 lz_14
+reveal_area 7 Loc.119 256 RevealFull
+reveal_area 7 Loc.120 256 RevealFull
+wait 241
+
+goto lz_14
+

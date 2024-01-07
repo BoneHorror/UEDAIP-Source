@@ -1,0 +1,488 @@
+script_name Protoss 8 - Right Protoss Town
+script_id Pr8B
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+if_owned 168 teal_right
+#arbiter town starts here
+build 1 nexus 110
+build 4 probe 90
+build 1 gateway 80
+player_need 1 cybernetics_core
+build 1 citadel_of_adun 80
+build 1 templar_archives 80
+build 1 stargate 80
+build 1 arbiter_tribunal 100
+build 2 photon_cannon 80
+defensebuild_aa 1 harbiter
+defenseuse_aa 1 harbiter
+wait 9000
+
+build 9 probe 80
+train 1 harbiter
+train 4 zealot
+call wait_attack
+call hold_attack
+
+attack_add 1 harbiter
+attack_add 4 zealot
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+tech recall 50
+place_guard corsair 0
+build 1 shield_battery 80
+wait 9000
+
+build 14 probe 80
+idle_orders 137 16 1 arbiter 65535 carrier 80 incombat|health(LessThan,200)|own|NotEnemies
+idle_orders 137 16 1 arbiter 65535 reaver 60 incombat|health(LessThan,85)|own|NotEnemies
+idle_orders 137 16 1 arbiter 65535 archon 70 incombat|health(LessThan,120)|own|NotEnemies
+idle_orders 137 16 1 harbiter 65535 carrier 80 incombat|health(LessThan,200)|own|NotEnemies
+idle_orders 137 16 1 harbiter 65535 reaver 60 incombat|health(LessThan,85)|own|NotEnemies
+idle_orders 137 16 1 harbiter 65535 archon 70 incombat|health(LessThan,120)|own|NotEnemies
+train 2 corsair
+train 1 harbiter
+call wait_attack
+call hold_attack
+
+attack_add 1 harbiter
+attack_add 2 corsair
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+tech stasis_field 50
+place_guard arbiter 0
+wait 4499
+load_bank vp7
+wait 1
+
+bank_data Exactly 0 vp7 furinax skip_wait
+wait 4500
+
+:skip_wait
+train 4 zealot
+train 2 dragoon
+train 1 harbiter
+call wait_attack
+call hold_attack
+
+attack_add 1 harbiter
+attack_add 4 zealot
+attack_add 2 dragoon
+call simple_targeting
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+idle_orders 147 1024 1 arbiter 1536 archon 40 incombat
+idle_orders 147 1024 1 arbiter 1536 carrier 50 incombat
+idle_orders 147 1024 1 arbiter 1536 dark_templar|revenant 30 incombat|count(AtLeast 2 48 14)
+idle_orders 147 1024 1 arbiter 1536 dark_archon 30 incombat
+idle_orders 147 1024 1 arbiter 1536 reaver 50 incombat|count(AtLeast 2 48 14)
+idle_orders 147 0 0 arbiter 256 zealot 20 deathrattle
+idle_orders 147 0 0 arbiter 256 dragoon 20 deathrattle
+idle_orders 147 0 0 arbiter 256 high_templar 30 deathrattle
+idle_orders 147 0 0 arbiter 256 archon 40 deathrattle
+idle_orders 147 0 0 arbiter 256 dark_archon 50 deathrattle
+idle_orders 147 0 0 arbiter 256 scout 30 deathrattle
+idle_orders 147 0 0 arbiter 256 reaver 100 deathrattle
+idle_orders 147 0 0 arbiter 256 dark_templar 40 deathrattle
+idle_orders 147 0 0 arbiter 256 carrier 150 deathrattle
+idle_orders 147 1024 1 harbiter 736 archon|ultralisk|battlecruiser|hnorad 40 incombat
+idle_orders 147 1024 1 harbiter 736 carrier|guardian|devourer|valhalla 50 incombat
+idle_orders 147 1024 1 harbiter 736 dark_templar|hydralisk|dragoon|zealot|mutalisk|scourge|corsair|wraith|skywing|valkyrie 30 incombat|count(AtLeast 2 48 13)
+idle_orders 147 1024 1 harbiter 736 dark_archon|archon|queen|defiler|ghost|science_vessel|phantom 30 incombat
+idle_orders 147 1024 1 harbiter 736 reaver|infested_terran|siege_tank|lurker|panzer|death_knight 50 incombat|count(AtLeast 2 48 13)
+idle_orders 147 1024 1 harbiter 336 group_men 60 incombat|count(AtLeast 5 60 14)
+idle_orders 147 0 0 harbiter 256 group_men 80 deathrattle
+wait 9000
+
+train 7 zealot
+train 1 harbiter
+call wait_attack
+call hold_attack
+
+attack_add 1 harbiter
+attack_add 7 zealot
+call simple_targeting
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+upgrade 1 arbiter_mana 40
+wait 5500
+
+place_guard harbiter 0
+:arb_loop
+train 2 harbiter
+train 2 corsair
+call wait_attack
+call hold_attack
+
+attack_add 2 corsair
+attack_add 2 harbiter
+call simple_targeting
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+wait 9000
+
+train 5 zealot
+train 4 dragoon
+train 1 harbiter
+call wait_attack
+call hold_attack
+
+attack_add 1 harbiter
+attack_add 5 zealot
+attack_add 4 dragoon
+call simple_targeting
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+wait 6700
+
+train 6 dragoon
+train 1 harbiter
+call wait_attack
+call hold_attack
+
+attack_add 1 harbiter
+attack_add 6 dragoon
+call simple_targeting
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+goto arb_loop
+
+:teal_right
+build 1 nexus 110
+build 2 probe 90
+wait 5000
+
+build 1 photon_cannon 80
+call wait_attack
+call hold_attack
+train 3 zealot
+attack_add 3 zealot
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+build 5 probe 80
+wait 5500
+
+build 2 photon_cannon 80
+call wait_attack
+call hold_attack
+train 1 reaver
+train 2 dragoon
+attack_add 2 dragoon
+attack_add 1 reaver
+call simple_targeting
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+build 8 probe 80
+wait 5000
+
+call wait_attack
+call hold_attack
+train 3 zealot
+train 3 dragoon
+attack_add 3 zealot
+attack_add 3 dragoon
+call target_expo
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+build 14 probe 80
+build 3 photon_cannon 80
+:teal_loop
+wait 5000
+
+call wait_attack
+call hold_attack
+train 1 reaver
+train 5 zealot
+attack_add 1 reaver
+attack_add 5 zealot
+call target_expo
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 5500
+
+call wait_attack
+call hold_attack
+train 1 reaver
+train 3 dragoon
+attack_add 3 dragoon
+attack_add 1 reaver
+call target_expo
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+goto teal_loop
+
+:target_expo
+unstart_campaign
+set_attacks 1
+target_expansion
+start_campaign
+return
+
+:simple_targeting
+unstart_campaign
+attack_prepare
+start_campaign
+return
+
+:hold_attack
+deaths 13 Add 1 firebat arb_loop
+return
+
+:release_attack
+deaths 13 Set 0 firebat arb_loop
+return
+
+:wait_attack
+wait 16
+
+deaths 13 AtLeast 2 firebat ensure_attack
+deaths 13 Exactly 1 firebat wait_attack
+#loop if another script started an attack
+return
+
+:ensure_attack
+load_bank Ensures
+wait 1
+
+print Ensure_TwoOrMore_PleaseReportMeIfSeen
+bank_data Set 1 Ensures Ensure_TwoOrMore wait_attack
+bank_data Set 0 Ensures Ensure_Compare wait_attack
+save_bank Ensures
+deaths 13 Set 0 firebat arb_loop
+return
+
+#some unused ancient upgrade-copying code for when this was supposed to be a clone of another AI player
+#:upg1
+#wait 16
+#
+#upgrade_jump 3 AtLeast shuttle_speed 1 ex1
+#goto upg1
+#
+#:ex1
+#upgrade_jump 4 Set shuttle_speed 1 ex1
+#stop
+#
+#:upg2
+#wait 16
+#
+#upgrade_jump 3 AtLeast p_plasma_shield 1 ex2
+#goto upg2
+#
+#:ex2
+#upgrade_jump 4 Set p_plasma_shield 1 ex1
+#stop
+#
+#:upg3
+#wait 16
+#
+#upgrade_jump 3 AtLeast dragoon_range 1 ex3
+#goto upg3
+#
+#:ex3
+#upgrade_jump 4 Set dragoon_range 1 ex1
+#stop
+#:upg4
+#wait 16
+#
+#upgrade_jump 3 AtLeast carrier_capacity 1 ex4
+#goto upg4
+#
+#:ex4
+#upgrade_jump 4 Set carrier_capacity 1 ex1
+#stop
+#:upg5
+#wait 16
+#
+#upgrade_jump 3 AtLeast scarab_damage 1 ex5
+#goto upg5
+#
+#:ex5
+#upgrade_jump 4 Set scarab_damage 1 ex1
+#stop
+#:upg6
+#wait 16
+#
+#upgrade_jump 3 AtLeast p_armor 1 ex6
+#goto upg6
+#
+#:ex6
+#upgrade_jump 4 Set p_armor 1 ex1
+#stop
+#:upg7
+#wait 16
+#
+#upgrade_jump 3 AtLeast p_plating 1 ex7
+#goto upg7
+#
+#:ex7
+#upgrade_jump 4 Set p_plating 1 ex1
+#stop
+#:upg8
+#wait 16
+#
+#upgrade_jump 3 AtLeast scout_sight 1 ex8
+#goto upg8
+#
+#:ex8
+#upgrade_jump 4 Set scout_sight 1 ex1
+#stop
+#:upg9
+#wait 16
+#
+#upgrade_jump 3 AtLeast templar_mana 1 ex9
+#goto upg9
+#
+#:ex9
+#upgrade_jump 4 Set templar_mana 1 ex1
+#stop
+#:upg10
+#wait 16
+#
+#upgrade_jump 3 AtLeast p_ground_weapon 1 ex10
+#goto upg10
+#
+#:ex10
+#upgrade_jump 4 Set p_ground_weapon 1 ex1
+#stop
+#:upg11
+#wait 16
+#
+#upgrade_jump 3 AtLeast p_air_weapon 1 ex11
+#goto upg11
+#
+#:ex11
+#upgrade_jump 4 Set p_air_weapon 1 ex1
+#stop
+#:upg12
+#wait 16
+#
+#upgrade_jump 3 AtLeast p_plasma_shield 2 ex12
+#goto upg12
+#
+#:ex12
+#upgrade_jump 4 Set p_plasma_shield 2 ex1
+#stop
+#:upg13
+#wait 16
+#
+#upgrade_jump 3 AtLeast p_ground_weapon 2 ex13
+#goto upg13
+#
+#:ex13
+#upgrade_jump 4 Set p_ground_weapon 2 ex1
+#stop
+#:upg14
+#wait 16
+#
+#upgrade_jump 3 AtLeast p_air_weapon 2 ex14
+#goto upg14
+#
+#:ex14
+#upgrade_jump 4 Set p_air_weapon 2 ex1
+#stop
+#:upg15
+#wait 16
+#
+#upgrade_jump 3 AtLeast p_armor 2 ex15
+#goto upg15
+#
+#:ex15
+#upgrade_jump 4 Set p_armor 2 ex1
+#stop
+#:upg16
+#wait 16
+#
+#upgrade_jump 3 AtLeast p_plating 2 ex16
+#goto upg16
+#
+#:ex16
+#upgrade_jump 4 Set p_plating 2 ex1
+#stop
+#:upg17
+#wait 16
+#
+#upgrade_jump 3 AtLeast p_plasma_shield 3 ex17
+#goto upg17
+#
+#:ex17
+#upgrade_jump 4 Set p_plasma_shield 3 ex1
+#stop
+#:upg18
+#wait 16
+#
+#upgrade_jump 3 AtLeast p_ground_weapon 3 ex18
+#goto upg18
+#
+#:ex18
+#upgrade_jump 4 Set p_ground_weapon 3 ex1
+#stop
+#:upg19
+#wait 16
+#
+#upgrade_jump 3 AtLeast p_air_weapon 3 ex19
+#goto upg19
+#
+#:ex19
+#upgrade_jump 4 Set p_air_weapon 3 ex1
+#stop
+#:upg20
+#wait 16
+#
+#upgrade_jump 3 AtLeast p_armor 3 ex20
+#goto upg20
+#
+#:ex20
+#upgrade_jump 4 Set p_armor 3 ex1
+#stop
+#:upg21
+#wait 16
+#
+#upgrade_jump 3 AtLeast p_plating 3 ex21
+#goto upg21
+#
+#:ex21
+#upgrade_jump 4 Set p_plating 3 ex1
+#stop

@@ -1,0 +1,650 @@
+script_name Zerg 10 - Red Protoss
+script_id Z10e
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 nexus 150
+build 3 probe 130
+build 28 probe 80
+max_workers 30
+build 1 pylon 80
+build 2 gateway 80
+build 2 pylon 80
+build 2 stargate 80
+build 3 pylon 80
+build 1 cybernetics_core 80
+build 4 pylon 80
+build 1 robotics_facility 80
+build 5 pylon 80
+build 1 robotics_support_bay 80
+build 6 pylon 80
+build 1 fleet_beacon 80
+build 7 pylon 80
+build 1 arbiter_tribunal 80
+build 8 pylon 80
+build 1 citadel_of_adun 80
+build 9 pylon 80
+build 1 templar_archives 80
+multirun upgrades
+multirun attackscript
+multirun templar_ensure
+max_force 1400
+define_max 24 zealot
+define_max 22 dragoon
+define_max 12 scout
+define_max 14 hornet
+define_max 4 carrier
+define_max 5 high_templar
+define_max 3 archon
+define_max 5 reaver
+define_max 5 shuttle
+define_max 5 observer
+define_max 50 probe
+define_max 2 harbiter
+define_max 2 arbiter
+idle_orders disablebuiltin 0 0 0 0 0 0 0
+idle_orders 10 16 1 zealot|dark_templar|scout 160 group_men 80 Health(LessThan 14)
+idle_orders 10 16 1 zealot|dark_templar|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 120 Health(LessThan 14)
+idle_orders 10 16 1 zealot|dark_templar|scout 160 sunken_colony|photon_cannon 90 Health(LessThan 12)
+idle_orders 10 16 3 zealot|dark_templar|scout 160 group_men 90 Health(LessThan 33)
+idle_orders 10 16 3 zealot|dark_templar|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 130 Health(LessThan 33)
+idle_orders 10 16 3 zealot|dark_templar|scout 160 sunken_colony|photon_cannon 100 Health(LessThan 24)
+idle_orders 10 16 5 zealot|dark_templar|scout 160 group_men 95 Health(LessThan 60)
+idle_orders 10 16 5 zealot|dark_templar|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 135 Health(LessThan 60)
+idle_orders 10 16 5 zealot|dark_templar|scout 160 sunken_colony|photon_cannon|bunker 105 Health(LessThan 45)
+idle_orders 10 64 1 dragoon 192 sunken_colony|photon_cannon|bunker 110 Health(LessThan 20)
+idle_orders 10 64 1 dragoon 192 group_men 100 Health(LessThan 15)
+idle_orders 10 64 2 dragoon 192 group_men 105 Health(LessThan 35)
+idle_orders 10 64 1 dragoon 192 infested_terran|dark_archon|defiler 130 Health(LessThan 20)
+idle_orders 10 64 1 dragoon 192 lurker|queen 120 Health(LessThan 20)
+idle_orders 10 64 1 archon 160 zergling|zealot|hhydralisk|hydralisk|dark_templar|ghost|high_templar|marine|firebat 150 count(AtLeast 3 48 14)
+idle_orders 10 16 1 archon 128 zergling|zealot|hhydralisk|hydralisk|dark_templar|ghost|high_templar|marine 110 count(AtLeast 2 24 14)
+idle_orders 10 16 2 archon 128 zergling|zealot|hhydralisk|hydralisk|dark_templar|ghost|high_templar|marine 130 count(AtLeast 2 24 14)
+idle_orders 10 16 1 scout|corsair 192 mutalisk|scout|corsair|scourge|wraith 110 Health(LessThan 20)
+idle_orders 10 16 3 scout|corsair 192 mutalisk|scout|corsair|scourge|wraith 135 Health(LessThan 60)
+idle_orders 10 16 1 scout|corsair 192 guardian|battlecruiser|carrier 150 Health(LessThan 20)
+idle_orders 10 16 2 scout|corsair 192 guardian|battlecruiser|carrier 160 Health(LessThan 40)
+idle_orders 10 16 3 scout|corsair 192 guardian|battlecruiser|carrier 170 Health(LessThan 60)
+idle_orders 10 16 4 scout|corsair 192 guardian|battlecruiser|carrier 190 Health(LessThan 80)
+idle_orders 10 16 1 scout|corsair 192 shuttle|observer|overlord 60 Health(LessThan 20)
+idle_orders 10 16 1 scout|corsair|dragoon 160 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 80 Health(LessThan 30)
+idle_orders 10 16 2 scout|corsair|dragoon 160 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 90 Health(LessThan 60)
+wait 25
+
+multirun help_request
+guard_all
+capt_expand
+check_transports
+supply 13 Set 330 Max 0 Protoss upgrades
+supply 0 Set 300 Max 0 Zerg upgrades
+wait 25
+
+multirun bank_shit
+train 3 hornet
+train 3 zealot
+attack_add 3 hornet
+attack_add 3 zealot
+call attack_selection
+wait 500
+
+attack_do
+attack_clear
+train 2 carrier
+wait 2460
+
+train 2 carrier
+wait_force 2 carrier
+wait 200
+attack_add 2 carrier
+call attack_selection
+wait 500
+
+attack_do
+attack_clear
+wait 3515
+
+train 7 zealot
+train 2 reaver
+attack_add 2 reaver
+attack_add 7 zealot
+call attack_selection
+wait 500
+
+deaths 0 Add 1 valkyrie attackscript
+attack_do
+attack_clear
+wait 4350
+
+train 3 carrier
+wait_force 3 carrier
+wait 200
+attack_add 3 carrier
+call attack_selection
+wait 500
+
+attack_do
+attack_clear
+defensebuild_gg 2 dragoon
+defenseuse_gg 2 dragoon
+defensebuild_gg 1 scout
+defenseuse_gg 1 scout
+defensebuild_gg 2 hornet
+defenseuse_gg 2 hornet
+defensebuild_gg 1 archon
+defenseuse_gg 1 archon
+defensebuild_ag 2 dragoon
+defenseuse_ag 2 dragoon
+defensebuild_ag 1 archon
+defenseuse_ag 1 archon
+defensebuild_ag 1 scout
+defenseuse_ag 1 scout
+defensebuild_ga 2 scout
+defenseuse_ga 2 scout
+defensebuild_ga 1 carrier
+defenseuse_ga 1 carrier
+defensebuild_aa 2 scout
+defenseuse_aa 2 scout
+defensebuild_aa 1 hornet
+defenseuse_aa 1 hornet
+defensebuild_aa 1 carrier
+defenseuse_aa 1 carrier
+wait 3475
+
+attack_add 8 zealot
+attack_add 4 dragoon
+attack_add 1 reaver
+attack_add 1 harbiter
+call attack_selection
+wait 500
+
+attack_do
+attack_clear
+wait 3633
+
+train 6 hornet
+train 4 dragoon
+train 4 scout
+attack_add 6 hornet
+attack_add 4 dragoon
+attack_add 4 scout
+call attack_selection
+wait 500
+
+attack_do
+attack_clear
+wait 3745
+
+train 4 scout
+train 6 dragoon
+train 3 reaver
+attack_add 4 scout
+attack_add 6 dragoon
+attack_add 3 reaver
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 2 scout
+train 2 high_templar
+do_morph 2 archon
+train 6 hornet
+train 4 high_templar
+train 4 scout
+do_morph 2 archon
+train 10 hornet
+do_morph 2 archon
+train 2 carrier
+wait_force 2 carrier
+wait 200
+attack_add 10 hornet
+attack_add 2 archon
+attack_add 2 carrier
+attack_add 4 scout
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 4155
+
+train 2 reaver
+train 13 zealot
+train 8 dragoon
+train 2 carrier
+train 1 harbiter
+wait_force 2 carrier
+wait 200
+attack_add 2 reaver
+attack_add 13 zealot
+attack_add 8 dragoon
+attack_add 2 carrier
+attack_add 1 harbiter
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3950
+
+train 1 harbiter
+train 1 carrier
+train 2 scout
+train 3 hornet
+train 4 zealot
+train 6 hornet
+train 4 scout
+train 8 dragoon
+train 14 zealot
+train 5 scout
+train 1 reaver
+train 1 carrier
+wait 25
+
+attack_add 8 dragoon
+attack_add 7 zealot
+attack_add 1 reaver
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 7 zealot
+attack_add 6 hornet
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 5 scout
+attack_add 1 carrier
+attack_add 1 harbiter
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3325
+
+:block1
+train 5 dragoon
+train 3 scout
+train 5 hornet
+train 1 arbiter
+train 6 scout
+train 1 arbiter
+train 10 dragoon
+train 10 hornet
+attack_add 6 scout
+attack_add 1 arbiter
+attack_add 10 dragoon
+attack_add 10 hornet
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3425
+
+train 1 carrier
+train 2 scout
+train 5 zealot
+train 2 reaver
+train 1 harbiter
+train 2 scout
+train 16 zealot
+train 3 reaver
+wait_force 1 carrier
+wait 200
+attack_add 4 scout
+attack_add 1 carrier
+attack_add 16 zealot
+attack_add 3 reaver
+attack_add 1 harbiter
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3135
+
+train 2 carrier
+train 7 zealot
+train 4 dragoon
+train 2 reaver
+train 14 zealot
+train 2 carrier
+wait_force 2 carrier
+wait 200
+attack_add 4 dragoon
+attack_add 2 reaver
+attack_add 14 zealot
+attack_add 2 carrier
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3425
+
+train 4 hornet
+train 2 scout
+train 1 carrier
+train 4 high_templar
+do_morph 2 archon
+train 4 high_templar
+do_morph 3 archon
+train 2 reaver
+train 7 dragoon
+train 1 arbiter
+train 1 harbiter
+train 8 hornet
+train 15 zealot
+train 1 carrier
+train 1 arbiter
+train 1 harbiter
+train 4 scout
+wait_force 1 carrier
+wait 200
+attack_add 3 archon
+attack_add 2 reaver
+attack_add 7 dragoon
+attack_add 8 hornet
+attack_add 15 zealot
+attack_add 1 carrier
+attack_add 1 arbiter
+attack_add 1 harbiter
+attack_add 4 scout
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto block1
+
+:bank_shit
+wait 25
+
+load_bank infested_aiur
+bank_data Exactly 1 infested_aiur infested icc1
+bank_data Exactly 2 infested_aiur infested icc2
+wait 1500
+
+load_bank aiur_composition
+wait 16
+
+bank_data Set 0 aiur_composition type bloop
+save_bank aiur_composition
+:bloop
+wait 16
+
+#psi emitter deaths set in win triggers based on composition
+deaths 0 AtMost 0 217 bloop
+deaths 0 Exactly 2 217 comp2
+deaths 0 Exactly 3 217 comp3
+deaths 0 Exactly 4 217 comp4
+#this is comp1 because we have 1 death
+#win no fullclear, no composition focus
+bank_data Set 1 aiur_composition type bloop
+save_bank aiur_composition
+stop
+
+:comp2
+#air focus bank
+bank_data Set 2 aiur_composition type bloop
+save_bank aiur_composition
+stop
+
+:comp3
+#hydra ultra focus bank
+bank_data Set 3 aiur_composition type bloop
+save_bank aiur_composition
+stop
+
+:comp4
+#player won while fullclearing
+bank_data Set 4 aiur_composition type bloop
+save_bank aiur_composition
+stop
+
+:icc1
+deaths 1 Set 1 infested_terran bank_shit
+stop
+
+:icc2
+deaths 1 Set 2 infested_terran bank_shit
+stop
+
+:upgrades
+wait 16
+
+upgrade 1 shuttle_speed 30
+upgrade 1 dragoon_range 30
+upgrade 1 carrier_capacity 30
+upgrade 1 scarab_damage 30
+upgrade 1 scout_sight 30
+upgrade 1 p_ground_weapon 30
+upgrade 1 p_air_weapon 30
+wait 480
+wait_upgrades
+wait 3500
+
+upgrade 1 p_plasma_shield 30
+upgrade 1 p_armor 30
+upgrade 1 p_plating 30
+wait 2500
+
+tech hallucination 30
+upgrade 1 scout_speed 30
+upgrade 1 zealot_speed 30
+upgrade 2 p_ground_weapon 30
+upgrade 2 p_air_weapon 30
+wait 480
+wait_upgrades
+wait 4500
+
+idle_orders 148 64 1 high_templar 1024 zealot 40 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 dragoon 30 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 reaver 70 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 carrier 80 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 scout 50 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 shuttle 30 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 arbiter 60 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 zealot 40 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 ultralisk 80 incombat
+tech psionic_storm 30
+upgrade 1 57 30
+upgrade 3 p_ground_weapon 30
+upgrade 3 p_air_weapon 30
+upgrade 2 p_armor 30
+upgrade 2 p_plating 30
+upgrade 2 p_plasma_shield 30
+wait 480
+wait_upgrades
+tech recall 30
+upgrade 1 reaver_capacity 30
+wait 6000
+
+idle_orders 142 256 1 high_templar 1024 ultralisk 50 incombat|count(AtLeast 2 60 14)
+idle_orders 142 512 1 high_templar 2048 hydralisk 80 incombat|count(AtLeast 3 60 14)
+idle_orders 142 512 1 high_templar 1536 mutalisk 60 incombat|count(AtLeast 3 60 14)
+idle_orders 142 512 1 high_templar 1536 guardian 70 incombat|count(AtLeast 2 60 14)
+idle_orders 142 512 1 high_templar 1536 group_men 50 incombat|count(AtLeast 4 60 14)
+idle_orders 142 5128 1 high_templar 2048 drone 20 |count(AtLeast 4 60 14)
+idle_orders 137 16 1 arbiter 65535 carrier 80 incombat|health(LessThan,200)|own|NotEnemies
+idle_orders 137 16 1 arbiter 65535 reaver 60 incombat|health(LessThan,85)|own|NotEnemies
+idle_orders 137 16 1 arbiter 65535 archon 70 incombat|health(LessThan,120)|own|NotEnemies
+idle_orders 137 16 1 arbiter 65535 arbiter 30 incombat|health(LessThan,150)|own|NotEnemies
+upgrade 3 p_plasma_shield 30
+upgrade 3 p_armor 30
+upgrade 3 p_plating 30
+wait 4150
+
+tech stasis_field 30
+upgrade 2 scarab_damage 30
+upgrade 4 p_ground_weapon 30
+upgrade 4 p_air_weapon 30
+upgrade 1 templar_mana 30
+upgrade 1 arbiter_mana 30
+wait 6000
+
+idle_orders 147 1024 1 arbiter 1536 guardian 40 incombat|count(AtLeast 2 70 14)
+idle_orders 147 1024 1 arbiter 1536 ultralisk 50 incombat|count(AtLeast 2 70 14)
+idle_orders 147 1024 1 arbiter 1536 group_men 30 incombat|count(AtLeast 4 70 14)
+idle_orders 147 1024 1 arbiter 1024 queen 60 incombat|energy(GreaterThan,124)
+idle_orders 147 1024 1 arbiter 1024 defiler|hdefiler 70 incombat|energy(GreaterThan,99)
+wait 5500
+
+upgrade 5 p_ground_weapon 30
+wait 480
+
+stop
+
+
+:attack_selection
+unstart_campaign
+attack_prepare
+start_campaign
+return
+
+:attackscript
+wait 150
+
+if_owned protoss_temple attackscript
+under_attack 1
+defensebuild_gg 4 zealot
+defenseuse_gg 4 zealot
+idle_orders 147 32 1 arbiter|harbiter 2072 drone 100 count(AtLeast 1 666 6)
+idle_orders 147 32 1 arbiter|harbiter 2072 overlord 100 count(AtLeast 1 1024 6)
+idle_orders 142 32 1 high_templar 1024 drone|overlord 100 count(AtLeast 1 666 6)
+idle_orders 10 64 2 zealot 968 drone 20 count(AtLeast 1 666 6)
+idle_orders 10 64 3 dragoon 968 drone|overlord 20 count(AtLeast 1 666 6)
+idle_orders 10 64 2 scout|corsair|hornet 968 drone 20 count(AtLeast 1 666 6)
+idle_orders 10 64 2 scout|corsair|hornet 968 overlord 20 count(AtLeast 1 666 6)
+idle_orders 10 64 1 archon 968 drone 20 count(AtLeast 1 666 6)
+define_max 5 carrier
+define_max 5 reaver
+attack_add 20 zealot
+attack_add 10 dragoon
+attack_add 10 hornet
+attack_to (1550,2400) (2100,2820)
+deaths 0 Add 1 valkyrie attackscript
+wait 480
+
+quick_attack
+attack_do
+attack_clear
+attack_add 6 scout
+attack_add 2 carrier
+attack_to (1550,2400) (2930,2450)
+wait 480
+
+quick_attack
+attack_do
+attack_clear
+default_min 1
+capt_expand
+wait 2250
+
+wait_force 1 carrier
+wait 200
+attack_add 3 carrier
+attack_add 3 reaver
+attack_add 14 zealot
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3625
+
+attack_add 20 zealot
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait_force 1 carrier
+wait 200
+attack_add 7 scout
+attack_add 2 carrier
+attack_add 6 hornet
+attack_add 1 arbiter
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2150
+
+do_morph 2 archon
+wait_force 3 reaver
+wait_force 20 zealot
+wait_force 9 dragoon
+do_morph 2 archon
+attack_add 5 reaver
+attack_add 12 zealot
+attack_add 9 dragoon
+attack_add 3 archon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+:atkloop
+give_money
+wait 1500
+
+attack_add 5 reaver
+attack_add 8 hornet
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+give_money
+wait 1500
+
+attack_add 4 scout
+attack_add 6 zealot
+attack_add 3 dragoon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+give_money
+wait 1500
+
+wait_force 1 carrier
+wait 200
+attack_add 2 carrier
+attack_add 2 archon
+attack_add 1 arbiter
+attack_add 10 zealot
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto atkloop
+
+:templar_ensure
+wait_train 4 high_templar
+
+do_morph 3 archon
+wait_rand 133 650
+goto templar_ensure
+
+:help_request
+wait 1633
+
+wait_secure
+help_iftrouble
+goto help_request

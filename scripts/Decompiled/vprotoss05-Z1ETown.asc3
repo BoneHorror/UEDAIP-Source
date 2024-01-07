@@ -1,0 +1,30 @@
+script_name Brood Wars Zerg 1 - Town E
+script_id ZB1E
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+if_owned command_center terran_area
+build 2 creep_colony 80
+wait 1750
+
+build 1 sunken_colony 80
+wait 6500
+
+build 2 sunken_colony 80
+build 1 nydus_canal 80
+wait 6504
+
+build 2 nydus_canal 80
+:loop
+wait 1500
+
+goto loop
+
+:terran_area
+build 1 bunker 80
+build 1 missile_turret 80
+goto loop

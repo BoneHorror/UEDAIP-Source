@@ -1,0 +1,301 @@
+script_name Protoss 3 - Air Zerg Town
+script_id Pr3R
+
+unstart_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 hatchery 150
+build 1 drone 130
+creep 4
+build 1 spawning_pool 80
+build 1 lair 80
+build 1 evolution_chamber 80
+build 5 creep_colony 80
+build 3 sunken_colony 80
+build 2 spore_colony 80
+build 1 spire 80
+tech burrowing 30
+define_max 12 zergling
+define_max 45 drone
+define_max 11 hydralisk
+define_max 4 scourge
+define_max 4 mutalisk
+define_max 2 hmutalisk
+define_max 255 broodling
+defensebuild_gg 2 zergling
+defenseuse_gg 2 zergling
+defensebuild_gg 1 mutalisk
+defenseuse_gg 1 mutalisk
+defenseuse_gg 1 broodling
+defensebuild_ag 1 mutalisk
+defenseuse_ag 1 mutalisk
+defensebuild_ag 1 scourge
+defenseuse_ag 1 scourge
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+max_force 900
+wait 150
+
+max_workers 20
+build 10 drone 80
+wait_buildstart 7 drone
+build 16 drone 80
+upgrade 1 zergling_speed 30
+upgrade 1 z_flyer_attack 30
+train 10 zergling
+panic def_exp
+attack_add 10 zergling
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+train 2 mutalisk
+build 20 drone 80
+allies_watch 4 def_exp
+upgrade 1 overlord_speed 30
+upgrade 1 z_melee_attack 30
+wait 1637
+
+train 4 mutalisk
+attack_add 4 mutalisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+define_max 20 zergling
+define_max 6 scourge
+define_max 7 mutalisk
+upgrade 1 z_carapace 30
+upgrade 1 z_flyer_carapace 30
+build 1 hydralisk_den 80
+wait 1325
+
+set_attacks 1
+wait 100
+
+attack_add 5 hydralisk
+attack_add 4 mutalisk
+train 5 hydralisk
+train 4 mutalisk
+target_expansion
+wait 300
+
+attack_do
+attack_clear
+multirun AmbushBae1
+multirun AmbushBae2
+upgrade 1 hydralisk_range 30
+upgrade 1 overlord_capacity 30
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+set_attacks 1
+wait 1033
+
+multirun hydra_guarding
+allies_watch 8 def_exp
+attack_add 20 zergling
+train 20 zergling
+target_expansion
+wait 300
+
+attack_do
+attack_clear
+upgrade 1 hydralisk_speed 30
+upgrade 2 z_flyer_attack 30
+upgrade 1 z_missile_attack 30
+define_max 32 zergling
+define_max 8 scourge
+define_max 10 mutalisk
+wait 16
+
+attack_add 3 mutalisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+upgrade 2 z_carapace 30
+upgrade 2 z_flyer_carapace 30
+
+:block1
+train 2 hmutalisk
+wait 1025
+
+expand 2 def_exp
+train 5 mutalisk
+attack_add 5 mutalisk
+attack_add 2 hmutalisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+train 6 hydralisk
+wait 1500
+
+train 9 hydralisk
+attack_add 9 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+set_attacks 2
+wait 1045
+
+attack_add 7 mutalisk
+attack_add 26 zergling
+train 3 mutalisk
+train 14 zergling
+train 5 mutalisk
+train 20 zergling
+train 7 mutalisk
+train 26 zergling
+target_expansion
+wait 300
+
+attack_do
+attack_clear
+goto block1
+
+:AmbushBae1
+wait 50
+
+bring_jump 14 AtMost 5 group_men Loc.15 AmbushBae1
+guard hydralisk Loc.23 1 1 110
+guard hydralisk Loc.30 1 1 110
+guard mutalisk Loc.26 1 1 110
+guard zergling Loc.25 1 1 110
+guard zergling Loc.24 1 1 110
+guard zergling Loc.31 1 1 110
+guard zergling Loc.32 1 1 110
+stop
+
+:AmbushBae2
+wait 50
+
+bring_jump 14 AtMost 5 group_men Loc.16 AmbushBae2
+guard hydralisk Loc.19 1 1 110
+guard hydralisk Loc.22 1 1 110
+guard mutalisk Loc.19 1 1 110
+guard zergling Loc.17 1 1 110
+guard zergling Loc.18 1 1 110
+guard zergling Loc.21 1 1 110
+guard zergling Loc.20 1 1 110
+stop
+
+:def_exp
+start_town
+build 1 hatchery 100
+get_oldpeons 1
+wait_build 1 hatchery
+build 1 drone 90
+wait_build 1 drone
+build 3 drone 80
+get_oldpeons 3
+max_workers 18
+wait_build 3 drone
+build 1 creep_colony 80
+build 16 drone 80
+player_need 1 spawning_pool
+player_need 1 evolution_chamber
+wait_buildstart 5 drone
+creep 4
+build 2 creep_colony 80
+wait_build 2 creep_colony
+build 1 sunken_colony 80
+build 1 spore_colony 80
+wait 24500
+
+max_workers 255
+:d_loop
+wait 1500
+
+goto d_loop
+
+:hydra_guarding
+wait 16
+
+random_jump 25 guard_1
+random_jump 27 guard_2
+random_jump 29 guard_3
+deaths 13 AtLeast 3 hhydralisk guard_done
+random_jump 31 guard_4
+random_jump 33 guard_5
+deaths 13 AtLeast 3 hhydralisk guard_done
+random_jump 35 guard_6
+random_jump 37 guard_7
+deaths 13 AtLeast 3 hhydralisk guard_done
+goto hydra_guarding
+
+:guard_done
+stop
+
+:guard_1
+wait 16
+
+deaths 1 AtLeast 1 battlecruiser hydra_guarding
+guard hydralisk Loc.1 1 3 60
+deaths 1 Set 1 battlecruiser hydra_guarding
+goto hydra_guarding
+
+:guard_2
+wait 16
+
+deaths 2 AtLeast 1 battlecruiser hydra_guarding
+guard hydralisk Loc.4 1 3 60
+deaths 2 Set 1 battlecruiser hydra_guarding
+goto hydra_guarding
+
+:guard_3
+wait 16
+
+deaths 3 AtLeast 1 battlecruiser hydra_guarding
+guard hydralisk Loc.5 1 3 60
+deaths 3 Set 1 battlecruiser hydra_guarding
+goto hydra_guarding
+
+:guard_4
+wait 16
+
+deaths 4 AtLeast 1 battlecruiser hydra_guarding
+guard hydralisk Loc.6 1 3 60
+deaths 4 Set 1 battlecruiser hydra_guarding
+goto hydra_guarding
+
+:guard_5
+wait 16
+
+deaths 5 AtLeast 1 battlecruiser hydra_guarding
+guard hydralisk Loc.7 1 3 60
+deaths 5 Set 1 battlecruiser hydra_guarding
+goto hydra_guarding
+
+:guard_6
+wait 16
+
+deaths 6 AtLeast 1 battlecruiser hydra_guarding
+guard hydralisk Loc.8 1 3 60
+deaths 6 Set 1 battlecruiser hydra_guarding
+goto hydra_guarding
+
+:guard_7
+wait 16
+
+deaths 7 AtLeast 1 battlecruiser hydra_guarding
+guard hydralisk Loc.9 1 3 60
+deaths 7 Set 1 battlecruiser hydra_guarding
+goto hydra_guarding

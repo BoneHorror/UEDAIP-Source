@@ -1,0 +1,350 @@
+script_name Terran 1 - Electronic Distribution
+script_id TED1
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+
+build 1 hatchery 150
+build 1 drone 130
+build 3 drone 100
+build 7 drone 80
+build 1 overlord 90
+build 2 overlord 80
+wait 25
+
+load_bank vt1
+wait 25
+
+bank_data Set 0 vt1 minerals mineral_bank
+bank_data Set 0 vt1 marines mineral_bank
+bank_data Set 0 vt1 vultures mineral_bank
+save_bank vt1
+multirun mineral_bank
+wait_buildstart 6 drone
+capt_expand
+build 1 spawning_pool 100
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+max_workers 14
+max_force 101
+define_max 14 drone
+define_max 12 zergling
+under_attack 2
+wait 1425
+
+creep 4
+wait_build 1 spawning_pool
+build 2 creep_colony 80
+build 2 sunken_colony 80
+attack_add 3 zergling
+unstart_campaign
+attack_prepare
+start_campaign
+wait 300
+
+attack_do
+attack_clear
+build 11 drone 80
+build 3 creep_colony 100
+wait_buildstart 3 creep_colony
+upgrade 1 zergling_speed 50
+guard zergling Loc.23 2 1 80
+expand 1 baby_expo
+build 1 hydralisk_den 80
+wait_buildstart 1 hydralisk_den
+build 3 sunken_colony 80
+wait 950
+
+attack_add 4 zergling
+unstart_campaign
+attack_prepare
+start_campaign
+wait 300
+
+attack_do
+attack_clear
+create_script sunken_forward 255 Loc.19 255 0
+define_max 3 hydralisk
+wait 655
+
+build 1 evolution_chamber 40
+build 4 creep_colony 50
+train 2 hydralisk
+attack_add 2 hydralisk
+attack_add 2 zergling
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+guard hydralisk Loc.22 1 2 60
+build 14 drone 80
+build 4 sunken_colony 80
+max_force 229
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+upgrade 1 z_melee_attack 30
+create_script sunken_forward 255 Loc.20 255 0
+:loop
+train 8 zergling
+attack_add 8 zergling
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+expand 1 baby_expo
+wait 750
+
+train 3 hydralisk
+attack_add 3 hydralisk
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+wait 950
+
+train 6 zergling
+train 2 hydralisk
+attack_add 6 zergling
+attack_add 2 hydralisk
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+goto loop
+
+:sunken_forward
+start_town
+build 1 creep_colony 80
+get_oldpeons 1
+wait_build 1 creep_colony
+build 1 sunken_colony 80
+:sf_loop
+wait 500
+
+goto sf_loop
+
+:baby_expo
+start_town
+build 1 hatchery 90
+get_oldpeons 1
+place_guard zergling 0
+place_guard zergling 2
+wait_build 1 hatchery
+build 1 drone 85
+wait_buildstart 1 drone
+get_oldpeons 3
+build 7 drone 80
+wait_buildstart 4 drone
+build 1 creep_colony 80
+wait_buildstart 1 creep_colony
+build 1 evolution_chamber 80
+wait_build 1 creep_colony
+build 1 sunken_colony 80
+wait_build 1 evolution_chamber
+upgrade 1 z_carapace 30
+:be_Loop
+wait 1690
+
+goto be_Loop
+
+:mineral_bank
+wait 1
+
+deaths 0 Exactly 0 siege_tank mineral_bank
+deaths 0 AtLeast 1 ultralisk add_mins
+wait 1
+
+:units_check
+deaths 4 AtLeast 15 goliath mar_adder15
+deaths 4 Exactly 14 goliath mar_adder14
+deaths 4 Exactly 13 goliath mar_adder13
+deaths 4 Exactly 12 goliath mar_adder12
+deaths 4 Exactly 11 goliath mar_adder11
+deaths 4 Exactly 10 goliath mar_adder10
+deaths 4 Exactly 9 goliath mar_adder9
+deaths 4 Exactly 8 goliath mar_adder8
+deaths 4 Exactly 7 goliath mar_adder7
+deaths 4 Exactly 6 goliath mar_adder6
+deaths 4 Exactly 5 goliath mar_adder5
+deaths 4 Exactly 4 goliath mar_adder4
+deaths 4 Exactly 3 goliath mar_adder3
+deaths 4 Exactly 2 goliath mar_adder2
+deaths 4 Exactly 1 goliath mar_adder1
+:skip_rine
+wait 1
+
+deaths 4 AtLeast 8 firebat vult_adder8
+deaths 4 Exactly 7 firebat vult_adder7
+deaths 4 Exactly 6 firebat vult_adder6
+deaths 4 Exactly 5 firebat vult_adder5
+deaths 4 Exactly 4 firebat vult_adder4
+deaths 4 Exactly 3 firebat vult_adder3
+deaths 4 Exactly 2 firebat vult_adder2
+deaths 4 Exactly 1 firebat vult_adder1
+goto force_save
+
+:add_mins
+bank_data Set 1 vt1 minerals mineral_bank
+goto units_check
+
+:force_save
+wait 1
+
+save_bank vt1
+stop
+
+:vult_adder8
+bank_data Set 8 vt1 vultures mineral_bank
+wait 1
+
+goto force_save
+
+:vult_adder7
+bank_data Set 7 vt1 vultures mineral_bank
+wait 1
+
+goto force_save
+
+:vult_adder6
+bank_data Set 6 vt1 vultures mineral_bank
+wait 1
+
+goto force_save
+
+:vult_adder5
+bank_data Set 5 vt1 vultures mineral_bank
+wait 1
+
+goto force_save
+
+:vult_adder4
+bank_data Set 4 vt1 vultures mineral_bank
+wait 1
+
+goto force_save
+
+:vult_adder3
+bank_data Set 3 vt1 vultures mineral_bank
+wait 1
+
+goto force_save
+
+:vult_adder2
+bank_data Set 2 vt1 vultures mineral_bank
+wait 1
+
+goto force_save
+
+:vult_adder1
+bank_data Set 1 vt1 vultures mineral_bank
+wait 1
+
+goto force_save
+
+:mar_adder15
+bank_data Set 15 vt1 marines mineral_bank
+wait 1
+
+goto skip_rine
+
+:mar_adder14
+bank_data Set 14 vt1 marines mineral_bank
+wait 1
+
+goto skip_rine
+
+:mar_adder13
+bank_data Set 13 vt1 marines mineral_bank
+wait 1
+
+goto skip_rine
+
+:mar_adder12
+bank_data Set 12 vt1 marines mineral_bank
+wait 1
+
+goto skip_rine
+
+:mar_adder11
+bank_data Set 11 vt1 marines mineral_bank
+wait 1
+
+goto skip_rine
+
+:mar_adder10
+bank_data Set 10 vt1 marines mineral_bank
+wait 1
+
+goto skip_rine
+
+:mar_adder9
+bank_data Set 9 vt1 marines mineral_bank
+wait 1
+
+goto skip_rine
+
+:mar_adder8
+bank_data Set 8 vt1 marines mineral_bank
+wait 1
+
+goto skip_rine
+
+:mar_adder7
+bank_data Set 7 vt1 marines mineral_bank
+wait 1
+
+goto skip_rine
+
+:mar_adder6
+bank_data Set 6 vt1 marines mineral_bank
+wait 1
+
+goto skip_rine
+
+:mar_adder5
+bank_data Set 5 vt1 marines mineral_bank
+wait 1
+
+goto skip_rine
+
+:mar_adder4
+bank_data Set 4 vt1 marines mineral_bank
+wait 1
+
+goto skip_rine
+
+:mar_adder3
+bank_data Set 3 vt1 marines mineral_bank
+wait 1
+
+goto skip_rine
+
+:mar_adder2
+bank_data Set 2 vt1 marines mineral_bank
+wait 1
+
+goto skip_rine
+
+:mar_adder1
+bank_data Set 1 vt1 marines mineral_bank
+wait 1
+
+goto skip_rine

@@ -1,0 +1,743 @@
+script_name Zerg 9 - Right Yellow Protoss
+script_id Z9ry
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+if_owned drone surtur
+build 1 nexus 150
+build 3 probe 130
+build 2 gateway 80
+build 1 cybernetics_core 80
+build 1 stargate 80
+build 14 probe 80
+build 1 forge 80
+build 1 robotics_facility 80
+build 1 citadel_of_adun 80
+build 1 templar_archives 80
+player_need 1 robotics_support_bay
+max_workers 20
+multirun upgrades
+multirun allieswatchidle
+defensebuild_gg 3 dragoon
+defenseuse_gg 3 dragoon
+defensebuild_gg 1 reaver
+defenseuse_gg 1 reaver
+defenseuse_gg 1 zealot
+defensebuild_gg 1 reaver
+defenseuse_gg 1 reaver
+defensebuild_ag 1 dragoon
+defenseuse_ag 1 dragoon
+max_force 900
+define_max 21 zealot
+define_max 15 dragoon
+define_max 8 scout
+define_max 6 carrier
+define_max 2 archon
+define_max 5 high_templar
+define_max 5 reaver
+define_max 50 probe
+define_max 5 shuttle
+define_max 5 observer
+define_max 20 hornet
+multirun attack_script
+idle_orders disablebuiltin 0 0 0 0 0 0 0
+idle_orders 10 16 1 zealot|dark_templar|scout 160 group_men 80 Health(LessThan 14)
+idle_orders 10 16 1 zealot|dark_templar|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 120 Health(LessThan 14)
+idle_orders 10 16 1 zealot|dark_templar|scout 160 sunken_colony|photon_cannon 90 Health(LessThan 12)
+idle_orders 10 16 3 zealot|dark_templar|scout 160 group_men 90 Health(LessThan 33)
+idle_orders 10 16 3 zealot|dark_templar|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 130 Health(LessThan 33)
+idle_orders 10 16 3 zealot|dark_templar|scout 160 sunken_colony|photon_cannon 100 Health(LessThan 24)
+idle_orders 10 16 5 zealot|dark_templar|scout 160 group_men 95 Health(LessThan 60)
+idle_orders 10 16 5 zealot|dark_templar|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 135 Health(LessThan 60)
+idle_orders 10 16 5 zealot|dark_templar|scout 160 sunken_colony|photon_cannon|bunker 105 Health(LessThan 45)
+idle_orders 59 16 1 reaver 128 hhydralisk 130 count(AtLeast 2 40 14)
+idle_orders 59 16 1 reaver 128 zergling 80 count(AtLeast 5 40 14)
+idle_orders 59 16 1 reaver 128 hydralisk 60 count(AtLeast 2 40 14)
+idle_orders 10 64 1 dragoon 192 sunken_colony|photon_cannon|bunker 110 Health(LessThan 20)
+idle_orders 10 64 1 dragoon 192 group_men 100 Health(LessThan 15)
+idle_orders 10 64 2 dragoon 192 group_men 105 Health(LessThan 35)
+idle_orders 10 64 1 dragoon 192 infested_terran|dark_archon|defiler 130 Health(LessThan 20)
+idle_orders 10 64 1 dragoon 192 lurker|queen 120 Health(LessThan 20)
+idle_orders 10 64 1 archon 160 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine|firebat 150 count(AtLeast 3 48 14)
+idle_orders 10 16 1 archon 128 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine 110 count(AtLeast 2 24 14)
+idle_orders 10 16 2 archon 128 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine 130 count(AtLeast 2 24 14)
+idle_orders 10 16 1 scout|corsair 192 mutalisk|scout|corsair|scourge|wraith 110 Health(LessThan 20)
+idle_orders 10 16 3 scout|corsair 192 mutalisk|scout|corsair|scourge|wraith 135 Health(LessThan 60)
+idle_orders 10 16 1 scout|corsair 192 guardian|battlecruiser|carrier 150 Health(LessThan 20)
+idle_orders 10 16 2 scout|corsair 192 guardian|battlecruiser|carrier 160 Health(LessThan 40)
+idle_orders 10 16 3 scout|corsair 192 guardian|battlecruiser|carrier 170 Health(LessThan 60)
+idle_orders 10 16 4 scout|corsair 192 guardian|battlecruiser|carrier 190 Health(LessThan 80)
+idle_orders 10 16 1 scout|corsair 192 shuttle|observer|overlord 60 Health(LessThan 20)
+idle_orders 10 16 1 hornet 192 group_men 60 Health(LessThan 11)
+idle_orders 10 16 1 hornet 192 infested_terran|defiler|dark_archon|lurker|dark_templar|ghost|siege_tank 90 Health(LessThan 12)
+idle_orders 10 16 2 hornet 192 infested_terran|defiler|dark_archon|lurker|dark_templar|ghost|siege_tank 90 Health(LessThan 22)
+idle_orders 10 16 1 hornet 192 group_men 60 Health(LessThan 5)
+idle_orders 10 16 1 scout|corsair|dragoon 160 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 80 Health(LessThan 30)
+idle_orders 10 16 2 scout|corsair|dragoon 160 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 90 Health(LessThan 60)
+:ua_loop
+wait 32
+
+if_attacking ua_zero
+under_attack 1
+goto ua_loop
+
+:ua_zero
+under_attack 0
+wait 480
+
+goto ua_loop
+
+:attack_script
+wait 3500
+
+attack_add 2 zealot
+attack_add 1 dragoon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+multirun templar_ensure
+multirun grand_exchange
+wait 5500
+
+train 3 zealot
+train 2 dragoon
+train 1 reaver
+attack_add 3 zealot
+attack_add 2 dragoon
+attack_add 1 reaver
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+max_force 1050
+wait 4300
+
+train 2 high_templar
+train 6 zealot
+do_morph 1 archon
+attack_add 1 archon
+attack_add 6 zealot
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+build 2 robotics_facility 80
+defensebuild_gg 1 hornet
+defenseuse_gg 1 hornet
+defensebuild_ag 1 hornet
+defenseuse_ag 1 hornet
+wait 4350
+
+train 4 hornet
+do_morph 2 archon
+train 2 dragoon
+train 6 hornet
+attack_add 2 archon
+attack_add 2 dragoon
+attack_add 6 hornet
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+max_force 1200
+wait 4000
+
+train 3 zealot
+train 4 hornet
+train 5 zealot
+train 10 hornet
+attack_add 5 zealot
+attack_add 10 hornet
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+:blockp
+wait 3500
+
+train 4 hornet
+train 4 zealot
+train 6 hornet
+train 6 zealot
+train 4 dragoon
+train 8 hornet
+attack_add 6 zealot
+attack_add 4 dragoon
+attack_add 8 hornet
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2850
+
+train 1 reaver
+train 4 hornet
+train 4 high_templar
+train 8 hornet
+train 2 archon
+#note for future Nekron - this all used to be do_morph archons, but as I since increased HT size by 1px, AI no longer gets stuck trying to train archons because of infinite spin
+train 12 hornet
+attack_add 2 reaver
+attack_add 2 archon
+attack_add 12 hornet
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2500
+
+train 16 zealot
+attack_add 16 zealot
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 4500
+
+train 2 high_templar
+train 6 zealot
+train 4 dragoon
+train 1 archon
+attack_add 6 zealot
+attack_add 4 dragoon
+attack_add 1 archon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2500
+
+train 2 high_templar
+train 1 archon
+train 3 reaver
+train 2 high_templar
+train 2 archon
+train 3 zealot
+train 2 dragoon
+attack_add 2 archon
+attack_add 3 reaver
+attack_add 1 arbiter
+attack_add 3 zealot
+attack_add 2 dragoon
+attack_prepare
+wait 500
+
+attack_timeout 80
+attack_do
+attack_clear
+goto blockp
+
+:templar_ensure
+wait_train 4 high_templar
+
+do_morph 2 archon
+wait_rand 133 650
+goto templar_ensure
+
+:allieswatchidle
+wait 19000
+:allieswatchinitiate
+allies_watch 5 exp
+wait 500
+
+try_townpoint 2 allieswatchinitiate
+stop
+
+:exp
+start_town
+build 1 nexus 80
+get_oldpeons 1
+wait_build 1 nexus
+get_oldpeons 3
+build 3 probe 80
+build 1 pylon 80
+wait_build 1 pylon
+creep 3
+build 1 photon_cannon 80
+wait_buildstart 1 photon_cannon
+build 2 pylon 80
+wait_build 2 pylon
+creep 4
+build 2 photon_cannon 80
+wait_buildstart 2 photon_cannon
+build 1 gateway 80
+wait_buildstart 1 gateway
+build 3 pylon 80
+wait_build 3 pylon
+creep 3
+build 3 photon_cannon 80
+wait_buildstart 3 photon_cannon
+build 4 pylon 80
+wait_build 4 pylon
+creep 4
+build 4 photon_cannon 80
+wait_buildstart 4 photon_cannon
+build 2 gateway 80
+wait_buildstart 2 gateway
+build 1 cybernetics_core 80
+:exploop
+wait 4000
+wait_finishattack
+attack_add 3 dragoon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+
+goto exploop
+
+:upgrades
+wait 16
+
+upgrade 1 shuttle_speed 30
+upgrade 1 p_plasma_shield 30
+upgrade 1 dragoon_range 30
+upgrade 1 p_armor 30
+upgrade 1 p_plating 30
+upgrade 1 scout_sight 30
+upgrade 1 p_ground_weapon 30
+upgrade 1 p_air_weapon 30
+upgrade 1 zealot_speed 30
+wait 480
+wait_upgrades
+wait 4500
+
+upgrade 1 scout_speed 30
+upgrade 2 p_plasma_shield 30
+upgrade 2 p_ground_weapon 30
+upgrade 2 p_air_weapon 30
+upgrade 2 p_armor 30
+upgrade 2 p_plating 30
+upgrade 1 carrier_capacity 30
+upgrade 1 scarab_damage 30
+tech psionic_storm 30
+tech recall 30
+idle_orders 148 64 1 high_templar 1024 zealot 40 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 dragoon 30 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 reaver 70 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 carrier 80 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 scout 50 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 shuttle 30 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 arbiter 60 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 zealot 40 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 ultralisk 80 incombat
+idle_orders 148 64 1 htassadar 1024 zealot 40 own|allied|notenemies|incombat
+idle_orders 148 64 1 htassadar 1024 dragoon 30 own|allied|notenemies|incombat
+idle_orders 148 64 1 htassadar 1024 reaver 70 own|allied|notenemies|incombat
+idle_orders 148 64 1 htassadar 1024 carrier 80 own|allied|notenemies|incombat
+idle_orders 148 64 1 htassadar 1024 scout 50 own|allied|notenemies|incombat
+idle_orders 148 64 1 htassadar 1024 shuttle 30 own|allied|notenemies|incombat
+idle_orders 148 64 1 htassadar 1024 arbiter 60 own|allied|notenemies|incombat
+idle_orders 148 64 1 htassadar 1024 zealot 40 own|allied|notenemies|incombat
+idle_orders 148 64 1 htassadar 1024 ultralisk 80 incombat
+wait 480
+wait_upgrades
+wait 5000
+
+upgrade 1 scout_sight 30
+upgrade 3 p_plasma_shield 30
+upgrade 3 p_ground_weapon 30
+upgrade 3 p_air_weapon 30
+upgrade 3 p_armor 30
+upgrade 3 p_plating 30
+idle_orders 137 16 1 arbiter 65535 carrier 80 incombat|health(LessThan,200)|own|NotEnemies
+idle_orders 137 16 1 arbiter 65535 reaver 60 incombat|health(LessThan,85)|own|NotEnemies
+idle_orders 137 16 1 arbiter 65535 archon 70 incombat|health(LessThan,120)|own|NotEnemies
+idle_orders 137 16 1 harbiter 65535 carrier 80 incombat|health(LessThan,200)|own|NotEnemies
+idle_orders 137 16 1 harbiter 65535 reaver 60 incombat|health(LessThan,85)|own|NotEnemies
+idle_orders 137 16 1 harbiter 65535 archon 70 incombat|health(LessThan,120)|own|NotEnemies
+idle_orders 142 256 1 high_templar 324 ultralisk 50 incombat|count(AtLeast 2 60 14)
+idle_orders 142 128 1 high_templar 548 hydralisk 80 incombat|count(AtLeast 4 60 14)
+idle_orders 142 128 1 high_templar 548 group_men 90 incombat|count(AtLeast 5 60 14)
+idle_orders 142 128 1 high_templar 548 group_men 60 incombat|count(AtLeast 3 40 14)
+idle_orders 142 128 1 high_templar 548 group_men 90 incombat|count(AtLeast 5 60 6)|NotEnemies
+idle_orders 142 128 1 high_templar 548 group_men 60 incombat|count(AtLeast 3 40 6)|NotEnemies
+idle_orders 142 256 1 htassadar 324 ultralisk 50 incombat|count(AtLeast 2 60 14)
+idle_orders 142 128 1 htassadar 548 hydralisk 80 incombat|count(AtLeast 4 60 14)
+idle_orders 142 128 1 htassadar 548 group_men 90 incombat|count(AtLeast 5 60 14)
+idle_orders 142 128 1 htassadar 548 group_men 60 incombat|count(AtLeast 3 40 14)
+wait 480
+wait_upgrades
+wait 5000
+upgrade 1 one_with_khala 30
+upgrade 4 p_ground_weapon 30
+upgrade 4 p_air_weapon 30
+upgrade 1 reaver_capacity 30
+wait 8000
+upgrade 1 templar_mana 30
+wait 15000
+upgrade 1 arbiter_mana 30
+wait 5000
+
+wait 480
+wait_upgrades
+:upglp
+wait 15000
+
+goto upglp
+
+:surtur
+build 1 hatchery 150
+build 2 hatchery 80
+wait_buildstart 2 hatchery
+max_force 905
+define_max 42 drone
+define_max 46 zergling
+define_max 22 hydralisk
+define_max 12 mutalisk
+define_max 3 guardian
+define_max 4 queen
+define_max 3 infested_terran
+define_max 6 scourge
+define_max 7 ultralisk
+define_max 255 broodling
+wait_build 1 hatchery
+build 5 drone 130
+build 3 hatchery 80
+build 1 spawning_pool 80
+defensebuild_gg 2 zergling
+defenseuse_gg 2 zergling
+defenseuse_gg 1 broodling
+build 10 drone 80
+wait_build 5 drone
+build 2 creep_colony 80
+wait_build 1 spawning_pool
+build 2 sunken_colony 80
+build 15 drone 80
+build 1 hydralisk_den 80
+defensebuild_gg 2 hydralisk
+defenseuse_gg 2 hydralisk
+defensebuild_ag 2 hydralisk
+defenseuse_ag 2 hydralisk
+wait_buildstart 1 hydralisk_den
+build 1 lair 80
+build 5 creep_colony 80
+build 2 spore_colony 80
+build 3 sunken_colony 80
+creep 4
+upgrade 1 overlord_speed 30
+upgrade 1 overlord_capacity 30
+tech burrowing 30
+farms_timing
+max_workers 16
+wait 633
+
+idle_orders 10 16 3 mutalisk 160 marine|ghost|goliath 90 Health(LessThan 27)
+idle_orders 10 16 1 mutalisk 128 marine|ghost|goliath 70 Health(LessThan 9)
+idle_orders 10 16 2 mutalisk 128 bunker|missile_turret 100 Health(LessThan 18)
+idle_orders 10 16 1 guardian 224 group_men 60 Health(LessThan 20)
+idle_orders 10 16 2 guardian 224 group_men 80 Health(LessThan 40)
+idle_orders 10 16 3 guardian 224 group_men 90 Health(LessThan 60)
+idle_orders 10 16 5 guardian 224 group_men 110 Health(LessThan 100)
+idle_orders 10 16 1 zergling 192 infested_terran 60 InCombat
+idle_orders 10 16 6 zergling 224 goliath|siege_tank 60 InCombat
+idle_orders 10 16 1 hydralisk 192 group_men 80 Health(LessThan 8)
+idle_orders 10 16 1 hydralisk 192 ghost|goliath|battlecruiser|wraith|science_vessel|siege_tank 120 Health(LessThan 10)
+idle_orders 10 16 1 hydralisk 192 bunker 90 Health(LessThan 20)
+idle_orders 10 16 3 hydralisk 192 group_men 90 Health(LessThan 30)
+idle_orders 10 16 3 hydralisk 192 ghost|goliath|battlecruiser|wraith|science_vessel|siege_tank 130 Health(LessThan 30)
+idle_orders 10 16 3 hydralisk 192 bunker 100 Health(LessThan 20)
+idle_orders 10 16 5 hydralisk 192 ghost|goliath|battlecruiser|wraith|science_vessel|siege_tank 135 Health(LessThan 50)
+idle_orders 10 16 5 hydralisk 192 bunker 110 Health(LessThan 20)
+idle_orders 10 16 7 hydralisk 192 ghost|goliath|battlecruiser|wraith|science_vessel|siege_tank 150 Health(LessThan 65)
+idle_orders 10 16 1 scourge 224 mutalisk|scout|corsair|devourer|carrier|valhalla|science_vessel 80 Health(LessThan 110)
+idle_orders 10 16 2 scourge 250 guardian|scout|corsair|devourer|carrier|valhalla|science_vessel 80 Health(LessThan 220)
+idle_orders 10 16 3 scourge 275 devourer|carrier|valhalla|science_vessel 80 Health(LessThan 250)
+multirun help_request
+multirun grand_exchange
+max_workers 22
+build 18 drone 80
+wait_build 13 drone
+wait 350
+
+train 8 zergling
+attack_add 8 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+build 1 spire 80
+build 1 queen_nest 80
+build 1 evolution_chamber 80
+build 3 hatchery 80
+train 6 hydralisk
+multirun surturo
+train 6 hydralisk
+attack_add 6 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+defensebuild_gg 1 mutalisk
+defenseuse_ag 1 scourge
+defensebuild_ag 1 mutalisk
+defenseuse_ag 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_aa 2 scourge
+defenseuse_aa 2 scourge
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+expand 1 expansion
+upgrade 1 z_carapace 30
+upgrade 1 z_flyer_carapace 30
+upgrade 1 zergling_speed 30
+build 1 hive 80
+train 12 zergling
+train 8 hydralisk
+attack_add 12 zergling
+attack_add 8 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+build 1 ultralisk_cavern 80
+defensebuild_gg 2 ultralisk
+defenseuse_gg 2 ultralisk
+upgrade 1 hydralisk_speed 30
+upgrade 1 z_melee_attack 30
+upgrade 1 zergling_attack 30
+train 2 ultralisk
+train 18 zergling
+attack_add 18 zergling
+attack_add 2 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+capt_expand
+max_force 1300
+upgrade 1 hydralisk_range 30
+tech ensnare 30
+upgrade 1 z_missile_attack 30
+upgrade 1 z_flyer_attack 30
+train 6 mutalisk
+train 2 ultralisk
+tech spawn_broodling 30
+attack_add 6 mutalisk
+attack_add 2 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+build 4 hatchery 80
+train 4 ultralisk
+attack_add 4 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 ultralisk_speed 30
+upgrade 2 z_carapace 30
+train 3 mutalisk
+train 8 zergling
+train 4 hydralisk
+attack_add 3 mutalisk
+attack_add 8 zergling
+attack_add 4 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+max_force 1500
+train 6 zergling
+train 3 hydralisk
+train 3 mutalisk
+attack_add 6 zergling
+attack_add 3 hydralisk
+attack_add 3 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+allies_watch 6 expansion
+upgrade 2 z_melee_attack 30
+upgrade 1 ultralisk_armor 30
+train 3 ultralisk
+train 6 hydralisk
+train 4 mutalisk
+attack_add 3 ultralisk
+attack_add 6 hydralisk
+attack_add 4 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 burrowed_regen 30
+upgrade 3 z_melee_attack 30
+train 3 ultralisk
+train 8 hydralisk
+train 12 zergling
+attack_add 3 ultralisk
+attack_add 8 hydralisk
+attack_add 12 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 4 ultralisk
+train 4 mutalisk
+attack_add 4 ultralisk
+attack_add 4 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 3 z_carapace 30
+wait 1333
+
+upgrade 1 queen_mana 30
+upgrade 2 z_flyer_carapace 30
+upgrade 2 z_flyer_attack 30
+:block1
+allies_watch 6 expansion
+train 3 mutalisk
+train 5 ultralisk
+attack_add 3 mutalisk
+attack_add 5 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 3 ultralisk
+train 7 hydralisk
+train 3 mutalisk
+attack_add 3 ultralisk
+attack_add 7 hydralisk
+attack_add 3 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1501
+
+goto block1
+
+:expansion
+start_town
+build 1 hatchery 90
+get_oldpeons 1
+wait_build 1 hatchery
+build 3 drone 80
+build 5 drone 80
+wait_build 5 drone
+creep 4
+build 1 creep_colony 80
+wait 860
+
+build 1 sunken_colony 80
+wait 550
+
+build 12 drone 80
+build 2 creep_colony 80
+build 1 hydralisk_den 80
+wait 860
+
+build 1 spore_colony 80
+build 1 drone 130
+wait 10500
+wait 6700
+wait 5505
+:loop
+wait 1500
+
+goto loop
+
+:surturo
+wait 160
+
+if_attacking surturo
+wait_rand 320 450
+
+issue_order 10 3 zergling Loc.63 Loc.63 35 Own
+issue_order 10 2 zergling Loc.63 Loc.63 hydralisk Own
+issue_order 10 1 zergling Loc.63 Loc.63 drone Own
+issue_order 10 1 zergling Loc.63 Loc.63 hatchery Own
+issue_order 10 3 zergling Loc.63 Loc.63 sunken_colony Own
+issue_order 10 3 zergling Loc.63 Loc.63 spore_colony Own
+issue_order 10 3 hydralisk Loc.63 Loc.63 zergling Own
+issue_order 10 2 hydralisk Loc.63 Loc.63 35 Own
+issue_order 10 1 hydralisk Loc.63 Loc.63 drone Own
+issue_order 10 1 hydralisk Loc.63 Loc.63 hatchery Own
+issue_order 10 1 hydralisk Loc.63 Loc.63 sunken_colony Own
+issue_order 10 1 hydralisk Loc.63 Loc.63 spore_colony Own
+issue_order 10 3 mutalisk Loc.63 Loc.63 zergling Own
+issue_order 10 2 mutalisk Loc.63 Loc.63 35 Own
+issue_order 10 1 mutalisk Loc.63 Loc.63 overlord Own
+issue_order 10 1 mutalisk Loc.63 Loc.63 hatchery Own
+issue_order 10 1 mutalisk Loc.63 Loc.63 sunken_colony Own
+issue_order 10 1 mutalisk Loc.63 Loc.63 spore_colony Own
+wait_rand 720 1260
+
+goto surturo
+
+:help_request
+wait 16330
+
+wait_secure
+help_iftrouble
+goto help_request
+
+:grand_exchange
+wait 2650
+
+:ge_init
+wait_rand 100 145
+
+call ge_gas
+call ge_mins
+time_jump 50 late_gas_detour
+goto ge_init
+
+:late_gas_detour
+resources 13 AtMost Gas 1199 ge_init
+resources 13 AtLeast Ore 2200 ge_init
+resources 13 Subtract Gas 200 ge_init
+resources 13 Add Ore 266 ge_init
+goto ge_init
+
+:ge_gas
+resources 13 AtLeast Gas 600 ge_skip
+resources 13 AtMost Ore 1099 ge_skip
+resources 13 Subtract Ore 170 ge_skip
+resources 13 Add Gas 80 ge_skip
+return
+
+:ge_mins
+resources 13 AtMost Gas 599 ge_skip
+resources 13 AtLeast Ore 1100 ge_skip
+resources 13 Subtract Gas 100 ge_skip
+resources 13 Add Ore 133 ge_skip
+return
+
+:ge_skip
+return

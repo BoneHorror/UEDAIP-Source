@@ -1,0 +1,343 @@
+script_name Terran 7 - Middle Zerg Town
+script_id Te7m
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 1
+wait 1
+
+build 1 hatchery 150
+build 5 drone 130
+build 3 hatchery 80
+build 1 spawning_pool 80
+build 1 lair 80
+build 1 hydralisk_den 80
+build 1 spire 80
+build 1 greater_spire 70
+build 1 queen_nest 80
+build 7 creep_colony 80
+build 1 evolution_chamber 80
+build 6 spore_colony 80
+build 1 sunken_colony 80
+build 1 ultralisk_cavern 70
+build 14 overlord 80
+creep 4
+defensebuild_gg 1 infested_terran
+defenseuse_gg 1 infested_terran
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defenseuse_gg 1 hydralisk
+defensebuild_gg 1 mutalisk
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+defensebuild_ag 1 mutalisk
+defenseuse_ag 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_aa 1 queen
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+max_force 707
+multirun infested_action
+multirun surtur
+define_max 42 drone
+define_max 46 zergling
+define_max 22 hydralisk
+define_max 12 mutalisk
+define_max 3 guardian
+define_max 4 queen
+define_max 3 infested_terran
+define_max 6 scourge
+define_max 7 ultralisk
+upgrade 1 overlord_speed 30
+upgrade 1 overlord_capacity 30
+tech burrowing 30
+farms_timing
+build 12 drone 80
+max_workers 14
+wait 1500
+
+idle_orders 27 128 1 queen 2048 command_center 80 health(LessThanPercent,50)
+idle_orders 135 160 1 infested_terran 1024 ghost 80 invisible
+idle_orders 10 16 3 mutalisk 160 marine|ghost|goliath 90 Health(LessThan 27)
+idle_orders 10 16 1 mutalisk 128 marine|ghost|goliath 70 Health(LessThan 9)
+idle_orders 10 16 2 mutalisk 128 bunker|missile_turret 100 Health(LessThan 18)
+idle_orders 10 16 1 guardian 224 group_men 60 Health(LessThan 20)
+idle_orders 10 16 2 guardian 224 group_men 80 Health(LessThan 40)
+idle_orders 10 16 3 guardian 224 group_men 90 Health(LessThan 60)
+idle_orders 10 16 5 guardian 224 group_men 110 Health(LessThan 100)
+idle_orders 10 16 1 zergling 192 infested_terran 60 InCombat
+idle_orders 10 16 6 zergling 224 goliath|siege_tank 60 InCombat
+idle_orders 10 16 1 hydralisk 192 group_men 80 Health(LessThan 8)
+idle_orders 10 16 1 hydralisk 192 ghost|goliath|battlecruiser|wraith|science_vessel|siege_tank 120 Health(LessThan 10)
+idle_orders 10 16 1 hydralisk 192 bunker 90 Health(LessThan 20)
+idle_orders 10 16 3 hydralisk 192 group_men 90 Health(LessThan 30)
+idle_orders 10 16 3 hydralisk 192 ghost|goliath|battlecruiser|wraith|science_vessel|siege_tank 130 Health(LessThan 30)
+idle_orders 10 16 3 hydralisk 192 bunker 100 Health(LessThan 20)
+idle_orders 10 16 5 hydralisk 192 ghost|goliath|battlecruiser|wraith|science_vessel|siege_tank 135 Health(LessThan 50)
+idle_orders 10 16 5 hydralisk 192 bunker 110 Health(LessThan 20)
+idle_orders 10 16 7 hydralisk 192 ghost|goliath|battlecruiser|wraith|science_vessel|siege_tank 150 Health(LessThan 65)
+idle_orders 10 16 1 scourge 224 mutalisk|scout|corsair|devourer|carrier|valhalla|science_vessel 80 Health(LessThan 110)
+idle_orders 10 16 2 scourge 250 guardian|scout|corsair|devourer|carrier|valhalla|science_vessel 80 Health(LessThan 220)
+idle_orders 10 16 3 scourge 275 devourer|carrier|valhalla|science_vessel 80 Health(LessThan 250)
+idle_orders 135 16 1 infested_terran 160 zealot|firebat|goliath 50 incombat|count(AtLeast 6 60 14)
+idle_orders 135 16 1 infested_terran 160 dragoon|marine 80 incombat|count(AtLeast 3 60 14)
+idle_orders 135 16 1 infested_terran 160 high_templar|vulture|scv 80 incombat|count(AtLeast 3 60 14)
+idle_orders 135 16 1 infested_terran 160 high_templar|vulture|scv 100 incombat|count(AtLeast 4 60 14)
+idle_orders 135 16 1 infested_terran 160 ghost|archon 90 incombat|count(AtLeast 2 60 14)
+idle_orders 135 16 1 infested_terran 160 ghost|archon 110 incombat|count(AtLeast 3 60 14)
+idle_orders 135 16 1 infested_terran 160 siege_tank|reaver 130 incombat|count(AtLeast 2 60 14)
+idle_orders 135 16 1 infested_terran 160 siege_tank|reaver 150 incombat|count(AtLeast 3 60 14)
+#infested terran attack overrides for groups of units
+multirun help_request
+max_workers 22
+build 18 drone 80
+under_attack 0
+wait 1750
+
+attack_add 5 zergling
+attack_to Loc.24 Loc.25
+wait 500
+
+attack_do
+attack_clear
+wait 2133
+
+attack_add 2 ultralisk
+attack_to Loc.28 Loc.29
+wait 500
+
+attack_do
+attack_clear
+max_force 600
+allies_watch 3 expansion
+upgrade 1 z_carapace 30
+upgrade 1 z_flyer_carapace 30
+upgrade 1 zergling_speed 30
+defenseuse_ag 1 scourge
+defensebuild_ga 1 guardian
+defenseuse_ga 1 guardian
+wait 1750
+
+attack_add 12 zergling
+attack_add 3 hydralisk
+attack_to Loc.31 Loc.30
+wait 500
+
+attack_do
+attack_clear
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+upgrade 1 hydralisk_speed 30
+upgrade 1 z_melee_attack 30
+upgrade 1 zergling_attack 30
+wait 1933
+
+train 18 zergling
+attack_add 18 zergling
+attack_add 1 ultralisk
+attack_to Loc.28 Loc.29
+wait 500
+
+attack_do
+attack_clear
+capt_expand
+max_force 900
+upgrade 1 hydralisk_range 30
+tech ensnare 30
+upgrade 1 z_missile_attack 30
+upgrade 1 z_flyer_attack 30
+wait 2050
+
+tech spawn_broodling 30
+attack_add 6 mutalisk
+attack_add 2 ultralisk
+attack_to Loc.24 Loc.25
+wait 500
+
+attack_do
+attack_clear
+defensebuild_gg 1 guardian
+defenseuse_gg 1 guardian
+wait 1500
+
+attack_add 4 ultralisk
+attack_to Loc.10 Loc.11
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 ultralisk_speed 30
+upgrade 2 z_carapace 30
+wait 1650
+
+attack_add 3 mutalisk
+attack_add 8 zergling
+attack_add 4 hydralisk
+attack_to Loc.24 Loc.25
+wait 500
+
+attack_do
+attack_clear
+max_force 1000
+wait 600
+
+attack_add 12 zergling
+attack_add 3 hydralisk
+attack_add 3 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 z_melee_attack 30
+upgrade 1 ultralisk_armor 30
+wait 933
+
+attack_add 3 ultralisk
+attack_add 6 hydralisk
+attack_add 4 mutalisk
+attack_to Loc.31 Loc.30
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 burrowed_regen 30
+upgrade 3 z_melee_attack 30
+wait 1000
+
+attack_add 3 ultralisk
+attack_add 8 hydralisk
+attack_add 18 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 500
+
+attack_add 5 ultralisk
+attack_add 5 mutalisk
+attack_to Loc.28 Loc.29
+wait 500
+
+attack_do
+attack_clear
+upgrade 3 z_carapace 30
+wait 1333
+
+upgrade 1 queen_mana 30
+upgrade 2 z_flyer_carapace 30
+upgrade 2 z_flyer_attack 30
+:block1
+attack_add 5 mutalisk
+attack_add 2 guardian
+attack_add 5 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1450
+
+attack_add 3 ultralisk
+attack_add 12 hydralisk
+attack_add 1 guardian
+attack_add 4 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1345
+
+attack_add 3 ultralisk
+attack_add 20 zergling
+attack_add 5 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1501
+goto block1
+
+:expansion
+start_town
+build 1 hatchery 80
+get_oldpeons 1
+wait_build 1 hatchery
+build 3 drone 80
+build 5 drone 70
+wait_build 5 drone
+creep 4
+build 1 creep_colony 80
+wait 860
+
+build 1 sunken_colony 80
+wait 550
+
+build 12 drone 80
+build 2 creep_colony 80
+build 1 hydralisk_den 80
+wait 860
+
+build 1 spore_colony 80
+build 1 drone 130
+wait 10500
+wait 6700
+wait 5505
+:loop
+wait 1500
+
+goto loop
+
+:infested_action
+wait 1350
+
+notowns_jump infested_terran infested_action
+attack_add 1 infested_terran
+wait_finishattack
+wait 500
+
+goto infested_action
+
+:surtur
+wait 160
+
+if_attacking surtur
+wait_rand 320 450
+
+issue_order 10 3 zergling Loc.63 Loc.63 35 Own
+issue_order 10 2 zergling Loc.63 Loc.63 hydralisk Own
+issue_order 10 1 zergling Loc.63 Loc.63 drone Own
+issue_order 10 1 zergling Loc.63 Loc.63 hatchery Own
+issue_order 10 3 zergling Loc.63 Loc.63 sunken_colony Own
+issue_order 10 3 zergling Loc.63 Loc.63 spore_colony Own
+issue_order 10 3 hydralisk Loc.63 Loc.63 zergling Own
+issue_order 10 2 hydralisk Loc.63 Loc.63 35 Own
+issue_order 10 1 hydralisk Loc.63 Loc.63 drone Own
+issue_order 10 1 hydralisk Loc.63 Loc.63 hatchery Own
+issue_order 10 1 hydralisk Loc.63 Loc.63 sunken_colony Own
+issue_order 10 1 hydralisk Loc.63 Loc.63 spore_colony Own
+issue_order 10 3 mutalisk Loc.63 Loc.63 zergling Own
+issue_order 10 2 mutalisk Loc.63 Loc.63 35 Own
+issue_order 10 1 mutalisk Loc.63 Loc.63 overlord Own
+issue_order 10 1 mutalisk Loc.63 Loc.63 hatchery Own
+issue_order 10 1 mutalisk Loc.63 Loc.63 sunken_colony Own
+issue_order 10 1 mutalisk Loc.63 Loc.63 spore_colony Own
+wait_rand 720 1260
+
+goto surtur
+
+:help_request
+wait 1633
+
+wait_secure
+help_iftrouble
+goto help_request
+

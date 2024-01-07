@@ -1,0 +1,195 @@
+script_name Terran 3 - Zerg Town
+script_id Ter3
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 hatchery 150
+build 6 drone 130
+build 1 spawning_pool 80
+build 1 lair 80
+tech burrowing 30
+max_workers 16
+build 14 drone 80
+define_max 24 zergling
+define_max 11 hydralisk
+define_max 47 drone
+define_max 18 mutalisk
+define_max 8 scourge
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defenseuse_gg 1 broodling
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
+max_force 420
+farms_timing
+upgrade 1 overlord_speed 30
+upgrade 1 overlord_capacity 30
+wait 1050
+
+capt_expand
+attack_add 3 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+build 1 hydralisk_den 80
+build 1 spire 80
+allies_watch 6 expansion
+wait 2500
+
+train 4 zergling
+attack_add 3 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+build 1 evolution_chamber 80
+upgrade 1 zergling_speed 30
+upgrade 1 z_carapace 30
+upgrade 1 z_flyer_attack 30
+wait 450
+
+train 4 mutalisk
+attack_add 4 mutalisk
+attack_to Loc.23 Loc.24
+wait 500
+
+attack_do
+attack_clear
+allies_watch 10 expansion
+upgrade 1 hydralisk_range 30
+train 6 hydralisk
+attack_add 6 hydralisk
+attack_to Loc.16 Loc.3
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 z_melee_attack 30
+wait 1125
+
+train 7 mutalisk
+attack_add 7 mutalisk
+attack_to Loc.27 Loc.28
+wait 500
+
+attack_do
+attack_clear
+allies_watch 11 expansion
+wait 1500
+
+train 7 hydralisk
+train 7 mutalisk
+attack_add 7 hydralisk
+attack_add 6 zergling
+attack_to Loc.26 Loc.2
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 z_missile_attack 30
+upgrade 1 z_flyer_carapace 30
+:block2
+expand 3 expansion
+train 9 mutalisk
+attack_add 5 mutalisk
+attack_to Loc.25 Loc.3
+wait 500
+
+attack_do
+attack_clear
+wait 350
+
+train 5 mutalisk
+attack_add 4 mutalisk
+attack_to Loc.29 Loc.3
+wait 500
+
+attack_do
+attack_clear
+attack_add 13 zergling
+attack_to Loc.27 Loc.30
+wait 500
+
+attack_do
+attack_clear
+attack_add 4 hydralisk
+attack_add 4 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1500
+
+train 12 zergling
+train 6 hydralisk
+attack_add 12 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1500
+
+attack_add 8 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto block2
+
+:expansion
+start_town
+build 1 hatchery 80
+get_oldpeons 1
+wait_build 1 hatchery 80
+max_workers 5
+build 3 drone 80
+build 5 drone 70
+wait_build 5 drone
+creep 4
+build 1 creep_colony 80
+wait 860
+
+max_workers 12
+build 1 sunken_colony 80
+wait 550
+
+build 12 drone 80
+build 2 creep_colony 80
+wait 860
+
+build 1 spore_colony 80
+max_workers 14
+build 1 drone 80
+wait 10500
+
+max_workers 13
+wait 6700
+
+max_workers 9
+wait 5505
+
+max_workers 255
+:loop
+wait 1500
+
+goto loop

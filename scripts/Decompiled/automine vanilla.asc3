@@ -1,0 +1,741 @@
+script_name AI Cast DWeb
+script_id DWHe
+
+#deaths 0 Exactly 1 98 zerg_5
+multirun terran_idle
+multirun zerg_idle
+multirun protoss_idle
+deaths 0 Exactly 2 98 terran_2
+deaths 0 Exactly 3 98 terran_3
+#deaths 0 Exactly 4 98 zerg_8
+deaths 0 Exactly 5 98 terran_5
+deaths 0 Exactly 6 98 terran_6
+deaths 0 Exactly 7 98 terran_7
+deaths 0 Exactly 8 98 terran_8
+#deaths 0 Exactly 9 98 terran_9
+#deaths 0 Exactly 10 98 terran_10 - reserved and used by aura
+deaths 0 Exactly 11 98 terran_11
+deaths 0 Exactly 12 98 terran_12
+deaths 0 Exactly 13 98 zerg_2
+deaths 0 Exactly 14 98 zerg_3
+deaths 0 Exactly 15 98 zerg_4
+#32 raszagal deaths reserved for zerg 5 and not used!
+#33 raszagal deaths reserved for zerg 6 and used in iscript
+deaths 0 Exactly 16 98 zerg_8
+deaths 0 Exactly 17 98 zerg_9
+deaths 0 Exactly 18 98 zerg_10
+#deaths 0 Exactly 21 98 protoss_4_special
+#deaths 0 Exactly 22 98 coop_1
+#deaths 0 Exactly 23 98 zerg2_mining
+#deaths 0 Exactly 24 98 terran_11
+deaths 0 Exactly 25 98 protoss_2
+deaths 0 Exactly 26 98 protoss_3
+deaths 0 Exactly 27 98 protoss_4
+#28 raszagal deaths reserved for protoss 6 (into the darkness) but it does not run a script here
+deaths 0 Exactly 29 98 protoss_7
+deaths 0 Exactly 30 98 protoss_8
+#protoss 9 does not start with a base
+deaths 0 Exactly 31 98 protoss_10
+stop
+
+:terran_idle
+load_bank automine_toggle
+wait 1
+
+deaths 0 AtMost 999 98 tog_return
+:loop_until_unit
+
+wait 2
+if_owned 15 loop_until_unit
+#loop for as long as we have civ, then wait 8 frames
+wait 8
+if_owned medic enable
+if_owned valkyrie disable
+if_owned queen easycast
+:tog_return
+wait 1
+
+bank_data Exactly 1 automine_toggle toggle void
+bank_data Exactly 2 automine_toggle toggle ec_terran
+wait 300
+
+
+if_owned drone void
+if_owned overlord void
+if_owned hhydralisk void
+deaths 0 Exactly 27 98 tl_pc_skip
+deaths 0 Exactly 31 98 tl_pc_skip
+#skip toss checks in T+P vP campaign maps
+if_owned probe void
+if_owned nexus void
+if_owned zealot void
+:tl_pc_skip
+upgrade_jump 13 Set 62 1 void
+idle_orders Repair 48 2 scv 150 group_buildings|group_men 50 NotEnemies|Own|Self(Order(PlayerGuard))|Hp(LessThanPercent 100)|TileFlags(Walkable)|UnitFlags(Mechanical)
+idle_orders Repair 48 2 scv 150 group_buildings|group_men 40 NotEnemies|Own|Self(Order(Guard))|Hp(LessThanPercent 100)|TileFlags(Walkable)|UnitFlags(Mechanical)
+#idle_orders Repair 48 2 scv 150 group_buildings|group_men 30 NotEnemies|Own|Self(Order(Stop))|Hp(LessThanPercent 100)|TileFlags(Walkable)|UnitFlags(Mechanical)
+idle_orders 141 73 1 science_vessel 224 group_men 50 NotEnemies|Own|Self(Order(PlayerGuard))|Hp(LessThanPercent 40)|Hp(GreaterThan 9)|InCombat|Self(Energy(GreaterThan 199))|WithoutSpellEffects(Matrix)
+idle_orders 141 72 1 science_vessel 224 group_men 50 NotEnemies|Own|Self(Order(Guard))|Hp(LessThanPercent 40)|Hp(GreaterThan 9)|InCombat|Self(Energy(GreaterThan 199))|WithoutSpellEffects(Matrix)
+#idle_orders Restoration 33 1 medic 256 Group_Men 55 NotEnemies|Own|Allied|Self(Energy(GreaterThan 65))|SpellEffects(Irradiate)|UnitFlags(Organic)
+#idle_orders Restoration 33 1 medic 256 Group_Men 50 NotEnemies|Own|Allied|Self(Energy(GreaterThan 65))|SpellEffects(Plague)
+#idle_orders Restoration 33 1 medic 256 Group_Men 45 NotEnemies|Own|Allied|Self(Energy(GreaterThan 90))|SpellEffects(Lockdown)
+#idle_orders Restoration 33 1 medic 256 Group_Men 35 NotEnemies|Own|Allied|Self(Energy(GreaterThan 95))|SpellEffects(Maelstrom)
+multirun irradiate_io
+multirun lockdown_io
+stop
+
+:ec_terran
+wait 300
+
+
+if_owned drone void
+if_owned overlord void
+if_owned hhydralisk void
+deaths 0 Exactly 27 98 tl_pc_skip_ec
+deaths 0 Exactly 31 98 tl_pc_skip_ec
+#skip toss checks in T+P vP campaign maps
+if_owned probe void
+if_owned nexus void
+if_owned zealot void
+:tl_pc_skip_ec
+upgrade_jump 13 Set 62 1 void
+idle_orders Repair 48 2 scv 150 group_buildings|group_men 50 NotEnemies|Own|Self(Order(PlayerGuard))|Hp(LessThanPercent 100)|TileFlags(Walkable)|UnitFlags(Mechanical)
+idle_orders Repair 48 2 scv 150 group_buildings|group_men 40 NotEnemies|Own|Self(Order(Guard))|Hp(LessThanPercent 100)|TileFlags(Walkable)|UnitFlags(Mechanical)
+#idle_orders Repair 48 2 scv 150 group_buildings|group_men 30 NotEnemies|Own|Self(Order(Stop))|Hp(LessThanPercent 100)|TileFlags(Walkable)|UnitFlags(Mechanical)
+idle_orders 141 73 1 science_vessel 224 group_men 50 NotEnemies|Own|Self(Order(PlayerGuard))|Hp(LessThanPercent 40)|Hp(GreaterThan 9)|InCombat|Self(Energy(GreaterThan 149))|WithoutSpellEffects(Matrix)|Self(Order(3))
+idle_orders 141 72 1 science_vessel 224 group_men 50 NotEnemies|Own|Self(Order(Guard))|Hp(LessThanPercent 40)|Hp(GreaterThan 9)|InCombat|Self(Energy(GreaterThan 149))|WithoutSpellEffects(Matrix)|Self(Order(3))
+#idle_orders 141 73 1 science_vessel 224 group_men 50 NotEnemies|Own|Self(Order(PlayerGuard))|Hp(LessThanPercent 40)|Hp(GreaterThan 9)|InCombat|Self(Energy(GreaterThan 149))|WithoutSpellEffects(Matrix)|Self(Order(152))
+#idle_orders 141 72 1 science_vessel 224 group_men 50 NotEnemies|Own|Self(Order(Guard))|Hp(LessThanPercent 40)|Hp(GreaterThan 9)|InCombat|Self(Energy(GreaterThan 149))|WithoutSpellEffects(Matrix)|Self(Order(152))
+#idle_orders Restoration 33 1 medic 256 Group_Men 55 NotEnemies|Own|Allied|Self(Energy(GreaterThan 65))|SpellEffects(Irradiate)|UnitFlags(Organic)
+#idle_orders Restoration 33 1 medic 256 Group_Men 50 NotEnemies|Own|Allied|Self(Energy(GreaterThan 65))|SpellEffects(Plague)
+#idle_orders Restoration 33 1 medic 256 Group_Men 45 NotEnemies|Own|Allied|Self(Energy(GreaterThan 90))|SpellEffects(Lockdown)
+#idle_orders Restoration 33 1 medic 256 Group_Men 35 NotEnemies|Own|Allied|Self(Energy(GreaterThan 95))|SpellEffects(Maelstrom)
+multirun ec_irradiate_io
+multirun ec_lockdown_io
+multirun ec_emp_io
+stop
+
+:ec_irradiate_io
+wait 16
+
+tech_jump 13 Exactly irradiate 0 ec_irradiate_io
+idle_orders 143 160 1 science_vessel 1312 infested_terran|lurker|guardian|queen|defiler|devourer|dark_templar|medic|ghost|phantom 120 Health(GreaterThan 50)|WithoutSpellEffects(Irradiate)|Self(Order(3))
+idle_orders 143 160 1 science_vessel 1312 hydralisk|mutalisk|zealot|scv|drone|ultralisk 60 Health(GreaterThan 50)|WithoutSpellEffects(Irradiate)|Self(Order(3))
+#idle_orders 143 160 1 science_vessel 1312 infested_terran|lurker|guardian|queen|defiler|devourer|dark_templar|medic|ghost|phantom 120 Health(GreaterThan 50)|WithoutSpellEffects(Irradiate)|Self(Order(152))
+#idle_orders 143 160 1 science_vessel 1312 hydralisk|mutalisk|zealot|scv|drone|ultralisk 60 Health(GreaterThan 50)|WithoutSpellEffects(Irradiate)|Self(Order(152))
+#idle_orders Move 48 1 vulture 160 zergling|lurker|hydralisk|ultralisk|zealot|dark_templar|marine|heavy_marine|medic|high_templar|drone|scv 255 Health(GreaterThanPercent 20)|InCombat|Self(SpellEffects(Irradiate))|Self(Order(152))
+#idle_orders 143 480 1 science_vessel 216 wraith 150 Health(GreaterThan 100)|WithoutSpellEffects(Irradiate)|InCombat|Own|NotEnemies|count(AtLeast 5 160 14)|Self(Energy(GreaterThan 149))|Self(Order(152))
+#idle_orders 143 480 1 science_vessel 216 vulture 150 Health(GreaterThan 50)|WithoutSpellEffects(Irradiate)|InCombat|Own|NotEnemies|count(AtLeast 4 226 14)|Self(Energy(GreaterThan 149))|Self(Order(152))
+#idle_orders 141 320 1 science_vessel 312 wraith 5 own|allied|notenemies|SpellEffects(Irradiate)|Self(Energy(GreaterThan 190))|Self(Order(152))
+#idle_orders Move 16 1 wraith 192 mutalisk|overlord|ghost|zealot|high_templar|dark_templar|phantom|medic 255 Health(GreaterThanPercent 30)|InCombat|count(AtLeast 2 120 14)|Self(SpellEffects(Irradiate))|Self(Order(152))
+#idle_orders Move 16 1 wraith 226 guardian|devourer 255 Health(GreaterThanPercent 20)|InCombat|Self(SpellEffects(Irradiate))|Self(Order(152))
+#idle_orders Move 16 1 wraith 192 zergling|hydralisk|marine|firebat|heavy_marine|tesla_trooper 255 Health(GreaterThanPercent 40)|InCombat|count(AtLeast 3 120 14)|Self(SpellEffects(Irradiate))|Self(Order(152))
+stop
+
+:ec_lockdown_io
+wait 16
+
+tech_jump 13 Exactly lockdown 0 ec_lockdown_io
+idle_orders 115 32 1 ghost 210 group_men 50 Hp(GreaterThanPercent 50)|Self(InCombat)|Self(Energy(GreaterThan 150))|UnitFlags(Mechanical)|WithoutSpellEffects(Lockdown)
+idle_orders 115 32 1 ghost 280 carrier|reaver|102|battlecruiser|siege_tank|panzer|valhalla|science_vessel|arbiter 80 Hp(GreaterThanPercent 20)|Self(InCombat)|Self(Energy(GreaterThan 80))|WithoutSpellEffects(Lockdown)
+idle_orders 115 32 1 ghost 280 dropship|shuttle 90 Hp(GreaterThanPercent 20)|Self(InCombat)|Self(Energy(GreaterThan 75))|WithoutSpellEffects(Lockdown)|Cargo(GreaterThan 1)
+#hnorad - special AI bc unit that avoids BC hardcodes - is unit id 102 in vanilla instead (hdugalle)
+stop
+
+:ec_emp_io
+wait 16
+
+tech_jump 13 Exactly emp_shockwave 0 ec_emp_io
+idle_orders 122 226 1 science_vessel 338 Group_Men 50 InCombat|Count(AtLeast 2 60 14)|Energy(GreaterThan 200)|Self(Order(3))
+idle_orders 122 128 1 science_vessel 512 Group_Men 60 InCombat|Count(AtLeast 2 60 14)|Shields(GreaterThan 300)|Self(Order(3))
+stop 
+
+:protoss_idle
+wait 3
+
+bank_data Exactly 1 automine_toggle toggle void
+bank_data Exactly 2 automine_toggle toggle ec_protoss
+wait 300
+
+
+if_owned drone void
+if_owned overlord void
+if_owned hhydralisk void
+deaths 0 Exactly 27 98 pl_pc_skip
+deaths 0 Exactly 31 98 pl_pc_skip
+#skip terran checks in T+P vP campaign maps
+if_owned scv void
+if_owned command_center void
+if_owned marine void
+:pl_pc_skip
+upgrade_jump 13 Set 62 1 void
+idle_orders 48 16 2 high_templar 192 high_templar 40 NotEnemies|Own|Self(InCombat)|Self(Order(PlayerGuard))|Self(Hp(LessThanPercent 40))|Self(Energy(LessThan 125))
+idle_orders 48 16 2 high_templar 192 high_templar 40 NotEnemies|Own|Self(InCombat)|Self(Order(Guard))|Self(Hp(LessThanPercent 40))|Self(Energy(LessThan 125))
+idle_orders RechargeShieldsUnit 49 3 Group_Men 160 shield_battery 50 NotEnemies|Own|Self(Shields(LessThanPercent 66))|Self(Order(PlayerGuard))
+idle_orders RechargeShieldsUnit 49 3 Group_Men 160 shield_battery 50 NotEnemies|Own|Self(Shields(LessThanPercent 66))|Self(Order(Guard))
+stop
+
+:ec_protoss
+wait 300
+
+upgrade_jump 13 Set 62 1 void
+if_owned drone void
+if_owned overlord void
+if_owned hhydralisk void
+if_owned scv void
+if_owned command_center void
+if_owned marine void
+multirun ec_hallu_io
+multirun ec_storm_io
+multirun ec_stasis_io
+multirun ec_recall_io
+idle_orders 48 16 2 high_templar 192 high_templar 40 NotEnemies|Own|Self(InCombat)|Self(Order(PlayerGuard))|Self(Hp(LessThanPercent 40))|Self(Energy(LessThan 125))
+idle_orders 48 16 2 high_templar 192 high_templar 40 NotEnemies|Own|Self(InCombat)|Self(Order(Guard))|Self(Hp(LessThanPercent 40))|Self(Energy(LessThan 125))
+idle_orders RechargeShieldsUnit 49 3 Group_Men 160 shield_battery 50 NotEnemies|Own|Self(Shields(LessThanPercent 66))|Self(Order(PlayerGuard))
+idle_orders RechargeShieldsUnit 49 3 Group_Men 160 shield_battery 50 NotEnemies|Own|Self(Shields(LessThanPercent 66))|Self(Order(Guard))
+stop
+
+
+:ec_hallu_io
+wait 16
+
+tech_jump 13 Exactly hallucination 0 ec_hallu_io
+idle_orders 148 49 1 high_templar 224 group_men 70 Self(InCombat)|Self(Order(PlayerGuard))|Self(Hp(LessThanPercent 50))|Self(Energy(GreaterThan 150))
+idle_orders 148 49 1 high_templar 224 group_men 70 Self(InCombat)|Self(Order(Guard))|Self(Hp(LessThanPercent 50))|Self(Energy(GreaterThan 150))
+stop
+
+:ec_storm_io
+wait 16
+
+tech_jump 13 Exactly psionic_storm 0 ec_storm_io
+idle_orders 142 256 1 high_templar 1324 ultralisk|devourer|carrier|102|battlecruiser|valkyrie|science_vessel|arbiter|reaver|panzer|siege_tank 50 incombat|count(AtLeast 2 60 14)
+idle_orders 142 128 1 high_templar 1024 hydralisk|mutalisk|guardian|wraith|scout|corsair|marine|heavy_marine|tesla_trooper|drone|probe|scv|medic|firebat|goliath|vulture|dragoon|zealot|high_templar 80 incombat|count(AtLeast 4 60 14)
+idle_orders 142 128 1 high_templar 1024 group_men 60 incombat|count(AtLeast 5 60 14)
+idle_orders 142 128 1 high_templar 1024 group_men 40 incombat|count(AtLeast 3 40 14)
+idle_orders 142 128 1 high_templar 192 group_men 40 Deathrattle
+stop
+
+:ec_stasis_io
+wait 16
+
+tech_jump 13 Exactly stasis_field 0 ec_stasis_io
+idle_orders 147 1024 1 arbiter 1536 archon|ultralisk|battlecruiser|102 40 incombat|Self(Order(3))
+idle_orders 147 1024 1 arbiter 1536 carrier|guardian|devourer|valhalla 50 incombat|Self(Order(3))
+idle_orders 147 1024 1 arbiter 1536 dark_templar|hydralisk|dragoon|zealot|mutalisk|scourge|corsair|wraith|skywing|valkyrie 30 incombat|count(AtLeast 2 48 13)|Self(Order(3))
+idle_orders 147 1024 1 arbiter 1536 dark_archon|archon|queen|defiler|ghost|science_vessel|phantom 30 incombat|Self(Order(3))
+idle_orders 147 1024 1 arbiter 1536 reaver|infested_terran|siege_tank|lurker|panzer|death_knight 50 incombat|count(AtLeast 2 48 13)|Self(Order(3))
+idle_orders 147 1024 1 arbiter 536 group_men 60 incombat|count(AtLeast 5 60 14)|Self(Order(3))
+#idle_orders 147 1024 1 arbiter 1536 archon|ultralisk|battlecruiser|102 40 incombat|Self(Order(152))
+#idle_orders 147 1024 1 arbiter 1536 carrier|guardian|devourer|valhalla 50 incombat|Self(Order(152))
+#idle_orders 147 1024 1 arbiter 1536 dark_templar|hydralisk|dragoon|zealot|mutalisk|scourge|corsair|wraith|skywing|valkyrie 30 incombat|count(AtLeast 2 48 13)|Self(Order(152))
+#idle_orders 147 1024 1 arbiter 1536 dark_archon|archon|queen|defiler|ghost|science_vessel|phantom 30 incombat|Self(Order(152))
+#idle_orders 147 1024 1 arbiter 1536 reaver|infested_terran|siege_tank|lurker|panzer|death_knight 50 incombat|count(AtLeast 2 48 13)|Self(Order(152))
+#idle_orders 147 1024 1 arbiter 536 group_men 60 incombat|count(AtLeast 5 60 14)|Self(Order(152))
+idle_orders 147 0 0 arbiter 256 group_men 80 deathrattle
+stop
+
+:ec_recall_io
+wait 16
+
+tech_jump 13 Exactly recall 0 ec_recall_io
+idle_orders 137 16 1 arbiter 65535 carrier 80 incombat|health(LessThan,200)|own|NotEnemies|Self(Order(3))
+idle_orders 137 16 1 arbiter 65535 reaver 60 incombat|health(LessThan,85)|own|NotEnemies|Self(Order(3))
+idle_orders 137 16 1 arbiter 65535 archon 70 incombat|health(LessThan,120)|own|NotEnemies|Self(Order(3))
+#idle_orders 137 16 1 arbiter 65535 carrier 80 incombat|health(LessThan,200)|own|NotEnemies|Self(Order(152))
+#idle_orders 137 16 1 arbiter 65535 reaver 60 incombat|health(LessThan,85)|own|NotEnemies|Self(Order(152))
+#idle_orders 137 16 1 arbiter 65535 archon 70 incombat|health(LessThan,120)|own|NotEnemies|Self(Order(152))
+stop
+
+:zerg_idle
+wait 3
+
+bank_data Exactly 1 automine_toggle toggle void
+bank_data Exactly 2 automine_toggle toggle ec_zerg
+wait 300
+
+
+if_owned scv void
+if_owned command_center void
+if_owned marine void
+if_owned probe void
+if_owned nexus void
+if_owned zealot void
+upgrade_jump 13 Set 62 1 void
+stop
+
+:ec_zerg
+wait 300
+
+
+if_owned scv void
+if_owned command_center void
+if_owned marine void
+if_owned probe void
+if_owned nexus void
+if_owned zealot void
+upgrade_jump 13 Set 62 1 void
+idle_orders 119 64 1 defiler 512 ultralisk 70 own|allied|notenemies|incombat
+idle_orders 119 64 1 defiler 512 zergling 30 own|allied|notenemies|incombat|Count(AtLeast 3 80 14)
+idle_orders 119 64 1 defiler 512 lurker 50 own|allied|notenemies|incombat|Count(AtLeast 2 80 14)
+idle_orders 120 0 1 queen 1024 overlord|observer|science_vessel|defiler|skywing|dropship|shuttle|arbiter|valhalla|defiler|queen|ghost 30 WithoutSpellEffects(Parasite)|RandomRate(280 820)|Self(Energy(GreaterThanPercent 50))|Self(Order(3))
+#idle_orders 120 0 1 queen 1024 overlord|observer|science_vessel|defiler|skywing|dropship|shuttle|arbiter|valhalla|defiler|queen|ghost 30 WithoutSpellEffects(Parasite)|RandomRate(280 820)|Self(Energy(GreaterThanPercent 50))|Self(Order(152))
+multirun ec_ensnare_io
+multirun ec_consume_io
+multirun ec_plague_io
+multirun ec_broodling_io
+stop
+
+:ec_broodling_io
+wait 16
+
+tech_jump 13 Exactly spawn_broodling 0 ec_broodling_io
+idle_orders 121 8 1 queen 312 zergling|marine 5 Health(GreaterThanPercent 85)|Self(Energy(GreaterThanPercent 75))|Self(Order(3))
+idle_orders 121 8 1 queen 312 hydralisk|firebat|medic|heavy_marine 40 Health(GreaterThanPercent 85)|Self(Order(3))
+idle_orders 121 8 1 queen 312 lurker|siege_tank|death_knight 70 Health(GreaterThanPercent 25)|Self(Order(3))
+idle_orders 121 8 1 queen 312 ultralisk|36|panzer 120 Health(GreaterThanPercent 25)|Self(Order(3))
+idle_orders 121 8 1 queen 312 zealot|vulture|scorpion 30 Health(GreaterThanPercent 45)|Self(Energy(GreaterThanPercent 55))|Self(Order(3))
+idle_orders 121 8 1 queen 312 dragoon|goliath|phantom 60 Health(GreaterThanPercent 45)|Self(Order(3))
+idle_orders 121 8 1 queen 312 high_templar|ghost 70 Health(GreaterThanPercent 65)|Self(Order(3))
+idle_orders 121 8 1 queen 312 dark_templar|tesla_trooper 50 Health(GreaterThanPercent 55)|Self(Order(3))
+idle_orders 121 8 1 queen 312 drone|scv 15 Health(GreaterThanPercent 95)|Self(Order(3))
+#idle_orders 121 8 1 queen 312 zergling|marine 5 Health(GreaterThanPercent 85)|Self(Energy(GreaterThanPercent 75))|Self(Order(152))
+#idle_orders 121 8 1 queen 312 hydralisk|firebat|medic|heavy_marine 40 Health(GreaterThanPercent 85)|Self(Order(152))
+#idle_orders 121 8 1 queen 312 lurker|siege_tank|death_knight 70 Health(GreaterThanPercent 25)|Self(Order(152))
+#idle_orders 121 8 1 queen 312 ultralisk|36|panzer 120 Health(GreaterThanPercent 25)|Self(Order(152))
+#idle_orders 121 8 1 queen 312 zealot|vulture|scorpion 30 Health(GreaterThanPercent 45)|Self(Energy(GreaterThanPercent 55))|Self(Order(152))
+#idle_orders 121 8 1 queen 312 dragoon|goliath|phantom 60 Health(GreaterThanPercent 45)|Self(Order(152))
+#idle_orders 121 8 1 queen 312 high_templar|ghost 70 Health(GreaterThanPercent 65)|Self(Order(152))
+#idle_orders 121 8 1 queen 312 dark_templar|tesla_trooper 50 Health(GreaterThanPercent 55)|Self(Order(152))
+#idle_orders 121 8 1 queen 312 drone|scv 15 Health(GreaterThanPercent 95)|Self(Order(152))
+idle_orders 121 8 1 queen 312 group_men 40 deathrattle
+stop
+
+:ec_ensnare_io
+wait 16
+
+tech_jump 13 Exactly ensnare 0 ec_ensnare_io
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|marine|vulture|heavy_marine|scorpion 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 45))|Self(Order(3))
+idle_orders 146 0 1 queen 1024 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 50))|Self(Order(3))
+idle_orders 146 0 1 queen 1024 dragoon|corsair|scout|dark_templar|wraith|ghost|skywing|phantom 40 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 55))|Self(Order(3))
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|dragoon|corsair|scout|dark_archon|devourer|guardian|dark_templar|goliath|siege_tank|revenant|death_knight|panzer 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 50))|Self(Order(3))
+idle_orders 146 0 1 queen 1024 reaver|dark_archon|archon|devourer|guardian|102|battlecruiser|valhalla|carrier|arbiter 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 45))|Self(Order(3))
+#idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|marine|vulture|heavy_marine|scorpion 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 45))|Self(Order(152))
+#idle_orders 146 0 1 queen 1024 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 50))|Self(Order(152))
+#idle_orders 146 0 1 queen 1024 dragoon|corsair|scout|dark_templar|wraith|ghost|skywing|phantom 40 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 55))|Self(Order(152))
+#idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|dragoon|corsair|scout|dark_archon|devourer|guardian|dark_templar|goliath|siege_tank|revenant|death_knight|panzer 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 50))|Self(Order(152))
+#idle_orders 146 0 1 queen 1024 reaver|dark_archon|archon|devourer|guardian|102|battlecruiser|valhalla|carrier|arbiter 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 45))|Self(Order(152))
+idle_orders 146 8 1 queen 312 group_men 30 deathrattle
+stop
+
+:ec_consume_io
+wait 16
+
+tech_jump 13 Exactly consume 0 ec_consume_io
+idle_orders Consume 16 1 defiler 512 zergling 70 NotEnemies|Own|Health(LessThanPercent 80)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 16 1 defiler 512 broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
+stop
+
+:ec_plague_io
+wait 16
+
+tech_jump 13 Exactly plague 0 ec_plague_io
+idle_orders 144 64 1 defiler 788 group_men 55 count(AtLeast 3 120 14) 
+idle_orders 144 64 1 defiler 512 skywing|death_knight|scorpion|wraith|science_vessel|dragoon|corsair|scout 80 incombat|count(AtLeast 3 120 14)
+idle_orders 144 64 1 defiler 512 102|battlecruiser|valhalla|carrier|arbiter|devourer|guardian|ultralisk 115 incombat|count(AtLeast 2 120 14)
+idle_orders 144 64 1 defiler 512 102|battlecruiser|valhalla|carrier|arbiter|ultralisk 80 incombat
+idle_orders 144 64 1 defiler 512 heavy_marine|medic|ghost|phantom|marine|firebat|vulture|zealot|hydralisk|mutalisk|revenant|dark_templar|high_templar 55 incombat|count(AtLeast 4 120 14)
+stop
+
+:hallu_io
+wait 16
+
+tech_jump 13 Exactly hallucination 0 hallu_io
+idle_orders 148 49 1 high_templar 224 group_men 70 Self(InCombat)|Self(Order(PlayerGuard))|Self(Hp(LessThanPercent 40))|Self(Energy(GreaterThan 175))
+idle_orders 148 49 1 high_templar 224 group_men 70 Self(InCombat)|Self(Order(Guard))|Self(Hp(LessThanPercent 40))|Self(Energy(GreaterThan 175))
+stop
+
+:irradiate_io
+wait 16
+
+tech_jump 13 Exactly irradiate 0 irradiate_io
+idle_orders Irradiate 16 1 science_vessel 256 defiler|high_templar|dark_templar|ultralisk|drone|scv|mutalisk|guardian|devourer|zealot|ghost 50 Hp(GreaterThanPercent 50)|Self(InCombat)|Self(Order(PlayerGuard))|Self(Hp(LessThanPercent 20))|Self(Energy(GreaterThan 150))|WithoutSpellEffects(Irradiate)
+idle_orders Irradiate 16 1 science_vessel 256 defiler|high_templar|dark_templar|ultralisk|drone|scv|mutalisk|guardian|devourer|zealot|ghost 50 Hp(GreaterThanPercent 50)|Self(InCombat)|Self(Order(Guard))|Self(Hp(LessThanPercent 20))|Self(Energy(GreaterThan 150))|WithoutSpellEffects(Irradiate)
+stop
+
+:lockdown_io
+wait 16
+
+tech_jump 13 Exactly lockdown 0 lockdown_io
+idle_orders 115 34 1 ghost 210 group_men 50 Hp(GreaterThanPercent 50)|Self(InCombat)|Self(Energy(GreaterThan 185))|UnitFlags(Mechanical)|WithoutSpellEffects(Lockdown)
+stop
+
+:enable
+bank_data Set 0 automine_toggle toggle lockdown_io
+wait 1
+
+save_bank automine_toggle
+deaths 0 Set 1 zergling terran_12
+goto tog_return
+
+:disable
+bank_data Set 1 automine_toggle toggle lockdown_io
+wait 1
+
+save_bank automine_toggle
+deaths 0 Set 2 zergling terran_12
+goto tog_return
+
+:easycast
+bank_data Set 2 automine_toggle toggle lockdown_io
+wait 1
+
+save_bank automine_toggle
+deaths 0 Set 3 zergling lockdown_io
+goto tog_return
+
+:terran_2
+issue_order MoveToMinerals 2 scv Loc.11 Loc.11 178 EachAtMostOnce
+issue_order MoveToMinerals 1 scv Loc.11 Loc.11 177 EachAtMostOnce
+stop
+#issue_order MoveToMinerals 2 scv Loc.124 Loc.125 178 EachAtMostOnce
+#issue_order MoveToMinerals 1 scv Loc.126 Loc.125 177 EachAtMostOnce
+#issue_order MoveToMinerals 1 scv Loc.127 Loc.125 176 EachAtMostOnce
+
+:terran_3
+issue_order MoveToMinerals 3 scv Loc.31 Loc.31 178 EachAtMostOnce
+issue_order MoveToMinerals 2 scv Loc.31 Loc.31 177 EachAtMostOnce
+issue_order MoveToMinerals 1 scv Loc.31 Loc.31 176 EachAtMostOnce
+stop
+
+:terran_5
+issue_order MoveToMinerals 2 scv Loc.42 Loc.42 178 EachAtMostOnce
+issue_order MoveToMinerals 1 scv Loc.42 Loc.42 177 EachAtMostOnce
+stop
+
+:terran_6
+issue_order MoveToMinerals 2 scv Loc.25 Loc.25 176 EachAtMostOnce
+issue_order MoveToMinerals 1 scv Loc.25 Loc.25 177 EachAtMostOnce
+stop
+
+:terran_7
+issue_order MoveToMinerals 3 scv Loc.48 Loc.48 178 EachAtMostOnce
+issue_order MoveToMinerals 2 scv Loc.48 Loc.48 177 EachAtMostOnce
+issue_order MoveToMinerals 1 scv Loc.48 Loc.48 176 EachAtMostOnce
+stop
+
+:terran_8
+issue_order MoveToMinerals 4 scv Loc.23 Loc.23 178 EachAtMostOnce
+issue_order MoveToMinerals 2 scv Loc.23 Loc.23 177 EachAtMostOnce
+issue_order MoveToMinerals 2 scv Loc.23 Loc.23 176 EachAtMostOnce
+stop
+
+:terran_11
+issue_order MoveToMinerals 2 scv Loc.25 Loc.25 178 EachAtMostOnce
+issue_order MoveToMinerals 2 scv Loc.26 Loc.26 178 EachAtMostOnce
+stop
+
+:terran_12
+issue_order MoveToMinerals 4 scv Loc.28 Loc.28 178 0
+issue_order MoveToMinerals 2 scv Loc.28 Loc.28 177 0
+issue_order MoveToGas 2 scv Loc.27 Loc.27 refinery Own
+issue_order MoveToMinerals 4 scv Loc.29 Loc.29 176 EachAtMostOnce
+issue_order MoveToMinerals 2 scv Loc.29 Loc.29 177 EachAtMostOnce
+:void
+stop
+#:zerg2_mining
+#wait 32
+#
+#deaths 0 Exactly 1 high_templar make_mine
+#goto zerg2_mining
+#
+#:make_mine
+#issue_order MoveToMinerals 30 drone Loc.149 Loc.149 177 0
+#issue_order MoveToMinerals 30 drone Loc.149 Loc.149 178 0
+#issue_order MoveToMinerals 30 drone Loc.149 Loc.149 176 0
+#issue_order MoveToMinerals 30 drone Loc.150 Loc.150 177 0
+#issue_order MoveToMinerals 30 drone Loc.150 Loc.150 178 0
+#issue_order MoveToMinerals 30 drone Loc.150 Loc.150 176 0
+#issue_order MoveToMinerals 30 drone Loc.151 Loc.151 177 0
+#issue_order MoveToMinerals 30 drone Loc.151 Loc.151 178 0
+#issue_order MoveToMinerals 30 drone Loc.151 Loc.151 176 0
+#issue_order MoveToMinerals 30 drone Loc.152 Loc.152 177 0
+#issue_order MoveToMinerals 30 drone Loc.152 Loc.152 178 0
+#issue_order MoveToMinerals 30 drone Loc.152 Loc.152 176 0
+#issue_order MoveToMinerals 30 drone Loc.153 Loc.153 177 0
+#issue_order MoveToMinerals 30 drone Loc.153 Loc.153 178 0
+#issue_order MoveToMinerals 30 drone Loc.153 Loc.153 176 0
+#deaths 0 Set 0 high_templar make_mine
+#goto zerg2_mining
+
+:zerg_2
+issue_order MoveToMinerals 3 drone Loc.14 Loc.14 176 EachAtMostOnce
+issue_order MoveToMinerals 2 drone Loc.14 Loc.14 178 EachAtMostOnce
+issue_order MoveToMinerals 1 drone Loc.14 Loc.14 177 0
+stop
+
+:zerg_3
+issue_order MoveToMinerals 6 drone Loc.11 Loc.11 177 EachAtMostOnce
+issue_order MoveToMinerals 4 drone Loc.11 Loc.11 176 EachAtMostOnce
+issue_order MoveToMinerals 2 drone Loc.11 Loc.11 178 EachAtMostOnce
+stop
+
+:zerg_4
+issue_order MoveToMinerals 3 drone Loc.16 Loc.16 177 0
+issue_order MoveToMinerals 2 drone Loc.16 Loc.16 176 0
+issue_order MoveToMinerals 1 drone Loc.16 Loc.16 178 0
+stop
+
+
+:zerg_8
+issue_order MoveToMinerals 4 drone Loc.21 Loc.21 177 EachAtMostOnce
+issue_order MoveToMinerals 2 drone Loc.21 Loc.21 178 EachAtMostOnce
+issue_order MoveToMinerals 1 drone Loc.21 Loc.21 176 EachAtMostOnce
+stop
+
+:zerg_9
+issue_order MoveToMinerals 6 drone Loc.28 Loc.28 177 EachAtMostOnce
+issue_order MoveToMinerals 3 drone Loc.28 Loc.28 178 EachAtMostOnce
+issue_order MoveToMinerals 1 drone Loc.28 Loc.28 176 EachAtMostOnce
+issue_order MoveToMinerals 6 drone Loc.29 Loc.29 177 EachAtMostOnce
+issue_order MoveToMinerals 3 drone Loc.29 Loc.29 178 EachAtMostOnce
+issue_order MoveToMinerals 1 drone Loc.29 Loc.29 176 EachAtMostOnce
+stop
+
+:zerg_10
+issue_order MoveToMinerals 6 drone Loc.86 Loc.86 177 EachAtMostOnce
+issue_order MoveToMinerals 3 drone Loc.86 Loc.86 178 EachAtMostOnce
+issue_order MoveToMinerals 1 drone Loc.86 Loc.86 176 EachAtMostOnce
+issue_order MoveToMinerals 6 drone Loc.85 Loc.85 177 EachAtMostOnce
+issue_order MoveToMinerals 3 drone Loc.85 Loc.85 178 EachAtMostOnce
+issue_order MoveToMinerals 1 drone Loc.85 Loc.85 176 EachAtMostOnce
+stop
+#
+#:protoss_3
+#issue_order MoveToMinerals 3 probe Loc.84 Loc.84 176 0
+#issue_order MoveToMinerals 2 probe Loc.84 Loc.84 177 0
+#issue_order MoveToMinerals 1 probe Loc.84 Loc.84 178 0
+#issue_order MoveToMinerals 2 probe Loc.62 Loc.62 178 0
+#issue_order MoveToMinerals 1 probe Loc.62 Loc.62 176 0
+#stop
+#
+#:protoss_5
+#stop
+#
+#:protoss_6
+#issue_order MoveToMinerals 6 probe Loc.41 Loc.43 176 EachAtMostOnce
+#issue_order MoveToMinerals 4 probe Loc.41 Loc.43 177 EachAtMostOnce
+#issue_order MoveToMinerals 2 probe Loc.41 Loc.43 178 EachAtMostOnce
+#issue_order MoveToGas 1 probe Loc.42 Loc.42 assimilator Own
+#stop
+:protoss_2
+issue_order MoveToMinerals 3 probe Loc.7 Loc.7 176 EachAtMostOnce
+issue_order MoveToMinerals 2 probe Loc.7 Loc.7 177 EachAtMostOnce
+issue_order MoveToMinerals 1 probe Loc.7 Loc.7 178 EachAtMostOnce
+stop
+
+:protoss_3
+issue_order MoveToMinerals 8 probe Loc.10 Loc.10 176 EachAtMostOnce
+issue_order MoveToMinerals 5 probe Loc.10 Loc.10 177 EachAtMostOnce
+issue_order MoveToMinerals 3 probe Loc.10 Loc.10 178 EachAtMostOnce
+stop
+
+
+:protoss_4
+issue_order MoveToMinerals 2 probe Loc.20 Loc.20 176 EachAtMostOnce
+issue_order MoveToMinerals 1 probe Loc.20 Loc.20 177 EachAtMostOnce
+issue_order MoveToMinerals 2 scv Loc.20 Loc.20 176 EachAtMostOnce
+issue_order MoveToMinerals 1 scv Loc.20 Loc.20 178 EachAtMostOnce
+stop
+
+:protoss_7
+issue_order MoveToMinerals 2 probe Loc.58 Loc.58 177 EachAtMostOnce
+stop
+
+:protoss_8
+issue_order MoveToMinerals 4 probe Loc.83 Loc.83 176 EachAtMostOnce
+issue_order MoveToMinerals 2 probe Loc.83 Loc.83 177 EachAtMostOnce
+issue_order MoveToMinerals 1 probe Loc.83 Loc.83 178 EachAtMostOnce
+stop
+
+
+:protoss_10
+issue_order MoveToMinerals 4 probe Loc.81 Loc.81 176 EachAtMostOnce
+issue_order MoveToMinerals 2 probe Loc.81 Loc.81 177 EachAtMostOnce
+issue_order MoveToMinerals 1 probe Loc.81 Loc.81 178 EachAtMostOnce
+issue_order MoveToMinerals 4 scv Loc.82 Loc.82 176 EachAtMostOnce
+issue_order MoveToMinerals 2 scv Loc.82 Loc.82 177 EachAtMostOnce
+stop
+
+#load_bank xp3
+#multirun cybercore
+#multirun stargates
+#multirun citadel
+#multirun robo
+#multirun gate
+#multirun obs
+#multirun bridge
+#multirun ass
+#multirun archive
+#multirun beacon
+#wait 16
+#
+#load_bank xp7
+#stop
+#
+#:xp6
+#bank_data Exactly 2 xp6 xp6 strong_l
+#bank_data Exactly 1 xp6 xp6 weak_l
+#deaths 1 Set 0 guardian void
+#stop
+#
+#:strong_l
+#deaths 1 Set 2 guardian void
+#stop
+#
+#:weak_l
+#deaths 1 Set 1 guardian void
+#stop
+#
+#:cybercore
+#bank_data Exactly 0 xp3 cybercore void
+#deaths 0 Set 1 dragoon void
+#stop
+#
+#:stargates
+#bank_data Exactly 0 xp3 stargates void
+#deaths 0 Set 1 scout void
+#stop
+#
+#:citadel
+#bank_data Exactly 0 xp3 citadel void
+#deaths 0 Set 1 high_templar void
+#stop
+#
+#:robo
+#bank_data Exactly 0 xp3 robo void
+#deaths 0 Set 1 reaver void
+#stop
+#
+#:gate
+#bank_data Exactly 0 xp3 gate void
+#deaths 0 Set 1 zealot void
+#stop
+#
+#:obs
+#bank_data Exactly 0 xp3 obs void
+#deaths 0 Set 1 observer void
+#stop
+#
+#:bridge
+#bank_data Exactly 0 xp3 bridge void
+#deaths 0 Set 1 photon_cannon void
+#stop
+#
+#:ass
+#bank_data Exactly 0 xp3 ass void
+#deaths 0 Set 1 assimilator void
+#stop
+#
+#:archive
+#bank_data Exactly 0 xp3 archive void
+#deaths 0 Set 1 archon void
+#stop
+#
+#:beacon
+#bank_data Exactly 0 xp3 beacon void
+#deaths 0 Set 1 carrier void
+#:void
+#stop
+#
+#:terran_1
+#load_bank bc_bank
+#issue_order MoveToMinerals 2 scv Loc.3 Loc.20 176 EachAtMostOnce
+#issue_order MoveToMinerals 2 scv Loc.19 Loc.20 177 EachAtMostOnce
+#wait 16
+#
+#if_owned zergling bank_debug
+#stop
+#
+#:bank_debug
+#bank_data Set 1 bc_bank map_won4 void
+#bank_data Set 2 bc_bank confed_lives4 void
+#bank_data Set 1 bc_bank confed_outpost void
+#bank_data Set 2 bc_bank confed_lives5 void
+#bank_data Set 1 bc_bank map_won5 void
+#save_bank bc_bank
+#stop
+#
+#:terran_3
+#issue_order MoveToMinerals 7 scv Loc.25 Loc.25 176 0
+#issue_order MoveToMinerals 4 scv Loc.25 Loc.25 177 EachAtMostOnce
+#stop
+#
+#:terran_4
+#issue_order MoveToMinerals 2 scv Loc.83 Loc.83 177 EachAtMostOnce
+#issue_order MoveToMinerals 1 scv Loc.84 Loc.84 176 0
+#issue_order MoveToGas 1 scv Loc.85 Loc.86 refinery Own
+#stop
+#
+#:terran_11
+#issue_order MoveToMinerals 2 scv Loc.25 Loc.25 176 EachAtMostOnce
+#issue_order MoveToMinerals 2 scv Loc.26 Loc.26 178 EachAtMostOnce
+#stop
+#
+#:terran_5
+#load_bank bc_bank
+#issue_order MoveToMinerals 2 scv Loc.164 Loc.164 178 EachAtMostOnce
+#issue_order MoveToMinerals 2 scv Loc.124 Loc.125 178 EachAtMostOnce
+#issue_order MoveToMinerals 1 scv Loc.126 Loc.125 177 EachAtMostOnce
+#issue_order MoveToMinerals 1 scv Loc.127 Loc.125 176 EachAtMostOnce
+#wait 160
+#
+#multirun t5_b
+#stop
+#
+#:t5_b
+#wait 16
+#
+#bank_data Exactly 1 bc_bank confed_outpost wait_for_death_prep
+#wait 320
+#
+#bank_data Set 0 bc_bank map_won5 wait_for_death_prep
+#bank_data Set 0 bc_bank confed_lives5 wait_for_death
+#save_bank bc_bank
+#stop
+#
+#:wait_for_death_prep
+#bank_data Exactly 1 bc_bank confed_lives4 void
+#bank_data Exactly 0 bc_bank confed_lives4 void
+#bank_data Exactly 0 bc_bank map_won4 void
+#deaths 4 Set 1 battlecruiser t5_b
+#wait 320
+#
+#bank_data Set 0 bc_bank map_won5 wait_for_death_prep
+#bank_data Set 2 bc_bank confed_lives5 wait_for_death_prep
+#multirun map_won
+#:wait_for_death
+#wait 4
+#
+#deaths 0 AtLeast 1 127 void
+#deaths 6 AtMost 0 27 wait_for_death 
+#bank_data Set 1 bc_bank confed_lives5 wait_for_death
+#wait 1
+#
+#save_bank bc_bank
+#stop
+#
+#:map_won
+#wait 4
+#
+#deaths 0 Exactly 0 127 map_won
+#bank_data Set 1 bc_bank map_won5 wait_for_death_prep
+#wait 1
+#
+#save_bank bc_bank
+#stop
+#
+#:terran_8
+#issue_order MoveToMinerals 3 scv Loc.87 Loc.87 177 EachAtMostOnce
+#issue_order MoveToMinerals 3 scv Loc.88 Loc.88 176 EachAtMostOnce
+#issue_order MoveToGas 1 scv Loc.89 Loc.89 refinery Own
+#stop

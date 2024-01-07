@@ -1,0 +1,633 @@
+script_name Protoss 7 - Left Protoss Town
+script_id Pro7
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+#- Blazer Tribe - a secluded, highly-religious tribe that appoints their leaders via trial by combat. Naturally, in order to win their loyalty, the player must defeat their Honorguard - and do so before the Conclave can, for once secured, their loyalty is not up to debate.
+#(Stay on their territory while neutral; kill N units to secure alliance)
+#- Furinax Tribe - disillusioned with Judicators disregard for "the lowest caste", these Khalai are willing to take up arms against their oppressors. Unlike Templars, however, they do not have access to modern weaponry and equipment; in order to have their contribution, player will have to supply them with resources.
+#(Initially hostile to Conclave, but make barely noticeable attacks; if supplied with X minerals, will become a full ally; can be pacified by the Conclave, at which point they'll be turned into an expansion)
+#- The Aegis Bastion - Khor-Shakals automated defense system that operates several robotic enforcement hubs around the citys perimeter. According to Fenix, there exists a central control hub from which Aegis' command directives can be overriden, but the Conclave will not allow the player to secure it without a fight.
+#(Several robotic bases that will fight for whoever controls the central hub; initially neutral, Conclave will contest it)
+
+if_owned 174 blazer_temple
+if_owned hornet aegis
+notowns_jump fleet_beacon blazer_army
+build 1 nexus 150
+build 3 probe 130
+build 1 gateway 80
+build 1 cybernetics_core 80
+build 1 stargate 80
+build 12 probe 80
+build 1 forge 80
+build 1 fleet_beacon 80
+build 1 arbiter_tribunal 80
+build 1 robotics_facility 80
+build 1 citadel_of_adun 80
+build 1 templar_archives 80
+build 1 robotics_support_bay 80
+aicontrol global_disable_spell_focus
+aicontrol global_disable_acid_spore_focus
+aicontrol global_disable_carrier_focus
+defensebuild_gg 3 dragoon
+defenseuse_gg 3 dragoon
+defensebuild_gg 1 reaver
+defenseuse_gg 1 reaver
+defenseuse_gg 1 zealot
+defensebuild_gg 1 reaver
+defenseuse_gg 1 reaver
+defensebuild_ag 1 dragoon
+defenseuse_ag 1 dragoon
+defensebuild_ag 1 carrier
+defenseuse_ag 1 carrier
+defensebuild_ga 1 scout
+defenseuse_ga 1 scout
+defensebuild_aa 1 scout
+defenseuse_aa 1 scout
+max_force 900
+define_max 11 zealot
+define_max 10 dragoon
+define_max 4 scout
+define_max 1 carrier
+define_max 255 archon
+define_max 1 harbiter
+define_max 1 high_templar
+define_max 2 reaver
+define_max 50 probe
+define_max 3 shuttle
+define_max 3 observer
+define_max 255 hornet
+multirun bank_handler
+wait 2500
+
+upgrade 1 shuttle_speed 30
+upgrade 1 p_plasma_shield 30
+upgrade 1 dragoon_range 30
+attack_add 2 zealot
+attack_add 2 dragoon
+call target_simple
+wait 500
+
+attack_do
+attack_clear
+wait 1750
+
+train 3 zealot
+train 2 dragoon
+train 1 reaver
+attack_add 3 zealot
+attack_add 2 dragoon
+attack_add 1 reaver
+call target_simple
+wait 500
+
+attack_do
+attack_clear
+build 2 gateway 80
+upgrade 1 p_armor 30
+upgrade 1 p_plating 30
+upgrade 1 p_ground_weapon 30
+upgrade 1 p_air_weapon 30
+upgrade 1 zealot_speed 30
+max_force 1050
+place_guard carrier 0
+build 2 gateway 80
+wait 3500
+
+train 2 scout
+train 6 zealot
+attack_add 2 scout
+attack_add 6 zealot
+call target_simple
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 scout_speed 30
+upgrade 2 p_armor 30
+upgrade 2 p_plating 30
+upgrade 1 carrier_capacity 30
+upgrade 1 scarab_damage 30
+wait 2550
+
+train 1 carrier
+train 2 dragoon
+wait_force 1 carrier
+wait 200
+
+attack_add 1 carrier
+attack_add 2 dragoon
+call target_simple
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 p_plasma_shield 30
+upgrade 2 p_ground_weapon 30
+upgrade 2 p_air_weapon 30
+upgrade 1 scout_sight 30
+upgrade 3 p_armor 30
+upgrade 3 p_plating 30
+max_force 1200
+wait 4000
+
+train 2 scout
+train 5 zealot
+attack_add 2 scout
+attack_add 5 zealot
+call target_simple
+wait 500
+
+attack_do
+attack_clear
+upgrade 3 p_plasma_shield 30
+upgrade 3 p_ground_weapon 30
+upgrade 3 p_air_weapon 30
+place_guard harbiter 0
+wait 1500
+
+train 2 scout
+train 2 zealot
+train 2 dragoon
+attack_add 2 zealot
+attack_add 2 dragoon
+attack_add 2 scout
+call target_simple
+wait 500
+
+attack_do
+attack_clear
+:blockp
+wait 2000
+
+train 6 zealot
+train 4 dragoon
+attack_add 6 zealot
+attack_add 4 dragoon
+call target_simple
+wait 500
+
+attack_do
+attack_clear
+wait 2650
+
+train 1 reaver
+train 1 carrier
+train 4 zealot
+train 2 reaver
+train 2 scout
+train 8 zealot
+wait_force 1 carrier
+wait 200
+
+attack_add 2 reaver
+attack_add 1 carrier
+attack_add 8 zealot
+call target_simple
+wait 500
+
+attack_do
+attack_clear
+wait 1750
+
+train 1 harbiter
+train 9 dragoon
+attack_add 1 harbiter
+attack_add 9 dragoon
+call target_simple
+wait 500
+
+attack_do
+attack_clear
+goto blockp
+
+:blazer_army
+build 1 nexus 150
+build 3 probe 130
+build 1 gateway 80
+build 1 cybernetics_core 80
+build 2 stargate 80
+build 17 probe 80
+build 1 forge 80
+build 2 robotics_facility 80
+build 1 citadel_of_adun 80
+build 1 templar_archives 80
+build 1 robotics_support_bay 80
+defensebuild_gg 3 dragoon
+defenseuse_gg 3 dragoon
+defensebuild_gg 1 reaver
+defenseuse_gg 1 reaver
+defensebuild_gg 1 scout
+defenseuse_gg 1 scout
+defenseuse_gg 1 zealot
+defensebuild_gg 1 reaver
+defenseuse_gg 1 reaver
+defensebuild_ag 1 dragoon
+defenseuse_ag 1 dragoon
+defensebuild_ag 1 scout
+defenseuse_ag 1 scout
+defensebuild_ga 1 scout
+defenseuse_ga 1 scout
+defensebuild_aa 1 scout
+defenseuse_aa 1 scout
+max_force 1300
+define_max 10 zealot
+define_max 12 dragoon
+define_max 8 scout
+define_max 255 carrier
+define_max 4 archon
+define_max 5 high_templar
+define_max 4 reaver
+define_max 30 probe
+define_max 3 shuttle
+define_max 3 observer
+define_max 255 hornet
+idle_orders 59 16 1 reaver 192 group_men 50 count(AtLeast 2 75 14)|WithoutUnitFlags(Air)
+idle_orders 59 16 1 reaver 192 group_men 80 count(AtLeast 4 75 14)|WithoutUnitFlags(Air)
+upgrade 1 shuttle_speed 40
+upgrade 1 p_plasma_shield 50
+upgrade 1 dragoon_range 60
+upgrade 1 p_ground_weapon 40
+upgrade 1 p_air_weapon 40
+upgrade 1 zealot_speed 40
+wait 1500
+
+attack_add 1 scout
+call b_south_shrine
+wait 500
+
+attack_do
+attack_clear
+multirun pity_cash
+multirun grand_exchange
+wait 1875
+
+train 2 scout
+train 1 reaver
+attack_add 2 scout
+attack_add 1 reaver
+call blzr_targeting
+wait 500
+
+attack_do
+attack_clear
+build 1 fleet_beacon 80
+upgrade 2 p_plasma_shield 40
+upgrade 2 p_ground_weapon 50
+upgrade 2 p_air_weapon 40
+upgrade 1 p_armor 40
+upgrade 1 p_plating 50
+upgrade 1 scarab_damage 30
+place_guard high_templar 0
+multirun templar_ensure
+wait 2355
+
+train 2 high_templar
+train 2 scout
+train 1 archon
+attack_add 2 scout
+attack_add 1 archon
+call b_left_player
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 scout_sight 50
+upgrade 3 p_plasma_shield 60
+upgrade 3 p_ground_weapon 60
+upgrade 3 p_air_weapon 60
+upgrade 2 p_armor 40
+upgrade 2 p_plating 50
+wait 2550
+
+train 2 scout
+train 1 reaver
+train 4 scout
+train 2 reaver
+attack_add 2 reaver
+attack_add 4 scout
+call blzr_targeting
+wait 500
+
+attack_do
+attack_clear
+upgrade 3 p_armor 50
+upgrade 3 p_plating 50
+upgrade 1 scout_speed 40
+wait 2850
+
+train 1 reaver
+train 2 scout
+train 2 reaver
+train 2 high_templar
+train 3 scout
+train 1 archon
+attack_add 2 reaver
+attack_add 1 archon
+attack_add 3 scout
+call blzr_targeting
+wait 500
+
+attack_do
+attack_clear
+:blockb
+wait 2500
+
+train 2 zealot
+train 2 dragoon
+train 1 reaver
+train 1 scout
+train 2 reaver
+train 2 high_templar
+train 2 scout
+train 1 archon
+attack_add 2 reaver
+attack_add 1 archon
+attack_add 2 scout
+attack_add 2 zealot
+attack_add 2 dragoon
+call blzr_targeting
+wait 500
+
+attack_do
+attack_clear
+wait 2333
+
+train 2 scout
+train 1 reaver
+train 4 scout
+train 3 reaver
+train 6 scout
+attack_add 3 reaver
+attack_add 6 scout
+call blzr_targeting
+wait 500
+
+attack_do
+attack_clear
+wait 2815
+
+train 4 high_templar
+wait_force 4 high_templar
+do_morph 2 archon
+wait 300
+
+train 4 high_templar
+wait_force 4 high_templar
+do_morph 4 archon
+wait 300
+
+attack_add 4 archon
+call blzr_targeting
+wait 500
+
+attack_do
+attack_clear
+goto blockb
+
+:pity_cash
+wait 50
+
+resources 13 AtLeast Ore 100 pity_cash
+resources 13 Add Ore 8 pity_cash
+wait 50
+
+goto pity_cash
+
+:blzr_targeting
+deaths 1 AtLeast 1 carrier target_simple
+#if blue(p2 1-based) has at least 1 carrier death from triggers, goto simple targeting instead of loc-based
+#TODO - LOC BASED TARGETING!
+random_jump 51 b_south_shrine
+random_jump 65 b_east_invaders
+random_jump 128 b_left_player
+:target_simple
+unstart_campaign
+attack_prepare
+start_campaign
+return
+
+:b_left_player
+attack_to Loc.37 Loc.24
+return
+
+:b_south_shrine
+attack_to Loc.38 Loc.39
+return
+
+:b_east_invaders
+attack_to Loc.40 Loc.41
+return
+
+
+:templar_ensure
+wait_train 4 high_templar
+
+do_morph 2 archon
+wait_rand 133 650
+goto templar_ensure
+
+:aegis
+max_force 785
+define_max 14 hornet
+define_max 5 observer
+define_max 5 shuttle
+define_max 4 reaver
+defensebuild_gg 1 reaver
+defenseuse_gg 1 reaver
+defensebuild_gg 2 hornet
+defenseuse_gg 2 hornet
+defensebuild_ag 1 hornet
+defenseuse_ag 1 hornet
+defensebuild_ga 1 hornet
+defenseuse_ga 1 hornet
+defensebuild_aa 2 hornet
+defenseuse_aa 2 hornet
+check_transports
+wait 350
+
+upgrade 1 p_plasma_shield 30
+wait 8200
+
+upgrade 1 p_plasma_shield 30
+upgrade 1 p_plating 30
+upgrade 1 scarab_damage 30
+wait 6335
+
+upgrade 1 reaver_capacity 30
+upgrade 2 p_plasma_shield 30
+upgrade 2 p_plating 30
+wait 5655
+
+upgrade 3 p_plasma_shield 30
+upgrade 3 p_plating 30
+:aegis_loop
+wait 16500
+
+guard_all
+goto aegis_loop
+
+:blazer_temple
+max_force 1800
+define_max 4 dragoon
+define_max 3 zealot
+defensebuild_gg 1 dragoon
+defenseuse_gg 4 dragoon
+defensebuild_gg 1 zealot
+defenseuse_gg 3 zealot
+defensebuild_ag 1 dragoon
+defenseuse_ag 2 dragoon
+wait 1500
+
+multirun blazer_trial
+multirun blazer_kills0
+multirun blazer_dcount
+upgrade_jump 13 Set dragoon_range 1 aegis_loop
+upgrade_jump 13 Set p_ground_weapon 1 aegis_loop
+wait 4325
+
+upgrade_jump 13 Set p_ground_weapon 2 aegis_loop
+upgrade_jump 13 Set p_armor 1 aegis_loop
+wait 8035
+
+upgrade_jump 13 Set p_ground_weapon 3 aegis_loop
+upgrade_jump 13 Set p_armor 2 aegis_loop
+wait 4655
+
+upgrade_jump 13 Set p_armor 3 aegis_loop
+upgrade_jump 13 Set p_plasma_shield 1 aegis_loop
+wait 5000
+
+upgrade_jump 13 Set zealot_speed 1 aegis_loop
+upgrade_jump 13 Set p_plasma_shield 2 aegis_loop
+wait 6450
+
+upgrade_jump 13 Set p_plasma_shield 3 aegis_loop
+:blazer_loop
+wait 1050
+
+goto blazer_loop
+
+:blazer_dcount
+wait 1
+
+deaths 1 Add 1 marine blazer_dcount
+goto blazer_dcount
+
+:blazer_kills0
+wait 4
+
+bw_kills 1 Exactly 0 group_men blazer_kills0
+wait 64
+
+bw_kills 1 Subtract 1 group_men blazer_kills0
+#bw_kills 1 Subtract 1 zealot blazer_kills0
+#bw_kills 1 Subtract 1 dragoon blazer_kills0
+#bw_kills 1 Subtract 1 revenant blazer_kills0
+#bw_kills 1 Subtract 1 probe blazer_kills0
+#bw_kills 1 Subtract 1 high_templar blazer_kills0
+#bw_kills 1 Subtract 1 archon blazer_kills0
+#bw_kills 1 Subtract 1 scout blazer_kills0
+#bw_kills 1 Subtract 1 corsair blazer_kills0
+#bw_kills 1 Subtract 1 73 blazer_kills0
+#bw_kills 1 Subtract 1 shuttle blazer_kills0
+#bw_kills 1 Subtract 1 reaver blazer_kills0
+#bw_kills 1 Subtract 1 hornet blazer_kills0
+#bw_kills 1 Subtract 1 dark_templar blazer_kills0
+#print SubtractTraceDebug
+goto blazer_kills0
+
+:blazer_kills1
+wait 4
+
+bw_kills 1 Exactly 0 dragoon blazer_kills1
+wait 64
+
+bw_kills 1 Subtract 1 dragoon blazer_kills1
+goto blazer_kills1
+
+:blazer_trial
+wait 50
+
+bring_jump 1 AtLeast 1 dragoon Loc.0 blazer_trial
+bring_jump 1 AtLeast 1 zealot Loc.0 blazer_trial
+bw_kills 1 AtLeast 1 group_men blazer_trial
+#print NoGroupKillTraceDebug
+deaths 1 AtLeast 1 carrier blazer_trial
+deaths 1 Set 1 carrier blazer_trial
+#note - the print below needs to be manually corrected each time
+#print We are ready to surrender
+#communicate to mapside that we're ready to select a winner - check for if there are conflicting enemy troops in the area, and if there are we repeat
+wait 100
+
+deaths 1 Set 0 carrier blazer_trial
+goto blazer_trial
+
+:bank_handler
+wait 25
+
+load_bank tass_fleet
+wait 1
+
+bank_data Exactly 1 tass_fleet destroyed_fleet small_fleet
+bank_data Exactly 2 tass_fleet destroyed_fleet no_fleet
+deaths 7 Set 0 214 bank_handler
+#continue into this map's bank
+wait 500
+
+load_bank vp7
+wait 1
+
+bank_data Set 0 vp7 furinax bank_handler 
+wait 1
+
+save_bank vp7
+:loop_until_switch
+wait 16
+
+deaths 3 Exactly 0 214 loop_until_switch 
+bank_data Set 1 vp7 furinax bank_handler 
+#1 is unfriendly
+wait 1
+
+save_bank vp7
+stop
+
+:small_fleet
+deaths 7 Set 1 214 bank_handler
+stop
+
+:no_fleet
+deaths 7 Set 2 214 bank_handler
+stop
+
+:grand_exchange
+wait_rand 150 210
+
+call ge_gas
+call ge_mins
+goto grand_exchange
+
+:ge_gas
+resources 13 AtLeast Gas 600 ge_skip
+resources 13 AtMost Ore 1399 ge_skip
+resources 13 Subtract Ore 150 ge_skip
+resources 13 Add Gas 80 ge_skip
+return
+
+:ge_mins
+resources 13 AtMost Gas 599 ge_skip
+resources 13 AtLeast Ore 1300 ge_skip
+resources 13 Subtract Gas 100 ge_skip
+resources 13 Add Ore 150 ge_skip
+return
+
+:ge_skip
+return
+

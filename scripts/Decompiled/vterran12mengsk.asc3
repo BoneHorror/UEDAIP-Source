@@ -1,0 +1,314 @@
+script_name Terran 12 - Phoenix Town
+script_id T12P
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 command_center 80
+build 4 scv 80
+build 2 barracks 80
+build 1 engineering_bay 80
+build 1 academy 80
+build 2 factory 80
+build 2 machine_shop 80
+build 1 armory 80
+build 1 comsat_station 80
+build 1 science_facility 80
+build 1 physics_lab 80
+build 2 starport 80
+build 2 control_tower 80
+build 16 scv 80
+aicontrol global_disable_spell_focus
+max_workers 18
+max_force 250
+define_max 16 scv
+define_max 28 marine
+define_max 18 firebat
+define_max 16 ghost
+define_max 255 medic
+define_max 13 vulture
+define_max 24 goliath
+define_max 12 siege_tank
+define_max 5 dropship
+define_max 2 science_vessel
+define_max 24 wraith
+define_max 255 valkyrie
+define_max 255 nuclear_missile
+define_max 7 102
+defensebuild_gg 3 marine
+defenseuse_gg 3 marine
+defensebuild_ag 1 marine
+defenseuse_ag 1 marine
+check_transports
+tech siege_mode 30
+idle_orders DisableBuiltin 0 0 0 0 0 0 0
+multirun noguard_defense
+wait 500
+
+multirun help_request
+upgrade 1 t_ship_weapon 30
+upgrade 1 t_ship_plating 30
+upgrade 1 t_infantry_weapon 30
+train 1 102
+wait_train 1 102
+wait 105
+
+multirun mineral_helper
+wait 350
+
+train 4 marine
+attack_add 1 102
+attack_add 4 marine
+call targeting
+
+attack_do
+attack_clear
+upgrade 1 t_vehicle_plating 30
+upgrade 1 t_vehicle_weapon 30
+tech spider_mines 30
+tech defensive_matrix 30
+idle_orders 141 83 1 science_vessel 776 firebat 10 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 50)|Self(Energy(GreaterThan 149))
+idle_orders 141 83 1 science_vessel 776 goliath 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 99))
+idle_orders 141 83 1 science_vessel 776 vulture 10 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 149))
+idle_orders 141 83 1 science_vessel 776 wraith 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 149))
+idle_orders 141 83 1 science_vessel 776 siege_tank 40 own|allied|notenemies|incombat|Health(LessThanPercent 70)|Health(GreaterThanPercent 30)
+idle_orders 141 83 1 science_vessel 776 102 80 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 10)
+wait 905
+
+guard siege_tank Loc.15 1 1 80
+guard siege_tank Loc.16 1 1 80
+train 18 firebat
+attack_add 18 firebat
+call targeting
+
+attack_do
+attack_clear
+tech stim_packs 30
+tech yamato_gun 30
+guard vulture Loc.34 1 2 60
+upgrade 2 t_ship_plating 30
+upgrade 2 t_ship_weapon 30
+wait 1545
+
+train 6 siege_tank
+attack_add 6 siege_tank
+attack_add 1 102
+guard siege_tank Loc.17 1 1 80
+guard siege_tank Loc.19 1 1 80
+attack_to Loc.13 Loc.18
+attack_timeout 200
+attack_do
+attack_clear
+upgrade 1 t_infantry_armor 30
+upgrade 2 t_vehicle_weapon 30
+upgrade 2 t_vehicle_plating 30
+wait 2065
+
+idle_orders 113 32 2 102 356 battlecruiser|barracks|factory|starport 80 InCombat|Hp(GreaterThanPercent 75)
+idle_orders 113 32 1 102 356 wraith|dropship|siege_tank|missile_turret|bunker 40 InCombat|Hp(GreaterThanPercent 80)
+idle_orders 113 32 1 102 356 wraith|dropship|goliath|ghost 60 InCombat|count(AtLeast 2 60 14)
+idle_orders 113 32 1 102 356 marine|wraith|goliath|ghost 70 InCombat|count(AtLeast 3 60 14)
+idle_orders 113 32 1 102 356 siege_tank 60 InCombat|count(AtLeast 3 60 14)
+idle_orders 113 32 1 102 356 group_men 50 InCombat|count(AtLeast 4 60 14)
+train 3 102
+attack_add 3 102
+call targeting
+
+attack_do
+attack_clear
+upgrade 1 battlecruiser_mana 30
+guard science_vessel Loc.31 1 2 60
+upgrade 1 marine_range 30
+upgrade 3 t_ship_plating 30
+upgrade 3 t_ship_weapon 30
+wait 2112
+
+train 3 102
+train 6 goliath
+train 1 science_vessel
+train 4 siege_tank
+attack_add 6 goliath
+attack_add 1 science_vessel
+attack_add 4 siege_tank
+attack_to Loc.20 Loc.22
+attack_timeout 200
+attack_do
+attack_clear
+tech emp_shockwave 30
+upgrade 1 vademecum 30
+upgrade 1 18 30
+upgrade 2 t_infantry_weapon 30
+upgrade 1 wraith_mana 30
+train 6 102
+wait 1285
+
+deaths 0 Set 1 valkyrie block7
+train 6 102
+train 24 marine
+attack_add 24 marine
+attack_to Loc.20 Loc.29
+attack_do
+attack_clear
+idle_orders 143 256 1 science_vessel 1312 scv|ghost 120 Health(GreaterThan 50)|WithoutSpellEffects(Irradiate)
+idle_orders 143 256 1 science_vessel 1312 firebat 70 Health(GreaterThan 50)|WithoutSpellEffects(Irradiate)
+idle_orders 143 256 1 science_vessel 1312 marine 10 Health(GreaterThan 50)|WithoutSpellEffects(Irradiate)
+train 8 wraith
+attack_add 8 wraith
+attack_add 6 102
+call targeting
+
+attack_do
+attack_clear
+upgrade 1 science_vessel_mana 30
+tech cloaking_field 30
+upgrade 2 t_infantry_armor 30
+tech irradiate 30
+wait 1085
+
+train 12 siege_tank
+train 8 goliath
+upgrade 3 t_infantry_armor 30
+upgrade 3 t_vehicle_weapon 30
+upgrade 3 t_vehicle_plating 30
+attack_add 12 siege_tank
+attack_add 8 goliath
+attack_add 3 102
+attack_to Loc.21 Loc.22
+attack_timeout 240
+attack_do
+attack_clear
+idle_orders 143 2048 1 science_vessel 1024 ghost|medic|scv 120 WithoutSpellEffects(Irradiate)
+upgrade 3 t_infantry_weapon 30
+:block7
+train 3 102
+wait 1350
+
+train 6 goliath
+train 4 wraith
+train 2 102
+attack_add 6 goliath
+attack_add 4 wraith
+attack_add 3 102
+call targeting
+
+attack_do
+attack_clear
+train 1 102
+train 8 wraith
+train 10 firebat
+train 2 science_vessel
+attack_add 1 102
+attack_add 2 science_vessel
+attack_add 8 wraith
+attack_add 10 firebat
+call targeting
+
+attack_do
+attack_clear
+train 10 marine
+train 3 102
+train 14 marine
+train 10 firebat
+train 18 marine
+train 6 goliath
+train 24 marine
+attack_add 1 102
+attack_add 28 marine
+attack_add 4 firebat
+attack_add 6 goliath
+call targeting
+
+attack_do
+attack_clear
+train 2 102
+train 4 goliath
+train 1 science_vessel
+train 6 siege_tank
+attack_add 2 102
+attack_add 4 goliath
+attack_add 1 science_vessel
+attack_add 6 siege_tank
+call targeting
+
+attack_do
+attack_clear
+goto block7
+
+:mineral_helper
+wait 160
+
+resources 13 AtLeast Ore 100 mineral_helper
+resources 13 Add Ore 10 mineral_helper
+goto mineral_helper
+
+:targeting
+random_jump 128 expo_target
+attack_prepare
+return
+
+:expo_target
+random_jump 128 expo_other
+bring_jump 1 Exactly 0 command_center Loc.23 exp_skip
+unstart_campaign
+set_attacks 1
+target_expansion
+start_campaign
+return
+
+:expo_other
+bring_jump 1 Exactly 0 command_center Loc.24 exp_skip
+unstart_campaign
+set_attacks 1
+target_expansion
+start_campaign
+return
+
+:exp_skip
+unstart_campaign
+attack_prepare
+start_campaign
+return
+
+:noguard_defense
+wait 480
+
+if_owned zergling debug_defense
+bring_jump 2 Exactly 0 command_center Loc.63 ng_def_exec
+goto noguard_defense
+
+:debug_defense
+print DefenseDebugTraceRed
+:ng_def_exec
+defensebuild_gg 1 siege_tank
+defenseuse_gg 1 siege_tank
+defensebuild_gg 1 102
+defenseuse_gg 1 102
+defensebuild_gg 1 goliath
+defenseuse_gg 1 goliath
+defensebuild_ag 1 goliath
+defenseuse_ag 1 goliath
+defensebuild_ag 1 wraith
+defenseuse_ag 1 wraith
+defensebuild_ga 1 102
+defenseuse_ga 1 102
+defensebuild_aa 2 wraith
+defenseuse_aa 2 wraith
+wait 480
+
+:loop_ng
+wait 1500
+
+goto loop_ng
+
+:help_request
+wait 1633
+
+wait_secure
+help_iftrouble
+goto help_request
+

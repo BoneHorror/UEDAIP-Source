@@ -1,0 +1,337 @@
+script_name Terran 6 - Air Attack Zerg
+script_id Ter6
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+if_owned 126 norad
+build 1 hatchery 150
+build 1 drone 130
+build 2 hatchery 80
+build 1 spawning_pool 80
+build 1 hydralisk_den 80
+build 1 evolution_chamber 80
+build 1 lair 80
+build 1 spire 80
+build 1 queen_nest 80
+build 1 hive 80
+creep 4
+build 5 creep_colony 80
+build 3 spore_colony 80
+build 2 sunken_colony 80
+define_max 24 drone
+define_max 18 zergling
+define_max 13 hydralisk
+define_max 8 scourge
+define_max 19 mutalisk
+define_max 4 guardian
+defensebuild_gg 1 mutalisk
+defenseuse_gg 1 mutalisk
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+defensebuild_aa 2 scourge
+defenseuse_aa 2 scourge
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+farms_timing
+max_force 600
+upgrade 1 overlord_speed 30
+upgrade 1 overlord_capacity 30
+upgrade 1 z_flyer_attack 30
+tech burrowing 30
+wait 25
+
+load_bank t3bonus
+wait 100
+
+build 6 drone 80
+wait_buildstart 6 drone
+build 15 drone 80
+build 1 greater_spire 80
+bank_data Exactly 1 t3bonus done easier_garm
+wait 2500
+
+unstart_campaign
+attack_add 4 zergling
+attack_add 2 mutalisk
+attack_to Loc.36 Loc.28
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 z_carapace 30
+upgrade 1 z_flyer_carapace 30
+upgrade 1 zergling_speed 30
+upgrade 1 hydralisk_speed 30
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+wait 3500
+
+train 2 mutalisk
+train 2 guardian
+wait_train 2 guardian
+attack_add 2 guardian
+attack_to Loc.35 Loc.28
+wait 500
+
+attack_do
+attack_clear
+allies_watch 9 expansion
+upgrade 1 z_melee_attack 30
+upgrade 1 hydralisk_range 30
+upgrade 2 z_flyer_attack 30
+wait 2500
+
+defenseuse_gg 1 guardian
+train 6 mutalisk
+attack_add 6 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+set_attacks 2
+upgrade 2 z_flyer_carapace 30
+train 2 mutalisk
+train 8 zergling
+attack_add 2 mutalisk
+attack_add 8 zergling
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+upgrade 3 z_flyer_carapace 30
+upgrade 3 z_flyer_attack 30
+allies_watch 11 expansion
+:block1
+set_attacks 4
+attack_add 7 hydralisk
+attack_add 8 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1933
+
+train 3 mutalisk
+train 3 guardian
+attack_add 3 guardian
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+wait 3720
+
+attack_add 10 mutalisk
+attack_add 12 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1510
+
+train 4 mutalisk
+train 4 guardian
+attack_add 4 guardian
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+wait 1885
+
+train 8 mutalisk
+train 2 guardian
+attack_add 2 guardian
+attack_add 6 mutalisk
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+goto block1
+
+:expansion
+start_town
+build 1 hatchery 95
+get_oldpeons 1
+wait_build 1 hatchery
+build 1 drone 90
+wait_build 1 drone
+build 3 drone 80
+wait_buildstart 3 drone
+build 5 drone 70
+wait_buildstart 5 drone
+creep 4
+build 1 creep_colony 80
+wait 860
+
+build 1 sunken_colony 80
+wait 550
+
+build 12 drone 80
+build 2 creep_colony 80
+build 1 hydralisk_den 80
+wait 860
+
+build 1 spore_colony 80
+wait 10500
+
+:loop
+wait 1500
+
+goto loop
+
+:easier_garm
+wait 3500
+
+unstart_campaign
+attack_add 1 mutalisk
+attack_to Loc.36 Loc.28
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 z_carapace 30
+upgrade 1 z_flyer_carapace 30
+upgrade 1 hydralisk_speed 30
+wait 2500
+
+set_attacks 1
+train 1 mutalisk
+train 1 guardian
+wait_train 1 guardian
+attack_add 1 guardian
+attack_to Loc.35 Loc.28
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 z_melee_attack 30
+upgrade 1 zergling_speed 30
+upgrade 2 z_flyer_attack 30
+wait 4500
+
+allies_watch 9 expansion
+set_attacks 2
+train 5 mutalisk
+attack_add 5 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 z_flyer_carapace 30
+train 2 mutalisk
+upgrade 1 hydralisk_range 30
+attack_add 2 mutalisk
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+upgrade 3 z_flyer_carapace 30
+upgrade 3 z_flyer_attack 30
+allies_watch 11 expansion
+:block1e
+set_attacks 4
+attack_add 6 hydralisk
+attack_add 7 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2433
+
+train 3 mutalisk
+train 3 guardian
+attack_add 3 guardian
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+wait 3620
+
+attack_add 9 mutalisk
+attack_add 12 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1510
+
+train 4 mutalisk
+train 4 guardian
+attack_add 4 guardian
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+wait 3885
+
+train 8 mutalisk
+train 2 guardian
+attack_add 2 guardian
+attack_add 6 mutalisk
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+goto block1e
+
+:norad
+max_workers 1
+build 2 missile_turret 80
+build 2 bunker 80
+build 1 academy 80
+max_force 800
+define_max 18 marine
+define_max 7 firebat
+defensebuild_gg 3 marine
+defenseuse_gg 1 marine
+defenseuse_gg 1 goliath
+defensebuild_gg 1 firebat
+defenseuse_gg 1 firebat
+defensebuild_ag 4 marine
+defenseuse_ag 1 marine
+defenseuse_ag 1 goliath
+multirun run_back
+wait 1000
+
+upgrade 1 t_infantry_weapon 30
+wait 4500
+
+upgrade 1 marine_range 30
+upgrade 1 t_infantry_armor 30
+wait 4500
+
+:nloop
+wait 1500
+
+goto nloop
+
+:run_back
+wait 24
+
+issue_order 163 2 marine|firebat|siege_tank|wraith|goliath Loc.22 Loc.2 group_factories Own
+issue_order 163 2 marine|firebat|siege_tank|wraith|goliath Loc.23 Loc.2 group_factories Own
+issue_order 163 2 marine|firebat|siege_tank|wraith|goliath Loc.24 Loc.2 group_factories Own
+goto run_back

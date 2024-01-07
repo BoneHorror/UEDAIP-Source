@@ -1,0 +1,388 @@
+script_name Terran 9 - Light Attack
+script_id Tr9L
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 1
+wait 1
+
+if_owned covert_ops epsilon
+aicontrol global_disable_spell_focus
+build 1 command_center 150
+build 4 scv 130
+build 3 barracks 80
+build 1 academy 80
+build 1 comsat_station 80
+build 1 engineering_bay 80
+build 20 scv 80
+defensebuild_gg 3 marine
+defenseuse_gg 3 marine
+defensebuild_gg 1 firebat
+defenseuse_gg 1 firebat
+defensebuild_ag 3 marine
+defenseuse_ag 3 marine
+defenseuse_gg 1 siege_tank
+max_force 1000
+define_max 30 scv
+define_max 82 marine
+define_max 42 firebat
+farms_timing
+upgrade 1 marine_range 30
+upgrade 1 t_vehicle_plating 30
+wait 80
+
+deaths 4 Exactly 2 archon faster_attacks_brown
+wait 3400
+
+attack_add 12 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech stim_packs 30
+upgrade 1 t_infantry_weapon 30
+upgrade 1 t_ship_plating 30
+wait 2500
+
+attack_add 10 firebat
+attack_add 14 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_infantry_armor 30
+wait 3500
+
+train 34 marine
+attack_add 34 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_vehicle_weapon 30
+wait 2500
+
+train 50 marine
+attack_add 35 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+:brown_return
+upgrade 1 t_ship_weapon 30
+upgrade 1 medic_mana 30
+wait 633
+
+train 38 firebat
+attack_add 38 firebat
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 60 marine
+wait 2000
+
+upgrade 1 vademecum 30
+:block1
+train 80 marine
+wait_force 80 marine
+attack_add 64 marine
+attack_prepare
+wait 16
+
+attack_timeout 45
+attack_do
+attack_clear
+attack_add 16 marine
+attack_prepare
+wait 16
+
+attack_timeout 10
+attack_do
+attack_clear
+train 12 firebat
+wait 4500
+
+train 32 marine
+attack_add 32 marine
+attack_add 12 firebat
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto block1
+
+:faster_attacks_brown
+wait 16
+
+groundmap_jump brown_init
+goto faster_attacks_brown
+
+:brown_init
+train 12 marine
+attack_add 12 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech stim_packs 30
+upgrade 1 t_infantry_weapon 30
+upgrade 1 t_ship_plating 30
+wait_rand 1833 2350
+
+train 10 firebat
+train 14 marine
+attack_add 10 firebat
+attack_add 14 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_infantry_armor 30
+wait_rand 2750 3310
+
+train 34 marine
+attack_add 34 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_vehicle_weapon 30
+wait_rand 1850 2350
+
+train 50 marine
+attack_add 35 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto brown_return
+
+:epsilon
+build 1 command_center 150
+build 4 scv 130
+build 1 barracks 80
+build 1 academy 80
+player_need 1 factory
+player_need 2 barracks
+build 2 armory 80
+build 1 engineering_bay 80
+build 1 starport 80
+build 1 control_tower 80
+build 1 science_facility 80
+build 1 covert_ops 80
+build 26 scv 80
+idle_orders disablebuiltin 0 0 0 0 0 0 0
+max_force 1200
+define_max 40 scv
+define_max 24 marine
+define_max 30 ghost
+define_max 255 nuclear_missile
+define_max 8 firebat
+define_max 5 dropship
+define_max 6 wraith
+define_max 3 science_vessel
+defensebuild_gg 1 wraith
+defenseuse_gg 1 wraith
+defensebuild_gg 2 ghost
+defenseuse_gg 2 ghost
+defensebuild_gg 1 marine
+defenseuse_gg 1 marine
+defenseuse_gg 1 science_vessel
+defensebuild_ag 2 ghost
+defenseuse_ag 2 ghost
+defensebuild_ag 1 wraith
+defenseuse_ag 1 wraith
+defensebuild_ag 1 marine
+defenseuse_ag 1 marine
+defensebuild_ga 1 wraith
+defenseuse_ga 1 wraith
+defensebuild_aa 1 science_vessel
+defenseuse_aa 1 science_vessel
+defensebuild_aa 1 wraith
+defenseuse_aa 1 wraith
+farms_timing
+check_transports
+tech siege_mode 30
+upgrade 1 t_infantry_weapon 30
+upgrade 1 t_vehicle_plating 30
+idle_orders 92 512 1 ghost 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 512 1 ghost 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 141 83 1 science_vessel 776 firebat 10 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 50)|Self(Energy(GreaterThan 149))
+idle_orders 141 83 1 science_vessel 776 goliath 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 99))
+idle_orders 141 83 1 science_vessel 776 vulture 10 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 149))
+idle_orders 141 83 1 science_vessel 776 wraith 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 149))
+idle_orders 141 83 1 science_vessel 776 siege_tank 40 own|allied|notenemies|incombat|Health(LessThanPercent 70)|Health(GreaterThanPercent 30)
+idle_orders 141 83 1 science_vessel 776 battlecruiser 80 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 10)
+wait 5000
+
+unstart_campaign
+upgrade 1 marine_range 30
+upgrade 1 t_ship_plating 30
+upgrade 2 t_infantry_weapon 30
+upgrade 1 t_ship_weapon 30
+deaths 4 Exactly 2 archon faster_attacks_eps
+wait 4000
+
+attack_add 6 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+nuke_rate 6
+tech emp_shockwave 30
+upgrade 1 ghost_sight 30
+upgrade 1 science_vessel_mana 30
+upgrade 1 t_vehicle_weapon 30
+define_max 1 nuclear_missile
+fake_nuke
+wait 3500
+
+attack_add 4 ghost
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech irradiate 30
+tech personnel_cloaking 30
+tech stim_packs 30
+upgrade 1 t_infantry_armor 30
+upgrade 2 t_ship_plating 30
+upgrade 2 t_vehicle_plating 30
+idle_orders 122 226 1 science_vessel 338 Group_Men 50 InCombat|Count(AtLeast 2 60 14)|Energy(GreaterThan 200)
+wait 4500
+
+attack_add 4 wraith
+attack_add 8 ghost
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+:eps_return
+upgrade 1 medic_mana 30
+upgrade 2 t_ship_weapon 30
+upgrade 2 t_vehicle_weapon 30
+upgrade 3 t_infantry_weapon 30
+idle_orders 143 120 1 science_vessel 1312 infested_terran|lurker|guardian|mutalisk|zealot|dark_templar|medic|ghost 120 Health(GreaterThan 50)|WithoutSpellEffects(Irradiate)
+wait 4033
+
+train 12 ghost
+tech lockdown 30
+attack_add 12 ghost
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 vademecum 30
+upgrade 2 t_vehicle_plating 30
+upgrade 3 t_ship_plating 30
+wait 3500
+
+attack_add 10 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+idle_orders 115 560 1 ghost 154 vulture|goliath 60 incombat|WithoutSpellEffects(Lockdown)|Health(GreaterThanPercent 70)
+idle_orders 115 560 1 ghost 154 dropship|battlecruiser 80 incombat|WithoutSpellEffects(Lockdown)|Health(GreaterThanPercent 50)
+idle_orders 115 560 1 ghost 192 siege_tank 90 incombat|WithoutSpellEffects(Lockdown)|Health(GreaterThanPercent 40)
+upgrade 3 t_infantry_armor 30
+upgrade 3 t_ship_weapon 30
+upgrade 3 t_vehicle_weapon 30
+upgrade 3 t_vehicle_plating 30
+:sops
+wait 3057
+
+train 16 ghost
+attack_add 16 ghost
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+set_attacks 1
+wait 2033
+
+train 6 wraith
+attack_add 6 wraith
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+wait 2033
+
+attack_add 10 ghost
+attack_add 4 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto sops
+
+:faster_attacks_eps
+wait 2000
+
+train 6 ghost
+attack_add 6 ghost
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+nuke_rate 6
+tech emp_shockwave 30
+upgrade 1 ghost_sight 30
+upgrade 1 science_vessel_mana 30
+upgrade 1 t_vehicle_weapon 30
+define_max 1 nuclear_missile
+fake_nuke
+wait 2850
+
+train 4 wraith
+train 4 ghost
+attack_add 4 wraith
+attack_add 4 ghost
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech irradiate 30
+tech personnel_cloaking 30
+tech stim_packs 30
+upgrade 1 t_infantry_armor 30
+upgrade 2 t_ship_plating 30
+upgrade 2 t_vehicle_plating 30
+idle_orders 122 226 1 science_vessel 338 Group_Men 50 InCombat|Count(AtLeast 2 60 14)|Energy(GreaterThan 200)
+wait 3777
+
+train 4 wraith
+train 8 ghost
+attack_add 4 wraith
+attack_add 8 ghost
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto eps_return

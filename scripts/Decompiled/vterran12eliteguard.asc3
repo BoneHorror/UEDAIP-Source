@@ -1,0 +1,345 @@
+script_name Terran 12 - Tank Town
+script_id T12T
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+if_owned 127 ion_targeting
+build 1 command_center 150
+build 3 scv 130
+build 17 scv 80
+build 2 barracks 80
+build 3 factory 80
+build 1 armory 80
+build 1 academy 80
+build 1 comsat_station 80
+build 3 machine_shop 80
+build 1 starport 80
+build 1 control_tower 80
+max_force 500
+define_max 24 scv
+define_max 20 marine
+define_max 255 firebat
+define_max 3 ghost
+define_max 2 vulture
+define_max 3 goliath
+define_max 1 siege_tank
+define_max 5 dropship
+define_max 255 supply_depot
+upgrade 1 ghost_sight 30
+upgrade 1 marine_range 30
+upgrade 1 vulture_speed 30
+tech siege_mode 30
+supply 13 Set 350 Max 0 Terran block1
+wait 25
+
+idle_orders 92 256 3 marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 ghost 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 firebat 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 64 3 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 ghost 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 firebat 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 256 3 marine 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 ghost 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 firebat 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 64 3 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 ghost 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 firebat 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+guard_all
+wait 1400
+
+defensebuild_gg 2 marine
+defenseuse_gg 2 marine
+defensebuild_gg 1 goliath
+defenseuse_gg 1 goliath
+defensebuild_gg 2 vulture
+defenseuse_gg 2 vulture
+defensebuild_ag 2 marine
+defenseuse_ag 2 marine
+defensebuild_ag 2 ghost
+defenseuse_ag 2 ghost
+defenseuse_ag 1 wraith
+defensebuild_ga 2 wraith
+defenseuse_ga 2 wraith
+defensebuild_aa 2 wraith
+defenseuse_aa 2 wraith
+wait 1625
+
+multirun scifac_defcheck
+upgrade 1 t_infantry_armor 30
+upgrade 1 t_vehicle_weapon 30
+upgrade 1 t_ship_weapon 30
+wait 6025
+
+define_max 24 marine
+define_max 5 ghost
+define_max 4 vulture
+define_max 6 goliath
+define_max 2 siege_tank
+upgrade 1 t_infantry_weapon 30
+upgrade 1 t_vehicle_plating 30
+upgrade 1 t_ship_plating 30
+wait 4050
+
+tech personnel_cloaking 30
+tech cloaking_field 30
+tech stim_packs 30
+defensebuild_ag 2 marine
+defenseuse_ag 2 marine
+defensebuild_ag 1 goliath
+defenseuse_ag 1 goliath
+max_force 800
+notowns_jump science_facility skip_tech_1
+upgrade 2 t_infantry_armor 30
+upgrade 2 t_vehicle_weapon 30
+upgrade 2 t_ship_weapon 30
+:skip_tech_1
+wait 7400
+
+define_max 40 marine
+define_max 7 ghost
+define_max 7 vulture
+define_max 8 goliath
+define_max 4 siege_tank
+defensebuild_gg 2 marine
+defenseuse_gg 2 marine
+upgrade 1 medic_mana 30
+notowns_jump science_facility skip_tech_2
+upgrade 2 t_infantry_weapon 30
+upgrade 2 t_vehicle_plating 30
+upgrade 2 t_ship_plating 30
+:skip_tech_2
+wait 14000
+
+upgrade 1 ghost_mana 30
+defenseuse_gg 2 wraith
+wait 8450
+
+define_max 70 marine
+define_max 14 ghost
+define_max 10 vulture
+define_max 10 goliath
+define_max 5 siege_tank
+defensebuild_ag 1 goliath
+defenseuse_ag 1 goliath
+upgrade 1 wraith_mana 30
+wait 19500
+
+define_max 88 marine
+define_max 18 ghost
+define_max 12 vulture
+define_max 11 goliath
+define_max 6 siege_tank
+defensebuild_gg 1 marine
+defenseuse_gg 1 marine
+tech lockdown 30
+max_force 1000
+wait 53333
+
+define_max 124 marine
+define_max 30 ghost
+define_max 14 vulture
+define_max 11 goliath
+:block1
+wait 53333
+
+attack_add 4 siege_tank
+attack_add 3 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 6000
+
+goto block1
+
+:scifac_defcheck
+wait 16
+
+if_owned science_facility scifac_defcheck
+defenseclear_ag
+wait 500
+
+defensebuild_ag 2 marine
+defenseuse_ag 2 marine
+defensebuild_ag 2 ghost
+defenseuse_ag 2 ghost
+defenseuse_ag 1 wraith
+:defloop
+wait 1650
+
+goto defloop
+
+:ion_targeting
+idle_orders 19 256 1 127 5713 wraith|dropship|science_vessel|battlecruiser|group_buildings 80 WithoutTileFlags(Walkable)
+multirun reveal_loop
+wait 640
+
+load_bank raynor
+wait 16
+
+bank_data Set 0 raynor stal ion_loop
+bank_data Set 0 raynor bism ion_loop
+bank_data Set 0 raynor hype ion_loop
+bank_data Set 0 raynor graf ion_loop
+bank_data Set 0 raynor nora ion_loop
+bank_data Set 0 raynor levi ion_loop
+wait 16
+
+save_bank raynor
+multirun raynor_bank
+wait 63202
+
+:ion_loop
+wait 64005
+
+goto ion_loop
+
+:raynor_bank
+deaths 0 Exactly 3 valkyrie levi_set
+deaths 0 Exactly 2 valkyrie graf_set
+deaths 0 Exactly 1 valkyrie bis_set
+deaths 0 Exactly 5 valkyrie stal_set
+deaths 0 Exactly 4 valkyrie nora_set
+enemyowns_jump 28 hype_set
+wait 80
+
+goto raynor_bank
+
+:stal_set
+bank_data Set 1 raynor stal ion_loop
+wait 16
+
+save_bank raynor
+stop
+
+:bis_set
+bank_data Set 1 raynor bism ion_loop
+wait 16
+
+save_bank raynor
+stop
+
+:hype_set
+bank_data Set 1 raynor hype ion_loop
+wait 16
+
+save_bank raynor
+stop
+
+:graf_set
+bank_data Set 1 raynor graf ion_loop
+wait 16
+
+save_bank raynor
+stop
+
+:nora_set
+bank_data Set 1 raynor nora ion_loop
+wait 16
+
+save_bank raynor
+stop
+
+:levi_set
+bank_data Set 1 raynor levi ion_loop
+wait 16
+
+save_bank raynor
+stop
+
+:reveal_loop
+wait 1
+
+reveal_area 4 Loc.37 1024 RevealFull
+reveal_area 4 Loc.38 1024 RevealFull
+reveal_area 4 Loc.39 1024 RevealFull
+reveal_area 4 Loc.40 1024 RevealFull
+reveal_area 4 Loc.41 1024 RevealFull
+reveal_area 4 Loc.42 1024 RevealFull
+reveal_area 4 Loc.43 1024 RevealFull
+reveal_area 4 Loc.44 1024 RevealFull
+reveal_area 4 Loc.45 1024 RevealFull
+reveal_area 4 Loc.46 1024 RevealFull
+reveal_area 4 Loc.47 1024 RevealFull
+reveal_area 4 Loc.48 1024 RevealFull
+reveal_area 4 Loc.49 1024 RevealFull
+reveal_area 4 Loc.50 1024 RevealFull
+reveal_area 4 Loc.51 1024 RevealFull
+reveal_area 4 Loc.52 1024 RevealFull
+wait 1
+
+reveal_area 4 Loc.53 1024 RevealFull
+reveal_area 4 Loc.54 1024 RevealFull
+reveal_area 4 Loc.55 1024 RevealFull
+reveal_area 4 Loc.56 1024 RevealFull
+reveal_area 4 Loc.57 1024 RevealFull
+reveal_area 4 Loc.58 1024 RevealFull
+reveal_area 4 Loc.59 1024 RevealFull
+reveal_area 4 Loc.60 1024 RevealFull
+reveal_area 4 Loc.61 1024 RevealFull
+reveal_area 4 Loc.62 1024 RevealFull
+reveal_area 4 Loc.64 1024 RevealFull
+reveal_area 4 Loc.65 1024 RevealFull
+reveal_area 4 Loc.66 1024 RevealFull
+reveal_area 4 Loc.67 1024 RevealFull
+reveal_area 4 Loc.68 1024 RevealFull
+reveal_area 4 Loc.69 1024 RevealFull
+reveal_area 4 Loc.70 1024 RevealFull
+wait 1
+
+reveal_area 4 Loc.71 1024 RevealFull
+reveal_area 4 Loc.72 1024 RevealFull
+reveal_area 4 Loc.73 1024 RevealFull
+reveal_area 4 Loc.74 1024 RevealFull
+reveal_area 4 Loc.75 1024 RevealFull
+reveal_area 4 Loc.76 1024 RevealFull
+reveal_area 4 Loc.77 1024 RevealFull
+reveal_area 4 Loc.78 1024 RevealFull
+reveal_area 4 Loc.79 1024 RevealFull
+reveal_area 4 Loc.80 1024 RevealFull
+reveal_area 4 Loc.81 1024 RevealFull
+reveal_area 4 Loc.82 1024 RevealFull
+reveal_area 4 Loc.83 1024 RevealFull
+reveal_area 4 Loc.84 1024 RevealFull
+wait 1
+
+reveal_area 4 Loc.85 1024 RevealFull
+reveal_area 4 Loc.86 1024 RevealFull
+reveal_area 4 Loc.87 1024 RevealFull
+reveal_area 4 Loc.88 1024 RevealFull
+reveal_area 4 Loc.89 1024 RevealFull
+reveal_area 4 Loc.90 1024 RevealFull
+reveal_area 4 Loc.91 1024 RevealFull
+reveal_area 4 Loc.92 1024 RevealFull
+reveal_area 4 Loc.93 1024 RevealFull
+reveal_area 4 Loc.94 1024 RevealFull
+reveal_area 4 Loc.95 1024 RevealFull
+reveal_area 4 Loc.96 1024 RevealFull
+reveal_area 4 Loc.97 1024 RevealFull
+reveal_area 4 Loc.98 1024 RevealFull
+reveal_area 4 Loc.99 1024 RevealFull
+wait 1
+
+reveal_area 4 Loc.100 1024 RevealFull
+reveal_area 4 Loc.101 1024 RevealFull
+reveal_area 4 Loc.102 1024 RevealFull
+reveal_area 4 Loc.103 1024 RevealFull
+reveal_area 4 Loc.104 1024 RevealFull
+reveal_area 4 Loc.105 1024 RevealFull
+reveal_area 4 Loc.106 1024 RevealFull
+reveal_area 4 Loc.107 1024 RevealFull
+reveal_area 4 Loc.108 1024 RevealFull
+reveal_area 4 Loc.109 1024 RevealFull
+reveal_area 4 Loc.110 1024 RevealFull
+reveal_area 4 Loc.111 1024 RevealFull
+reveal_area 4 Loc.112 1024 RevealFull
+wait 1020
+
+goto reveal_loop

@@ -1,0 +1,277 @@
+script_name Zerg 8 - Templar Town
+script_id Ze8T
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 nexus 150
+build 1 probe 130
+build 19 probe 80
+build 1 citadel_of_adun 80
+build 1 templar_archives 80
+build 2 gateway 80
+build 1 cybernetics_core 80
+build 1 robotics_facility 80
+build 1 forge 80
+build 2 forge 80
+build 4 photon_cannon 80
+build 1 observatory 80
+build 1 robotics_facility 80
+define_max 19 probe
+define_max 24 zealot
+define_max 6 dragoon
+define_max 7 high_templar
+define_max 6 archon
+define_max 2 reaver
+define_max 3 observer
+define_max 3 shuttle
+define_max 1 harbiter
+define_max 255 revenant
+define_max 255 dark_templar
+idle_orders disablebuiltin 0 0 0 0 0 0 0
+idle_orders 10 16 1 zealot|scout 160 group_men 80 Health(LessThan 14)
+idle_orders 10 16 1 zealot|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 120 Health(LessThan 14)
+idle_orders 10 16 1 zealot|scout 160 sunken_colony|photon_cannon 90 Health(LessThan 12)
+idle_orders 10 16 3 zealot|scout 160 group_men 90 Health(LessThan 33)
+idle_orders 10 16 3 zealot|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 130 Health(LessThan 33)
+idle_orders 10 16 3 zealot|scout 160 sunken_colony|photon_cannon 100 Health(LessThan 24)
+idle_orders 10 16 5 zealot|scout 160 group_men 95 Health(LessThan 60)
+idle_orders 10 16 5 zealot|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 135 Health(LessThan 60)
+idle_orders 10 16 5 zealot|scout 160 sunken_colony|photon_cannon|bunker 105 Health(LessThan 45)
+idle_orders 10 64 1 dragoon 192 sunken_colony|photon_cannon|bunker 110 Health(LessThan 20)
+idle_orders 10 64 1 dragoon 192 group_men 100 Health(LessThan 15)
+idle_orders 10 64 2 dragoon 192 group_men 105 Health(LessThan 35)
+idle_orders 10 64 1 dragoon 192 infested_terran|dark_archon|defiler 130 Health(LessThan 20)
+idle_orders 10 64 1 dragoon 192 lurker|queen 120 Health(LessThan 20)
+idle_orders 10 64 1 archon 160 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine|firebat 150 count(AtLeast 3 48 14)
+idle_orders 10 16 1 archon 128 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine 110 count(AtLeast 2 24 14)
+idle_orders 10 16 2 archon 128 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine 130 count(AtLeast 2 24 14)
+idle_orders 10 16 1 scout|corsair 192 mutalisk|scout|corsair|scourge|wraith 110 Health(LessThan 20)
+idle_orders 10 16 3 scout|corsair 192 mutalisk|scout|corsair|scourge|wraith 135 Health(LessThan 60)
+idle_orders 10 16 1 scout|corsair 192 devourer|battlecruiser|carrier 150 Health(LessThan 20)
+idle_orders 10 16 2 scout|corsair 192 devourer|battlecruiser|carrier 160 Health(LessThan 40)
+idle_orders 10 16 3 scout|corsair 192 devourer|battlecruiser|carrier 170 Health(LessThan 60)
+idle_orders 10 16 4 scout|corsair 192 devourer|battlecruiser|carrier 190 Health(LessThan 80)
+idle_orders 10 16 1 scout|corsair 192 shuttle|observer|overlord 60 Health(LessThan 20)
+idle_orders 10 16 1 hornet 192 group_men 60 Health(LessThan 11)
+idle_orders 10 16 1 hornet 192 infested_terran|defiler|dark_archon|lurker|dark_templar|ghost|siege_tank 90 Health(LessThan 12)
+idle_orders 10 16 2 hornet 192 infested_terran|defiler|dark_archon|lurker|dark_templar|ghost|siege_tank 90 Health(LessThan 22)
+idle_orders 10 16 1 hornet 192 group_men 60 Health(LessThan 5)
+idle_orders 10 16 1 scout|corsair|dragoon 160 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 80 Health(LessThan 30)
+idle_orders 10 16 2 scout|corsair|dragoon 160 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 90 Health(LessThan 60)
+defensebuild_gg 4 zealot
+defenseuse_gg 4 zealot
+defensebuild_gg 1 archon
+defenseuse_gg 1 archon
+defensebuild_gg 1 reaver
+defenseuse_gg 1 reaver
+defensebuild_ag 1 dragoon
+defenseuse_ag 1 dragoon
+defensebuild_ag 1 archon
+defenseuse_ag 1 archon
+defenseuse_gg 1 dragoon
+max_force 1000
+farms_timing
+#tech hallucination 30
+#hallu just messes stuff up, dont need it here
+upgrade 1 p_plasma_shield 30
+multirun big_check
+wait 25
+
+multirun bank_stuff
+multirun templar_ensure
+wait 3100
+
+idle_orders 148 64 1 high_templar 1024 zealot 40 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 dragoon 30 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 reaver 70 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 carrier 80 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 scout 50 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 shuttle 30 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 arbiter 60 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 zealot 40 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 ultralisk 80 incombat
+wait 1725
+
+train 8 zealot
+do_morph 1 archon
+attack_add 8 zealot
+attack_add 1 archon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 p_armor 30
+upgrade 1 p_ground_weapon 30
+upgrade 1 57 30
+build 1 stargate 80
+wait 1850
+
+place_guard high_templar 0
+train 6 high_templar
+wait 900
+
+do_morph 3 archon
+wait 100
+
+do_morph 3 archon
+attack_add 3 archon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 p_ground_weapon 30
+upgrade 2 p_armor 30
+upgrade 1 zealot_speed 30
+upgrade 1 templar_mana 30
+build 1 fleet_beacon 80
+build 3 gateway 80
+wait 1350
+
+train 18 zealot
+attack_add 18 zealot
+attack_to Loc.9 Loc.2
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 scarab_damage 30
+tech psionic_storm 30
+upgrade 3 p_ground_weapon 30
+upgrade 3 p_armor 30
+build 1 arbiter_tribunal 80
+idle_orders 142 256 1 high_templar 324 ultralisk 50 incombat|count(AtLeast 2 60 14)
+idle_orders 142 128 1 high_templar 548 hydralisk 80 incombat|count(AtLeast 4 60 14)
+idle_orders 142 128 1 high_templar 548 group_men 90 incombat|count(AtLeast 5 60 14)
+idle_orders 142 128 1 high_templar 548 group_men 60 incombat|count(AtLeast 3 40 14)
+build 4 gateway 80
+:block1
+train 16 zealot
+train 1 harbiter
+attack_add 16 zealot
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1000
+
+train 22 zealot
+attack_add 1 harbiter
+attack_add 22 zealot
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 500
+
+train 6 high_templar
+wait 600
+
+do_morph 3 archon
+wait 300
+
+train 4 high_templar
+wait 600
+
+do_morph 4 archon
+train 1 harbiter
+attack_add 4 archon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 6 high_templar
+train 10 zealot
+wait 2400
+
+do_morph 6 archon
+attack_add 1 harbiter
+attack_add 10 zealot
+attack_add 6 archon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto block1
+
+:templar_ensure
+wait_train 4 high_templar
+
+do_morph 3 archon
+wait_rand 133 650
+goto templar_ensure
+
+:big_check
+wait_build 15 pylon
+build 8 photon_cannon 80
+stop
+
+:bank_stuff
+load_bank kerrichoice
+wait 1
+
+multirun continued_bank
+bank_data Exactly 0 kerrichoice style normal_kerri
+bank_data Exactly 1 kerrichoice style biol_kerri
+bank_data Exactly 2 kerrichoice style psi_kerri
+deaths 3 Set 1 214 bank_stuff
+stop
+
+:normal_kerri
+deaths 3 Set 1 214 bank_stuff
+stop
+
+:biol_kerri
+deaths 3 Set 2 214 bank_stuff
+stop
+
+:psi_kerri
+deaths 3 Set 3 214 bank_stuff
+stop
+
+:continued_bank
+wait 250
+
+load_bank tass_fleet
+wait 1
+
+bank_data Set 0 tass_fleet revenants continued_bank
+wait 1
+
+save_bank tass_fleet
+:loop_until_outcome
+wait 2
+
+deaths 1 Exactly 0 98 loop_until_outcome
+#loop until p2 (blue) has at least 1 rasza death
+#print ExitLoop
+deaths 1 AtLeast 4 98 esc_reve_2
+deaths 1 AtLeast 2 98 esc_reve_1
+stop
+
+:esc_reve_1
+bank_data Set 1 tass_fleet revenants continued_bank
+wait 1
+
+save_bank tass_fleet
+#print Save1
+stop
+
+:esc_reve_2
+bank_data Set 2 tass_fleet revenants continued_bank
+wait 1
+
+save_bank tass_fleet
+#print Save2
+stop

@@ -1,0 +1,680 @@
+script_name Zerg 3 - Terran Town
+script_id Zer3
+
+unstart_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 1
+wait 1
+
+if_owned hive baelrog
+build 1 command_center 150
+build 4 scv 130
+build 28 scv 80
+build 2 barracks 80
+build 1 factory 80
+build 1 machine_shop 80
+build 1 starport 80
+build 1 control_tower 80
+build 1 academy 80
+build 1 engineering_bay 80
+build 1 armory 80
+build 6 missile_turret 80
+build 2 bunker 80
+max_workers 30
+define_max 46 scv
+define_max 5 dropship
+define_max 50 marine
+define_max 8 siege_tank
+define_max 8 wraith
+define_max 5 goliath
+define_max 7 vulture
+define_max 18 firebat
+define_max 2 battlecruiser
+#max_force 1400
+#removed max_force, lets keep it to vanilla limits
+defensebuild_gg 1 goliath
+defenseuse_gg 1 goliath
+defensebuild_gg 2 firebat
+defenseuse_gg 2 firebat
+defensebuild_gg 1 siege_tank
+defenseuse_gg 1 siege_tank
+defensebuild_gg 1 vulture
+defenseuse_gg 1 vulture
+defenseuse_gg 1 wraith
+defensebuild_gg 2 marine
+defenseuse_gg 2 marine
+defensebuild_ag 1 marine
+defenseuse_ag 2 marine
+defenseuse_ag 1 wraith
+defenseuse_ag 1 goliath
+defensebuild_ga 1 wraith
+defenseuse_ga 1 wraith
+defensebuild_aa 1 wraith
+defenseuse_aa 1 wraith
+tech siege_mode 30
+upgrade 1 marine_range 30
+upgrade 1 vulture_speed 30
+upgrade 1 t_infantry_armor 30
+upgrade 1 t_vehicle_weapon 30
+supply 0 Set 250 Max 0 Terran baelrog
+farms_timing
+under_attack 0
+wait 16
+
+multirun defense_panic
+capt_expand
+attack_add 6 marine
+attack_add 2 vulture
+attack_to Loc.9 Loc.10
+wait 500
+
+attack_do
+attack_clear
+tech spider_mines 30
+wait 1600
+
+allies_watch 4 bc_expansion
+train 2 wraith
+train 4 siege_tank
+train 3 wraith
+attack_add 4 siege_tank
+attack_add 8 marine
+attack_add 3 wraith
+attack_to Loc.7 Loc.8
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_infantry_weapon 30
+tech stim_packs 30
+build 2 starport 80
+build 2 control_tower 80
+train 2 siege_tank
+train 10 firebat
+train 4 siege_tank
+attack_add 10 firebat
+attack_add 4 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1550
+
+allies_watch 6 expansion
+train 10 marine
+train 3 vulture
+train 2 wraith
+train 6 vulture
+train 3 wraith
+train 15 marine
+train 5 firebat
+train 4 wraith
+train 25 marine
+attack_add 25 marine
+attack_add 5 firebat
+attack_add 3 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 2 vulture
+attack_add 5 marine
+attack_add 1 siege_tank
+attack_to Loc.9 Loc.10
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 medic_mana 30
+build 2 factory 80
+build 2 machine_shop 80
+tech cloaking_field 30
+create_script fort1 255 Loc.18 255 0
+create_script fort1 255 Loc.17 255 0
+create_script fort1 255 Loc.8 255 0
+:block1
+expand 2 expansion
+train 3 wraith
+train 15 marine
+train 3 siege_tank
+train 25 marine
+train 4 wraith
+train 6 siege_tank
+attack_add 25 marine
+attack_add 6 siege_tank
+attack_add 4 wraith
+attack_prepare
+wait 500
+
+train 3 goliath
+attack_do
+attack_clear
+train 2 goliath
+train 7 firebat
+train 4 goliath
+train 10 firebat
+train 3 siege_tank
+train 14 firebat
+train 5 goliath
+attack_add 14 firebat
+attack_add 3 siege_tank
+attack_add 2 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 2 wraith
+train 3 goliath
+train 3 wraith
+train 3 vulture
+train 4 wraith
+train 4 goliath
+train 4 vulture
+train 5 wraith
+train 5 goliath
+train 5 vulture
+train 5 wraith
+attack_add 5 vulture
+attack_add 5 wraith
+attack_add 5 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 3 wraith
+train 3 siege_tank
+train 4 wraith
+train 4 vulture
+train 5 wraith
+train 7 siege_tank
+train 5 wraith
+attack_add 4 vulture
+attack_add 7 siege_tank
+attack_add 5 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto block1
+
+:expansion
+start_town
+build 1 command_center 100
+get_oldpeons 1
+wait_build 1 command_center
+build 4 scv 80
+build 8 scv 80
+max_workers 12
+build 12 scv 80
+wait 500
+
+:exl
+wait 1500
+
+goto exl
+
+:bc_expansion
+start_town
+build 1 command_center 100
+get_oldpeons 1
+wait_build 1 command_center
+build 4 scv 80
+build 1 missile_turret 80
+wait_buildstart 1 missile_turret
+build 8 scv 80
+max_workers 13
+build 1 science_facility 80
+wait_build 1 science_facility
+build 2 missile_turret 80
+wait_buildstart 2 missile_turret
+build 1 barracks 80
+wait_buildstart 1 barracks
+build 1 factory 80
+wait_buildstart 1 factory
+build 1 starport 80
+wait_buildstart 1 starport
+build 12 scv 80
+player_need 3 barracks
+build 1 physics_lab 80
+build 1 engineering_bay 80
+wait_build 1 engineering_bay
+build 1 control_tower 80
+build 1 machine_shop 80
+wait 8333
+
+upgrade 2 t_infantry_armor 30
+upgrade 2 t_infantry_weapon 30
+upgrade 2 t_vehicle_weapon 30
+place_guard science_vessel 0
+wait 2500
+
+upgrade 2 t_ship_weapon 30
+upgrade 2 t_ship_plating 30
+train 2 battlecruiser
+defensebuild_gg 1 battlecruiser
+defenseuse_gg 1 battlecruiser
+defensebuild_ag 1 battlecruiser
+defenseuse_ag 1 battlecruiser
+wait 7500
+
+upgrade 3 t_infantry_armor 30
+upgrade 3 t_infantry_weapon 30
+upgrade 2 t_vehicle_plating 30
+upgrade 1 battlecruiser_mana 30
+wait 3500
+
+tech yamato_gun 30
+:bc_loop
+train 2 battlecruiser
+wait 1025
+
+wait_finishattack
+attack_add 2 battlecruiser
+attack_prepare
+wait 250
+
+attack_do
+attack_clear
+goto bc_loop
+
+:fort1
+start_town
+build 1 bunker 80
+get_oldpeons 1
+place_guard marine 0
+place_guard marine 0
+place_guard firebat 0
+place_guard goliath 0
+:f1loop
+wait 1500
+
+goto f1loop
+
+:defense_panic
+wait_rand 1 3
+
+max_force 1500
+multirun decrement_workers
+:dp_checker
+wait 50
+
+deaths 13 AtMost 4 scv dp_checker
+under_attack 1
+max_force 2000
+:dp_retain
+wait 1000
+
+deaths 13 AtLeast 5 scv dp_retain
+max_force 1500
+under_attack 0
+goto dp_checker
+
+:decrement_workers
+time_jump 20 dec_2
+wait 425
+
+deaths 13 AtMost 0 scv decrement_workers
+deaths 13 Subtract 1 scv decrement_workers
+goto decrement_workers
+
+:dec_2
+time_jump 33 dec_3
+wait 300
+
+deaths 13 AtMost 1 scv dec_2
+deaths 13 Subtract 2 scv dec_2
+goto dec_2
+
+:dec_3
+wait 233
+
+deaths 13 AtMost 2 scv dec_3
+deaths 13 AtLeast_Call 15 scv harsh_dec
+deaths 13 Subtract 3 scv dec_3
+goto dec_3
+
+:harsh_dec
+deaths 13 Set 5 scv dec_3
+return
+
+:baelrog
+start_campaign
+default_min 0
+wait 1
+
+build 1 hatchery 150
+build 3 drone 130
+multirun kills_engine
+multirun sacrifice
+build 8 drone 80
+build 1 spawning_pool 80
+build 1 hydralisk_den 80
+build 1 lair 80
+build 2 hatchery 80
+build 1 evolution_chamber 80
+build 1 spire 80
+build 1 queen_nest 80
+build 1 hive 80
+build 1 ultralisk_cavern 80
+build 1 greater_spire 80
+define_max 10 drone
+define_max 64 zergling
+define_max 25 hydralisk
+define_max 8 ultralisk
+define_max 6 scourge
+define_max 10 mutalisk
+define_max 3 guardian
+define_max 5 devourer
+max_force 707
+defensebuild_gg 3 zergling
+defenseuse_gg 3 zergling
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+define_max 255 broodling
+defenseuse_gg 1 broodling
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defenseuse_gg 1 guardian
+defensebuild_ag 2 hydralisk
+defenseuse_ag 2 hydralisk
+defensebuild_ga 1 guardian
+defenseuse_ga 1 guardian
+defenseuse_ga 1 mutalisk
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 1 devourer
+defenseuse_aa 1 devourer
+tech burrowing 30
+upgrade 1 overlord_speed 30
+upgrade 1 overlord_capacity 30
+upgrade 1 hydralisk_range 30
+upgrade 1 z_missile_attack 30
+upgrade 1 z_flyer_attack 30
+upgrade 1 z_melee_attack 30
+wait 25
+
+multirun bank_shit
+train 14 zergling
+train 3 ultralisk
+attack_add 14 zergling
+attack_add 3 ultralisk
+attack_prepare
+wait 500
+
+attack_timeout 105
+attack_do
+attack_clear
+tech ensnare 30
+upgrade 1 zergling_speed 30
+upgrade 1 hydralisk_speed 30
+train 2 mutalisk
+train 2 guardian
+train 7 hydralisk
+attack_add 7 hydralisk
+attack_add 2 guardian
+attack_prepare
+wait 500
+
+attack_timeout 105
+attack_do
+attack_clear
+upgrade 2 z_missile_attack 30
+upgrade 2 z_flyer_attack 30
+upgrade 2 z_melee_attack 30
+train 2 mutalisk
+train 2 devourer
+train 3 ultralisk
+train 5 hydralisk
+train 16 zergling
+attack_add 6 hydralisk
+attack_add 3 ultralisk
+attack_add 16 zergling
+attack_add 2 devourer
+attack_prepare
+wait 500
+
+attack_timeout 105
+attack_do
+attack_clear
+multirun kukulza
+upgrade 1 zergling_attack 30
+tech spawn_broodling 30
+train 5 mutalisk
+train 26 zergling
+attack_add 26 zergling
+attack_add 5 mutalisk
+attack_prepare
+wait 500
+
+attack_timeout 105
+attack_do
+attack_clear
+upgrade 1 z_carapace 30
+upgrade 1 z_flyer_carapace 30
+train 4 mutalisk
+train 2 guardian
+train 2 devourer
+train 6 hydralisk
+attack_add 2 guardian
+attack_add 2 devourer
+attack_prepare
+wait 500
+
+attack_timeout 105
+attack_do
+attack_clear
+upgrade 3 z_missile_attack 30
+upgrade 3 z_flyer_attack 30
+upgrade 3 z_melee_attack 30
+train 5 mutalisk
+train 2 guardian
+train 6 hydralisk
+attack_add 2 guardian
+attack_add 3 mutalisk
+attack_add 6 hydralisk
+attack_prepare
+wait 500
+
+attack_timeout 105
+attack_do
+attack_clear
+upgrade 2 z_carapace 30
+upgrade 2 z_flyer_carapace 30
+:blockz
+train 3 mutalisk
+train 3 devourer
+train 3 ultralisk
+train 16 zergling
+attack_add 3 devourer
+attack_add 3 ultralisk
+attack_add 16 zergling
+attack_prepare
+wait 500
+
+attack_timeout 105
+attack_do
+attack_clear
+train 2 mutalisk
+train 2 guardian
+train 14 hydralisk
+attack_add 14 hydralisk
+attack_add 2 guardian
+attack_prepare
+wait 500
+
+attack_timeout 105
+attack_do
+attack_clear
+train 7 mutalisk
+train 3 guardian
+train 10 zergling
+attack_add 4 mutalisk
+attack_add 3 guardian
+attack_add 10 zergling
+attack_prepare
+wait 500
+
+attack_timeout 105
+attack_do
+attack_clear
+goto blockz
+
+:bank_shit
+wait 25
+
+load_bank infested_aiur
+:bank_loop
+wait 16
+
+deaths 0 AtMost 0 infested_command_center bank_loop
+bring_jump 3 Exactly 1 infested_command_center Loc.5 icc1
+bring_jump 3 AtLeast 2 infested_command_center Loc.5 icc2
+bank_data Set 0 infested_aiur infested bank_shit
+save_bank infested_aiur
+stop
+
+:icc1
+bank_data Set 1 infested_aiur infested bank_shit
+save_bank infested_aiur
+stop
+
+:icc2
+bank_data Set 2 infested_aiur infested bank_shit
+save_bank infested_aiur
+stop
+
+:kills_engine
+multirun zergling_kills
+multirun hmutalisk_kills
+multirun hydralisk_kills
+multirun drone_kills
+multirun mutalisk_kills
+multirun queen_kills
+multirun overlord_kills
+multirun scourge_kills
+multirun terran_kills
+stop
+
+:sacrifice
+wait 4
+
+bring_jump 3 AtMost 0 group_men Loc.3 sacrifice
+issue_order 19 1 sunken_colony Loc.6 Loc.3 group_men Allied
+issue_order 19 1 spore_colony Loc.6 Loc.3 group_men Allied
+issue_order 10 2 zergling Loc.6 Loc.3 group_men Allied
+issue_order 10 1 hydralisk Loc.6 Loc.3 group_men Allied
+issue_order 10 1 mutalisk Loc.6 Loc.3 group_men Allied
+wait_rand 4 16
+goto sacrifice
+
+:zergling_kills
+wait 16
+
+bw_kills 6 AtMost 0 zergling zergling_kills
+bw_kills 6 Subtract 1 zergling zergling_kills
+resources 6 Add Ore 66 zergling_kills
+deaths 0 Subtract 258 148 zergling_kills
+goto zergling_kills
+
+:hydralisk_kills
+wait 16
+
+bw_kills 6 AtMost 0 hydralisk hydralisk_kills
+bw_kills 6 Subtract 1 hydralisk hydralisk_kills
+resources 6 Add Ore 150 hydralisk_kills
+resources 6 Add Gas 75 hydralisk_kills
+deaths 0 Subtract 672 148 zergling_kills
+goto hydralisk_kills
+
+:mutalisk_kills
+wait 16
+
+bw_kills 6 AtMost 0 mutalisk mutalisk_kills
+bw_kills 6 Subtract 1 mutalisk mutalisk_kills
+resources 6 Add Ore 175 mutalisk_kills
+resources 6 Add Gas 175 mutalisk_kills
+deaths 0 Subtract 854 148 zergling_kills
+goto mutalisk_kills
+
+:hmutalisk_kills
+wait 16
+
+bw_kills 6 AtMost 0 hmutalisk hmutalisk_kills
+bw_kills 6 Subtract 1 hmutalisk hmutalisk_kills
+resources 6 Add Ore 366 hmutalisk_kills
+resources 6 Add Gas 366 hmutalisk_kills
+deaths 0 Subtract 2455 148 zergling_kills
+goto hmutalisk_kills
+
+:drone_kills
+wait 16
+
+bw_kills 6 AtMost 0 drone drone_kills
+bw_kills 6 Subtract 1 drone drone_kills
+resources 6 Add Ore 75 drone_kills
+deaths 0 Subtract 205 148 zergling_kills
+goto drone_kills
+
+:queen_kills
+wait 16
+
+bw_kills 6 AtMost 0 queen queen_kills
+bw_kills 6 Subtract 1 queen queen_kills
+resources 6 Add Ore 200 queen_kills
+resources 6 Add Gas 200 queen_kills
+deaths 0 Subtract 568 148 zergling_kills
+goto queen_kills
+
+:scourge_kills
+wait 16
+
+bw_kills 6 AtMost 0 scourge scourge_kills
+bw_kills 6 Subtract 1 scourge scourge_kills
+resources 6 Add Ore 33 scourge_kills
+resources 6 Add Gas 77 scourge_kills
+deaths 0 Subtract 244 148 zergling_kills
+goto scourge_kills
+
+:overlord_kills
+wait 16
+
+bw_kills 6 AtMost 0 overlord overlord_kills
+bw_kills 6 Subtract 1 overlord overlord_kills
+resources 6 Add Ore 150 overlord_kills
+deaths 0 Subtract 198 148 zergling_kills
+goto overlord_kills
+
+:terran_kills
+wait 16
+
+bw_kills 6 AtMost 0 marine terran_kills
+bw_kills 6 Subtract 1 marine terran_kills
+resources 6 Add Ore 16 terran_kills
+resources 6 Add Gas 8 terran_kills
+deaths 0 Subtract 50 148 zergling_kills
+goto terran_kills
+
+:kukulza
+wait 16
+
+resources 6 AtMost Ore 600 kukulza
+resources 6 AtMost Gas 400 kukulza
+random_jump 128 dm_2
+train 1 hmutalisk
+wait_rand 1860 2850
+
+goto kukulza
+
+:dm_2
+train 2 hmutalisk
+wait_rand 1860 2850
+
+goto kukulza

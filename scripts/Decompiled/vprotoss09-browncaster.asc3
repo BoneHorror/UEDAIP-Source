@@ -1,0 +1,342 @@
+script_name Protoss 9 - Spell Zerg
+script_id Pr9Y
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+#based on bone mastery scripts from Mapo2022 (bT1F)
+aicontrol global_disable_spell_focus
+aicontrol global_disable_acid_spore_focus
+aicontrol global_disable_carrier_focus
+build 1 hatchery 150
+build 2 drone 130
+build 1 spawning_pool 80
+build 2 hatchery 80
+build 1 lair 80
+build 21 drone 80
+build 1 spire 80
+build 1 queen_nest 80
+build 1 hive 80
+build 1 hydralisk_den 80
+build 1 ultralisk_cavern 80
+build 1 defiler_mound 80
+define_max 30 drone
+define_max 50 zergling
+define_max 9 hydralisk
+define_max 5 mutalisk
+define_max 6 scourge
+define_max 3 queen
+define_max 3 defiler
+define_max 2 hdefiler
+define_max 3 ultralisk
+define_max 2 hqueen
+define_max 255 broodling
+#hqueen currently unused =)
+idle_orders DisableBuiltin 0 0 0 0 0 0 0
+defensebuild_gg 2 zergling
+defenseuse_gg 2 zergling
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defensebuild_gg 1 hdefiler
+defenseuse_gg 1 hdefiler
+defenseuse_gg 1 broodling
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_aa 2 scourge
+defenseuse_aa 2 scourge
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+max_force 1400
+tech burrowing 30
+upgrade 1 z_carapace 30
+upgrade 1 z_flyer_carapace 30
+upgrade 1 overlord_speed 30
+upgrade 1 overlord_capacity 30
+wait 16
+
+multirun creep_1
+multirun creep_2
+attack_add 1 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech consume 30
+multirun bones
+guard hdefiler Loc.26 1 3 60
+wait 4700
+
+idle_orders Consume 16 1 defiler 512 zergling 70 NotEnemies|Own|Health(LessThanPercent 80)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 16 1 defiler 512 broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 16 1 hdefiler 512 zergling 70 NotEnemies|Own|Health(LessThanPercent 80)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 16 1 hdefiler 512 broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
+idle_orders 119 64 1 hdefiler 512 zergling 30 own|allied|notenemies|incombat|Count(AtLeast 3 100 14)
+idle_orders 119 64 1 hdefiler 512 ultralisk 50 own|allied|notenemies|incombat|Count(AtLeast 2 100 14)
+idle_orders 119 64 1 hdefiler 512 ultralisk 30 own|notenemies|incombat
+idle_orders 119 64 1 hdefiler 512 hultralisk 70 own|notenemies|incombat
+idle_orders 119 64 1 hdefiler 512 zergling 10 own|notenemies|incombat
+idle_orders 119 64 1 hdefiler 512 lurker 40 own|notenemies|incombat
+idle_orders 119 64 1 hdefiler 512 lurker 90 own|notenemies|incombat|Count(AtLeast 2 100 14)
+idle_orders 119 64 1 hdefiler 512 hydralisk 55 own|notenemies|incombat|count(AtLeast 3 60 13)
+upgrade 2 z_carapace 30
+upgrade 2 z_flyer_carapace 30
+upgrade 1 zergling_speed 30
+upgrade 1 z_melee_attack 30
+attack_add 1 hdefiler
+attack_add 3 zergling
+attack_prepare
+wait 500
+
+guard defiler Loc.25 1 3 60
+upgrade 1 z_missile_attack 30
+upgrade 1 z_flyer_attack 30
+attack_do
+attack_clear
+upgrade 3 z_carapace 30
+upgrade 3 z_flyer_carapace 30
+tech plague 30
+wait 3000
+
+guard queen Loc.24 1 3 60
+wait 3000
+idle_orders 10 16 9 zergling 224 panzer|death_knight|medic|siege_tank|goliath|revenant|dragoon|reaver|dark_archon|defiler 70 InCombat
+idle_orders 144 64 1 defiler 512 group_men 55 incombat|count(AtLeast 3 120 14) 
+idle_orders 144 64 1 defiler 512 high_templar|scout|corsair|wraith|science_vessel|siege_tank|goliath 80 incombat|count(AtLeast 3 120 14)
+idle_orders 144 64 1 defiler 512 arbiter|reaver|battlecruiser|carrier 115 incombat|count(AtLeast 2 120 14)
+idle_orders 144 64 1 defiler 512 arbiter|battlecruiser|carrier 80 incombat
+idle_orders 144 64 1 defiler 512 ghost|vulture|dropship|shuttle 55 incombat|count(AtLeast 4 120 14)
+idle_orders 144 64 1 hdefiler 512 group_men 55 incombat|count(AtLeast 3 120 14) 
+idle_orders 144 64 1 hdefiler 512 high_templar|scout|corsair|wraith|science_vessel|siege_tank|goliath 80 incombat|count(AtLeast 3 120 14)
+idle_orders 144 64 1 hdefiler 512 arbiter|reaver|battlecruiser|carrier 115 incombat|count(AtLeast 2 120 14)
+idle_orders 144 64 1 hdefiler 512 arbiter|battlecruiser|carrier 80 incombat
+idle_orders 144 64 1 hdefiler 512 ghost|vulture|dropship|shuttle 55 incombat|count(AtLeast 4 120 14)
+upgrade 2 z_melee_attack 30
+upgrade 1 hydralisk_range 30
+attack_add 4 hydralisk
+attack_add 1 queen
+#use hqueen to follow attacks? I don't use a matriarch here so I can make a HQUEEN dummy
+attack_prepare
+wait 500
+
+upgrade 2 z_missile_attack 30
+upgrade 2 z_flyer_attack 30
+upgrade 1 overlord_sight 50
+attack_do
+attack_clear
+guard queen Loc.23 1 3 60
+upgrade 3 z_melee_attack 30
+upgrade 1 zergling_attack 30
+upgrade 1 hydralisk_speed 30
+upgrade 1 ultralisk_armor 50
+wait 4500
+
+upgrade 3 z_missile_attack 30
+upgrade 3 z_flyer_attack 30
+wait 3000
+
+train 10 zergling
+train 5 hydralisk
+train 2 ultralisk
+attack_add 10 zergling
+attack_add 5 hydralisk
+attack_add 2 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 defiler_mana 40
+wait 4500
+
+train 1 queen
+train 7 hydralisk
+attack_add 1 queen
+attack_add 7 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+:block1
+wait 4700
+
+train 2 hdefiler
+train 24 zergling
+attack_add 24 zergling
+attack_add 2 hdefiler
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 4500
+
+train 46 zergling
+train 4 mutalisk
+train 2 queen
+attack_add 46 zergling
+attack_add 4 mutalisk
+attack_add 2 queen
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3000
+
+train 2 ultralisk
+train 2 hdefiler
+train 16 zergling
+train 5 hydralisk
+attack_add 2 hdefiler
+attack_add 15 zergling
+attack_add 5 hydralisk
+attack_add 2 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 5233
+
+train 5 mutalisk
+train 7 hydralisk
+train 2 queen
+attack_add 5 mutalisk
+attack_add 7 hydralisk
+attack_add 2 queen
+#second hqueen reminder
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 2 ultralisk
+goto block1
+
+:bones
+wait 500
+
+bring_jump 7 AtMost 0 nexus Loc.63 bones
+define_max 2 queen
+#slay
+wait 500
+
+train 2 queen
+defenseuse_gg 1 broodling
+idle_orders 120 0 1 queen 1024 overlord|observer|science_vessel|defiler|skywing|dropship|shuttle|arbiter|valhalla|defiler|queen|ghost 30 WithoutSpellEffects(Parasite)|RandomRate(280 820)|Self(Energy(GreaterThanPercent 80))
+#idle_orders 27 13 1 queen 1532 command_center 80 health(LessThanPercent,66)
+#useless here but reuse in vp10?
+wait 4500
+
+multirun broodling_spend 
+tech spawn_broodling 30
+wait 6500
+
+idle_orders 121 8 1 queen 812 zergling|marine 5 Health(GreaterThanPercent 85)
+idle_orders 121 8 1 queen 812 hydralisk|firebat|medic 40 Health(GreaterThanPercent 85)
+idle_orders 121 8 1 queen 812 lurker|siege_tank 70 Health(GreaterThanPercent 25)
+idle_orders 121 8 1 queen 812 ultralisk 120 Health(GreaterThanPercent 25)
+idle_orders 121 8 1 queen 812 zealot|vulture 30 Health(GreaterThanPercent 45)
+idle_orders 121 8 1 queen 812 dragoon|goliath 60 Health(GreaterThanPercent 45)
+idle_orders 121 8 1 queen 812 high_templar|ghost 70 Health(GreaterThanPercent 65)
+idle_orders 121 8 1 queen 812 dark_templar|revenant 50 Health(GreaterThanPercent 55)
+#idle_orders 121 8 1 queen 1536 93|96 20 Self(Energy(GreaterThanPercent 65))|Unseen|Allied
+wait 8400
+
+define_max 3 queen
+tech ensnare 30
+wait 5500
+
+train 3 queen
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|marine|vulture 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 60))
+idle_orders 146 0 1 queen 1024 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 65))
+idle_orders 146 0 1 queen 1024 dragoon|corsair|scout|dark_templar|wraith|ghost 40 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 50))
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|dragoon|corsair|scout|dark_archon|devourer|guardian|dark_templar|goliath|siege_tank|revenant 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 60))
+idle_orders 146 0 1 queen 1024 reaver|dark_archon|archon|devourer|guardian|hnorad|battlecruiser|carrier|arbiter 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 40))
+idle_orders 146 8 1 queen 312 group_men 30 deathrattle
+wait 2250
+
+define_max 4 queen
+wait 3710
+
+train 4 queen
+upgrade 1 queen_mana 30
+wait 3500
+
+train 4 queen
+#upgrade 1 bone_mastery 30
+#unavailable in vanilla :( 
+define_max 5 queen
+multirun broodling_spend
+defensebuild_gg 1 queen
+defenseuse_gg 1 queen
+:bone_loop
+wait_rand 9333 15500
+
+train 3 queen
+goto bone_loop
+
+:broodling_spend
+wait_train 8 broodling
+wait 50
+
+if_attacking broodling_spend
+attack_add 8 broodling
+attack_prepare
+wait 500
+
+attack_timeout 90
+attack_do
+attack_clear
+wait 1050
+
+goto broodling_spend
+
+:creep_1
+wait 16
+
+bring_jump 14 AtMost 0 group_men Loc.21 creep_1
+issue_order 43 1 creep_colony Loc.21 Loc.21 spore_colony 0
+stop
+
+:creep_2
+wait 16
+
+bring_jump 14 AtMost 0 group_men Loc.20 creep_2
+issue_order 43 1 creep_colony Loc.20 Loc.20 spore_colony 0
+stop
+#:hold_attack
+#deaths 3 Add 1 firebat bone_loop
+#return
+#
+#:release_attack
+#deaths 3 Set 0 firebat bone_loop
+#return
+#
+#:wait_attack
+#wait 16
+#
+#deaths 3 AtLeast 2 firebat ensure_attack
+#deaths 3 Exactly 1 firebat wait_attack
+##loop if another script started an attack
+#return
+#
+#:ensure_attack
+#load_bank Ensures
+#print Ensure_TwoOrMore_PleaseReportMeIfSeen
+#bank_data Set 1 Ensures Ensure_TwoOrMore wait_attack
+#bank_data Set 0 Ensures Ensure_Compare wait_attack
+#save_bank Ensures
+#deaths 3 Set 0 firebat bone_loop
+#return

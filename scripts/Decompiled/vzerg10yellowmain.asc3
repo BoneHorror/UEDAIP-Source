@@ -1,0 +1,389 @@
+script_name Zerg 10 - Right Yellow (Attack)
+script_id Z10d
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 nexus 150
+build 2 probe 130
+build 24 probe 80
+max_workers 28
+build 1 pylon 80
+build 1 forge 80
+build 1 photon_cannon 80
+build 2 pylon 80
+build 2 photon_cannon 80
+build 3 pylon 80
+build 3 photon_cannon 80
+build 4 pylon 80
+build 4 photon_cannon 80
+build 5 pylon 80
+build 5 photon_cannon 80
+player_need 1 gateway
+player_need 1 cybernetics_core
+build 1 stargate 80
+build 1 robotics_facility 80
+player_need 1 robotics_support_bay
+build 1 fleet_beacon 80
+build 1 arbiter_tribunal 80
+build 1 observatory 80
+build 10 pylon 80
+multirun upgrades
+multirun templedeath
+multirun vultures
+defensebuild_gg 1 scout
+defenseuse_gg 1 scout
+defensebuild_aa 1 scout
+defenseuse_aa 1 scout
+defensebuild_aa 1 carrier
+defenseuse_aa 1 carrier
+defensebuild_ga 1 scout
+defenseuse_ga 1 scout
+defensebuild_ga 1 carrier
+defenseuse_ga 1 carrier
+defenseuse_gg 1 hornet
+defenseuse_aa 1 hornet
+max_force 600
+define_max 29 zealot
+define_max 17 dragoon
+define_max 14 scout
+define_max 1 arbiter
+define_max 1 harbiter
+define_max 4 carrier
+define_max 6 high_templar
+define_max 4 archon
+define_max 3 reaver
+define_max 3 shuttle
+define_max 3 observer
+define_max 45 probe
+define_max 1 hornet
+supply 13 Set 250 Max 0 Protoss vulturecont
+idle_orders 10 16 1 zealot|dark_templar|scout 160 group_men 80 Health(LessThan 14)
+idle_orders 10 16 1 zealot|dark_templar|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 120 Health(LessThan 14)
+idle_orders 10 16 1 zealot|dark_templar|scout 160 sunken_colony|photon_cannon 90 Health(LessThan 12)
+idle_orders 10 16 3 zealot|dark_templar|scout 160 group_men 90 Health(LessThan 33)
+idle_orders 10 16 3 zealot|dark_templar|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 130 Health(LessThan 33)
+idle_orders 10 16 3 zealot|dark_templar|scout 160 sunken_colony|photon_cannon 100 Health(LessThan 24)
+idle_orders 10 16 5 zealot|dark_templar|scout 160 group_men 95 Health(LessThan 60)
+idle_orders 10 16 5 zealot|dark_templar|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 135 Health(LessThan 60)
+idle_orders 10 16 5 zealot|dark_templar|scout 160 sunken_colony|photon_cannon|bunker 105 Health(LessThan 45)
+idle_orders 10 64 1 dragoon 192 sunken_colony|photon_cannon|bunker 110 Health(LessThan 20)
+idle_orders 10 64 1 dragoon 192 group_men 100 Health(LessThan 15)
+idle_orders 10 64 2 dragoon 192 group_men 105 Health(LessThan 35)
+idle_orders 10 64 1 dragoon 192 infested_terran|dark_archon|defiler 130 Health(LessThan 20)
+idle_orders 10 64 1 dragoon 192 lurker|queen 120 Health(LessThan 20)
+idle_orders 10 64 1 archon 160 zergling|zealot|hhydralisk|hydralisk|dark_templar|ghost|high_templar|marine|firebat 150 count(AtLeast 3 48 14)
+idle_orders 10 16 1 archon 128 zergling|zealot|hhydralisk|hydralisk|dark_templar|ghost|high_templar|marine 110 count(AtLeast 2 24 14)
+idle_orders 10 16 2 archon 128 zergling|zealot|hhydralisk|hydralisk|dark_templar|ghost|high_templar|marine 130 count(AtLeast 2 24 14)
+idle_orders 10 16 1 scout|corsair 192 mutalisk|scout|corsair|scourge|wraith 110 Health(LessThan 20)
+idle_orders 10 16 3 scout|corsair 192 mutalisk|scout|corsair|scourge|wraith 135 Health(LessThan 60)
+idle_orders 10 16 1 scout|corsair 192 guardian|battlecruiser|carrier 150 Health(LessThan 20)
+idle_orders 10 16 2 scout|corsair 192 guardian|battlecruiser|carrier 160 Health(LessThan 40)
+idle_orders 10 16 3 scout|corsair 192 guardian|battlecruiser|carrier 170 Health(LessThan 60)
+idle_orders 10 16 4 scout|corsair 192 guardian|battlecruiser|carrier 190 Health(LessThan 80)
+idle_orders 10 16 1 scout|corsair 192 shuttle|observer|overlord 60 Health(LessThan 20)
+idle_orders 10 16 1 scout|corsair|dragoon 160 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 80 Health(LessThan 30)
+idle_orders 10 16 2 scout|corsair|dragoon 160 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 90 Health(LessThan 60)
+wait 2000
+
+attack_add 3 scout
+call targeting
+wait 100
+
+attack_timeout 90
+wait 250
+
+attack_do
+attack_clear
+wait 3500
+
+attack_add 4 scout
+call targeting
+wait 500
+
+attack_do
+attack_clear
+wait 4500
+
+wait_finishattack
+attack_add 6 scout
+call targeting
+wait 500
+
+deaths 7 Add 1 valkyrie at1str
+attack_do
+attack_clear
+wait 3500
+
+attack_add 5 scout
+attack_add 3 dragoon
+call targeting
+wait 500
+
+attack_do
+attack_clear
+wait 3000
+
+train 1 carrier
+wait_train 1 carrier
+wait 200
+
+attack_add 5 scout
+attack_add 1 carrier
+call targeting
+wait 500
+
+attack_do
+attack_clear
+wait 4500
+
+train 2 carrier
+wait_train 2 carrier
+wait 200
+
+attack_add 2 carrier
+call targeting
+wait 500
+
+attack_do
+attack_clear
+train 1 harbiter
+train 4 scout
+attack_add 1 harbiter
+attack_add 4 scout
+call targeting
+wait 500
+
+attack_do
+attack_clear
+wait 2500
+
+:atkchecker
+wait 16
+
+if_attacking atkchecker
+train 3 zealot
+train 6 scout
+train 6 zealot
+train 3 carrier
+wait_force 6 scout
+wait_force 3 carrier
+wait 200
+
+attack_add 6 scout
+attack_add 1 carrier
+call targeting
+wait 500
+
+attack_do
+attack_clear
+train 2 carrier
+wait_train 2 carrier
+#wait handled by train above, this is a sequence
+wait 48
+
+attack_add 6 zealot
+attack_add 2 carrier
+call targeting
+wait 500
+
+attack_do
+attack_clear
+:block1
+deaths 1 AtLeast 2 scorpion at1str
+attack_add 6 scout
+call targeting
+wait 500
+
+attack_do
+attack_clear
+wait 3500
+
+deaths 1 AtLeast 2 scorpion at2str
+goto at2
+:at1str
+train 1 harbiter
+wait_force 10 scout
+attack_add 10 scout
+attack_add 1 harbiter
+call targeting
+wait 500
+
+attack_do
+attack_clear
+wait 3000
+deaths 1 AtLeast 3 scorpion at2str
+:at2
+train 6 scout
+train 1 carrier
+wait_force 6 scout
+wait_force 1 carrier
+wait 200
+
+attack_add 6 scout
+attack_add 1 carrier
+call targeting
+wait 500
+
+attack_do
+attack_clear
+wait 4850
+
+deaths 1 AtLeast 4 scorpion at3str
+goto at3
+
+:at2str
+train 8 scout
+train 2 carrier
+wait_force 8 scout
+wait_force 2 carrier
+wait 200
+
+attack_add 8 scout
+attack_add 2 carrier
+call targeting
+wait 500
+
+attack_do
+attack_clear
+wait 4850
+
+deaths 1 AtLeast 4 scorpion at3str
+:at3
+wait_force 3 carrier
+wait 200
+
+attack_add 3 carrier
+call targeting
+wait 500
+
+attack_do
+attack_clear
+wait 4333
+
+deaths 1 Add 1 scorpion block1
+goto block1
+
+:at3str
+wait_finishattack
+define_max 6 carrier
+wait_force 6 carrier
+wait 200
+
+wait_finishattack
+attack_add 6 carrier
+call targeting
+wait 500
+
+deaths 7 Add 1 valkyrie at1str
+attack_do
+attack_clear
+define_max 5 carrier
+wait 3255
+
+goto at1str
+
+:upgrades
+wait 1500
+
+upgrade 1 shuttle_speed 30
+upgrade 1 p_plasma_shield 30
+upgrade 1 dragoon_range 30
+upgrade 1 carrier_capacity 30
+upgrade 1 scarab_damage 30
+upgrade 1 p_armor 30
+upgrade 1 p_plating 30
+upgrade 1 scout_sight 30
+upgrade 1 p_ground_weapon 30
+upgrade 1 p_air_weapon 30
+wait 480
+wait_upgrades
+wait 6000
+upgrade 1 scout_speed 30
+upgrade 2 p_plasma_shield 30
+upgrade 2 p_ground_weapon 30
+upgrade 2 p_air_weapon 30
+upgrade 2 p_armor 30
+upgrade 2 p_plating 30
+wait 480
+wait_upgrades
+wait 12500
+tech psionic_storm 30
+upgrade 3 p_plasma_shield 30
+upgrade 3 p_ground_weapon 30
+upgrade 3 p_air_weapon 30
+upgrade 3 p_armor 30
+upgrade 3 p_plating 30
+wait 480
+wait_upgrades
+wait 4000
+upgrade 1 templar_mana 30
+upgrade 1 reaver_capacity 30
+wait 480
+wait_upgrades
+wait 4000
+upgrade 1 one_with_khala 30
+tech recall 30
+wait 15000
+tech stasis_field 30
+wait 20000
+upgrade 1 arbiter_mana 30
+wait 5000
+upgrade 1 zealot_speed 30
+wait 480
+wait_upgrades
+stop
+
+:templedeath
+wait 137
+
+deaths 3 AtLeast 1 Protoss_Temple helpme
+goto templedeath
+
+:helpme
+under_attack 1
+multirun help_request
+guard_all
+default_min 1
+capt_expand
+max_force 1400
+deaths 1 Add 1 scorpion block1
+stop
+
+:help_request
+wait 1633
+
+wait_secure
+help_iftrouble
+goto help_request
+
+:vultures
+wait 300
+
+deaths 2 AtLeast 4 nexus vulturecont
+goto vultures
+:vulturecont
+deaths 1 Add 1 scorpion block1
+:bingbing
+wait 300
+
+deaths 7 AtLeast 1 nexus bingcont
+deaths 7 AtLeast 3 gateway bingcont
+deaths 7 AtLeast 2 robotics_facility bingcont
+deaths 7 AtLeast 3 stargate bingcont
+goto bingbing
+:bingcont
+deaths 1 Add 1 scorpion block1
+stop
+
+:targeting
+unstart_campaign
+attack_prepare
+start_campaign
+return
+

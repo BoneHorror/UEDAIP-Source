@@ -1,0 +1,61 @@
+script_name Terran 2 - Shareware
+script_id TSW2
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 hatchery 120
+build 1 drone 110
+build 6 drone 80
+build 8 drone 60
+max_workers 9
+farms_timing
+wait_build 8 drone
+build 1 extractor 80
+:wait_spawn
+wait 16
+
+notowns_jump spawning_pool wait_spawn
+build 1 hydralisk_den 80
+wait_build 1 hydralisk_den
+wait 250
+
+train 3 hydralisk
+guard_all
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+attack_add 1 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2250
+
+build 2 creep_colony 80
+build 2 sunken_colony 70
+wait 1000
+
+attack_add 2 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+:loop
+train 4 hydralisk
+attack_add 2 hydralisk
+wait 1500
+
+attack_add 1 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 750
+
+goto loop

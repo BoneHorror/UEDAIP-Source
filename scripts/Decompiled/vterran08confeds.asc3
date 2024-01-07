@@ -1,0 +1,456 @@
+script_name Terran 8 - Confederate Town
+script_id Ter8
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 command_center 150
+build 4 scv 130
+build 2 factory 80
+build 2 machine_shop 80
+build 2 starport 80
+build 2 control_tower 80
+build 1 armory 80
+build 1 engineering_bay 80
+build 5 missile_turret 80
+build 17 scv 80
+build 1 comsat_station 80
+max_workers 21
+define_max 45 scv
+define_max 40 marine
+define_max 20 firebat
+define_max 10 ghost
+define_max 16 siege_tank
+define_max 20 goliath
+define_max 10 vulture
+define_max 5 dropship
+define_max 2 science_vessel
+define_max 3 battlecruiser
+define_max 10 wraith
+max_force 833
+defensebuild_gg 1 siege_tank
+defensebuild_gg 1 marine
+defenseuse_gg 1 marine
+defensebuild_gg 1 goliath
+defenseuse_gg 1 goliath
+defensebuild_gg 1 marine
+defenseuse_gg 1 marine
+defenseuse_gg 1 wraith
+defenseuse_gg 1 ghost
+defensebuild_ag 1 goliath
+defenseuse_ag 1 goliath
+defensebuild_ag 1 marine
+defenseuse_ag 1 marine
+defenseuse_ag 1 wraith
+defenseuse_ag 1 ghost
+defensebuild_ga 1 wraith
+defenseuse_ga 1 wraith
+defenseuse_ga 1 battlecruiser
+defensebuild_aa 1 wraith
+defenseuse_aa 1 wraith
+defenseuse_aa 1 battlecruiser
+upgrade 1 marine_range 30
+tech siege_mode 30
+multirun surplus_forts
+under_attack 0
+wait 1000
+
+load_bank concom
+wait 16
+ 
+bank_data Set 0 concom destroyed bank
+wait 1
+
+save_bank concom
+multirun bank
+wait 1285
+
+player_need 1 academy
+player_need 2 barracks
+aicontrol build_gas
+check_transports
+train 10 marine
+attack_add 10 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+multirun await_expansion
+multirun check_nbunker
+guard siege_tank Loc.20 1 1 80
+guard siege_tank Loc.36 1 2 60
+guard goliath Loc.39 1 2 60
+guard goliath Loc.40 1 2 60
+guard goliath Loc.41 1 2 60
+tech stim_packs 30
+upgrade 1 t_infantry_armor 30
+upgrade 1 t_infantry_weapon 30
+upgrade 1 t_vehicle_plating 30
+upgrade 1 t_ship_plating 30
+upgrade 1 t_vehicle_weapon 30
+upgrade 1 t_ship_weapon 30
+wait 2255
+
+panic expand_panic
+train 3 goliath
+train 8 firebat
+attack_add 3 goliath
+attack_add 8 firebat
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2033
+
+train 2 wraith
+train 4 goliath
+train 4 wraith
+train 6 goliath
+train 4 wraith
+attack_add 4 goliath
+attack_add 4 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2555
+
+tech spider_mines 30
+tech cloaking_field 30
+train 8 marine
+train 2 wraith
+train 18 marine
+train 4 wraith
+train 24 marine
+train 6 wraith
+attack_add 4 wraith
+attack_add 24 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 t_infantry_armor 30
+upgrade 2 t_infantry_weapon 30
+upgrade 2 t_vehicle_plating 30
+guard siege_tank Loc.51 1 2 60
+guard siege_tank Loc.65 1 2 60
+guard marine Loc.56 1 2 60
+guard marine Loc.57 1 2 60
+guard marine Loc.53 1 2 60
+guard marine Loc.54 1 2 60
+guard marine Loc.55 1 2 60
+guard marine Loc.52 1 2 60
+wait 2085
+
+train 3 goliath
+train 10 firebat
+train 6 goliath
+train 20 firebat
+attack_add 6 goliath
+attack_add 20 firebat
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 t_ship_plating 30
+upgrade 2 t_vehicle_weapon 30
+upgrade 2 t_ship_weapon 30
+place_guard science_vessel 0
+train 20 marine
+train 4 wraith
+train 5 siege_tank
+train 10 goliath
+guard siege_tank Loc.21 2 1 60
+guard vulture Loc.45 1 2 60
+guard vulture Loc.44 1 2 60
+guard goliath Loc.28 1 2 60
+guard goliath Loc.27 1 2 60
+guard goliath Loc.17 1 2 60
+guard siege_tank Loc.16 1 2 60
+wait 1250
+
+attack_add 6 goliath
+attack_add 4 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+allies_watch 5 expand_panic
+guard battlecruiser Loc.42 1 2 60
+guard battlecruiser Loc.43 1 2 60
+guard siege_tank Loc.35 1 2 60
+guard siege_tank Loc.25 1 2 60
+guard goliath Loc.26 2 1 60
+upgrade 1 vulture_speed 30
+upgrade 1 ghost_sight 30
+tech yamato_gun 30
+wait 1850
+
+train 4 goliath
+train 18 marine
+attack_add 18 marine
+attack_add 4 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+guard vulture Loc.30 1 2 60
+guard vulture Loc.29 1 2 60
+upgrade 1 dragon_catalyst 30
+upgrade 3 t_infantry_armor 30
+upgrade 3 t_infantry_weapon 30
+upgrade 3 t_vehicle_plating 30
+upgrade 3 t_ship_plating 30
+upgrade 3 t_vehicle_weapon 30
+upgrade 3 t_ship_weapon 30
+train 4 siege_tank
+train 24 marine
+train 6 siege_tank
+train 36 marine
+train 8 siege_tank
+attack_add 36 marine
+attack_add 8 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+build 3 starport 80
+build 2 control_tower 80
+upgrade 1 battlecruiser_mana 30
+place_guard science_vessel 2
+max_workers 255
+:block1
+wait 500
+
+train 4 wraith
+train 14 goliath
+train 2 battlecruiser
+train 9 siege_tank
+attack_add 14 goliath
+attack_add 9 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 8 wraith
+attack_add 8 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 3 battlecruiser
+wait 850
+
+attack_add 3 battlecruiser
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 5 goliath
+train 20 marine
+train 7 goliath
+train 8 firebat
+train 9 goliath
+train 14 firebat
+train 35 marine
+train 10 goliath
+attack_add 35 marine
+attack_add 14 firebat
+attack_add 10 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 10 wraith
+train 12 siege_tank
+attack_add 10 wraith
+attack_add 12 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto block1
+
+:check_nbunker
+wait 250
+
+bring_jump 14 AtMost 0 bunker Loc.19 check_nbunker
+wait 865
+
+guard siege_tank Loc.19 1 1 80
+stop
+
+:await_expansion
+wait 250
+
+bring_jump 14 AtMost 0 group_buildings Loc.46 await_expansion
+wait 2033
+
+guard siege_tank Loc.22 1 1 80
+wait 233
+
+guard siege_tank Loc.4 1 1 80
+wait 233
+
+guard siege_tank Loc.23 1 1 80
+wait 1045
+
+create_script turrets 255 Loc.24 255 0
+wait 1025
+stop
+
+:surplus_forts
+wait_rand 1025 6655
+
+random_jump 53 forbar
+random_jump 64 forarea
+random_jump 85 fortarea
+random_jump 128 fortnorth
+goto fortlow
+
+:forbar
+wait 16
+deaths 1 AtLeast 1 barracks surplus_forts
+deaths 1 Set 1 barracks surplus_forts
+create_script barfor 255 Loc.21 255 0
+wait 2025
+
+goto surplus_forts
+
+:forarea
+wait 16
+deaths 1 AtLeast 1 factory surplus_forts
+deaths 1 Set 1 factory surplus_forts
+create_script forareax 255 Loc.31 255 0
+wait 2025
+
+goto surplus_forts
+
+:fortarea
+wait 16
+deaths 1 AtLeast 1 bunker surplus_forts
+deaths 1 Set 1 bunker surplus_forts
+create_script fort 255 Loc.7 255 0
+wait 2025
+
+goto surplus_forts
+
+:fortnorth
+wait 16
+deaths 1 AtLeast 1 bunker surplus_forts
+deaths 1 Set 1 bunker surplus_forts
+create_script fort 255 Loc.33 255 0
+wait 2025
+
+goto surplus_forts
+
+:fortlow
+wait 16
+deaths 1 AtLeast 1 bunker surplus_forts
+deaths 1 Set 1 bunker surplus_forts
+create_script fort 255 Loc.34 255 0
+wait 2025
+
+goto surplus_forts
+
+:barfor
+start_town
+build 1 barracks 80
+get_oldpeons 1
+wait_buildstart 1 barracks
+build 1 bunker 80
+build 1 missile_turret 80
+upgrade 1 medic_mana 30
+:bfloop
+wait 1500
+
+goto bfloop
+
+:forareax
+start_town
+build 1 factory 80
+get_oldpeons 1
+wait_buildstart 1 factory
+build 1 armory 80
+build 2 missile_turret 80
+:fctloop
+wait 1500
+
+goto fctloop
+
+:fort
+start_town
+build 1 bunker 80
+get_oldpeons 1
+wait_buildstart 1 bunker
+build 1 missile_turret 80
+wait 3500
+
+:f1loop
+wait 1500
+
+goto f1loop
+
+:turrets
+start_town
+build 1 missile_turret 80
+get_oldpeons 1
+wait_buildstart 1 missile_turret
+build 2 missile_turret 80
+wait 5000
+
+place_guard siege_tank 0
+:tr
+wait 1500
+
+goto tr
+
+:bank
+wait 16
+
+deaths 0 Exactly 0 carrier bank
+deaths 0 Exactly 2 carrier warning
+bank_data Set 1 concom destroyed bank
+save_bank concom
+stop
+
+:warning
+bank_data Set 2 concom destroyed bank
+save_bank concom
+stop
+
+:expand_panic
+start_town
+build 1 command_center 90
+get_oldpeons 1
+wait_build 1 command_center
+build 11 scv 80
+build 1 scv 90
+wait_buildstart 6 scv
+build 1 missile_turret 80
+wait 850
+
+random_jump 192 panic_loop
+build 1 barracks 80
+:panic_loop
+wait 1500
+
+goto panic_loop

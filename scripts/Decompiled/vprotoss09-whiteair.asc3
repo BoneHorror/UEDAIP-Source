@@ -1,0 +1,419 @@
+script_name Protoss 9 - Air Zerg
+script_id Pr9W
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 hatchery 150
+build 2 drone 130
+build 1 spawning_pool 80
+build 2 hatchery 80
+build 1 lair 80
+build 21 drone 80
+build 1 spire 80
+build 1 queen_nest 80
+build 1 hive 80
+build 1 hydralisk_den 80
+build 1 ultralisk_cavern 80
+build 1 greater_spire 80
+upgrade 1 overlord_speed 30
+upgrade 1 overlord_capacity 30
+tech burrowing 30
+define_max 30 drone
+define_max 14 zergling
+define_max 7 hydralisk
+define_max 12 mutalisk
+define_max 4 guardian
+define_max 3 devourer
+define_max 2 hmutalisk
+define_max 6 scourge
+define_max 1 queen
+define_max 2 ultralisk
+define_max 255 broodling
+idle_orders 10 16 9 zergling 224 panzer|death_knight|medic|siege_tank|goliath|revenant|dragoon|reaver|dark_archon|defiler 70 InCombat
+idle_orders 10 16 1 devourer 128 group_men 60 Health(LessThan 30)
+idle_orders 10 16 2 devourer 128 group_men 70 Health(LessThan 50)
+idle_orders 10 16 2 devourer 128 carrier|arbiter 90 Health(LessThan 50)
+idle_orders 10 16 3 mutalisk 160 heavy_marine|ghost|death_knight|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 90 Health(LessThan 27)
+idle_orders 10 16 1 mutalisk 128 heavy_marine|ghost|death_knight|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 70 Health(LessThan 9)
+idle_orders 10 16 2 mutalisk 128 bunker|missile_turret|photon_cannon|spore_colony 100 Health(LessThan 18)
+idle_orders 10 16 5 mutalisk 200 drone|scv|probe 100 0
+idle_orders 10 16 2 zergling 100 drone|scv|probe 100 0
+idle_orders 10 16 1 guardian 224 group_men 60 Health(LessThan 20)|Count(AtLeast 2 40 14)
+idle_orders 10 16 3 guardian 224 ghost|infested_terran|siege_tank|high_templar|archon|dark_archon|defiler 100 Health(LessThan 70)
+idle_orders 10 16 2 guardian 224 group_men 80 Health(LessThan 40)|Count(AtLeast 2 40 14)
+idle_orders 10 16 3 guardian 224 group_men 90 Health(LessThan 60)|Count(AtLeast 2 40 14)
+idle_orders 10 16 5 guardian 224 group_men 110 Health(LessThan 100)|Count(AtLeast 2 40 14)
+idle_orders 10 16 1 scourge 224 arbiter|scout|corsair|devourer|carrier|battlecruiser|science_vessel 80 Health(LessThan 110)
+idle_orders 10 16 2 scourge 250 arbiter|scout|corsair|devourer|carrier|battlecruiser|science_vessel 80 Health(LessThan 220)
+idle_orders 10 16 3 scourge 275 arbiter|carrier|valhalla|science_vessel|battlecruiser 80 Health(LessThan 250)
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defensebuild_gg 1 mutalisk
+defensebuild_gg 1 guardian
+defenseuse_gg 1 guardian
+defenseuse_gg 1 broodling
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+defensebuild_ag 1 mutalisk
+defensebuild_ag 1 devourer
+defenseuse_ag 1 devourer
+defensebuild_ga 1 mutalisk
+defensebuild_ga 1 guardian
+defenseuse_ga 1 guardian
+defensebuild_aa 2 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 1 devourer
+defenseuse_aa 1 devourer
+defenseuse_aa 1 guardian
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
+max_force 1200
+upgrade 1 z_flyer_attack 30
+wait 6000
+
+multirun guardian_ensure
+multirun gorger_ensure
+multirun player_income
+upgrade 1 z_carapace 30
+upgrade 1 hydralisk_range 30
+upgrade 2 z_flyer_attack 30
+train 2 mutalisk
+attack_add 2 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 zergling_speed 30
+upgrade 1 z_melee_attack 30
+wait 4000
+
+upgrade 1 z_flyer_carapace 30
+upgrade 3 z_flyer_attack 30
+upgrade 1 hydralisk_speed 30
+train 2 mutalisk
+train 2 guardian
+attack_add 2 guardian
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 z_carapace 30
+upgrade 1 z_missile_attack 30
+tech ensnare 30
+upgrade 2 z_flyer_carapace 30
+upgrade 1 ultralisk_speed 50
+wait 5600
+
+train 2 ultralisk
+train 1 mutalisk
+train 1 guardian
+attack_add 1 guardian
+attack_add 2 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 overlord_sight 50
+upgrade 2 z_melee_attack 30
+upgrade 2 z_missile_attack 30
+upgrade 3 z_flyer_carapace 30
+upgrade 1 zergling_attack 30
+upgrade 3 z_carapace 30
+upgrade 1 ultralisk_armor 30
+:block1
+resources_jump 2000 3500 moneyblock_1
+wait 3000
+
+train 12 zergling
+train 5 mutalisk
+train 1 devourer
+attack_add 12 zergling
+attack_add 4 mutalisk
+attack_add 1 devourer
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 4000
+
+train 4 mutalisk
+train 4 guardian
+attack_add 4 guardian
+attack_add 4 scourge
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+resources_jump 2000 3500 moneyblock_2
+:block2
+wait 5500
+
+train 7 mutalisk
+train 2 guardian
+attack_add 2 guardian
+attack_add 5 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 6000
+
+train 9 mutalisk
+train 2 devourer
+train 4 hydralisk
+attack_add 7 mutalisk
+attack_add 2 devourer
+attack_add 4 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+resources_jump 2000 3500 moneyblock_3
+:block3
+wait 5500
+
+train 3 mutalisk
+train 3 guardian
+train 2 ultralisk
+train 4 scourge
+train 12 zergling
+attack_add 2 ultralisk
+attack_add 3 guardian
+attack_add 4 scourge
+attack_add 12 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 4 hydralisk
+goto block1
+
+:moneyblock_1
+wait 2500
+
+train 12 zergling
+train 4 scourge
+train 6 mutalisk
+train 1 devourer
+attack_add 12 zergling
+attack_add 5 mutalisk
+attack_add 4 scourge
+attack_add 1 devourer
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 4000
+
+train 8 mutalisk
+train 4 guardian
+attack_add 4 guardian
+attack_add 4 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+resources 13 AtMost Gas 1500 block2
+:moneyblock_2
+wait 4500
+
+train 1 hmutalisk
+train 9 mutalisk
+train 2 guardian
+train 2 devourer
+attack_add 1 hmutalisk
+attack_add 2 guardian
+attack_add 2 devourer
+attack_add 5 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 5000
+
+train 9 mutalisk
+train 2 devourer
+train 7 hydralisk
+attack_add 7 mutalisk
+attack_add 2 devourer
+attack_add 7 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+resources 13 AtMost Gas 1500 block3
+:moneyblock_3
+wait 4500
+
+train 4 mutalisk
+train 4 guardian
+train 2 hmutalisk
+train 2 ultralisk
+train 4 scourge
+train 12 zergling
+attack_add 2 hmutalisk
+attack_add 2 ultralisk
+attack_add 4 guardian
+attack_add 4 scourge
+attack_add 12 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 2 ultralisk
+resources 13 AtMost Gas 1500 block1
+goto moneyblock_1
+
+:guardian_ensure
+wait 50
+
+if_owned guardian guardian_ensure
+do_morph 2 guardian
+wait 1024
+
+goto guardian_ensure
+
+:gorger_ensure
+wait 50
+
+if_owned devourer guardian_ensure
+do_morph 1 devourer
+wait 1024
+
+goto gorger_ensure
+
+:player_income
+wait 50
+
+multirun player_zeta
+multirun player_goon
+multirun player_scout
+multirun player_hornet
+multirun player_reaver
+wait 50
+
+multirun player_archon
+multirun player_templar
+multirun player_probe
+multirun player_cannon
+multirun player_carrier
+multirun player_arbiter
+stop
+
+:player_zeta
+wait 16
+
+bw_kills 1 AtMost 0 zealot player_zeta
+bw_kills 1 Subtract 1 zealot player_zeta
+resources 1 Add Ore 50 player_income
+goto player_zeta
+
+:player_goon
+wait 16
+
+bw_kills 1 AtMost 0 dragoon player_goon
+bw_kills 1 Subtract 1 dragoon player_zeta
+resources 1 Add Ore 45 player_income
+resources 1 Add Gas 35 player_income
+goto player_goon
+
+:player_scout
+wait 16
+
+bw_kills 1 AtMost 0 scout player_scout
+bw_kills 1 Subtract 1 scout player_zeta
+resources 1 Add Ore 125 player_income
+resources 1 Add Gas 100 player_income
+goto player_scout
+
+:player_hornet
+wait 16
+
+bw_kills 1 AtMost 0 hornet player_hornet
+bw_kills 1 Subtract 1 hornet player_zeta
+resources 1 Add Ore 50 player_income
+resources 1 Add Gas 50 player_income
+goto player_hornet
+
+:player_carrier
+wait 16
+
+bw_kills 1 AtMost 0 carrier player_carrier
+bw_kills 1 Subtract 1 carrier player_zeta
+resources 1 Add Ore 250 player_income
+resources 1 Add Gas 250 player_income
+goto player_carrier
+
+:player_reaver
+wait 16
+
+bw_kills 1 AtMost 0 reaver player_reaver
+bw_kills 1 Subtract 1 reaver player_zeta
+resources 1 Add Ore 250 player_income
+resources 1 Add Gas 75 player_income
+goto player_reaver
+
+:player_archon
+wait 16
+
+bw_kills 1 AtMost 0 archon player_archon
+bw_kills 1 Subtract 1 archon player_zeta
+resources 1 Add Ore 50 player_income
+resources 1 Add Gas 250 player_income
+goto player_archon
+
+:player_probe
+wait 16
+
+bw_kills 1 AtMost 0 probe player_probe
+bw_kills 1 Subtract 1 probe player_zeta
+resources 1 Add Ore 8 player_income
+resources 1 Add Gas 8 player_income
+goto player_probe
+
+:player_templar
+wait 16
+
+bw_kills 1 AtMost 0 high_templar player_templar
+bw_kills 1 Subtract 1 high_templar player_zeta
+resources 1 Add Ore 25 player_income
+resources 1 Add Gas 75 player_income
+goto player_templar
+
+:player_cannon
+wait 16
+
+bw_kills 1 AtMost 0 photon_cannon player_cannon
+bw_kills 1 Subtract 1 photon_cannon player_zeta
+resources 1 Add Ore 150 player_income
+goto player_cannon
+
+:player_arbiter
+wait 16
+
+bw_kills 1 AtMost 0 harbiter player_arbiter
+bw_kills 1 Subtract 1 harbiter player_zeta
+resources 1 Add Ore 50 player_income
+resources 1 Add Gas 300 player_income
+goto player_arbiter

@@ -1,0 +1,351 @@
+script_name Zerg 1 - Terran Town
+script_id Zer1
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+if_owned lair garm_brood
+build 1 command_center 150
+build 2 scv 130
+build 16 scv 80
+build 2 barracks 80
+build 1 academy 80
+build 1 engineering_bay 80
+build 1 factory 80
+build 1 machine_shop 80
+build 1 starport 80
+build 1 control_tower 80
+define_max 35 scv
+define_max 34 marine
+define_max 6 goliath
+define_max 7 wraith
+define_max 2 dropship
+define_max 12 firebat
+defensebuild_gg 1 firebat
+defenseuse_gg 1 firebat
+defensebuild_gg 2 marine
+defenseuse_gg 2 marine
+defenseuse_gg 1 goliath
+defensebuild_ag 1 marine
+defenseuse_ag 1 marine
+defensebuild_ag 1 goliath
+defenseuse_ag 1 goliath
+defensebuild_ga 1 wraith
+defenseuse_ga 1 wraith
+defensebuild_aa 1 wraith
+defenseuse_aa 1 wraith
+define_max 255 siege_tank
+define_max 255 vulture
+max_force 800
+farms_timing
+wait 16
+
+train 2 marine
+attack_add 2 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+guard_all
+upgrade 1 marine_range 30
+upgrade 1 t_infantry_weapon 30
+upgrade 1 t_vehicle_weapon 30
+wait 32
+
+train 2 marine
+train 2 firebat
+attack_add 2 marine
+attack_add 2 firebat
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 32
+
+train 12 marine
+attack_add 12 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 15
+
+train 3 goliath
+train 8 firebat
+attack_add 3 goliath
+attack_add 8 firebat
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech stim_packs 30
+upgrade 1 t_ship_weapon 30
+upgrade 1 t_infantry_armor 30
+train 20 marine
+attack_add 20 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 4 wraith
+attack_add 4 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech siege_mode 30
+define_max 2 siege_tank
+defensebuild_gg 1 siege_tank
+defenseuse_gg 1 siege_tank
+train 30 marine
+attack_add 10 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 2 siege_tank
+train 10 firebat
+attack_add 20 marine
+attack_add 2 siege_tank
+attack_add 10 firebat
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_vehicle_plating 30
+upgrade 1 t_ship_plating 30
+upgrade 1 medic_mana 30
+tech cloaking_field 30
+:block1
+wait 32
+
+train 4 goliath
+train 12 firebat
+attack_add 4 goliath
+attack_add 12 firebat
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 45
+
+train 26 marine
+train 2 wraith
+attack_add 26 marine
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 30
+
+train 2 siege_tank
+train 14 marine
+train 2 goliath
+train 8 firebat
+train 4 goliath
+attack_add 2 wraith
+attack_add 4 goliath
+attack_add 14 marine
+attack_add 8 firebat
+attack_add 2 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto block1
+
+:garm_brood
+build 1 hatchery 150
+build 6 drone 130
+build 1 spawning_pool 80
+build 1 hydralisk_den 80
+build 1 lair 80
+build 1 spire 80
+tech burrowing 30
+max_workers 16
+build 16 drone 80
+define_max 18 zergling
+define_max 7 hydralisk
+define_max 24 drone
+define_max 7 mutalisk
+define_max 255 ultralisk
+define_max 255 scourge
+define_max 255 broodling
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defenseuse_gg 1 broodling
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+max_force 606
+farms_timing
+creep 4
+wait 350
+
+unstart_campaign
+wait 16
+
+capt_expand
+build 5 creep_colony 80
+build 3 sunken_colony 80
+build 2 spore_colony 80
+set_attacks 1
+attack_add 2 zergling
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+build 1 evolution_chamber 80
+upgrade 1 zergling_speed 30
+wait 351
+
+guard_all
+set_attacks 1
+train 5 zergling
+attack_add 5 zergling
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 z_carapace 30
+upgrade 1 z_flyer_carapace 30
+wait 450
+
+set_attacks 1
+train 3 mutalisk
+train 3 hydralisk
+attack_add 3 mutalisk
+attack_add 3 hydralisk
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 hydralisk_range 30
+train 10 zergling
+set_attacks 1
+attack_add 8 zergling
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 z_melee_attack 30
+upgrade 1 overlord_speed 30
+wait 525
+
+train 6 hydralisk
+set_attacks 1
+attack_add 6 hydralisk
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 hydralisk_speed 30
+wait 1500
+
+train 8 zergling
+train 6 mutalisk
+attack_add 8 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 z_missile_attack 30
+upgrade 1 overlord_capacity 30
+upgrade 1 z_flyer_attack 30
+:blockg
+set_attacks 4
+train 6 mutalisk
+attack_add 6 mutalisk
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+wait 350
+
+train 12 zergling
+train 5 hydralisk
+attack_add 12 zergling
+attack_add 5 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 6 mutalisk
+attack_add 6 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 6 mutalisk
+attack_add 6 mutalisk
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+wait 500
+
+train 7 hydralisk
+attack_add 7 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1500
+
+train 16 zergling
+attack_add 16 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 500
+
+train 6 hydralisk
+attack_add 6 hydralisk
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+attack_add 5 zergling
+attack_add 3 hydralisk
+attack_add 2 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto blockg

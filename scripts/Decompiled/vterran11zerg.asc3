@@ -1,0 +1,310 @@
+script_name Terran 11 - Zerg Town
+script_id T11z
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 hatchery 150
+build 1 drone 130
+build 5 drone 80
+build 1 spawning_pool 80
+build 1 hydralisk_den 80
+build 1 evolution_chamber 80
+build 1 lair 80
+player_need 1 queen_nest
+build 1 spire 80
+build 4 creep_colony 80
+build 2 sunken_colony 80
+build 2 spore_colony 80
+build 1 hive 80
+build 1 ultralisk_cavern 80
+build 16 drone 80
+define_max 50 drone
+define_max 30 zergling
+define_max 11 hydralisk
+define_max 7 mutalisk
+define_max 2 guardian
+define_max 6 scourge
+define_max 5 ultralisk
+define_max 2 queen
+define_max 3 infested_terran
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
+max_force 1200
+upgrade 1 overlord_speed 30
+upgrade 1 overlord_capacity 30
+tech burrowing 30
+farms_timing
+multirun ending_seq
+wait 2500
+
+deaths 3 Exactly 1 battlecruiser easy_zerg
+attack_add 1 infested_terran
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1500
+
+expand 5 expansion
+upgrade 1 z_carapace 30
+tech ensnare 30
+wait 1500
+
+attack_add 6 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 zergling_speed 30
+upgrade 1 z_flyer_attack 30
+wait 1500
+
+attack_add 4 zergling
+attack_add 2 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+expand 5 expansion
+upgrade 1 z_melee_attack 30
+upgrade 1 hydralisk_speed 30
+wait 2500
+
+attack_add 4 zergling
+attack_add 2 mutalisk
+attack_add 1 infested_terran
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 z_missile_attack 30
+upgrade 1 z_flyer_carapace 30
+tech spawn_broodling 30
+upgrade 1 ultralisk_speed 30
+:block1
+expand 5 expansion
+wait 2000
+
+attack_add 12 zergling
+attack_add 3 hydralisk
+attack_add 2 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2000
+
+attack_add 12 zergling
+attack_add 2 mutalisk
+attack_add 2 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2000
+
+attack_add 24 zergling
+attack_add 2 mutalisk
+attack_add 2 infested_terran
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+expand 5 expansion
+attack_add 6 hydralisk
+attack_add 3 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto block1
+
+:easy_zerg
+attack_add 2 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1500
+
+upgrade 1 z_carapace 30
+tech ensnare 30
+wait 1800
+
+attack_add 6 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 zergling_speed 30
+upgrade 1 z_flyer_attack 30
+wait 2000
+
+attack_add 4 zergling
+attack_add 2 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+expand 5 expansion
+upgrade 1 z_melee_attack 30
+upgrade 1 hydralisk_speed 30
+wait 2500
+
+attack_add 4 zergling
+attack_add 1 infested_terran
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 z_missile_attack 30
+upgrade 1 z_flyer_carapace 30
+tech spawn_broodling 30
+upgrade 1 ultralisk_speed 30
+:block_e
+wait 2000
+
+attack_add 12 zergling
+attack_add 3 hydralisk
+attack_add 2 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 4000
+
+attack_add 12 zergling
+attack_add 2 mutalisk
+attack_add 2 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2000
+
+attack_add 24 zergling
+attack_add 2 mutalisk
+attack_add 2 infested_terran
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+expand 5 expansion
+attack_add 6 hydralisk
+attack_add 2 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto block_e
+:expansion
+start_town
+build 1 hatchery 80
+get_oldpeons 1
+wait_build 1 hatchery
+build 3 drone 80
+build 5 drone 70
+wait_build 5 drone
+creep 4
+build 1 creep_colony 80
+wait 860
+
+build 1 sunken_colony 80
+wait 550
+
+build 2 creep_colony 80
+wait 860
+
+build 1 spore_colony 80
+build 12 drone 80
+build 1 drone 130
+wait 10500
+
+wait 6700
+
+player_need 1 queen_nest
+wait 5505
+
+place_guard queen 0
+:loop
+wait 22500
+
+goto loop
+
+:ending_seq
+wait 16
+
+bring_jump 1 AtMost 2 group_factories Loc.63 skipt_seq
+bring_jump 1 AtMost 4 group_buildings Loc.63 skipt_seq
+deaths 3 AtMost 0 148 ending_seq
+:skipt_seq
+unstart_campaign
+creep 4
+build 5 hatchery 150
+build 10 creep_colony 150
+build 5 sunken_colony 150
+build 5 spore_colony 150
+max_force 2000
+default_min 255
+wait 16
+
+capt_expand
+capt_expand
+capt_expand
+define_max 80 zergling
+define_max 40 hydralisk
+define_max 25 mutalisk
+define_max 5 guardian
+define_max 6 scourge
+define_max 10 ultralisk
+define_max 2 queen
+define_max 5 infested_terran
+send_suicide 0
+multirun suicides
+train 40 zergling
+train 10 ultralisk
+train 40 hydralisk
+wait 15000
+stop
+
+:suicides
+wait 1500
+
+send_suicide 0
+goto suicides
+
+

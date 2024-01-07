@@ -1,0 +1,1113 @@
+script_name Protoss 10 - Mini-Town Master
+script_id P10C
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+#daggoth mimicking Player composition banked from vZ10
+build 1 hatchery 150
+build 3 drone 130
+build 22 drone 80
+build 1 spawning_pool 80
+build 1 lair 80
+build 2 hydralisk_den 80
+build 1 spire 80
+build 2 hatchery 80
+build 1 queen_nest 80
+build 1 hive 80
+build 1 greater_spire 80
+build 1 ultralisk_cavern 80
+build 2 evolution_chamber 80
+build 2 extractor 80
+max_workers 24
+max_force 1600
+#baseline limits to be modified in remaining configs
+supply 13 Set 250 Max 0 Zerg bank_delay
+idle_orders 10 16 3 mutalisk 160 heavy_marine|ghost|death_knight|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 90 Health(LessThan 27)
+idle_orders 10 16 1 mutalisk 128 heavy_marine|ghost|death_knight|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 70 Health(LessThan 9)
+idle_orders 10 16 2 mutalisk 128 bunker|missile_turret|photon_cannon|spore_colony 100 Health(LessThan 18)
+idle_orders 10 16 5 mutalisk 200 drone|scv|probe 100 0
+idle_orders 11 160 2 lurker 192 drone|scv|probe 100 Count(AtLeast 2 40 14)
+idle_orders 11 160 1 lurker 192 Any 20 WithoutUnitFlags(Air)
+idle_orders 11 160 1 lurker 192 Any 50 WithoutUnitFlags(Air)|UnitFlags(Detector)
+idle_orders 11 160 1 lurker 192 Any 60 InCombat|WithoutUnitFlags(Air)
+idle_orders 11 160 1 lurker 192 Any 100 InCombat|WithoutUnitFlags(Air)|UnitFlags(Detector)
+idle_orders 10 32 1 hydralisk 210 group_men 80 Health(LessThan 8)
+idle_orders 10 32 1 hydralisk 210 panzer|phantom|ghost|death_knight|hnorad|battlecruiser|skywing|science_vessel|valhalla|siege_tank|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 110 Health(LessThan 10)
+idle_orders 10 32 1 hydralisk 210 bunker 90 Health(LessThan 20)
+idle_orders 10 32 3 hydralisk 210 group_men 90 Health(LessThan 30)
+idle_orders 10 32 3 hydralisk 210 panzer|phantom|ghost|death_knight|hnorad|battlecruiser|skywing|science_vessel|valhalla|siege_tank|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 130 Health(LessThan 30)
+idle_orders 10 32 3 hydralisk 210 bunker 100 Health(LessThan 20)
+idle_orders 10 32 5 hydralisk 210 panzer|phantom|ghost|death_knight|hnorad|battlecruiser|skywing|science_vessel|valhalla|siege_tank|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 135 Health(LessThan 50)
+idle_orders 10 32 5 hydralisk 210 bunker 110 Health(LessThan 20)
+idle_orders 10 32 7 hydralisk 224 panzer|phantom|ghost|death_knight|hnorad|battlecruiser|skywing|science_vessel|valhalla|siege_tank|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 150 Health(LessThan 65)
+define_max 45 drone
+define_max 32 zergling
+define_max 27 hydralisk
+define_max 13 mutalisk
+define_max 5 guardian
+define_max 2 devourer
+define_max 5 lurker
+define_max 7 hhydralisk
+define_max 4 ultralisk
+define_max 2 queen
+define_max 10 scourge
+define_max 255 defiler
+define_max 255 broodling
+upgrade 1 overlord_speed 30
+upgrade 1 overlord_capacity 30
+tech burrowing 30
+tech lurker_aspect 30
+wait 50
+
+multirun raynor_picker
+#afterwards wait until bank outcome!
+:bank_delay
+wait 50
+
+deaths 0 Exactly 0 scout bank_delay
+idle_orders 27 13 1 queen 1532 command_center 80 health(LessThanPercent,66)
+multirun defense_config
+multirun upgrade_block
+multirun expansions
+multirun grand_exchange
+deaths 0 Exactly 2 scout attack_config1
+deaths 0 Exactly 3 scout attack_config2
+deaths 0 Exactly 4 scout attack_config3
+deaths 0 Exactly 5 scout attack_config4
+#attack config supply approx power budgets -
+#3x pre loop
+#wait 1500
+#7 supply
+#wait 3000
+#14 supply
+#wait 2500
+#16 supply
+#loop
+#wait 4500
+#32 supply
+#wait 2500
+#24 supply
+#wait 3750
+#18 supply
+#wait 4500
+#30 supply
+#wait 3000
+#40 supply -> forward +10
+#default attack config below
+wait 1500
+
+train 6 zergling
+train 2 hhydralisk
+attack_add 6 zergling
+attack_add 2 hhydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 3000
+
+train 9 hydralisk
+deaths 0 AtLeast_Call 1 corsair icc_small
+attack_add 9 hydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 2500
+
+train 4 mutalisk
+train 2 ultralisk
+attack_add 4 mutalisk
+attack_add 2 ultralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+
+:block1
+wait 4500
+
+train 2 ultralisk
+train 3 mutalisk
+train 2 guardian
+train 12 hydralisk
+train 2 lurker
+train 10 zergling
+attack_add 10 zergling
+attack_add 2 guardian
+attack_add 10 hydralisk
+attack_add 2 lurker
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+train 1 queen
+wait 2500
+
+train 2 ultralisk
+train 2 mutalisk
+train 2 devourer
+train 6 hhydralisk
+attack_add 2 ultralisk
+attack_add 2 devourer
+attack_add 6 hhydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 3750
+
+train 5 hydralisk
+train 5 lurker
+train 16 zergling
+deaths 0 AtLeast_Call 1 corsair icc_big
+attack_add 5 lurker
+attack_add 16 zergling
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 4500
+
+train 4 hhydralisk
+train 6 mutalisk
+train 1 guardian
+train 10 hydralisk
+attack_add 10 hydralisk
+attack_add 6 mutalisk
+attack_add 1 guardian
+attack_add 4 hhydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+train 2 queen
+wait 3000
+
+train 5 hhydralisk
+train 2 hydralisk
+train 2 lurker
+train 4 ultralisk
+train 20 zergling
+attack_add 20 zergling
+attack_add 2 lurker
+attack_add 4 ultralisk
+attack_add 5 hhydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+attack_add 2 ultralisk
+attack_add 1 mutalisk
+goto block1
+
+:attack_config1
+wait 1500
+
+train 6 zergling
+train 2 hydralisk
+attack_add 6 zergling
+attack_add 2 hydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 3000
+
+train 7 hydralisk
+train 2 mutalisk
+attack_add 2 mutalisk
+attack_add 7 hydralisk
+deaths 0 AtLeast_Call 1 corsair icc_small
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 2500
+
+train 4 mutalisk
+train 1 ultralisk
+train 8 zergling
+attack_add 4 mutalisk
+attack_add 1 ultralisk
+attack_add 8 zergling
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+
+:block2
+wait 4500
+
+train 2 ultralisk
+train 1 mutalisk
+train 15 hydralisk
+train 2 lurker
+train 10 zergling
+attack_add 10 zergling
+attack_add 13 hydralisk
+attack_add 2 lurker
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+train 1 queen
+wait 2500
+
+train 2 ultralisk
+train 2 mutalisk
+train 6 hhydralisk
+attack_add 2 ultralisk
+attack_add 2 mutalisk
+attack_add 6 hhydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 3750
+
+train 7 hydralisk
+train 16 zergling
+deaths 0 AtLeast_Call 1 corsair icc_small
+attack_add 7 hydralisk
+attack_add 16 zergling
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 4500
+
+train 4 hhydralisk
+train 6 mutalisk
+train 1 guardian
+train 9 hydralisk
+attack_add 9 hydralisk
+attack_add 6 mutalisk
+attack_add 1 guardian
+attack_add 4 hhydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+train 2 queen
+wait 3000
+
+train 5 hhydralisk
+train 2 hydralisk
+train 2 lurker
+train 2 ultralisk
+train 28 zergling
+attack_add 28 zergling
+attack_add 2 lurker
+attack_add 2 ultralisk
+attack_add 5 hhydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+attack_add 2 ultralisk
+attack_add 1 mutalisk
+goto block2
+
+:attack_config2
+wait 1500
+
+train 4 mutalisk
+attack_add 4 mutalisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 3000
+
+train 5 hydralisk
+train 3 mutalisk
+deaths 0 AtLeast_Call 1 corsair icc_small
+attack_add 5 hydralisk
+attack_add 3 mutalisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 2500
+
+train 6 mutalisk
+train 2 guardian
+attack_add 4 mutalisk
+attack_add 2 guardian
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+
+:block3
+wait 4500
+
+train 2 ultralisk
+train 6 mutalisk
+train 2 guardian
+train 12 hydralisk
+train 2 lurker
+train 10 zergling
+attack_add 10 zergling
+attack_add 2 guardian
+attack_add 3 mutalisk
+attack_add 6 hydralisk
+attack_add 2 lurker
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+train 1 queen
+wait 2500
+
+train 3 ultralisk
+train 7 mutalisk
+train 1 guardian
+train 2 devourer
+attack_add 3 ultralisk
+attack_add 1 guardian
+attack_add 4 mutalisk
+attack_add 2 devourer
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 3750
+
+train 5 hhydralisk
+train 6 mutalisk
+deaths 0 AtLeast_Call 1 corsair icc_big
+attack_add 5 hhydralisk
+attack_add 6 mutalisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 4500
+
+train 4 hhydralisk
+train 13 mutalisk
+train 4 guardian
+attack_add 9 mutalisk
+attack_add 4 guardian
+attack_add 4 hhydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+train 2 queen
+wait 3000
+
+train 11 mutalisk
+train 4 guardian
+train 2 devourer
+train 20 zergling
+attack_add 20 zergling
+attack_add 4 guardian
+attack_add 5 mutalisk
+attack_add 2 devourer
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+attack_add 2 ultralisk
+attack_add 1 mutalisk
+goto block3
+
+:attack_config3
+define_max 6 ultralisk
+wait 1500
+
+train 1 ultralisk
+train 2 hydralisk
+attack_add 1 ultralisk
+attack_add 2 hydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 3000
+
+train 6 hhydralisk
+deaths 0 AtLeast_Call 1 corsair icc_small
+attack_add 6 hhydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 2500
+
+train 5 hydralisk
+train 2 ultralisk
+attack_add 5 hydralisk
+attack_add 2 ultralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+
+:block4
+wait 4500
+
+train 4 ultralisk
+train 12 hydralisk
+train 2 lurker
+attack_add 2 ultralisk
+attack_add 10 hydralisk
+attack_add 2 lurker
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+train 1 queen
+wait 2500
+
+train 4 ultralisk
+train 6 hhydralisk
+attack_add 4 ultralisk
+attack_add 6 hhydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 3750
+
+train 5 hydralisk
+train 5 lurker
+train 2 ultralisk
+deaths 0 AtLeast_Call 1 corsair icc_big
+attack_add 5 lurker
+attack_add 2 ultralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 4500
+
+train 4 hhydralisk
+train 3 ultralisk
+train 10 hydralisk
+attack_add 10 hydralisk
+attack_add 3 ultralisk
+attack_add 4 hhydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+train 2 queen
+wait 3000
+
+train 12 hydralisk
+train 6 ultralisk
+attack_add 6 ultralisk
+attack_add 12 hydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+attack_add 2 ultralisk
+goto block4
+
+:attack_config4
+wait 1500
+
+train 4 hhydralisk
+attack_add 4 hhydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 3000
+
+train 9 hydralisk
+train 1 lurker
+deaths 0 AtLeast_Call 1 corsair icc_small
+attack_add 8 hydralisk
+attack_add 1 lurker
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 2500
+
+train 6 hydralisk
+train 2 ultralisk
+attack_add 6 hydralisk
+attack_add 2 ultralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+
+:block5
+wait 4500
+
+train 2 ultralisk
+train 2 mutalisk
+train 2 guardian
+train 12 hydralisk
+train 2 lurker
+train 10 zergling
+attack_add 10 zergling
+attack_add 2 guardian
+attack_add 10 hydralisk
+attack_add 2 lurker
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+train 1 queen
+wait 2500
+
+train 2 ultralisk
+train 2 mutalisk
+train 2 devourer
+train 6 hhydralisk
+attack_add 2 ultralisk
+attack_add 2 devourer
+attack_add 6 hhydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 3750
+
+train 11 hydralisk
+train 5 lurker
+deaths 0 AtLeast_Call 1 corsair icc_big
+attack_add 5 lurker
+attack_add 6 hydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 4500
+
+train 4 hhydralisk
+train 6 mutalisk
+train 1 guardian
+train 10 hydralisk
+deaths 0 AtLeast_Call 1 corsair icc_small
+attack_add 10 hydralisk
+attack_add 6 mutalisk
+attack_add 1 guardian
+attack_add 4 hhydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+train 2 queen
+wait 3000
+
+train 5 hhydralisk
+train 2 hydralisk
+train 2 lurker
+train 4 ultralisk
+train 7 hydralisk
+deaths 0 AtLeast_Call 1 corsair icc_small
+attack_add 7 hydralisk
+attack_add 2 lurker
+attack_add 4 ultralisk
+attack_add 5 hhydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+attack_add 2 ultralisk
+goto block5
+
+:upgrade_block
+upgrade 1 zergling_speed 30
+upgrade 1 hydralisk_range 30
+upgrade 1 z_missile_attack 30
+upgrade 1 z_flyer_attack 30
+wait_rand 4500 6335
+
+tech ensnare 30
+upgrade 2 z_missile_attack 30
+upgrade 1 hydralisk_speed 30
+upgrade 1 z_melee_attack 30
+upgrade 2 z_carapace 30
+upgrade 1 ultralisk_speed 30
+upgrade 2 z_flyer_carapace 30
+wait_rand 5150 7000
+
+tech spawn_broodling 30
+upgrade 1 overlord_sight 30
+upgrade 3 z_missile_attack 30
+upgrade 2 z_flyer_attack 30
+upgrade 2 z_melee_attack 30
+upgrade 1 zergling_attack 30
+wait_rand 10500 14500
+
+upgrade 3 z_flyer_attack 30
+upgrade 3 z_carapace 30
+upgrade 1 queen_mana 30
+upgrade 3 z_flyer_carapace 30
+wait_rand 4500 9000
+
+upgrade 1 ultralisk_armor 30
+upgrade 3 z_melee_attack 30
+wait 480
+
+stop
+
+:defense_config
+deaths 0 Exactly 2 scout defense_config1
+deaths 0 Exactly 3 scout defense_config2
+deaths 0 Exactly 4 scout defense_config3
+deaths 0 Exactly 5 scout defense_config4
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defensebuild_gg 1 hhydralisk
+defenseuse_gg 1 hhydralisk
+defensebuild_gg 2 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_gg 1 lurker
+defenseuse_gg 1 lurker
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defensebuild_ag 2 hydralisk
+defenseuse_ag 2 hydralisk
+defensebuild_ag 1 hhydralisk
+defenseuse_ag 1 hhydralisk
+defensebuild_ga 1 mutalisk
+defensebuild_ga 1 guardian
+defenseuse_ga 1 guardian
+defensebuild_aa 2 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 1 devourer
+defenseuse_aa 1 devourer
+goto dc_loop
+
+:defense_config1
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defensebuild_gg 1 hhydralisk
+defenseuse_gg 1 hhydralisk
+defensebuild_gg 2 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_gg 1 lurker
+defenseuse_gg 1 lurker
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+defensebuild_ag 1 hhydralisk
+defenseuse_ag 1 hhydralisk
+defensebuild_ga 1 mutalisk
+defensebuild_ga 1 guardian
+defenseuse_ga 1 guardian
+defensebuild_aa 2 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 1 devourer
+defenseuse_aa 1 devourer
+goto dc_loop
+
+:defense_config2
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defensebuild_gg 1 hhydralisk
+defenseuse_gg 1 hhydralisk
+defensebuild_gg 2 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_gg 1 lurker
+defenseuse_gg 1 lurker
+defensebuild_gg 2 mutalisk
+defenseuse_gg 1 mutalisk
+defensebuild_gg 1 guardian
+defenseuse_gg 1 guardian
+defensebuild_ag 2 hydralisk
+defenseuse_ag 2 hydralisk
+defensebuild_ag 1 hhydralisk
+defenseuse_ag 1 hhydralisk
+defensebuild_ga 2 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_ga 1 guardian
+defenseuse_ga 1 guardian
+defensebuild_aa 3 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 1 devourer
+defenseuse_aa 1 devourer
+defensebuild_aa 1 guardian
+defenseuse_aa 1 guardian
+goto dc_loop
+
+:defense_config3
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defensebuild_gg 2 hhydralisk
+defenseuse_gg 2 hhydralisk
+defensebuild_gg 3 hydralisk
+defenseuse_gg 2 hydralisk
+defensebuild_gg 1 lurker
+defenseuse_gg 1 lurker
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defensebuild_ag 2 hydralisk
+defenseuse_ag 2 hydralisk
+defensebuild_ag 2 hhydralisk
+defenseuse_ag 2 hhydralisk
+defensebuild_ga 1 mutalisk
+defensebuild_ga 1 guardian
+defenseuse_ga 1 guardian
+defensebuild_aa 2 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 1 devourer
+defenseuse_aa 1 devourer
+goto dc_loop
+
+:defense_config4
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defensebuild_gg 1 hhydralisk
+defenseuse_gg 1 hhydralisk
+defensebuild_gg 2 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_gg 1 lurker
+defenseuse_gg 1 lurker
+defensebuild_gg 1 mutalisk
+defenseuse_gg 1 mutalisk
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defensebuild_ag 2 hydralisk
+defenseuse_ag 2 hydralisk
+defensebuild_ag 1 hhydralisk
+defenseuse_ag 1 hhydralisk
+defensebuild_ga 1 mutalisk
+defensebuild_ga 1 guardian
+defenseuse_ga 1 guardian
+defensebuild_aa 3 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 1 devourer
+defenseuse_aa 1 devourer
+defensebuild_aa 1 guardian
+defenseuse_aa 1 guardian
+:dc_loop
+wait 1500
+
+goto dc_loop
+
+:raynor_picker
+wait 50
+
+load_bank raynor
+wait 1
+
+multirun bank_handler
+#print RaynorPick
+bank_data Exactly 1 raynor hype bc_hyp
+bank_data Exactly 1 raynor stal bc_sta 
+bank_data Exactly 1 raynor bism bc_bis
+bank_data Exactly 1 raynor graf bc_gra
+bank_data Exactly 1 raynor nora bc_nor
+bank_data Exactly 1 raynor levi bc_lev
+deaths 3 Set 3 214 raynor_picker
+#set hyperion as default if no bank value
+goto bc_hyp
+
+:bc_sta
+deaths 7 Set 1 214 raynor_picker
+stop
+
+:bc_bis
+deaths 7 Set 2 214 raynor_picker
+stop
+#skip 3 because that goes to hyperion because of original ordering
+:bc_gra
+deaths 7 Set 4 214 raynor_picker
+stop
+
+:bc_nor
+deaths 7 Set 5 214 raynor_picker
+stop
+
+:bc_lev
+deaths 7 Set 6 214 raynor_picker
+stop
+#3 here!
+:bc_hyp
+deaths 7 Set 3 214 raynor_picker
+stop
+
+:bank_handler
+wait 16
+
+load_bank aiur_composition
+#aiur composition note -
+#most comps make this AI slightly harder, with easiest comp = win without triggering any other conditions (config 1)
+#default to a slightly stronger version of config 1 if Player did not do vZ10 at all
+wait 1
+multirun icc_check
+#use scout deaths here, remember to not give red scout deaths via anything else
+bank_data Exactly 1 aiur_composition type comp_config_1
+bank_data Exactly 2 aiur_composition type comp_config_2
+bank_data Exactly 3 aiur_composition type comp_config_3
+bank_data Exactly 4 aiur_composition type comp_config_4
+deaths 0 Set 1 scout bank_handler
+#not read elsewhere except it lets us know bank reading is done for flow part
+stop
+
+:comp_config_1
+#air focus bank
+deaths 0 Set 2 scout bank_handler
+stop
+
+:comp_config_2
+#hydra ultra focus bank
+deaths 0 Set 3 scout bank_handler
+stop
+
+:comp_config_3
+#player won while fullclearing
+deaths 0 Set 4 scout bank_handler
+stop
+
+:comp_config_4
+#set 1 to verify we did bank
+deaths 0 Set 5 scout bank_handler
+stop
+
+:icc_check
+wait 16
+
+load_bank infested_aiur
+wait 1
+
+bank_data Exactly 1 infested_aiur infested icc1
+bank_data Exactly 2 infested_aiur infested icc2
+#use corsair/escort deaths for this
+deaths 0 Set 0 corsair bank_handler
+stop
+
+:icc1
+deaths 0 Set 1 corsair bank_handler
+goto icc_check_early
+
+:icc2
+deaths 0 Set 2 corsair bank_handler
+:icc_check_early
+define_max 3 infested_terran
+defenseuse_gg 1 infested_terran
+#template to use later for it attacks:
+#deaths 0 AtLeast_Call 1 corsair icc_small
+#deaths 0 AtLeast_Call 1 corsair icc_big
+guard infested_terran Loc.40 1 3 60
+guard infested_terran Loc.41 1 3 60
+guard infested_terran Loc.42 1 3 60
+stop
+
+:icc_small
+attack_add 1 infested_terran
+return
+
+:icc_big
+attack_add 3 infested_terran
+return
+
+:expansions
+wait_rand 4344 5500
+
+allies_watch 4 gas_expansion
+wait 8000
+
+panic expansion
+wait_rand 24500 36500
+
+expand 2 expansion
+wait 19200
+
+expand 2 expansion
+wait 5000
+
+stop
+
+:expansion
+start_town
+build 1 hatchery 100
+get_oldpeons 1
+wait_build 1 hatchery
+build 3 drone 90
+build 5 drone 80
+wait_build 5 drone
+creep 4
+:back_normal
+build 1 creep_colony 80
+wait 860
+
+build 1 sunken_colony 80
+wait 550
+
+build 12 drone 80
+build 2 creep_colony 80
+call rnd_bld
+wait 860
+
+build 1 spore_colony 80
+build 1 drone 130
+wait 10500
+wait 6700
+wait 5505
+:loop
+wait 1500
+
+goto loop
+
+:gas_expansion
+start_town
+build 1 hatchery 110
+get_oldpeons 1
+wait_build 1 hatchery
+build 3 drone 90
+build 5 drone 80
+wait_build 5 drone
+build 3 extractor 80
+creep 4
+goto back_normal
+
+:rnd_bld
+random_jump 85 rnd_hydra
+random_jump 128 rnd_evo
+build 1 spire 80
+return
+
+:rnd_hydra
+build 1 hydralisk_den 80
+return
+
+:rnd_evo
+build 1 evolution_chamber 80
+return
+
+#:SimpleTarget
+#unstart_campaign
+#attack_prepare
+#start_campaign
+#return
+
+:SimpleTarget
+deaths 13 Exactly 0 wraith spec_tar_1
+deaths 13 Exactly 3 wraith spec_tar_2
+#marker wraith death for this player's targeting needs
+time_jump 25 later_random
+random_jump 128 closest_trg
+goto campaign_trg
+
+:later_random
+random_jump 85 closest_trg
+random_jump 128 campaign_trg
+goto exp_trg
+
+:spec_tar_1
+attack_to Loc.87 Loc.88
+deaths 13 Add 1 wraith spec_tar_2
+return
+
+:spec_tar_2
+attack_to Loc.89 Loc.90
+deaths 13 Add 1 wraith spec_tar_1
+return
+
+:closest_trg
+unstart_campaign
+attack_prepare
+start_campaign
+deaths 13 Add 1 wraith spec_tar_1
+return
+
+:exp_trg
+unstart_campaign
+set_attacks 1
+target_expansion
+start_campaign
+deaths 13 Add 1 wraith spec_tar_1
+return
+
+:campaign_trg
+attack_prepare
+deaths 13 Add 1 wraith spec_tar_1
+return
+
+:grand_exchange
+wait 2650
+
+:ge_init
+wait_rand 100 145
+
+call ge_gas
+call ge_mins
+time_jump 50 late_gas_detour
+goto ge_init
+
+:late_gas_detour
+resources 13 AtMost Gas 1199 ge_init
+resources 13 AtLeast Ore 2200 ge_init
+resources 13 Subtract Gas 200 ge_init
+resources 13 Add Ore 266 ge_init
+goto ge_init
+
+:ge_gas
+resources 13 AtLeast Gas 600 ge_skip
+resources 13 AtMost Ore 1099 ge_skip
+resources 13 Subtract Ore 170 ge_skip
+resources 13 Add Gas 80 ge_skip
+return
+
+:ge_mins
+resources 13 AtMost Gas 599 ge_skip
+resources 13 AtLeast Ore 1100 ge_skip
+resources 13 Subtract Gas 100 ge_skip
+resources 13 Add Ore 133 ge_skip
+return
+
+:ge_skip
+return
+
+

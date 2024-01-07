@@ -1,0 +1,26 @@
+extdef F:/Scripts/PyMS-master/unitdef.txt
+
+
+# stat_txt.tbl entry 1449: Brood Wars Zerg 2 - Town C<0>
+ZB2C(1449, 111, bwscript):
+	start_campaign()
+	start_areatown()
+	defaultbuild_off()
+	default_min(0)
+	wait(1)
+	build(1, hatchery, 90)
+	build(1, drone, 90)
+	build(11, drone, 80)
+	build(4, creep_colony, 80)
+	build(2, sunken_colony, 80)
+	build(2, spore_colony, 80)
+	build(1, hydralisk_den, 80)
+	max_workers(14)
+	wait(15600)
+	max_workers(11)
+	wait(22800)
+	max_workers(255)
+
+		--ZB2C 0000--
+	wait(1500)
+	goto(ZB2C 0000)

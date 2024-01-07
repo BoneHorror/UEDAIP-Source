@@ -1,0 +1,491 @@
+script_name Protoss 10 - Overmind Defenders
+script_id P10o
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+#generic Zerg players with the classic 10 ultralisk attack 20 minutes in, few casters and heavy emphasis on defense
+build 1 hatchery 150
+build 4 drone 130
+build 18 drone 80
+build 1 spawning_pool 80
+build 1 lair 80
+build 1 evolution_chamber 80
+build 3 creep_colony 80
+build 3 spore_colony 80
+build 1 hydralisk_den 80
+build 1 ultralisk_cavern 80
+build 1 spire 80
+build 1 defiler_mound 80
+build 1 queen_nest 80
+build 1 hive 80
+build 1 greater_spire 80
+build 3 nydus_canal 80
+define_max 12 ultralisk
+define_max 30 drone
+define_max 64 zergling
+define_max 6 hzergling
+define_max 34 hydralisk
+define_max 14 mutalisk
+define_max 5 guardian
+define_max 3 devourer
+define_max 3 heavy_marine
+#heavy_marine is guardian kukulza
+define_max 16 scourge
+define_max 6 lurker
+define_max 3 queen
+define_max 2 defiler
+define_max 2 hdefiler
+define_max 255 hultralisk
+define_max 255 broodling
+#allow 7 muta, 5 guard, 3 devourer in modular script 
+idle_orders DisableBuiltin 0 0 0 0 0 0 0
+defensebuild_gg 2 ultralisk
+defenseuse_gg 2 ultralisk
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defensebuild_gg 2 hydralisk
+defenseuse_gg 2 hydralisk
+defensebuild_gg 2 mutalisk
+defenseuse_gg 1 mutalisk
+defensebuild_gg 1 guardian
+defenseuse_gg 1 guardian
+defenseuse_gg 1 broodling
+defensebuild_ag 3 hydralisk
+defenseuse_ag 3 hydralisk
+defensebuild_ag 2 scourge
+defenseuse_ag 2 scourge
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_aa 4 scourge
+defenseuse_aa 2 scourge
+defensebuild_aa 2 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 1 guardian
+defenseuse_aa 1 guardian
+max_force 1400
+supply 13 Set 250 Max 0 Zerg help_request
+idle_orders 10 24 3 mutalisk 160 heavy_marine|ghost|death_knight|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 90 Health(LessThan 27)
+idle_orders 10 24 1 mutalisk 128 heavy_marine|ghost|death_knight|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 70 Health(LessThan 9)
+idle_orders 10 24 2 mutalisk 128 bunker|missile_turret|photon_cannon|spore_colony 100 Health(LessThan 18)
+idle_orders 10 24 5 mutalisk 200 drone|scv|probe 100 0
+idle_orders 10 24 1 guardian 224 group_men 60 Health(LessThan 20)|Count(AtLeast 2 40 14)
+idle_orders 10 24 3 guardian 224 ghost|infested_terran|siege_tank|high_templar|archon|dark_archon|defiler 100 Health(LessThan 70)
+idle_orders 10 24 2 guardian 224 group_men 80 Health(LessThan 40)|Count(AtLeast 2 40 14)
+idle_orders 10 24 3 guardian 224 group_men 90 Health(LessThan 60)|Count(AtLeast 2 40 14)
+idle_orders 10 24 5 guardian 224 group_men 110 Health(LessThan 100)|Count(AtLeast 2 40 14)
+idle_orders 10 24 1 devourer 128 group_men 60 Health(LessThan 30)
+idle_orders 10 24 2 devourer 128 group_men 70 Health(LessThan 50)
+idle_orders 10 24 2 devourer 128 carrier|arbiter 90 Health(LessThan 50)
+idle_orders 11 160 2 lurker 192 drone|scv|probe 100 0
+idle_orders 11 160 1 lurker 192 Any 20 WithoutUnitFlags(Air)
+idle_orders 11 160 1 lurker 192 Any 50 WithoutUnitFlags(Air)|UnitFlags(Detector)
+idle_orders 11 160 1 lurker 192 Any 60 InCombat|WithoutUnitFlags(Air)
+idle_orders 11 160 1 lurker 192 Any 100 InCombat|WithoutUnitFlags(Air)|UnitFlags(Detector)
+idle_orders 10 32 2 zergling 100 drone|scv|probe 100 0
+idle_orders 10 32 1 zergling 192 infested_terran 60 InCombat
+idle_orders 10 32 3 zergling 120 panzer|death_knight|medic|siege_tank|goliath|revenant|dragoon|reaver|dark_archon|defiler 10 InCombat
+idle_orders 10 32 9 zergling 224 panzer|death_knight|medic|siege_tank|goliath|revenant|dragoon|reaver|dark_archon|defiler 70 InCombat
+idle_orders 10 32 1 hydralisk 210 group_men 80 Health(LessThan 8)
+idle_orders 10 32 1 hydralisk 210 panzer|phantom|ghost|death_knight|hnorad|battlecruiser|skywing|science_vessel|valhalla|siege_tank|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 110 Health(LessThan 10)
+idle_orders 10 32 1 hydralisk 210 bunker 90 Health(LessThan 20)
+idle_orders 10 32 3 hydralisk 210 group_men 90 Health(LessThan 30)
+idle_orders 10 32 3 hydralisk 210 panzer|phantom|ghost|death_knight|hnorad|battlecruiser|skywing|science_vessel|valhalla|siege_tank|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 130 Health(LessThan 30)
+idle_orders 10 32 3 hydralisk 210 bunker 100 Health(LessThan 20)
+idle_orders 10 32 5 hydralisk 210 panzer|phantom|ghost|death_knight|hnorad|battlecruiser|skywing|science_vessel|valhalla|siege_tank|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 135 Health(LessThan 50)
+idle_orders 10 32 5 hydralisk 210 bunker 110 Health(LessThan 20)
+idle_orders 10 32 7 hydralisk 224 panzer|phantom|ghost|death_knight|hnorad|battlecruiser|skywing|science_vessel|valhalla|siege_tank|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 150 Health(LessThan 65)
+idle_orders 10 24 1 scourge 224 arbiter|scout|corsair|devourer|carrier|battlecruiser|science_vessel 80 Health(LessThan 110)
+idle_orders 10 24 2 scourge 250 arbiter|scout|corsair|devourer|carrier|battlecruiser|science_vessel 80 Health(LessThan 220)
+idle_orders 10 24 3 scourge 275 arbiter|carrier|valhalla|science_vessel|battlecruiser 80 Health(LessThan 250)
+idle_orders 10 1024 4 scourge 1024 arbiter|carrier|valhalla|science_vessel|battlecruiser|102 80 InCombat
+idle_orders 10 64 3 zergling 356 174 1 NotEnemies|Allied|Count(Exactly 1 4 11)|WithoutUnitFlags(Invincible)
+aicontrol global_disable_spell_focus
+aicontrol global_disable_acid_spore_focus
+aicontrol global_disable_carrier_focus
+upgrade 1 overlord_speed 30
+upgrade 1 overlord_capacity 30
+tech burrowing 30
+tech lurker_aspect 30
+upgrade 1 z_carapace 30
+upgrade 1 z_flyer_carapace 30
+upgrade 1 zergling_speed 30
+upgrade 1 hydralisk_speed 30
+upgrade 1 z_melee_attack 30
+upgrade 1 z_missile_attack 30
+upgrade 1 z_flyer_attack 30
+wait 366
+
+guard zergling Loc.16 1 1 60
+guard zergling Loc.107 1 1 60
+guard zergling Loc.108 1 1 60
+multirun help_request
+tech spawn_broodling 30
+idle_orders 120 0 1 queen 1024 overlord|observer|science_vessel|defiler|skywing|dropship|shuttle|arbiter|valhalla|defiler|queen|ghost 30 WithoutSpellEffects(Parasite)|RandomRate(280 820)|Self(Energy(GreaterThanPercent 80))
+capt_expand
+attack_add 5 mutalisk
+attack_to Loc.65 Loc.66
+wait 300
+
+attack_do
+attack_clear
+attack_add 8 hydralisk
+attack_to Loc.70 Loc.71
+wait 500
+
+attack_do
+attack_clear
+wait 1350
+
+call ally_money_check
+bring_jump 3 Exactly 0 group_factories Loc.63 sw_1
+#sw stands for skip wait - done if our allies are gone too quickly!
+wait 1650
+
+:sw_1
+train 1 hydralisk
+train 1 lurker
+train 20 zergling
+attack_add 20 zergling
+attack_add 1 lurker
+attack_to Loc.94 Loc.95
+wait 300
+
+attack_do
+attack_clear
+upgrade 1 hydralisk_range 30
+upgrade 1 burrowed_regen 30
+call ally_money_check
+bring_jump 3 Exactly 0 group_factories Loc.63 sw_2
+wait 2200
+
+:sw_2
+multirun mineral_helper
+multirun gas_helper
+idle_orders 121 8 1 queen 812 zergling|marine 5 Health(GreaterThanPercent 85)
+idle_orders 121 8 1 queen 812 hydralisk|firebat|medic 40 Health(GreaterThanPercent 85)
+idle_orders 121 8 1 queen 812 lurker|siege_tank 70 Health(GreaterThanPercent 25)
+idle_orders 121 8 1 queen 812 ultralisk 120 Health(GreaterThanPercent 25)
+idle_orders 121 8 1 queen 812 zealot|vulture 30 Health(GreaterThanPercent 45)
+idle_orders 121 8 1 queen 812 dragoon|goliath 60 Health(GreaterThanPercent 45)
+idle_orders 121 8 1 queen 812 high_templar|ghost 70 Health(GreaterThanPercent 65)
+idle_orders 121 8 1 queen 812 dark_templar|revenant 50 Health(GreaterThanPercent 55)
+upgrade 2 z_carapace 30
+upgrade 2 z_flyer_carapace 30
+upgrade 2 z_missile_attack 30
+upgrade 2 z_flyer_attack 30
+upgrade 2 z_melee_attack 30
+upgrade 1 zergling_attack 30
+train 3 hydralisk
+train 6 zergling
+attack_add 3 hydralisk
+attack_add 6 zergling
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+multirun grand_exchange
+capt_expand
+tech plague 30
+tech ensnare 30
+upgrade 1 overlord_sight 30
+defensebuild_gg 1 hzergling
+defenseuse_gg 1 hzergling
+guard hzergling Loc.72 1 3 60
+guard hzergling Loc.73 1 3 60
+guard hzergling Loc.74 1 3 60
+guard hzergling Loc.75 1 3 60
+idle_orders 119 64 1 defiler 512 zergling 30 own|allied|notenemies|incombat|Count(AtLeast 3 100 14)
+idle_orders 119 64 1 defiler 512 ultralisk 50 own|allied|notenemies|incombat|Count(AtLeast 2 100 14)
+idle_orders 119 64 1 defiler 512 ultralisk 30 own|notenemies|incombat
+idle_orders 119 64 1 defiler 512 hultralisk 70 own|notenemies|incombat
+idle_orders 119 64 1 defiler 512 zergling 10 own|notenemies|incombat
+idle_orders 119 64 1 defiler 512 lurker 40 own|notenemies|incombat
+idle_orders 119 64 1 defiler 512 lurker 90 own|notenemies|incombat|Count(AtLeast 2 100 14)
+idle_orders 119 64 1 defiler 512 hydralisk 55 own|notenemies|incombat|count(AtLeast 3 60 13)
+idle_orders 119 64 1 hdefiler 336 zergling 30 own|allied|notenemies|incombat|Count(AtLeast 3 100 14)
+idle_orders 119 64 1 hdefiler 336 ultralisk 50 own|allied|notenemies|incombat|Count(AtLeast 2 100 14)
+idle_orders 119 64 1 hdefiler 336 ultralisk 30 own|notenemies|incombat
+idle_orders 119 64 1 hdefiler 336 hultralisk 70 own|notenemies|incombat
+idle_orders 119 64 1 hdefiler 336 zergling 10 own|notenemies|incombat
+idle_orders 119 64 1 hdefiler 336 lurker 40 own|notenemies|incombat
+idle_orders 119 64 1 hdefiler 336 lurker 90 own|notenemies|incombat|Count(AtLeast 2 100 14)
+idle_orders 119 64 1 hdefiler 336 hydralisk 55 own|notenemies|incombat|count(AtLeast 3 60 13)
+call ally_money_check
+bring_jump 0 Exactly 0 group_factories Loc.63 sw_3
+wait 2500
+
+:sw_3
+train 1 hdefiler
+train 2 ultralisk
+train 2 hzergling
+attack_add 2 hzergling
+attack_add 1 hdefiler
+attack_add 2 ultralisk
+attack_to Loc.70 Loc.71
+wait 500
+
+attack_do
+attack_clear
+wait 1350
+
+train 2 hydralisk
+train 5 mutalisk
+train 2 lurker
+train 4 hydralisk
+attack_add 5 mutalisk
+attack_add 2 lurker
+attack_add 4 hydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|marine|vulture 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 60))
+idle_orders 146 0 1 queen 1024 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 65))
+idle_orders 146 0 1 queen 1024 dragoon|corsair|scout|dark_templar|wraith|ghost 40 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 50))
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|dragoon|corsair|scout|dark_archon|devourer|guardian|dark_templar|goliath|siege_tank|revenant 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 60))
+idle_orders 146 0 1 queen 1024 reaver|dark_archon|archon|devourer|guardian|hnorad|battlecruiser|carrier|arbiter 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 40))
+idle_orders 146 8 1 queen 312 group_men 30 deathrattle
+idle_orders 144 64 1 defiler 512 group_men 55 incombat|count(AtLeast 3 120 14) 
+idle_orders 144 64 1 defiler 512 high_templar|scout|corsair|wraith|science_vessel|siege_tank|goliath 80 incombat|count(AtLeast 3 120 14)
+idle_orders 144 64 1 defiler 512 arbiter|reaver|battlecruiser|carrier 115 incombat|count(AtLeast 2 120 14)
+idle_orders 144 64 1 defiler 512 arbiter|battlecruiser|carrier 80 incombat
+idle_orders 144 64 1 defiler 512 ghost|vulture|dropship|shuttle 55 incombat|count(AtLeast 4 120 14)
+idle_orders 144 64 1 hdefiler 336 group_men 55 incombat|count(AtLeast 3 120 14) 
+idle_orders 144 64 1 hdefiler 336 high_templar|scout|corsair|wraith|science_vessel|siege_tank|goliath 80 incombat|count(AtLeast 3 120 14)
+idle_orders 144 64 1 hdefiler 336 arbiter|reaver|battlecruiser|carrier 115 incombat|count(AtLeast 2 120 14)
+idle_orders 144 64 1 hdefiler 336 arbiter|battlecruiser|carrier 80 incombat
+idle_orders 144 64 1 hdefiler 336 ghost|vulture|dropship|shuttle 55 incombat|count(AtLeast 4 120 14)
+upgrade 3 z_carapace 30
+upgrade 3 z_flyer_carapace 30
+upgrade 3 z_missile_attack 30
+upgrade 3 z_flyer_attack 30
+upgrade 3 z_melee_attack 30
+tech consume 50
+upgrade 1 ultralisk_speed 30
+guard defiler Loc.33 1 3 60
+wait 1500
+
+call ally_money_check
+bring_jump 0 Exactly 0 group_factories Loc.63 sw_4
+wait 3000
+
+:sw_4
+idle_orders Consume 16 1 defiler 512 zergling 70 NotEnemies|Own|Health(LessThanPercent 80)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 16 1 defiler 512 broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 16 1 hdefiler 336 zergling 70 NotEnemies|Own|Health(LessThanPercent 80)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 16 1 hdefiler 336 broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
+train 1 defiler
+train 2 hzergling
+train 36 zergling
+attack_add 1 defiler
+attack_add 34 zergling
+attack_add 2 hzergling
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+train 2 hydralisk
+train 5 mutalisk
+train 4 hydralisk
+attack_add 5 mutalisk
+attack_add 4 hydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+guard hdefiler Loc.76 1 3 60
+guard hdefiler Loc.77 1 3 60
+defensebuild_gg 1 hdefiler
+defenseuse_gg 1 hdefiler
+upgrade 1 queen_mana 30
+upgrade 1 defiler_mana 30
+wait 2000
+
+call ally_money_check
+bring_jump 0 Exactly 0 group_factories Loc.63 sw_5
+wait 3000
+
+:sw_5
+train 1 queen
+train 10 ultralisk
+train 6 mutalisk
+attack_add 1 queen
+attack_add 10 ultralisk
+attack_add 6 mutalisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+guard defiler Loc.34 1 3 60
+guard heavy_marine Loc.78 1 3 60
+guard heavy_marine Loc.79 1 3 60
+guard heavy_marine Loc.80 1 3 60
+defensebuild_gg 1 heavy_marine
+defenseuse_gg 1 heavy_marine
+defensebuild_aa 1 heavy_marine
+defenseuse_aa 1 heavy_marine
+define_max 1 hultralisk
+upgrade 1 ultralisk_armor 30
+guard hultralisk Loc.35 1 5 80
+defensebuild_gg 1 hultralisk
+defenseuse_gg 1 hultralisk
+:block1
+wait 2000
+
+bring_jump 0 Exactly 0 group_factories Loc.63 sw_6
+wait 4000
+
+:sw_6
+train 2 ultralisk
+train 2 queen
+train 27 hydralisk
+attack_add 2 queen
+attack_add 27 hydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 4500
+
+train 1 hdefiler
+train 44 zergling
+train 6 mutalisk
+attack_add 44 zergling
+attack_add 1 hdefiler
+attack_add 6 mutalisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 5000
+
+train 14 hydralisk
+train 2 heavy_marine
+train 24 zergling
+train 4 lurker
+attack_add 4 lurker
+attack_add 2 heavy_marine
+attack_add 24 zergling
+attack_add 10 hydralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+wait 3750
+
+train 2 defiler
+train 4 hzergling
+train 2 ultralisk
+train 7 mutalisk
+train 1 hdefiler
+train 1 hultralisk
+train 22 zergling
+train 10 hydralisk
+attack_add 7 mutalisk
+attack_add 2 defiler
+attack_add 1 hdefiler
+attack_add 10 hydralisk
+attack_add 22 zergling
+attack_add 4 hzergling
+attack_add 6 ultralisk
+attack_add 1 hultralisk
+call SimpleTarget
+wait 500
+
+attack_do
+attack_clear
+attack_add 3 ultralisk
+goto block1
+
+:SimpleTarget
+attack_prepare
+return
+#try no campaign un-setting to see how it works with capt_expand
+
+:mineral_helper
+wait 160
+
+resources 13 AtLeast Ore 1000 mineral_helper
+resources 13 Add Ore 80 mineral_helper
+goto mineral_helper
+
+:gas_helper
+wait 160
+
+resources 13 AtLeast Gas 600 gas_helper
+resources 13 Add Gas 50 gas_helper
+goto gas_helper
+
+:help_request
+wait 150
+
+bring_jump 14 Exactly 0 group_men Loc.8 help_request
+help_iftrouble
+wait_secure
+wait 2000
+goto help_request
+
+:grand_exchange
+wait 2650
+
+:ge_init
+wait_rand 100 145
+
+call ge_gas
+call ge_mins
+time_jump 50 late_gas_detour
+goto ge_init
+
+:late_gas_detour
+resources 13 AtMost Gas 1199 ge_init
+resources 13 AtLeast Ore 2200 ge_init
+resources 13 Subtract Gas 200 ge_init
+resources 13 Add Ore 266 ge_init
+goto ge_init
+
+:ge_gas
+resources 13 AtLeast Gas 600 ge_skip
+resources 13 AtMost Ore 1099 ge_skip
+resources 13 Subtract Ore 170 ge_skip
+resources 13 Add Gas 80 ge_skip
+return
+
+:ge_mins
+resources 13 AtMost Gas 599 ge_skip
+resources 13 AtLeast Ore 1100 ge_skip
+resources 13 Subtract Gas 100 ge_skip
+resources 13 Add Ore 133 ge_skip
+
+:ge_skip
+return
+
+:ally_money_check
+#if either of our allies is dead, get some extra cash
+bring_jump 3 Exactly 0 group_factories Loc.63 ally_cash_1
+:ac_1_return
+bring_jump 0 Exactly 0 group_factories Loc.63 ally_cash_2
+goto ge_skip
+
+:ally_cash_1
+resources 13 Add Ore 1000 ge_skip
+resources 13 Add Gas 500 ge_skip
+goto ac_1_return
+
+:ally_cash_2
+resources 13 Add Ore 2000 ge_skip
+resources 13 Add Gas 1000 ge_skip
+goto ge_skip

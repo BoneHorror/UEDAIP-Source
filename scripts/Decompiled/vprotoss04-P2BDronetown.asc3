@@ -1,0 +1,21 @@
+script_name Brood Wars Protoss 2 - Town B
+script_id PB2B
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+build 2 creep_colony 80
+wait_build 1 creep_colony
+build 1 sunken_colony 80
+wait_build 2 creep_colony
+build 2 sunken_colony 80
+wait_build 2 sunken_colony
+guard_all
+:cloop
+wait 1500
+
+help_iftrouble
+goto cloop

@@ -1,0 +1,385 @@
+script_name Zerg 9 - Teal Protoss
+script_id Zer9
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 1
+wait 1
+
+build 1 nexus 150
+build 2 probe 130
+build 11 probe 80
+build 1 gateway 80
+build 1 cybernetics_core 80
+build 1 robotics_facility 80
+build 1 robotics_support_bay 80
+upgrade 1 shuttle_speed 30
+upgrade 1 p_plasma_shield 30
+upgrade 1 dragoon_range 30
+upgrade 1 p_armor 30
+upgrade 1 p_plating 30
+upgrade 1 p_ground_weapon 30
+upgrade 1 p_air_weapon 30
+max_workers 14
+multirun allieswatchidle
+defensebuild_gg 1 dragoon
+defenseuse_gg 1 dragoon
+defensebuild_gg 1 zealot
+defenseuse_gg 1 zealot
+defenseuse_gg 1 reaver
+defensebuild_ag 1 dragoon
+defenseuse_ag 1 dragoon
+defensebuild_ga 1 scout
+defenseuse_ga 1 scout
+defensebuild_aa 1 scout
+defenseuse_aa 1 scout
+define_max 40 probe
+define_max 5 shuttle
+define_max 5 observer
+define_max 7 zealot
+define_max 12 dragoon
+define_max 3 reaver
+define_max 7 scout
+idle_orders 59 16 1 reaver 128 hhydralisk 130 count(AtLeast 2 40 14)
+idle_orders 59 16 1 reaver 128 zergling 80 count(AtLeast 5 40 14)
+idle_orders 59 16 1 reaver 128 hydralisk 60 count(AtLeast 2 40 14)
+max_force 600
+wait 16
+
+attack_add 1 scout
+attack_prepare
+attack_do
+attack_clear
+wait 600
+
+attack_add 3 dragoon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 4000
+
+attack_add 3 dragoon
+attack_add 1 reaver
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3800
+
+attack_add 3 scout
+attack_add 1 reaver
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3745
+
+attack_add 1 reaver
+attack_add 4 dragoon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3850
+
+attack_add 1 reaver
+attack_add 4 scout
+attack_add 4 dragoon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 scarab_damage 30
+:block1
+wait 2500
+
+train 12 dragoon
+attack_add 12 dragoon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3500
+
+train 4 scout
+train 1 reaver
+train 8 scout
+train 2 reaver
+attack_add 2 reaver
+attack_add 8 scout
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1500
+
+train 2 scout 
+train 2 zealot
+train 1 dragoon
+train 3 scout
+train 2 dragoon
+train 4 dragoon
+attack_add 3 scout
+attack_add 2 zealot
+attack_add 4 dragoon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2250
+
+train 2 scout
+train 1 reaver
+train 2 dragoon
+train 4 scout
+train 4 dragoon
+attack_add 4 scout
+attack_add 1 reaver
+attack_add 4 dragoon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3000
+
+train 2 scout
+train 2 reaver
+train 4 scout
+attack_add 2 reaver
+attack_add 4 scout
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 16
+
+attack_add 4 scout
+attack_add 1 reaver
+define_max 20 dragoon
+attack_add 8 dragoon
+goto block1
+
+:allieswatchidle
+wait 8000
+
+:allieswatchinitiate
+allies_watch 5 exp
+wait 500
+
+try_townpoint 1 allieswatchinitiate
+wait 15000
+
+:allieswatchcontinue
+allies_watch 8 exp
+wait 500
+
+try_townpoint 2 allieswatchcontinue
+stop
+
+:exp
+start_town
+build 1 nexus 80
+get_oldpeons 1
+wait_build 1 nexus
+get_oldpeons 2
+build 2 probe 80
+build 1 pylon 80
+wait_build 1 pylon
+build 10 probe 80
+build 2 pylon 80
+wait_build 2 pylon
+build 1 gateway 80
+build 1 robotics_facility 80
+build 1 stargate 80
+player_need 1 robotics_support_bay
+player_need 1 cybernetics_core
+wait 1500
+
+if_attacking aa_1
+goto prep_1 
+
+:aa_1
+attack_add 1 zealot
+goto finish_1
+
+:prep_1
+attack_add 1 zealot
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+:finish_1
+wait 3500
+
+if_attacking aa_2
+goto prep_2 
+
+:aa_2
+attack_add 1 zealot
+attack_add 1 dragoon
+goto finish_2
+
+:prep_2
+attack_add 1 zealot
+attack_add 1 dragoon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+:finish_2
+wait 3000
+
+if_attacking aa_3
+goto prep_3
+
+:aa_3
+attack_add 1 zealot
+attack_add 1 dragoon
+attack_add 1 reaver
+goto finish_3
+
+:prep_3
+attack_add 1 zealot
+attack_add 1 dragoon
+attack_add 1 reaver
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+:finish_3
+
+:blockexp
+wait 5000
+
+if_attacking aa_4
+goto prep_4 
+
+:aa_4
+attack_add 3 zealot
+goto finish_4
+
+:prep_4
+attack_add 3 zealot
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+:finish_4
+wait 6500
+
+if_attacking aa_5
+goto prep_5 
+
+:aa_5
+attack_add 2 zealot
+attack_add 2 dragoon
+goto finish_5
+
+:prep_5
+attack_add 2 zealot
+attack_add 2 dragoon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+:finish_5
+wait 3500
+
+if_attacking aa_6
+goto prep_6
+
+:aa_6
+attack_add 2 zealot
+attack_add 1 dragoon
+attack_add 1 reaver
+goto finish_6
+
+:prep_6
+attack_add 2 zealot
+attack_add 1 dragoon
+attack_add 1 reaver
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+:finish_6
+wait 4000
+
+if_attacking aa_7
+goto prep_7
+
+:aa_7
+attack_add 3 scout
+goto finish_7
+
+:prep_7
+attack_add 3 scout
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+:finish_7
+wait 5000
+
+if_attacking aa_8
+goto prep_8
+
+:aa_8
+attack_add 2 scout
+attack_add 1 reaver
+goto finish_8
+
+:prep_8
+attack_add 2 scout
+attack_add 1 reaver
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+:finish_8
+wait 6500
+
+if_attacking aa_9
+goto prep_9
+
+:aa_9
+attack_add 2 zealot
+attack_add 1 dragoon
+attack_add 1 reaver
+attack_add 1 scout
+goto finish_9
+
+:prep_9
+attack_add 2 zealot
+attack_add 1 dragoon
+attack_add 1 reaver
+attack_add 1 scout
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+:finish_9
+goto blockexp

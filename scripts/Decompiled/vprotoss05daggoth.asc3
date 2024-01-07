@@ -1,0 +1,768 @@
+script_name Protoss 5 - Zerg Town Base
+script_id Pr5B
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+if_owned command_center duke_ai
+#uses Z1D Z1E for areatowns!
+build 1 hatchery 150
+build 1 drone 130
+creep 4
+build 1 spawning_pool 80
+build 1 lair 80
+build 1 evolution_chamber 80
+build 6 creep_colony 80
+build 3 sunken_colony 80
+build 3 spore_colony 80
+build 1 hydralisk_den 80
+build 1 queen_nest 80
+define_max 36 zergling
+define_max 45 drone
+define_max 14 hydralisk
+define_max 255 hhydralisk
+define_max 4 scourge
+define_max 6 mutalisk
+define_max 6 lurker
+define_max 2 queen
+define_max 5 ultralisk
+define_max 255 broodling
+idle_orders DisableBuiltin 0 0 0 0 0 0 0
+defensebuild_gg 1 lurker
+defenseuse_gg 1 lurker
+defenseuse_gg 1 broodling
+defensebuild_gg 2 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_gg 4 zergling
+defenseuse_gg 4 zergling
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+defensebuild_ag 1 scourge
+defenseuse_ag 1 scourge
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+idle_orders 120 0 1 queen 1024 overlord|observer|science_vessel|defiler|skywing|dropship|shuttle|arbiter|valhalla|defiler|queen|ghost 30 WithoutSpellEffects(Parasite)|RandomRate(280 820)
+idle_orders 27 13 1 queen 1532 command_center 80 health(LessThanPercent,66)
+max_force 833
+farms_timing
+upgrade 1 overlord_capacity 30
+upgrade 1 overlord_speed 30
+tech burrowing 30
+tech lurker_aspect 30
+wait 650
+
+max_workers 20
+build 12 drone 80
+wait_buildstart 11 drone
+build 16 drone 80
+panic def_exp
+upgrade 1 z_missile_attack 60
+upgrade 1 zergling_speed 40
+train 12 zergling
+#multirun AmbushDa1
+#multirun AmbushDa2
+attack_add 12 zergling
+call AStrg
+wait 500
+
+attack_do
+attack_clear
+tech ensnare 50
+allies_watch 10 def_exp
+upgrade 1 z_melee_attack 40
+wait 1866
+
+upgrade 1 hydralisk_range 50
+upgrade 2 z_missile_attack 60
+train 2 ultralisk
+train 2 hydralisk
+train 2 lurker
+attack_add 2 ultralisk
+attack_add 2 lurker
+call AStrg
+wait 500
+
+attack_do
+attack_clear
+guard hydralisk Loc.11 1 1 110
+guard hydralisk Loc.12 1 1 110
+upgrade 1 hydralisk_speed 50
+upgrade 1 z_carapace 50
+wait 300
+
+train 10 zergling
+train 2 hydralisk
+call muta_small
+attack_add 2 hydralisk
+attack_add 10 zergling
+attack_to Loc.61 Loc.62
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 burrowed_regen 50
+upgrade 2 z_melee_attack 40
+train 2 queen
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|marine|vulture|heavy_marine|scorpion 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)
+idle_orders 146 0 1 queen 1024 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)
+idle_orders 146 0 1 queen 1024 dragoon|corsair|scout|dark_templar|wraith|ghost|skywing|phantom 40 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(160 540)
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|dragoon|corsair|scout|dark_archon|devourer|guardian|dark_templar|goliath|siege_tank|revenant|death_knight|panzer 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(160 540)
+idle_orders 146 0 1 queen 1024 reaver|dark_archon|archon|devourer|guardian|hnorad|battlecruiser|valhalla|carrier|arbiter 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)
+idle_orders 146 8 1 queen 312 group_men 30 deathrattle
+wait 2380
+
+train 10 zergling
+train 4 ultralisk
+attack_add 10 zergling
+attack_add 4 ultralisk
+call AStrg
+wait 300
+
+attack_do
+attack_clear
+allies_watch 9 def_exp
+tech spawn_broodling 40
+wait 1650
+
+upgrade 1 zergling_attack 30
+upgrade 2 z_carapace 50
+upgrade 3 z_melee_attack 40
+wait 935
+
+train 26 zergling
+attack_add 26 zergling
+call AStrg
+wait 300
+
+attack_do
+attack_clear
+wait 250
+
+train 6 hydralisk
+train 3 ultralisk
+call muta_small
+attack_add 6 hydralisk
+attack_add 3 ultralisk
+call AStrg
+wait 500
+
+attack_do
+attack_clear
+train 2 queen
+expand 2 def_exp
+wait 2515
+
+idle_orders 121 8 1 queen 312 zergling|marine 5 Health(GreaterThanPercent 85)
+idle_orders 121 8 1 queen 312 hydralisk|firebat|medic|heavy_marine 40 Health(GreaterThanPercent 85)
+idle_orders 121 8 1 queen 312 lurker|siege_tank|death_knight 70 Health(GreaterThanPercent 25)
+idle_orders 121 8 1 queen 312 ultralisk|36|panzer 120 Health(GreaterThanPercent 25)
+idle_orders 121 8 1 queen 312 zealot|vulture|scorpion 30 Health(GreaterThanPercent 45)
+idle_orders 121 8 1 queen 312 dragoon|goliath|phantom 60 Health(GreaterThanPercent 45)
+idle_orders 121 8 1 queen 312 high_templar|ghost 70 Health(GreaterThanPercent 65)
+idle_orders 121 8 1 queen 312 dark_templar|tesla_trooper 50 Health(GreaterThanPercent 55)
+idle_orders 121 8 1 queen 312 drone|scv 15 Health(GreaterThanPercent 95)
+idle_orders 121 8 1 queen 312 broodling 3 Health(GreaterThanPercent 95)
+idle_orders 121 8 1 queen 312 group_men 40 deathrattle
+upgrade 3 z_carapace 50
+upgrade 3 z_missile_attack 50
+upgrade 1 queen_mana 40
+:block1
+train 5 hydralisk
+train 20 zergling
+train 5 lurker
+call muta_small
+attack_add 20 zergling
+attack_add 5 lurker
+call AStrg
+wait 500
+
+attack_do
+attack_clear
+wait 1755
+
+train 13 hydralisk
+train 2 lurker
+attack_add 11 hydralisk
+attack_add 2 lurker
+call AStrg
+wait 300
+
+attack_do
+attack_clear
+expand 2 def_exp
+wait 2040
+
+train 5 ultralisk
+call muta_small
+attack_add 5 ultralisk
+call AStrg
+wait 300
+
+attack_do
+attack_clear
+wait 2175
+
+train 4 hydralisk
+train 20 zergling
+train 4 lurker
+train 2 ultralisk
+train 30 zergling
+attack_add 4 lurker
+attack_add 2 ultralisk
+attack_add 30 zergling
+call AStrg
+wait 500
+
+attack_do
+attack_clear
+goto block1
+
+:muta_small
+notowns_jump spire muta_skip
+attack_rand 2 4 mutalisk
+:muta_skip
+return
+
+:AStrg
+time_jump 33 target_random
+random_jump 64 AS_3
+random_jump 85 AS_1
+random_jump 128 AS_2
+attack_to Loc.36 Loc.38
+return
+
+:AS_1
+attack_to Loc.36 Loc.35
+return
+
+:AS_2
+attack_to Loc.37 Loc.38
+return
+
+:AS_3
+attack_to Loc.37 Loc.35
+return
+
+#:AmbushDa1
+#wait 50
+#
+#guard hydralisk Loc.4 1 1 110
+#guard hhydralisk Loc.3 1 1 110
+#guard zergling Loc.6 1 1 110
+#guard zergling Loc.5 1 1 110
+#stop
+#
+#:AmbushDa2
+#wait 50
+#
+#guard hydralisk Loc.8 1 1 110
+#guard hhydralisk Loc.7 1 1 110
+#guard lurker Loc.10 1 1 110
+#stop
+
+:def_exp
+start_town
+build 1 hatchery 100
+get_oldpeons 1
+wait_build 1 hatchery
+build 1 drone 90
+wait_build 1 drone
+build 3 drone 80
+get_oldpeons 3
+max_workers 18
+wait_build 3 drone
+build 1 creep_colony 80
+build 16 drone 80
+player_need 1 spawning_pool
+player_need 1 evolution_chamber
+wait_buildstart 5 drone
+creep 4
+build 2 creep_colony 80
+wait_build 2 creep_colony
+build 1 sunken_colony 80
+build 1 spore_colony 80
+wait 24500
+
+max_workers 255
+:d_loop
+wait 1500
+
+goto d_loop
+
+:duke_ai
+#also uses TB3E - idle areatown
+build 1 command_center 150
+build 1 scv 130
+build 10 scv 80
+build 1 barracks 80
+build 1 factory 80
+build 1 engineering_bay 80
+build 2 missile_turret 80
+build 1 bunker 80
+define_max 45 scv
+define_max 64 marine
+define_max 12 vulture
+define_max 10 firebat
+define_max 9 goliath
+define_max 6 siege_tank
+define_max 8 wraith
+define_max 2 science_vessel
+define_max 2 102
+#102 is vanilla BC copy used for smarter spell stuff etc.
+define_max 5 dropship
+define_max 255 ghost
+defensebuild_gg 1 vulture
+defenseuse_gg 1 vulture
+defensebuild_gg 2 marine
+defenseuse_gg 2 marine
+defensebuild_ag 2 marine
+defenseuse_ag 2 marine
+max_force 850
+idle_orders disablebuiltin 0 0 0 0 0 0 0
+idle_orders 92 256 3 marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 firebat 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 64 3 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 firebat 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 256 3 marine 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 firebat 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 64 3 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 firebat 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 10 16 1 marine|ghost 192 group_men 80 Health(LessThan 6)
+idle_orders 10 16 1 marine|ghost 192 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 120 Health(LessThan 6)
+idle_orders 10 16 1 marine|ghost 192 sunken_colony|photon_cannon 90 Health(LessThan 6)
+idle_orders 10 16 3 marine|ghost 212 drone|scv|probe 50 0
+idle_orders 10 16 3 marine|ghost 192 group_men 90 Health(LessThan 15)
+idle_orders 10 16 3 marine|ghost 192 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 130 Health(LessThan 15)
+idle_orders 10 16 3 marine|ghost 192 sunken_colony|photon_cannon 100 Health(LessThan 12)
+idle_orders 10 16 5 marine|ghost 192 group_men 95 Health(LessThan 30)
+idle_orders 10 16 5 marine|ghost 192 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 135 Health(LessThan 30)
+idle_orders 10 16 5 marine|ghost 192 sunken_colony|photon_cannon|bunker 105 Health(LessThan 21)
+idle_orders 10 16 1 firebat 128 drone|scv|probe 70 0
+idle_orders 10 16 1 firebat 128 drone|scv|probe 150 count(AtLeast 2 24 14)
+idle_orders 10 16 1 firebat 128 zergling|zealot|hydralisk|dark_templar 110 count(AtLeast 2 26 14)
+idle_orders 10 16 2 firebat 128 zergling|zealot|hydralisk|dark_templar 130 count(AtLeast 3 26 14)
+idle_orders 10 16 1 firebat 128 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine 110 count(AtLeast 2 26 14)
+idle_orders 10 16 2 firebat 128 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine 130 count(AtLeast 3 26 14)
+idle_orders 10 64 1 siege_tank 288 sunken_colony|photon_cannon|bunker 110 Health(LessThan 73)
+idle_orders 10 64 1 siege_tank 288 drone|scv|probe 50 Count(AtLeast 2 48 14)
+idle_orders 10 64 1 siege_tank 288 group_men 100 Health(LessThan 36)|WithoutUnitFlags(Air)
+idle_orders 10 64 2 siege_tank 288 group_men 105 Health(LessThan 73)|WithoutUnitFlags(Air)
+idle_orders 10 64 1 siege_tank 288 infested_terran|dark_archon|defiler|archon 130 Health(LessThan 80)
+idle_orders 10 64 1 siege_tank 288 lurker|defiler|high_templar 120 Health(LessThan 50)
+idle_orders 10 64 1 siege_tank 330 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine|firebat 120 count(AtLeast 3 48 14)
+idle_orders 10 16 1 wraith 210 mutalisk|scout|corsair|scourge|wraith 110 Health(LessThan 20)
+idle_orders 10 16 3 wraith 210 mutalisk|scout|corsair|scourge|wraith 135 Health(LessThan 60)
+idle_orders 10 16 1 wraith 210 devourer|hnorad|battlecruiser|carrier 150 Health(LessThan 20)
+idle_orders 10 16 2 wraith 210 devourer|hnorad|battlecruiser|carrier 160 Health(LessThan 40)
+idle_orders 10 16 3 wraith 210 devourer|hnorad|battlecruiser|carrier 170 Health(LessThan 60)
+idle_orders 10 16 4 wraith 210 devourer|hnorad|battlecruiser|carrier 190 Health(LessThan 80)
+idle_orders 10 16 1 wraith 210 shuttle|observer|overlord 60 Health(LessThan 20)
+idle_orders 10 16 1 goliath 224 group_men 60 Health(LessThan 11)
+idle_orders 10 16 1 goliath 224 infested_terran|defiler|dark_archon|lurker|dark_templar|ghost|siege_tank 90 Health(LessThan 12)
+idle_orders 10 16 2 goliath 224 infested_terran|defiler|dark_archon|lurker|dark_templar|ghost|siege_tank 90 Health(LessThan 22)
+idle_orders 10 16 1 vulture 224 group_men 60 Health(LessThan 5)|WithoutUnitFlags(Air)
+idle_orders 10 16 2 vulture 224 drone|scv|probe 150 0
+idle_orders 10 16 1 hnorad|battlecruiser|goliath 192 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 80 Health(LessThan 30)
+idle_orders 10 16 2 hnorad|battlecruiser|goliath 192 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 90 Health(LessThan 60)
+wait 667
+
+farms_timing
+multirun grand_exchange
+multirun check_safety
+max_workers 18
+build 15 scv 80
+wait_buildstart 10 scv
+allies_watch 11 terran_expansion
+build 1 machine_shop 80
+build 1 academy 80
+train 14 marine
+attack_add 14 marine
+call target_player
+wait 500
+
+attack_do
+attack_clear
+idle_orders 141 83 1 science_vessel 776 firebat 10 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 50)|Self(Energy(GreaterThan 149))
+idle_orders 141 83 1 science_vessel 776 goliath 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 99))
+idle_orders 141 83 1 science_vessel 776 vulture 10 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 149))
+idle_orders 141 83 1 science_vessel 776 wraith 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 149))
+idle_orders 141 83 1 science_vessel 776 siege_tank 40 own|allied|notenemies|incombat|Health(LessThanPercent 70)|Health(GreaterThanPercent 30)
+idle_orders 141 83 1 science_vessel 776 102 80 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 10)
+upgrade 1 t_infantry_armor 30
+tech siege_mode 30
+defensebuild_gg 1 siege_tank
+defenseuse_gg 1 siege_tank
+defensebuild_gg 1 firebat
+defenseuse_gg 1 firebat
+build 20 scv 80
+build 1 comsat_station 80
+wait 665
+
+build 1 armory 80
+wait 475
+
+build 2 barracks 80
+train 6 marine
+train 2 siege_tank
+attack_add 6 marine
+attack_add 2 siege_tank
+call target_player
+wait 500
+
+attack_do
+attack_clear
+defensebuild_gg 1 goliath
+defenseuse_gg 1 goliath
+defensebuild_gg 1 goliath
+defenseuse_gg 1 goliath
+defensebuild_ag 1 goliath
+defenseuse_ag 1 goliath
+allies_watch 9 terran_expansion
+upgrade 1 t_ship_plating 30
+upgrade 1 t_ship_weapon 30
+build 1 starport 80
+wait 533
+
+build 2 factory 80
+upgrade 1 marine_range 30
+wait 800
+
+defensebuild_ga 1 wraith
+defenseuse_ga 1 wraith
+defensebuild_aa 1 wraith
+defenseuse_aa 1 wraith
+upgrade 1 vulture_speed 30
+build 1 control_tower 80
+build 2 armory 80
+train 2 goliath
+train 4 vulture
+train 4 firebat
+attack_add 2 goliath
+attack_add 4 vulture
+attack_add 4 firebat
+call target_player
+wait 500
+
+attack_do
+attack_clear
+#check_transports
+#script stops mining here?
+tech stim_packs 30
+upgrade 1 science_vessel_mana 30
+upgrade 1 t_vehicle_weapon 30
+upgrade 2 t_ship_plating 30
+build 2 machine_shop 80
+build 1 science_facility 80
+wait 737
+
+defensebuild_ag 1 wraith
+defenseuse_ag 1 wraith
+place_guard science_vessel 0
+expand 2 terran_expansion
+train 6 goliath
+train 2 siege_tank
+train 2 wraith
+attack_add 6 goliath
+attack_add 2 siege_tank
+attack_add 2 wraith
+call target_player
+wait 500
+
+attack_do
+attack_clear
+tech irradiate 30
+tech spider_mines 30
+upgrade 1 medic_mana 30
+upgrade 2 t_vehicle_plating 30
+upgrade 2 t_infantry_weapon 30
+build 1 physics_lab 30
+wait 1133
+
+place_guard science_vessel 2
+train 2 goliath
+train 20 marine
+train 4 goliath
+train 30 marine
+train 4 firebat
+attack_add 4 goliath
+attack_add 30 marine
+attack_add 4 firebat
+call target_player
+wait 500
+
+attack_do
+attack_clear
+tech yamato_gun 30
+upgrade 2 t_ship_weapon 30
+upgrade 3 t_ship_plating 30
+upgrade 2 t_vehicle_weapon 30
+idle_orders 143 120 1 science_vessel 1312 infested_terran|lurker|guardian|mutalisk|zealot|dark_templar|medic|ghost 120 Health(GreaterThan 50)|WithoutSpellEffects(Irradiate)
+wait 1255
+
+expand 2 terran_expansion
+train 14 marine
+train 4 vulture
+train 20 marine
+train 2 firebat
+train 8 vulture
+train 6 firebat
+train 4 siege_tank
+train 8 firebat
+attack_add 20 marine
+attack_add 8 vulture
+attack_add 8 firebat
+attack_add 4 siege_tank
+call target_player
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 vademecum 30
+upgrade 1 battlecruiser_mana 30
+upgrade 2 t_vehicle_plating 30
+idle_orders 113 32 2 102 356 battlecruiser|barracks|factory|starport 80 InCombat|Hp(GreaterThanPercent 75)
+idle_orders 113 32 1 102 356 wraith|dropship|goliath|ghost 60 InCombat|count(AtLeast 2 60 14)
+idle_orders 113 32 1 102 356 marine|wraith|goliath|ghost 70 InCombat|count(AtLeast 3 60 14)
+idle_orders 113 32 1 102 356 siege_tank 60 InCombat|count(AtLeast 3 60 14)
+idle_orders 113 32 1 102 356 group_men 50 InCombat|count(AtLeast 4 60 14)
+
+train 2 102
+train 4 wraith
+attack_add 2 102
+attack_add 4 wraith
+attack_to Loc.40 Loc.1
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 dragon_catalyst 30
+upgrade 3 t_infantry_armor 30
+upgrade 3 t_infantry_weapon 30
+upgrade 3 t_ship_weapon 30
+upgrade 3 t_vehicle_weapon 30
+upgrade 3 t_vehicle_plating 30
+:blockDuke
+wait 1356
+
+train 2 102
+train 4 goliath
+train 16 marine
+train 6 firebat
+attack_add 16 marine
+attack_add 4 goliath
+attack_add 2 102
+attack_add 6 firebat
+call target_player
+wait 500
+
+attack_do
+attack_clear
+wait 2000
+
+train 4 wraith
+train 4 vulture
+train 8 wraith
+train 8 vulture
+attack_add 8 wraith
+attack_add 8 vulture
+call target_player
+wait 500
+
+attack_do
+attack_clear
+expand 3 terran_expansion
+train 2 102
+wait 1687
+
+train 9 goliath
+train 3 siege_tank
+attack_add 9 goliath
+attack_add 3 siege_tank
+attack_add 2 102
+call target_player
+wait 500
+
+attack_do
+attack_clear
+wait 1850
+
+train 1 siege_tank
+train 30 marine
+train 3 siege_tank
+train 61 marine
+attack_add 3 siege_tank
+attack_add 61 marine
+call target_player
+wait 500
+
+attack_do
+attack_clear
+goto blockDuke
+
+:terran_expansion
+start_town
+build 1 command_center 100
+get_oldpeons 1
+wait_build 1 command_center
+build 1 scv 90
+wait_build 1 scv
+get_oldpeons 3
+build 3 scv 80
+build 1 missile_turret 80
+wait_build 3 scv
+wait 350
+
+build 10 scv 80
+wait_buildstart 7 scv
+max_workers 18
+build 1 bunker 80
+wait 350
+
+call random_construction
+wait 866
+
+build 18 scv 80
+wait 1506
+
+build 1 comsat_station 80
+wait 2500
+
+time_jump 50 te_work_down
+wait 24355
+
+:te_work_down
+max_workers 255
+:te_loop
+wait 1505
+
+goto te_loop
+
+:random_construction
+random_jump 85 rc_1
+random_jump 128 rc_2
+build 1 barracks 80
+build 1 factory 80
+build 1 machine_shop 80
+return
+
+:rc_1
+build 1 factory 80
+build 1 starport 80
+build 1 machine_shop 80
+build 1 control_tower 80
+return
+
+:rc_2
+build 1 barracks 80
+build 1 starport 80
+build 1 control_tower 80
+return
+
+:target_daggoth
+#attack only daggoth
+random_jump 85 dgt_trg_1
+random_jump 128 dgt_trg_2
+attack_to Loc.30 Loc.33
+return
+
+:dgt_trg_1
+attack_to Loc.31 Loc.34
+return
+
+:dgt_trg_2
+attack_to Loc.32 Loc.35
+return
+
+:target_player
+deaths 6 Exactly 0 panzer target_daggoth
+#if 0 panzer deaths, fallback to target_daggoth (set via map Duke transmission trigger)
+deaths 6 Exactly 0 scorpion target_random
+#spend only 5 attacks, transition into random afterwards
+#check_safety + p7 triggers set a total of 4 deaths, this subtracts 1 (scorpion) and jumps to random if = 0
+deaths 6 Subtract 1 scorpion duke_ai
+random_jump 64 plr_trg_1
+random_jump 85 plr_trg_2
+random_jump 128 plr_trg_3
+attack_to Loc.27 Loc.29
+return
+
+:plr_trg_1
+attack_to Loc.27 Loc.28
+return
+
+:plr_trg_2
+attack_to Loc.26 Loc.28
+return
+
+:plr_trg_3
+attack_to Loc.26 Loc.29
+return
+
+:target_random
+#sometimes seems to not work, lets play it safe
+#unstart_campaign
+attack_prepare
+#start_campaign
+return
+
+:check_safety
+wait 16
+
+bw_kills 0 AtLeast 1 missile_turret broken_truce
+bw_kills 0 AtLeast 2 scv broken_truce
+bw_kills 0 AtLeast 1 supply_depot broken_truce
+bw_kills 0 AtLeast 1 bunker broken_truce
+bw_kills 0 AtLeast 10 marine broken_truce
+bw_kills 0 AtLeast 3 wraith broken_truce
+bw_kills 0 AtLeast 2 goliath broken_truce
+wait 80
+
+goto check_safety
+
+:broken_truce
+deaths 0 Add 1 scorpion check_safety
+stop
+
+:grand_exchange
+wait 2650
+
+:ge_init
+wait_rand 100 145
+
+call ge_gas
+call ge_mins
+time_jump 50 late_gas_detour
+goto ge_init
+
+:late_gas_detour
+resources 13 AtMost Gas 1199 ge_init
+resources 13 AtLeast Ore 2200 ge_init
+resources 13 Subtract Gas 200 ge_init
+resources 13 Add Ore 266 ge_init
+goto ge_init
+
+:ge_gas
+resources 13 AtLeast Gas 600 ge_skip
+resources 13 AtMost Ore 1099 ge_skip
+resources 13 Subtract Ore 170 ge_skip
+resources 13 Add Gas 80 ge_skip
+return
+
+:ge_mins
+resources 13 AtMost Gas 599 ge_skip
+resources 13 AtLeast Ore 1100 ge_skip
+resources 13 Subtract Gas 100 ge_skip
+resources 13 Add Ore 133 ge_skip
+return
+
+:ge_skip
+return

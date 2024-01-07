@@ -1,0 +1,276 @@
+script_name Terran 7 - Bottom Zerg Town
+script_id Ter7
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+if_owned covert_ops epsilon
+if_owned physics_lab battle_dock
+if_owned barracks wraith_dock
+build 1 hatchery 100
+build 3 drone 90
+build 5 drone 80
+wait_build 5 drone
+creep 4
+wait 850
+
+build 12 drone 80
+build 1 hydralisk_den 80
+wait 860
+
+wait 8550
+
+build 1 creep_colony 80
+wait 860
+
+build 1 sunken_colony 80
+wait 550
+
+wait 4500
+
+build 2 creep_colony 80
+wait 1505
+
+build 2 sunken_colony 80
+build 1 drone 130
+wait_rand 6700 10500
+
+build 2 hatchery 80
+wait 3000
+
+build 3 creep_colony 80
+wait_rand 5505 15000
+
+build 1 spore_colony 80
+build 3 hatchery 80
+wait 5505
+:loop
+wait 1500
+
+goto loop
+
+:epsilon
+build 2 barracks 80
+build 2 factory 80
+build 2 machine_shop 80
+build 2 bunker 80
+define_max 11 vulture
+define_max 8 goliath
+define_max 7 siege_tank
+defensebuild_gg 1 vulture
+defenseuse_gg 1 vulture
+defensebuild_gg 1 siege_tank
+defensebuild_gg 1 goliath
+defenseuse_gg 1 goliath
+defensebuild_ag 1 goliath
+defenseuse_ag 1 goliath
+tech siege_mode 30
+wait 10500
+
+upgrade 1 vulture_speed 30
+attack_add 3 vulture
+attack_add 1 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 4054
+
+attack_add 4 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech spider_mines 30
+wait 3870
+
+attack_add 6 vulture
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 3 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 5050
+
+attack_add 4 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+:epsloop
+wait 1500
+
+attack_add 2 goliath
+attack_add 4 vulture
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 4500
+
+attack_add 3 siege_tank
+attack_add 3 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 4500
+
+attack_add 6 vulture
+attack_add 4 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 2 siege_tank
+goto epsloop
+
+:battle_dock
+define_max 3 102
+wait 15300
+
+tech cloaking_field 30
+attack_add 1 102
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+defensebuild_ga 1 wraith
+defenseuse_ga 1 wraith
+wait 6700
+
+upgrade 1 wraith_mana 30
+attack_add 2 wraith
+attack_add 1 102
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+defensebuild_ga 1 102
+defenseuse_ga 1 102
+wait 4500
+
+attack_add 2 102
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+defensebuild_gg 1 102
+defenseuse_gg 1 102
+wait 8300
+
+:battleloop
+attack_add 3 102
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 6025
+
+goto battleloop
+
+:wraith_dock
+build 2 missile_turret 80
+define_max 16 wraith
+wait 6805
+
+attack_add 2 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+defensebuild_aa 2 wraith
+defenseuse_aa 2 wraith
+wait 4303
+
+attack_add 4 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech cloaking_field 30
+wait 3850
+
+attack_add 4 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+defensebuild_ag 1 wraith
+defenseuse_ag 1 wraith
+defensebuild_ga 1 wraith
+defenseuse_ga 1 wraith
+wait 4105
+
+attack_add 12 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 wraith_mana 30
+wait 3783
+
+attack_add 9 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+defensebuild_gg 1 wraith
+defenseuse_gg 1 wraith
+wait 3707
+
+attack_add 16 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+:dockloop
+train 12 wraith
+wait 850
+
+attack_add 4 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 4 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 4805
+
+attack_add 10 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto dockloop

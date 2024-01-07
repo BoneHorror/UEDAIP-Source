@@ -1,0 +1,219 @@
+script_name Zerg 7 - Air Town
+script_id Zr7a
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+if_owned ultralisk_cavern high_support
+defensebuild_gg 1 guardian
+defenseuse_gg 1 guardian
+defensebuild_gg 1 mutalisk
+defenseuse_gg 1 mutalisk
+defensebuild_ag 1 mutalisk
+defenseuse_ag 1 mutalisk
+defensebuild_ag 1 scourge
+defenseuse_ag 1 scourge
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_ga 1 guardian
+defenseuse_ga 1 guardian
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
+max_force 600
+define_max 6 guardian
+define_max 10 mutalisk
+define_max 10 scourge
+define_max 255 broodling
+defenseuse_gg 1 broodling
+farms_timing
+upgrade 1 z_flyer_carapace 30
+upgrade 1 overlord_sight 30
+wait 3480
+
+wait_upgrades
+wait 5000
+
+upgrade 1 z_flyer_attack 30
+wait 480
+
+attack_add 4 scourge
+attack_prepare
+attack_do
+attack_clear
+wait_upgrades
+wait 5000
+
+upgrade 2 z_flyer_attack 30
+wait 480
+
+wait_upgrades
+attack_add 1 guardian
+attack_prepare
+attack_do
+attack_clear
+wait 3500
+
+upgrade 3 z_flyer_attack 30
+wait 480
+
+wait_upgrades
+wait 3466
+
+attack_add 2 guardian
+attack_prepare
+attack_do
+attack_clear
+upgrade 2 z_flyer_carapace 30
+multirun justice_rains_from_above
+multirun slow_attacks
+wait 8155
+
+attack_add 6 scourge
+attack_prepare
+attack_do
+attack_clear
+upgrade 3 z_flyer_carapace 30
+:loop
+wait 65
+
+goto loop
+
+:justice_rains_from_above
+wait 87
+
+capt_expand
+goto justice_rains_from_above
+
+:slow_attacks
+wait 5465
+
+attack_add 2 guardian
+attack_prepare
+attack_do
+attack_clear
+wait 6720
+
+attack_add 2 mutalisk
+attack_add 2 scourge
+attack_prepare
+attack_do
+attack_clear
+goto slow_attacks
+
+:high_support
+max_force 496
+wait 1800
+
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defensebuild_gg 1 hdefiler
+defenseuse_gg 1 hdefiler
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_ag 2 hydralisk
+defenseuse_ag 2 hydralisk
+define_max 6 ultralisk
+define_max 2 hdefiler
+define_max 17 hydralisk
+define_max 255 broodling
+defenseuse_gg 1 broodling
+upgrade 1 overlord_speed 30
+upgrade 1 z_carapace 30
+upgrade 1 overlord_capacity 30
+tech burrowing 30
+upgrade 1 z_melee_attack 30
+wait 5000
+
+upgrade 1 hydralisk_range 30
+upgrade 2 z_melee_attack 30
+upgrade 1 ultralisk_armor 30
+upgrade 1 z_missile_attack 30
+wait 3500
+
+attack_add 4 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 defiler_mana 30
+upgrade 2 z_missile_attack 30
+upgrade 2 z_carapace 30
+wait 4000
+
+attack_add 4 hydralisk
+attack_add 2 hdefiler
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 ultralisk_speed 30
+upgrade 1 hydralisk_speed 30
+tech plague 30
+upgrade 3 z_melee_attack 30
+upgrade 3 z_missile_attack 30
+upgrade 3 z_carapace 30
+wait 4500
+
+attack_add 2 ultralisk
+attack_add 2 hdefiler
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3500
+
+attack_add 7 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1833
+
+attack_add 1 hdefiler
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+:defiler_loop
+wait 3157
+
+train 1 defiler
+attack_add 2 ultralisk
+attack_add 4 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3566
+
+train 2 hdefiler
+attack_add 3 ultralisk
+attack_add 2 hdefiler
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 4500
+
+train 3 defiler
+train 1 hdefiler
+attack_add 1 ultralisk
+attack_add 6 hydralisk
+attack_add 1 hdefiler
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto defiler_loop

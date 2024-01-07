@@ -1,0 +1,370 @@
+script_name Protoss 8 - Left Protoss Town
+script_id Pro8
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+if_owned 168 amogus_town
+#if we own stasis chambers, goto red's carrier town on the left
+#otherwise we go to purple's left templar town
+#templar town starts here
+build 1 nexus 110
+build 4 probe 90
+build 1 gateway 80
+player_need 1 cybernetics_core
+build 1 citadel_of_adun 80
+build 1 templar_archives 80
+build 1 forge 80
+build 1 shield_battery 80
+defensebuild_gg 1 high_templar
+defensebuild_gg 1 archon
+defenseuse_gg 1 archon
+defensebuild_ag 1 archon
+defenseuse_ag 1 archon
+upgrade 1 p_plasma_shield 40
+wait 2999
+
+load_bank vp7
+wait 1
+
+bank_data Exactly 0 vp7 furinax skip_wait
+wait 4150
+
+:skip_wait
+multirun templar_ensure
+build 8 probe 80
+wait 6150
+
+train 2 high_templar
+train 1 archon
+wait_force 1 archon
+call wait_attack
+call hold_attack
+attack_add 1 archon
+call simple_targeting
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+upgrade 2 p_plasma_shield 40
+wait 6150
+
+build 13 probe 80
+idle_orders 10 64 1 archon 160 zergling|zealot|hhydralisk|hydralisk|dark_templar|ghost|high_templar|marine|firebat 150 count(AtLeast 3 48 14)
+idle_orders 10 16 1 archon 128 zergling|zealot|hhydralisk|hydralisk|dark_templar|ghost|high_templar|marine 110 count(AtLeast 2 24 14)
+idle_orders 10 16 2 archon 128 zergling|zealot|hhydralisk|hydralisk|dark_templar|ghost|high_templar|marine 130 count(AtLeast 2 24 14)
+train 2 high_templar
+train 1 archon
+wait_force 1 archon
+call wait_attack
+call hold_attack
+
+attack_add 1 archon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+tech psionic_storm 50
+wait 6150
+
+train 4 high_templar
+train 2 archon
+wait_force 2 archon
+call wait_attack
+call hold_attack
+
+attack_add 2 archon
+call simple_targeting
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+idle_orders 142 256 1 high_templar 1024 zealot 50 incombat|count(AtLeast 3 48 14)
+idle_orders 142 256 1 high_templar 1024 dark_templar 50 incombat|count(AtLeast 2 48 14)
+idle_orders 142 512 1 high_templar 2048 dragoon|revenant 80 incombat|count(AtLeast 2 48 14)
+idle_orders 142 512 1 high_templar 1536 scout|hornet|corsair|shuttle 60 incombat|count(AtLeast 2 48 14)
+idle_orders 142 512 1 high_templar 1536 carrier|dark_archon 40 incombat
+idle_orders 148 0 0 high_templar 288 zealot 40 own|allied|notenemies|incombat|deathrattle
+idle_orders 148 0 0 high_templar 288 dragoon 30 own|allied|notenemies|incombat|deathrattle
+idle_orders 148 0 0 high_templar 288 reaver 70 own|allied|notenemies|incombat|deathrattle
+idle_orders 148 0 0 high_templar 288 carrier 80 own|allied|notenemies|incombat|deathrattle
+idle_orders 148 0 0 high_templar 288 scout 50 own|allied|notenemies|incombat|deathrattle
+idle_orders 148 0 0 high_templar 288 shuttle 30 own|allied|notenemies|incombat|deathrattle
+idle_orders 148 0 0 high_templar 288 arbiter 60 own|allied|notenemies|incombat|deathrattle
+upgrade 1 templar_mana 40
+upgrade 1 one_with_khala 50
+wait 3450
+
+train 3 high_templar
+train 1 archon
+wait_force 1 archon
+call wait_attack
+call hold_attack
+
+attack_add 1 archon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+upgrade 3 p_plasma_shield 40
+wait 6150
+
+place_guard archon 0
+:archon_loop
+train 5 high_templar
+train 1 archon
+wait_force 2 archon
+call wait_attack
+call hold_attack
+
+attack_add 2 archon
+call simple_targeting
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+wait 4350
+
+train 3 high_templar
+train 1 archon
+wait_force 1 archon
+call wait_attack
+call hold_attack
+
+attack_add 1 archon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+wait 7150
+
+train 6 high_templar
+train 3 archon
+wait_force 3 archon
+call wait_attack
+call hold_attack
+
+attack_add 3 archon
+call simple_targeting
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+goto archon_loop
+
+:templar_ensure
+wait_train 2 high_templar
+do_morph 1 archon
+wait 60
+
+do_morph 1 archon
+wait 60
+
+train 1 archon
+wait_train 4 high_templar
+do_morph 2 archon
+wait 60
+
+do_morph 2 archon
+wait 60
+
+train 3 archon
+wait_train 6 high_templar
+do_morph 3 archon
+wait 60
+
+do_morph 3 archon
+wait 60
+
+train 3 archon
+wait_rand 133 450
+goto templar_ensure
+
+:amogus_town
+build 1 nexus 110
+build 4 probe 90
+build 1 stargate 80
+build 1 fleet_beacon 80
+build 2 photon_cannon 80
+build 8 probe 80
+max_force 1500
+wait 12516
+
+defensebuild_aa 1 carrier
+defenseuse_aa 1 carrier
+defensebuild_ga 1 carrier
+defenseuse_ga 1 carrier
+build 12 probe 80
+train 1 carrier
+wait_force 1 carrier
+wait 200
+
+call wait_attack
+call hold_attack
+build 2 stargate 80
+attack_add 1 carrier
+attack_to Loc.62 Loc.21
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+upgrade 1 carrier_capacity 60
+upgrade 1 p_plating 50
+upgrade 1 p_air_weapon 50
+wait 4000
+
+build 3 photon_cannon 80
+build 16 probe 80
+train 1 carrier
+train 2 scout
+wait_force 1 carrier
+wait 200
+
+call wait_attack
+call hold_attack
+
+attack_add 2 scout
+attack_add 1 carrier
+attack_to Loc.30 Loc.39
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+place_guard scout 0
+wait 4000
+
+train 1 harbiter
+train 2 carrier
+wait_force 2 carrier
+train 1 harbiter
+wait 200
+
+call wait_attack
+call hold_attack
+attack_add 1 harbiter
+attack_add 2 carrier
+attack_to Loc.62 Loc.21
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+upgrade 1 scout_speed 40
+upgrade 2 p_plating 50
+upgrade 2 p_air_weapon 50
+wait 6000
+
+train 5 scout
+call wait_attack
+call hold_attack
+
+attack_add 5 scout
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+upgrade 3 p_plating 40
+upgrade 3 p_air_weapon 30
+place_guard carrier 0
+wait 6000
+
+train 3 carrier
+wait_force 3 carrier
+wait 200
+
+call wait_attack
+call hold_attack
+
+attack_add 3 carrier
+call simple_targeting
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+upgrade 1 scout_sight 40
+:blockcrr
+wait 6000
+
+train 6 scout
+call wait_attack
+call hold_attack
+
+attack_add 6 scout
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+wait 3500
+
+train 1 harbiter
+train 3 carrier
+train 4 scout
+wait_force 3 carrier
+wait 200
+
+call wait_attack
+call hold_attack
+
+attack_add 1 harbiter
+attack_add 3 carrier
+attack_add 4 scout
+call simple_targeting
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+goto blockcrr
+
+:simple_targeting
+unstart_campaign
+attack_prepare
+start_campaign
+return
+
+:hold_attack
+deaths 13 Add 1 firebat blockcrr
+return
+
+:release_attack
+deaths 13 Set 0 firebat blockcrr
+return
+
+:wait_attack
+wait 16
+
+deaths 13 AtLeast 2 firebat ensure_attack
+deaths 13 Exactly 1 firebat wait_attack
+#loop if another script started an attack
+return
+
+:ensure_attack
+load_bank Ensures
+wait 1
+
+print Ensure_TwoOrMore_PleaseReportMeIfSeen
+bank_data Set 1 Ensures Ensure_TwoOrMore wait_attack
+bank_data Set 0 Ensures Ensure_Compare wait_attack
+save_bank Ensures
+deaths 13 Set 0 firebat templar_ensure
+return

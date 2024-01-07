@@ -1,0 +1,19 @@
+extdef F:/Scripts/PyMS-master/unitdef.txt
+
+
+# stat_txt.tbl entry 1347: Brood Wars Protoss 1 - Town C<0>
+PB1C(1347, 111, bwscript):
+	start_campaign()
+	start_areatown()
+	defaultbuild_off()
+	default_min(0)
+	wait(1)
+	build(1, scv, 80)
+	build(1, starport, 80)
+	build(1, control_tower, 80)
+	build(2, missile_turret, 80)
+	max_workers(1)
+
+		--PB1C 0000--
+	wait(1500)
+	goto(PB1C 0000)

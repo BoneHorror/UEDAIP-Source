@@ -1,0 +1,57 @@
+script_name Terran 5 - Terran Harvest Town
+script_id Te5H
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+if_owned 190 confed
+build 1 command_center 150
+build 4 scv 130
+wait 150
+
+build 10 scv 80
+wait_build 10 scv
+build 15 scv 60
+wait_build 15 scv
+wait 1050
+
+build 24 scv 80
+max_workers 26
+build 1 barracks 80
+build 2 missile_turret 80
+wait 7500
+
+build 1 comsat_station 80
+wait 7000
+
+guard siege_tank Loc.47 1 2 60
+wait 8500
+
+build 1 factory 80
+wait 2500
+
+build 1 machine_shop 80
+max_workers 255
+:block1
+wait 1500
+
+goto block1
+
+:confed
+build 1 command_center 150
+build 4 scv 130
+build 10 scv 80
+build 13 scv 60
+max_workers 15
+build 3 barracks 80
+build 4 missile_turret 80
+build 3 bunker 80
+build 1 academy 80
+
+:block2
+wait 1500
+
+goto block2

@@ -1,0 +1,272 @@
+script_name Protoss 9 - Ground Zerg
+script_id Pro9
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 hatchery 150
+build 2 drone 130
+build 1 spawning_pool 80
+build 1 lair 80
+build 9 drone 80
+build 1 spire 80
+build 1 queen_nest 80
+build 1 hive 80
+build 3 hydralisk_den 80
+build 1 ultralisk_cavern 80
+defensebuild_gg 2 zergling
+defenseuse_gg 2 zergling
+defensebuild_gg 2 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_gg 1 lurker
+defenseuse_gg 1 lurker
+defensebuild_gg 1 hhydralisk
+defenseuse_gg 1 hhydralisk
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defenseuse_gg 1 hultralisk
+defenseuse_gg 1 broodling
+defensebuild_ag 3 hydralisk
+defenseuse_ag 3 hydralisk
+defensebuild_ag 1 scourge
+defenseuse_ag 1 scourge
+defensebuild_ag 1 hhydralisk
+defenseuse_ag 1 hhydralisk
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 2 scourge
+defenseuse_aa 2 scourge
+idle_orders 10 16 9 zergling 224 panzer|death_knight|medic|siege_tank|goliath|revenant|dragoon|reaver|dark_archon|defiler 70 InCombat
+idle_orders 11 120 1 lurker 278 Any 20 WithoutUnitFlags(Air)|Health(LessThan 20)
+idle_orders 11 120 1 lurker 278 Any 50 WithoutUnitFlags(Air)|UnitFlags(Detector)|Health(LessThan 20)
+idle_orders 11 120 1 lurker 278 Any 60 InCombat|WithoutUnitFlags(Air)|Health(LessThan 20)
+idle_orders 11 120 1 lurker 278 Any 100 InCombat|WithoutUnitFlags(Air)|UnitFlags(Detector)|Health(LessThan 20)
+idle_orders 10 16 1 hydralisk 192 group_men 80 Health(LessThan 10)
+idle_orders 10 16 1 hydralisk 192 panzer|phantom|ghost|death_knight|hnorad|battlecruiser|skywing|science_vessel|valhalla|siege_tank|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 110 Health(LessThan 10)
+idle_orders 10 16 1 hydralisk 192 photon_cannon 90 Health(LessThan 20)
+idle_orders 10 16 3 hydralisk 192 group_men 90 Health(LessThan 30)
+idle_orders 10 16 3 hydralisk 192 panzer|phantom|ghost|death_knight|hnorad|battlecruiser|skywing|science_vessel|valhalla|siege_tank|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 130 Health(LessThan 30)
+idle_orders 10 16 3 hydralisk 192 photon_cannon 100 Health(LessThan 20)
+idle_orders 10 16 5 hydralisk 192 panzer|phantom|ghost|death_knight|hnorad|battlecruiser|skywing|science_vessel|valhalla|siege_tank|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 135 Health(LessThan 50)
+idle_orders 10 16 5 hydralisk 192 photon_cannon 110 Health(LessThan 20)
+idle_orders 10 16 7 hydralisk 192 panzer|phantom|ghost|death_knight|hnorad|battlecruiser|skywing|science_vessel|valhalla|siege_tank|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 150 Health(LessThan 65)
+idle_orders 10 16 5 mutalisk 200 drone|scv|probe 100 0
+idle_orders 11 160 2 lurker 192 drone|scv|probe 100 0
+idle_orders 10 16 2 zergling 100 drone|scv|probe 100 0
+define_max 30 drone
+define_max 24 zergling
+define_max 4 ultralisk
+define_max 15 hydralisk
+define_max 3 lurker
+define_max 10 hhydralisk
+define_max 7 mutalisk
+define_max 6 scourge
+define_max 2 queen
+define_max 1 hultralisk
+define_max 255 broodling
+max_force 1166
+tech burrowing 30
+tech lurker_aspect 30
+upgrade 1 z_missile_attack 50
+upgrade 1 z_flyer_attack 50
+upgrade 1 overlord_speed 30
+upgrade 1 overlord_capacity 30
+upgrade 1 zergling_speed 30
+upgrade 1 hydralisk_speed 60
+wait 50
+
+multirun creep_1
+multirun creep_2
+multirun bank_handler
+wait 4450
+
+train 3 hydralisk
+train 2 mutalisk
+attack_add 3 hydralisk
+attack_add 2 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 z_carapace 30
+upgrade 1 z_flyer_carapace 30
+upgrade 1 z_melee_attack 30
+upgrade 1 hydralisk_range 60
+upgrade 1 overlord_sight 50
+wait 2000
+
+train 2 hhydralisk
+attack_add 2 hhydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech ensnare 30
+upgrade 1 ultralisk_speed 40
+upgrade 2 z_missile_attack 50
+upgrade 2 z_flyer_attack 50
+upgrade 1 zergling_attack 30
+wait 5500
+
+train 2 ultralisk
+attack_add 2 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 3 z_missile_attack 50
+upgrade 3 z_flyer_attack 50
+upgrade 2 z_carapace 30
+upgrade 2 z_flyer_carapace 30
+upgrade 2 z_melee_attack 30
+wait 3300
+
+train 12 zergling
+attack_add 12 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 3 z_carapace 40
+upgrade 3 z_flyer_carapace 30
+upgrade 3 z_melee_attack 30
+tech spawn_broodling 30
+wait 2500
+
+attack_add 1 ultralisk
+attack_add 2 mutalisk
+attack_add 2 lurker
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+build 2 hatchery 80
+#preplaced but now rebuilds the 2nd hatch
+:block1
+wait 6500
+
+train 1 hultralisk
+multirun torrasque_ensure
+wait_train 1 hultralisk
+attack_add 1 hultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 4500
+
+train 2 hhydralisk
+train 6 zergling
+attack_add 2 hhydralisk
+attack_add 6 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 6000
+
+train 3 hydralisk
+train 2 ultralisk
+train 4 mutalisk
+train 3 lurker
+attack_add 2 ultralisk
+attack_add 3 lurker
+attack_add 4 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 4000
+
+train 6 hhydralisk
+attack_add 6 hhydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 5000
+
+train 14 hydralisk
+train 2 lurker
+attack_add 12 hydralisk
+attack_add 2 lurker
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 6500
+
+train 16 zergling
+train 3 ultralisk
+train 4 mutalisk
+attack_add 16 zergling
+attack_add 3 ultralisk
+attack_add 4 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+attack_add 2 ultralisk
+goto block1
+
+:creep_1
+wait 16
+
+bring_jump 14 AtMost 0 group_men Loc.22 creep_1
+issue_order 43 2 creep_colony Loc.22 Loc.22 sunken_colony 0
+stop
+
+:creep_2
+wait 16
+
+bring_jump 14 AtMost 0 group_men Loc.20 creep_2
+issue_order 43 1 creep_colony Loc.20 Loc.20 sunken_colony 0
+stop
+
+:torrasque_ensure
+wait 2000
+
+if_owned hultralisk tor_done
+train 1 hultralisk
+wait_train 1 hultralisk
+
+goto torrasque_ensure
+:tor_done
+stop
+
+:bank_handler
+wait 25
+
+load_bank tass_fleet
+wait 1
+
+bank_data Exactly 1 tass_fleet revenants one_rev
+bank_data Exactly 2 tass_fleet revenants two_rev
+stop
+
+:one_rev
+deaths 7 Set 1 214 bank_handler
+stop
+
+:two_rev
+deaths 7 Set 2 214 bank_handler
+stop
+

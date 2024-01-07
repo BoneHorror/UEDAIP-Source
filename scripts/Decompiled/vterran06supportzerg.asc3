@@ -1,0 +1,304 @@
+script_name Terran 6 - Zerg Support Town
+script_id Te6c
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+if_owned command_center vultures
+if_owned 147 vp10_zerg
+build 1 hatchery 150
+build 3 drone 130
+build 6 drone 80
+build 9 drone 50
+build 1 spawning_pool 80
+build 1 hydralisk_den 80 
+#player_need 1 lair
+build 1 spire 80
+build 1 queen_nest 80
+
+:block1
+wait 1500
+
+goto block1
+
+:vp10_zerg
+build 1 hatchery 130
+build 2 drone 120
+build 12 drone 80
+build 1 spawning_pool 80
+build 2 hatchery 80
+build 2 spire 80
+build 1 queen_nest 80
+build 1 greater_spire 80
+build 3 creep_colony 80
+build 1 sunken_colony 80
+build 2 spore_colony 80
+wait 9600
+
+train 6 mutalisk
+:ia_loop_1
+wait 50
+
+if_attacking ia_loop_1
+train 6 mutalisk
+attack_add 6 mutalisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+build 1 lair 80
+wait 7200
+
+train 6 mutalisk
+:ia_loop_2
+wait 50
+
+if_attacking ia_loop_2
+train 5 mutalisk
+train 2 guardian
+train 2 devourer
+attack_add 1 mutalisk
+attack_add 2 guardian
+attack_add 2 devourer
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait 10500
+
+build 1 hive 80
+train 11 mutalisk
+:ia_loop_3
+wait 50
+
+if_attacking ia_loop_3
+train 5 mutalisk
+train 5 guardian
+train 4 scourge
+attack_add 4 scourge
+attack_add 5 guardian
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+
+:repeat_mod
+wait 6320
+
+train 9 mutalisk
+:ia_loop_4
+wait 50
+
+if_attacking ia_loop_4
+train 12 mutalisk
+train 4 guardian
+train 3 devourer
+train 4 scourge
+attack_add 4 guardian
+attack_add 3 devourer
+attack_add 3 mutalisk
+attack_add 4 scourge
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait 11050
+
+train 9 mutalisk
+:ia_loop_5
+wait 50
+
+if_attacking ia_loop_5
+train 7 mutalisk
+attack_add 7 mutalisk
+unstart_campaign
+set_attacks 1
+target_expansion
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+goto repeat_mod
+
+:vultures
+build 1 factory 80
+build 1 machine_shop 80
+define_max 8 vulture
+define_max 3 siege_tank
+defensebuild_gg 1 vulture
+defenseuse_gg 1 vulture
+tech siege_mode 30
+wait 8000
+
+tech spider_mines 30
+attack_add 2 vulture
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2500
+
+upgrade 1 vulture_speed 30
+attack_add 1 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 3 vulture
+attack_add 3 vulture
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2450
+
+train 4 vulture
+attack_add 4 vulture
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+:vlup
+wait 1500
+
+train 2 vulture
+train 1 siege_tank
+attack_add 2 vulture
+attack_add 1 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1405
+
+train 8 vulture
+attack_add 8 vulture
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2055
+
+train 3 siege_tank
+attack_add 3 siege_tank
+attack_add 3 vulture
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto vlup
+
+script_name Terran 6 - Zerg Support Town
+script_id Te6c
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+if_owned command_center vultures
+build 1 hatchery 150
+build 3 drone 130
+build 6 drone 80
+build 9 drone 50
+build 1 spawning_pool 80
+build 1 hydralisk_den 80 
+#player_need 1 lair
+build 1 spire 80
+build 1 queen_nest 80
+
+:block1
+wait 1500
+
+goto block1
+
+:vultures
+build 1 factory 80
+build 1 machine_shop 80
+define_max 8 vulture
+define_max 3 siege_tank
+defensebuild_gg 1 vulture
+defenseuse_gg 1 vulture
+tech siege_mode 30
+wait 8000
+
+tech spider_mines 30
+attack_add 2 vulture
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2500
+
+upgrade 1 vulture_speed 30
+attack_add 1 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 3 vulture
+attack_add 3 vulture
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2450
+
+train 4 vulture
+attack_add 4 vulture
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+:vlup
+wait 1500
+
+train 2 vulture
+train 1 siege_tank
+attack_add 2 vulture
+attack_add 1 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1405
+
+train 8 vulture
+attack_add 8 vulture
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2055
+
+train 3 siege_tank
+attack_add 3 siege_tank
+attack_add 3 vulture
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto vlup

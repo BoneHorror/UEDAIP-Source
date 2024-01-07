@@ -1,0 +1,398 @@
+script_name Protoss 7 - Right Protoss Town
+script_id Pr7B
+
+if_owned reaver aegis_area
+unstart_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+#this is just one static town that maintains units via Guards and uses innate upg advantage to repeatedly harass enemies early on
+#expect unit counts - 6 dragoon, 9 zealot, 5 escort, 1 harbiter 1 archon 3 high_templar (no shelak HTs)
+#early on try to fight through robotics and blazeroids, later on go after Player
+define_max 6 dragoon
+define_max 9 zealot
+define_max 5 corsair
+define_max 1 harbiter
+define_max 1 archon
+define_max 3 high_templar
+define_max 2 htassadar
+max_force 1500
+defensebuild_gg 1 high_templar
+defensebuild_gg 1 htassadar
+defenseuse_gg 1 htassadar
+defensebuild_gg 1 archon
+defenseuse_gg 1 archon
+defensebuild_gg 2 zealot
+defenseuse_gg 2 zealot
+defenseuse_gg 1 corsair
+defensebuild_ag 1 corsair
+defenseuse_ag 1 corsair
+defensebuild_ag 2 dragoon
+defenseuse_ag 2 dragoon
+defensebuild_aa 1 corsair
+defenseuse_aa 1 corsair
+upgrade 1 p_air_weapon 30
+upgrade 1 p_plasma_shield 30
+upgrade 1 p_ground_weapon 30
+idle_orders disablebuiltin 0 0 0 0 0 0 0
+idle_orders 10 16 2 zealot 160 drone|scv|probe 100 0
+idle_orders 10 16 3 scout 192 drone|scv|probe 90 0
+idle_orders RechargeShieldsUnit 480 3 Group_Men 1024 shield_battery 30 NotEnemies|Own|Self(Shields(LessThanPercent 25))
+idle_orders RechargeShieldsUnit 240 3 Group_Men 1024 shield_battery 40 NotEnemies|Own|Self(Shields(LessThanPercent 25))|Self(Order(Guard))
+idle_orders 10 16 1 zealot|dark_templar|scout 160 group_men 80 Health(LessThan 14)|WithoutUnitFlags(Air)
+idle_orders 10 64 1 dragoon 192 sunken_colony|photon_cannon|bunker 110 Health(LessThan 20)
+idle_orders 10 64 1 dragoon 192 group_men 100 Health(LessThan 15)
+idle_orders 10 64 2 dragoon 192 group_men 105 Health(LessThan 35)
+idle_orders 10 64 4 dragoon 224 group_men 115 Health(LessThan 60)
+idle_orders 10 64 1 dragoon 192 infested_terran|dark_archon|defiler 130 Health(LessThan 20)
+idle_orders 10 64 1 dragoon 192 lurker|queen 120 Health(LessThan 20)
+idle_orders 10 16 1 archon 128 group_men 50 InCombat
+idle_orders 10 64 1 archon 160 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine|firebat 150 count(AtLeast 3 48 14)
+idle_orders 10 16 1 archon 128 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine 110 count(AtLeast 2 24 14)
+idle_orders 10 16 2 archon 128 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine 130 count(AtLeast 2 24 14)
+idle_orders 10 16 1 scout 192 mutalisk|scout|corsair|scourge|wraith 110 Health(LessThan 20)
+idle_orders 10 16 3 scout 192 mutalisk|scout|corsair|scourge|wraith 135 Health(LessThan 60)
+idle_orders 10 16 1 scout 192 devourer|hnorad|battlecruiser|carrier 150 Health(LessThan 20)
+idle_orders 10 16 2 scout 192 devourer|hnorad|battlecruiser|carrier 160 Health(LessThan 40)
+idle_orders 10 16 3 scout 192 devourer|hnorad|battlecruiser|carrier 170 Health(LessThan 60)
+idle_orders 10 16 4 scout 192 devourer|hnorad|battlecruiser|carrier 190 Health(LessThan 80)
+wait 50
+
+multirun randomTree
+wait 2820
+
+place_guard htassadar 0
+attack_add 8 zealot
+call TargetTree
+wait 100
+
+attack_do
+attack_clear
+upgrade 1 p_armor 40
+upgrade 2 p_air_weapon 40
+wait 3000
+
+attack_add 3 zealot
+attack_add 1 htassadar
+attack_add 4 dragoon
+call TargetTree
+wait 100
+
+attack_do
+attack_clear
+tech psionic_storm 50
+upgrade 3 p_air_weapon 40
+upgrade 2 p_plasma_shield 40
+wait 3335
+
+attack_add 4 zealot
+attack_add 1 harbiter
+attack_add 2 corsair
+call TargetTree
+wait 100
+
+attack_do
+attack_clear
+idle_orders 142 97 1 high_templar 324 reaver 50 incombat|count(AtLeast 2 60 14)
+idle_orders 142 63 1 high_templar 548 dragoon|revenant|dark_templar|corsair|scout 30 incombat|count(AtLeast 4 60 14)
+idle_orders 142 63 1 high_templar 548 group_men 40 incombat|count(AtLeast 5 60 14)
+idle_orders 142 63 1 high_templar 548 group_men 20 incombat|count(AtLeast 3 40 14)
+idle_orders 142 128 1 htassadar 324 reaver 50 incombat|count(AtLeast 2 60 14)
+idle_orders 142 64 1 htassadar 548 dragoon|revenant|dark_templar|corsair|scout 30 incombat|count(AtLeast 4 60 14)
+idle_orders 142 64 1 htassadar 548 group_men 40 incombat|count(AtLeast 5 60 14)
+idle_orders 142 64 1 htassadar 548 group_men 20 incombat|count(AtLeast 3 40 14)
+upgrade 1 arbiter_mana 40
+upgrade 3 p_plasma_shield 40
+upgrade 1 p_plating 40
+wait 2700
+
+attack_add 6 dragoon
+attack_add 1 htassadar
+attack_add 4 zealot
+call TargetTree
+wait 100
+
+attack_do
+attack_clear
+upgrade 1 templar_mana 40
+upgrade 2 p_armor 40
+tech stasis_field 40
+upgrade 2 p_plating 40
+wait 2200
+
+attack_add 5 corsair
+call TargetTree
+wait 100
+
+attack_do
+attack_clear
+attack_add 3 dragoon
+attack_add 3 zealot
+call TargetTree
+wait 100
+
+attack_do
+attack_clear
+idle_orders 147 1024 1 arbiter 1536 archon 40 incombat
+idle_orders 147 1024 1 arbiter 1536 carrier 50 incombat
+idle_orders 147 1024 1 arbiter 1536 dark_templar|revenant 30 incombat|count(AtLeast 2 48 14)
+idle_orders 147 1024 1 arbiter 1536 dark_archon 30 incombat
+idle_orders 147 1024 1 arbiter 1536 reaver 50 incombat|count(AtLeast 2 48 14)
+idle_orders 147 0 0 arbiter 256 zealot 20 deathrattle
+idle_orders 147 0 0 arbiter 256 dragoon 20 deathrattle
+idle_orders 147 0 0 arbiter 256 high_templar 30 deathrattle
+idle_orders 147 0 0 arbiter 256 archon 40 deathrattle
+idle_orders 147 0 0 arbiter 256 dark_archon 50 deathrattle
+idle_orders 147 0 0 arbiter 256 scout 30 deathrattle
+idle_orders 147 0 0 arbiter 256 reaver 100 deathrattle
+idle_orders 147 0 0 arbiter 256 dark_templar 40 deathrattle
+idle_orders 147 0 0 arbiter 256 carrier 150 deathrattle
+upgrade 2 p_ground_weapon 40
+idle_orders 147 1024 1 harbiter 1536 group_men 40 incombat
+idle_orders 147 0 0 harbiter 256 group_men 20 deathrattle
+upgrade 3 p_plating 40
+upgrade 1 one_with_khala 50
+wait 650
+
+attack_add 4 zealot
+attack_add 1 harbiter
+attack_add 1 htassadar
+attack_add 4 corsair
+call TargetTree
+wait 100
+
+attack_do
+attack_clear
+wait 1405
+
+attack_add 4 zealot
+attack_add 2 dragoon
+attack_add 1 archon
+call TargetTree
+wait 100
+
+attack_do
+attack_clear
+upgrade 3 p_armor 40
+upgrade 3 p_ground_weapon 40
+:airloop
+wait 1200
+
+attack_add 5 corsair
+attack_prepare
+wait 100
+
+attack_do
+attack_clear
+wait 2015
+
+attack_add 8 zealot
+attack_add 1 harbiter
+attack_add 1 htassadar
+attack_add 2 corsair
+attack_prepare
+wait 100
+
+attack_do
+attack_clear
+wait 1330
+
+attack_add 4 zealot
+attack_add 1 htassadar
+attack_add 5 dragoon
+attack_prepare
+wait 100
+
+attack_do
+attack_clear
+attack_add 2 corsair
+attack_add 3 dragoon
+attack_add 1 archon
+attack_add 1 htassadar
+attack_add 1 harbiter
+attack_prepare
+wait 100
+
+attack_do
+attack_clear
+goto airloop
+
+:randomTree
+random_jump 85 rt1
+random_jump 128 rt2
+deaths 13 Set 1 scorpion Tree1
+stop
+
+:rt1
+deaths 13 Set 1 scorpion Tree1
+stop
+
+:rt2
+deaths 13 Set 2 scorpion Tree1
+stop
+
+:TargetTree
+#use raynorvulture (scorpion) deaths to determine what attack path we're following. 7 attks total
+deaths 13 Exactly 1 scorpion Tree1
+deaths 13 Exactly 2 scorpion Tree2
+deaths 13 Exactly 3 scorpion Tree3
+#deaths 13 Exactly 4 scorpion Tree4
+#default to prepare if we accidentally call this without the right deaths
+#later use skywing deaths to check which time we're using this
+attack_prepare
+return
+
+:Tree1
+deaths 13 Exactly 0 skywing t1_1
+deaths 13 Exactly 1 skywing t1_2
+deaths 13 Exactly 2 skywing t1_3
+deaths 13 Exactly 3 skywing t1_4
+deaths 13 Exactly 4 skywing t1_5
+deaths 13 Exactly 5 skywing t1_6
+deaths 13 Exactly 6 skywing t1_7
+attack_prepare
+return
+
+:t1_1
+attack_to Loc.41 Loc.28
+deaths 13 Add 1 skywing TargetTree
+return
+
+:t1_2
+attack_to Loc.27 Loc.28
+deaths 13 Add 1 skywing TargetTree
+return
+
+:t1_3
+attack_to Loc.51 Loc.52
+deaths 13 Add 1 skywing TargetTree
+return
+
+:t1_4
+attack_to Loc.45 Loc.53
+deaths 13 Add 1 skywing TargetTree
+return
+
+:t1_5
+attack_to Loc.25 Loc.26
+deaths 13 Add 1 skywing TargetTree
+return
+
+:t1_6
+attack_to Loc.27 Loc.52
+deaths 13 Add 1 skywing TargetTree
+return
+
+:t1_7
+attack_to Loc.39 Loc.54
+deaths 13 Add 1 skywing TargetTree
+return
+
+:Tree2
+deaths 13 Exactly 0 skywing t2_1
+deaths 13 Exactly 1 skywing t2_2
+deaths 13 Exactly 2 skywing t2_3
+deaths 13 Exactly 3 skywing t2_4
+deaths 13 Exactly 4 skywing t2_5
+deaths 13 Exactly 5 skywing t2_6
+deaths 13 Exactly 6 skywing t2_7
+attack_prepare
+return
+
+:t2_1
+attack_to Loc.27 Loc.26
+deaths 13 Add 1 skywing TargetTree
+return
+
+:t2_2
+attack_to Loc.41 Loc.28
+deaths 13 Add 1 skywing TargetTree
+return
+
+:t2_3
+attack_to Loc.27 Loc.55
+deaths 13 Add 1 skywing TargetTree
+return
+
+:t2_4
+attack_to Loc.51 Loc.28
+deaths 13 Add 1 skywing TargetTree
+return
+
+:t2_5
+attack_to Loc.23 Loc.56
+deaths 13 Add 1 skywing TargetTree
+return
+
+:t2_6
+attack_to Loc.25 Loc.56
+deaths 13 Add 1 skywing TargetTree
+return
+
+:t2_7
+attack_to Loc.27 Loc.55
+deaths 13 Add 1 skywing TargetTree
+return
+
+:Tree3
+deaths 13 Exactly 0 skywing t3_1
+deaths 13 Exactly 1 skywing t3_2
+deaths 13 Exactly 2 skywing t3_3
+deaths 13 Exactly 3 skywing t3_4
+deaths 13 Exactly 4 skywing t3_5
+deaths 13 Exactly 5 skywing t3_6
+deaths 13 Exactly 6 skywing t3_7
+attack_prepare
+return
+
+:t3_1
+attack_to Loc.51 Loc.28
+deaths 13 Add 1 skywing TargetTree
+return
+
+:t3_2
+attack_to Loc.41 Loc.28
+deaths 13 Add 1 skywing TargetTree
+return
+
+:t3_3
+attack_to Loc.39 Loc.54
+deaths 13 Add 1 skywing TargetTree
+return
+
+:t3_4
+attack_to Loc.27 Loc.57
+deaths 13 Add 1 skywing TargetTree
+return
+
+:t3_5
+attack_to Loc.23 Loc.55
+deaths 13 Add 1 skywing TargetTree
+return
+
+:t3_6
+attack_to Loc.23 Loc.54
+deaths 13 Add 1 skywing TargetTree
+return
+
+:t3_7
+attack_to Loc.51 Loc.52
+deaths 13 Add 1 skywing TargetTree
+return
+
+:aegis_area
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+:aegis_loop
+wait_rand 9335 18505
+
+value_area
+goto aegis_loop

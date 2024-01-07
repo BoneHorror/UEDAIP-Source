@@ -1,0 +1,228 @@
+script_name Zerg 9 - Left Yellow Protoss
+script_id Z9ly
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 nexus 150
+build 3 probe 130
+build 13 probe 80
+player_need 1 gateway
+build 1 cybernetics_core 80
+build 2 stargate 80
+build 1 robotics_facility 80
+build 1 robotics_support_bay 80
+build 1 fleet_beacon 80
+build 1 arbiter_tribunal 80
+build 1 observatory 80
+defensebuild_gg 2 scout
+defenseuse_gg 2 scout
+defensebuild_ga 2 scout
+defenseuse_ga 2 scout
+defensebuild_ga 1 carrier
+defenseuse_ga 1 carrier
+defensebuild_aa 2 scout
+defenseuse_aa 2 scout
+defensebuild_aa 1 carrier
+defenseuse_aa 1 carrier
+max_workers 19
+multirun attack_thread
+
+:wait_for_formation
+wait 16
+
+deaths 0 AtLeast 1 valkyrie formation_started
+goto wait_for_formation
+
+:formation_started
+kill_thread
+attack_clear
+define_max 8 carrier
+define_max 15 scout
+build 3 stargate 90
+build 4 stargate 85
+build 5 stargate 80
+train 6 carrier
+wait_force 4 carrier
+wait 250
+
+attack_add 6 carrier
+attack_to (117,1686) (433,379)
+wait 16
+
+attack_timeout 60
+attack_do
+attack_clear
+define_max 6 carrier
+define_max 21 scout
+train 21 scout
+wait_force 14 scout
+attack_add 21 scout
+attack_do
+wait 16
+
+attack_timeout 60
+attack_clear
+
+:block2
+train 5 scout
+attack_add 5 scout
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 4 carrier
+train 8 scout
+attack_add 8 scout
+attack_add 4 carrier
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 6 carrier
+wait_force 4 carrier
+wait 200
+
+attack_add 6 carrier
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto block2
+
+:attack_thread
+killable
+wait 5977
+
+attack_add 2 scout
+attack_add 1 zealot
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 1 carrier
+wait 3833
+
+attack_add 2 scout
+attack_add 1 carrier
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3333
+
+defensebuild_gg 1 carrier
+defenseuse_gg 1 carrier
+train 1 carrier
+wait 2000
+
+
+train 2 scout
+attack_add 1 carrier
+attack_add 2 scout
+attack_add 3 zealot
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+defensebuild_ag 1 scout
+defenseuse_ag 1 scout
+wait 3666
+
+train 6 scout
+attack_add 6 scout
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 4133
+
+train 2 carrier
+wait_force 2 carrier
+wait 200
+
+attack_add 2 carrier
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 5444
+
+train 1 carrier
+train 5 scout
+attack_add 5 scout
+attack_add 1 carrier
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 1 carrier
+train 2 zealot
+attack_add 2 zealot
+attack_add 1 carrier
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 5333
+
+train 2 carrier
+train 4 scout
+attack_add 4 scout
+attack_add 2 carrier
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3222
+
+:block1
+killable
+train 5 scout
+attack_add 5 scout
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 4111
+
+train 2 carrier
+train 4 scout
+attack_add 4 scout
+attack_add 2 carrier
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 5244
+
+train 4 carrier
+wait_force 4 carrier
+wait 200
+
+attack_add 4 carrier
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3444
+
+goto block1
+

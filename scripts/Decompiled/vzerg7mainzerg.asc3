@@ -1,0 +1,162 @@
+script_name Zerg 7 - Ground Town
+script_id Zr7g
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 166
+wait 1
+
+guard_all
+wait 25
+
+max_force 496
+define_max 8 ultralisk
+define_max 15 hydralisk
+define_max 4 scourge
+define_max 20 zergling
+define_max 6 mutalisk
+define_max 4 guardian
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defensebuild_gg 3 hydralisk
+defenseuse_gg 3 hydralisk
+define_max 255 broodling
+defenseuse_gg 1 broodling
+defensebuild_gg 5 zergling
+defenseuse_gg 5 zergling
+defensebuild_ag 3 hydralisk
+defenseuse_ag 3 hydralisk
+defensebuild_aa 4 scourge
+defenseuse_aa 4 scourge
+defensebuild_aa 2 mutalisk
+defenseuse_aa 2 mutalisk
+defensebuild_ga 2 mutalisk
+defenseuse_ga 2 mutalisk
+defensebuild_ga 2 guardian
+defenseuse_ga 2 guardian
+upgrade 1 overlord_speed 30
+upgrade 1 z_carapace 30
+upgrade 1 overlord_capacity 30
+upgrade 1 z_flyer_carapace 30
+upgrade 1 ultralisk_speed 30
+tech burrowing 30
+upgrade 1 zergling_speed 30
+upgrade 1 hydralisk_speed 30
+upgrade 1 z_melee_attack 30
+upgrade 1 zergling_attack 30
+upgrade 1 hydralisk_range 30
+upgrade 1 z_missile_attack 30
+upgrade 1 z_flyer_attack 30
+multirun bank
+wait 9550
+
+attack_add 1 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 6633
+
+attack_add 1 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech dark_swarm 30
+upgrade 1 defiler_mana 30
+upgrade 2 z_melee_attack 30
+upgrade 2 z_missile_attack 30
+upgrade 2 z_flyer_attack 30
+upgrade 2 z_carapace 30
+upgrade 2 z_flyer_carapace 30
+wait 6500
+
+attack_add 2 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech plague 30
+upgrade 3 z_melee_attack 30
+upgrade 3 z_missile_attack 30
+upgrade 3 z_flyer_attack 30
+upgrade 3 z_carapace 30
+upgrade 3 z_flyer_carapace 30
+attack_add 2 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 5500
+
+attack_add 3 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+multirun help_request
+wait 450
+
+multirun slow_and_steady
+:its_over_man
+wait 60
+
+capt_expand
+goto its_over_man
+
+:slow_and_steady
+wait 6780
+
+attack_add 2 ultralisk
+attack_add 10 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 5500
+
+attack_add 3 ultralisk
+attack_add 2 guardian
+attack_add 6 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto slow_and_steady
+
+:bank
+wait 480
+
+load_bank fk
+wait 160
+
+bank_data Exactly 0 fk activator_1 bank_abandon
+:bloop
+wait 16
+
+deaths 5 AtMost 0 hultralisk bloop
+bank_data Set 1 fk activator_2 bank
+save_bank fk
+stop
+
+:bank_abandon
+deaths 5 Set 12 hmutalisk bloop
+stop
+
+:help_request
+wait 1633
+
+wait_secure
+help_iftrouble
+goto help_request
+

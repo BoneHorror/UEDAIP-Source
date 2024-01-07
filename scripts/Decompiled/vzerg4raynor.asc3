@@ -1,0 +1,430 @@
+script_name Zerg 4 - Right Terran Town
+script_id Zer4
+
+unstart_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+if_owned covert_ops duke
+build 1 command_center 150
+build 1 scv 130
+build 18 scv 80
+build 2 barracks 80
+build 1 factory 80
+build 1 starport 80
+build 1 engineering_bay 80
+build 1 academy 80
+build 1 armory 80
+build 1 machine_shop 80
+build 1 control_tower 80
+defensebuild_gg 2 marine
+defenseuse_gg 2 marine
+defenseuse_gg 1 siege_tank
+defensebuild_gg 1 firebat
+defenseuse_gg 1 firebat
+defensebuild_gg 1 vulture
+defenseuse_gg 1 vulture
+defenseuse_gg 1 goliath
+defenseuse_gg 1 marine
+defensebuild_ag 1 goliath
+defenseuse_ag 1 goliath
+defensebuild_ag 1 marine
+defenseuse_ag 1 marine
+defensebuild_ga 1 wraith
+defenseuse_ga 1 wraith
+defensebuild_aa 1 wraith
+defenseuse_aa 1 wraith
+max_workers 20
+max_force 800
+farms_timing
+aicontrol build_gas
+define_max 5 dropship
+define_max 26 marine
+define_max 12 firebat
+define_max 7 vulture
+define_max 7 wraith
+define_max 48 scv
+define_max 3 siege_tank
+define_max 4 goliath
+multirun upg_raynor
+upgrade 1 t_infantry_armor 50
+wait 1600
+
+multirun help_request
+set_attacks 2
+train 3 marine
+train 4 firebat
+attack_add 3 marine
+attack_add 4 firebat
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+check_transports
+upgrade 1 t_infantry_weapon 60
+wait 1000
+
+multirun early
+expand 1 town
+multirun get_barracks
+upgrade 1 marine_range 70
+wait 1500
+
+panic town
+upgrade 1 vulture_speed 60
+upgrade 1 t_ship_plating 50
+wait 4500
+
+multirun get_factory
+upgrade 1 t_vehicle_weapon 50
+upgrade 1 t_ship_weapon 30
+wait 2500
+
+expand 2 town
+tech stim_packs 30
+upgrade 1 t_vehicle_plating 30
+wait 6500
+
+expand 3 town
+wait 3500
+
+tech cloaking_field 30
+wait 2500
+
+upgrade 1 vademecum 30
+:main_idle
+wait 6500
+
+expand 4 town
+goto main_idle
+
+:early
+set_attacks 4
+train 3 wraith
+attack_add 3 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1677
+
+train 4 marine
+train 4 firebat
+attack_add 4 marine
+attack_add 4 firebat
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+train 6 firebat
+train 2 vulture
+attack_add 2 vulture
+attack_add 6 firebat
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1745
+
+set_attacks 5
+train 3 firebat
+train 4 marine
+train 2 siege_tank
+train 3 wraith
+attack_add 3 firebat
+attack_add 4 marine
+attack_add 2 siege_tank
+attack_add 3 wraith
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+train 5 firebat
+train 2 goliath
+attack_add 5 firebat
+attack_add 2 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1325
+
+train 4 firebat
+train 4 vulture
+train 2 goliath
+attack_add 4 firebat
+attack_add 4 vulture
+attack_add 2 goliath
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+train 2 wraith
+train 4 vulture
+train 2 firebat
+attack_add 4 vulture
+attack_add 2 firebat
+attack_add 2 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1250
+
+:late
+set_attacks 4
+
+train 2 wraith
+train 15 marine
+train 5 firebat
+train 3 wraith
+train 2 goliath
+attack_add 15 marine
+attack_add 5 firebat
+attack_add 2 goliath
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+train 4 wraith
+train 4 firebat
+train 15 marine
+train 3 siege_tank
+train 5 wraith
+attack_add 4 firebat
+attack_add 15 marine
+attack_add 3 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 6 wraith
+attack_add 6 wraith
+target_expansion
+wait 500
+
+attack_do
+attack_clear
+goto late
+
+:get_barracks
+wait 500
+
+try_townpoint 1 get_barracks
+build 2 barracks 80
+stop
+
+:get_factory
+wait 800
+
+try_townpoint 3 get_factory
+build 2 factory 80
+build 2 machine_shop 80
+stop
+
+:town
+start_town
+build 1 command_center 100
+get_oldpeons 1
+wait_buildstart 1 command_center
+build 1 bunker 80
+place_guard marine 0
+place_guard marine 0
+wait_build 1 command_center
+build 1 scv 100
+build 3 scv 90
+build 10 scv 80
+region_size 2 small_town
+call random_factory
+:e_loop
+wait 1500
+
+goto e_loop
+
+:small_town
+wait 1500
+
+goto small_town
+
+:random_factory
+random_jump 85 r_barracks
+random_jump 128 r_factory
+build 1 starport 80
+wait_build 1 starport
+build 1 control_tower 80
+return
+
+:r_barracks
+build 1 barracks 80
+wait_build 1 barracks
+build 1 missile_turret 80
+return
+
+:r_factory
+build 1 factory 80
+wait_build 1 factory
+build 1 machine_shop 80
+return
+
+:upg_raynor
+wait 17280
+
+upgrade_jump 2 Set t_ship_weapon 1 upg_raynor
+upgrade_jump 2 Set t_ship_plating 1 upg_raynor
+wait 17280 
+
+upgrade_jump 2 Set t_ship_weapon 2 upg_raynor
+upgrade_jump 2 Set t_ship_plating 2 upg_raynor
+wait 17280
+
+upgrade_jump 2 Set t_ship_weapon 3 upg_raynor
+upgrade_jump 2 Set t_ship_plating 3 upg_raynor
+stop
+
+:duke
+max_force 1000
+defensebuild_gg 2 marine
+defenseuse_gg 2 marine
+defensebuild_gg 1 ghost
+defenseuse_gg 1 ghost
+defensebuild_ag 1 marine
+defenseuse_ag 1 marine
+defensebuild_ag 1 ghost
+defenseuse_ag 1 ghost
+defensebuild_ga 1 wraith
+defenseuse_ga 1 wraith
+defensebuild_aa 1 wraith
+defenseuse_aa 1 wraith
+define_max 16 marine
+define_max 6 ghost
+define_max 4 wraith
+define_max 3 dropship
+wait 1875
+
+attack_add 6 marine
+call dominion_target
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_infantry_armor 30
+wait 1375
+
+attack_add 6 marine
+attack_add 2 wraith
+call dominion_target
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_ship_plating 30
+wait 2175
+
+attack_add 3 ghost
+attack_add 2 wraith
+call dominion_target
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_infantry_weapon 30
+wait 1475
+
+attack_add 8 marine
+attack_add 3 wraith
+call dominion_target
+wait 500
+
+attack_do
+attack_clear
+wait 2175
+
+attack_add 10 marine
+attack_add 2 ghost
+call dominion_target
+wait 500
+
+attack_do
+attack_clear
+wait 2875
+
+attack_add 4 ghost
+attack_add 3 wraith
+call dominion_target
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 t_ship_weapon 30
+
+:blockdom
+wait 1775
+
+attack_add 6 marine
+call dominion_target
+wait 500
+
+attack_do
+attack_clear
+wait 2475
+
+attack_add 4 wraith
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3375
+
+attack_add 9 marine
+attack_add 4 ghost
+attack_add 3 wraith
+call dominion_target
+wait 500
+
+attack_do
+attack_clear
+goto blockdom
+
+:dominion_target
+random_jump 192 dom_player
+attack_prepare
+return
+
+:dom_player
+deaths 6 Exactly 2 hydralisk force_raynor
+attack_to Loc.11 Loc.12
+deaths 6 Add 1 hydralisk blockdom
+return
+
+:force_raynor
+deaths 6 Set 0 hydralisk blockdom
+random_jump 128 fr_2
+attack_to Loc.13 Loc.14
+return
+
+:fr_2
+attack_to Loc.13 Loc.15
+return
+
+:help_request
+wait 1633
+
+wait_secure
+help_iftrouble
+goto help_request
+

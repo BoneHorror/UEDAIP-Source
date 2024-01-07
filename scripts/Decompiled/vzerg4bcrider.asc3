@@ -1,0 +1,108 @@
+script_name Zerg 4 - Lower Terran Town
+script_id Ze4S
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+wait 120
+
+load_bank raynor
+wait 160
+
+bank_data Exactly 1 raynor hype bc_hyp
+bank_data Exactly 1 raynor stal bc_sta 
+bank_data Exactly 1 raynor bism bc_bis
+bank_data Exactly 1 raynor graf bc_gra
+bank_data Exactly 1 raynor nora bc_nor
+bank_data Exactly 1 raynor levi bc_lev
+goto bc_hyp
+
+:bc_lev
+wait 2500
+#total waits to this point would make the BC spawn at around 2 fastest minutes
+#remember to add triggers that account for raynor existing in a BC later
+create_unit 261 2912 400
+defenseuse_gg 1 261
+defenseuse_ag 1 261
+defenseuse_ga 1 261
+defenseuse_aa 1 261
+defenseuse_gg 1 wraith
+defenseuse_ag 1 wraith
+defenseuse_ga 1 wraith
+defenseuse_aa 1 wraith
+idle_orders 163 32 1 261 4096 command_center 255 Own|Self(Health(LessThanPercent 45))
+goto bc_idle
+
+:bc_gra
+wait 2500
+
+create_unit 262 2912 400
+defenseuse_gg 1 262
+defenseuse_ag 1 262
+defenseuse_ga 1 262
+defenseuse_aa 1 262
+idle_orders 163 32 1 262 4096 command_center 255 Own|Self(Health(LessThanPercent 45))
+goto bc_idle
+
+:bc_bis
+wait 2500
+
+create_unit 263 2912 400
+defenseuse_gg 1 263
+defenseuse_ag 1 263
+defenseuse_ga 1 263
+defenseuse_aa 1 263
+idle_orders 163 32 1 263 4096 command_center 255 Own|Self(Health(LessThanPercent 45))
+goto bc_idle
+
+:bc_sta
+wait 2500
+
+create_unit 264 2912 400
+defenseuse_gg 1 264
+defenseuse_ag 1 264
+defenseuse_ga 1 264
+defenseuse_aa 1 264
+idle_orders 163 32 1 264 4096 command_center 255 Own|Self(Health(LessThanPercent 45))
+goto bc_idle
+
+:bc_nor
+wait 2500
+
+create_unit 265 2912 400
+defenseuse_gg 1 265
+defenseuse_ag 1 265
+defenseuse_ga 1 265
+defenseuse_aa 1 265
+idle_orders 163 32 1 265 4096 command_center 255 Own|Self(Health(LessThanPercent 45))
+goto bc_idle
+
+:bc_hyp
+wait 2500
+
+create_unit 28 2912 400
+defenseuse_gg 1 28
+defenseuse_ag 1 28
+defenseuse_ga 1 28
+defenseuse_aa 1 28
+idle_orders 163 32 1 28 4096 command_center 255 Own|Self(Health(LessThanPercent 45))
+:bc_idle
+wait 10050
+
+wait 17650
+
+send_suicide 0
+wait 10500
+
+wait 27540
+
+send_suicide 0
+:bcl
+wait 15000
+
+goto bcl

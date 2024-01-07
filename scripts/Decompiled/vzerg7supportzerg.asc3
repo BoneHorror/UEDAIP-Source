@@ -1,0 +1,287 @@
+script_name Zerg 7 - Support Town
+script_id Zr7s
+
+start_town
+defaultbuild_off
+default_min 101
+wait 1
+
+if_owned infested_command_center ling_it
+if_owned hydralisk_den hydralisk_ling
+default_min 255
+guard_all
+define_max 10 zergling
+define_max 255 drone
+define_max 5 overlord
+check_transports
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+define_max 255 broodling
+defenseuse_gg 1 broodling
+defenseuse_gg 1 hydralisk
+defenseuse_gg 1 mutalisk
+defenseuse_aa 1 mutalisk
+capt_expand
+max_force 300
+under_attack 0
+upgrade 1 z_melee_attack 30
+upgrade 1 overlord_sight 30
+
+:flavour_loop
+wait 16
+
+attack_add 1 zergling
+attack_prepare
+quick_attack
+attack_do
+attack_clear
+notowns_jump mutalisk skip_muta
+attack_add 1 mutalisk
+attack_prepare
+quick_attack
+attack_do
+attack_clear
+
+:skip_muta
+notowns_jump hydralisk flavour_loop
+attack_add 1 hydralisk
+attack_prepare
+quick_attack
+attack_do
+attack_clear
+wait 300
+
+goto flavour_loop
+
+:ling_it
+defensebuild_gg 2 infested_terran
+defenseuse_gg 2 infested_terran
+defensebuild_gg 4 zergling
+defenseuse_gg 4 zergling
+defenseuse_ga 1 infested_terran
+defenseuse_ga 1 zergling
+defensebuild_aa 1 zergling
+defensebuild_aa 1 queen
+defenseuse_aa 1 queen
+max_force 464
+farms_timing
+check_transports
+define_max 18 zergling
+define_max 3 infested_terran
+define_max 2 queen
+define_max 30 overlord
+define_max 255 broodling
+defenseuse_gg 1 broodling
+upgrade 1 z_melee_attack 30
+upgrade 1 zergling_speed 30
+upgrade 1 overlord_sight 30
+tech burrowing 30
+wait_train 2 infested_terran
+wait_train 13 zergling
+wait 16
+
+attack_add 1 infested_terran
+attack_prepare
+quick_attack
+attack_do
+attack_clear
+wait 4325
+
+capt_expand
+wait_force 14 zergling
+attack_add 9 zergling
+attack_prepare
+quick_attack
+attack_do
+attack_clear
+wait 2975
+
+tech spawn_broodling 30
+wait_force 2 infested_terran
+capt_expand
+capt_expand
+wait 2085
+
+attack_add 1 infested_terran
+attack_prepare
+quick_attack
+attack_do
+attack_clear
+guard_all
+upgrade 2 z_melee_attack 30
+attack_add 1 infested_terran
+attack_prepare
+quick_attack
+attack_do
+attack_clear
+attack_add 4 zergling
+attack_prepare
+quick_attack
+attack_do
+attack_clear
+wait 1765
+
+train 2 infested_terran
+train 16 zergling
+wait_train 12 zergling
+attack_add 13 zergling
+attack_prepare
+quick_attack
+attack_do
+attack_clear
+upgrade 1 z_carapace 30
+upgrade 1 zergling_attack 30
+wait 3445
+
+define_max 26 zergling
+define_max 4 infested_terran
+train 26 zergling
+wait_force 2 infested_terran
+attack_add 20 zergling
+attack_prepare
+quick_attack
+attack_do
+attack_clear
+attack_add 4 zergling
+attack_add 2 infested_terran
+attack_prepare
+quick_attack
+attack_do
+attack_clear
+upgrade 1 queen_mana 30
+wait 3437
+
+upgrade 2 z_carapace 30
+define_max 124 zergling
+train 64 zergling
+attack_add 32 zergling
+attack_prepare
+wait 48
+
+attack_prepare
+wait 2675
+
+attack_add 32 zergling
+attack_prepare
+quick_attack
+attack_do
+attack_clear
+define_max 7 infested_terran
+upgrade 3 z_carapace 30
+upgrade 3 z_melee_attack 30
+tech ensnare 30
+wait 3425
+
+train 7 infested_terran
+attack_add 14 zergling
+attack_add 7 infested_terran
+attack_prepare
+quick_attack
+attack_do
+attack_clear
+wait 2825
+
+under_attack 2
+train 112 zergling
+attack_add 64 zergling
+attack_prepare
+wait 48
+
+attack_prepare
+wait 1175
+
+attack_add 48 zergling
+attack_prepare
+quick_attack
+attack_do
+attack_clear
+capt_expand
+capt_expand
+wait 1014
+
+capt_expand
+capt_expand
+wait 1014
+
+send_suicide 0
+wait 437
+
+capt_expand
+capt_expand
+wait 1014
+
+:the_outside_of_madness
+capt_expand
+capt_expand
+wait 1014
+
+capt_expand
+capt_expand
+wait 1014
+
+random_jump 128 s_s1
+send_suicide 0
+goto the_outside_of_madness
+
+:s_s1
+send_suicide 1
+goto the_outside_of_madness
+
+:hydralisk_ling
+max_force 200
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+capt_expand
+tech burrowing 30
+upgrade 1 zergling_speed 30
+upgrade 1 hydralisk_range 30
+define_max 255 broodling
+defenseuse_gg 1 broodling
+define_max 24 zergling
+define_max 7 hydralisk
+wait 2023
+
+train 3 hydralisk
+attack_add 3 hydralisk
+attack_prepare
+quick_attack
+attack_do
+attack_clear
+wait 1808
+
+train 14 zergling
+attack_add 13 zergling
+attack_prepare
+quick_attack
+attack_do
+attack_clear
+
+wait 654
+:hling_loop
+train 6 hydralisk
+wait_train 6 hydralisk
+attack_add 5 hydralisk
+attack_prepare
+quick_attack
+attack_do
+attack_clear
+wait 2214
+
+attack_add 6 zergling
+attack_prepare
+quick_attack
+attack_do
+attack_clear
+attack_add 5 zergling
+attack_add 2 hydralisk
+attack_prepare
+quick_attack
+attack_do
+attack_clear
+wait 2005
+
+goto hling_loop

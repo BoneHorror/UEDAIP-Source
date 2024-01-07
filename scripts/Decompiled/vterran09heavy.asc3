@@ -1,0 +1,237 @@
+script_name Terran 9 - Heavy Attack
+script_id Tr9H
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 command_center 150
+build 4 scv 130
+build 2 barracks 80
+build 2 factory 80
+build 1 academy 80
+build 2 armory 80
+build 1 engineering_bay 80
+build 2 machine_shop 80
+build 22 scv 80
+idle_orders disablebuiltin 0 0 0 0 0 0 0
+max_force 900
+define_max 40 scv
+define_max 30 marine
+define_max 17 goliath
+define_max 12 siege_tank
+define_max 10 vulture
+define_max 8 firebat
+define_max 3 dropship
+defensebuild_gg 1 goliath
+defenseuse_gg 1 goliath
+defensebuild_gg 1 siege_tank
+defenseuse_gg 1 siege_tank
+defensebuild_gg 1 goliath
+defenseuse_gg 1 goliath
+defensebuild_gg 1 marine
+defenseuse_gg 1 marine
+defenseuse_gg 1 firebat
+defensebuild_ag 1 goliath
+defenseuse_ag 1 goliath
+defensebuild_ag 1 marine
+defenseuse_ag 1 marine
+farms_timing
+tech siege_mode 30
+upgrade 1 t_ship_plating 30
+upgrade 1 t_infantry_weapon 30
+upgrade 1 t_vehicle_plating 30
+idle_orders 141 83 1 science_vessel 776 firebat 10 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 50)|Self(Energy(GreaterThan 149))
+idle_orders 141 83 1 science_vessel 776 goliath 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 99))
+idle_orders 141 83 1 science_vessel 776 vulture 10 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 149))
+idle_orders 141 83 1 science_vessel 776 wraith 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 149))
+idle_orders 141 83 1 science_vessel 776 siege_tank 40 own|allied|notenemies|incombat|Health(LessThanPercent 70)|Health(GreaterThanPercent 30)
+idle_orders 141 83 1 science_vessel 776 102 80 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 10)
+wait 25
+
+load_bank concom
+wait 1
+
+multirun bank_check
+wait 2000
+
+deaths 4 Exactly 2 archon faster_attacks_orange
+wait 4000
+
+attack_add 4 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 t_ship_plating 30
+upgrade 1 t_infantry_armor 30
+upgrade 1 t_ship_weapon 30
+wait 4000
+
+attack_add 6 marine
+attack_add 2 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 science_vessel_mana 30
+upgrade 1 t_vehicle_weapon 30
+wait 4500
+
+attack_add 4 goliath
+attack_add 4 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+:orange_return
+tech irradiate 30
+upgrade 3 t_ship_plating 30
+upgrade 2 t_vehicle_plating 30
+upgrade 2 t_infantry_weapon 30
+wait 4500
+
+attack_add 8 goliath
+attack_add 2 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+tech yamato_gun 30
+upgrade 2 t_ship_weapon 30
+upgrade 2 t_vehicle_weapon 30
+idle_orders 143 120 1 science_vessel 1312 infested_terran|lurker|guardian|mutalisk|zealot|dark_templar|medic|ghost 120 Health(GreaterThan 50)|WithoutSpellEffects(Irradiate)
+wait 3500
+
+attack_add 12 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 battlecruiser_mana 30
+upgrade 2 t_vehicle_plating 30
+idle_orders 113 32 2 102 356 battlecruiser|barracks|factory|starport 80 InCombat|Hp(GreaterThanPercent 75)
+idle_orders 113 32 1 102 356 wraith|dropship|goliath|ghost 60 InCombat|count(AtLeast 2 60 14)
+idle_orders 113 32 1 102 356 marine|wraith|goliath|ghost 70 InCombat|count(AtLeast 3 60 14)
+idle_orders 113 32 1 102 356 siege_tank 60 InCombat|count(AtLeast 3 60 14)
+idle_orders 113 32 1 102 356 group_men 50 InCombat|count(AtLeast 4 60 14)
+wait 3500
+
+attack_add 10 marine
+attack_add 5 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 dragon_catalyst 30
+upgrade 3 t_infantry_armor 30
+upgrade 3 t_infantry_weapon 30
+upgrade 3 t_ship_weapon 30
+upgrade 3 t_vehicle_weapon 30
+upgrade 3 t_vehicle_plating 30
+:block1
+wait 3325
+
+train 16 marine
+train 5 goliath
+attack_add 16 marine
+attack_add 5 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3600
+
+train 4 goliath
+train 7 siege_tank
+attack_add 4 goliath
+attack_add 7 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2225
+
+train 10 goliath
+train 4 siege_tank
+attack_add 10 goliath
+attack_add 4 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 3 siege_tank
+attack_add 3 siege_tank
+goto block1
+
+:bank_check
+bank_data Exactly 1 concom destroyed unprepared
+bank_data Exactly 2 concom destroyed very_prepared
+stop
+
+:unprepared
+deaths 4 Set 1 archon bank_check
+resources 5 Subtract Ore 1350 bank_check
+resources 4 Subtract Ore 500 bank_check
+resources 7 Subtract Gas 800 bank_check
+stop
+
+:very_prepared
+deaths 4 Set 2 archon bank_check
+stop
+
+:faster_attacks_orange
+wait 2850
+
+train 4 goliath
+train 1 siege_tank
+attack_add 1 siege_tank
+attack_add 4 goliath
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 t_ship_plating 30
+upgrade 1 t_infantry_armor 30
+upgrade 1 t_ship_weapon 30
+wait 3333
+
+train 6 marine
+train 2 siege_tank
+attack_add 6 marine
+attack_add 2 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 science_vessel_mana 30
+upgrade 1 t_vehicle_weapon 30
+wait 2850
+
+train 5 goliath
+train 5 siege_tank
+attack_add 5 goliath
+attack_add 5 siege_tank
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto orange_return
+
+

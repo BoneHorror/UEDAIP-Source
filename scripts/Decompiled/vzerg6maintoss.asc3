@@ -1,0 +1,1507 @@
+script_name Zerg 6 - Protoss Town
+script_id Zer6
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 1
+wait 1
+
+if_owned hatchery zerg_split
+notowns_jump stargate legion_toss
+notowns_jump arbiter_tribunal robo_toss
+multirun kerrigan_picker
+build 1 nexus 150
+build 1 probe 130
+build 18 probe 80
+build 4 gateway 80
+build 2 stargate 80
+build 1 cybernetics_core 80
+build 2 robotics_facility 80
+build 1 robotics_support_bay 80
+build 1 citadel_of_adun 80
+build 1 templar_archives 80
+build 1 fleet_beacon 80
+build 1 arbiter_tribunal 80
+build 1 observatory 80
+define_max 20 zealot
+define_max 20 dragoon
+define_max 5 reaver
+define_max 5 shuttle
+define_max 4 high_templar
+define_max 3 archon
+define_max 8 scout
+define_max 3 carrier
+define_max 1 arbiter
+define_max 1 harbiter
+define_max 30 probe
+define_max 5 observer
+defensebuild_gg 3 dragoon
+defenseuse_gg 3 dragoon
+defensebuild_gg 2 zealot
+defenseuse_gg 2 zealot
+defensebuild_gg 1 reaver
+defenseuse_gg 1 reaver
+defensebuild_gg 1 scout
+defenseuse_gg 1 scout
+defensebuild_gg 1 high_templar
+defensebuild_gg 1 archon
+defenseuse_gg 1 archon
+defensebuild_gg 1 carrier
+defenseuse_gg 1 carrier
+defensebuild_ag 3 dragoon
+defenseuse_ag 3 dragoon
+defensebuild_ag 1 archon
+defenseuse_ag 1 archon
+defensebuild_ga 1 scout
+defenseuse_ga 1 scout
+defensebuild_ga 1 carrier
+defenseuse_ga 1 carrier
+defensebuild_aa 1 scout
+defenseuse_aa 1 scout
+defensebuild_aa 1 carrier
+defenseuse_aa 1 carrier
+max_force 1500
+capt_expand
+supply 13 Set 250 Max 0 Protoss legion
+idle_orders disablebuiltin 0 0 0 0 0 0 0
+idle_orders 10 16 1 zealot|dark_templar|scout 160 group_men 80 Health(LessThan 14)
+idle_orders 10 16 1 zealot|dark_templar|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 120 Health(LessThan 14)
+idle_orders 10 16 1 zealot|dark_templar|scout 160 sunken_colony|photon_cannon 90 Health(LessThan 12)
+idle_orders 10 16 3 zealot|dark_templar|scout 160 group_men 90 Health(LessThan 33)
+idle_orders 10 16 3 zealot|dark_templar|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 130 Health(LessThan 33)
+idle_orders 10 16 3 zealot|dark_templar|scout 160 sunken_colony|photon_cannon 100 Health(LessThan 24)
+idle_orders 10 16 5 zealot|dark_templar|scout 160 group_men 95 Health(LessThan 60)
+idle_orders 10 16 5 zealot|dark_templar|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 135 Health(LessThan 60)
+idle_orders 10 16 5 zealot|dark_templar|scout 160 sunken_colony|photon_cannon|bunker 105 Health(LessThan 45)
+idle_orders 59 16 1 reaver 128 hhydralisk 130 count(AtLeast 2 40 14)
+idle_orders 59 16 1 reaver 128 zergling 80 count(AtLeast 5 40 14)
+idle_orders 59 16 1 reaver 128 hydralisk 60 count(AtLeast 2 40 14)
+idle_orders 10 64 1 dragoon 192 sunken_colony|photon_cannon|bunker 110 Health(LessThan 20)
+idle_orders 10 64 1 dragoon 192 group_men 100 Health(LessThan 15)
+idle_orders 10 64 2 dragoon 192 group_men 105 Health(LessThan 35)
+idle_orders 10 64 1 dragoon 192 infested_terran|dark_archon|defiler 130 Health(LessThan 20)
+idle_orders 10 64 1 dragoon 192 lurker|queen 120 Health(LessThan 20)
+idle_orders 10 64 1 archon 160 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine|firebat 150 count(AtLeast 3 48 14)
+idle_orders 10 16 1 archon 128 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine 110 count(AtLeast 2 24 14)
+idle_orders 10 16 2 archon 128 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine 130 count(AtLeast 2 24 14)
+idle_orders 10 16 1 scout|corsair 192 mutalisk|scout|corsair|scourge|wraith 110 Health(LessThan 20)
+idle_orders 10 16 3 scout|corsair 192 mutalisk|scout|corsair|scourge|wraith 135 Health(LessThan 60)
+idle_orders 10 16 1 scout|corsair 192 guardian|battlecruiser|carrier 150 Health(LessThan 20)
+idle_orders 10 16 2 scout|corsair 192 guardian|battlecruiser|carrier 160 Health(LessThan 40)
+idle_orders 10 16 3 scout|corsair 192 guardian|battlecruiser|carrier 170 Health(LessThan 60)
+idle_orders 10 16 4 scout|corsair 192 guardian|battlecruiser|carrier 190 Health(LessThan 80)
+idle_orders 10 16 1 scout|corsair 192 shuttle|observer|overlord 60 Health(LessThan 20)
+idle_orders 10 16 1 hornet 192 group_men 60 Health(LessThan 11)
+idle_orders 10 16 1 hornet 192 infested_terran|defiler|dark_archon|lurker|dark_templar|ghost|siege_tank 90 Health(LessThan 12)
+idle_orders 10 16 2 hornet 192 infested_terran|defiler|dark_archon|lurker|dark_templar|ghost|siege_tank 90 Health(LessThan 22)
+idle_orders 10 16 1 hornet 192 group_men 60 Health(LessThan 5)
+idle_orders 10 16 1 scout|corsair|dragoon 160 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 80 Health(LessThan 30)
+idle_orders 10 16 2 scout|corsair|dragoon 160 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 90 Health(LessThan 60)
+wait 320
+
+multirun consistency_waves
+multirun templar_ensure
+under_attack 0
+wait 2600
+
+upgrade 1 shuttle_speed 50
+upgrade 1 p_plasma_shield 70
+upgrade 1 dragoon_range 60
+upgrade 1 p_armor 60
+upgrade 1 p_plating 50
+upgrade 1 scout_sight 60
+upgrade 1 p_ground_weapon 70
+upgrade 1 p_air_weapon 60
+upgrade 1 zealot_speed 60
+tech hallucination 30
+wait 480
+load_bank vz2bonus
+wait_upgrades
+wait 5800
+
+upgrade 1 scout_speed 60
+upgrade 2 p_plasma_shield 60
+upgrade 2 p_ground_weapon 60
+upgrade 2 p_air_weapon 60
+upgrade 2 p_armor 50
+upgrade 2 p_plating 40
+upgrade 1 carrier_capacity 70
+upgrade 1 templar_mana 30
+upgrade 1 scarab_damage 50
+upgrade 1 observer_speed 30
+tech psionic_storm 70
+tech recall 30
+idle_orders 148 64 1 high_templar 1024 zealot 40 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 dragoon 30 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 reaver 70 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 carrier 80 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 scout 50 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 shuttle 30 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 arbiter 60 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 zealot 40 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 ultralisk 80 incombat
+idle_orders 148 64 1 htassadar 1024 zealot 40 own|allied|notenemies|incombat
+idle_orders 148 64 1 htassadar 1024 dragoon 30 own|allied|notenemies|incombat
+idle_orders 148 64 1 htassadar 1024 reaver 70 own|allied|notenemies|incombat
+idle_orders 148 64 1 htassadar 1024 carrier 80 own|allied|notenemies|incombat
+idle_orders 148 64 1 htassadar 1024 scout 50 own|allied|notenemies|incombat
+idle_orders 148 64 1 htassadar 1024 shuttle 30 own|allied|notenemies|incombat
+idle_orders 148 64 1 htassadar 1024 arbiter 60 own|allied|notenemies|incombat
+idle_orders 148 64 1 htassadar 1024 zealot 40 own|allied|notenemies|incombat
+idle_orders 148 64 1 htassadar 1024 ultralisk 80 incombat
+wait 480
+
+wait_upgrades
+wait 6500
+
+upgrade 3 p_plasma_shield 30
+upgrade 3 p_ground_weapon 70
+upgrade 3 p_air_weapon 50
+upgrade 3 p_armor 30
+upgrade 3 p_plating 30
+upgrade 1 one_with_khala 60
+upgrade 1 reaver_capacity 30
+idle_orders 137 16 1 arbiter 65535 carrier 80 incombat|health(LessThan,200)|own|NotEnemies
+idle_orders 137 16 1 arbiter 65535 reaver 60 incombat|health(LessThan,85)|own|NotEnemies
+idle_orders 137 16 1 arbiter 65535 archon 70 incombat|health(LessThan,120)|own|NotEnemies
+idle_orders 137 16 1 harbiter 65535 carrier 80 incombat|health(LessThan,200)|own|NotEnemies
+idle_orders 137 16 1 harbiter 65535 reaver 60 incombat|health(LessThan,85)|own|NotEnemies
+idle_orders 137 16 1 harbiter 65535 archon 70 incombat|health(LessThan,120)|own|NotEnemies
+idle_orders 142 256 1 high_templar 324 ultralisk 50 incombat|count(AtLeast 2 60 14)
+idle_orders 142 128 1 high_templar 548 hydralisk 80 incombat|count(AtLeast 4 60 14)
+idle_orders 142 128 1 high_templar 548 group_men 90 incombat|count(AtLeast 5 60 14)
+idle_orders 142 128 1 high_templar 548 group_men 60 incombat|count(AtLeast 3 40 14)
+idle_orders 142 128 1 high_templar 548 group_men 90 incombat|count(AtLeast 5 60 6)|NotEnemies
+idle_orders 142 128 1 high_templar 548 group_men 60 incombat|count(AtLeast 3 40 6)|NotEnemies
+idle_orders 142 256 1 htassadar 324 ultralisk 50 incombat|count(AtLeast 2 60 14)
+idle_orders 142 128 1 htassadar 548 hydralisk 80 incombat|count(AtLeast 4 60 14)
+idle_orders 142 128 1 htassadar 548 group_men 90 incombat|count(AtLeast 5 60 14)
+idle_orders 142 128 1 htassadar 548 group_men 60 incombat|count(AtLeast 3 40 14)
+wait 480
+
+wait_upgrades
+wait 5000
+
+upgrade 1 arbiter_mana 30
+wait 5000
+
+wait 480
+wait_upgrades
+:idle_loop
+wait 6400
+
+goto idle_loop
+
+:robo_toss
+build 1 nexus 80
+build 12 probe 80
+build 2 gateway 80
+build 1 cybernetics_core 80
+build 2 robotics_facility 80
+build 1 robotics_support_bay 80
+build 1 citadel_of_adun 80
+build 1 forge 80
+build 2 photon_cannon 80
+build 1 shield_battery 50
+build 1 stargate 80
+build 1 observatory 80
+max_force 1000
+define_max 14 zealot
+define_max 10 dragoon
+define_max 255 archon
+define_max 255 high_templar
+define_max 6 scout
+define_max 10 hornet
+define_max 5 observer
+define_max 7 reaver
+define_max 5 shuttle
+idle_orders 59 16 1 reaver 128 hhydralisk 130 count(AtLeast 2 40 14)
+idle_orders 59 16 1 reaver 128 zergling 80 count(AtLeast 5 40 14)
+idle_orders 59 16 1 reaver 128 hydralisk 60 count(AtLeast 2 40 14)
+defensebuild_gg 2 reaver
+defenseuse_gg 2 reaver
+defensebuild_gg 1 zealot
+defenseuse_gg 1 zealot
+defensebuild_gg 1 dragoon
+defenseuse_gg 1 dragoon
+defensebuild_gg 1 hornet
+defenseuse_gg 1 hornet
+defensebuild_ag 1 dragoon
+defenseuse_ag 1 dragoon
+defensebuild_ag 1 scout
+defenseuse_ag 1 scout
+defensebuild_ga 1 scout
+defenseuse_ga 1 scout
+defensebuild_aa 1 hornet
+defenseuse_aa 1 hornet
+defensebuild_aa 1 scout
+defenseuse_aa 1 scout
+check_transports
+upgrade 1 p_armor 30
+upgrade 1 p_plasma_shield 30
+upgrade 1 reaver_capacity 30
+upgrade 1 p_plating 30
+upgrade 1 zealot_speed 30
+upgrade 1 dragoon_range 30
+wait 160
+
+multirun happyhour
+wait 3885
+
+upgrade 1 p_ground_weapon 30
+wait 4445
+
+upgrade 1 scarab_damage 30
+wait 3825
+
+upgrade 1 shuttle_speed 30
+upgrade 2 p_plasma_shield 30
+wait 3015
+
+upgrade 1 observer_sight 30
+wait 2850
+
+upgrade 3 p_plasma_shield 30
+wait 2880
+
+upgrade 1 observer_speed 30
+wait 3215
+
+goto idle_loop
+
+:happyhour
+train 4 hornet
+train 5 reaver
+attack_add 4 hornet
+attack_add 5 reaver
+call railway_system
+wait 500
+
+attack_do
+attack_clear
+wait 600
+
+train 2 scout
+train 2 reaver
+train 6 dragoon
+attack_add 2 scout
+attack_add 2 reaver
+attack_add 6 dragoon
+call railway_system
+wait 500
+
+attack_do
+attack_clear
+bank_data Exactly 1 vz2bonus claimed weaker_rea
+train 2 scout
+train 4 hornet
+train 3 reaver
+attack_add 2 scout
+attack_add 4 hornet
+attack_add 3 reaver
+call railway_system
+wait 500
+
+attack_do
+attack_clear
+:wr_return
+wait 900
+
+train 2 scout
+train 8 hornet
+attack_add 2 scout
+attack_add 8 hornet
+call railway_system
+wait 500
+
+attack_do
+attack_clear
+goto happyhour
+
+:weaker_rea
+train 2 scout
+train 4 hornet
+train 2 reaver
+attack_add 2 scout
+attack_add 4 hornet
+attack_add 2 reaver
+call railway_system
+wait 500
+
+attack_do
+attack_clear
+wait 500
+goto wr_return
+
+:legion_toss
+build 1 nexus 80
+build 11 probe 80
+build 3 gateway 80
+build 1 cybernetics_core 80
+build 1 robotics_facility 80
+build 1 citadel_of_adun 80
+build 1 forge 80
+build 2 photon_cannon 80
+build 1 observatory 80
+max_force 1000
+define_max 24 zealot
+define_max 10 dragoon
+define_max 255 archon
+define_max 255 high_templar
+define_max 255 scout
+define_max 255 hornet
+define_max 3 observer
+define_max 255 reaver
+define_max 3 shuttle
+idle_orders 10 16 1 zealot|dark_templar|scout 160 group_men 80 Health(LessThan 14)
+idle_orders 10 16 1 zealot|dark_templar|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 120 Health(LessThan 14)
+idle_orders 10 16 1 zealot|dark_templar|scout 160 sunken_colony|photon_cannon 90 Health(LessThan 12)
+idle_orders 10 16 3 zealot|dark_templar|scout 160 group_men 90 Health(LessThan 33)
+idle_orders 10 16 3 zealot|dark_templar|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 130 Health(LessThan 33)
+idle_orders 10 16 3 zealot|dark_templar|scout 160 sunken_colony|photon_cannon 100 Health(LessThan 24)
+idle_orders 10 16 5 zealot|dark_templar|scout 160 group_men 95 Health(LessThan 60)
+idle_orders 10 16 5 zealot|dark_templar|scout 160 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 135 Health(LessThan 60)
+idle_orders 10 16 5 zealot|dark_templar|scout 160 sunken_colony|photon_cannon|bunker 105 Health(LessThan 45)
+defensebuild_gg 3 zealot
+defenseuse_gg 3 zealot
+defensebuild_gg 1 dragoon
+defenseuse_gg 1 dragoon
+defensebuild_ag 1 dragoon
+defenseuse_ag 1 dragoon
+check_transports
+upgrade 1 p_armor 30
+upgrade 1 p_ground_weapon 30
+upgrade 1 p_plating 30
+upgrade 1 zealot_speed 30
+wait 480
+
+multirun legion
+wait 3885
+
+upgrade 1 p_plasma_shield 30
+wait 4445
+
+upgrade 1 dragoon_range 30
+wait 2825
+
+upgrade 1 one_with_khala 30
+upgrade 2 p_plasma_shield 30
+wait 3015
+
+wait 3040
+
+upgrade 1 observer_sight 30
+upgrade 3 p_plasma_shield 30
+goto idle_loop
+
+:legion
+train 6 dragoon
+train 6 zealot
+attack_add 6 zealot
+attack_add 6 dragoon
+call railway_system
+wait 500
+
+attack_do
+attack_clear
+train 14 zealot
+attack_add 14 zealot
+call railway_system
+wait 500
+
+attack_do
+attack_clear
+wait 500
+
+bank_data Exactly 1 vz2bonus claimed weaker_leg
+train 20 zealot
+attack_add 20 zealot
+call railway_system
+wait 500
+
+attack_do
+attack_clear
+goto legion
+
+:weaker_leg
+train 18 zealot
+attack_add 15 zealot
+call railway_system
+wait 500
+
+attack_do
+attack_clear
+wait 300
+
+goto legion
+
+:templar_ensure
+wait_train 2 high_templar
+
+do_morph 2 archon
+wait_rand 133 650
+goto templar_ensure
+
+:consistency_waves
+train 7 zealot
+train 8 dragoon
+train 4 scout
+attack_add 7 zealot
+attack_add 8 dragoon
+attack_add 4 scout
+call railway_system
+wait 500
+
+attack_do
+attack_clear
+wait 600
+
+train 12 dragoon
+train 2 reaver
+train 3 scout
+train 1 carrier
+train 2 high_templar
+do_morph 1 archon
+attack_add 12 dragoon
+attack_add 2 reaver
+attack_add 3 scout
+attack_add 1 carrier
+attack_add 1 archon
+call railway_system
+wait 500
+
+attack_do
+attack_clear
+bank_data Exactly 1 vz2bonus claimed weaker_consist
+train 1 harbiter
+train 2 carrier
+train 6 scout
+train 1 harbiter
+attack_add 1 harbiter
+attack_add 2 carrier
+attack_add 6 scout
+call railway_system
+wait 500
+
+attack_do
+attack_clear
+train 2 reaver
+train 3 scout
+train 12 zealot
+train 4 scout
+train 2 reaver
+train 2 high_templar
+do_morph 1 archon
+attack_add 12 zealot
+attack_add 4 scout
+attack_add 2 reaver
+attack_add 1 archon
+call railway_system
+wait 500
+
+attack_do
+attack_clear
+wait 1200
+
+train 4 scout
+train 1 reaver
+train 16 zealot
+train 6 scout
+train 2 reaver
+train 18 dragoon
+train 8 scout
+attack_add 16 zealot
+attack_add 18 dragoon
+attack_add 8 scout
+attack_add 2 reaver
+call railway_system
+wait 500
+
+attack_do
+attack_clear
+train 2 reaver
+attack_add 2 reaver
+if_owned battlecruiser protoss_kills
+goto consistency_waves
+
+:weaker_consist
+deaths 3 Set 1 medic kerrigan_picker
+#read in map - line that Protoss seem weaker
+train 7 zealot
+train 8 dragoon
+train 3 scout
+attack_add 7 zealot
+attack_add 8 dragoon
+attack_add 3 scout
+call railway_system
+wait 500
+
+attack_do
+attack_clear
+wait 933
+
+train 2 reaver
+train 3 scout
+train 12 zealot
+train 4 scout
+train 1 reaver
+train 2 high_templar
+do_morph 1 archon
+attack_add 12 zealot
+attack_add 4 scout
+attack_add 1 reaver
+attack_add 1 archon
+call railway_system
+wait 500
+
+attack_do
+attack_clear
+wait 933
+
+train 1 harbiter
+train 2 carrier
+train 6 scout
+train 1 harbiter
+attack_add 1 harbiter
+attack_add 2 carrier
+attack_add 6 scout
+call railway_system
+wait 500
+
+attack_do
+attack_clear
+wait 933
+
+train 12 dragoon
+train 2 reaver
+train 3 scout
+train 1 carrier
+train 2 high_templar
+do_morph 1 archon
+attack_add 12 dragoon
+attack_add 2 reaver
+attack_add 3 scout
+attack_add 1 carrier
+attack_add 1 archon
+call railway_system
+wait 500
+
+attack_do
+attack_clear
+wait 1633
+
+train 4 scout
+train 1 reaver
+train 10 zealot
+train 6 scout
+train 18 dragoon
+train 8 scout
+attack_add 10 zealot
+attack_add 18 dragoon
+attack_add 8 scout
+attack_add 1 reaver
+call railway_system
+wait 500
+
+attack_do
+attack_clear
+train 2 reaver
+attack_add 2 reaver
+wait 433
+
+goto weaker_consist
+
+#placeholder for code cleanup
+:protoss_kills
+wait 150
+
+goto consistency_waves
+
+:railway_system
+random_jump 128 left
+#yes this implies this side is right
+bring_jump 14 AtLeast 1 Any Loc.7 close_right
+bring_jump 14 AtLeast 1 Any Loc.9 middle_right
+bring_jump 14 AtLeast 1 Any Loc.11 base_right
+attack_prepare
+return
+
+:close_right
+attack_to Loc.6 Loc.7
+return
+
+:middle_right
+attack_to Loc.8 Loc.9
+return
+
+:base_right
+attack_to Loc.10 Loc.11
+return
+
+:left
+bring_jump 14 AtLeast 1 Any Loc.13 close_left
+bring_jump 14 AtLeast 1 Any Loc.15 middle_left
+bring_jump 14 AtLeast 1 Any Loc.17 base_left
+attack_prepare
+return
+
+:close_left
+attack_to Loc.12 Loc.13
+return
+
+:middle_left
+attack_to Loc.14 Loc.15
+return
+
+:base_left
+attack_to Loc.16 Loc.17
+return
+
+:zerg_split
+unstart_campaign
+notowns_jump greater_spire baelrog_brood
+#levi here
+build 1 drone 130
+build 1 hatchery 150
+build 14 drone 80
+build 3 hatchery 80
+build 2 extractor 80
+build 1 spawning_pool 80
+build 1 hydralisk_den 80
+build 1 lair 80
+build 1 spire 80
+build 1 evolution_chamber 80
+build 1 queen_nest 80
+build 1 hive 80
+build 1 greater_spire 80
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+max_workers 22
+define_max 54 drone
+define_max 13 hydralisk
+define_max 18 zergling
+define_max 20 mutalisk
+define_max 24 scourge
+define_max 255 lurker
+define_max 2 queen
+define_max 255 defiler
+define_max 10 guardian
+define_max 255 infested_terran
+define_max 3 devourer
+define_max 255 ultralisk
+define_max 255 broodling
+max_force 848
+farms_timing
+check_transports
+tech burrowing 30
+multirun loop1str
+upgrade 1 zergling_speed 30
+upgrade 1 z_missile_attack 30
+upgrade 1 z_flyer_carapace 30
+upgrade 1 z_carapace 30
+upgrade 1 overlord_capacity 30
+upgrade 1 overlord_speed 30
+defensebuild_gg 1 mutalisk
+defenseuse_gg 1 mutalisk
+defensebuild_gg 1 guardian
+defensebuild_ga 1 guardian
+defenseuse_ga 1 guardian
+defensebuild_gg 1 guardian
+defenseuse_gg 1 guardian
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defenseuse_gg 1 broodling
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+defensebuild_ag 1 mutalisk
+defenseuse_ag 1 mutalisk
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 1 devourer
+defenseuse_aa 1 devourer
+capt_expand
+aicontrol build_gas
+wait 25
+
+multirun ai2_income
+multirun help_request
+guard_all
+wait 1560
+
+upgrade 1 hydralisk_range 30
+upgrade 1 z_flyer_attack 70
+upgrade 1 z_melee_attack 30
+wait 2550
+
+train 4 mutalisk
+train 1 queen
+tech spawn_broodling 30
+upgrade 1 z_flyer_carapace 60
+wait 1050
+
+upgrade 1 z_carapace 50
+wait 2250
+
+place_guard queen 2
+tech ensnare 30
+upgrade 1 hydralisk_speed 30
+upgrade 2 z_missile_attack 30
+upgrade 2 z_flyer_attack 70
+upgrade 2 z_flyer_carapace 30
+wait 480
+
+wait_upgrades
+wait 1350
+
+place_guard queen 0
+wait 1050
+
+upgrade 2 z_carapace 40
+wait 6025
+
+upgrade 1 zergling_attack 30
+upgrade 3 z_missile_attack 30
+upgrade 3 z_flyer_attack 60
+upgrade 3 z_melee_attack 30
+upgrade 3 z_flyer_carapace 50
+upgrade 1 overlord_sight 30
+upgrade 1 queen_mana 30
+wait 480
+
+wait_upgrades
+wait 4500
+
+upgrade 3 z_carapace 30
+goto idle_loop
+
+:loop1str
+expand 3 zerg_expo
+train 10 mutalisk
+attack_add 3 guardian
+attack_add 2 devourer
+attack_add 5 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1200
+
+train 14 mutalisk
+expand 3 zerg_expo
+attack_add 8 zergling
+attack_add 10 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1200
+
+train 11 mutalisk
+train 6 hydralisk
+attack_add 4 mutalisk
+attack_add 4 guardian
+attack_add 6 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1200
+
+goto loop1str
+
+:zerg_expo
+start_town
+build 1 hatchery 120
+get_oldpeons 1
+wait_build 1 hatchery
+build 1 drone 130
+wait_build 1 drone
+build 3 drone 100
+wait_buildstart 3 drone
+build 5 drone 80
+wait_build 5 drone
+creep 4
+build 1 creep_colony 80
+wait 860
+
+build 1 sunken_colony 80
+wait 550
+
+build 12 drone 80
+build 2 creep_colony 80
+wait 860
+
+build 1 spore_colony 80
+build 1 drone 80
+:loopze
+wait 1500
+
+goto loopze
+
+:baelrog_brood
+build 1 hatchery 150
+build 3 drone 130
+multirun player_income
+multirun ai1_income
+multirun sacrifice
+build 14 drone 80
+build 1 spawning_pool 80
+build 1 hydralisk_den 80
+build 1 lair 80
+build 3 hatchery 80
+build 2 extractor 80
+build 1 evolution_chamber 80
+build 1 spire 80
+build 1 queen_nest 80
+build 1 hive 80
+build 1 ultralisk_cavern 80
+define_max 10 drone
+define_max 64 zergling
+define_max 25 hydralisk
+define_max 8 ultralisk
+define_max 6 scourge
+define_max 4 lurker
+define_max 10 mutalisk
+define_max 255 guardian
+define_max 255 devourer
+define_max 255 broodling
+max_force 1000
+defensebuild_gg 3 zergling
+defenseuse_gg 3 zergling
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defenseuse_gg 1 broodling
+defensebuild_gg 1 lurker
+defenseuse_gg 1 lurker
+defensebuild_ag 2 hydralisk
+defenseuse_ag 2 hydralisk
+defenseuse_ga 1 mutalisk
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
+tech burrowing 30
+tech lurker_aspect 30
+upgrade 1 overlord_speed 30
+upgrade 1 overlord_capacity 30
+capt_expand
+aicontrol build_gas
+multirun blockz
+wait 25
+
+multirun help_request
+guard_all
+wait 1788
+
+upgrade 1 hydralisk_range 30
+upgrade 1 z_missile_attack 30
+upgrade 1 z_flyer_attack 30
+upgrade 1 z_melee_attack 30
+wait 480
+
+wait_upgrades
+
+tech ensnare 30
+upgrade 1 zergling_speed 30
+wait 3800
+
+upgrade 1 hydralisk_speed 30
+upgrade 2 z_missile_attack 60
+upgrade 2 z_flyer_attack 50
+upgrade 2 z_melee_attack 60
+wait 4560
+
+upgrade 1 zergling_attack 30
+tech spawn_broodling 30
+wait 480
+
+wait_upgrades
+wait 4500
+
+upgrade 1 z_carapace 30
+upgrade 1 z_flyer_carapace 30
+wait 7500
+
+upgrade 3 z_missile_attack 60
+upgrade 3 z_flyer_attack 50
+upgrade 3 z_melee_attack 60
+wait 480
+
+wait_upgrades
+wait 5800
+
+upgrade 2 z_carapace 30
+upgrade 2 z_flyer_carapace 30
+wait 480
+
+wait_upgrades
+wait 16000
+
+upgrade 3 z_carapace 30
+goto idle_loop
+
+:blockz
+expand 3 zerg_expo
+train 3 ultralisk
+train 24 zergling
+attack_add 3 ultralisk
+attack_add 24 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1200
+
+train 12 hydralisk
+train 6 mutalisk
+train 10 zergling
+attack_add 12 hydralisk
+attack_add 6 mutalisk
+attack_add 10 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1200
+
+expand 3 zerg_expo
+train 6 ultralisk
+train 4 hydralisk
+train 4 lurker
+attack_add 6 ultralisk
+attack_add 4 lurker
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1200
+
+goto blockz
+
+:sacrifice
+wait 16
+
+bring_jump 3 AtLeast 1 drone Loc.23 sacrifice_y
+bring_jump 3 AtMost 0 drone Loc.22 sacrifice
+issue_order 19 1 sunken_colony Loc.22 Loc.22 drone Allied
+issue_order 10 2 zergling Loc.22 Loc.22 drone Allied
+issue_order 10 1 hydralisk Loc.22 Loc.22 drone Allied
+issue_order 10 1 mutalisk Loc.22 Loc.22 drone Allied
+issue_order 10 1 guardian Loc.22 Loc.22 drone Allied
+wait_rand 16 64
+goto sacrifice
+
+:sacrifice_y
+issue_order 19 1 sunken_colony Loc.23 Loc.23 drone Allied
+issue_order 10 2 zergling Loc.23 Loc.23 drone Allied
+issue_order 10 1 hydralisk Loc.23 Loc.23 drone Allied
+issue_order 10 1 mutalisk Loc.23 Loc.23 drone Allied
+issue_order 10 1 guardian Loc.23 Loc.23 drone Allied
+wait_rand 16 64
+goto sacrifice
+
+
+#:kills_engine
+#multirun zergling_kills
+#multirun hmutalisk_kills
+#multirun hydralisk_kills
+#multirun drone_kills
+#multirun mutalisk_kills
+#multirun queen_kills
+#multirun overlord_kills
+#multirun protoss_kills
+#stop
+#
+#:zergling_kills
+#wait 16
+#
+#bw_kills 6 AtMost 0 zergling zergling_kills
+#bw_kills 6 Subtract 1 zergling zergling_kills
+#resources 6 Add Ore 50 zergling_kills
+#deaths 0 Subtract 24 148 zergling_kills
+#goto zergling_kills
+#
+#:hydralisk_kills
+#wait 16
+#
+#bw_kills 6 AtMost 0 hydralisk hydralisk_kills
+#bw_kills 6 Subtract 1 hydralisk hydralisk_kills
+#resources 6 Add Ore 150 hydralisk_kills
+#resources 6 Add Gas 75 hydralisk_kills
+#deaths 0 Subtract 112 148 zergling_kills
+#goto hydralisk_kills
+#
+#:mutalisk_kills
+#wait 16
+#
+#bw_kills 6 AtMost 0 mutalisk mutalisk_kills
+#bw_kills 6 Subtract 1 mutalisk mutalisk_kills
+#resources 6 Add Ore 150 mutalisk_kills
+#resources 6 Add Gas 150 mutalisk_kills
+#deaths 0 Subtract 134 148 zergling_kills
+#goto mutalisk_kills
+#
+#:hmutalisk_kills
+#wait 16
+#
+#bw_kills 6 AtMost 0 hmutalisk hmutalisk_kills
+#bw_kills 6 Subtract 1 hmutalisk hmutalisk_kills
+#resources 6 Add Ore 250 hmutalisk_kills
+#resources 6 Add Gas 250 hmutalisk_kills
+#deaths 0 Subtract 955 148 zergling_kills
+#goto hmutalisk_kills
+#
+#:drone_kills
+#wait 16
+#
+#bw_kills 6 AtMost 0 drone drone_kills
+#bw_kills 6 Subtract 1 drone drone_kills
+#resources 6 Add Ore 80 drone_kills
+#deaths 0 Subtract 105 148 zergling_kills
+#goto drone_kills
+#
+#:queen_kills
+#wait 16
+#
+#bw_kills 6 AtMost 0 queen queen_kills
+#bw_kills 6 Subtract 1 queen queen_kills
+#resources 6 Add Ore 150 queen_kills
+#resources 6 Add Gas 150 queen_kills
+#deaths 0 Subtract 228 148 zergling_kills
+#goto queen_kills
+#
+#:overlord_kills
+#wait 16
+#
+#bw_kills 6 AtMost 0 overlord overlord_kills
+#bw_kills 6 Subtract 1 overlord overlord_kills
+#resources 6 Add Ore 150 overlord_kills
+#deaths 0 Subtract 88 148 zergling_kills
+#goto overlord_kills
+#
+#:protoss_kills
+#wait 16
+#
+#bw_kills 6 AtLeast 1 zealot protoss_kills1
+#bw_kills 6 AtLeast 1 dragoon protoss_kills1
+#bw_kills 6 AtLeast 1 scout protoss_kills1
+#bw_kills 6 AtLeast 1 hornet protoss_kills1
+#goto protoss_kills
+#
+#:protoss_kills1
+#bw_kills 6 Subtract 1 zealot protoss_kills
+#bw_kills 6 Subtract 1 dragoon protoss_kills
+#bw_kills 6 Subtract 1 scout protoss_kills
+#bw_kills 6 Subtract 1 hornet protoss_kills
+#resources 6 Add Ore 100 protoss_kills
+#resources 6 Add Gas 75 protoss_kills
+#deaths 0 Subtract 50 148 zergling_kills
+#goto protoss_kills
+
+:ai2_income
+wait 50
+
+multirun ai2_zeta
+multirun ai2_goon
+multirun ai2_scout
+multirun ai2_hornet
+multirun ai2_reaver
+wait 50
+
+multirun ai2_archon
+multirun ai2_templar
+multirun ai2_probe
+multirun ai2_cannon
+multirun ai2_carrier
+multirun ai2_arbiter
+stop
+
+:ai2_zeta
+wait 16
+
+bw_kills 7 AtMost 0 zealot ai2_zeta
+bw_kills 7 Subtract 1 zealot ai2_zeta
+resources 7 Add Ore 35 protoss_kills
+goto ai2_zeta
+
+:ai2_goon
+wait 16
+
+bw_kills 7 AtMost 0 dragoon ai2_goon
+bw_kills 7 Subtract 1 dragoon ai2_zeta
+resources 7 Add Ore 45 protoss_kills
+resources 7 Add Gas 20 protoss_kills
+goto ai2_goon
+
+:ai2_scout
+wait 16
+
+bw_kills 7 AtMost 0 scout ai2_scout
+bw_kills 7 Subtract 1 scout ai2_zeta
+resources 7 Add Ore 125 protoss_kills
+resources 7 Add Gas 100 protoss_kills
+goto ai2_scout
+
+:ai2_hornet
+wait 16
+
+bw_kills 7 AtMost 0 hornet ai2_hornet
+bw_kills 7 Subtract 1 hornet ai2_zeta
+resources 7 Add Ore 50 protoss_kills
+resources 7 Add Gas 50 protoss_kills
+goto ai2_hornet
+
+:ai2_carrier
+wait 16
+
+bw_kills 7 AtMost 0 carrier ai2_carrier
+bw_kills 7 Subtract 1 carrier ai2_zeta
+resources 7 Add Ore 250 protoss_kills
+resources 7 Add Gas 250 protoss_kills
+goto ai2_carrier
+
+:ai2_reaver
+wait 16
+
+bw_kills 7 AtMost 0 reaver ai2_reaver
+bw_kills 7 Subtract 1 reaver ai2_zeta
+resources 7 Add Ore 300 protoss_kills
+resources 7 Add Gas 50 protoss_kills
+goto ai2_reaver
+
+:ai2_archon
+wait 16
+
+bw_kills 7 AtMost 0 archon ai2_archon
+bw_kills 7 Subtract 1 archon ai2_zeta
+resources 7 Add Ore 50 protoss_kills
+resources 7 Add Gas 250 protoss_kills
+goto ai2_archon
+
+:ai2_probe
+wait 16
+
+bw_kills 7 AtMost 0 probe ai2_probe
+bw_kills 7 Subtract 1 probe ai2_zeta
+resources 7 Add Ore 8 protoss_kills
+resources 7 Add Gas 8 protoss_kills
+goto ai2_probe
+
+:ai2_templar
+wait 16
+
+bw_kills 7 AtMost 0 high_templar ai2_templar
+bw_kills 7 Subtract 1 high_templar ai2_zeta
+resources 7 Add Ore 25 protoss_kills
+resources 7 Add Gas 75 protoss_kills
+goto ai2_templar
+
+:ai2_cannon
+wait 16
+
+bw_kills 7 AtMost 0 photon_cannon ai2_cannon
+bw_kills 7 Subtract 1 photon_cannon ai2_zeta
+resources 7 Add Ore 150 protoss_kills
+goto ai2_cannon
+
+:ai2_arbiter
+wait 16
+
+bw_kills 7 AtMost 0 harbiter ai2_arbiter
+bw_kills 7 Subtract 1 harbiter ai2_zeta
+resources 7 Add Ore 50 protoss_kills
+resources 7 Add Gas 300 protoss_kills
+goto ai2_arbiter
+
+:ai1_income
+wait 70
+
+multirun ai1_zeta
+multirun ai1_goon
+multirun ai1_scout
+multirun ai1_hornet
+multirun ai1_reaver
+wait 70
+
+multirun ai1_archon
+multirun ai1_templar
+multirun ai1_probe
+multirun ai1_cannon
+multirun ai1_carrier
+multirun ai1_arbiter
+stop
+
+:ai1_zeta
+wait 16
+
+bw_kills 6 AtMost 0 zealot ai1_zeta
+bw_kills 6 Subtract 1 zealot ai1_zeta
+resources 6 Add Ore 35 protoss_kills
+goto ai1_zeta
+
+:ai1_goon
+wait 16
+
+bw_kills 6 AtMost 0 dragoon ai1_goon
+bw_kills 6 Subtract 1 dragoon ai1_zeta
+resources 6 Add Ore 45 protoss_kills
+resources 6 Add Gas 20 protoss_kills
+goto ai1_goon
+
+:ai1_scout
+wait 16
+
+bw_kills 6 AtMost 0 scout ai1_scout
+bw_kills 6 Subtract 1 scout ai1_zeta
+resources 6 Add Ore 125 protoss_kills
+resources 6 Add Gas 100 protoss_kills
+goto ai1_scout
+
+:ai1_hornet
+wait 16
+
+bw_kills 6 AtMost 0 hornet ai1_hornet
+bw_kills 6 Subtract 1 hornet ai1_zeta
+resources 6 Add Ore 50 protoss_kills
+resources 6 Add Gas 50 protoss_kills
+goto ai1_hornet
+
+:ai1_carrier
+wait 16
+
+bw_kills 6 AtMost 0 carrier ai1_carrier
+bw_kills 6 Subtract 1 carrier ai1_zeta
+resources 6 Add Ore 250 protoss_kills
+resources 6 Add Gas 250 protoss_kills
+goto ai1_carrier
+
+:ai1_reaver
+wait 16
+
+bw_kills 6 AtMost 0 reaver ai1_reaver
+bw_kills 6 Subtract 1 reaver ai1_zeta
+resources 6 Add Ore 300 protoss_kills
+resources 6 Add Gas 50 protoss_kills
+goto ai1_reaver
+
+:ai1_archon
+wait 16
+
+bw_kills 6 AtMost 0 archon ai1_archon
+bw_kills 6 Subtract 1 archon ai1_zeta
+resources 6 Add Ore 50 protoss_kills
+resources 6 Add Gas 250 protoss_kills
+goto ai1_archon
+
+:ai1_probe
+wait 16
+
+bw_kills 6 AtMost 0 probe ai1_probe
+bw_kills 6 Subtract 1 probe ai1_zeta
+resources 6 Add Ore 8 protoss_kills
+resources 6 Add Gas 8 protoss_kills
+goto ai1_probe
+
+:ai1_templar
+wait 16
+
+bw_kills 6 AtMost 0 high_templar ai1_templar
+bw_kills 6 Subtract 1 high_templar ai1_zeta
+resources 6 Add Ore 25 protoss_kills
+resources 6 Add Gas 75 protoss_kills
+goto ai1_templar
+
+:ai1_cannon
+wait 16
+
+bw_kills 6 AtMost 0 photon_cannon ai1_cannon
+bw_kills 6 Subtract 1 photon_cannon ai1_zeta
+resources 6 Add Ore 150 protoss_kills
+goto ai1_cannon
+
+:ai1_arbiter
+wait 16
+
+bw_kills 6 AtMost 0 harbiter ai1_arbiter
+bw_kills 6 Subtract 1 harbiter ai1_zeta
+resources 6 Add Ore 50 protoss_kills
+resources 6 Add Gas 300 protoss_kills
+goto ai1_arbiter
+
+:player_income
+wait 50
+
+multirun player_zeta
+multirun player_goon
+multirun player_scout
+multirun player_hornet
+multirun player_reaver
+wait 50
+
+multirun player_archon
+multirun player_templar
+multirun player_probe
+multirun player_cannon
+multirun player_carrier
+multirun player_arbiter
+multirun player_arbiter2
+stop
+
+:player_zeta
+wait 16
+
+bw_kills 3 AtMost 0 zealot player_zeta
+bw_kills 3 Subtract 1 zealot player_zeta
+resources 3 Add Ore 40 protoss_kills
+goto player_zeta
+
+:player_goon
+wait 16
+
+bw_kills 3 AtMost 0 dragoon player_goon
+bw_kills 3 Subtract 1 dragoon player_zeta
+resources 3 Add Ore 45 protoss_kills
+resources 3 Add Gas 30 protoss_kills
+goto player_goon
+
+:player_scout
+wait 16
+
+bw_kills 3 AtMost 0 scout player_scout
+bw_kills 3 Subtract 1 scout player_zeta
+resources 3 Add Ore 125 protoss_kills
+resources 3 Add Gas 85 protoss_kills
+goto player_scout
+
+:player_hornet
+wait 16
+
+bw_kills 3 AtMost 0 hornet player_hornet
+bw_kills 3 Subtract 1 hornet player_zeta
+resources 3 Add Ore 50 protoss_kills
+resources 3 Add Gas 50 protoss_kills
+goto player_hornet
+
+:player_carrier
+wait 16
+
+bw_kills 3 AtMost 0 carrier player_carrier
+bw_kills 3 Subtract 1 carrier player_zeta
+resources 3 Add Ore 300 protoss_kills
+resources 3 Add Gas 200 protoss_kills
+goto player_carrier
+
+:player_reaver
+wait 16
+
+bw_kills 3 AtMost 0 reaver player_reaver
+bw_kills 3 Subtract 1 reaver player_zeta
+resources 3 Add Ore 250 protoss_kills
+resources 3 Add Gas 100 protoss_kills
+goto player_reaver
+
+:player_archon
+wait 16
+
+bw_kills 3 AtMost 0 archon player_archon
+bw_kills 3 Subtract 1 archon player_zeta
+resources 3 Add Ore 50 protoss_kills
+resources 3 Add Gas 250 protoss_kills
+goto player_archon
+
+:player_probe
+wait 16
+
+bw_kills 3 AtMost 0 probe player_probe
+bw_kills 3 Subtract 1 probe player_zeta
+resources 3 Add Ore 8 protoss_kills
+resources 3 Add Gas 8 protoss_kills
+goto player_probe
+
+:player_templar
+wait 16
+
+bw_kills 3 AtMost 0 high_templar player_templar
+bw_kills 3 Subtract 1 high_templar player_zeta
+resources 3 Add Ore 25 protoss_kills
+resources 3 Add Gas 75 protoss_kills
+goto player_templar
+
+:player_cannon
+wait 16
+
+bw_kills 3 AtMost 0 photon_cannon player_cannon
+bw_kills 3 Subtract 1 photon_cannon player_zeta
+resources 3 Add Ore 150 protoss_kills
+goto player_cannon
+
+:player_arbiter
+wait 16
+
+bw_kills 3 AtMost 0 harbiter player_arbiter
+bw_kills 3 Subtract 1 harbiter player_zeta
+resources 3 Add Ore 50 protoss_kills
+resources 3 Add Gas 300 protoss_kills
+goto player_arbiter
+
+:player_arbiter2
+wait 16
+
+bw_kills 3 AtMost 0 arbiter player_arbiter
+bw_kills 3 Subtract 1 arbiter player_zeta
+resources 3 Add Ore 50 protoss_kills
+resources 3 Add Gas 300 protoss_kills
+goto player_arbiter2
+
+:kerrigan_picker
+wait 50
+
+load_bank kerrichoice
+wait 1
+
+bank_data Exactly 0 kerrichoice style normal_kerri
+bank_data Exactly 1 kerrichoice style biol_kerri
+bank_data Exactly 2 kerrichoice style psi_kerri
+deaths 3 Set 1 214 kerrigan_picker
+stop
+
+:normal_kerri
+deaths 3 Set 1 214 kerrigan_picker
+stop
+
+:biol_kerri
+deaths 3 Set 2 214 kerrigan_picker
+stop
+
+:psi_kerri
+deaths 3 Set 3 214 kerrigan_picker
+stop
+
+:help_request
+wait 1633
+
+wait_secure
+help_iftrouble
+goto help_request
+

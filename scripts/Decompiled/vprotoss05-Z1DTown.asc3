@@ -1,0 +1,41 @@
+script_name Brood Wars Zerg 1 - Town D
+script_id ZB1D
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 hatchery 90
+build 1 drone 90
+player_need 1 spawning_pool
+build 1 evolution_chamber 80
+build 2 creep_colony 80
+build 1 sunken_colony 80
+build 1 spore_colony 80
+build 1 hydralisk_den 80
+build 1 lair 80
+build 1 spire 80
+wait 840
+
+build 13 drone 80
+wait 5666
+
+upgrade 1 z_flyer_carapace 30
+wait 8300
+
+upgrade 1 z_flyer_attack 30
+wait 10500
+
+upgrade 2 z_flyer_attack 30
+wait 4890
+
+upgrade 2 z_flyer_carapace 30
+wait 5500
+
+upgrade 3 z_flyer_carapace 30
+:loop
+wait 1500
+
+goto loop
