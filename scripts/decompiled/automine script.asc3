@@ -961,15 +961,15 @@ deaths 13 Set 2 119 ec_terran
 return
 
 :setdif_normal
-#print normal_diff
+#print normal_dif
 return
 
 :setdif_easy
-#print easy_diff
+print(Current Difficulty: Easy)
 upgrade_jump 14 Set 74 6 void
 return
 
 :setdif_hard
-#print hard_diff
+print(Current Difficulty: Hard)
 upgrade_jump 14 Set 74 7 void
 return
