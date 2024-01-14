@@ -21999,6 +21999,7 @@ MedicLocal02:
 	playfram       	0x00	# frame set 0
 MedicLocal01:
 	wait			3
+	print Current order ID: {upgrade(4, 74)} #Print order debug
 	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	wait			25
 	if flingy.movement_flags & 0x2 != 0 call FreezeClear
