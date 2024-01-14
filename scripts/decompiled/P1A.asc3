@@ -44,16 +44,20 @@ attack_do
 attack_clear
 wait 480
 
+upgrade_jump 13 Exactly_Call 74 6 easy_wait
 upgrade 1 z_carapace 30
 upgrade 1 hydralisk_speed 30
+upgrade_jump 13 Exactly_Call 74 7 hard_upg
 :valk_2
 wait 50
 
 deaths 0 AtMost 1 valkyrie valk_2
 
+upgrade_jump 13 Exactly_Call 74 6 easy_wait
 upgrade 2 z_carapace 30
 upgrade 1 hydralisk_range 30
 upgrade 1 zergling_speed 30
+upgrade_jump 13 Exactly_Call 74 7 hard_upg
 defenseuse_gg 1 zergling
 defenseuse_gg 1 hydralisk
 :valk_3
@@ -64,6 +68,7 @@ deaths 0 AtMost 2 valkyrie valk_3
 :block1
 wait 16
 
+upgrade_jump 13 Exactly_Call 74 6 easy_wait
 attack_add 4 hydralisk
 attack_add 10 zergling
 attack_prepare
@@ -73,6 +78,24 @@ attack_timeout 80
 attack_do
 attack_clear
 goto block1
+
+:easy_wait
+wait 1000
+
+return
+
+:hard_upg
+deaths 13 Add 1 goliath block1
+deaths 13 AtLeast 2 goliath hu1
+upgrade 1 z_missile_attack 30
+upgrade 1 z_melee_attack 30
+return
+
+:hu1
+upgrade 2 z_missile_attack 30
+upgrade 2 z_melee_attack 30
+return
+
 
 :zealot_bank
 wait 1
