@@ -21,6 +21,7 @@ deaths 0 Exactly 11 98 protoss_6
 deaths 0 Exactly 12 98 protoss_5
 deaths 0 Exactly 13 98 protoss_3
 deaths 0 Exactly 14 98 terran_8
+#deaths 0 Exactly 140 98 terran_7 --used for difficulty
 deaths 0 Exactly 15 98 terran_5
 deaths 0 Exactly 16 98 terran_4
 deaths 0 Exactly 17 98 terran_3
@@ -973,3 +974,4 @@ return
 print(Current Difficulty: Hard)
 upgrade_jump 14 Set 74 7 void
 return
+

@@ -32,7 +32,6 @@ define_max 10 vulture
 define_max 12 goliath
 define_max 9 siege_tank
 define_max 9 wraith
-farms_timing
 multirun bc_check
 #load_bunkers Loc.63 marine 3 bunker 11 70
 #load bunkers screws with attacks, use IO instead
@@ -49,8 +48,10 @@ idle_orders 92 256 1 firebat 368 bunker 50 Own|NotEnemies|Self(Order(163))
 idle_orders 92 64 3 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
 idle_orders 92 64 1 ghost 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
 idle_orders 92 64 1 firebat 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
-wait 16
+wait 80
 
+load_bank xp5
+bank_data Exactly_Call 1 xp5 orbitals orbital_events
 deaths 0 AtLeast 1 189 vulture_scout
 goto noscout
 #if briefing option == 1, go to a block that doesn't "detect on radar" (no vulture scout), but waits for player aggression instead or just waits some time
@@ -457,3 +458,9 @@ attack_clear
 wait 1500
 
 goto vl
+
+:orbital_events
+deaths 0 Set 1 127 void
+#set 1 ion cannon deaths
+return
+
