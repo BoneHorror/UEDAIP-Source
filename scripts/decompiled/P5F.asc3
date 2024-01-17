@@ -24,6 +24,8 @@ multirun md
 multirun wtd
 multirun lockdown
 multirun infantry_area
+upgrade_jump 13 Exactly_Call 74 6 easy
+upgrade_jump 13 Exactly_Call 74 7 hard
 wait 2880
 
 capt_expand
@@ -139,9 +141,11 @@ wait 320
 bank_data Set 0 xp5 air bank
 bank_data Set 0 xp5 mech bank
 bank_data Set 0 xp5 infantry bank
+bank_data Set 0 xp5 orbitals bank
 multirun air
 multirun mech
 multirun infantry
+multirun orbitals
 :bank_end
 wait 16
 
@@ -171,3 +175,30 @@ if_owned science_facility infantry
 if_owned barracks infantry
 bank_data Set 1 xp5 infantry bank
 stop
+
+:orbitals
+wait 16
+
+if_owned 127 orbitals
+bank_data Set 1 xp5 orbitals bank
+stop
+
+:easy
+deaths 6 Set 1 archon infantry
+return
+
+:hard
+deaths 6 Set 2 archon infantry
+defensebuild_gg 1 tesla_trooper
+defenseuse_gg 1 tesla_trooper
+defensebuild_gg 1 heavy_marine
+defenseuse_gg 1 heavy_marine
+defensebuild_ag 1 valkyrie
+defenseuse_ag 1 valkyrie
+defensebuild_ag 1 heavy_marine
+defenseuse_ag 1 heavy_marine
+defensebuild_ga 1 battlecruiser
+defenseuse_ga 1 battlecruiser
+defensebuild_aa 1 skywing
+defenseuse_aa 1 skywing
+return

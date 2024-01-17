@@ -21999,6 +21999,10 @@ MedicLocal02:
 	playfram       	0x00	# frame set 0
 MedicLocal01:
 	wait			3
+<<<<<<< HEAD
+=======
+	#print AI mining lvl: {upgrade(4, 74)}
+>>>>>>> f935aba (xP7, xP5, xT7 specific difficulty updates; xT1 bank event)
 	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	wait			25
 	if flingy.movement_flags & 0x2 != 0 call FreezeClear
