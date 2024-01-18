@@ -33,8 +33,10 @@ define_max 255 guardian
 define_max 255 lurker
 defensebuild_gg 1 ultralisk
 defenseuse_gg 1 ultralisk
-defensebuild_gg 4 zergling
-defenseuse_gg 4 zergling
+defensebuild_gg 2 zergling
+defenseuse_gg 2 zergling
+defensebuild_gg 2 zergling
+defenseuse_gg 2 zergling
 defensebuild_ag 1 hydralisk
 defenseuse_ag 1 hydralisk
 tech burrowing 30
