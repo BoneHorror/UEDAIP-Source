@@ -53,35 +53,55 @@ if_owned medic enable
 if_owned valkyrie disable
 if_owned queen easycast
 :tog_return
+call autocast_result
 wait 1
 
-bank_data Exactly 1 automine_toggle toggle void
-bank_data Exactly 2 automine_toggle toggle ec_terran
+load_bank difficulty_toggle
+#Load difficulty bank
+wait 1
+
+#skip toggle if we don't have 1000 Norad II (126) deaths. only set 1000 in the toggle/config map. So normally this is always skipped
+deaths 0 AtMost 999 126 dif_return
+:loop_until_unit_dif
+
+wait 2
+if_owned 15 loop_until_unit_dif
+#loop for as long as we have civ, then wait 8 frames
+wait 8
+
+if_owned medic dif_easy
+if_owned valkyrie dif_normal
+if_owned queen dif_hard
+#Normal code continues
+:dif_return
+#Continue with config, by default you would add panic casts; ignore remaining code if other races' units are owned
+#print reached_setdif
+bank_data Exactly_Call 0 difficulty_toggle difficulty setdif_normal
+bank_data Exactly_Call 1 difficulty_toggle difficulty setdif_easy
+bank_data Exactly_Call 2 difficulty_toggle difficulty setdif_hard
+#use 119 - unused terran bdlg - deaths as communicator for bank...
+deaths 13 Exactly 1 119 void
+deaths 13 Exactly 2 119 ec_terran
 wait 300
 
-
+upgrade_jump 13 Set 70 1 void
 if_owned drone void
 if_owned overlord void
 if_owned hhydralisk void
-deaths 0 Exactly 27 98 tl_pc_skip
-deaths 0 Exactly 31 98 tl_pc_skip
-#skip toss checks in T+P vP campaign maps
 if_owned probe void
 if_owned nexus void
 if_owned zealot void
-:tl_pc_skip
-upgrade_jump 13 Set 62 1 void
+#handle non-UED upgrades for campaign - set to level 2 so there's no effect, and they look "Disabled" EDIT: this is now done as a config file in map mpq, and set to max level 0 instead because "level 2 has no effect" is not always true
 idle_orders Repair 48 2 scv 150 group_buildings|group_men 50 NotEnemies|Own|Self(Order(PlayerGuard))|Hp(LessThanPercent 100)|TileFlags(Walkable)|UnitFlags(Mechanical)
 idle_orders Repair 48 2 scv 150 group_buildings|group_men 40 NotEnemies|Own|Self(Order(Guard))|Hp(LessThanPercent 100)|TileFlags(Walkable)|UnitFlags(Mechanical)
 #idle_orders Repair 48 2 scv 150 group_buildings|group_men 30 NotEnemies|Own|Self(Order(Stop))|Hp(LessThanPercent 100)|TileFlags(Walkable)|UnitFlags(Mechanical)
 idle_orders 141 73 1 science_vessel 224 group_men 50 NotEnemies|Own|Self(Order(PlayerGuard))|Hp(LessThanPercent 40)|Hp(GreaterThan 9)|InCombat|Self(Energy(GreaterThan 199))|WithoutSpellEffects(Matrix)
 idle_orders 141 72 1 science_vessel 224 group_men 50 NotEnemies|Own|Self(Order(Guard))|Hp(LessThanPercent 40)|Hp(GreaterThan 9)|InCombat|Self(Energy(GreaterThan 199))|WithoutSpellEffects(Matrix)
-#idle_orders Restoration 33 1 medic 256 Group_Men 55 NotEnemies|Own|Allied|Self(Energy(GreaterThan 65))|SpellEffects(Irradiate)|UnitFlags(Organic)
-#idle_orders Restoration 33 1 medic 256 Group_Men 50 NotEnemies|Own|Allied|Self(Energy(GreaterThan 65))|SpellEffects(Plague)
-#idle_orders Restoration 33 1 medic 256 Group_Men 45 NotEnemies|Own|Allied|Self(Energy(GreaterThan 90))|SpellEffects(Lockdown)
-#idle_orders Restoration 33 1 medic 256 Group_Men 35 NotEnemies|Own|Allied|Self(Energy(GreaterThan 95))|SpellEffects(Maelstrom)
+multirun resto_io
 multirun irradiate_io
 multirun lockdown_io
+multirun hallu_io
+#no ensnare for phantoms?
 stop
 
 :ec_terran
@@ -566,176 +586,29 @@ issue_order MoveToMinerals 4 scv Loc.82 Loc.82 176 EachAtMostOnce
 issue_order MoveToMinerals 2 scv Loc.82 Loc.82 177 EachAtMostOnce
 stop
 
-#load_bank xp3
-#multirun cybercore
-#multirun stargates
-#multirun citadel
-#multirun robo
-#multirun gate
-#multirun obs
-#multirun bridge
-#multirun ass
-#multirun archive
-#multirun beacon
-#wait 16
-#
-#load_bank xp7
-#stop
-#
-#:xp6
-#bank_data Exactly 2 xp6 xp6 strong_l
-#bank_data Exactly 1 xp6 xp6 weak_l
-#deaths 1 Set 0 guardian void
-#stop
-#
-#:strong_l
-#deaths 1 Set 2 guardian void
-#stop
-#
-#:weak_l
-#deaths 1 Set 1 guardian void
-#stop
-#
-#:cybercore
-#bank_data Exactly 0 xp3 cybercore void
-#deaths 0 Set 1 dragoon void
-#stop
-#
-#:stargates
-#bank_data Exactly 0 xp3 stargates void
-#deaths 0 Set 1 scout void
-#stop
-#
-#:citadel
-#bank_data Exactly 0 xp3 citadel void
-#deaths 0 Set 1 high_templar void
-#stop
-#
-#:robo
-#bank_data Exactly 0 xp3 robo void
-#deaths 0 Set 1 reaver void
-#stop
-#
-#:gate
-#bank_data Exactly 0 xp3 gate void
-#deaths 0 Set 1 zealot void
-#stop
-#
-#:obs
-#bank_data Exactly 0 xp3 obs void
-#deaths 0 Set 1 observer void
-#stop
-#
-#:bridge
-#bank_data Exactly 0 xp3 bridge void
-#deaths 0 Set 1 photon_cannon void
-#stop
-#
-#:ass
-#bank_data Exactly 0 xp3 ass void
-#deaths 0 Set 1 assimilator void
-#stop
-#
-#:archive
-#bank_data Exactly 0 xp3 archive void
-#deaths 0 Set 1 archon void
-#stop
-#
-#:beacon
-#bank_data Exactly 0 xp3 beacon void
-#deaths 0 Set 1 carrier void
-#:void
-#stop
-#
-#:terran_1
-#load_bank bc_bank
-#issue_order MoveToMinerals 2 scv Loc.3 Loc.20 176 EachAtMostOnce
-#issue_order MoveToMinerals 2 scv Loc.19 Loc.20 177 EachAtMostOnce
-#wait 16
-#
-#if_owned zergling bank_debug
-#stop
-#
-#:bank_debug
-#bank_data Set 1 bc_bank map_won4 void
-#bank_data Set 2 bc_bank confed_lives4 void
-#bank_data Set 1 bc_bank confed_outpost void
-#bank_data Set 2 bc_bank confed_lives5 void
-#bank_data Set 1 bc_bank map_won5 void
-#save_bank bc_bank
-#stop
-#
-#:terran_3
-#issue_order MoveToMinerals 7 scv Loc.25 Loc.25 176 0
-#issue_order MoveToMinerals 4 scv Loc.25 Loc.25 177 EachAtMostOnce
-#stop
-#
-#:terran_4
-#issue_order MoveToMinerals 2 scv Loc.83 Loc.83 177 EachAtMostOnce
-#issue_order MoveToMinerals 1 scv Loc.84 Loc.84 176 0
-#issue_order MoveToGas 1 scv Loc.85 Loc.86 refinery Own
-#stop
-#
-#:terran_11
-#issue_order MoveToMinerals 2 scv Loc.25 Loc.25 176 EachAtMostOnce
-#issue_order MoveToMinerals 2 scv Loc.26 Loc.26 178 EachAtMostOnce
-#stop
-#
-#:terran_5
-#load_bank bc_bank
-#issue_order MoveToMinerals 2 scv Loc.164 Loc.164 178 EachAtMostOnce
-#issue_order MoveToMinerals 2 scv Loc.124 Loc.125 178 EachAtMostOnce
-#issue_order MoveToMinerals 1 scv Loc.126 Loc.125 177 EachAtMostOnce
-#issue_order MoveToMinerals 1 scv Loc.127 Loc.125 176 EachAtMostOnce
-#wait 160
-#
-#multirun t5_b
-#stop
-#
-#:t5_b
-#wait 16
-#
-#bank_data Exactly 1 bc_bank confed_outpost wait_for_death_prep
-#wait 320
-#
-#bank_data Set 0 bc_bank map_won5 wait_for_death_prep
-#bank_data Set 0 bc_bank confed_lives5 wait_for_death
-#save_bank bc_bank
-#stop
-#
-#:wait_for_death_prep
-#bank_data Exactly 1 bc_bank confed_lives4 void
-#bank_data Exactly 0 bc_bank confed_lives4 void
-#bank_data Exactly 0 bc_bank map_won4 void
-#deaths 4 Set 1 battlecruiser t5_b
-#wait 320
-#
-#bank_data Set 0 bc_bank map_won5 wait_for_death_prep
-#bank_data Set 2 bc_bank confed_lives5 wait_for_death_prep
-#multirun map_won
-#:wait_for_death
-#wait 4
-#
-#deaths 0 AtLeast 1 127 void
-#deaths 6 AtMost 0 27 wait_for_death 
-#bank_data Set 1 bc_bank confed_lives5 wait_for_death
-#wait 1
-#
-#save_bank bc_bank
-#stop
-#
-#:map_won
-#wait 4
-#
-#deaths 0 Exactly 0 127 map_won
-#bank_data Set 1 bc_bank map_won5 wait_for_death_prep
-#wait 1
-#
-#save_bank bc_bank
-#stop
-#
-#:terran_8
-#issue_order MoveToMinerals 3 scv Loc.87 Loc.87 177 EachAtMostOnce
-#issue_order MoveToMinerals 3 scv Loc.88 Loc.88 176 EachAtMostOnce
-#issue_order MoveToGas 1 scv Loc.89 Loc.89 refinery Own
-#stop
+:autocast_result
+bank_data Exactly 1 automine_toggle toggle aresult_1
+bank_data Exactly 2 automine_toggle toggle aresult_2
+return
+
+:aresult_1
+deaths 13 Set 1 119 void
+return
+
+:aresult_2
+deaths 13 Set 2 119 ec_terran
+return
+
+:setdif_normal
+#print normal_dif
+return
+
+:setdif_easy
+print(Current Difficulty: Easy)
+upgrade_jump 14 Set 74 6 void
+return
+
+:setdif_hard
+print(Current Difficulty: Hard)
+upgrade_jump 14 Set 74 7 void
+return
