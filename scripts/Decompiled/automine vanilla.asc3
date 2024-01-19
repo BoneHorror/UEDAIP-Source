@@ -97,7 +97,6 @@ idle_orders Repair 48 2 scv 150 group_buildings|group_men 40 NotEnemies|Own|Self
 #idle_orders Repair 48 2 scv 150 group_buildings|group_men 30 NotEnemies|Own|Self(Order(Stop))|Hp(LessThanPercent 100)|TileFlags(Walkable)|UnitFlags(Mechanical)
 idle_orders 141 73 1 science_vessel 224 group_men 50 NotEnemies|Own|Self(Order(PlayerGuard))|Hp(LessThanPercent 40)|Hp(GreaterThan 9)|InCombat|Self(Energy(GreaterThan 199))|WithoutSpellEffects(Matrix)
 idle_orders 141 72 1 science_vessel 224 group_men 50 NotEnemies|Own|Self(Order(Guard))|Hp(LessThanPercent 40)|Hp(GreaterThan 9)|InCombat|Self(Energy(GreaterThan 199))|WithoutSpellEffects(Matrix)
-multirun resto_io
 multirun irradiate_io
 multirun lockdown_io
 multirun hallu_io
@@ -169,6 +168,7 @@ tech_jump 13 Exactly emp_shockwave 0 ec_emp_io
 idle_orders 122 226 1 science_vessel 338 Group_Men 50 InCombat|Count(AtLeast 2 60 14)|Energy(GreaterThan 200)|Self(Order(3))
 idle_orders 122 128 1 science_vessel 512 Group_Men 60 InCombat|Count(AtLeast 2 60 14)|Shields(GreaterThan 300)|Self(Order(3))
 stop 
+
 
 :protoss_idle
 wait 3
@@ -394,7 +394,7 @@ bank_data Set 0 automine_toggle toggle lockdown_io
 wait 1
 
 save_bank automine_toggle
-deaths 0 Set 1 zergling terran_12
+deaths 0 Set 1 zergling lockdown_io
 goto tog_return
 
 :disable
@@ -402,7 +402,7 @@ bank_data Set 1 automine_toggle toggle lockdown_io
 wait 1
 
 save_bank automine_toggle
-deaths 0 Set 2 zergling terran_12
+deaths 0 Set 2 zergling lockdown_io
 goto tog_return
 
 :easycast
@@ -412,6 +412,31 @@ wait 1
 save_bank automine_toggle
 deaths 0 Set 3 zergling lockdown_io
 goto tog_return
+
+:dif_easy
+bank_data Set 1 difficulty_toggle difficulty lockdown_io
+wait 1
+
+save_bank difficulty_toggle
+deaths 0 Set 1 153 lockdown_io
+#unused zerg bld (153) if we need to access this in map...
+goto dif_return
+
+:dif_normal
+bank_data Set 0 difficulty_toggle difficulty lockdown_io
+wait 1
+
+save_bank difficulty_toggle
+deaths 0 Set 0 153 lockdown_io
+goto dif_return
+
+:dif_hard
+bank_data Set 2 difficulty_toggle difficulty lockdown_io
+wait 1
+
+save_bank difficulty_toggle
+deaths 0 Set 2 153 lockdown_io
+goto dif_return
 
 :terran_2
 issue_order MoveToMinerals 2 scv Loc.11 Loc.11 178 EachAtMostOnce
