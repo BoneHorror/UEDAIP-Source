@@ -3872,7 +3872,7 @@ OvermindRemnantsInit:
 IsId           	54
 Type           	20
 Init           	Overmind_withoutShell_Init
-Death          	long03
+Death          	Overmind_withoutShell_Death
 GndAttkInit    	[NONE]
 AirAttkInit    	[NONE]
 Unused1        	[NONE]
@@ -3921,6 +3921,25 @@ Overmind_withoutShell_IsWorking:
 	playfram       	0
 	wait           	4
 	goto           	Overmind_withoutShell_IsWorking
+	
+Overmind_withoutShell_Death:
+	#print P5 U74 Deaths: {deaths(4, 74)}
+	if deaths(4, 74) == 0 && deaths(0, 98) == 4 goto Overmind_Revive #Should in principle only happen in To Slay the Beast or if a Mapmaker sets the deaths
+	playsnd        	774	# Zerg\Bldg\ZBldgDth.WAV
+	imgol          	60 0 0	# ZergBuildingDeath (thingy\zBldDthS.grp)
+	wait           	3
+	lowsprul       	187 0 0	# ZergBuildingRubbleSmall (thingy\ZRubbleL.grp)
+	wait           	1
+	end     
+
+Overmind_Revive:
+	playsnd        	774	# Zerg\Bldg\ZBldgDth.WAV
+	imgol          	60 0 0	# ZergBuildingDeath (thingy\zBldDthS.grp)
+	wait           	3
+	lowsprul       	187 0 0	# ZergBuildingRubbleSmall (thingy\ZRubbleL.grp)
+	wait           	1
+	create_unit 148	 flingy.position_x flingy.position_y player
+	end     
 
 
 # ----------------------------------------------------------------------------- #
