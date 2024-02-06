@@ -14952,6 +14952,8 @@ Death          	long01
 # ----------------------------------------------------------------------------- #
 
 ProtossBeaconInit:
+	wait			5 #Have to wait at least this much for mapside AIscript to determine deaths
+	if deaths(0, 98) == 4 call HideUnit #Hide if we are in To Slay the Beast / xZ8
 	playfram       	0
 	imgol          	359 0 0	# ProtossBeaconOverlay (protoss\pCirGlow.grp)
 	goto           	long00
@@ -24786,6 +24788,11 @@ long03:
 	wait           	1
 	end            	
 
+HideUnit:
+	#print	Hiding...
+	hide_unit	unit
+	return
+	
 # Freeze code below, how to reproduce unit freeze: Order unit to move in the direction of a target, start attack and interrupt it before the animation finishes; unit should be frozen, playing its idle anim with the flingy 0x2 (accelerating) flag still set
 FreezeClear: # Code needed to run this: if flingy.movement_flags & 0x2 != 0 call FreezeClear, where 0x2 is "accelerating" flag for flingy movement; yes, this checks that flag @ 0x2 is not 0 (so == 1, but that doesnt work for w/e reason and has to be written this way)
 	set flingy.movement_flags = flingy.movement_flags & !0x2 # set flag @ 0x2 to be opposite of true, ie. false
