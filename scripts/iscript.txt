@@ -5779,9 +5779,11 @@ Goliath_Base_Local00:
 	goto           	Goliath_Base_Local00
 
 Goliath_Base_Death:
+	wait			2
 	playsnd        	1021	# Terran\Frigate\AfterOff.wav - GolDeathSnd 
+	wait			2
 	imgol          	332 0 0	# TerranBuildingExplosionsmall (thingy\tBangS.grp)
-	wait           	3
+	wait           	1
 	end            	
 
 uGoliath_Base_Walking:
@@ -5864,7 +5866,7 @@ Goliath_Base_StarEditInit:
 IsId           	76
 Type           	12
 Init           	Goliath_Turret_Init
-Death          	long01
+Death          	Goliath_Turret_Dth
 GndAttkInit    	Goliath_Turret_GndAttkInit
 AirAttkInit    	Goliath_Turret_AirAttkInit
 Unused1        	[NONE]
@@ -6113,6 +6115,15 @@ uGoliath_Turret_Walking:
     playfram        306 # frame set 7
     goto            uGoliath_Turret_Walking
 
+Goliath_Turret_Dth:
+	setvertpos		1
+	wait			2
+	setvertpos		3
+	wait			2
+	setvertpos		6
+	wait			1
+	end
+	
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
 # 237 KerriganGhost (terran\ughost.grp)
