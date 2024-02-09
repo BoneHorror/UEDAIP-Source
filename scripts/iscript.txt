@@ -8667,7 +8667,7 @@ CommandCenterOverlayDeath:
 IsId           	104
 Type           	20
 Init           	CrashedBattlecruiserInit
-Death          	AcademyDeath
+Death          	CrashedBCDeath
 GndAttkInit    	[NONE]
 AirAttkInit    	[NONE]
 Unused1        	[NONE]
@@ -8697,6 +8697,14 @@ CrashedBattlecruiserBuilt:
 	playfram       	0
 	goto           	long00
 
+CrashedBCDeath: #TODO hook this to map so that I can give players some random resources for killing a bc--
+	playsnd        	7	# Misc\ExploLrg.wav
+	imgol          	334 0 0	# TerranBuildingExplosionlarge (thingy\tBangX.grp)
+	wait           	3
+	liftoffcondjmp 	long01
+	lowsprul       	273 0 0	# TerranBuildingRubblesmall (thingy\RubbleS.grp)
+	wait           	1
+	end            	
 
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
