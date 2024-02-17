@@ -43,7 +43,6 @@ upgrade 1 carrier_capacity 80
 upgrade 1 p_air_weapon 30
 upgrade 1 p_plasma_shield 30
 upgrade 1 p_ground_weapon 30
-
 idle_orders disablebuiltin 0 0 0 0 0 0 0
 wait 6870
 

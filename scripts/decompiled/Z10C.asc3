@@ -290,6 +290,7 @@ call Targeting
 attack_timeout 200
 attack_do
 attack_clear
+multirun foreign_casters
 idle_orders 181 440 1 corsair 338 group_men 80 incombat|count(AtLeast 2 60 14)
 idle_orders 181 280 1 corsair 512 sunken_colony|spore_colony|lurker|bunker|siege_tank 70 incombat
 idle_orders 181 0 0 corsair 188 zergling|hydralisk|lurker|ultralisk|sunken_colony|spore_colony 30 deathrattle
@@ -704,3 +705,54 @@ return
 :Air2
 attack_to Loc.112 Loc.122
 return
+
+:foreign_casters
+idle_orders 141 32 1 science_vessel 1256 group_men 45 own|allied|notenemies|incombat|Health(LessThanPercent 45)|Health(GreaterThanPercent 10)
+idle_orders 185 256 1 medic 1024 queen|defiler|overlord|lurker|infested_terran|skywing|observer|science_vessel|valhalla|arbiter|hnorad|battlecruiser|ghost|siege_tank 30 WithoutSpellEffects(Blind)
+idle_orders 185 32 1 medic 256 queen|defiler|overlord|lurker|infested_terran|skywing|observer|science_vessel|valhalla|arbiter|hnorad|battlecruiser|ghost|siege_tank 70 WithoutSpellEffects(Blind)|InCombat
+idle_orders 185 0 1 medic 256 group_men 80 WithoutSpellEffects(Blind)|Deathrattle
+idle_orders 115 32 1 phantom|ghost 210 group_men 50 Hp(GreaterThanPercent 50)|Self(InCombat)|Self(Energy(GreaterThan 100))|UnitFlags(Mechanical)|WithoutSpellEffects(Lockdown)
+idle_orders 115 32 1 phantom|ghost 280 carrier|reaver|hnorad|battlecruiser|siege_tank|panzer|valhalla 80 Hp(GreaterThanPercent 20)|Self(InCombat)|Self(Energy(GreaterThan 80))|UnitFlags(Mechanical)|WithoutSpellEffects(Lockdown)
+idle_orders Restoration 33 1 medic 256 Group_Men 55 NotEnemies|Own|Allied|Self(Energy(GreaterThan 65))|SpellEffects(Irradiate)|UnitFlags(Organic)
+idle_orders Restoration 33 1 medic 256 Group_Men 50 NotEnemies|Own|Allied|Self(Energy(GreaterThan 65))|SpellEffects(Plague)
+idle_orders Restoration 33 1 medic 256 Group_Men 45 NotEnemies|Own|Allied|Self(Energy(GreaterThan 90))|SpellEffects(Lockdown)
+idle_orders Restoration 33 1 medic 256 Group_Men 35 NotEnemies|Own|Allied|Self(Energy(GreaterThan 95))|SpellEffects(Maelstrom)
+idle_orders 142 64 1 valhalla 256 zergling|zealot|marine|heavy_marine 50 incombat|count(AtLeast 4 48 14)
+idle_orders 142 64 1 valhalla 256 hydralisk|dark_templar|dragoon|firebat|tesla_trooper|high_templar|ghost|phantom 50 incombat|count(AtLeast 3 48 14)
+idle_orders 142 128 1 valhalla 256 lurker|revenant|reaver|scorpion|death_knight|goliath 80 incombat|count(AtLeast 2 48 14)
+idle_orders 142 128 1 valhalla 256 mutalisk|scout|corsair|skywing|wraith 60 incombat|count(AtLeast 2 48 14)
+idle_orders 142 128 1 valhalla 256 carrier|devourer|guardian|ultralisk|infested_terran|valhalla|hnorad|battlecruiser|archon 40 incombat
+idle_orders 143 160 1 science_vessel 1312 infested_terran|lurker|guardian|queen|defiler|devourer|dark_templar|medic|ghost|phantom 120 Health(GreaterThan 50)|WithoutSpellEffects(Irradiate)
+idle_orders 143 160 1 science_vessel 1312 hydralisk|mutalisk|zealot|scv|drone|ultralisk 60 Health(GreaterThan 50)|WithoutSpellEffects(Irradiate)
+idle_orders 122 226 1 science_vessel 338 Group_Men 50 InCombat|Count(AtLeast 2 60 14)|Energy(GreaterThan 200)
+idle_orders 122 128 1 science_vessel 512 Group_Men 60 InCombat|Count(AtLeast 2 60 14)|Shields(GreaterThan 300)
+idle_orders 120 0 1 queen 1024 overlord|observer|science_vessel|defiler|skywing|dropship|shuttle|arbiter|valhalla|defiler|queen|ghost 30 WithoutSpellEffects(Parasite)|RandomRate(280 820)
+idle_orders 27 13 1 queen 1532 command_center 80 health(LessThanPercent,66)
+idle_orders 121 32 1 queen 312 zergling|marine 5 Health(GreaterThanPercent 85)
+idle_orders 121 32 1 queen 312 hydralisk|firebat|medic|heavy_marine 40 Health(GreaterThanPercent 85)
+idle_orders 121 32 1 queen 312 lurker|siege_tank|death_knight 70 Health(GreaterThanPercent 25)
+idle_orders 121 32 1 queen 312 ultralisk|36|panzer 120 Health(GreaterThanPercent 25)
+idle_orders 121 32 1 queen 312 zealot|vulture|scorpion 30 Health(GreaterThanPercent 45)
+idle_orders 121 32 1 queen 312 dragoon|goliath|phantom 60 Health(GreaterThanPercent 45)
+idle_orders 121 32 1 queen 312 high_templar|ghost 70 Health(GreaterThanPercent 65)
+idle_orders 121 32 1 queen 312 dark_templar|tesla_trooper 50 Health(GreaterThanPercent 55)
+idle_orders 121 32 1 queen 312 drone|scv 15 Health(GreaterThanPercent 95)
+idle_orders 121 32 1 queen 312 broodling 3 Health(GreaterThanPercent 95)
+idle_orders 121 32 1 queen 312 group_men 40 deathrattle
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|marine|vulture|heavy_marine|scorpion 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)
+idle_orders 146 0 1 queen 1024 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)
+idle_orders 146 0 1 queen 1024 dragoon|corsair|scout|dark_templar|wraith|ghost|skywing|phantom 40 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(160 540)
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|dragoon|corsair|scout|dark_archon|devourer|guardian|dark_templar|goliath|siege_tank|revenant|death_knight|panzer 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(160 540)
+idle_orders 146 0 1 queen 1024 reaver|dark_archon|archon|devourer|guardian|hnorad|battlecruiser|valhalla|carrier|arbiter 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)
+idle_orders 146 8 1 queen 312 group_men 30 deathrattle
+idle_orders 119 64 1 defiler 512 ultralisk 70 own|allied|notenemies|incombat
+idle_orders 119 64 1 defiler 512 zergling 30 own|allied|notenemies|incombat|Count(AtLeast 3 80 14)
+idle_orders 119 64 1 defiler 512 lurker 50 own|allied|notenemies|incombat|Count(AtLeast 2 80 14)
+idle_orders 144 64 1 defiler 788 group_men 55 count(AtLeast 3 120 14) 
+idle_orders 144 64 1 defiler 512 skywing|death_knight|scorpion|wraith|science_vessel|dragoon|corsair|scout 80 incombat|count(AtLeast 3 120 14)
+idle_orders 144 64 1 defiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|devourer|guardian|ultralisk 115 incombat|count(AtLeast 2 120 14)
+idle_orders 144 64 1 defiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|ultralisk 80 incombat
+idle_orders 144 64 1 defiler 512 heavy_marine|medic|ghost|phantom|marine|firebat|vulture|zealot|hydralisk|mutalisk|revenant|dark_templar|high_templar 55 incombat|count(AtLeast 4 120 14)
+idle_orders Consume 32 1 defiler 512 zergling 70 NotEnemies|Own|Health(LessThanPercent 80)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 32 1 defiler 512 broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
+stop
