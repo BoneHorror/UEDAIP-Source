@@ -1,6 +1,7 @@
 script_name Brood Wars Terran 3 - Town F
 script_id TB3F
 
+if_owned 190 call_for_help
 start_campaign
 wait 1
 
@@ -10,9 +11,25 @@ default_min 0
 wait 1
 
 notowns_jump command_center brown_garrison
+build 1 command_center 150
+build 1 scv 130
+build 2 command_center 80
+build 16 scv 80
 multirun civilian_idle
-
-:brown_garrison
+define_max 30 scv
+define_max 2 siege_tank
+define_max 3 scv
+define_max 12 marine
+define_max 255 heavy_marine
+max_force 800
+defensebuild_gg 1 siege_tank
+defenseuse_gg 1 siege_tank
+defensebuild_gg 2 marine
+defenseuse_gg 2 marine
+defensebuild_gg 1 vulture
+defenseuse_gg 1 vulture
+defensebuild_ag 2 marine
+defenseuse_ag 2 marine
 idle_orders 92 256 3 marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
 idle_orders 92 256 1 ghost 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
 idle_orders 92 64 3 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
@@ -21,6 +38,36 @@ idle_orders 92 256 3 marine 368 bunker 50 Own|NotEnemies|Self(Order(163))
 idle_orders 92 256 1 ghost 368 bunker 50 Own|NotEnemies|Self(Order(163))
 idle_orders 92 64 3 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
 idle_orders 92 64 1 ghost 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 10 16 3 marine|ghost 212 drone|scv|probe 50 0
+idle_orders 10 16 1 firebat 128 drone|scv|probe 70 0
+idle_orders 10 16 1 firebat 128 drone|scv|probe 150 count(AtLeast 2 24 14)
+wait 8500
+
+upgrade 1 t_infantry_armor 30
+upgrade 1 t_infantry_weapon 30
+upgrade 1 marine_range 30
+build 20 scv 80
+wait 12000
+
+upgrade 1 t_vehicle_plating 30
+upgrade 1 t_vehicle_weapon 30
+tech siege_mode 30
+build 24 scv 80
+:loop
+wait 10500
+
+goto loop
+:brown_garrison
+define_max 20 marine
+define_max 14 firebat
+idle_orders 92 256 3 marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 firebat 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 64 3 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 firebat 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 256 3 marine 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 firebat 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 64 3 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 firebat 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
 idle_orders 10 16 3 marine|ghost 212 drone|scv|probe 50 0
 idle_orders 10 16 1 firebat 128 drone|scv|probe 70 0
 idle_orders 10 16 1 firebat 128 drone|scv|probe 150 count(AtLeast 2 24 14)
@@ -34,3 +81,7 @@ issue_order 166 100 15 Loc.63 Loc.63 15 0
 wait_rand 433 800
 
 goto civilian_idle
+
+:call_for_help
+help_iftrouble
+stop

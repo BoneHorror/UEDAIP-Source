@@ -9,6 +9,9 @@ defaultbuild_off
 default_min 0
 wait 1
 
+build 1 command_center 150
+build 1 scv 130
+call basic_tech
 aicontrol global_disable_spell_focus
 aicontrol global_disable_acid_spore_focus
 aicontrol global_disable_carrier_focus
@@ -23,3 +26,241 @@ idle_orders 92 64 1 ghost 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order
 idle_orders 10 16 3 marine|ghost 212 drone|scv|probe 50 0
 idle_orders 10 16 1 firebat 128 drone|scv|probe 70 0
 idle_orders 10 16 1 firebat 128 drone|scv|probe 150 count(AtLeast 2 24 14)
+multirun civilian_idle
+check_transports
+guard_all
+#test guard_all
+max_force 800
+define_max 8 scv
+define_max 255 dropship
+define_max 2 science_vessel
+define_max 38 marine
+define_max 14 siege_tank
+define_max 14 ghost
+define_max 255 nuclear_missile
+#no nukes on Korhal
+define_max 12 firebat
+define_max 6 vulture
+define_max 255 wraith
+define_max 12 goliath
+define_max 255 battlecruiser
+define_max 255 heavy_marine
+defensebuild_gg 2 siege_tank
+defenseuse_gg 2 siege_tank
+defensebuild_gg 2 firebat
+defenseuse_gg 2 firebat
+defensebuild_gg 1 goliath
+defenseuse_gg 1 goliath
+defensebuild_gg 1 ghost
+defenseuse_gg 1 ghost
+defensebuild_ag 2 marine
+defenseuse_ag 2 marine
+defensebuild_ag 1 ghost
+defenseuse_ag 1 ghost
+defensebuild_ag 1 goliath
+defenseuse_ag 1 goliath
+wait 1800
+
+attack_do
+attack_clear
+train 4 marine
+train 2 firebat
+wait_train 4 marine
+wait_train 2 firebat
+attack_add 4 marine
+attack_add 2 firebat
+attack_prepare
+upgrade 1 t_infantry_weapon 30
+upgrade 1 t_infantry_armor 30
+wait 9000
+
+attack_do
+attack_clear
+train 4 marine
+train 1 siege_tank
+wait_train 4 marine
+wait_train 1 siege_tank
+attack_add 4 marine
+attack_add 1 siege_tank
+attack_prepare
+tech stim_packs 30
+tech siege_mode 30
+upgrade 1 t_vehicle_weapon 30
+upgrade 1 t_vehicle_plating 30
+upgrade 1 marine_range 30
+wait 9000
+
+attack_do
+attack_clear
+train 4 marine
+train 2 siege_tank
+wait_train 4 marine
+wait_train 2 siege_tank
+attack_add 4 marine
+attack_add 2 siege_tank
+attack_prepare
+upgrade 2 t_vehicle_weapon 30
+upgrade 2 t_vehicle_plating 30
+wait 9000
+
+attack_do
+attack_clear
+train 6 wraith
+wait_train 6 wraith
+attack_add 6 wraith
+attack_prepare
+tech cloaking_field 30
+wait 9000
+
+attack_do
+attack_clear
+train 6 ghost
+train 6 firebat
+train 2 siege_tank
+wait_train 6 ghost
+wait_train 6 firebat
+wait_train 2 siege_tank
+attack_add 6 ghost
+attack_add 6 firebat
+attack_add 2 siege_tank
+attack_prepare
+tech personnel_cloaking 30
+tech irradiate 30
+upgrade 1 t_ship_weapon 30
+upgrade 1 t_ship_plating 30
+upgrade 2 t_infantry_weapon 30
+upgrade 2 t_infantry_armor 30
+upgrade 1 ghost_sight 30
+wait 9000
+
+attack_do
+attack_clear
+train 3 marine
+train 6 firebat
+train 2 siege_tank
+train 1 vulture
+wait_train 3 marine
+wait_train 6 firebat
+wait_train 2 siege_tank
+wait_train 1 vulture
+attack_add 3 marine
+attack_add 6 firebat
+attack_add 2 siege_tank
+attack_add 1 vulture
+attack_prepare
+tech spider_mines 30
+tech emp_shockwave 30
+upgrade 1 ghost_mana 30
+upgrade 1 wraith_mana 30
+multirun block1
+upgrade 1 science_vessel_mana 30
+upgrade 2 t_ship_weapon 30
+upgrade 2 t_ship_plating 30
+wait 9000
+
+attack_do
+attack_clear
+train 8 wraith
+wait_train 8 wraith
+attack_add 8 wraith
+attack_prepare
+upgrade 3 t_ship_weapon 30
+upgrade 3 t_ship_plating 30
+wait 9000
+
+attack_do
+attack_clear
+train 8 marine
+train 4 firebat
+train 2 siege_tank
+train 2 vulture
+wait_train 8 marine
+wait_train 4 firebat
+wait_train 2 siege_tank
+wait_train 2 vulture
+attack_add 8 marine
+attack_add 4 firebat
+attack_add 2 siege_tank
+attack_add 2 vulture
+attack_prepare
+upgrade 3 t_infantry_weapon 30
+upgrade 3 t_vehicle_weapon 30
+upgrade 1 vulture_speed 30
+upgrade 3 t_infantry_armor 30
+upgrade 3 t_vehicle_plating 30
+wait 9000
+
+attack_do
+attack_clear
+train 8 marine
+train 6 ghost
+train 2 siege_tank
+wait_train 8 marine
+wait_train 6 ghost
+wait_train 2 siege_tank
+attack_add 8 marine
+attack_add 6 ghost
+attack_add 2 siege_tank
+attack_prepare
+
+:block2
+wait 9000
+
+attack_do
+attack_clear
+train 8 wraith
+wait_train 8 wraith
+attack_add 8 wraith
+attack_prepare
+wait 9000
+
+attack_do
+attack_clear
+train 6 marine
+train 4 firebat
+train 2 siege_tank
+train 6 ghost
+train 3 vulture
+wait_train 6 marine
+wait_train 4 firebat
+wait_train 2 siege_tank
+wait_train 6 ghost
+wait_train 3 vulture
+attack_add 6 marine
+attack_add 4 firebat
+attack_add 2 siege_tank
+attack_add 6 ghost
+attack_add 3 vulture
+attack_prepare
+goto block2
+
+:civilian_idle
+issue_order 166 100 15 Loc.63 Loc.63 15 0
+wait_rand 433 800
+
+goto civilian_idle
+
+:basic_tech
+build 1 barracks 50
+build 1 academy 50
+build 1 factory 50
+build 1 engineering_bay 50
+build 1 armory 50
+build 1 machine_shop 50
+tech stim_packs 30
+upgrade 1 hospitals 30
+upgrade 1 t_infantry_armor 30
+upgrade 1 marine_range 30
+upgrade 1 t_vehicle_plating 30
+upgrade 1 t_infantry_weapon 30
+upgrade 1 vulture_speed 30
+upgrade 1 t_ship_plating 30
+upgrade 1 t_vehicle_weapon 30
+upgrade 1 t_ship_weapon 30
+return
+
+:simple_atk
+unstart_campaign
+attack_prepare
+start_campaign
+return

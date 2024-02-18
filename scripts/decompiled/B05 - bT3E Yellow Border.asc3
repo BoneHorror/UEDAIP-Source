@@ -9,10 +9,215 @@ defaultbuild_off
 default_min 0
 wait 1
 
+build 1 command_center 150
+build 1 scv 130
+call basic_tech
+build 13 scv 80
+build 1 starport 80
+build 1 control_tower 80
+build 1 science_facility 80
+build 1 covert_ops 80
 multirun civilian_idle
+define_max 30 scv
+define_max 5 dropship
+define_max 2 science_vessel
+define_max 1 hsciencevessel
+#TODO check if hsciencevessels propagate vessel aura!
+define_max 17 marine
+define_max 255 firebat
+define_max 7 ghost
+define_max 4 wraith
+define_max 4 vulture
+define_max 3 goliath
+define_max 255 nuclear_missile
+#no nukes on Korhal
+define_max 255 battlecruiser
+max_force 1050
+defensebuild_gg 1 ghost
+defenseuse_gg 1 ghost
+defensebuild_gg 1 vulture
+defenseuse_gg 1 vulture
+defenseuse_gg 1 marine
+defensebuild_ag 1 ghost
+defenseuse_ag 1 ghost
+defensebuild_ag 1 goliath
+defenseuse_ag 1 goliath
+defenseuse_ag 1 marine
+defensebuild_ga 1 wraith
+defenseuse_ga 1 wraith
+defensebuild_aa 1 wraith
+defenseuse_aa 1 wraith
+check_transports
+wait 15750
+#long setup, not the primary 
+
+idle_orders 141 83 1 science_vessel 1256 firebat|marine|ghost|heavy_marine|medic|tesla_trooper 10 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 50)|Self(Energy(GreaterThan 149))|WithoutSpellEffects(Matrix)
+idle_orders 141 83 1 science_vessel 1256 goliath|phantom|death_knight 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 99))|WithoutSpellEffects(Matrix)
+idle_orders 141 83 1 science_vessel 1256 vulture|scorpion 15 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 149))|WithoutSpellEffects(Matrix)
+idle_orders 141 83 1 science_vessel 1256 wraith|dropship|skywing|valkyrie 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 149))|WithoutSpellEffects(Matrix)
+idle_orders 141 83 1 science_vessel 1256 siege_tank|panzer 40 own|allied|notenemies|incombat|Health(LessThanPercent 70)|Health(GreaterThanPercent 30)|WithoutSpellEffects(Matrix)
+idle_orders 141 83 1 science_vessel 1256 hnorad|battlecruiser 80 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 10)|WithoutSpellEffects(Matrix)
+idle_orders 141 83 1 science_vessel 663 group_men 5 own|allied|notenemies|incombat|Health(LessThanPercent 35)|Health(GreaterThanPercent 10)|WithoutSpellEffects(Matrix)
+idle_orders 141 83 1 hsciencevessel 1256 firebat|marine|ghost|heavy_marine|medic|tesla_trooper 10 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 50)|Self(Energy(GreaterThan 149))|WithoutSpellEffects(Matrix)
+idle_orders 141 83 1 hsciencevessel 1256 goliath|phantom|death_knight 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 99))|WithoutSpellEffects(Matrix)
+idle_orders 141 83 1 hsciencevessel 1256 vulture|scorpion 15 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 149))|WithoutSpellEffects(Matrix)
+idle_orders 141 83 1 hsciencevessel 1256 wraith|dropship|skywing|valkyrie 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 149))|WithoutSpellEffects(Matrix)
+idle_orders 141 83 1 hsciencevessel 1256 siege_tank|panzer 40 own|allied|notenemies|incombat|Health(LessThanPercent 70)|Health(GreaterThanPercent 30)|WithoutSpellEffects(Matrix)
+idle_orders 141 83 1 hsciencevessel 1256 hnorad|battlecruiser 80 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 10)|WithoutSpellEffects(Matrix)
+idle_orders 141 83 1 hsciencevessel 663 group_men 5 own|allied|notenemies|incombat|Health(LessThanPercent 35)|Health(GreaterThanPercent 10)|WithoutSpellEffects(Matrix)
+upgrade 1 science_vessel_mana 30
+place_guard hsciencevessel 0
+train 2 goliath
+attack_add 2 goliath
+attack_add 1 science_vessel
+attack_to Loc.58 Loc.57
+wait 300
+
+attack_do
+attack_clear
+upgrade 2 t_vehicle_plating 30
+upgrade 2 t_infantry_armor 30
+upgrade 1 adv_mechanics 30
+upgrade 1 science_aura 30
+train 3 vulture
+train 2 wraith
+wait 3500
+
+tech irradiate 30
+train 3 vulture
+train 2 wraith
+attack_add 3 vulture
+attack_add 2 wraith
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+upgrade 2 t_ship_plating 30
+wait 1400
+
+idle_orders 143 160 1 science_vessel 1312 infested_terran|lurker|guardian|queen|defiler|devourer|dark_templar|medic|ghost|phantom 120 Health(GreaterThan 50)|WithoutSpellEffects(Irradiate)
+idle_orders 143 160 1 science_vessel 1312 hydralisk|mutalisk|zealot|scv|drone|ultralisk 60 Health(GreaterThan 50)|WithoutSpellEffects(Irradiate)
+idle_orders 143 160 1 hsciencevessel 1312 infested_terran|lurker|guardian|queen|defiler|devourer|dark_templar|medic|ghost|phantom 120 Health(GreaterThan 50)|WithoutSpellEffects(Irradiate)
+idle_orders 143 160 1 hsciencevessel 1312 hydralisk|mutalisk|zealot|scv|drone|ultralisk 60 Health(GreaterThan 50)|WithoutSpellEffects(Irradiate)
+wait 8000
+
+upgrade 3 t_ship_plating 30
+upgrade 3 t_vehicle_plating 30
+upgrade 3 t_infantry_armor 30
+train 3 goliath
+train 2 wraith
+train 3 ghost
+train 1 hsciencevessel
+train 6 marine
+attack_add 3 goliath
+attack_add 2 wraith
+attack_add 1 hsciencevessel
+attack_add 3 ghost
+attack_add 6 marine
+call simple_atk
+wait 300
+
+attack_do
+attack_clear
+upgrade 1 vademecum 30
+upgrade 1 ghost_sight 30
+upgrade 2 t_vehicle_weapon 30
+upgrade 2 t_infantry_weapon 30
+wait 5000
+
+train 1 hsciencevessel
+train 8 marine
+train 3 ghost
+attack_add 8 marine
+attack_add 3 ghost
+attack_add 1 hsciencevessel
+call simple_atk
+wait 300
+
+attack_do
+attack_clear
+tech personnel_cloaking 30
+upgrade 3 t_vehicle_weapon 30
+upgrade 3 t_infantry_weapon 30
+:guards_Loop
+wait 3400
+
+train 6 ghost
+train 4 vulture
+train 1 hsciencevessel
+train 6 marine
+attack_add 4 vulture
+attack_add 1 hsciencevessel
+attack_add 6 ghost
+attack_add 6 marine
+call simple_atk
+wait 300
+
+attack_do
+attack_clear
+wait 6000
+
+train 1 hsciencevessel
+train 3 goliath
+train 4 ghost
+attack_add 3 goliath
+attack_add 4 ghost
+attack_add 1 hsciencevessel
+call simple_atk
+wait 300
+
+attack_do
+attack_clear
+train 1 science_vessel
+train 2 wraith
+attack_add 1 science_vessel
+attack_add 2 wraith
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+goto guards_Loop
 
 :civilian_idle
 issue_order 166 100 15 Loc.63 Loc.63 15 0
 wait_rand 433 800
 
 goto civilian_idle
+
+:basic_tech
+build 1 barracks 50
+build 1 academy 50
+build 1 factory 50
+build 1 engineering_bay 50
+build 1 armory 50
+build 1 machine_shop 50
+tech stim_packs 30
+upgrade 1 hospitals 30
+upgrade 1 t_infantry_armor 30
+upgrade 1 marine_range 30
+upgrade 1 t_vehicle_plating 30
+upgrade 1 t_infantry_weapon 30
+upgrade 1 vulture_speed 30
+upgrade 1 t_ship_plating 30
+upgrade 1 t_vehicle_weapon 30
+upgrade 1 t_ship_weapon 30
+idle_orders 92 256 3 marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 ghost 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 64 3 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 ghost 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 256 3 marine 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 ghost 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 64 3 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 ghost 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 10 16 3 marine|ghost 212 drone|scv|probe 50 0
+idle_orders 10 16 1 firebat 128 drone|scv|probe 70 0
+idle_orders 10 16 1 firebat 128 drone|scv|probe 150 count(AtLeast 2 24 14)
+return
+
+:simple_atk
+unstart_campaign
+attack_prepare
+start_campaign
+return

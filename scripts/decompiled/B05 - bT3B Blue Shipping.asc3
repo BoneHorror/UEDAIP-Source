@@ -9,10 +9,117 @@ defaultbuild_off
 default_min 0
 wait 1
 
+build 1 command_center 150
+build 1 scv 130
+call basic_tech
+build 10 scv 80
 multirun civilian_idle
+#starports aren't super obligatory, if they are lost blue just stops distributing cash
+define_max 10 scv
+define_max 24 marine
+define_max 10 goliath
+define_max 5 vulture
+define_max 3 dropship
+define_max 2 wraith
+max_force 700
+defensebuild_gg 1 goliath
+defenseuse_gg 1 goliath
+defensebuild_gg 2 marine
+defenseuse_gg 2 marine
+defensebuild_gg 1 vulture
+defenseuse_gg 1 vulture
+defensebuild_ag 1 marine
+defenseuse_ag 1 marine
+defensebuild_ag 1 goliath
+defenseuse_ag 1 goliath
+defensebuild_ga 1 wraith
+defenseuse_ga 1 wraith
+defensebuild_aa 1 wraith
+defenseuse_aa 1 wraith
+wait 4000
+
+attack_add 2 vulture
+attack_to Loc.60 Loc.57
+wait 300
+
+attack_do
+attack_clear
+wait 6500
+
+:blue_loop
+attack_add 4 goliath
+attack_add 6 marine
+call expansion_atk
+wait 300
+
+attack_do
+attack_clear
+wait 2500
+
+attack_add 5 vulture
+call expansion_atk
+wait 300
+
+attack_do
+attack_clear
+wait 5000
+
+attack_add 14 marine
+call expansion_atk
+wait 300
+
+attack_do
+attack_clear
+wait 3000
+
+attack_add 8 goliath
+call expansion_atk
+wait 300
+
+attack_do
+attack_clear
+goto blue_loop
 
 :civilian_idle
 issue_order 166 100 15 Loc.63 Loc.63 15 0
 wait_rand 433 800
 
 goto civilian_idle
+
+:basic_tech
+build 1 barracks 50
+build 1 academy 50
+build 1 factory 50
+build 1 engineering_bay 50
+build 1 armory 50
+build 1 machine_shop 50
+tech stim_packs 30
+upgrade 1 hospitals 30
+upgrade 1 t_infantry_armor 30
+upgrade 1 marine_range 30
+upgrade 1 t_vehicle_plating 30
+upgrade 1 t_infantry_weapon 30
+upgrade 1 vulture_speed 30
+upgrade 1 t_ship_plating 30
+upgrade 1 t_vehicle_weapon 30
+upgrade 1 t_ship_weapon 30
+idle_orders 92 256 3 marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 ghost 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 64 3 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 ghost 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 256 3 marine 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 ghost 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 64 3 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 ghost 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 10 16 3 marine|ghost 212 drone|scv|probe 50 0
+idle_orders 10 16 1 firebat 128 drone|scv|probe 70 0
+idle_orders 10 16 1 firebat 128 drone|scv|probe 150 count(AtLeast 2 24 14)
+return
+
+:expansion_atk
+unstart_campaign
+set_attacks 1
+
+target_expansion
+start_campaign
+return
