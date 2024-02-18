@@ -1,0 +1,18 @@
+script_name Brood Wars Terran 3 - Town D
+script_id TB3D
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+multirun civilian_idle
+
+:civilian_idle
+issue_order 166 100 15 Loc.63 Loc.63 15 0
+wait_rand 433 800
+
+goto civilian_idle
