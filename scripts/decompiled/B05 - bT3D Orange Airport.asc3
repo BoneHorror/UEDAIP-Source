@@ -24,7 +24,7 @@ define_max 255 firebat
 define_max 3 dropship
 define_max 6 goliath
 define_max 2 vulture
-define_max 3 siege_tank
+define_max 4 siege_tank
 define_max 12 wraith
 define_max 4 battlecruiser
 define_max 1 science_vessel
@@ -50,62 +50,90 @@ defensebuild_aa 1 wraith
 defenseuse_aa 1 wraith
 wait 9000
 
-attack_add 1 goliath
-attack_prepare
+attack_add 2 wraith
+call simple_atk
 wait 500
 
 attack_do
 attack_clear
+tech personnel_cloaking 30
+upgrade 2 t_ship_weapon 30
 wait 6000
 
-attack_add 6 marine
-attack_prepare
+attack_add 1 battlecruiser
+call simple_atk
 wait 500
 
 attack_do
 attack_clear
+upgrade 2 t_ship_plating 30
+upgrade 2 t_infantry_armor 30
+upgrade 2 t_infantry_weapon 30
+wait 6000
+
+attack_add 1 goliath
+attack_add 3 wraith
+call simple_atk
+wait 500
+
+attack_do
+attack_clear
+tech siege_mode 30
+upgrade 1 wraith_mana 30
+upgrade 3 t_ship_weapon 30
 wait 7500
 
 attack_add 2 goliath
 attack_add 2 siege_tank
-attack_prepare
+attack_add 1 battlecruiser
+call simple_atk
 wait 500
 
 attack_do
 attack_clear
-wait 7500
+upgrade 3 t_ship_plating 30
+upgrade 2 t_vehicle_plating 30
+upgrade 2 t_vehicle_weapon 30
+wait 4500
 
 attack_add 1 battlecruiser
 attack_add 3 wraith
-attack_prepare
+call simple_atk
 wait 500
 
 attack_do
 attack_clear
-
+upgrade 1 overclocking 30
 :orange_loop
-wait 7500
+wait 4500
 
-attack_add 6 marine
+train 4 wraith
+train 3 goliath
+train 8 wraith
+attack_add 8 wraith
 attack_add 3 goliath
+call simple_atk
+wait 500
+
+attack_do
+attack_clear
+wait 4000
+
+train 4 battlecruiser
+attack_add 4 battlecruiser
 attack_prepare
 wait 500
 
 attack_do
 attack_clear
-wait 6000
+wait 4000
 
-attack_add 1 goliath
-attack_add 4 siege_tank
-attack_prepare
-wait 500
-
-attack_do
-attack_clear
-wait 6000
-
+train 1 battlecruiser
+train 4 wraith
+train 4 siege_tank
 attack_add 1 battlecruiser
 attack_add 4 wraith
+attack_add 4 siege_tank
 attack_prepare
 wait 500
 
