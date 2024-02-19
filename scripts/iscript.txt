@@ -5151,10 +5151,10 @@ SpecialState1  	GhostSpecialState1
 
 GhostInit:
 	wait			2
-	if unit_id == 16 goto uGhostInit
+	if unit_id == 16 || unit_id == 100 goto uGhostInit
 	imgul          	229 0 0	# GhostShad (terran\tghShad.grp)
 GhostWalkingToIdle:
-	if unit_id == 16 goto uGhostWalkingToIdle
+	if unit_id == 16 || unit_id == 100 goto uGhostWalkingToIdle
 	playfram       	0x33	# frame set 3
 GhostLocal02:
 	waitrand       	63 75
@@ -5226,7 +5226,7 @@ GhostLocal04:
 	goto           	GhostWalkingToIdle
 
 GhostDeath:
-	if unit_id == 16 goto uGhostDeath
+	if unit_id == 16 || unit_id == 100 goto uGhostDeath
 	if unit_id == 104 goto DurDeath
 	playsnd        	238	# Terran\GHOST\TGhDth00.wav
 	setfldirect    	0
@@ -5282,14 +5282,14 @@ DurTaDeath:
 	end            	
 	
 GhostGndAttkInit:
-	if unit_id == 16 goto uGhostGndAttkInit
+	if unit_id == 16 || unit_id == 100 goto uGhostGndAttkInit
 	playfram       	0x00	# frame set 0
 	wait           	1
 	playfram       	0x11	# frame set 1
 	wait           	1
 	playfram       	0x22	# frame set 2
 GhostGndAttkRpt:
-	if unit_id == 16 goto uGhostGndAttkRpt
+	if unit_id == 16 || unit_id == 100 goto uGhostGndAttkRpt
 	wait           	1
 	nobrkcodestart 	
 	playsnd        	98	# Bullet\TGhFir00.wav
@@ -5304,7 +5304,7 @@ GhostLocal06:
 	gotorepeatattk 	
 	ignorerest     	
 GhostGndAttkToIdle:
-	if unit_id == 16 goto uGhostGndAttkToIdle
+	if unit_id == 16 || unit_id == 100 goto uGhostGndAttkToIdle
 	playfram       	0x11	# frame set 1
 	wait           	1
 	playfram       	0x00	# frame set 0
@@ -5312,14 +5312,14 @@ GhostGndAttkToIdle:
 	goto           	GhostWalkingToIdle
 
 GhostAirAttkInit:
-	if unit_id == 16 goto uGhostAirAttkInit
+	if unit_id == 16 || unit_id == 100 goto uGhostAirAttkInit
 	playfram       	0x00	# frame set 0
 	wait           	1
 	playfram       	0x11	# frame set 1
 	wait           	1
 	playfram       	0x22	# frame set 2
 GhostAirAttkRpt:
-	if unit_id == 16 goto uGhostAirAttkRpt
+	if unit_id == 16 || unit_id == 100 goto uGhostAirAttkRpt
 	wait           	1
 	nobrkcodestart 	
 	playsnd        	98	# Bullet\TGhFir00.wav
@@ -5334,7 +5334,7 @@ GhostLocal07:
 	gotorepeatattk 	
 	ignorerest     	
 GhostAirAttkToIdle:
-	if unit_id == 16 goto uGhostAirAttkToIdle
+	if unit_id == 16 || unit_id == 100 goto uGhostAirAttkToIdle
 	playfram       	0x11	# frame set 1
 	wait           	1
 	playfram       	0x00	# frame set 0
@@ -5342,7 +5342,7 @@ GhostAirAttkToIdle:
 	goto           	GhostWalkingToIdle
 
 GhostCastSpell:
-	if unit_id == 16 goto uGhostCastSpell
+	if unit_id == 16 || unit_id == 100 goto uGhostCastSpell
 	nobrkcodestart 	
 	wait           	1
 	playsnd        	240	# Terran\GHOST\TGhLkd00.wav
@@ -5356,7 +5356,7 @@ GhostCastSpell:
 	goto           	GhostGndAttkToIdle
 
 GhostWalking:
-	if unit_id == 16 goto uGhostWalking
+	if unit_id == 16 || unit_id == 100 goto uGhostWalking
 	move           	4
 	wait           	1
 	playfram       	0x44	# frame set 4
@@ -5387,7 +5387,7 @@ GhostWalking:
 	goto           	GhostWalking
 
 GhostSpecialState1:
-	if unit_id == 16 goto uGhostSpecialState1
+	if unit_id == 16 || unit_id == 100 goto uGhostSpecialState1
 	playfram       	0x00	# frame set 0
 	wait           	1
 	playfram       	0x11	# frame set 1
