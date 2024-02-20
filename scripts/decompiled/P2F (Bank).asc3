@@ -63,278 +63,275 @@ bank_data Exactly 0 xp1 templars t0
 bank_data AtLeast 1 xp1 reavers r1
 bank_data Exactly 0 xp1 reavers r0
 :enddef
-wait 1
-
-save_bank xp1
 stop
 
 :r0
-#obsolete
+#jump w/o consuming
 deaths 0 Set 0 reaver end
 goto enddef  
 
 :r1
-#obsolete
+#jump w/o consuming
 deaths 0 Set 1 reaver end
 goto enddef  
 
 :t0
-#obsolete
+#jump w/o consuming
 deaths 0 Set 0 high_templar end
 goto endrea  
 
 :t1
-#obsolete
+#jump w/o consuming
 deaths 0 Set 1 high_templar end
 goto endrea  
 
 :t2
-#obsolete
+#jump w/o consuming
 deaths 0 Set 2 high_templar end
 goto endrea
 
 :t3
-#obsolete
+#jump w/o consuming
 deaths 0 Set 3 high_templar end
 goto endrea
 
 :t4
-#obsolete
+#jump w/o consuming
 deaths 0 Set 4 high_templar end
 goto endrea
 
 :a0
-#obsolete
+#jump w/o consuming
 deaths 0 Set 0 archon end
 goto endt
 
 :a1
-#obsolete
+#jump w/o consuming
 deaths 0 Set 1 archon end
 goto endt
 
 :a2
-#obsolete
+#jump w/o consuming
 deaths 0 Set 2 archon end
 goto endt
 
 :a3
-#obsolete
+#jump w/o consuming
 deaths 0 Set 3 archon end
 goto endt
 
 :d0
-#obsolete
+#jump w/o consuming
 deaths 0 Set 0 dragoon end
 goto zt  
 
 :d1          
-#obsolete
+#jump w/o consuming
 deaths 0 Set 1 dragoon end
 goto zt
 
 :d2          
-#obsolete
+#jump w/o consuming
 deaths 0 Set 2 dragoon end
 goto zt
 
 :d3          
-#obsolete
+#jump w/o consuming
 deaths 0 Set 3 dragoon end
 goto zt  
 
 :d4          
-#obsolete
+#jump w/o consuming
 deaths 0 Set 4 dragoon end
 goto zt
 
 :d5          
-#obsolete
+#jump w/o consuming
 deaths 0 Set 5 dragoon end
 goto zt
 
 :d6          
-#obsolete
+#jump w/o consuming
 deaths 0 Set 6 dragoon end
 goto zt    
 
 :d7          
-#obsolete
+#jump w/o consuming
 deaths 0 Set 7 dragoon end
 goto zt
 
 :d8          
-#obsolete
+#jump w/o consuming
 deaths 0 Set 8 dragoon end
 goto zt
 
 :d9          
-#obsolete
+#jump w/o consuming
 deaths 0 Set 9 dragoon end
 goto zt
 
 :z0
-#obsolete
+#jump w/o consuming
 deaths 0 Set 0 zealot end
 goto end
 
 :z1
-#obsolete
+#jump w/o consuming
 deaths 0 Set 1 zealot end
 goto end
 
 :z2
-#obsolete
+#jump w/o consuming
 deaths 0 Set 2 zealot end
 goto end
 
 :z3
-#obsolete
+#jump w/o consuming
 deaths 0 Set 3 zealot end
 goto end
 
 :z4
-#obsolete
+#jump w/o consuming
 deaths 0 Set 4 zealot end
 goto end
 
 :z5
-#obsolete
+#jump w/o consuming
 deaths 0 Set 5 zealot end
 goto end
 
 :z6
-#obsolete
+#jump w/o consuming
 deaths 0 Set 6 zealot end
 goto end
 
 :z7
-#obsolete
+#jump w/o consuming
 deaths 0 Set 7 zealot end
 goto end
 
 :z8
-#obsolete
+#jump w/o consuming
 deaths 0 Set 8 zealot end
 goto end
 
 :z9
-#obsolete
+#jump w/o consuming
 deaths 0 Set 9 zealot end
 goto end
 
 :z10
-#obsolete
+#jump w/o consuming
 deaths 0 Set 10 zealot end
 goto end
 
 :z11
-#obsolete
+#jump w/o consuming
 deaths 0 Set 11 zealot end
 goto end
 
 :z12
-#obsolete
+#jump w/o consuming
 deaths 0 Set 12 zealot end
 goto end
 
 :z13
-#obsolete
+#jump w/o consuming
 deaths 0 Set 13 zealot end
 goto end
 
 :z14
-#obsolete
+#jump w/o consuming
 deaths 0 Set 14 zealot end
 goto end
 
 :z15
-#obsolete
+#jump w/o consuming
 deaths 0 Set 15 zealot end
 goto end
 
 :z16
-#obsolete
+#jump w/o consuming
 deaths 0 Set 16 zealot end
 goto end
 
 :z17
-#obsolete
+#jump w/o consuming
 deaths 0 Set 17 zealot end
 goto end
 
 :z18
-#obsolete
+#jump w/o consuming
 deaths 0 Set 18 zealot end
 goto end
 
 :z19
-#obsolete
+#jump w/o consuming
 deaths 0 Set 19 zealot end
 goto end
 
 :z20
-#obsolete
+#jump w/o consuming
 deaths 0 Set 20 zealot end
 goto end
 
 :z21
-#obsolete
+#jump w/o consuming
 deaths 0 Set 21 zealot end
 goto end
 
 :z22
-#obsolete
+#jump w/o consuming
 deaths 0 Set 22 zealot end
 goto end
 
 :z23
-#obsolete
+#jump w/o consuming
 deaths 0 Set 23 zealot end
 goto end
 
 :z24
-#obsolete
+#jump w/o consuming
 deaths 0 Set 24 zealot end
 goto end
 
 :z25
-#obsolete
+#jump w/o consuming
 deaths 0 Set 25 zealot end
 goto end
 
 :z26
-#obsolete
+#jump w/o consuming
 deaths 0 Set 26 zealot end
 goto end
 
 :z27
-#obsolete
+#jump w/o consuming
 deaths 0 Set 27 zealot end
 goto end
 
 :z28
-#obsolete
+#jump w/o consuming
 deaths 0 Set 28 zealot end
 goto end
 
 :z29
-#obsolete
+#jump w/o consuming
 deaths 0 Set 29 zealot end
 goto end
 
 :z30
-#obsolete
+#jump w/o consuming
 deaths 0 Set 30 zealot end
 goto end
 
 :z31
-#obsolete
+#jump w/o consuming
 deaths 0 Set 31 zealot end
 goto end
 
 :z32
-#obsolete
+#jump w/o consuming
 deaths 0 Set 32 zealot end
 goto end
 
