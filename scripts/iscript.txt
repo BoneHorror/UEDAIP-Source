@@ -5503,6 +5503,7 @@ uGhostGndAttkInit:
 	wait           	1
 	playfram       	263	# frame set 2
 uGhostGndAttkRpt:
+	if unit_id == 100 goto UEDHeroRpt
 	nobrkcodestart
 	waitrand        3 7
 	playsnd        	701
@@ -5519,6 +5520,28 @@ uGhostGndAttkToIdle:
 	playfram       	229	# frame set 0
 	wait           	1
 	goto           	uGhostWalkingToIdle
+	
+UEDHeroRpt:
+	nobrkcodestart
+	waitrand        3 7
+	playsnd        	701
+	playfram       	433	# frame set 12
+	wait           	1
+	playfram       	263	# frame set 2
+	attkshiftproj  	40
+	attkshiftproj  	65
+	attkshiftproj  	90
+	attkshiftproj  	115
+	attkshiftproj  	140
+	attkshiftproj  	165
+	attkshiftproj  	190
+	attkshiftproj  	215
+	attkshiftproj  	240
+	wait			2
+	nobrkcodeend   	
+	gotorepeatattk 	
+	ignorerest  
+	goto 			uGhostWalkingToIdle
 
 uGhostAirAttkInit:
 	playfram       	229	# frame set 0
@@ -5527,6 +5550,7 @@ uGhostAirAttkInit:
 	wait           	1
 	playfram       	263	# frame set 2
 uGhostAirAttkRpt:
+	if unit_id == 100 goto UEDHeroRpt
 	nobrkcodestart 	
 	waitrand        3 7
 	playsnd        	701
@@ -16650,8 +16674,7 @@ LasersInit:
 	tmprmgraphicend	
 LasersLocal00:
 	wait			2
-	if bullet.weapon_id == 5 goto LaserUED
-	if bullet.weapon_id == 125 goto LaserUED
+	if bullet.weapon_id == 5 || bullet.weapon_id == 125 || bullet.weapon_id == 151 goto LaserUED
 	playfram       	0x00	# frame set 0
 	playsnd        	74	# Bullet\TPhFi100.wav
 	wait           	1
@@ -16673,6 +16696,7 @@ LasersDeath:
 	#imgol_on		bullet.target 447 bullet.order_target_x+2 bullet.order_target_y+6
 	#imgol_on		bullet.target 447 2 60
 	#do some overlays based on directions - 0 is right, 90 is to the top upwards, 180 is to the left and so on
+	if bullet.weapon_id == 151 goto LasBack
 	if flingy.facing_direction >= 270 goto LasRD
 	if flingy.facing_direction >= 180 goto LasLD
 	if flingy.facing_direction >= 90  goto LasLU
