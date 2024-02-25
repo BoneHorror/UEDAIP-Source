@@ -26,7 +26,7 @@ define_max 6 goliath
 define_max 2 vulture
 define_max 4 siege_tank
 define_max 12 wraith
-define_max 4 battlecruiser
+define_max 4 hnorad
 define_max 1 science_vessel
 defensebuild_gg 2 wraith
 defenseuse_gg 2 wraith
@@ -40,12 +40,12 @@ defensebuild_ag 1 marine
 defenseuse_ag 1 marine
 defensebuild_ag 1 wraith
 defenseuse_ag 1 wraith
-defensebuild_ga 1 battlecruiser
-defenseuse_ga 1 battlecruiser
+defensebuild_ga 1 hnorad
+defenseuse_ga 1 hnorad
 defensebuild_ga 1 wraith
 defenseuse_ga 1 wraith
-defensebuild_aa 1 battlecruiser
-defenseuse_aa 1 battlecruiser
+defensebuild_aa 1 hnorad
+defenseuse_aa 1 hnorad
 defensebuild_aa 1 wraith
 defenseuse_aa 1 wraith
 wait 9000
@@ -60,7 +60,7 @@ tech personnel_cloaking 30
 upgrade 2 t_ship_weapon 30
 wait 6000
 
-attack_add 1 battlecruiser
+attack_add 1 hnorad
 call simple_atk
 wait 500
 
@@ -69,7 +69,7 @@ attack_clear
 upgrade 2 t_ship_plating 30
 upgrade 2 t_infantry_armor 30
 upgrade 2 t_infantry_weapon 30
-wait 6000
+wait 3000
 
 attack_add 1 goliath
 attack_add 3 wraith
@@ -85,7 +85,7 @@ wait 7500
 
 attack_add 2 goliath
 attack_add 2 siege_tank
-attack_add 1 battlecruiser
+attack_add 1 hnorad
 call simple_atk
 wait 500
 
@@ -96,7 +96,7 @@ upgrade 2 t_vehicle_plating 30
 upgrade 2 t_vehicle_weapon 30
 wait 4500
 
-attack_add 1 battlecruiser
+attack_add 1 hnorad
 attack_add 3 wraith
 call simple_atk
 wait 500
@@ -104,6 +104,11 @@ wait 500
 attack_do
 attack_clear
 upgrade 1 overclocking 30
+tech yamato_gun 30
+idle_orders 113 96 2 hnorad 192 ultralisk|devourer|spore_colony|hnorad|battlecruiser|missile_turret|carrier|scout|valkyrie 80 InCombat|Health(GreaterThanPercent 75)
+idle_orders 113 96 1 hnorad 288 photon_cannon|bunker|sunken_colony 70 InCombat|Health(GreaterThanPercent 75)
+idle_orders 113 96 1 hnorad 192 lurker|mutalisk|guardian|reaver|archon|siege_tank|wraith|panzer 50 InCombat|Health(GreaterThanPercent 80)
+idle_orders 113 96 1 hnorad 256 dark_archon|science_vessel|arbiter 30 InCombat|Health(GreaterThanPercent 75)
 :orange_loop
 wait 4500
 
@@ -119,8 +124,8 @@ attack_do
 attack_clear
 wait 4000
 
-train 4 battlecruiser
-attack_add 4 battlecruiser
+train 4 hnorad
+attack_add 4 hnorad
 attack_prepare
 wait 500
 
@@ -128,10 +133,10 @@ attack_do
 attack_clear
 wait 4000
 
-train 1 battlecruiser
+train 1 hnorad
 train 4 wraith
 train 4 siege_tank
-attack_add 1 battlecruiser
+attack_add 1 hnorad
 attack_add 4 wraith
 attack_add 4 siege_tank
 attack_prepare

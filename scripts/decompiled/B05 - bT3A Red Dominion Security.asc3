@@ -14,7 +14,6 @@ build 1 scv 130
 call basic_tech
 build 2 scv 80
 build 1 comsat_station 80
-
 aicontrol global_disable_spell_focus
 aicontrol global_disable_acid_spore_focus
 aicontrol global_disable_carrier_focus
@@ -31,8 +30,7 @@ idle_orders 10 16 1 firebat 128 drone|scv|probe 70 0
 idle_orders 10 16 1 firebat 128 drone|scv|probe 150 count(AtLeast 2 24 14)
 multirun civilian_idle
 check_transports
-guard_all
-#test guard_all
+capt_expand
 max_force 1400
 define_max 8 scv
 define_max 255 dropship
@@ -62,10 +60,8 @@ defensebuild_ag 1 ghost
 defenseuse_ag 1 ghost
 defensebuild_ag 1 goliath
 defenseuse_ag 1 goliath
-wait 10800
+wait 9800
 
-attack_do
-attack_clear
 train 4 marine
 train 2 firebat
 attack_add 4 marine
@@ -92,7 +88,7 @@ attack_add 4 goliath
 call simple_atk
 upgrade 3 t_vehicle_weapon 30
 upgrade 3 t_vehicle_plating 30
-wait 3000
+wait 3500
 
 attack_do
 attack_clear
@@ -134,7 +130,7 @@ attack_add 6 vulture
 attack_prepare
 upgrade 1 ghost_mana 30
 upgrade 1 adv_mechanics 30
-wait 3000
+wait 3500
 
 attack_do
 attack_clear
@@ -145,8 +141,7 @@ attack_add 8 marine
 attack_add 6 ghost
 attack_add 2 siege_tank
 attack_prepare
-
-:block2
+:redLoop
 wait 6000
 
 attack_do
@@ -169,7 +164,7 @@ train 6 vulture
 attack_add 8 goliath
 attack_add 6 vulture
 call simple_atk
-goto block2
+goto redLoop
 
 :civilian_idle
 issue_order 166 100 15 Loc.63 Loc.63 15 0
