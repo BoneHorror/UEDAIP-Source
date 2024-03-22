@@ -4,14 +4,6 @@
   "rect": [0,0,360,200],
   "style": ["DS_MODALFRAME","WS_POPUP","WS_SYSMENU"],
   "children": [
-	{
-      "type": "FLCBIN",
-      "content": "gluGameMode-1",
-      "id": 2,
-      "rect": [26,38,190,56],
-      "flags": ["WS_CHILD","WS_VISIBLE","WS_TABSTOP","WS_HOTKEY","FB_HTEXTCENTER","FB_VTEXTCENTER","CTRL_ENTER"],
-      "children": null
-    },
     {
       "type": "LTEXT",
       "content": "gluGameMode-2",
