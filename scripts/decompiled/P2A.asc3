@@ -11,16 +11,27 @@ wait 1
 
 build 1 hatchery 150
 build 1 drone 130
+defenseuse_gg 1 infested_terran
+defenseuse_gg 1 lurker
+idle_orders 11 160 1 lurker 192 Any 20 WithoutUnitFlags(Air)
+idle_orders 11 160 1 lurker 192 Any 50 WithoutUnitFlags(Air)|UnitFlags(Detector)
+idle_orders 11 160 1 lurker 192 Any 60 InCombat|WithoutUnitFlags(Air)
+idle_orders 11 160 1 lurker 192 Any 100 InCombat|WithoutUnitFlags(Air)|UnitFlags(Detector)
+idle_orders 135 16 1 infested_terran 512 dark_templar|revenant 80 0
 wait_build 1 hatchery
 build 6 drone 80
+build 1 spawning_pool 85
+creep 4
+build 1 creep_colony 80
 allies_watch 4 second_part
-build 1 spawning_pool 80
 wait_buildstart 1 spawning_pool
 build 1 evolution_chamber 80
+build 2 creep_colony 80
 wait_build 1 spawning_pool
 defensebuild_gg 1 zergling
 defenseuse_gg 1 zergling
 build 9 drone 80
+build 3 creep_colony 80
 build 1 hydralisk_den 80
 defensebuild_gg 2 hydralisk
 defenseuse_gg 2 hydralisk
@@ -85,7 +96,6 @@ wait 500
 attack_do
 attack_clear
 defensebuild_gg 1 lurker
-defenseuse_gg 1 lurker
 upgrade 1 z_flyer_attack 30
 wait 1025
 
@@ -201,8 +211,10 @@ upgrade 2 z_flyer_attack 30
 upgrade 2 z_missile_attack 30
 wait 2375
 
+train 4 scourge
 train 3 mutalisk
 train 3 guardian
+attack_add 4 scourge
 attack_add 3 guardian
 attack_add 8 hydralisk
 call atk_setup
@@ -271,7 +283,6 @@ attack_clear
 goto block1
 
 :turret_defense_half
-creep 4
 build 1 creep_colony 80
 wait_build 1 creep_colony
 build 2 creep_colony 80
@@ -302,6 +313,11 @@ wait_build 3 drone
 build 5 drone 80
 max_workers 15
 build 1 creep_colony 80
+wait_build 1 creep_colony
+build 1 sunken_colony 80
+build 2 creep_colony 80
+wait_build 2 creep_colony
+build 2 sunken_colony 80
 :wait_ultra
 wait 50
 
@@ -316,12 +332,9 @@ defenseuse_gg 1 ultralisk
 build 14 drone 80
 wait_buildstart 5 drone
 creep 4
-build 1 creep_colony 80
-wait_build 1 creep_colony
-build 1 sunken_colony 80
-build 2 creep_colony 80
-wait_build 2 creep_colony
-build 2 spore_colony 80
+build 3 creep_colony 80
+wait_build 3 creep_colony
+build 1 spore_colony 80
 place_guard ultralisk 0
 upgrade 1 ultralisk_speed 30
 train 1 ultralisk
