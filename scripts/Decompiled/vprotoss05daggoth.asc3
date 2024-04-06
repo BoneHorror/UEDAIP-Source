@@ -116,7 +116,7 @@ idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|marine|vulture|heavy_ma
 idle_orders 146 0 1 queen 1024 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)
 idle_orders 146 0 1 queen 1024 dragoon|corsair|scout|dark_templar|wraith|ghost|skywing|phantom 40 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(160 540)
 idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|dragoon|corsair|scout|dark_archon|devourer|guardian|dark_templar|goliath|siege_tank|revenant|death_knight|panzer 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(160 540)
-idle_orders 146 0 1 queen 1024 reaver|dark_archon|archon|devourer|guardian|hnorad|battlecruiser|valhalla|carrier|arbiter 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)
+idle_orders 146 0 1 queen 1024 reaver|dark_archon|archon|devourer|guardian|102|battlecruiser|valhalla|carrier|arbiter 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)
 idle_orders 146 8 1 queen 312 group_men 30 deathrattle
 wait 2380
 
@@ -361,18 +361,18 @@ idle_orders 10 64 1 siege_tank 288 lurker|defiler|high_templar 120 Health(LessTh
 idle_orders 10 64 1 siege_tank 330 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine|firebat 120 count(AtLeast 3 48 14)
 idle_orders 10 16 1 wraith 210 mutalisk|scout|corsair|scourge|wraith 110 Health(LessThan 20)
 idle_orders 10 16 3 wraith 210 mutalisk|scout|corsair|scourge|wraith 135 Health(LessThan 60)
-idle_orders 10 16 1 wraith 210 devourer|hnorad|battlecruiser|carrier 150 Health(LessThan 20)
-idle_orders 10 16 2 wraith 210 devourer|hnorad|battlecruiser|carrier 160 Health(LessThan 40)
-idle_orders 10 16 3 wraith 210 devourer|hnorad|battlecruiser|carrier 170 Health(LessThan 60)
-idle_orders 10 16 4 wraith 210 devourer|hnorad|battlecruiser|carrier 190 Health(LessThan 80)
+idle_orders 10 16 1 wraith 210 devourer|102|battlecruiser|carrier 150 Health(LessThan 20)
+idle_orders 10 16 2 wraith 210 devourer|102|battlecruiser|carrier 160 Health(LessThan 40)
+idle_orders 10 16 3 wraith 210 devourer|102|battlecruiser|carrier 170 Health(LessThan 60)
+idle_orders 10 16 4 wraith 210 devourer|102|battlecruiser|carrier 190 Health(LessThan 80)
 idle_orders 10 16 1 wraith 210 shuttle|observer|overlord 60 Health(LessThan 20)
 idle_orders 10 16 1 goliath 224 group_men 60 Health(LessThan 11)
 idle_orders 10 16 1 goliath 224 infested_terran|defiler|dark_archon|lurker|dark_templar|ghost|siege_tank 90 Health(LessThan 12)
 idle_orders 10 16 2 goliath 224 infested_terran|defiler|dark_archon|lurker|dark_templar|ghost|siege_tank 90 Health(LessThan 22)
 idle_orders 10 16 1 vulture 224 group_men 60 Health(LessThan 5)|WithoutUnitFlags(Air)
 idle_orders 10 16 2 vulture 224 drone|scv|probe 150 0
-idle_orders 10 16 1 hnorad|battlecruiser|goliath 192 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 80 Health(LessThan 30)
-idle_orders 10 16 2 hnorad|battlecruiser|goliath 192 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 90 Health(LessThan 60)
+idle_orders 10 16 1 102|battlecruiser|goliath 192 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 80 Health(LessThan 30)
+idle_orders 10 16 2 102|battlecruiser|goliath 192 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 90 Health(LessThan 60)
 wait 667
 
 multirun grand_exchange
