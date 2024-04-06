@@ -7,7 +7,7 @@ multirun zerg_idle
 multirun protoss_idle
 deaths 0 Exactly 2 98 terran_2
 deaths 0 Exactly 3 98 terran_3
-#deaths 0 Exactly 4 98 zerg_8
+deaths 0 Exactly 4 98 terran_4
 deaths 0 Exactly 5 98 terran_5
 deaths 0 Exactly 6 98 terran_6
 deaths 0 Exactly 7 98 terran_7
@@ -450,6 +450,22 @@ stop
 issue_order MoveToMinerals 3 scv Loc.31 Loc.31 178 EachAtMostOnce
 issue_order MoveToMinerals 2 scv Loc.31 Loc.31 177 EachAtMostOnce
 issue_order MoveToMinerals 1 scv Loc.31 Loc.31 176 EachAtMostOnce
+stop
+
+:terran_4
+upgrade_jump 13 Exactly_Call 74 6 t4_easy
+upgrade_jump 13 Exactly_Call 74 7 t4_hard
+stop
+
+:t4_easy
+upgrade_jump 6 Set t_infantry_weapon 0 terran_4
+upgrade_jump 0 Set t_infantry_armor 3 terran_4
+stop
+
+:t4_hard
+upgrade_jump 6 Set t_vehicle_weapon 3 terran_4
+upgrade_jump 0 Set t_infantry_armor 0 terran_4
+tech_jump 6 Set stim_packs 1 terran_4
 stop
 
 :terran_5
