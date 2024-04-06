@@ -19,7 +19,7 @@ deaths 0 Exactly 12 98 terran_12
 deaths 0 Exactly 13 98 zerg_2
 deaths 0 Exactly 14 98 zerg_3
 deaths 0 Exactly 15 98 zerg_4
-#32 raszagal deaths reserved for zerg 5 and not used!
+deaths 0 Exactly 32 98 zerg_5
 #33 raszagal deaths reserved for zerg 6 and used in iscript
 deaths 0 Exactly 16 98 zerg_8
 deaths 0 Exactly 17 98 zerg_9
@@ -546,6 +546,20 @@ issue_order MoveToMinerals 2 drone Loc.16 Loc.16 176 0
 issue_order MoveToMinerals 1 drone Loc.16 Loc.16 178 0
 stop
 
+:zerg_5
+upgrade_jump 13 Exactly_Call 74 6 t4_easy
+upgrade_jump 13 Exactly_Call 74 7 t4_hard
+stop
+
+:z5_easy
+upgrade_jump 6 Set t_infantry_weapon 1 terran_4
+upgrade_jump 6 Set t_infantry_armor 1 terran_4
+stop
+
+:z5_hard
+upgrade_jump 3 Set z_carapace 1 terran_4
+upgrade_jump 6 Set t_vehicle_weapon 3 terran_4
+stop
 
 :zerg_8
 issue_order MoveToMinerals 4 drone Loc.21 Loc.21 177 EachAtMostOnce
