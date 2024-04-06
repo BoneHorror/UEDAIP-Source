@@ -31,7 +31,7 @@ deaths 0 Exactly 18 98 zerg_10
 deaths 0 Exactly 25 98 protoss_2
 deaths 0 Exactly 26 98 protoss_3
 deaths 0 Exactly 27 98 protoss_4
-#28 raszagal deaths reserved for protoss 6 (into the darkness) but it does not run a script here
+deaths 0 Exactly 28 98 protoss_5
 deaths 0 Exactly 29 98 protoss_7
 deaths 0 Exactly 30 98 protoss_8
 #protoss 9 does not start with a base
@@ -547,8 +547,8 @@ issue_order MoveToMinerals 1 drone Loc.16 Loc.16 178 0
 stop
 
 :zerg_5
-upgrade_jump 13 Exactly_Call 74 6 t4_easy
-upgrade_jump 13 Exactly_Call 74 7 t4_hard
+upgrade_jump 13 Exactly_Call 74 6 z5_easy
+upgrade_jump 13 Exactly_Call 74 7 z5_hard
 stop
 
 :z5_easy
@@ -593,8 +593,7 @@ stop
 #issue_order MoveToMinerals 1 probe Loc.62 Loc.62 176 0
 #stop
 #
-#:protoss_5
-#stop
+
 #
 #:protoss_6
 #issue_order MoveToMinerals 6 probe Loc.41 Loc.43 176 EachAtMostOnce
@@ -620,6 +619,23 @@ issue_order MoveToMinerals 2 probe Loc.20 Loc.20 176 EachAtMostOnce
 issue_order MoveToMinerals 1 probe Loc.20 Loc.20 177 EachAtMostOnce
 issue_order MoveToMinerals 2 scv Loc.20 Loc.20 176 EachAtMostOnce
 issue_order MoveToMinerals 1 scv Loc.20 Loc.20 178 EachAtMostOnce
+stop
+
+:protoss_5
+upgrade_jump 13 Exactly_Call 74 6 p5_easy
+upgrade_jump 13 Exactly_Call 74 7 p5_hard
+stop
+
+:p5_easy
+upgrade_jump 14 Set z_carapace 0 terran_4
+upgrade_jump 14 Set zergling_attack 0 terran_4
+stop
+
+:p5_hard
+upgrade_jump 14 Set z_melee_attack 2 terran_4
+upgrade_jump 14 Set z_missile_attack 1 terran_4
+upgrade_jump 14 Set ultralisk_armor 1 terran_4
+upgrade_jump 14 Set burrowed_regen 1 terran_4
 stop
 
 :protoss_7
