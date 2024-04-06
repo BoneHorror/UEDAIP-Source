@@ -23,6 +23,7 @@ build 1 spire 80
 build 1 queen_nest 80
 build 1 hive 80
 build 1 ultralisk_cavern 80
+build 10 drone 80
 define_max 12 zergling
 define_max 45 drone
 define_max 20 hydralisk
@@ -43,8 +44,8 @@ defensebuild_gg 1 hhydralisk
 defenseuse_gg 1 hhydralisk
 defensebuild_gg 1 ultralisk
 defenseuse_gg 1 ultralisk
-defensebuild_ag 1 hydralisk
-defenseuse_ag 1 hydralisk
+defensebuild_ag 2 hydralisk
+defenseuse_ag 2 hydralisk
 defensebuild_ag 1 hhydralisk
 defenseuse_ag 1 hhydralisk
 defensebuild_ag 1 scourge
@@ -108,8 +109,10 @@ wait 1380
 
 allies_watch 6 def_exp
 train 2 mutalisk
+train 4 hydralisk
 train 4 hhydralisk
 attack_add 4 hhydralisk
+attack_add 4 hydralisk
 attack_add 2 mutalisk
 attack_prepare
 wait 500
@@ -133,7 +136,7 @@ wait 500
 attack_do
 attack_clear
 expand 2 def_exp
-wait 2315
+wait 2215
 
 upgrade 1 zergling_attack 30
 upgrade 2 z_carapace 30

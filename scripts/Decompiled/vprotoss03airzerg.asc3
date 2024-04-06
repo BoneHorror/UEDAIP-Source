@@ -19,12 +19,13 @@ build 5 creep_colony 80
 build 3 sunken_colony 80
 build 2 spore_colony 80
 build 1 spire 80
+build 8 drone 80
 tech burrowing 30
 define_max 12 zergling
 define_max 45 drone
 define_max 11 hydralisk
-define_max 4 scourge
-define_max 4 mutalisk
+define_max 6 scourge
+define_max 5 mutalisk
 define_max 2 hmutalisk
 define_max 255 broodling
 defensebuild_gg 2 zergling
@@ -38,11 +39,11 @@ defensebuild_ag 1 scourge
 defenseuse_ag 1 scourge
 defensebuild_ga 1 mutalisk
 defenseuse_ga 1 mutalisk
-defensebuild_aa 1 scourge
-defenseuse_aa 1 scourge
+defensebuild_aa 2 scourge
+defenseuse_aa 2 scourge
 defensebuild_aa 1 mutalisk
 defenseuse_aa 1 mutalisk
-max_force 900
+max_force 1000
 wait 150
 
 max_workers 20
@@ -67,6 +68,8 @@ upgrade 1 z_melee_attack 30
 wait 1637
 
 train 4 mutalisk
+train 2 scourge
+attack_add 2 scourge
 attack_add 4 mutalisk
 attack_prepare
 wait 300
@@ -74,7 +77,6 @@ wait 300
 attack_do
 attack_clear
 define_max 20 zergling
-define_max 6 scourge
 define_max 7 mutalisk
 upgrade 1 z_carapace 30
 upgrade 1 z_flyer_carapace 30
@@ -107,6 +109,8 @@ wait 1033
 multirun hydra_guarding
 allies_watch 8 def_exp
 attack_add 20 zergling
+train 4 scourge
+attack_add 4 scourge
 train 20 zergling
 target_expansion
 wait 300
@@ -121,6 +125,9 @@ define_max 8 scourge
 define_max 10 mutalisk
 wait 16
 
+train 4 scourge
+train 3 mutalisk
+attack_add 4 scourge
 attack_add 3 mutalisk
 attack_prepare
 wait 300
@@ -147,6 +154,8 @@ train 6 hydralisk
 wait 1500
 
 train 9 hydralisk
+train 4 scourge
+attack_add 4 scourge
 attack_add 9 hydralisk
 attack_prepare
 wait 300
