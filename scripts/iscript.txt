@@ -16344,9 +16344,10 @@ YamatoGunGndAttkInit:
 
 YamatoGunDeath:
 	imgol          	544 0 0	# Unknown544 (thingy\eycHit.grp)
+	imgol          	429 0 0	# Spidermineexplosion (thingy\tmnExplo.grp)
 	domissiledmg   	
 	wait           	1
-	end            	
+	end            	   	
 
 
 # ----------------------------------------------------------------------------- #
