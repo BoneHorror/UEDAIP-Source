@@ -16,7 +16,7 @@
       "type": "FLCBTN",
       "content": "gluGameMode-3",
       "id": 7,
-      "rect": [134,114,190,56],
+      "rect": [104,84,190,56],
       "flags": ["WS_CHILD","WS_VISIBLE","WS_TABSTOP","WS_HOTKEY","FB_HTEXTCENTER","FB_VTEXTBOTTOM"],
       "children": null
     },
