@@ -322,11 +322,11 @@ define_max 5 dropship
 define_max 255 ghost
 defensebuild_gg 1 vulture
 defenseuse_gg 1 vulture
-defensebuild_gg 2 marine
-defenseuse_gg 2 marine
-defensebuild_ag 2 marine
-defenseuse_ag 2 marine
-max_force 850
+defensebuild_gg 3 marine
+defenseuse_gg 3 marine
+defensebuild_ag 3 marine
+defenseuse_ag 3 marine
+max_force 1250
 idle_orders disablebuiltin 0 0 0 0 0 0 0
 idle_orders 92 256 3 marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
 idle_orders 92 256 1 firebat 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
@@ -375,7 +375,6 @@ idle_orders 10 16 1 hnorad|battlecruiser|goliath 192 mutalisk|scout|corsair|scou
 idle_orders 10 16 2 hnorad|battlecruiser|goliath 192 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 90 Health(LessThan 60)
 wait 667
 
-farms_timing
 multirun grand_exchange
 multirun check_safety
 max_workers 18
@@ -405,21 +404,15 @@ defensebuild_gg 1 firebat
 defenseuse_gg 1 firebat
 build 20 scv 80
 build 1 comsat_station 80
-wait 665
-
+wait_buildstart 1 comsat_station
 build 1 armory 80
-wait 475
-
+wait_buildstart 1 armory
 build 2 barracks 80
 train 6 marine
 train 2 siege_tank
 attack_add 6 marine
 attack_add 2 siege_tank
 call target_player
-wait 500
-
-attack_do
-attack_clear
 defensebuild_gg 1 goliath
 defenseuse_gg 1 goliath
 defensebuild_gg 1 goliath
@@ -427,15 +420,17 @@ defenseuse_gg 1 goliath
 defensebuild_ag 1 goliath
 defenseuse_ag 1 goliath
 allies_watch 9 terran_expansion
+build 1 starport 80
+wait_buildstart 1 starport
 upgrade 1 t_ship_plating 30
 upgrade 1 t_ship_weapon 30
-build 1 starport 80
-wait 533
+wait 500
 
+attack_do
+attack_clear
 build 2 factory 80
 upgrade 1 marine_range 30
-wait 800
-
+wait_buildstart 2 factory
 defensebuild_ga 1 wraith
 defenseuse_ga 1 wraith
 defensebuild_aa 1 wraith
@@ -443,10 +438,10 @@ defenseuse_aa 1 wraith
 upgrade 1 vulture_speed 30
 build 1 control_tower 80
 build 2 armory 80
-train 2 goliath
+train 3 goliath
 train 4 vulture
 train 4 firebat
-attack_add 2 goliath
+attack_add 3 goliath
 attack_add 4 vulture
 attack_add 4 firebat
 call target_player
@@ -462,8 +457,7 @@ upgrade 1 t_vehicle_weapon 30
 upgrade 2 t_ship_plating 30
 build 2 machine_shop 80
 build 1 science_facility 80
-wait 737
-
+wait_buildstart 1 science_facility
 defensebuild_ag 1 wraith
 defenseuse_ag 1 wraith
 place_guard science_vessel 0
@@ -475,18 +469,16 @@ attack_add 6 goliath
 attack_add 2 siege_tank
 attack_add 2 wraith
 call target_player
-wait 500
-
-attack_do
-attack_clear
 tech irradiate 30
 tech spider_mines 30
 upgrade 1 medic_mana 30
 upgrade 2 t_vehicle_plating 30
 upgrade 2 t_infantry_weapon 30
 build 1 physics_lab 30
-wait 1133
+wait 500
 
+attack_do
+attack_clear
 place_guard science_vessel 2
 train 2 goliath
 train 20 marine
@@ -497,17 +489,15 @@ attack_add 4 goliath
 attack_add 30 marine
 attack_add 4 firebat
 call target_player
-wait 500
-
-attack_do
-attack_clear
 tech yamato_gun 30
 upgrade 2 t_ship_weapon 30
 upgrade 3 t_ship_plating 30
 upgrade 2 t_vehicle_weapon 30
 idle_orders 143 120 1 science_vessel 1312 infested_terran|lurker|guardian|mutalisk|zealot|dark_templar|medic|ghost 120 Health(GreaterThan 50)|WithoutSpellEffects(Irradiate)
-wait 1255
+wait 500
 
+attack_do
+attack_clear
 expand 2 terran_expansion
 train 14 marine
 train 4 vulture
@@ -522,10 +512,6 @@ attack_add 8 vulture
 attack_add 8 firebat
 attack_add 4 siege_tank
 call target_player
-wait 500
-
-attack_do
-attack_clear
 upgrade 1 vademecum 30
 upgrade 1 battlecruiser_mana 30
 upgrade 2 t_vehicle_plating 30
@@ -534,7 +520,10 @@ idle_orders 113 32 1 102 356 wraith|dropship|goliath|ghost 60 InCombat|count(AtL
 idle_orders 113 32 1 102 356 marine|wraith|goliath|ghost 70 InCombat|count(AtLeast 3 60 14)
 idle_orders 113 32 1 102 356 siege_tank 60 InCombat|count(AtLeast 3 60 14)
 idle_orders 113 32 1 102 356 group_men 50 InCombat|count(AtLeast 4 60 14)
+wait 500
 
+attack_do
+attack_clear
 train 2 102
 train 4 wraith
 attack_add 2 102
