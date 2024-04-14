@@ -5569,8 +5569,7 @@ Decreased Khalai Shield Regen)</value>
     <string>
         <id>STR_FRIGATE_REQ</id>
         <value>UED Valkyrie Requires:
-   Attached Control Tower
-   Armory</value>
+   Attached Control Tower</value>
     </string>
     <string>
         <id>STR_DTEMPLAR_REQ</id>
