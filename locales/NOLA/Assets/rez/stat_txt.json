@@ -5632,22 +5632,22 @@
   {
     "id": "AI_SUICIDE_MISSION",
     "Key": "AI_SUICIDE_MISSION",
-    "Value": ""
+    "Value": "k\\u0007대전차 고폭탄\\n   판처가 공격 시 대상에게 28+2의 추가 일반 피해를 줍니다.보호막을 활성화하는 업그레이드를 통해 보호막이 최대일때 20% 더 빠르게 공격할 수 있습니다."
   },
   {
     "id": "AI_SUICIDE_RANDOM",
     "Key": "AI_SUICIDE_RANDOM",
-    "Value": ""
+    "Value": "k\\u0007운명\\n   EMP병은 사망 시 폭발하여 근거리 유닛의 보호막과 에너지를 고갈시킵니다."
   },
   {
     "id": "AI_DECLARE_ENEMY",
     "Key": "AI_DECLARE_ENEMY",
-    "Value": ""
+    "Value": "k\\u0007부정한 챔피언\\n   토레스리터는 지상 목표물을 계속 공격할수록공격 속도가 빨라지고, 목표물을 향해 이동하면서 계속 사격합니다."
   },
   {
     "id": "AI_DECLARE_ALLY",
     "Key": "AI_DECLARE_ALLY",
-    "Value": ""
+    "Value": "k\\u0007로켓 포드\\n   이 유닛은 고급 로켓 잠금 해제 후 카론 로켓을 사용할 수 있습니다"
   },
   {
     "id": "AI_MOVE_TEMPLAR",
@@ -7753,5 +7753,65 @@
     "id": "STR_APM_COL_EPM",
     "Key": "STR_APM_COL_EPM",
     "Value": "분당 유효 행동수"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-261",
+    "Key": "FIRST_UNIT_STRING-261",
+    "Value": "Taar Atril"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-262",
+    "Key": "FIRST_UNIT_STRING-262",
+    "Value": "짐 레이너\\u0000시체매\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-263",
+    "Key": "FIRST_UNIT_STRING-263",
+    "Value": "노라드 II\\u0000추락한 전투순양함\\u0000특수 건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-264",
+    "Key": "FIRST_UNIT_STRING-264",
+    "Value": "테란 전투순양함\\u0000*\\u0000공중 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-265",
+    "Key": "FIRST_UNIT_STRING-265",
+    "Value": "Leviathan"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-266",
+    "Key": "FIRST_UNIT_STRING-266",
+    "Value": "Graff Zeppelin"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-267",
+    "Key": "FIRST_UNIT_STRING-267",
+    "Value": "Bismarck"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-268",
+    "Key": "FIRST_UNIT_STRING-268",
+    "Value": "Stalingrad"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-269",
+    "Key": "FIRST_UNIT_STRING-269",
+    "Value": "RESERVED"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-270",
+    "Key": "FIRST_UNIT_STRING-270",
+    "Value": "감염된 케리건\\u0000감염된 테란\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-271",
+    "Key": "FIRST_UNIT_STRING-271",
+    "Value": "감염된 케리건\\u0000감염된 테란\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-272",
+    "Key": "FIRST_UNIT_STRING-272",
+    "Value": "톰 카잔스키\\u0000망령\\u0000영웅"
   }
 ]
