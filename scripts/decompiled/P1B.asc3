@@ -21,6 +21,8 @@ wait 50
 
 deaths 0 AtMost 0 valkyrie valk_1
 
+upgrade_jump 13 Exactly_Call 74 6 easy_wait
+upgrade_jump 13 Exactly_Call 74 7 hard_queens
 tech spawn_broodling 30
 upgrade 1 zergling_speed 30
 upgrade 1 z_carapace 30
@@ -30,6 +32,8 @@ upgrade 1 overlord_capacity 30
 wait 50
 
 deaths 0 AtMost 1 valkyrie valk_2
+
+upgrade_jump 13 Exactly_Call 74 6 easy_wait
 train 2 queen
 tech ensnare 30
 upgrade 1 hydralisk_range 30
@@ -45,6 +49,8 @@ upgrade 2 z_carapace 30
 wait 50
 
 deaths 0 AtMost 3 valkyrie valk_4
+
+upgrade_jump 13 Exactly_Call 74 6 easy_wait
 train 3 queen
 defenseuse_gg 1 ultralisk
 upgrade 1 queen_mana 30
@@ -62,3 +68,12 @@ attack_clear
 wait 16
 
 goto block1
+
+:easy_wait
+wait 1000
+
+return
+
+:hard_queens
+train 2 queen
+return

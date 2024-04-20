@@ -3872,7 +3872,7 @@ OvermindRemnantsInit:
 IsId           	54
 Type           	20
 Init           	Overmind_withoutShell_Init
-Death          	long03
+Death          	Overmind_withoutShell_Death
 GndAttkInit    	[NONE]
 AirAttkInit    	[NONE]
 Unused1        	[NONE]
@@ -3921,6 +3921,25 @@ Overmind_withoutShell_IsWorking:
 	playfram       	0
 	wait           	4
 	goto           	Overmind_withoutShell_IsWorking
+	
+Overmind_withoutShell_Death:
+	#print P5 U74 Deaths: {deaths(4, 74)}
+	if deaths(4, 74) == 0 && deaths(0, 98) == 4 goto Overmind_Revive #Should in principle only happen in To Slay the Beast or if a Mapmaker sets the deaths
+	playsnd        	774	# Zerg\Bldg\ZBldgDth.WAV
+	imgol          	60 0 0	# ZergBuildingDeath (thingy\zBldDthS.grp)
+	wait           	3
+	lowsprul       	187 0 0	# ZergBuildingRubbleSmall (thingy\ZRubbleL.grp)
+	wait           	1
+	end     
+
+Overmind_Revive:
+	playsnd        	774	# Zerg\Bldg\ZBldgDth.WAV
+	imgol          	60 0 0	# ZergBuildingDeath (thingy\zBldDthS.grp)
+	wait           	3
+	lowsprul       	187 0 0	# ZergBuildingRubbleSmall (thingy\ZRubbleL.grp)
+	wait           	1
+	create_unit 148	 flingy.position_x flingy.position_y player
+	end     
 
 
 # ----------------------------------------------------------------------------- #
@@ -5760,9 +5779,11 @@ Goliath_Base_Local00:
 	goto           	Goliath_Base_Local00
 
 Goliath_Base_Death:
+	wait			2
 	playsnd        	1021	# Terran\Frigate\AfterOff.wav - GolDeathSnd 
+	wait			2
 	imgol          	332 0 0	# TerranBuildingExplosionsmall (thingy\tBangS.grp)
-	wait           	3
+	wait           	1
 	end            	
 
 uGoliath_Base_Walking:
@@ -5845,7 +5866,7 @@ Goliath_Base_StarEditInit:
 IsId           	76
 Type           	12
 Init           	Goliath_Turret_Init
-Death          	long01
+Death          	Goliath_Turret_Dth
 GndAttkInit    	Goliath_Turret_GndAttkInit
 AirAttkInit    	Goliath_Turret_AirAttkInit
 Unused1        	[NONE]
@@ -6094,6 +6115,15 @@ uGoliath_Turret_Walking:
     playfram        306 # frame set 7
     goto            uGoliath_Turret_Walking
 
+Goliath_Turret_Dth:
+	setvertpos		1
+	wait			2
+	setvertpos		3
+	wait			2
+	setvertpos		6
+	wait			1
+	end
+	
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
 # 237 KerriganGhost (terran\ughost.grp)
@@ -8637,7 +8667,7 @@ CommandCenterOverlayDeath:
 IsId           	104
 Type           	20
 Init           	CrashedBattlecruiserInit
-Death          	AcademyDeath
+Death          	CrashedBCDeath
 GndAttkInit    	[NONE]
 AirAttkInit    	[NONE]
 Unused1        	[NONE]
@@ -8667,6 +8697,14 @@ CrashedBattlecruiserBuilt:
 	playfram       	0
 	goto           	long00
 
+CrashedBCDeath: #TODO hook this to map so that I can give players some random resources for killing a bc--
+	playsnd        	7	# Misc\ExploLrg.wav
+	imgol          	334 0 0	# TerranBuildingExplosionlarge (thingy\tBangX.grp)
+	wait           	3
+	liftoffcondjmp 	long01
+	lowsprul       	273 0 0	# TerranBuildingRubblesmall (thingy\RubbleS.grp)
+	wait           	1
+	end            	
 
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
@@ -14922,6 +14960,8 @@ Death          	long01
 # ----------------------------------------------------------------------------- #
 
 ProtossBeaconInit:
+	wait			5 #Have to wait at least this much for mapside AIscript to determine deaths
+	if deaths(0, 98) == 4 call HideUnit #Hide if we are in To Slay the Beast / xZ8
 	playfram       	0
 	imgol          	359 0 0	# ProtossBeaconOverlay (protoss\pCirGlow.grp)
 	goto           	long00
@@ -16304,9 +16344,10 @@ YamatoGunGndAttkInit:
 
 YamatoGunDeath:
 	imgol          	544 0 0	# Unknown544 (thingy\eycHit.grp)
+	imgol          	429 0 0	# Spidermineexplosion (thingy\tmnExplo.grp)
 	domissiledmg   	
 	wait           	1
-	end            	
+	end            	   	
 
 
 # ----------------------------------------------------------------------------- #
@@ -21999,10 +22040,7 @@ MedicLocal02:
 	playfram       	0x00	# frame set 0
 MedicLocal01:
 	wait			3
-<<<<<<< HEAD
-=======
 	#print AI mining lvl: {upgrade(4, 74)}
->>>>>>> f935aba (xP7, xP5, xT7 specific difficulty updates; xT1 bank event)
 	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	wait			25
 	if flingy.movement_flags & 0x2 != 0 call FreezeClear
@@ -24759,6 +24797,11 @@ long03:
 	wait           	1
 	end            	
 
+HideUnit:
+	#print	Hiding...
+	hide_unit	unit
+	return
+	
 # Freeze code below, how to reproduce unit freeze: Order unit to move in the direction of a target, start attack and interrupt it before the animation finishes; unit should be frozen, playing its idle anim with the flingy 0x2 (accelerating) flag still set
 FreezeClear: # Code needed to run this: if flingy.movement_flags & 0x2 != 0 call FreezeClear, where 0x2 is "accelerating" flag for flingy movement; yes, this checks that flag @ 0x2 is not 0 (so == 1, but that doesnt work for w/e reason and has to be written this way)
 	set flingy.movement_flags = flingy.movement_flags & !0x2 # set flag @ 0x2 to be opposite of true, ie. false

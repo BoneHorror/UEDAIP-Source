@@ -1,0 +1,7817 @@
+[
+  {
+    "id": "FIRST_UNIT_STRING",
+    "Key": "FIRST_UNIT_STRING",
+    "Value": "테란 해병\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-1",
+    "Key": "FIRST_UNIT_STRING-1",
+    "Value": "테란 유령\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-2",
+    "Key": "FIRST_UNIT_STRING-2",
+    "Value": "테란 시체매\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-3",
+    "Key": "FIRST_UNIT_STRING-3",
+    "Value": "테란 골리앗\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-4",
+    "Key": "FIRST_UNIT_STRING-4",
+    "Value": "골리앗 포탑\\u0000*\\u0000*"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-5",
+    "Key": "FIRST_UNIT_STRING-5",
+    "Value": "테란 공성 전차\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-6",
+    "Key": "FIRST_UNIT_STRING-6",
+    "Value": "탱크 터렛\\u0000*\\u0000*"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-7",
+    "Key": "FIRST_UNIT_STRING-7",
+    "Value": "테란 건설로봇\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-8",
+    "Key": "FIRST_UNIT_STRING-8",
+    "Value": "테란 망령\\u0000*\\u0000공중 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-9",
+    "Key": "FIRST_UNIT_STRING-9",
+    "Value": "테란 과학선\\u0000*\\u0000공중 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-10",
+    "Key": "FIRST_UNIT_STRING-10",
+    "Value": "구이 몬타그\\u0000화염방사병\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-11",
+    "Key": "FIRST_UNIT_STRING-11",
+    "Value": "테란 수송선\\u0000*\\u0000공중 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-12",
+    "Key": "FIRST_UNIT_STRING-12",
+    "Value": "테란 전투순양함\\u0000*\\u0000공중 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-13",
+    "Key": "FIRST_UNIT_STRING-13",
+    "Value": "시체매 거미 지뢰\\u0000*\\u0000특수"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-14",
+    "Key": "FIRST_UNIT_STRING-14",
+    "Value": "핵 미사일\\u0000*\\u0000특수"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-15",
+    "Key": "FIRST_UNIT_STRING-15",
+    "Value": "테란 민간인\\u0000*\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-16",
+    "Key": "FIRST_UNIT_STRING-16",
+    "Value": "사라 케리건\\u0000유령\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-17",
+    "Key": "FIRST_UNIT_STRING-17",
+    "Value": "앨런 세자르\\u0000골리앗\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-18",
+    "Key": "FIRST_UNIT_STRING-18",
+    "Value": "앨런 포탑\\u0000*\\u0000*"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-19",
+    "Key": "FIRST_UNIT_STRING-19",
+    "Value": "짐 레이너\\u0000시체매\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-20",
+    "Key": "FIRST_UNIT_STRING-20",
+    "Value": "짐 레이너\\u0000해병\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-21",
+    "Key": "FIRST_UNIT_STRING-21",
+    "Value": "톰 카잔스키\\u0000망령\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-22",
+    "Key": "FIRST_UNIT_STRING-22",
+    "Value": "마젤란\\u0000과학선\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-23",
+    "Key": "FIRST_UNIT_STRING-23",
+    "Value": "에드먼드 듀크\\u0000공성 전차\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-24",
+    "Key": "FIRST_UNIT_STRING-24",
+    "Value": "듀크 터렛\\u0000*\\u0000*"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-25",
+    "Key": "FIRST_UNIT_STRING-25",
+    "Value": "에드먼드 듀크\\u0000공성 모드\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-26",
+    "Key": "FIRST_UNIT_STRING-26",
+    "Value": "듀크 터렛\\u0000*\\u0000*"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-27",
+    "Key": "FIRST_UNIT_STRING-27",
+    "Value": "아크튜러스 맹스크\\u0000전투순양함\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-28",
+    "Key": "FIRST_UNIT_STRING-28",
+    "Value": "히페리온\\u0000전투순양함\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-29",
+    "Key": "FIRST_UNIT_STRING-29",
+    "Value": "노라드 II\\u0000전투순양함\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-30",
+    "Key": "FIRST_UNIT_STRING-30",
+    "Value": "테란 공성 전차\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-31",
+    "Key": "FIRST_UNIT_STRING-31",
+    "Value": "탱크 터렛\\u0000*\\u0000*"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-32",
+    "Key": "FIRST_UNIT_STRING-32",
+    "Value": "테란 화염방사병\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-33",
+    "Key": "FIRST_UNIT_STRING-33",
+    "Value": "스캐너 탐색\\u0000*\\u0000*"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-34",
+    "Key": "FIRST_UNIT_STRING-34",
+    "Value": "테란 의무관\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-35",
+    "Key": "FIRST_UNIT_STRING-35",
+    "Value": "저그 애벌레\\u0000*\\u0000*"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-36",
+    "Key": "FIRST_UNIT_STRING-36",
+    "Value": "저그 알\\u0000*\\u0000*"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-37",
+    "Key": "FIRST_UNIT_STRING-37",
+    "Value": "저그 저글링\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-38",
+    "Key": "FIRST_UNIT_STRING-38",
+    "Value": "저그 히드라리스크\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-39",
+    "Key": "FIRST_UNIT_STRING-39",
+    "Value": "저그 울트라리스크\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-40",
+    "Key": "FIRST_UNIT_STRING-40",
+    "Value": "저그 공생충\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-41",
+    "Key": "FIRST_UNIT_STRING-41",
+    "Value": "저그 일벌레\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-42",
+    "Key": "FIRST_UNIT_STRING-42",
+    "Value": "저그 대군주\\u0000*\\u0000공중 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-43",
+    "Key": "FIRST_UNIT_STRING-43",
+    "Value": "저그 뮤탈리스크\\u0000*\\u0000공중 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-44",
+    "Key": "FIRST_UNIT_STRING-44",
+    "Value": "저그 수호군주\\u0000*\\u0000공중 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-45",
+    "Key": "FIRST_UNIT_STRING-45",
+    "Value": "저그 여왕\\u0000*\\u0000공중 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-46",
+    "Key": "FIRST_UNIT_STRING-46",
+    "Value": "저그 파멸충\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-47",
+    "Key": "FIRST_UNIT_STRING-47",
+    "Value": "저그 갈귀\\u0000*\\u0000공중 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-48",
+    "Key": "FIRST_UNIT_STRING-48",
+    "Value": "토라스크\\u0000울트라리스크\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-49",
+    "Key": "FIRST_UNIT_STRING-49",
+    "Value": "대모\\u0000여왕\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-50",
+    "Key": "FIRST_UNIT_STRING-50",
+    "Value": "감염된 테란\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-51",
+    "Key": "FIRST_UNIT_STRING-51",
+    "Value": "감염된 케리건\\u0000감염된 테란\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-52",
+    "Key": "FIRST_UNIT_STRING-52",
+    "Value": "불결한 존재\\u0000파멸충\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-53",
+    "Key": "FIRST_UNIT_STRING-53",
+    "Value": "추적 도살자\\u0000히드라리스크\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-54",
+    "Key": "FIRST_UNIT_STRING-54",
+    "Value": "포식자\\u0000저글링\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-55",
+    "Key": "FIRST_UNIT_STRING-55",
+    "Value": "쿠쿨자\\u0000뮤탈리스크\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-56",
+    "Key": "FIRST_UNIT_STRING-56",
+    "Value": "쿠쿨자\\u0000수호군주\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-57",
+    "Key": "FIRST_UNIT_STRING-57",
+    "Value": "위그드라실\\u0000대군주\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-58",
+    "Key": "FIRST_UNIT_STRING-58",
+    "Value": "테란 발키리\\u0000*\\u0000공중 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-59",
+    "Key": "FIRST_UNIT_STRING-59",
+    "Value": "고치\\u0000*\\u0000*"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-60",
+    "Key": "FIRST_UNIT_STRING-60",
+    "Value": "프로토스 해적선\\u0000*\\u0000공중 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-61",
+    "Key": "FIRST_UNIT_STRING-61",
+    "Value": "프로토스 암흑 기사\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-62",
+    "Key": "FIRST_UNIT_STRING-62",
+    "Value": "저그 포식귀\\u0000*\\u0000공중 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-63",
+    "Key": "FIRST_UNIT_STRING-63",
+    "Value": "프로토스 암흑 집정관\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-64",
+    "Key": "FIRST_UNIT_STRING-64",
+    "Value": "프로토스 탐사정\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-65",
+    "Key": "FIRST_UNIT_STRING-65",
+    "Value": "프로토스 광전사\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-66",
+    "Key": "FIRST_UNIT_STRING-66",
+    "Value": "프로토스 용기병\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-67",
+    "Key": "FIRST_UNIT_STRING-67",
+    "Value": "프로토스 고위 기사\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-68",
+    "Key": "FIRST_UNIT_STRING-68",
+    "Value": "프로토스 집정관\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-69",
+    "Key": "FIRST_UNIT_STRING-69",
+    "Value": "프로토스 왕복선\\u0000*\\u0000공중 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-70",
+    "Key": "FIRST_UNIT_STRING-70",
+    "Value": "프로토스 정찰기\\u0000*\\u0000공중 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-71",
+    "Key": "FIRST_UNIT_STRING-71",
+    "Value": "프로토스 중재자\\u0000*\\u0000공중 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-72",
+    "Key": "FIRST_UNIT_STRING-72",
+    "Value": "프로토스 우주모함\\u0000*\\u0000공중 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-73",
+    "Key": "FIRST_UNIT_STRING-73",
+    "Value": "프로토스 요격기\\u0000*\\u0000공중 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-74",
+    "Key": "FIRST_UNIT_STRING-74",
+    "Value": "암흑 기사\\u0000영웅\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-75",
+    "Key": "FIRST_UNIT_STRING-75",
+    "Value": "제라툴\\u0000암흑 기사\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-76",
+    "Key": "FIRST_UNIT_STRING-76",
+    "Value": "태사다르/제라툴\\u0000집정관\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-77",
+    "Key": "FIRST_UNIT_STRING-77",
+    "Value": "피닉스\\u0000광전사\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-78",
+    "Key": "FIRST_UNIT_STRING-78",
+    "Value": "피닉스\\u0000용기병\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-79",
+    "Key": "FIRST_UNIT_STRING-79",
+    "Value": "태사다르\\u0000고위 기사\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-80",
+    "Key": "FIRST_UNIT_STRING-80",
+    "Value": "모조\\u0000정찰기\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-81",
+    "Key": "FIRST_UNIT_STRING-81",
+    "Value": "워브링거\\u0000파괴자\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-82",
+    "Key": "FIRST_UNIT_STRING-82",
+    "Value": "간트리서\\u0000우주모함\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-83",
+    "Key": "FIRST_UNIT_STRING-83",
+    "Value": "프로토스 파괴자\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-84",
+    "Key": "FIRST_UNIT_STRING-84",
+    "Value": "프로토스 관측선\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-85",
+    "Key": "FIRST_UNIT_STRING-85",
+    "Value": "프로토스 갑충탄\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-86",
+    "Key": "FIRST_UNIT_STRING-86",
+    "Value": "다니모스\\u0000중재자\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-87",
+    "Key": "FIRST_UNIT_STRING-87",
+    "Value": "알다리스\\u0000고위 기사\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-88",
+    "Key": "FIRST_UNIT_STRING-88",
+    "Value": "아르타니스\\u0000정찰기\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-89",
+    "Key": "FIRST_UNIT_STRING-89",
+    "Value": "라이나돈\\u0000황무지\\u0000중립 동물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-90",
+    "Key": "FIRST_UNIT_STRING-90",
+    "Value": "벤갈라스\\u0000밀림\\u0000중립 동물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-91",
+    "Key": "FIRST_UNIT_STRING-91",
+    "Value": "미사용\\u0000*\\u0000*"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-92",
+    "Key": "FIRST_UNIT_STRING-92",
+    "Value": "미사용\\u0000*\\u0000*"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-93",
+    "Key": "FIRST_UNIT_STRING-93",
+    "Value": "스캔티드\\u0000사막\\u0000중립 동물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-94",
+    "Key": "FIRST_UNIT_STRING-94",
+    "Value": "카카루\\u0000황혼\\u0000중립 동물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-95",
+    "Key": "FIRST_UNIT_STRING-95",
+    "Value": "라그나사우르\\u0000잿더미\\u0000중립 동물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-96",
+    "Key": "FIRST_UNIT_STRING-96",
+    "Value": "우르사돈\\u0000빙하\\u0000중립 동물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-97",
+    "Key": "FIRST_UNIT_STRING-97",
+    "Value": "저그 가시지옥 알\\u0000*\\u0000*"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-98",
+    "Key": "FIRST_UNIT_STRING-98",
+    "Value": "라자갈\\u0000암흑 기사\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-99",
+    "Key": "FIRST_UNIT_STRING-99",
+    "Value": "사미르 듀란\\u0000유령\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-100",
+    "Key": "FIRST_UNIT_STRING-100",
+    "Value": "알렉세이 스투코프\\u0000유령\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-101",
+    "Key": "FIRST_UNIT_STRING-101",
+    "Value": "지도 탐색기\\u0000*\\u0000특수"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-102",
+    "Key": "FIRST_UNIT_STRING-102",
+    "Value": "제라드 듀갈\\u0000유령\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-103",
+    "Key": "FIRST_UNIT_STRING-103",
+    "Value": "저그 가시지옥\\u0000*\\u0000지상 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-104",
+    "Key": "FIRST_UNIT_STRING-104",
+    "Value": "감염된 듀란\\u0000*\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-105",
+    "Key": "FIRST_UNIT_STRING-105",
+    "Value": "디스럽션 필드\\u0000*\\u0000프로토스"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-106",
+    "Key": "FIRST_UNIT_STRING-106",
+    "Value": "테란 사령부\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-107",
+    "Key": "FIRST_UNIT_STRING-107",
+    "Value": "테란 통신 위성 중계소\\u0000*\\u0000부속건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-108",
+    "Key": "FIRST_UNIT_STRING-108",
+    "Value": "테란 핵 격납고\\u0000*\\u0000부속건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-109",
+    "Key": "FIRST_UNIT_STRING-109",
+    "Value": "테란 보급고\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-110",
+    "Key": "FIRST_UNIT_STRING-110",
+    "Value": "테란 정제소\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-111",
+    "Key": "FIRST_UNIT_STRING-111",
+    "Value": "테란 병영\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-112",
+    "Key": "FIRST_UNIT_STRING-112",
+    "Value": "테란 사관학교\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-113",
+    "Key": "FIRST_UNIT_STRING-113",
+    "Value": "테란 군수공장\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-114",
+    "Key": "FIRST_UNIT_STRING-114",
+    "Value": "테란 우주공항\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-115",
+    "Key": "FIRST_UNIT_STRING-115",
+    "Value": "테란 관제탑\\u0000*\\u0000부속건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-116",
+    "Key": "FIRST_UNIT_STRING-116",
+    "Value": "테란 과학 시설\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-117",
+    "Key": "FIRST_UNIT_STRING-117",
+    "Value": "테란 비밀 작전실\\u0000*\\u0000부속건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-118",
+    "Key": "FIRST_UNIT_STRING-118",
+    "Value": "테란 물리 연구실\\u0000*\\u0000부속건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-119",
+    "Key": "FIRST_UNIT_STRING-119",
+    "Value": "미사용 테란 건물\\u0000*\\u0000*"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-120",
+    "Key": "FIRST_UNIT_STRING-120",
+    "Value": "테란 기계실\\u0000*\\u0000부속건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-121",
+    "Key": "FIRST_UNIT_STRING-121",
+    "Value": "미사용 테란 건물\\u0000*\\u0000*테란"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-122",
+    "Key": "FIRST_UNIT_STRING-122",
+    "Value": "테란 공학 연구소\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-123",
+    "Key": "FIRST_UNIT_STRING-123",
+    "Value": "테란 무기고\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-124",
+    "Key": "FIRST_UNIT_STRING-124",
+    "Value": "테란 미사일 포탑\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-125",
+    "Key": "FIRST_UNIT_STRING-125",
+    "Value": "테란 벙커\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-126",
+    "Key": "FIRST_UNIT_STRING-126",
+    "Value": "노라드 II\\u0000추락한 전투순양함\\u0000특수 건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-127",
+    "Key": "FIRST_UNIT_STRING-127",
+    "Value": "이온 포\\u0000*\\u0000특수 건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-128",
+    "Key": "FIRST_UNIT_STRING-128",
+    "Value": "우라즈 수정\\u0000*\\u0000목표물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-129",
+    "Key": "FIRST_UNIT_STRING-129",
+    "Value": "칼리스 수정\\u0000*\\u0000목표물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-130",
+    "Key": "FIRST_UNIT_STRING-130",
+    "Value": "감염된 사령부\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-131",
+    "Key": "FIRST_UNIT_STRING-131",
+    "Value": "저그 부화장\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-132",
+    "Key": "FIRST_UNIT_STRING-132",
+    "Value": "저그 번식지\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-133",
+    "Key": "FIRST_UNIT_STRING-133",
+    "Value": "저그 군락\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-134",
+    "Key": "FIRST_UNIT_STRING-134",
+    "Value": "저그 땅굴관\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-135",
+    "Key": "FIRST_UNIT_STRING-135",
+    "Value": "저그 히드라리스크 굴\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-136",
+    "Key": "FIRST_UNIT_STRING-136",
+    "Value": "저그 파멸충 언덕\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-137",
+    "Key": "FIRST_UNIT_STRING-137",
+    "Value": "저그 거대 둥지탑\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-138",
+    "Key": "FIRST_UNIT_STRING-138",
+    "Value": "저그 여왕의 둥지\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-139",
+    "Key": "FIRST_UNIT_STRING-139",
+    "Value": "저그 진화실\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-140",
+    "Key": "FIRST_UNIT_STRING-140",
+    "Value": "저그 울트라리스크 동굴\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-141",
+    "Key": "FIRST_UNIT_STRING-141",
+    "Value": "저그 둥지탑\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-142",
+    "Key": "FIRST_UNIT_STRING-142",
+    "Value": "저그 산란못\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-143",
+    "Key": "FIRST_UNIT_STRING-143",
+    "Value": "저그 점막 군체\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-144",
+    "Key": "FIRST_UNIT_STRING-144",
+    "Value": "저그 포자 군체\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-145",
+    "Key": "FIRST_UNIT_STRING-145",
+    "Value": "미사용 저그 건물\\u0000*\\u0000저그"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-146",
+    "Key": "FIRST_UNIT_STRING-146",
+    "Value": "저그 지하 군체\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-147",
+    "Key": "FIRST_UNIT_STRING-147",
+    "Value": "저그 초월체\\u0000껍질\\u0000특수 건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-148",
+    "Key": "FIRST_UNIT_STRING-148",
+    "Value": "저그 초월체\\u0000*\\u0000특수 건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-149",
+    "Key": "FIRST_UNIT_STRING-149",
+    "Value": "저그 추출장\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-150",
+    "Key": "FIRST_UNIT_STRING-150",
+    "Value": "다 자란 번데기\\u0000*\\u0000특수 건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-151",
+    "Key": "FIRST_UNIT_STRING-151",
+    "Value": "저그 정신체\\u0000*\\u0000특수 건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-152",
+    "Key": "FIRST_UNIT_STRING-152",
+    "Value": "저그 정신체 다고스\\u0000*\\u0000특수 건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-153",
+    "Key": "FIRST_UNIT_STRING-153",
+    "Value": "미사용 저그 건물 5\\u0000*\\u0000저그"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-154",
+    "Key": "FIRST_UNIT_STRING-154",
+    "Value": "프로토스 연결체\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-155",
+    "Key": "FIRST_UNIT_STRING-155",
+    "Value": "프로토스 로봇공학 시설\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-156",
+    "Key": "FIRST_UNIT_STRING-156",
+    "Value": "프로토스 수정탑\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-157",
+    "Key": "FIRST_UNIT_STRING-157",
+    "Value": "프로토스 융화소\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-158",
+    "Key": "FIRST_UNIT_STRING-158",
+    "Value": "프로토스 미사용\\u0000*\\u0000프로토스"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-159",
+    "Key": "FIRST_UNIT_STRING-159",
+    "Value": "프로토스 관측소\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-160",
+    "Key": "FIRST_UNIT_STRING-160",
+    "Value": "프로토스 관문\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-161",
+    "Key": "FIRST_UNIT_STRING-161",
+    "Value": "프로토스 미사용\\u0000*\\u0000프로토스"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-162",
+    "Key": "FIRST_UNIT_STRING-162",
+    "Value": "프로토스 광자포\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-163",
+    "Key": "FIRST_UNIT_STRING-163",
+    "Value": "프로토스 아둔의 성지\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-164",
+    "Key": "FIRST_UNIT_STRING-164",
+    "Value": "프로토스 인공제어소\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-165",
+    "Key": "FIRST_UNIT_STRING-165",
+    "Value": "프로토스 기사단 기록보관소\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-166",
+    "Key": "FIRST_UNIT_STRING-166",
+    "Value": "프로토스 제련소\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-167",
+    "Key": "FIRST_UNIT_STRING-167",
+    "Value": "프로토스 우주관문\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-168",
+    "Key": "FIRST_UNIT_STRING-168",
+    "Value": "정지장/감옥\\u0000*\\u0000특수 건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-169",
+    "Key": "FIRST_UNIT_STRING-169",
+    "Value": "프로토스 함대 신호소\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-170",
+    "Key": "FIRST_UNIT_STRING-170",
+    "Value": "프로토스 중재소\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-171",
+    "Key": "FIRST_UNIT_STRING-171",
+    "Value": "프로토스 로봇공학 지원소\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-172",
+    "Key": "FIRST_UNIT_STRING-172",
+    "Value": "프로토스 보호막 충전소\\u0000*\\u0000건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-173",
+    "Key": "FIRST_UNIT_STRING-173",
+    "Value": "케이다린 수정 형성부\\u0000*\\u0000특수 건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-174",
+    "Key": "FIRST_UNIT_STRING-174",
+    "Value": "프로토스 사원\\u0000*\\u0000특수 건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-175",
+    "Key": "FIRST_UNIT_STRING-175",
+    "Value": "젤나가 사원\\u0000*\\u0000특수 건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-176",
+    "Key": "FIRST_UNIT_STRING-176",
+    "Value": "광물 지대\\u0000유형 1\\u0000자원"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-177",
+    "Key": "FIRST_UNIT_STRING-177",
+    "Value": "광물 지대\\u0000유형 1\\u0000자원"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-178",
+    "Key": "FIRST_UNIT_STRING-178",
+    "Value": "광물 지대\\u0000유형 1\\u0000자원"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-179",
+    "Key": "FIRST_UNIT_STRING-179",
+    "Value": "동굴\\u0000*\\u0000중립"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-180",
+    "Key": "FIRST_UNIT_STRING-180",
+    "Value": "동굴 입구\\u0000*\\u0000중립"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-181",
+    "Key": "FIRST_UNIT_STRING-181",
+    "Value": "휴게실\\u0000*\\u0000중립"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-182",
+    "Key": "FIRST_UNIT_STRING-182",
+    "Value": "채광 정거장\\u0000*\\u0000중립"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-183",
+    "Key": "FIRST_UNIT_STRING-183",
+    "Value": "독립 사령부\\u0000*\\u0000독립"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-184",
+    "Key": "FIRST_UNIT_STRING-184",
+    "Value": "독립 우주공항\\u0000*\\u0000독립"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-185",
+    "Key": "FIRST_UNIT_STRING-185",
+    "Value": "도약 관문\\u0000*\\u0000중립"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-186",
+    "Key": "FIRST_UNIT_STRING-186",
+    "Value": "폐허\\u0000*\\u0000중립"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-187",
+    "Key": "FIRST_UNIT_STRING-187",
+    "Value": "케이다린 수정 형성부\\u0000*\\u0000중립"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-188",
+    "Key": "FIRST_UNIT_STRING-188",
+    "Value": "베스핀 간헐천\\u0000*\\u0000자원"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-189",
+    "Key": "FIRST_UNIT_STRING-189",
+    "Value": "차원 관문\\u0000*\\u0000특수 건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-190",
+    "Key": "FIRST_UNIT_STRING-190",
+    "Value": "사이오닉 분열기\\u0000*\\u0000특수 건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-191",
+    "Key": "FIRST_UNIT_STRING-191",
+    "Value": "저그 마커\\u0000*\\u0000특수"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-192",
+    "Key": "FIRST_UNIT_STRING-192",
+    "Value": "테란 마커\\u0000*\\u0000특수"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-193",
+    "Key": "FIRST_UNIT_STRING-193",
+    "Value": "프로토스 마커\\u0000*\\u0000특수"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-194",
+    "Key": "FIRST_UNIT_STRING-194",
+    "Value": "저그 신호소\\u0000*\\u0000특수"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-195",
+    "Key": "FIRST_UNIT_STRING-195",
+    "Value": "테란 신호소\\u0000*\\u0000특수"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-196",
+    "Key": "FIRST_UNIT_STRING-196",
+    "Value": "프로토스 신호소\\u0000*\\u0000특수"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-197",
+    "Key": "FIRST_UNIT_STRING-197",
+    "Value": "저그 깃발 보관소\\u0000*\\u0000특수"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-198",
+    "Key": "FIRST_UNIT_STRING-198",
+    "Value": "테란 깃발 보관소\\u0000*\\u0000특수"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-199",
+    "Key": "FIRST_UNIT_STRING-199",
+    "Value": "프로토스 깃발 보관소\\u0000*\\u0000특수"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-200",
+    "Key": "FIRST_UNIT_STRING-200",
+    "Value": "동력 생성기\\u0000*\\u0000특수 건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-201",
+    "Key": "FIRST_UNIT_STRING-201",
+    "Value": "초월체 고치\\u0000*\\u0000특수 건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-202",
+    "Key": "FIRST_UNIT_STRING-202",
+    "Value": "암흑 구름\\u0000*\\u0000저그"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-203",
+    "Key": "FIRST_UNIT_STRING-203",
+    "Value": "바닥 미사일 트랩\\u0000*\\u0000장식물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-204",
+    "Key": "FIRST_UNIT_STRING-204",
+    "Value": "바닥 해치 (미사용)\\u0000*\\u0000장식물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-205",
+    "Key": "FIRST_UNIT_STRING-205",
+    "Value": "왼쪽 상층 문\\u0000*\\u0000장식물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-206",
+    "Key": "FIRST_UNIT_STRING-206",
+    "Value": "오른쪽 상층 문\\u0000*\\u0000장식물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-207",
+    "Key": "FIRST_UNIT_STRING-207",
+    "Value": "왼쪽 구덩이 문\\u0000*\\u0000장식물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-208",
+    "Key": "FIRST_UNIT_STRING-208",
+    "Value": "오른쪽 구덩이 문\\u0000*\\u0000장식물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-209",
+    "Key": "FIRST_UNIT_STRING-209",
+    "Value": "지상 포 트랩\\u0000*\\u0000장식물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-210",
+    "Key": "FIRST_UNIT_STRING-210",
+    "Value": "왼쪽 벽 미사일 트랩\\u0000*\\u0000장식물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-211",
+    "Key": "FIRST_UNIT_STRING-211",
+    "Value": "왼쪽 벽 화염 트랩\\u0000*\\u0000장식물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-212",
+    "Key": "FIRST_UNIT_STRING-212",
+    "Value": "오른쪽 벽 미사일 트랩\\u0000*\\u0000장식물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-213",
+    "Key": "FIRST_UNIT_STRING-213",
+    "Value": "오른쪽 벽 화염 트랩\\u0000*\\u0000장식물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-214",
+    "Key": "FIRST_UNIT_STRING-214",
+    "Value": "시작 위치\\u0000*\\u0000시작 위치"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-215",
+    "Key": "FIRST_UNIT_STRING-215",
+    "Value": "깃발\\u0000*\\u0000특수"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-216",
+    "Key": "FIRST_UNIT_STRING-216",
+    "Value": "덜 자란 번데기\\u0000*\\u0000강화"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-217",
+    "Key": "FIRST_UNIT_STRING-217",
+    "Value": "사이오닉 방출기\\u0000*\\u0000강화"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-218",
+    "Key": "FIRST_UNIT_STRING-218",
+    "Value": "데이터 디스크\\u0000*\\u0000강화"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-219",
+    "Key": "FIRST_UNIT_STRING-219",
+    "Value": "케이다린 수정\\u0000*\\u0000강화"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-220",
+    "Key": "FIRST_UNIT_STRING-220",
+    "Value": "광물 덩어리\\u0000유형 1\\u0000자원"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-221",
+    "Key": "FIRST_UNIT_STRING-221",
+    "Value": "광물 덩어리\\u0000유형 1\\u0000자원"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-222",
+    "Key": "FIRST_UNIT_STRING-222",
+    "Value": "베스핀 보주\\u0000프로토스 유형 1\\u0000자원"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-223",
+    "Key": "FIRST_UNIT_STRING-223",
+    "Value": "베스핀 보주\\u0000프로토스 유형 2\\u0000자원"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-224",
+    "Key": "FIRST_UNIT_STRING-224",
+    "Value": "베스핀 주머니\\u0000저그 유형 1\\u0000자원"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-225",
+    "Key": "FIRST_UNIT_STRING-225",
+    "Value": "베스핀 주머니\\u0000저그 유형 2\\u0000자원"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-226",
+    "Key": "FIRST_UNIT_STRING-226",
+    "Value": "베스핀 탱크\\u0000테란 유형 1\\u0000자원"
+  },
+  {
+    "id": "LAST_UNIT_STRING",
+    "Key": "LAST_UNIT_STRING",
+    "Value": "베스핀 탱크\\u0000테란 유형 2\\u0000자원"
+  },
+  {
+    "id": "STR_MARINE_GUN",
+    "Key": "STR_MARINE_GUN",
+    "Value": "가우스 소총"
+  },
+  {
+    "id": "STR_RAYNOR_MARINE_GUN",
+    "Key": "STR_RAYNOR_MARINE_GUN",
+    "Value": "가우스 소총"
+  },
+  {
+    "id": "STR_GHOST_GUN",
+    "Key": "STR_GHOST_GUN",
+    "Value": "C-10 산탄 소총"
+  },
+  {
+    "id": "STR_KERRIGAN_GHOST_GUN",
+    "Key": "STR_KERRIGAN_GHOST_GUN",
+    "Value": "C-10 산탄 소총"
+  },
+  {
+    "id": "STR_VULTURE_GRENADE",
+    "Key": "STR_VULTURE_GRENADE",
+    "Value": "파편 유탄"
+  },
+  {
+    "id": "STR_RAYNOR_VULTURE_GRENADE",
+    "Key": "STR_RAYNOR_VULTURE_GRENADE",
+    "Value": "파편 유탄"
+  },
+  {
+    "id": "STR_GOLIATH_GUN",
+    "Key": "STR_GOLIATH_GUN",
+    "Value": "2연장 자동포"
+  },
+  {
+    "id": "STR_GOLIATH_MISSILE",
+    "Key": "STR_GOLIATH_MISSILE",
+    "Value": "지옥불 미사일"
+  },
+  {
+    "id": "STR_SCHEZAR_GOLIATH_GUN",
+    "Key": "STR_SCHEZAR_GOLIATH_GUN",
+    "Value": "2연장 자동포"
+  },
+  {
+    "id": "STR_SCHEZAR_GOLIATH_MISSILE",
+    "Key": "STR_SCHEZAR_GOLIATH_MISSILE",
+    "Value": "지옥불 미사일"
+  },
+  {
+    "id": "STR_TANK_CANNON",
+    "Key": "STR_TANK_CANNON",
+    "Value": "아크라이트 포"
+  },
+  {
+    "id": "STR_DUKE_TANK_CANNON",
+    "Key": "STR_DUKE_TANK_CANNON",
+    "Value": "아크라이트 포"
+  },
+  {
+    "id": "STR_SCV_GUN",
+    "Key": "STR_SCV_GUN",
+    "Value": "융합 절단기"
+  },
+  {
+    "id": "STR_SCV_WELD",
+    "Key": "STR_SCV_WELD",
+    "Value": "융합 절단기"
+  },
+  {
+    "id": "STR_WRAITH_MISSILE",
+    "Key": "STR_WRAITH_MISSILE",
+    "Value": "쌍둥이 미사일"
+  },
+  {
+    "id": "STR_WRAITH_LASER",
+    "Key": "STR_WRAITH_LASER",
+    "Value": "파열 레이저"
+  },
+  {
+    "id": "STR_KAZANSKI_WRAITH_MISSILE",
+    "Key": "STR_KAZANSKI_WRAITH_MISSILE",
+    "Value": "쌍둥이 미사일"
+  },
+  {
+    "id": "STR_KAZANSKI_WRAITH_LASER",
+    "Key": "STR_KAZANSKI_WRAITH_LASER",
+    "Value": "파열 레이저"
+  },
+  {
+    "id": "STR_CRUISER_GND",
+    "Key": "STR_CRUISER_GND",
+    "Value": "공대지 레이저 포대"
+  },
+  {
+    "id": "STR_CRUISER_AIR",
+    "Key": "STR_CRUISER_AIR",
+    "Value": "공대공 레이저 포대"
+  },
+  {
+    "id": "STR_NORAD_CRUISER_GND",
+    "Key": "STR_NORAD_CRUISER_GND",
+    "Value": "공대지 레이저 포대"
+  },
+  {
+    "id": "STR_NORAD_CRUISER_AIR",
+    "Key": "STR_NORAD_CRUISER_AIR",
+    "Value": "공대공 레이저 포대"
+  },
+  {
+    "id": "STR_HYPERION_CRUISER_GND",
+    "Key": "STR_HYPERION_CRUISER_GND",
+    "Value": "공대지 레이저 포대"
+  },
+  {
+    "id": "STR_HYPERION_CRUISER_AIR",
+    "Key": "STR_HYPERION_CRUISER_AIR",
+    "Value": "공대공 레이저 포대"
+  },
+  {
+    "id": "STR_FIREBAT_FLAME",
+    "Key": "STR_FIREBAT_FLAME",
+    "Value": "화염방사기"
+  },
+  {
+    "id": "STR_MONTAG_FIREBAT_FLAME",
+    "Key": "STR_MONTAG_FIREBAT_FLAME",
+    "Value": "화염방사기"
+  },
+  {
+    "id": "STR_SIEGE_CANNON",
+    "Key": "STR_SIEGE_CANNON",
+    "Value": "아크라이트 충격포"
+  },
+  {
+    "id": "STR_DUKE_SIEGE_CANNON",
+    "Key": "STR_DUKE_SIEGE_CANNON",
+    "Value": "아크라이트 충격포"
+  },
+  {
+    "id": "STR_TURRET_MISSILE",
+    "Key": "STR_TURRET_MISSILE",
+    "Value": "장거리 미사일"
+  },
+  {
+    "id": "STR_NUKE",
+    "Key": "STR_NUKE",
+    "Value": "핵 공격"
+  },
+  {
+    "id": "STR_EMP_SHOCKWAVE",
+    "Key": "STR_EMP_SHOCKWAVE",
+    "Value": "EMP 충격파"
+  },
+  {
+    "id": "STR_ZERGLING_MELEE",
+    "Key": "STR_ZERGLING_MELEE",
+    "Value": "발톱"
+  },
+  {
+    "id": "STR_D_O_ZERGLING_MELEE",
+    "Key": "STR_D_O_ZERGLING_MELEE",
+    "Value": "발톱"
+  },
+  {
+    "id": "STR_INFKERR_MELEE",
+    "Key": "STR_INFKERR_MELEE",
+    "Value": "발톱"
+  },
+  {
+    "id": "STR_HYDRA_SPINE",
+    "Key": "STR_HYDRA_SPINE",
+    "Value": "바늘 가시뼈"
+  },
+  {
+    "id": "STR_HUNTER_HYDRA_SPINE",
+    "Key": "STR_HUNTER_HYDRA_SPINE",
+    "Value": "바늘 가시뼈"
+  },
+  {
+    "id": "STR_ULTRA_MELEE",
+    "Key": "STR_ULTRA_MELEE",
+    "Value": "카이저 칼날"
+  },
+  {
+    "id": "STR_TORRASQUE_ULTRA_MELEE",
+    "Key": "STR_TORRASQUE_ULTRA_MELEE",
+    "Value": "카이저 칼날"
+  },
+  {
+    "id": "STR_BROOD_SPORE",
+    "Key": "STR_BROOD_SPORE",
+    "Value": "독성 포자"
+  },
+  {
+    "id": "STR_DRONE_SPINE",
+    "Key": "STR_DRONE_SPINE",
+    "Value": "가시뼈"
+  },
+  {
+    "id": "STR_MUTALISK_ACID",
+    "Key": "STR_MUTALISK_ACID",
+    "Value": "산성 분출"
+  },
+  {
+    "id": "STR_KUKULZA_MUTALISK_ACID",
+    "Key": "STR_KUKULZA_MUTALISK_ACID",
+    "Value": "산성 분출"
+  },
+  {
+    "id": "STR_GUARDIAN_SPINE",
+    "Key": "STR_GUARDIAN_SPINE",
+    "Value": "산성 포자"
+  },
+  {
+    "id": "STR_KUKULZA_GUARDIAN_SPINE",
+    "Key": "STR_KUKULZA_GUARDIAN_SPINE",
+    "Value": "산성 포자"
+  },
+  {
+    "id": "STR_QUEEN_SPORE",
+    "Key": "STR_QUEEN_SPORE",
+    "Value": "쐐기 벌레"
+  },
+  {
+    "id": "STR_MATRIARCH_QUEEN_SPORE",
+    "Key": "STR_MATRIARCH_QUEEN_SPORE",
+    "Value": "쐐기 벌레"
+  },
+  {
+    "id": "STR_DEFILER_ACID",
+    "Key": "STR_DEFILER_ACID",
+    "Value": "맹독"
+  },
+  {
+    "id": "STR_U_O_DEFILER_ACID",
+    "Key": "STR_U_O_DEFILER_ACID",
+    "Value": "맹독"
+  },
+  {
+    "id": "STR_AVENGER_SPINE",
+    "Key": "STR_AVENGER_SPINE",
+    "Value": "자폭"
+  },
+  {
+    "id": "STR_SCOLONY_SPORE",
+    "Key": "STR_SCOLONY_SPORE",
+    "Value": "추적 포자"
+  },
+  {
+    "id": "STR_LURKER_TENTACLE",
+    "Key": "STR_LURKER_TENTACLE",
+    "Value": "지하 촉수"
+  },
+  {
+    "id": "STR_INFESTED_SAP",
+    "Key": "STR_INFESTED_SAP",
+    "Value": "자폭"
+  },
+  {
+    "id": "STR_PROBE_GUN",
+    "Key": "STR_PROBE_GUN",
+    "Value": "입자 광선"
+  },
+  {
+    "id": "STR_ZEALOT_MELEE",
+    "Key": "STR_ZEALOT_MELEE",
+    "Value": "사이오닉 검"
+  },
+  {
+    "id": "STR_FENIX_ZEALOT_MELEE",
+    "Key": "STR_FENIX_ZEALOT_MELEE",
+    "Value": "사이오닉 검"
+  },
+  {
+    "id": "STR_DTEMPLAR_MELEE",
+    "Key": "STR_DTEMPLAR_MELEE",
+    "Value": "변형 차원검"
+  },
+  {
+    "id": "STR_ZERATUL_MELEE",
+    "Key": "STR_ZERATUL_MELEE",
+    "Value": "차원검"
+  },
+  {
+    "id": "STR_DRAGOON_CANNON",
+    "Key": "STR_DRAGOON_CANNON",
+    "Value": "위상 분열기"
+  },
+  {
+    "id": "STR_FENIX_DRAGOON_CANNON",
+    "Key": "STR_FENIX_DRAGOON_CANNON",
+    "Value": "위상 분열기"
+  },
+  {
+    "id": "STR_TEMPLAR_GUN",
+    "Key": "STR_TEMPLAR_GUN",
+    "Value": "사이오닉 공격"
+  },
+  {
+    "id": "STR_TASSADAR_TEMPLAR_GUN",
+    "Key": "STR_TASSADAR_TEMPLAR_GUN",
+    "Value": "사이오닉 공격"
+  },
+  {
+    "id": "STR_ARCHON_PSI",
+    "Key": "STR_ARCHON_PSI",
+    "Value": "사이오닉 충격파"
+  },
+  {
+    "id": "STR_TZ_ARCHON_PSI",
+    "Key": "STR_TZ_ARCHON_PSI",
+    "Value": "사이오닉 충격파"
+  },
+  {
+    "id": "STR_SHUTTLE_GUN",
+    "Key": "STR_SHUTTLE_GUN",
+    "Value": "사용 안 함"
+  },
+  {
+    "id": "STR_SCOUT_GUN",
+    "Key": "STR_SCOUT_GUN",
+    "Value": "이중 양자포"
+  },
+  {
+    "id": "STR_SCOUT_MISSILE",
+    "Key": "STR_SCOUT_MISSILE",
+    "Value": "반물질 미사일"
+  },
+  {
+    "id": "STR_MOJO_SCOUT_GUN",
+    "Key": "STR_MOJO_SCOUT_GUN",
+    "Value": "이중 양자포"
+  },
+  {
+    "id": "STR_MOJO_SCOUT_MISSILE",
+    "Key": "STR_MOJO_SCOUT_MISSILE",
+    "Value": "반물질 미사일"
+  },
+  {
+    "id": "STR_ARBITER_CANNON",
+    "Key": "STR_ARBITER_CANNON",
+    "Value": "차원 분열포"
+  },
+  {
+    "id": "STR_DANIMOTH_ARBITER_CANNON",
+    "Key": "STR_DANIMOTH_ARBITER_CANNON",
+    "Value": "차원 분열포"
+  },
+  {
+    "id": "STR_FIGHTER_GUN",
+    "Key": "STR_FIGHTER_GUN",
+    "Value": "파동포"
+  },
+  {
+    "id": "STR_PHOTON_GUN_GND",
+    "Key": "STR_PHOTON_GUN_GND",
+    "Value": "지대지 광자포"
+  },
+  {
+    "id": "STR_PHOTON_GUN_AIR",
+    "Key": "STR_PHOTON_GUN_AIR",
+    "Value": "지대공 광자포"
+  },
+  {
+    "id": "STR_SCARAB",
+    "Key": "STR_SCARAB",
+    "Value": "갑충탄"
+  },
+  {
+    "id": "STR_CARGO_MISSILE",
+    "Key": "STR_CARGO_MISSILE",
+    "Value": "미사일"
+  },
+  {
+    "id": "STR_GUNSHIP_GUN",
+    "Key": "STR_GUNSHIP_GUN",
+    "Value": "레이저 포"
+  },
+  {
+    "id": "STR_GUNSHIP_MISSILE",
+    "Key": "STR_GUNSHIP_MISSILE",
+    "Value": "토멘터 미사일"
+  },
+  {
+    "id": "STR_GUNSHIP_BOMB",
+    "Key": "STR_GUNSHIP_BOMB",
+    "Value": "폭탄"
+  },
+  {
+    "id": "STR_RAIDER_GUN",
+    "Key": "STR_RAIDER_GUN",
+    "Value": "습격포"
+  },
+  {
+    "id": "STR_BIKER_GRENADE",
+    "Key": "STR_BIKER_GRENADE",
+    "Value": "강철제 화살탄"
+  },
+  {
+    "id": "STR_TRAP_GUN",
+    "Key": "STR_TRAP_GUN",
+    "Value": "2연장 자동포"
+  },
+  {
+    "id": "STR_TRAP_MISSILE",
+    "Key": "STR_TRAP_MISSILE",
+    "Value": "지옥불 미사일"
+  },
+  {
+    "id": "STR_TRAP_FLAME",
+    "Key": "STR_TRAP_FLAME",
+    "Value": "화염방사기"
+  },
+  {
+    "id": "STR_NO_WEAPON",
+    "Key": "STR_NO_WEAPON",
+    "Value": "정의되지 않은 무기 이름"
+  },
+  {
+    "id": "STR_STIMPACK_TECH",
+    "Key": "STR_STIMPACK_TECH",
+    "Value": "전투 자극제"
+  },
+  {
+    "id": "STR_MAGNAPULSE",
+    "Key": "STR_MAGNAPULSE",
+    "Value": "결박"
+  },
+  {
+    "id": "STR_EMP_TECH",
+    "Key": "STR_EMP_TECH",
+    "Value": "EMP 충격파"
+  },
+  {
+    "id": "STR_MINES_TECH",
+    "Key": "STR_MINES_TECH",
+    "Value": "거미 지뢰"
+  },
+  {
+    "id": "STR_SCANNER_TECH",
+    "Key": "STR_SCANNER_TECH",
+    "Value": "스캐너 탐색"
+  },
+  {
+    "id": "STR_SIEGE_TECH",
+    "Key": "STR_SIEGE_TECH",
+    "Value": "공성 전차 공성 모드"
+  },
+  {
+    "id": "STR_DEFMATRIX_TECH",
+    "Key": "STR_DEFMATRIX_TECH",
+    "Value": "방어막"
+  },
+  {
+    "id": "STR_IRRADIATE_TECH",
+    "Key": "STR_IRRADIATE_TECH",
+    "Value": "방사선"
+  },
+  {
+    "id": "STR_YAMATO_GUN",
+    "Key": "STR_YAMATO_GUN",
+    "Value": "야마토 포"
+  },
+  {
+    "id": "STR_SHIP_CLOAK_TECH",
+    "Key": "STR_SHIP_CLOAK_TECH",
+    "Value": "은폐장"
+  },
+  {
+    "id": "STR_MAN_CLOAK_TECH",
+    "Key": "STR_MAN_CLOAK_TECH",
+    "Value": "개인 은폐"
+  },
+  {
+    "id": "STR_RSRCH_STIM",
+    "Key": "STR_RSRCH_STIM",
+    "Value": "t\\u0004전투 자극제 연구\\n(해병 및 화염방사병 능력)"
+  },
+  {
+    "id": "STR_RSRCH_MAGNA",
+    "Key": "STR_RSRCH_MAGNA",
+    "Value": "l\\u0004결박 연구\\n(유령 능력) "
+  },
+  {
+    "id": "STR_RSRCH_EMP",
+    "Key": "STR_RSRCH_EMP",
+    "Value": "e\\u0004EMP 충격파 연구\\n(과학선 능력)"
+  },
+  {
+    "id": "STR_RSRCH_MINES",
+    "Key": "STR_RSRCH_MINES",
+    "Value": "m\\u0004거미 지뢰\\n(시체매 능력)"
+  },
+  {
+    "id": "STR_RSRCH_SIEGE",
+    "Key": "STR_RSRCH_SIEGE",
+    "Value": "s\\u0004공성 모드 연구\\n(공성 전차 능력)"
+  },
+  {
+    "id": "STR_RSRCH_DEFMTX",
+    "Key": "STR_RSRCH_DEFMTX",
+    "Value": "m\\u0004방어막 연구\\n(과학선 능력)"
+  },
+  {
+    "id": "STR_RSRCH_IRRADIATE",
+    "Key": "STR_RSRCH_IRRADIATE",
+    "Value": "i\\u0004방사선 연구\\n(과학선 능력)"
+  },
+  {
+    "id": "STR_RSRCH_YAMATO",
+    "Key": "STR_RSRCH_YAMATO",
+    "Value": "y\\u0004야마토 포 연구\\n(전투순양함 능력)"
+  },
+  {
+    "id": "STR_RSRCH_SHIP_CLOAK",
+    "Key": "STR_RSRCH_SHIP_CLOAK",
+    "Value": "c\\u0004은폐장 연구\\n(망령 능력)"
+  },
+  {
+    "id": "STR_RSRCH_MAN_CLOAK",
+    "Key": "STR_RSRCH_MAN_CLOAK",
+    "Value": "c\\u0004개인 은폐 연구\\n(유령 능력)"
+  },
+  {
+    "id": "STR_USESTIM",
+    "Key": "STR_USESTIM",
+    "Value": "t\\u0003전투 자극제 사용"
+  },
+  {
+    "id": "STR_USEMAGNA",
+    "Key": "STR_USEMAGNA",
+    "Value": "l\\u0003결박"
+  },
+  {
+    "id": "STR_USEMINES",
+    "Key": "STR_USEMINES",
+    "Value": "i\\u0003거미 지뢰 사용"
+  },
+  {
+    "id": "STR_SCANNERSWEEP",
+    "Key": "STR_SCANNERSWEEP",
+    "Value": "s\\u0003스캐너 탐색 (탐지기)"
+  },
+  {
+    "id": "STR_SIEGE_MODE",
+    "Key": "STR_SIEGE_MODE",
+    "Value": "o\\u0003 공성 모드"
+  },
+  {
+    "id": "STR_TANK_MODE",
+    "Key": "STR_TANK_MODE",
+    "Value": "o\\u0007탱크 모드"
+  },
+  {
+    "id": "STR_DEFMTX",
+    "Key": "STR_DEFMTX",
+    "Value": "d\\u0003방어막 활성화"
+  },
+  {
+    "id": "STR_USEEMP",
+    "Key": "STR_USEEMP",
+    "Value": "e\\u0003EMP 충격파 활성화"
+  },
+  {
+    "id": "STR_IRRADIATE",
+    "Key": "STR_IRRADIATE",
+    "Value": "i\\u0003이래디에이트"
+  },
+  {
+    "id": "STR_YAMATO",
+    "Key": "STR_YAMATO",
+    "Value": "y\\u0003야마토 포"
+  },
+  {
+    "id": "STR_CLOAK",
+    "Key": "STR_CLOAK",
+    "Value": "c\\u0003은폐"
+  },
+  {
+    "id": "STR_DECLOAK",
+    "Key": "STR_DECLOAK",
+    "Value": "c\\u0007은폐 해제"
+  },
+  {
+    "id": "STR_STIM_REQ",
+    "Key": "STR_STIM_REQ",
+    "Value": "전투 자극제:\\n   사관학교에서 연구"
+  },
+  {
+    "id": "STR_MAGNA_REQ",
+    "Key": "STR_MAGNA_REQ",
+    "Value": "결박:\\n   비밀 작전실에서 연구"
+  },
+  {
+    "id": "STR_MINE_REQ",
+    "Key": "STR_MINE_REQ",
+    "Value": "거미 지뢰:\\n   기계실에서 연구"
+  },
+  {
+    "id": "STR_SIEGE_REQ",
+    "Key": "STR_SIEGE_REQ",
+    "Value": "공성 모드:\\n   기계실에서 연구"
+  },
+  {
+    "id": "STR_DEFMTX_REQ",
+    "Key": "STR_DEFMTX_REQ",
+    "Value": "방어막:\\n   과학 시설에서 연구"
+  },
+  {
+    "id": "STR_EMP_REQ",
+    "Key": "STR_EMP_REQ",
+    "Value": "EMP 충격파:\\n   과학 시설에서 연구"
+  },
+  {
+    "id": "STR_IRRADIATE_REQ",
+    "Key": "STR_IRRADIATE_REQ",
+    "Value": "방사선:\\n   과학 시설에서 연구"
+  },
+  {
+    "id": "STR_YAMATO_REQ",
+    "Key": "STR_YAMATO_REQ",
+    "Value": "야마토 포:\\n   물리 연구실에서 연구"
+  },
+  {
+    "id": "STR_SHIP_CLOAK_REQ",
+    "Key": "STR_SHIP_CLOAK_REQ",
+    "Value": "은폐장:\\n   관제탑에서 연구"
+  },
+  {
+    "id": "STR_MAN_CLOAK_REQ",
+    "Key": "STR_MAN_CLOAK_REQ",
+    "Value": "개인 은폐:\\n   비밀 작전실에서 연구"
+  },
+  {
+    "id": "STR_BURROW_TECH",
+    "Key": "STR_BURROW_TECH",
+    "Value": "잠복"
+  },
+  {
+    "id": "STR_INFEST_TECH",
+    "Key": "STR_INFEST_TECH",
+    "Value": "감염"
+  },
+  {
+    "id": "STR_BROODLING_TECH",
+    "Key": "STR_BROODLING_TECH",
+    "Value": "공생충 생성"
+  },
+  {
+    "id": "STR_PLAGUE_TECH",
+    "Key": "STR_PLAGUE_TECH",
+    "Value": "암흑 구름"
+  },
+  {
+    "id": "STR_PARASITE_TECH",
+    "Key": "STR_PARASITE_TECH",
+    "Value": "기생충"
+  },
+  {
+    "id": "STR_BLOODBOIL_TECH",
+    "Key": "STR_BLOODBOIL_TECH",
+    "Value": "역병"
+  },
+  {
+    "id": "STR_CONSUME_TECH",
+    "Key": "STR_CONSUME_TECH",
+    "Value": "흡수"
+  },
+  {
+    "id": "STR_ENSNARE_TECH",
+    "Key": "STR_ENSNARE_TECH",
+    "Value": "속박"
+  },
+  {
+    "id": "STR_RSRCH_BURROW",
+    "Key": "STR_RSRCH_BURROW",
+    "Value": "b\\u0004잠복 진화 (지상 유닛 능력)"
+  },
+  {
+    "id": "STR_RSRCH_INFEST",
+    "Key": "STR_RSRCH_INFEST",
+    "Value": "i\\u0004감염 진화\\n(여왕 능력)"
+  },
+  {
+    "id": "STR_RSRCH_INFBROOD",
+    "Key": "STR_RSRCH_INFBROOD",
+    "Value": "b\\u0004공생충 소환 진화\\n(여왕 능력)"
+  },
+  {
+    "id": "STR_RSRCH_PLAGUE",
+    "Key": "STR_RSRCH_PLAGUE",
+    "Value": "s\\u0004암흑 구름 진화\\n(파멸충 능력)"
+  },
+  {
+    "id": "STR_RSRCH_PARASITE",
+    "Key": "STR_RSRCH_PARASITE",
+    "Value": "r\\u0004기생충 진화 (\\u0003R\\u0001)\\n(여왕 능력)"
+  },
+  {
+    "id": "STR_RSRCH_BLOODBOIL",
+    "Key": "STR_RSRCH_BLOODBOIL",
+    "Value": "g\\u0004역병 진화\\n(파멸충 능력)"
+  },
+  {
+    "id": "STR_RSRCH_ENSNARE",
+    "Key": "STR_RSRCH_ENSNARE",
+    "Value": "e\\u0004속박 진화\\n(여왕 능력)"
+  },
+  {
+    "id": "STR_RSRCH_CONSUME",
+    "Key": "STR_RSRCH_CONSUME",
+    "Value": "c\\u0004흡수 진화\\n(파멸충 능력)"
+  },
+  {
+    "id": "STR_BURROW",
+    "Key": "STR_BURROW",
+    "Value": "u\\u0003잠복"
+  },
+  {
+    "id": "STR_DEBURROW",
+    "Key": "STR_DEBURROW",
+    "Value": "u\\u0007잠복 해제"
+  },
+  {
+    "id": "STR_INFEST",
+    "Key": "STR_INFEST",
+    "Value": "i\\u0007테란 사령부 감염"
+  },
+  {
+    "id": "STR_INFBROOD",
+    "Key": "STR_INFBROOD",
+    "Value": "b\\u0003공생충 소환 (\\u0003B\\u0001)"
+  },
+  {
+    "id": "STR_PLAGUE",
+    "Key": "STR_PLAGUE",
+    "Value": "w\\u0003암흑 구름"
+  },
+  {
+    "id": "STR_PARASITE",
+    "Key": "STR_PARASITE",
+    "Value": "r\\u0003기생충"
+  },
+  {
+    "id": "STR_BLOODBOIL",
+    "Key": "STR_BLOODBOIL",
+    "Value": "g\\u0003역병"
+  },
+  {
+    "id": "STR_CONSUME",
+    "Key": "STR_CONSUME",
+    "Value": "c\\u0003흡수"
+  },
+  {
+    "id": "STR_KERRIGAN_CONSUME",
+    "Key": "STR_KERRIGAN_CONSUME",
+    "Value": "u\\u0003흡수"
+  },
+  {
+    "id": "STR_ENSNARE",
+    "Key": "STR_ENSNARE",
+    "Value": "e\\u0003속박"
+  },
+  {
+    "id": "STR_BURROW_REQ",
+    "Key": "STR_BURROW_REQ",
+    "Value": "잠복:\\n   부화장에서 진화"
+  },
+  {
+    "id": "STR_INFEST_REQ",
+    "Key": "STR_INFEST_REQ",
+    "Value": "감염:\\n   여왕의 둥지에서 진화"
+  },
+  {
+    "id": "STR_INFBROOD_REQ",
+    "Key": "STR_INFBROOD_REQ",
+    "Value": "공생충 생성:\\n   여왕의 둥지에서 진화"
+  },
+  {
+    "id": "STR_PLAGUE_REQ",
+    "Key": "STR_PLAGUE_REQ",
+    "Value": "암흑 구름:\\n   파멸충 언덕에서 진화"
+  },
+  {
+    "id": "STR_PARASITE_REQ",
+    "Key": "STR_PARASITE_REQ",
+    "Value": "기생충:\\n   여왕의 둥지에서 진화"
+  },
+  {
+    "id": "STR_BLOODBOIL_REQ",
+    "Key": "STR_BLOODBOIL_REQ",
+    "Value": "역병:\\n   파멸충 언덕에서 진화"
+  },
+  {
+    "id": "STR_CONSUME_REQ",
+    "Key": "STR_CONSUME_REQ",
+    "Value": "흡수:\\n[5]파멸충 언덕에서 진화"
+  },
+  {
+    "id": "STR_ENSNARE_REQ",
+    "Key": "STR_ENSNARE_REQ",
+    "Value": "속박:\\n   여왕의 둥지에서 진화"
+  },
+  {
+    "id": "STR_PSISTORM_TECH",
+    "Key": "STR_PSISTORM_TECH",
+    "Value": "사이오닉 폭풍"
+  },
+  {
+    "id": "STR_HALLUCINATION_TECH",
+    "Key": "STR_HALLUCINATION_TECH",
+    "Value": "환상"
+  },
+  {
+    "id": "STR_RECALL_TECH",
+    "Key": "STR_RECALL_TECH",
+    "Value": "소환"
+  },
+  {
+    "id": "STR_STASIS_TECH",
+    "Key": "STR_STASIS_TECH",
+    "Value": "정지장"
+  },
+  {
+    "id": "STR_ARCHON_TECH",
+    "Key": "STR_ARCHON_TECH",
+    "Value": "집정관 합체"
+  },
+  {
+    "id": "STR_RSRCH_PSISTORM",
+    "Key": "STR_RSRCH_PSISTORM",
+    "Value": "p\\u0004사이오닉 폭풍 개발\\n(고위 기사 능력)"
+  },
+  {
+    "id": "STR_RSRCH_HALLUCINATION",
+    "Key": "STR_RSRCH_HALLUCINATION",
+    "Value": "h\\u0004환상 개발\\n(고위 기사 능력)"
+  },
+  {
+    "id": "STR_RSRCH_RECALL",
+    "Key": "STR_RSRCH_RECALL",
+    "Value": "r\\u0004소환 개발\\n(중재자 능력)"
+  },
+  {
+    "id": "STR_RSRCH_STASIS",
+    "Key": "STR_RSRCH_STASIS",
+    "Value": "s\\u0004정지장 개발\\n(중재자 능력)"
+  },
+  {
+    "id": "STR_RSRCH_SUMMON_ARCHON",
+    "Key": "STR_RSRCH_SUMMON_ARCHON",
+    "Value": "a\\u0004집정관 연구\\n(고위 기사 능력)"
+  },
+  {
+    "id": "STR_PSISTORM",
+    "Key": "STR_PSISTORM",
+    "Value": "t\\u0003사이오닉 폭풍"
+  },
+  {
+    "id": "STR_HALLUCINATION",
+    "Key": "STR_HALLUCINATION",
+    "Value": "l\\u0003환상"
+  },
+  {
+    "id": "STR_RECALL",
+    "Key": "STR_RECALL",
+    "Value": "r\\u0003소환"
+  },
+  {
+    "id": "STR_STASIS",
+    "Key": "STR_STASIS",
+    "Value": "t\\u0003정지장"
+  },
+  {
+    "id": "STR_MAKE_P_ARCHON",
+    "Key": "STR_MAKE_P_ARCHON",
+    "Value": "r\\u0001집정관"
+  },
+  {
+    "id": "STR_PSISTORM_REQ",
+    "Key": "STR_PSISTORM_REQ",
+    "Value": "사이오닉 폭풍:\\n   기사단 기록보관소에서 개발"
+  },
+  {
+    "id": "STR_HALLUC_REQ",
+    "Key": "STR_HALLUC_REQ",
+    "Value": "환상:\\n   기사단 기록보관소에서 개발"
+  },
+  {
+    "id": "STR_RECALL_REQ",
+    "Key": "STR_RECALL_REQ",
+    "Value": "소환:\\n   중재소에서 연구"
+  },
+  {
+    "id": "STR_STASIS_REQ",
+    "Key": "STR_STASIS_REQ",
+    "Value": "정지장:\\n   중재소에서 연구"
+  },
+  {
+    "id": "STR_ARCHON0_REQ",
+    "Key": "STR_ARCHON0_REQ",
+    "Value": "집정관 합체:\\n   기사단 기록보관소에서 연구"
+  },
+  {
+    "id": "STR_ARCHON1_REQ",
+    "Key": "STR_ARCHON1_REQ",
+    "Value": "집정관 합체:\\n   2기 이상의 고위 기사 선택"
+  },
+  {
+    "id": "STR_T_ARMOR",
+    "Key": "STR_T_ARMOR",
+    "Value": "테란 보병 장갑"
+  },
+  {
+    "id": "STR_T_VEHICLE_PLATING",
+    "Key": "STR_T_VEHICLE_PLATING",
+    "Value": "테란 차량 장갑"
+  },
+  {
+    "id": "STR_T_SHIP_PLATING",
+    "Key": "STR_T_SHIP_PLATING",
+    "Value": "테란 우주선 장갑"
+  },
+  {
+    "id": "STR_Z_CARAPACE",
+    "Key": "STR_Z_CARAPACE",
+    "Value": "저그 갑피"
+  },
+  {
+    "id": "STR_Z_PLATING",
+    "Key": "STR_Z_PLATING",
+    "Value": "저그 비행체 갑피"
+  },
+  {
+    "id": "STR_P_ARMOR",
+    "Key": "STR_P_ARMOR",
+    "Value": "프로토스 장갑"
+  },
+  {
+    "id": "STR_P_PLATING",
+    "Key": "STR_P_PLATING",
+    "Value": "프로토스 장갑"
+  },
+  {
+    "id": "STR_T_MAN_GUNS",
+    "Key": "STR_T_MAN_GUNS",
+    "Value": "테란 보병 무기"
+  },
+  {
+    "id": "STR_T_VEHICLE_GUNS",
+    "Key": "STR_T_VEHICLE_GUNS",
+    "Value": "테란 차량 무기"
+  },
+  {
+    "id": "STR_T_SHIP_GUNS",
+    "Key": "STR_T_SHIP_GUNS",
+    "Value": "테란 우주선 무기"
+  },
+  {
+    "id": "STR_Z_MELEE_ATTACKS",
+    "Key": "STR_Z_MELEE_ATTACKS",
+    "Value": "저그 근접 공격"
+  },
+  {
+    "id": "STR_Z_MISSILE_ATTACKS",
+    "Key": "STR_Z_MISSILE_ATTACKS",
+    "Value": "저그 원거리 공격"
+  },
+  {
+    "id": "STR_Z_FLYER_ATTACKS",
+    "Key": "STR_Z_FLYER_ATTACKS",
+    "Value": "저그 비행체 공격"
+  },
+  {
+    "id": "STR_P_GND_WEAPONS",
+    "Key": "STR_P_GND_WEAPONS",
+    "Value": "프로토스 지상 무기"
+  },
+  {
+    "id": "STR_P_AIR_WEAPONS",
+    "Key": "STR_P_AIR_WEAPONS",
+    "Value": "프로토스 공중 무기"
+  },
+  {
+    "id": "STR_P_SHIELDS",
+    "Key": "STR_P_SHIELDS",
+    "Value": "프로토스 플라스마 보호막"
+  },
+  {
+    "id": "STR_MARINE_GUN_RANGE",
+    "Key": "STR_MARINE_GUN_RANGE",
+    "Value": "U-238 탄환"
+  },
+  {
+    "id": "STR_VULTURE_SPEED",
+    "Key": "STR_VULTURE_SPEED",
+    "Value": "이온 추진기"
+  },
+  {
+    "id": "STR_WRAITH_WEAPON",
+    "Key": "STR_WRAITH_WEAPON",
+    "Value": "파열 레이저"
+  },
+  {
+    "id": "STR_VESSEL_ENERGY",
+    "Key": "STR_VESSEL_ENERGY",
+    "Value": "타이탄 반응로"
+  },
+  {
+    "id": "STR_GHOST_SIGHT",
+    "Key": "STR_GHOST_SIGHT",
+    "Value": "인공눈 이식"
+  },
+  {
+    "id": "STR_GHOST_ENERGY",
+    "Key": "STR_GHOST_ENERGY",
+    "Value": "뫼비우스 반응로"
+  },
+  {
+    "id": "STR_WRAITH_ENERGY",
+    "Key": "STR_WRAITH_ENERGY",
+    "Value": "아폴로 반응로"
+  },
+  {
+    "id": "STR_CRUISER_ENERGY",
+    "Key": "STR_CRUISER_ENERGY",
+    "Value": "거대 반응로"
+  },
+  {
+    "id": "STR_OVERLORD_TRANSPORT",
+    "Key": "STR_OVERLORD_TRANSPORT",
+    "Value": "배주머니"
+  },
+  {
+    "id": "STR_OVERLORD_SIGHT",
+    "Key": "STR_OVERLORD_SIGHT",
+    "Value": "안테나"
+  },
+  {
+    "id": "STR_OVERLORD_SPEED",
+    "Key": "STR_OVERLORD_SPEED",
+    "Value": "기낭 갑피"
+  },
+  {
+    "id": "STR_ZERGLING_SPEED",
+    "Key": "STR_ZERGLING_SPEED",
+    "Value": "대사 촉진"
+  },
+  {
+    "id": "STR_ZERGLING_ATTACK_SPEED",
+    "Key": "STR_ZERGLING_ATTACK_SPEED",
+    "Value": "아드레날린 분비선"
+  },
+  {
+    "id": "STR_HYDRALISK_SPEED",
+    "Key": "STR_HYDRALISK_SPEED",
+    "Value": "근육 보강"
+  },
+  {
+    "id": "STR_HYDRALISK_ATTACK_RANGE",
+    "Key": "STR_HYDRALISK_ATTACK_RANGE",
+    "Value": "가시 홈"
+  },
+  {
+    "id": "STR_QUEEN_ENERGY",
+    "Key": "STR_QUEEN_ENERGY",
+    "Value": "생식 분열"
+  },
+  {
+    "id": "STR_DEFILER_ENERGY",
+    "Key": "STR_DEFILER_ENERGY",
+    "Value": "연접변화 노드"
+  },
+  {
+    "id": "STR_DRAGOON_ATTACK_RANGE",
+    "Key": "STR_DRAGOON_ATTACK_RANGE",
+    "Value": "특이점 장전"
+  },
+  {
+    "id": "STR_ZEALOT_SPEED",
+    "Key": "STR_ZEALOT_SPEED",
+    "Value": "다리 강화"
+  },
+  {
+    "id": "STR_SCARAB_DAMAGE",
+    "Key": "STR_SCARAB_DAMAGE",
+    "Value": "갑충탄 공격력"
+  },
+  {
+    "id": "STR_REAVER_CAPACITY",
+    "Key": "STR_REAVER_CAPACITY",
+    "Value": "파괴자 수용력"
+  },
+  {
+    "id": "STR_SHUTTLE_SPEED",
+    "Key": "STR_SHUTTLE_SPEED",
+    "Value": "중력 구동기"
+  },
+  {
+    "id": "STR_OBSERVER_SIGHT",
+    "Key": "STR_OBSERVER_SIGHT",
+    "Value": "센서 배열"
+  },
+  {
+    "id": "STR_OBSERVER_SPEED",
+    "Key": "STR_OBSERVER_SPEED",
+    "Value": "중력 가속기"
+  },
+  {
+    "id": "STR_TEMPLAR_ENERGY",
+    "Key": "STR_TEMPLAR_ENERGY",
+    "Value": "케이다린 부적"
+  },
+  {
+    "id": "STR_SCOUT_SIGHT",
+    "Key": "STR_SCOUT_SIGHT",
+    "Value": "에이피얼 센서"
+  },
+  {
+    "id": "STR_SCOUT_SPEED",
+    "Key": "STR_SCOUT_SPEED",
+    "Value": "중력 추진기"
+  },
+  {
+    "id": "STR_CARRIER_CAPACITY",
+    "Key": "STR_CARRIER_CAPACITY",
+    "Value": "우주모함 수용력"
+  },
+  {
+    "id": "STR_ARBITER_ENERGY",
+    "Key": "STR_ARBITER_ENERGY",
+    "Value": "케이다린 핵"
+  },
+  {
+    "id": "STR_UP_T_ARMOR",
+    "Key": "STR_UP_T_ARMOR",
+    "Value": "a\\u0002보병 방어력 업그레이드"
+  },
+  {
+    "id": "STR_UP_T_VEHICLE_PLATING",
+    "Key": "STR_UP_T_VEHICLE_PLATING",
+    "Value": "p\\u0002차량 방어력 업그레이드"
+  },
+  {
+    "id": "STR_UP_T_SHIP_PLATING",
+    "Key": "STR_UP_T_SHIP_PLATING",
+    "Value": "h\\u0002우주선 방어력 업그레이드"
+  },
+  {
+    "id": "STR_UP_Z_CARAPACE",
+    "Key": "STR_UP_Z_CARAPACE",
+    "Value": "c\\u0002갑피 진화"
+  },
+  {
+    "id": "STR_UP_Z_PLATING",
+    "Key": "STR_UP_Z_PLATING",
+    "Value": "c\\u0002비행체 갑피 진화"
+  },
+  {
+    "id": "STR_UP_P_ARMOR",
+    "Key": "STR_UP_P_ARMOR",
+    "Value": "a\\u0002지상 방어력 업그레이드"
+  },
+  {
+    "id": "STR_UP_P_PLATING",
+    "Key": "STR_UP_P_PLATING",
+    "Value": "a\\u0002공중 방어력 업그레이드"
+  },
+  {
+    "id": "STR_UP_T_MAN_GUNS",
+    "Key": "STR_UP_T_MAN_GUNS",
+    "Value": "w\\u0002보병 공격력 업그레이드"
+  },
+  {
+    "id": "STR_UP_T_VEHICLE_GUNS",
+    "Key": "STR_UP_T_VEHICLE_GUNS",
+    "Value": "w\\u0002차량 공격력 업그레이드"
+  },
+  {
+    "id": "STR_UP_T_SHIP_GUNS",
+    "Key": "STR_UP_T_SHIP_GUNS",
+    "Value": "s\\u0002우주선 공격력 업그레이드"
+  },
+  {
+    "id": "STR_UP_Z_MELEE_ATTACKS",
+    "Key": "STR_UP_Z_MELEE_ATTACKS",
+    "Value": "m\\u0002근접 공격력 업그레이드"
+  },
+  {
+    "id": "STR_UP_Z_MISSILE_ATTACKS",
+    "Key": "STR_UP_Z_MISSILE_ATTACKS",
+    "Value": "a\\u0002원거리 공격 업그레이드"
+  },
+  {
+    "id": "STR_UP_Z_FLYER_ATTACKS",
+    "Key": "STR_UP_Z_FLYER_ATTACKS",
+    "Value": "a\\u0002비행체 공격 업그레이드"
+  },
+  {
+    "id": "STR_UP_P_GND_WEAPONS",
+    "Key": "STR_UP_P_GND_WEAPONS",
+    "Value": "w\\u0002지상 공격력 업그레이드"
+  },
+  {
+    "id": "STR_UP_P_AIR_WEAPONS",
+    "Key": "STR_UP_P_AIR_WEAPONS",
+    "Value": "w\\u0002공중 공격력 업그레이드"
+  },
+  {
+    "id": "STR_UP_P_SHIELDS",
+    "Key": "STR_UP_P_SHIELDS",
+    "Value": "s\\u0002플라스마 보호막 업그레이드"
+  },
+  {
+    "id": "STR_UP_MARINE_GUN_RANGE",
+    "Key": "STR_UP_MARINE_GUN_RANGE",
+    "Value": "u\\u0002U-238 탄환 연구\\n(해병 공격 사거리 증가)"
+  },
+  {
+    "id": "STR_UP_VULTURE_SPEED",
+    "Key": "STR_UP_VULTURE_SPEED",
+    "Value": "i\\u0002이온 추진기 연구\\n(시체매 이동 속도 증가)"
+  },
+  {
+    "id": "STR_UP_WRAITH_WEAPON",
+    "Key": "STR_UP_WRAITH_WEAPON",
+    "Value": "b\\u0002파열 레이저 연구 (\\u0003B\\u0001)\\n(망령 무기)"
+  },
+  {
+    "id": "STR_UP_VESSEL_ENERGY",
+    "Key": "STR_UP_VESSEL_ENERGY",
+    "Value": "t\\u0002타이탄 반응로 연구\\n(과학선 에너지 +50)"
+  },
+  {
+    "id": "STR_UP_GHOST_SIGHT",
+    "Key": "STR_UP_GHOST_SIGHT",
+    "Value": "o\\u0002인공눈 이식 연구\\n(유령 시야 범위 증가)"
+  },
+  {
+    "id": "STR_UP_GHOST_ENERGY",
+    "Key": "STR_UP_GHOST_ENERGY",
+    "Value": "m\\u0002뫼비우스 반응로 연구\\n(유령 에너지 +50)"
+  },
+  {
+    "id": "STR_UP_WRAITH_ENERGY",
+    "Key": "STR_UP_WRAITH_ENERGY",
+    "Value": "a\\u0002아폴로 반응로 연구\\n(망령 에너지 +50)"
+  },
+  {
+    "id": "STR_UP_CRUISER_ENERGY",
+    "Key": "STR_UP_CRUISER_ENERGY",
+    "Value": "c\\u0002거대 반응로 연구\\n(전투순양함 에너지 +50)"
+  },
+  {
+    "id": "STR_UP_OVERLORD_TRANSPORT",
+    "Key": "STR_UP_OVERLORD_TRANSPORT",
+    "Value": "v\\u0002배주머니 진화\\n(대군주 수송 가능)"
+  },
+  {
+    "id": "STR_UP_OVERLORD_SIGHT",
+    "Key": "STR_UP_OVERLORD_SIGHT",
+    "Value": "a\\u0002안테나 진화\\n(대군주 시야 범위 증가)"
+  },
+  {
+    "id": "STR_UP_OVERLORD_SPEED",
+    "Key": "STR_UP_OVERLORD_SPEED",
+    "Value": "p\\u0002기낭 갑피 진화\\n(대군주 이동 속도 증가)"
+  },
+  {
+    "id": "STR_UP_ZERGLING_SPEED",
+    "Key": "STR_UP_ZERGLING_SPEED",
+    "Value": "m\\u0002대사 촉진 진화\\n(저글링 이동 속도 증가)"
+  },
+  {
+    "id": "STR_UP_ZERGLING_ATTACK_SPEED",
+    "Key": "STR_UP_ZERGLING_ATTACK_SPEED",
+    "Value": "a\\u0002아드레날린 분비선 진화\\n(저글링 공격 속도 증가)"
+  },
+  {
+    "id": "STR_UP_HYDRALISK_SPEED",
+    "Key": "STR_UP_HYDRALISK_SPEED",
+    "Value": "m\\u0002근육 보강\\n(히드라리스크 이동 속도 증가)"
+  },
+  {
+    "id": "STR_UP_HYDRALISK_ATTACK_RANGE",
+    "Key": "STR_UP_HYDRALISK_ATTACK_RANGE",
+    "Value": "g\\u0002가시 홈 진화\\n(히드라리스크 공격 사거리 증가)"
+  },
+  {
+    "id": "STR_UP_QUEEN_ENERGY",
+    "Key": "STR_UP_QUEEN_ENERGY",
+    "Value": "g\\u0002생식 분열 진화\\n(여왕 에너지 +50)"
+  },
+  {
+    "id": "STR_UP_DEFILER_ENERGY",
+    "Key": "STR_UP_DEFILER_ENERGY",
+    "Value": "m\\u0002연접변화 노드 진화\\n(파멸충 에너지 +50)"
+  },
+  {
+    "id": "STR_UP_DRAGOON_ATTACK_RANGE",
+    "Key": "STR_UP_DRAGOON_ATTACK_RANGE",
+    "Value": "s\\u0002특이점 장전 개발\\n(용기병 공격 사거리 증가)"
+  },
+  {
+    "id": "STR_UP_ZEALOT_SPEED",
+    "Key": "STR_UP_ZEALOT_SPEED",
+    "Value": "l\\u0002다리 강화\\n(광전사 이동 속도 증가)"
+  },
+  {
+    "id": "STR_UP_SCARAB_DAMAGE",
+    "Key": "STR_UP_SCARAB_DAMAGE",
+    "Value": "s\\u0002갑충탄 공격력 증가"
+  },
+  {
+    "id": "STR_UP_REAVER_CAPACITY",
+    "Key": "STR_UP_REAVER_CAPACITY",
+    "Value": "c\\u0002파괴자 수용력 증가\\n(최대 갑충탄 +5)"
+  },
+  {
+    "id": "STR_UP_SHUTTLE_SPEED",
+    "Key": "STR_UP_SHUTTLE_SPEED",
+    "Value": "g\\u0002중력 구동기 개발\\n(왕복선 이동 속도 증가)"
+  },
+  {
+    "id": "STR_UP_OBSERVER_SIGHT",
+    "Key": "STR_UP_OBSERVER_SIGHT",
+    "Value": "s\\u0002탐지기 배열 개발\\n(관측선 시야 범위 증가)"
+  },
+  {
+    "id": "STR_UP_OBSERVER_SPEED",
+    "Key": "STR_UP_OBSERVER_SPEED",
+    "Value": "g\\u0002중력 가속기 개발\\n(관측선 이동 속도 증가)"
+  },
+  {
+    "id": "STR_UP_TEMPLAR_ENERGY",
+    "Key": "STR_UP_TEMPLAR_ENERGY",
+    "Value": "k\\u0002케이다린 부적 개발\\n(고위 기사 에너지 +50)"
+  },
+  {
+    "id": "STR_UP_SCOUT_SIGHT",
+    "Key": "STR_UP_SCOUT_SIGHT",
+    "Value": "a\\u0002에이피얼 탐지기 개발\\n(정찰기 시야 범위 증가)"
+  },
+  {
+    "id": "STR_UP_SCOUT_SPEED",
+    "Key": "STR_UP_SCOUT_SPEED",
+    "Value": "g\\u0002중력 추진기 개발\\n(정찰기 이동 속도 증가)"
+  },
+  {
+    "id": "STR_UP_CARRIER_CAPACITY",
+    "Key": "STR_UP_CARRIER_CAPACITY",
+    "Value": "c\\u0002우주모함 수용력 증가\\n(최대 요격기 +4)"
+  },
+  {
+    "id": "STR_UP_ARBITER_ENERGY",
+    "Key": "STR_UP_ARBITER_ENERGY",
+    "Value": "k\\u0002케이다린 핵 연구\\n(중재자 에너지 +50)"
+  },
+  {
+    "id": "STR_UP_TARMOR_REQ",
+    "Key": "STR_UP_TARMOR_REQ",
+    "Value": "보병 장갑 1단계 요구 사항:\\n   없음"
+  },
+  {
+    "id": "STR_UP_TARMOR_REQ-1",
+    "Key": "STR_UP_TARMOR_REQ-1",
+    "Value": "보병 장갑 2단계 요구 사항:\\n   과학 시설"
+  },
+  {
+    "id": "STR_UP_TARMOR_REQ-2",
+    "Key": "STR_UP_TARMOR_REQ-2",
+    "Value": "보병 장갑 3단계 요구 사항:\\n   과학 시설"
+  },
+  {
+    "id": "STR_UP_TMANGUNS_REQ",
+    "Key": "STR_UP_TMANGUNS_REQ",
+    "Value": "보병 무기 1단계 요구 사항:\\n   없음"
+  },
+  {
+    "id": "STR_UP_TMANGUNS_REQ-1",
+    "Key": "STR_UP_TMANGUNS_REQ-1",
+    "Value": "보병 무기 2단계 요구 사항:\\n   과학 시설"
+  },
+  {
+    "id": "STR_UP_TMANGUNS_REQ-2",
+    "Key": "STR_UP_TMANGUNS_REQ-2",
+    "Value": "보병 무기 3단계 요구 사항:\\n   과학 시설"
+  },
+  {
+    "id": "STR_UP_TVEHICLEGUNS_REQ",
+    "Key": "STR_UP_TVEHICLEGUNS_REQ",
+    "Value": "차량 무기 1단계 요구 사항:\\n   없음"
+  },
+  {
+    "id": "STR_UP_TVEHICLEGUNS_REQ-1",
+    "Key": "STR_UP_TVEHICLEGUNS_REQ-1",
+    "Value": "차량 무기 2단계 요구 사항:\\n   과학 시설"
+  },
+  {
+    "id": "STR_UP_TVEHICLEGUNS_REQ-2",
+    "Key": "STR_UP_TVEHICLEGUNS_REQ-2",
+    "Value": "차량 무기 3단계 요구 사항:\\n   과학 시설"
+  },
+  {
+    "id": "STR_UP_TVEHICLEPLATING_REQ",
+    "Key": "STR_UP_TVEHICLEPLATING_REQ",
+    "Value": "차량 장갑 1단계 요구 사항:\\n   없음"
+  },
+  {
+    "id": "STR_UP_TVEHICLEPLATING_REQ-1",
+    "Key": "STR_UP_TVEHICLEPLATING_REQ-1",
+    "Value": "차량 장갑 2단계 요구 사항:\\n   과학 시설"
+  },
+  {
+    "id": "STR_UP_TVEHICLEPLATING_REQ-2",
+    "Key": "STR_UP_TVEHICLEPLATING_REQ-2",
+    "Value": "차량 장갑 3단계 요구 사항:\\n   과학 시설"
+  },
+  {
+    "id": "STR_UP_TSHIPGUNS_REQ",
+    "Key": "STR_UP_TSHIPGUNS_REQ",
+    "Value": "공중 무기 1단계 요구 사항:\\n   없음"
+  },
+  {
+    "id": "STR_UP_TSHIPGUNS_REQ-1",
+    "Key": "STR_UP_TSHIPGUNS_REQ-1",
+    "Value": "공중 무기 2단계 요구 사항:\\n   과학 시설"
+  },
+  {
+    "id": "STR_UP_TSHIPGUNS_REQ-2",
+    "Key": "STR_UP_TSHIPGUNS_REQ-2",
+    "Value": "공중 무기 3단계 요구 사항:\\n   과학 시설"
+  },
+  {
+    "id": "STR_UP_TSHIPPLATING_REQ",
+    "Key": "STR_UP_TSHIPPLATING_REQ",
+    "Value": "우주선 장갑 1단계 요구 사항:\\n   없음"
+  },
+  {
+    "id": "STR_UP_TSHIPPLATING_REQ-1",
+    "Key": "STR_UP_TSHIPPLATING_REQ-1",
+    "Value": "우주선 장갑 2단계 요구 사항:\\n   과학 시설"
+  },
+  {
+    "id": "STR_UP_TSHIPPLATING_REQ-2",
+    "Key": "STR_UP_TSHIPPLATING_REQ-2",
+    "Value": "우주선 장갑 3단계 요구 사항:\\n   과학 시설"
+  },
+  {
+    "id": "STR_UP_ZMELEE_REQ",
+    "Key": "STR_UP_ZMELEE_REQ",
+    "Value": "밀리 어택 1단계 요구 사항:\\n   없음"
+  },
+  {
+    "id": "STR_UP_ZMELEE_REQ-1",
+    "Key": "STR_UP_ZMELEE_REQ-1",
+    "Value": "근접 공격 2단계 요구 사항:\\n   번식지"
+  },
+  {
+    "id": "STR_UP_ZMELEE_REQ-2",
+    "Key": "STR_UP_ZMELEE_REQ-2",
+    "Value": "근접 공격 3단계 요구 사항:\\n   군락"
+  },
+  {
+    "id": "STR_UP_ZMISSILE_REQ",
+    "Key": "STR_UP_ZMISSILE_REQ",
+    "Value": "원거리 공격 1단계 요구 사항:\\n   없음"
+  },
+  {
+    "id": "STR_UP_ZMISSILE_REQ-1",
+    "Key": "STR_UP_ZMISSILE_REQ-1",
+    "Value": "원거리 공격 2단계 요구 사항:\\n   번식지"
+  },
+  {
+    "id": "STR_UP_ZMISSILE_REQ-2",
+    "Key": "STR_UP_ZMISSILE_REQ-2",
+    "Value": "원거리 공격 3단계 요구 사항:\\n   군락"
+  },
+  {
+    "id": "STR_UP_ZARMOR_REQ",
+    "Key": "STR_UP_ZARMOR_REQ",
+    "Value": "캐러페이스 1단계 요구 사항:\\n   없음"
+  },
+  {
+    "id": "STR_UP_ZARMOR_REQ-1",
+    "Key": "STR_UP_ZARMOR_REQ-1",
+    "Value": "갑피 2단계 요구 사항:\\n   번식지"
+  },
+  {
+    "id": "STR_UP_ZARMOR_REQ-2",
+    "Key": "STR_UP_ZARMOR_REQ-2",
+    "Value": "갑피 3단계 요구 사항:\\n   군락"
+  },
+  {
+    "id": "STR_UP_ZFLYERATTACKS_REQ",
+    "Key": "STR_UP_ZFLYERATTACKS_REQ",
+    "Value": "플라이어 어택 1단계 요구 사항:\\n   없음"
+  },
+  {
+    "id": "STR_UP_ZFLYERATTACKS_REQ-1",
+    "Key": "STR_UP_ZFLYERATTACKS_REQ-1",
+    "Value": "비행체 공격 1단계 요구 사항:\\n   번식지"
+  },
+  {
+    "id": "STR_UP_ZFLYERATTACKS_REQ-2",
+    "Key": "STR_UP_ZFLYERATTACKS_REQ-2",
+    "Value": "비행체 공격 3단계 요구 사항:\\n   군락"
+  },
+  {
+    "id": "STR_UP_ZCARAPACE_REQ",
+    "Key": "STR_UP_ZCARAPACE_REQ",
+    "Value": "비행체 갑피 1단계 요구 사항:\\n   없음"
+  },
+  {
+    "id": "STR_UP_ZCARAPACE_REQ-1",
+    "Key": "STR_UP_ZCARAPACE_REQ-1",
+    "Value": "비행체 갑피 2단계 요구 사항:\\n   번식지"
+  },
+  {
+    "id": "STR_UP_ZCARAPACE_REQ-2",
+    "Key": "STR_UP_ZCARAPACE_REQ-2",
+    "Value": "비행체 갑피 3단계 요구 사항:\\n   군락"
+  },
+  {
+    "id": "STR_UP_ZERGLINGATTACKSPEED_REQ",
+    "Key": "STR_UP_ZERGLINGATTACKSPEED_REQ",
+    "Value": "아드레날린 분비선 요구 사항:\\n   군락"
+  },
+  {
+    "id": "STR_UP_PGNDWEAPONS_REQ",
+    "Key": "STR_UP_PGNDWEAPONS_REQ",
+    "Value": "지상 무기 1단계 요구 사항:\\n   없음"
+  },
+  {
+    "id": "STR_UP_PGNDWEAPONS_REQ-1",
+    "Key": "STR_UP_PGNDWEAPONS_REQ-1",
+    "Value": "지상 무기 2단계 요구 사항:\\n   기사단 기록보관소"
+  },
+  {
+    "id": "STR_UP_PGNDWEAPONS_REQ-2",
+    "Key": "STR_UP_PGNDWEAPONS_REQ-2",
+    "Value": "지상 무기 3단계 요구 사항:\\n   기사단 기록보관소"
+  },
+  {
+    "id": "STR_UP_PAIRWEAPONS_REQ",
+    "Key": "STR_UP_PAIRWEAPONS_REQ",
+    "Value": "공중 무기 1단계 요구 사항:\\n   없음"
+  },
+  {
+    "id": "STR_UP_PAIRWEAPONS_REQ-1",
+    "Key": "STR_UP_PAIRWEAPONS_REQ-1",
+    "Value": "공중 무기 2단계 요구 사항:\\n   함대 신호소"
+  },
+  {
+    "id": "STR_UP_PAIRWEAPONS_REQ-2",
+    "Key": "STR_UP_PAIRWEAPONS_REQ-2",
+    "Value": "공중 무기 3단계 요구 사항:\\n   함대 신호소"
+  },
+  {
+    "id": "STR_UP_PGNDARMOR_REQ",
+    "Key": "STR_UP_PGNDARMOR_REQ",
+    "Value": "지상 장갑 1단계 요구 사항:\\n   없음"
+  },
+  {
+    "id": "STR_UP_PGNDARMOR_REQ-1",
+    "Key": "STR_UP_PGNDARMOR_REQ-1",
+    "Value": "지상 장갑 2단계 요구 사항:\\n   기사단 기록보관소"
+  },
+  {
+    "id": "STR_UP_PGNDARMOR_REQ-2",
+    "Key": "STR_UP_PGNDARMOR_REQ-2",
+    "Value": "지상 장갑 3단계 요구 사항:\\n   기사단 기록보관소"
+  },
+  {
+    "id": "STR_UP_PAIRARMOR_REQ",
+    "Key": "STR_UP_PAIRARMOR_REQ",
+    "Value": "공중 장갑 1단계 요구 사항:\\n   없음"
+  },
+  {
+    "id": "STR_UP_PAIRARMOR_REQ-1",
+    "Key": "STR_UP_PAIRARMOR_REQ-1",
+    "Value": "공중 장갑 2단계 요구 사항:\\n   함대 신호소"
+  },
+  {
+    "id": "STR_UP_PAIRARMOR_REQ-2",
+    "Key": "STR_UP_PAIRARMOR_REQ-2",
+    "Value": "공중 장갑 3단계 요구 사항:\\n   함대 신호소"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ",
+    "Key": "STR_UP_PSHIELDS_REQ",
+    "Value": "보호막 1단계 요구 조건:\\n   없음"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-1",
+    "Key": "STR_UP_PSHIELDS_REQ-1",
+    "Value": "보호막 2단계 요구 조건:\\n   인공제어소"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-2",
+    "Key": "STR_UP_PSHIELDS_REQ-2",
+    "Value": "보호막 3단계 요구 조건:\\n   인공제어소"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-3",
+    "Key": "STR_UP_PSHIELDS_REQ-3",
+    "Value": "신병"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-4",
+    "Key": "STR_UP_PSHIELDS_REQ-4",
+    "Value": "비공개"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-5",
+    "Key": "STR_UP_PSHIELDS_REQ-5",
+    "Value": "비공개"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-6",
+    "Key": "STR_UP_PSHIELDS_REQ-6",
+    "Value": "상병"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-7",
+    "Key": "STR_UP_PSHIELDS_REQ-7",
+    "Value": "전문가"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-8",
+    "Key": "STR_UP_PSHIELDS_REQ-8",
+    "Value": "상사"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-9",
+    "Key": "STR_UP_PSHIELDS_REQ-9",
+    "Value": "중사"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-10",
+    "Key": "STR_UP_PSHIELDS_REQ-10",
+    "Value": "정예근위병"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-11",
+    "Key": "STR_UP_PSHIELDS_REQ-11",
+    "Value": "준위"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-12",
+    "Key": "STR_UP_PSHIELDS_REQ-12",
+    "Value": "대위"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-13",
+    "Key": "STR_UP_PSHIELDS_REQ-13",
+    "Value": "소령"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-14",
+    "Key": "STR_UP_PSHIELDS_REQ-14",
+    "Value": "중령"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-15",
+    "Key": "STR_UP_PSHIELDS_REQ-15",
+    "Value": "중사"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-16",
+    "Key": "STR_UP_PSHIELDS_REQ-16",
+    "Value": "원사"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-17",
+    "Key": "STR_UP_PSHIELDS_REQ-17",
+    "Value": "대령"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-18",
+    "Key": "STR_UP_PSHIELDS_REQ-18",
+    "Value": "준장"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-19",
+    "Key": "STR_UP_PSHIELDS_REQ-19",
+    "Value": "보안관"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-20",
+    "Key": "STR_UP_PSHIELDS_REQ-20",
+    "Value": "부관"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-21",
+    "Key": "STR_UP_PSHIELDS_REQ-21",
+    "Value": "일반"
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-22",
+    "Key": "STR_UP_PSHIELDS_REQ-22",
+    "Value": "레이너 대위  "
+  },
+  {
+    "id": "STR_UP_PSHIELDS_REQ-23",
+    "Key": "STR_UP_PSHIELDS_REQ-23",
+    "Value": "듀크 장군"
+  },
+  {
+    "id": "STR_HERO_BC_RANK",
+    "Key": "STR_HERO_BC_RANK",
+    "Value": "제독"
+  },
+  {
+    "id": "STR_GANTRITHOR_RANK",
+    "Key": "STR_GANTRITHOR_RANK",
+    "Value": "태사다르"
+  },
+  {
+    "id": "STR_INTERCEPTOR",
+    "Key": "STR_INTERCEPTOR",
+    "Value": "요격기"
+  },
+  {
+    "id": "STR_ESCAPE",
+    "Key": "STR_ESCAPE",
+    "Value": "ESC"
+  },
+  {
+    "id": "STR_MAKE_Z_ZERGLING",
+    "Key": "STR_MAKE_Z_ZERGLING",
+    "Value": "z\\u0001저글링으로 변태"
+  },
+  {
+    "id": "STR_MAKE_Z_HYDRALISK",
+    "Key": "STR_MAKE_Z_HYDRALISK",
+    "Value": "h\\u0001히드라리스크로 변태"
+  },
+  {
+    "id": "STR_MAKE_Z_ULTRALISK",
+    "Key": "STR_MAKE_Z_ULTRALISK",
+    "Value": "u\\u0001울트라리스크로 변태"
+  },
+  {
+    "id": "STR_MAKE_Z_DRONE",
+    "Key": "STR_MAKE_Z_DRONE",
+    "Value": "d\\u0001일벌레로 변태"
+  },
+  {
+    "id": "STR_MAKE_Z_OVERLORD",
+    "Key": "STR_MAKE_Z_OVERLORD",
+    "Value": "o\\u0001대군주로 변태"
+  },
+  {
+    "id": "STR_MAKE_Z_MUTALID",
+    "Key": "STR_MAKE_Z_MUTALID",
+    "Value": "m\\u0001뮤탈리스크로 변태"
+  },
+  {
+    "id": "STR_GUARDIAN_ASPECT",
+    "Key": "STR_GUARDIAN_ASPECT",
+    "Value": "g\\u0005수호군주"
+  },
+  {
+    "id": "STR_MAKE_Z_QUEEN",
+    "Key": "STR_MAKE_Z_QUEEN",
+    "Value": "q\\u0001여왕으로 변태"
+  },
+  {
+    "id": "STR_MAKE_Z_DEFILER",
+    "Key": "STR_MAKE_Z_DEFILER",
+    "Value": "f\\u0001파멸충으로 변태"
+  },
+  {
+    "id": "STR_MAKE_Z_AVENGER",
+    "Key": "STR_MAKE_Z_AVENGER",
+    "Value": "s\\u0001갈귀로 변태"
+  },
+  {
+    "id": "STR_MAKE_Z_INFESTED",
+    "Key": "STR_MAKE_Z_INFESTED",
+    "Value": "i\\u0001감염된 테란 훈련"
+  },
+  {
+    "id": "STR_MAKE_T_MARINE",
+    "Key": "STR_MAKE_T_MARINE",
+    "Value": "m\\u0001해병 훈련"
+  },
+  {
+    "id": "STR_MAKE_T_GHOST",
+    "Key": "STR_MAKE_T_GHOST",
+    "Value": "g\\u0001유령 훈련"
+  },
+  {
+    "id": "STR_MAKE_T_FIREBAT",
+    "Key": "STR_MAKE_T_FIREBAT",
+    "Value": "f\\u0001화염방사병 훈련"
+  },
+  {
+    "id": "STR_MAKE_T_VULTURE",
+    "Key": "STR_MAKE_T_VULTURE",
+    "Value": "v\\u0001시체매 생산"
+  },
+  {
+    "id": "STR_MAKE_T_GOLIATH",
+    "Key": "STR_MAKE_T_GOLIATH",
+    "Value": "g\\u0001골리앗 생산"
+  },
+  {
+    "id": "STR_MAKE_T_TANK",
+    "Key": "STR_MAKE_T_TANK",
+    "Value": "t\\u0001공성 전차 생산"
+  },
+  {
+    "id": "STR_MAKE_T_SCV",
+    "Key": "STR_MAKE_T_SCV",
+    "Value": "s\\u0001건설로봇 생산"
+  },
+  {
+    "id": "STR_MAKE_T_WRAITH",
+    "Key": "STR_MAKE_T_WRAITH",
+    "Value": "w\\u0001망령 생산"
+  },
+  {
+    "id": "STR_MAKE_T_VESSEL",
+    "Key": "STR_MAKE_T_VESSEL",
+    "Value": "v\\u0001과학선 생산"
+  },
+  {
+    "id": "STR_MAKE_T_DROPSHIP",
+    "Key": "STR_MAKE_T_DROPSHIP",
+    "Value": "d\\u0001수송선 생산"
+  },
+  {
+    "id": "STR_MAKE_T_BCRUISER",
+    "Key": "STR_MAKE_T_BCRUISER",
+    "Value": "b\\u0001전투순양함 생산"
+  },
+  {
+    "id": "STR_MAKE_T_NUKE",
+    "Key": "STR_MAKE_T_NUKE",
+    "Value": "n\\u0001핵 격납고 무장"
+  },
+  {
+    "id": "STR_MAKE_P_OBSERVER",
+    "Key": "STR_MAKE_P_OBSERVER",
+    "Value": "o\\u0001관측선 생산"
+  },
+  {
+    "id": "STR_MAKE_P_PROBE",
+    "Key": "STR_MAKE_P_PROBE",
+    "Value": "p\\u0001탐사정 생산"
+  },
+  {
+    "id": "STR_MAKE_P_ZEALOT",
+    "Key": "STR_MAKE_P_ZEALOT",
+    "Value": "z\\u0001광전사 소환"
+  },
+  {
+    "id": "STR_MAKE_P_DRAGOON",
+    "Key": "STR_MAKE_P_DRAGOON",
+    "Value": "d\\u0001용기병 소환"
+  },
+  {
+    "id": "STR_MAKE_P_TEMPLAR",
+    "Key": "STR_MAKE_P_TEMPLAR",
+    "Value": "t\\u0001고위 기사 소환"
+  },
+  {
+    "id": "STR_MAKE_P_SHUTTLE",
+    "Key": "STR_MAKE_P_SHUTTLE",
+    "Value": "s\\u0001왕복선 생산"
+  },
+  {
+    "id": "STR_MAKE_P_SCOUT",
+    "Key": "STR_MAKE_P_SCOUT",
+    "Value": "s\\u0001정찰기 소환"
+  },
+  {
+    "id": "STR_MAKE_P_ARBITER",
+    "Key": "STR_MAKE_P_ARBITER",
+    "Value": "a\\u0001중재자 소환"
+  },
+  {
+    "id": "STR_MAKE_P_CARRIER",
+    "Key": "STR_MAKE_P_CARRIER",
+    "Value": "c\\u0001우주모함 소환"
+  },
+  {
+    "id": "STR_MAKE_P_INTERCEPTOR",
+    "Key": "STR_MAKE_P_INTERCEPTOR",
+    "Value": "i\\u0001요격기 생산"
+  },
+  {
+    "id": "STR_MAKE_P_REAVER",
+    "Key": "STR_MAKE_P_REAVER",
+    "Value": "v\\u0001파괴자 생산"
+  },
+  {
+    "id": "STR_MAKE_P_SCARAB",
+    "Key": "STR_MAKE_P_SCARAB",
+    "Value": "r\\u0001갑충탄 생산"
+  },
+  {
+    "id": "STR_MAKE_N_BIKER",
+    "Key": "STR_MAKE_N_BIKER",
+    "Value": "b\\u0001바이커 용병 고용 (\\u0003B\\u0001)"
+  },
+  {
+    "id": "STR_MAKE_N_GUNSHIP",
+    "Key": "STR_MAKE_N_GUNSHIP",
+    "Value": "g\\u0001무장 헬기 용병 고용 (\\u0003G\\u0001)"
+  },
+  {
+    "id": "STR_MAKE_N_RAIDER",
+    "Key": "STR_MAKE_N_RAIDER",
+    "Value": "r\\u0001습격자 고용 (\\u0003R\\u0001)"
+  },
+  {
+    "id": "STR_BLD_HATCHERY",
+    "Key": "STR_BLD_HATCHERY",
+    "Value": "h\\u0001부화장으로 변이"
+  },
+  {
+    "id": "STR_BLD_CREEP_COLONY",
+    "Key": "STR_BLD_CREEP_COLONY",
+    "Value": "c\\u0001점막 군체로 변이"
+  },
+  {
+    "id": "STR_BLD_ZEXTRACTOR",
+    "Key": "STR_BLD_ZEXTRACTOR",
+    "Value": "e\\u0001추출장으로 변이"
+  },
+  {
+    "id": "STR_BLD_SPAWNING",
+    "Key": "STR_BLD_SPAWNING",
+    "Value": "s\\u0001산란못으로 변이"
+  },
+  {
+    "id": "STR_BLD_EVO_CHAMBER",
+    "Key": "STR_BLD_EVO_CHAMBER",
+    "Value": "v\\u0001진화실로 변이"
+  },
+  {
+    "id": "STR_BLD_HYDRA_DEN",
+    "Key": "STR_BLD_HYDRA_DEN",
+    "Value": "d\\u0001히드라리스크 굴로 변이"
+  },
+  {
+    "id": "STR_BLD_NYDUS",
+    "Key": "STR_BLD_NYDUS",
+    "Value": "n\\u0001땅굴관으로 변이"
+  },
+  {
+    "id": "STR_BLD_SPIRE",
+    "Key": "STR_BLD_SPIRE",
+    "Value": "s\\u0001둥지탑으로 변이"
+  },
+  {
+    "id": "STR_BLD_NEST",
+    "Key": "STR_BLD_NEST",
+    "Value": "q\\u0001여왕의 둥지로 변이"
+  },
+  {
+    "id": "STR_BLD_ULTRA_CAVERN",
+    "Key": "STR_BLD_ULTRA_CAVERN",
+    "Value": "u\\u0001울트라리스크 동굴로 변이"
+  },
+  {
+    "id": "STR_BLD_DEFILER_MOUND",
+    "Key": "STR_BLD_DEFILER_MOUND",
+    "Value": "d\\u0001파멸충 언덕으로 변이"
+  },
+  {
+    "id": "STR_BLD_LAIR",
+    "Key": "STR_BLD_LAIR",
+    "Value": "l\\u0001번식지로 변이"
+  },
+  {
+    "id": "STR_BLD_HIVE",
+    "Key": "STR_BLD_HIVE",
+    "Value": "h\\u0001군락으로 변이"
+  },
+  {
+    "id": "STR_BLD_GREATERSPIRE",
+    "Key": "STR_BLD_GREATERSPIRE",
+    "Value": "g\\u0001거대 둥지탑으로 변이"
+  },
+  {
+    "id": "STR_BLD_SPORE_COLONY",
+    "Key": "STR_BLD_SPORE_COLONY",
+    "Value": "s\\u0001포자 군체로 변이"
+  },
+  {
+    "id": "STR_BLD_SUNKEN_COLONY",
+    "Key": "STR_BLD_SUNKEN_COLONY",
+    "Value": "u\\u0001지하 군체로 변이"
+  },
+  {
+    "id": "STR_NYDUS_EXIT",
+    "Key": "STR_NYDUS_EXIT",
+    "Value": "n\\u0007땅굴관 출구 배치"
+  },
+  {
+    "id": "STR_BLD_NEXUS",
+    "Key": "STR_BLD_NEXUS",
+    "Value": "n\\u0001연결체 소환"
+  },
+  {
+    "id": "STR_BLD_PYLON",
+    "Key": "STR_BLD_PYLON",
+    "Value": "p\\u0001수정탑 소환"
+  },
+  {
+    "id": "STR_BLD_ASSIMILATOR",
+    "Key": "STR_BLD_ASSIMILATOR",
+    "Value": "a\\u0001융화소 소환"
+  },
+  {
+    "id": "STR_BLD_GATEWAY",
+    "Key": "STR_BLD_GATEWAY",
+    "Value": "g\\u0001관문 소환"
+  },
+  {
+    "id": "STR_BLD_FORGE",
+    "Key": "STR_BLD_FORGE",
+    "Value": "f\\u0001제련소 소환"
+  },
+  {
+    "id": "STR_BLD_PHOTON",
+    "Key": "STR_BLD_PHOTON",
+    "Value": "c\\u0001광자포 소환"
+  },
+  {
+    "id": "STR_BLD_CYBER_CORE",
+    "Key": "STR_BLD_CYBER_CORE",
+    "Value": "y\\u0001인공제어소 소환"
+  },
+  {
+    "id": "STR_BLD_SHIELDBATT",
+    "Key": "STR_BLD_SHIELDBATT",
+    "Value": "b\\u0001보호막 충전소 소환"
+  },
+  {
+    "id": "STR_BLD_ROBOTICS",
+    "Key": "STR_BLD_ROBOTICS",
+    "Value": "r\\u0001로봇공학 시설 소환"
+  },
+  {
+    "id": "STR_BLD_OBSERVATORY",
+    "Key": "STR_BLD_OBSERVATORY",
+    "Value": "o\\u0001관측소 소환"
+  },
+  {
+    "id": "STR_BLD_CITADEL",
+    "Key": "STR_BLD_CITADEL",
+    "Value": "c\\u0001아둔의 성지 소환"
+  },
+  {
+    "id": "STR_BLD_ARCHIVES",
+    "Key": "STR_BLD_ARCHIVES",
+    "Value": "t\\u0001기사단 기록보관소 소환"
+  },
+  {
+    "id": "STR_BLD_STARGATE",
+    "Key": "STR_BLD_STARGATE",
+    "Value": "s\\u0001우주관문 소환"
+  },
+  {
+    "id": "STR_BLD_FLEET_BEACON",
+    "Key": "STR_BLD_FLEET_BEACON",
+    "Value": "f\\u0001함대 신호소 소환"
+  },
+  {
+    "id": "STR_BLD_TRIBUNAL",
+    "Key": "STR_BLD_TRIBUNAL",
+    "Value": "a\\u0001중재소 소환"
+  },
+  {
+    "id": "STR_BLD_ROBOTICS_BAY",
+    "Key": "STR_BLD_ROBOTICS_BAY",
+    "Value": "b\\u0001로봇공학 지원소 소환"
+  },
+  {
+    "id": "STR_BLD_TCOMMANDCTR",
+    "Key": "STR_BLD_TCOMMANDCTR",
+    "Value": "c\\u0001사령부 건설"
+  },
+  {
+    "id": "STR_BLD_DEPOT",
+    "Key": "STR_BLD_DEPOT",
+    "Value": "s\\u0001보급고 건설"
+  },
+  {
+    "id": "STR_BLD_REFINERY",
+    "Key": "STR_BLD_REFINERY",
+    "Value": "r\\u0001정제소 건설"
+  },
+  {
+    "id": "STR_BLD_BARRACKS",
+    "Key": "STR_BLD_BARRACKS",
+    "Value": "b\\u0001병영 건설"
+  },
+  {
+    "id": "STR_BLD_ENGINEERING",
+    "Key": "STR_BLD_ENGINEERING",
+    "Value": "e\\u0001공학 연구소 건설"
+  },
+  {
+    "id": "STR_BLD_TURRET",
+    "Key": "STR_BLD_TURRET",
+    "Value": "t\\u0001미사일 포탑 건설"
+  },
+  {
+    "id": "STR_BLD_ACADEMY",
+    "Key": "STR_BLD_ACADEMY",
+    "Value": "a\\u0001사관학교 건설"
+  },
+  {
+    "id": "STR_BLD_PILLBOX",
+    "Key": "STR_BLD_PILLBOX",
+    "Value": "u\\u0001벙커 건설"
+  },
+  {
+    "id": "STR_BLD_FACTORY",
+    "Key": "STR_BLD_FACTORY",
+    "Value": "f\\u0001군수공장 건설"
+  },
+  {
+    "id": "STR_BLD_TSTARPORT",
+    "Key": "STR_BLD_TSTARPORT",
+    "Value": "s\\u0001우주공항 건설"
+  },
+  {
+    "id": "STR_BLD_SCIENCE_FAC",
+    "Key": "STR_BLD_SCIENCE_FAC",
+    "Value": "i\\u0001과학 시설 건설"
+  },
+  {
+    "id": "STR_BLD_ARMORY",
+    "Key": "STR_BLD_ARMORY",
+    "Value": "a\\u0001무기고 건설"
+  },
+  {
+    "id": "STR_BLD_COMSAT",
+    "Key": "STR_BLD_COMSAT",
+    "Value": "c\\u0001통신 위성 중계소 건설"
+  },
+  {
+    "id": "STR_BLD_SILO",
+    "Key": "STR_BLD_SILO",
+    "Value": "n\\u0001핵 격납고 건설"
+  },
+  {
+    "id": "STR_BLD_DOCKS",
+    "Key": "STR_BLD_DOCKS",
+    "Value": "c\\u0001관제탑 건설"
+  },
+  {
+    "id": "STR_BLD_COVERT_OPS",
+    "Key": "STR_BLD_COVERT_OPS",
+    "Value": "c\\u0001비밀 작전실 건설 "
+  },
+  {
+    "id": "STR_BLD_PHYSICS",
+    "Key": "STR_BLD_PHYSICS",
+    "Value": "p\\u0001물리 연구실 건설"
+  },
+  {
+    "id": "STR_BLD_MACHINE",
+    "Key": "STR_BLD_MACHINE",
+    "Value": "c\\u0001기계실 건설"
+  },
+  {
+    "id": "STR_MOVE",
+    "Key": "STR_MOVE",
+    "Value": "m\\u0007이동"
+  },
+  {
+    "id": "STR_STOP",
+    "Key": "STR_STOP",
+    "Value": "s\\u0007정지"
+  },
+  {
+    "id": "STR_ATTACK",
+    "Key": "STR_ATTACK",
+    "Value": "a\\u0007공격"
+  },
+  {
+    "id": "STR_PATROL",
+    "Key": "STR_PATROL",
+    "Value": "p\\u0007순찰"
+  },
+  {
+    "id": "STR_HOLD",
+    "Key": "STR_HOLD",
+    "Value": "h\\u0007위치 사수"
+  },
+  {
+    "id": "STR_WAYPOINTS",
+    "Key": "STR_WAYPOINTS",
+    "Value": "w\\u0007이동 지점"
+  },
+  {
+    "id": "STR_LAND",
+    "Key": "STR_LAND",
+    "Value": "l\\u0007착륙"
+  },
+  {
+    "id": "STR_LIFTOFF",
+    "Key": "STR_LIFTOFF",
+    "Value": "l\\u0007이륙"
+  },
+  {
+    "id": "STR_RALLYPOINT",
+    "Key": "STR_RALLYPOINT",
+    "Value": "r\\u0007집결 지점 설정"
+  },
+  {
+    "id": "STR_RECHARGE",
+    "Key": "STR_RECHARGE",
+    "Value": "r\\u0007보호막 재충전"
+  },
+  {
+    "id": "STR_SELECT_LARVA",
+    "Key": "STR_SELECT_LARVA",
+    "Value": "s\\u0007애벌레 선택"
+  },
+  {
+    "id": "STR_GATHER",
+    "Key": "STR_GATHER",
+    "Value": "g\\u0007채집"
+  },
+  {
+    "id": "STR_RETURN",
+    "Key": "STR_RETURN",
+    "Value": "c\\u0007자원 반환"
+  },
+  {
+    "id": "STR_REPAIR",
+    "Key": "STR_REPAIR",
+    "Value": "r\\u0007수리"
+  },
+  {
+    "id": "STR_BUILD",
+    "Key": "STR_BUILD",
+    "Value": "b\\u0007구조물 건설"
+  },
+  {
+    "id": "STR_BLD_ADVANCED",
+    "Key": "STR_BLD_ADVANCED",
+    "Value": "v\\u0007고급 구조물 건설"
+  },
+  {
+    "id": "STR_MUTATE",
+    "Key": "STR_MUTATE",
+    "Value": "b\\u0007기본 변이"
+  },
+  {
+    "id": "STR_MUTATE_ADV",
+    "Key": "STR_MUTATE_ADV",
+    "Value": "v\\u0007고급 변이"
+  },
+  {
+    "id": "STR_MORPH_ADV",
+    "Key": "STR_MORPH_ADV",
+    "Value": "v\\u0007고급 변태"
+  },
+  {
+    "id": "STR_PICKUP",
+    "Key": "STR_PICKUP",
+    "Value": "l\\u0007들이기"
+  },
+  {
+    "id": "STR_UNLOAD",
+    "Key": "STR_UNLOAD",
+    "Value": "u\\u0007모두 내보내기"
+  },
+  {
+    "id": "STR_NUKESTRIKE",
+    "Key": "STR_NUKESTRIKE",
+    "Value": "n\\u0007핵 공격"
+  },
+  {
+    "id": "STR_PLACE_COP",
+    "Key": "STR_PLACE_COP",
+    "Value": "p\\u0007COP 배치"
+  },
+  {
+    "id": "STR_CANCELESC",
+    "Key": "STR_CANCELESC",
+    "Value": "\\u001B\\u0007\\u0003ESC\\u0001 - 취소"
+  },
+  {
+    "id": "STR_CANCEL",
+    "Key": "STR_CANCEL",
+    "Value": "\\u001B\\u0007\\u0003ESC\\u0001 - 취소"
+  },
+  {
+    "id": "STR_CANCELCONSTRUCTION",
+    "Key": "STR_CANCELCONSTRUCTION",
+    "Value": "\\u001B\\u0007\\u0003ESC\\u0001 - 건설 취소"
+  },
+  {
+    "id": "STR_CANCELUNIT",
+    "Key": "STR_CANCELUNIT",
+    "Value": "\\u001B\\u0007\\u0003ESC\\u0001 - 유닛 훈련 취소"
+  },
+  {
+    "id": "STR_CANCELUPGRADE",
+    "Key": "STR_CANCELUPGRADE",
+    "Value": "\\u001B\\u0007\\u0003ESC\\u0001 - 업그레이드 취소"
+  },
+  {
+    "id": "STR_CANCELRESEARCH",
+    "Key": "STR_CANCELRESEARCH",
+    "Value": "\\u001B\\u0007\\u0003ESC\\u0001 - 연구 취소"
+  },
+  {
+    "id": "STR_CANCELLAST",
+    "Key": "STR_CANCELLAST",
+    "Value": "\\u001B\\u0007\\u0003ESC\\u0001 - 취소"
+  },
+  {
+    "id": "STR_CANCELADDON",
+    "Key": "STR_CANCELADDON",
+    "Value": "\\u001B\\u0007\\u0003ESC\\u0001 - 부속건물 취소"
+  },
+  {
+    "id": "STR_EGGREVERT",
+    "Key": "STR_EGGREVERT",
+    "Value": "\\u001B\\u0007\\u0003ESC\\u0001 - 변태 취소"
+  },
+  {
+    "id": "STR_DRONEREVERT",
+    "Key": "STR_DRONEREVERT",
+    "Value": "\\u001B\\u0007\\u0003ESC\\u0001 - 변이 취소"
+  },
+  {
+    "id": "STR_DRONECANCELINFESTATION",
+    "Key": "STR_DRONECANCELINFESTATION",
+    "Value": "\\u001B\\u0007\\u0003ESC\\u0001 - 감염 취소"
+  },
+  {
+    "id": "STR_CANCELBLDGMORPH",
+    "Key": "STR_CANCELBLDGMORPH",
+    "Value": "\\u001B\\u0007\\u0003ESC\\u0001 - 변이 취소"
+  },
+  {
+    "id": "STR_CANCELNUKESTRIKE",
+    "Key": "STR_CANCELNUKESTRIKE",
+    "Value": "\\u001B\\u0007\\u0003ESC\\u0001 - 핵 공격 취소"
+  },
+  {
+    "id": "STR_HALT_CONSTRUCTION",
+    "Key": "STR_HALT_CONSTRUCTION",
+    "Value": "\\u001B\\u0007\\u0003ESC\\u0001 - 건설 중지"
+  },
+  {
+    "id": "STR_GHOST_REQ",
+    "Key": "STR_GHOST_REQ",
+    "Value": "유령 요구 사항:\\n   사관학교\\n   과학 시설 및\\n   부착된 비밀 작전실"
+  },
+  {
+    "id": "STR_FIREBAT_REQ",
+    "Key": "STR_FIREBAT_REQ",
+    "Value": "화염방사병 요구 사항:\\n   사관학교"
+  },
+  {
+    "id": "STR_GOLIATH_REQ",
+    "Key": "STR_GOLIATH_REQ",
+    "Value": "골리앗 요구 사항:\\n   무기고"
+  },
+  {
+    "id": "STR_TANK_REQ",
+    "Key": "STR_TANK_REQ",
+    "Value": "공성 전차 요구 사항:\\n   부착된 기계실"
+  },
+  {
+    "id": "STR_VESSEL_REQ",
+    "Key": "STR_VESSEL_REQ",
+    "Value": "과학선 요구 사항:\\n   부착된 관제탑\\n   과학 시설"
+  },
+  {
+    "id": "STR_DROPSHIP_REQ",
+    "Key": "STR_DROPSHIP_REQ",
+    "Value": "수송선 요구 사항:\\n   부착된 관제탑"
+  },
+  {
+    "id": "STR_BCRUISER_REQ",
+    "Key": "STR_BCRUISER_REQ",
+    "Value": "전투순양함 요구 사항:\\n   부착된 관제탑\\n   과학 시설 및\\n   부착된 물리 연구실"
+  },
+  {
+    "id": "STR_COMSAT_REQ",
+    "Key": "STR_COMSAT_REQ",
+    "Value": "통신 위성 중계소 요구 사항:\\n   사관학교"
+  },
+  {
+    "id": "STR_SILO_REQ",
+    "Key": "STR_SILO_REQ",
+    "Value": "핵 격납고 요구 사항:\\n   과학 시설 및\\n   부착된 비밀 작전실"
+  },
+  {
+    "id": "STR_BARRACKS_REQ",
+    "Key": "STR_BARRACKS_REQ",
+    "Value": "병영 건설 조건:\\n   사령부"
+  },
+  {
+    "id": "STR_ACADEMY_REQ",
+    "Key": "STR_ACADEMY_REQ",
+    "Value": "사관학교 건설 조건:\\n   병영"
+  },
+  {
+    "id": "STR_FACTORY_REQ",
+    "Key": "STR_FACTORY_REQ",
+    "Value": "군수공장 요구 조건:\\n   병영"
+  },
+  {
+    "id": "STR_STARPORT_REQ",
+    "Key": "STR_STARPORT_REQ",
+    "Value": "우주공항 요구 사항:\\n   군수공장"
+  },
+  {
+    "id": "STR_SCIENCE_FAC_REQ",
+    "Key": "STR_SCIENCE_FAC_REQ",
+    "Value": "과학 시설 요구 사항:\\n   우주공항"
+  },
+  {
+    "id": "STR_ENGINEERING_REQ",
+    "Key": "STR_ENGINEERING_REQ",
+    "Value": "공학 연구소 요구 사항:\\n   사령부"
+  },
+  {
+    "id": "STR_ARMORY_REQ",
+    "Key": "STR_ARMORY_REQ",
+    "Value": "무기고 건설 조건:\\n 군수공장"
+  },
+  {
+    "id": "STR_TURRET_REQ",
+    "Key": "STR_TURRET_REQ",
+    "Value": "미사일 포탑 요구 사항:\\n   공학 연구소"
+  },
+  {
+    "id": "STR_PILLBOX_REQ",
+    "Key": "STR_PILLBOX_REQ",
+    "Value": "벙커 요구 사항:\\n   병영"
+  },
+  {
+    "id": "STR_DRAGOON_REQ",
+    "Key": "STR_DRAGOON_REQ",
+    "Value": "용기병 요구 사항:\\n   인공제어소"
+  },
+  {
+    "id": "STR_TEMPLAR_REQ",
+    "Key": "STR_TEMPLAR_REQ",
+    "Value": "고위 기사 요구 사항:\\n   기사단 기록보관소"
+  },
+  {
+    "id": "STR_ARBITER_REQ",
+    "Key": "STR_ARBITER_REQ",
+    "Value": "중재자 요구 사항:\\n   중재소"
+  },
+  {
+    "id": "STR_CARRIER_REQ",
+    "Key": "STR_CARRIER_REQ",
+    "Value": "우주모함 요구 사항:\\n   함대 신호소"
+  },
+  {
+    "id": "STR_REAVER_REQ",
+    "Key": "STR_REAVER_REQ",
+    "Value": "파괴자 요구 사항:\\n   로봇공학 지원소"
+  },
+  {
+    "id": "STR_OBSERVER_REQ",
+    "Key": "STR_OBSERVER_REQ",
+    "Value": "관측선 요구 사항:\\n   관측소"
+  },
+  {
+    "id": "STR_GATEWAY_REQ",
+    "Key": "STR_GATEWAY_REQ",
+    "Value": "관문 요구 사항:\\n   연결체"
+  },
+  {
+    "id": "STR_FORGE_REQ",
+    "Key": "STR_FORGE_REQ",
+    "Value": "제련소 요구 사항:\\n   연결체"
+  },
+  {
+    "id": "STR_PHOTONBATT_REQ",
+    "Key": "STR_PHOTONBATT_REQ",
+    "Value": "광자포 요구 사항:\\n   제련소"
+  },
+  {
+    "id": "STR_SHIELDBATT_REQ",
+    "Key": "STR_SHIELDBATT_REQ",
+    "Value": "보호막 충전소 요구 사항:\\n   관문"
+  },
+  {
+    "id": "STR_CYBER_CORE_REQ",
+    "Key": "STR_CYBER_CORE_REQ",
+    "Value": "인공제어소 요구 사항:\\n   관문"
+  },
+  {
+    "id": "STR_ROBOTICS_REQ",
+    "Key": "STR_ROBOTICS_REQ",
+    "Value": "로봇공학 시설 요구 사항:\\n   인공제어소"
+  },
+  {
+    "id": "STR_STARGATE_REQ",
+    "Key": "STR_STARGATE_REQ",
+    "Value": "우주관문 요구 사항:\\n   인공제어소"
+  },
+  {
+    "id": "STR_CITADEL_REQ",
+    "Key": "STR_CITADEL_REQ",
+    "Value": "아둔의 성지 요구 사항:\\n   인공제어소"
+  },
+  {
+    "id": "STR_OBSERVATORY_REQ",
+    "Key": "STR_OBSERVATORY_REQ",
+    "Value": "관측소 요구 사항:\\n   로봇공학 시설"
+  },
+  {
+    "id": "STR_ROBOTICS_BAY_REQ",
+    "Key": "STR_ROBOTICS_BAY_REQ",
+    "Value": "로봇공학 지원소 요구 사항:\\n   로봇공학 시설"
+  },
+  {
+    "id": "STR_FLEET_BEACON_REQ",
+    "Key": "STR_FLEET_BEACON_REQ",
+    "Value": "함대 신호소 요구 사항:\\n   우주관문"
+  },
+  {
+    "id": "STR_ARCHIVES_REQ",
+    "Key": "STR_ARCHIVES_REQ",
+    "Value": "기사단 기록보관소 요구 사항:\\n   아둔의 성지"
+  },
+  {
+    "id": "STR_TRIBUNAL_REQ",
+    "Key": "STR_TRIBUNAL_REQ",
+    "Value": "중재소 요구 사항:\\n   우주관문\\n   기사단 기록보관소"
+  },
+  {
+    "id": "STR_ZERGLING_REQ",
+    "Key": "STR_ZERGLING_REQ",
+    "Value": "저글링 요구 사항:\\n   산란못"
+  },
+  {
+    "id": "STR_HYDRALISK_REQ",
+    "Key": "STR_HYDRALISK_REQ",
+    "Value": "히드라 요구 사항:\\n   히드라리스크 굴"
+  },
+  {
+    "id": "STR_ULTRALISK_REQ",
+    "Key": "STR_ULTRALISK_REQ",
+    "Value": "울트라리스크 요구 사항:\\n   울트라리스크 동굴"
+  },
+  {
+    "id": "STR_MUTALID_REQ",
+    "Key": "STR_MUTALID_REQ",
+    "Value": "뮤탈리스크 요구 사항:\\n   둥지탑"
+  },
+  {
+    "id": "STR_GUARDIAN_REQ",
+    "Key": "STR_GUARDIAN_REQ",
+    "Value": "수호군주 요구 사항:\\n   거대 둥지탑"
+  },
+  {
+    "id": "STR_QUEEN_REQ",
+    "Key": "STR_QUEEN_REQ",
+    "Value": "여왕 요구 사항:\\n   여왕의 둥지"
+  },
+  {
+    "id": "STR_DEFILER_REQ",
+    "Key": "STR_DEFILER_REQ",
+    "Value": "파멸충 요구 사항:\\n   파멸충 언덕"
+  },
+  {
+    "id": "STR_AVENGER_REQ",
+    "Key": "STR_AVENGER_REQ",
+    "Value": "갈귀 요구 사항:\\n   둥지탑"
+  },
+  {
+    "id": "STR_LAIR_REQ",
+    "Key": "STR_LAIR_REQ",
+    "Value": "번식지 요구 사항:\\n   산란못"
+  },
+  {
+    "id": "STR_HIVE_REQ",
+    "Key": "STR_HIVE_REQ",
+    "Value": "군락 요구 사항:\\n   여왕의 둥지"
+  },
+  {
+    "id": "STR_NYDUS_REQ",
+    "Key": "STR_NYDUS_REQ",
+    "Value": "땅굴관 요구 사항:\\n   군락"
+  },
+  {
+    "id": "STR_HYDRA_DEN_REQ",
+    "Key": "STR_HYDRA_DEN_REQ",
+    "Value": "히드라리스크 굴 요구 사항:\\n   산란못"
+  },
+  {
+    "id": "STR_SPIRE_REQ",
+    "Key": "STR_SPIRE_REQ",
+    "Value": "둥지탑 요구 사항:\\n   번식지"
+  },
+  {
+    "id": "STR_GREATERSPIRE_REQ",
+    "Key": "STR_GREATERSPIRE_REQ",
+    "Value": "거대 둥지탑 요구 사항:\\n   군락"
+  },
+  {
+    "id": "STR_NEST_REQ",
+    "Key": "STR_NEST_REQ",
+    "Value": "여왕의 둥지 요구 사항:\\n   번식지"
+  },
+  {
+    "id": "STR_EVO_CHAMBER_REQ",
+    "Key": "STR_EVO_CHAMBER_REQ",
+    "Value": "진화실 요구 사항:\\n   부화장"
+  },
+  {
+    "id": "STR_ULTRA_CAVERN_REQ",
+    "Key": "STR_ULTRA_CAVERN_REQ",
+    "Value": "울트라리스크 동굴 요구 사항:\\n   군락"
+  },
+  {
+    "id": "STR_DEFILER_MOUND_REQ",
+    "Key": "STR_DEFILER_MOUND_REQ",
+    "Value": "파멸충 언덕 요구 사항:\\n   군락"
+  },
+  {
+    "id": "STR_SPAWNING_REQ",
+    "Key": "STR_SPAWNING_REQ",
+    "Value": "산란못 요구 사항:\\n   부화장"
+  },
+  {
+    "id": "STR_SPORE_REQ",
+    "Key": "STR_SPORE_REQ",
+    "Value": "포자 군체 요구 사항:\\n   진화실"
+  },
+  {
+    "id": "STR_SUNKEN_REQ",
+    "Key": "STR_SUNKEN_REQ",
+    "Value": "지하 군체 요구 사항:\\n   산란못"
+  },
+  {
+    "id": "STR_CARRIERATTACK_REQ",
+    "Key": "STR_CARRIERATTACK_REQ",
+    "Value": "우주모함 공격:\\n   요격기 생산"
+  },
+  {
+    "id": "STR_REAVERATTACK_REQ",
+    "Key": "STR_REAVERATTACK_REQ",
+    "Value": "파괴자 공격:\\n   갑충탄 생산"
+  },
+  {
+    "id": "STR_NUKE_REQ",
+    "Key": "STR_NUKE_REQ",
+    "Value": "핵 공격 요구 사항:\\n   무장한 핵 격납고"
+  },
+  {
+    "id": "STR_NOT_IMPLEMENTED",
+    "Key": "STR_NOT_IMPLEMENTED",
+    "Value": "구현 안 됨"
+  },
+  {
+    "id": "STR_MARK",
+    "Key": "STR_MARK",
+    "Value": "mk"
+  },
+  {
+    "id": "STR_KILLS_LBL",
+    "Key": "STR_KILLS_LBL",
+    "Value": "처치:"
+  },
+  {
+    "id": "STR_UPGRADING_LBL",
+    "Key": "STR_UPGRADING_LBL",
+    "Value": "진화 중"
+  },
+  {
+    "id": "STR_UPGRADING_LBL-1",
+    "Key": "STR_UPGRADING_LBL-1",
+    "Value": "업그레이드 중"
+  },
+  {
+    "id": "STR_UPGRADING_LBL-2",
+    "Key": "STR_UPGRADING_LBL-2",
+    "Value": "업그레이드 중"
+  },
+  {
+    "id": "STR_RESEARCHING_LBL",
+    "Key": "STR_RESEARCHING_LBL",
+    "Value": "진화 중"
+  },
+  {
+    "id": "STR_RESEARCHING_LBL-1",
+    "Key": "STR_RESEARCHING_LBL-1",
+    "Value": "연구 중"
+  },
+  {
+    "id": "STR_RESEARCHING_LBL-2",
+    "Key": "STR_RESEARCHING_LBL-2",
+    "Value": "개발 중"
+  },
+  {
+    "id": "STR_BUILDING_LBL",
+    "Key": "STR_BUILDING_LBL",
+    "Value": "변태 중"
+  },
+  {
+    "id": "STR_BUILDING_LBL-1",
+    "Key": "STR_BUILDING_LBL-1",
+    "Value": "생산 중"
+  },
+  {
+    "id": "STR_BUILDING_LBL-2",
+    "Key": "STR_BUILDING_LBL-2",
+    "Value": "차원 관문 개방"
+  },
+  {
+    "id": "STR_BUILDING2_LBL",
+    "Key": "STR_BUILDING2_LBL",
+    "Value": "변태 중"
+  },
+  {
+    "id": "STR_BUILDING2_LBL-1",
+    "Key": "STR_BUILDING2_LBL-1",
+    "Value": "생산 중"
+  },
+  {
+    "id": "STR_BUILDING2_LBL-2",
+    "Key": "STR_BUILDING2_LBL-2",
+    "Value": "생산 중"
+  },
+  {
+    "id": "STR_DAMAGE_LBL",
+    "Key": "STR_DAMAGE_LBL",
+    "Value": "공격력:"
+  },
+  {
+    "id": "STR_ARMOR_LBL",
+    "Key": "STR_ARMOR_LBL",
+    "Value": "장갑:"
+  },
+  {
+    "id": "STR_SHIELD_LBL",
+    "Key": "STR_SHIELD_LBL",
+    "Value": "보호막:"
+  },
+  {
+    "id": "STR_MINING_DELAY_LBL",
+    "Key": "STR_MINING_DELAY_LBL",
+    "Value": "채광 지연:"
+  },
+  {
+    "id": "STR_PRODUCTION_LBL",
+    "Key": "STR_PRODUCTION_LBL",
+    "Value": "생산\\u0020"
+  },
+  {
+    "id": "STR_UNIT_PTR",
+    "Key": "STR_UNIT_PTR",
+    "Value": "유닛 PTR:"
+  },
+  {
+    "id": "STR_CURR_ORDER",
+    "Key": "STR_CURR_ORDER",
+    "Value": "현재 순서:"
+  },
+  {
+    "id": "STR_DELAY_ORDER",
+    "Key": "STR_DELAY_ORDER",
+    "Value": "다음:"
+  },
+  {
+    "id": "STR_PERCENT",
+    "Key": "STR_PERCENT",
+    "Value": "% 완료"
+  },
+  {
+    "id": "STR_ORDER_LBL",
+    "Key": "STR_ORDER_LBL",
+    "Value": "명령:"
+  },
+  {
+    "id": "STR_ADDINGON_LBL",
+    "Key": "STR_ADDINGON_LBL",
+    "Value": "변이 중"
+  },
+  {
+    "id": "STR_ADDINGON_LBL-1",
+    "Key": "STR_ADDINGON_LBL-1",
+    "Value": "부착 중"
+  },
+  {
+    "id": "STR_ADDINGON_LBL-2",
+    "Key": "STR_ADDINGON_LBL-2",
+    "Value": "차원 균열 개방"
+  },
+  {
+    "id": "STR_SUMMONING_LBL",
+    "Key": "STR_SUMMONING_LBL",
+    "Value": "소환 중"
+  },
+  {
+    "id": "STR_INTERCEPTORS_LBL",
+    "Key": "STR_INTERCEPTORS_LBL",
+    "Value": "요격기"
+  },
+  {
+    "id": "STR_SCARABS_LBL",
+    "Key": "STR_SCARABS_LBL",
+    "Value": "갑충탄"
+  },
+  {
+    "id": "STR_NUKES_LBL",
+    "Key": "STR_NUKES_LBL",
+    "Value": "핵"
+  },
+  {
+    "id": "STR_MINES_LBL",
+    "Key": "STR_MINES_LBL",
+    "Value": "거미 지뢰"
+  },
+  {
+    "id": "STR_NEXTLVL",
+    "Key": "STR_NEXTLVL",
+    "Value": "다음 레벨:"
+  },
+  {
+    "id": "STR_MINERALS_LBL",
+    "Key": "STR_MINERALS_LBL",
+    "Value": "광물:"
+  },
+  {
+    "id": "STR_GASES_LBL",
+    "Key": "STR_GASES_LBL",
+    "Value": "베스핀 가스:"
+  },
+  {
+    "id": "STR_DEPLETED",
+    "Key": "STR_DEPLETED",
+    "Value": "소진됨"
+  },
+  {
+    "id": "STR_CONSTRUCTION",
+    "Key": "STR_CONSTRUCTION",
+    "Value": "변이 중"
+  },
+  {
+    "id": "STR_CONSTRUCTION-1",
+    "Key": "STR_CONSTRUCTION-1",
+    "Value": "건설 중"
+  },
+  {
+    "id": "STR_CONSTRUCTION-2",
+    "Key": "STR_CONSTRUCTION-2",
+    "Value": "차원 균열 개방"
+  },
+  {
+    "id": "STR_CANCEL_UNIT_s",
+    "Key": "STR_CANCEL_UNIT_s",
+    "Value": "변태 취소 (%s)"
+  },
+  {
+    "id": "STR_CANCEL_UNIT_s-1",
+    "Key": "STR_CANCEL_UNIT_s-1",
+    "Value": "건설 취소 (%s)"
+  },
+  {
+    "id": "STR_CANCEL_UNIT_s-2",
+    "Key": "STR_CANCEL_UNIT_s-2",
+    "Value": "소환 취소 (%s)"
+  },
+  {
+    "id": "STR_CANCEL_UPGRADE",
+    "Key": "STR_CANCEL_UPGRADE",
+    "Value": "업그레이드 취소"
+  },
+  {
+    "id": "STR_CANCEL_RESEARCH",
+    "Key": "STR_CANCEL_RESEARCH",
+    "Value": "연구 취소"
+  },
+  {
+    "id": "STR_CANCEL_MORPH",
+    "Key": "STR_CANCEL_MORPH",
+    "Value": "변태 취소"
+  },
+  {
+    "id": "STR_UNLOAD_UNIT_s",
+    "Key": "STR_UNLOAD_UNIT_s",
+    "Value": "유닛 내보내기 (%s)"
+  },
+  {
+    "id": "STR_MULTISELECT_HELP",
+    "Key": "STR_MULTISELECT_HELP",
+    "Value": "클릭: 유닛 선택\\nShift+클릭: 유닛 선택 해제\\nCtrl+클릭: 유닛 유형 선택"
+  },
+  {
+    "id": "STR_SHOW_TERRAIN",
+    "Key": "STR_SHOW_TERRAIN",
+    "Value": "미니맵에 지형 보이기 (\\u0003Tab\\u0001)"
+  },
+  {
+    "id": "STR_HIDE_TERRAIN",
+    "Key": "STR_HIDE_TERRAIN",
+    "Value": "미니맵에서 지형 숨기기 (\\u0003Tab\\u0001)"
+  },
+  {
+    "id": "STR_DIPLOMACY",
+    "Key": "STR_DIPLOMACY",
+    "Value": "외교"
+  },
+  {
+    "id": "STR_MESSAGING",
+    "Key": "STR_MESSAGING",
+    "Value": "메시지"
+  },
+  {
+    "id": "STR_GAMEMENU_HELP",
+    "Key": "STR_GAMEMENU_HELP",
+    "Value": "게임 메뉴 (\\u0003F10\\u0001)"
+  },
+  {
+    "id": "STR_UNI_FOOD_PROVIDED",
+    "Key": "STR_UNI_FOOD_PROVIDED",
+    "Value": "제어 제공:"
+  },
+  {
+    "id": "STR_UNI_FOOD_PROVIDED-1",
+    "Key": "STR_UNI_FOOD_PROVIDED-1",
+    "Value": "보급품 공급:"
+  },
+  {
+    "id": "STR_UNI_FOOD_PROVIDED-2",
+    "Key": "STR_UNI_FOOD_PROVIDED-2",
+    "Value": "사이오닉 공급:"
+  },
+  {
+    "id": "STR_FOOD_PROVIDED",
+    "Key": "STR_FOOD_PROVIDED",
+    "Value": "총 제어:"
+  },
+  {
+    "id": "STR_FOOD_PROVIDED-1",
+    "Key": "STR_FOOD_PROVIDED-1",
+    "Value": "총 보급품:"
+  },
+  {
+    "id": "STR_FOOD_PROVIDED-2",
+    "Key": "STR_FOOD_PROVIDED-2",
+    "Value": "총 사이오닉:"
+  },
+  {
+    "id": "STR_FOOD_USED",
+    "Key": "STR_FOOD_USED",
+    "Value": "제어 사용:"
+  },
+  {
+    "id": "STR_FOOD_USED-1",
+    "Key": "STR_FOOD_USED-1",
+    "Value": "사용한 보급품"
+  },
+  {
+    "id": "STR_FOOD_USED-2",
+    "Key": "STR_FOOD_USED-2",
+    "Value": "사용한 사이오닉:"
+  },
+  {
+    "id": "STR_FOOD_MAX",
+    "Key": "STR_FOOD_MAX",
+    "Value": "최대 제어:"
+  },
+  {
+    "id": "STR_FOOD_MAX-1",
+    "Key": "STR_FOOD_MAX-1",
+    "Value": "보급품 한도:"
+  },
+  {
+    "id": "STR_FOOD_MAX-2",
+    "Key": "STR_FOOD_MAX-2",
+    "Value": "사이오닉 한도:"
+  },
+  {
+    "id": "STR_PARASITE_LBL",
+    "Key": "STR_PARASITE_LBL",
+    "Value": "\\u0007기생충 탐지"
+  },
+  {
+    "id": "STR_DISABLED_LBL",
+    "Key": "STR_DISABLED_LBL",
+    "Value": "\\u0006비활성화됨"
+  },
+  {
+    "id": "STR_DISABLED_LBL-1",
+    "Key": "STR_DISABLED_LBL-1",
+    "Value": "\\u0006비활성화됨"
+  },
+  {
+    "id": "STR_DISABLED_LBL-2",
+    "Key": "STR_DISABLED_LBL-2",
+    "Value": "\\u0006전력 차단됨"
+  },
+  {
+    "id": "STR_DETECTOR_LBL",
+    "Key": "STR_DETECTOR_LBL",
+    "Value": "\\u0003탐지기"
+  },
+  {
+    "id": "STR_HALLUCINATION_LBL",
+    "Key": "STR_HALLUCINATION_LBL",
+    "Value": "\\u0004환상"
+  },
+  {
+    "id": "STR_LB_LABEL",
+    "Key": "STR_LB_LABEL",
+    "Value": "유닛"
+  },
+  {
+    "id": "STR_LB_LABEL-1",
+    "Key": "STR_LB_LABEL-1",
+    "Value": "유닛"
+  },
+  {
+    "id": "STR_LB_LABEL-2",
+    "Key": "STR_LB_LABEL-2",
+    "Value": "자원"
+  },
+  {
+    "id": "STR_LB_LABEL-3",
+    "Key": "STR_LB_LABEL-3",
+    "Value": "처치"
+  },
+  {
+    "id": "STR_LB_LABEL-4",
+    "Key": "STR_LB_LABEL-4",
+    "Value": "점수"
+  },
+  {
+    "id": "STR_LB_DELTA_LABEL",
+    "Key": "STR_LB_DELTA_LABEL",
+    "Value": "이동할 유닛"
+  },
+  {
+    "id": "STR_LB_DELTA_LABEL-1",
+    "Key": "STR_LB_DELTA_LABEL-1",
+    "Value": "이동할 유닛"
+  },
+  {
+    "id": "STR_LB_DELTA_LABEL-2",
+    "Key": "STR_LB_DELTA_LABEL-2",
+    "Value": "남은 자원"
+  },
+  {
+    "id": "STR_LB_DELTA_LABEL-3",
+    "Key": "STR_LB_DELTA_LABEL-3",
+    "Value": "남은 처치 수"
+  },
+  {
+    "id": "STR_LB_DELTA_LABEL-4",
+    "Key": "STR_LB_DELTA_LABEL-4",
+    "Value": "남은 점수"
+  },
+  {
+    "id": "STR_RETURN_ERR",
+    "Key": "STR_RETURN_ERR",
+    "Value": "돌아갈 곳이 없어서 돌아갈 수 없습니다."
+  },
+  {
+    "id": "STR_NEED_FOOD_ERR",
+    "Key": "STR_NEED_FOOD_ERR",
+    "Value": "부하가 너무 많습니다. 대군주를 더 생산하십시오."
+  },
+  {
+    "id": "STR_NEED_FOOD_ERR-1",
+    "Key": "STR_NEED_FOOD_ERR-1",
+    "Value": "보급품이 부족합니다. 보급고를 더 건설하십시오."
+  },
+  {
+    "id": "STR_NEED_FOOD_ERR-2",
+    "Key": "STR_NEED_FOOD_ERR-2",
+    "Value": "사이오닉 에너지가 부족합니다. 수정탑을 더 건설하십시오."
+  },
+  {
+    "id": "STR_FOOD_LIMIT_ERR",
+    "Key": "STR_FOOD_LIMIT_ERR",
+    "Value": "유닛 수 제한을 초과했습니다."
+  },
+  {
+    "id": "STR_FOOD_LIMIT_ERR-1",
+    "Key": "STR_FOOD_LIMIT_ERR-1",
+    "Value": "보급품 한도를 초과했습니다."
+  },
+  {
+    "id": "STR_FOOD_LIMIT_ERR-2",
+    "Key": "STR_FOOD_LIMIT_ERR-2",
+    "Value": "사이오닉 한도를 초과했습니다."
+  },
+  {
+    "id": "STR_NEED_MINERALS_ERR",
+    "Key": "STR_NEED_MINERALS_ERR",
+    "Value": "광물이 부족합니다. 광물을 더 채취하십시오."
+  },
+  {
+    "id": "STR_NEED_GASES_ERR",
+    "Key": "STR_NEED_GASES_ERR",
+    "Value": "베스핀 가스가 부족합니다... 가스를 더 채취하십시오."
+  },
+  {
+    "id": "STR_RESOURCES_TOO_CLOSE_ERR",
+    "Key": "STR_RESOURCES_TOO_CLOSE_ERR",
+    "Value": "광물 또는 간헐천 바로 옆에는 지을 수 없습니다."
+  },
+  {
+    "id": "STR_INVISIBLE_UNIT_ERR",
+    "Key": "STR_INVISIBLE_UNIT_ERR",
+    "Value": "탐지되지 않은 유닛이 있습니다."
+  },
+  {
+    "id": "STR_BOUNDS_ERR",
+    "Key": "STR_BOUNDS_ERR",
+    "Value": "지도 밖에는 건설할 수 없습니다."
+  },
+  {
+    "id": "STR_COP_ERR",
+    "Key": "STR_COP_ERR",
+    "Value": "지도 모서리에는 건설할 수 없습니다."
+  },
+  {
+    "id": "STR_NO_BUILD_ERR",
+    "Key": "STR_NO_BUILD_ERR",
+    "Value": "그곳에는 지을 수 없습니다."
+  },
+  {
+    "id": "STR_EXPLORE_ERR",
+    "Key": "STR_EXPLORE_ERR",
+    "Value": "먼저 탐사해야 합니다."
+  },
+  {
+    "id": "STR_FOGGED_ERR",
+    "Key": "STR_FOGGED_ERR",
+    "Value": "해당 위치의 시야를 확보해야 합니다."
+  },
+  {
+    "id": "STR_REFINERY_ERR",
+    "Key": "STR_REFINERY_ERR",
+    "Value": "베스핀 간헐천에 지어야 합니다."
+  },
+  {
+    "id": "STR_NEEDS_CREEP_ERR",
+    "Key": "STR_NEEDS_CREEP_ERR",
+    "Value": "점막 위에 지어야 합니다."
+  },
+  {
+    "id": "STR_PYLON_TOO_FAR_ERR",
+    "Key": "STR_PYLON_TOO_FAR_ERR",
+    "Value": "수정탑 근처에 지어야 합니다."
+  },
+  {
+    "id": "STR_CANT_REACH_ERR",
+    "Key": "STR_CANT_REACH_ERR",
+    "Value": "건설 지역에 도달할 수 없습니다."
+  },
+  {
+    "id": "STR_CANT_LAND_ERR",
+    "Key": "STR_CANT_LAND_ERR",
+    "Value": "그곳에는 지을 수 없습니다."
+  },
+  {
+    "id": "STR_NEED_MANA_ERR",
+    "Key": "STR_NEED_MANA_ERR",
+    "Value": "에너지가 부족합니다."
+  },
+  {
+    "id": "STR_NEED_MANA_ERR-1",
+    "Key": "STR_NEED_MANA_ERR-1",
+    "Value": "에너지가 부족합니다."
+  },
+  {
+    "id": "STR_NEED_MANA_ERR-2",
+    "Key": "STR_NEED_MANA_ERR-2",
+    "Value": "에너지가 부족합니다."
+  },
+  {
+    "id": "STR_HARVEST_ERR",
+    "Key": "STR_HARVEST_ERR",
+    "Value": "채취할 자원이 없습니다. 광물 또는 베스핀 간헐천을 찾으십시오."
+  },
+  {
+    "id": "STR_HARVEST_ERR-1",
+    "Key": "STR_HARVEST_ERR-1",
+    "Value": "채취할 자원이 없습니다. 광물을 찾거나 베스핀 간헐천에 정제소를 건설하십시오."
+  },
+  {
+    "id": "STR_HARVEST_ERR-2",
+    "Key": "STR_HARVEST_ERR-2",
+    "Value": "채취할 자원이 없습니다. 광물을 찾거나 베스핀 간헐천에 융화소를 건설하십시오."
+  },
+  {
+    "id": "STR_INFEST_ERR",
+    "Key": "STR_INFEST_ERR",
+    "Value": "심각하게 손상된 테란 사령부를 대상으로 해야 합니다."
+  },
+  {
+    "id": "STR_MAX_WAYPOINTS_ERR",
+    "Key": "STR_MAX_WAYPOINTS_ERR",
+    "Value": "유닛 이동 지점 목록이 가득 찼습니다."
+  },
+  {
+    "id": "STR_MAX_ORDERS_ERR",
+    "Key": "STR_MAX_ORDERS_ERR",
+    "Value": "지시를 추가할 수 없습니다."
+  },
+  {
+    "id": "STR_ORDERS_LOW_SUPPLY_ERR",
+    "Key": "STR_ORDERS_LOW_SUPPLY_ERR",
+    "Value": "명령이 지연되고 있습니다. 마지막 명령이 수행되지 않았습니다."
+  },
+  {
+    "id": "STR_STIMPACK_ERR",
+    "Key": "STR_STIMPACK_ERR",
+    "Value": "남은 체력이 부족합니다."
+  },
+  {
+    "id": "STR_DEPLETED_ERR",
+    "Key": "STR_DEPLETED_ERR",
+    "Value": "베스핀 간헐천이 소진되었습니다."
+  },
+  {
+    "id": "STR_CANT_TARGET",
+    "Key": "STR_CANT_TARGET",
+    "Value": "잘못된 대상입니다."
+  },
+  {
+    "id": "STR_CANT_TARGET_BLDG",
+    "Key": "STR_CANT_TARGET_BLDG",
+    "Value": "구조물을 대상으로 할 수 없습니다."
+  },
+  {
+    "id": "STR_CANT_TARGET_GRND",
+    "Key": "STR_CANT_TARGET_GRND",
+    "Value": "유닛을 대상으로 해야 합니다."
+  },
+  {
+    "id": "STR_CANNOT_ATTACK_ERR",
+    "Key": "STR_CANNOT_ATTACK_ERR",
+    "Value": "대상을 공격할 수 없습니다."
+  },
+  {
+    "id": "STR_DMATRIX_ERR",
+    "Key": "STR_DMATRIX_ERR",
+    "Value": "잘못된 대상입니다."
+  },
+  {
+    "id": "STR_LOCKDOWN_ERR",
+    "Key": "STR_LOCKDOWN_ERR",
+    "Value": "기계 유닛을 대상으로 해야 합니다."
+  },
+  {
+    "id": "STR_IRRADIATE_ERR",
+    "Key": "STR_IRRADIATE_ERR",
+    "Value": "잘못된 대상입니다."
+  },
+  {
+    "id": "STR_REPAIR_ERR",
+    "Key": "STR_REPAIR_ERR",
+    "Value": "피해 받은 기계 유닛 또는 건설이 완료된 피해 받은 건물을 대상으로 해야 합니다."
+  },
+  {
+    "id": "STR_REPAIR2_ERR",
+    "Key": "STR_REPAIR2_ERR",
+    "Value": "테란 유닛을 대상으로 해야 합니다."
+  },
+  {
+    "id": "STR_PARASITE_ERR",
+    "Key": "STR_PARASITE_ERR",
+    "Value": "잘못된 대상입니다."
+  },
+  {
+    "id": "STR_BROODLING_ERR",
+    "Key": "STR_BROODLING_ERR",
+    "Value": "기계가 아닌 지상 유닛을 대상으로 해야 합니다."
+  },
+  {
+    "id": "STR_MINES_ERR",
+    "Key": "STR_MINES_ERR",
+    "Value": "지면을 대상으로 해야 합니다."
+  },
+  {
+    "id": "STR_OUT_OF_RANGE_ERR",
+    "Key": "STR_OUT_OF_RANGE_ERR",
+    "Value": "대상이 사거리를 벗어났습니다."
+  },
+  {
+    "id": "STR_TOO_CLOSE_ERR",
+    "Key": "STR_TOO_CLOSE_ERR",
+    "Value": "대상이 너무 가깝습니다."
+  },
+  {
+    "id": "STR_FERRY1_ERR",
+    "Key": "STR_FERRY1_ERR",
+    "Value": "수송 가능한 자신의 유닛만 태울 수 있습니다."
+  },
+  {
+    "id": "STR_FERRY2_ERR",
+    "Key": "STR_FERRY2_ERR",
+    "Value": "공간이 부족합니다."
+  },
+  {
+    "id": "STR_HARVEST1_ERR",
+    "Key": "STR_HARVEST1_ERR",
+    "Value": "광물 지대 또는 베스핀 간헐천에서 채취해야 합니다."
+  },
+  {
+    "id": "STR_HARVEST2_ERR",
+    "Key": "STR_HARVEST2_ERR",
+    "Value": "먼저 추출장으로 변태해야 합니다."
+  },
+  {
+    "id": "STR_HARVEST2_ERR-1",
+    "Key": "STR_HARVEST2_ERR-1",
+    "Value": "먼저 정제소를 건설해야 합니다."
+  },
+  {
+    "id": "STR_HARVEST2_ERR-2",
+    "Key": "STR_HARVEST2_ERR-2",
+    "Value": "먼저 융화소를 건설해야 합니다."
+  },
+  {
+    "id": "STR_HARVEST3_ERR",
+    "Key": "STR_HARVEST3_ERR",
+    "Value": "가스는 자신의 간헐천에서 채취해야 합니다."
+  },
+  {
+    "id": "STR_CONSUME_ERR",
+    "Key": "STR_CONSUME_ERR",
+    "Value": "잘못된 대상입니다."
+  },
+  {
+    "id": "STR_PLAGUE_ERR",
+    "Key": "STR_PLAGUE_ERR",
+    "Value": "잘못된 대상입니다."
+  },
+  {
+    "id": "STR_HALLUCINATION_ERR",
+    "Key": "STR_HALLUCINATION_ERR",
+    "Value": "잘못된 대상입니다."
+  },
+  {
+    "id": "STR_STASISED_ERR",
+    "Key": "STR_STASISED_ERR",
+    "Value": "정지장 안의 유닛은 대상으로 할 수 없습니다."
+  },
+  {
+    "id": "STR_MINE_TARGET_UNIT",
+    "Key": "STR_MINE_TARGET_UNIT",
+    "Value": "움직이지 않는 지상 유닛을 대상으로 해야 합니다."
+  },
+  {
+    "id": "STR_MINE_TARGET_GRND",
+    "Key": "STR_MINE_TARGET_GRND",
+    "Value": "통과 가능한 지형을 대상으로 해야 합니다."
+  },
+  {
+    "id": "STR_ORDER_DIE",
+    "Key": "STR_ORDER_DIE",
+    "Value": "죽음"
+  },
+  {
+    "id": "STR_ORDER_FIZZLE",
+    "Key": "STR_ORDER_FIZZLE",
+    "Value": "전소"
+  },
+  {
+    "id": "STR_ORDER_STOP",
+    "Key": "STR_ORDER_STOP",
+    "Value": "정지"
+  },
+  {
+    "id": "STR_ORDER_GUARD",
+    "Key": "STR_ORDER_GUARD",
+    "Value": "방어"
+  },
+  {
+    "id": "STR_ORDER_GUARD_PLAY",
+    "Key": "STR_ORDER_GUARD_PLAY",
+    "Value": "플레이어 보호"
+  },
+  {
+    "id": "STR_ORDER_TURRET_GUARD",
+    "Key": "STR_ORDER_TURRET_GUARD",
+    "Value": "포탑 방어"
+  },
+  {
+    "id": "STR_ORDER_GUARD_BUNKER",
+    "Key": "STR_ORDER_GUARD_BUNKER",
+    "Value": "벙커 보호"
+  },
+  {
+    "id": "STR_ORDER_IGNORE",
+    "Key": "STR_ORDER_IGNORE",
+    "Value": "무시"
+  },
+  {
+    "id": "STR_ORDER_CARRIER_IGNORE",
+    "Key": "STR_ORDER_CARRIER_IGNORE",
+    "Value": "우주모함 무시"
+  },
+  {
+    "id": "STR_ORDER_CARRIER_STOP",
+    "Key": "STR_ORDER_CARRIER_STOP",
+    "Value": "우주모함 정지"
+  },
+  {
+    "id": "STR_ORDER_TRILOBYTE_STOP",
+    "Key": "STR_ORDER_TRILOBYTE_STOP",
+    "Value": "파괴자 정지"
+  },
+  {
+    "id": "STR_ORDER_ATTACK",
+    "Key": "STR_ORDER_ATTACK",
+    "Value": "공격"
+  },
+  {
+    "id": "STR_ORDER_ATTACK_UNIT",
+    "Key": "STR_ORDER_ATTACK_UNIT",
+    "Value": "공격 유닛"
+  },
+  {
+    "id": "STR_ORDER_ATTACK_FIXED_RNGE",
+    "Key": "STR_ORDER_ATTACK_FIXED_RNGE",
+    "Value": "고정 사거리 공격"
+  },
+  {
+    "id": "STR_ORDER_MOVE_ATTACK_UNIT",
+    "Key": "STR_ORDER_MOVE_ATTACK_UNIT",
+    "Value": "유닛 이동 공격"
+  },
+  {
+    "id": "STR_ORDER_ATTACK_TILE",
+    "Key": "STR_ORDER_ATTACK_TILE",
+    "Value": "타일 공격"
+  },
+  {
+    "id": "STR_ORDER_ATTACK_HOVER",
+    "Key": "STR_ORDER_ATTACK_HOVER",
+    "Value": "부양"
+  },
+  {
+    "id": "STR_ORDER_ATTACK_MOVE",
+    "Key": "STR_ORDER_ATTACK_MOVE",
+    "Value": "공격 이동"
+  },
+  {
+    "id": "STR_ORDER_ATTACK_MOVE_EP",
+    "Key": "STR_ORDER_ATTACK_MOVE_EP",
+    "Value": "공격 이동 EP"
+  },
+  {
+    "id": "STR_ORDER_HARASS_MOVE_EP",
+    "Key": "STR_ORDER_HARASS_MOVE_EP",
+    "Value": "괴롭힘 이동"
+  },
+  {
+    "id": "STR_ORDER_AI_PATROL",
+    "Key": "STR_ORDER_AI_PATROL",
+    "Value": "인공지능 순찰"
+  },
+  {
+    "id": "STR_ORDER_TOWER",
+    "Key": "STR_ORDER_TOWER",
+    "Value": "포탑"
+  },
+  {
+    "id": "STR_ORDER_VULTURE_MINE",
+    "Key": "STR_ORDER_VULTURE_MINE",
+    "Value": "시체매 지뢰"
+  },
+  {
+    "id": "STR_ORDER_CARRIER_ATTACK",
+    "Key": "STR_ORDER_CARRIER_ATTACK",
+    "Value": "우주모함 공격"
+  },
+  {
+    "id": "STR_ORDER_CARRIER_ATTACK_MOVE",
+    "Key": "STR_ORDER_CARRIER_ATTACK_MOVE",
+    "Value": "우주모함 공격 이동"
+  },
+  {
+    "id": "STR_ORDER_STAY_IN_RANGE",
+    "Key": "STR_ORDER_STAY_IN_RANGE",
+    "Value": "사거리 유지"
+  },
+  {
+    "id": "STR_ORDER_TURRET_ATTACK",
+    "Key": "STR_ORDER_TURRET_ATTACK",
+    "Value": "포탑 공격"
+  },
+  {
+    "id": "STR_ORDER_NOTHING",
+    "Key": "STR_ORDER_NOTHING",
+    "Value": "없음"
+  },
+  {
+    "id": "STR_ORDER_DRONE_START_BUILD",
+    "Key": "STR_ORDER_DRONE_START_BUILD",
+    "Value": "일벌레 건설 시작"
+  },
+  {
+    "id": "STR_ORDER_DRONE_BUILD",
+    "Key": "STR_ORDER_DRONE_BUILD",
+    "Value": "일벌레 건설"
+  },
+  {
+    "id": "STR_ORDER_DRONE_ATTACK_UNIT",
+    "Key": "STR_ORDER_DRONE_ATTACK_UNIT",
+    "Value": "일벌레 유닛 공격"
+  },
+  {
+    "id": "STR_ORDER_DRONE_INFEST",
+    "Key": "STR_ORDER_DRONE_INFEST",
+    "Value": "해병 감염"
+  },
+  {
+    "id": "STR_ORDER_BUILD",
+    "Key": "STR_ORDER_BUILD",
+    "Value": "건설"
+  },
+  {
+    "id": "STR_ORDER_BUILDPROTOSS",
+    "Key": "STR_ORDER_BUILDPROTOSS",
+    "Value": "프로토스 건설"
+  },
+  {
+    "id": "STR_ORDER_PYLON_BUILD",
+    "Key": "STR_ORDER_PYLON_BUILD",
+    "Value": "수정탑 건설"
+  },
+  {
+    "id": "STR_ORDER_CONSTRUCT_BLDG",
+    "Key": "STR_ORDER_CONSTRUCT_BLDG",
+    "Value": "건물 건설"
+  },
+  {
+    "id": "STR_ORDER_REPAIR",
+    "Key": "STR_ORDER_REPAIR",
+    "Value": "수리"
+  },
+  {
+    "id": "STR_ORDER_PLACE_ADDON",
+    "Key": "STR_ORDER_PLACE_ADDON",
+    "Value": "부속건물 배치"
+  },
+  {
+    "id": "STR_ORDER_BUILD_ADDON",
+    "Key": "STR_ORDER_BUILD_ADDON",
+    "Value": "부속건물 건설"
+  },
+  {
+    "id": "STR_ORDER_TRAIN",
+    "Key": "STR_ORDER_TRAIN",
+    "Value": "훈련"
+  },
+  {
+    "id": "STR_ORDER_ZERG_BIRTH",
+    "Key": "STR_ORDER_ZERG_BIRTH",
+    "Value": "저그 탄생"
+  },
+  {
+    "id": "STR_ORDER_MORPH",
+    "Key": "STR_ORDER_MORPH",
+    "Value": "변태"
+  },
+  {
+    "id": "STR_ORDER_ZERG_BLDG_MORPH",
+    "Key": "STR_ORDER_ZERG_BLDG_MORPH",
+    "Value": "저그 건물 변태"
+  },
+  {
+    "id": "STR_ORDER_BUILDSELF",
+    "Key": "STR_ORDER_BUILDSELF",
+    "Value": "자체 건설"
+  },
+  {
+    "id": "STR_ORDER_BUILDSELFZERG",
+    "Key": "STR_ORDER_BUILDSELFZERG",
+    "Value": "저그 자체 건설"
+  },
+  {
+    "id": "STR_ORDER_ENTER_NYDUS",
+    "Key": "STR_ORDER_ENTER_NYDUS",
+    "Value": "땅굴관 입장"
+  },
+  {
+    "id": "STR_ORDER_BUILDSELFPROTOSS",
+    "Key": "STR_ORDER_BUILDSELFPROTOSS",
+    "Value": "프로토스 자체 건설"
+  },
+  {
+    "id": "STR_ORDER_FOLLOW",
+    "Key": "STR_ORDER_FOLLOW",
+    "Value": "따르기"
+  },
+  {
+    "id": "STR_ORDER_CARRIER",
+    "Key": "STR_ORDER_CARRIER",
+    "Value": "우주모함"
+  },
+  {
+    "id": "STR_ORDER_CARRIER_FIGHT",
+    "Key": "STR_ORDER_CARRIER_FIGHT",
+    "Value": "우주모함 전투"
+  },
+  {
+    "id": "STR_ORDER_REAVER",
+    "Key": "STR_ORDER_REAVER",
+    "Value": "파괴자"
+  },
+  {
+    "id": "STR_ORDER_REAVER_ATTACK",
+    "Key": "STR_ORDER_REAVER_ATTACK",
+    "Value": "파괴자 공격"
+  },
+  {
+    "id": "STR_ORDER_REAVER_FIGHT",
+    "Key": "STR_ORDER_REAVER_FIGHT",
+    "Value": "파괴자 전투"
+  },
+  {
+    "id": "STR_ORDER_REAVER_HOLD",
+    "Key": "STR_ORDER_REAVER_HOLD",
+    "Value": "파괴자 위치 사수"
+  },
+  {
+    "id": "STR_ORDER_TRAIN_FIGHTER",
+    "Key": "STR_ORDER_TRAIN_FIGHTER",
+    "Value": "전투기 훈련"
+  },
+  {
+    "id": "STR_ORDER_STRAFE_UNIT",
+    "Key": "STR_ORDER_STRAFE_UNIT",
+    "Value": "집중 포격 유닛"
+  },
+  {
+    "id": "STR_ORDER_TRILOBYTER",
+    "Key": "STR_ORDER_TRILOBYTER",
+    "Value": "갑충탄"
+  },
+  {
+    "id": "STR_ORDER_RETURN",
+    "Key": "STR_ORDER_RETURN",
+    "Value": "반환"
+  },
+  {
+    "id": "STR_ORDER_DRONE_LAND",
+    "Key": "STR_ORDER_DRONE_LAND",
+    "Value": "일벌레 내리기"
+  },
+  {
+    "id": "STR_ORDER_BLDG_LAND",
+    "Key": "STR_ORDER_BLDG_LAND",
+    "Value": "건물 착륙"
+  },
+  {
+    "id": "STR_ORDER_BLDG_LIFT_OFF",
+    "Key": "STR_ORDER_BLDG_LIFT_OFF",
+    "Value": "건물 이륙"
+  },
+  {
+    "id": "STR_ORDER_DRONE_LIFT_OFF",
+    "Key": "STR_ORDER_DRONE_LIFT_OFF",
+    "Value": "일벌레 들기"
+  },
+  {
+    "id": "STR_ORDER_LIFT_OFF",
+    "Key": "STR_ORDER_LIFT_OFF",
+    "Value": "이륙"
+  },
+  {
+    "id": "STR_ORDER_RESEARCH_TECH",
+    "Key": "STR_ORDER_RESEARCH_TECH",
+    "Value": "연구 기술"
+  },
+  {
+    "id": "STR_ORDER_UPGRADE",
+    "Key": "STR_ORDER_UPGRADE",
+    "Value": "업그레이드"
+  },
+  {
+    "id": "STR_ORDER_LARVA",
+    "Key": "STR_ORDER_LARVA",
+    "Value": "애벌레"
+  },
+  {
+    "id": "STR_ORDER_SPAWN_LARVA",
+    "Key": "STR_ORDER_SPAWN_LARVA",
+    "Value": "애벌레 생성 중"
+  },
+  {
+    "id": "STR_ORDER_HARVEST",
+    "Key": "STR_ORDER_HARVEST",
+    "Value": "채취"
+  },
+  {
+    "id": "STR_ORDER_HARVEST_GAS",
+    "Key": "STR_ORDER_HARVEST_GAS",
+    "Value": "가스 채취"
+  },
+  {
+    "id": "STR_ORDER_RETURN_GAS",
+    "Key": "STR_ORDER_RETURN_GAS",
+    "Value": "가스 반환"
+  },
+  {
+    "id": "STR_ORDER_HARVEST_MINERALS",
+    "Key": "STR_ORDER_HARVEST_MINERALS",
+    "Value": "광물 채취"
+  },
+  {
+    "id": "STR_ORDER_RETURN_MINERALS",
+    "Key": "STR_ORDER_RETURN_MINERALS",
+    "Value": "광물 반환"
+  },
+  {
+    "id": "STR_ORDER_ENTER_TRANSPORT",
+    "Key": "STR_ORDER_ENTER_TRANSPORT",
+    "Value": "수송기 탑승"
+  },
+  {
+    "id": "STR_ORDER_PICK_UP",
+    "Key": "STR_ORDER_PICK_UP",
+    "Value": "획득"
+  },
+  {
+    "id": "STR_ORDER_POWERUP",
+    "Key": "STR_ORDER_POWERUP",
+    "Value": "강화"
+  },
+  {
+    "id": "STR_ORDER_SIEGEMODE",
+    "Key": "STR_ORDER_SIEGEMODE",
+    "Value": "공성 모드"
+  },
+  {
+    "id": "STR_ORDER_TANKMODE",
+    "Key": "STR_ORDER_TANKMODE",
+    "Value": "탱크 모드"
+  },
+  {
+    "id": "STR_ORDER_WATCHTARGET",
+    "Key": "STR_ORDER_WATCHTARGET",
+    "Value": "대상 주시"
+  },
+  {
+    "id": "STR_ORDER_INIT_SPREAD_CREEP",
+    "Key": "STR_ORDER_INIT_SPREAD_CREEP",
+    "Value": "점막 확산 시작"
+  },
+  {
+    "id": "STR_ORDER_STOP_SPREAD_CREEP",
+    "Key": "STR_ORDER_STOP_SPREAD_CREEP",
+    "Value": "점막 성장 중지"
+  },
+  {
+    "id": "STR_ORDER_SPREAD_CREEP",
+    "Key": "STR_ORDER_SPREAD_CREEP",
+    "Value": "점막 확산"
+  },
+  {
+    "id": "STR_ORDER_GUARDIANASPECT",
+    "Key": "STR_ORDER_GUARDIANASPECT",
+    "Value": "수호군주"
+  },
+  {
+    "id": "STR_ORDER_SUMMON_ARCHON",
+    "Key": "STR_ORDER_SUMMON_ARCHON",
+    "Value": "집정관 소환"
+  },
+  {
+    "id": "STR_ORDER_SUMMON_COMPLETE",
+    "Key": "STR_ORDER_SUMMON_COMPLETE",
+    "Value": "집정관 소환 완료"
+  },
+  {
+    "id": "STR_ORDER_HOLDPOS",
+    "Key": "STR_ORDER_HOLDPOS",
+    "Value": "위치 사수"
+  },
+  {
+    "id": "STR_ORDER_CLOAK",
+    "Key": "STR_ORDER_CLOAK",
+    "Value": "은폐"
+  },
+  {
+    "id": "STR_ORDER_DECLOAK",
+    "Key": "STR_ORDER_DECLOAK",
+    "Value": "은폐 해제"
+  },
+  {
+    "id": "STR_ORDER_UNLOAD",
+    "Key": "STR_ORDER_UNLOAD",
+    "Value": "내보내기"
+  },
+  {
+    "id": "STR_ORDER_MOVE_UNLOAD",
+    "Key": "STR_ORDER_MOVE_UNLOAD",
+    "Value": "이동 내보내기"
+  },
+  {
+    "id": "STR_ORDER_YAMATO",
+    "Key": "STR_ORDER_YAMATO",
+    "Value": "아마토 포 발사"
+  },
+  {
+    "id": "STR_ORDER_MAGNAPULSE",
+    "Key": "STR_ORDER_MAGNAPULSE",
+    "Value": "마그마 분출"
+  },
+  {
+    "id": "STR_ORDER_BURROW",
+    "Key": "STR_ORDER_BURROW",
+    "Value": "잠복"
+  },
+  {
+    "id": "STR_ORDER_BURROWED",
+    "Key": "STR_ORDER_BURROWED",
+    "Value": "잠복 상태"
+  },
+  {
+    "id": "STR_ORDER_DEBURROW",
+    "Key": "STR_ORDER_DEBURROW",
+    "Value": "잠복 해제"
+  },
+  {
+    "id": "STR_ORDER_CAST_PARASITE",
+    "Key": "STR_ORDER_CAST_PARASITE",
+    "Value": "기생충 시전"
+  },
+  {
+    "id": "STR_ORDER_SUMMON_BROODLINGS",
+    "Key": "STR_ORDER_SUMMON_BROODLINGS",
+    "Value": "브루드링 소환"
+  },
+  {
+    "id": "STR_ORDER_EMP_SHOCKWAVE",
+    "Key": "STR_ORDER_EMP_SHOCKWAVE",
+    "Value": "EMP 충격파"
+  },
+  {
+    "id": "STR_ORDER_LOCKDOWN",
+    "Key": "STR_ORDER_LOCKDOWN",
+    "Value": "결박"
+  },
+  {
+    "id": "STR_ORDER_NUKE_WAIT",
+    "Key": "STR_ORDER_NUKE_WAIT",
+    "Value": "핵 대기"
+  },
+  {
+    "id": "STR_ORDER_NUKE_TRAIN",
+    "Key": "STR_ORDER_NUKE_TRAIN",
+    "Value": "핵 훈련"
+  },
+  {
+    "id": "STR_ORDER_NUKE_LAUNCH",
+    "Key": "STR_ORDER_NUKE_LAUNCH",
+    "Value": "핵 공격"
+  },
+  {
+    "id": "STR_ORDER_NUKE_PAINT",
+    "Key": "STR_ORDER_NUKE_PAINT",
+    "Value": "핵 색칠"
+  },
+  {
+    "id": "STR_ORDER_NUKE_UNIT",
+    "Key": "STR_ORDER_NUKE_UNIT",
+    "Value": "핵 유닛"
+  },
+  {
+    "id": "STR_ORDER_NUKE_GROUND",
+    "Key": "STR_ORDER_NUKE_GROUND",
+    "Value": "핵 지역"
+  },
+  {
+    "id": "STR_ORDER_NUKE_TRACK",
+    "Key": "STR_ORDER_NUKE_TRACK",
+    "Value": "핵 추적"
+  },
+  {
+    "id": "STR_ORDER_ARBITER",
+    "Key": "STR_ORDER_ARBITER",
+    "Value": "중재자 가동"
+  },
+  {
+    "id": "STR_ORDER_CLOAK_NEIGHBORS",
+    "Key": "STR_ORDER_CLOAK_NEIGHBORS",
+    "Value": "주위 유닛 은폐"
+  },
+  {
+    "id": "STR_ORDER_PLACE_MINE",
+    "Key": "STR_ORDER_PLACE_MINE",
+    "Value": "지뢰 매설"
+  },
+  {
+    "id": "STR_ORDER_RCLICK",
+    "Key": "STR_ORDER_RCLICK",
+    "Value": "오른쪽 마우스 클릭"
+  },
+  {
+    "id": "STR_ORDER_LCLICK",
+    "Key": "STR_ORDER_LCLICK",
+    "Value": "마우스 왼쪽 클릭"
+  },
+  {
+    "id": "STR_ORDER_SAP_UNIT",
+    "Key": "STR_ORDER_SAP_UNIT",
+    "Value": "유닛 약화"
+  },
+  {
+    "id": "STR_ORDER_SAP_LOC",
+    "Key": "STR_ORDER_SAP_LOC",
+    "Value": "지역 약화"
+  },
+  {
+    "id": "STR_ORDER_TELEPORT",
+    "Key": "STR_ORDER_TELEPORT",
+    "Value": "순간 이동"
+  },
+  {
+    "id": "STR_ORDER_TELEPORT_LOC",
+    "Key": "STR_ORDER_TELEPORT_LOC",
+    "Value": "순간이동"
+  },
+  {
+    "id": "STR_ORDER_PLACE_SCANNER",
+    "Key": "STR_ORDER_PLACE_SCANNER",
+    "Value": "스캐너 배치"
+  },
+  {
+    "id": "STR_ORDER_SCANNER",
+    "Key": "STR_ORDER_SCANNER",
+    "Value": "스캐너"
+  },
+  {
+    "id": "STR_ORDER_DEF_MAT",
+    "Key": "STR_ORDER_DEF_MAT",
+    "Value": "방어막"
+  },
+  {
+    "id": "STR_ORDER_UNDO_FLYER",
+    "Key": "STR_ORDER_UNDO_FLYER",
+    "Value": "충돌 재설정"
+  },
+  {
+    "id": "STR_ORDER_UNDO_TRANSPARENT_WORKER",
+    "Key": "STR_ORDER_UNDO_TRANSPARENT_WORKER",
+    "Value": "충돌 재설정"
+  },
+  {
+    "id": "STR_ORDER_PATROL",
+    "Key": "STR_ORDER_PATROL",
+    "Value": "순찰"
+  },
+  {
+    "id": "STR_ORDER_COMP_AI",
+    "Key": "STR_ORDER_COMP_AI",
+    "Value": "컴퓨터 인공지능"
+  },
+  {
+    "id": "STR_ORDER_GUARD_POST",
+    "Key": "STR_ORDER_GUARD_POST",
+    "Value": "경비초소"
+  },
+  {
+    "id": "STR_ORDER_RESCUE_PASSIVE",
+    "Key": "STR_ORDER_RESCUE_PASSIVE",
+    "Value": "구출 수동"
+  },
+  {
+    "id": "STR_ORDER_NEUTRAL",
+    "Key": "STR_ORDER_NEUTRAL",
+    "Value": "중립"
+  },
+  {
+    "id": "STR_ORDER_COMP_RETURN",
+    "Key": "STR_ORDER_COMP_RETURN",
+    "Value": "컴퓨터 복귀"
+  },
+  {
+    "id": "STR_ORDER_JUICE_INIT",
+    "Key": "STR_ORDER_JUICE_INIT",
+    "Value": "사이오닉 공급 시작"
+  },
+  {
+    "id": "STR_ORDER_SELF_DESTRUCT",
+    "Key": "STR_ORDER_SELF_DESTRUCT",
+    "Value": "자폭 중"
+  },
+  {
+    "id": "STR_ORDER_DECAY_CREEP",
+    "Key": "STR_ORDER_DECAY_CREEP",
+    "Value": "부식 점막"
+  },
+  {
+    "id": "STR_ORDER_RECHARGE",
+    "Key": "STR_ORDER_RECHARGE",
+    "Value": "보호막 재충전"
+  },
+  {
+    "id": "STR_ORDER_SHIELD_BATTERY",
+    "Key": "STR_ORDER_SHIELD_BATTERY",
+    "Value": "보호막 충전소"
+  },
+  {
+    "id": "STR_ORDER_RALLY_POINT",
+    "Key": "STR_ORDER_RALLY_POINT",
+    "Value": "집결 지점"
+  },
+  {
+    "id": "STR_ORDER_CTF_COP_INIT",
+    "Key": "STR_ORDER_CTF_COP_INIT",
+    "Value": "CTF COP Init"
+  },
+  {
+    "id": "STR_ORDER_CTF_COP",
+    "Key": "STR_ORDER_CTF_COP",
+    "Value": "CTF COP"
+  },
+  {
+    "id": "STR_ORDER_CRITTER",
+    "Key": "STR_ORDER_CRITTER",
+    "Value": "중립 동물"
+  },
+  {
+    "id": "STR_ORDER_HIDDEN_GUN",
+    "Key": "STR_ORDER_HIDDEN_GUN",
+    "Value": "숨겨진 총"
+  },
+  {
+    "id": "STR_ORDER_OPEN_DOOR",
+    "Key": "STR_ORDER_OPEN_DOOR",
+    "Value": "문 열기"
+  },
+  {
+    "id": "STR_ORDER_CLOSE_DOOR",
+    "Key": "STR_ORDER_CLOSE_DOOR",
+    "Value": "문 닫기"
+  },
+  {
+    "id": "STR_ORDER_HIDE_TRAP",
+    "Key": "STR_ORDER_HIDE_TRAP",
+    "Value": "함정"
+  },
+  {
+    "id": "STR_ORDER_REVEAL_TRAP",
+    "Key": "STR_ORDER_REVEAL_TRAP",
+    "Value": "함정 보이기"
+  },
+  {
+    "id": "STR_ORDER_ENABLE_DOODAD",
+    "Key": "STR_ORDER_ENABLE_DOODAD",
+    "Value": "장식물 사용"
+  },
+  {
+    "id": "STR_ORDER_DISABLE_DOODAD",
+    "Key": "STR_ORDER_DISABLE_DOODAD",
+    "Value": "장식물 사용 안 함"
+  },
+  {
+    "id": "STR_ORDER_PROTOSS_WARP_IN",
+    "Key": "STR_ORDER_PROTOSS_WARP_IN",
+    "Value": "소환"
+  },
+  {
+    "id": "STR_ORDER_HIDESUICIDE",
+    "Key": "STR_ORDER_HIDESUICIDE",
+    "Value": "은폐 자폭"
+  },
+  {
+    "id": "STR_ORDER_FATAL",
+    "Key": "STR_ORDER_FATAL",
+    "Value": "치명적"
+  },
+  {
+    "id": "STR_NUKE_DETECT",
+    "Key": "STR_NUKE_DETECT",
+    "Value": "핵 공격이 감지되었습니다."
+  },
+  {
+    "id": "AI_CUSTOM_TERRAN",
+    "Key": "AI_CUSTOM_TERRAN",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_LO",
+    "Key": "AI_TERRAN_LO",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_MED",
+    "Key": "AI_TERRAN_MED",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_HI",
+    "Key": "AI_TERRAN_HI",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_AREA",
+    "Key": "AI_TERRAN_AREA",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_3",
+    "Key": "AI_TERRAN_3",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_5",
+    "Key": "AI_TERRAN_5",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_5H",
+    "Key": "AI_TERRAN_5H",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_6",
+    "Key": "AI_TERRAN_6",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_6B",
+    "Key": "AI_TERRAN_6B",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_6C",
+    "Key": "AI_TERRAN_6C",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_7",
+    "Key": "AI_TERRAN_7",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_7S",
+    "Key": "AI_TERRAN_7S",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_7M",
+    "Key": "AI_TERRAN_7M",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_8",
+    "Key": "AI_TERRAN_8",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_9L",
+    "Key": "AI_TERRAN_9L",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_9H",
+    "Key": "AI_TERRAN_9H",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_10",
+    "Key": "AI_TERRAN_10",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_11Z",
+    "Key": "AI_TERRAN_11Z",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_11PS",
+    "Key": "AI_TERRAN_11PS",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_11P",
+    "Key": "AI_TERRAN_11P",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_12N",
+    "Key": "AI_TERRAN_12N",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_12P",
+    "Key": "AI_TERRAN_12P",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_12T",
+    "Key": "AI_TERRAN_12T",
+    "Value": ""
+  },
+  {
+    "id": "AI_CUSTOM_PROTOSS",
+    "Key": "AI_CUSTOM_PROTOSS",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_LO",
+    "Key": "AI_PROTOSS_LO",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_MED",
+    "Key": "AI_PROTOSS_MED",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_HI",
+    "Key": "AI_PROTOSS_HI",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_AREA",
+    "Key": "AI_PROTOSS_AREA",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_1",
+    "Key": "AI_PROTOSS_1",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_2",
+    "Key": "AI_PROTOSS_2",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_3",
+    "Key": "AI_PROTOSS_3",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_3R",
+    "Key": "AI_PROTOSS_3R",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_3G",
+    "Key": "AI_PROTOSS_3G",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_4",
+    "Key": "AI_PROTOSS_4",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_4B",
+    "Key": "AI_PROTOSS_4B",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_5I",
+    "Key": "AI_PROTOSS_5I",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_5B",
+    "Key": "AI_PROTOSS_5B",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_6",
+    "Key": "AI_PROTOSS_6",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_7",
+    "Key": "AI_PROTOSS_7",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_7B",
+    "Key": "AI_PROTOSS_7B",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_7S",
+    "Key": "AI_PROTOSS_7S",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_8",
+    "Key": "AI_PROTOSS_8",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_8B",
+    "Key": "AI_PROTOSS_8B",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_8D",
+    "Key": "AI_PROTOSS_8D",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_9",
+    "Key": "AI_PROTOSS_9",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_9W",
+    "Key": "AI_PROTOSS_9W",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_9Y",
+    "Key": "AI_PROTOSS_9Y",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_10",
+    "Key": "AI_PROTOSS_10",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_10C",
+    "Key": "AI_PROTOSS_10C",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_10O",
+    "Key": "AI_PROTOSS_10O",
+    "Value": ""
+  },
+  {
+    "id": "AI_CUSTOM_ZERG",
+    "Key": "AI_CUSTOM_ZERG",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_LO",
+    "Key": "AI_ZERG_LO",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_MED",
+    "Key": "AI_ZERG_MED",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_HI",
+    "Key": "AI_ZERG_HI",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_AREA",
+    "Key": "AI_ZERG_AREA",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_1",
+    "Key": "AI_ZERG_1",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_2",
+    "Key": "AI_ZERG_2",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_3",
+    "Key": "AI_ZERG_3",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_4",
+    "Key": "AI_ZERG_4",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_4S",
+    "Key": "AI_ZERG_4S",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_5",
+    "Key": "AI_ZERG_5",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_6",
+    "Key": "AI_ZERG_6",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_7G",
+    "Key": "AI_ZERG_7G",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_7A",
+    "Key": "AI_ZERG_7A",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_7S",
+    "Key": "AI_ZERG_7S",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_8S",
+    "Key": "AI_ZERG_8S",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_8T",
+    "Key": "AI_ZERG_8T",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_9",
+    "Key": "AI_ZERG_9",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_9YL",
+    "Key": "AI_ZERG_9YL",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_9YR",
+    "Key": "AI_ZERG_9YR",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_9OL",
+    "Key": "AI_ZERG_9OL",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_9OR",
+    "Key": "AI_ZERG_9OR",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_10TL",
+    "Key": "AI_ZERG_10TL",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_10TR",
+    "Key": "AI_ZERG_10TR",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_10YL",
+    "Key": "AI_ZERG_10YL",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_10YR",
+    "Key": "AI_ZERG_10YR",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_10R",
+    "Key": "AI_ZERG_10R",
+    "Value": ""
+  },
+  {
+    "id": "AI_DEFAULT_STAGING",
+    "Key": "AI_DEFAULT_STAGING",
+    "Value": ""
+  },
+  {
+    "id": "AI_SUICIDE_MISSION",
+    "Key": "AI_SUICIDE_MISSION",
+    "Value": "k\\u0007대전차 고폭탄\\n   판처가 공격 시 대상에게 28+2의 추가 일반 피해를 줍니다.보호막을 활성화하는 업그레이드를 통해 보호막이 최대일때 20% 더 빠르게 공격할 수 있습니다."
+  },
+  {
+    "id": "AI_SUICIDE_RANDOM",
+    "Key": "AI_SUICIDE_RANDOM",
+    "Value": "k\\u0007부정한 챔피언\\n   토레스리터는 지상 목표물을 계속 공격할수록공격 속도가 빨라지고, 목표물을 향해 이동하면서 계속 사격합니다."
+  },
+  {
+    "id": "AI_DECLARE_ENEMY",
+    "Key": "AI_DECLARE_ENEMY",
+	"Value": "k\\u0007운명\\n   EMP병은 사망 시 폭발하여 근거리 유닛의 보호막과 에너지를 고갈시킵니다."
+  },
+  {
+    "id": "AI_DECLARE_ALLY",
+    "Key": "AI_DECLARE_ALLY",
+    "Value": "k\\u0007로켓 포드\\n   이 유닛은 고급 로켓 잠금 해제 후 카론 로켓을 사용할 수 있습니다"
+  },
+  {
+    "id": "AI_MOVE_TEMPLAR",
+    "Key": "AI_MOVE_TEMPLAR",
+    "Value": ""
+  },
+  {
+    "id": "AI_BECOME_RESCUE",
+    "Key": "AI_BECOME_RESCUE",
+    "Value": ""
+  },
+  {
+    "id": "AI_ENTER_A_BUNKER",
+    "Key": "AI_ENTER_A_BUNKER",
+    "Value": ""
+  },
+  {
+    "id": "AI_VALUE_THIS_AREA",
+    "Key": "AI_VALUE_THIS_AREA",
+    "Value": ""
+  },
+  {
+    "id": "AI_CLEAR_COMBAT",
+    "Key": "AI_CLEAR_COMBAT",
+    "Value": ""
+  },
+  {
+    "id": "AI_DEBUG_1",
+    "Key": "AI_DEBUG_1",
+    "Value": ""
+  },
+  {
+    "id": "AI_DEBUG_2",
+    "Key": "AI_DEBUG_2",
+    "Value": ""
+  },
+  {
+    "id": "AI_DEBUG_3",
+    "Key": "AI_DEBUG_3",
+    "Value": ""
+  },
+  {
+    "id": "AI_DEBUG_4",
+    "Key": "AI_DEBUG_4",
+    "Value": ""
+  },
+  {
+    "id": "AI_DEBUG_5",
+    "Key": "AI_DEBUG_5",
+    "Value": ""
+  },
+  {
+    "id": "AI_DEBUG_1_LOC",
+    "Key": "AI_DEBUG_1_LOC",
+    "Value": ""
+  },
+  {
+    "id": "AI_DEBUG_2_LOC",
+    "Key": "AI_DEBUG_2_LOC",
+    "Value": ""
+  },
+  {
+    "id": "AI_DEBUG_3_LOC",
+    "Key": "AI_DEBUG_3_LOC",
+    "Value": ""
+  },
+  {
+    "id": "AI_DEBUG_4_LOC",
+    "Key": "AI_DEBUG_4_LOC",
+    "Value": ""
+  },
+  {
+    "id": "AI_DEBUG_5_LOC",
+    "Key": "AI_DEBUG_5_LOC",
+    "Value": ""
+  },
+  {
+    "id": "DDS_BAD_BLDG",
+    "Key": "DDS_BAD_BLDG",
+    "Value": "구조물"
+  },
+  {
+    "id": "DDS_BAD_BLDG2CONC",
+    "Key": "DDS_BAD_BLDG2CONC",
+    "Value": ""
+  },
+  {
+    "id": "DDS_BAD_CLIFF",
+    "Key": "DDS_BAD_CLIFF",
+    "Value": "언덕"
+  },
+  {
+    "id": "DDS_BAD_HIDIRT",
+    "Key": "DDS_BAD_HIDIRT",
+    "Value": ""
+  },
+  {
+    "id": "DDS_BAD_LOGRASS",
+    "Key": "DDS_BAD_LOGRASS",
+    "Value": "잔디"
+  },
+  {
+    "id": "DDS_BAD_HIGRASS",
+    "Key": "DDS_BAD_HIGRASS",
+    "Value": ""
+  },
+  {
+    "id": "DDS_BAD_LODIRT",
+    "Key": "DDS_BAD_LODIRT",
+    "Value": "흙"
+  },
+  {
+    "id": "DDS_BAD_RUBBLE",
+    "Key": "DDS_BAD_RUBBLE",
+    "Value": ""
+  },
+  {
+    "id": "DDS_BAD_CONCRETE",
+    "Key": "DDS_BAD_CONCRETE",
+    "Value": ""
+  },
+  {
+    "id": "DDS_BAD_WATER",
+    "Key": "DDS_BAD_WATER",
+    "Value": "물"
+  },
+  {
+    "id": "DDS_BAD_WATERCLF",
+    "Key": "DDS_BAD_WATERCLF",
+    "Value": ""
+  },
+  {
+    "id": "DDS_JUNG_JUNGLE",
+    "Key": "DDS_JUNG_JUNGLE",
+    "Value": "밀림"
+  },
+  {
+    "id": "DDS_HIGH_JUNGLE",
+    "Key": "DDS_HIGH_JUNGLE",
+    "Value": ""
+  },
+  {
+    "id": "DDS_JUNG_RUINS",
+    "Key": "DDS_JUNG_RUINS",
+    "Value": "폐허"
+  },
+  {
+    "id": "DDS_HIGH_RUINS",
+    "Key": "DDS_HIGH_RUINS",
+    "Value": ""
+  },
+  {
+    "id": "DDS_JUNG_BLDG2JUNG",
+    "Key": "DDS_JUNG_BLDG2JUNG",
+    "Value": ""
+  },
+  {
+    "id": "DDS_HIGH_BLDG2JUNG",
+    "Key": "DDS_HIGH_BLDG2JUNG",
+    "Value": ""
+  },
+  {
+    "id": "DDS_PLAT_DDDARK",
+    "Key": "DDS_PLAT_DDDARK",
+    "Value": ""
+  },
+  {
+    "id": "DDS_PLAT_DDHIGHBLD",
+    "Key": "DDS_PLAT_DDHIGHBLD",
+    "Value": ""
+  },
+  {
+    "id": "DDS_PLAT_DDLOWBLD",
+    "Key": "DDS_PLAT_DDLOWBLD",
+    "Value": ""
+  },
+  {
+    "id": "DDS_PLAT_DDLOWNBLD",
+    "Key": "DDS_PLAT_DDLOWNBLD",
+    "Value": "정거장"
+  },
+  {
+    "id": "DDS_PLAT_DDPLATCLIF",
+    "Key": "DDS_PLAT_DDPLATCLIF",
+    "Value": ""
+  },
+  {
+    "id": "DDS_PLAT_DDPLATPIT",
+    "Key": "DDS_PLAT_DDPLATPIT",
+    "Value": ""
+  },
+  {
+    "id": "DDS_PLAT_DDPLATPITCLIFF",
+    "Key": "DDS_PLAT_DDPLATPITCLIFF",
+    "Value": ""
+  },
+  {
+    "id": "DDS_PLAT_DDRUSTYEDGE",
+    "Key": "DDS_PLAT_DDRUSTYEDGE",
+    "Value": ""
+  },
+  {
+    "id": "DDS_PLAT_DDRUSTYPIT",
+    "Key": "DDS_PLAT_DDRUSTYPIT",
+    "Value": ""
+  },
+  {
+    "id": "DDS_PLAT_DDSOLARPANEL",
+    "Key": "DDS_PLAT_DDSOLARPANEL",
+    "Value": ""
+  },
+  {
+    "id": "DDS_ASH_DDLOWASH",
+    "Key": "DDS_ASH_DDLOWASH",
+    "Value": "흙"
+  },
+  {
+    "id": "DDS_ASH_DDHIGHASH",
+    "Key": "DDS_ASH_DDHIGHASH",
+    "Value": ""
+  },
+  {
+    "id": "DDS_ASH_DDROCKS",
+    "Key": "DDS_ASH_DDROCKS",
+    "Value": ""
+  },
+  {
+    "id": "DDS_ASH_HIGHCLIFF",
+    "Key": "DDS_ASH_HIGHCLIFF",
+    "Value": "언덕"
+  },
+  {
+    "id": "DDS_INSTALL_DDCLEAN",
+    "Key": "DDS_INSTALL_DDCLEAN",
+    "Value": "바닥"
+  },
+  {
+    "id": "DDS_INSTALL_DDCLEAN2ROOF",
+    "Key": "DDS_INSTALL_DDCLEAN2ROOF",
+    "Value": "벽"
+  },
+  {
+    "id": "DDS_INSTALL_DDDIRT",
+    "Key": "DDS_INSTALL_DDDIRT",
+    "Value": ""
+  },
+  {
+    "id": "DDS_INSTALL_DDDIRT2CLEAN",
+    "Key": "DDS_INSTALL_DDDIRT2CLEAN",
+    "Value": ""
+  },
+  {
+    "id": "DDS_INSTALL_DDWALK",
+    "Key": "DDS_INSTALL_DDWALK",
+    "Value": ""
+  },
+  {
+    "id": "DDS_BAD_BRIDGE",
+    "Key": "DDS_BAD_BRIDGE",
+    "Value": ""
+  },
+  {
+    "id": "DDS_JUNGLE_BRIDGES",
+    "Key": "DDS_JUNGLE_BRIDGES",
+    "Value": ""
+  },
+  {
+    "id": "DDS_PLAT_WALKWAY",
+    "Key": "DDS_PLAT_WALKWAY",
+    "Value": ""
+  },
+  {
+    "id": "DDS_PLAT_BRIDGES",
+    "Key": "DDS_PLAT_BRIDGES",
+    "Value": ""
+  },
+  {
+    "id": "DDS_DESERT_WATER",
+    "Key": "DDS_DESERT_WATER",
+    "Value": "타르"
+  },
+  {
+    "id": "DDS_DESERT_WATERCLIFF",
+    "Key": "DDS_DESERT_WATERCLIFF",
+    "Value": ""
+  },
+  {
+    "id": "DDS_DESERT_HARDPAN",
+    "Key": "DDS_DESERT_HARDPAN",
+    "Value": "흙"
+  },
+  {
+    "id": "DDS_DESERT_DRIEDMUD",
+    "Key": "DDS_DESERT_DRIEDMUD",
+    "Value": ""
+  },
+  {
+    "id": "DDS_DESERT_SANDDUNES",
+    "Key": "DDS_DESERT_SANDDUNES",
+    "Value": ""
+  },
+  {
+    "id": "DDS_DESERT_ROCKYGROUND",
+    "Key": "DDS_DESERT_ROCKYGROUND",
+    "Value": ""
+  },
+  {
+    "id": "DDS_DESERT_RUINS",
+    "Key": "DDS_DESERT_RUINS",
+    "Value": ""
+  },
+  {
+    "id": "DDS_DESERT_SANDYSUNKEN",
+    "Key": "DDS_DESERT_SANDYSUNKEN",
+    "Value": ""
+  },
+  {
+    "id": "DDS_DESERT_RESOURCE",
+    "Key": "DDS_DESERT_RESOURCE",
+    "Value": ""
+  },
+  {
+    "id": "DDS_DESERT_HIGHDIRT",
+    "Key": "DDS_DESERT_HIGHDIRT",
+    "Value": ""
+  },
+  {
+    "id": "DDS_DESERT_HIGHSANDDUNES",
+    "Key": "DDS_DESERT_HIGHSANDDUNES",
+    "Value": ""
+  },
+  {
+    "id": "DDS_DESERT_HIGHRUINS",
+    "Key": "DDS_DESERT_HIGHRUINS",
+    "Value": ""
+  },
+  {
+    "id": "DDS_DESERT_HIGHSANDSUNKEN",
+    "Key": "DDS_DESERT_HIGHSANDSUNKEN",
+    "Value": ""
+  },
+  {
+    "id": "DDS_DESERT_HIGHRESOURCE",
+    "Key": "DDS_DESERT_HIGHRESOURCE",
+    "Value": ""
+  },
+  {
+    "id": "DDS_ICE_WATER",
+    "Key": "DDS_ICE_WATER",
+    "Value": "물"
+  },
+  {
+    "id": "DDS_ICE_SNOW",
+    "Key": "DDS_ICE_SNOW",
+    "Value": "눈"
+  },
+  {
+    "id": "DDS_ICE_MUD",
+    "Key": "DDS_ICE_MUD",
+    "Value": ""
+  },
+  {
+    "id": "DDS_ICE_ROUGHSNOW",
+    "Key": "DDS_ICE_ROUGHSNOW",
+    "Value": "흙"
+  },
+  {
+    "id": "DDS_ICE_ROCKYSNOW",
+    "Key": "DDS_ICE_ROCKYSNOW",
+    "Value": ""
+  },
+  {
+    "id": "DDS_ICE_SNOWYRUINS",
+    "Key": "DDS_ICE_SNOWYRUINS",
+    "Value": "잔디"
+  },
+  {
+    "id": "DDS_ICE_SUNKENICE",
+    "Key": "DDS_ICE_SUNKENICE",
+    "Value": "얼음"
+  },
+  {
+    "id": "DDS_ICE_OUTPOST",
+    "Key": "DDS_ICE_OUTPOST",
+    "Value": "전초 기지"
+  },
+  {
+    "id": "DDS_ICE_HIGHSNOW",
+    "Key": "DDS_ICE_HIGHSNOW",
+    "Value": ""
+  },
+  {
+    "id": "DDS_ICE_HIGHROUGHSNOW",
+    "Key": "DDS_ICE_HIGHROUGHSNOW",
+    "Value": ""
+  },
+  {
+    "id": "DDS_ICE_HIGHSNOWYRUINS",
+    "Key": "DDS_ICE_HIGHSNOWYRUINS",
+    "Value": ""
+  },
+  {
+    "id": "DDS_ICE_HIGHSUNKENICE",
+    "Key": "DDS_ICE_HIGHSUNKENICE",
+    "Value": ""
+  },
+  {
+    "id": "DDS_ICE_HIGHOUTPOST",
+    "Key": "DDS_ICE_HIGHOUTPOST",
+    "Value": ""
+  },
+  {
+    "id": "DDS_TWILIGHT_WATER",
+    "Key": "DDS_TWILIGHT_WATER",
+    "Value": "물"
+  },
+  {
+    "id": "DDS_TWILIGHT_DIRT",
+    "Key": "DDS_TWILIGHT_DIRT",
+    "Value": "흙"
+  },
+  {
+    "id": "DDS_TWILIGHT_MUD",
+    "Key": "DDS_TWILIGHT_MUD",
+    "Value": "진흙"
+  },
+  {
+    "id": "DDS_TWILIGHT_CRACKEDICE",
+    "Key": "DDS_TWILIGHT_CRACKEDICE",
+    "Value": ""
+  },
+  {
+    "id": "DDS_TWILIGHT_CREVICE",
+    "Key": "DDS_TWILIGHT_CREVICE",
+    "Value": ""
+  },
+  {
+    "id": "DDS_TWILIGHT_ANCIENTRUINS",
+    "Key": "DDS_TWILIGHT_ANCIENTRUINS",
+    "Value": ""
+  },
+  {
+    "id": "DDS_TWILIGHT_SUNKENGROUND",
+    "Key": "DDS_TWILIGHT_SUNKENGROUND",
+    "Value": ""
+  },
+  {
+    "id": "DDS_TWILIGHT_COMPOUND",
+    "Key": "DDS_TWILIGHT_COMPOUND",
+    "Value": ""
+  },
+  {
+    "id": "DDS_TWILIGHT_HIGHDIRT",
+    "Key": "DDS_TWILIGHT_HIGHDIRT",
+    "Value": ""
+  },
+  {
+    "id": "DDS_TWILIGHT_HIGHCRACKEDICE",
+    "Key": "DDS_TWILIGHT_HIGHCRACKEDICE",
+    "Value": ""
+  },
+  {
+    "id": "DDS_TWILIGHT_HIGHANCIENTRUINS",
+    "Key": "DDS_TWILIGHT_HIGHANCIENTRUINS",
+    "Value": ""
+  },
+  {
+    "id": "DDS_TWILIGHT_HIGHSUNKENGROUND",
+    "Key": "DDS_TWILIGHT_HIGHSUNKENGROUND",
+    "Value": ""
+  },
+  {
+    "id": "DDS_TWILIGHT_HIGHCOMPOUND",
+    "Key": "DDS_TWILIGHT_HIGHCOMPOUND",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_SUPER",
+    "Key": "AI_TERRAN_SUPER",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_SUPER",
+    "Key": "AI_PROTOSS_SUPER",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_SUPER",
+    "Key": "AI_ZERG_SUPER",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_ED1",
+    "Key": "AI_TERRAN_ED1",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_ED2",
+    "Key": "AI_TERRAN_ED2",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_ED3",
+    "Key": "AI_TERRAN_ED3",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_SW1",
+    "Key": "AI_TERRAN_SW1",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_SW2",
+    "Key": "AI_TERRAN_SW2",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_SW3",
+    "Key": "AI_TERRAN_SW3",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_SW4",
+    "Key": "AI_TERRAN_SW4",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_SW5",
+    "Key": "AI_TERRAN_SW5",
+    "Value": ""
+  },
+  {
+    "id": "STR_STORM_MISSILE",
+    "Key": "STR_STORM_MISSILE",
+    "Value": "광륜 로켓"
+  },
+  {
+    "id": "STR_DEVOURER_PUKE",
+    "Key": "STR_DEVOURER_PUKE",
+    "Value": "부식성 산"
+  },
+  {
+    "id": "STR_LURKER_SPINES",
+    "Key": "STR_LURKER_SPINES",
+    "Value": "지하 등뼈"
+  },
+  {
+    "id": "STR_CORSAIR_LASER",
+    "Key": "STR_CORSAIR_LASER",
+    "Value": "중성자 섬광탄"
+  },
+  {
+    "id": "STR_MIND_CONTROL",
+    "Key": "STR_MIND_CONTROL",
+    "Value": "정신 제어"
+  },
+  {
+    "id": "STR_HEAL_TECH",
+    "Key": "STR_HEAL_TECH",
+    "Value": "치료"
+  },
+  {
+    "id": "STR_CURE_TECH",
+    "Key": "STR_CURE_TECH",
+    "Value": "회복"
+  },
+  {
+    "id": "STR_MYOPIA_TECH",
+    "Key": "STR_MYOPIA_TECH",
+    "Value": "광학 섬광탄"
+  },
+  {
+    "id": "STR_RSRCH_CURE",
+    "Key": "STR_RSRCH_CURE",
+    "Value": "r\\u0004회복 연구\\n(의무관 능력)"
+  },
+  {
+    "id": "STR_RSRCH_MYOPIA",
+    "Key": "STR_RSRCH_MYOPIA",
+    "Value": "f\\u0004광학 섬광탄 연구\\n(의무관 능력)"
+  },
+  {
+    "id": "STR_HEAL",
+    "Key": "STR_HEAL",
+    "Value": "a\\u0003치료"
+  },
+  {
+    "id": "STR_CURE",
+    "Key": "STR_CURE",
+    "Value": "r\\u0003회복"
+  },
+  {
+    "id": "STR_MYOPIA",
+    "Key": "STR_MYOPIA",
+    "Value": "f\\u0003광학 섬광탄"
+  },
+  {
+    "id": "STR_CURE_REQ",
+    "Key": "STR_CURE_REQ",
+    "Value": "회복:\\n   사관학교에서 연구"
+  },
+  {
+    "id": "STR_MYOPIA_REQ",
+    "Key": "STR_MYOPIA_REQ",
+    "Value": "광학 섬광탄:\\n   사관학교에서 연구"
+  },
+  {
+    "id": "STR_LURKERASPECT",
+    "Key": "STR_LURKERASPECT",
+    "Value": "가시지옥"
+  },
+  {
+    "id": "STR_RSRCH_LURKERASPECT",
+    "Key": "STR_RSRCH_LURKERASPECT",
+    "Value": "l\\u0004가시지옥 진화 (\\u0003L\\u0001)\\n(히드라리스크 능력)"
+  },
+  {
+    "id": "STR_RSRCH_LURKERASPECT_REQ",
+    "Key": "STR_RSRCH_LURKERASPECT_REQ",
+    "Value": "가시지옥:\\n   요구 사항 번식지"
+  },
+  {
+    "id": "STR_DISRUPTOR_TECH",
+    "Key": "STR_DISRUPTOR_TECH",
+    "Value": "분열망"
+  },
+  {
+    "id": "STR_MINDCONTROL_TECH",
+    "Key": "STR_MINDCONTROL_TECH",
+    "Value": "정신 제어"
+  },
+  {
+    "id": "STR_SUMMON_DARCHON_TECH",
+    "Key": "STR_SUMMON_DARCHON_TECH",
+    "Value": "암흑 집정관 합체"
+  },
+  {
+    "id": "STR_PSYFEEDBACK_TECH",
+    "Key": "STR_PSYFEEDBACK_TECH",
+    "Value": "환류"
+  },
+  {
+    "id": "STR_PARALIZE",
+    "Key": "STR_PARALIZE",
+    "Value": "대혼란"
+  },
+  {
+    "id": "STR_RSRCH_DISRUPTOR",
+    "Key": "STR_RSRCH_DISRUPTOR",
+    "Value": "d\\u0004분열망 개발\\n(해적선 능력)"
+  },
+  {
+    "id": "STR_RSRCH_MINDCONTROL",
+    "Key": "STR_RSRCH_MINDCONTROL",
+    "Value": "m\\u0004정신 제어 연구\\n(암흑 집정관 능력)"
+  },
+  {
+    "id": "STR_RSRCH_PSYFEEDBACK",
+    "Key": "STR_RSRCH_PSYFEEDBACK",
+    "Value": "f\\u0004환류 개발\\n(암흑 집정관 능력)"
+  },
+  {
+    "id": "STR_RSRCH_PARALIZE",
+    "Key": "STR_RSRCH_PARALIZE",
+    "Value": "e\\u0004대혼란 개발\\n(암흑 집정관 능력)"
+  },
+  {
+    "id": "STR_MAKE_P_DARCHON",
+    "Key": "STR_MAKE_P_DARCHON",
+    "Value": "r\\u0001암흑 집정관"
+  },
+  {
+    "id": "STR_DISRUPTOR",
+    "Key": "STR_DISRUPTOR",
+    "Value": "d\\u0003분열망"
+  },
+  {
+    "id": "STR_MINDCONTROL",
+    "Key": "STR_MINDCONTROL",
+    "Value": "c\\u0003정신 제어"
+  },
+  {
+    "id": "STR_PSYFEEDBACK",
+    "Key": "STR_PSYFEEDBACK",
+    "Value": "f\\u0003환류"
+  },
+  {
+    "id": "STR_USEPARALIZE",
+    "Key": "STR_USEPARALIZE",
+    "Value": "e\\u0003대혼란"
+  },
+  {
+    "id": "STR_DISRUPTOR_REQ",
+    "Key": "STR_DISRUPTOR_REQ",
+    "Value": "분열망:\\n   함대 신호소에서 개발"
+  },
+  {
+    "id": "STR_MINDCONTROL_REQ",
+    "Key": "STR_MINDCONTROL_REQ",
+    "Value": "정신 제어:\\n   기사단 기록보관소에서 연구"
+  },
+  {
+    "id": "STR_DARCHON0_REQ",
+    "Key": "STR_DARCHON0_REQ",
+    "Value": "암흑 집정관 합체:\\n   기사단 기록보관소에서 연구"
+  },
+  {
+    "id": "STR_DARCHON1_REQ",
+    "Key": "STR_DARCHON1_REQ",
+    "Value": "암흑 집정관 합체:\\n   2기 이상의 암흑 기사 선택"
+  },
+  {
+    "id": "STR_PSYFEEDBACK_REQ",
+    "Key": "STR_PSYFEEDBACK_REQ",
+    "Value": "환류:\\n   요구 사항 없음"
+  },
+  {
+    "id": "STR_PARALIZE_REQ",
+    "Key": "STR_PARALIZE_REQ",
+    "Value": "대혼란:\\n   기사단 기록보관소에서 개발"
+  },
+  {
+    "id": "STR_MEDIC_ENERGY",
+    "Key": "STR_MEDIC_ENERGY",
+    "Value": "카두세우스 반응로"
+  },
+  {
+    "id": "STR_MISSILE_BOOST",
+    "Key": "STR_MISSILE_BOOST",
+    "Value": "카론 증폭기"
+  },
+  {
+    "id": "STR_ULTRA_SPEED",
+    "Key": "STR_ULTRA_SPEED",
+    "Value": "합성 동화 작용"
+  },
+  {
+    "id": "STR_ULTRA_ARMOR",
+    "Key": "STR_ULTRA_ARMOR",
+    "Value": "키틴질 장갑"
+  },
+  {
+    "id": "STR_CORSAIR_ENERGY",
+    "Key": "STR_CORSAIR_ENERGY",
+    "Value": "아르거스 보석"
+  },
+  {
+    "id": "STR_DARCHON_ENERGY",
+    "Key": "STR_DARCHON_ENERGY",
+    "Value": "아르거스 부적"
+  },
+  {
+    "id": "STR_UP_MEDIC_ENERGY",
+    "Key": "STR_UP_MEDIC_ENERGY",
+    "Value": "d\\u0002카두세우스 반응로\\n(의무관 에너지 +50)"
+  },
+  {
+    "id": "STR_UP_T_MISSILE_BOOST",
+    "Key": "STR_UP_T_MISSILE_BOOST",
+    "Value": "c\\u0002카론 증폭기 연구\\n(골리앗 미사일 사거리 증가)"
+  },
+  {
+    "id": "STR_UP_Z_ULTRA_SPEED",
+    "Key": "STR_UP_Z_ULTRA_SPEED",
+    "Value": "a\\u0002합성 동화 작용 진화\\n(울트라리스크 이동 속도 증가)"
+  },
+  {
+    "id": "STR_UP_Z_ULTRA_ARMOR",
+    "Key": "STR_UP_Z_ULTRA_ARMOR",
+    "Value": "c\\u0002키틴질 장갑\\n(울트라리스크 방어력 증가)"
+  },
+  {
+    "id": "STR_UP_CORSAIR_ENERGY",
+    "Key": "STR_UP_CORSAIR_ENERGY",
+    "Value": "j\\u0002아르거스 보석 개발\\n(해적선 에너지 +50)"
+  },
+  {
+    "id": "STR_UP_DARCHON_ENERGY",
+    "Key": "STR_UP_DARCHON_ENERGY",
+    "Value": "t\\u0002아르거스 부적 개발\\n(암흑 집정관 에너지 +50)"
+  },
+  {
+    "id": "STR_UP_T_MISSILE_BOOST_REQ",
+    "Key": "STR_UP_T_MISSILE_BOOST_REQ",
+    "Value": "카론 증폭기 연구:\\n   요구 사항 무기고"
+  },
+  {
+    "id": "STR_DEVOURER_ASPECT",
+    "Key": "STR_DEVOURER_ASPECT",
+    "Value": "d\\u0005포식귀"
+  },
+  {
+    "id": "STR_MAKE_Z_LURKER",
+    "Key": "STR_MAKE_Z_LURKER",
+    "Value": "l\\u0001가시지옥으로 변태"
+  },
+  {
+    "id": "STR_MAKE_T_MEDIC",
+    "Key": "STR_MAKE_T_MEDIC",
+    "Value": "c\\u0001의무관 훈련"
+  },
+  {
+    "id": "STR_MAKE_T_FRIGATE",
+    "Key": "STR_MAKE_T_FRIGATE",
+    "Value": "y\\u0001발키리 생산"
+  },
+  {
+    "id": "STR_MAKE_P_CORSAIR",
+    "Key": "STR_MAKE_P_CORSAIR",
+    "Value": "o\\u0001해적선 소환"
+  },
+  {
+    "id": "STR_MAKE_P_DTEMPLAR",
+    "Key": "STR_MAKE_P_DTEMPLAR",
+    "Value": "k\\u0001암흑 기사 소환"
+  },
+  {
+    "id": "STR_MEDIC_REQ",
+    "Key": "STR_MEDIC_REQ",
+    "Value": "의무관 요구 사항:\\n   사관학교"
+  },
+  {
+    "id": "STR_FRIGATE_REQ",
+    "Key": "STR_FRIGATE_REQ",
+    "Value": "발키리 요구 사항:\\n   부착된 관제탑\\n   무기고"
+  },
+  {
+    "id": "STR_DTEMPLAR_REQ",
+    "Key": "STR_DTEMPLAR_REQ",
+    "Value": "암흑 기사 요구 사항:\\n   기사단 기록보관소"
+  },
+  {
+    "id": "STR_DEVOURER_REQ",
+    "Key": "STR_DEVOURER_REQ",
+    "Value": "포식귀 요구 사항:\\n   거대 둥지탑"
+  },
+  {
+    "id": "STR_LURKER_REQ",
+    "Key": "STR_LURKER_REQ",
+    "Value": "가시지옥:\\n   히드라리스크 굴에서 진화"
+  },
+  {
+    "id": "STR_MYOPIA_LBL",
+    "Key": "STR_MYOPIA_LBL",
+    "Value": "\\u0007실명"
+  },
+  {
+    "id": "STR_CRUNCHY_DAMAGE",
+    "Key": "STR_CRUNCHY_DAMAGE",
+    "Value": "\\u0007산성 포자"
+  },
+  {
+    "id": "STR_MISSILESTORM_LBL",
+    "Key": "STR_MISSILESTORM_LBL",
+    "Value": "로켓 당"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK",
+    "Key": "STR_FIRST_TERRAN_RANK",
+    "Value": "신병"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-1",
+    "Key": "STR_FIRST_TERRAN_RANK-1",
+    "Value": "이등병"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-2",
+    "Key": "STR_FIRST_TERRAN_RANK-2",
+    "Value": "이등병"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-3",
+    "Key": "STR_FIRST_TERRAN_RANK-3",
+    "Value": "중위"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-4",
+    "Key": "STR_FIRST_TERRAN_RANK-4",
+    "Value": "상등병"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-5",
+    "Key": "STR_FIRST_TERRAN_RANK-5",
+    "Value": "병장"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-6",
+    "Key": "STR_FIRST_TERRAN_RANK-6",
+    "Value": "하사"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-7",
+    "Key": "STR_FIRST_TERRAN_RANK-7",
+    "Value": "중사"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-8",
+    "Key": "STR_FIRST_TERRAN_RANK-8",
+    "Value": "상사"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-9",
+    "Key": "STR_FIRST_TERRAN_RANK-9",
+    "Value": "준위"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-10",
+    "Key": "STR_FIRST_TERRAN_RANK-10",
+    "Value": "대위"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-11",
+    "Key": "STR_FIRST_TERRAN_RANK-11",
+    "Value": "소령"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-12",
+    "Key": "STR_FIRST_TERRAN_RANK-12",
+    "Value": "중사"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-13",
+    "Key": "STR_FIRST_TERRAN_RANK-13",
+    "Value": "원사"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-14",
+    "Key": "STR_FIRST_TERRAN_RANK-14",
+    "Value": "대령"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-15",
+    "Key": "STR_FIRST_TERRAN_RANK-15",
+    "Value": "준장"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-16",
+    "Key": "STR_FIRST_TERRAN_RANK-16",
+    "Value": "중령"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-17",
+    "Key": "STR_FIRST_TERRAN_RANK-17",
+    "Value": "보안관"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-18",
+    "Key": "STR_FIRST_TERRAN_RANK-18",
+    "Value": "중위"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-19",
+    "Key": "STR_FIRST_TERRAN_RANK-19",
+    "Value": "장군"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-20",
+    "Key": "STR_FIRST_TERRAN_RANK-20",
+    "Value": "레이너 대위  "
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-21",
+    "Key": "STR_FIRST_TERRAN_RANK-21",
+    "Value": "듀크 장군"
+  },
+  {
+    "id": "STR_FIRST_TERRAN_RANK-22",
+    "Key": "STR_FIRST_TERRAN_RANK-22",
+    "Value": "제독"
+  },
+  {
+    "id": "STR_HEAL_ERR",
+    "Key": "STR_HEAL_ERR",
+    "Value": "기계가 아닌 부상당한 지상 유닛을 대상으로 해야 합니다."
+  },
+  {
+    "id": "STR_MINDCONTROL_ERR",
+    "Key": "STR_MINDCONTROL_ERR",
+    "Value": "잘못된 대상입니다."
+  },
+  {
+    "id": "STR_MINDCONTROL_TARGET_ERR",
+    "Key": "STR_MINDCONTROL_TARGET_ERR",
+    "Value": "적 유닛을 대상으로 해야 합니다."
+  },
+  {
+    "id": "STR_PARALIZE_ERR",
+    "Key": "STR_PARALIZE_ERR",
+    "Value": "기계가 아닌 유닛을 대상으로 해야 합니다."
+  },
+  {
+    "id": "STR_MYOPIA_ERR",
+    "Key": "STR_MYOPIA_ERR",
+    "Value": "구조물을 대상으로 할 수 없습니다."
+  },
+  {
+    "id": "STR_PSYFEEDBACK_ERR",
+    "Key": "STR_PSYFEEDBACK_ERR",
+    "Value": "에너지가 있는 유닛을 대상으로 해야 합니다."
+  },
+  {
+    "id": "STR_ORDER_MEDIC",
+    "Key": "STR_ORDER_MEDIC",
+    "Value": "의무관"
+  },
+  {
+    "id": "STR_ORDER_MEDIC_HEAL",
+    "Key": "STR_ORDER_MEDIC_HEAL",
+    "Value": "의무관 치료"
+  },
+  {
+    "id": "STR_ORDER_MEDIC_CURE",
+    "Key": "STR_ORDER_MEDIC_CURE",
+    "Value": "회복"
+  },
+  {
+    "id": "STR_ORDER_CAST_DISRUPTOR",
+    "Key": "STR_ORDER_CAST_DISRUPTOR",
+    "Value": "디스트럽션 웹 시전"
+  },
+  {
+    "id": "STR_ORDER_MINDCONTROL",
+    "Key": "STR_ORDER_MINDCONTROL",
+    "Value": "정신 제어 시전"
+  },
+  {
+    "id": "STR_ORDER_SUMMON_DARCHON",
+    "Key": "STR_ORDER_SUMMON_DARCHON",
+    "Value": "암흑 집정관 소환"
+  },
+  {
+    "id": "STR_ORDER_PSYFEEDBACK",
+    "Key": "STR_ORDER_PSYFEEDBACK",
+    "Value": "환류 시전"
+  },
+  {
+    "id": "STR_ORDER_MYOPIA",
+    "Key": "STR_ORDER_MYOPIA",
+    "Value": "광학 섬광탄 시전"
+  },
+  {
+    "id": "STR_ORDER_PARALIZE",
+    "Key": "STR_ORDER_PARALIZE",
+    "Value": "쇼크웨이브 시전"
+  },
+  {
+    "id": "STR_ORDER_MEDIC_HEALMOVE",
+    "Key": "STR_ORDER_MEDIC_HEALMOVE",
+    "Value": "치료 이동"
+  },
+  {
+    "id": "STR_ORDER_MEDIC_HOLDPOS",
+    "Key": "STR_ORDER_MEDIC_HOLDPOS",
+    "Value": "의무관 위치 사수"
+  },
+  {
+    "id": "STR_ORDER_JUNK_YARD_DOG",
+    "Key": "STR_ORDER_JUNK_YARD_DOG",
+    "Value": "쓰레기장 개"
+  },
+  {
+    "id": "AI_CUSTOM_TERRANX",
+    "Key": "AI_CUSTOM_TERRANX",
+    "Value": ""
+  },
+  {
+    "id": "AI_CUSTOM_PROTOSSX",
+    "Key": "AI_CUSTOM_PROTOSSX",
+    "Value": ""
+  },
+  {
+    "id": "AI_CUSTOM_ZERGX",
+    "Key": "AI_CUSTOM_ZERGX",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B1A",
+    "Key": "AI_PROTOSS_B1A",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B1B",
+    "Key": "AI_PROTOSS_B1B",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B1C",
+    "Key": "AI_PROTOSS_B1C",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B1D",
+    "Key": "AI_PROTOSS_B1D",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B1E",
+    "Key": "AI_PROTOSS_B1E",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B1F",
+    "Key": "AI_PROTOSS_B1F",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B2A",
+    "Key": "AI_PROTOSS_B2A",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B2B",
+    "Key": "AI_PROTOSS_B2B",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B2C",
+    "Key": "AI_PROTOSS_B2C",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B2D",
+    "Key": "AI_PROTOSS_B2D",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B2E",
+    "Key": "AI_PROTOSS_B2E",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B2F",
+    "Key": "AI_PROTOSS_B2F",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B3A",
+    "Key": "AI_PROTOSS_B3A",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B3B",
+    "Key": "AI_PROTOSS_B3B",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B3C",
+    "Key": "AI_PROTOSS_B3C",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B3D",
+    "Key": "AI_PROTOSS_B3D",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B3E",
+    "Key": "AI_PROTOSS_B3E",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B3F",
+    "Key": "AI_PROTOSS_B3F",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B4A",
+    "Key": "AI_PROTOSS_B4A",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B4B",
+    "Key": "AI_PROTOSS_B4B",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B4C",
+    "Key": "AI_PROTOSS_B4C",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B4D",
+    "Key": "AI_PROTOSS_B4D",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B4E",
+    "Key": "AI_PROTOSS_B4E",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B4F",
+    "Key": "AI_PROTOSS_B4F",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B5A",
+    "Key": "AI_PROTOSS_B5A",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B5B",
+    "Key": "AI_PROTOSS_B5B",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B5C",
+    "Key": "AI_PROTOSS_B5C",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B5D",
+    "Key": "AI_PROTOSS_B5D",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B5E",
+    "Key": "AI_PROTOSS_B5E",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B5F",
+    "Key": "AI_PROTOSS_B5F",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B6A",
+    "Key": "AI_PROTOSS_B6A",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B6B",
+    "Key": "AI_PROTOSS_B6B",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B6C",
+    "Key": "AI_PROTOSS_B6C",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B6D",
+    "Key": "AI_PROTOSS_B6D",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B6E",
+    "Key": "AI_PROTOSS_B6E",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B6F",
+    "Key": "AI_PROTOSS_B6F",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B7A",
+    "Key": "AI_PROTOSS_B7A",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B7B",
+    "Key": "AI_PROTOSS_B7B",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B7C",
+    "Key": "AI_PROTOSS_B7C",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B7D",
+    "Key": "AI_PROTOSS_B7D",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B7E",
+    "Key": "AI_PROTOSS_B7E",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B7F",
+    "Key": "AI_PROTOSS_B7F",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B8A",
+    "Key": "AI_PROTOSS_B8A",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B8B",
+    "Key": "AI_PROTOSS_B8B",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B8C",
+    "Key": "AI_PROTOSS_B8C",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B8D",
+    "Key": "AI_PROTOSS_B8D",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B8E",
+    "Key": "AI_PROTOSS_B8E",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_B8F",
+    "Key": "AI_PROTOSS_B8F",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B1A",
+    "Key": "AI_TERRAN_B1A",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B1B",
+    "Key": "AI_TERRAN_B1B",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B1C",
+    "Key": "AI_TERRAN_B1C",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B1D",
+    "Key": "AI_TERRAN_B1D",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B1E",
+    "Key": "AI_TERRAN_B1E",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B1F",
+    "Key": "AI_TERRAN_B1F",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B2A",
+    "Key": "AI_TERRAN_B2A",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B2B",
+    "Key": "AI_TERRAN_B2B",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B2C",
+    "Key": "AI_TERRAN_B2C",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B2D",
+    "Key": "AI_TERRAN_B2D",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B2E",
+    "Key": "AI_TERRAN_B2E",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B2F",
+    "Key": "AI_TERRAN_B2F",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B3A",
+    "Key": "AI_TERRAN_B3A",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B3B",
+    "Key": "AI_TERRAN_B3B",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B3C",
+    "Key": "AI_TERRAN_B3C",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B3D",
+    "Key": "AI_TERRAN_B3D",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B3E",
+    "Key": "AI_TERRAN_B3E",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B3F",
+    "Key": "AI_TERRAN_B3F",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B4A",
+    "Key": "AI_TERRAN_B4A",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B4B",
+    "Key": "AI_TERRAN_B4B",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B4C",
+    "Key": "AI_TERRAN_B4C",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B4D",
+    "Key": "AI_TERRAN_B4D",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B4E",
+    "Key": "AI_TERRAN_B4E",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B4F",
+    "Key": "AI_TERRAN_B4F",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B5A",
+    "Key": "AI_TERRAN_B5A",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B5B",
+    "Key": "AI_TERRAN_B5B",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B5C",
+    "Key": "AI_TERRAN_B5C",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B5D",
+    "Key": "AI_TERRAN_B5D",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B5E",
+    "Key": "AI_TERRAN_B5E",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B5F",
+    "Key": "AI_TERRAN_B5F",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B6A",
+    "Key": "AI_TERRAN_B6A",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B6B",
+    "Key": "AI_TERRAN_B6B",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B6C",
+    "Key": "AI_TERRAN_B6C",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B6D",
+    "Key": "AI_TERRAN_B6D",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B6E",
+    "Key": "AI_TERRAN_B6E",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B6F",
+    "Key": "AI_TERRAN_B6F",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B7A",
+    "Key": "AI_TERRAN_B7A",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B7B",
+    "Key": "AI_TERRAN_B7B",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B7C",
+    "Key": "AI_TERRAN_B7C",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B7D",
+    "Key": "AI_TERRAN_B7D",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B7E",
+    "Key": "AI_TERRAN_B7E",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B7F",
+    "Key": "AI_TERRAN_B7F",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B8A",
+    "Key": "AI_TERRAN_B8A",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B8B",
+    "Key": "AI_TERRAN_B8B",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B8C",
+    "Key": "AI_TERRAN_B8C",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B8D",
+    "Key": "AI_TERRAN_B8D",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B8E",
+    "Key": "AI_TERRAN_B8E",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_B8F",
+    "Key": "AI_TERRAN_B8F",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B1A",
+    "Key": "AI_ZERG_B1A",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B1B",
+    "Key": "AI_ZERG_B1B",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B1C",
+    "Key": "AI_ZERG_B1C",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B1D",
+    "Key": "AI_ZERG_B1D",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B1E",
+    "Key": "AI_ZERG_B1E",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B1F",
+    "Key": "AI_ZERG_B1F",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B2A",
+    "Key": "AI_ZERG_B2A",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B2B",
+    "Key": "AI_ZERG_B2B",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B2C",
+    "Key": "AI_ZERG_B2C",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B2D",
+    "Key": "AI_ZERG_B2D",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B2E",
+    "Key": "AI_ZERG_B2E",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B2F",
+    "Key": "AI_ZERG_B2F",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B3A",
+    "Key": "AI_ZERG_B3A",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B3B",
+    "Key": "AI_ZERG_B3B",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B3C",
+    "Key": "AI_ZERG_B3C",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B3D",
+    "Key": "AI_ZERG_B3D",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B3E",
+    "Key": "AI_ZERG_B3E",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B3F",
+    "Key": "AI_ZERG_B3F",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B4A",
+    "Key": "AI_ZERG_B4A",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B4B",
+    "Key": "AI_ZERG_B4B",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B4C",
+    "Key": "AI_ZERG_B4C",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B4D",
+    "Key": "AI_ZERG_B4D",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B4E",
+    "Key": "AI_ZERG_B4E",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B4F",
+    "Key": "AI_ZERG_B4F",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B5A",
+    "Key": "AI_ZERG_B5A",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B5B",
+    "Key": "AI_ZERG_B5B",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B5C",
+    "Key": "AI_ZERG_B5C",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B5D",
+    "Key": "AI_ZERG_B5D",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B5E",
+    "Key": "AI_ZERG_B5E",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B5F",
+    "Key": "AI_ZERG_B5F",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B6A",
+    "Key": "AI_ZERG_B6A",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B6B",
+    "Key": "AI_ZERG_B6B",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B6C",
+    "Key": "AI_ZERG_B6C",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B6D",
+    "Key": "AI_ZERG_B6D",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B6E",
+    "Key": "AI_ZERG_B6E",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B6F",
+    "Key": "AI_ZERG_B6F",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B7A",
+    "Key": "AI_ZERG_B7A",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B7B",
+    "Key": "AI_ZERG_B7B",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B7C",
+    "Key": "AI_ZERG_B7C",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B7D",
+    "Key": "AI_ZERG_B7D",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B7E",
+    "Key": "AI_ZERG_B7E",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B7F",
+    "Key": "AI_ZERG_B7F",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B8A",
+    "Key": "AI_ZERG_B8A",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B8B",
+    "Key": "AI_ZERG_B8B",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B8C",
+    "Key": "AI_ZERG_B8C",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B8D",
+    "Key": "AI_ZERG_B8D",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B8E",
+    "Key": "AI_ZERG_B8E",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B8F",
+    "Key": "AI_ZERG_B8F",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B9A",
+    "Key": "AI_ZERG_B9A",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B9B",
+    "Key": "AI_ZERG_B9B",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B9C",
+    "Key": "AI_ZERG_B9C",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B9D",
+    "Key": "AI_ZERG_B9D",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B9E",
+    "Key": "AI_ZERG_B9E",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B9F",
+    "Key": "AI_ZERG_B9F",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B10A",
+    "Key": "AI_ZERG_B10A",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B10B",
+    "Key": "AI_ZERG_B10B",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B10C",
+    "Key": "AI_ZERG_B10C",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B10D",
+    "Key": "AI_ZERG_B10D",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B10E",
+    "Key": "AI_ZERG_B10E",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_B10F",
+    "Key": "AI_ZERG_B10F",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_LOX",
+    "Key": "AI_ZERG_LOX",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_MEDX",
+    "Key": "AI_ZERG_MEDX",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_HIX",
+    "Key": "AI_ZERG_HIX",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_AREAX",
+    "Key": "AI_ZERG_AREAX",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_LOX",
+    "Key": "AI_PROTOSS_LOX",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_MEDX",
+    "Key": "AI_PROTOSS_MEDX",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_HIX",
+    "Key": "AI_PROTOSS_HIX",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_AREAX",
+    "Key": "AI_PROTOSS_AREAX",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_LOX",
+    "Key": "AI_TERRAN_LOX",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_MEDX",
+    "Key": "AI_TERRAN_MEDX",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_HIX",
+    "Key": "AI_TERRAN_HIX",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_AREAX",
+    "Key": "AI_TERRAN_AREAX",
+    "Value": ""
+  },
+  {
+    "id": "AI_TERRAN_SUPERX",
+    "Key": "AI_TERRAN_SUPERX",
+    "Value": ""
+  },
+  {
+    "id": "AI_PROTOSS_SUPERX",
+    "Key": "AI_PROTOSS_SUPERX",
+    "Value": ""
+  },
+  {
+    "id": "AI_ZERG_SUPERX",
+    "Key": "AI_ZERG_SUPERX",
+    "Value": ""
+  },
+  {
+    "id": "AI_SET_COMMAND_TARGET",
+    "Key": "AI_SET_COMMAND_TARGET",
+    "Value": ""
+  },
+  {
+    "id": "AI_SET_UNIT_PATROL",
+    "Key": "AI_SET_UNIT_PATROL",
+    "Value": ""
+  },
+  {
+    "id": "AI_ENTER_TRANSPORTSTR",
+    "Key": "AI_ENTER_TRANSPORTSTR",
+    "Value": ""
+  },
+  {
+    "id": "AI_EXIT_TRANSPORTSTR",
+    "Key": "AI_EXIT_TRANSPORTSTR",
+    "Value": ""
+  },
+  {
+    "id": "AI_SHAREVISION_0",
+    "Key": "AI_SHAREVISION_0",
+    "Value": ""
+  },
+  {
+    "id": "AI_SHAREVISION_1",
+    "Key": "AI_SHAREVISION_1",
+    "Value": ""
+  },
+  {
+    "id": "AI_SHAREVISION_2",
+    "Key": "AI_SHAREVISION_2",
+    "Value": ""
+  },
+  {
+    "id": "AI_SHAREVISION_3",
+    "Key": "AI_SHAREVISION_3",
+    "Value": ""
+  },
+  {
+    "id": "AI_SHAREVISION_4",
+    "Key": "AI_SHAREVISION_4",
+    "Value": ""
+  },
+  {
+    "id": "AI_SHAREVISION_5",
+    "Key": "AI_SHAREVISION_5",
+    "Value": ""
+  },
+  {
+    "id": "AI_SHAREVISION_6",
+    "Key": "AI_SHAREVISION_6",
+    "Value": ""
+  },
+  {
+    "id": "AI_SHAREVISION_7",
+    "Key": "AI_SHAREVISION_7",
+    "Value": ""
+  },
+  {
+    "id": "AI_UNSHAREVISION_0",
+    "Key": "AI_UNSHAREVISION_0",
+    "Value": ""
+  },
+  {
+    "id": "AI_UNSHAREVISION_1",
+    "Key": "AI_UNSHAREVISION_1",
+    "Value": ""
+  },
+  {
+    "id": "AI_UNSHAREVISION_2",
+    "Key": "AI_UNSHAREVISION_2",
+    "Value": ""
+  },
+  {
+    "id": "AI_UNSHAREVISION_3",
+    "Key": "AI_UNSHAREVISION_3",
+    "Value": ""
+  },
+  {
+    "id": "AI_UNSHAREVISION_4",
+    "Key": "AI_UNSHAREVISION_4",
+    "Value": ""
+  },
+  {
+    "id": "AI_UNSHAREVISION_5",
+    "Key": "AI_UNSHAREVISION_5",
+    "Value": ""
+  },
+  {
+    "id": "AI_UNSHAREVISION_6",
+    "Key": "AI_UNSHAREVISION_6",
+    "Value": ""
+  },
+  {
+    "id": "AI_UNSHAREVISION_7",
+    "Key": "AI_UNSHAREVISION_7",
+    "Value": ""
+  },
+  {
+    "id": "AI_NUKE_HERESTR",
+    "Key": "AI_NUKE_HERESTR",
+    "Value": ""
+  },
+  {
+    "id": "AI_HARASS_HERESTR",
+    "Key": "AI_HARASS_HERESTR",
+    "Value": ""
+  },
+  {
+    "id": "AI_STR_JUNK_YARD_DOG",
+    "Key": "AI_STR_JUNK_YARD_DOG",
+    "Value": ""
+  },
+  {
+    "id": "STR_VIEWPLAYERS",
+    "Key": "STR_VIEWPLAYERS",
+    "Value": "플레이어 보기"
+  },
+  {
+    "id": "STR_PLAYBACK_HELP_SPEEDUP",
+    "Key": "STR_PLAYBACK_HELP_SPEEDUP",
+    "Value": "u\\u0007빠르게 (\\u0003U\\u0001)"
+  },
+  {
+    "id": "STR_PLAYBACK_HELP_PLAY",
+    "Key": "STR_PLAYBACK_HELP_PLAY",
+    "Value": "p\\u0007플레이 (\\u0003P\\u0001)"
+  },
+  {
+    "id": "STR_PLAYBACK_HELP_PAUSE",
+    "Key": "STR_PLAYBACK_HELP_PAUSE",
+    "Value": "p\\u0007일시 정지 (\\u0003P\\u0001)"
+  },
+  {
+    "id": "STR_PLAYBACK_HELP_SLOWDOWN",
+    "Key": "STR_PLAYBACK_HELP_SLOWDOWN",
+    "Value": "d\\u0007느리게 (\\u0003D\\u0001)"
+  },
+  {
+    "id": "STR_REPLAY_PROGRESS",
+    "Key": "STR_REPLAY_PROGRESS",
+    "Value": "리플레이 진행 상황"
+  },
+  {
+    "id": "STR_REPLAY_PAUSED",
+    "Key": "STR_REPLAY_PAUSED",
+    "Value": "일시 정지됨"
+  },
+  {
+    "id": "STR_UNLIMITED",
+    "Key": "STR_UNLIMITED",
+    "Value": "무제한"
+  },
+  {
+    "id": "STR_REPLAY_SEEKING",
+    "Key": "STR_REPLAY_SEEKING",
+    "Value": "추적: : %s"
+  },
+  {
+    "id": "STR_APM_COL_PLAYER",
+    "Key": "STR_APM_COL_PLAYER",
+    "Value": "플레이어"
+  },
+  {
+    "id": "STR_APM_COL_APM",
+    "Key": "STR_APM_COL_APM",
+    "Value": "APM"
+  },
+  {
+    "id": "STR_APM_COL_EPM",
+    "Key": "STR_APM_COL_EPM",
+    "Value": "분당 유효 행동수"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-261",
+    "Key": "FIRST_UNIT_STRING-261",
+    "Value": "Taar Atril"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-262",
+    "Key": "FIRST_UNIT_STRING-262",
+    "Value": "짐 레이너\\u0000시체매\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-263",
+    "Key": "FIRST_UNIT_STRING-263",
+    "Value": "노라드 II\\u0000추락한 전투순양함\\u0000특수 건물"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-264",
+    "Key": "FIRST_UNIT_STRING-264",
+    "Value": "테란 전투순양함\\u0000*\\u0000공중 유닛"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-265",
+    "Key": "FIRST_UNIT_STRING-265",
+    "Value": "Leviathan"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-266",
+    "Key": "FIRST_UNIT_STRING-266",
+    "Value": "Graff Zeppelin"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-267",
+    "Key": "FIRST_UNIT_STRING-267",
+    "Value": "Bismarck"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-268",
+    "Key": "FIRST_UNIT_STRING-268",
+    "Value": "Stalingrad"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-269",
+    "Key": "FIRST_UNIT_STRING-269",
+    "Value": "RESERVED"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-270",
+    "Key": "FIRST_UNIT_STRING-270",
+    "Value": "감염된 케리건\\u0000감염된 테란\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-271",
+    "Key": "FIRST_UNIT_STRING-271",
+    "Value": "감염된 케리건\\u0000감염된 테란\\u0000영웅"
+  },
+  {
+    "id": "FIRST_UNIT_STRING-272",
+    "Key": "FIRST_UNIT_STRING-272",
+    "Value": "톰 카잔스키\\u0000망령\\u0000영웅"
+  }
+]

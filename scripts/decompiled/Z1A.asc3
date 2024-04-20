@@ -9,7 +9,11 @@ defaultbuild_off
 default_min 1
 wait 1
 
-wait 180
+wait 50
+
+upgrade_jump 13 Exactly_Call 74 6 easy_upgrades
+upgrade_jump 13 Exactly_Call 74 7 hard_upgrades
+wait 110
 
 defensebuild_gg 2 broodling
 defenseuse_gg 2 broodling
@@ -50,3 +54,16 @@ wait 500
 capt_expand
 guard_all
 goto implodes
+
+:easy_upgrades
+upgrade_jump 3 Set z_carapace 3 loop
+upgrade_jump 2 Set z_melee_attack 3 loop
+upgrade_jump 2 Set z_missile_attack 3 loop
+return
+
+:hard_upgrades
+upgrade_jump 5 Set z_carapace 3 loop
+upgrade_jump 4 Set z_carapace 3 loop
+upgrade_jump 5 Set z_flyer_attack 2 loop
+upgrade_jump 4 Set z_flyer_attack 2 loop
+return

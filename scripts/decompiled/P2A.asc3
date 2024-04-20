@@ -6,30 +6,48 @@ wait 1
 
 start_town
 defaultbuild_off
-default_min 101
+default_min 0
 wait 1
 
 build 1 hatchery 150
 build 1 drone 130
+defenseuse_gg 1 infested_terran
+defenseuse_gg 1 lurker
+idle_orders 11 160 1 lurker 192 Any 20 WithoutUnitFlags(Air)
+idle_orders 11 160 1 lurker 192 Any 50 WithoutUnitFlags(Air)|UnitFlags(Detector)
+idle_orders 11 160 1 lurker 192 Any 60 InCombat|WithoutUnitFlags(Air)
+idle_orders 11 160 1 lurker 192 Any 100 InCombat|WithoutUnitFlags(Air)|UnitFlags(Detector)
+idle_orders 135 16 1 infested_terran 512 dark_templar|revenant 80 0
 wait_build 1 hatchery
-farms_timing
 build 6 drone 80
-build 1 spawning_pool 80
+build 1 spawning_pool 85
+creep 4
+build 1 creep_colony 80
+allies_watch 4 second_part
 wait_buildstart 1 spawning_pool
 build 1 evolution_chamber 80
+build 2 creep_colony 80
 wait_build 1 spawning_pool
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
 build 9 drone 80
+build 3 creep_colony 80
 build 1 hydralisk_den 80
-multirun turret_defense
+defensebuild_gg 2 hydralisk
+defenseuse_gg 2 hydralisk
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+multirun turret_defense_half
 build 1 lair 80
 wait_build 1 lair
-build 12 drone 80
+build 16 drone 80
 build 1 spire 80
 build 1 queen_nest 80
 wait_buildstart 1 queen_nest
 build 3 hatchery 80
 wait_buildstart 3 hatchery
 max_force 680
+max_workers 18
 define_max 25 overlord
 define_max 26 zergling
 define_max 30 drone
@@ -42,12 +60,6 @@ define_max 6 guardian
 define_max 255 devourer
 define_max 5 ultralisk
 define_max 255 defiler
-defensebuild_gg 1 zergling
-defenseuse_gg 1 zergling
-defensebuild_gg 2 hydralisk
-defenseuse_gg 2 hydralisk
-defensebuild_ag 1 hydralisk
-defenseuse_ag 1 hydralisk
 defenseuse_aa 1 hydralisk
 defensebuild_ga 1 mutalisk
 defenseuse_ga 1 mutalisk
@@ -59,21 +71,21 @@ defenseuse_aa 1 scourge
 tech lurker_aspect 30
 tech burrowing 30
 upgrade 1 overlord_speed 30
-farms_timing
 target_expansion
 wait 16
 
 attack_add 16 zergling
-attack_prepare
+attack_to Loc.32 Loc.15
 wait 500
 
 attack_do
 attack_clear
+guard hydralisk Loc.41 1 1 60
+guard hydralisk Loc.42 1 1 60
+guard hydralisk Loc.43 1 1 60
 build 1 hive 80
-place_guard queen 0
 upgrade 1 z_melee_attack 30
 tech ensnare 30
-
 create_script fort_generator 255 Loc.33 255 0
 wait 1500
 
@@ -81,25 +93,26 @@ train 9 hydralisk
 train 2 lurker
 attack_add 2 lurker
 attack_add 7 hydralisk
-attack_prepare
+call atk_setup
 wait 500
 
 attack_do
 attack_clear
+guard lurker Loc.48 1 1 60
+guard lurker Loc.49 1 1 60
 defensebuild_gg 1 lurker
-defenseuse_gg 1 lurker
 upgrade 1 z_flyer_attack 30
 wait 1025
 
-attack_add 11 hydralisk
-attack_prepare
+attack_add 14 hydralisk
+call atk_setup
 wait 500
 
 create_script fort_generator 255 Loc.28 255 0
 attack_do
 attack_clear
-build 1 ultralisk_cavern 80
-wait_buildstart 1 ultralisk_cavern
+place_guard mutalisk 1
+place_guard mutalisk 2
 build 1 greater_spire 80
 wait_buildstart 1 greater_spire
 upgrade 1 z_missile_attack 30 
@@ -107,56 +120,61 @@ upgrade 1 zergling_speed 30
 create_script fort_generator 255 Loc.31 255 0
 wait 1885
 
+train 8 hydralisk
+train 6 mutalisk
 attack_add 8 hydralisk
-attack_add 3 ultralisk
-attack_prepare
+attack_add 6 mutalisk
+call atk_setup
 wait 500
 
 attack_do
 attack_clear
-allies_watch 8 zerg_town
-defensebuild_gg 1 ultralisk
-defenseuse_gg 1 ultralisk
+allies_watch 7 zerg_town
 build 2 evolution_chamber 80
 wait_buildstart 2 evolution_chamber
 upgrade 1 z_flyer_carapace 30
 create_script fort_generator 255 Loc.32 255 0
 wait 2135
 
+train 6 scourge
 train 9 mutalisk
 train 3 guardian
+attack_add 6 scourge
 attack_add 6 mutalisk
 attack_add 3 guardian
-attack_prepare
+call atk_setup
 wait 500
 
 attack_do
 attack_clear
+guard scourge Loc.45 1 1 60
+guard scourge Loc.46 1 1 60
 defensebuild_ga 1 guardian
 defenseuse_ga 1 guardian
 upgrade 1 z_carapace 30
 upgrade 1 hydralisk_speed 30
-upgrade 1 ultralisk_speed 30
 create_script fort_generator 255 Loc.34 255 0
 wait 1500
 
 train 13 hydralisk
 train 3 lurker
+train 6 mutalisk
+train 2 guardian
 attack_add 10 hydralisk
 attack_add 3 lurker
 attack_add 4 mutalisk
 attack_add 2 guardian
-attack_prepare
+call atk_setup
 wait 500
 
 attack_do
 attack_clear
+guard guardian Loc.44 1 1 60
 upgrade 1 zergling_attack 30
-wait 1500
+wait 635
 
 attack_add 22 zergling
-attack_add 4 ultralisk
-attack_prepare
+call atk_setup
 wait 500
 
 attack_do
@@ -164,24 +182,27 @@ attack_clear
 upgrade 2 z_carapace 30
 upgrade 2 z_flyer_carapace 30
 upgrade 1 hydralisk_range 30
-upgrade 1 ultralisk_armor 30
 wait 2333
 
 attack_add 18 zergling
 attack_add 10 hydralisk
 attack_add 6 mutalisk
-attack_add 2 ultralisk
-attack_prepare
+call atk_setup
 wait 500
 
 attack_do
 attack_clear
 allies_watch 8 zerg_town
+max_workers 255
 wait 1500
 
 attack_add 16 zergling
 attack_add 8 mutalisk
-attack_prepare
+unstart_campaign
+set_attacks 1
+target_expansion
+call time_since_atkstart
+start_campaign
 wait 500
 
 attack_do
@@ -190,7 +211,7 @@ wait 500
 
 attack_add 5 mutalisk
 attack_add 6 hydralisk
-attack_prepare
+call atk_setup
 wait 500
 
 attack_do
@@ -200,11 +221,13 @@ upgrade 2 z_flyer_attack 30
 upgrade 2 z_missile_attack 30
 wait 2375
 
+train 4 scourge
 train 3 mutalisk
 train 3 guardian
+attack_add 4 scourge
 attack_add 3 guardian
 attack_add 8 hydralisk
-attack_prepare
+call atk_setup
 wait 500
 
 attack_do
@@ -216,22 +239,26 @@ train 5 hydralisk
 train 5 lurker
 attack_add 20 zergling
 attack_add 5 lurker
-attack_prepare
+call atk_setup
 wait 500
 
 attack_do
 attack_clear
-
 :block1
 expand 2 zerg_town
 wait 1335
 
 train 10 mutalisk
 train 2 guardian
+train 16 zergling
 attack_add 16 zergling
 attack_add 8 mutalisk
 attack_add 2 guardian
-attack_prepare
+unstart_campaign
+set_attacks 1
+target_expansion
+call time_since_atkstart
+start_campaign
 wait 500
 
 attack_do
@@ -240,11 +267,11 @@ wait 2315
 
 train 12 hydralisk
 train 4 lurker
+train 6 mutalisk
 attack_add 6 mutalisk
 attack_add 8 hydralisk
 attack_add 4 lurker
-attack_add 2 ultralisk
-attack_prepare
+call atk_setup
 wait 500
 
 attack_do
@@ -253,46 +280,128 @@ wait 1425
 
 train 3 mutalisk
 train 3 guardian
+train 8 hydralisk
+train 14 zergling
 attack_add 14 zergling
 attack_add 8 hydralisk
 attack_add 3 guardian
-attack_prepare
+call atk_setup
 wait 500
 
 attack_do
 attack_clear
 goto block1
 
-:turret_defense
-creep 4
+:turret_defense_half
 build 1 creep_colony 80
 wait_build 1 creep_colony
 build 2 creep_colony 80
 wait_build 2 creep_colony
 build 3 creep_colony 80
 wait_build 3 creep_colony
+build 3 sunken_colony 80
 build 4 creep_colony 80
 wait_build 4 creep_colony
 build 5 creep_colony 80
 wait_build 5 creep_colony
-build 5 sunken_colony 80
 build 6 creep_colony 80
 wait_build 6 creep_colony
-build 7 creep_colony 80
-wait_build 7 creep_colony
-build 8 creep_colony 80
-wait_build 8 creep_colony
-build 9 creep_colony 80
-wait_build 9 creep_colony
-build 10 creep_colony 80
-wait_build 10 creep_colony
-build 5 spore_colony 80
+build 3 spore_colony 80
+wait 3000
+stop
 
-:towerloop
-wait 1500
+:second_part
+start_town
+build 1 hatchery 110
+get_oldpeons 1
+wait_build 1 hatchery
+build 1 drone 90
+wait_build 1 drone
+build 3 drone 80
+get_oldpeons 3
+wait_build 3 drone
+build 5 drone 80
+max_workers 15
+build 1 creep_colony 80
+wait_build 1 creep_colony
+build 1 sunken_colony 80
+build 2 creep_colony 80
+wait_build 2 creep_colony
+build 2 sunken_colony 80
+build 1 lair 80
+:wait_ultra
+wait 50
 
-give_money
-goto towerloop
+notowns_jump hive wait_ultra
+build 1 ultralisk_cavern 80
+wait_build 1 ultralisk_cavern
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+#todo - add ultra upgs and attks here, maybe defilers. 
+#take them out of main town, have separate atks here (handled like in vp8?)
+#afterwards bump up vp3 diff and tweak vp4
+build 14 drone 80
+wait_buildstart 5 drone
+creep 4
+build 3 creep_colony 80
+wait_build 3 creep_colony
+build 1 spore_colony 80
+guard ultralisk Loc.47 1 1 60
+upgrade 1 ultralisk_speed 30
+train 1 ultralisk
+call check_if_atk
+attack_add 1 ultralisk
+wait 4000
+
+train 2 ultralisk
+call check_if_atk
+attack_add 2 ultralisk
+wait 2000
+
+upgrade 1 ultralisk_armor 30
+train 3 ultralisk
+call check_if_atk
+attack_add 3 ultralisk
+wait 6000
+
+max_workers 255
+:ultra_loop
+train 4 ultralisk
+call check_if_atk
+attack_add 4 ultralisk
+wait 8000
+
+train 2 ultralisk
+call check_if_atk
+attack_add 2 ultralisk
+wait 4000
+
+goto ultra_loop
+
+:time_since_atkstart
+deaths 13 AtLeast 1 valhalla done
+:increment_atk_length
+#increment while if_attacking is true
+deaths 13 Add 1 valhalla time_since_atkstart
+wait 25
+
+if_attacking increment_atk_length
+#no longer attacking, reset counter
+deaths 13 Set 0 valhalla time_since_atkstart
+:done
+stop
+
+:check_if_atk
+wait 50
+
+if_attacking in_atk
+goto check_if_atk
+
+:in_atk
+#if atk prep has been going for a while, go back and wait for a closer match (so that we don't join late atks)
+deaths 13 AtLeast 20 valhalla check_if_atk
+#else return so that ultras get added
+return
 
 :zerg_town
 start_town
@@ -312,6 +421,13 @@ creep 4
 build 1 creep_colony 80
 wait_build 1 creep_colony
 build 1 sunken_colony 80
+max_workers 15
+wait 22500
+
+max_workers 10
+wait 15000
+
+max_workers 255
 :d_loop
 wait 1500
 
@@ -334,6 +450,7 @@ goto fg2
 :fg1
 build 1 spore_colony 80
 wait_build 1 spore_colony
+place_guard queen 0
 build 2 creep_colony 80
 wait_build 2 creep_colony
 random_jump 128 s_skip
@@ -348,15 +465,31 @@ goto fg2
 random_jump 85 fg3
 random_jump 128 fg4
 build 1 spawning_pool 80
+place_guard zergling 0
+place_guard zergling 0
 goto f1loop
 
 :fg3
 build 1 hydralisk_den 80
+place_guard lurker 0
 goto f1loop
 
 :fg4
 build 1 evolution_chamber 80
+place_guard queen 0
 :f1loop
 wait 1500
 
 goto f1loop
+
+:atk_setup
+multirun time_since_atkstart
+random_jump 128 camp_attack
+unstart_campaign
+attack_prepare
+start_campaign
+return
+
+:camp_attack
+attack_prepare
+return

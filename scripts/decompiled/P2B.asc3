@@ -23,8 +23,10 @@ place_guard queen 0
 max_force 750
 defensebuild_gg 2 zergling
 defenseuse_gg 2 zergling
-defensebuild_gg 4 hydralisk
-defenseuse_gg 4 hydralisk
+defensebuild_gg 2 hydralisk
+defenseuse_gg 2 hydralisk
+defensebuild_gg 2 hydralisk
+defenseuse_gg 2 hydralisk
 defensebuild_ag 1 hydralisk
 defenseuse_ag 1 hydralisk
 defensebuild_ga 1 mutalisk
