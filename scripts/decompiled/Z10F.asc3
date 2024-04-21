@@ -189,6 +189,7 @@ capt_expand
 wait 500
 
 build 16 drone 80
+tech optical_flare 30
 defensebuild_gg 1 death_knight
 defenseuse_gg 1 death_knight
 defensebuild_gg 2 scorpion
@@ -277,12 +278,9 @@ defenseuse_aa 1 scourge
 defensebuild_aa 1 skywing
 defenseuse_aa 1 skywing
 build 1 ultralisk_cavern 80
-idle_orders 120 160 1 hydralisk 2048 ultralisk 50 incombat
-idle_orders 120 160 1 hydralisk 2048 lurker 30 incombat
-idle_orders 120 160 1 hydralisk 2048 zealot 20 incombat
-idle_orders 120 160 1 hydralisk 2048 dragoon 25 incombat
-idle_orders 120 160 1 hydralisk 2048 hydralisk 10 incombat
-idle_orders 120 160 1 hydralisk 1024 high_templar 30 0
+idle_orders 185 8 1 hydralisk 192 group_men 20 Incombat|WithoutSpellEffects(Blind)
+idle_orders 185 8 1 hydralisk 192 reaver|high_templar|scout|wraith|carrier|ultralisk|siege_tank|battlecruiser|arbiter|medic|death_knight|phantom|panzer|valkyrie|corsair 50 Incombat|WithoutSpellEffects(Blind)
+idle_orders 185 8 1 hydralisk 256 observer|science_vessel|skywing|overlord|valhalla 100 WithoutSpellEffects(Blind)
 idle_orders 120 0 1 hqueen 1024 overlord|observer|science_vessel|defiler 30 WithoutSpellEffects(Parasite)|RandomRate(280 820)
 idle_orders 146 0 1 hqueen 1024 zealot|zergling|hydralisk|marine|vulture 100 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)
 idle_orders 146 0 1 hqueen 1024 dragoon|corsair|scout|dark_templar|wraith|ghost 80 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(160 540)

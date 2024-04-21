@@ -333,13 +333,10 @@ upgrade 1 z_carapace 30
 upgrade 1 hydralisk_speed 30
 upgrade 1 zergling_speed 30
 upgrade 1 ultralisk_armor 30
-farms_timing
-idle_orders 120 8 1 hydralisk 256 battlecruiser 50 Incombat|WithoutSpellEffects(Parasite)
-idle_orders 120 8 1 hydralisk 256 siege_tank 30 Incombat|WithoutSpellEffects(Parasite)
-idle_orders 120 8 1 hydralisk 256 zealot 20 Incombat|WithoutSpellEffects(Parasite)
-idle_orders 120 8 1 hydralisk 256 dragoon 25 Incombat|WithoutSpellEffects(Parasite)
-idle_orders 120 8 1 hydralisk 256 goliath 10 Incombat|WithoutSpellEffects(Parasite)
-idle_orders 120 8 1 hydralisk 256 high_templar 30 0
+tech_jump 13 Set optical_flare 1 targeting
+idle_orders 185 8 1 hydralisk 192 group_men 20 Incombat|WithoutSpellEffects(Blind)
+idle_orders 185 8 1 hydralisk 192 reaver|high_templar|scout|wraith|carrier|ultralisk|siege_tank|battlecruiser|arbiter|medic|death_knight|phantom|panzer|valkyrie|corsair|lurker 50 Incombat|WithoutSpellEffects(Blind)
+idle_orders 185 8 1 hydralisk 256 observer|science_vessel|skywing|overlord|valhalla 100 WithoutSpellEffects(Blind)
 wait 3250
 
 multirun grand_exchange

@@ -69,9 +69,10 @@ tech siege_mode 30
 tech lurker_aspect 30
 upgrade 1 overlord_speed 30
 upgrade 1 overlord_capacity 30
-idle_orders 120 160 1 hydralisk 2048 ultralisk 50 incombat
-idle_orders 120 160 1 hydralisk 2048 lurker 30 incombat
-idle_orders 120 160 1 hydralisk 2048 hydralisk 10 incombat
+tech_jump 13 Set optical_flare 1 take_expansion
+idle_orders 185 8 1 hydralisk 192 group_men 20 Incombat|WithoutSpellEffects(Blind)
+idle_orders 185 8 1 hydralisk 192 reaver|high_templar|scout|wraith|carrier|ultralisk|siege_tank|battlecruiser|arbiter|medic|death_knight|phantom|panzer|valkyrie|corsair|lurker 50 Incombat|WithoutSpellEffects(Blind)
+idle_orders 185 8 1 hydralisk 256 observer|science_vessel|skywing|overlord|valhalla 100 WithoutSpellEffects(Blind)
 idle_orders 92 256 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
 idle_orders 92 256 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
 idle_orders 92 256 1 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(Guard))

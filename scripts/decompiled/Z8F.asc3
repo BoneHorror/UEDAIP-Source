@@ -117,17 +117,15 @@ check_transports
 max_force 202
 tech lurker_aspect 30
 tech hallucination 30
+tech optical_flare 40
 upgrade 1 overlord_speed 30
 upgrade 1 overlord_capacity 30
 wait 400
 
 upgrade 1 t_infantry_weapon 30
-idle_orders 120 8 1 hydralisk 256 ultralisk 50 Incombat|WithoutSpellEffects(Parasite)
-idle_orders 120 8 1 hydralisk 256 lurker 30 Incombat|WithoutSpellEffects(Parasite)
-idle_orders 120 8 1 hydralisk 256 zealot 20 Incombat|WithoutSpellEffects(Parasite)
-idle_orders 120 8 1 hydralisk 256 dragoon 25 Incombat|WithoutSpellEffects(Parasite)
-idle_orders 120 8 1 hydralisk 256 hydralisk 10 Incombat|WithoutSpellEffects(Parasite)
-idle_orders 120 8 1 hydralisk 256 high_templar 30 0
+idle_orders 185 8 1 hydralisk 192 group_men 20 Incombat|WithoutSpellEffects(Blind)
+idle_orders 185 8 1 hydralisk 192 reaver|high_templar|scout|wraith|carrier|ultralisk|siege_tank|battlecruiser|arbiter|medic|death_knight|phantom|panzer|valkyrie|corsair|lurker 50 Incombat|WithoutSpellEffects(Blind)
+idle_orders 185 8 1 hydralisk 256 observer|science_vessel|skywing|overlord|valhalla 100 WithoutSpellEffects(Blind)
 idle_orders 134 160 1 infested_terran 112 sunken_colony 80 incombat
 idle_orders 134 160 1 infested_terran 112 photon_cannon 70 incombat
 idle_orders 134 160 1 infested_terran 96 archon 50 incombat
