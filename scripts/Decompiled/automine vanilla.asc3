@@ -453,19 +453,21 @@ issue_order MoveToMinerals 1 scv Loc.31 Loc.31 176 EachAtMostOnce
 stop
 
 :terran_4
-upgrade_jump 13 Exactly_Call 74 6 t4_easy
-upgrade_jump 13 Exactly_Call 74 7 t4_hard
+wait 25
+
+upgrade_jump 7 Exactly_Call 74 6 t4_easy
+upgrade_jump 7 Exactly_Call 74 7 t4_hard
 stop
 
 :t4_easy
-upgrade_jump 6 Set t_infantry_weapon 0 terran_4
+upgrade_jump 7 Set t_infantry_weapon 0 terran_4
 upgrade_jump 0 Set t_infantry_armor 3 terran_4
 stop
 
 :t4_hard
-upgrade_jump 6 Set t_vehicle_weapon 3 terran_4
+upgrade_jump 7 Set t_vehicle_weapon 3 terran_4
 upgrade_jump 0 Set t_infantry_armor 0 terran_4
-tech_jump 6 Set stim_packs 1 terran_4
+tech_jump 7 Set stim_packs 1 terran_4
 stop
 
 :terran_5
@@ -547,8 +549,10 @@ issue_order MoveToMinerals 1 drone Loc.16 Loc.16 178 0
 stop
 
 :zerg_5
-upgrade_jump 13 Exactly_Call 74 6 z5_easy
-upgrade_jump 13 Exactly_Call 74 7 z5_hard
+wait 25
+
+upgrade_jump 6 Exactly_Call 74 6 z5_easy
+upgrade_jump 6 Exactly_Call 74 7 z5_hard
 stop
 
 :z5_easy
@@ -622,8 +626,10 @@ issue_order MoveToMinerals 1 scv Loc.20 Loc.20 178 EachAtMostOnce
 stop
 
 :protoss_5
-upgrade_jump 13 Exactly_Call 74 6 p5_easy
-upgrade_jump 13 Exactly_Call 74 7 p5_hard
+wait 25
+
+upgrade_jump 3 Exactly_Call 74 6 p5_easy
+upgrade_jump 3 Exactly_Call 74 7 p5_hard
 stop
 
 :p5_easy
