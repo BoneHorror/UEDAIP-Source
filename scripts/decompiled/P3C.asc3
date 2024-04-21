@@ -42,12 +42,10 @@ defenseuse_ag 1 hydralisk
 tech burrowing 30
 upgrade 1 overlord_capacity 30
 upgrade 1 overlord_speed 30
-idle_orders 120 8 1 hydralisk 256 zealot 20 Incombat|WithoutSpellEffects(Parasite)
-idle_orders 120 8 1 hydralisk 256 dragoon 25 Incombat|WithoutSpellEffects(Parasite)
-idle_orders 120 8 1 hydralisk 256 reaver 40 Incombat|WithoutSpellEffects(Parasite)
-idle_orders 120 8 1 hydralisk 256 high_templar 50 Incombat|WithoutSpellEffects(Parasite)
-idle_orders 120 8 1 hydralisk 256 observer 100 WithoutSpellEffects(Parasite)
-idle_orders 120 8 1 hydralisk 256 scout 30 Incombat|WithoutSpellEffects(Parasite)
+tech_jump 13 Set optical_flare 1 small_town
+idle_orders 185 8 1 hydralisk 192 group_men 20 Incombat|WithoutSpellEffects(Blind)
+idle_orders 185 8 1 hydralisk 192 reaver|high_templar|scout|wraith|carrier|ultralisk|siege_tank|battlecruiser|arbiter|medic|death_knight|phantom|panzer|valkyrie|corsair 50 Incombat|WithoutSpellEffects(Blind)
+idle_orders 185 8 1 hydralisk 256 observer|science_vessel|skywing|overlord|valhalla 100 WithoutSpellEffects(Blind)
 idle_orders 148 16 1 ultralisk 512 hydralisk 40 own|allied|notenemies|incombat
 idle_orders 148 16 1 ultralisk 512 mutalisk 30 own|allied|notenemies|incombat
 idle_orders 148 16 1 ultralisk 512 lurker 70 own|allied|notenemies|incombat
