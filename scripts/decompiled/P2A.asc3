@@ -13,6 +13,8 @@ build 1 hatchery 150
 build 1 drone 130
 defenseuse_gg 1 infested_terran
 defenseuse_gg 1 lurker
+max_force 680
+multirun setup_check
 idle_orders 11 160 1 lurker 192 Any 20 WithoutUnitFlags(Air)
 idle_orders 11 160 1 lurker 192 Any 50 WithoutUnitFlags(Air)|UnitFlags(Detector)
 idle_orders 11 160 1 lurker 192 Any 60 InCombat|WithoutUnitFlags(Air)
@@ -31,8 +33,8 @@ allies_watch 4 second_part
 wait_buildstart 1 spawning_pool
 build 1 evolution_chamber 80
 wait_build 1 spawning_pool
-defensebuild_gg 1 zergling
-defenseuse_gg 1 zergling
+defensebuild_gg 2 zergling
+defenseuse_gg 2 zergling
 build 9 drone 80
 build 1 hydralisk_den 80
 defensebuild_gg 2 hydralisk
@@ -48,7 +50,6 @@ build 1 queen_nest 80
 wait_buildstart 1 queen_nest
 build 3 hatchery 80
 wait_buildstart 3 hatchery
-max_force 680
 max_workers 18
 define_max 25 overlord
 define_max 26 zergling
@@ -495,3 +496,33 @@ return
 :camp_attack
 attack_prepare
 return
+
+:setup_check
+deaths 4 Exactly 1 arbiter setup_midarmy
+deaths 4 Exactly 2 arbiter setup_large
+deaths 4 Exactly 3 arbiter setup_crazy
+stop
+
+:setup_midarmy
+max_force 750
+upgrade_jump 13 Set z_carapace 1 camp_attack
+stop
+
+:setup_large
+max_force 980
+capt_expand
+upgrade_jump 13 Set z_carapace 1 camp_attack
+upgrade_jump 13 Set z_missile_attack 1 camp_attack
+upgrade_jump 13 Set hydralisk_range 1 camp_attack
+stop
+
+:setup_crazy
+max_force 1210
+capt_expand
+defenseuse_gg 1 lurker
+upgrade_jump 13 Set z_carapace 1 camp_attack
+upgrade_jump 13 Set zergling_speed 1 camp_attack
+upgrade_jump 13 Set z_missile_attack 1 camp_attack
+upgrade_jump 13 Set hydralisk_range 1 camp_attack
+upgrade_jump 13 Set z_flyer_attack 1 camp_attack
+stop
