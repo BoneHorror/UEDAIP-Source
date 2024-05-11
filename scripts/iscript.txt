@@ -24799,7 +24799,7 @@ long03:
 
 HideUnit:
 	#print	Hiding...
-	hide_unit	unit
+	#hide_unit	unit
 	return
 	
 # Freeze code below, how to reproduce unit freeze: Order unit to move in the direction of a target, start attack and interrupt it before the animation finishes; unit should be frozen, playing its idle anim with the flingy 0x2 (accelerating) flag still set
