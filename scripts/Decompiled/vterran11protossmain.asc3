@@ -343,8 +343,8 @@ attack_clear
 goto block1
 
 :timers_and_bank
-#set base timeout for stargates to 45*433 = 19485 frames
-deaths 1 Add 433 battlecruiser block1
+#set base timeout for stargates to 45*433 = 21600 frames
+deaths 1 Add 480 battlecruiser block1
 multirun decrease_ticks
 multirun desperate_stargate
 wait 500
@@ -394,7 +394,7 @@ goto tick_stargate_exp
 :build_stargate_exp
 #add 11250 frames of delay when a stargate is queued to be built
 deaths 1 Add 250 battlecruiser block1
-wait_rand 2350 5015
+wait_rand 3350 5515
 build 1 stargate 80
 stop
 
