@@ -21,7 +21,7 @@ build 2 photon_cannon 70
 build 1 citadel_of_adun 80
 creep 4
 max_workers 26
-multirun needed_shit
+multirun timers_and_bank
 define_max 58 probe
 define_max 27 zealot
 define_max 22 dragoon
@@ -342,7 +342,8 @@ attack_do
 attack_clear
 goto block1
 
-:needed_shit
+:timers_and_bank
+#set base timeout for stargates to 45*433 = 19485 frames
 deaths 1 Add 433 battlecruiser block1
 multirun decrease_ticks
 multirun desperate_stargate
@@ -374,22 +375,13 @@ deaths 1 Subtract 1 battlecruiser block1
 goto decrease_ticks
 
 :desperate_stargate
+#used to get 3rd stargate in main potentially earlier
 deaths 1 AtLeast 3 nexus desperate_execute
 wait 1500
 
 goto desperate_stargate
 
 :desperate_execute
-build 3 stargate 80
-stop
-
-:tick_stargate
-deaths 1 AtMost 0 battlecruiser build_stargate
-wait 150
-
-goto tick_stargate
-
-:build_stargate
 build 3 stargate 80
 stop
 
@@ -400,7 +392,9 @@ wait 150
 goto tick_stargate_exp
 
 :build_stargate_exp
-wait_rand 1350 7015
+#add 11250 frames of delay when a stargate is queued to be built
+deaths 1 Add 250 battlecruiser block1
+wait_rand 2350 5015
 build 1 stargate 80
 stop
 
@@ -408,7 +402,6 @@ stop
 :exp
 start_town
 build 1 nexus 80
-deaths 1 Add 150 battlecruiser block1
 wait_build 1 nexus
 get_oldpeons 4
 multirun probes
@@ -426,9 +419,9 @@ wait_build 1 photon_cannon
 build 2 pylon 80
 wait_build 2 pylon
 multirun tick_stargate_exp
-wait_buildstart 1 stargate
 build 2 photon_cannon 80
 wait_build 2 photon_cannon
+wait_buildstart 1 stargate
 build 3 pylon 80
 wait_build 3 pylon
 build 3 photon_cannon 80
