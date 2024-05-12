@@ -92,6 +92,7 @@ attack_clear
 train 2 vulture
 upgrade 1 hospitals 30
 upgrade 1 marine_range 30
+upgrade 1 t_infantry_weapon 30
 tech spider_mines 30
 upgrade 1 ghost_sight 30
 wait 1385
@@ -129,7 +130,7 @@ attack_clear
 train 7 vulture
 tech lockdown 30
 upgrade 1 vademecum 30
-upgrade 1 t_infantry_weapon 30
+upgrade 2 t_infantry_weapon 30
 wait 1275
 
 train 1 siege_tank
@@ -166,7 +167,6 @@ attack_do
 attack_clear
 defenseuse_gg 1 siege_tank
 upgrade 1 adv_mechanics 30
-upgrade 2 t_infantry_weapon 30
 upgrade 1 t_vehicle_plating 30
 upgrade 1 ghost_mana 30
 wait 1025
