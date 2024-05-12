@@ -6250,6 +6250,7 @@ SarahKerriganWalkingToIdle:
 	playfram       	0x33	# frame set 3
 SarahKerriganLocal02:
 	waitrand       	63 75
+	#print P1(Blue) BC Deaths: {deaths(1, 12)} #Debug
 	randcondjmp    	25 SarahKerriganLocal00
 	randcondjmp    	128 SarahKerriganLocal01
 	goto           	SarahKerriganLocal02
