@@ -1,7 +1,7 @@
 script_name Brood Wars Protoss 4 - Town E
 script_id PB4E
 
-unstart_campaign
+start_campaign
 wait 1
 
 start_town
@@ -39,16 +39,16 @@ define_max 255 heavy_marine
 #
 wait 4800
 
-defensebuild_gg 1 marine
-defenseuse_gg 1 marine
-defensebuild_gg 1 firebat
-defenseuse_gg 1 firebat
+defensebuild_gg 1 vulture
+defenseuse_gg 1 vulture
 defensebuild_gg 1 goliath
 defenseuse_gg 1 goliath
-defensebuild_ag 1 marine
-defenseuse_ag 1 marine
+defensebuild_gg 1 marine
+defenseuse_gg 1 marine
 defensebuild_ag 2 goliath
 defenseuse_ag 2 goliath
+defensebuild_ag 1 marine
+defenseuse_ag 1 marine
 defensebuild_ga 1 wraith
 defenseuse_ga 1 wraith
 defensebuild_aa 1 wraith
@@ -59,7 +59,7 @@ train 2 firebat
 wait 1250
 
 attack_add 3 marine
-attack_add 2 firebat
+attack_add 2 vulture
 call targeting
 wait 160
 
@@ -100,7 +100,7 @@ train 2 siege_tank
 wait 1150
 
 attack_add 6 marine
-attack_add 2 firebat
+attack_add 2 vulture
 attack_add 2 siege_tank
 call targeting
 wait 160
@@ -233,12 +233,10 @@ wait 160
 goto block1
 
 :targeting
+unstart_campaign
 set_attacks 1
-wait 16
-
 target_expansion
-wait 16
-
+start_campaign
 attack_do
 attack_clear
 return
