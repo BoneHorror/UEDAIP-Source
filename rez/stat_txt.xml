@@ -6682,4 +6682,16 @@ Bonus doubled for Burrowed units)</value>
         <id>FIRST_UNIT_STRING-272</id>
         <value>Tom Kazansky</value>
     </string>
+	<string>
+        <id>FIRST_UNIT_STRING-273</id>
+        <value>UNUSED</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-274</id>
+        <value>UNUSED</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-275</id>
+        <value>UNUSED</value>
+    </string>
 </strings>
