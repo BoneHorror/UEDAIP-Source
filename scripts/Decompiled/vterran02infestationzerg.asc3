@@ -40,6 +40,7 @@ goto wait_cc
 capt_expand
 max_workers 14
 max_force 303
+upgrade_jump 13 Exactly_Call 74 7 t2h_force
 wait_buildstart 1 spawning_pool
 idle_orders 27 128 1 queen 512 command_center 80 health(LessThanPercent,50)|own
 under_attack 0
@@ -59,6 +60,7 @@ attack_do
 attack_clear
 farms_timing
 build 2 creep_colony 80
+upgrade_jump 13 Exactly_Call 74 7 t2h_skip1
 train 4 zergling
 attack_add 4 zergling
 attack_prepare
@@ -68,6 +70,7 @@ attack_do
 attack_clear
 wait 850
 
+:t2h_skip1
 train 6 zergling
 attack_add 6 zergling
 attack_to Loc.13 Loc.12
@@ -92,6 +95,7 @@ attack_do
 attack_clear
 upgrade 1 z_carapace 30
 define_max 2 infested_terran
+upgrade_jump 13 Exactly_Call 74 7 loop
 train 6 zergling
 attack_add 6 zergling
 attack_to Loc.13 Loc.12
@@ -99,8 +103,10 @@ wait 500
 
 attack_do
 attack_clear
+wait 750
+
 :loop
-wait 1500
+wait 750
 
 train 14 zergling
 attack_add 14 zergling
@@ -119,6 +125,10 @@ wait 500
 attack_do
 attack_clear
 goto loop
+
+:t2h_force
+max_force 505
+return
 
 :colony_morph
 wait_build 1 spawning_pool
