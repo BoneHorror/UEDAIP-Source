@@ -4744,19 +4744,19 @@ When burrowed and at full energy, the Spawnsire births 4 Broodlings that seek ou
     </string>
     <string>
         <id>AI_ZERG_2</id>
-        <value>Zerg 2 - Protoss Town</value>
+        <value>Khalai</value>
     </string>
     <string>
         <id>AI_ZERG_3</id>
-        <value>Zerg 3 - Terran Town</value>
+        <value>Robotic</value>
     </string>
     <string>
         <id>AI_ZERG_4</id>
-        <value>Zerg 4 - Right Terran Town</value>
+        <value>Nerazim</value>
     </string>
     <string>
         <id>AI_ZERG_4S</id>
-        <value>Zerg 4 - Lower Terran Town</value>
+        <value>Khalai / Nerazim</value>
     </string>
     <string>
         <id>AI_ZERG_5</id>
@@ -6733,5 +6733,17 @@ bonus doubled for Burrowed units)</value>
 	<string>
         <id>FIRST_UNIT_STRING-278</id>
         <value>Kenji Yamamoto</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-279</id>
+        <value>UNUSED</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-280</id>
+        <value>UNUSED</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-281</id>
+        <value>UNUSED</value>
     </string>
 </strings>
