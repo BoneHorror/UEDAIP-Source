@@ -123,8 +123,9 @@ upgrade 1 t_infantry_armor 30
 wait_build 2 barracks
 train 2 heavy_marine
 attack_add 5 heavy_marine
-call Targeting
-attack_timeout 85
+attack_to Loc.127 Loc.124
+#right-side base entrance
+attack_timeout 120
 tech stim_packs 30
 create_script supply1 255 Loc.95 255 0
 wait_build 1 academy
@@ -175,6 +176,7 @@ idle_orders 141 64 1 hsciencevessel 332 guardian 60 own|allied|notenemies|incomb
 train 6 heavy_marine
 train 2 death_knight
 train 2 skywing
+attack_do
 attack_clear
 train 6 heavy_marine
 attack_add 6 heavy_marine
@@ -766,6 +768,7 @@ goto medic_check
 
 :Targeting
 deaths 1 AtLeast 1 98 random_trg
+time_jump 40 random_trg
 random_jump 53 Trg1
 random_jump 64 Trg2
 random_jump 85 Trg3
@@ -791,6 +794,13 @@ attack_to Loc.15 Loc.121
 return
 
 :random_trg
+random_jump 128 campaign_trg
+unstart_campaign
+attack_prepare
+start_campaign
+return
+
+:campaign_trg
 attack_prepare
 return
 
