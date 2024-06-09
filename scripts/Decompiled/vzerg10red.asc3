@@ -382,8 +382,9 @@ wait 16
 bank_data Set 0 aiur_composition type bloop
 save_bank aiur_composition
 :bloop
-wait 16
+wait 3
 
+print InBankLoop
 #psi emitter deaths set in win triggers based on composition
 deaths 0 AtMost 0 217 bloop
 deaths 0 Exactly 2 217 comp2
