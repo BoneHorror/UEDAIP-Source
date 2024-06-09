@@ -391,24 +391,28 @@ deaths 0 Exactly 3 217 comp3
 deaths 0 Exactly 4 217 comp4
 #this is comp1 because we have 1 death
 #win no fullclear, no composition focus
+print AiurCompGeneric
 bank_data Set 1 aiur_composition type bloop
 save_bank aiur_composition
 stop
 
 :comp2
 #air focus bank
+print AiurCompAir
 bank_data Set 2 aiur_composition type bloop
 save_bank aiur_composition
 stop
 
 :comp3
 #hydra ultra focus bank
+print AiurCompHultra
 bank_data Set 3 aiur_composition type bloop
 save_bank aiur_composition
 stop
 
 :comp4
 #player won while fullclearing
+print AiurCompFullClear
 bank_data Set 4 aiur_composition type bloop
 save_bank aiur_composition
 stop
