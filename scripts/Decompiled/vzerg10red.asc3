@@ -374,6 +374,7 @@ wait 25
 load_bank infested_aiur
 bank_data Exactly 1 infested_aiur infested icc1
 bank_data Exactly 2 infested_aiur infested icc2
+:remaining_bank
 wait 1500
 
 load_bank aiur_composition
@@ -420,11 +421,11 @@ stop
 
 :icc1
 deaths 1 Set 1 infested_terran bank_shit
-stop
+goto remaining_bank
 
 :icc2
 deaths 1 Set 2 infested_terran bank_shit
-stop
+goto remaining_bank
 
 :upgrades
 wait 16
