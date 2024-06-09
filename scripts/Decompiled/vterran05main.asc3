@@ -621,6 +621,10 @@ goto antiga_loop_har
 :expo_deny
 train 6 marine
 guard_all
+guard marine Loc.55 1 3 60
+guard marine Loc.51 1 3 60
+guard marine Loc.45 1 3 60
+guard marine Loc.44 1 3 60
 max_force 800
 build 1 academy 80
 wait 1025
@@ -634,6 +638,9 @@ wait 850
 create_script deny_main 255 Loc.54 255 0
 wait 1450
 
+guard marine Loc.56 1 3 60
+guard marine Loc.62 1 3 60
+guard marine Loc.65 1 3 60
 train 2 siege_tank
 upgrade 1 t_infantry_weapon 30
 wait 1005
