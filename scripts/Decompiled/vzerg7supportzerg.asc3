@@ -176,25 +176,22 @@ train 7 infested_terran
 attack_add 14 zergling
 attack_add 7 infested_terran
 attack_prepare
-quick_attack
+wait 48
+
 attack_do
 attack_clear
-wait 2825
+wait 3425
 
 under_attack 2
 train 112 zergling
-attack_add 64 zergling
+attack_add 112 zergling
 attack_prepare
 wait 48
 
-attack_prepare
-wait 1175
-
-attack_add 48 zergling
-attack_prepare
-quick_attack
 attack_do
 attack_clear
+wait 1175
+
 capt_expand
 capt_expand
 wait 1014
