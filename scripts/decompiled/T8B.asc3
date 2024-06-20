@@ -325,7 +325,7 @@ attack_do
 attack_clear
 guard defiler Loc.101 1 2 60
 upgrade 1 ultralisk_armor 30
-wait 4445
+wait 4545
 
 upgrade_jump 13 Exactly_Call 74 6 easy_wait
 attack_add 9 broodling
@@ -358,6 +358,7 @@ wait 200
 
 attack_do
 attack_clear
+train 42 hydralisk
 attack_add 42 hydralisk
 attack_prepare
 wait 150
@@ -368,7 +369,7 @@ attack_clear
 :block3
 upgrade_jump 13 Exactly_Call 74 6 easy_wait
 upgrade_jump 13 Exactly_Call 74 6 easy_wait
-wait 1820
+wait 2320
 
 train 28 zergling
 train 18 hydralisk
@@ -389,25 +390,12 @@ train 12 hzergling
 train 114 zergling
 attack_add 5 infested_terran
 attack_add 7 lurker
-attack_add 50 zergling
+attack_add 114 zergling
+attack_add 12 hzergling
 attack_add 3 hdefiler
 attack_prepare
-wait 200
+wait 300
 
-attack_do
-attack_clear
-attack_add 64 zergling
-attack_prepare
-wait 32
-
-attack_timeout 6
-attack_do
-attack_clear
-attack_add 12 hzergling
-attack_prepare
-wait 32
-
-attack_timeout 6
 attack_do
 attack_clear
 wait 765
@@ -419,41 +407,23 @@ train 16 hydralisk
 train 17 ultralisk
 train 128 broodling
 attack_add 16 hydralisk
-attack_add 32 broodling
+attack_add 128 broodling
 attack_add 17 ultralisk
 attack_prepare
+wait 300
+
 attack_do
 attack_clear
-attack_add 32 broodling
-attack_prepare
-attack_timeout 5
-attack_do
-attack_clear
-attack_add 32 broodling
-attack_prepare
-attack_timeout 5
-attack_do
-attack_clear
-attack_add 32 broodling
-attack_prepare
-attack_timeout 5
-attack_do
-attack_clear
-wait 130
+wait 1050
 
 train 92 hydralisk
-attack_add 64 hydralisk
-attack_prepare
-wait 200
-
-attack_do
-attack_clear
-attack_add 28 hydralisk
+attack_add 92 hydralisk
 attack_add 3 ultralisk
 attack_add 4 hzergling
 attack_add 1 hdefiler
 attack_prepare
-attack_timeout 30
+wait 300
+
 attack_do
 attack_clear
 goto block3
