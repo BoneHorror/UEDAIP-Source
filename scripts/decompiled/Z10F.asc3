@@ -1066,14 +1066,7 @@ goto brown_loop
 
 :supplysource
 start_town
-build 3 supply_depot 80
-wait 1500
-
-build 3 supply_depot 80
-wait 1500
-
-build 3 supply_depot 80
-wait 1500
+build 1 scv 80
 
 :suploop
 wait 1500
