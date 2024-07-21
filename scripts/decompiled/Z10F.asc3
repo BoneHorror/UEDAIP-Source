@@ -13,7 +13,7 @@ notowns_jump overlord kel_morian
 build 1 command_center 150
 issue_order Land 1 infested_command_center Loc.8 Loc.27 Any 0
 wait_buildstart 1 command_center
-creep 3
+creep 4
 build 1 hatchery 130
 wait_buildstart 1 hatchery
 help_iftrouble
@@ -73,10 +73,15 @@ wait_buildstart 3 scv
 build 5 supply_depot 80
 build 3 drone 80
 build 3 overlord 80
+wait_buildstart 3 supply_depot
+build 1 barracks 80
+wait_buildstart 1 barracks
 build 2 barracks 80
+wait_buildstart 2 barracks
 build 1 engineering_bay 80
 build 1 evolution_chamber 80
 build 1 creep_colony 80
+wait_buildstart 1 creep_colony
 upgrade 1 t_infantry_weapon 30
 guard infested_terran Loc.13 2 4 60
 idle_orders 10 16 1 heavy_marine|tesla_trooper 160 group_men 80 Health(LessThan 12)
@@ -141,6 +146,9 @@ build 2 missile_turret 80
 build 1 spore_colony 80
 build 1 academy 80
 build 1 factory 80
+wait_buildstart 1 factory
+build 2 creep_colony 80
+wait_buildstart 2 creep_colony
 build 1 lair 80
 build 1 hydralisk_den 80
 train 1 infested_terran
@@ -154,6 +162,7 @@ attack_timeout 100
 upgrade 1 z_carapace 30
 upgrade 1 zergling_speed 30
 build 8 overlord 80
+build 3 creep_colony 80
 wait 800
 
 build 12 drone 80
@@ -173,6 +182,8 @@ upgrade 1 overlord_capacity 30
 upgrade 1 hydralisk_speed 30
 tech lurker_aspect 30
 attack_clear
+build 1 sunken_colony 80
+build 2 spore_colony 80
 train 1 medic
 train 1 infested_terran
 train 4 heavy_marine
