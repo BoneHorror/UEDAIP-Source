@@ -449,8 +449,8 @@ wait 500
 
 attack_do
 attack_clear
-#check_transports
-#script stops mining here?
+check_transports
+#script stops mining here? trying if anythinc changed
 tech stim_packs 30
 upgrade 1 science_vessel_mana 30
 upgrade 1 t_vehicle_weapon 30
@@ -664,10 +664,12 @@ attack_to Loc.30 Loc.33
 return
 
 :dgt_trg_1
+random_jump 50 target_random
 attack_to Loc.31 Loc.34
 return
 
 :dgt_trg_2
+bring_jump 14 AtMost 0 Any Loc.70 dgt_trg_1
 attack_to Loc.32 Loc.35
 return
 
@@ -697,10 +699,9 @@ attack_to Loc.26 Loc.29
 return
 
 :target_random
-#sometimes seems to not work, lets play it safe
-#unstart_campaign
+unstart_campaign
 attack_prepare
-#start_campaign
+start_campaign
 return
 
 :check_safety
