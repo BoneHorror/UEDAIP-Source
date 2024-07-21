@@ -219,7 +219,7 @@ upgrade 1 t_infantry_armor 30
 upgrade 1 z_flyer_attack 30
 upgrade 1 z_melee_attack 30
 multirun grand_exchange
-wait 3125
+wait 1625
 
 train 1 infested_terran
 train 8 firebat
@@ -275,7 +275,7 @@ upgrade 1 t_vehicle_plating 30
 upgrade 1 t_ship_plating 30
 upgrade 2 z_missile_attack 30
 upgrade 2 z_flyer_attack 30
-wait 3315
+wait 3015
 
 train 3 ultralisk
 train 2 medic

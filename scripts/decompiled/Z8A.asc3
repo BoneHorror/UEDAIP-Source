@@ -258,7 +258,7 @@ goto waitloop1
 killable
 multirun colony_check
 multirun defense_northwest
-wait 1400
+wait 400
 
 random_jump 128 hydraorbust1
 train 8 zergling
@@ -297,7 +297,7 @@ upgrade 1 z_flyer_attack 30
 upgrade 1 z_melee_attack 30
 upgrade 1 z_flyer_carapace 30
 upgrade 1 z_carapace 30
-wait 2650
+wait 2250
 
 train 6 hydralisk
 train 3 medic
