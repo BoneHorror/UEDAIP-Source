@@ -21,8 +21,7 @@ multirun civilian_idle
 define_max 30 scv
 define_max 5 dropship
 define_max 2 science_vessel
-define_max 1 hsciencevessel
-#TODO check if hsciencevessels propagate vessel aura!
+#hsciencevessels do not propagate vessel aura!
 define_max 17 marine
 define_max 255 firebat
 define_max 7 ghost

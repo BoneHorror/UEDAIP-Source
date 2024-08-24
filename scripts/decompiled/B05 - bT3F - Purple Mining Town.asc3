@@ -2,6 +2,7 @@ script_name Brood Wars Terran 3 - Town F
 script_id TB3F
 
 if_owned 190 call_for_help
+#above is used by Red on loop via triggers
 start_campaign
 wait 1
 
