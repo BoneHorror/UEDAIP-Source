@@ -7,6 +7,7 @@ defaultbuild_off
 default_min 0
 wait 1
 
+if_owned command_center mengsk_cc
 build 1 hatchery 80
 build 2 drone 80
 wait 25
@@ -68,3 +69,10 @@ wait 300
 attack_do
 attack_clear
 goto loop
+
+:mengsk_cc
+build 1 scv 110
+:m_loop
+wait 5000
+
+goto m_loop
