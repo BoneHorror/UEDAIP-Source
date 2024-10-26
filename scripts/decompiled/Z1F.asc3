@@ -1,13 +1,13 @@
 script_name Brood Wars Zerg 1 - Town F
 script_id ZB1F
 
+if_owned command_center mengsk_cc
 start_campaign
 start_areatown
 defaultbuild_off
 default_min 0
 wait 1
 
-if_owned command_center mengsk_cc
 build 1 hatchery 80
 build 2 drone 80
 wait 25
@@ -71,6 +71,15 @@ attack_clear
 goto loop
 
 :mengsk_cc
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+max_workers 1
 build 1 scv 110
 :m_loop
 wait 5000
