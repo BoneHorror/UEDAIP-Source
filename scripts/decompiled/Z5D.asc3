@@ -211,7 +211,7 @@ place_guard arbiter 0
 upgrade 1 p_plasma_shield 30
 upgrade 1 p_air_weapon 30
 upgrade 1 one_with_khala 30
-wait 2575
+wait 2275
 
 attack_add 5 scout
 attack_add 3 wraith
@@ -288,7 +288,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 3875
+wait 3475
 
 train 11 scout
 attack_add 11 scout
@@ -301,7 +301,7 @@ attack_clear
 upgrade 1 reaver_capacity 30
 upgrade 1 scout_sight 30
 upgrade 2 p_air_weapon 30
-wait 4875
+wait 4675
 
 train 7 zealot
 train 1 reaver

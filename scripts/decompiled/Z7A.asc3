@@ -117,7 +117,7 @@ upgrade 1 p_armor 30
 upgrade 1 p_air_weapon 30
 upgrade 1 p_plating 30
 upgrade 1 p_plasma_shield 30
-wait 4215
+wait 3215
 
 train 3 scout
 attack_add 3 scout
@@ -131,7 +131,7 @@ upgrade 1 shuttle_speed 30
 idle_orders 137 16 1 arbiter 65535 carrier 80 incombat|health(LessThan,200)|own|NotEnemies
 idle_orders 137 16 1 arbiter 65535 reaver 60 incombat|health(LessThan,85)|own|NotEnemies
 idle_orders 137 16 1 arbiter 65535 archon 70 incombat|health(LessThan,120)|own|NotEnemies
-wait 5550
+wait 4550
 
 train 4 zealot
 train 1 reaver
@@ -146,7 +146,7 @@ upgrade 1 carrier_capacity 30
 upgrade 1 templar_mana 30
 train 1 carrier
 allies_watch 1 exp
-wait 5250
+wait 4250
 
 train 3 scout
 train 1 carrier

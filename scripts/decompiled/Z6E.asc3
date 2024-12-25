@@ -22,7 +22,7 @@ build 1 control_tower 75
 build 1 covert_ops 75
 build 6 missile_turret 70
 build 2 bunker 70
-max_force 600
+max_force 650
 define_max 15 scv
 define_max 16 heavy_marine
 define_max 9 tesla_trooper
@@ -41,26 +41,25 @@ define_max 255 ghost
 unit_avail 13 Set Disabled siege_tank block1
 unit_avail 13 Set Disabled ghost block1
 unit_avail 13 Set Disabled marine block1
-#
 defensebuild_gg 2 heavy_marine
 defenseuse_gg 2 heavy_marine
 defensebuild_gg 2 tesla_trooper
 defenseuse_gg 2 tesla_trooper
+defensebuild_gg 1 phantom
+defenseuse_gg 1 phantom
 defenseuse_gg 1 zergling
 defenseuse_gg 1 ultralisk
 defenseuse_gg 1 lurker
 defenseuse_gg 1 hydralisk
 defenseuse_ag 1 hydralisk
-defensebuild_gg 1 phantom
-defenseuse_gg 1 phantom
 defensebuild_ag 2 heavy_marine
 defenseuse_ag 2 heavy_marine
 defensebuild_ag 1 phantom
 defenseuse_ag 1 phantom
-tech restoration 30
 upgrade 1 ghost_sight 30
 upgrade 1 t_infantry_weapon 30
 upgrade 1 t_infantry_armor 30
+tech restoration 30
 deaths 13 Set 1 217 block1
 #disable science_aura malus
 idle_orders disablebuiltin 0 0 0 0 0 0 0
@@ -97,14 +96,6 @@ idle_orders 10 16 1 phantom 256 infested_terran|dark_archon|defiler 130 Health(L
 idle_orders 10 16 1 phantom 256 lurker|queen 120 Health(LessThan 50)
 idle_orders 10 16 1 phantom 256 mutalisk 130 InCombat
 idle_orders 10 16 1 phantom 275 drone 90 0
-#idle_orders 176 10 1 medic 512 drone 30 own|allied|notenemies
-#idle_orders 176 24 1 medic 512 zergling 30 own|allied|notenemies|incombat
-#idle_orders 176 10 1 medic 256 broodling 30 own|allied|notenemies|incombat
-#idle_orders 176 16 1 medic 1024 hydralisk 50 own|allied|notenemies|incombat
-#idle_orders 176 22 1 medic 1024 lurker 70 own|allied|notenemies|incombat
-#idle_orders 176 50 1 medic 1024 defiler 30 own|allied|notenemies|incombat
-#idle_orders 176 17 1 medic 1024 infested_terran 80 own|allied|notenemies|incombat
-#idle_orders 176 15 1 medic 2048 ultralisk 80 own|allied|notenemies|incombat
 idle_orders 141 83 1 science_vessel 1024 heavy_marine|medic|tesla_trooper|zergling|hydralisk 10 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 20)|Self(Energy(GreaterThan 149))
 idle_orders 141 83 1 science_vessel 1024 death_knight|phantom 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 20)|Self(Energy(GreaterThan 99))
 idle_orders 141 83 1 science_vessel 1024 scorpion|vulture 15 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 20)|Self(Energy(GreaterThan 149))
@@ -133,7 +124,7 @@ idle_orders 180 48 1 medic 512 Group_Men 50 Own|Allied|NotEnemies|InCombat|Spell
 idle_orders 180 48 1 medic 512 Group_Men 50 Own|Allied|NotEnemies|InCombat|SpellEffects(Maelstrom)
 idle_orders 180 48 1 medic 512 Group_Men 30 Own|Allied|NotEnemies|InCombat|SpellEffects(Ensnare)
 idle_orders 180 48 1 medic 512 Group_Men 20 Own|Allied|NotEnemies|InCombat|SpellEffects(Parasite)
-wait 5300
+wait 5210
 
 tech ensnare 30
 attack_add 2 phantom
@@ -152,7 +143,7 @@ idle_orders 146 0 1 phantom 356 dragoon|corsair|scout|dark_templar|wraith|ghost|
 idle_orders 146 0 1 phantom 356 zealot|zergling|hydralisk|dragoon|corsair|scout|dark_archon|devourer|guardian|dark_templar|goliath|siege_tank|revenant|death_knight|panzer 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 50))
 idle_orders 146 0 1 phantom 356 reaver|dark_archon|archon|devourer|guardian|hnorad|battlecruiser|valhalla|carrier|arbiter 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 45))
 idle_orders 146 8 1 phantom 256 group_men 30 deathrattle
-wait 2450
+wait 2250
 
 attack_add 2 tesla_trooper
 attack_add 1 medic
@@ -204,7 +195,7 @@ wait 300
 
 attack_do
 attack_clear
-wait 3215
+wait 3115
 
 train 10 heavy_marine
 train 6 medic

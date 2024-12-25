@@ -76,8 +76,8 @@ idle_orders 10 16 2 goliath 192 infested_terran|defiler|dark_archon|lurker|dark_
 idle_orders 10 16 1 vulture 192 group_men 60 Health(LessThan 5)
 idle_orders 10 16 1 hnorad|goliath 160 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 80 Health(LessThan 30)
 idle_orders 10 16 2 hnorad|goliath 160 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 90 Health(LessThan 60)
-tech stim_packs 30
 upgrade 1 marine_range 30
+tech stim_packs 30
 tech siege_mode 30
 tech spider_mines 30
 tech cloaking_field 30
@@ -157,7 +157,7 @@ idle_orders Attack 128 2 vulture 160 scv|drone|zergling|marine|firebat|zealot|da
 idle_orders 163 256 2 vulture 1000 command_center 32 Self(Health(LessThanPercent 50)) 
 upgrade 1 t_infantry_weapon 30
 upgrade 1 t_vehicle_plating 30
-wait 3150
+wait 2750
 
 attack_add 4 ghost
 attack_add 2 vulture
@@ -182,7 +182,7 @@ idle_orders 141 83 1 hsciencevessel 776 hnorad 80 own|allied|notenemies|incombat
 defenseuse_gg 2 siege_tank
 upgrade 1 t_ship_plating 30
 upgrade 1 t_vehicle_weapon 30
-wait 3440
+wait 3140
 
 attack_add 4 goliath
 attack_add 3 siege_tank
@@ -210,7 +210,7 @@ attack_clear
 upgrade 1 vulture_speed 30
 upgrade 2 t_infantry_weapon 30
 upgrade 2 t_ship_plating 30
-wait 4165
+wait 4065
 
 attack_add 8 ghost
 attack_add 6 goliath
@@ -253,7 +253,7 @@ upgrade 1 overclocking 30
 train 2 hnorad
 idle_orders 113 32 2 hnorad 356 hatchery|spore_colony|devourer|guardian|ultralisk|defiler 80 InCombat|Hp(GreaterThanPercent 75)
 idle_orders 113 32 1 hnorad 356 lurker|sunken_colony|infested_terran 50 InCombat|Hp(GreaterThanPercent 80)
-wait 2560
+wait 1560
 
 attack_add 2 hnorad
 attack_add 5 wraith

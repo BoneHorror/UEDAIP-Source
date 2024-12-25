@@ -93,12 +93,54 @@ idle_orders 92 256 2 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(163))
 idle_orders 92 64 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
 idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
 idle_orders 92 64 2 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+#unit micro IOs
+idle_orders 10 16 1 heavy_marine|tesla_trooper 192 group_men 80 Health(LessThan 12)
+idle_orders 10 16 1 heavy_marine|tesla_trooper 192 infested_terran|queen|dark_archon|defiler|lurker 120 Health(LessThan 12)
+idle_orders 10 16 1 heavy_marine|tesla_trooper 192 sunken_colony|photon_cannon 90 Health(LessThan 24)
+idle_orders 10 16 3 heavy_marine|tesla_trooper 192 group_men 90 Health(LessThan 36)
+idle_orders 10 16 3 heavy_marine|tesla_trooper 192 infested_terran|queen|dark_archon|defiler|lurker 130 Health(LessThan 36)
+idle_orders 10 16 3 heavy_marine|tesla_trooper 192 sunken_colony|photon_cannon 100 Health(LessThan 24)
+idle_orders 10 16 5 heavy_marine|tesla_trooper 192 group_men 95 Health(LessThan 65)
+idle_orders 10 16 5 heavy_marine|tesla_trooper 192 infested_terran|queen|dark_archon|defiler|lurker 135 Health(LessThan 65)
+idle_orders 10 16 5 heavy_marine|tesla_trooper 192 sunken_colony|photon_cannon 105 Health(LessThan 55)
+idle_orders 10 16 1 phantom 288 sunken_colony|photon_cannon 110 Health(LessThan 73)
+idle_orders 10 16 1 phantom 288 group_men 100 Health(LessThan 36)
+idle_orders 10 16 2 phantom 288 group_men 105 Health(LessThan 73)
+idle_orders 10 16 1 phantom 288 infested_terran|dark_archon|defiler 130 Health(LessThan 80)
+idle_orders 10 16 1 phantom 288 lurker|queen 120 Health(LessThan 50)
+idle_orders 10 16 1 panzer 180 sunken_colony|photon_cannon 110 Health(LessThan 73)
+idle_orders 10 16 1 panzer 180 group_men 100 Health(LessThan 36)|WithoutUnitFlags(Air)
+idle_orders 10 16 2 panzer 180 group_men 105 Health(LessThan 73)|WithoutUnitFlags(Air)
+idle_orders 10 16 1 panzer 180 infested_terran|dark_archon|defiler 130 Health(LessThan 80)
+idle_orders 10 16 1 panzer 180 lurker|queen 120 Health(LessThan 50)
+idle_orders 10 16 1 panzer 180 zergling|zealot|hydralisk|dark_templar 120 count(AtLeast 3 48 14)
+idle_orders 10 16 2 panzer 210 drone|scv|probe 70 0
+idle_orders 10 16 2 panzer 210 drone|scv|probe 150 Count(AtLeast 3 60 14)
+idle_orders 10 16 1 valkyrie|valhalla 224 mutalisk|scout|corsair|scourge 110 count(AtLeast 4 60 14)
+idle_orders 10 16 3 valkyrie|valhalla 260 mutalisk|scout|corsair|scourge 135 count(AtLeast 4 60 14)
+idle_orders 10 16 1 valkyrie|valhalla 224 devourer 150 Count(AtLeast 3 60 14)
+idle_orders 10 16 2 valkyrie|valhalla 255 devourer 160 Count(AtLeast 3 60 14)
+idle_orders 10 16 3 valkyrie|valhalla 265 devourer 170 Count(AtLeast 3 60 14)
+idle_orders 10 16 4 valkyrie|valhalla 300 devourer 190 Count(AtLeast 3 60 14)
+idle_orders 10 16 1 valkyrie|valhalla 224 shuttle|observer|overlord 60 count(AtLeast 3 60 14)
+idle_orders 10 16 2 skywing 224 drone|scv|probe 70 0
+idle_orders 10 16 1 skywing 224 group_men 80 Count(AtLeast 3 50 14)|WithoutUnitFlags(Air)
+idle_orders 10 16 1 skywing 224 group_men 90 Count(AtLeast 5 50 14)|WithoutUnitFlags(Air)
+idle_orders 10 16 1 valhalla 224 group_men 80 Count(AtLeast 3 64 14)
+idle_orders 10 16 1 valhalla 224 group_men 90 Count(AtLeast 5 64 14)
+idle_orders 10 16 1 death_knight 224 ultralisk|dark_archon|reaver|sunken_colony|lurker 90 Health(GreaterThanPercent 50)
+idle_orders 10 16 1 death_knight 224 ultralisk|dark_archon|reaver|sunken_colony|lurker 100 Health(GreaterThanPercent 80)
+idle_orders 10 16 2 death_knight 255 ultralisk|dark_archon|reaver|sunken_colony|lurker 130 Health(GreaterThanPercent 70)
+idle_orders 10 16 2 scorpion 224 drone|scv|probe 70 0
+idle_orders 10 16 1 scorpion 192 group_men 60 Health(LessThan 24)|WithoutUnitFlags(Air)
+idle_orders 10 16 1 scorpion 192 infested_terran|defiler|dark_archon|lurker|dark_templar 90 Health(LessThan 24)
+idle_orders 10 16 2 scorpion 224 infested_terran|defiler|dark_archon|lurker|dark_templar 90 Health(LessThan 48)
 multirun upgtech
 multirun bank_data
 wait 1000
 
 help_iftrouble
-wait 12200
+wait 10200
 
 wait_force 4 heavy_marine
 wait_force 2 valkyrie
@@ -114,7 +156,7 @@ wait 500
 attack_do
 attack_clear
 tech hallucination 30
-wait 4250
+wait 4150
 
 train 1 valhalla
 wait_force 3 hnorad
@@ -129,7 +171,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 5450
+wait 4650
 
 wait_force 6 death_knight
 attack_add 6 death_knight
@@ -326,7 +368,7 @@ idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Ord
 idle_orders 92 64 2 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
 multirun upgtech
 multirun bank_data
-wait 13200
+wait 11200
 
 wait_force 6 heavy_marine
 wait_force 2 medic
@@ -408,7 +450,7 @@ attack_clear
 
 :block3
 train 10 death_knight
-wait 5350
+wait 5150
 
 train 2 heavy_marine
 train 4 heavy_marine
@@ -548,7 +590,7 @@ idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Ord
 idle_orders 92 64 2 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
 multirun upgtech
 multirun bank_data
-wait 10700
+wait 7700
 
 train 16 heavy_marine
 train 3 medic
