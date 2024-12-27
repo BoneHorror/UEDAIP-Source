@@ -149,7 +149,7 @@ wait 300
 
 attack_do
 attack_clear
-upgrade 
+upgrade 2 z_flyer_attack 30
 call wait_selector
 
 train 2 hydralisk
@@ -162,9 +162,66 @@ wait 300
 
 attack_do
 attack_clear
-
+tech spawn_broodling 30
+upgrade 2 z_flyer_carapace 30
 call wait_selector
 
+:t2_loop
+wait 50
+
+train 12 zergling
+train 7 hydralisk
+train 4 mutalisk
+attack_add 12 zergling
+attack_add 7 hydralisk
+attack_add 4 mutalisk
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+call wait_selector
+
+train 4 scourge
+train 20 zergling
+train 7 mutalisk
+attack_add 20 zergling
+attack_add 4 scourge
+attack_add 7 mutalisk
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+call wait_selector
+
+train 13 hydralisk
+train 2 lurker
+attack_add 13 hydralisk
+attack_add 2 lurker
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+call wait_selector
+
+goto t2_loop
+
+:mutaswarm
+
+:mutaloop
+wait 50
+
+goto mutaloop
+
+:infestedlings
+
+:infestloop
+train 2 queen
+wait 50
+
+goto infestloop
 #... - direction change, I think I want scripts with 'easy' in the name to explicitly stick to t1-2 units and 'medium' to not use very many casters (or rely nearly exclusively on casters!). Tweak around existing scripts if needed, shouldn't be too hard
 :idle
 wait 500
