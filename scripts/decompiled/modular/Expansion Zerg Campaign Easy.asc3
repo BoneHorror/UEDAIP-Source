@@ -38,10 +38,12 @@ define_max 1 devourer
 define_max 1 ultralisk
 define_max 1 defiler
 define_max 3 infested_terran
+build 8 drone 80
 build 1 hydralisk_den 80
 upgrade 1 zergling_speed 30
 wait 2430
 
+build 12 drone 80
 defensebuild_gg 1 zergling
 defenseuse_gg 1 zergling
 defensebuild_gg 1 hydralisk
@@ -55,6 +57,7 @@ wait 300
 
 attack_do
 attack_clear
+build 14 drone 80
 upgrade 1 hydralisk_speed 30
 upgrade 1 z_ground_carapace 30
 build 2 hatchery 80
@@ -209,17 +212,231 @@ call wait_selector
 goto t2_loop
 
 :mutaswarm
+define_max 22 zergling
+define_max 30 drone
+define_max 8 hydralisk
+define_max 1 lurker
+define_max 15 mutalisk
+define_max 30 overlord
+define_max 10 scourge
+define_max 2 queen
+#defines below are for if mapmakers want to use those as guards in small numbers
+define_max 4 guardian
+define_max 2 devourer
+define_max 1 ultralisk
+define_max 1 defiler
+define_max 2 infested_terran
+build 10 drone 80
+upgrade 1 zergling_speed 30
+wait 1950
 
+build 1 lair 80
+train 6 zergling
+attack_add 6 zergling
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+build 1 spire 80
+build 15 drone 80
+upgrade 1 z_melee_attack 30
+build 2 hatchery 80
+build 2 creep_colony 80
+build 1 sunken_colony 80
+build 1 spore_colony 80
+defensebuild_gg 1 mutalisk
+defenseuse_gg 1 mutalisk
+defensebuild_ag 1 scourge
+defenseuse_ag 1 scourge
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+call wait_selector
+
+train 4 mutalisk
+attack_add 4 mutalisk
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+build 1 hydralisk_den 80
+defensebuild_gg 1 hydralisk
+defensebuild_ag 1 hydralisk
+upgrade 1 hydralisk_range 30
+upgrade 1 z_flyer_attack 30
+upgrade 1 z_ground_carapace 30
+call wait_selector
+
+train 4 mutalisk
+train 3 hydralisk
+attack_add 3 mutalisk
+attack_add 3 hydralisk
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+build 2 lair 80
+build 1 queen_nest 80
+place_guard queen 0
+upgrade 1 z_missile_attack 30
+multirun expansion_loop
+call attack_selector
+train 6 mutalisk
+attack_add 6 mutalisk
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+upgrade 1 hydralisk_speed 30
+upgrade 2 z_flyer_attack 30
+call wait_selector
+
+upgrade 2 z_missile_attack 30
+tech ensnare 30
+#maybe queen IOs?
+train 10 zergling
+train 7 hydralisk
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+tech spawn_broodling 30
+tech lurker_aspect 30
+upgrade 2 z_melee_attack 30
+upgrade 1 z_flyer_carapace 30
+call wait_selector
+
+train 4 mutalisk
+train 6 hydralisk
+train 4 scourge
+attack_add 4 mutalisk
+attack_add 4 scourge
+attack_add 6 hydralisk
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+upgrade 2 z_flyer_carapace 30
+upgrade 2 z_ground_carapace 30
+call wait_selector
+
+train 2 hydralisk
+train 14 zergling
+train 2 lurker
+attack_add 14 zergling
+attack_add 2 lurker
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+call wait_selector
+
+upgrade 1 queen_mana 30
 :mutaloop
 wait 50
+
+train 16 zergling
+train 8 mutalisk
+attack_add 16 zergling
+attack_add 8 mutalisk
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+call wait_selector
+
+train 13 mutalisk
+attack_add 13 mutalisk
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+call wait_selector
+
+train 7 mutalisk
+train 5 hydralisk
+train 4 scourge
+attack_add 7 mutalisk
+attack_add 5 hydralisk
+attack_add 4 scourge
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+call wait_selector
 
 goto mutaloop
 
 :infestedlings
+define_max 32 zergling
+define_max 30 drone
+define_max 8 hydralisk
+define_max 3 lurker
+define_max 5 mutalisk
+define_max 30 overlord
+define_max 6 scourge
+define_max 3 queen
+define_max 7 infested_terran
+#defines below are for if mapmakers want to use those as guards in small numbers
+define_max 2 guardian
+define_max 1 devourer
+define_max 1 ultralisk
+define_max 1 defiler
 
 :infestloop
 train 2 queen
 wait 50
+
+train 3 hydralisk
+train 3 lurker
+train 14 zergling
+attack_add 14 zergling
+attack_add 3 lurker
+attack_add 3 infested_terran
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+call wait_selector
+
+train 18 zergling
+train 2 queen
+train 6 scourge
+attack_add 6 scourge
+attack_add 18 zergling
+attack_add 2 queen
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+call wait_selector
+
+train 7 hydralisk
+train 3 mutalisk
+attack_add 7 hydralisk
+attack_add 4 infested_terran
+attack_add 3 mutalisk
+call attack_selector
+wait 300
+
+attack_do
+attack_clear
+call wait_selector
 
 goto infestloop
 #... - direction change, I think I want scripts with 'easy' in the name to explicitly stick to t1-2 units and 'medium' to not use very many casters (or rely nearly exclusively on casters!). Tweak around existing scripts if needed, shouldn't be too hard
@@ -359,3 +576,43 @@ return
 max_force 1500
 deaths 13 Set 0 216 def_flags
 return
+
+:expansion_loop
+wait 4530
+
+#loop if 0 khaydarin crystal deaths
+deaths 13 Exactly 0 187 expansion_loop
+expand 2 zerg_town_easy
+wait_rand 6500 9500
+
+goto expansion_loop
+
+
+:zerg_town_easy
+start_town
+build 1 hatchery 100
+get_oldpeons 1
+wait_build 1 hatchery
+build 1 drone 90
+wait_build 1 drone
+build 12 drone 80
+max_workers 18
+build 1 creep_colony 80
+wait 5000
+
+build 1 sunken_colony 80
+wait 5000
+
+build 2 creep_colony 80
+build 1 spore_colony 80
+wait 12500
+
+#build 1 evolution_chamber 80
+#build 2 hatchery 80
+wait 16500
+
+max_workers 255
+:town_loop
+wait 1500
+
+goto town_loop
