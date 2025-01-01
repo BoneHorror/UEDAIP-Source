@@ -19,8 +19,8 @@ defenseuse_gg 1 zergling
 defenseuse_gg 1 hydralisk
 defenseuse_ag 1 hydralisk
 multirun def_flags
+call mining_cheat
 idle_orders disablebuiltin 0 0 0 0 0 0 0
-
 #default: mixed t1-2 with light hydralisk emphasis
 deaths 13 Exactly 1 214 mutaswarm
 deaths 13 AtLeast 2 214 infestedlings
@@ -744,3 +744,25 @@ max_workers 255
 wait 1500
 
 goto town_loop
+
+:mining_cheat
+deaths 13 Exactly 1 207 slow_mine
+deaths 13 Exactly 2 207 very_slow_mine
+deaths 13 Exactly 3 207 easy_mine
+deaths 13 Exactly 4 207 hard_mine
+
+:slow_mine
+upgrade_jump 13 Set 74 4 late_cash
+return
+
+:very_slow_mine
+upgrade_jump 13 Set 74 5 late_cash
+return
+
+:easy_mine
+upgrade_jump 13 Set 74 6 late_cash
+return
+
+:hard_mine
+upgrade_jump 13 Set 74 7 late_cash
+return

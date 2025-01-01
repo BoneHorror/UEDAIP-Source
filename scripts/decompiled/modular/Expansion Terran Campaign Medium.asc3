@@ -24,6 +24,7 @@ defensebuild_gg 1 marine
 defenseuse_gg 1 marine
 defensebuild_ag 1 marine
 defenseuse_ag 1 marine
+#TODO multirun, call mining cheat
 #default: marine enjoyer
 deaths 13 Exactly 1 214 light_corps
 deaths 13 Exactly 2 214 science_corps
@@ -389,3 +390,25 @@ max_workers 255
 wait 1500
 
 goto town_loop
+
+:mining_cheat
+deaths 13 Exactly 1 207 slow_mine
+deaths 13 Exactly 2 207 very_slow_mine
+deaths 13 Exactly 3 207 easy_mine
+deaths 13 Exactly 4 207 hard_mine
+
+:slow_mine
+upgrade_jump 13 Set 74 4 late_cash
+return
+
+:very_slow_mine
+upgrade_jump 13 Set 74 5 late_cash
+return
+
+:easy_mine
+upgrade_jump 13 Set 74 6 late_cash
+return
+
+:hard_mine
+upgrade_jump 13 Set 74 7 late_cash
+return

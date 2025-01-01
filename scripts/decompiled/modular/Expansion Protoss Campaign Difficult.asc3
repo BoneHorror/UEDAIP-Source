@@ -23,6 +23,7 @@ defenseuse_gg 1 dragoon
 defensebuild_ag 1 dragoon
 defenseuse_ag 1 dragoon
 multirun def_flags
+call mining_cheat
 idle_orders disablebuiltin 0 0 0 0 0 0 0
 multirun ptech_storm
 multirun ptech_stasis
@@ -681,3 +682,25 @@ idle_orders 182 67 1 dark_archon 2256 overlord 140 health(GreaterThanPercent,90)
 defensebuild_gg 1 infested_terran
 defenseuse_gg 1 infested_terran
 stop
+
+:mining_cheat
+deaths 13 Exactly 1 207 slow_mine
+deaths 13 Exactly 2 207 very_slow_mine
+deaths 13 Exactly 3 207 easy_mine
+deaths 13 Exactly 4 207 hard_mine
+
+:slow_mine
+upgrade_jump 13 Set 74 4 late_cash
+return
+
+:very_slow_mine
+upgrade_jump 13 Set 74 5 late_cash
+return
+
+:easy_mine
+upgrade_jump 13 Set 74 6 late_cash
+return
+
+:hard_mine
+upgrade_jump 13 Set 74 7 late_cash
+return

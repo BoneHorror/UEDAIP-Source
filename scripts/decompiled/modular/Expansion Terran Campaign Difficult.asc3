@@ -24,6 +24,7 @@ defenseuse_gg 1 marine
 defensebuild_ag 2 marine
 defenseuse_ag 2 marine
 multirun def_flags
+call mining_cheat
 idle_orders DisableBuiltin 0 0 0 0 0 0 0
 idle_orders 141 83 1 science_vessel 1256 firebat|marine|ghost|heavy_marine|medic|tesla_trooper 10 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 50)|Self(Energy(GreaterThan 149))|WithoutSpellEffects(Matrix)
 idle_orders 141 83 1 science_vessel 1256 goliath|phantom|death_knight 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 99))|WithoutSpellEffects(Matrix)
@@ -806,3 +807,25 @@ max_workers 255
 wait 1500
 
 goto town_loop
+
+:mining_cheat
+deaths 13 Exactly 1 207 slow_mine
+deaths 13 Exactly 2 207 very_slow_mine
+deaths 13 Exactly 3 207 easy_mine
+deaths 13 Exactly 4 207 hard_mine
+
+:slow_mine
+upgrade_jump 13 Set 74 4 late_cash
+return
+
+:very_slow_mine
+upgrade_jump 13 Set 74 5 late_cash
+return
+
+:easy_mine
+upgrade_jump 13 Set 74 6 late_cash
+return
+
+:hard_mine
+upgrade_jump 13 Set 74 7 late_cash
+return
