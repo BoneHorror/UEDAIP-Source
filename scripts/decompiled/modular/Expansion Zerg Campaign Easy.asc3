@@ -750,6 +750,7 @@ deaths 13 Exactly 1 207 slow_mine
 deaths 13 Exactly 2 207 very_slow_mine
 deaths 13 Exactly 3 207 easy_mine
 deaths 13 Exactly 4 207 hard_mine
+return 
 
 :slow_mine
 upgrade_jump 13 Set 74 4 late_cash
