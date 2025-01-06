@@ -226,6 +226,12 @@ define_max 2 devourer
 define_max 1 ultralisk
 define_max 1 defiler
 define_max 2 infested_terran
+idle_orders 10 32 9 mutalisk 180 heavy_marine|ghost|death_knight|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 90 Health(LessThan 82)
+idle_orders 10 32 5 mutalisk 168 heavy_marine|ghost|death_knight|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 80 Health(LessThan 41)
+idle_orders 10 32 5 mutalisk 200 drone|scv|probe 100 0
+idle_orders 10 32 3 mutalisk 168 heavy_marine|ghost|death_knight|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 70 Health(LessThan 27)
+idle_orders 10 32 1 mutalisk 144 heavy_marine|ghost|death_knight|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 60 Health(LessThan 9)
+idle_orders 10 32 2 mutalisk 144 bunker|missile_turret|photon_cannon|spore_colony 100 Health(LessThan 18)
 build 10 drone 80
 upgrade 1 zergling_speed 30
 wait 1950
@@ -392,6 +398,10 @@ define_max 2 guardian
 define_max 1 devourer
 define_max 1 ultralisk
 define_max 1 defiler
+idle_orders 10 32 2 zergling 100 drone|scv|probe 100 0
+idle_orders 10 32 1 zergling 192 infested_terran 60 InCombat
+idle_orders 10 32 3 zergling 120 panzer|death_knight|medic|siege_tank|goliath|revenant|dragoon|reaver|dark_archon|defiler 10 InCombat
+idle_orders 10 32 9 zergling 224 panzer|death_knight|medic|siege_tank|goliath|revenant|dragoon|reaver|dark_archon|defiler 70 InCombat
 build 12 drone 80
 
 upgrade 1 zergling_speed 30
@@ -753,17 +763,17 @@ deaths 13 Exactly 4 207 hard_mine
 return 
 
 :slow_mine
-upgrade_jump 13 Set 74 4 late_cash
+upgrade_jump 13 Set 74 4 mining_cheat
 return
 
 :very_slow_mine
-upgrade_jump 13 Set 74 5 late_cash
+upgrade_jump 13 Set 74 5 mining_cheat
 return
 
 :easy_mine
-upgrade_jump 13 Set 74 6 late_cash
+upgrade_jump 13 Set 74 6 mining_cheat
 return
 
 :hard_mine
-upgrade_jump 13 Set 74 7 late_cash
+upgrade_jump 13 Set 74 7 mining_cheat
 return

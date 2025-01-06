@@ -816,17 +816,17 @@ deaths 13 Exactly 4 207 hard_mine
 return
 
 :slow_mine
-upgrade_jump 13 Set 74 4 late_cash
+upgrade_jump 13 Set 74 4 mining_cheat
 return
 
 :very_slow_mine
-upgrade_jump 13 Set 74 5 late_cash
+upgrade_jump 13 Set 74 5 mining_cheat
 return
 
 :easy_mine
-upgrade_jump 13 Set 74 6 late_cash
+upgrade_jump 13 Set 74 6 mining_cheat
 return
 
 :hard_mine
-upgrade_jump 13 Set 74 7 late_cash
+upgrade_jump 13 Set 74 7 mining_cheat
 return
