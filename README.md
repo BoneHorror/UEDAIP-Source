@@ -1,5 +1,5 @@
-# UEDAIP Source
- Source files of the UEDAIP mod (used for Broodwar and as a baseline for other branches)
+# UEDAIP Source - DEPRECATED BRANCH
+ Source files of the UEDAIP mod - note that the main branch is DEPRECATED, and development is now exclusively ongoing for x64 and vanilla/beyond variations.
 
 Each branch can be used to build a working UEDAIP executable with Samase
 
