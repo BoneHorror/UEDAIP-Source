@@ -8305,6 +8305,7 @@ CommandCenterInit:
 CommandCenterBuilt:
 	wait			6
 	set spritelocal noncc = 0
+	if game.player_type(player) != 2 goto UEDSReturn #skip for non-Human(2) slot types
 	if deaths(player, 214) == 1 goto UEDSReturn #disable this for ais since they cant control colors and skip code after players used it once
 	#if deaths(player, 98) == 6 goto TerranSel #test hardcode for Terran ver of Omega
 	#set game.minerals(player) = game.player_color_choice(player) #debug test to see color choice
