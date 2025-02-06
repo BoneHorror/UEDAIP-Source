@@ -38,13 +38,13 @@ defensebuild_aa 1 wraith
 defenseuse_aa 1 wraith
 wait 4000
 
-attack_add 2 vulture
+attack_add 3 vulture
 attack_to Loc.60 Loc.57
 wait 300
 
 attack_do
 attack_clear
-wait 6500
+wait 4500
 
 :blue_loop
 attack_add 4 goliath

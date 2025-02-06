@@ -47,7 +47,7 @@ defenseuse_ga 1 wraith
 defensebuild_aa 1 wraith
 defenseuse_aa 1 wraith
 check_transports
-wait 15750
+wait 11750
 #long setup, not the primary 
 
 idle_orders 141 83 1 science_vessel 1256 firebat|marine|ghost|heavy_marine|medic|tesla_trooper 10 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 50)|Self(Energy(GreaterThan 149))|WithoutSpellEffects(Matrix)

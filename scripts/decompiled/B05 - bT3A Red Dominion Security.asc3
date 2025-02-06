@@ -60,7 +60,7 @@ defensebuild_ag 1 ghost
 defenseuse_ag 1 ghost
 defensebuild_ag 1 goliath
 defenseuse_ag 1 goliath
-wait 9800
+wait 9300
 
 train 4 marine
 train 2 firebat
