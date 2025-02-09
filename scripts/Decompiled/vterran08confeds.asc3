@@ -149,7 +149,7 @@ guard marine Loc.53 1 2 60
 guard marine Loc.54 1 2 60
 guard marine Loc.55 1 2 60
 guard marine Loc.52 1 2 60
-wait 2185
+wait 2585
 
 train 3 goliath
 train 10 firebat
@@ -177,7 +177,7 @@ guard goliath Loc.28 1 2 60
 guard goliath Loc.27 1 2 60
 guard goliath Loc.17 1 2 60
 guard siege_tank Loc.16 1 2 60
-wait 2050
+wait 2250
 
 attack_add 6 goliath
 attack_add 4 siege_tank
