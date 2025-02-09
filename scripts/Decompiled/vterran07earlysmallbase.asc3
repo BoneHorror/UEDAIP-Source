@@ -193,6 +193,8 @@ build 2 missile_turret 80
 define_max 16 wraith
 wait 6805
 
+train 2 wraith
+wait_finishattack
 attack_add 2 wraith
 attack_prepare
 wait 500
@@ -203,6 +205,8 @@ defensebuild_aa 2 wraith
 defenseuse_aa 2 wraith
 wait 4303
 
+train 4 wraith
+wait_finishattack
 attack_add 4 wraith
 attack_prepare
 wait 500
@@ -212,6 +216,8 @@ attack_clear
 tech cloaking_field 30
 wait 3850
 
+train 4 wraith
+wait_finishattack
 attack_add 4 wraith
 attack_prepare
 wait 500
@@ -224,8 +230,12 @@ defensebuild_ga 1 wraith
 defenseuse_ga 1 wraith
 wait 4105
 
+train 12 wraith
+wait_finishattack
 attack_add 12 wraith
+unstart_campaign
 attack_prepare
+start_campaign
 wait 500
 
 attack_do
@@ -233,6 +243,8 @@ attack_clear
 upgrade 1 wraith_mana 30
 wait 3783
 
+train 9 wraith
+wait_finishattack
 attack_add 9 wraith
 attack_prepare
 wait 500
@@ -243,8 +255,12 @@ defensebuild_gg 1 wraith
 defenseuse_gg 1 wraith
 wait 3707
 
+train 16 wraith
+wait_finishattack
 attack_add 16 wraith
+unstart_campaign
 attack_prepare
+start_campaign
 wait 500
 
 attack_do
@@ -253,6 +269,7 @@ attack_clear
 train 12 wraith
 wait 850
 
+wait_finishattack
 attack_add 4 wraith
 attack_prepare
 wait 500
@@ -267,6 +284,8 @@ attack_do
 attack_clear
 wait 4805
 
+train 10 wraith
+wait_finishattack
 attack_add 10 wraith
 attack_prepare
 wait 500
