@@ -339,7 +339,7 @@ goto surplus_forts
 wait 16
 deaths 1 AtLeast 1 factory surplus_forts
 deaths 1 Set 1 factory surplus_forts
-create_script forareax 255 Loc.31 255 0
+create_script forareax 255 Loc.77 255 0
 wait 2025
 
 goto surplus_forts

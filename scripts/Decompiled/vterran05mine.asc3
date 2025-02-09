@@ -50,6 +50,9 @@ build 3 barracks 80
 build 4 missile_turret 80
 build 3 bunker 80
 build 1 academy 80
+wait 31500
+
+max_workers 255
 
 :block2
 wait 1500
