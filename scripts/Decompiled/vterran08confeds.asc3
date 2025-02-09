@@ -206,6 +206,8 @@ wait 500
 
 attack_do
 attack_clear
+wait 3050
+
 guard vulture Loc.30 1 2 60
 guard vulture Loc.29 1 2 60
 upgrade 1 dragon_catalyst 30
