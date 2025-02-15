@@ -45,7 +45,7 @@ attack_prepare
 attack_do
 attack_clear
 wait_upgrades
-wait 5000
+wait 5350
 
 upgrade 2 z_flyer_attack 30
 wait 480
@@ -61,7 +61,7 @@ upgrade 3 z_flyer_attack 30
 wait 480
 
 wait_upgrades
-wait 3466
+wait 4466
 
 attack_add 2 guardian
 attack_prepare
