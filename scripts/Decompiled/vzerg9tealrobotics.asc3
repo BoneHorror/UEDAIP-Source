@@ -113,10 +113,10 @@ wait 3500
 
 train 4 scout
 train 1 reaver
-train 8 scout
+train 7 scout
 train 2 reaver
 attack_add 2 reaver
-attack_add 8 scout
+attack_add 7 scout
 attack_prepare
 wait 500
 
