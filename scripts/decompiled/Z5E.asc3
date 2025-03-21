@@ -24,7 +24,8 @@ max_force 400
 define_max 30 probe
 define_max 14 zealot
 define_max 10 dragoon
-define_max 4 archon
+define_max 2 archon
+#TODO check if any subscripts actually ask for 4
 define_max 3 high_templar
 define_max 5 observer
 define_max 7 reaver
@@ -44,6 +45,7 @@ defenseuse_ag 1 archon
 check_transports
 wait 2880
 
+train 3 zealot
 attack_add 3 zealot
 call attack_preparation
 wait 500
@@ -58,6 +60,8 @@ upgrade 1 zealot_speed 30
 upgrade 1 dragoon_range 30
 wait 3885
 
+train 1 reaver
+train 6 dragoon
 attack_add 1 reaver
 attack_add 6 dragoon
 call attack_preparation
@@ -65,9 +69,11 @@ wait 500
 
 attack_do
 attack_clear
+multirun templar_ensure
 upgrade 1 p_ground_weapon 30
 wait 4445
 
+train 3 reaver
 attack_add 3 reaver
 call attack_preparation
 wait 500
@@ -77,6 +83,9 @@ attack_clear
 upgrade 1 shuttle_speed 30
 wait 2825
 
+train 4 zealot
+train 3 dragoon
+train 1 archon
 attack_add 4 zealot
 attack_add 3 dragoon
 attack_add 1 archon
@@ -89,6 +98,9 @@ upgrade 2 p_armor 30
 upgrade 2 p_plasma_shield 30
 wait 3015
 
+train 2 reaver
+train 4 zealot
+train 1 archon
 attack_add 2 reaver
 attack_add 4 zealot
 attack_add 1 archon
@@ -100,6 +112,9 @@ attack_clear
 upgrade 1 scarab_damage 30
 wait 3040
 
+train 4 zealot
+train 2 reaver
+train 2 dragoon
 attack_add 4 zealot
 attack_add 2 reaver
 attack_add 2 dragoon
@@ -111,6 +126,8 @@ attack_clear
 upgrade 3 p_armor 30
 wait 2850
 
+train 4 dragoon
+train 3 reaver
 attack_add 4 dragoon
 attack_add 3 reaver
 call attack_preparation
@@ -122,6 +139,8 @@ upgrade 3 p_plasma_shield 30
 upgrade 1 observer_sight 30
 wait 2880
 
+train 6 zealot
+train 3 dragoon
 upgrade 1 robotics_speed 30
 attack_add 6 zealot
 attack_add 3 dragoon
@@ -132,7 +151,7 @@ attack_do
 attack_clear
 upgrade 2 p_ground_weapon 30
 train 5 reaver
-wait_train 5 reaver
+train 6 dragoon
 attack_add 5 reaver
 attack_add 6 dragoon
 call attack_preparation
@@ -143,6 +162,10 @@ attack_clear
 upgrade 1 observer_speed 30
 wait 3215
 
+train 4 zealot
+train 2 reaver
+train 8 dragoon
+train 2 archon
 attack_add 4 zealot
 attack_add 2 reaver
 attack_add 8 dragoon
@@ -154,6 +177,7 @@ attack_do
 attack_clear
 wait 1560
 
+train 8 dragoon
 attack_add 8 dragoon
 call attack_preparation
 wait 500
@@ -163,7 +187,9 @@ attack_clear
 
 :happyhour
 train 7 reaver
-wait_train 7 reaver
+wait_train 5 reaver
+wait 240
+
 attack_add 7 reaver
 call attack_preparation
 wait 500
@@ -172,6 +198,8 @@ attack_do
 attack_clear
 wait 2500
 
+train 8 zealot
+train 6 dragoon
 attack_add 8 zealot
 attack_add 6 dragoon
 call attack_preparation
@@ -181,6 +209,9 @@ attack_do
 attack_clear
 wait 3815
 
+train 10 zealot
+train 3 reaver
+train 2 archon
 attack_add 10 zealot
 attack_add 3 reaver
 attack_add 2 archon
@@ -209,3 +240,10 @@ return
 :set2
 attack_to Loc.39 Loc.43
 return
+
+:templar_ensure
+wait_train 2 high_templar
+
+do_morph 2 archon
+wait_rand 1330 2650
+goto templar_ensure

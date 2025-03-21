@@ -72,13 +72,13 @@ tech cloaking_field 30
 wait 1500
 
 upgrade 1 t_ship_plating 30
-train 4 marine
+train 3 marine
 train 3 firebat
 train 1 siege_tank
-attack_add 4 marine
+attack_add 3 marine
 attack_add 3 firebat
 attack_add 1 siege_tank
-attack_prepare
+call atk_melee
 wait 500
 
 attack_do
@@ -93,7 +93,7 @@ train 3 wraith
 attack_add 5 firebat
 attack_add 2 goliath
 attack_add 3 wraith
-attack_prepare
+call atk_melee
 wait 500
 
 attack_do
@@ -112,7 +112,7 @@ attack_add 6 marine
 attack_add 4 firebat
 attack_add 3 siege_tank
 attack_add 4 vulture
-attack_prepare
+call atk_melee
 wait 500
 
 attack_do
@@ -131,7 +131,7 @@ train 8 wraith
 attack_add 14 marine
 attack_add 3 siege_tank
 attack_add 8 wraith
-attack_prepare
+call atk_melee
 wait 500
 
 attack_do
@@ -154,7 +154,7 @@ attack_add 10 firebat
 attack_add 4 vulture
 attack_add 2 goliath
 attack_add 2 siege_tank
-attack_prepare
+call atk_melee
 wait 500
 
 attack_do
@@ -169,7 +169,7 @@ train 3 goliath
 attack_add 10 marine
 attack_add 4 firebat
 attack_add 3 goliath
-attack_prepare
+call atk_melee
 wait 500
 
 attack_do
@@ -183,7 +183,7 @@ train 3 goliath
 train 6 wraith
 attack_add 3 goliath
 attack_add 6 wraith
-attack_prepare
+call atk_melee
 wait 500
 
 attack_do
@@ -198,7 +198,7 @@ train 8 wraith
 train 12 marine
 attack_add 12 marine
 attack_add 8 wraith
-attack_prepare
+call atk_melee
 wait 500
 
 attack_do
@@ -213,7 +213,7 @@ train 8 firebat
 attack_add 8 firebat
 attack_add 4 marine
 attack_add 3 siege_tank
-attack_prepare
+call atk_melee
 wait 500
 
 attack_do
@@ -284,6 +284,12 @@ wait 500
 attack_do
 attack_clear
 goto block1
+
+:atk_melee
+unstart_campaign
+attack_prepare
+start_campaign
+return
 
 :check_whitebase
 wait 50
