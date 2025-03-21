@@ -25,7 +25,6 @@ define_max 30 probe
 define_max 14 zealot
 define_max 10 dragoon
 define_max 2 archon
-#TODO check if any subscripts actually ask for 4
 define_max 3 high_templar
 define_max 5 observer
 define_max 7 reaver

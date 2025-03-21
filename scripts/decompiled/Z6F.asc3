@@ -6,7 +6,7 @@ start_areatown
 defaultbuild_off
 default_min 0
 wait 1
-
+#Used as proxy cannons script in xZ5A, for Player 8/yellow
 wait 2880
 
 creep 4
