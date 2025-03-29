@@ -26,6 +26,7 @@ build 1 physics_lab 80
 max_force 850
 supply 13 Set 224 Max 0 Terran bank_data
 multirun transports
+multirun icc_check
 random_jump 85 death_march
 random_jump 128 squad_play
 defensebuild_gg 1 death_knight
@@ -140,7 +141,7 @@ multirun bank_data
 wait 1000
 
 help_iftrouble
-wait 10200
+wait 9200
 
 wait_force 4 heavy_marine
 wait_force 2 valkyrie
@@ -368,7 +369,7 @@ idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Ord
 idle_orders 92 64 2 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
 multirun upgtech
 multirun bank_data
-wait 11200
+wait 10200
 
 wait_force 6 heavy_marine
 wait_force 2 medic
@@ -590,7 +591,7 @@ idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Ord
 idle_orders 92 64 2 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
 multirun upgtech
 multirun bank_data
-wait 7700
+wait 7100
 
 train 16 heavy_marine
 train 3 medic
@@ -968,6 +969,15 @@ stop
 
 :transports
 train 7 dropship
-wait 2500
+wait_rand 2800 4150
 
 goto transports
+
+:icc_check
+wait 50
+
+notowns_jump infested_command_center icc_check
+define_max 5 infested_terran
+defensebuild_gg 2 infested_terran
+defenseuse_gg 2 infested_terran
+goto waitloop
