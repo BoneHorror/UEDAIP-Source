@@ -24478,6 +24478,8 @@ WarpGateBuilt: #Built should be played if Warpgate is preplaced on the map
 	imgol          	936 0 0	# WarpGateOverlay (protoss\XwarpFir.grp)
 	hide_unit	unit #Hide the warpgate assuming it's used for tech control - if that is not the case, unhide after 24 frames. Should look OK in maps? Design around it anyway, Warpgate should not be in direct viewport
 	wait			24
+	#print Player 185 Deaths: {deaths(player, 185)}
+	#print P0 98 Deaths: {deaths(0, 98)}
 	if deaths(player, 185) == 144 goto generic_ueddisable # Used in Enslavers - Terran units/tech Disable generic workaround for when it's needed
 	if deaths(player, 185) == 166 goto generic_tdisable # Used in Enslavers - UED units/tech Disable generic workaround for when it's needed
 	#sprol 267 0 214 #debug to see where do we end up
@@ -24486,6 +24488,7 @@ WarpGateBuilt: #Built should be played if Warpgate is preplaced on the map
 	if deaths(0, 98) == 0 goto tvarw
 	if deaths(0, 98) == 21 goto zvarw
 	if deaths(0, 98) == 66 goto tueddisable # Used in xZ4 to force- disable Terran tech for UED P2
+	#print Reached Show Unit...
 	show_unit	unit #Unhide unit for normal play if we never jumped
 	goto           	long00
 
@@ -24500,6 +24503,7 @@ tvarw:
 	set game.upgrade_limit(6, 66) = 0
 	set game.upgrade_limit(6, 69) = 0
 	set game.upgrade_limit(6, 72) = 0
+	show_unit	unit #Unhide in default campaing use. Not sure why it's this way but this was the original implementation, where the 0 deaths tvarw option is always set if warpgate is present - should've had better naming :D
 	goto WWrapup
 
 zvarw:
