@@ -627,8 +627,8 @@ idle_orders 141 32 1 science_vessel 1256 group_men 45 own|allied|notenemies|inco
 idle_orders 185 256 1 medic 1024 queen|defiler|overlord|lurker|infested_terran|skywing|observer|science_vessel|valhalla|arbiter|hnorad|battlecruiser|ghost|siege_tank 30 WithoutSpellEffects(Blind)
 idle_orders 185 32 1 medic 256 queen|defiler|overlord|lurker|infested_terran|skywing|observer|science_vessel|valhalla|arbiter|hnorad|battlecruiser|ghost|siege_tank 70 WithoutSpellEffects(Blind)|InCombat
 idle_orders 185 0 1 medic 256 group_men 80 WithoutSpellEffects(Blind)|Deathrattle
-idle_orders 115 32 1 phantom|ghost 210 group_men 50 Hp(GreaterThanPercent 50)|Self(InCombat)|Self(Energy(GreaterThan 100))|UnitFlags(Mechanical)|WithoutSpellEffects(Lockdown)
-idle_orders 115 32 1 phantom|ghost 280 carrier|reaver|hnorad|battlecruiser|siege_tank|panzer|valhalla 80 Hp(GreaterThanPercent 20)|Self(InCombat)|Self(Energy(GreaterThan 80))|UnitFlags(Mechanical)|WithoutSpellEffects(Lockdown)
+idle_orders 115 32 1 ghost 210 group_men 50 Hp(GreaterThanPercent 50)|Self(InCombat)|Self(Energy(GreaterThan 100))|UnitFlags(Mechanical)|WithoutSpellEffects(Lockdown)
+idle_orders 115 32 1 ghost 280 carrier|reaver|hnorad|battlecruiser|siege_tank|panzer|valhalla 80 Hp(GreaterThanPercent 20)|Self(InCombat)|Self(Energy(GreaterThan 80))|UnitFlags(Mechanical)|WithoutSpellEffects(Lockdown)
 idle_orders Restoration 33 1 medic 256 Group_Men 55 NotEnemies|Own|Allied|Self(Energy(GreaterThan 65))|SpellEffects(Irradiate)|UnitFlags(Organic)
 idle_orders Restoration 33 1 medic 256 Group_Men 50 NotEnemies|Own|Allied|Self(Energy(GreaterThan 65))|SpellEffects(Plague)
 idle_orders Restoration 33 1 medic 256 Group_Men 45 NotEnemies|Own|Allied|Self(Energy(GreaterThan 90))|SpellEffects(Lockdown)

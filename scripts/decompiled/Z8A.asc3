@@ -374,9 +374,6 @@ wait 2525
 idle_orders 115 560 1 ghost 154 dragoon|scout 60 incombat|WithoutSpellEffects(Lockdown)|Health(GreaterThanPercent 70)
 idle_orders 115 560 1 ghost 154 shuttle|corsair 80 incombat|WithoutSpellEffects(Lockdown)|Health(GreaterThanPercent 50)
 idle_orders 115 560 1 ghost 192 reaver 90 incombat|WithoutSpellEffects(Lockdown)|Health(GreaterThanPercent 40)
-idle_orders 115 560 1 phantom 154 dragoon|scout 60 incombat|WithoutSpellEffects(Lockdown)|Health(GreaterThanPercent 70)
-idle_orders 115 560 1 phantom 154 shuttle|corsair 80 incombat|WithoutSpellEffects(Lockdown)|Health(GreaterThanPercent 50)
-idle_orders 115 560 1 phantom 192 reaver 90 incombat|WithoutSpellEffects(Lockdown)|Health(GreaterThanPercent 40)
 #lockdown orders on enemy (protoss) robotics above certain health thresholds
 train 12 zergling
 train 2 death_knight
