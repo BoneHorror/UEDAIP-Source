@@ -10712,13 +10712,21 @@ ArbiterGndAttkRpt:
 	nobrkcodestart 	
 	attackwith     	1
 	wait           	6
+	if game.alliance(unit.player, unit.target.player) == 1 default false goto ArbGnd1_FriendlySkip
 	imgol          	970 0 0	# Unknown970 (thingy\tmeHealM.grp)
+	set unit.shields = unit.shields+256
+	set unit.energy = unit.energy+170
+ArbGnd1_FriendlySkip:
 	wait           	7
 	attackwith     	1
 	attackwith     	1
 	attackwith     	1
 	wait           	8
+	if game.alliance(unit.player, unit.target.player) == 1 default false goto ArbGnd2_FriendlySkip
 	imgol          	970 0 0	# Unknown970 (thingy\tmeHealM.grp)
+	set unit.shields = unit.shields+256
+	set unit.energy = unit.energy+170
+ArbGnd2_FriendlySkip:
 	wait           	11
 	attackwith     	1
 	attackwith     	1
