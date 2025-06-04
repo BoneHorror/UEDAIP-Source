@@ -25488,15 +25488,19 @@ WarpGateAlmostBuilt:
 
 WarpGateBuilt:
 	imgol          	936 0 0	# WarpGateOverlay (protoss\XwarpFir.grp)
+	hide_unit	unit #Hide the warpgate assuming it's used for tech control - if that is not the case, unhide after 24 frames. Should look OK in maps? Design around it anyway, Warpgate should not be in direct viewport
 	wait			24
 	#if deaths(player, 219) < 1 goto WWrapup #warning! not in campaign or not main campaign player!
 	#if deaths(player, 214) > 0 goto WWrapup
+	if deaths(player, 185) == 144 goto generic_ueddisable # Used in Enslavers - Terran units/tech Disable generic workaround for when it's needed
+	if deaths(player, 185) == 166 goto generic_tdisable # Used in Enslavers - UED units/tech Disable generic workaround for when it's needed
 	#sprol 267 0 214 #debug to see where do we end up
 	if deaths(0, 98) == 1 goto zvar3w
 	if deaths(0, 98) == 7 goto zvar2w
 	if deaths(0, 98) == 0 goto tvarw
 	if deaths(0, 98) == 21 goto zvarw
 	if deaths(0, 98) == 66 goto tueddisable
+	show_unit	unit #Unhide unit for normal play if we never jumped
 	goto           	long00
 
 WarpGateIsWorking:
@@ -25550,6 +25554,63 @@ tueddisable:
 	set game.tech_availability(1, 30) = 0
 	set game.tech_availability(1, 19) = 0
 	set game.upgrade_limit(1, 62) = 1
+	goto WWrapup
+
+generic_tdisable:
+	set game.unit_availability(player, 10) = 0 #start disabling UED units for a Terran player
+	set game.unit_availability(player, 16) = 0
+	set game.unit_availability(player, 17) = 0
+	set game.unit_availability(player, 19) = 0
+	set game.unit_availability(player, 21) = 0
+	set game.unit_availability(player, 23) = 0
+	set game.unit_availability(player, 34) = 0
+	set game.unit_availability(player, 56) = 0
+	set game.unit_availability(player, 58) = 0
+	set game.unit_availability(player, 77) = 0
+	set game.upgrade_limit(player, 15) = 0
+	set game.upgrade_limit(player, 46) = 0
+	set game.upgrade_limit(player, 51) = 0
+	set game.upgrade_limit(player, 54) = 0
+	set game.upgrade_limit(player, 58) = 0
+	set game.upgrade_limit(player, 59) = 0
+	set game.upgrade_limit(player, 67) = 0
+	set game.tech_availability(player, 24) = 0
+	set game.tech_availability(player, 30) = 0
+	set game.tech_availability(player, 19) = 0
+	set game.upgrade_limit(player, 62) = 1
+	goto WWrapup
+	
+generic_ueddisable:
+	set game.unit_availability(player, 0) = 0 #start disabling terran units for an UED player
+	set game.unit_availability(player, 1) = 0
+	set game.unit_availability(player, 2) = 0
+	set game.unit_availability(player, 3) = 0
+	set game.unit_availability(player, 5) = 0
+	set game.unit_availability(player, 8) = 0
+	set game.unit_availability(player, 9) = 0
+	set game.unit_availability(player, 12) = 0
+	set game.unit_availability(player, 32) = 0
+	set game.unit_availability(player, 108) = 0
+	set game.unit_availability(player, 118) = 0
+	set game.upgrade_limit(player, 9) = 0
+	set game.upgrade_limit(player, 23) = 0
+	set game.upgrade_limit(player, 22) = 0
+	set game.upgrade_limit(player, 21) = 0
+	set game.upgrade_limit(player, 19) = 0
+	set game.upgrade_limit(player, 18) = 0
+	set game.upgrade_limit(player, 16) = 0
+	set game.upgrade_limit(player, 62) = 0
+	set game.upgrade_limit(player, 65) = 0
+	set game.upgrade_limit(player, 66) = 0
+	set game.upgrade_limit(player, 69) = 0
+	set game.upgrade_limit(player, 72) = 0
+	set game.tech_availability(player, 0) = 0
+	set game.tech_availability(player, 1) = 0
+	set game.tech_availability(player, 2) = 0
+	set game.tech_availability(player, 5) = 0
+	set game.tech_availability(player, 7) = 0
+	set game.tech_availability(player, 8) = 0
+	set game.tech_availability(player, 9) = 0
 	goto WWrapup
 
 # ----------------------------------------------------------------------------- #
