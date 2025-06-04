@@ -25495,11 +25495,6 @@ WarpGateBuilt:
 	if deaths(player, 185) == 144 goto generic_ueddisable # Used in Enslavers - Terran units/tech Disable generic workaround for when it's needed
 	if deaths(player, 185) == 166 goto generic_tdisable # Used in Enslavers - UED units/tech Disable generic workaround for when it's needed
 	#sprol 267 0 214 #debug to see where do we end up
-	if deaths(0, 98) == 1 goto zvar3w
-	if deaths(0, 98) == 7 goto zvar2w
-	if deaths(0, 98) == 0 goto tvarw
-	if deaths(0, 98) == 21 goto zvarw
-	if deaths(0, 98) == 66 goto tueddisable
 	show_unit	unit #Unhide unit for normal play if we never jumped
 	goto           	long00
 
