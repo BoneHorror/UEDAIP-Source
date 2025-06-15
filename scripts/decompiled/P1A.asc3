@@ -5,6 +5,11 @@ start_campaign
 wait 1
 
 wait 25
+load_bank xp7
+deaths 0 Exactly_Call 1 100 p7bank_rescued_templar
+deaths 0 Exactly_Call 2 100 p7bank_rescued_reaver
+wait 1
+
 load_bank xp1
 bank_data Set 0 xp1 dragoons a6
 bank_data Set 0 xp1 zealots a6
@@ -161,4 +166,11 @@ wait 8
 save_bank xp1
 goto save
 
+:p7bank_rescued_templar
+bank_data Set 1 xp7 rescued a6
+return
 
+
+:p7bank_rescued_reaver
+bank_data Set 2 xp7 rescued a6
+return

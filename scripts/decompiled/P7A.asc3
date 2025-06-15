@@ -14,6 +14,9 @@ if_owned h_aldaris aldaris_script
 wait 25
 
 load_bank xp7
+bank_data Exactly_Call 1 xp7 rescued fromp1_templar 
+#Uses 100 (Stukov) deaths as marker // Stukov death counter
+bank_data Exactly_Call 2 xp7 rescued fromp1_reaver
 build 1 nexus 130
 build 1 probe 110
 build 4 probe 80
@@ -202,15 +205,7 @@ upgrade 2 p_air_weapon 30
 upgrade 1 carrier_capacity 30
 wait 3380
 
-prep_down 2 5 dragoon
-prep_down 2 4 zealot
-attack_add 1 htassadar
-attack_prepare
-call revenge
-wait 500
-
-attack_do
-attack_clear
+call 1st_bank_attack
 upgrade 1 one_with_khala 30
 upgrade 1 shuttle_speed 30
 upgrade 1 observer_speed 30
@@ -313,15 +308,7 @@ attack_do
 attack_clear
 wait 1500
 
-prep_down 3 6 dragoon
-prep_down 4 5 zealot
-attack_add 1 harbiter
-attack_prepare
-call revenge
-wait 500
-
-attack_do
-attack_clear
+call 2nd_bank_attack
 wait 1500
 
 prep_down 2 6 scout
@@ -365,14 +352,7 @@ attack_do
 attack_clear
 wait 750
 
-prep_down 2 6 dragoon
-attack_add 1 harbiter
-attack_prepare
-call revenge
-wait 500
-
-attack_do
-attack_clear
+call 3rd_bank_attack
 random_jump 128 blockagr
 :blockft
 wait 1500
@@ -815,3 +795,80 @@ do_morph 4 archon
 wait_rand 133 850
 goto templar_ensure
 
+:1st_bank_attack
+deaths 13 Exactly 1 100 1a_templar
+deaths 13 Exactly 2 100 1a_reaver
+prep_down 3 6 dragoon
+goto 1st_remaining
+
+:1a_templar
+attack_add 1 htassadar
+attack_add 2 dragoon
+goto 1st_remaining
+
+:1a_reaver
+prep_down 2 1 reaver
+:1st_remaining
+prep_down 2 4 zealot
+attack_add 1 archon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+return
+
+:2nd_bank_attack
+deaths 13 Exactly 1 100 2a_templar
+deaths 13 Exactly 2 100 2a_reaver
+prep_down 3 6 dragoon
+goto 2nd_remaining
+
+:2a_templar
+attack_add 2 htassadar
+attack_add 2 dragoon
+goto 2nd_remaining
+
+:2a_reaver
+prep_down 1 1 reaver
+:2nd_remaining
+prep_down 4 5 zealot
+attack_add 2 archon
+attack_add 1 harbiter
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+return
+
+:3rd_bank_attack
+deaths 13 Exactly 1 100 3a_templar
+deaths 13 Exactly 2 100 3a_reaver
+prep_down 2 7 dragoon
+goto 3rd_remaining
+
+:3a_templar
+attack_add 2 htassadar
+attack_add 7 zealot
+goto 3rd_remaining
+
+:3a_reaver
+prep_down 1 2 reaver
+:3rd_remaining
+attack_add 3 archon
+attack_add 1 harbiter
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+return
+
+:fromp1_templar
+deaths 13 Set 1 100 1st_bank_attack
+return
+
+:fromp1_reaver
+deaths 13 Set 2 100 1st_bank_attack
+return
