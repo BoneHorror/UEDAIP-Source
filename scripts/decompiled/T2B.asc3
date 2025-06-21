@@ -9,6 +9,8 @@ default_min 0
 wait 1
 
 enemyowns_jump 99 terran7
+#Use Stukov (ID 0) deaths at 2 to have a xZ4 intro option
+deaths 0 Exactly 2 100 z4_nukes
 #terran 2 here
 idle_orders Lockdown 16 1 ghost 210 panzer 90 Hp(GreaterThanPercent 50)|UnitFlags(Mechanical)|WithoutSpellEffects(Lockdown)
 wait 50
@@ -48,4 +50,52 @@ return
 upgrade_jump 3 Set z_carapace 3 block1
 upgrade_jump 4 Set z_carapace 3 block1
 upgrade_jump 1 Set t_infantry_weapon 2 block1
+return
+
+:z4_nukes
+create_nuke
+create_nuke
+create_nuke
+create_nuke
+create_nuke
+create_nuke
+wait 5
+
+call wait_ghost
+#ghosts 1,2
+nuke_pos 1495 226
+wait 25
+
+nuke_pos 1318 262
+print ghost12
+call wait_ghost
+wait 50
+
+#ghost 3
+print ghost3
+nuke_pos 2344 1597
+call wait_ghost
+wait 50
+
+#ghost 4
+print ghost4
+nuke_pos 3033 1735
+call wait_ghost
+wait 50
+
+#ghost 5
+print ghost5
+nuke_pos 2965 319
+call wait_ghost
+wait 50
+
+#ghost 6
+print ghost6
+nuke_pos 4968 866
+stop
+
+:wait_ghost
+wait 1
+
+notowns_jump ghost wait_ghost
 return
