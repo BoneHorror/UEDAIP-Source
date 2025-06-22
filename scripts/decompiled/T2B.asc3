@@ -67,30 +67,30 @@ nuke_pos 1495 226
 wait 25
 
 nuke_pos 1318 262
-print ghost12
+#print ghost12
 call wait_ghost
 wait 50
 
 #ghost 3
-print ghost3
+#print ghost3
 nuke_pos 2344 1597
 call wait_ghost
 wait 50
 
 #ghost 4
-print ghost4
+#print ghost4
 nuke_pos 3033 1735
 call wait_ghost
 wait 50
 
 #ghost 5
-print ghost5
+#print ghost5
 nuke_pos 2965 319
 call wait_ghost
 wait 50
 
 #ghost 6
-print ghost6
+#print ghost6
 nuke_pos 4968 866
 stop
 
