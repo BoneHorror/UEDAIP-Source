@@ -6736,14 +6736,14 @@ bonus doubled for Burrowed units)</value>
     </string>
 	<string>
         <id>FIRST_UNIT_STRING-279</id>
-        <value>UNUSED</value>
+        <value>Taar Sy-Demon</value>
     </string>
 	<string>
         <id>FIRST_UNIT_STRING-280</id>
-        <value>UNUSED</value>
+        <value>Taar Gray</value>
     </string>
 	<string>
         <id>FIRST_UNIT_STRING-281</id>
-        <value>UNUSED</value>
+        <value>Taar Ortu</value>
     </string>
 </strings>
