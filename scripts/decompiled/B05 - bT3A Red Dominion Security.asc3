@@ -48,18 +48,20 @@ define_max 255 battlecruiser
 define_max 255 heavy_marine
 defensebuild_gg 2 siege_tank
 defenseuse_gg 2 siege_tank
+defensebuild_gg 1 marine
+defenseuse_gg 1 marine
 defensebuild_gg 2 firebat
 defenseuse_gg 2 firebat
-defensebuild_gg 1 goliath
-defenseuse_gg 1 goliath
+defensebuild_gg 2 goliath
+defenseuse_gg 2 goliath
 defensebuild_gg 1 ghost
 defenseuse_gg 1 ghost
 defensebuild_ag 2 marine
 defenseuse_ag 2 marine
 defensebuild_ag 1 ghost
 defenseuse_ag 1 ghost
-defensebuild_ag 1 goliath
-defenseuse_ag 1 goliath
+defensebuild_ag 2 goliath
+defenseuse_ag 2 goliath
 wait 9300
 
 train 4 marine
@@ -83,8 +85,9 @@ wait 4000
 
 attack_do
 attack_clear
-train 4 goliath
-attack_add 4 goliath
+multirun ai_income
+train 6 goliath
+attack_add 6 goliath
 call simple_atk
 upgrade 3 t_vehicle_weapon 30
 upgrade 3 t_vehicle_plating 30
@@ -117,15 +120,15 @@ attack_add 1 vulture
 attack_prepare
 tech spider_mines 30
 upgrade 1 ghost_sight 30
-wait 5000
+wait 4200
 
 attack_do
 attack_clear
 train 8 marine
-train 2 siege_tank
+train 4 siege_tank
 train 6 vulture
 attack_add 8 marine
-attack_add 2 siege_tank
+attack_add 4 siege_tank
 attack_add 6 vulture
 attack_prepare
 upgrade 1 ghost_mana 30
@@ -134,34 +137,42 @@ wait 3500
 
 attack_do
 attack_clear
-train 8 marine
-train 6 ghost
+train 10 marine
 train 2 siege_tank
-attack_add 8 marine
+train 14 marine
+train 3 goliath
+train 6 ghost
+train 4 siege_tank
+attack_add 14 marine
 attack_add 6 ghost
-attack_add 2 siege_tank
+attack_add 3 goliath
+attack_add 4 siege_tank
 attack_prepare
 :redLoop
-wait 6000
+wait 500
 
 attack_do
 attack_clear
+wait 4000
+
 train 16 marine
-train 4 firebat
+train 8 firebat
 train 2 siege_tank
 train 6 ghost
-attack_add 6 marine
-attack_add 4 firebat
+attack_add 12 marine
+attack_add 8 firebat
 attack_add 2 siege_tank
 attack_add 6 ghost
 attack_prepare
-wait 3000
+wait 500
 
 attack_do
 attack_clear
-train 8 goliath
+wait 2500
+
+train 10 goliath
 train 6 vulture
-attack_add 8 goliath
+attack_add 10 goliath
 attack_add 6 vulture
 call simple_atk
 goto redLoop
@@ -196,3 +207,16 @@ unstart_campaign
 attack_prepare
 start_campaign
 return
+
+:ai_income
+wait 16
+
+resources_jump 8000 6000 income_throttle
+resources 13 Add Ore 8 ai_income
+resources 13 Add Gas 5 ai_income
+goto ai_income
+
+:income_throttle
+wait_rand 500 1500
+
+goto ai_income
