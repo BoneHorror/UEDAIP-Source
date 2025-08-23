@@ -25494,6 +25494,7 @@ WarpGateBuilt:
 	#if deaths(player, 214) > 0 goto WWrapup
 	if deaths(player, 185) == 144 goto generic_ueddisable # Used in Enslavers - Terran units/tech Disable generic workaround for when it's needed
 	if deaths(player, 185) == 166 goto generic_tdisable # Used in Enslavers - UED units/tech Disable generic workaround for when it's needed
+	if deaths(player, 187) == 1234 call leaderboard_loop #loop to wait so that we can hide leaderboard if exactly 1234 khaydarin crystal formation deaths, if the number changes we go out
 	#sprol 267 0 214 #debug to see where do we end up
 	show_unit	unit #Unhide unit for normal play if we never jumped
 	goto           	long00
@@ -25502,6 +25503,13 @@ WarpGateIsWorking:
 	playfram       	0
 	goto           	WarpGateIsWorking
 
+leaderboard_loop:
+	wait			5
+	if deaths(player, 187) == 1234 goto leaderboard_loop
+	set game.leaderboard_type = 0
+	set unit.death_timer = 8
+	return
+	
 tvarw:
 	set game.tech_level(6, 19) = 1
 	set game.upgrade_limit(6, 62) = 0
