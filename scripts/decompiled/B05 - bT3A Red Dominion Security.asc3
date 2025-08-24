@@ -32,6 +32,8 @@ multirun civilian_idle
 check_transports
 capt_expand
 max_force 1400
+max_workers 4
+#need to define max workers so that we can get over infantry upg 0
 define_max 8 scv
 define_max 255 dropship
 define_max 2 science_vessel
