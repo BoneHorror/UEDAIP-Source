@@ -76,6 +76,8 @@ wait 2000
 
 attack_do
 attack_clear
+wait 1500
+
 train 3 siege_tank
 attack_add 3 siege_tank
 attack_prepare
