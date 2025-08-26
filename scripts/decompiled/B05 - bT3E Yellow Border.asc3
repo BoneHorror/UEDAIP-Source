@@ -31,7 +31,7 @@ define_max 3 goliath
 define_max 255 nuclear_missile
 #no nukes on Korhal
 define_max 255 battlecruiser
-max_force 1050
+max_force 650
 defensebuild_gg 1 ghost
 defenseuse_gg 1 ghost
 defensebuild_gg 1 vulture

@@ -39,12 +39,20 @@ defenseuse_aa 1 wraith
 wait 4000
 
 attack_add 3 vulture
-attack_to Loc.60 Loc.57
+call vulture_target
 wait 300
 
 attack_do
 attack_clear
 wait 4500
+
+attack_add 8 marine
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait 3500
 
 :blue_loop
 attack_add 4 goliath
@@ -65,7 +73,7 @@ attack_clear
 wait 5000
 
 attack_add 14 marine
-call expansion_atk
+attack_prepare
 wait 300
 
 attack_do
@@ -123,3 +131,9 @@ set_attacks 1
 target_expansion
 start_campaign
 return
+
+:vulture_target
+bring_jump 6 AtMost 0 group_buildings Loc.90 expansion_atk
+attack_to Loc.60 Loc.57
+return
+

@@ -85,7 +85,7 @@ wait 2000
 
 attack_do
 attack_clear
-wait 1500
+wait 4500
 
 train 3 siege_tank
 attack_add 3 siege_tank
@@ -102,7 +102,7 @@ attack_add 6 goliath
 call simple_atk
 upgrade 3 t_vehicle_weapon 30
 upgrade 3 t_vehicle_plating 30
-wait 3500
+wait 4500
 
 attack_do
 attack_clear

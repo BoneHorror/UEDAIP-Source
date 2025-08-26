@@ -22,8 +22,7 @@ define_max 2 siege_tank
 define_max 3 scv
 define_max 12 marine
 define_max 255 heavy_marine
-max_force 800
-defensebuild_gg 1 siege_tank
+max_force 300
 defenseuse_gg 1 siege_tank
 defensebuild_gg 2 marine
 defenseuse_gg 2 marine
@@ -42,7 +41,7 @@ idle_orders 92 64 1 ghost 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order
 idle_orders 10 16 3 marine|ghost 212 drone|scv|probe 50 0
 idle_orders 10 16 1 firebat 128 drone|scv|probe 70 0
 idle_orders 10 16 1 firebat 128 drone|scv|probe 150 count(AtLeast 2 24 14)
-wait 8500
+wait 14500
 
 upgrade 1 t_infantry_armor 30
 upgrade 1 t_infantry_weapon 30

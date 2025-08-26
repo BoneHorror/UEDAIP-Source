@@ -28,6 +28,7 @@ define_max 4 siege_tank
 define_max 12 wraith
 define_max 4 hnorad
 define_max 1 science_vessel
+max_force 800
 defensebuild_gg 2 wraith
 defenseuse_gg 2 wraith
 defensebuild_gg 1 siege_tank
@@ -49,6 +50,15 @@ defenseuse_aa 1 hnorad
 defensebuild_aa 1 wraith
 defenseuse_aa 1 wraith
 wait 6000
+
+train 2 marine
+attack_add 2 marine
+call simple_atk
+wait 500
+
+attack_do
+attack_clear
+wait 4500
 
 train 2 wraith
 attack_add 2 wraith
