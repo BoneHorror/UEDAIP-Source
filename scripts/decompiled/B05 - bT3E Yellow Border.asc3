@@ -136,6 +136,7 @@ wait 300
 
 attack_do
 attack_clear
+tech cloaking_field 30
 tech personnel_cloaking 30
 upgrade 3 t_vehicle_weapon 30
 upgrade 3 t_infantry_weapon 30

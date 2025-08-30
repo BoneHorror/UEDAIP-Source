@@ -19,7 +19,7 @@ build 1 science_facility 80
 build 1 physics_lab 80
 multirun civilian_idle
 define_max 30 scv
-define_max 14 marine
+define_max 22 marine
 define_max 255 firebat
 define_max 3 dropship
 define_max 6 goliath
@@ -54,7 +54,7 @@ wait 6000
 train 2 marine
 attack_add 2 marine
 call simple_atk
-wait 500
+wait 300
 
 attack_do
 attack_clear
@@ -108,26 +108,27 @@ wait 500
 
 attack_do
 attack_clear
+tech yamato_gun 30
 upgrade 3 t_ship_plating 30
 upgrade 2 t_vehicle_plating 30
 upgrade 2 t_vehicle_weapon 30
 wait 4500
 
 train 2 hnorad
-train 3 wraith
+train 4 wraith
+idle_orders 113 96 2 hnorad 192 ultralisk|devourer|spore_colony|hnorad|battlecruiser|missile_turret|carrier|scout|valkyrie|valhalla 80 InCombat|Health(GreaterThanPercent 75)
+idle_orders 113 96 1 hnorad 288 photon_cannon|bunker|sunken_colony 70 InCombat|Health(GreaterThanPercent 75)
+idle_orders 113 96 1 hnorad 192 lurker|mutalisk|guardian|reaver|archon|siege_tank|wraith|panzer|death_knight 50 InCombat|Health(GreaterThanPercent 80)
+idle_orders 113 96 1 hnorad 256 dark_archon|science_vessel|arbiter 30 InCombat|Health(GreaterThanPercent 75)
 attack_add 2 hnorad
-attack_add 3 wraith
+attack_add 4 wraith
 call simple_atk
 wait 500
 
 attack_do
 attack_clear
 upgrade 1 overclocking 30
-tech yamato_gun 30
-idle_orders 113 96 2 hnorad 192 ultralisk|devourer|spore_colony|hnorad|battlecruiser|missile_turret|carrier|scout|valkyrie 80 InCombat|Health(GreaterThanPercent 75)
-idle_orders 113 96 1 hnorad 288 photon_cannon|bunker|sunken_colony 70 InCombat|Health(GreaterThanPercent 75)
-idle_orders 113 96 1 hnorad 192 lurker|mutalisk|guardian|reaver|archon|siege_tank|wraith|panzer 50 InCombat|Health(GreaterThanPercent 80)
-idle_orders 113 96 1 hnorad 256 dark_archon|science_vessel|arbiter 30 InCombat|Health(GreaterThanPercent 75)
+upgrade 1 battlecruiser_mana 30
 :orange_loop
 wait 4500
 
@@ -153,10 +154,10 @@ attack_clear
 wait 4000
 
 train 1 hnorad
-train 4 wraith
+train 6 wraith
 train 4 siege_tank
 attack_add 1 hnorad
-attack_add 4 wraith
+attack_add 6 wraith
 attack_add 4 siege_tank
 attack_prepare
 wait 500
