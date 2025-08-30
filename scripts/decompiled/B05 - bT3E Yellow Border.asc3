@@ -12,6 +12,7 @@ wait 1
 build 1 command_center 150
 build 1 scv 130
 call basic_tech
+build 1 comsat_station 80
 build 13 scv 80
 build 1 starport 80
 build 1 control_tower 80
@@ -32,11 +33,14 @@ define_max 255 nuclear_missile
 #no nukes on Korhal
 define_max 255 battlecruiser
 max_force 650
+defenseuse_gg 1 marine
+check_transports
+wait 3000
+
 defensebuild_gg 1 ghost
 defenseuse_gg 1 ghost
 defensebuild_gg 1 vulture
 defenseuse_gg 1 vulture
-defenseuse_gg 1 marine
 defensebuild_ag 1 ghost
 defenseuse_ag 1 ghost
 defensebuild_ag 1 goliath
@@ -46,9 +50,7 @@ defensebuild_ga 1 wraith
 defenseuse_ga 1 wraith
 defensebuild_aa 1 wraith
 defenseuse_aa 1 wraith
-check_transports
-wait 11750
-#long setup, not the primary 
+wait 8750
 
 idle_orders 141 83 1 science_vessel 1256 firebat|marine|ghost|heavy_marine|medic|tesla_trooper 10 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 50)|Self(Energy(GreaterThan 149))|WithoutSpellEffects(Matrix)
 idle_orders 141 83 1 science_vessel 1256 goliath|phantom|death_knight 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 99))|WithoutSpellEffects(Matrix)
