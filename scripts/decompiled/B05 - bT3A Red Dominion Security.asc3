@@ -55,10 +55,14 @@ define_max 255 wraith
 define_max 14 goliath
 define_max 255 battlecruiser
 define_max 255 heavy_marine
-defensebuild_gg 2 siege_tank
-defenseuse_gg 2 siege_tank
+wait 5000
+
 defensebuild_gg 1 marine
 defenseuse_gg 1 marine
+wait 300
+
+defensebuild_gg 2 siege_tank
+defenseuse_gg 2 siege_tank
 defensebuild_gg 2 firebat
 defenseuse_gg 2 firebat
 defensebuild_gg 2 goliath
@@ -71,7 +75,7 @@ defensebuild_ag 1 ghost
 defenseuse_ag 1 ghost
 defensebuild_ag 2 goliath
 defenseuse_ag 2 goliath
-wait 9300
+wait 4000
 
 train 4 marine
 train 2 firebat
@@ -102,7 +106,7 @@ attack_add 6 goliath
 call simple_atk
 upgrade 3 t_vehicle_weapon 30
 upgrade 3 t_vehicle_plating 30
-wait 4500
+wait 4400
 
 attack_do
 attack_clear
@@ -116,7 +120,7 @@ call simple_atk
 tech personnel_cloaking 30
 upgrade 3 t_infantry_weapon 30
 upgrade 3 t_infantry_armor 30
-wait 4500
+wait 4100
 
 attack_do
 attack_clear
