@@ -25519,6 +25519,7 @@ tvarw:
 	set game.upgrade_limit(6, 66) = 0
 	set game.upgrade_limit(6, 69) = 0
 	set game.upgrade_limit(6, 72) = 0
+	show_unit	unit #Unhide in default campaing use - TODO look if we even need this in Beyond
 	goto WWrapup
 
 zvarw:
