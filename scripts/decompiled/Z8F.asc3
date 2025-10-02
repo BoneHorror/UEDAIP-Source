@@ -154,6 +154,12 @@ idle_orders 92 256 1 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(163))
 idle_orders 92 64 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
 idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
 idle_orders 92 64 1 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 128 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(156))
+idle_orders 92 128 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(156))
+idle_orders 92 128 1 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(156))
+idle_orders 92 16 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(156))
+idle_orders 92 16 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(156))
+idle_orders 92 16 1 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(156))
 idle_orders 148 64 1 valhalla 512 valhalla|panzer|dropship|skywing|valkyrie|death_knight|panzer 60 own|allied|notenemies|incombat
 idle_orders 148 64 1 valhalla 512 heavy_marine|tesla_trooper|scorpion|scv|medic 40 own|allied|notenemies|incombat
 idle_orders 148 64 1 valhalla 512 ultralisk|guardian|arbiter|devourer|archon|battlecruiser|carrier|siege_tank|lurker|panzer|defiler 50 incombat

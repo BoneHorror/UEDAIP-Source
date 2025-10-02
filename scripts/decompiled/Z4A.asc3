@@ -94,6 +94,12 @@ idle_orders 92 256 2 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(163))
 idle_orders 92 64 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
 idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
 idle_orders 92 64 2 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 128 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(156))
+idle_orders 92 128 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(156))
+idle_orders 92 128 1 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(156))
+idle_orders 92 16 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(156))
+idle_orders 92 16 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(156))
+idle_orders 92 16 1 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(156))
 #unit micro IOs
 idle_orders 10 16 1 heavy_marine|tesla_trooper 192 group_men 80 Health(LessThan 12)
 idle_orders 10 16 1 heavy_marine|tesla_trooper 192 infested_terran|queen|dark_archon|defiler|lurker 120 Health(LessThan 12)
@@ -367,6 +373,12 @@ idle_orders 92 256 2 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(163))
 idle_orders 92 64 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
 idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
 idle_orders 92 64 2 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 128 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(156))
+idle_orders 92 128 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(156))
+idle_orders 92 128 1 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(156))
+idle_orders 92 16 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(156))
+idle_orders 92 16 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(156))
+idle_orders 92 16 1 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(156))
 multirun upgtech
 multirun bank_data
 wait 10200
@@ -589,6 +601,12 @@ idle_orders 92 256 2 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(163))
 idle_orders 92 64 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
 idle_orders 92 64 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
 idle_orders 92 64 2 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 128 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(156))
+idle_orders 92 128 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(156))
+idle_orders 92 128 1 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(156))
+idle_orders 92 16 2 heavy_marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(156))
+idle_orders 92 16 1 phantom 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(156))
+idle_orders 92 16 1 tesla_trooper 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(156))
 multirun upgtech
 multirun bank_data
 wait 7100
