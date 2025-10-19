@@ -10977,7 +10977,7 @@
       "Infestation HP percentage": 50,
       "Cloak tech": 44,
       "Cloak energy regen (usually degen so negative)": 0,
-      "Ext flags 2 (AI-related)": 1024
+      "Ext flags 2 (AI-related)": 3146752
     }
   },
   {
@@ -11175,7 +11175,7 @@
       "Infestation HP percentage": 50,
       "Cloak tech": 44,
       "Cloak energy regen (usually degen so negative)": 0,
-      "Ext flags 2 (AI-related)": 2048
+      "Ext flags 2 (AI-related)": 3148800
     }
   },
   {
@@ -11274,7 +11274,7 @@
       "Infestation HP percentage": 50,
       "Cloak tech": 44,
       "Cloak energy regen (usually degen so negative)": 0,
-      "Ext flags 2 (AI-related)": 0
+      "Ext flags 2 (AI-related)": 1024
     }
   },
   {
@@ -12254,7 +12254,7 @@
       "Infestation HP percentage": 50,
       "Cloak tech": 44,
       "Cloak energy regen (usually degen so negative)": 0,
-      "Ext flags 2 (AI-related)": 4725024
+      "Ext flags 2 (AI-related)": 8131872
     }
   },
   {
@@ -12365,7 +12365,7 @@
       "Infestation HP percentage": 50,
       "Cloak tech": 44,
       "Cloak energy regen (usually degen so negative)": 0,
-      "Ext flags 2 (AI-related)": 6887056
+      "Ext flags 2 (AI-related)": 7739280
     }
   },
   {
@@ -12933,7 +12933,7 @@
       "Infestation HP percentage": 50,
       "Cloak tech": 44,
       "Cloak energy regen (usually degen so negative)": 0,
-      "Ext flags 2 (AI-related)": 3948608
+      "Ext flags 2 (AI-related)": 3949632
     }
   },
   {
@@ -13032,7 +13032,7 @@
       "Infestation HP percentage": 50,
       "Cloak tech": 44,
       "Cloak energy regen (usually degen so negative)": 0,
-      "Ext flags 2 (AI-related)": 0
+      "Ext flags 2 (AI-related)": 1024
     }
   },
   {
@@ -13131,7 +13131,7 @@
       "Infestation HP percentage": 50,
       "Cloak tech": 44,
       "Cloak energy regen (usually degen so negative)": 0,
-      "Ext flags 2 (AI-related)": 0
+      "Ext flags 2 (AI-related)": 1024
     }
   },
   {
@@ -13230,7 +13230,7 @@
       "Infestation HP percentage": 50,
       "Cloak tech": 44,
       "Cloak energy regen (usually degen so negative)": 0,
-      "Ext flags 2 (AI-related)": 0
+      "Ext flags 2 (AI-related)": 1024
     }
   },
   {
@@ -14138,7 +14138,7 @@
       "Infestation HP percentage": 50,
       "Cloak tech": 44,
       "Cloak energy regen (usually degen so negative)": 0,
-      "Ext flags 2 (AI-related)": 4859392
+      "Ext flags 2 (AI-related)": 7742208
     }
   },
   {
@@ -15780,7 +15780,7 @@
       "Infestation HP percentage": 50,
       "Cloak tech": 44,
       "Cloak energy regen (usually degen so negative)": 0,
-      "Ext flags 2 (AI-related)": 2048
+      "Ext flags 2 (AI-related)": 3147776
     }
   },
   {
@@ -15972,7 +15972,7 @@
       "Infestation HP percentage": 50,
       "Cloak tech": 44,
       "Cloak energy regen (usually degen so negative)": 0,
-      "Ext flags 2 (AI-related)": 4724736
+      "Ext flags 2 (AI-related)": 5644800
     }
   },
   {
@@ -16955,7 +16955,7 @@
       "Infestation HP percentage": 50,
       "Cloak tech": 44,
       "Cloak energy regen (usually degen so negative)": 0,
-      "Ext flags 2 (AI-related)": 0
+      "Ext flags 2 (AI-related)": 4199936
     }
   },
   {
