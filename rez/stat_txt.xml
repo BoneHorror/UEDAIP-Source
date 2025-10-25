@@ -4805,80 +4805,80 @@ Yamato Gun Research</value>
     </string>
     <string>
         <id>AI_ZERG_10TL</id>
-        <value>k&#4;Crystal Transducers
+        <value>k&#4;xxCrystal Transducers
 Arbiters regenerate a small amount of Shields and Energy when attacking</value>
     </string>
     <string>
         <id>AI_ZERG_10TR</id>
-        <value>k&#4;Precision Aim
+        <value>k&#4;xxPrecision Aim
 Skywing Targeting Lasers deal 4+1 Normal damage, benefit from Vehicle Weapons upgrades</value>
     </string>
     <string>
         <id>AI_ZERG_10YL</id>
-        <value>k&#4;Neutron Discharge
+        <value>k&#4;xxNeutron Discharge
 Revenants deal 45+3 single-target Explosive Damage when attacking units in Melee range
 Revenants regain 8 Shields whenever they use Neutron Discharge</value>
     </string>
     <string>
         <id>AI_ZERG_10YR</id>
-        <value>k&#4;Reactive Regeneration
+        <value>k&#4;xxReactive Regeneration
 Sunken Colonies regenerate at double the rate of other Zerg buildings when Tissue Mending is researched</value>
     </string>
     <string>
         <id>AI_ZERG_10R</id>
-        <value>k&#4;Always Strikes Twice
+        <value>k&#4;xxAlways Strikes Twice
 Valhalla attacks benefit from Plasma Shield upgrades, recover part of their damage as Shields, and deal their damage in two increments</value>
     </string>
     <string>
         <id>AI_DEFAULT_STAGING</id>
-        <value>k&#4;Delayed Payload
+        <value>k&#4;xxDelayed Payload
 Ghosts' rounds deal 3 additional true damage shortly after penetrating their targets.
 Researching Ocular Implants lets Ghosts identify weakspots in their targets' armor (+2 damage)</value>
     </string>
     <string>
         <id>AI_SUICIDE_MISSION</id>
-        <value>k&#4;HEAT Ammunition
+        <value>k&#4;xxHEAT Ammunition
 Panzer attacks deal additional 28+2 normal damage against their primary target
 Panzers can benefit from an upgrade that enables their shields and attack 20% faster on full shields</value>
     </string>
     <string>
         <id>AI_SUICIDE_RANDOM</id>
-        <value>k&#4;Unholy Champion
+        <value>k&#4;xxUnholy Champion
 Todesritters attack faster the longer they keep attacking ground targets, and shoot continuously while moving towards their target</value>
     </string>
     <string>
         <id>AI_DECLARE_ENEMY</id>
-        <value>k&#4;Destiny
+        <value>k&#4;xxDestiny
 EMP Troopers explode on death, depleting nearby units' shields and energy</value>
     </string>
     <string>
         <id>AI_DECLARE_ALLY</id>
-        <value>k&#4;Rocket Pods
+        <value>k&#4;xxRocket Pods
 This unit can use Charon Rockets after they are unlocked by Advanced Rocketry</value>
     </string>
     <string>
         <id>AI_MOVE_TEMPLAR</id>
-        <value>k&#4;Volatile Growth
+        <value>k&#4;xxVolatile Growth
 Hunter Killers rapidly regenerate their tissues, and spew bursts of acid goblets</value>
     </string>
     <string>
         <id>AI_BECOME_RESCUE</id>
-        <value>k&#4;Shadow Mending
+        <value>k&#4;xxShadow Mending
 Zeratul can use void energies to mend the tissues and platings of nearby warriors</value>
     </string>
     <string>
         <id>AI_ENTER_A_BUNKER</id>
-        <value>k&#4;Forged in Flames
+        <value>k&#4;xxForged in Flames
 Fenix can adapt to various combat conditions by using different weapons based on range, and inspires nearby units to attack faster</value>
     </string>
     <string>
         <id>AI_VALUE_THIS_AREA</id>
-        <value>k&#4;Fear
+        <value>k&#4;xxFear
 This unit horrifies some nearby enemies, slowing their attack speed</value>
     </string>
     <string>
         <id>AI_CLEAR_COMBAT</id>
-        <value>k&#4;Unchained
+        <value>k&#4;xxUnchained
 All disables and slows last half as long on this unit</value>
     </string>
     <string>
@@ -4918,12 +4918,12 @@ All disables and slows last half as long on this unit</value>
     </string>
     <string>
         <id>AI_DEBUG_3_LOC</id>
-        <value>k&#4;Corrosive Spores
+        <value>k&#4;xxCorrosive Spores
 Unclean Ones deal damage over time to all nearby units. Higher damage dealt on max Energy.</value>
     </string>
     <string>
         <id>AI_DEBUG_4_LOC</id>
-        <value>k&#4;Nano-mines
+        <value>k&#4;xxNano-mines
 Raynor's grenades reform into temporary Spider Mines every 4th attack, up to 3 placed at a time. Whenever Raynor's mines detonate, they disperse into nanites that heal Raynor for 15 HP.</value>
     </string>
     <string>
