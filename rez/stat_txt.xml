@@ -6746,4 +6746,8 @@ bonus doubled for Burrowed units)</value>
         <id>FIRST_UNIT_STRING-281</id>
         <value>Taar Ortu</value>
     </string>
+	<string>
+        <id>FIRST_UNIT_STRING-282</id>
+        <value>Artanis</value>
+    </string>
 </strings>
