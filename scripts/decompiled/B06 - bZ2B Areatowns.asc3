@@ -1,0 +1,53 @@
+script_name Brood Wars Zerg 2 - Town B
+script_id ZB2B
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+notowns_jump spire brown_guardian
+if_owned defiler_mound white_mutahydra
+#:orange hydraling
+
+call wait_attack
+call hold_attack
+attack_add 4 zergling
+call waypointing
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+goto generic_void
+
+:hold_attack
+deaths 13 Add 1 firebat generic_void
+return
+
+:release_attack
+deaths 13 Set 0 firebat generic_void
+return
+
+:wait_attack
+wait 16
+
+deaths 13 AtLeast 2 firebat ensure_attack
+deaths 13 Exactly 1 firebat wait_attack
+#loop if another script started an attack
+return
+
+:ensure_attack
+load_bank Ensures
+print Ensure_TwoOrMore_PleaseReportMeIfSeen
+bank_data Set 1 Ensures Ensure_TwoOrMore wait_attack
+bank_data Set 0 Ensures Ensure_Compare wait_attack
+save_bank Ensures
+deaths 13 Set 0 firebat generic_void
+return
+
+:generic_void
+wait 500
+
+stop

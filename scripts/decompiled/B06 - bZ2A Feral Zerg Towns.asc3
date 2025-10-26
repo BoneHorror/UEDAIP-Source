@@ -1,0 +1,396 @@
+script_name Brood Wars Zerg 2 - Town A
+script_id ZB2A
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 1
+wait 1
+
+idle_orders disablebuiltin 0 0 0 0 0 0 0
+multirun ai_income
+define_max 25 overlord
+notowns_jump spire brown_lurkers
+if_owned defiler_mound white_casters
+#:orange - infested island
+define_max 10 zergling
+define_max 7 hydralisk
+define_max 6 infested_terran
+define_max 5 mutalisk
+define_max 4 scourge
+defensebuild_gg 1 infested_terran
+defenseuse_gg 2 infested_terran
+defensebuild_gg 1 mutalisk
+defenseuse_gg 1 mutalisk
+defensebuild_ag 1 mutalisk
+defenseuse_ag 1 mutalisk
+defenseuse_ag 1 hydralisk
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
+tech burrowing 30
+upgrade 1 overlord_speed 30
+upgrade 1 overlord_capacity 30
+wait 8025
+
+call wait_attack
+call hold_attack
+attack_add 2 infested_terran
+attack_add 2 mutalisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+upgrade 1 z_flyer_attack 30
+upgrade 1 z_carapace 30
+upgrade 1 zergling_speed 30
+upgrade 1 z_melee_attack 30
+upgrade 1 z_flyer_carapace 30
+wait 5150
+
+call wait_attack
+call hold_attack
+attack_add 2 mutalisk
+attack_add 2 scourge
+attack_add 1 infested_terran
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+upgrade 2 z_flyer_attack 30
+upgrade 2 z_carapace 30
+upgrade 2 z_melee_attack 30
+upgrade 2 z_flyer_carapace 30
+:infLoop
+wait 2025
+
+call wait_attack
+call hold_attack
+attack_add 4 mutalisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 6125
+
+call wait_attack
+call hold_attack
+attack_add 4 infested_terran
+attack_add 2 scourge
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 4500
+
+call wait_attack
+call hold_attack
+attack_add 5 mutalisk
+attack_add 2 infested_terran
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 4775
+
+call wait_attack
+call hold_attack
+attack_add 4 mutalisk
+attack_add 2 scourge
+attack_add 3 infested_terran
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+goto infLoop
+
+:white_casters
+define_max 2 hdefiler
+define_max 3 defiler
+define_max 5 queen
+define_max 4 ultralisk
+define_max 4 mutalisk
+define_max 8 hydralisk
+define_max 4 lurker
+define_max 8 scourge
+multirun ai_income
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defenseuse_gg 1 broodling
+defensebuild_gg 1 hdefiler
+defenseuse_gg 1 hdefiler
+defenseuse_gg 1 queen
+defensebuild_ag 1 defiler
+defenseuse_ag 1 defiler
+tech burrowing 30
+upgrade 1 overlord_speed 30
+upgrade 1 overlord_capacity 30
+upgrade 1 z_carapace 30
+upgrade 1 z_flyer_carapace 30
+upgrade 1 z_melee_attack 30
+upgrade 1 z_missile_attack 30
+upgrade 1 hydralisk_range 30
+idle_orders 120 0 1 queen 1024 overlord|observer|science_vessel|defiler|skywing|dropship|shuttle|arbiter|valhalla|defiler|queen|ghost 30 WithoutSpellEffects(Parasite)|RandomRate(280 820)|Self(Energy(GreaterThanPercent 80))
+wait 14000
+
+idle_orders 119 64 1 defiler 512 zergling 30 own|allied|notenemies|incombat|Count(AtLeast 3 100 14)
+idle_orders 119 64 1 defiler 512 ultralisk 50 own|allied|notenemies|incombat|Count(AtLeast 2 100 14)
+idle_orders 119 64 1 defiler 512 ultralisk 30 own|notenemies|incombat
+idle_orders 119 64 1 defiler 512 hultralisk 70 own|notenemies|incombat
+idle_orders 119 64 1 defiler 512 zergling 10 own|notenemies|incombat
+idle_orders 119 64 1 defiler 512 lurker 40 own|notenemies|incombat
+idle_orders 119 64 1 defiler 512 lurker 90 own|notenemies|incombat|Count(AtLeast 2 100 14)
+idle_orders 119 64 1 defiler 512 hydralisk 55 own|notenemies|incombat|count(AtLeast 3 60 13)
+idle_orders 119 64 1 hdefiler 336 zergling 30 own|allied|notenemies|incombat|Count(AtLeast 3 100 14)
+idle_orders 119 64 1 hdefiler 336 ultralisk 50 own|allied|notenemies|incombat|Count(AtLeast 2 100 14)
+idle_orders 119 64 1 hdefiler 336 ultralisk 30 own|notenemies|incombat
+idle_orders 119 64 1 hdefiler 336 hultralisk 70 own|notenemies|incombat
+idle_orders 119 64 1 hdefiler 336 zergling 10 own|notenemies|incombat
+idle_orders 119 64 1 hdefiler 336 lurker 40 own|notenemies|incombat
+idle_orders 119 64 1 hdefiler 336 lurker 90 own|notenemies|incombat|Count(AtLeast 2 100 14)
+idle_orders 119 64 1 hdefiler 336 hydralisk 55 own|notenemies|incombat|count(AtLeast 3 60 13)
+
+upgrade 1 hydralisk_speed 30
+tech consume 30
+tech spawn_broodling 30
+wait 4000
+
+
+idle_orders 121 8 1 queen 812 zergling|marine 5 Health(GreaterThanPercent 85)
+idle_orders 121 8 1 queen 812 hydralisk|firebat|medic 40 Health(GreaterThanPercent 85)
+idle_orders 121 8 1 queen 812 lurker|siege_tank 70 Health(GreaterThanPercent 25)
+idle_orders 121 8 1 queen 812 ultralisk 120 Health(GreaterThanPercent 25)
+idle_orders 121 8 1 queen 812 zealot|vulture 30 Health(GreaterThanPercent 45)
+idle_orders 121 8 1 queen 812 dragoon|goliath 60 Health(GreaterThanPercent 45)
+idle_orders 121 8 1 queen 812 high_templar|ghost 70 Health(GreaterThanPercent 65)
+idle_orders 121 8 1 queen 812 dark_templar|revenant 50 Health(GreaterThanPercent 55)
+idle_orders Consume 16 1 defiler 512 zergling 70 NotEnemies|Own|Health(LessThanPercent 80)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 16 1 defiler 512 broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
+tech plague 30
+tech ensnare 30
+upgrade 2 z_carapace 30
+upgrade 2 z_flyer_carapace 30
+upgrade 2 z_melee_attack 30
+upgrade 2 z_missile_attack 30
+upgrade 1 ultralisk_speed 30
+wait 5000
+
+upgrade 1 z_flyer_attack 30
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|marine|vulture 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 60))
+idle_orders 146 0 1 queen 1024 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 65))
+idle_orders 146 0 1 queen 1024 dragoon|corsair|scout|dark_templar|wraith|ghost 40 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 50))
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|dragoon|corsair|scout|dark_archon|devourer|guardian|dark_templar|goliath|siege_tank|revenant 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 60))
+idle_orders 146 0 1 queen 1024 reaver|dark_archon|archon|devourer|guardian|hnorad|battlecruiser|carrier|arbiter 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 40))
+idle_orders 146 8 1 queen 312 group_men 30 deathrattle
+idle_orders 144 64 1 defiler 512 group_men 55 incombat|count(AtLeast 3 120 14) 
+idle_orders 144 64 1 defiler 512 high_templar|scout|corsair|wraith|science_vessel|siege_tank|goliath 80 incombat|count(AtLeast 3 120 14)
+idle_orders 144 64 1 defiler 512 arbiter|reaver|battlecruiser|carrier 115 incombat|count(AtLeast 2 120 14)
+idle_orders 144 64 1 defiler 512 arbiter|battlecruiser|carrier 80 incombat
+idle_orders 144 64 1 defiler 512 ghost|vulture|dropship|shuttle 55 incombat|count(AtLeast 4 120 14)
+call wait_attack
+call hold_attack
+attack_add 1 defiler
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+capt_expand
+wait 10500
+
+upgrade 1 hydra_attack 30
+upgrade 3 z_carapace 30
+upgrade 3 z_flyer_carapace 30
+upgrade 3 z_melee_attack 30
+upgrade 3 z_missile_attack 30
+upgrade 1 ultralisk_armor 30
+upgrade 1 defiler_mana 30
+upgrade 1 queen_mana 30
+call wait_attack
+call hold_attack
+attack_add 2 ultralisk
+attack_add 1 hdefiler
+attack_add 1 defiler
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+upgrade 1 bone_mastery 30
+upgrade 1 voracity 30
+upgrade 2 z_flyer_attack
+:castLoop
+wait 5333
+
+call wait_attack
+call hold_attack
+attack_add 2 queen
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 1550
+
+call wait_attack
+call hold_attack
+attack_add 2 defiler
+attack_add 2 hdefiler
+attack_add 4 ultralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 6500
+
+call wait_attack
+call hold_attack
+attack_add 2 ultralisk
+attack_add 3 queen
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+goto castLoop
+
+:brown_lurkers
+define_max 6 lurker
+define_max 7 guardian
+define_max 7 mutalisk
+define_max 12 hydralisk
+define_max 20 zergling
+define_max 4 scourge
+tech burrowing 30
+upgrade 1 overlord_speed 30
+upgrade 1 overlord_capacity 30
+upgrade 1 z_flyer_attack 30
+upgrade 1 z_missile_attack 30
+upgrade 1 lurker_speed 30
+wait 7750
+
+upgrade 1 z_melee_attack 30
+call wait_attack
+call hold_attack
+train 3 hydralisk
+train 3 lurker
+attack_add 3 lurker
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+upgrade 1 hydralisk_speed 30
+upgrade 2 z_missile_attack 30
+upgrade 1 z_carapace 30
+wait 8000
+
+call wait_attack
+call hold_attack
+train 2 hydralisk
+train 2 lurker
+attack_add 2 lurker
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+upgrade 1 hydralisk_range 30
+upgrade 2 z_carapace 30
+upgrade 2 z_flyer_attack 30
+wait 4500
+
+upgrade 1 z_flyer_carapace 30
+upgrade 2 z_flyer_carapace 30
+call wait_attack
+call hold_attack
+train 4 hydralisk
+train 4 lurker
+attack_add 4 lurker
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+:spiky_loop
+wait 6000
+
+call wait_attack
+call hold_attack
+train 6 hydralisk
+train 6 lurker
+attack_rand 3 6 lurker
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+goto spiky_loop
+
+:ai_income
+wait 16
+
+resources_jump 2000 2000 income_throttle
+resources 13 Add Ore 9 ai_income
+resources 13 Add Gas 7 ai_income
+goto ai_income
+
+:income_throttle
+wait_rand 500 1500
+
+goto ai_income
+
+:hold_attack
+deaths 13 Add 1 firebat generic_void
+return
+
+:release_attack
+deaths 13 Set 0 firebat generic_void
+return
+
+:wait_attack
+wait 16
+
+deaths 13 AtLeast 2 firebat ensure_attack
+deaths 13 Exactly 1 firebat wait_attack
+#loop if another script started an attack
+return
+
+:ensure_attack
+load_bank Ensures
+print Ensure_TwoOrMore_PleaseReportMeIfSeen
+bank_data Set 1 Ensures Ensure_TwoOrMore wait_attack
+bank_data Set 0 Ensures Ensure_Compare wait_attack
+save_bank Ensures
+deaths 13 Set 0 firebat generic_void
+return
+
+:generic_void
+wait 500
+
+stop
