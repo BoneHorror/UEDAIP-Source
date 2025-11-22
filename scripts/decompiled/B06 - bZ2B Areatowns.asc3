@@ -24,6 +24,8 @@ wait 300
 attack_do
 attack_clear
 call release_attack
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
 upgrade 1 zergling_speed 30
 wait 6000
 
@@ -36,6 +38,9 @@ wait 300
 attack_do
 attack_clear
 call release_attack
+build 1 drone 80
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
 upgrade 1 hydralisk_range 30
 wait 2500
 
@@ -48,6 +53,8 @@ wait 300
 attack_do
 attack_clear
 call release_attack
+build 4 drone 80
+build 1 hatchery 80
 upgrade 1 hydralisk_speed 30
 wait 4500
 
@@ -71,6 +78,9 @@ wait 300
 
 attack_do
 attack_clear
+build 7 drone 80
+build 1 spawning_pool 80
+build 1 hydralisk_den 80
 call release_attack
 wait 3000
 
@@ -103,6 +113,7 @@ goto generic_void
 upgrade 1 hydralisk_range 30
 wait 9000
 
+build 3 drone 80
 call wait_attack
 call hold_attack
 attack_add 2 mutalisk
@@ -112,6 +123,8 @@ wait 300
 attack_do
 attack_clear
 call release_attack
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
 wait 4500
 
 call wait_attack
@@ -123,10 +136,16 @@ wait 300
 
 attack_do
 attack_clear
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+build 5 drone 80
 call release_attack
 upgrade 1 hydralisk_speed 30
 wait 4500
 
+build 1 hatchery 80
 call wait_attack
 call hold_attack
 attack_add 2 mutalisk
@@ -139,6 +158,11 @@ call release_attack
 upgrade 1 hydra_attack 30
 wait 6000
 
+player_need 1 spawning_pool
+build 1 hydralisk_den 80
+build 1 lair 80
+build 1 spire 80
+build 9 drone 80
 call wait_attack
 call hold_attack
 attack_add 2 mutalisk
@@ -179,7 +203,11 @@ goto white_loop
 #define_max 7 guardian
 #define_max 7 mutalisk
 #define_max 20 zergling
-wait 22500
+wait 10000
+
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+wait 12500
 
 call wait_attack
 call hold_attack
@@ -189,6 +217,9 @@ wait 300
 
 attack_do
 attack_clear
+defensebuild_gg 1 mutalisk
+defensebuild_gg 1 guardian
+defenseuse_gg 1 guardian
 call release_attack
 wait 13500
 
