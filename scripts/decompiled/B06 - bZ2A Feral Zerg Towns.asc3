@@ -309,6 +309,7 @@ define_max 12 hydralisk
 define_max 20 zergling
 define_max 4 scourge
 tech burrowing 30
+tech lurker_aspect 30
 upgrade 1 overlord_speed 30
 upgrade 1 overlord_capacity 30
 upgrade 1 z_flyer_attack 30

@@ -13,7 +13,7 @@ if_owned defiler_mound white_mutahydra
 
 #define_max 10 zergling
 #define_max 7 hydralisk
-wait 2240
+wait 1240
 
 call wait_attack
 call hold_attack
@@ -27,7 +27,7 @@ call release_attack
 defensebuild_gg 1 zergling
 defenseuse_gg 1 zergling
 upgrade 1 zergling_speed 30
-wait 6000
+wait 3000
 
 call wait_attack
 call hold_attack
@@ -68,7 +68,7 @@ wait 300
 attack_do
 attack_clear
 call release_attack
-wait 6000
+wait 4000
 
 call wait_attack
 call hold_attack
@@ -105,13 +105,49 @@ wait 300
 attack_do
 attack_clear
 call release_attack
-goto generic_void
+:orange_mixed
+wait 2500
+
+call wait_attack
+call hold_attack
+attack_add 6 zergling
+attack_add 3 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 3500
+
+call wait_attack
+call hold_attack
+attack_add 10 zergling
+attack_add 2 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 2667
+
+call wait_attack
+call hold_attack
+attack_add 5 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+goto orange_mixed
 
 :white_mutahydra
 #define_max 4 mutalisk
 #define_max 8 hydralisk
 upgrade 1 hydralisk_range 30
-wait 9000
+wait 3000
 
 build 3 drone 80
 call wait_attack
@@ -156,7 +192,7 @@ attack_do
 attack_clear
 call release_attack
 upgrade 1 hydra_attack 30
-wait 6000
+wait 4025
 
 player_need 1 spawning_pool
 build 1 hydralisk_den 80
@@ -184,7 +220,7 @@ wait 300
 attack_do
 attack_clear
 call release_attack
-wait 6000
+wait 2855
 
 call wait_attack
 call hold_attack
@@ -203,11 +239,11 @@ goto white_loop
 #define_max 7 guardian
 #define_max 7 mutalisk
 #define_max 20 zergling
-wait 10000
+wait 4500
 
 defensebuild_aa 1 mutalisk
 defenseuse_aa 1 mutalisk
-wait 12500
+wait 11500
 
 call wait_attack
 call hold_attack
@@ -221,7 +257,7 @@ defensebuild_gg 1 mutalisk
 defensebuild_gg 1 guardian
 defenseuse_gg 1 guardian
 call release_attack
-wait 13500
+wait 7500
 
 call wait_attack
 call hold_attack
@@ -232,7 +268,7 @@ wait 300
 attack_do
 attack_clear
 call release_attack
-wait 7800
+wait 4800
 
 call wait_attack
 call hold_attack
@@ -243,7 +279,7 @@ wait 300
 attack_do
 attack_clear
 call release_attack
-wait 10500
+wait 7500
 
 call wait_attack
 call hold_attack
@@ -255,7 +291,7 @@ attack_do
 attack_clear
 call release_attack
 :brown_guardian_loop
-wait_rand 5500 8500
+wait_rand 5200 7500
 
 call wait_attack
 call hold_attack
