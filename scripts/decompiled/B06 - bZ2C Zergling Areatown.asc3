@@ -1,0 +1,85 @@
+script_name Brood Wars Zerg 2 - Town C
+script_id ZB2C
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+#brown_zerglings
+#define_max 20 zergling
+upgrade 1 zergling_attack 30
+upgrade 1 zergling_speed 30
+wait 10000
+
+upgrade 1 z_melee_attack 30
+wait 7100
+
+call wait_attack
+call hold_attack
+attack_add 8 zergling
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+upgrade 2 z_melee_attack 30
+wait 13000
+
+call wait_attack
+call hold_attack
+attack_add 14 zergling
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+upgrade 3 z_melee_attack 30
+:brown_ling_loop
+wait_rand 8900 11500
+
+call wait_attack
+call hold_attack
+attack_rand 12 20 zergling
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 50
+
+goto brown_ling_loop
+
+:hold_attack
+deaths 13 Add 1 firebat generic_void
+return
+
+:release_attack
+deaths 13 Set 0 firebat generic_void
+return
+
+:wait_attack
+wait 16
+
+deaths 13 AtLeast 2 firebat ensure_attack
+deaths 13 Exactly 1 firebat wait_attack
+#loop if another script started an attack
+return
+
+:ensure_attack
+load_bank Ensures
+print Ensure_TwoOrMore_PleaseReportMeIfSeen
+bank_data Set 1 Ensures Ensure_TwoOrMore wait_attack
+bank_data Set 0 Ensures Ensure_Compare wait_attack
+save_bank Ensures
+deaths 13 Set 0 firebat generic_void
+return
+
+:generic_void
+wait 500
+
+stop

@@ -11,16 +11,233 @@ notowns_jump spire brown_guardian
 if_owned defiler_mound white_mutahydra
 #:orange hydraling
 
+#define_max 10 zergling
+#define_max 7 hydralisk
+wait 2240
+
 call wait_attack
 call hold_attack
 attack_add 4 zergling
-call waypointing
-wait 500
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+upgrade 1 zergling_speed 30
+wait 6000
+
+call wait_attack
+call hold_attack
+attack_add 10 zergling
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+upgrade 1 hydralisk_range 30
+wait 2500
+
+call wait_attack
+call hold_attack
+attack_add 4 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+upgrade 1 hydralisk_speed 30
+wait 4500
+
+call wait_attack
+call hold_attack
+attack_add 3 hydralisk
+attack_add 6 zergling
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 6000
+
+call wait_attack
+call hold_attack
+attack_add 7 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 3000
+
+call wait_attack
+call hold_attack
+attack_add 8 zergling
+attack_add 5 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 2250
+
+call wait_attack
+call hold_attack
+attack_add 10 zergling
+attack_prepare
+wait 300
 
 attack_do
 attack_clear
 call release_attack
 goto generic_void
+
+:white_mutahydra
+#define_max 4 mutalisk
+#define_max 8 hydralisk
+upgrade 1 hydralisk_range 30
+wait 9000
+
+call wait_attack
+call hold_attack
+attack_add 2 mutalisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 4500
+
+call wait_attack
+call hold_attack
+attack_add 2 mutalisk
+attack_add 2 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+upgrade 1 hydralisk_speed 30
+wait 4500
+
+call wait_attack
+call hold_attack
+attack_add 2 mutalisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+upgrade 1 hydra_attack 30
+wait 6000
+
+call wait_attack
+call hold_attack
+attack_add 2 mutalisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+:white_loop
+wait 3500
+
+call wait_attack
+call hold_attack
+attack_add 7 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 6000
+
+call wait_attack
+call hold_attack
+attack_add 3 mutalisk
+attack_add 5 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+
+goto white_loop
+
+:brown_guardian
+#define_max 7 guardian
+#define_max 7 mutalisk
+#define_max 20 zergling
+wait 22500
+
+call wait_attack
+call hold_attack
+attack_add 1 guardian
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 13500
+
+call wait_attack
+call hold_attack
+attack_add 3 guardian
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 7800
+
+call wait_attack
+call hold_attack
+attack_add 2 guardian
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 10500
+
+call wait_attack
+call hold_attack
+attack_add 5 guardian
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+:brown_guardian_loop
+wait_rand 5500 8500
+
+call wait_attack
+call hold_attack
+attack_rand 4 6 guardian
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+call release_attack
+wait 50
+
+goto brown_guardian_loop
 
 :hold_attack
 deaths 13 Add 1 firebat generic_void

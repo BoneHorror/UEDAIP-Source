@@ -48,7 +48,6 @@ attack_clear
 call release_attack
 upgrade 1 z_flyer_attack 30
 upgrade 1 z_carapace 30
-upgrade 1 zergling_speed 30
 upgrade 1 z_melee_attack 30
 upgrade 1 z_flyer_carapace 30
 wait 5150
@@ -235,7 +234,7 @@ attack_clear
 call release_attack
 upgrade 1 bone_mastery 30
 upgrade 1 voracity 30
-upgrade 2 z_flyer_attack
+upgrade 2 z_flyer_attack 30
 :castLoop
 wait 5333
 
