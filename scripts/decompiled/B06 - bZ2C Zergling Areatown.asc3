@@ -12,7 +12,11 @@ if_owned defiler_mound white_creep
 #define_max 20 zergling
 upgrade 1 zergling_attack 30
 upgrade 1 zergling_speed 30
-wait 10000
+wait 5000
+
+defensebuild_gg 2 zergling
+defenseuse_gg 2 zergling
+wait 5000
 
 build 2 drone 80
 upgrade 1 z_melee_attack 30
@@ -64,7 +68,7 @@ goto brown_ling_loop
 :white_creep
 wait 2000
 
-build 1 drone 80
+build 1 drone 100
 wait 10000
 
 build 5 drone 80

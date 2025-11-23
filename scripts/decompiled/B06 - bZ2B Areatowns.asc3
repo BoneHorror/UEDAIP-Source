@@ -38,7 +38,7 @@ wait 300
 attack_do
 attack_clear
 call release_attack
-build 1 drone 80
+build 1 drone 100
 defensebuild_ag 1 hydralisk
 defenseuse_ag 1 hydralisk
 upgrade 1 hydralisk_range 30
@@ -278,6 +278,8 @@ wait 300
 
 attack_do
 attack_clear
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
 call release_attack
 wait 7500
 

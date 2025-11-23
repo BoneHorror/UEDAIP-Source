@@ -14,6 +14,7 @@ multirun ai_income
 upgrade_jump 13 Set 74 5 ai_income
 define_max 25 overlord
 build 1 hatchery 80
+farms_timing
 #new idea: drones recover over time so that we show zerg gradually weening off when left alone for long enough. just feral doesn't feel good!
 notowns_jump spire brown_lurkers
 if_owned defiler_mound white_casters
@@ -23,6 +24,7 @@ define_max 7 hydralisk
 define_max 6 infested_terran
 define_max 5 mutalisk
 define_max 4 scourge
+max_force 833
 defensebuild_gg 1 infested_terran
 defenseuse_gg 2 infested_terran
 defensebuild_gg 1 mutalisk
@@ -49,7 +51,7 @@ wait 300
 attack_do
 attack_clear
 call release_attack
-build 1 drone 80
+build 1 drone 100
 upgrade 1 z_flyer_attack 30
 upgrade 1 z_carapace 30
 upgrade 1 z_melee_attack 30
@@ -137,6 +139,7 @@ define_max 4 mutalisk
 define_max 8 hydralisk
 define_max 4 lurker
 define_max 8 scourge
+max_force 1450
 multirun ai_income
 tech burrowing 30
 upgrade 1 overlord_speed 30
@@ -149,7 +152,7 @@ upgrade 1 hydralisk_range 30
 idle_orders 120 0 1 queen 1024 overlord|observer|science_vessel|defiler|skywing|dropship|shuttle|arbiter|valhalla|defiler|queen|ghost 30 WithoutSpellEffects(Parasite)|RandomRate(280 820)|Self(Energy(GreaterThanPercent 80))
 wait 4000
 
-build 1 drone 80
+build 1 drone 100
 defensebuild_gg 1 ultralisk
 defenseuse_gg 1 ultralisk
 defenseuse_gg 1 broodling
@@ -308,6 +311,7 @@ define_max 7 mutalisk
 define_max 12 hydralisk
 define_max 20 zergling
 define_max 4 scourge
+max_force 1050
 tech burrowing 30
 tech lurker_aspect 30
 upgrade 1 overlord_speed 30
@@ -330,6 +334,11 @@ wait 300
 attack_do
 attack_clear
 call release_attack
+defensebuild_gg 1 hydralisk
+defensebuild_gg 1 lurker
+defenseuse_gg 1 lurker
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
 upgrade 1 hydralisk_speed 30
 upgrade 2 z_missile_attack 30
 upgrade 1 z_carapace 30
