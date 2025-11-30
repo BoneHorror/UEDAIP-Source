@@ -11,6 +11,9 @@ wait 1
 
 notowns_jump hive red_defender
 multirun taar_upgrades
+unit_avail 13 Set Disabled spawnsire taar_idle
+define_max 12 broodling
+define_max 255 spawnsire
 define_max 8 scourge
 define_max 20 overlord
 define_max 10 sy_demon
@@ -25,6 +28,7 @@ enemyowns_jump hive zerg_raid
 deaths 13 Exactly 1 272 taar_idle
 #loop while exactly 1 extended zeratul deaths
 :taar_ambush
+unit_avail 13 Set Enabled spawnsire taar_idle
 wait 1533
 
 #TODO - fill out Taar attack list after tweaking units a bit more! But should probably start with some gray spam
