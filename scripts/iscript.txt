@@ -22449,7 +22449,10 @@ HostBurrow:
 	playfram       	0xbb	# frame set 11
 	wait           	1
 	playfram       	0xcc	# frame set 12
-	wait           	2
+	wait           	1
+	#print Reached HostBurrow for {player}
+	if deaths(player, 194) == 1 goto HostCampaignHide #Beyond06 B06 - Set 1 Zerg Beacon as marker to hide Spawnsires until later
+	wait           	1
 	playfram       	0xdd	# frame set 13
 	wait           	1
 	imgol          	423 0 0	# Unknown423 (thingy\bDust.grp)
@@ -22491,17 +22494,18 @@ HostBurrow:
 	wait           	1
 	sigorder       	4
 HostBurrowedLoop:
-	if deaths(player, 272) == 1 goto HostCampaignHide #If this Player (Taar AI by assumption) has exactly 1 extended Zeratul deaths, go to hide unit - used for P4 in Beyond06
+	if deaths(player, 194) == 1 goto HostCampaignHide #If this Player (Taar AI by assumption) has exactly 1 extended Zeratul deaths, go to hide unit - used for P4 in Beyond06
 	wait           	25
 	if unit.energy > 2559 goto HostSpawn
 	goto           	HostBurrowedLoop
 
 HostCampaignHide:
+	print Reached Campaign Hide
 	hide_unit unit
 HostCampaignWait:
 	wait 30
 	
-	if deaths(player, 272) == 1 goto HostCampaignWait #If this Player (Taar AI by assumption) has exactly 1 extended Zeratul deaths, idle - used for P4 in Beyond06
+	if deaths(player, 194) == 1 goto HostCampaignWait #If this Player (Taar AI by assumption) has exactly 1 extended Zeratul deaths, idle - used for P4 in Beyond06
 	show_unit unit #Reveal scary Hosts around the map!
 	goto HostBurrowedLoop
 	
