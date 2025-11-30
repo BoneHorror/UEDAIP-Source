@@ -25,10 +25,11 @@ wait 50
 enemyowns_jump hatchery zerg_raid
 enemyowns_jump lair zerg_raid
 enemyowns_jump hive zerg_raid
-deaths 13 Exactly 1 272 taar_idle
+deaths 13 Exactly 1 194 taar_idle
 #loop while exactly 1 extended zeratul deaths
 :taar_ambush
 unit_avail 13 Set Enabled spawnsire taar_idle
+define_max 8 spawnsire
 wait 1533
 
 #TODO - fill out Taar attack list after tweaking units a bit more! But should probably start with some gray spam
@@ -47,10 +48,10 @@ attack_do
 attack_clear
 wait 1000
 
-deaths 13 Exactly 0 272 taar_ambush
+deaths 13 Exactly 0 194 taar_ambush
 wait 1000
 
-deaths 13 Exactly 0 272 taar_ambush
+deaths 13 Exactly 0 194 taar_ambush
 wait_rand 533 1515
 
 goto taar_idle
