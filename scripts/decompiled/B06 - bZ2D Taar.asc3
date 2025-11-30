@@ -1,0 +1,149 @@
+script_name Brood Wars Zerg 2 - Town D
+script_id ZB2D
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+notowns_jump hive red_defender
+multirun taar_upgrades
+define_max 8 scourge
+define_max 20 overlord
+define_max 10 sy_demon
+define_max 8 ortu
+define_max 33 gray
+:taar_idle
+wait 50
+
+enemyowns_jump hatchery zerg_raid
+enemyowns_jump lair zerg_raid
+enemyowns_jump hive zerg_raid
+deaths 13 Exactly 1 272 taar_idle
+#loop while exactly 1 extended zeratul deaths
+:taar_ambush
+wait 1533
+
+#TODO - fill out Taar attack list after tweaking units a bit more! But should probably start with some gray spam
+goto taar_ambush
+
+:zerg_raid
+#when this first happen, set a death that triggers a dialogue in the map!
+attack_rand 2 4 ortu
+attack_rand 1 2 sy_demon
+unstart_campaign
+attack_prepare
+start_campaign
+wait 500
+
+attack_do
+attack_clear
+wait 1000
+
+deaths 13 Exactly 0 272 taar_ambush
+wait 1000
+
+deaths 13 Exactly 0 272 taar_ambush
+wait_rand 533 1515
+
+goto taar_idle
+
+:taar_upgrades
+idle_orders DisableBuiltin 0 0 0 0 0 0 0
+upgrade 1 defiler_mana 30
+upgrade 1 queen_mana 30
+upgrade 3 z_missile_attack 30
+upgrade 3 z_carapace 30
+upgrade 3 z_melee_attack 30
+upgrade 3 z_flyer_carapace 30
+upgrade 3 z_flyer_attack 30
+upgrade 1 bone_mastery 30
+#special taar broodling upgrade? taar units to be added!
+defensebuild_gg 1 broodling
+defenseuse_gg 2 broodling
+defensebuild_gg 1 spawnsire
+defenseuse_gg 1 spawnsire
+defensebuild_ag 1 defiler
+defenseuse_ag 1 defiler
+defensebuild_ag 2 scourge
+defenseuse_ag 2 scourge
+defensebuild_aa 2 scourge
+defenseuse_aa 2 scourge
+#upgrade 1 lurker_speed 60
+tech consume 30
+tech plague 30
+idle_orders 120 0 1 queen 1024 overlord|observer|science_vessel|defiler|skywing|dropship|shuttle|arbiter|valhalla|defiler|queen|ghost 30 WithoutSpellEffects(Parasite)|RandomRate(280 820)|Self(Energy(GreaterThanPercent 50))
+tech spawn_broodling 60
+idle_orders 121 32 1 queen 312 zergling|marine 5 Health(GreaterThanPercent 85)|Self(Energy(GreaterThanPercent 75))
+idle_orders 121 32 1 queen 312 hydralisk|firebat|medic|heavy_marine 40 Health(GreaterThanPercent 85)
+idle_orders 121 32 1 queen 312 lurker|siege_tank|death_knight 70 Health(GreaterThanPercent 25)
+idle_orders 121 32 1 queen 312 ultralisk|36|panzer 120 Health(GreaterThanPercent 25)
+idle_orders 121 32 1 queen 312 zealot|vulture|scorpion 30 Health(GreaterThanPercent 45)|Self(Energy(GreaterThanPercent 55))
+idle_orders 121 32 1 queen 312 dragoon|goliath|phantom 60 Health(GreaterThanPercent 45)
+idle_orders 121 32 1 queen 312 high_templar|ghost 70 Health(GreaterThanPercent 65)
+idle_orders 121 32 1 queen 312 dark_templar|tesla_trooper 50 Health(GreaterThanPercent 55)
+idle_orders 121 32 1 queen 312 drone|scv 15 Health(GreaterThanPercent 95)
+idle_orders 121 32 1 queen 312 broodling 3 Health(GreaterThanPercent 95)|Self(Energy(GreaterThanPercent 85))
+idle_orders 121 32 1 queen 312 group_men 40 deathrattle
+tech ensnare 60
+upgrade 1 overlord_capacity 30
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|marine|vulture|heavy_marine|scorpion 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 45))
+idle_orders 146 0 1 queen 1024 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 50))
+idle_orders 146 0 1 queen 1024 dragoon|corsair|scout|dark_templar|wraith|ghost|skywing|phantom 40 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 55))
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|dragoon|corsair|scout|dark_archon|devourer|guardian|dark_templar|goliath|siege_tank|revenant|death_knight|panzer 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 50))
+idle_orders 146 0 1 queen 1024 reaver|dark_archon|archon|devourer|guardian|hnorad|battlecruiser|valhalla|carrier|arbiter 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 45))
+idle_orders 146 32 1 queen 312 group_men 30 deathrattle
+upgrade 1 queen_mana 30
+upgrade 1 overlord_sight 30
+idle_orders 119 64 1 defiler 512 ultralisk 70 own|allied|notenemies|incombat
+idle_orders 119 64 1 defiler 512 zergling 30 own|allied|notenemies|incombat|Count(AtLeast 3 80 14)
+idle_orders 119 64 1 defiler 512 lurker 50 own|allied|notenemies|incombat|Count(AtLeast 2 80 14)
+idle_orders 144 64 1 defiler 788 group_men 55 count(AtLeast 3 120 14) 
+idle_orders 144 64 1 defiler 512 skywing|death_knight|scorpion|wraith|science_vessel|dragoon|corsair|scout 80 incombat|count(AtLeast 3 120 14)
+idle_orders 144 64 1 defiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|devourer|guardian|ultralisk 115 incombat|count(AtLeast 2 120 14)
+idle_orders 144 64 1 defiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|ultralisk 80 incombat
+idle_orders 144 64 1 defiler 512 heavy_marine|medic|ghost|phantom|marine|firebat|vulture|zealot|hydralisk|mutalisk|revenant|dark_templar|high_templar 55 incombat|count(AtLeast 4 120 14)
+idle_orders Consume 32 1 defiler 512 zergling 70 NotEnemies|Own|Health(LessThanPercent 80)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 32 1 defiler 512 broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
+:taar_upg_idle
+wait 500
+
+goto taar_upg_idle
+
+:red_defender
+unstart_campaign
+define_max 2 ultralisk
+define_max 24 zergling
+define_max 15 hydralisk
+define_max 2 infested_terran
+wait 7500
+
+defensebuild_gg 2 zergling
+defenseuse_gg 2 zergling
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+upgrade 1 zergling_speed 30
+wait 10400
+
+upgrade 1 z_missile_attack 50
+upgrade 1 z_carapace 50
+upgrade 1 z_melee_attack 50
+upgrade 1 hydralisk_speed 50
+upgrade 1 hydralisk_range 50
+defensebuild_gg 1 infested_terran
+defenseuse_gg 1 infested_terran
+wait 12100
+
+wait 8100
+
+:red_idle
+wait 500
+
+goto red_idle
