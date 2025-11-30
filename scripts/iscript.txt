@@ -22491,10 +22491,20 @@ HostBurrow:
 	wait           	1
 	sigorder       	4
 HostBurrowedLoop:
+	if deaths(player, 272) == 1 goto HostCampaignHide #If this Player (Taar AI by assumption) has exactly 1 extended Zeratul deaths, go to hide unit - used for P4 in Beyond06
 	wait           	25
 	if unit.energy > 2559 goto HostSpawn
 	goto           	HostBurrowedLoop
 
+HostCampaignHide:
+	hide_unit unit
+HostCampaignWait:
+	wait 30
+	
+	if deaths(player, 272) == 1 goto HostCampaignWait #If this Player (Taar AI by assumption) has exactly 1 extended Zeratul deaths, idle - used for P4 in Beyond06
+	show_unit unit #Reveal scary Hosts around the map!
+	goto HostBurrowedLoop
+	
 HostSpawn:
 	set unit.energy = 0
 	imgol          	107 0 0	# ZergBuildingSpawnSmall (zerg\zSpawn01.grp)
