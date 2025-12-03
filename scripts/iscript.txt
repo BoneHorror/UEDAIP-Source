@@ -14283,20 +14283,20 @@ IsId           	187
 Type           	20
 Init           	StasisCellInit
 Death          	TemplarArchivesDeath
-GndAttkInit    	TaarXenoWort
-AirAttkInit    	TaarXenoWort
+GndAttkInit    	XenowortAttkInit
+AirAttkInit    	XenowortAttkInit
 Unused1        	[NONE]
-GndAttkRpt     	TaarXenoWort
-AirAttkRpt     	TaarXenoWort
+GndAttkRpt     	XenowortAttkRpt
+AirAttkRpt     	XenowortAttkRpt
 CastSpell      	[NONE]
-GndAttkToIdle  	TaarXenoWort
-AirAttkToIdle  	TaarXenoWort
+GndAttkToIdle  	XenowortAttkToIdle
+AirAttkToIdle  	XenowortAttkToIdle
 Unused2        	[NONE]
 Walking        	[NONE]
 WalkingToIdle  	[NONE]
 SpecialState1  	[NONE]
 SpecialState2  	[NONE]
-AlmostBuilt    	[NONE]
+AlmostBuilt    	TaarSmallAlmostBuilt
 Built          	StasisCellInit
 Landing        	[NONE]
 LiftOff        	[NONE]
@@ -14312,12 +14312,32 @@ StasisCellInit:
 	playfram       	0
 	goto           	long00
 
-TaarDominator:
-	playfram		1
-	goto long00
+TaarSmallAlmostBuilt:
+	imgol          	108 0 0	# ZergBuildingSpawnMedium (zerg\zSpawn02.grp)
+	goto StasisCellInit
 	
+TaarDominator: #Add lightning...
+	playfram		1
+	imgul          	22 0 0	# ZergEggShad (zerg\zegShad.grp)
+	goto long00
+
+XenowortAttkInit:
+	playfram		2
+	wait           	1
+XenowortAttkRpt: #Maybe add something on top of the appendage?
+	playfram		2
+	wait           	1
+	attack         	
+	gotorepeatattk 	
+	ignorerest     	
+XenowortAttkToIdle:
+	playfram		2
+	wait           	2
+	goto           	long00
+
 TaarXenoWort:
 	playfram		2
+	imgul          	22 0 0	# ZergEggShad (zerg\zegShad.grp)
 	goto long00
 	
 
@@ -17597,12 +17617,19 @@ SeekerSporesGndAttkInit:
 	goto           	SeekerSporesGndAttkInit
 
 SeekerSporesDeath:
+	if bullet.weapon_id == 148 goto XenowortProjDeath
 	playsnd        	79	# Bullet\ZLuHit00.wav
 	sprol          	365 0 0	# Unknown512 (thingy\SporeHit.grp)
 	domissiledmg   	
 	wait           	1
 	end            	
 
+XenowortProjDeath:
+	playsnd        	79	# Bullet\ZLuHit00.wav #TODO use original Taar hit instead
+	sprol          	505 0 0	# Unknown960 (thingy\bsmoke.grp)
+	domissiledmg   	
+	wait           	1
+	end            	
 
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
