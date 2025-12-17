@@ -610,7 +610,7 @@ wait_rand 15 80
 issue_order 47 10 zergling Loc.5 Loc.49 nydus_canal Own
 issue_order 47 6 hydralisk Loc.5 Loc.49 nydus_canal Own
 bring_jump 4 Exactly 0 nydus_canal Loc.49 nydus_return
-bring_jump 4 AtMost 17 group_men Loc.49 nr_1_feed
+bring_jump 4 AtMost 2 group_men Loc.49 nr_1_feed
 :nydus_return
 return
 
@@ -620,7 +620,7 @@ wait_rand 15 80
 issue_order 47 10 zergling Loc.5 Loc.40 nydus_canal Own
 issue_order 47 6 hydralisk Loc.5 Loc.40 nydus_canal Own
 bring_jump 4 Exactly 0 nydus_canal Loc.40 nydus_return
-bring_jump 4 AtMost 17 group_men Loc.40 nr_2_feed
+bring_jump 4 AtMost 2 group_men Loc.40 nr_2_feed
 goto nydus_return
 
 :nr_3_feed
@@ -629,7 +629,7 @@ wait_rand 15 80
 issue_order 47 10 zergling Loc.45 Loc.36 nydus_canal Own
 issue_order 47 6 hydralisk Loc.45 Loc.36 nydus_canal Own
 bring_jump 4 Exactly 0 nydus_canal Loc.36 nydus_return
-bring_jump 4 AtMost 17 group_men Loc.36 nr_3_feed
+bring_jump 4 AtMost 2 group_men Loc.36 nr_3_feed
 goto nydus_return
 
 :nr_4_feed
@@ -638,7 +638,7 @@ wait_rand 15 80
 issue_order 47 10 zergling Loc.45 Loc.51 nydus_canal Own
 issue_order 47 6 hydralisk Loc.45 Loc.51 nydus_canal Own
 bring_jump 4 Exactly 0 nydus_canal Loc.51 nydus_return
-bring_jump 4 AtMost 17 group_men Loc.51 nr_4_feed
+bring_jump 4 AtMost 2 group_men Loc.51 nr_4_feed
 goto nydus_return
 
 :nydus_repeat_2
