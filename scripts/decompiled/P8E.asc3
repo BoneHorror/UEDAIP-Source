@@ -205,7 +205,7 @@ upgrade 2 z_missile_attack 30
 upgrade 2 z_flyer_attack 30
 upgrade 2 z_melee_attack 30
 train 2 defiler
-wait 2955
+wait 2755
 
 train 10 mutalisk
 train 4 guardian
@@ -223,7 +223,7 @@ guard queen Loc.47 1 3 60
 upgrade 2 z_flyer_carapace 30
 upgrade 2 z_carapace 30
 tech spawn_broodling 30
-wait 3175
+wait 2875
 
 idle_orders 121 8 1 queen 312 zergling|marine 5 Health(GreaterThanPercent 85)
 idle_orders 121 8 1 queen 312 hydralisk|firebat|medic|heavy_marine 40 Health(GreaterThanPercent 85)
@@ -249,7 +249,7 @@ attack_do
 attack_clear
 tech ensnare 30
 guard queen Loc.48 1 4 60
-wait 2877
+wait 2677
 
 idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|marine|vulture|heavy_marine|scorpion 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)
 idle_orders 146 0 1 queen 1024 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)
@@ -586,16 +586,7 @@ wait 5250
 :nydus_repeat_1
 train 64 zergling
 train 36 hydralisk
-issue_order 47 10 zergling Loc.5 Loc.49 nydus_canal Own
-issue_order 47 6 hydralisk Loc.5 Loc.49 nydus_canal Own
-wait 150
-
-issue_order 47 10 zergling Loc.5 Loc.49 nydus_canal Own
-issue_order 47 6 hydralisk Loc.5 Loc.49 nydus_canal Own
-wait 150
-
-issue_order 47 10 zergling Loc.5 Loc.49 nydus_canal Own
-issue_order 47 6 hydralisk Loc.5 Loc.49 nydus_canal Own
+call nr_1_feed
 bring_jump 4 Exactly 0 nydus_canal Loc.49 nydus_sleep
 attack_add 40 zergling
 attack_add 20 hydralisk
@@ -613,19 +604,47 @@ random_jump 85 nydus_repeat_2
 random_jump 128 nydus_repeat_3
 goto nydus_repeat_1
 
+:nr_1_feed
+wait_rand 15 80
+
+issue_order 47 10 zergling Loc.5 Loc.49 nydus_canal Own
+issue_order 47 6 hydralisk Loc.5 Loc.49 nydus_canal Own
+bring_jump 4 Exactly 0 nydus_canal Loc.49 nydus_return
+bring_jump 4 AtMost 17 group_men Loc.49 nr_1_feed
+:nydus_return
+return
+
+:nr_2_feed
+wait_rand 15 80
+
+issue_order 47 10 zergling Loc.5 Loc.40 nydus_canal Own
+issue_order 47 6 hydralisk Loc.5 Loc.40 nydus_canal Own
+bring_jump 4 Exactly 0 nydus_canal Loc.40 nydus_return
+bring_jump 4 AtMost 17 group_men Loc.40 nr_2_feed
+goto nydus_return
+
+:nr_3_feed
+wait_rand 15 80
+
+issue_order 47 10 zergling Loc.45 Loc.36 nydus_canal Own
+issue_order 47 6 hydralisk Loc.45 Loc.36 nydus_canal Own
+bring_jump 4 Exactly 0 nydus_canal Loc.36 nydus_return
+bring_jump 4 AtMost 17 group_men Loc.36 nr_3_feed
+goto nydus_return
+
+:nr_4_feed
+wait_rand 15 80
+
+issue_order 47 10 zergling Loc.45 Loc.51 nydus_canal Own
+issue_order 47 6 hydralisk Loc.45 Loc.51 nydus_canal Own
+bring_jump 4 Exactly 0 nydus_canal Loc.51 nydus_return
+bring_jump 4 AtMost 17 group_men Loc.51 nr_4_feed
+goto nydus_return
+
 :nydus_repeat_2
 train 64 zergling
 train 36 hydralisk
-issue_order 47 10 zergling Loc.5 Loc.40 nydus_canal Own
-issue_order 47 6 hydralisk Loc.5 Loc.40 nydus_canal Own
-wait 150
-
-issue_order 47 10 zergling Loc.5 Loc.40 nydus_canal Own
-issue_order 47 6 hydralisk Loc.5 Loc.40 nydus_canal Own
-wait 150
-
-issue_order 47 10 zergling Loc.5 Loc.40 nydus_canal Own
-issue_order 47 6 hydralisk Loc.5 Loc.40 nydus_canal Own
+call nr_2_feed
 bring_jump 4 Exactly 0 nydus_canal Loc.40 nydus_sleep
 attack_add 40 zergling
 attack_add 22 hydralisk
@@ -646,16 +665,7 @@ goto nydus_repeat_2
 :nydus_repeat_3
 train 34 zergling
 train 16 hydralisk
-issue_order 47 10 zergling Loc.45 Loc.36 nydus_canal Own
-issue_order 47 6 hydralisk Loc.45 Loc.36 nydus_canal Own
-wait 150
-
-issue_order 47 10 zergling Loc.46 Loc.36 nydus_canal Own
-issue_order 47 6 hydralisk Loc.46 Loc.36 nydus_canal Own
-wait 150
-
-issue_order 47 10 zergling Loc.45 Loc.36 nydus_canal Own
-issue_order 47 6 hydralisk Loc.46 Loc.36 nydus_canal Own
+call nr_3_feed
 bring_jump 4 Exactly 0 nydus_canal Loc.36 nydus_sleep
 attack_add 20 zergling
 attack_add 14 hydralisk
@@ -677,16 +687,7 @@ goto nydus_repeat_3
 :nydus_repeat_4
 train 64 zergling
 train 36 hydralisk
-issue_order 47 10 zergling Loc.45 Loc.51 nydus_canal Own
-issue_order 47 6 hydralisk Loc.45 Loc.51 nydus_canal Own
-wait 150
-
-issue_order 47 10 zergling Loc.46 Loc.51 nydus_canal Own
-issue_order 47 6 hydralisk Loc.46 Loc.51 nydus_canal Own
-wait 150
-
-issue_order 47 10 zergling Loc.45 Loc.51 nydus_canal Own
-issue_order 47 6 hydralisk Loc.46 Loc.51 nydus_canal Own
+call nr_4_feed
 bring_jump 4 Exactly 0 nydus_canal Loc.51 nydus_sleep
 attack_add 40 zergling
 attack_add 20 hydralisk

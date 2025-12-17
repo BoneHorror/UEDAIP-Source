@@ -35,10 +35,10 @@ define_max 38 hydralisk
 define_max 22 ultralisk
 define_max 4 hdefiler
 define_max 2 hultralisk
-define_max 40 drone
+define_max 50 drone
 define_max 5 defiler
 define_max 9 lurker
-define_max 21 mutalisk
+define_max 15 mutalisk
 define_max 12 guardian
 define_max 4 queen
 define_max 10 scourge
@@ -98,6 +98,7 @@ defenseuse_ag 2 hydralisk
 defensebuild_ag 1 defiler
 defenseuse_ag 1 defiler
 defenseuse_ag 1 devourer
+defensebuild_ag 1 mutalisk
 defenseuse_ag 1 mutalisk
 defensebuild_ga 1 guardian
 defenseuse_ga 1 guardian
@@ -170,7 +171,7 @@ upgrade 2 z_carapace 30
 place_guard queen 0
 wait 5022
 
-build 16 drone 80
+build 19 drone 80
 defenseuse_gg 2 broodling
 idle_orders 121 8 1 queen 312 zergling|marine 5 Health(GreaterThanPercent 85)
 idle_orders 121 8 1 queen 312 hydralisk|firebat|medic|heavy_marine 40 Health(GreaterThanPercent 85)
