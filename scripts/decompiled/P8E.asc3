@@ -146,7 +146,6 @@ help_iftrouble
 goto help_request
 
 :kill3
-killable
 upgrade 1 overlord_capacity 30
 upgrade 1 overlord_speed 30
 upgrade 1 z_missile_attack 30
@@ -158,7 +157,7 @@ wait 15410
 create_script nydus1 255 Loc.37 255 255
 train 7 mutalisk
 attack_add 4 mutalisk
-call targeting
+call targeting_killable
 wait 500
 
 attack_do
@@ -172,7 +171,7 @@ wait 1825
 
 train 12 mutalisk
 attack_add 4 mutalisk
-call targeting
+call targeting_killable
 wait 500
 
 attack_do
@@ -184,7 +183,7 @@ idle_orders 144 64 1 defiler 512 battlecruiser|valhalla|carrier|arbiter|devourer
 idle_orders 144 64 1 defiler 512 battlecruiser|valhalla|carrier|arbiter|ultralisk 80 incombat
 idle_orders 144 64 1 defiler 512 heavy_marine|medic|ghost|phantom|marine|firebat|vulture|zealot|hydralisk|mutalisk|revenant|dark_templar|high_templar 55 incombat|count(AtLeast 4 120 14)
 attack_add 4 mutalisk
-call targeting
+call targeting_killable
 wait 500
 
 attack_do
@@ -196,7 +195,7 @@ wait 3065
 
 train 11 mutalisk
 attack_add 8 mutalisk
-call targeting
+call targeting_killable
 wait 500
 
 attack_do
@@ -213,7 +212,7 @@ wait 500
 
 attack_add 4 mutalisk
 attack_add 4 guardian
-call targeting
+call targeting_killable
 wait 500
 
 attack_do
@@ -242,7 +241,7 @@ wait 300
 
 attack_add 9 mutalisk
 attack_add 9 scourge
-call targeting
+call targeting_killable
 wait 500
 
 attack_do
@@ -264,7 +263,7 @@ wait 350
 
 attack_add 12 scourge
 attack_add 7 guardian
-call targeting
+call targeting_killable
 wait 500
 
 attack_do
@@ -277,7 +276,7 @@ wait 776
 
 train 9 mutalisk
 attack_add 6 mutalisk
-call targeting
+call targeting_killable
 wait 500
 
 attack_do
@@ -289,7 +288,7 @@ wait 1845
 train 4 ultralisk
 multirun ultra_makesure
 wait_train 4 ultralisk
-call targeting
+call targeting_killable
 wait 500
 
 attack_do
@@ -302,7 +301,6 @@ upgrade 1 overlord_sight 30
 upgrade 1 lurker_speed 30
 upgrade 1 bone_mastery 30
 :block1
-killable
 train 2 defiler
 wait 1565
 
@@ -314,7 +312,7 @@ wait 350
 attack_add 18 zergling
 attack_add 10 hydralisk
 attack_add 9 mutalisk
-call targeting
+call targeting_killable
 wait 500
 
 attack_do
@@ -323,7 +321,7 @@ wait 2101
 
 train 20 mutalisk
 attack_add 18 mutalisk
-call targeting
+call targeting_killable
 wait 500
 
 attack_do
@@ -340,7 +338,7 @@ attack_add 12 zergling
 attack_add 6 hydralisk
 attack_add 3 ultralisk
 attack_add 6 mutalisk
-call targeting
+call targeting_killable
 wait 500
 
 attack_do
@@ -355,7 +353,7 @@ wait 500
 attack_add 14 scourge
 attack_add 7 mutalisk
 attack_add 7 guardian
-call targeting
+call targeting_killable
 wait 500
 
 attack_do
@@ -369,7 +367,9 @@ train 4 ultralisk
 wait_train 4 ultralisk
 stop
 
-:targeting
+:targeting_killable
+deaths 13 Exactly 1 218 script_killed 
+#if 1 data disc(218) death was set, this script was "killed" and we just need to idle
 eval_harass develop_attack
 return
 
@@ -377,6 +377,13 @@ return
 wait 160
 
 return
+
+:script_killed
+attack_clear
+:idle_killed
+wait 2500
+
+goto idle_killed
 
 :rescind_homeland
 wait 16

@@ -261,7 +261,6 @@ wait 1500
 goto waitloop1
 
 :combinedmight
-killable
 multirun colony_check
 multirun defense_northwest
 wait 400
@@ -481,7 +480,7 @@ attack_add 4 death_knight
 attack_add 3 panzer
 attack_add 3 medic
 attack_add 15 hydralisk
-call target_init
+call target_init_kbl
 wait 50
 
 attack_do
@@ -542,7 +541,7 @@ attack_add 3 panzer
 attack_add 3 ultralisk
 attack_add 3 guardian
 attack_add 3 skywing
-call target_init
+call target_init_kbl
 wait 50
 
 attack_do
@@ -569,7 +568,7 @@ train 6 valkyrie
 attack_add 1 queen
 attack_add 3 valkyrie
 attack_add 4 panzer
-call target_init
+call atk_close_kbl
 wait 50
 
 attack_do
@@ -577,7 +576,7 @@ attack_clear
 attack_add 1 queen
 attack_add 3 valkyrie
 attack_add 4 guardian
-call target_air
+call target_init_kbl
 wait 50
 
 attack_do
@@ -614,7 +613,7 @@ attack_add 2 hnorad
 attack_add 8 mutalisk
 attack_add 3 devourer
 attack_add 3 guardian
-call target_air
+call target_air_kbl
 wait 50
 
 attack_do
@@ -644,7 +643,7 @@ attack_add 2 ultralisk
 attack_add 3 medic
 attack_add 12 hydralisk
 attack_add 2 death_knight
-call target_init
+call target_init_kbl
 wait 50
 
 attack_do
@@ -668,7 +667,7 @@ attack_add 21 hydralisk
 attack_add 4 valkyrie
 attack_add 8 mutalisk
 attack_add 4 guardian
-call target_init
+call target_init_kbl
 wait 50
 
 attack_do
@@ -695,13 +694,12 @@ attack_add 3 valkyrie
 attack_add 3 devourer
 attack_add 6 mutalisk
 attack_add 6 skywing
-call target_air
+call target_air_kbl
 wait 50
 
 attack_do
 attack_clear
 :loop1
-killable
 wait 3125
 
 train 6 ultralisk
@@ -723,9 +721,7 @@ attack_add 3 panzer
 attack_add 4 medic
 attack_add 7 ultralisk
 attack_add 6 guardian
-unstart_campaign
-attack_prepare
-start_campaign
+call atk_close_kbl
 wait 50
 
 attack_do
@@ -752,9 +748,7 @@ attack_add 3 ghost
 attack_add 2 phantom
 attack_add 3 medic
 attack_add 19 hydralisk
-unstart_campaign
-attack_prepare
-start_campaign
+call atk_close_kbl
 wait 50
 
 attack_do
@@ -779,7 +773,7 @@ attack_add 6 guardian
 attack_add 5 hnorad
 attack_add 3 devourer
 attack_add 2 hsciencevessel
-call target_air
+call target_air_kbl
 attack_timeout 210
 wait 50
 
@@ -814,15 +808,44 @@ attack_add 3 valkyrie
 attack_add 3 medic
 attack_add 6 ultralisk
 attack_add 8 mutalisk
-unstart_campaign
-attack_prepare
-start_campaign
+call atk_close_kbl
 wait 50
 
 attack_do
 attack_clear
 
 goto loop1
+
+:atk_close_kbl
+deaths 13 Exactly 1 218 script_killed 
+#if 1 data disc(218) death was set, this script was "killed" and we just need to idle
+unstart_campaign
+attack_prepare
+start_campaign
+
+:target_air_kbl
+deaths 13 Exactly 1 218 script_killed 
+#if 1 data disc(218) death was set, this script was "killed" and we just need to idle
+time_jump 35 late_air
+random_jump 128 aire1
+goto aire2
+
+:target_init_kbl
+deaths 13 Exactly 1 218 script_killed 
+#if 1 data disc(218) death was set, this script was "killed" and we just need to idle
+deaths 6 AtLeast 1 zealot target_mid
+deaths 6 AtLeast 1 dragoon target_mid
+random_jump 12 fresh_blood
+random_jump 85 early1
+random_jump 128 early2
+goto early3
+
+:script_killed
+attack_clear
+:idle_killed
+wait 2500
+
+goto idle_killed
 
 :partialmight
 wait 1500
@@ -839,7 +862,8 @@ goto partialmight
 goto dunky_funtime
 
 :dunky_funtime
-kill_thread
+deaths 13 Set 1 218 partialmight
+#signal to main script via 1 data disc(218) death that the script is supposed to be terminated
 defenseclear_gg
 defenseclear_ag
 defenseclear_ga
@@ -1032,11 +1056,6 @@ return
 :mid3
 attack_to Loc.91 Loc.97
 return
-
-:target_air
-time_jump 15 late_air
-random_jump 128 aire1
-goto aire2
 
 :late_air
 random_jump 85 air1

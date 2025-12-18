@@ -101,7 +101,6 @@ wait 1500
 goto void_loop
 
 :wait_secure
-killable
 wait 160
 
 defensebuild_gg 1 dragoon
@@ -110,11 +109,13 @@ defensebuild_ga 1 scout
 defensebuild_aa 1 scout
 wait_secure
 
+deaths 13 Exactly 1 218 skip_retal
 attack_add 6 zealot
 attack_add 3 scout
 call Targeting
 attack_do
 attack_clear
+:skip_retal
 stop
 
 :help_request
@@ -130,7 +131,8 @@ wait 2896
 quick_attack
 wait 96
 
-kill_thread
+deaths 13 Set 1 218 main_thread
+#signal to main script via 1 data disc(218) death that the script is supposed to be terminated
 attack_clear
 defenseclear_gg
 defenseclear_ag

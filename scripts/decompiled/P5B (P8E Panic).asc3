@@ -2,7 +2,8 @@ script_name Brood Wars Protoss 5 - Town B
 script_id PB5B
 
 start_areatown
-kill_thread
+deaths 13 Set 1 218 block1
+#signal to main script via 1 data disc(218) death that the script is supposed to be terminated
 upgrade 1 overlord_capacity 30
 upgrade 1 zergling_speed 30
 upgrade 1 hydralisk_speed 30

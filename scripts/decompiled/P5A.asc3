@@ -3,7 +3,8 @@ script_id PB5A
 
 wait 150
 
-kill_thread
+deaths 13 Set 1 218 block1
+#signal to main script via 1 data disc(218) death that the script is supposed to be terminated
 define_max 80 zergling
 define_max 64 hydralisk
 define_max 6 ultralisk

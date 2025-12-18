@@ -2,7 +2,8 @@ script_name Brood Wars Zerg 7 - Town E
 script_id ZB7E
 
 start_areatown
-kill_thread
+deaths 13 Set 1 218 block1
+#signal to main script via 1 data disc(218) death that the script is supposed to be terminated
 attack_clear
 upgrade 3 p_ground_weapon 30
 upgrade 3 p_armor 30
