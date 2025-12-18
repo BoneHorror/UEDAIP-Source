@@ -38,7 +38,8 @@ deaths 0 AtLeast 1 valkyrie formation_started
 goto wait_for_formation
 
 :formation_started
-kill_thread
+deaths 13 Set 1 218 block1
+#set kill flag for other threads
 attack_clear
 define_max 8 carrier
 define_max 15 scout
@@ -97,12 +98,11 @@ attack_clear
 goto block2
 
 :attack_thread
-killable
 wait 5977
 
 attack_add 2 scout
 attack_add 1 zealot
-attack_prepare
+call attack_killable
 wait 500
 
 attack_do
@@ -112,7 +112,7 @@ wait 3833
 
 attack_add 2 scout
 attack_add 1 carrier
-attack_prepare
+call attack_killable
 wait 500
 
 attack_do
@@ -129,7 +129,7 @@ train 2 scout
 attack_add 1 carrier
 attack_add 2 scout
 attack_add 3 zealot
-attack_prepare
+call attack_killable
 wait 500
 
 attack_do
@@ -140,7 +140,7 @@ wait 3666
 
 train 6 scout
 attack_add 6 scout
-attack_prepare
+call attack_killable
 wait 500
 
 attack_do
@@ -152,7 +152,7 @@ wait_force 2 carrier
 wait 200
 
 attack_add 2 carrier
-attack_prepare
+call attack_killable
 wait 500
 
 attack_do
@@ -163,7 +163,7 @@ train 1 carrier
 train 5 scout
 attack_add 5 scout
 attack_add 1 carrier
-attack_prepare
+call attack_killable
 wait 500
 
 attack_do
@@ -172,7 +172,7 @@ train 1 carrier
 train 2 zealot
 attack_add 2 zealot
 attack_add 1 carrier
-attack_prepare
+call attack_killable
 wait 500
 
 attack_do
@@ -183,7 +183,7 @@ train 2 carrier
 train 4 scout
 attack_add 4 scout
 attack_add 2 carrier
-attack_prepare
+call attack_killable
 wait 500
 
 attack_do
@@ -191,10 +191,9 @@ attack_clear
 wait 3222
 
 :block1
-killable
 train 5 scout
 attack_add 5 scout
-attack_prepare
+call attack_killable
 wait 500
 
 attack_do
@@ -205,7 +204,7 @@ train 2 carrier
 train 4 scout
 attack_add 4 scout
 attack_add 2 carrier
-attack_prepare
+call attack_killable
 wait 500
 
 attack_do
@@ -217,7 +216,7 @@ wait_force 4 carrier
 wait 200
 
 attack_add 4 carrier
-attack_prepare
+call attack_killable
 wait 500
 
 attack_do
@@ -226,3 +225,15 @@ wait 3444
 
 goto block1
 
+:attack_killable
+deaths 13 Exactly 1 218 script_killed 
+#if 1 data disc(218) death was set, this script was "killed" and we just need to idle
+attack_prepare
+return
+
+:script_killed
+attack_clear
+:idle_killed
+wait 2500
+
+goto idle_killed
