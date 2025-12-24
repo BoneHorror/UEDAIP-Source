@@ -8385,7 +8385,7 @@ CommandCenterBuilt:
 	set spritelocal noncc = 0
 	#print Player type: {game.player_type(player)}
 	if game.player_type(player) != 2 goto UEDSReturn #skip for non-Human(2) slot types
-	if deaths(player, 214) == 1 goto UEDSReturn #skip code after players used it once
+	if deaths(player, 214) >= 1 goto UEDSReturn #skip code after players used it once
 	#if deaths(player, 98) == 6 goto TerranSel #test hardcode for Terran ver of Omega
 	#set game.minerals(player) = game.player_color_choice(player) #debug test to see color choice
 	#if game.terran_supply_used(player) >= 10 goto UEDSReturn
@@ -8433,7 +8433,7 @@ UEDSReturn:
 	goto           	long00
 	
 UEDSelect:
-	set game.deaths(player, 214) = 1
+	set game.deaths(player, 214) = 2
 	set game.unit_availability(player, 0) = 0 #start disabling terran units for UED
 	set game.unit_availability(player, 1) = 0
 	set game.unit_availability(player, 2) = 0
