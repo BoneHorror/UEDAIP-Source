@@ -6573,6 +6573,7 @@ uMarineInit:
 uMarineWalkingToIdle:
 	playfram       	297	# frame set 4
 uMarineLocal02:
+	#print P 214 Deaths: {deaths(player, 214)}
 	wait			3
 	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	wait			25
