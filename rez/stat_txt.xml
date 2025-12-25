@@ -6372,15 +6372,17 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>AI_ZERG_B8E</id>
-        <value>Brood Wars Zerg 8 - Town E</value>
+        <value>eResearch Polonium Batteries
+(EMP Troopers attack faster, get Irradiated after attacking)</value>
     </string>
     <string>
         <id>AI_ZERG_B8F</id>
-        <value>Brood Wars Zerg 8 - Town F</value>
+        <value>Polonium Batteries</value>
     </string>
     <string>
         <id>AI_ZERG_B9A</id>
-        <value>Brood Wars Zerg 9 - Town A</value>
+        <value>Polonium Batteries Require:
+    Factory</value>
     </string>
     <string>
         <id>AI_ZERG_B9B</id>

@@ -5031,6 +5031,7 @@ uFirebatGndAttkRpt:
 	playsndrand    	2 699 700
 	playfram       	187	# frame set 1
 	attack
+	if upgrade(player, 77) == 1 call uFirebatIrradiate
 	wait           	1
 	attack
 	wait           	1
@@ -5043,6 +5044,10 @@ uFirebatGndAttkRpt:
 uFirebatGndAttkToIdle:
 	goto           	uFirebatWalkingToIdle
 
+uFirebatIrradiate:
+	set unit.irradiate_timer = 8
+	return
+	
 uFirebatWalking:
 	if upgrade(player, 46) == 1 goto uFireDasher
 	move           	4
