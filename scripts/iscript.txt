@@ -5045,6 +5045,9 @@ uFirebatGndAttkToIdle:
 	goto           	uFirebatWalkingToIdle
 
 uFirebatIrradiate:
+	if unit.irradiate_timer > 0 goto uFirebatIrrOverlaySkip
+	imgol          	380 0 0	#Irradiatesmall
+uFirebatIrrOverlaySkip:
 	set unit.irradiate_timer = 8
 	return
 	
@@ -7485,6 +7488,7 @@ uSiegeTank_Tank_BaseWalking:
 	move           	5
 	wait           	1
 	playfram       	51	# frame set 0
+	if upgrade(player, 78) == 1 call uSiegeTankDmatrix
 	move           	5
 	wait           	1
 	playfram       	68	# frame set 1
@@ -7510,6 +7514,14 @@ uSiegeTank_Tank_BaseWalking:
 	wait           	1
 	playfram       	85	# frame set 2
 	goto           	SiegeTank_Tank_BaseWalking
+	
+uSiegeTankDmatrix:
+	if unit.matrix_timer > 0 goto uSiegeTankDmatrixOverlaySkip
+	imgol          	371 0 0	#defencematrixfrontsmall (thingy\edmFronS.grp)
+uSiegeTankDmatrixOverlaySkip:
+	set unit.matrix_timer = 6
+	set unit.matrix_hitpoints = 5120
+	return
 
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:

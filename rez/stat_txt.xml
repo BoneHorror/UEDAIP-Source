@@ -6296,83 +6296,85 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>AI_ZERG_B5D</id>
-        <value>Brood Wars Zerg 5 - Town D</value>
+        <value>Pinnacle Carrier upgrades are exclusive.</value>
     </string>
     <string>
         <id>AI_ZERG_B5E</id>
-        <value>Brood Wars Zerg 5 - Town E</value>
+        <value>Unity of Energy</value>
     </string>
     <string>
         <id>AI_ZERG_B5F</id>
-        <value>Brood Wars Zerg 5 - Town F</value>
+        <value>Unity of Energy</value>
     </string>
     <string>
         <id>AI_ZERG_B6A</id>
-        <value>Brood Wars Zerg 6 - Town A</value>
+        <value>Warp Matrix Overdrive</value>
     </string>
     <string>
         <id>AI_ZERG_B6B</id>
-        <value>Brood Wars Zerg 6 - Town B</value>
+        <value>Warp Matrix Overdrive</value>
     </string>
     <string>
         <id>AI_ZERG_B6C</id>
-        <value>Brood Wars Zerg 6 - Town C</value>
+        <value>Golden Might</value>
     </string>
     <string>
         <id>AI_ZERG_B6D</id>
-        <value>Brood Wars Zerg 6 - Town D</value>
+        <value>Golden Might</value>
     </string>
     <string>
         <id>AI_ZERG_B6E</id>
-        <value>Brood Wars Zerg 6 - Town E</value>
+        <value>Legacy of Shelak</value>
     </string>
     <string>
         <id>AI_ZERG_B6F</id>
-        <value>Brood Wars Zerg 6 - Town F</value>
+        <value>Legacy of Shelak</value>
     </string>
     <string>
         <id>AI_ZERG_B7A</id>
-        <value>Brood Wars Zerg 7 - Town A</value>
+        <value>Legacy of Shelak</value>
     </string>
     <string>
         <id>AI_ZERG_B7B</id>
-        <value>Brood Wars Zerg 7 - Town B</value>
+        <value>Primed Claws</value>
     </string>
     <string>
         <id>AI_ZERG_B7C</id>
-        <value>Brood Wars Zerg 7 - Town C</value>
+        <value>Primed Claws</value>
     </string>
     <string>
         <id>AI_ZERG_B7D</id>
-        <value>Brood Wars Zerg 7 - Town D</value>
+        <value>Primed Claws</value>
     </string>
     <string>
         <id>AI_ZERG_B7E</id>
-        <value>Brood Wars Zerg 7 - Town E</value>
+        <value>Viral Acid</value>
     </string>
     <string>
         <id>AI_ZERG_B7F</id>
-        <value>Brood Wars Zerg 7 - Town F</value>
+        <value>Viral Acid</value>
     </string>
     <string>
         <id>AI_ZERG_B8A</id>
-        <value>Brood Wars Zerg 8 - Town A</value>
+        <value>Viral Acid</value>
     </string>
     <string>
         <id>AI_ZERG_B8B</id>
-        <value>Brood Wars Zerg 8 - Town B</value>
+        <value>rResearch Ultragenerative Brakes
+(Whenever Panzers move, they generate a temporary shield around themselves.)</value>
     </string>
     <string>
         <id>AI_ZERG_B8C</id>
-        <value>Brood Wars Zerg 8 - Town C</value>
+        <value>Ultragenerative Brakes</value>
     </string>
     <string>
         <id>AI_ZERG_B8D</id>
-        <value>Brood Wars Zerg 8 - Town D</value>
+        <value>Ultragenerative Brakes Require:
+		Starport</value>
     </string>
     <string>
         <id>AI_ZERG_B8E</id>
-        <value>eResearch Polonium Batteries
+        <value>pResearch Polonium Batteries
 (EMP Troopers attack faster, get Irradiated after attacking)</value>
     </string>
     <string>
