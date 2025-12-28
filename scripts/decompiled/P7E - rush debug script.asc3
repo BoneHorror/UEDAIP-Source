@@ -1,0 +1,152 @@
+extdef C:/Scripts/PyMS-master/unitdef.txt
+
+
+# stat_txt.tbl entry 1385: Brood Wars Protoss 7 - Town E<0>
+PB7E(1385, 111, aiscript):
+	start_town()
+	if_owned(hatchery, PB7E 0000)
+	stop()
+	
+		--PB7E 0000--
+	unstart_campaign()
+	wait(25)
+rush(21, j21)
+rush(20, j20)
+rush(19, j19)
+rush(18, j18)
+rush(17, j17)
+rush(16, j16)
+rush(15, j15)
+rush(14, j14)
+rush(13, j13)
+rush(12, j12)
+rush(11, j11)
+rush(10, j10)
+rush(9, j9)
+rush(8, j8)
+rush(7, j7)
+rush(6, j6)
+rush(5, j5)
+rush(4, j4)
+rush(3, j3)
+rush(2, j2)
+rush(1, j1)
+rush(22, j21)
+	print(this debug script did not jump)
+	stop()
+
+--j1--
+        wait_rand(1, 100)
+        create_unit(carrier, 0, 0)
+        print(the player with carrier jumped via rush1)
+        stop()
+--j2--
+        wait_rand(1, 100)
+        create_unit(carrier, 0, 0)
+        print(the player with carrier jumped via rush2)
+        stop()
+--j3--
+        wait_rand(1, 100)
+        create_unit(carrier, 0, 0)
+        print(the player with carrier jumped via rush3)
+        stop()
+--j4--
+        wait_rand(1, 100)
+        create_unit(carrier, 0, 0)
+        print(the player with carrier jumped via rush4)
+        stop()
+--j5--
+        wait_rand(1, 100)
+        create_unit(carrier, 0, 0)
+        print(the player with carrier jumped via rush5)
+        stop()
+--j6--
+        wait_rand(1, 100)
+        create_unit(carrier, 0, 0)
+        print(the player with carrier jumped via rush6)
+        stop()
+--j7--
+        wait_rand(1, 100)
+        create_unit(carrier, 0, 0)
+        print(the player with carrier jumped via rush7)
+        stop()
+
+--j13--
+        wait_rand(1, 100)
+        create_unit(carrier, 0, 0)
+        print(the player with carrier jumped via rush13)
+        stop()
+--j14--
+        wait_rand(1, 100)
+        create_unit(carrier, 0, 0)
+        print(the player with carrier jumped via rush14)
+        stop()
+--j15--
+        wait_rand(1, 100)
+        create_unit(carrier, 0, 0)
+        print(the player with carrier jumped via rush15)
+        stop()
+--j16--
+        wait_rand(1, 100)
+        create_unit(carrier, 0, 0)
+        print(the player with carrier jumped via rush16)
+        stop()
+--j17--
+        wait_rand(1, 100)
+        create_unit(carrier, 0, 0)
+        print(the player with carrier jumped via rush17)
+        stop()
+--j18--
+        wait_rand(1, 100)
+        create_unit(carrier, 0, 0)
+        print(the player with carrier jumped via rush18)
+        stop()
+--j19--
+        wait_rand(1, 100)
+        create_unit(carrier, 0, 0)
+        print(the player with carrier jumped via rush19)
+        stop()
+--j20--
+        wait_rand(1, 100)
+        create_unit(carrier, 0, 0)
+        print(the player with carrier jumped via rush20)
+        stop()
+--j21--
+        wait_rand(1, 100)
+        create_unit(carrier, 0, 0)
+        print(the player with carrier jumped via rush21)
+        stop()
+
+		--j8--
+	wait_rand(1, 100)
+	create_unit(carrier, 0, 0)
+	print(the player with carrier jumped via rush8)
+	stop()
+
+
+		--j9--
+	wait_rand(1, 100)
+	create_unit(carrier, 0, 0)
+	print(the player with carrier jumped via rush9)
+	stop()
+
+
+		--j10--
+	wait_rand(1, 100)
+	create_unit(carrier, 0, 0)
+	print(the player with carrier jumped via rush10)
+	stop()
+
+
+		--j11--
+	wait_rand(1, 100)
+	create_unit(carrier, 0, 0)
+	print(the player with carrier jumped via rush11)
+	stop()
+
+
+		--j12--
+	wait_rand(1, 100)
+	create_unit(carrier, 0, 0)
+	print(the player with carrier jumped via rush12)
+	stop()
