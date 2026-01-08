@@ -46,6 +46,7 @@ define_max 255 heavy_marine
 aicontrol global_disable_spell_focus
 aicontrol global_disable_acid_spore_focus
 aicontrol global_disable_carrier_focus
+idle_orders DisableBuiltin 0 0 0 0 0 0 0
 idle_orders 92 256 3 marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
 idle_orders 92 256 1 ghost 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
 idle_orders 92 64 3 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
@@ -93,6 +94,13 @@ defensebuild_aa 1 wraith
 defenseuse_aa 1 wraith
 wait 2000
 
+idle_orders 141 83 1 science_vessel 1256 firebat|marine|ghost|heavy_marine|medic|tesla_trooper 10 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 50)|Self(Energy(GreaterThan 149))|WithoutSpellEffects(Matrix)
+idle_orders 141 83 1 science_vessel 1256 goliath|phantom|death_knight 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 99))|WithoutSpellEffects(Matrix)
+idle_orders 141 83 1 science_vessel 1256 vulture|scorpion 15 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 149))|WithoutSpellEffects(Matrix)
+idle_orders 141 83 1 science_vessel 1256 wraith|dropship|skywing|valkyrie 20 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 30)|Self(Energy(GreaterThan 149))|WithoutSpellEffects(Matrix)
+idle_orders 141 83 1 science_vessel 1256 siege_tank|panzer 40 own|allied|notenemies|incombat|Health(LessThanPercent 70)|Health(GreaterThanPercent 30)|WithoutSpellEffects(Matrix)
+idle_orders 141 83 1 science_vessel 1256 hnorad|battlecruiser 80 own|allied|notenemies|incombat|Health(LessThanPercent 75)|Health(GreaterThanPercent 10)|WithoutSpellEffects(Matrix)
+idle_orders 141 83 1 science_vessel 663 group_men 5 own|allied|notenemies|incombat|Health(LessThanPercent 35)|Health(GreaterThanPercent 10)|WithoutSpellEffects(Matrix)
 multirun help_request
 define_max 11 ghost
 train 5 marine
@@ -167,6 +175,8 @@ upgrade 2 t_vehicle_plating 30
 upgrade 2 t_ship_weapon 30
 wait 2125
 
+idle_orders 115 32 1 ghost 210 group_men 50 Hp(GreaterThanPercent 50)|Self(InCombat)|Self(Energy(GreaterThan 140))|UnitFlags(Mechanical)|WithoutSpellEffects(Lockdown)
+idle_orders 115 32 1 ghost 280 carrier|reaver|hnorad|battlecruiser|siege_tank|panzer|valhalla 80 Hp(GreaterThanPercent 20)|Self(InCombat)|Self(Energy(GreaterThan 85))|UnitFlags(Mechanical)|WithoutSpellEffects(Lockdown)
 train 10 firebat
 train 6 vulture
 train 6 ghost
@@ -189,6 +199,7 @@ train 7 vulture
 train 3 siege_tank
 train 8 wraith
 train 8 firebat
+attack_add 1 science_vessel
 attack_add 7 vulture
 attack_add 3 siege_tank
 attack_add 8 wraith
@@ -198,6 +209,15 @@ wait 500
 
 attack_do
 attack_clear
+idle_orders 143 160 1 science_vessel 1312 infested_terran|lurker|guardian|queen|defiler|devourer|dark_templar|medic|ghost|phantom 120 Health(GreaterThan 50)|WithoutSpellEffects(Irradiate)
+idle_orders 143 160 1 science_vessel 1312 hydralisk|mutalisk|zealot|scv|drone|ultralisk 60 Health(GreaterThan 50)|WithoutSpellEffects(Irradiate)
+idle_orders Move 48 1 vulture 160 zergling|lurker|hydralisk|ultralisk|zealot|dark_templar|marine|heavy_marine|medic|high_templar|drone|scv 255 Health(GreaterThanPercent 20)|InCombat|Self(SpellEffects(Irradiate))
+idle_orders 143 480 1 science_vessel 216 wraith 150 Health(GreaterThan 100)|WithoutSpellEffects(Irradiate)|InCombat|Own|NotEnemies|count(AtLeast 5 160 14)|Self(Energy(GreaterThan 149))
+idle_orders 143 480 1 science_vessel 216 vulture 150 Health(GreaterThan 50)|WithoutSpellEffects(Irradiate)|InCombat|Own|NotEnemies|count(AtLeast 4 226 14)|Self(Energy(GreaterThan 149))
+idle_orders 141 320 1 science_vessel 312 wraith 5 own|allied|notenemies|SpellEffects(Irradiate)|Self(Energy(GreaterThan 190))
+idle_orders Move 16 1 wraith 192 mutalisk|overlord|ghost|zealot|high_templar|dark_templar|phantom|medic 255 Health(GreaterThanPercent 30)|InCombat|count(AtLeast 2 120 14)|Self(SpellEffects(Irradiate))
+idle_orders Move 16 1 wraith 226 guardian|devourer 255 Health(GreaterThanPercent 20)|InCombat|Self(SpellEffects(Irradiate))
+idle_orders Move 16 1 wraith 192 zergling|hydralisk|marine|firebat|heavy_marine|tesla_trooper 255 Health(GreaterThanPercent 40)|InCombat|count(AtLeast 3 120 14)|Self(SpellEffects(Irradiate))
 train 2 science_vessel
 upgrade 3 t_infantry_armor 30
 upgrade 3 t_vehicle_weapon 30
@@ -205,6 +225,7 @@ wait 1125
 
 train 7 wraith
 train 6 goliath
+attack_add 2 science_vessel
 attack_add 7 wraith
 attack_add 6 goliath
 call targeting
@@ -247,6 +268,9 @@ wait 36
 
 attack_do
 attack_clear
+idle_orders 122 226 1 science_vessel 338 Group_Men 50 InCombat|Count(AtLeast 2 60 14)|Energy(GreaterThan 200)
+idle_orders 122 128 1 science_vessel 512 Group_Men 60 InCombat|Count(AtLeast 2 60 14)|Shields(GreaterThan 300)
+idle_orders 122 128 1 science_vessel 512 battlecruiser|valhalla 80 InCombat|Count(AtLeast 2 60 14)|Shields(GreaterThan 300)
 upgrade 1 science_aura 30
 train 34 marine
 train 4 ghost
@@ -267,9 +291,11 @@ place_guard science_vessel 0
 :block1
 wait 1500
 
+train 2 science_vessel
 train 11 ghost
 train 6 vulture
 train 9 wraith
+attack_add 2 science_vessel
 attack_add 11 ghost
 attack_add 4 vulture
 attack_add 9 wraith
