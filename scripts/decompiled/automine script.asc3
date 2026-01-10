@@ -202,12 +202,17 @@ bank_data Exactly 2 automine_toggle toggle ec_protoss
 wait 300
 
 upgrade_jump 13 Set 70 1 void
+deaths 0 Exactly 11 98 pi_continue
+#special case for xP6
+deaths 0 Exactly 9 98 pi_continue
+#special case for xP8
 if_owned drone void
 if_owned overlord void
 if_owned hhydralisk void
 if_owned scv void
 if_owned command_center void
 if_owned marine void
+:pi_continue
 multirun hallu_io
 idle_orders 48 16 2 high_templar 192 high_templar 40 NotEnemies|Own|Self(InCombat)|Self(Order(PlayerGuard))|Self(Hp(LessThanPercent 40))|Self(Energy(LessThan 125))
 idle_orders 48 16 2 high_templar 192 high_templar 40 NotEnemies|Own|Self(InCombat)|Self(Order(Guard))|Self(Hp(LessThanPercent 40))|Self(Energy(LessThan 125))
@@ -219,12 +224,17 @@ stop
 wait 300
 
 upgrade_jump 13 Set 70 1 void
+deaths 0 Exactly 11 98 ec_toss_continue
+#special case for xP6
+deaths 0 Exactly 9 98 ec_toss_continue
+#special case for xP8
 if_owned drone void
 if_owned overlord void
 if_owned hhydralisk void
 if_owned scv void
 if_owned command_center void
 if_owned marine void
+:ec_toss_continue
 multirun ec_hallu_io
 multirun ec_storm_io
 multirun ec_stasis_io
@@ -340,6 +350,8 @@ if_owned command_center void
 if_owned marine void
 deaths 0 Exactly 11 98 ec_zerg_continue
 #used for xprotoss 6
+deaths 0 Exactly 9 98 ec_zerg_continue
+#special case for xP8
 if_owned probe void
 if_owned nexus void
 if_owned zealot void
