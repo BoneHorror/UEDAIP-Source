@@ -474,6 +474,7 @@ max_force 1250
 wait 16
 
 upgrade_jump 13 Set 74 7 block1
+multirun grand_exchange
 attack_add 3 dragoon
 attack_to Loc.92 Loc.112
 wait 500
@@ -626,6 +627,31 @@ goto block1
 unstart_campaign
 attack_prepare
 start_campaign
+return
+
+:grand_exchange
+debug_name GrandExchange
+wait_rand 155 225
+
+call ge_gas
+call ge_mins
+goto grand_exchange
+
+:ge_gas
+resources 13 AtLeast Gas 600 ge_skip
+resources 13 AtMost Ore 1199 ge_skip
+resources 13 Subtract Ore 140 ge_skip
+resources 13 Add Gas 85 ge_skip
+return
+
+:ge_mins
+resources 13 AtMost Gas 799 ge_skip
+resources 13 AtLeast Ore 1400 ge_skip
+resources 13 Subtract Gas 75 ge_skip
+resources 13 Add Ore 125 ge_skip
+return
+
+:ge_skip
 return
 
 :ultracheck
