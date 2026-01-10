@@ -473,7 +473,7 @@ idle_orders 59 16 1 reaver 128 hydralisk 60 count(AtLeast 2 40 14)
 max_force 1250
 wait 16
 
-upgrade_jump 13 Set 74 5 block1
+upgrade_jump 13 Set 74 7 block1
 attack_add 3 dragoon
 attack_to Loc.92 Loc.112
 wait 500
