@@ -328,6 +328,7 @@ if_owned marine void
 if_owned probe void
 if_owned nexus void
 if_owned zealot void
+#normally some unconditional idle orders would be here but there are none for Zerg
 stop
 
 :ec_zerg
@@ -337,9 +338,12 @@ upgrade_jump 13 Set 70 1 void
 if_owned scv void
 if_owned command_center void
 if_owned marine void
+deaths 0 Exactly 11 98 ec_zerg_continue
+#used for xprotoss 6
 if_owned probe void
 if_owned nexus void
 if_owned zealot void
+:ec_zerg_continue
 idle_orders 119 64 1 defiler 512 ultralisk 70 own|allied|notenemies|incombat
 idle_orders 119 64 1 defiler 512 zergling 30 own|allied|notenemies|incombat|Count(AtLeast 3 80 14)
 idle_orders 119 64 1 defiler 512 lurker 50 own|allied|notenemies|incombat|Count(AtLeast 2 80 14)
