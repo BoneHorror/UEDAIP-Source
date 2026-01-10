@@ -491,7 +491,7 @@ train 1 reaver
 load_bank xp6
 attack_add 3 dragoon
 attack_add 1 reaver
-attack_prepare
+call attack_close
 train 1 scout
 build 1 citadel_of_adun 80
 wait 500
@@ -503,11 +503,13 @@ build 2 gateway 80
 build 2 stargate 80
 upgrade 1 scarab_damage 30
 build 16 probe 80
-wait 2000
+wait 1250
 
+train 3 scout
+train 1 reaver
 attack_add 3 scout
 attack_add 1 reaver
-attack_prepare
+call attack_close
 wait 500
 
 attack_do
@@ -519,22 +521,26 @@ upgrade 2 p_armor 30
 upgrade 2 p_ground_weapon 30
 train 4 dragoon
 build 1 robotics_facility 80
-wait 2745
+wait 1345
 
+train 2 reaver
 attack_add 2 reaver
 attack_add 4 dragoon
-attack_prepare
+call attack_close
 wait 500
 
 attack_do
 attack_clear
 upgrade 1 observer_sight 30
-wait 2850
+wait 1550
 
+train 2 reaver
+train 4 scout
+train 4 dragoon
 attack_add 2 reaver
 attack_add 4 scout
 attack_add 4 dragoon
-attack_prepare
+call attack_close
 wait 500
 
 attack_do
@@ -589,7 +595,7 @@ train 6 hornet
 train 6 dragoon
 attack_add 6 hornet
 attack_add 6 dragoon
-attack_prepare
+call attack_close
 wait 500
 
 attack_do
@@ -615,6 +621,12 @@ attack_add 2 scout
 attack_add 2 hornet
 attack_add 1 reaver
 goto block1
+
+:attack_close
+unstart_campaign
+attack_prepare
+start_campaign
+return
 
 :ultracheck
 wait 160
