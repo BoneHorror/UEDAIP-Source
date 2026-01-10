@@ -12057,6 +12057,7 @@ InterceptorDeath:
 	end            	
 
 InterceptorGndAttkInit:
+	if unit_id == 92 goto HornetGndAttkInit
 	if upgrade(player, 54) == 1 goto uInterceptorGndAttkInit
 	wait           	2
 	attackwith     	1
@@ -12095,6 +12096,25 @@ uInterceptorWalkingToIdle:
 	waitrand       	8 10
 	goto           	uInterceptorWalkingToIdle
 
+HornetGndAttkInit:
+	nobrkcodestart
+	wait           	1
+	playfram       	0x11	# frame set 1
+	wait           	2
+	playfram       	0x00	# frame set 0
+	wait           	2
+	playfram       	0x11	# frame set 1
+	wait           	2
+	playfram       	0x00	# frame set 0
+	wait           	2
+	playfram       	0x11	# frame set 1
+	attackwith     	1
+	wait           	1
+	playfram       	0x00	# frame set 0
+	nobrkcodeend
+	gotorepeatattk 	
+	goto           	InterceptorGndAttkToIdle
+	
 uInterceptorGndAttkInit:
 	wait           	2
 	attackwith     	1
