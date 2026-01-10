@@ -440,7 +440,6 @@ upgrade 1 p_plating 30
 upgrade 1 p_ground_weapon 30
 upgrade 1 p_air_weapon 30
 max_workers 16
-multirun money
 multirun map_end
 defensebuild_gg 2 dragoon
 defenseuse_gg 2 dragoon
@@ -471,9 +470,10 @@ define_max 10 hornet
 idle_orders 59 16 1 reaver 128 hhydralisk 130 count(AtLeast 2 40 14)
 idle_orders 59 16 1 reaver 128 zergling 80 count(AtLeast 5 40 14)
 idle_orders 59 16 1 reaver 128 hydralisk 60 count(AtLeast 2 40 14)
-max_force 600
+max_force 1250
 wait 16
 
+upgrade_jump 13 Set 74 5 block1
 attack_add 3 dragoon
 attack_to Loc.92 Loc.112
 wait 500
