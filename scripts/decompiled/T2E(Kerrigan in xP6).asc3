@@ -422,7 +422,7 @@ attack_clear
 goto retstrong
 
 :robo_toss
-build 2 nexus 150
+build 1 nexus 150
 build 2 nexus 80
 build 2 probe 130
 build 6 probe 80
@@ -439,28 +439,33 @@ upgrade 1 p_armor 30
 upgrade 1 p_plating 30
 upgrade 1 p_ground_weapon 30
 upgrade 1 p_air_weapon 30
-max_workers 14
+max_workers 16
 multirun money
 multirun map_end
-defensebuild_gg 1 dragoon
-defenseuse_gg 1 dragoon
+defensebuild_gg 2 dragoon
+defenseuse_gg 2 dragoon
 defensebuild_gg 1 hornet
 defenseuse_gg 1 hornet
+defensebuild_gg 1 reaver
 defenseuse_gg 1 reaver
-defensebuild_ag 1 dragoon
-defenseuse_ag 1 dragoon
+defensebuild_ag 2 dragoon
+defenseuse_ag 2 dragoon
+defensebuild_ag 1 scout
+defenseuse_ag 1 scout
 defensebuild_ga 1 scout
 defenseuse_ga 1 scout
+defensebuild_ga 1 hornet
+defenseuse_ga 1 hornet
 defensebuild_aa 1 scout
 defenseuse_aa 1 scout
 defensebuild_aa 1 hornet
 defenseuse_aa 1 hornet
-define_max 6 probe
+define_max 16 probe
 define_max 3 shuttle
 define_max 3 observer
 define_max 255 zealot
 define_max 12 dragoon
-define_max 3 reaver
+define_max 4 reaver
 define_max 6 scout
 define_max 10 hornet
 idle_orders 59 16 1 reaver 128 hhydralisk 130 count(AtLeast 2 40 14)
@@ -475,6 +480,7 @@ wait 500
 
 attack_do
 attack_clear
+build 12 probe 80
 wait 625
 
 build 7 pylon 80
@@ -486,13 +492,17 @@ load_bank xp6
 attack_add 3 dragoon
 attack_add 1 reaver
 attack_prepare
+train 1 scout
 build 1 citadel_of_adun 80
 wait 500
 
 attack_do
 attack_clear
 build 8 pylon 80
+build 2 gateway 80
+build 2 stargate 80
 upgrade 1 scarab_damage 30
+build 16 probe 80
 wait 2000
 
 attack_add 3 scout
@@ -507,9 +517,11 @@ build 1 templar_archives 80
 upgrade 2 p_plasma_shield 30
 upgrade 2 p_armor 30
 upgrade 2 p_ground_weapon 30
+train 4 dragoon
+build 1 robotics_facility 80
 wait 2745
 
-attack_add 1 reaver
+attack_add 2 reaver
 attack_add 4 dragoon
 attack_prepare
 wait 500
@@ -519,7 +531,7 @@ attack_clear
 upgrade 1 observer_sight 30
 wait 2850
 
-attack_add 1 reaver
+attack_add 2 reaver
 attack_add 4 scout
 attack_add 4 dragoon
 attack_prepare
@@ -572,13 +584,11 @@ attack_clear
 wait 2250
 
 train 2 hornet
-train 1 reaver
 train 2 dragoon
-train 4 hornet
-train 4 dragoon
-attack_add 4 hornet
-attack_add 1 reaver
-attack_add 4 dragoon
+train 6 hornet
+train 6 dragoon
+attack_add 6 hornet
+attack_add 6 dragoon
 attack_prepare
 wait 500
 
@@ -586,10 +596,13 @@ attack_do
 attack_clear
 wait 3000
 
+train 4 hornet
 train 2 scout
 train 2 reaver
 train 4 scout
-attack_add 2 reaver
+train 4 reaver
+attack_add 4 hornet
+attack_add 4 reaver
 attack_add 4 scout
 attack_prepare
 wait 500
