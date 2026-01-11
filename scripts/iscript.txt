@@ -57,7 +57,13 @@ ScourgeAirAttkInit:
 	playsnd        	778	# Zerg\AVENGER\ZAvHit00.WAV
 	sprol          	132 0 0	# ScourgeExplosion (zerg\zavExplo.grp)
 	wait           	1
+	if upgrade(player, 79) == 1 goto ScourgeUpgAtk
 	attackwith     	2
+	goto           	long00
+
+ScourgeUpgAtk:
+	sprol          	136 0 0	# InfestedTerranExplosion (thingy\zbgExplo.grp)
+	useweapon 		159 #Suicide AoE
 	goto           	long00
 
 ScourgeWalking:
