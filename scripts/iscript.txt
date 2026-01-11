@@ -2554,16 +2554,28 @@ ZerglingGndAttkInit:
 
 ZerglingPrimedAtk:
 	playsnd    		894 # Zerg\Ultra\zulHit00.WAV
-	fireweapon		160
+	attackmelee    	1 894	# Zerg\Ultra\zulHit00.WAV
 	wait           	1
 	playfram       	0x33	# frame set 3
 	wait           	1
+	attackmelee    	1 894	# Zerg\Ultra\zulHit00.WAV
 	playfram       	0x44	# frame set 4
+	set spritelocal primed = 0
+	if unit.hitpoints < 8960 call ZerglingPrimedHeal
 	wait           	1
 	nobrkcodeend   	
 	gotorepeatattk 	
 	goto           	ZerglingGndAttkToIdle
 
+ZerglingPrimedHeal:
+	if unit.hitpoints >= 6400 goto ZerglingPrimedHealMax
+	set unit.hitpoints = unit.hitpoints+2560
+	return
+	
+ZerglingPrimedHealMax:
+	set unit.hitpoints = 8960
+	return
+	
 ZerglingWalking:
     move               4
     wait               1
