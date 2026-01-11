@@ -6339,7 +6339,7 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>AI_ZERG_B7B</id>
-        <value>rEvolve Primed Claws
+        <value>rEvolve Primed Claws
 (Zerglings now deal increased damage and heal on their first attack after unburrowing.</value>
     </string>
     <string>
@@ -6349,12 +6349,12 @@ Decreased Khalai Shield Regen)</value>
     <string>
         <id>AI_ZERG_B7D</id>
         <value>Primed Claws Requires:
-    Lair
-	Burrowing</value>
+Lair
+Burrowing</value>
     </string>
     <string>
         <id>AI_ZERG_B7E</id>
-        <value>vEvolve Viral Acid
+        <value>vEvolve Viral Acid
 (Scourges now explode in an AoE, but deal Concussive damage.)</value>
     </string>
     <string>
@@ -6368,7 +6368,7 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>AI_ZERG_B8B</id>
-        <value>rResearch Ultragenerative Brakes
+        <value>rResearch Ultragenerative Brakes
 (Whenever Panzers move, they generate a temporary shield around themselves.)</value>
     </string>
     <string>
@@ -6382,7 +6382,7 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>AI_ZERG_B8E</id>
-        <value>pResearch Polonium Batteries
+        <value>pResearch Polonium Batteries
 (EMP Troopers attack faster, get Irradiated after attacking)</value>
     </string>
     <string>
