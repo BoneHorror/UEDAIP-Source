@@ -63,7 +63,7 @@ ScourgeAirAttkInit:
 
 ScourgeUpgAtk:
 	sprol          	136 0 0	# InfestedTerranExplosion (thingy\zbgExplo.grp)
-	useweapon 		159 #Suicide AoE
+	fireweapon 		159 #Suicide AoE
 	goto           	long00
 
 ScourgeWalking:
@@ -2540,7 +2540,20 @@ ZerglingGndAttkInit:
 	playfram       	0x11	# frame set 1
 	wait           	1
 	playfram       	0x22	# frame set 2
+	if primed == 1 goto ZerglingPrimedAtk
 	attackmelee    	1 894	# Zerg\Ultra\zulHit00.WAV
+	wait           	1
+	playfram       	0x33	# frame set 3
+	wait           	1
+	playfram       	0x44	# frame set 4
+	wait           	1
+	nobrkcodeend   	
+	gotorepeatattk 	
+	goto           	ZerglingGndAttkToIdle
+
+ZerglingPrimedAtk:
+	playsnd    		894 # Zerg\Ultra\zulHit00.WAV
+	fireweapon		160
 	wait           	1
 	playfram       	0x33	# frame set 3
 	wait           	1
@@ -2598,6 +2611,7 @@ ZerglingBurrow:
 	goto           	ZerglingLocal04
 
 ZerglingUnBurrow:
+	if upgrade(player, 80) == 1 goto ZerglingPrimedClaws
 	waitrand       	1 5
 	imgul          	423 0 0	# Unknown423 (thingy\bDust.grp)
 	playfram       	0xff	# frame set 15
@@ -2611,7 +2625,20 @@ ZerglingUnBurrow:
 	sigorder       	4
 	goto           	ZerglingGndAttkToIdle
 
-
+ZerglingPrimedClaws:
+	set spritelocal primed = 1
+	waitrand       	1 5
+	imgul          	423 0 0	# Unknown423 (thingy\bDust.grp)
+	playfram       	0xff	# frame set 15
+	wait           	1
+	playfram       	0xee	# frame set 14
+	wait           	1
+	playfram       	0xdd	# frame set 13
+	wait           	1
+	playfram       	0xcc	# frame set 12
+	wait           	1
+	sigorder       	4
+	goto           	ZerglingGndAttkToIdle
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
 # 057 ZerglingDeath (zerg\zzeDeath.grp)

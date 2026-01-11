@@ -6304,7 +6304,8 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>AI_ZERG_B5F</id>
-        <value>Unity of Energy</value>
+        <value>Unity of Energy Requires:
+    Templar Archives</value>
     </string>
     <string>
         <id>AI_ZERG_B6A</id>
@@ -6312,7 +6313,8 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>AI_ZERG_B6B</id>
-        <value>Warp Matrix Overdrive</value>
+        <value>Warp Matrix Overdrive Requires:
+    Arbiter Tribunal</value>
     </string>
     <string>
         <id>AI_ZERG_B6C</id>
@@ -6320,7 +6322,8 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>AI_ZERG_B6D</id>
-        <value>Golden Might</value>
+        <value>Golden Might Requires:
+    Robotics Support Bay</value>
     </string>
     <string>
         <id>AI_ZERG_B6E</id>
@@ -6336,7 +6339,8 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>AI_ZERG_B7B</id>
-        <value>Primed Claws</value>
+        <value>rEvolve Primed Claws
+(Zerglings now deal increased damage and heal on their first attack after unburrowing.</value>
     </string>
     <string>
         <id>AI_ZERG_B7C</id>
@@ -6344,11 +6348,14 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>AI_ZERG_B7D</id>
-        <value>Primed Claws</value>
+        <value>Primed Claws Requires:
+    Lair
+	Burrowing</value>
     </string>
     <string>
         <id>AI_ZERG_B7E</id>
-        <value>Viral Acid</value>
+        <value>vEvolve Viral Acid
+(Scourges now explode in an AoE, but deal Concussive damage.)</value>
     </string>
     <string>
         <id>AI_ZERG_B7F</id>
@@ -6356,7 +6363,8 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>AI_ZERG_B8A</id>
-        <value>Viral Acid</value>
+        <value>Viral Acid Requires:
+    Greater Spire</value>
     </string>
     <string>
         <id>AI_ZERG_B8B</id>
