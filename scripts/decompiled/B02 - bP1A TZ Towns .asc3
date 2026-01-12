@@ -188,17 +188,18 @@ build 1 engineering_bay 80
 build 1 factory 80
 build 1 machine_shop 80
 build 1 armory 80
-max_force 640
+max_force 340
 define_max 4 wraith
 define_max 3 dropship
 define_max 10 scv
-define_max 18 marine
+define_max 6 marine
 define_max 4 ghost
 define_max 6 firebat
 define_max 3 siege_tank
 define_max 5 vulture
 define_max 4 goliath
 define_max 2 battlecruiser
+define_max 1 science_vessel
 multirun ai_income
 upgrade_jump 13 Set 74 5 ai_income
 #campaign mining cheat
@@ -217,22 +218,8 @@ attack_clear
 call release_attack
 upgrade 1 t_vehicle_weapon 30
 upgrade 1 marine_range 30
-wait 1500
+wait 2500
 
-defensebuild_gg 2 marine
-defenseuse_gg 2 marine
-defensebuild_gg 1 firebat
-defenseuse_gg 1 firebat
-defensebuild_gg 1 goliath
-defenseuse_gg 1 goliath
-defensebuild_ag 1 goliath
-defenseuse_ag 1 goliath
-defensebuild_ag 1 ghost
-defenseuse_ag 1 ghost
-defensebuild_ga 1 wraith
-defenseuse_ga 1 wraith
-defensebuild_aa 1 wraith
-defenseuse_aa 1 wraith
 upgrade 1 t_ship_weapon 30
 tech stim_packs 30
 wait 1500
@@ -251,13 +238,20 @@ wait 300
 
 attack_do
 attack_clear
+defensebuild_gg 2 marine
+defenseuse_gg 2 marine
+defensebuild_gg 1 firebat
+defenseuse_gg 1 firebat
+defensebuild_ag 1 goliath
+defenseuse_ag 1 goliath
 call release_attack
-wait 2500
+wait 4500
 
 upgrade 1 vulture_speed 30
 upgrade 2 t_vehicle_plating 30
 upgrade 2 t_infantry_weapon 30
 call wait_attack
+define_max 10 marine
 train 2 siege_tank
 train 10 marine
 attack_add 10 marine
@@ -268,12 +262,23 @@ wait 300
 attack_do
 attack_clear
 call release_attack
+wait 4000
+
 upgrade 1 vademecum 30
 upgrade 2 t_vehicle_weapon 30
 upgrade 2 t_infantry_armor 30
 upgrade 1 adv_mechanics 30
+defensebuild_gg 1 goliath
+defenseuse_gg 1 goliath
+defensebuild_ag 1 ghost
+defenseuse_ag 1 ghost
+defensebuild_ga 1 wraith
+defenseuse_ga 1 wraith
+defensebuild_aa 1 wraith
+defenseuse_aa 1 wraith
+define_max 14 marine
 :kmc_loop
-wait 1775
+wait 3775
 
 call wait_attack
 train 4 firebat
@@ -303,7 +308,7 @@ wait 300
 attack_do
 attack_clear
 call release_attack
-wait 1450
+wait 3450
 
 call wait_attack
 train 3 vulture
@@ -349,7 +354,7 @@ upgrade_jump 13 Set 74 5 ai_income
 upgrade 1 z_flyer_attack 30
 tech burrowing 30
 tech lurker_aspect 30
-wait 2150
+wait 5150
 
 multirun ai_income
 train 2 hydralisk
@@ -392,11 +397,11 @@ defenseuse_aa 1 devourer
 upgrade 1 burrowed_regen 30
 upgrade 2 z_flyer_attack 30
 upgrade 1 z_missile_attack 30
-wait 2650
+wait 4650
 
-train 4 mutalisk
-train 2 guardian
-attack_add 2 guardian
+train 3 mutalisk
+train 1 guardian
+attack_add 1 guardian
 attack_add 2 mutalisk
 attack_to Loc.93 Loc.92
 wait 500
@@ -407,10 +412,10 @@ upgrade 1 zergling_speed 30
 wait 3330
 
 upgrade 3 z_flyer_attack 30
-train 5 mutalisk
+train 3 mutalisk
 train 8 zergling
 attack_add 8 zergling
-attack_add 5 mutalisk
+attack_add 3 mutalisk
 unstart_campaign
 attack_prepare
 start_campaign
@@ -451,7 +456,9 @@ wait 500
 attack_do
 attack_clear
 upgrade 2 z_missile_attack 30
-wait 3255
+upgrade 1 79 30
+#viral acid
+wait 5255
 
 train 6 mutalisk
 train 4 hydralisk
@@ -486,6 +493,8 @@ wait 3475
 train 4 mutalisk
 train 4 guardian
 train 4 scourge
+train 4 hydralisk
+attack_add 4 hydralisk
 attack_add 4 scourge
 attack_add 4 guardian
 unstart_campaign
