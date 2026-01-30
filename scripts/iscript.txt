@@ -25973,7 +25973,174 @@ MaelstromHitInit:
 	playfram       	8
 	wait           	2
 	end            	
+
+# ----------------------------------------------------------------------------- #
+# This header is used by images.dat entries:
+# 151 Zealot (protoss\zealot.grp)
+.headerstart
+IsId           	412
+Type           	21
+Init           	GrayInit
+Death          	GrayDeath
+GndAttkInit    	GrayGndAttkInit
+AirAttkInit    	[NONE]
+Unused1        	[NONE]
+GndAttkRpt     	GrayGndAttkRpt
+AirAttkRpt     	[NONE]
+CastSpell      	[NONE]
+GndAttkToIdle  	GrayGndAttkToIdle
+AirAttkToIdle  	[NONE]
+Unused2        	[NONE]
+Walking        	GrayWalking
+WalkingToIdle  	GrayWalkingToIdle
+SpecialState1  	[NONE]
+SpecialState2  	[NONE]
+AlmostBuilt    	[NONE]
+Built          	[NONE]
+Landing        	[NONE]
+LiftOff        	[NONE]
+IsWorking      	[NONE]
+WorkingToIdle  	[NONE]
+WarpIn         	[NONE]
+.headerend
+# ----------------------------------------------------------------------------- #
+
+GrayInit:
+	wait			2
+	imgul          	152 0 0	# ZealotShad (protoss\pzeShad.grp)
+GrayWalkingToIdle:
+	playfram       	0x00	# frame set 1
+GrayRotate:
+	waitrand       	43 61
+	goto           	GrayRotate
+
+GrayDeath:
+	playsnd        	678	# Protoss\ZEALOT\PZeDth00.WAV
+	setfldirect    	0
+	playfram       	0x115	# frame set 16
+	wait           	1
+	playfram       	0x116	# frame set 16
+	wait           	1
+	playfram       	0x117	# frame set 16
+	wait           	1
+	playfram       	0x118	# frame set 16
+	wait           	1
+	playfram       	0x119	# frame set 16 - 0x11A onwards used for remains
+	end            	
+
+GrayGndAttkInit:
+	set spritelocal low_atk = 0
+	playfram       	0x00	# frame set 0
+	wait           	1
+GrayGndAttkRpt:
+	playsndrand    	2 662 663	# Protoss\ZEALOT\pzeAtt00.WAV, Protoss\ZEALOT\pzeAtt01.WAV
+	if low_atk == 1 goto Gray_HighGunFromLow
+Gray_HighGunFromIdle:
+	randcondjmp    	128 Gray_LowGunFromHigh
+	set spritelocal low_atk = 2
+	playfram       	0xaa	# frame set 10
+	wait           	1
+	nobrkcodestart 	
+	playfram       	0xbb	# frame set 11
+	wait           	1
+	playfram       	0xcc	# frame set 12
+	attackwith		1
+	wait           	1
+	nobrkcodeend   	
+	gotorepeatattk 	
+	ignorerest     	
+	goto GrayGndAttkToIdle
 	
+Gray_HighGunFromLow:
+	randcondjmp    	128 Gray_LowGunFromIdle
+	set spritelocal low_atk = 2
+	playfram       	0x00	# frame set 0
+	wait			1
+	playfram       	0xbb	# frame set 11
+	wait			1
+	playfram       	0xaa	# frame set 10
+	wait           	1
+	nobrkcodestart 	
+	playfram       	0xbb	# frame set 11
+	wait           	1
+	playfram       	0xcc	# frame set 12
+	wait			1
+	attackwith		1
+	wait           	1
+	nobrkcodeend   	
+	gotorepeatattk 	
+	ignorerest     	
+	goto GrayGndAttkToIdle
+	
+Gray_LowGunFromIdle:
+	set spritelocal low_atk = 1
+	playfram       	0xdd	# frame set 13
+	wait           	1
+	nobrkcodestart 	
+	playfram       	0xee	# frame set 14
+	wait           	1
+	playfram       	0xff	# frame set 15
+	attackwith		1
+	wait           	1
+	nobrkcodeend   	
+	gotorepeatattk 	
+	ignorerest     	
+	goto GrayGndAttkToIdle
+	
+Gray_LowGunFromHigh:
+	set spritelocal low_atk = 1
+	playfram       	0xbb	# frame set 11
+	wait			1
+	playfram       	0x00	# frame set 0
+	wait			1
+	playfram       	0xdd	# frame set 13
+	wait           	1
+	nobrkcodestart 	
+	playfram       	0xee	# frame set 14
+	wait           	1
+	playfram       	0xff	# frame set 15
+	attackwith		1
+	wait           	1
+	nobrkcodeend   	
+	gotorepeatattk 	
+	ignorerest     	
+GrayGndAttkToIdle:
+	set spritelocal low_atk = 0
+	wait           	1
+	playfram       	0x00	# frame set 0
+	goto           	GrayWalkingToIdle
+
+GrayWalking:
+	move           	2
+	wait           	1
+	playfram       	0x11	# frame set 1
+	move           	3
+	wait           	1
+	playfram       	0x22	# frame set 2
+	move           	4
+	wait           	1
+	playfram       	0x33	# frame set 3
+	move           	5
+	wait           	1
+	playfram       	0x44	# frame set 4
+	move           	3
+	wait			1
+	playfram       	0x55	# frame set 5
+	move           	4
+	wait           	1
+	playfram       	0x66	# frame set 6
+	move           	5
+	wait           	1
+	playfram       	0x77	# frame set 7
+	move           	5
+	wait           	1
+	playfram       	0x88	# frame set 8
+	move           	3
+	wait           	1
+	playfram       	0x99	# frame set 9
+	move           	2
+	wait           	1
+	goto           	GrayWalking
 # ------------------------------------------------------------------------------ #
 # LONG JUMPS (these are usually shared routines between many animations)         #
 # ------------------------------------------------------------------------------ #
