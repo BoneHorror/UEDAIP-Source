@@ -26015,7 +26015,7 @@ SyRotate:
 	goto           	GrayRotate
 
 SyDeath: # PLACEHOLDER - TODO!
-	playsnd        	833	# Zerg\DRONE\ZDrDth00.WAV
+	playsnd     1160 # Taar/SYTHDEA.WAV
 	setfldirect    	0
 	playfram       	0x115	# frame set 16
 	wait           	1
@@ -26034,7 +26034,7 @@ SyGndAttkInit:
 	wait           	1
 SyGndAttkRpt: #Kind of goofy, try to improve
 	randcondjmp 128 SyGndLowCut
-	playsndrand    	2 662 663	# Protoss\ZEALOT\pzeAtt00.WAV, Protoss\ZEALOT\pzeAtt01.WAV
+	playsnd     1158 # Taar/SYTH1WEA.WAV
 	nobrkcodestart 	
 	playfram       	0xcc	# frame set 12
 	wait           	2
@@ -26057,7 +26057,7 @@ SyGndAttkRpt: #Kind of goofy, try to improve
 	goto SyGndAttkToIdle
 	
 SyGndLowCut:
-	playsndrand    	2 662 663	# Protoss\ZEALOT\pzeAtt00.WAV, Protoss\ZEALOT\pzeAtt01.WAV
+	playsnd     1159 # Taar/SYTH2WEA.WAV
 	nobrkcodestart 	
 	playfram       	0x55	# frame set 5
 	wait           	2
@@ -26155,7 +26155,7 @@ GrayRotate:
 	goto           	GrayRotate
 
 GrayDeath:
-	playsnd        	678	# Protoss\ZEALOT\PZeDth00.WAV
+	playsndrand     2 1149 1151	# Taar/GRAY1DEA, Taar/GRAY2DEA
 	setfldirect    	0
 	playfram       	0x115	# frame set 16
 	wait           	1
@@ -26173,7 +26173,7 @@ GrayGndAttkInit:
 	playfram       	0x00	# frame set 0
 	wait           	1
 GrayGndAttkRpt:
-	playsndrand    	2 662 663	# Protoss\ZEALOT\pzeAtt00.WAV, Protoss\ZEALOT\pzeAtt01.WAV
+	playsndrand     3 1150 1152	1153 # Taar/GRAY1WEA, Taar/GRAY2WEA, Taar/GRAY3WEA
 	if low_atk == 1 goto Gray_HighGunFromLow
 Gray_HighGunFromIdle:
 	randcondjmp    	128 Gray_LowGunFromHigh
@@ -26298,7 +26298,7 @@ GrayWalking:
 # This header is used by images.dat entries:
 # 151 Ortu (neutral/ortu.grp) - frames 135 onwards are non-directional
 .headerstart
-IsId           	413
+IsId           	414
 Type           	21
 Init           	OrtuInit
 Death          	OrtuDeath
@@ -26334,8 +26334,8 @@ OrtuRotate:
 	goto           	OrtuRotate
 
 OrtuDeath:
+	playsnd        	1156	# Taar/ORTUDEA.WAV
 	randcondjmp		128 OrtuAltDeath
-	playsnd        	678	# Protoss\ZEALOT\PZeDth00.WAV
 	setfldirect    	0
 	playfram       	0x88	# frame set 8
 	wait           	1
