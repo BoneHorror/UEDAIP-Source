@@ -7458,48 +7458,12 @@ SiegeTank_Tank_BaseInit:
 	wait           	1
 SiegeTank_Tank_BaseWalkingToIdle:
 	if unit_id == 23 goto uSiegeTank_Tank_BaseWalkingToIdle
-	if unit_id == 261 goto AtrilInit
 	playfram       	0x00	# frame set 0
 	goto           	long00
 uSiegeTank_Tank_BaseWalkingToIdle:
 	playfram       	51	# frame set 0
 	goto           	long00
-AtrilInit:
-	setfldirect    	0
-	playfram       	102	# frame set 0
-	goto           	long00
-Atril:
-	wait			1
-	playfram		102
-	setfldirect    	0
-	wait			1
-	playfram		102
-	wait			1
-	playfram		102
-	wait			1
-	playfram		102
-	wait			1
-	playfram		102
-	wait			1
-	playfram		102
-	wait			1
-	playfram		102
-	wait			1
-	playfram		102
-	wait			1
-	playfram		102
-	wait			1
-	playfram		102
-	wait			1
-	playfram		102
-	wait			1
-	playfram		102
-	wait			1
-	playfram		102
-	wait			1
-	sprol          	185 0 0
-	wait 			10
-	goto Atril
+
 SiegeTank_Tank_BaseDeath:
 	playsnd        	317	# Terran\TANK\TTaDth00.WAV
 	imgol          	333 0 0	# TerranBuildingExplosionmedium (thingy\tBangL.grp)
@@ -7507,7 +7471,6 @@ SiegeTank_Tank_BaseDeath:
 	end            	
 
 SiegeTank_Tank_BaseWalking:
-	if unit_id == 261 goto Atril
 	if unit_id == 23 goto uSiegeTank_Tank_BaseWalking
 	move           	4
 	wait           	1
@@ -26018,14 +25981,16 @@ SyDeath: # PLACEHOLDER - TODO!
 	playsnd     1160 # Taar/SYTHDEA.WAV
 	setfldirect    	0
 	playfram       	0x115	# frame set 16
-	wait           	1
+	wait           	2
 	playfram       	0x116	# frame set 16
-	wait           	1
+	wait           	2
 	playfram       	0x117	# frame set 16
-	wait           	1
+	wait           	2
 	playfram       	0x118	# frame set 16
+	imgol          	58 0 0	# ZergAirDeathLarge (thingy\zAirDthL.grp)
 	wait           	1
-	playfram       	0x119	# frame set 16 
+	playfram       	0x119	# frame set 16
+	wait           	1
 	end            	
 
 SyGndAttkInit:
@@ -26123,13 +26088,13 @@ Type           	21
 Init           	GrayInit
 Death          	GrayDeath
 GndAttkInit    	GrayGndAttkInit
-AirAttkInit    	[NONE]
+AirAttkInit    	GrayGndAttkInit
 Unused1        	[NONE]
 GndAttkRpt     	GrayGndAttkRpt
-AirAttkRpt     	[NONE]
+AirAttkRpt     	GrayGndAttkRpt
 CastSpell      	[NONE]
 GndAttkToIdle  	GrayGndAttkToIdle
-AirAttkToIdle  	[NONE]
+AirAttkToIdle  	GrayGndAttkToIdle
 Unused2        	[NONE]
 Walking        	GrayWalking
 WalkingToIdle  	GrayWalkingToIdle
@@ -26158,14 +26123,16 @@ GrayDeath:
 	playsndrand     2 1149 1151	# Taar/GRAY1DEA, Taar/GRAY2DEA
 	setfldirect    	0
 	playfram       	0x115	# frame set 16
-	wait           	1
+	wait           	2
 	playfram       	0x116	# frame set 16
-	wait           	1
+	wait           	2
 	playfram       	0x117	# frame set 16
-	wait           	1
+	imgol          	59 0 0	# ZergAirDeathSmall (thingy\zAirDthS.grp)
+	wait           	2
 	playfram       	0x118	# frame set 16
-	wait           	1
+	wait           	2
 	playfram       	0x119	# frame set 16 - 0x11A onwards used for remains
+	wait           	1
 	end            	
 
 GrayGndAttkInit:
@@ -26326,12 +26293,23 @@ WarpIn         	[NONE]
 
 OrtuInit:
 	wait			2
-	imgul          	39 0 42	# MutaliskShad (zerg\mutalid.grp)
+	imgul          	955 0 42 # 955 KakaruShad (neutral\Scritter.grp)
 OrtuWalkingToIdle:
 	playfram       	0x00	# frame set 1
-OrtuRotate:
-	waitrand       	43 61
-	goto           	OrtuRotate
+	wait           	2
+	playfram       	0x11	# frame set 1
+	wait           	2
+	playfram       	0x22	# frame set 2
+	wait           	2
+	playfram       	0x33	# frame set 3
+	wait           	2
+	playfram       	0x44	# frame set 4
+	wait           	2
+	playfram       	0x55	# frame set 5
+	wait           	2
+	playfram       	0x66	# frame set 6
+	wait           	2
+	goto OrtuWalkingToIdle
 
 OrtuDeath:
 	playsnd        	1156	# Taar/ORTUDEA.WAV
@@ -26367,20 +26345,25 @@ OrtuAltDeath:
 	wait           	1
 	playfram       	0x94	# frame set 8
 	wait           	1
-	playfram       	0x95	# frame set 8
-	wait           	1
 	end           
 	
 OrtuGndAttkInit:
 	playfram       	0x00	# frame set 0
 	wait           	1
 OrtuGndAttkRpt:
-	playsndrand    	2 662 663	# Protoss\ZEALOT\pzeAtt00.WAV, Protoss\ZEALOT\pzeAtt01.WAV
+	playsndrand    	3 1154 1155 1157	# Taar/ORTU1ACK.WAV Taar/ORTU2ACK.WAV Taar/ORTUSEL.WAV
 	playfram       	0x77	# frame set 8
 	wait           	2
 	nobrkcodestart 	
 	attackwith		1
 	wait           	1
+	playfram       	0x33	# frame set 3
+	wait           	2
+	playfram       	0x44	# frame set 4
+	wait           	2
+	playfram       	0x55	# frame set 5
+	wait           	2
+	playfram       	0x66	# frame set 6
 	nobrkcodeend   	
 	gotorepeatattk 	
 	ignorerest     	   		
@@ -26394,7 +26377,15 @@ OrtuWalking:
 	wait           	1
 	playfram       	0x11	# frame set 1
 	wait           	1
+	playfram       	0x11	# frame set 1
+	wait           	1
 	playfram       	0x22	# frame set 2
+	wait           	1
+	playfram       	0x22	# frame set 2
+	wait           	1
+	playfram       	0x22	# frame set 2
+	wait           	1
+	playfram       	0x33	# frame set 3
 	wait           	1
 	playfram       	0x33	# frame set 3
 	wait           	1
@@ -26402,9 +26393,193 @@ OrtuWalking:
 	wait           	1
 	playfram       	0x55	# frame set 5
 	wait           	1
+	playfram       	0x55	# frame set 5
+	wait           	1
 	playfram       	0x66	# frame set 6
 	wait           	1
 	goto           	OrtuWalking
+
+# ----------------------------------------------------------------------------- #
+# This header is used by images.dat entries:
+# 151 Atril (neutral/Atril.grp) - frames 135 onwards are non-directional
+.headerstart
+IsId           	415
+Type           	21
+Init           	AtrilInit
+Death          	AtrilDeath
+GndAttkInit    	AtrilGndAttkInit
+AirAttkInit    	[NONE]
+Unused1        	[NONE]
+GndAttkRpt     	AtrilGndAttkRpt
+AirAttkRpt     	[NONE]
+CastSpell      	[NONE]
+GndAttkToIdle  	AtrilGndAttkToIdle
+AirAttkToIdle  	[NONE]
+Unused2        	[NONE]
+Walking        	AtrilWalking
+WalkingToIdle  	AtrilWalkingToIdle
+SpecialState1  	[NONE]
+SpecialState2  	[NONE]
+AlmostBuilt    	[NONE]
+Built          	[NONE]
+Landing        	[NONE]
+LiftOff        	[NONE]
+IsWorking      	[NONE]
+WorkingToIdle  	[NONE]
+WarpIn         	[NONE]
+.headerend
+
+AtrilInit:
+	wait			2
+	imgul          	262 0 42	# ScienceVesselShad (terran\tveShad.grp)
+AtrilWalkingToIdle:
+	playfram       	0x00	# frame set 1
+AtrilRotate:
+	waitrand       	43 61
+	goto           	GrayRotate
+
+AtrilDeath:
+	playsnd         1147	# Taar/AtrilDea.WAV
+	setfldirect    	0
+	randcondjmp		128	AtrilAltDeath
+	playfram       	0xCC	# frame set 8
+	wait           	1
+	playfram       	0xCC	# frame set 8
+	wait           	1
+	playfram       	0xCD	# frame set 8
+	wait           	1
+	playfram       	0xCD	# frame set 8
+	wait           	1
+	end            	
+
+AtrilAltDeath:
+	playsnd         1147	# Taar/AtrilDea.WAV
+	setfldirect    	0
+	playfram       	0xCE	# frame set 8
+	wait           	1
+	playfram       	0xCF	# frame set 8
+	wait           	1
+	playfram       	0xD0	# frame set 8
+	wait           	1
+	playfram       	0xD2	# frame set 8
+	wait           	1
+	playfram       	0xD1	# frame set 8
+	wait           	1
+	playfram       	0xD3	# frame set 8
+	wait           	1
+	end        
+	
+AtrilGndAttkInit:
+	playfram       	0x00	# frame set 0
+	wait           	1
+AtrilGndAttkRpt:
+	randcondjmp		128 AtrilAltAtk
+	nobrkcodestart 	
+	playfram       	0x55	# frame set 8
+	wait           	2
+	playfram       	0x66	# frame set 3
+	wait           	2
+	playfram       	0x77	# frame set 4
+	wait           	1
+	playfram       	0x88	# frame set 5
+	wait           	2
+	playfram       	0x99	# frame set 6
+	wait           	2
+	playsnd         1148	# Taar/AtrilWea.WAV
+	attackwith		1
+	playfram       	0xEE	# frame set 4
+	wait           	1
+	playfram       	0xFF	# frame set 4
+	wait           	1
+	nobrkcodeend   	
+	gotorepeatattk 	
+	ignorerest     	   		
+AtrilGndAttkToIdle:
+	wait           	1
+	playfram       	0x00	# frame set 0
+	goto           	AtrilWalkingToIdle
+
+AtrilAltAtk:
+	nobrkcodestart 	
+	playfram       	0xAA	# frame set 8
+	wait           	2
+	playfram       	0x77	# frame set 3
+	wait           	2
+	playfram       	0xBB	# frame set 4
+	wait           	1
+	playsnd         1148	# Taar/AtrilWea.WAV
+	playfram       	0xEE	# frame set 4
+	wait           	1
+	attackwith		1
+	playfram       	0xFF	# frame set 4
+	wait           	1
+	nobrkcodeend   	
+	gotorepeatattk 	
+	ignorerest     	   	
+	goto AtrilGndAttkToIdle
+	
+AtrilWalking:
+	move           	1
+	playfram       	0x11	# frame set 1
+	wait           	1
+	move           	2
+	playfram       	0x22	# frame set 2
+	wait           	1
+	move           	3
+	playfram       	0x22	# frame set 2
+	wait           	1
+	move           	3
+	playfram       	0x22	# frame set 2
+	wait           	1
+	move           	3
+	playfram       	0x33	# frame set 2
+	wait           	1
+	move           	3
+	playfram       	0x33	# frame set 2
+	wait           	1
+	move           	3
+	playfram       	0x44	# frame set 2
+	wait           	1
+	move           	2
+	playfram       	0x44	# frame set 2
+	wait           	1
+	move           	2
+	playfram       	0x55	# frame set 1
+	wait           	1
+	move           	2
+	playfram       	0x55	# frame set 1
+	wait           	1
+	move           	2
+	playfram       	0x44	# frame set 2
+	wait           	1
+	move           	3
+	playfram       	0x44	# frame set 2
+	wait           	1
+	move           	3
+	playfram       	0x44	# frame set 2
+	wait           	1
+	move           	3
+	playfram       	0x33	# frame set 2
+	wait           	1
+	move           	3
+	playfram       	0x33	# frame set 2
+	wait           	1
+	move           	3
+	playfram       	0x22	# frame set 2
+	wait           	1
+	move           	2
+	playfram       	0x22	# frame set 2
+	wait           	1
+	move           	2
+	playfram       	0x22	# frame set 2
+	wait           	1
+	move           	2
+	playfram       	0x11	# frame set 1
+	wait           	1
+	move           	1
+	goto           	AtrilWalking
+	
+	
 # ----------------------------------------------------------------------------- #
 # ------------------------------------------------------------------------------ #
 # LONG JUMPS (these are usually shared routines between many animations)         #
