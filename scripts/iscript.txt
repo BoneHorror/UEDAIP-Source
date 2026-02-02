@@ -26634,11 +26634,6 @@ AirAttkInit    	[NONE]
 # ----------------------------------------------------------------------------- #
 
 DungBombInit:
-	wait 			2
-	set spritelocal og_order_target = bullet.order_target_y
-	set spritelocal og_move_target = flingy.move_target_y
-	set bullet.order_target_y = bullet.order_target_y + 20
-	set flingy.move_target_y = flingy.move_target_y + 20
 	tmprmgraphicstart	
 	trgtrangecondjmp	20 DungBombLocal00
 	tmprmgraphicend	
@@ -26647,7 +26642,6 @@ DungBombLocal00:
 	sigorder       	1
 	wait           	1
 DungBombGndAttkInit:
-	call DungTrajectory
 	playfram       	0
 	wait           	1
 	playfram       	1
@@ -26660,12 +26654,6 @@ DungBombGndAttkInit:
 	wait           	1
 	goto           	DungBombGndAttkInit
 
-DungTrajectory:
-	if bullet.order_target_y == og_order_target goto DungReturn
-	set bullet.order_target_y = bullet.order_target_y - 1
-	set flingy.move_target_y = flingy.move_target_y - 1
-DungReturn:
-	return
 	
 DungBombDeath:
 	playsnd        	7	# Misc\ExploLrg.wav
