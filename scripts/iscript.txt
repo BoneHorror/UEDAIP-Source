@@ -18661,7 +18661,9 @@ Death          	long01
 # ----------------------------------------------------------------------------- #
 
 FragmentationGrenadeHitInit:
+	if bullet.weapon_id == 153 goto FGrSkipSound
 	playsndbtwn    	107 109	# Bullet\tvuHit00.wav, Bullet\tvuHit02.wav
+FGrSkipSound:
 	playfram       	0
 	wait           	2
 	playfram       	1
@@ -22576,7 +22578,7 @@ HostBurrowedLoop:
 	goto           	HostBurrowedLoop
 
 HostCampaignHide:
-	print Reached Campaign Hide
+	#print Reached Campaign Hide
 	hide_unit unit
 HostCampaignWait:
 	wait 30
@@ -26473,6 +26475,7 @@ AtrilGndAttkInit:
 	playfram       	0x00	# frame set 0
 	wait           	1
 AtrilGndAttkRpt:
+	wait			1
 	randcondjmp		128 AtrilAltAtk
 	nobrkcodestart 	
 	playfram       	0x55	# frame set 8
@@ -26579,7 +26582,85 @@ AtrilWalking:
 	move           	1
 	goto           	AtrilWalking
 	
+
+# ----------------------------------------------------------------------------- #
+# This header is used by images.dat entries:
+# 523 Blaster (Gray weapon)
+.headerstart
+IsId           	416
+Type           	2
+Init           	BlasterInit
+Death          	BlasterDeath
+GndAttkInit    	BlasterGndAttkInit
+AirAttkInit    	[NONE]
+.headerend
+# ----------------------------------------------------------------------------- #
+
+BlasterInit:
+	tmprmgraphicstart	
+	trgtrangecondjmp	20 BlasterLocal00
+	tmprmgraphicend	
+BlasterLocal00:
+	wait           	1
+	sigorder       	1
+	wait           	1
+BlasterGndAttkInit:
+	playfram       	0
+	wait           	1
+	playfram       	1
+	wait           	1
+	playfram       	2
+	wait           	1
+	goto           	BlasterGndAttkInit
+
 	
+BlasterDeath:
+	imgol          	440 0 0	# Fragmentationgrenadehit (thingy\efgHit.grp)
+	domissiledmg   	
+	wait           	1
+	end            	
+
+# ----------------------------------------------------------------------------- #
+# This header is used by images.dat entries:
+# 523 DungBomb (Atril weapon)
+.headerstart
+IsId           	417
+Type           	2
+Init           	DungBombInit
+Death          	DungBombDeath
+GndAttkInit    	DungBombGndAttkInit
+AirAttkInit    	[NONE]
+.headerend
+# ----------------------------------------------------------------------------- #
+
+DungBombInit:
+	tmprmgraphicstart	
+	trgtrangecondjmp	20 DungBombLocal00
+	tmprmgraphicend	
+DungBombLocal00:
+	wait           	1
+	sigorder       	1
+	wait           	1
+DungBombGndAttkInit:
+	playfram       	0
+	wait           	1
+	playfram       	1
+	wait           	1
+	playfram       	2
+	wait           	1
+	playfram       	3
+	wait           	1
+	playfram       	4
+	wait           	1
+	goto           	DungBombGndAttkInit
+
+	
+DungBombDeath:
+	playsnd        	7	# Misc\ExploLrg.wav
+	imgol          	332 0 0	# TerranBuildingExplosionsmall (thingy\tBangS.grp)
+	domissiledmg   	
+	wait           	1
+	end            	
 # ----------------------------------------------------------------------------- #
 # ------------------------------------------------------------------------------ #
 # LONG JUMPS (these are usually shared routines between many animations)         #
