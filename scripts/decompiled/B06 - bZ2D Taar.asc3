@@ -16,9 +16,21 @@ define_max 12 broodling
 define_max 255 spawnsire
 define_max 8 scourge
 define_max 20 overlord
-define_max 10 sy_demon
-define_max 8 ortu
-define_max 33 gray
+define_max 6 sy_demon
+define_max 6 ortu
+define_max 25 gray
+defensebuild_gg 1 sy_demon
+defenseuse_gg 1 sy_demon
+defensebuild_gg 1 gray
+defenseuse_gg 1 gray
+defensebuild_gg 1 sy_demon
+defenseuse_gg 1 sy_demon
+defensebuild_gg 1 ortu
+defenseuse_gg 1 ortu
+defensebuild_ag 2 gray
+defenseuse_ag 2 gray
+defensebuild_ga 1 ortu
+defenseuse_ga 1 ortu
 :taar_idle
 wait 50
 
@@ -30,13 +42,59 @@ deaths 13 Exactly 1 194 taar_idle
 :taar_ambush
 unit_avail 13 Set Enabled spawnsire taar_idle
 define_max 8 spawnsire
+defensebuild_gg 1 spawnsire
+:taar_loop
 wait 1533
 
-#TODO - fill out Taar attack list after tweaking units a bit more! But should probably start with some gray spam
-goto taar_ambush
+train 20 gray
+attack_add 20 gray
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2750
+
+train 4 sy_demon
+train 14 gray
+attack_add 4 sy_demon
+attack_add 14 gray
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 5 ortu
+attack_add 5 ortu
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3050
+
+train 6 sy_demon
+attack_add 6 sy_demon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 22 gray
+train 4 ortu
+attack_add 22 gray
+attack_add 4 ortu
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto taar_loop
 
 :zerg_raid
-#when this first happen, set a death that triggers a dialogue in the map!
+#when this first happens, set a death that triggers a dialogue in the map!
+train 4 ortu
+train 2 sy_demon
 attack_rand 2 4 ortu
 attack_rand 1 2 sy_demon
 unstart_campaign

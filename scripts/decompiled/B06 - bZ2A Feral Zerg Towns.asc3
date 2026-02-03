@@ -39,7 +39,7 @@ defenseuse_aa 1 scourge
 tech burrowing 30
 upgrade 1 overlord_speed 30
 upgrade 1 overlord_capacity 30
-wait 8025
+wait 4025
 
 call wait_attack
 call hold_attack
@@ -150,7 +150,7 @@ upgrade 1 z_melee_attack 30
 upgrade 1 z_missile_attack 30
 upgrade 1 hydralisk_range 30
 idle_orders 120 0 1 queen 1024 overlord|observer|science_vessel|defiler|skywing|dropship|shuttle|arbiter|valhalla|defiler|queen|ghost 30 WithoutSpellEffects(Parasite)|RandomRate(280 820)|Self(Energy(GreaterThanPercent 80))
-wait 4000
+wait 3000
 
 build 1 drone 100
 defensebuild_gg 1 ultralisk
