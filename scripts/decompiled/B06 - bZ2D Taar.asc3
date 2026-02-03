@@ -31,6 +31,7 @@ defensebuild_ag 2 gray
 defenseuse_ag 2 gray
 defensebuild_ga 1 ortu
 defenseuse_ga 1 ortu
+multirun taar_death_check
 :taar_idle
 wait 50
 
@@ -90,6 +91,18 @@ wait 500
 attack_do
 attack_clear
 goto taar_loop
+
+:taar_death_check
+wait 25
+
+bw_kills 7 AtLeast 1 gray set_map_flag
+bw_kills 7 AtLeast 1 ortu set_map_flag
+bw_kills 7 AtLeast 1 sy_demon set_map_flag
+goto taar_death_check
+
+:set_map_flag
+deaths 13 Set 1 battlecruiser taar_death_check
+stop
 
 :zerg_raid
 #when this first happens, set a death that triggers a dialogue in the map!
