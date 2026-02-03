@@ -5962,23 +5962,23 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>AI_PROTOSS_B8E</id>
-        <value>Brood Wars Protoss 8 - Town E</value>
+        <value>Plasma Plume</value>
     </string>
     <string>
         <id>AI_PROTOSS_B8F</id>
-        <value>Brood Wars Protoss 8 - Town F</value>
+        <value>Bio-Scythe</value>
     </string>
     <string>
         <id>AI_TERRAN_B1A</id>
-        <value>Brood Wars Terran 1 - Town A</value>
+        <value>Plasma Bolt</value>
     </string>
     <string>
         <id>AI_TERRAN_B1B</id>
-        <value>Brood Wars Terran 1 - Town B</value>
+        <value>Mucus Sack</value>
     </string>
     <string>
         <id>AI_TERRAN_B1C</id>
-        <value>Brood Wars Terran 1 - Town C</value>
+        <value>Explosive Fetus</value>
     </string>
     <string>
         <id>AI_TERRAN_B1D</id>
@@ -6765,5 +6765,9 @@ bonus doubled for Burrowed units)</value>
 	<string>
         <id>FIRST_UNIT_STRING-283</id>
         <value>Taar Saucer</value>
+    </string>
+	<string>
+        <id>FIRST_UNIT_STRING-284</id>
+        <value>UNUSED</value>
     </string>
 </strings>
