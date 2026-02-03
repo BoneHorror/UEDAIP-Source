@@ -26004,20 +26004,15 @@ SyGndAttkRpt: #Kind of goofy, try to improve
 	playsnd     1158 # Taar/SYTH1WEA.WAV
 	nobrkcodestart 	
 	playfram       	0xcc	# frame set 12
-	wait           	2
+	wait           	2 #2
 	playfram       	0xdd	# frame set 13
-	wait           	2
-	playfram       	0xee	# frame set 14
+	wait           	2 #2
+	#playfram       	0xee	# frame set 14 #something is wrong with this frameset
 	attackmelee		1 0
-	wait           	2
 	playfram       	0xff	# frame set 15
-	wait           	2
-	playfram       	0xee	# frame set 14
-	wait			1
-	playfram       	0xcc	# frame set 12
+	wait           	3 #3
+	playfram       	0x110	# frame set 0
 	wait           	1
-	playfram       	0x00	# frame set 0
-	wait			1
 	nobrkcodeend   	
 	gotorepeatattk 	
 	ignorerest     	
@@ -26036,18 +26031,14 @@ SyGndLowCut:
 	playfram       	0x88	# frame set 8
 	wait           	2
 	playfram       	0x99	# frame set 9
+	wait           	3
+	playfram       	0x110	# frame set 0
 	wait           	1
-	playfram       	0x88	# frame set 8
-	wait           	1
-	playfram       	0x66	# frame set 6
-	wait           	1
-	playfram       	0x00	# frame set 0
 	nobrkcodeend   	
 	gotorepeatattk 	
 	ignorerest     	
 SyGndAttkToIdle:
-	wait           	1
-	playfram       	0x110	# frame set 0
+	
 	wait           	1
 	playfram       	0x00	# frame set 0
 	goto           	SyWalkingToIdle
@@ -26441,6 +26432,7 @@ AtrilRotate:
 	goto           	GrayRotate
 
 AtrilDeath:
+	imgol          	60 0 0	# ZergBuildingDeath (thingy\zBldDthS.grp)
 	playsnd         1147	# Taar/AtrilDea.WAV
 	setfldirect    	0
 	randcondjmp		128	AtrilAltDeath
@@ -26634,13 +26626,10 @@ AirAttkInit    	[NONE]
 # ----------------------------------------------------------------------------- #
 
 DungBombInit:
-	tmprmgraphicstart	
-	trgtrangecondjmp	20 DungBombLocal00
-	tmprmgraphicend	
-DungBombLocal00:
-	wait           	1
-	sigorder       	1
-	wait           	1
+	wait 			1
+	sigorder		1
+	set flingy.movement_direction = 0
+	wait			1
 DungBombGndAttkInit:
 	playfram       	0
 	wait           	1
