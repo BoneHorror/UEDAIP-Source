@@ -26626,10 +26626,18 @@ AirAttkInit    	[NONE]
 # ----------------------------------------------------------------------------- #
 
 DungBombInit:
+	trgtrangecondjmp    96 DungBombClose
 	wait 			1
 	sigorder		1
-	set flingy.movement_direction = 0
+	set flingy.movement_direction = 90
 	wait			1
+	set flingy.speed = flingy.speed*16
+	playfram       	0
+	wait           	1
+	playfram       	1
+	wait           	1
+	playfram       	2
+	wait           	1
 DungBombGndAttkInit:
 	playfram       	0
 	wait           	1
@@ -26641,8 +26649,14 @@ DungBombGndAttkInit:
 	wait           	1
 	playfram       	4
 	wait           	1
+	set flingy.speed = flingy.speed/2
 	goto           	DungBombGndAttkInit
 
+DungBombClose:
+	wait			1
+	set flingy.turn_speed = 160
+	sigorder		1
+	goto DungBombGndAttkInit
 	
 DungBombDeath:
 	playsnd        	7	# Misc\ExploLrg.wav
