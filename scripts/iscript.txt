@@ -25972,6 +25972,7 @@ WarpIn         	[NONE]
 
 SyInit:
 	wait			2
+	playfram       	0x00	# frame set 1
 	imgul          	236 0 0	# GoliathShad (terran\tgoShad.grp)
 SyWalkingToIdle:
 	playfram       	0x00	# frame set 1
@@ -26425,6 +26426,7 @@ WarpIn         	[NONE]
 AtrilInit:
 	wait			2
 	imgul          	262 0 42	# ScienceVesselShad (terran\tveShad.grp)
+	set spritelocal attacked = 0
 AtrilWalkingToIdle:
 	playfram       	0x00	# frame set 1
 AtrilRotate:
@@ -26475,7 +26477,7 @@ AtrilGndAttkRpt:
 	playfram       	0x66	# frame set 3
 	wait           	2
 	playfram       	0x77	# frame set 4
-	wait           	1
+	wait           	2
 	playfram       	0x88	# frame set 5
 	wait           	2
 	playfram       	0x99	# frame set 6
@@ -26485,12 +26487,13 @@ AtrilGndAttkRpt:
 	playfram       	0xEE	# frame set 4
 	wait           	1
 	playfram       	0xFF	# frame set 4
-	wait           	1
+	set spritelocal attacked = 1
+	call AtrilRetract
 	nobrkcodeend   	
 	gotorepeatattk 	
 	ignorerest     	   		
 AtrilGndAttkToIdle:
-	wait           	1
+	call AtrilRetract
 	playfram       	0x00	# frame set 0
 	goto           	AtrilWalkingToIdle
 
@@ -26501,17 +26504,36 @@ AtrilAltAtk:
 	playfram       	0x77	# frame set 3
 	wait           	2
 	playfram       	0xBB	# frame set 4
-	wait           	1
+	wait           	2
 	playsnd         1148	# Taar/AtrilWea.WAV
 	playfram       	0xEE	# frame set 4
 	wait           	1
 	attackwith		1
 	playfram       	0xFF	# frame set 4
 	wait           	1
+	set spritelocal attacked = 1
+	call AtrilRetract
 	nobrkcodeend   	
 	gotorepeatattk 	
 	ignorerest     	   	
 	goto AtrilGndAttkToIdle
+	
+AtrilRetract:
+	if attacked == 0 goto AtrilRetractEnd
+	set spritelocal attacked = 0
+	wait           	3
+	playfram       	0x99	# frame set 6
+	wait			3
+	playfram       	0x88	# frame set 5
+	wait           	2
+	playfram       	0x77	# frame set 4
+	wait           	2
+	playfram       	0x66	# frame set 3
+	wait           	2
+	playfram       	0x55	# frame set 8
+	wait           	2
+AtrilRetractEnd:
+	return
 	
 AtrilWalking:
 	move           	1
@@ -26628,6 +26650,8 @@ AirAttkInit    	[NONE]
 DungBombInit:
 	trgtrangecondjmp    96 DungBombClose
 	wait 			1
+	if flingy.movement_direction > 230 && flingy.movement_direction < 260 goto DungBombClose #curve looks bad straight down
+	print NotJumped {flingy.movement_direction}
 	sigorder		1
 	set flingy.movement_direction = 90
 	wait			1
@@ -26650,6 +26674,7 @@ DungBombGndAttkInit:
 	playfram       	4
 	wait           	1
 	set flingy.speed = flingy.speed/2
+	set flingy.turn_speed = flingy.turn_speed+5
 	goto           	DungBombGndAttkInit
 
 DungBombClose:
