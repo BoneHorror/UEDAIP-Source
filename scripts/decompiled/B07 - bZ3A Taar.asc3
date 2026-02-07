@@ -48,6 +48,7 @@ defenseuse_ga 1 ortu
 defensebuild_gg 1 spawnsire
 upgrade 1 overlord_speed 30
 upgrade 1 overlord_capacity 30
+max_workers 45
 wait 1040
 
 train 14 gray
@@ -75,6 +76,7 @@ wait 500
 
 attack_do
 attack_clear
+multirun aggressive_growth
 build 1 queen_nest 80
 upgrade 1 overlord_sight 30
 defensebuild_gg 1 atril
@@ -122,6 +124,7 @@ upgrade 3 z_melee_attack 30
 upgrade 3 z_flyer_carapace 30
 upgrade 3 z_flyer_attack 30
 upgrade 1 bone_mastery 30
+max_workers 255
 :taar_loop
 wait 2533
 
@@ -166,3 +169,27 @@ wait 500
 attack_do
 attack_clear
 goto taar_loop
+
+:aggressive_growth
+wait_rand 5560 7650
+wait 16
+
+expand 5 taar_expansion
+goto aggressive_growth
+
+:taar_expansion
+start_town
+build 1 hatchery 100
+get_oldpeons 1
+wait_build 1 hatchery
+build 3 drone 80
+build 2 creep_colony 80
+wait_buildstart 1 creep_colony
+build 1 psi_dominator 100
+build 15 drone 80
+wait_build 1 psi_dominator
+build 2 xenowort 80
+:idle_loop
+wait 1500
+
+goto idle_loop
