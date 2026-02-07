@@ -26353,36 +26353,24 @@ OrtuGndAttkInit:
 	wait           	1
 OrtuGndAttkRpt:
 	playsndrand    	3 1154 1155 1157	# Taar/ORTU1ACK.WAV Taar/ORTU2ACK.WAV Taar/ORTUSEL.WAV
-	nobrkcodestart
 	playfram       	0x77	# frame set 8
-	wait           	3
+	wait           	2
+	nobrkcodestart 	
 	attackwith		1
+	wait           	1
 	playfram       	0x33	# frame set 3
-	wait           	3
+	wait           	2
 	playfram       	0x44	# frame set 4
-	wait           	3
+	wait           	2
 	playfram       	0x55	# frame set 5
 	wait           	2
 	playfram       	0x66	# frame set 6
-	nobrkcodeend
+	nobrkcodeend   	
 	gotorepeatattk 	
-OrtuAttkIdle:
-	playfram       	0x00	# frame set 0
-	wait			2
-	playfram       	0x33	# frame set 3
-	wait           	3
-	playfram       	0x66	# frame set 3
-	wait           	3
-	goto OrtuAttkIdle
-	
+	ignorerest     	   		
 OrtuGndAttkToIdle:
-	wait           	2
-	playfram       	0x55	# frame set 5
 	wait           	1
-	playfram       	0x33	# frame set 3
-	wait           	1
-	playfram       	0x11	# frame set 3
-	wait			1
+	playfram       	0x00	# frame set 0
 	goto           	OrtuWalkingToIdle
 
 OrtuWalking:
