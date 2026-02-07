@@ -5778,7 +5778,7 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>AI_PROTOSS_B1A</id>
-        <value>Brood Wars Protoss 1 - Town A</value>
+        <value>DO NOT CHANGE - MTL Color upgrade for Taar</value>
     </string>
     <string>
         <id>AI_PROTOSS_B1B</id>
@@ -5950,7 +5950,7 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>AI_PROTOSS_B8B</id>
-        <value>Brood Wars Protoss 8 - Town B</value>
+        <value>Psychic Mind-Lance</value>
     </string>
     <string>
         <id>AI_PROTOSS_B8C</id>
@@ -6768,6 +6768,6 @@ bonus doubled for Burrowed units)</value>
     </string>
 	<string>
         <id>FIRST_UNIT_STRING-284</id>
-        <value>UNUSED</value>
+        <value>Taar Gorrem</value>
     </string>
 </strings>
