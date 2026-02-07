@@ -26651,7 +26651,7 @@ DungBombInit:
 	trgtrangecondjmp    96 DungBombClose
 	wait 			1
 	if flingy.movement_direction > 230 && flingy.movement_direction < 260 goto DungBombClose #curve looks bad straight down
-	print NotJumped {flingy.movement_direction}
+	#print NotJumped {flingy.movement_direction}
 	sigorder		1
 	set flingy.movement_direction = 90
 	wait			1
