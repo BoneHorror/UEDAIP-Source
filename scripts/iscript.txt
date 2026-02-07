@@ -17699,14 +17699,21 @@ QueenSpellHolderInit:
 	wait           	1
 	sigorder       	1
 QueenSpellHolderGndAttkInit:
+	playfram		0x00
 	goto           	long00
 
 QueenSpellHolderDeath:
+	if bullet.weapon_id == 154 goto OrtuFetusDeath
 	sprol          	365 0 0	# Unknown512 (thingy\SporeHit.grp)
 	domissiledmg   	
 	wait           	1
 	end            	
 
+OrtuFetusDeath:
+	imgol          	332 0 0	# TerranBuildingExplosionsmall (thingy\tBangS.grp)
+	domissiledmg   	
+	wait           	1
+	end          
 
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
@@ -26346,24 +26353,36 @@ OrtuGndAttkInit:
 	wait           	1
 OrtuGndAttkRpt:
 	playsndrand    	3 1154 1155 1157	# Taar/ORTU1ACK.WAV Taar/ORTU2ACK.WAV Taar/ORTUSEL.WAV
+	nobrkcodestart
 	playfram       	0x77	# frame set 8
-	wait           	2
-	nobrkcodestart 	
+	wait           	3
 	attackwith		1
-	wait           	1
 	playfram       	0x33	# frame set 3
-	wait           	2
+	wait           	3
 	playfram       	0x44	# frame set 4
-	wait           	2
+	wait           	3
 	playfram       	0x55	# frame set 5
 	wait           	2
 	playfram       	0x66	# frame set 6
-	nobrkcodeend   	
+	nobrkcodeend
 	gotorepeatattk 	
-	ignorerest     	   		
-OrtuGndAttkToIdle:
-	wait           	1
+OrtuAttkIdle:
 	playfram       	0x00	# frame set 0
+	wait			2
+	playfram       	0x33	# frame set 3
+	wait           	3
+	playfram       	0x66	# frame set 3
+	wait           	3
+	goto OrtuAttkIdle
+	
+OrtuGndAttkToIdle:
+	wait           	2
+	playfram       	0x55	# frame set 5
+	wait           	1
+	playfram       	0x33	# frame set 3
+	wait           	1
+	playfram       	0x11	# frame set 3
+	wait			1
 	goto           	OrtuWalkingToIdle
 
 OrtuWalking:
