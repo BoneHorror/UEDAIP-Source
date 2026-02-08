@@ -26093,7 +26093,7 @@ AirAttkInit    	GrayGndAttkInit
 Unused1        	[NONE]
 GndAttkRpt     	GrayGndAttkRpt
 AirAttkRpt     	GrayGndAttkRpt
-CastSpell      	[NONE]
+CastSpell      	GraySpecialRound
 GndAttkToIdle  	GrayGndAttkToIdle
 AirAttkToIdle  	GrayGndAttkToIdle
 Unused2        	[NONE]
@@ -26116,6 +26116,7 @@ GrayInit:
 	imgul          	152 0 0	# ZealotShad (protoss\pzeShad.grp)
 GrayWalkingToIdle:
 	playfram       	0x00	# frame set 1
+	set spritelocal low_atk = 0
 GrayRotate:
 	waitrand       	43 61
 	goto           	GrayRotate
@@ -26261,7 +26262,43 @@ GrayWalking:
 	move           	2
 	wait           	1
 	goto           	GrayWalking
-	
+
+GraySpecialRound:
+	playsndrand     3 1150 1152	1153 # Taar/GRAY1WEA, Taar/GRAY2WEA, Taar/GRAY3WEA
+	if low_atk == 1 goto Gray_HighCast
+	set spritelocal low_atk = 2
+	playfram       	0xaa	# frame set 10
+	wait           	2
+	nobrkcodestart 	
+	playfram       	0xbb	# frame set 11
+	wait           	2
+	playfram       	0xcc	# frame set 12
+	fireweapon		164
+	wait           	2
+	nobrkcodeend   	
+	gotorepeatattk 	
+	ignorerest     	
+	goto GrayGndAttkToIdle
+
+Gray_HighCast:
+	set spritelocal low_atk = 2
+	playfram       	0x00	# frame set 0
+	wait			1
+	playfram       	0xbb	# frame set 11
+	wait			2
+	playfram       	0xaa	# frame set 10
+	wait           	2
+	nobrkcodestart 	
+	playfram       	0xbb	# frame set 11
+	wait           	2
+	playfram       	0xcc	# frame set 12
+	wait			2
+	fireweapon		164
+	wait           	2
+	nobrkcodeend   	
+	gotorepeatattk 	
+	ignorerest     	
+	goto GrayGndAttkToIdle
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
 # 151 Ortu (neutral/ortu.grp) - frames 135 onwards are non-directional
@@ -26275,7 +26312,7 @@ AirAttkInit    	[NONE]
 Unused1        	[NONE]
 GndAttkRpt     	OrtuGndAttkRpt
 AirAttkRpt     	[NONE]
-CastSpell      	[NONE]
+CastSpell      	OrtuCastSpell
 GndAttkToIdle  	OrtuGndAttkToIdle
 AirAttkToIdle  	[NONE]
 Unused2        	[NONE]
@@ -26400,6 +26437,24 @@ OrtuWalking:
 	wait           	1
 	goto           	OrtuWalking
 
+OrtuCastSpell:
+	playfram       	0x77	# frame set 8
+	wait           	2
+	nobrkcodestart 
+	print Firing
+	fireweapon 149
+	print Fired
+	wait           	1
+	playfram       	0x33	# frame set 3
+	wait           	2
+	playfram       	0x44	# frame set 4
+	wait           	2
+	playfram       	0x55	# frame set 5
+	wait           	2
+	playfram       	0x66	# frame set 6
+	nobrkcodeend   	
+	gotorepeatattk 	
+	goto           	OrtuGndAttkToIdle
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
 # 151 Atril (neutral/Atril.grp) - frames 135 onwards are non-directional
@@ -26413,7 +26468,7 @@ AirAttkInit    	[NONE]
 Unused1        	[NONE]
 GndAttkRpt     	AtrilGndAttkRpt
 AirAttkRpt     	[NONE]
-CastSpell      	[NONE]
+CastSpell      	AtrilTrgGround
 GndAttkToIdle  	AtrilGndAttkToIdle
 AirAttkToIdle  	[NONE]
 Unused2        	[NONE]
@@ -26603,7 +26658,28 @@ AtrilWalking:
 	move           	1
 	goto           	AtrilWalking
 	
-
+AtrilTrgGround: #Used to get "target ground" functionality into SCR, pretty cute IMO
+	wait			1
+	nobrkcodestart 	
+	playfram       	0x55	# frame set 8
+	wait           	2
+	playfram       	0x66	# frame set 3
+	wait           	2
+	playfram       	0x77	# frame set 4
+	wait           	2
+	playfram       	0x88	# frame set 5
+	wait           	2
+	playfram       	0x99	# frame set 6
+	wait           	2
+	playsnd         1148	# Taar/AtrilWea.WAV
+	fireweapon		161
+	playfram       	0xEE	# frame set 4
+	wait           	1
+	playfram       	0xFF	# frame set 4
+	set spritelocal attacked = 1
+	call AtrilRetract
+	nobrkcodeend   	
+	goto AtrilGndAttkToIdle
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
 # 523 Blaster (Gray weapon)

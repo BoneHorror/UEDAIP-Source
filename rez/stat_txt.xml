@@ -5930,19 +5930,19 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>AI_PROTOSS_B7C</id>
-        <value>Brood Wars Protoss 7 - Town C</value>
+        <value>Plasma Overcharge</value>
     </string>
     <string>
         <id>AI_PROTOSS_B7D</id>
-        <value>Brood Wars Protoss 7 - Town D</value>
+        <value>Viscous Bile</value>
     </string>
     <string>
         <id>AI_PROTOSS_B7E</id>
-        <value>Brood Wars Protoss 7 - Town E</value>
+        <value>Murderous Reflexes</value>
     </string>
     <string>
         <id>AI_PROTOSS_B7F</id>
-        <value>Brood Wars Protoss 7 - Town F</value>
+        <value>Parting Gift</value>
     </string>
     <string>
         <id>AI_PROTOSS_B8A</id>
