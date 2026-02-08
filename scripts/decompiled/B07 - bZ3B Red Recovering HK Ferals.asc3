@@ -1,0 +1,166 @@
+script_name Brood Wars Zerg 3 - Town B
+script_id ZB3B
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 1 drone 80
+build 1 hatchery 80
+build 2 drone 80
+place_guard queen 0
+max_force 600
+define_max 255 drone
+define_max 14 hydralisk
+define_max 12 zergling
+define_max 6 hhydralisk
+define_max 255 mutalisk
+define_max 255 scourge
+define_max 255 lurker
+define_max 255 queen
+#can't get any new air units, but we do have some as guards - hence upgrades to them later on
+#also no trains since we are not guaranteed to retain any tech
+define_max 255 defiler
+define_max 3 ultralisk
+#we need ovies somehow, maybe steal them from orange?
+idle_orders DisableBuiltin 0 0 0 0 0 0 0
+idle_orders 120 0 1 queen 1024 overlord|observer|science_vessel|defiler|skywing|dropship|shuttle|arbiter|valhalla|defiler|queen|ghost 30 WithoutSpellEffects(Parasite)|RandomRate(280 820)|Self(Energy(GreaterThanPercent 50))
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defensebuild_gg 2 hydralisk
+defenseuse_gg 2 hydralisk
+defensebuild_gg 1 hhydralisk
+defenseuse_gg 1 hhydralisk
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+defensebuild_ag 1 hhydralisk
+defenseuse_ag 1 hhydralisk
+defensebuild_ga 1 mutalisk
+defenseuse_ga 1 mutalisk
+upgrade 1 overlord_capacity 30
+upgrade 1 overlord_speed 30
+upgrade 1 z_missile_attack 30
+wait 1125
+
+attack_add 3 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 hydralisk_speed 30
+tech ensnare 30
+wait 2625
+
+attack_add 12 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 z_flyer_carapace 30
+upgrade 1 z_carapace 30
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|marine|vulture|heavy_marine|scorpion 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 45))
+idle_orders 146 0 1 queen 1024 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 50))
+idle_orders 146 0 1 queen 1024 dragoon|corsair|scout|dark_templar|wraith|ghost|skywing|phantom 40 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 55))
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|dragoon|corsair|scout|dark_archon|devourer|guardian|dark_templar|goliath|siege_tank|revenant|death_knight|panzer 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 50))
+idle_orders 146 0 1 queen 1024 reaver|dark_archon|archon|devourer|guardian|hnorad|battlecruiser|valhalla|carrier|arbiter 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 45))
+idle_orders 146 32 1 queen 312 group_men 30 deathrattle
+wait 2625
+
+attack_add 3 hydralisk
+attack_add 3 hhydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 hydralisk_range 30
+upgrade 1 z_melee_attack 30
+tech spawn_broodling 60
+wait 2625
+
+attack_add 2 ultralisk
+attack_add 4 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+defenseuse_gg 1 broodling
+idle_orders 121 32 1 queen 312 zergling|marine 5 Health(GreaterThanPercent 85)|Self(Energy(GreaterThanPercent 75))
+idle_orders 121 32 1 queen 312 hydralisk|firebat|medic|heavy_marine 40 Health(GreaterThanPercent 85)
+idle_orders 121 32 1 queen 312 lurker|siege_tank|death_knight 70 Health(GreaterThanPercent 25)
+idle_orders 121 32 1 queen 312 ultralisk|36|panzer 120 Health(GreaterThanPercent 25)
+idle_orders 121 32 1 queen 312 zealot|vulture|scorpion 30 Health(GreaterThanPercent 45)|Self(Energy(GreaterThanPercent 55))
+idle_orders 121 32 1 queen 312 dragoon|goliath|phantom 60 Health(GreaterThanPercent 45)
+idle_orders 121 32 1 queen 312 high_templar|ghost 70 Health(GreaterThanPercent 65)
+idle_orders 121 32 1 queen 312 dark_templar|tesla_trooper 50 Health(GreaterThanPercent 55)
+idle_orders 121 32 1 queen 312 drone|scv 15 Health(GreaterThanPercent 95)
+idle_orders 121 32 1 queen 312 broodling 3 Health(GreaterThanPercent 95)|Self(Energy(GreaterThanPercent 85))
+idle_orders 121 32 1 queen 312 group_men 40 deathrattle
+upgrade 1 zergling_speed 30
+wait 2625
+
+attack_add 5 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2625
+
+attack_add 6 zergling
+attack_add 4 hhydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 z_flyer_attack 30
+wait 2625
+
+attack_add 8 hydralisk
+attack_add 1 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+
+:block1
+wait 2525
+
+attack_add 12 zergling
+attack_add 5 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3025
+
+attack_add 5 hhydralisk
+attack_add 10 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3500
+
+attack_add 10 zergling
+attack_add 2 ultralisk
+attack_add 3 hhydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto block1
