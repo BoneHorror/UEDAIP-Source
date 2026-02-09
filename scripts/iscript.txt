@@ -26499,6 +26499,7 @@ AtrilDeath:
 	imgol          	60 0 0	# ZergBuildingDeath (thingy\zBldDthS.grp)
 	playsnd         1147	# Taar/AtrilDea.WAV
 	setfldirect    	0
+	if upgrade(player, 83) == 0 call AtrilDeaSurprise
 	randcondjmp		128	AtrilAltDeath
 	playfram       	0xCC	# frame set 8
 	wait           	1
@@ -26510,6 +26511,12 @@ AtrilDeath:
 	wait           	1
 	end            	
 
+AtrilDeaSurprise:
+	set global death_atril_bullet = 1
+	fireweapon		161
+	set global death_atril_bullet = 0
+	return
+	
 AtrilAltDeath:
 	playsnd         1147	# Taar/AtrilDea.WAV
 	setfldirect    	0
@@ -26731,6 +26738,7 @@ AirAttkInit    	[NONE]
 # ----------------------------------------------------------------------------- #
 
 DungBombInit:
+	if death_atril_bullet != 0 goto DungBombFall
 	trgtrangecondjmp    96 DungBombClose
 	wait 			1
 	if flingy.movement_direction > 230 && flingy.movement_direction < 260 goto DungBombClose #curve looks bad straight down
@@ -26766,6 +26774,28 @@ DungBombClose:
 	sigorder		1
 	goto DungBombGndAttkInit
 	
+DungBombFall:
+	wait			1
+	sigorder		1
+	set flingy.movement_direction = 270
+	set flingy.turn_speed = 1
+	set bullet.death_timer = 5
+	wait			1
+	set flingy.speed = flingy.speed*4
+	set flingy.movement_direction = 270
+	set flingy.turn_speed = 1
+	playfram       	0
+	wait           	1
+	set flingy.movement_direction = 270
+	set flingy.turn_speed = 1
+	playfram       	1
+	wait           	1
+	set flingy.movement_direction = 270
+	set flingy.turn_speed = 1
+	playfram       	2
+	wait           	1
+	set flingy.movement_direction = 270
+	set flingy.turn_speed = 1
 DungBombDeath:
 	playsnd        	7	# Misc\ExploLrg.wav
 	imgol          	332 0 0	# TerranBuildingExplosionsmall (thingy\tBangS.grp)
