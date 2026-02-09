@@ -22,7 +22,7 @@ build 2 creep_colony 80
 build 2 spore_colony 80
 #set magenta player color
 upgrade_jump 13 Set 81 1 taar_loop
-define_max 30 drone
+define_max 45 drone
 define_max 1 queen
 define_max 3 defiler
 define_max 12 broodling
@@ -30,11 +30,12 @@ define_max 2 spawnsire
 define_max 8 scourge
 define_max 25 overlord
 define_max 6 atril
-define_max 12 sy_demon
+define_max 14 sy_demon
 define_max 10 ortu
 define_max 64 gray
-defensebuild_gg 1 sy_demon
-defenseuse_gg 1 sy_demon
+max_force 1400
+defensebuild_gg 2 sy_demon
+defenseuse_gg 2 sy_demon
 defensebuild_gg 1 gray
 defenseuse_gg 1 gray
 defensebuild_gg 1 sy_demon
@@ -46,6 +47,8 @@ defenseuse_ag 2 gray
 defensebuild_ga 1 ortu
 defenseuse_ga 1 ortu
 defensebuild_gg 1 spawnsire
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
 upgrade 1 overlord_speed 30
 upgrade 1 overlord_capacity 30
 max_workers 45
@@ -81,10 +84,10 @@ build 1 queen_nest 80
 upgrade 1 overlord_sight 30
 defensebuild_gg 1 atril
 defenseuse_gg 1 atril
-idle_orders 144 64 1 atril 256 group_men 55 count(AtLeast 2 106 14)|WithoutUnitFlags(Air)
-idle_orders 144 64 1 atril 256 group_men 70 count(AtLeast 3 106 14)|WithoutUnitFlags(Air)
-idle_orders 144 64 1 atril 256 group_men 110 count(AtLeast 4 106 14)|WithoutUnitFlags(Air)
-idle_orders 144 64 1 atril 256 photon_cannon|sunken_colony|creep_colony|spore_colony|bunker|missile_turret|drone|probe|scv 100 count(AtLeast 2 106 14)
+idle_orders 119 64 1 atril 256 group_men 55 count(AtLeast 2 106 14)|WithoutUnitFlags(Air)
+idle_orders 119 64 1 atril 256 group_men 70 count(AtLeast 3 106 14)|WithoutUnitFlags(Air)
+idle_orders 119 64 1 atril 256 group_men 110 count(AtLeast 4 106 14)|WithoutUnitFlags(Air)
+idle_orders 119 64 1 atril 256 photon_cannon|sunken_colony|creep_colony|spore_colony|bunker|missile_turret|drone|probe|scv 100 count(AtLeast 2 106 14)
 wait 1750
 
 train 6 ortu
@@ -106,10 +109,10 @@ upgrade 2 z_flyer_carapace 30
 upgrade 2 z_flyer_attack 30
 wait 2250
 
-idle_orders 144 64 1 gray 192 group_men 55 count(AtLeast 2 80 14)|WithoutUnitFlags(Air)
-idle_orders 144 64 1 gray 192 group_men 70 count(AtLeast 3 80 14)|WithoutUnitFlags(Air)
-idle_orders 144 64 1 gray 192 group_men 110 count(AtLeast 4 80 14)|WithoutUnitFlags(Air)
-idle_orders 144 64 1 gray 192 zealot|zergling|marine|heavy_marine|scv|probe|drone 110 count(AtLeast 3 80 14)|WithoutUnitFlags(Air)
+idle_orders 119 64 1 gray 192 group_men 55 count(AtLeast 2 80 14)|WithoutUnitFlags(Air)
+idle_orders 119 64 1 gray 192 group_men 70 count(AtLeast 3 80 14)|WithoutUnitFlags(Air)
+idle_orders 119 64 1 gray 192 group_men 110 count(AtLeast 4 80 14)|WithoutUnitFlags(Air)
+idle_orders 119 64 1 gray 192 zealot|zergling|marine|heavy_marine|scv|probe|drone 110 count(AtLeast 3 80 14)|WithoutUnitFlags(Air)
 train 26 gray
 train 3 atril
 train 3 sy_demon
@@ -199,6 +202,9 @@ build 1 psi_dominator 100
 build 15 drone 80
 wait_build 1 psi_dominator
 build 2 xenowort 80
+build 2 spore_colony 80
+place_guard gray 0
+place_guard gray 2
 :idle_loop
 wait 1500
 
