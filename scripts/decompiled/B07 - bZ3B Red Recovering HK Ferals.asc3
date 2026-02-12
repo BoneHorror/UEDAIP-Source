@@ -14,6 +14,8 @@ build 1 hatchery 80
 build 2 drone 80
 place_guard queen 0
 max_force 600
+upgrade_jump 13 Set 48 1 block1
+#hunter killer // hhydra regen
 define_max 255 drone
 define_max 14 hydralisk
 define_max 12 zergling
@@ -26,9 +28,14 @@ define_max 255 queen
 #also no trains since we are not guaranteed to retain any tech
 define_max 255 defiler
 define_max 3 ultralisk
-#we need ovies somehow, maybe steal them from orange?
+#we need ovies somehow, steal them from orange map-side
 idle_orders DisableBuiltin 0 0 0 0 0 0 0
 idle_orders 120 0 1 queen 1024 overlord|observer|science_vessel|defiler|skywing|dropship|shuttle|arbiter|valhalla|defiler|queen|ghost 30 WithoutSpellEffects(Parasite)|RandomRate(280 820)|Self(Energy(GreaterThanPercent 50))
+upgrade 1 overlord_capacity 30
+upgrade 1 overlord_speed 30
+upgrade 1 z_missile_attack 30
+wait 1125
+
 defensebuild_gg 1 zergling
 defenseuse_gg 1 zergling
 defensebuild_gg 2 hydralisk
@@ -43,13 +50,8 @@ defensebuild_ag 1 hhydralisk
 defenseuse_ag 1 hhydralisk
 defensebuild_ga 1 mutalisk
 defenseuse_ga 1 mutalisk
-upgrade 1 overlord_capacity 30
-upgrade 1 overlord_speed 30
-upgrade 1 z_missile_attack 30
-wait 1125
-
 attack_add 3 hydralisk
-attack_prepare
+attack_to Loc.21 Loc.18
 wait 500
 
 attack_do
@@ -76,7 +78,7 @@ wait 2625
 
 attack_add 3 hydralisk
 attack_add 3 hhydralisk
-attack_prepare
+attack_to Loc.21 Loc.18
 wait 500
 
 attack_do

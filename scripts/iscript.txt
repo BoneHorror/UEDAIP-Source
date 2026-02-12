@@ -25985,7 +25985,7 @@ SyWalkingToIdle:
 	playfram       	0x00	# frame set 1
 SyRotate:
 	waitrand       	43 61
-	goto           	GrayRotate
+	goto           	SyRotate
 
 SyDeath: # PLACEHOLDER - TODO!
 	playsnd     1160 # Taar/SYTHDEA.WAV
@@ -26118,6 +26118,7 @@ GrayWalkingToIdle:
 	playfram       	0x00	# frame set 1
 	set spritelocal low_atk = 0
 GrayRotate:
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	waitrand       	43 61
 	goto           	GrayRotate
 
@@ -26493,7 +26494,7 @@ AtrilWalkingToIdle:
 	playfram       	0x00	# frame set 1
 AtrilRotate:
 	waitrand       	43 61
-	goto           	GrayRotate
+	goto           	AtrilRotate
 
 AtrilDeath:
 	imgol          	60 0 0	# ZergBuildingDeath (thingy\zBldDthS.grp)
