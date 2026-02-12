@@ -5211,7 +5211,11 @@ GhostWalkingToIdle:
 	if unit_id == 16 || unit_id == 100 goto uGhostWalkingToIdle
 	playfram       	0x33	# frame set 3
 GhostLocal02:
-	waitrand       	63 75
+	wait			3
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	wait			25
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	waitrand       	35 47
 	randcondjmp    	25 GhostLocal00
 	randcondjmp    	128 GhostLocal01
 	goto           	GhostLocal02
@@ -5459,7 +5463,11 @@ uGhostInit:
 uGhostWalkingToIdle:
 	playfram       	280	# frame set 3
 uGhostLocal02:
-	waitrand       	63 75
+	wait			3
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	wait			25
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	waitrand       	35 47
 	randcondjmp    	25 uGhostLocal00
 	randcondjmp    	128 uGhostLocal01
 	goto           	uGhostLocal02
@@ -6380,8 +6388,11 @@ MarineWalkingToIdle:
 	if unit_id == 56 goto uMarineWalkingToIdle
 	playfram       	0x44	# frame set 4
 MarineLocal02:
-	if unit_id == 56 goto uMarineLocal02
-	waitrand       	63 75
+	wait			3
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	wait			25
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	waitrand       	35 47
 	randcondjmp    	25 MarineLocal00
 	randcondjmp    	128 MarineLocal01
 	goto           	MarineLocal02
@@ -6618,11 +6629,7 @@ uMarineInit:
 	imgul          	240 0 0	# MarineShad (terran\tmaShad.grp)
 uMarineWalkingToIdle:
 	playfram       	297	# frame set 4
-uMarineLocal02:
-	waitrand       	63 75
-	randcondjmp    	25 uMarineLocal00
-	randcondjmp    	128 uMarineLocal01
-	goto           	uMarineLocal02
+	goto MarineLocal02
 
 uMarineLocal00:
 	playfram       	229	# frame set 0
@@ -11494,14 +11501,17 @@ DragoonLocal00:
 	wait           	2
 	playfram       	0x22	# frame set 2
 	wait           	2
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	playfram       	0x33	# frame set 3
 	wait           	2
 	playfram       	0x44	# frame set 4
 	wait           	2
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	playfram       	0x55	# frame set 5
 	wait           	2
 	playfram       	0x66	# frame set 6
 	wait           	2
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	playfram       	0x77	# frame set 7
 	wait           	2
 	playfram       	0x00	# frame set 0
@@ -11731,14 +11741,17 @@ uDragoonLocal00:
 	wait           	2
 	playfram       	0x1c1	# frame set 2
 	wait           	2
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	playfram       	0x1d2	# frame set 3
 	wait           	2
 	playfram       	0x1e3	# frame set 4
 	wait           	2
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	playfram       	0x1f4	# frame set 5
 	wait           	2
 	playfram       	0x205	# frame set 6
 	wait           	2
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	playfram       	0x216	# frame set 7
 	wait           	2
 	playfram       	0x19f	# frame set 0
@@ -14990,19 +15003,19 @@ RhynadonWalking:
 .headerstart
 IsId           	200
 Type           	21
-Init           	BengalaasInit
-Death          	BengalaasDeath
-GndAttkInit    	BengalaasGndAttkInit
-AirAttkInit    	BengalaasAirAttkInit
+Init           	RevenantInit
+Death          	RevenantDeath
+GndAttkInit    	RevenantGndAttkInit
+AirAttkInit    	RevenantAirAttkInit
 Unused1        	[NONE]
-GndAttkRpt     	BengalaasGndAttkRpt
-AirAttkRpt     	BengalaasAirAttkRpt
+GndAttkRpt     	RevenantGndAttkRpt
+AirAttkRpt     	RevenantAirAttkRpt
 CastSpell      	[NONE]
-GndAttkToIdle  	BengalaasGndAttkToIdle
-AirAttkToIdle  	BengalaasAirAttkToIdle
+GndAttkToIdle  	RevenantGndAttkToIdle
+AirAttkToIdle  	RevenantAirAttkToIdle
 Unused2        	[NONE]
-Walking        	BengalaasWalking
-WalkingToIdle  	BengalaasWalkingToIdle
+Walking        	RevenantWalking
+WalkingToIdle  	RevenantWalkingToIdle
 SpecialState1  	[NONE]
 SpecialState2  	[NONE]
 AlmostBuilt    	[NONE]
@@ -15011,35 +15024,38 @@ Landing        	[NONE]
 LiftOff        	[NONE]
 IsWorking      	[NONE]
 WorkingToIdle  	[NONE]
-WarpIn         	BengalaasWarpIn
+WarpIn         	RevenantWarpIn
 .headerend
 # ----------------------------------------------------------------------------- #
 
-BengalaasInit:
+RevenantInit:
 	imgul          	123 0 0	# DragoonShad (protoss\pdrShad.grp)
-BengalaasWalkingToIdle:
+RevenantWalkingToIdle:
 	playfram       	0x00	# frame set 0
 	waitrand       	1 3
-BengalaasLocal00:
+RevenantLocal00:
 	playfram       	0x11	# frame set 1
 	wait           	2
 	playfram       	0x22	# frame set 2
 	wait           	2
 	playfram       	0x33	# frame set 3
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	wait           	2
 	playfram       	0x44	# frame set 4
 	wait           	2
 	playfram       	0x55	# frame set 5
 	wait           	2
 	playfram       	0x66	# frame set 6
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	wait           	2
 	playfram       	0x77	# frame set 7
 	wait           	2
 	playfram       	0x00	# frame set 0
 	wait           	2
-	goto           	BengalaasLocal00
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	goto           	RevenantLocal00
 
-BengalaasDeath:
+RevenantDeath:
 	playsnd        	493	# Protoss\DRAGOON\PDrDth00.WAV
 	setfldirect    	0
 	playfram       	0x198	# frame set 24
@@ -15060,7 +15076,7 @@ BengalaasDeath:
 	wait           	1
 	end            	
 
-BengalaasGndAttkInit:
+RevenantGndAttkInit:
 	playfram       	0x110	# frame set 16
 	wait           	1
 	playfram       	0x121	# frame set 17
@@ -15073,9 +15089,9 @@ BengalaasGndAttkInit:
 	wait           	1
 	playfram       	0x165	# frame set 21
 	wait           	1
-	trgtrangecondjmp	48 BengalaasLocal01
-BengalaasGndAttkRpt:
-	trgtrangecondjmp	48 BengalaasLocal01
+	trgtrangecondjmp	48 RevenantLocal01
+RevenantGndAttkRpt:
+	trgtrangecondjmp	48 RevenantLocal01
 	playfram       	0x176	# frame set 22
 	wait           	1
 	playfram       	0x187	# frame set 23
@@ -15088,7 +15104,7 @@ BengalaasGndAttkRpt:
 	playfram       	0x165	# frame set 21
 	gotorepeatattk 	
 	ignorerest     	
-BengalaasGndAttkToIdle:
+RevenantGndAttkToIdle:
 	wait           	1
 	playfram       	0x154	# frame set 20
 	wait           	1
@@ -15099,13 +15115,13 @@ BengalaasGndAttkToIdle:
 	playfram       	0x121	# frame set 17
 	wait           	1
 	playfram       	0x110	# frame set 16
-	goto           	BengalaasWalkingToIdle
+	goto           	RevenantWalkingToIdle
 
 RevShieldSet:
 	set unit.shields = 7680
 	goto RevShieldReturn
 	
-BengalaasLocal01:
+RevenantLocal01:
 	playfram       	0x176	# frame set 22
 	wait           	1
 	playfram       	0x187	# frame set 23
@@ -15121,7 +15137,7 @@ RevShieldReturn:
 	playfram       	0x165	# frame set 21
 	gotorepeatattk 	
 	ignorerest     	
-BengalaasAirAttkInit:
+RevenantAirAttkInit:
 	playfram       	0x110	# frame set 16
 	wait           	1
 	playfram       	0x121	# frame set 17
@@ -15134,7 +15150,7 @@ BengalaasAirAttkInit:
 	wait           	1
 	playfram       	0x165	# frame set 21
 	wait           	1
-BengalaasAirAttkRpt:
+RevenantAirAttkRpt:
 	playfram       	0x176	# frame set 22
 	wait           	1
 	playfram       	0x187	# frame set 23
@@ -15147,7 +15163,7 @@ BengalaasAirAttkRpt:
 	playfram       	0x165	# frame set 21
 	gotorepeatattk 	
 	ignorerest     	
-BengalaasAirAttkToIdle:
+RevenantAirAttkToIdle:
 	wait           	1
 	playfram       	0x154	# frame set 20
 	wait           	1
@@ -15158,9 +15174,9 @@ BengalaasAirAttkToIdle:
 	playfram       	0x121	# frame set 17
 	wait           	1
 	playfram       	0x110	# frame set 16
-	goto           	BengalaasWalkingToIdle
+	goto           	RevenantWalkingToIdle
 
-BengalaasWalking:
+RevenantWalking:
 	move           	6
 	wait           	1
 	playfram       	0x88	# frame set 8
@@ -15185,15 +15201,15 @@ BengalaasWalking:
 	move           	5
 	wait           	1
 	playfram       	0xff	# frame set 15
-	goto           	BengalaasWalking
+	goto           	RevenantWalking
 
-BengalaasWarpIn:
+RevenantWarpIn:
 	imgol          	125 0 0	# Unknown125 (protoss\dragoon.grp)
-	goto           	BengalaasLocal02
+	goto           	RevenantLocal02
 
-BengalaasLocal02:
+RevenantLocal02:
 	wait           	125
-	goto           	BengalaasLocal02
+	goto           	RevenantLocal02
 
 
 # ----------------------------------------------------------------------------- #
@@ -22862,7 +22878,12 @@ MedicInit:
 MedicLocal02:
 	playfram       	0x00	# frame set 0
 MedicLocal01:
-	waitrand       	63 75
+	wait			3
+	#print AI mining lvl: {upgrade(4, 74)}
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	wait			25
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
+	waitrand       	35 47
 	randcondjmp    	128 MedicLocal00
 	goto           	MedicLocal01
 
