@@ -11547,12 +11547,12 @@ DragoonGndAttkInit:
 	wait           	1
 	playfram       	0x121	# frame set 17
 	wait           	1
-	playfram       	0x132	# frame set 18
-	wait           	1
+	#playfram       	0x132	# frame set 18
+	#wait           	1
 	playfram       	0x143	# frame set 19
 	wait           	1
-	playfram       	0x154	# frame set 20
-	wait           	1
+	#playfram       	0x154	# frame set 20
+	#wait           	1
 	playfram       	0x165	# frame set 21
 	wait           	1
 DragoonGndAttkRpt:
@@ -11575,8 +11575,8 @@ DragoonGndAttkToIdle:
 	wait           	1
 	playfram       	0x143	# frame set 19
 	wait           	1
-	playfram       	0x132	# frame set 18
-	wait           	1
+	#playfram       	0x132	# frame set 18
+	#wait           	1
 	playfram       	0x121	# frame set 17
 	wait           	1
 	playfram       	0x110	# frame set 16
@@ -11589,12 +11589,12 @@ DragoonAirAttkInit:
 	wait           	1
 	playfram       	0x121	# frame set 17
 	wait           	1
-	playfram       	0x132	# frame set 18
-	wait           	1
+	#playfram       	0x132	# frame set 18
+	#wait           	1
 	playfram       	0x143	# frame set 19
 	wait           	1
-	playfram       	0x154	# frame set 20
-	wait           	1
+	#playfram       	0x154	# frame set 20
+	#wait           	1
 	playfram       	0x165	# frame set 21
 	wait           	1
 DragoonAirAttkRpt:
@@ -11617,8 +11617,8 @@ DragoonAirAttkToIdle:
 	wait           	1
 	playfram       	0x143	# frame set 19
 	wait           	1
-	playfram       	0x132	# frame set 18
-	wait           	1
+	#playfram       	0x132	# frame set 18
+	#wait           	1
 	playfram       	0x121	# frame set 17
 	wait           	1
 	playfram       	0x110	# frame set 16
@@ -11701,22 +11701,22 @@ DragoonWalking:
 	move           	5
 	wait           	1
 	playfram       	0x88	# frame set 8
-	move           	6
+	move           	5
 	wait           	1
 	playfram       	0x99	# frame set 9
-	move           	7
+	move           	6
 	wait           	1
 	playfram       	0xaa	# frame set 10
-	move           	7
+	move           	5
 	wait           	1
 	playfram       	0xbb	# frame set 11
-	move           	3
+	move           	5
 	wait           	1
 	playfram       	0xcc	# frame set 12
 	move           	4
 	wait           	1
 	playfram       	0xdd	# frame set 13
-	move           	4
+	move           	5
 	wait           	1
 	playfram       	0xee	# frame set 14
 	move           	6
@@ -15177,7 +15177,7 @@ RevenantAirAttkToIdle:
 	goto           	RevenantWalkingToIdle
 
 RevenantWalking:
-	move           	6
+	move           	5
 	wait           	1
 	playfram       	0x88	# frame set 8
 	move           	5
@@ -15186,10 +15186,10 @@ RevenantWalking:
 	move           	5
 	wait           	1
 	playfram       	0xaa	# frame set 10
-	move           	4
+	move           	5
 	wait           	1
 	playfram       	0xbb	# frame set 11
-	move           	5
+	move           	4
 	wait           	1
 	playfram       	0xcc	# frame set 12
 	move           	4
