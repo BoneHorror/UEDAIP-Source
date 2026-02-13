@@ -209,7 +209,7 @@ wait 1500
 goto idle_loop
 
 :attackTargeting
-bring_jump 14 AtMost 0 group_building Loc.17 targeting_mid_enabled
+bring_jump 14 AtMost 0 group_buildings Loc.17 targeting_mid_enabled
 unstart_campaign
 attack_prepare
 start_campaign

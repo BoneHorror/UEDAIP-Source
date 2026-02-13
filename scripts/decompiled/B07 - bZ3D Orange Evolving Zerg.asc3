@@ -40,14 +40,13 @@ define_max 3 defiler
 define_max 31 hydralisk
 define_max 7 lurker
 define_max 30 overlord
+max_force 1100
 defensebuild_gg 3 zergling
 defenseuse_gg 3 zergling
 defensebuild_gg 1 ultralisk
 defenseuse_gg 1 ultralisk
 defensebuild_gg 2 hydralisk
 defenseuse_gg 1 hydralisk
-defensebuild_gg 1 lurker
-defenseuse_gg 1 lurker
 defensebuild_ag 1 hydralisk
 defenseuse_ag 1 hydralisk
 defensebuild_ag 1 defiler
@@ -56,6 +55,7 @@ defensebuild_ag 1 mutalisk
 defenseuse_ag 1 mutalisk
 defensebuild_ga 1 guardian
 defenseuse_ga 1 guardian
+defensebuild_ga 2 mutalisk
 defenseuse_ga 1 mutalisk
 defensebuild_aa 1 mutalisk
 defenseuse_aa 1 mutalisk
@@ -63,7 +63,6 @@ defensebuild_aa 1 scourge
 defenseuse_aa 1 scourge
 upgrade 1 overlord_speed 30
 upgrade 1 overlord_capacity 30
-tech ensnare 30
 tech burrowing 30
 upgrade 1 z_carapace 30
 upgrade 1 z_flyer_carapace 30
@@ -77,23 +76,32 @@ upgrade 1 z_missile_attack 30
 upgrade 1 z_flyer_attack 30
 wait 1500
 
+idle_orders 120 0 1 queen 1024 overlord|observer|science_vessel|defiler|skywing|dropship|shuttle|arbiter|valhalla|defiler|queen|ghost 30 WithoutSpellEffects(Parasite)|RandomRate(280 820)|Self(Energy(GreaterThanPercent 50))
+tech lurker_aspect 30
 multirun ask_for_help
 wait 5600
 
-tech spawn_broodling 30
-max_force 2000
+defensebuild_gg 1 lurker
+defenseuse_gg 1 lurker
 attack_add 2 mutalisk
 attack_to Loc.14 Loc.18
 wait 500
 
 attack_do
 attack_clear
+tech ensnare 30
 upgrade 2 z_melee_attack 30
 upgrade 2 z_carapace 30
 upgrade 2 z_flyer_carapace 30
 upgrade 1 voracity 30
 wait 4500
 
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|marine|vulture|heavy_marine|scorpion|gray 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 45))
+idle_orders 146 0 1 queen 1024 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 50))
+idle_orders 146 0 1 queen 1024 dragoon|corsair|scout|dark_templar|wraith|ghost|skywing|phantom|sy_demon|ortu 40 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 55))
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|dragoon|corsair|scout|dark_archon|devourer|guardian|dark_templar|goliath|siege_tank|revenant|death_knight|panzer|atril 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 50))
+idle_orders 146 0 1 queen 1024 reaver|dark_archon|archon|devourer|guardian|hnorad|battlecruiser|valhalla|carrier|arbiter|sy_demon 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 45))
+idle_orders 146 32 1 queen 312 group_men 30 deathrattle
 attack_add 2 lurker
 attack_to Loc.20 Loc.18
 wait 500
@@ -114,6 +122,7 @@ attack_do
 attack_clear
 wait 3350
 
+tech spawn_broodling 30
 upgrade 3 z_melee_attack 30
 upgrade 1 hydra_attack 30
 upgrade 1 ultralisk_armor 30
@@ -123,6 +132,17 @@ wait 500
 
 attack_do
 attack_clear
+idle_orders 121 32 1 queen 312 zergling|marine|gray 5 Health(GreaterThanPercent 85)|Self(Energy(GreaterThanPercent 75))
+idle_orders 121 32 1 queen 312 hydralisk|firebat|medic|heavy_marine 40 Health(GreaterThanPercent 85)
+idle_orders 121 32 1 queen 312 lurker|siege_tank|death_knight|atril 70 Health(GreaterThanPercent 25)
+idle_orders 121 32 1 queen 312 ultralisk|36|panzer|sy_demon 120 Health(GreaterThanPercent 25)
+idle_orders 121 32 1 queen 312 zealot|vulture|scorpion 30 Health(GreaterThanPercent 45)|Self(Energy(GreaterThanPercent 55))
+idle_orders 121 32 1 queen 312 dragoon|goliath|phantom 60 Health(GreaterThanPercent 45)
+idle_orders 121 32 1 queen 312 high_templar|ghost 70 Health(GreaterThanPercent 65)
+idle_orders 121 32 1 queen 312 dark_templar|tesla_trooper 50 Health(GreaterThanPercent 55)
+idle_orders 121 32 1 queen 312 drone|scv 15 Health(GreaterThanPercent 95)
+idle_orders 121 32 1 queen 312 broodling 3 Health(GreaterThanPercent 95)|Self(Energy(GreaterThanPercent 85))
+idle_orders 121 32 1 queen 312 group_men 40 deathrattle
 wait 2500
 
 attack_add 1 hultralisk
