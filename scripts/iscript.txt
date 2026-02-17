@@ -26134,7 +26134,7 @@ WarpIn         	[NONE]
 
 GrayInit:
 	wait			2
-	imgul          	152 0 0	# ZealotShad (protoss\pzeShad.grp)
+	imgul          	1006 0 0	# GrayShad (neutral\graysha.grp)
 GrayWalkingToIdle:
 	playfram       	0x00	# frame set 1
 	set spritelocal low_atk = 0
