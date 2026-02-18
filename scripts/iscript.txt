@@ -26001,7 +26001,7 @@ WarpIn         	[NONE]
 SyInit:
 	wait			2
 	playfram       	0x00	# frame set 1
-	imgul          	236 0 0	# GoliathShad (terran\tgoShad.grp)
+	imgul          	1009 0 0	# SyDemonShad (neutral\sydemonsha.grp)
 SyWalkingToIdle:
 	playfram       	0x00	# frame set 1
 SyRotate:
@@ -26353,7 +26353,7 @@ WarpIn         	[NONE]
 
 OrtuInit:
 	wait			2
-	imgul          	955 0 42 # 955 KakaruShad (neutral\Scritter.grp)
+	imgul          	1007 0 42	# OrtuShad (neutral\ortusha.grp)
 OrtuWalkingToIdle:
 	playfram       	0x00	# frame set 1
 	wait           	2
@@ -26509,7 +26509,7 @@ WarpIn         	[NONE]
 
 AtrilInit:
 	wait			2
-	imgul          	262 0 42	# ScienceVesselShad (terran\tveShad.grp)
+	imgul          	1008 0 0	# AtrilShad (neutral\atrilsha.grp)
 	set spritelocal attacked = 0
 AtrilWalkingToIdle:
 	playfram       	0x00	# frame set 1
