@@ -26726,10 +26726,16 @@ BlasterInit:
 	tmprmgraphicstart	
 	trgtrangecondjmp	20 BlasterLocal00
 	tmprmgraphicend	
+	set spritelocal x_off = 0
+	set spritelocal y_off = 0
 BlasterLocal00:
 	wait           	1
 	sigorder       	1
 	wait           	1
+	set bullet.order_target_x = bullet.order_target_x + x_off
+	set flingy.move_target_x = flingy.move_target_x + x_off
+	set bullet.order_target_y = bullet.order_target_y + y_off
+	set flingy.move_target_y = flingy.move_target_y + y_off
 BlasterGndAttkInit:
 	playfram       	0
 	wait           	1
@@ -26741,7 +26747,7 @@ BlasterGndAttkInit:
 
 	
 BlasterDeath:
-	imgol          	440 0 0	# Fragmentationgrenadehit (thingy\efgHit.grp)
+	imgol          	1010 0 0	# PlasmaExplosion
 	domissiledmg   	
 	wait           	1
 	end            	
@@ -26824,6 +26830,125 @@ DungBombDeath:
 	domissiledmg   	
 	wait           	1
 	end            	
+	
+# ----------------------------------------------------------------------------- #
+# This header is used by images.dat entries:
+# Plasma Explosion (neutral/gorrembu.grp)
+.headerstart
+IsId           	418
+Type           	2
+Init           	PlasmaExplosionHitInit
+Death          	PlasmaExplosionHitDeath
+GndAttkInit    	PlasmaExplosionHitDeath
+AirAttkInit    	[NONE]
+.headerend
+# ----------------------------------------------------------------------------- #
+
+PlasmaExplosionHitInit:
+	wait           	1
+	sigorder       	1
+	wait			1
+	randcondjmp 85 PlasmaVar1Death
+	randcondjmp 128 PlasmaVar2Death
+PlasmaExplosionHitDeath:
+	playfram       	0
+	playsnd        	7	# Misc\ExploLrg.wav
+	wait           	1
+	#domissiledmg   	
+	playfram       	1
+	wait           	1
+	playfram       	2
+	wait           	1
+	playfram       	3
+	wait           	1
+	playfram       	4
+	wait           	1
+	playfram       	5
+	wait           	1
+	playfram       	6
+	wait			1
+	playfram       	7
+	wait           	1
+	playfram       	8
+	wait           	1
+	playfram       	9
+	wait           	1
+	playfram       	10
+	wait           	1
+	playfram       	11
+	wait           	1
+	playfram       	12
+	wait           	1
+	playfram       	13
+	wait           	1
+	end 	
+
+PlasmaVar1Death:
+	playfram       	14
+	playsnd        	7	# Misc\ExploLrg.wav
+	wait           	1
+	#domissiledmg   	
+	playfram       	15
+	wait           	1
+	playfram       	16
+	wait           	1
+	playfram       	17
+	wait           	1
+	playfram       	18
+	wait           	1
+	playfram       	19
+	wait           	1
+	playfram       	20
+	wait           	1
+	playfram       	21
+	wait           	1
+	playfram       	22
+	wait           	1
+	playfram       	23
+	wait           	1
+	playfram       	24
+	wait           	1
+	playfram       	25
+	wait           	1
+	playfram       	26
+	wait           	1
+	playfram       	27
+	wait           	1
+	end
+	
+PlasmaVar2Death:
+	playfram       	28
+	playsnd        	7	# Misc\ExploLrg.wav
+	wait           	1
+	#domissiledmg   	
+	playfram       	29
+	wait           	1
+	playfram       	30
+	wait           	1
+	playfram       	31
+	wait           	1
+	playfram       	32
+	wait           	1
+	playfram       	33
+	wait           	1
+	playfram       	34
+	wait           	1
+	playfram       	35
+	wait           	1
+	playfram       	36
+	wait           	1
+	playfram       	37
+	wait           	1
+	playfram       	38
+	wait           	1
+	playfram       	39
+	wait           	1
+	playfram       	40
+	wait           	1
+	playfram       	41
+	wait           	1
+	end
+
 # ----------------------------------------------------------------------------- #
 # ------------------------------------------------------------------------------ #
 # LONG JUMPS (these are usually shared routines between many animations)         #
