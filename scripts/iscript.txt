@@ -26747,11 +26747,17 @@ BlasterGndAttkInit:
 
 	
 BlasterDeath:
+	if bullet.weapon_id == 153 goto BlasterBoltDeath
 	imgol          	1010 0 0	# PlasmaExplosion
 	domissiledmg   	
 	wait           	1
 	end            	
 
+BlasterBoltDeath:
+	imgol          	531 0 0	# HKExplod
+	domissiledmg   	
+	wait           	1
+	end            	
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
 # 523 DungBomb (Atril weapon)
