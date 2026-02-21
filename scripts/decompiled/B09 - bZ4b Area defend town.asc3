@@ -1,0 +1,243 @@
+script_name Brood Wars Terran 1 - Town E
+script_id TB1E
+
+start_campaign
+start_areatown
+defaultbuild_off
+default_min 0
+wait 1
+
+if_owned hive purple_area
+:orange_loop
+wait 1500
+
+goto orange_loop
+
+:purple_area
+#hydras
+build 2 hatchery 80
+build 2 drone 80
+player_need 1 spawning_pool
+build 1 hydralisk_den 80
+build 1 evolution_chamber 80
+build 2 creep_colony 80
+build 2 spore_colony 80
+max_workers 3
+:loop_until_base
+wait 500
+
+bring_jump 1 AtMost 0 command_center Loc.63 loop_until_base
+wait 3275
+
+call wait_attack
+call hold_attack
+train 3 hydralisk
+attack_add 3 hydralisk
+attack_to Loc.17 Loc.92
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+wait 3225
+
+call wait_attack
+call hold_attack
+train 6 hydralisk
+attack_add 6 hydralisk
+call waypointing
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+wait 4125
+
+call wait_attack
+call hold_attack
+train 15 hydralisk
+attack_add 15 hydralisk
+attack_to Loc.102 Loc.93
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+wait 4050
+
+call wait_attack
+call hold_attack
+train 9 hydralisk
+attack_add 9 hydralisk
+call waypointing
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+build 1 nydus_canal 80
+wait 3535
+
+call wait_attack
+call hold_attack
+train 11 hydralisk
+attack_add 11 hydralisk
+call waypointing
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+:purple_loop
+wait 3605
+
+call wait_attack
+call hold_attack
+train 26 hydralisk
+attack_add 26 hydralisk
+call waypointing
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+wait 2215
+
+call wait_attack
+call hold_attack
+train 9 hydralisk
+attack_add 9 hydralisk
+call waypointing
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+wait 4210
+
+call wait_attack
+call hold_attack
+train 33 hydralisk
+attack_add 33 hydralisk
+call waypointing
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+goto purple_loop
+
+:hold_attack
+deaths 3 Add 1 firebat purple_loop
+return
+
+:release_attack
+deaths 3 Set 0 firebat purple_loop
+return
+
+:wait_attack
+wait 16
+
+deaths 3 AtLeast 2 firebat ensure_attack
+deaths 3 Exactly 1 firebat wait_attack
+#loop if another script started an attack
+return
+
+:ensure_attack
+load_bank Ensures
+print Ensure_TwoOrMore_PleaseReportMeIfSeen
+bank_data Set 1 Ensures Ensure_TwoOrMore wait_attack
+bank_data Set 0 Ensures Ensure_Compare wait_attack
+save_bank Ensures
+deaths 3 Set 0 firebat purple_loop
+return
+
+:waypointing
+wait 16
+
+#pick targets based on player presence, fallback to random otherwise
+#should not trigger ensure because this is only ran after the safeguard
+#use HULTRALISK death to force fallback
+random_jump 64 middle_approach
+random_jump 85 west_approach
+random_jump 128 south_approach
+unstart_campaign
+attack_prepare
+start_campaign
+return
+
+:nomiddle
+wait 8
+
+deaths 3 AtLeast 3 hultralisk fallback
+deaths 3 Add 1 hultralisk fallback
+random_jump 85 west_approach
+random_jump 128 south_approach
+goto waypointing
+
+:nosouth
+wait 8
+
+deaths 3 AtLeast 3 hultralisk fallback
+deaths 3 Add 1 hultralisk fallback
+random_jump 85 west_approach
+random_jump 128 middle_approach
+goto waypointing
+
+:nowest
+wait 8
+
+deaths 3 AtLeast 3 hultralisk fallback
+deaths 3 Add 1 hultralisk fallback
+random_jump 85 middle_approach
+random_jump 128 south_approach
+goto waypointing
+
+:west_approach
+wait 8
+
+bring_jump 14 AtMost 1 group_buildings Loc.66 nowest
+random_jump 85 alt_west
+attack_to Loc.102 Loc.84
+return
+
+:alt_west
+wait 8
+
+attack_to Loc.93 Loc.103
+return
+
+:south_approach
+wait 8
+
+random_jump 128 alt_south
+bring_jump 14 AtMost 3 group_buildings Loc.111 nosouth
+attack_to Loc.104 Loc.105
+return
+
+:alt_south
+wait 8
+
+bring_jump 14 AtMost 3 group_buildings Loc.114 nosouth
+attack_to Loc.106 Loc.107
+return
+
+:middle_approach
+wait 8
+
+random_jump 128 alt_middle
+bring_jump 14 AtMost 1 group_buildings Loc.113 nomiddle
+attack_to Loc.108 Loc.17
+return
+
+:alt_middle
+wait 8
+
+bring_jump 14 AtMost 1 group_buildings Loc.112 nomiddle
+attack_to Loc.109 Loc.110
+return
+
+:fallback
+deaths 3 Set 0 hultralisk waypointing
+attack_prepare
+return

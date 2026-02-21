@@ -1,0 +1,225 @@
+script_name Brood Wars Zerg 3 - Town A
+script_id ZB3A
+
+start_campaign
+wait 1
+
+start_town
+defaultbuild_off
+default_min 0
+wait 1
+
+build 15 drone 80
+build 1 hatchery 80
+build 1 spawning_pool 80
+build 1 lair 80
+build 1 spawning_pool 80
+build 1 evolution_chamber 80
+build 1 spire 80
+build 2 psi_dominator 80
+build 3 xenowort 80
+build 2 creep_colony 80
+build 2 spore_colony 80
+#set magenta player color
+upgrade_jump 13 Set 81 1 taar_loop
+define_max 45 drone
+define_max 1 queen
+define_max 3 defiler
+define_max 12 broodling
+define_max 2 spawnsire
+define_max 8 scourge
+define_max 25 overlord
+define_max 6 atril
+define_max 14 sy_demon
+define_max 10 ortu
+define_max 64 gray
+max_force 1400
+defensebuild_gg 2 sy_demon
+defenseuse_gg 2 sy_demon
+defensebuild_gg 3 gray
+defenseuse_gg 3 gray
+defensebuild_gg 1 ortu
+defenseuse_gg 1 ortu
+defensebuild_ag 2 gray
+defenseuse_ag 2 gray
+defensebuild_ga 1 ortu
+defenseuse_ga 1 ortu
+defensebuild_gg 1 spawnsire
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
+upgrade 1 overlord_speed 30
+upgrade 1 overlord_capacity 30
+max_workers 45
+wait 1040
+
+train 14 gray
+attack_add 14 gray
+attack_to Loc.7 Loc.8
+wait 500
+
+attack_do
+attack_clear
+build 22 drone 80
+upgrade 1 z_missile_attack 30
+upgrade 1 z_carapace 30
+upgrade 1 z_melee_attack 30
+upgrade 1 z_flyer_carapace 30
+upgrade 1 z_flyer_attack 30
+wait 2050
+
+build 3 psi_dominator 80
+train 20 gray
+train 3 sy_demon
+attack_add 20 gray
+attack_add 3 sy_demon
+attack_to Loc.9 Loc.10
+wait 500
+
+attack_do
+attack_clear
+multirun aggressive_growth
+build 1 queen_nest 80
+upgrade 1 overlord_sight 30
+defensebuild_gg 1 atril
+defenseuse_gg 1 atril
+idle_orders 119 64 1 atril 256 group_men 55 count(AtLeast 2 106 14)|WithoutUnitFlags(Air)
+idle_orders 119 64 1 atril 256 group_men 70 count(AtLeast 3 106 14)|WithoutUnitFlags(Air)
+idle_orders 119 64 1 atril 256 group_men 110 count(AtLeast 4 106 14)|WithoutUnitFlags(Air)
+idle_orders 119 64 1 atril 256 photon_cannon|sunken_colony|creep_colony|spore_colony|bunker|missile_turret|drone|probe|scv 100 count(AtLeast 2 106 14)
+wait 1750
+
+train 6 ortu
+train 3 atril
+attack_add 6 ortu
+attack_add 3 atril
+attack_to Loc.7 Loc.8
+wait 500
+
+attack_do
+attack_clear
+build 1 hive 80
+upgrade 1 82 30
+#upgrade taar gray plasma overcharge - to add to defs later
+upgrade 2 z_missile_attack 30
+upgrade 2 z_carapace 30
+upgrade 2 z_melee_attack 30
+upgrade 2 z_flyer_carapace 30
+upgrade 2 z_flyer_attack 30
+wait 2250
+
+idle_orders 119 64 1 gray 192 group_men 55 count(AtLeast 2 80 14)|WithoutUnitFlags(Air)
+idle_orders 119 64 1 gray 192 group_men 70 count(AtLeast 3 80 14)|WithoutUnitFlags(Air)
+idle_orders 119 64 1 gray 192 group_men 110 count(AtLeast 4 80 14)|WithoutUnitFlags(Air)
+idle_orders 119 64 1 gray 192 zealot|zergling|marine|heavy_marine|scv|probe|drone 110 count(AtLeast 3 80 14)|WithoutUnitFlags(Air)
+train 26 gray
+train 3 atril
+train 3 sy_demon
+attack_add 26 gray
+attack_add 3 atril
+attack_add 3 sy_demon
+call attackTargeting
+wait 500
+
+attack_do
+attack_clear
+train 7 ortu
+attack_add 7 ortu
+call attackTargeting
+wait 500
+
+attack_do
+attack_clear
+upgrade 3 z_missile_attack 30
+upgrade 3 z_carapace 30
+upgrade 3 z_melee_attack 30
+upgrade 3 z_flyer_carapace 30
+upgrade 3 z_flyer_attack 30
+upgrade 1 bone_mastery 30
+max_workers 255
+:taar_loop
+wait 2533
+
+train 40 gray
+train 4 atril
+attack_add 4 atril
+attack_add 40 gray
+call attackTargeting
+wait 500
+
+attack_do
+attack_clear
+wait 2750
+
+train 8 sy_demon
+train 7 ortu
+attack_add 7 ortu
+attack_add 8 sy_demon
+call attackTargeting
+wait 500
+
+attack_do
+attack_clear
+wait 3250
+
+train 6 sy_demon
+attack_add 6 sy_demon
+call attackTargeting
+wait 500
+
+attack_do
+attack_clear
+train 28 gray
+train 6 ortu
+train 3 atril
+attack_add 3 atril
+attack_add 28 gray
+attack_add 6 ortu
+call attackTargeting
+wait 500
+
+attack_do
+attack_clear
+goto taar_loop
+
+:aggressive_growth
+wait_rand 5560 7650
+wait 16
+
+expand 5 taar_expansion
+goto aggressive_growth
+
+:taar_expansion
+start_town
+build 1 hatchery 100
+get_oldpeons 1
+wait_build 1 hatchery
+build 3 drone 80
+build 2 creep_colony 80
+wait_buildstart 1 creep_colony
+build 1 psi_dominator 100
+build 15 drone 80
+wait_build 1 psi_dominator
+build 2 xenowort 80
+build 2 spore_colony 80
+place_guard gray 0
+place_guard gray 2
+:idle_loop
+wait 1500
+
+goto idle_loop
+
+:attackTargeting
+bring_jump 14 AtMost 0 group_buildings Loc.17 targeting_mid_enabled
+unstart_campaign
+attack_prepare
+start_campaign
+return
+
+:targeting_mid_enabled
+random_jump 64 go_through_mid
+attack_prepare
+return
+
+:go_through_mid
+attack_to Loc.13 Loc.16
+return
