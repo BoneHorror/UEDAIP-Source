@@ -26860,7 +26860,7 @@ PlasmaExplosionHitDeath:
 	playfram       	0
 	playsnd        	7	# Misc\ExploLrg.wav
 	wait           	1
-	#domissiledmg   	
+	if bullet.weapon_id == 163 call PlasmaDoMissileDmg   	
 	playfram       	1
 	wait           	1
 	playfram       	2
@@ -26893,7 +26893,7 @@ PlasmaVar1Death:
 	playfram       	14
 	playsnd        	7	# Misc\ExploLrg.wav
 	wait           	1
-	#domissiledmg   	
+	if bullet.weapon_id == 163 call PlasmaDoMissileDmg    	
 	playfram       	15
 	wait           	1
 	playfram       	16
@@ -26926,7 +26926,7 @@ PlasmaVar2Death:
 	playfram       	28
 	playsnd        	7	# Misc\ExploLrg.wav
 	wait           	1
-	#domissiledmg   	
+	if bullet.weapon_id == 163 call PlasmaDoMissileDmg   	
 	playfram       	29
 	wait           	1
 	playfram       	30
@@ -26955,6 +26955,10 @@ PlasmaVar2Death:
 	wait           	1
 	end
 
+PlasmaDoMissileDmg:
+	domissiledmg
+	return
+	
 # ----------------------------------------------------------------------------- #
 # This header is used by images.dat entries:
 # 151 Gorrem (neutral/Gorrem.grp) - frames 135 onwards are non-directional
@@ -26987,7 +26991,7 @@ WarpIn         	[NONE]
 
 GorremInit:
 	wait			2
-	imgul          	1012 0 42	# GorremShad (neutral\Gorremsha.grp)
+	imgul          	1012 0 0	# GorremShad (neutral\Gorremsha.grp)
 GorremWalkingToIdle:
 	playfram       	0x00	# frame set 1
 GorremRotate:
@@ -27033,17 +27037,26 @@ GorremAltDeath:
 GorremGndAttkInit:
 	playfram       	0x00	# frame set 0
 	wait           	1
+	playfram       	0x44	# frame set 8
+	wait           	2
 GorremGndAttkRpt:
-	playsndrand    	3 1154 1155 1157	# Taar/Gorrem1ACK.WAV Taar/Gorrem2ACK.WAV Taar/GorremSEL.WAV
+	#playsndrand    	3 1154 1155 1157	# Taar/Gorrem1ACK.WAV Taar/Gorrem2ACK.WAV Taar/GorremSEL.WAV
 	playfram       	0x55	# frame set 8
 	wait           	2
 	nobrkcodestart 	
-	wait           	4
+	wait           	1
 	playfram       	0x66	# frame set 3
-	wait           	4
+	wait           	2
 	playfram       	0x77	# frame set 4
+	playfram       	0x88	# frame set 4
+	wait           	2
+	playfram       	0x99	# frame set 3
+	wait           	3
+	playfram       	0xaa	# frame set 4
 	attackwith		1
-	wait           	8
+	wait			3
+	playfram       	0xbb	# frame set 4
+	wait			2
 	playfram       	0x66	# frame set 4
 	wait           	2
 	playfram       	0x55	# frame set 0
@@ -27051,7 +27064,7 @@ GorremGndAttkRpt:
 	gotorepeatattk 	
 	ignorerest     	   		
 GorremGndAttkToIdle:
-	
+	wait			1
 	goto           	GorremWalkingToIdle
 
 GorremWalking:
