@@ -26956,6 +26956,156 @@ PlasmaVar2Death:
 	end
 
 # ----------------------------------------------------------------------------- #
+# This header is used by images.dat entries:
+# 151 Gorrem (neutral/Gorrem.grp) - frames 135 onwards are non-directional
+.headerstart
+IsId           	419
+Type           	21
+Init           	GorremInit
+Death          	GorremDeath
+GndAttkInit    	GorremGndAttkInit
+AirAttkInit    	[NONE]
+Unused1        	[NONE]
+GndAttkRpt     	GorremGndAttkRpt
+AirAttkRpt     	GorremGndAttkRpt
+CastSpell      	GorremCastSpell
+GndAttkToIdle  	GorremGndAttkToIdle
+AirAttkToIdle  	GorremGndAttkToIdle
+Unused2        	[NONE]
+Walking        	GorremWalking
+WalkingToIdle  	GorremWalkingToIdle
+SpecialState1  	[NONE]
+SpecialState2  	[NONE]
+AlmostBuilt    	[NONE]
+Built          	[NONE]
+Landing        	[NONE]
+LiftOff        	[NONE]
+IsWorking      	[NONE]
+WorkingToIdle  	[NONE]
+WarpIn         	[NONE]
+.headerend
+
+GorremInit:
+	wait			2
+	imgul          	1012 0 42	# GorremShad (neutral\Gorremsha.grp)
+GorremWalkingToIdle:
+	playfram       	0x00	# frame set 1
+GorremRotate:
+	waitrand       	43 61
+	goto           	GorremRotate
+
+GorremDeath:
+	playsnd        	1156	# Taar/GorremDEA.WAV TODO
+	randcondjmp		128 GorremAltDeath
+	setfldirect    	0
+	playfram       	0x88	# frame set 8
+	wait           	1
+	playfram       	0x89	# frame set 8
+	wait           	1
+	playfram       	0x8a	# frame set 8
+	wait           	1
+	playfram       	0x8b	# frame set 8
+	wait           	1
+	playfram       	0x8c	# frame set 8
+	wait           	1
+	playfram       	0x8d	# frame set 8
+	wait           	1
+	playfram       	0x8e	# frame set 8
+	wait           	1
+	end            	
+
+GorremAltDeath:
+	setfldirect    	0
+	playfram       	0x8f	# frame set 8
+	wait           	1
+	playfram       	0x90	# frame set 8
+	wait           	1
+	playfram       	0x91	# frame set 8
+	wait           	1
+	playfram       	0x92	# frame set 8
+	wait           	1
+	playfram       	0x93	# frame set 8
+	wait           	1
+	playfram       	0x94	# frame set 8
+	wait           	1
+	end           
+	
+GorremGndAttkInit:
+	playfram       	0x00	# frame set 0
+	wait           	1
+GorremGndAttkRpt:
+	playsndrand    	3 1154 1155 1157	# Taar/Gorrem1ACK.WAV Taar/Gorrem2ACK.WAV Taar/GorremSEL.WAV
+	playfram       	0x55	# frame set 8
+	wait           	2
+	nobrkcodestart 	
+	wait           	4
+	playfram       	0x66	# frame set 3
+	wait           	4
+	playfram       	0x77	# frame set 4
+	attackwith		1
+	wait           	8
+	playfram       	0x66	# frame set 4
+	wait           	2
+	playfram       	0x55	# frame set 0
+	nobrkcodeend   	
+	gotorepeatattk 	
+	ignorerest     	   		
+GorremGndAttkToIdle:
+	
+	goto           	GorremWalkingToIdle
+
+GorremWalking:
+	playfram       	0x11	# frame set 1
+	move           	6
+	wait           	1
+	playfram       	0x11	# frame set 1
+	move           	6
+	wait           	1
+	playfram       	0x22	# frame set 2
+	move           	4
+	wait           	1
+	playfram       	0x22	# frame set 2
+	move           	4
+	wait           	1
+	playfram       	0x33	# frame set 3
+	move           	5
+	wait           	1
+	playfram       	0x33	# frame set 3
+	move           	5
+	wait           	1
+	playfram       	0x44	# frame set 4
+	move           	3
+	wait           	1
+	playfram       	0x44	# frame set 5
+	move           	3
+	wait           	1
+	playfram       	0x55	# frame set 4
+	move           	4
+	wait           	1
+	playfram       	0x55	# frame set 5
+	move           	4
+	wait			1
+	goto           	GorremWalking
+
+GorremCastSpell: #TODO
+	playfram       	0x77	# frame set 8
+	wait           	2
+	nobrkcodestart 
+	print Firing
+	fireweapon 149
+	print Fired
+	wait           	1
+	playfram       	0x33	# frame set 3
+	wait           	2
+	playfram       	0x44	# frame set 4
+	wait           	2
+	playfram       	0x55	# frame set 5
+	wait           	2
+	playfram       	0x66	# frame set 6
+	nobrkcodeend   	
+	gotorepeatattk 	
+	goto           	GorremGndAttkToIdle
+# ----------------------------------------------------------------------------- #
 # ------------------------------------------------------------------------------ #
 # LONG JUMPS (these are usually shared routines between many animations)         #
 # ------------------------------------------------------------------------------ #
