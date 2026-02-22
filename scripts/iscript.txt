@@ -27065,6 +27065,8 @@ GorremGndAttkRpt:
 	ignorerest     	   		
 GorremGndAttkToIdle:
 	wait			1
+	playfram       	0x00	# frame set 0
+	wait           	1
 	goto           	GorremWalkingToIdle
 
 GorremWalking:
@@ -27153,7 +27155,6 @@ GorremCastSpell:
 	call GorremWriteDir
 	playfram       	291-dir
 	wait           	2
-	setfldirect		12
 	playfram		0x00
 	set spritelocal dir = 0
 	nobrkcodeend   	
@@ -27197,10 +27198,7 @@ GorremStealCash:
 	call GorremWriteDir
 	playfram       	298-dir
 	wait           	3
-	set game.minerals(player) = game.minerals(player)+25
-	set game.gas(player) = game.gas(player)+25
-	set game.minerals(unit.target.player default 11) = game.minerals(unit.target.player default 11)-25
-	set game.gas(unit.target.player default 11) = game.gas(unit.target.player default 11)-25
+	call GorremEnemyCash
 	call GorremWriteDir
 	playfram       	297-dir
 	wait           	2
@@ -27222,12 +27220,27 @@ GorremStealCash:
 	call GorremWriteDir
 	playfram       	291-dir
 	wait           	2
-	setfldirect		12
 	playfram		0x00
 	set spritelocal dir = 0
 	nobrkcodeend
 	gotorepeatattk 	
 	goto           	GorremGndAttkToIdle
+
+GorremEnemyCash:
+	if game.minerals(unit.target.player default 11) > 25 goto GorremStealMinerals
+	if game.gas(unit.target.player default 11) > 25 goto GorremStealGas
+	return
+	
+GorremStealMinerals:
+	set game.minerals(unit.target.player default 11) = game.minerals(unit.target.player default 11)-25
+	set game.minerals(player) = game.minerals(player)+25
+	if game.gas(unit.target.player default 11) > 25 goto GorremStealGas
+	return
+
+GorremStealGas:
+	set game.gas(unit.target.player default 11) = game.gas(unit.target.player default 11)-25
+	set game.gas(player) = game.gas(player)+25
+	return
 	
 
 	
