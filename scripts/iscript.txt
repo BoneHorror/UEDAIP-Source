@@ -27101,23 +27101,55 @@ GorremWalking:
 	goto           	GorremWalking
 
 GorremCastSpell: #TODO
-	playfram       	0x77	# frame set 8
-	wait           	2
 	nobrkcodestart 
-	print Firing
-	fireweapon 149
-	print Fired
-	wait           	1
-	playfram       	0x33	# frame set 3
+	setfldirect		0
+	playfram       	290
+	wait           	3
+	playfram       	291
+	wait           	3
+	playfram       	292
+	wait           	3
+	playfram       	293
+	wait           	3
+	playfram       	294
+	wait           	3
+	playfram       	295
+	wait           	3
+	playfram       	296
+	wait           	3
+	playfram       	297
+	wait           	3
+	playfram       	298
+	wait           	3
+	if game.alliance(unit.player, unit.target.player) == 0 default false goto GorremStealCash
+GorremStealReturn:
+	playfram       	297
 	wait           	2
-	playfram       	0x44	# frame set 4
+	playfram       	296
 	wait           	2
-	playfram       	0x55	# frame set 5
+	playfram       	295
 	wait           	2
-	playfram       	0x66	# frame set 6
+	playfram       	294
+	wait           	2
+	playfram       	293
+	wait           	2
+	playfram       	292
+	wait           	2
+	playfram       	291
+	wait           	2
+	setfldirect		12
+	playfram		0x00
 	nobrkcodeend   	
 	gotorepeatattk 	
 	goto           	GorremGndAttkToIdle
+	
+GorremStealCash:
+	set game.minerals(player) = game.minerals(player)+25
+	set game.gas(player) = game.gas(player)+25
+	set game.minerals(unit.target.player default 11) = game.minerals(unit.target.player default 11)-25
+	set game.gas(unit.target.player default 11) = game.gas(unit.target.player default 11)-25
+	goto GorremStealReturn
+	
 # ----------------------------------------------------------------------------- #
 # ------------------------------------------------------------------------------ #
 # LONG JUMPS (these are usually shared routines between many animations)         #
