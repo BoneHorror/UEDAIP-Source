@@ -27100,55 +27100,136 @@ GorremWalking:
 	wait			1
 	goto           	GorremWalking
 
-GorremCastSpell: #TODO
-	nobrkcodestart 
-	setfldirect		0
-	playfram       	290
+GorremCastSpell:
+	if (game.alliance(unit.player, unit.target.player) == 0 default true) && (unit.target.player < 8 default false) && (unit.target.player != unit.player default false) goto GorremStealCash
+	nobrkcodestart
+	call GorremWriteDir
+	playfram       	290-dir
 	wait           	3
-	playfram       	291
+	call GorremWriteDir
+	playfram       	291-dir
 	wait           	3
-	playfram       	292
+	call GorremWriteDir
+	playfram       	292-dir
 	wait           	3
-	playfram       	293
+	call GorremWriteDir
+	playfram       	293-dir
 	wait           	3
-	playfram       	294
+	call GorremWriteDir
+	playfram       	294-dir
 	wait           	3
-	playfram       	295
+	call GorremWriteDir
+	playfram       	295-dir
 	wait           	3
-	playfram       	296
+	call GorremWriteDir
+	playfram       	296-dir
 	wait           	3
-	playfram       	297
+	call GorremWriteDir
+	playfram       	297-dir
 	wait           	3
-	playfram       	298
+	call GorremWriteDir
+	playfram       	298-dir
 	wait           	3
-	if game.alliance(unit.player, unit.target.player) == 0 default false goto GorremStealCash
-GorremStealReturn:
-	playfram       	297
+	set game.minerals(player) = game.minerals(player)+10
+	set game.gas(player) = game.gas(player)+10
+	call GorremWriteDir
+	playfram       	297-dir
 	wait           	2
-	playfram       	296
+	call GorremWriteDir
+	playfram       	296-dir
 	wait           	2
-	playfram       	295
+	call GorremWriteDir
+	playfram       	295-dir
 	wait           	2
-	playfram       	294
+	call GorremWriteDir
+	playfram       	294-dir
 	wait           	2
-	playfram       	293
+	call GorremWriteDir
+	playfram       	293-dir
 	wait           	2
-	playfram       	292
+	call GorremWriteDir
+	playfram       	292-dir
 	wait           	2
-	playfram       	291
+	call GorremWriteDir
+	playfram       	291-dir
 	wait           	2
 	setfldirect		12
 	playfram		0x00
+	set spritelocal dir = 0
 	nobrkcodeend   	
 	gotorepeatattk 	
 	goto           	GorremGndAttkToIdle
+
+GorremWriteDir:
+	set spritelocal dir = (flingy.facing_direction_bw + 4) / 8
+	if (dir > 16) goto GorremDirLarge
+	return
+	
+GorremDirLarge:
+	set spritelocal dir = 32 - dir
+	return
 	
 GorremStealCash:
+	call GorremWriteDir
+	playfram       	290-dir
+	wait           	3
+	call GorremWriteDir
+	playfram       	291-dir
+	wait           	3
+	call GorremWriteDir
+	playfram       	292-dir
+	wait           	3
+	call GorremWriteDir
+	playfram       	293-dir
+	wait           	3
+	call GorremWriteDir
+	playfram       	294-dir
+	wait           	3
+	call GorremWriteDir
+	playfram       	295-dir
+	wait           	3
+	call GorremWriteDir
+	playfram       	296-dir
+	wait           	3
+	call GorremWriteDir
+	playfram       	297-dir
+	wait           	3
+	call GorremWriteDir
+	playfram       	298-dir
+	wait           	3
 	set game.minerals(player) = game.minerals(player)+25
 	set game.gas(player) = game.gas(player)+25
 	set game.minerals(unit.target.player default 11) = game.minerals(unit.target.player default 11)-25
 	set game.gas(unit.target.player default 11) = game.gas(unit.target.player default 11)-25
-	goto GorremStealReturn
+	call GorremWriteDir
+	playfram       	297-dir
+	wait           	2
+	call GorremWriteDir
+	playfram       	296-dir
+	wait           	2
+	call GorremWriteDir
+	playfram       	295-dir
+	wait           	2
+	call GorremWriteDir
+	playfram       	294-dir
+	wait           	2
+	call GorremWriteDir
+	playfram       	293-dir
+	wait           	2
+	call GorremWriteDir
+	playfram       	292-dir
+	wait           	2
+	call GorremWriteDir
+	playfram       	291-dir
+	wait           	2
+	setfldirect		12
+	playfram		0x00
+	set spritelocal dir = 0
+	nobrkcodeend
+	gotorepeatattk 	
+	goto           	GorremGndAttkToIdle
+	
+
 	
 # ----------------------------------------------------------------------------- #
 # ------------------------------------------------------------------------------ #
