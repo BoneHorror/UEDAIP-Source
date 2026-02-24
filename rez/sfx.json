@@ -12844,7 +12844,7 @@
 			"ID": "SND_ATRILSEL"  
 		  },
 		  {
-			"filePath": "Taar/ATRL1LACK.WAV",
+			"filePath": "Taar/ATRL1ACK.WAV",
 			"priority": 1,
 			"preload": "false",
 			"unitSpeech": "false",
@@ -12852,7 +12852,7 @@
 			"neverPreempt": "false",
 			"lengthAdjust": 0,
 			"minVolume": 0,
-			"ID": "SND_ATR1LACK"  
+			"ID": "SND_ATRL1ACK"  
 		  },
 		  {
 			"filePath": "Taar/GRAY1ACK.WAV",
