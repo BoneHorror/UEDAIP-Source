@@ -12943,17 +12943,6 @@
 			"ID": "SND_PSY1SEL"  
 		  },
 		  {
-			"filePath": "Taar/PSY2NDFL.WAV",
-			"priority": 1,
-			"preload": "false",
-			"unitSpeech": "false",
-			"oneAtATime": "false",
-			"neverPreempt": "false",
-			"lengthAdjust": 0,
-			"minVolume": 0,
-			"ID": "SND_PSY2NDFL"  
-		  },
-		  {
 			"filePath": "Taar/PSY2SEL.WAV",
 			"priority": 1,
 			"preload": "false",
@@ -12963,6 +12952,17 @@
 			"lengthAdjust": 0,
 			"minVolume": 0,
 			"ID": "SND_PSY2SEL"  
+		  },
+		  {
+			"filePath": "Taar/PSY2NDFL.WAV",
+			"priority": 1,
+			"preload": "false",
+			"unitSpeech": "false",
+			"oneAtATime": "false",
+			"neverPreempt": "false",
+			"lengthAdjust": 0,
+			"minVolume": 0,
+			"ID": "SND_PSY2NDFL"  
 		  },
 		  {
 			"filePath": "Taar/PSYACK.WAV",

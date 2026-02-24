@@ -26999,39 +26999,57 @@ GorremRotate:
 	goto           	GorremRotate
 
 GorremDeath:
-	playsnd        	1156	# Taar/GorremDEA.WAV TODO
+	playsnd        	1176	# Taar/GorremDEA.WAV
 	randcondjmp		128 GorremAltDeath
 	setfldirect    	0
-	playfram       	0x88	# frame set 8
-	wait           	1
-	playfram       	0x89	# frame set 8
-	wait           	1
-	playfram       	0x8a	# frame set 8
-	wait           	1
-	playfram       	0x8b	# frame set 8
-	wait           	1
-	playfram       	0x8c	# frame set 8
-	wait           	1
-	playfram       	0x8d	# frame set 8
-	wait           	1
-	playfram       	0x8e	# frame set 8
-	wait           	1
+	playfram       	238
+	wait           	2
+	playfram       	239
+	wait           	2
+	playfram       	240
+	wait           	2
+	playfram       	241
+	wait           	2
+	playfram       	242
+	wait           	2
+	playfram       	243
+	wait           	2
+	playfram       	244
+	wait           	2
+	playfram       	245
+	wait           	2
+	playfram       	246
+	wait           	2
+	playfram       	247
+	wait           	2
+	playfram       	248
+	wait           	2
 	end            	
 
 GorremAltDeath:
 	setfldirect    	0
-	playfram       	0x8f	# frame set 8
-	wait           	1
-	playfram       	0x90	# frame set 8
-	wait           	1
-	playfram       	0x91	# frame set 8
-	wait           	1
-	playfram       	0x92	# frame set 8
-	wait           	1
-	playfram       	0x93	# frame set 8
-	wait           	1
-	playfram       	0x94	# frame set 8
-	wait           	1
+	playfram       	249
+	wait           	2
+	playfram       	250
+	wait           	2
+	playfram       	251
+	wait           	2
+	playfram       	252
+	wait           	2
+	playfram       	253
+	wait           	2
+	playfram       	254
+	wait           	2
+	playfram       	255
+	wait           	2
+	playfram       	256
+	wait           	2
+	playfram       	257
+	wait           	2
+	playfram       	258
+	wait           	2
+	playfram       	259
+	wait           	2
 	end           
 	
 GorremGndAttkInit:
@@ -27109,6 +27127,7 @@ GorremCastSpell:
 	playfram       	290-dir
 	wait           	3
 	call GorremWriteDir
+	playsnd			1177 #PsyDPLY
 	playfram       	291-dir
 	wait           	3
 	call GorremWriteDir
@@ -27176,6 +27195,7 @@ GorremStealCash:
 	wait           	3
 	call GorremWriteDir
 	playfram       	291-dir
+	playsnd			1177 #PsyDPLY
 	wait           	3
 	call GorremWriteDir
 	playfram       	292-dir
