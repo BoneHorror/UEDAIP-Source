@@ -12844,7 +12844,7 @@
 			"ID": "SND_ATRILSEL"  
 		  },
 		  {
-			"filePath": "Taar/ATR1LACK.WAV",
+			"filePath": "Taar/ATRL1LACK.WAV",
 			"priority": 1,
 			"preload": "false",
 			"unitSpeech": "false",
@@ -13150,7 +13150,95 @@
             "lengthAdjust": 0,
             "minVolume": 0,
             "ID": "SND_STARGATE_WHT"
-          }
+          },
+		  {
+			"filePath": "Taar/GCLAZER.WAV",
+			"priority": 1,
+			"preload": "false",
+			"unitSpeech": "false",
+			"oneAtATime": "false",
+			"neverPreempt": "false",
+			"lengthAdjust": 0,
+			"minVolume": 0,
+			"ID": "SND_GCLAZER"  
+		  },
+		  {
+			"filePath": "Taar/GCDPLY.WAV",
+			"priority": 1,
+			"preload": "false",
+			"unitSpeech": "false",
+			"oneAtATime": "false",
+			"neverPreempt": "false",
+			"lengthAdjust": 0,
+			"minVolume": 0,
+			"ID": "SND_GCDPLY"  
+		  },
+		  {
+			"filePath": "Taar/PSYCWEA.WAV",
+			"priority": 1,
+			"preload": "false",
+			"unitSpeech": "false",
+			"oneAtATime": "false",
+			"neverPreempt": "false",
+			"lengthAdjust": 0,
+			"minVolume": 0,
+			"ID": "SND_PSYCWEA"  
+		  },
+		  {
+			"filePath": "Taar/TOWERWEA.WAV",
+			"priority": 1,
+			"preload": "false",
+			"unitSpeech": "false",
+			"oneAtATime": "false",
+			"neverPreempt": "false",
+			"lengthAdjust": 0,
+			"minVolume": 0,
+			"ID": "SND_TOWERWEA"  
+		  },
+		  {
+			"filePath": "Taar/EXPLO.WAV",
+			"priority": 1,
+			"preload": "false",
+			"unitSpeech": "false",
+			"oneAtATime": "false",
+			"neverPreempt": "false",
+			"lengthAdjust": 0,
+			"minVolume": 0,
+			"ID": "SND_DCEXPLO"  
+		  },
+		  {
+			"filePath": "Taar/EXPLO1.WAV",
+			"priority": 1,
+			"preload": "false",
+			"unitSpeech": "false",
+			"oneAtATime": "false",
+			"neverPreempt": "false",
+			"lengthAdjust": 0,
+			"minVolume": 0,
+			"ID": "SND_DCEXPLO1"  
+		  },
+		  {
+			"filePath": "Taar/EXPLO2.WAV",
+			"priority": 1,
+			"preload": "false",
+			"unitSpeech": "false",
+			"oneAtATime": "false",
+			"neverPreempt": "false",
+			"lengthAdjust": 0,
+			"minVolume": 0,
+			"ID": "SND_DCEXPLO2"  
+		  },
+		  {
+			"filePath": "Taar/EXPLO3.WAV",
+			"priority": 1,
+			"preload": "false",
+			"unitSpeech": "false",
+			"oneAtATime": "false",
+			"neverPreempt": "false",
+			"lengthAdjust": 0,
+			"minVolume": 0,
+			"ID": "SND_DCEXPLO3"  
+		  },
         ]
       }
     },
