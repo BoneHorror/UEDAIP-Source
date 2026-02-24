@@ -14388,6 +14388,7 @@ XenowortAttkInit:
 	playfram		2
 	wait           	1
 XenowortAttkRpt: #Maybe add something on top of the appendage?
+	playsnd    		1195	# Taar/TurrATK.WAV
 	playfram		2
 	wait           	1
 	attack         	
@@ -26286,7 +26287,7 @@ GrayWalking:
 	goto           	GrayWalking
 
 GraySpecialRound:
-	playsndrand     3 1150 1152	1153 # Taar/GRAY1WEA, Taar/GRAY2WEA, Taar/GRAY3WEA
+	playsnd    		1192	# Taar/GcWea.WAV
 	if low_atk == 1 goto Gray_HighCast
 	set spritelocal low_atk = 2
 	playfram       	0xaa	# frame set 10
@@ -26831,7 +26832,7 @@ DungBombFall:
 	set flingy.movement_direction = 270
 	set flingy.turn_speed = 1
 DungBombDeath:
-	playsnd        	7	# Misc\ExploLrg.wav
+	playsndrand     4 1196 1197 1198 1199 # Taar/explo1, Taar/explo2, Taar/explo3
 	imgol          	332 0 0	# TerranBuildingExplosionsmall (thingy\tBangS.grp)
 	domissiledmg   	
 	wait           	1
@@ -26858,7 +26859,7 @@ PlasmaExplosionHitInit:
 	randcondjmp 128 PlasmaVar2Death
 PlasmaExplosionHitDeath:
 	playfram       	0
-	playsnd        	7	# Misc\ExploLrg.wav
+	#playsnd        	7	# Misc\ExploLrg.wav
 	wait           	1
 	if bullet.weapon_id == 163 call PlasmaDoMissileDmg   	
 	playfram       	1
@@ -26891,7 +26892,7 @@ PlasmaExplosionHitDeath:
 
 PlasmaVar1Death:
 	playfram       	14
-	playsnd        	7	# Misc\ExploLrg.wav
+	#playsnd        	7	# Misc\ExploLrg.wav
 	wait           	1
 	if bullet.weapon_id == 163 call PlasmaDoMissileDmg    	
 	playfram       	15
@@ -26924,7 +26925,7 @@ PlasmaVar1Death:
 	
 PlasmaVar2Death:
 	playfram       	28
-	playsnd        	7	# Misc\ExploLrg.wav
+	#playsnd        	7	# Misc\ExploLrg.wav
 	wait           	1
 	if bullet.weapon_id == 163 call PlasmaDoMissileDmg   	
 	playfram       	29
@@ -27058,7 +27059,7 @@ GorremGndAttkInit:
 	playfram       	0x44	# frame set 8
 	wait           	2
 GorremGndAttkRpt:
-	#playsndrand    	3 1154 1155 1157	# Taar/Gorrem1ACK.WAV Taar/Gorrem2ACK.WAV Taar/GorremSEL.WAV
+	playsnd    		1194	# Taar/PsycATK.WAV
 	playfram       	0x55	# frame set 8
 	wait           	2
 	nobrkcodestart 	
