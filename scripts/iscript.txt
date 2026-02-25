@@ -26522,7 +26522,7 @@ AtrilDeath:
 	imgol          	60 0 0	# ZergBuildingDeath (thingy\zBldDthS.grp)
 	playsnd         1147	# Taar/AtrilDea.WAV
 	setfldirect    	0
-	if upgrade(player, 83) == 0 call AtrilDeaSurprise
+	if upgrade(player, 83) == 1 call AtrilDeaSurprise
 	randcondjmp		128	AtrilAltDeath
 	playfram       	0xCC	# frame set 8
 	wait           	1
