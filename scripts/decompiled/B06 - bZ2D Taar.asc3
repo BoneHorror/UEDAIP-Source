@@ -12,6 +12,8 @@ wait 1
 notowns_jump hive red_defender
 multirun taar_upgrades
 unit_avail 13 Set Disabled spawnsire taar_idle
+#set magenta player color
+upgrade_jump 13 Set 81 1 taar_loop
 define_max 12 broodling
 define_max 255 spawnsire
 define_max 8 scourge
