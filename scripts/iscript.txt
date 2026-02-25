@@ -26755,7 +26755,7 @@ BlasterDeath:
 	end            	
 
 BlasterBoltDeath:
-	imgol          	531 0 0	# HKExplod
+	imgol          	440 0 0	# (thingy\efgHit.grp)
 	domissiledmg   	
 	wait           	1
 	end            	
