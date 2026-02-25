@@ -1,5 +1,5 @@
-script_name Brood Wars Zerg 3 - Town A
-script_id ZB3A
+script_name Brood Wars Zerg 5 - Town C
+script_id ZB5C
 
 start_campaign
 wait 1
@@ -21,7 +21,7 @@ build 3 xenowort 80
 build 2 creep_colony 80
 build 2 spore_colony 80
 #set magenta player color
-upgrade_jump 13 Set 81 1 taar_loop
+upgrade_jump 13 Set 81 3 taar_loop
 define_max 45 drone
 define_max 1 queen
 define_max 3 defiler
