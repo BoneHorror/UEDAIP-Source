@@ -50,7 +50,7 @@ defensebuild_ag 1 hhydralisk
 defenseuse_ag 1 hhydralisk
 defensebuild_ga 1 mutalisk
 defenseuse_ga 1 mutalisk
-attack_add 3 hydralisk
+attack_add 4 hydralisk
 attack_to Loc.21 Loc.18
 wait 500
 
@@ -74,7 +74,7 @@ idle_orders 146 0 1 queen 1024 dragoon|corsair|scout|dark_templar|wraith|ghost|s
 idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|dragoon|corsair|scout|dark_archon|devourer|guardian|dark_templar|goliath|siege_tank|revenant|death_knight|panzer 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 50))
 idle_orders 146 0 1 queen 1024 reaver|dark_archon|archon|devourer|guardian|hnorad|battlecruiser|valhalla|carrier|arbiter 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 45))
 idle_orders 146 32 1 queen 312 group_men 30 deathrattle
-wait 2625
+wait 2225
 
 attack_add 3 hydralisk
 attack_add 3 hhydralisk

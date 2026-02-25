@@ -52,6 +52,7 @@ upgrade 1 overlord_capacity 30
 max_workers 45
 wait 1040
 
+
 train 14 gray
 attack_add 14 gray
 attack_to Loc.7 Loc.8
@@ -88,8 +89,10 @@ idle_orders 119 64 1 atril 256 group_men 110 count(AtLeast 4 106 14)|WithoutUnit
 idle_orders 119 64 1 atril 256 photon_cannon|sunken_colony|creep_colony|spore_colony|bunker|missile_turret|drone|probe|scv 100 count(AtLeast 2 106 14)
 wait 1750
 
+train 1 spawnsire
 train 6 ortu
 train 3 atril
+attack_add 1 spawnsire
 attack_add 6 ortu
 attack_add 3 atril
 attack_to Loc.7 Loc.8
@@ -137,10 +140,13 @@ upgrade 3 z_flyer_attack 30
 upgrade 1 bone_mastery 30
 max_workers 255
 :taar_loop
+train 1 spawnsire
 wait 2533
 
+train 2 spawnsire
 train 40 gray
 train 4 atril
+attack_add 2 spawnsire
 attack_add 4 atril
 attack_add 40 gray
 call attackTargeting

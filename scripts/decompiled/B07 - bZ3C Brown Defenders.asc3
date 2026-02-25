@@ -24,7 +24,7 @@ upgrade 1 zergling_speed 30
 upgrade 1 hydralisk_speed 30
 upgrade 1 hydralisk_range 30
 tech consume 30
-wait 3500
+wait 3300
 
 upgrade 1 z_missile_attack 30
 upgrade 1 z_carapace 30
@@ -38,7 +38,7 @@ idle_orders Consume 32 1 defiler 512 zergling 70 NotEnemies|Own|Health(LessThanP
 idle_orders Consume 32 1 defiler 512 broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
 idle_orders Consume 32 1 hdefiler 512 zergling 70 NotEnemies|Own|Health(LessThanPercent 80)|Self(Energy(LessThanPercent 50))
 idle_orders Consume 32 1 hdefiler 512 broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
-wait 3600
+wait 1700
 
 defensebuild_gg 2 zergling
 defenseuse_gg 2 zergling
@@ -64,14 +64,14 @@ idle_orders 119 64 1 defiler 512 lurker 50 own|allied|notenemies|incombat|Count(
 idle_orders 119 64 1 hdefiler 512 ultralisk 70 own|allied|notenemies|incombat
 idle_orders 119 64 1 hdefiler 512 zergling 30 own|allied|notenemies|incombat|Count(AtLeast 3 80 14)
 idle_orders 119 64 1 hdefiler 512 lurker 50 own|allied|notenemies|incombat|Count(AtLeast 2 80 14)
-wait 4500
+wait 4150
 
 
 defensebuild_gg 1 hdefiler
 defenseuse_gg 1 hdefiler
 tech plague 30
 upgrade 2 z_missile_attack 30
-attack_add 8 zergling
+attack_add 12 zergling
 attack_add 1 defiler
 attack_to Loc.20 Loc.19
 wait 300
@@ -79,7 +79,7 @@ wait 300
 attack_do
 attack_clear
 upgrade 1 ultralisk_speed 30
-wait 4500
+wait 2500
 
 defensebuild_gg 1 ultralisk
 defenseuse_gg 1 ultralisk
@@ -101,7 +101,7 @@ wait 300
 attack_do
 attack_clear
 upgrade 1 ultralisk_armor 30
-wait 5400
+wait 4400
 
 attack_add 8 zergling
 attack_add 6 hydralisk

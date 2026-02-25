@@ -79,11 +79,12 @@ wait 1500
 idle_orders 120 0 1 queen 1024 overlord|observer|science_vessel|defiler|skywing|dropship|shuttle|arbiter|valhalla|defiler|queen|ghost 30 WithoutSpellEffects(Parasite)|RandomRate(280 820)|Self(Energy(GreaterThanPercent 50))
 tech lurker_aspect 30
 multirun ask_for_help
-wait 5600
+train 4 mutalisk
+wait 3600
 
 defensebuild_gg 1 lurker
 defenseuse_gg 1 lurker
-attack_add 2 mutalisk
+attack_add 4 mutalisk
 attack_to Loc.14 Loc.18
 wait 500
 
@@ -94,7 +95,7 @@ upgrade 2 z_melee_attack 30
 upgrade 2 z_carapace 30
 upgrade 2 z_flyer_carapace 30
 upgrade 1 voracity 30
-wait 4500
+wait 4100
 
 idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|marine|vulture|heavy_marine|scorpion|gray 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 45))
 idle_orders 146 0 1 queen 1024 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 50))
@@ -102,7 +103,9 @@ idle_orders 146 0 1 queen 1024 dragoon|corsair|scout|dark_templar|wraith|ghost|s
 idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|dragoon|corsair|scout|dark_archon|devourer|guardian|dark_templar|goliath|siege_tank|revenant|death_knight|panzer|atril 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 50))
 idle_orders 146 0 1 queen 1024 reaver|dark_archon|archon|devourer|guardian|hnorad|battlecruiser|valhalla|carrier|arbiter|sy_demon 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 45))
 idle_orders 146 32 1 queen 312 group_men 30 deathrattle
-attack_add 2 lurker
+train 3 hydralisk
+train 3 lurker
+attack_add 3 lurker
 attack_to Loc.20 Loc.18
 wait 500
 
@@ -112,7 +115,7 @@ upgrade 2 z_missile_attack 30
 upgrade 2 z_flyer_attack 30
 upgrade 3 z_carapace 30
 upgrade 3 z_flyer_carapace 30
-wait 5000
+wait 4800
 
 attack_add 6 mutalisk
 call attackTargeting
