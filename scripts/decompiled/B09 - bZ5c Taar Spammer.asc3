@@ -13,7 +13,7 @@ build 15 drone 80
 build 1 hatchery 80
 build 1 spawning_pool 80
 build 1 evolution_chamber 80
-#set magenta player color
+#set lime player color
 upgrade_jump 13 Set 81 3 taar_loop
 define_max 45 drone
 define_max 255 queen
@@ -27,8 +27,6 @@ define_max 24 sy_demon
 define_max 8 ortu
 define_max 36 gray
 max_force 950
-upgrade 1 overlord_speed 30
-upgrade 1 overlord_capacity 30
 max_workers 45
 wait 1780
 
@@ -39,13 +37,13 @@ defenseuse_gg 2 gray
 defensebuild_ag 2 gray
 defenseuse_ag 2 gray
 build 2 psi_dominator 80
-build 3 xenowort 80
+build 1 xenowort 80
 build 4 creep_colony 80
 build 2 spore_colony 80
 build 2 sunken_colony 80
 train 3 sy_demon
 attack_add 3 sy_demon
-attack_to Loc.7 Loc.8
+attack_to Loc.50 Loc.51
 wait 500
 
 attack_do
@@ -58,6 +56,8 @@ upgrade 1 z_melee_attack 30
 wait 1250
 
 build 1 spire 80
+build 2 xenowort 80
+upgrade 1 overlord_speed 30
 upgrade 1 z_flyer_attack 30
 defensebuild_gg 1 ortu
 defenseuse_gg 1 ortu
@@ -68,11 +68,12 @@ defenseuse_aa 1 scourge
 build 3 psi_dominator 80
 train 10 gray
 attack_add 10 gray
-attack_to Loc.55 Loc.56
+attack_to Loc.56 Loc.57
 wait 500
 
 attack_do
 attack_clear
+upgrade 1 overlord_capacity 30
 multirun aggressive_growth
 upgrade 1 z_missile_attack 30
 upgrade 2 z_flyer_attack 30
@@ -87,6 +88,7 @@ idle_orders 119 64 1 atril 256 group_men 110 count(AtLeast 4 106 14)|WithoutUnit
 idle_orders 119 64 1 atril 256 photon_cannon|sunken_colony|creep_colony|spore_colony|bunker|missile_turret|drone|probe|scv 100 count(AtLeast 2 106 14)
 wait 1750
 
+build 3 xenowort 80
 train 2 spawnsire
 train 10 gray
 train 2 atril
@@ -94,7 +96,7 @@ train 18 gray
 attack_add 2 spawnsire
 attack_add 2 atril
 attack_add 18 gray
-call attackTargeting
+attack_to Loc.20 Loc.2
 wait 500
 
 attack_do
@@ -108,7 +110,7 @@ attack_do
 attack_clear
 build 1 hive 80
 build 2 queen_nest 80
-upgrade 1 82 30
+upgrade 1 gray_rounds 30
 #upgrade taar gray plasma overcharge - to add to defs later
 upgrade 1 z_flyer_carapace 30
 upgrade 2 z_melee_attack 30
@@ -144,11 +146,12 @@ wait 3050
 
 train 14 sy_demon
 attack_add 14 sy_demon
-attack_to Loc.7 Loc.8
+attack_to Loc.50 Loc.51
 wait 500
 
 attack_do
 attack_clear
+upgrade 1 atril_death 30
 upgrade 1 defiler_mana 30
 upgrade 3 z_missile_attack 30
 upgrade 3 z_carapace 30
@@ -251,5 +254,5 @@ attack_to Loc.50 Loc.55
 return
 
 :go_through_mid
-attack_to Loc.55 Loc.59
+attack_to Loc.56 Loc.59
 return
