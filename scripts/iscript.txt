@@ -26969,7 +26969,7 @@ Type           	21
 Init           	GorremInit
 Death          	GorremDeath
 GndAttkInit    	GorremGndAttkInit
-AirAttkInit    	[NONE]
+AirAttkInit    	GorremGndAttkInit
 Unused1        	[NONE]
 GndAttkRpt     	GorremGndAttkRpt
 AirAttkRpt     	GorremGndAttkRpt
