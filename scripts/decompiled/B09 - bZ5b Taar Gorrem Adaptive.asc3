@@ -47,6 +47,7 @@ defensebuild_gg 2 gray
 defenseuse_gg 2 gray
 defensebuild_ag 2 gray
 defenseuse_ag 2 gray
+expand 1 taar_expansion
 build 1 lair 80
 build 1 xenowort 80
 build 4 creep_colony 80
@@ -166,7 +167,7 @@ attack_clear
 upgrade 1 z_melee_attack 30
 upgrade 2 z_carapace 30
 upgrade 2 z_flyer_carapace 30
-wait 3050
+wait 2750
 
 train 4 gorrem
 train 4 sy_demon
@@ -210,7 +211,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 4050
+wait 3050
 
 train 20 gray
 train 7 gorrem
