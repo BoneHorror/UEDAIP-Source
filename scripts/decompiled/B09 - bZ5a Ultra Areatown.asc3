@@ -11,15 +11,14 @@ build 1 hatchery 80
 build 2 drone 80
 build 1 spawning_pool 80
 player_need 1 evolution_chamber
-build 1 lair 80
 player_need 1 queen_nest
 build 1 ultralisk_cavern 80
 build 1 defiler_mound 80
-build 6 creep_colony 80
-build 2 spore_colony 80
-build 4 sunken_colony 80
+build 2 creep_colony 80
+build 1 spore_colony 80
+build 1 sunken_colony 80
 max_workers 12
-wait 10500
+wait 11500
 
 call wait_attack
 call hold_attack
@@ -30,9 +29,10 @@ wait 500
 
 attack_do
 attack_clear
-build 5 drone 80
+build 3 drone 80
 call release_attack
-wait 6500
+upgrade 1 ultralisk_speed 30
+wait 7500
 
 call wait_attack
 call hold_attack
@@ -45,8 +45,18 @@ wait 500
 
 attack_do
 attack_clear
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defensebuild_ag 1 defiler
+defenseuse_ag 1 defiler
+build 4 creep_colony 80
+build 2 spore_colony 80
+build 2 sunken_colony 80
+build 1 lair 80
+build 1 hive 80
 build 12 drone 80
 call release_attack
+upgrade 1 voracity 30
 wait 8900
 
 call wait_attack
@@ -59,6 +69,9 @@ wait 500
 attack_do
 attack_clear
 call release_attack
+upgrade 1 ultralisk_armor 30
+build 6 creep_colony 80
+build 4 sunken_colony 80
 :purple_loop
 wait 6000
 

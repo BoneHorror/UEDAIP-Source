@@ -74,7 +74,6 @@ wait 500
 attack_do
 attack_clear
 upgrade 1 overlord_capacity 30
-multirun aggressive_growth
 upgrade 1 z_missile_attack 30
 upgrade 2 z_flyer_attack 30
 build 1 queen_nest 80
@@ -116,6 +115,7 @@ upgrade 1 z_flyer_carapace 30
 upgrade 2 z_melee_attack 30
 wait 2250
 
+multirun aggressive_growth
 build 1 defiler_mound 80
 defensebuild_ag 1 defiler
 defenseuse_ag 1 defiler

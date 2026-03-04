@@ -33,6 +33,8 @@ upgrade 1 overlord_capacity 30
 max_workers 45
 wait 1050
 
+multirun cr_loop
+multirun timer_mapside
 train 6 gray
 attack_add 6 gray
 attack_to Loc.56 Loc.57
@@ -72,13 +74,9 @@ defenseuse_ga 1 ortu
 defensebuild_aa 1 scourge
 defenseuse_aa 1 scourge
 build 2 psi_dominator 80
-train 4 ortu
-attack_add 4 ortu
-attack_to Loc.58 Loc.55
-wait 500
+goto opening_attack
 
-attack_do
-attack_clear
+:opening_return
 build 1 hive 80
 build 2 evolution_chamber 80
 upgrade 2 z_flyer_attack 30
@@ -150,34 +148,9 @@ idle_orders 119 64 1 gray 192 group_men 55 count(AtLeast 2 80 14)|WithoutUnitFla
 idle_orders 119 64 1 gray 192 group_men 70 count(AtLeast 3 80 14)|WithoutUnitFlags(Air)
 idle_orders 119 64 1 gray 192 group_men 110 count(AtLeast 4 80 14)|WithoutUnitFlags(Air)
 idle_orders 119 64 1 gray 192 zealot|zergling|marine|heavy_marine|scv|probe|drone 110 count(AtLeast 3 80 14)|WithoutUnitFlags(Air)
-train 6 ortu
-attack_add 6 ortu
-call attackTargeting
-wait 500
+goto midgame_attack
 
-attack_do
-attack_clear
-train 4 gorrem
-attack_add 4 gorrem
-attack_to Loc.20 Loc.2
-wait 500
-
-attack_do
-attack_clear
-upgrade 1 z_melee_attack 30
-upgrade 2 z_carapace 30
-upgrade 2 z_flyer_carapace 30
-wait 2750
-
-train 4 gorrem
-train 4 sy_demon
-attack_add 4 gorrem
-attack_add 4 sy_demon
-attack_to Loc.50 Loc.55
-wait 500
-
-attack_do
-attack_clear
+:midgame_return
 tech plague 30
 upgrade 2 z_melee_attack 30
 upgrade 3 z_carapace 30
@@ -282,3 +255,126 @@ return
 :go_through_mid
 attack_to Loc.55 Loc.59
 return
+
+:cr_loop
+wait 1
+
+wait_rand 133 650
+harass_location
+goto cr_loop
+
+:timer_mapside
+wait 1
+
+deaths 13 Exactly 0 battlecruiser timer_mapside
+deaths 13 Subtract 1 battlecruiser timer_mapside
+goto timer_mapside
+
+:opening_attack
+deaths 13 Set 1 wraith timer_mapside
+wait 5
+
+#set wraith death to ally to Orange for 50 frames
+rush 9 opening_noair
+train 4 ortu
+attack_add 4 ortu
+attack_to Loc.58 Loc.55
+:opening_execute
+wait 500
+
+attack_do
+attack_clear
+goto opening_return
+
+:opening_noair
+rush 27 opening_sy
+train 12 gray
+attack_add 12 gray
+attack_to Loc.50 Loc.51
+goto opening_execute
+
+:opening_sy
+train 4 sy_demon
+attack_add 4 sy_demon
+attack_to Loc.42 Loc.51
+goto opening_execute
+
+:midgame_attack
+deaths 13 Set 1 wraith timer_mapside
+wait 5
+
+call mid_first
+wait 500
+
+attack_do
+attack_clear
+call mid_second
+attack_to Loc.20 Loc.2
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 z_melee_attack 30
+upgrade 2 z_carapace 30
+upgrade 2 z_flyer_carapace 30
+wait 2750
+
+deaths 13 Set 1 wraith timer_mapside
+wait 5
+
+call mid_third
+attack_to Loc.50 Loc.55
+wait 500
+
+attack_do
+attack_clear
+goto midgame_return
+
+:mid_first
+rush 19 mf_alt1
+train 8 ortu
+attack_add 8 ortu
+attack_to Loc.58 Loc.51
+return
+
+:mf_alt1
+rush 29 mf_alt2
+train 27 gray
+attack_add 27 gray
+attack_to Loc.52 Loc.51
+return
+
+:mf_alt2
+train 6 sy_demon
+train 2 atril
+attack_add 6 sy_demon
+attack_add 2 atril
+attack_to Loc.50 Loc.51
+return
+
+:mid_second
+train 4 gorrem
+attack_add 4 gorrem
+return
+
+:mid_third
+rush 14 mt_alt1
+train 4 gorrem
+train 4 sy_demon
+attack_add 4 gorrem
+attack_add 4 sy_demon
+return
+
+:mt_alt1
+rush 10 mt_alt2
+train 4 gorrem
+train 6 ortu
+attack_add 4 gorrem
+attack_add 6 ortu
+return
+
+:mt_alt2
+train 6 gorrem
+attack_add 6 gorrem
+return
+

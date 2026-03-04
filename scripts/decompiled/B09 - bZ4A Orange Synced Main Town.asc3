@@ -13,7 +13,6 @@ build 1 hatchery 160
 build 1 lair 120
 build 1 hive 120
 build 1 drone 130
-build 14 drone 80
 build 1 spawning_pool 80
 player_need 1 evolution_chamber
 build 1 hydralisk_den 80
@@ -42,24 +41,12 @@ define_max 28 hydralisk
 define_max 10 hhydralisk
 define_max 3 lurker
 define_max 30 overlord
-defensebuild_gg 2 zergling
-defenseuse_gg 2 zergling
-defensebuild_gg 1 hzergling
-defenseuse_gg 1 hzergling
-defensebuild_gg 1 ultralisk
-defenseuse_gg 1 ultralisk
-defensebuild_gg 2 hydralisk
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
+defensebuild_gg 1 hydralisk
 defenseuse_gg 1 hydralisk
-defensebuild_gg 1 lurker
-defenseuse_gg 1 lurker
 defensebuild_ag 1 hydralisk
 defenseuse_ag 1 hydralisk
-defensebuild_ag 1 defiler
-defenseuse_ag 1 defiler
-defensebuild_ag 1 mutalisk
-defenseuse_ag 1 mutalisk
-defensebuild_ag 1 hhydralisk
-defenseuse_ag 1 hhydralisk
 defensebuild_ga 1 guardian
 defenseuse_ga 1 guardian
 defensebuild_ga 2 mutalisk
@@ -84,11 +71,12 @@ wait 1500
 upgrade 1 hydralisk_range 30
 wait 5600
 
+build 2 drone 80
 call wait_attack
 call hold_attack
 attack_add 1 guardian
-attack_to Loc.14 Loc.18
-#TODO attack through mid towards taar
+attack_add 6 zergling
+attack_to Loc.64 Loc.60
 wait 500
 
 attack_do
@@ -96,27 +84,29 @@ attack_clear
 upgrade 2 z_melee_attack 30
 upgrade 2 z_carapace 30
 upgrade 2 z_flyer_carapace 30
-upgrade 1 voracity 30
 call release_attack
 wait 5300
 
+build 5 drone 80
 upgrade 1 hydralisk_speed 30
 upgrade 2 z_missile_attack 30
 upgrade 2 z_flyer_attack 30
 upgrade 3 z_carapace 30
 upgrade 3 z_flyer_carapace 30
-wait 2500
+wait 4500
 
 call wait_attack
 call hold_attack
 attack_add 10 zergling
 attack_add 2 hydralisk
-#TODO attack player
-call waypointing
+attack_to Loc.42 Loc.51
 wait 500
 
 attack_do
 attack_clear
+build 14 drone 80
+defensebuild_gg 1 hzergling
+defenseuse_gg 1 hzergling
 tech spawn_broodling 30
 call release_attack
 wait 4205
@@ -126,21 +116,20 @@ call hold_attack
 upgrade 3 z_melee_attack 30
 upgrade 1 hydra_attack 30
 attack_add 9 hydralisk
-call waypointing
+attack_to Loc.64 Loc.60
 wait 500
 
 attack_do
 attack_clear
 upgrade 1 zergling_attack 30
 call release_attack
-wait 3500
+wait 4500
 
 call wait_attack
 call hold_attack
-#upgrade new zerg claw thingy TODO
 attack_add 2 hzergling
 attack_add 18 zergling
-call waypointing
+attack_to Loc.42 Loc.51
 wait 500
 
 attack_do
@@ -155,7 +144,8 @@ wait 5100
 call wait_attack
 call hold_attack
 attack_add 11 hydralisk
-attack_add 7 mutalisk
+attack_add 3 guardian
+attack_add 1 queen
 call waypointing
 wait 500
 
@@ -166,9 +156,10 @@ wait 3750
 
 call wait_attack
 call hold_attack
-attack_add 6 guardian
-attack_add 6 mutalisk
-attack_add 1 queen
+attack_add 6 hzergling
+attack_add 20 zergling
+attack_add 1 hdefiler
+
 call waypointing
 wait 500
 
@@ -179,7 +170,7 @@ wait 4500
 
 call wait_attack
 call hold_attack
-attack_add 28 hydralisk
+attack_add 14 hydralisk
 call waypointing
 wait 500
 

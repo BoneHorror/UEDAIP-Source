@@ -11,10 +11,9 @@ build 1 hatchery 80
 build 4 drone 80
 build 1 spawning_pool 80
 player_need 1 evolution_chamber
-build 1 lair 80
 build 2 spire 80
-build 4 creep_colony 80
-build 4 spore_colony 80
+build 1 creep_colony 80
+build 1 spore_colony 80
 max_workers 12
 wait 6500
 
@@ -40,10 +39,16 @@ wait 500
 
 attack_do
 attack_clear
+defensebuild_ag 1 mutalisk
+defenseuse_ag 1 mutalisk
 build 12 drone 80
 call release_attack
-wait 5100
+upgrade 1 zergling_burrow 30
+build 4 creep_colony 80
+build 4 spore_colony 80
+wait 7100
 
+build 1 lair 80
 call wait_attack
 call hold_attack
 train 10 zergling
@@ -56,8 +61,11 @@ wait 500
 attack_do
 attack_clear
 call release_attack
+defensebuild_gg 1 zergling
+defenseuse_gg 1 zergling
 wait 5000
 
+upgrade 1 zergling_attack 30
 :purple_loop
 wait 2250
 

@@ -58,6 +58,8 @@ attack_clear
 call release_attack
 wait 4050
 
+defensebuild_ag 1 hhydralisk
+defenseuse_ag 1 hhydralisk
 call wait_attack
 call hold_attack
 train 6 hhydralisk
@@ -68,6 +70,9 @@ wait 500
 attack_do
 attack_clear
 call release_attack
+defensebuild_gg 1 hydralisk
+defensebuild_gg 1 lurker
+defenseuse_gg 1 lurker
 build 1 nydus_canal 80
 wait 5000
 
