@@ -91,27 +91,27 @@ idle_orders 141 83 1 hsciencevessel 332 valkyrie 50 own|allied|notenemies|incomb
 idle_orders 141 83 1 hsciencevessel 332 devourer 40 own|allied|notenemies|incombat|Health(LessThanPercent 70)|Health(GreaterThanPercent 15)
 idle_orders 141 83 1 hsciencevessel 332 guardian 60 own|allied|notenemies|incombat|Health(LessThanPercent 70)|Health(GreaterThanPercent 15)
 #repeat of above for a science vessel clone unit thats used in attacks
-idle_orders 134 160 1 infested_terran 146 sunken_colony 80 incombat
+idle_orders 134 160 1 infested_terran 146 sunken_colony|bunker 80 incombat
 idle_orders 134 160 1 infested_terran 146 photon_cannon 70 incombat
 idle_orders 134 160 1 infested_terran 134 archon 50 incombat
 idle_orders 134 160 1 infested_terran 134 dark_archon 50 incombat
 idle_orders 134 160 1 infested_terran 134 ultralisk 50 incombat
-idle_orders 135 160 1 infested_terran 134 lurker 40 incombat|Invisible
+idle_orders 135 160 1 infested_terran 134 lurker|siege_tank 40 incombat|Invisible
 #infested terran attack overrides for priority targets
-idle_orders 135 160 1 infested_terran 118 zergling 30 incombat|count(AtLeast 6 60 14)
-idle_orders 135 160 1 infested_terran 118 hydralisk 40 incombat|count(AtLeast 3 60 14)
-idle_orders 135 160 1 infested_terran 118 zealot 40 incombat|count(AtLeast 3 60 14)
-idle_orders 135 160 1 infested_terran 118 dark_templar 50 incombat|Invisible|count(AtLeast 2 60 14)
+idle_orders 135 160 1 infested_terran 118 zergling|marine 30 incombat|count(AtLeast 6 60 14)
+idle_orders 135 160 1 infested_terran 118 hydralisk|goliath 40 incombat|count(AtLeast 3 60 14)
+idle_orders 135 160 1 infested_terran 118 zealot|goliath|siege_tank 40 incombat|count(AtLeast 3 60 14)
+idle_orders 135 160 1 infested_terran 118 dark_templar|ghost 50 incombat|Invisible|count(AtLeast 2 60 14)
 idle_orders 135 160 1 infested_terran 118 dragoon|revenant 40 incombat|Invisible|count(AtLeast 2 60 14)
 #infested terran attack overrides for groups of units
 idle_orders 134 160 1 infested_terran 118 reaver 40 incombat
 idle_orders 135 80 1 infested_terran 64 zergling|hydralisk|zealot|ultralisk|dark_templar|dark_archon|drone|sunken_colony|spore_colony|lurker|reaver|photon_cannon 110 Self(Health(LessThanPercent 50))
 #infested terran suicide override to pick anything decent on low health
-idle_orders 142 256 1 valhalla 1024 zergling|zealot 50 incombat|count(AtLeast 4 48 14)
-idle_orders 142 256 1 valhalla 1024 hydralisk|dark_templar 50 incombat|count(AtLeast 3 48 14)
+idle_orders 142 256 1 valhalla 1024 zergling|zealot|marine|firebat|vulture 50 incombat|count(AtLeast 4 48 14)
+idle_orders 142 256 1 valhalla 1024 hydralisk|dark_templar|goliath 50 incombat|count(AtLeast 3 48 14)
 idle_orders 142 512 1 valhalla 2048 lurker|revenant|reaver 80 incombat|count(AtLeast 2 48 14)
-idle_orders 142 512 1 valhalla 1536 mutalisk|scout|corsair 60 incombat|count(AtLeast 2 48 14)
-idle_orders 142 512 1 valhalla 1536 carrier|devourer|guardian|ultralisk|infested_terran 40 incombat
+idle_orders 142 512 1 valhalla 1536 mutalisk|scout|corsair|wraith 60 incombat|count(AtLeast 2 48 14)
+idle_orders 142 512 1 valhalla 1536 carrier|devourer|guardian|ultralisk|infested_terran|battlecruiser|science_vessel 40 incombat
 #UED-specific unit storm orders depending on count or priority
 idle_orders 92 256 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
 idle_orders 92 256 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
@@ -154,25 +154,25 @@ idle_orders 10 16 1 panzer 180 lurker|queen 120 Health(LessThan 50)
 idle_orders 10 16 1 panzer 180 zergling|zealot|hydralisk|dark_templar 120 count(AtLeast 3 48 14)
 idle_orders 10 16 2 panzer 210 drone|scv|probe 70 0
 idle_orders 10 16 2 panzer 210 drone|scv|probe 150 Count(AtLeast 3 60 14)
-idle_orders 10 16 1 valkyrie|valhalla 224 mutalisk|scout|corsair|scourge 110 count(AtLeast 4 60 14)
-idle_orders 10 16 3 valkyrie|valhalla 260 mutalisk|scout|corsair|scourge 135 count(AtLeast 4 60 14)
-idle_orders 10 16 1 valkyrie|valhalla 224 devourer 150 Count(AtLeast 3 60 14)
-idle_orders 10 16 2 valkyrie|valhalla 255 devourer 160 Count(AtLeast 3 60 14)
-idle_orders 10 16 3 valkyrie|valhalla 265 devourer 170 Count(AtLeast 3 60 14)
-idle_orders 10 16 4 valkyrie|valhalla 300 devourer 190 Count(AtLeast 3 60 14)
+idle_orders 10 16 1 valkyrie|valhalla 224 mutalisk|scout|corsair|scourge|wraith 110 count(AtLeast 4 60 14)
+idle_orders 10 16 3 valkyrie|valhalla 260 mutalisk|scout|corsair|scourge|wraith 135 count(AtLeast 4 60 14)
+idle_orders 10 16 1 valkyrie|valhalla 224 devourer|battlecruiser|science_vessel 150 Count(AtLeast 3 60 14)
+idle_orders 10 16 2 valkyrie|valhalla 255 devourer|battlecruiser|science_vessel 160 Count(AtLeast 3 60 14)
+idle_orders 10 16 3 valkyrie|valhalla 265 devourer|battlecruiser|science_vessel 170 Count(AtLeast 3 60 14)
+idle_orders 10 16 4 valkyrie|valhalla 300 devourer|battlecruiser|science_vessel 190 Count(AtLeast 3 60 14)
 idle_orders 10 16 1 valkyrie|valhalla 224 shuttle|observer|overlord 60 count(AtLeast 3 60 14)
 idle_orders 10 16 2 skywing 224 drone|scv|probe 70 0
 idle_orders 10 16 1 skywing 224 group_men 80 Count(AtLeast 3 50 14)|WithoutUnitFlags(Air)
 idle_orders 10 16 1 skywing 224 group_men 90 Count(AtLeast 5 50 14)|WithoutUnitFlags(Air)
 idle_orders 10 16 1 valhalla 224 group_men 80 Count(AtLeast 3 64 14)
 idle_orders 10 16 1 valhalla 224 group_men 90 Count(AtLeast 5 64 14)
-idle_orders 10 16 1 death_knight 224 ultralisk|dark_archon|reaver|sunken_colony|lurker 90 Health(GreaterThanPercent 50)
-idle_orders 10 16 1 death_knight 224 ultralisk|dark_archon|reaver|sunken_colony|lurker 100 Health(GreaterThanPercent 80)
-idle_orders 10 16 2 death_knight 255 ultralisk|dark_archon|reaver|sunken_colony|lurker 130 Health(GreaterThanPercent 70)
+idle_orders 10 16 1 death_knight 224 ultralisk|dark_archon|reaver|sunken_colony|lurker|siege_tank 90 Health(GreaterThanPercent 50)
+idle_orders 10 16 1 death_knight 224 ultralisk|dark_archon|reaver|sunken_colony|lurker|siege_tank 100 Health(GreaterThanPercent 80)
+idle_orders 10 16 2 death_knight 255 ultralisk|dark_archon|reaver|sunken_colony|lurker|siege_tank 130 Health(GreaterThanPercent 70)
 idle_orders 10 16 2 scorpion 224 drone|scv|probe 70 0
 idle_orders 10 16 1 scorpion 192 group_men 60 Health(LessThan 24)|WithoutUnitFlags(Air)
-idle_orders 10 16 1 scorpion 192 infested_terran|defiler|dark_archon|lurker|dark_templar 90 Health(LessThan 24)
-idle_orders 10 16 2 scorpion 224 infested_terran|defiler|dark_archon|lurker|dark_templar 90 Health(LessThan 48)
+idle_orders 10 16 1 scorpion 192 infested_terran|defiler|dark_archon|lurker|dark_templar|siege_tank 90 Health(LessThan 24)
+idle_orders 10 16 2 scorpion 224 infested_terran|defiler|dark_archon|lurker|dark_templar|siege_tank 90 Health(LessThan 48)
 idle_orders 10 16 1 vulture 192 group_men 60 Health(LessThan 10)
 idle_orders 10 16 1 hnorad 160 mutalisk|scout|corsair|scourge|devourer 80 Health(LessThan 30)
 idle_orders 10 16 9 mutalisk 180 heavy_marine|ghost|death_knight|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 90 Health(LessThan 82)
@@ -351,8 +351,8 @@ idle_orders 119 512 1 defiler 772 ultralisk 60 own|allied|notenemies|incombat
 idle_orders 119 512 1 defiler 772 hultralisk 80 own|allied|notenemies|incombat
 idle_orders 119 512 1 defiler 772 zergling 50 own|allied|notenemies|incombat|count(AtLeast 4 120 6)
 idle_orders 119 512 1 defiler 772 zergling 40 own|allied|notenemies|incombat|count(AtLeast 4 120 4)
-idle_orders 119 512 1 defiler 772 tesla_trooper 35 own|allied|notenemies|incombat|count(AtLeast 3 120 6)
-idle_orders 119 512 1 defiler 772 tesla_trooper 30 own|allied|notenemies|incombat|count(AtLeast 3 120 4)
+idle_orders 119 512 1 defiler 772 tesla_trooper|firebat 35 own|allied|notenemies|incombat|count(AtLeast 3 120 6)
+idle_orders 119 512 1 defiler 772 tesla_trooper|firebat 30 own|allied|notenemies|incombat|count(AtLeast 3 120 4)
 idle_orders 119 512 1 defiler 772 lurker|panzer 20 own|allied|notenemies|incombat
 #defiler dark swarm on priority units or groups of allied units
 train 2 death_knight
@@ -376,9 +376,9 @@ upgrade 1 hydralisk_speed 30
 upgrade 1 goliath_range 30
 wait 2525
 
-idle_orders 115 560 1 ghost 154 dragoon|scout 60 incombat|WithoutSpellEffects(Lockdown)|Health(GreaterThanPercent 70)
-idle_orders 115 560 1 ghost 154 shuttle|corsair 80 incombat|WithoutSpellEffects(Lockdown)|Health(GreaterThanPercent 50)
-idle_orders 115 560 1 ghost 192 reaver 90 incombat|WithoutSpellEffects(Lockdown)|Health(GreaterThanPercent 40)
+idle_orders 115 560 1 ghost 154 dragoon|scout|siege_tank|goliath 60 incombat|WithoutSpellEffects(Lockdown)|Health(GreaterThanPercent 70)
+idle_orders 115 560 1 ghost 154 shuttle|corsair|wraith 80 incombat|WithoutSpellEffects(Lockdown)|Health(GreaterThanPercent 50)
+idle_orders 115 560 1 ghost 192 reaver|battlecruiser|dropship|science_vessel 90 incombat|WithoutSpellEffects(Lockdown)|Health(GreaterThanPercent 40)
 #lockdown orders on enemy (protoss) robotics above certain health thresholds
 train 12 zergling
 train 2 death_knight
@@ -444,8 +444,8 @@ upgrade 3 t_infantry_weapon 30
 upgrade 3 t_vehicle_weapon 30
 wait 2995
 
-idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|dragoon 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 3 64 14)|RandomRate(460 1040)|InCombat|Self(Energy(GreaterThanPercent 75))
-idle_orders 146 0 1 queen 1512 corsair|scout|dark_templar 80 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(460 1040)|InCombat|Self(Energy(GreaterThanPercent 75))
+idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|dragoon|vulture|goliath 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 3 64 14)|RandomRate(460 1040)|InCombat|Self(Energy(GreaterThanPercent 75))
+idle_orders 146 0 1 queen 1512 corsair|scout|dark_templar|siege_tank 80 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(460 1040)|InCombat|Self(Energy(GreaterThanPercent 75))
 idle_orders 146 0 1 queen 1024 dark_archon|devourer|guardian|ultralisk 90 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(460 1040)|InCombat|Self(Energy(GreaterThanPercent 75))
 idle_orders 146 0 1 queen 512 dark_archon|overlord|shuttle|queen|defiler 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)|Self(Energy(GreaterThan 150))
 idle_orders 146 0 1 phantom 356 zealot|zergling|hydralisk|marine|vulture|heavy_marine|scorpion 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 45))
@@ -455,11 +455,11 @@ idle_orders 146 0 1 phantom 356 zealot|zergling|hydralisk|dragoon|corsair|scout|
 idle_orders 146 0 1 phantom 356 reaver|dark_archon|archon|devourer|guardian|hnorad|battlecruiser|valhalla|carrier|arbiter 70 WithoutSpellEffects(Ensnare)|Count(AtLeast 1 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 45))
 idle_orders 146 8 1 phantom 256 group_men 30 deathrattle
 #ensnare orders on clusters of units
-idle_orders Plague 160 1 defiler 1336 zealot|dark_templar|dragoon|hornet|corsair|zergling|hydralisk|mutalisk 60 WithoutSpellEffects(Plague)|Count(AtLeast 4 48 14)|InCombat|Hp(GreaterThanPercent 70)
-idle_orders Plague 160 1 defiler 1336 scout|carrier|devourer|guardian 70 WithoutSpellEffects(Plague)|Count(AtLeast 2 48 14)|InCombat|Hp(GreaterThanPercent 70)
-idle_orders Plague 160 1 defiler 1336 arbiter|archon|ultralisk 90 WithoutSpellEffects(Plague)|InCombat|Hp(GreaterThanPercent 70)
+idle_orders Plague 160 1 defiler 1336 zealot|dark_templar|dragoon|hornet|corsair|zergling|hydralisk|mutalisk|wraith|vulture|goliath 60 WithoutSpellEffects(Plague)|Count(AtLeast 4 48 14)|InCombat|Hp(GreaterThanPercent 70)
+idle_orders Plague 160 1 defiler 1336 scout|carrier|devourer|guardian|siege_tank 70 WithoutSpellEffects(Plague)|Count(AtLeast 2 48 14)|InCombat|Hp(GreaterThanPercent 70)
+idle_orders Plague 160 1 defiler 1336 arbiter|archon|ultralisk|battlecruiser|science_vessel 90 WithoutSpellEffects(Plague)|InCombat|Hp(GreaterThanPercent 70)
 idle_orders Plague 160 1 defiler 992 sunken_colony|spore_colony|lurker|reaver|photon_cannon 50 WithoutSpellEffects(Plague)|Hp(GreaterThanPercent 70)
-idle_orders Plague 160 1 defiler 256 drone|defiler|queen 40 WithoutSpellEffects(Plague)|Count(AtLeast 2 48 14)|Hp(GreaterThanPercent 70)
+idle_orders Plague 160 1 defiler 256 drone|defiler|queen|scv|marine|firebat 40 WithoutSpellEffects(Plague)|Count(AtLeast 2 48 14)|Hp(GreaterThanPercent 70)
 #plague orders on clusters of units, intentionally fairly inefficient thresholds
 idle_orders Plague 8 1 defiler 312 Any 30 deathrattle|Self(Energy(GreaterThan 150))|Hp(GreaterThanPercent 70)
 idle_orders Ensnare 8 1 queen 312 Any 30 deathrattle|Self(Energy(LessThan 150))
@@ -500,15 +500,15 @@ wait 4035
 
 idle_orders 121 160 1 queen 312 zergling 5 InCombat|Health(GreaterThanPercent 90)
 idle_orders 121 32 1 queen 652 hydralisk 40 InCombat|Health(GreaterThanPercent 90)
-idle_orders 121 8 1 queen 1024 lurker 50 InCombat|Health(GreaterThanPercent 60)
-idle_orders 121 8 1 queen 1216 ultralisk 80 InCombat|Health(GreaterThanPercent 50)
-idle_orders 121 8 1 queen 887 lurker 50 Health(GreaterThanPercent 60)
-idle_orders 121 8 1 queen 1024 ultralisk 80 Health(GreaterThanPercent 50)
-idle_orders 121 32 1 queen 448 zealot 30 InCombat|Health(GreaterThanPercent 90)
+idle_orders 121 8 1 queen 1024 lurker|goliath 50 InCombat|Health(GreaterThanPercent 60)
+idle_orders 121 8 1 queen 1216 ultralisk|siege_tank 80 InCombat|Health(GreaterThanPercent 50)
+idle_orders 121 8 1 queen 887 lurker|goliath 50 Health(GreaterThanPercent 60)
+idle_orders 121 8 1 queen 1024 ultralisk|siege_tank 80 Health(GreaterThanPercent 50)
+idle_orders 121 32 1 queen 448 zealot|vulture 30 InCombat|Health(GreaterThanPercent 90)
 idle_orders 121 32 1 queen 512 dragoon 40 InCombat|Health(GreaterThanPercent 90)
-idle_orders 121 8 1 queen 1024 high_templar 50 InCombat|Health(GreaterThanPercent 60)
+idle_orders 121 8 1 queen 1024 high_templar|ghost 50 InCombat|Health(GreaterThanPercent 60)
 idle_orders 121 16 1 queen 776 dark_templar 50 InCombat|Health(GreaterThanPercent 80)
-idle_orders 121 48 1 queen 252 drone 5 InCombat|Health(GreaterThanPercent 99)
+idle_orders 121 48 1 queen 252 drone|scv 5 InCombat|Health(GreaterThanPercent 99)
 #spawn broodling casting with divide between unit priority and health status
 idle_orders 146 8 1 queen 312 zergling|hydralisk|lurker|ultralisk|zealot|dragoon|dark_templar|high_templar|drone|defiler 30 deathrattle
 #panic spawn broodling on low hp

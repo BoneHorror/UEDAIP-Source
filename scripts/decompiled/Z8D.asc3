@@ -66,21 +66,21 @@ idle_orders Move 48 1 skywing|valkyrie 160 mutalisk 255 Health(GreaterThanPercen
 idle_orders Move 48 1 skywing|valkyrie 160 guardian|devourer 255 Health(GreaterThanPercent 20)|InCombat|Self(SpellEffects(Irradiate))
 idle_orders Move 48 1 skywing|valkyrie 160 zergling|hydralisk 255 Health(GreaterThanPercent 40)|InCombat|count(AtLeast 3 120 3)|Self(SpellEffects(Irradiate))
 idle_orders Move 48 1 vulture|scorpion 132 zergling|lurker|hydralisk|ultralisk|zealot|dark_templar 255 Health(GreaterThanPercent 20)|InCombat|Self(SpellEffects(Irradiate))
-idle_orders 134 900 1 infested_terran 2048 sunken_colony 50 incombat
+idle_orders 134 900 1 infested_terran 2048 sunken_colony|bunker 50 incombat
 idle_orders 134 1400 1 infested_terran 1024 photon_cannon 30 incombat
 idle_orders 134 160 1 infested_terran 336 archon 80 incombat
 idle_orders 134 160 1 infested_terran 336 dark_archon 50 incombat
 idle_orders 134 160 1 infested_terran 336 ultralisk 80 incombat
-idle_orders 135 160 1 infested_terran 512 lurker 50 incombat|invisible
-idle_orders 135 160 1 infested_terran 512 dark_templar 50 incombat|invisible
+idle_orders 135 160 1 infested_terran 512 lurker|siege_tank 50 incombat|invisible
+idle_orders 135 160 1 infested_terran 512 dark_templar|ghost 50 incombat|invisible
 idle_orders 135 0 0 infested_terran 32 Any 80 deathrattle
-idle_orders 134 160 2 infested_terran 2048 gateway 30 0|spelleffects(plague)
-idle_orders 134 160 2 infested_terran 2048 stargate 30 0|spelleffects(plague)
-idle_orders 134 160 2 infested_terran 2048 robotics_facility 30 0|spelleffects(plague)
-idle_orders 134 160 2 infested_terran 2048 hatchery 30 0|spelleffects(plague)
-idle_orders 134 160 2 infested_terran 2048 lair 30 0|spelleffects(plague)
-idle_orders 134 160 3 infested_terran 2048 hive 30 0|spelleffects(plague)
-idle_orders 134 160 1 infested_terran 2048 drone 30 0|spelleffects(parasite)
+idle_orders 134 160 2 infested_terran 2048 gateway|barracks 30 spelleffects(plague)
+idle_orders 134 160 2 infested_terran 2048 stargate|starport 30 spelleffects(plague)
+idle_orders 134 160 2 infested_terran 2048 robotics_facility|factory 30 spelleffects(plague)
+idle_orders 134 160 2 infested_terran 2048 hatchery 30 spelleffects(plague)
+idle_orders 134 160 2 infested_terran 2048 lair 30 spelleffects(plague)
+idle_orders 134 160 3 infested_terran 2048 hive 30 spelleffects(plague)
+idle_orders 134 160 1 infested_terran 2048 drone|scv 30 spelleffects(parasite)
 idle_orders 92 256 2 heavy_marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
 idle_orders 92 256 1 phantom 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
 idle_orders 92 256 1 tesla_trooper 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
@@ -121,31 +121,31 @@ idle_orders 10 16 1 panzer 180 lurker|queen 120 Health(LessThan 50)
 idle_orders 10 16 1 panzer 180 zergling|zealot|hydralisk|dark_templar 120 count(AtLeast 3 48 14)
 idle_orders 10 16 2 panzer 210 drone|scv|probe 70 0
 idle_orders 10 16 2 panzer 210 drone|scv|probe 150 Count(AtLeast 3 60 14)
-idle_orders 10 16 1 valkyrie|valhalla 224 mutalisk|scout|corsair|scourge 110 count(AtLeast 4 60 14)
-idle_orders 10 16 3 valkyrie|valhalla 260 mutalisk|scout|corsair|scourge 135 count(AtLeast 4 60 14)
-idle_orders 10 16 1 valkyrie|valhalla 224 devourer 150 Count(AtLeast 3 60 14)
-idle_orders 10 16 2 valkyrie|valhalla 255 devourer 160 Count(AtLeast 3 60 14)
-idle_orders 10 16 3 valkyrie|valhalla 265 devourer 170 Count(AtLeast 3 60 14)
-idle_orders 10 16 4 valkyrie|valhalla 300 devourer 190 Count(AtLeast 3 60 14)
-idle_orders 10 16 1 valkyrie|valhalla 224 shuttle|observer|overlord 60 count(AtLeast 3 60 14)
+idle_orders 10 16 1 valkyrie|valhalla 224 mutalisk|scout|corsair|scourge|wraith 110 count(AtLeast 4 60 14)
+idle_orders 10 16 3 valkyrie|valhalla 260 mutalisk|scout|corsair|scourge|wraith 135 count(AtLeast 4 60 14)
+idle_orders 10 16 1 valkyrie|valhalla 224 devourer|battlecruiser|science_vessel 150 Count(AtLeast 3 60 14)
+idle_orders 10 16 2 valkyrie|valhalla 255 devourer|battlecruiser|science_vessel 160 Count(AtLeast 3 60 14)
+idle_orders 10 16 3 valkyrie|valhalla 265 devourer|battlecruiser|science_vessel 170 Count(AtLeast 3 60 14)
+idle_orders 10 16 4 valkyrie|valhalla 300 devourer|battlecruiser|science_vessel 190 Count(AtLeast 3 60 14)
+idle_orders 10 16 1 valkyrie|valhalla 224 shuttle|observer|overlord|dropship 60 count(AtLeast 3 60 14)
 idle_orders 10 16 2 skywing 224 drone|scv|probe 70 0
 idle_orders 10 16 1 skywing 224 group_men 80 Count(AtLeast 3 50 14)|WithoutUnitFlags(Air)
 idle_orders 10 16 1 skywing 224 group_men 90 Count(AtLeast 5 50 14)|WithoutUnitFlags(Air)
 idle_orders 10 16 1 valhalla 224 group_men 80 Count(AtLeast 3 64 14)
 idle_orders 10 16 1 valhalla 224 group_men 90 Count(AtLeast 5 64 14) 
-idle_orders 10 16 1 death_knight 224 ultralisk|dark_archon|reaver|sunken_colony|lurker 90 Health(GreaterThanPercent 50)
-idle_orders 10 16 1 death_knight 224 ultralisk|dark_archon|reaver|sunken_colony|lurker 100 Health(GreaterThanPercent 80)
-idle_orders 10 16 2 death_knight 255 ultralisk|dark_archon|reaver|sunken_colony|lurker 130 Health(GreaterThanPercent 70)
+idle_orders 10 16 1 death_knight 224 ultralisk|dark_archon|reaver|sunken_colony|lurker|siege_tank|goliath 90 Health(GreaterThanPercent 50)
+idle_orders 10 16 1 death_knight 224 ultralisk|dark_archon|reaver|sunken_colony|lurker|siege_tank|goliath 100 Health(GreaterThanPercent 80)
+idle_orders 10 16 2 death_knight 255 ultralisk|dark_archon|reaver|sunken_colony|lurker|siege_tank|goliath 130 Health(GreaterThanPercent 70)
 idle_orders 10 16 2 scorpion 224 drone|scv|probe 70 0
 idle_orders 10 16 1 scorpion 192 group_men 60 Health(LessThan 24)|WithoutUnitFlags(Air)
-idle_orders 10 16 1 scorpion 192 infested_terran|defiler|dark_archon|lurker|dark_templar 90 Health(LessThan 24)
-idle_orders 10 16 2 scorpion 224 infested_terran|defiler|dark_archon|lurker|dark_templar 90 Health(LessThan 48)
+idle_orders 10 16 1 scorpion 192 infested_terran|defiler|dark_archon|lurker|dark_templar|ghost|siege_tank 90 Health(LessThan 24)
+idle_orders 10 16 2 scorpion 224 infested_terran|defiler|dark_archon|lurker|dark_templar|ghost|siege_tank 90 Health(LessThan 48)
 idle_orders 10 16 1 vulture 192 group_men 60 Health(LessThan 10)
 idle_orders 10 16 1 battlecruiser 160 mutalisk|scout|corsair|scourge|devourer 80 Health(LessThan 30)
 idle_orders 10 16 1 firebat 128 drone|scv|probe 70 0
 idle_orders 10 16 1 firebat 128 drone|scv|probe 150 count(AtLeast 2 24 14)
-idle_orders 10 16 1 firebat 128 zergling|zealot|hydralisk|dark_templar 110 count(AtLeast 2 26 14)
-idle_orders 10 16 2 firebat 128 zergling|zealot|hydralisk|dark_templar 130 count(AtLeast 3 26 14)
+idle_orders 10 16 1 firebat 128 zergling|zealot|hydralisk|dark_templar|ghost|marine 110 count(AtLeast 2 26 14)
+idle_orders 10 16 2 firebat 128 zergling|zealot|hydralisk|dark_templar|ghost|marine 130 count(AtLeast 3 26 14)
 idle_orders 10 16 1 firebat 128 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine 110 count(AtLeast 2 26 14)
 idle_orders 10 16 2 firebat 128 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine 130 count(AtLeast 3 26 14)
 idle_orders 10 64 1 siege_tank 288 sunken_colony|photon_cannon|bunker 110 Health(LessThan 73)
@@ -155,8 +155,8 @@ idle_orders 10 64 2 siege_tank 288 group_men 105 Health(LessThan 73)|WithoutUnit
 idle_orders 10 64 1 siege_tank 288 infested_terran|dark_archon|defiler|archon 130 Health(LessThan 80)
 idle_orders 10 64 1 siege_tank 288 lurker|defiler|high_templar 120 Health(LessThan 50)
 idle_orders 10 64 1 siege_tank 330 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine|firebat 120 count(AtLeast 3 48 14)
-idle_orders 10 16 1 hnorad|battlecruiser|goliath 192 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 80 Health(LessThan 30)
-idle_orders 10 16 2 hnorad|battlecruiser|goliath 192 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 90 Health(LessThan 60)
+idle_orders 10 16 1 hnorad|battlecruiser|goliath 192 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter|science_vessel|battlecruiser 80 Health(LessThan 30)
+idle_orders 10 16 2 hnorad|battlecruiser|goliath 192 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter|science_vessel|battlecruiser 90 Health(LessThan 60)
 idle_orders 10 16 9 mutalisk 180 heavy_marine|ghost|death_knight|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 90 Health(LessThan 82)
 idle_orders 10 16 5 mutalisk 168 heavy_marine|ghost|death_knight|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 80 Health(LessThan 41)
 idle_orders 10 16 5 mutalisk 200 drone|scv|probe 100 0
