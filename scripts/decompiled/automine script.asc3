@@ -646,6 +646,10 @@ issue_order MoveToMinerals 7 drone Loc.156 Loc.156 177 0
 issue_order MoveToMinerals 4 drone Loc.156 Loc.156 176 0
 issue_order MoveToMinerals 2 drone Loc.156 Loc.156 178 0
 issue_order MoveToGas 2 drone Loc.155 Loc.155 extractor Own
+issue_order MoveToMinerals 7 scv Loc.156 Loc.156 177 0
+issue_order MoveToMinerals 4 scv Loc.156 Loc.156 176 0
+issue_order MoveToMinerals 2 scv Loc.156 Loc.156 178 0
+issue_order MoveToGas 2 scv Loc.155 Loc.155 extractor Own
 stop
 
 :zerg_9
