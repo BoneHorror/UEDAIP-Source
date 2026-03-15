@@ -99,12 +99,17 @@ deaths 13 Exactly 2 119 ec_terran
 wait 300
 
 upgrade_jump 13 Set 70 1 void
+deaths 0 Exactly 3 98 ti_continue
+#special case for xZ7
+deaths 0 Exactly 4 98 ti_continue
+#special case for xZ8
 if_owned drone void
 if_owned overlord void
 if_owned hhydralisk void
 if_owned probe void
 if_owned nexus void
 if_owned zealot void
+:ti_continue
 #handle non-UED upgrades for campaign - set to level 2 so there's no effect, and they look "Disabled" EDIT: this is now done as a config file in map mpq, and set to max level 0 instead because "level 2 has no effect" is not always true
 idle_orders Repair 48 2 scv 150 group_buildings|group_men 50 NotEnemies|Own|Self(Order(PlayerGuard))|Hp(LessThanPercent 100)|TileFlags(Walkable)|UnitFlags(Mechanical)
 idle_orders Repair 48 2 scv 150 group_buildings|group_men 40 NotEnemies|Own|Self(Order(Guard))|Hp(LessThanPercent 100)|TileFlags(Walkable)|UnitFlags(Mechanical)
@@ -122,12 +127,17 @@ stop
 wait 300
 
 upgrade_jump 13 Set 70 1 void
+deaths 0 Exactly 3 98 ect_continue
+#special case for xZ7
+deaths 0 Exactly 4 98 ect_continue
+#special case for xZ8
 if_owned drone void
 if_owned overlord void
 if_owned hhydralisk void
 if_owned probe void
 if_owned nexus void
 if_owned zealot void
+:ect_continue
 idle_orders Repair 48 2 scv 150 group_buildings|group_men 50 NotEnemies|Own|Self(Order(PlayerGuard))|Hp(LessThanPercent 100)|TileFlags(Walkable)|UnitFlags(Mechanical)
 idle_orders Repair 48 2 scv 150 group_buildings|group_men 40 NotEnemies|Own|Self(Order(Guard))|Hp(LessThanPercent 100)|TileFlags(Walkable)|UnitFlags(Mechanical)
 #idle_orders Repair 48 2 scv 150 group_buildings|group_men 30 NotEnemies|Own|Self(Order(Stop))|Hp(LessThanPercent 100)|TileFlags(Walkable)|UnitFlags(Mechanical)
