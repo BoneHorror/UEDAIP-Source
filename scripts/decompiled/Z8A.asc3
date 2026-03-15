@@ -278,6 +278,7 @@ attack_add 5 heavy_marine
 attack_to Loc.102 Loc.73
 wait 50
 
+attack_timeout 100
 attack_do
 attack_clear
 goto hob1
@@ -292,6 +293,7 @@ attack_add 2 death_knight
 attack_to Loc.193 Loc.74
 wait 50
 
+attack_timeout 100
 attack_do
 attack_clear
 :hob1
@@ -312,6 +314,7 @@ attack_add 15 hydralisk
 attack_to Loc.70 Loc.74
 wait 50
 
+attack_timeout 120
 attack_do
 attack_clear
 tech optical_flare 30
@@ -322,6 +325,7 @@ upgrade 2 t_ship_weapon 30
 upgrade 2 t_infantry_armor 30
 upgrade 2 t_vehicle_plating 30
 upgrade 2 t_ship_plating 30
+upgrade_jump 14 Exactly_Call 74 7 white_hard_1
 wait 3605
 
 idle_orders 185 256 1 medic 142 queen|defiler|overlord|observer|ultralisk|dark_archon 80 WithoutSpellEffects(Blind)
@@ -395,8 +399,10 @@ attack_add 4 death_knight
 call target_init
 wait 50
 
+attack_timeout 120
 attack_do
 attack_clear
+upgrade_jump 14 Exactly_Call 74 7 white_hard_2
 wait 3440
 
 random_jump 128 hydraorbust2
@@ -424,6 +430,7 @@ attack_add 2 infested_terran
 call target_init
 wait 50
 
+attack_timeout 120
 attack_do
 attack_clear
 :hob2
@@ -483,6 +490,7 @@ attack_add 15 hydralisk
 call target_init_kbl
 wait 50
 
+attack_timeout 120
 attack_do
 attack_clear
 tech irradiate 30
@@ -544,6 +552,7 @@ attack_add 3 skywing
 call target_init_kbl
 wait 50
 
+attack_timeout 120
 attack_do
 attack_clear
 tech hallucination 30
@@ -646,6 +655,7 @@ attack_add 2 death_knight
 call target_init_kbl
 wait 50
 
+attack_timeout 150
 attack_do
 attack_clear
 wait 2815
@@ -673,6 +683,7 @@ wait 50
 attack_do
 attack_clear
 upgrade 1 battlecruiser_mana 30
+upgrade_jump 14 Exactly_Call 74 7 white_hard_3
 wait 4015
 
 train 2 valhalla
@@ -724,6 +735,7 @@ attack_add 6 guardian
 call atk_close_kbl
 wait 50
 
+attack_timeout 150
 attack_do
 attack_clear
 wait 3150
@@ -751,6 +763,7 @@ attack_add 19 hydralisk
 call atk_close_kbl
 wait 50
 
+attack_timeout 150
 attack_do
 attack_clear
 wait 3588
@@ -952,6 +965,7 @@ attack_prepare
 start_campaign
 wait 50
 
+attack_timeout 120
 attack_do
 attack_clear
 wait 1500
@@ -971,6 +985,7 @@ attack_prepare
 start_campaign
 wait 50
 
+attack_timeout 120
 attack_do
 attack_clear
 wait 1500
@@ -1092,6 +1107,37 @@ return
 
 :drop2
 attack_to Loc.104 Loc.105
+return
+
+:white_hard_1
+train 3 mutalisk
+attack_add 3 mutalisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+return
+
+:white_hard_2
+train 2 ultralisk
+attack_add 2 ultralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+return
+
+:white_hard_3
+train 4 tesla_trooper
+attack_add 12 zergling
+attack_add 4 tesla_trooper
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
 return
 
 :defense_northwest
