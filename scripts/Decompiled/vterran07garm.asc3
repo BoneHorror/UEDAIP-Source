@@ -347,17 +347,20 @@ create_script minor 255 Loc.10 255 0
 aicontrol build_gas
 wait 1500
 
+multirun toss_clear_regions
 allies_watch 5 toss_exp
 upgrade 2 p_plasma_shield 30
 upgrade 1 p_air_weapon 30
 train 2 zealot
 train 2 shuttle
+upgrade_jump 13 Exactly 74 7 t_hard_opener
 attack_add 2 zealot
 attack_to Loc.30 Loc.23
 wait 500
 
 attack_do
 attack_clear
+:t_hard_return1
 upgrade 3 p_plasma_shield 30
 upgrade 1 p_plating 30
 :noall_loop
@@ -393,6 +396,7 @@ attack_clear
 deaths 7 Exactly 1 carrier alliance
 wait 2505
 
+upgrade_jump 13 Exactly 74 7 t_hard_mid
 train 4 scout
 attack_add 4 scout
 attack_to Loc.34 Loc.33
@@ -401,8 +405,32 @@ wait 500
 
 attack_do
 attack_clear
+:t_hard_return2
 deaths 7 Exactly 1 carrier alliance
 goto noall_loop
+
+:t_hard_opener
+attack_add 2 zealot
+attack_add 2 dragoon
+attack_to Loc.30 Loc.23
+wait 500
+
+attack_do
+attack_clear
+goto t_hard_return1
+
+:t_hard_mid
+train 2 reaver
+train 4 scout
+attack_add 2 reaver
+attack_add 4 scout
+attack_to Loc.34 Loc.33
+#leftside garm base or player exp
+wait 500
+
+attack_do
+attack_clear
+goto t_hard_return2
 
 :alliance
 train 1 scout
@@ -469,6 +497,14 @@ attack_clear
 wait 800
 
 goto alliance
+
+:toss_clear_regions
+wait 1
+
+wait_rand 25 150
+
+harass_location
+goto toss_clear_regions
 
 :gates
 start_town
