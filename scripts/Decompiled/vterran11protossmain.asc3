@@ -169,7 +169,7 @@ train 4 zealot
 train 4 high_templar
 do_morph 3 archon
 train 6 zealot
-train 2 scout
+train 4 scout
 train 8 zealot
 train 1 carrier
 train 1 reaver
@@ -180,6 +180,13 @@ wait 1550
 
 set_attacks 3
 train 10 zealot
+attack_add 4 scout
+attack_prepare
+wait 150
+
+attack_timeout 60
+attack_do
+attack_clear
 attack_add 3 archon
 attack_add 10 zealot
 attack_add 1 carrier
@@ -192,13 +199,13 @@ wait 1635
 
 train 14 zealot
 tech hallucination 60
-train 4 scout
+train 8 scout
 train 2 reaver
 train 8 dragoon
 train 6 scout
 attack_add 2 reaver
 attack_add 8 dragoon
-attack_add 4 scout
+attack_add 8 scout
 attack_prepare
 wait 150
 
@@ -249,10 +256,19 @@ upgrade 3 p_plasma_shield 70
 wait 825
 
 capt_expand
+attack_add 2 carrier
+attack_prepare
+wait 150
+
+attack_timeout 90
+attack_do
+attack_clear
 attack_add 12 zealot
 attack_add 6 dragoon
 attack_add 2 reaver
 attack_prepare
+wait 150
+
 attack_do
 attack_clear
 idle_orders 142 256 1 high_templar 1324 ultralisk|devourer|carrier|battlecruiser|valkyrie|science_vessel|arbiter|reaver|siege_tank 50 incombat|count(AtLeast 2 60 14)
@@ -278,9 +294,11 @@ wait 550
 :block1
 expand 3 exp
 set_attacks 3
-train 9 scout
-attack_add 9 scout
+train 10 scout
+attack_add 10 scout
 target_expansion
+wait 1500
+
 attack_do
 attack_clear
 train 10 dragoon
