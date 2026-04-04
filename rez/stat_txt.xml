@@ -6284,11 +6284,12 @@ Decreased Khalai Shield Regen)</value>
     </string>
     <string>
         <id>AI_ZERG_B5A</id>
-        <value>Brood Wars Zerg 5 - Town A</value>
+        <value>Pressurized Fuel Injectors</value>
     </string>
     <string>
         <id>AI_ZERG_B5B</id>
-        <value>Brood Wars Zerg 5 - Town B</value>
+        <value>fResearch Pressurized Fuel Injectors
+(Increased Firebat range)</value>
     </string>
     <string>
         <id>AI_ZERG_B5C</id>
