@@ -111,6 +111,7 @@ attack_clear
 tech stim_packs 30
 build 1 comsat_station 80
 upgrade 1 t_infantry_armor 30
+upgrade 1 firebat_range 30
 tech cloaking_field 30
 wait 1265
 
@@ -401,6 +402,7 @@ wait 500
 
 attack_do
 attack_clear
+upgrade 1 firebat_range 30
 attack_add 10 marine
 attack_add 4 wraith
 unstart_campaign

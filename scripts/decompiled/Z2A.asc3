@@ -166,6 +166,7 @@ wait 500
 attack_do
 attack_clear
 allies_watch 6 block1
+upgrade 1 firebat_range 30
 upgrade 1 t_vehicle_plating 30
 upgrade 1 t_ship_plating 30
 upgrade 2 t_infantry_weapon 30

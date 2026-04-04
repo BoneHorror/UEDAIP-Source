@@ -235,6 +235,7 @@ attack_do
 attack_clear
 upgrade 3 t_vehicle_plating 30
 upgrade 3 t_infantry_weapon 30
+upgrade 1 firebat_range 30
 wait 1350
 
 train 24 marine

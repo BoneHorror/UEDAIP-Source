@@ -226,6 +226,7 @@ upgrade 1 t_vehicle_plating 30
 create_script siege 255 Loc.69 255 0
 upgrade 3 t_ship_weapon 30
 upgrade 3 t_ship_plating 30
+upgrade 1 firebat_range 30
 wait 450
 
 train 12 wraith

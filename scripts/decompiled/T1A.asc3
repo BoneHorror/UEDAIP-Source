@@ -120,6 +120,7 @@ wait 500
 
 attack_do
 attack_clear
+upgrade 1 firebat_range 30
 upgrade 1 t_infantry_weapon 30
 tech stim_packs 30
 wait 1675

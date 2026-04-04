@@ -326,6 +326,7 @@ wait 500
 attack_do
 attack_clear
 call buildup_choose
+upgrade 1 firebat_range 30
 upgrade 1 ghost_mana 30
 upgrade 1 wraith_mana 30
 upgrade 1 science_vessel_mana 30

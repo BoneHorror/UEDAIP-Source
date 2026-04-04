@@ -99,6 +99,7 @@ wait 500
 attack_do
 attack_clear
 tech stim_packs 30
+upgrade 1 firebat_range 30
 upgrade 1 t_vehicle_weapon 30
 upgrade 1 wraith_mana 30
 wait 1425
