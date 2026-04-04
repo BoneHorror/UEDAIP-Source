@@ -4920,6 +4920,7 @@ FirebatGndAttkInit:
 FirebatGndAttkRpt:
 	if unit_id == 10 goto uFirebatGndAttkRpt
 	wait           	1
+	if upgrade(player, 76) == 1 goto FirebatUpgAtk
 	nobrkcodestart 	
 	imgol          	421 0 0	# FlameThrower (thingy\flamer.grp)
 	playfram       	0x11	# frame set 1
@@ -4928,6 +4929,23 @@ FirebatGndAttkRpt:
 	attkshiftproj  	52
 	wait           	1
 	attkshiftproj  	80
+	wait           	5
+	playfram       	0x00	# frame set 0
+	wait           	2
+	ignorerest     	
+	goto FirebatGndAttkToIdle
+	
+FirebatUpgAtk:
+	nobrkcodestart 	
+	imgol          	421 0 0	# FlameThrower (thingy\flamer.grp)
+	playfram       	0x11	# frame set 1
+	attkshiftproj  	24
+	wait           	1
+	attkshiftproj  	52
+	wait           	1
+	attkshiftproj  	80
+	wait           	1
+	attkshiftproj  	104
 	wait           	5
 	playfram       	0x00	# frame set 0
 	wait           	2
