@@ -8476,6 +8476,7 @@ UEDSelect:
 	set game.upgrade_limit(player, 66) = 0
 	set game.upgrade_limit(player, 69) = 0
 	set game.upgrade_limit(player, 72) = 0
+	set game.upgrade_limit(player, 76) = 0
 	set game.tech_availability(player, 0) = 0
 	set game.tech_availability(player, 1) = 0
 	set game.tech_availability(player, 2) = 0
@@ -8539,6 +8540,7 @@ tvar1:
 	set game.upgrade_limit(player, 66) = 0
 	set game.upgrade_limit(player, 69) = 0
 	set game.upgrade_limit(player, 72) = 0
+	set game.upgrade_limit(player, 76) = 0
 	goto SPMissionWrapup
 	
 UEDSRandom:
