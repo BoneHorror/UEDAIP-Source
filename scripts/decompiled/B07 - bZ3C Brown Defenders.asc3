@@ -17,6 +17,7 @@ define_max 6 ultralisk
 define_max 255 lurker
 define_max 255 ultralisk
 define_max 255 infested_terran
+define_max 8 broodling
 define_max 4 defiler
 define_max 2 hdefiler
 idle_orders DisableBuiltin 0 0 0 0 0 0 0
@@ -38,6 +39,7 @@ wait 500
 upgrade 1 z_missile_attack 30
 upgrade 1 z_carapace 30
 attack_add 2 ultralisk
+attack_add 6 broodling
 attack_to Loc.20 Loc.19
 wait 300
 
@@ -53,6 +55,8 @@ defensebuild_gg 2 zergling
 defenseuse_gg 2 zergling
 defensebuild_gg 1 hydralisk
 defenseuse_gg 1 hydralisk
+defensebuild_gg 1 broodling
+defenseuse_gg 1 broodling
 defensebuild_ag 1 hydralisk
 defenseuse_ag 1 hydralisk
 defensebuild_ag 1 defiler
@@ -86,6 +90,7 @@ defenseuse_gg 1 hdefiler
 tech plague 30
 upgrade 2 z_missile_attack 30
 attack_add 12 zergling
+attack_add 6 broodling
 attack_add 1 defiler
 attack_to Loc.20 Loc.19
 wait 300
@@ -99,15 +104,16 @@ defensebuild_gg 1 ultralisk
 defenseuse_gg 1 ultralisk
 idle_orders 144 64 1 defiler 788 group_men 55 count(AtLeast 3 120 14) 
 idle_orders 144 64 1 defiler 512 skywing|death_knight|scorpion|wraith|science_vessel|dragoon|corsair|scout 80 incombat|count(AtLeast 3 120 14)
-idle_orders 144 64 1 defiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|devourer|guardian|ultralisk 115 incombat|count(AtLeast 2 120 14)
-idle_orders 144 64 1 defiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|ultralisk 80 incombat
+idle_orders 144 64 1 defiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|devourer|guardian|ultralisk|hultralisk 115 incombat|count(AtLeast 2 120 14)
+idle_orders 144 64 1 defiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|ultralisk|hultralisk 80 incombat
 idle_orders 144 64 1 defiler 512 heavy_marine|medic|ghost|phantom|marine|firebat|vulture|zealot|hydralisk|mutalisk|revenant|dark_templar|high_templar 55 incombat|count(AtLeast 4 120 14)
 idle_orders 144 64 1 hdefiler 788 group_men 55 count(AtLeast 3 120 14) 
 idle_orders 144 64 1 hdefiler 512 skywing|death_knight|scorpion|wraith|science_vessel|dragoon|corsair|scout 80 incombat|count(AtLeast 3 120 14)
-idle_orders 144 64 1 hdefiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|devourer|guardian|ultralisk 115 incombat|count(AtLeast 2 120 14)
-idle_orders 144 64 1 hdefiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|ultralisk 80 incombat
+idle_orders 144 64 1 hdefiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|devourer|guardian|ultralisk|hultralisk 115 incombat|count(AtLeast 2 120 14)
+idle_orders 144 64 1 hdefiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|ultralisk|hultralisk 80 incombat
 idle_orders 144 64 1 hdefiler 512 heavy_marine|medic|ghost|phantom|marine|firebat|vulture|zealot|hydralisk|mutalisk|revenant|dark_templar|high_templar 55 incombat|count(AtLeast 4 120 14)
 attack_add 4 ultralisk
+attack_add 8 broodling
 attack_add 1 hdefiler
 attack_to Loc.14 Loc.15
 wait 300
@@ -117,7 +123,7 @@ attack_clear
 upgrade 1 ultralisk_armor 30
 wait 4400
 
-attack_add 8 zergling
+attack_add 18 zergling
 attack_add 6 hydralisk
 attack_to Loc.20 Loc.19
 wait 300
@@ -127,13 +133,14 @@ attack_clear
 upgrade 1 defiler_mana 30
 upgrade 1 voracity 30
 attack_add 4 ultralisk
+attack_add 8 broodling
 attack_to Loc.20 Loc.19
 wait 300
 
 attack_do
 attack_clear
 :block2
-attack_add 18 zergling
+attack_add 22 zergling
 attack_add 1 hdefiler
 attack_to Loc.20 Loc.19
 wait 300
@@ -145,6 +152,7 @@ wait 2800
 attack_add 3 ultralisk
 attack_add 1 defiler
 attack_add 5 hydralisk
+attack_add 8 broodling
 attack_to Loc.14 Loc.15
 wait 300
 
@@ -154,7 +162,7 @@ wait 3200
 
 attack_add 6 ultralisk
 attack_add 2 hdefiler
-attack_add 10 zergling
+attack_add 16 zergling
 attack_to Loc.20 Loc.19
 wait 300
 

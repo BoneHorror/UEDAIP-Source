@@ -79,10 +79,11 @@ wait 1500
 idle_orders 120 0 1 queen 1024 overlord|observer|science_vessel|defiler|skywing|dropship|shuttle|arbiter|valhalla|defiler|queen|ghost 30 WithoutSpellEffects(Parasite)|RandomRate(280 820)|Self(Energy(GreaterThanPercent 50))
 tech lurker_aspect 30
 multirun ask_for_help
-train 2 mutalisk
+train 3 mutalisk
 defensebuild_gg 1 lurker
 defenseuse_gg 1 lurker
-attack_add 2 mutalisk
+attack_add 3 mutalisk
+attack_add 2 scourge
 attack_to Loc.14 Loc.18
 wait 500
 
@@ -93,7 +94,7 @@ upgrade 2 z_melee_attack 30
 upgrade 2 z_carapace 30
 upgrade 2 z_flyer_carapace 30
 upgrade 1 voracity 30
-wait 4100
+wait 3100
 
 idle_orders 146 0 1 queen 1024 zealot|zergling|hydralisk|marine|vulture|heavy_marine|scorpion|gray 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 45))
 idle_orders 146 0 1 queen 1024 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 50))
@@ -103,6 +104,8 @@ idle_orders 146 0 1 queen 1024 reaver|dark_archon|archon|devourer|guardian|hnora
 idle_orders 146 32 1 queen 312 group_men 30 deathrattle
 train 3 hydralisk
 train 3 lurker
+train 10 zergling
+attack_add 10 zergling
 attack_add 3 lurker
 attack_to Loc.20 Loc.18
 wait 500
@@ -113,9 +116,9 @@ upgrade 2 z_missile_attack 30
 upgrade 2 z_flyer_attack 30
 upgrade 3 z_carapace 30
 upgrade 3 z_flyer_carapace 30
-wait 3600
+wait 1600
 
-attack_add 8 zergling
+attack_add 18 zergling
 attack_add 2 mutalisk
 attack_to Loc.20 Loc.18
 wait 500
@@ -123,7 +126,7 @@ wait 500
 attack_do
 attack_clear
 attack_add 6 mutalisk
-call attackTargeting
+attack_to Loc.14 Loc.15
 wait 500
 
 attack_do
@@ -135,7 +138,8 @@ upgrade 3 z_melee_attack 30
 upgrade 1 hydra_attack 30
 upgrade 1 ultralisk_armor 30
 attack_add 24 zergling
-attack_to Loc.14 Loc.15
+attack_add 1 ultralisk
+attack_to Loc.20 Loc.18
 wait 500
 
 attack_do
@@ -149,11 +153,13 @@ idle_orders 121 32 1 queen 312 dragoon|goliath|phantom 60 Health(GreaterThanPerc
 idle_orders 121 32 1 queen 312 high_templar|ghost 70 Health(GreaterThanPercent 65)
 idle_orders 121 32 1 queen 312 dark_templar|tesla_trooper 50 Health(GreaterThanPercent 55)
 idle_orders 121 32 1 queen 312 drone|scv 15 Health(GreaterThanPercent 95)
+idle_orders 121 32 1 queen 512 hultralisk 150 Health(GreaterThanPercent 5)
 idle_orders 121 32 1 queen 312 broodling 3 Health(GreaterThanPercent 95)|Self(Energy(GreaterThanPercent 85))
 idle_orders 121 32 1 queen 312 group_men 40 deathrattle
 wait 2500
 
 attack_add 1 hultralisk
+attack_add 8 scourge
 attack_to Loc.20 Loc.18
 wait 500
 

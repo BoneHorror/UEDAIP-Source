@@ -27,6 +27,7 @@ define_max 255 queen
 #can't get any new air units, but we do have some as guards - hence upgrades to them later on
 #also no trains since we are not guaranteed to retain any tech
 define_max 255 defiler
+define_max 255 broodling
 define_max 3 ultralisk
 #we need ovies somehow, steal them from orange map-side
 idle_orders DisableBuiltin 0 0 0 0 0 0 0
@@ -91,6 +92,7 @@ wait 2625
 
 attack_add 2 ultralisk
 attack_add 4 hydralisk
+attack_add 6 zergling
 attack_to Loc.21 Loc.18
 wait 500
 
@@ -106,12 +108,14 @@ idle_orders 121 32 1 queen 312 dragoon|goliath|phantom 60 Health(GreaterThanPerc
 idle_orders 121 32 1 queen 312 high_templar|ghost 70 Health(GreaterThanPercent 65)
 idle_orders 121 32 1 queen 312 dark_templar|tesla_trooper 50 Health(GreaterThanPercent 55)
 idle_orders 121 32 1 queen 312 drone|scv 15 Health(GreaterThanPercent 95)
+idle_orders 121 32 1 queen 512 hultralisk 150 Health(GreaterThanPercent 5)
 idle_orders 121 32 1 queen 312 broodling 3 Health(GreaterThanPercent 95)|Self(Energy(GreaterThanPercent 85))
 idle_orders 121 32 1 queen 312 group_men 40 deathrattle
 upgrade 1 zergling_speed 30
 wait 2625
 
 attack_add 5 hydralisk
+attack_add 8 zergling
 attack_to Loc.21 Loc.18
 wait 500
 
