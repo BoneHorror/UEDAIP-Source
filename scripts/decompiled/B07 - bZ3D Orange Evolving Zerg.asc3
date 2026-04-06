@@ -79,12 +79,10 @@ wait 1500
 idle_orders 120 0 1 queen 1024 overlord|observer|science_vessel|defiler|skywing|dropship|shuttle|arbiter|valhalla|defiler|queen|ghost 30 WithoutSpellEffects(Parasite)|RandomRate(280 820)|Self(Energy(GreaterThanPercent 50))
 tech lurker_aspect 30
 multirun ask_for_help
-train 4 mutalisk
-wait 3600
-
+train 2 mutalisk
 defensebuild_gg 1 lurker
 defenseuse_gg 1 lurker
-attack_add 4 mutalisk
+attack_add 2 mutalisk
 attack_to Loc.14 Loc.18
 wait 500
 
@@ -115,8 +113,15 @@ upgrade 2 z_missile_attack 30
 upgrade 2 z_flyer_attack 30
 upgrade 3 z_carapace 30
 upgrade 3 z_flyer_carapace 30
-wait 4800
+wait 3600
 
+attack_add 8 zergling
+attack_add 2 mutalisk
+attack_to Loc.20 Loc.18
+wait 500
+
+attack_do
+attack_clear
 attack_add 6 mutalisk
 call attackTargeting
 wait 500
@@ -149,7 +154,7 @@ idle_orders 121 32 1 queen 312 group_men 40 deathrattle
 wait 2500
 
 attack_add 1 hultralisk
-call attackTargeting
+attack_to Loc.20 Loc.18
 wait 500
 
 attack_do

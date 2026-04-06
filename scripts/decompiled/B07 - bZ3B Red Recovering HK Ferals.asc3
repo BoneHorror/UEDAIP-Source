@@ -61,7 +61,7 @@ tech ensnare 30
 wait 2625
 
 attack_add 12 zergling
-attack_prepare
+attack_to Loc.21 Loc.18
 wait 500
 
 attack_do
@@ -90,7 +90,7 @@ wait 2625
 
 attack_add 2 ultralisk
 attack_add 4 hydralisk
-attack_prepare
+attack_to Loc.21 Loc.18
 wait 500
 
 attack_do
@@ -111,7 +111,7 @@ upgrade 1 zergling_speed 30
 wait 2625
 
 attack_add 5 hydralisk
-attack_prepare
+attack_to Loc.21 Loc.18
 wait 500
 
 attack_do
@@ -120,7 +120,7 @@ wait 2625
 
 attack_add 6 zergling
 attack_add 4 hhydralisk
-attack_prepare
+attack_to Loc.21 Loc.18
 wait 500
 
 attack_do
