@@ -56,6 +56,7 @@ wait 500
 
 attack_do
 attack_clear
+multirun ai_income
 upgrade 1 hydralisk_speed 30
 tech ensnare 30
 wait 2625
@@ -166,3 +167,17 @@ wait 500
 attack_do
 attack_clear
 goto block1
+
+:ai_income
+wait 16
+
+resources_jump 2000 2000 income_throttle
+resources 13 Add Ore 6 ai_income
+resources 13 Add Gas 4 ai_income
+goto ai_income
+
+:income_throttle
+wait_rand 500 1500
+
+goto ai_income
+

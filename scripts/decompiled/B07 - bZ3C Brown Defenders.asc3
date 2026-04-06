@@ -32,6 +32,7 @@ wait 300
 
 attack_do
 attack_clear
+multirun ai_income
 wait 500
 
 upgrade 1 z_missile_attack 30
@@ -160,3 +161,17 @@ wait 300
 attack_do
 attack_clear
 goto block2
+
+:ai_income
+wait 16
+
+resources_jump 2000 2000 income_throttle
+resources 13 Add Ore 8 ai_income
+resources 13 Add Gas 6 ai_income
+goto ai_income
+
+:income_throttle
+wait_rand 500 1500
+
+goto ai_income
+
