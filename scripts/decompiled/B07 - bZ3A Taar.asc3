@@ -66,8 +66,15 @@ upgrade 1 z_carapace 30
 upgrade 1 z_melee_attack 30
 upgrade 1 z_flyer_carapace 30
 upgrade 1 z_flyer_attack 30
-wait 2050
+wait 1550
 
+train 10 gray
+attack_add 10 gray
+attack_to Loc.23 Loc.22
+wait 500
+
+attack_do
+attack_clear
 build 3 psi_dominator 80
 train 20 gray
 train 3 sy_demon
@@ -89,6 +96,13 @@ idle_orders 119 64 1 atril 256 group_men 110 count(AtLeast 4 106 14)|WithoutUnit
 idle_orders 119 64 1 atril 256 photon_cannon|sunken_colony|creep_colony|spore_colony|bunker|missile_turret|drone|probe|scv 100 count(AtLeast 2 106 14)
 wait 1750
 
+train 4 sy_demon
+attack_add 4 sy_demon
+attack_to Loc.23 Loc.22
+wait 500
+
+attack_do
+attack_clear
 train 1 spawnsire
 train 6 ortu
 train 3 atril
@@ -108,8 +122,17 @@ upgrade 2 z_carapace 30
 upgrade 2 z_melee_attack 30
 upgrade 2 z_flyer_carapace 30
 upgrade 2 z_flyer_attack 30
-wait 2250
+wait 1450
 
+train 12 gray
+train 2 atril
+attack_add 2 atril
+attack_add 12 gray
+attack_to Loc.23 Loc.22
+wait 500
+
+attack_do
+attack_clear
 idle_orders 119 64 1 gray 192 group_men 55 count(AtLeast 2 80 14)|WithoutUnitFlags(Air)
 idle_orders 119 64 1 gray 192 group_men 70 count(AtLeast 3 80 14)|WithoutUnitFlags(Air)
 idle_orders 119 64 1 gray 192 group_men 110 count(AtLeast 4 80 14)|WithoutUnitFlags(Air)
@@ -132,6 +155,13 @@ wait 500
 
 attack_do
 attack_clear
+train 20 gray
+attack_add 20 gray
+attack_to Loc.23 Loc.22
+wait 500
+
+attack_do
+attack_clear
 upgrade 3 z_missile_attack 30
 upgrade 3 z_carapace 30
 upgrade 3 z_melee_attack 30
@@ -139,6 +169,13 @@ upgrade 3 z_flyer_carapace 30
 upgrade 3 z_flyer_attack 30
 upgrade 1 bone_mastery 30
 max_workers 255
+train 6 sy_demon
+attack_add 6 sy_demon
+attack_to Loc.23 Loc.22
+wait 500
+
+attack_do
+attack_clear
 :taar_loop
 train 1 spawnsire
 wait 2533
