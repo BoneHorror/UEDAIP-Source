@@ -37,6 +37,7 @@ upgrade 1 overlord_speed 30
 upgrade 1 z_missile_attack 30
 wait 1125
 
+multirun clear_regions
 defensebuild_gg 1 zergling
 defenseuse_gg 1 zergling
 defensebuild_gg 2 hydralisk
@@ -185,3 +186,9 @@ wait_rand 500 1500
 
 goto ai_income
 
+:clear_regions
+wait 1
+
+wait_rand 50 333
+harass_location
+goto clear_regions
