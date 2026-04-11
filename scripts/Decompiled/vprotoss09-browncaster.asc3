@@ -239,7 +239,6 @@ idle_orders 120 0 1 queen 1024 overlord|observer|science_vessel|defiler|skywing|
 #useless here but reuse in vp10?
 wait 4500
 
-multirun broodling_spend 
 tech spawn_broodling 30
 wait 6500
 
@@ -278,7 +277,6 @@ train 4 queen
 #upgrade 1 bone_mastery 30
 #unavailable in vanilla :( 
 define_max 5 queen
-multirun broodling_spend
 defensebuild_gg 1 queen
 defenseuse_gg 1 queen
 :bone_loop
@@ -286,22 +284,6 @@ wait_rand 9333 15500
 
 train 3 queen
 goto bone_loop
-
-:broodling_spend
-wait_train 8 broodling
-wait 50
-
-if_attacking broodling_spend
-attack_add 8 broodling
-attack_prepare
-wait 500
-
-attack_timeout 90
-attack_do
-attack_clear
-wait 1050
-
-goto broodling_spend
 
 :creep_1
 wait 16

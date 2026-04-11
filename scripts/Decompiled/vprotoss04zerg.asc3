@@ -254,15 +254,15 @@ build 1 hydralisk_den 80
 build 1 evolution_chamber 80
 defensebuild_gg 1 zergling
 defenseuse_gg 1 zergling
-defensebuild_gg 1 broodling
-defenseuse_gg 1 broodling
+defensebuild_gg 1 clone_broodling
+defenseuse_gg 1 clone_broodling
 max_force 244
 guard_all
 define_max 14 zergling
 define_max 7 hydralisk
 define_max 2 ultralisk
 define_max 255 hzergling
-define_max 8 broodling
+define_max 8 clone_broodling
 wait 650
 
 attack_add 1 ultralisk
