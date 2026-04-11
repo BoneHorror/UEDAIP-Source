@@ -119,7 +119,7 @@ wait 300
 attack_do
 attack_clear
 idle_orders Consume 16 1 defiler 512 zergling 70 NotEnemies|Own|Health(LessThanPercent 80)|Self(Energy(LessThanPercent 50))
-idle_orders Consume 16 1 defiler 512 broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 16 1 defiler 512 broodling|clone_broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
 tech plague 30
 wait 4000
 
@@ -397,11 +397,11 @@ goto hydraLoop
 :white_infested
 if_owned hydralisk_den brown_hydras
 notowns_jump queen_nest teal_spires
-define_max 6 broodling
+define_max 6 clone_broodling
 define_max 3 queen
 define_max 4 infested_terran
-defensebuild_gg 1 broodling
-defenseuse_gg 1 broodling
+defensebuild_gg 1 clone_broodling
+defenseuse_gg 1 clone_broodling
 defensebuild_gg 1 queen
 defenseuse_gg 1 queen
 max_force 325
@@ -427,7 +427,7 @@ idle_orders 121 8 1 queen 812 zealot|vulture 30 Health(GreaterThanPercent 45)
 idle_orders 121 8 1 queen 812 dragoon|goliath 60 Health(GreaterThanPercent 45)
 idle_orders 121 8 1 queen 812 high_templar|ghost 70 Health(GreaterThanPercent 65)
 idle_orders 121 8 1 queen 812 dark_templar|revenant 50 Health(GreaterThanPercent 55)
-attack_add 4 broodling
+attack_add 4 clone_broodling
 attack_prepare
 wait 300
 
@@ -458,7 +458,7 @@ wait 1500
 
 capt_expand
 :infestedLoop
-attack_add 4 broodling
+attack_add 4 clone_broodling
 attack_add 2 infested_terran
 attack_prepare
 wait 300

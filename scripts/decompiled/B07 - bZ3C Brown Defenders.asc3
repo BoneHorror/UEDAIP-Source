@@ -17,7 +17,7 @@ define_max 6 ultralisk
 define_max 255 lurker
 define_max 255 ultralisk
 define_max 255 infested_terran
-define_max 8 broodling
+define_max 8 clone_broodling
 define_max 4 defiler
 define_max 2 hdefiler
 idle_orders DisableBuiltin 0 0 0 0 0 0 0
@@ -39,24 +39,24 @@ wait 500
 upgrade 1 z_missile_attack 30
 upgrade 1 z_carapace 30
 attack_add 2 ultralisk
-attack_add 6 broodling
+attack_add 6 clone_broodling
 attack_to Loc.20 Loc.19
 wait 300
 
 attack_do
 attack_clear
 idle_orders Consume 32 1 defiler 512 zergling 70 NotEnemies|Own|Health(LessThanPercent 80)|Self(Energy(LessThanPercent 50))
-idle_orders Consume 32 1 defiler 512 broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 32 1 defiler 512 clone_broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
 idle_orders Consume 32 1 hdefiler 512 zergling 70 NotEnemies|Own|Health(LessThanPercent 80)|Self(Energy(LessThanPercent 50))
-idle_orders Consume 32 1 hdefiler 512 broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
+idle_orders Consume 32 1 hdefiler 512 clone_broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
 wait 1700
 
 defensebuild_gg 2 zergling
 defenseuse_gg 2 zergling
 defensebuild_gg 1 hydralisk
 defenseuse_gg 1 hydralisk
-defensebuild_gg 1 broodling
-defenseuse_gg 1 broodling
+defensebuild_gg 1 clone_broodling
+defenseuse_gg 1 clone_broodling
 defensebuild_ag 1 hydralisk
 defenseuse_ag 1 hydralisk
 defensebuild_ag 1 defiler
@@ -90,7 +90,7 @@ defenseuse_gg 1 hdefiler
 tech plague 30
 upgrade 2 z_missile_attack 30
 attack_add 12 zergling
-attack_add 6 broodling
+attack_add 6 clone_broodling
 attack_add 1 defiler
 attack_to Loc.20 Loc.19
 wait 300
@@ -113,7 +113,7 @@ idle_orders 144 64 1 hdefiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|
 idle_orders 144 64 1 hdefiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|ultralisk|hultralisk 80 incombat
 idle_orders 144 64 1 hdefiler 512 heavy_marine|medic|ghost|phantom|marine|firebat|vulture|zealot|hydralisk|mutalisk|revenant|dark_templar|high_templar 55 incombat|count(AtLeast 4 120 14)
 attack_add 4 ultralisk
-attack_add 8 broodling
+attack_add 8 clone_broodling
 attack_add 1 hdefiler
 attack_to Loc.14 Loc.15
 wait 300
@@ -133,7 +133,7 @@ attack_clear
 upgrade 1 defiler_mana 30
 upgrade 1 voracity 30
 attack_add 4 ultralisk
-attack_add 8 broodling
+attack_add 8 clone_broodling
 attack_to Loc.20 Loc.19
 wait 300
 
@@ -152,7 +152,7 @@ wait 2800
 attack_add 3 ultralisk
 attack_add 1 defiler
 attack_add 5 hydralisk
-attack_add 8 broodling
+attack_add 8 clone_broodling
 attack_to Loc.14 Loc.15
 wait 300
 
