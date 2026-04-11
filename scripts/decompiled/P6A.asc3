@@ -200,7 +200,6 @@ attack_clear
 train 2 queen
 upgrade 1 56 30
 tech spawn_broodling 30
-multirun bl_add
 wait 1615
 
 train 3 mutalisk
@@ -353,19 +352,6 @@ max_workers 255
 wait 1500
 
 goto d_loop
-
-:bl_add
-wait 16
-
-wait_train 8 broodling
-if_attacking check_bl
-goto bl_add
-
-:check_bl
-attack_add 4 broodling
-wait 2500
-
-goto bl_add
 
 :grand_exchange
 wait 2650

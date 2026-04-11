@@ -15,10 +15,10 @@ upgrade_jump 13 Exactly_Call 74 6 easy_upgrades
 upgrade_jump 13 Exactly_Call 74 7 hard_upgrades
 wait 110
 
-defensebuild_gg 2 broodling
-defenseuse_gg 2 broodling
+defensebuild_gg 2 clone_broodling
+defenseuse_gg 2 clone_broodling
 max_force 500
-define_max 4 broodling
+define_max 4 clone_broodling
 :sp
 wait 5
 
@@ -26,7 +26,7 @@ notowns_jump spawning_pool sp
 defensebuild_gg 1 zergling
 defenseuse_gg 1 zergling
 define_max 8 zergling
-define_max 2 broodling
+define_max 2 clone_broodling
 multirun implodes
 :hd
 wait 5
@@ -42,7 +42,7 @@ wait 5000
 
 define_max 10 zergling
 define_max 5 hydralisk
-define_max 4 broodling
+define_max 4 clone_broodling
 :loop
 wait 1500
 

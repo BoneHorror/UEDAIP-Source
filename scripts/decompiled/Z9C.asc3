@@ -32,20 +32,20 @@ define_max 2 siege_tank
 define_max 15 heavy_marine
 define_max 4 scorpion
 define_max 4 death_knight
-define_max 20 broodling
+define_max 20 clone_broodling
 defensebuild_gg 1 scorpion
 defenseuse_gg 1 scorpion
 defensebuild_gg 1 heavy_marine
 defenseuse_gg 1 heavy_marine
-defensebuild_gg 1 broodling
-defenseuse_gg 1 broodling
+defensebuild_gg 1 clone_broodling
+defenseuse_gg 1 clone_broodling
 defenseuse_gg 1 zergling
-defensebuild_gg 1 broodling
-defenseuse_gg 1 broodling
+defensebuild_gg 1 clone_broodling
+defenseuse_gg 1 clone_broodling
 defensebuild_gg 1 death_knight
 defenseuse_gg 1 death_knight
-defensebuild_gg 1 broodling
-defenseuse_gg 1 broodling
+defensebuild_gg 1 clone_broodling
+defenseuse_gg 1 clone_broodling
 defensebuild_gg 1 hydralisk
 defenseuse_gg 1 hydralisk
 defensebuild_gg 1 lurker
@@ -97,9 +97,9 @@ farms_timing
 wait 150
 
 train 3 infested_terran
-train 4 broodling
+train 4 clone_broodling
 train 2 mutalisk
-attack_add 4 broodling
+attack_add 4 clone_broodling
 attack_add 2 mutalisk
 attack_to Loc.97 Loc.98
 wait 16
@@ -184,11 +184,11 @@ wait 160
 
 train 6 infested_terran
 wait_force 4 infested_terran
-train 4 broodling
+train 4 clone_broodling
 train 4 hydralisk
 deaths 5 Add 1 valkyrie build_em
 attack_add 4 infested_terran
-attack_add 4 broodling
+attack_add 4 clone_broodling
 attack_add 4 hydralisk
 attack_add 4 scorpion
 call zerg_prep
@@ -384,7 +384,7 @@ wait 1000
 goto broodling_training
 
 :advanced_broodling
-wait_train 20 broodling
+wait_train 20 clone_broodling
 :bl_aa
 wait 16
 
@@ -392,7 +392,7 @@ if_attacking bl_ad
 goto bl_aa
 
 :bl_ad
-attack_add 16 broodling
+attack_add 16 clone_broodling
 wait 2000
 
 goto advanced_broodling
