@@ -14,6 +14,7 @@ multirun taar_upgrades
 unit_avail 13 Set Disabled spawnsire taar_idle
 #set magenta player color
 upgrade_jump 13 Set 81 1 taar_loop
+define_max 3 defiler
 define_max 12 broodling
 define_max 255 spawnsire
 define_max 8 scourge
@@ -33,6 +34,7 @@ defensebuild_ag 2 gray
 defenseuse_ag 2 gray
 defensebuild_ga 1 ortu
 defenseuse_ga 1 ortu
+#intentionally don't rebuild anything - want lasting damage against main since likely  it will only be touched very late
 multirun taar_death_check
 :taar_idle
 wait 50
