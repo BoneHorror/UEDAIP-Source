@@ -22615,9 +22615,17 @@ HostBurrow:
 	if deaths(player, 194) == 1 goto HostCampaignHide #Beyond06 B06 - Set 1 Zerg Beacon as marker to hide Spawnsires until later
 HostBurrowedLoop:
 	if deaths(player, 194) == 1 goto HostCampaignHide #Beyond06 B06 - Set 1 Zerg Beacon as marker to hide Spawnsires until later
-	wait           	25
+	wait			1
+	if unit.secondary_order != 0x17 goto HostGotCloakOrder
+HostBurrowedLoopPostCheck:
+	wait           	24
 	if unit.energy > 2559 goto HostSpawn
 	goto           	HostBurrowedLoop
+
+HostGotCloakOrder:
+	set unit.cloak_count = 0
+    set unit.secondary_order = 0x17
+	goto HostBurrowedLoopPostCheck
 
 HostCampaignHide:
 	#print Reached Campaign Hide
