@@ -397,6 +397,7 @@ goto hydraLoop
 :white_infested
 if_owned hydralisk_den brown_hydras
 notowns_jump queen_nest teal_spires
+define_max 255 broodling
 define_max 6 clone_broodling
 define_max 3 queen
 define_max 4 infested_terran
