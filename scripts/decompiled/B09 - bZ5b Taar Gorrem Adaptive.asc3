@@ -253,7 +253,7 @@ attack_to Loc.50 Loc.55
 return
 
 :go_through_mid
-attack_to Loc.55 Loc.59
+attack_to Loc.56 Loc.59
 return
 
 :cr_loop
