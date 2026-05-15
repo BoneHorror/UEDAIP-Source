@@ -26457,6 +26457,7 @@ OrtuGndAttkRpt:
 OrtuGndAttkToIdle:
 	wait           	1
 	playfram       	0x00	# frame set 0
+	if flingy.movement_flags & 0x2 != 0 call FreezeClear
 	goto           	OrtuWalkingToIdle
 
 OrtuWalking:
