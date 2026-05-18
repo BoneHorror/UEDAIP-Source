@@ -82,7 +82,7 @@ train 11 hydralisk
 train 4 hhydralisk
 attack_add 4 hhydralisk
 attack_add 11 hydralisk
-call waypointing
+attack_to Loc.42 Loc.55
 wait 500
 
 attack_do

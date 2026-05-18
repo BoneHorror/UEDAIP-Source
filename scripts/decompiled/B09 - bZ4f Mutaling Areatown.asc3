@@ -87,7 +87,7 @@ train 20 zergling
 train 8 mutalisk
 attack_add 8 mutalisk
 attack_add 20 zergling
-call waypointing
+attack_to Loc.64 Loc.65
 wait 500
 
 attack_do

@@ -18,7 +18,7 @@ build 2 creep_colony 80
 build 1 spore_colony 80
 build 1 sunken_colony 80
 max_workers 12
-wait 11500
+wait 9500
 
 call wait_attack
 call hold_attack
@@ -57,7 +57,19 @@ build 1 hive 80
 build 12 drone 80
 call release_attack
 upgrade 1 voracity 30
-wait 8900
+wait 7200
+
+call wait_attack
+call hold_attack
+train 3 ultralisk
+attack_add 3 ultralisk
+attack_to Loc.42 Loc.55
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+wait 250
 
 call wait_attack
 call hold_attack
