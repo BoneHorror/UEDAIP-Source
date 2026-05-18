@@ -28,7 +28,7 @@ define_max 8 ortu
 define_max 36 gray
 max_force 950
 max_workers 45
-wait 1780
+wait 1580
 
 defensebuild_gg 2 sy_demon
 defenseuse_gg 2 sy_demon
@@ -113,7 +113,7 @@ upgrade 1 gray_rounds 30
 #upgrade taar gray plasma overcharge - to add to defs later
 upgrade 1 z_flyer_carapace 30
 upgrade 2 z_melee_attack 30
-wait 2250
+wait 2050
 
 multirun aggressive_growth
 build 1 defiler_mound 80
@@ -142,7 +142,7 @@ upgrade 2 z_carapace 30
 upgrade 2 z_flyer_carapace 30
 upgrade 1 bone_mastery 30
 tech plague 30
-wait 3050
+wait 2650
 
 train 14 sy_demon
 attack_add 14 sy_demon
@@ -185,7 +185,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 3250
+wait 3050
 
 train 9 sy_demon
 train 2 defiler
