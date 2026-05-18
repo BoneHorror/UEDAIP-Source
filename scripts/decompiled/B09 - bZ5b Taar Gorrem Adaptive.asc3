@@ -38,6 +38,7 @@ multirun timer_mapside
 train 6 gray
 attack_add 6 gray
 attack_to Loc.56 Loc.57
+#attack towards player
 wait 500
 
 attack_do
@@ -59,7 +60,7 @@ wait 1500
 
 build 1 spire 80
 build 25 drone 80
-wait 1250
+wait 933
 
 multirun aggressive_growth
 build 2 xenowort 80
@@ -86,7 +87,7 @@ idle_orders 119 64 1 atril 256 group_men 55 count(AtLeast 2 106 14)|WithoutUnitF
 idle_orders 119 64 1 atril 256 group_men 70 count(AtLeast 3 106 14)|WithoutUnitFlags(Air)
 idle_orders 119 64 1 atril 256 group_men 110 count(AtLeast 4 106 14)|WithoutUnitFlags(Air)
 idle_orders 119 64 1 atril 256 photon_cannon|sunken_colony|creep_colony|spore_colony|bunker|missile_turret|drone|probe|scv 100 count(AtLeast 2 106 14)
-wait 2500
+wait 2240
 
 upgrade 1 z_carapace 30
 build 3 psi_dominator 80
@@ -134,7 +135,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 3050
+wait 2550
 
 upgrade 1 gray_rounds 30
 defensebuild_ag 1 defiler
@@ -164,7 +165,7 @@ idle_orders 144 64 1 defiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|d
 idle_orders 144 64 1 defiler 512 hnorad|battlecruiser|valhalla|carrier|arbiter|ultralisk 80 incombat
 idle_orders 144 64 1 defiler 512 heavy_marine|medic|ghost|phantom|marine|firebat|vulture|zealot|hydralisk|mutalisk|revenant|dark_templar|high_templar 55 incombat|count(AtLeast 4 120 14)
 :taar_loop
-wait 2650
+wait 2350
 
 train 6 sy_demon
 train 6 ortu
@@ -175,7 +176,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 3650
+wait 3150
 
 train 10 gorrem
 attack_add 10 gorrem
@@ -184,7 +185,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 3050
+wait 2750
 
 train 20 gray
 train 7 gorrem
