@@ -48,6 +48,26 @@ deaths 13 Exactly 1 194 taar_idle
 unit_avail 13 Set Enabled spawnsire taar_idle
 define_max 8 spawnsire
 defensebuild_gg 1 spawnsire
+train 3 ortu
+train 10 gray
+attack_add 10 gray
+attack_add 3 ortu
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 2500
+
+train 12 gray
+train 4 sy_demon
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3153
+
 :taar_loop
 wait 1533
 
@@ -69,6 +89,8 @@ wait 500
 
 attack_do
 attack_clear
+wait 833
+
 train 5 ortu
 attack_add 5 ortu
 attack_prepare
