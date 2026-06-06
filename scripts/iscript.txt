@@ -27290,8 +27290,174 @@ GorremStealGas:
 	set game.gas(player) = game.gas(player)+25
 	return
 	
+# ----------------------------------------------------------------------------- #
+# This header is used by images.dat entries:
+# 068 CreepColony (zerg\fcolony.grp)
+.headerstart
+IsId           	420
+Type           	20
+Init           	SlugInit
+Death          	CerebrateDeath
+GndAttkInit    	[NONE]
+AirAttkInit    	[NONE]
+Unused1        	[NONE]
+GndAttkRpt     	[NONE]
+AirAttkRpt     	[NONE]
+CastSpell      	[NONE]
+GndAttkToIdle  	[NONE]
+AirAttkToIdle  	[NONE]
+Unused2        	[NONE]
+Walking        	[NONE]
+WalkingToIdle  	[NONE]
+SpecialState1  	[NONE]
+SpecialState2  	[NONE]
+AlmostBuilt    	SlugAlmostBuilt
+Built          	SlugBuilt
+Landing        	[NONE]
+LiftOff        	[NONE]
+IsWorking      	SlugWorking
+WorkingToIdle  	long00
+WarpIn         	[NONE]
+.headerend
+# ----------------------------------------------------------------------------- #
 
+SlugInit:
+	imgul          	1016 0 0	# SlugSha
+	playfram       	160
+	goto           	long00
+
+SlugAlmostBuilt:
+	imgol          	107 0 0	# ZergBuildingSpawnSmall (zerg\zSpawn01.grp)
+SlugBuilt:
+	playfram       	156
+	wait			2
+	playfram		157
+	wait			2
+	playfram		158
+	wait 			2
+	playfram		159
+	wait			2
+	playfram		160
+SlugLocal00:
+	wait			12
+	playfram		161
+	wait			4
+	playfram		162
+	goto           	SlugLocal00
 	
+SlugWorking:
+	wait			9
+	playfram		161
+	wait			3
+	playfram		162
+	goto SlugWorking
+
+# ----------------------------------------------------------------------------- #
+# This header is used by images.dat entries:
+# 068 CreepColony (zerg\fcolony.grp)
+.headerstart
+IsId           	421
+Type           	27
+Init           	XenoInit
+Death          	XenoDeath
+GndAttkInit    	XenoAttkInit
+AirAttkInit    	XenoAttkInit
+Unused1        	[NONE]
+GndAttkRpt     	XenoAttkRpt
+AirAttkRpt     	XenoAttkRpt
+CastSpell      	[NONE]
+GndAttkToIdle  	XenoAttkToIdle
+AirAttkToIdle  	XenoAttkToIdle
+Unused2        	[NONE]
+Walking        	[NONE]
+WalkingToIdle  	[NONE]
+SpecialState1  	[NONE]
+SpecialState2  	[NONE]
+AlmostBuilt    	XenoAlmostBuilt
+Built          	XenoBuilt
+Landing        	[NONE]
+LiftOff        	[NONE]
+IsWorking      	long00
+WorkingToIdle  	long00
+WarpIn         	PhotonCannonWarpIn
+Unused3        	[NONE]
+StarEditInit   	[NONE]
+Disable        	long00
+Burrow         	[NONE]
+UnBurrow       	[NONE]
+Enable         	long00
+.headerend
+# ----------------------------------------------------------------------------- #
+
+XenoInit:
+	imgul          	1014 0 0	# XenoSha
+	playfram       	181
+	goto           	long00
+
+XenoAlmostBuilt:
+	imgol          	107 0 0	# ZergBuildingSpawnSmall (zerg\zSpawn01.grp)
+XenoBuilt:
+	playfram       	174
+	wait			2
+	playfram		175
+	wait			2
+	playfram		176
+	wait 			2
+	playfram		177
+	wait			2
+	playfram		178
+	wait			2
+	playfram		179
+	wait 			2
+	playfram		180
+	wait			2
+	
+XenoLocal00:
+	playfram		181
+	goto           	long00
+
+XenoAttkInit:
+	wait			1
+XenoAttkRpt:
+	wait           	1
+	playsnd    		1195	# Taar/TurrATK.WAV
+	attack         	
+	gotorepeatattk 	
+	ignorerest     	
+XenoAttkToIdle:
+	wait           	2
+	goto           	XenoLocal00
+	
+XenoDeath:
+	playsnd        	774	# Zerg\Bldg\ZBldgDth.WAV
+	playfram		190
+	wait           	2
+	playfram		191
+	wait           	2
+	playfram		192
+	wait           	2
+	playfram		193
+	wait           	2
+	playfram		194
+	wait           	2
+	playfram		195
+	wait           	2
+	playfram		196
+	wait           	2
+	playfram		197
+	wait           	2
+	playfram		198
+	wait           	2
+	playfram		199
+	wait           	2
+	playfram		200
+	wait           	2
+	playfram		201
+	wait           	2
+	playfram		202
+	wait           	2
+	end   
+
 # ----------------------------------------------------------------------------- #
 # ------------------------------------------------------------------------------ #
 # LONG JUMPS (these are usually shared routines between many animations)         #
