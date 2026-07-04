@@ -346,13 +346,13 @@ build 1 missile_turret 80
 build 1 refinery 80
 build 1 comsat_station 80
 build 5 missile_turret 80
-max_force 1400
+max_force 933
 define_max 34 marine
 define_max 15 firebat
 define_max 7 siege_tank
 define_max 8 goliath
 define_max 8 wraith
-define_max 15 scv
+define_max 27 scv
 define_max 5 dropship
 define_max 12 vulture
 define_max 5 medic
@@ -363,6 +363,7 @@ upgrade_jump 2 Set t_vehicle_weapon 0 block11
 upgrade_jump 2 Set t_ship_weapon 0 block11
 tech siege_mode 30
 upgrade 1 vulture_speed 30
+upgrade_jump 13 Set 74 5 grand_exchange
 wait 16
 
 train 8 marine
@@ -374,6 +375,8 @@ wait 500
 
 attack_do
 attack_clear
+build 11 scv 80
+multirun grand_exchange
 defensebuild_gg 2 marine
 defenseuse_gg 2 marine
 defensebuild_gg 1 vulture
@@ -420,6 +423,8 @@ wait 500
 
 attack_do
 attack_clear
+panic terran_town
+build 13 scv 80
 build 2 starport 80
 tech spider_mines 30
 upgrade 1 t_infantry_weapon 30
@@ -470,6 +475,7 @@ wait 500
 
 attack_do
 attack_clear
+build 15 scv 80
 defensebuild_aa 1 valkyrie
 defenseuse_aa 1 valkyrie
 build 2 control_tower 80
@@ -497,6 +503,7 @@ upgrade 3 t_ship_weapon 30
 upgrade 3 t_infantry_weapon 30
 upgrade 3 t_infantry_armor 30
 place_guard science_vessel 0
+deaths 13 Exactly_Call 1 104 duran_vs_ued
 :block11
 wait 1345
 
@@ -536,6 +543,7 @@ wait 500
 
 attack_do
 attack_clear
+deaths 13 Exactly_Call 1 104 duran_vs_ued
 train 1 goliath
 train 15 marine
 train 4 goliath
@@ -560,6 +568,7 @@ wait 500
 
 attack_do
 attack_clear
+deaths 13 Exactly_Call 1 104 duran_vs_ued
 train 1 goliath
 train 6 marine
 train 3 goliath
@@ -575,6 +584,94 @@ wait 500
 attack_do
 attack_clear
 goto block11
+
+:duran_vs_ued
+harass_location
+idle_orders 10 32 1 marine|ghost 192 group_men 80 Health(LessThan 6)
+idle_orders 10 32 1 marine|ghost 192 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 120 Health(LessThan 6)
+idle_orders 10 32 1 marine|ghost 192 sunken_colony|photon_cannon 90 Health(LessThan 6)
+idle_orders 10 32 3 marine|ghost 212 drone|scv|probe 50 0
+idle_orders 10 32 3 marine|ghost 192 group_men 90 Health(LessThan 15)
+idle_orders 10 32 3 marine|ghost 192 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 130 Health(LessThan 15)
+idle_orders 10 32 3 marine|ghost 192 sunken_colony|photon_cannon 100 Health(LessThan 12)
+idle_orders 10 32 5 marine|ghost 192 group_men 95 Health(LessThan 30)
+idle_orders 10 32 5 marine|ghost 192 infested_terran|queen|dark_archon|defiler|lurker|ghost|high_templar|siege_tank 135 Health(LessThan 30)
+idle_orders 10 32 5 marine|ghost 192 sunken_colony|photon_cannon|bunker 105 Health(LessThan 21)
+idle_orders 10 32 1 firebat 128 drone|scv|probe 70 0
+idle_orders 10 32 1 firebat 128 drone|scv|probe 150 count(AtLeast 2 24 14)
+idle_orders 10 32 1 firebat 128 zergling|zealot|hydralisk|dark_templar 110 count(AtLeast 2 26 14)
+idle_orders 10 32 2 firebat 128 zergling|zealot|hydralisk|dark_templar 130 count(AtLeast 3 26 14)
+idle_orders 10 32 1 firebat 128 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine 110 count(AtLeast 2 26 14)
+idle_orders 10 32 2 firebat 128 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine 130 count(AtLeast 3 26 14)
+idle_orders 10 64 1 siege_tank 288 sunken_colony|photon_cannon|bunker 110 Health(LessThan 73)
+idle_orders 10 64 1 siege_tank 288 drone|scv|probe 50 Count(AtLeast 2 48 14)
+idle_orders 10 64 1 siege_tank 288 group_men 100 Health(LessThan 36)|WithoutUnitFlags(Air)
+idle_orders 10 64 2 siege_tank 288 group_men 105 Health(LessThan 73)|WithoutUnitFlags(Air)
+idle_orders 10 64 1 siege_tank 288 infested_terran|dark_archon|defiler|archon 130 Health(LessThan 80)
+idle_orders 10 64 1 siege_tank 288 lurker|defiler|high_templar 120 Health(LessThan 50)
+idle_orders 10 64 1 siege_tank 330 zergling|zealot|hydralisk|dark_templar|ghost|high_templar|marine|firebat 120 count(AtLeast 3 48 14)
+idle_orders 10 32 1 wraith 210 mutalisk|scout|corsair|scourge|wraith 110 Health(LessThan 20)
+idle_orders 10 32 3 wraith 210 mutalisk|scout|corsair|scourge|wraith 135 Health(LessThan 60)
+idle_orders 10 32 1 wraith 210 devourer|hnorad|battlecruiser|carrier 150 Health(LessThan 20)
+idle_orders 10 32 2 wraith 210 devourer|hnorad|battlecruiser|carrier 160 Health(LessThan 40)
+idle_orders 10 32 3 wraith 210 devourer|hnorad|battlecruiser|carrier 170 Health(LessThan 60)
+idle_orders 10 32 4 wraith 210 devourer|hnorad|battlecruiser|carrier 190 Health(LessThan 80)
+idle_orders 10 32 1 wraith 210 shuttle|observer|overlord 60 Health(LessThan 20)
+idle_orders 10 32 1 goliath 224 group_men 60 Health(LessThan 11)
+idle_orders 10 32 1 goliath 224 infested_terran|defiler|dark_archon|lurker|dark_templar|ghost|siege_tank 90 Health(LessThan 12)
+idle_orders 10 32 2 goliath 224 infested_terran|defiler|dark_archon|lurker|dark_templar|ghost|siege_tank 90 Health(LessThan 22)
+idle_orders 10 32 1 vulture 224 group_men 60 Health(LessThan 5)|WithoutUnitFlags(Air)
+idle_orders 10 32 2 vulture 224 drone|scv|probe 150 0
+idle_orders 10 32 1 hnorad|battlecruiser|goliath 192 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 80 Health(LessThan 30)
+idle_orders 10 32 2 hnorad|battlecruiser|goliath 192 mutalisk|scout|corsair|scourge|devourer|carrier|arbiter 90 Health(LessThan 60)
+idle_orders 92 256 3 marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 ghost 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 256 1 firebat 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
+idle_orders 92 64 3 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 ghost 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 64 1 firebat 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(Guard))
+idle_orders 92 256 3 marine 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 ghost 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 256 1 firebat 368 bunker 50 Own|NotEnemies|Self(Order(163))
+idle_orders 92 64 3 marine 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 ghost 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+idle_orders 92 64 1 firebat 168 bunker 90 Own|NotEnemies|Self(InCombat)|Self(Order(163))
+build 2 bunker 80
+deaths 13 Set 0 104 grand_exchange
+resources 13 Add Ore 14200 ge_init
+resources 13 Add Gas 9350 ge_init
+max_force 1400
+defensebuild_gg 1 goliath
+defenseuse_gg 1 goliath
+defensebuild_gg 1 vulture
+defenseuse_gg 1 vulture
+defensebuild_ag 1 wraith
+defenseuse_ag 1 wraith
+return
+
+:terran_town
+start_town
+build 1 command_center 100
+get_oldpeons 1
+wait_build 1 command_center
+build 1 scv 90
+wait_build 1 scv
+build 6 scv 80
+max_workers 12
+build 1 bunker 80
+wait 5000
+
+build 1 missile_turret 80
+wait 5000
+
+build 1 barracks 80
+wait 12500
+
+max_workers 255
+:town_loop
+wait 1500
+
+goto town_loop
 
 
 :grand_exchange
