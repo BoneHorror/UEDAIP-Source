@@ -86,6 +86,8 @@ upgrade 1 t_vehicle_plating 30
 upgrade 1 t_ship_plating 30
 wait 4050
 
+upgrade_jump 13 Exactly 74 6 skip_tech_1
+#on easy skip final preparation steps for yellow
 tech personnel_cloaking 30
 tech cloaking_field 30
 tech stim_packs 30

@@ -134,12 +134,14 @@ wait 500
 
 attack_do
 attack_clear
+upgrade_jump 13 Exactly 74 6 easy_skip_second_nuke
 define_max 2 nuclear_missile
 build 2 command_center 80
 build 2 nuclear_silo 80
 nuke_rate 8
 wait 1
 
+:easy_skip_second_nuke
 upgrade 1 vulture_speed 30
 upgrade 2 t_infantry_weapon 30
 upgrade 2 t_ship_plating 30
@@ -366,6 +368,8 @@ goto block1
 wait 480
 
 if_owned zergling debug_defense
+upgrade_jump 13 Exactly 74 7 ng_def_exec
+#on Hard always trigger self-defense block
 bring_jump 2 Exactly 0 command_center Loc.63 ng_def_exec
 goto noguard_defense
 
