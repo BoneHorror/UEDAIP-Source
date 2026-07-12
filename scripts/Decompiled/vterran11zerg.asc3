@@ -55,7 +55,9 @@ farms_timing
 multirun ending_seq
 wait 2500
 
-deaths 3 Exactly 1 battlecruiser easy_zerg
+deaths 3 Exactly 1 battlecruiser bank_easy_zerg
+upgrade_jump 13 Exactly 74 7 hard_opener
+:oops_not_so_easy
 attack_add 1 infested_terran
 attack_prepare
 wait 500
@@ -103,6 +105,7 @@ upgrade 1 z_missile_attack 30
 upgrade 1 z_flyer_carapace 30
 tech spawn_broodling 30
 upgrade 1 ultralisk_speed 30
+upgrade_jump 13 Exactly 74 6 easy_zergloop
 :block1
 expand 5 expansion
 wait 2000
@@ -145,7 +148,8 @@ attack_do
 attack_clear
 goto block1
 
-:easy_zerg
+:bank_easy_zerg
+upgrade_jump 13 Exactly 74 7 oops_not_so_easy
 attack_add 2 zergling
 attack_prepare
 wait 500
@@ -191,6 +195,7 @@ upgrade 1 z_missile_attack 30
 upgrade 1 z_flyer_carapace 30
 tech spawn_broodling 30
 upgrade 1 ultralisk_speed 30
+upgrade_jump 13 Exactly 74 6 easy_zergloop
 :block_e
 wait 2000
 
@@ -231,6 +236,112 @@ wait 500
 attack_do
 attack_clear
 goto block_e
+
+:easy_zergloop
+wait 3500
+
+attack_add 4 zergling
+attack_add 2 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 4000
+
+attack_add 2 mutalisk
+attack_add 2 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 3300
+
+attack_add 12 zergling
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+wait 1750
+
+attack_add 4 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto easy_zergloop
+
+:hard_opener
+attack_add 3 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 ultralisk_armor 30
+wait 1500
+
+expand 5 expansion
+upgrade 1 z_carapace 30
+upgrade 1 hydralisk_range 30
+tech ensnare 30
+train 1 queen
+wait 1500
+
+attack_add 2 ultralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 zergling_speed 30
+upgrade 1 z_flyer_attack 30
+upgrade 1 z_melee_attack 30
+wait 1800
+
+attack_add 7 hydralisk
+attack_add 3 mutalisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+train 2 queen
+expand 5 expansion
+upgrade 1 hydralisk_speed 30
+upgrade 1 z_missile_attack 30
+upgrade 1 z_flyer_carapace 30
+upgrade 1 ultralisk_speed 30
+wait 2500
+
+attack_add 6 zergling
+attack_add 7 mutalisk
+attack_add 2 infested_terran
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+upgrade 2 z_flyer_attack 30
+upgrade 2 z_melee_attack 30
+upgrade 2 z_carapace 30
+upgrade 2 z_missile_attack 30
+upgrade 2 z_flyer_carapace 30
+tech spawn_broodling 30
+wait 2500
+
+attack_add 4 ultralisk
+attack_add 10 hydralisk
+attack_prepare
+wait 500
+
+attack_do
+attack_clear
+goto block1
+
 :expansion
 start_town
 build 1 hatchery 80

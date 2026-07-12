@@ -77,8 +77,13 @@ check_transports
 upgrade 1 zealot_speed 70
 train 6 zealot
 wait_buildstart 2 robotics_facility
-wait 1750
+wait 750
 
+upgrade_jump 13 Exactly 74 7 hard_skipw1
+upgrade_jump 13 Exactly_Call 74 6 easy_wait
+wait 1000
+
+:hard_skipw1
 train 6 dragoon
 attack_timeout 5
 train 8 zealot
@@ -97,8 +102,13 @@ upgrade 1 dragoon_range 70
 build 1 robotics_support_bay 80
 build 2 stargate 80
 wait_buildstart 2 stargate
-wait 1650
+wait 650
 
+upgrade_jump 13 Exactly 74 7 hard_skipw2
+upgrade_jump 13 Exactly_Call 74 6 easy_wait
+wait 1000
+
+:hard_skipw2
 upgrade 1 p_air_weapon 70
 build 4 photon_cannon 80
 train 1 scout
@@ -130,8 +140,13 @@ train 6 dragoon
 train 1 carrier
 attack_do
 attack_clear
-wait 1650
+wait 850
 
+upgrade_jump 13 Exactly 74 7 hard_skipw3
+upgrade_jump 13 Exactly_Call 74 6 easy_wait
+wait 800
+
+:hard_skipw3
 defensebuild_gg 1 zealot
 defenseuse_gg 1 zealot
 defenseuse_gg 1 carrier
@@ -359,6 +374,11 @@ wait 500
 attack_do
 attack_clear
 goto block1
+
+:easy_wait
+wait 650
+
+return
 
 :timers_and_bank
 #set base timeout for stargates to 45*433 = 21600 frames
