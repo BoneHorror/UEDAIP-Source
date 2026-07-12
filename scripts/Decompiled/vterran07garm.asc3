@@ -60,6 +60,7 @@ upgrade 1 zergling_attack 30
 place_guard hdefiler 0
 wait 1500
 
+upgrade_jump 13 Exactly 74 7 hard_altatks
 train 6 zergling
 attack_add 6 zergling
 attack_to Loc.24 Loc.25
@@ -76,6 +77,7 @@ wait 2850
 
 defensebuild_gg 1 mutalisk
 defenseuse_gg 1 mutalisk
+upgrade_jump 13 Exactly 74 6 ez_skip1
 train 4 hzergling
 attack_add 4 hzergling
 attack_prepare
@@ -83,6 +85,7 @@ wait 500
 
 attack_do
 attack_clear
+:ez_skip1
 upgrade 1 z_carapace 30
 upgrade 1 z_flyer_carapace 30
 upgrade 1 zergling_speed 30
@@ -134,6 +137,7 @@ upgrade 3 z_missile_attack 30
 upgrade 3 z_flyer_attack 30
 wait 3000
 
+upgrade_jump 13 Exactly 74 6 ez_skip2
 attack_add 6 mutalisk
 attack_add 4 hzergling
 attack_add 8 hydralisk
@@ -143,6 +147,7 @@ wait 500
 
 attack_do
 attack_clear
+:ez_skip2
 deaths 4 Exactly 1 battlecruiser missing_upgrades
 upgrade 3 z_carapace 30
 upgrade 3 z_flyer_carapace 30
@@ -196,6 +201,7 @@ wait 500
 
 attack_do
 attack_clear
+upgrade_jump 13 Exactly_Call 74 6 ez_wait
 wait 1554
 
 train 26 zergling
@@ -222,6 +228,7 @@ wait 500
 
 attack_do
 attack_clear
+upgrade_jump 13 Exactly_Call 74 6 ez_wait
 wait 321
 
 train 21 hydralisk
@@ -251,6 +258,105 @@ attack_clear
 wait 805
 
 goto block1
+
+:ez_wait
+wait 1300
+
+return
+
+:hard_altatks
+train 4 hzergling
+attack_add 4 hzergling
+attack_to Loc.24 Loc.25
+wait 500
+
+attack_do
+attack_clear
+place_guard hzergling 0
+upgrade 1 hydralisk_range 30
+upgrade 1 z_missile_attack 30
+upgrade 1 z_flyer_attack 30
+set_attacks 2
+wait 2850
+
+defensebuild_gg 1 mutalisk
+defenseuse_gg 1 mutalisk
+
+upgrade 1 z_carapace 30
+upgrade 1 z_flyer_carapace 30
+upgrade 1 zergling_speed 30
+wait 2336
+
+attack_add 16 zergling
+attack_add 1 hdefiler
+attack_to Loc.26 Loc.27
+wait 500
+
+attack_do
+attack_clear
+upgrade 1 defiler_mana 30
+upgrade 2 z_melee_attack 30
+upgrade 2 z_missile_attack 30
+upgrade 2 z_flyer_attack 30
+set_attacks 1
+wait 2420
+
+train 8 zergling
+train 7 hydralisk
+train 1 hdefiler
+attack_add 8 zergling
+attack_add 7 hydralisk
+attack_add 1 hdefiler
+attack_to Loc.28 Loc.29
+wait 500
+
+attack_do
+attack_clear
+place_guard hzergling 2
+deaths 4 Exactly 1 battlecruiser missing_upgrades
+upgrade 2 z_carapace 30
+upgrade 2 z_flyer_carapace 30
+wait 1780
+
+tech plague 30
+set_attacks 2
+train 6 mutalisk
+attack_add 6 mutalisk
+attack_to Loc.28 Loc.30
+wait 500
+
+attack_do
+attack_clear
+deaths 4 Exactly 1 battlecruiser missing_upgrades
+upgrade 3 z_melee_attack 30
+upgrade 3 z_missile_attack 30
+upgrade 3 z_flyer_attack 30
+wait 3000
+
+attack_add 6 mutalisk
+attack_add 4 hzergling
+attack_add 8 hydralisk
+attack_add 1 hdefiler
+attack_to Loc.24 Loc.25
+wait 500
+
+attack_do
+attack_clear
+deaths 4 Exactly 1 battlecruiser missing_upgrades
+upgrade 3 z_carapace 30
+upgrade 3 z_flyer_carapace 30
+wait 3000
+
+set_attacks 2
+train 7 mutalisk
+attack_add 7 mutalisk
+attack_to Loc.28 Loc.32
+wait 500
+
+attack_do
+attack_clear
+wait 3000
+goto missing_upgrades
 
 :lotsa_zerg
 wait 350
