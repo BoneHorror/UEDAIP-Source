@@ -113,6 +113,7 @@ build 13 scv 80
 train 5 wraith
 wait 865
 
+upgrade_jump 13 Exactly 74 7 hard_skipscout
 attack_add 1 wraith
 attack_prepare
 wait 100
@@ -120,14 +121,15 @@ wait 100
 attack_timeout 60
 attack_do
 attack_clear
+attack_add 1 wraith
+attack_prepare
+wait 100
+
+attack_timeout 60
+attack_do
+attack_clear
+:hard_skipscout
 upgrade 1 vademecum 40
-attack_add 1 wraith
-attack_prepare
-wait 100
-
-attack_timeout 60
-attack_do
-attack_clear
 build 16 scv 80
 attack_add 3 wraith
 attack_prepare
@@ -144,12 +146,14 @@ upgrade 1 t_infantry_armor 40
 wait 820
 
 train 8 vulture
+upgrade_jump 13 Exactly_Call 74 7 hard_atkgols
 attack_add 8 vulture
 attack_prepare
 wait 500
 
 attack_do
 attack_clear
+multirun hard_check_harass
 place_guard science_vessel 0
 upgrade 1 t_vehicle_weapon 40
 expand 3 small_expo
@@ -263,6 +267,35 @@ train 4 goliath
 attack_add 4 goliath
 goto block1
 
+:hard_atkgols
+train 3 goliath
+attack_add 3 goliath
+return
+
+:hard_check_harass
+wait 255
+
+upgrade_jump 13 Exactly 74 7 hard_docheck
+stop
+
+:hard_docheck
+wait 15
+
+if_preparing hard_docheck
+wait 500
+
+if_preparing hard_docheck
+if_attacking hard_docheck
+rush 19 hard_exec
+goto hard_docheck
+
+:hard_exec
+train 3 wraith
+train 2 goliath
+wait 2500
+
+goto hard_docheck
+
 :middle_expansion
 start_town
 build 1 command_center 100
@@ -291,8 +324,10 @@ place_guard science_vessel 0
 wait 500
 
 train 1 battlecruiser
+upgrade_jump 13 Exactly 74 6 easy_skip_bc_gg
 defensebuild_gg 1 battlecruiser
 defenseuse_gg 1 battlecruiser
+:easy_skip_bc_gg
 defensebuild_ag 1 battlecruiser
 defenseuse_ag 1 battlecruiser
 defensebuild_ga 1 battlecruiser
@@ -305,9 +340,11 @@ wait 3500
 upgrade 1 dragon_catalyst 30
 #yamato damage
 :bc_loop
-train 1 battlecruiser
 wait 125
 
+upgrade_jump 13 Exactly 74 6 bc_loop
+#on easy, dont attack with BCs
+train 1 battlecruiser
 if_attacking bc_loop
 attack_add 1 battlecruiser
 wait 2025
@@ -389,6 +426,7 @@ wait 150
 build 13 scv 80
 wait_buildstart 13 scv
 upgrade 1 t_infantry_armor 30
+upgrade_jump 6 Exactly_Call 74 6 easy_antiga_cash
 deaths 3 Exactly 1 214 line_harass
 deaths 3 Exactly 2 214 expo_deny
 train 6 marine
@@ -617,6 +655,11 @@ wait 500
 attack_do
 attack_clear
 goto antiga_loop_har
+
+:easy_antiga_cash
+resources 13 Add Ore 5000 expo_deny
+resources 13 Add Gas 2200 expo_deny
+return
 
 :expo_deny
 train 6 marine
