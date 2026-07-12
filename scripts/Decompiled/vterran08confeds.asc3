@@ -107,6 +107,8 @@ wait 500
 
 attack_do
 attack_clear
+upgrade_jump 13 Exactly_Call 74 7 hard_cloak
+upgrade_jump 13 Exactly_Call 74 6 easy_wait
 wait 2333
 
 train 2 wraith
@@ -149,8 +151,13 @@ guard marine Loc.53 1 2 60
 guard marine Loc.54 1 2 60
 guard marine Loc.55 1 2 60
 guard marine Loc.52 1 2 60
-wait 2585
+upgrade_jump 13 Exactly_Call 74 6 easy_wait
+wait 885
 
+upgrade_jump 13 Exactly 74 7 hard_skipw1
+wait 1700
+
+:hard_skipw1
 train 3 goliath
 train 10 firebat
 train 6 goliath
@@ -177,8 +184,12 @@ guard goliath Loc.28 1 2 60
 guard goliath Loc.27 1 2 60
 guard goliath Loc.17 1 2 60
 guard siege_tank Loc.16 1 2 60
-wait 2250
+wait 750
 
+upgrade_jump 13 Exactly 74 7 hard_skipw2
+wait 1500
+
+:hard_skipw2
 attack_add 6 goliath
 attack_add 4 siege_tank
 attack_prepare
@@ -195,8 +206,12 @@ guard goliath Loc.26 2 1 60
 upgrade 1 vulture_speed 30
 upgrade 1 ghost_sight 30
 tech yamato_gun 30
-wait 2150
+wait 1000
 
+upgrade_jump 13 Exactly 74 7 hard_skipw3
+wait 1150
+
+:hard_skipw3
 train 4 goliath
 train 18 marine
 attack_add 18 marine
@@ -234,6 +249,7 @@ build 2 control_tower 80
 upgrade 1 battlecruiser_mana 30
 place_guard science_vessel 2
 max_workers 255
+upgrade_jump 13 Exactly_Call 74 6 easy_wait
 :block1
 wait 1765
 
@@ -292,6 +308,16 @@ wait 500
 attack_do
 attack_clear
 goto block1
+
+:hard_cloak
+tech cloaking_field 30
+return
+
+:easy_wait
+max_force 640
+wait 950
+
+return
 
 :check_nbunker
 wait 250
