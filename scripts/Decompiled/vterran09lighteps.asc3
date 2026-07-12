@@ -43,7 +43,9 @@ wait 500
 
 attack_do
 attack_clear
+upgrade_jump 13 Exactly 74 6 easy_skipstim
 tech stim_packs 30
+:easy_skipstim
 upgrade 1 t_infantry_weapon 30
 upgrade 1 t_ship_plating 30
 wait 2500
@@ -283,7 +285,9 @@ idle_orders 143 120 1 science_vessel 1312 infested_terran|lurker|guardian|mutali
 wait 4033
 
 train 12 ghost
+upgrade_jump 13 Exactly 74 6 easy_skiplock
 tech lockdown 30
+:easy_skiplock
 attack_add 12 ghost
 attack_prepare
 wait 500
@@ -295,6 +299,7 @@ upgrade 2 t_vehicle_plating 30
 upgrade 3 t_ship_plating 30
 wait 3500
 
+upgrade_jump 13 Exactly_Call 74 7 hard_eps_ghosts
 attack_add 10 marine
 attack_prepare
 wait 500
@@ -332,12 +337,21 @@ wait 2033
 
 attack_add 10 ghost
 attack_add 4 wraith
+upgrade_jump 13 Exactly_Call 74 7 hard_eps_rines
 attack_prepare
 wait 500
 
 attack_do
 attack_clear
 goto sops
+
+:hard_eps_ghosts
+attack_add 4 ghost
+return
+
+:hard_eps_rines
+attack_add 10 marine
+return
 
 :faster_attacks_eps
 wait 2000

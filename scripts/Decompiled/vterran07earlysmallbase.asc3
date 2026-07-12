@@ -71,6 +71,7 @@ tech siege_mode 30
 wait 10500
 
 upgrade 1 vulture_speed 30
+call wait_prepare
 attack_add 3 vulture
 attack_add 1 siege_tank
 attack_prepare
@@ -80,6 +81,7 @@ attack_do
 attack_clear
 wait 4054
 
+call wait_prepare
 attack_add 4 goliath
 attack_prepare
 wait 500
@@ -89,12 +91,14 @@ attack_clear
 tech spider_mines 30
 wait 3870
 
+call wait_prepare
 attack_add 6 vulture
 attack_prepare
 wait 500
 
 attack_do
 attack_clear
+call wait_prepare
 attack_add 3 siege_tank
 attack_prepare
 wait 500
@@ -103,6 +107,7 @@ attack_do
 attack_clear
 wait 5050
 
+call wait_prepare
 attack_add 4 goliath
 attack_prepare
 wait 500
@@ -112,6 +117,7 @@ attack_clear
 :epsloop
 wait 1500
 
+call wait_prepare
 attack_add 2 goliath
 attack_add 4 vulture
 attack_prepare
@@ -121,6 +127,7 @@ attack_do
 attack_clear
 wait 4500
 
+call wait_prepare
 attack_add 3 siege_tank
 attack_add 3 goliath
 attack_prepare
@@ -130,6 +137,7 @@ attack_do
 attack_clear
 wait 4500
 
+call wait_prepare
 attack_add 6 vulture
 attack_add 4 goliath
 attack_prepare
@@ -142,9 +150,14 @@ goto epsloop
 
 :battle_dock
 define_max 3 102
-wait 15300
+wait 9300
 
+upgrade_jump 13 Exactly 74 7 hard_battleinit
+wait 6000
+
+:hard_battleinit
 tech cloaking_field 30
+call wait_prepare
 attack_add 1 102
 attack_prepare
 wait 500
@@ -153,9 +166,14 @@ attack_do
 attack_clear
 defensebuild_ga 1 wraith
 defenseuse_ga 1 wraith
-wait 6700
+wait 3000
 
+upgrade_jump 13 Exactly 74 7 hard_skipwait
+wait 3700
+
+:hard_skipwait
 upgrade 1 wraith_mana 30
+call wait_prepare
 attack_add 2 wraith
 attack_add 1 102
 attack_prepare
@@ -167,6 +185,7 @@ defensebuild_ga 1 102
 defenseuse_ga 1 102
 wait 4500
 
+call wait_prepare
 attack_add 2 102
 attack_prepare
 wait 500
@@ -175,16 +194,23 @@ attack_do
 attack_clear
 defensebuild_gg 1 102
 defenseuse_gg 1 102
-wait 8300
+wait 4300
+
+upgrade_jump 13 Exactly 74 7 battleloop
+wait 4000
 
 :battleloop
+call wait_prepare
 attack_add 3 102
 attack_prepare
 wait 500
 
 attack_do
 attack_clear
-wait 6025
+wait 4025
+
+upgrade_jump 13 Exactly 74 7 battleloop
+wait 2000
 
 goto battleloop
 
@@ -194,7 +220,7 @@ define_max 16 wraith
 wait 6805
 
 train 2 wraith
-wait_finishattack
+call wait_prepare
 attack_add 2 wraith
 attack_prepare
 wait 500
@@ -206,7 +232,7 @@ defenseuse_aa 2 wraith
 wait 4303
 
 train 4 wraith
-wait_finishattack
+call wait_prepare
 attack_add 4 wraith
 attack_prepare
 wait 500
@@ -217,7 +243,7 @@ tech cloaking_field 30
 wait 3850
 
 train 4 wraith
-wait_finishattack
+call wait_prepare
 attack_add 4 wraith
 attack_prepare
 wait 500
@@ -231,7 +257,7 @@ defenseuse_ga 1 wraith
 wait 4105
 
 train 12 wraith
-wait_finishattack
+call wait_prepare
 attack_add 12 wraith
 unstart_campaign
 attack_prepare
@@ -244,7 +270,7 @@ upgrade 1 wraith_mana 30
 wait 3783
 
 train 9 wraith
-wait_finishattack
+call wait_prepare
 attack_add 9 wraith
 attack_prepare
 wait 500
@@ -256,7 +282,7 @@ defenseuse_gg 1 wraith
 wait 3707
 
 train 16 wraith
-wait_finishattack
+call wait_prepare
 attack_add 16 wraith
 unstart_campaign
 attack_prepare
@@ -269,13 +295,14 @@ attack_clear
 train 12 wraith
 wait 850
 
-wait_finishattack
+call wait_prepare
 attack_add 4 wraith
 attack_prepare
 wait 500
 
 attack_do
 attack_clear
+call wait_prepare
 attack_add 4 wraith
 attack_prepare
 wait 500
@@ -285,7 +312,7 @@ attack_clear
 wait 4805
 
 train 10 wraith
-wait_finishattack
+call wait_prepare
 attack_add 10 wraith
 attack_prepare
 wait 500
@@ -293,3 +320,9 @@ wait 500
 attack_do
 attack_clear
 goto dockloop
+
+:wait_prepare
+wait 5
+
+if_preparing wait_prepare
+return
