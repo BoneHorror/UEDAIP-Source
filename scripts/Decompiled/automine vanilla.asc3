@@ -5,6 +5,7 @@ script_id DWHe
 multirun terran_idle
 multirun zerg_idle
 multirun protoss_idle
+multirun autosave_block
 deaths 0 Exactly 2 98 terran_2
 deaths 0 Exactly 3 98 terran_3
 deaths 0 Exactly 4 98 terran_4
@@ -689,3 +690,10 @@ return
 print(Current Difficulty: Hard)
 upgrade_jump 14 Set 74 7 void
 return
+
+:autosave_block
+wait 5760
+
+#print saving
+autosave Autosave 2
+goto autosave_block
