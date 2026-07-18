@@ -45,6 +45,7 @@ max_force 800
 farms_timing
 wait 16
 
+upgrade_jump 13 Exactly 74 7 hard_skip_scouts
 train 2 marine
 attack_add 2 marine
 attack_prepare
@@ -52,12 +53,14 @@ wait 500
 
 attack_do
 attack_clear
+:hard_skip_scouts
 guard_all
 upgrade 1 marine_range 30
 upgrade 1 t_infantry_weapon 30
 upgrade 1 t_vehicle_weapon 30
 wait 32
 
+upgrade_jump 13 Exactly 74 7 hard_skip_scouts2
 train 2 marine
 train 2 firebat
 attack_add 2 marine
@@ -69,6 +72,7 @@ attack_do
 attack_clear
 wait 32
 
+:hard_skip_scouts2
 train 12 marine
 attack_add 12 marine
 attack_prepare
@@ -80,6 +84,7 @@ wait 15
 
 train 3 goliath
 train 8 firebat
+upgrade_jump 13 Exactly_Call 74 7 hard_tank
 attack_add 3 goliath
 attack_add 8 firebat
 attack_prepare
@@ -92,11 +97,13 @@ upgrade 1 t_ship_weapon 30
 upgrade 1 t_infantry_armor 30
 train 20 marine
 attack_add 20 marine
+upgrade_jump 13 Exactly 74 7 hard_join_atk
 attack_prepare
 wait 500
 
 attack_do
 attack_clear
+:hard_join_atk
 train 4 wraith
 attack_add 4 wraith
 attack_prepare
@@ -170,6 +177,10 @@ attack_do
 attack_clear
 goto block1
 
+:hard_tank
+attack_add 1 siege_tank
+return
+
 :garm_brood
 build 1 hatchery 150
 build 6 drone 130
@@ -206,6 +217,7 @@ wait 350
 unstart_campaign
 wait 16
 
+upgrade_jump 5 Exactly_Call 74 6 monies
 capt_expand
 build 5 creep_colony 80
 build 3 sunken_colony 80
@@ -349,3 +361,8 @@ wait 500
 attack_do
 attack_clear
 goto blockg
+
+:monies
+resources 13 Add Ore 1500 blockg
+resources 13 Add Gas 600 blockg
+return
