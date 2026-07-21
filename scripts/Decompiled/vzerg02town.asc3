@@ -70,6 +70,7 @@ upgrade 1 shuttle_speed 50
 expand 1 expo
 wait 733
 
+upgrade_jump 13 Exactly_Call 74 7 hard_def_reaver
 train 2 high_templar
 do_morph 1 archon
 train 6 dragoon
@@ -77,7 +78,7 @@ attack_add 3 dragoon
 attack_to Loc.6 Loc.7
 wait 133
 
-attack_timeout 27
+attack_timeout 45
 attack_do
 attack_clear
 attack_add 1 archon
@@ -85,7 +86,7 @@ attack_add 3 dragoon
 attack_to Loc.8 Loc.9
 wait 133
 
-attack_timeout 35
+attack_timeout 45
 attack_do
 attack_clear
 upgrade 1 scarab_damage 50
@@ -181,6 +182,12 @@ attack_do
 attack_clear
 expand 1 expo
 goto block1
+
+:hard_def_reaver
+define_max 3 reaver
+defensebuild_gg 1 reaver
+defenseuse_gg 1 reaver
+return
 
 :vzerg02ter
 start_campaign
