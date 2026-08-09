@@ -4,6 +4,7 @@ script_id DWHe
 multirun terran_idle
 multirun zerg_idle
 multirun protoss_idle
+multirun autosave_block
 #98 is raszagal, 219 - khaydarin crystal
 deaths 13 Set 1 219 void
 #above line is to verify campaign state in iscript
@@ -1005,3 +1006,9 @@ print(Current Difficulty: Hard)
 upgrade_jump 14 Set 74 7 void
 return
 
+:autosave_block
+wait 5760
+
+#print saving
+autosave Autosave 2
+goto autosave_block
