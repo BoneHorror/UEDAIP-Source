@@ -377,11 +377,15 @@ wait 22500
 goto loop
 
 :ending_seq
+#give some time for early Protoss setup unless Player cheeses
+wait 5300
+
+:es_loop
 wait 16
 
 bring_jump 1 AtMost 4 group_factories Loc.63 skipt_seq
-bring_jump 1 AtMost 10 group_buildings Loc.63 skipt_seq
-deaths 3 AtMost 0 148 ending_seq
+bring_jump 1 AtMost 13 group_buildings Loc.63 skipt_seq
+deaths 3 AtMost 0 148 es_loop
 :skipt_seq
 unstart_campaign
 creep 4
