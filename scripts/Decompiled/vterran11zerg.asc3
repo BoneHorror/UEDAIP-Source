@@ -379,8 +379,8 @@ goto loop
 :ending_seq
 wait 16
 
-bring_jump 1 AtMost 2 group_factories Loc.63 skipt_seq
-bring_jump 1 AtMost 4 group_buildings Loc.63 skipt_seq
+bring_jump 1 AtMost 4 group_factories Loc.63 skipt_seq
+bring_jump 1 AtMost 10 group_buildings Loc.63 skipt_seq
 deaths 3 AtMost 0 148 ending_seq
 :skipt_seq
 unstart_campaign
@@ -396,6 +396,26 @@ wait 16
 capt_expand
 capt_expand
 capt_expand
+defensebuild_gg 2 zergling
+defenseuse_gg 2 zergling
+defensebuild_gg 1 hydralisk
+defenseuse_gg 1 hydralisk
+defensebuild_gg 1 mutalisk
+defenseuse_gg 1 mutalisk
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+defensebuild_gg 1 infested_terran
+defenseuse_gg 1 infested_terran
+defensebuild_ag 1 hydralisk
+defenseuse_ag 1 hydralisk
+defensebuild_ag 1 mutalisk
+defenseuse_ag 1 mutalisk
+defensebuild_ag 1 scourge
+defenseuse_ag 1 scourge
+defensebuild_ga 1 guardian
+defenseuse_ga 1 guardian
+defensebuild_aa 1 scourge
+defenseuse_aa 1 scourge
 define_max 80 zergling
 define_max 40 hydralisk
 define_max 25 mutalisk
