@@ -46,6 +46,7 @@ tech_jump 13 Set optical_flare 1 small_town
 idle_orders 185 8 1 hydralisk 192 group_men 20 Incombat|WithoutSpellEffects(Blind)
 idle_orders 185 8 1 hydralisk 192 reaver|high_templar|scout|wraith|carrier|ultralisk|siege_tank|battlecruiser|arbiter|medic|death_knight|phantom|panzer|valkyrie|corsair 50 Incombat|WithoutSpellEffects(Blind)
 idle_orders 185 8 1 hydralisk 256 observer|science_vessel|skywing|overlord|valhalla 100 WithoutSpellEffects(Blind)
+upgrade_jump 13 Exactly 74 6 e_skip_hallu
 idle_orders 148 16 1 ultralisk 512 hydralisk 40 own|allied|notenemies|incombat
 idle_orders 148 16 1 ultralisk 512 mutalisk 30 own|allied|notenemies|incombat
 idle_orders 148 16 1 ultralisk 512 lurker 70 own|allied|notenemies|incombat
@@ -54,6 +55,7 @@ idle_orders 148 16 1 ultralisk 512 devourer 50 own|allied|notenemies|incombat
 idle_orders 148 16 1 ultralisk 512 overlord 30 own|allied|notenemies|incombat
 idle_orders 148 16 1 ultralisk 512 queen 60 own|allied|notenemies|incombat
 idle_orders 148 16 1 ultralisk 512 zergling 10 own|allied|notenemies|incombat
+:e_skip_hallu
 idle_orders 10 16 5 mutalisk 200 drone|scv|probe 100 0
 idle_orders 11 160 2 lurker 192 drone|scv|probe 100 Count(AtLeast 2 40 14)
 idle_orders 10 16 2 zergling 100 drone|scv|probe 100 0
@@ -63,6 +65,7 @@ build 16 drone 80
 allies_watch 3 small_town
 max_workers 18
 multirun worker_decay
+upgrade_jump 13 Exactly 74 7 h_skip_opening
 wait 1150
 
 attack_add 6 zergling
@@ -71,6 +74,7 @@ wait 500
 
 attack_do
 attack_clear
+:h_skip_opening
 multirun grand_exchange
 build 1 spire 80
 define_max 12 zergling
@@ -93,6 +97,7 @@ wait 535
 guard defiler Loc.85 1 1 60
 wait 1000
 
+upgrade_jump 13 Exactly_Call 74 7 h_mutas
 attack_add 12 zergling
 attack_prepare
 wait 500
@@ -117,6 +122,7 @@ allies_watch 6 small_town
 guard defiler Loc.67 1 1 60
 wait 1200
 
+upgrade_jump 13 Exactly_Call 74 7 h_add_muta
 attack_add 18 zergling
 attack_prepare
 wait 500
@@ -156,6 +162,7 @@ place_guard defiler 0
 wait 1375
 
 train 36 zergling
+upgrade_jump 13 Exactly_Call 74 7 h_add_muta
 attack_add 36 zergling
 attack_prepare
 wait 500
@@ -200,6 +207,7 @@ expand 5 small_town
 wait 2935
 
 train 23 hydralisk
+upgrade_jump 13 Exactly_Call 74 7 h_add_muta
 attack_add 23 hydralisk
 attack_prepare
 wait 500
@@ -224,6 +232,7 @@ wait 2600
 
 train 22 zergling
 train 14 hydralisk
+upgrade_jump 13 Exactly_Call 74 7 h_add_muta
 attack_add 22 zergling
 attack_add 14 hydralisk
 attack_prepare
@@ -233,6 +242,18 @@ attack_do
 attack_clear
 goto block1
 
+:h_mutas
+define_max 5 mutalisk
+defensebuild_gg 1 mutalisk
+defenseuse_gg 1 mutalisk
+defensebuild_aa 1 mutalisk
+defenseuse_aa 1 mutalisk
+attack_add 3 mutalisk
+return
+
+:h_add_muta
+attack_rand 2 4 mutalisk
+return
 
 :m_fort
 start_town

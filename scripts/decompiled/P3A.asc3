@@ -69,7 +69,9 @@ capt_expand
 train 3 mutalisk
 train 1 guardian
 attack_add 2 mutalisk
+upgrade_jump 13 Exactly 74 6 e_easier1
 attack_add 1 guardian
+:e_easier1
 attack_to Loc.42 Loc.24
 wait 300
 
@@ -99,7 +101,11 @@ guard guardian Loc.77 1 1 60
 guard guardian Loc.78 1 1 60
 upgrade 1 z_carapace 30
 create_script n_fort 255 Loc.54 255 0
-wait 1750
+upgrade_jump 13 Exactly 74 7 h_shorter_1
+wait 650
+
+:h_shorter_1
+wait 1100
 
 train 6 mutalisk
 attack_add 6 mutalisk
@@ -114,10 +120,10 @@ upgrade 1 z_flyer_carapace 50
 wait 1633
 
 train 5 mutalisk
-train 14 zergling
+train 16 zergling
 train 4 guardian
 train 1 devourer
-attack_add 14 zergling
+attack_add 16 zergling
 attack_add 4 guardian
 attack_add 1 devourer
 attack_prepare
@@ -130,13 +136,15 @@ upgrade 2 z_flyer_attack 50
 upgrade 1 zergling_speed 30
 tech ensnare 30
 create_script g_fort 255 Loc.75 255 0
-wait 2185
+upgrade_jump 13 Exactly 74 7 h_shorter_2
 
-train 11 mutalisk
-train 8 zergling
+wait 1285
+:h_shorter_2
+wait 900
+
+train 12 mutalisk
 train 5 guardian
-attack_add 8 zergling
-attack_add 6 mutalisk
+attack_add 7 mutalisk
 attack_add 5 guardian
 attack_prepare
 wait 300
@@ -145,7 +153,11 @@ attack_do
 attack_clear
 tech spawn_broodling 30
 panic small_town
-wait 2477
+upgrade_jump 13 Exactly 74 7 h_shorter_3
+wait 1277
+
+:h_shorter_3
+wait 1200
 
 attack_clear
 train 12 mutalisk
@@ -167,13 +179,11 @@ upgrade 1 hydralisk_range 30
 :block1
 wait 1950
 
-train 11 mutalisk
+train 5 mutalisk
 train 6 hydralisk
-train 6 guardian
 train 14 zergling
 attack_add 5 mutalisk
 attack_add 6 hydralisk
-attack_add 6 guardian
 attack_add 14 zergling
 attack_prepare
 wait 300
@@ -182,10 +192,12 @@ attack_do
 attack_clear
 wait 2325
 
-train 16 mutalisk
+train 22 mutalisk
 train 2 devourer
+train 6 guardian
 attack_add 14 mutalisk
 attack_add 2 devourer
+attack_add 6 guardian
 attack_prepare
 wait 300
 
