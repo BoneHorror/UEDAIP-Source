@@ -43,12 +43,14 @@ defensebuild_ag 1 hydralisk
 defenseuse_ag 1 hydralisk
 multirun turret_defense_half
 build 1 lair 80
+train 8 zergling
 wait_build 1 lair
 build 16 drone 80
 build 1 spire 80
 build 1 queen_nest 80
 wait_buildstart 1 queen_nest
 build 3 hatchery 80
+train 12 zergling
 wait_buildstart 3 hatchery
 max_workers 18
 define_max 25 overlord
@@ -77,6 +79,7 @@ upgrade 1 overlord_speed 30
 target_expansion
 wait 16
 
+train 16 zergling
 attack_add 16 zergling
 attack_to Loc.32 Loc.15
 wait 500
@@ -92,18 +95,24 @@ tech ensnare 30
 create_script fort_generator 255 Loc.33 255 0
 wait 1500
 
+upgrade_jump 13 Exactly_Call 74 7 hard_defense
+upgrade_jump 13 Exactly_Call 74 7 hard_queens
 train 9 hydralisk
+upgrade_jump 13 Exactly 74 6 e_skip_lurks
 train 2 lurker
 attack_add 2 lurker
+:e_skip_lurks
 attack_add 7 hydralisk
 call atk_setup
 wait 500
 
 attack_do
 attack_clear
+upgrade_jump 13 Exactly 74 6 e_skip_lurks2
 guard lurker Loc.48 1 1 60
 guard lurker Loc.49 1 1 60
 defensebuild_gg 1 lurker
+:e_skip_lurks2
 upgrade 1 z_flyer_attack 30
 wait 1025
 
@@ -238,10 +247,12 @@ attack_clear
 upgrade 1 overlord_sight 30
 wait 2650
 
+upgrade_jump 13 Exactly 74 6 e_skip_lurks3
 train 5 hydralisk
 train 5 lurker
-attack_add 20 zergling
 attack_add 5 lurker
+:e_skip_lurks3
+attack_add 20 zergling
 call atk_setup
 wait 500
 
@@ -269,11 +280,13 @@ attack_clear
 wait 2315
 
 train 12 hydralisk
-train 4 lurker
 train 6 mutalisk
+upgrade_jump 13 Exactly 74 6 e_skip_lurks4
+train 4 lurker
+attack_add 4 lurker
+:e_skip_lurks4
 attack_add 6 mutalisk
 attack_add 8 hydralisk
-attack_add 4 lurker
 call atk_setup
 wait 500
 
@@ -294,6 +307,31 @@ wait 500
 attack_do
 attack_clear
 goto block1
+
+:hard_defense
+defensebuild_gg 1 mutalisk
+defenseuse_gg 1 mutalisk
+defensebuild_gg 1 hydralisk
+defensebuild_gg 1 lurker
+defenseuse_gg 1 lurker
+return
+
+:hard_queens
+define_max 4 queen
+tech spawn_broodling 30
+defensebuild_gg 1 queen
+upgrade 1 hydra_attack 30
+return
+
+:hard_defilers
+build 1 defiler_mound 80
+define_max 2 defiler
+place_guard defiler 0
+place_guard defiler 2
+defensebuild_ag 1 defiler
+defenseuse_ag 1 defiler
+upgrade 1 voracity 30
+return
 
 :turret_defense_half
 build 1 creep_colony 80
@@ -340,9 +378,7 @@ build 1 ultralisk_cavern 80
 wait_build 1 ultralisk_cavern
 defensebuild_gg 1 ultralisk
 defenseuse_gg 1 ultralisk
-#todo - add ultra upgs and attks here, maybe defilers. 
-#take them out of main town, have separate atks here (handled like in vp8?)
-#afterwards bump up vp3 diff and tweak vp4
+upgrade_jump 13 Exactly_Call 74 7 hard_defilers
 build 14 drone 80
 wait_buildstart 5 drone
 creep 4
