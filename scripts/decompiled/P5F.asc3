@@ -22,7 +22,7 @@ multirun bank
 multirun bcd
 multirun md
 multirun wtd
-multirun lockdown
+multirun ued_ens
 multirun infantry_area
 upgrade_jump 13 Exactly_Call 74 6 easy
 upgrade_jump 13 Exactly_Call 74 7 hard
@@ -102,15 +102,15 @@ wait 16
 bring_jump 1 AtMost 0 group_men Loc.105 md
 stop
 
-:lockdown
+:ued_ens
 wait 16
 
-bring_jump 1 AtMost 0 group_men Loc.113 lockdown
+bring_jump 1 AtMost 0 group_men Loc.113 ued_ens
 #idle_orders 115 160 1 phantom 256 dragoon|scout 60 0
 #idle_orders 115 320 1 phantom 256 shuttle|arbiter 80 0
 #idle_orders 115 480 1 phantom 128 h_artanis 50 0
 #ued no longer has lockdown!
-tech_jump 13 Set ensnare 1 lockdown
+tech_jump 13 Set ensnare 1 ued_ens
 idle_orders 146 0 1 phantom 356 zealot|zergling|hydralisk|marine|vulture|heavy_marine|scorpion 50 WithoutSpellEffects(Ensnare)|Count(AtLeast 4 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 45))
 idle_orders 146 0 1 phantom 356 group_men 60 WithoutSpellEffects(Ensnare)|Count(AtLeast 5 64 14)|RandomRate(80 320)|Self(Energy(GreaterThanPercent 50))
 idle_orders 146 0 1 phantom 356 dragoon|corsair|scout|dark_templar|wraith|ghost|skywing|phantom 40 WithoutSpellEffects(Ensnare)|Count(AtLeast 2 64 14)|RandomRate(160 540)|Self(Energy(GreaterThanPercent 55))
