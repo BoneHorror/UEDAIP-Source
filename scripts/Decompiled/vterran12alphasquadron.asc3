@@ -104,8 +104,12 @@ wait 16
 attack_timeout 24
 attack_do
 attack_clear
-wait 5000
+wait 3505
 
+upgrade_jump 13 Exactly 74 7 hard_skip_1
+wait 1495
+
+:hard_skip_1
 guard siege_tank Loc.15 1 1 80
 guard siege_tank Loc.16 1 1 80
 train 6 siege_tank
@@ -148,8 +152,12 @@ upgrade 2 t_ship_plating 30
 train 2 vulture
 train 5 wraith
 train 2 goliath
-wait 4500
+wait 2850
 
+upgrade_jump 13 Exactly 74 7 hard_skip_2
+wait 1650
+
+:hard_skip_2
 train 11 vulture
 train 5 wraith
 train 3 goliath
@@ -376,6 +384,7 @@ goto noguard_defense
 :debug_defense
 print DefenseDebugTraceWhite
 :ng_def_exec
+max_force 850
 defensebuild_gg 1 siege_tank
 defenseuse_gg 1 siege_tank
 defensebuild_gg 1 vulture
