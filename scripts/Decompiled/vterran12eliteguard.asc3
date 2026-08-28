@@ -141,6 +141,7 @@ defensebuild_gg 1 marine
 defenseuse_gg 1 marine
 tech lockdown 30
 max_force 1000
+upgrade_jump 13 Exactly_Call 74 7 help_for_cannon
 wait 53333
 
 define_max 124 marine
@@ -160,6 +161,11 @@ attack_clear
 wait 6000
 
 goto block1
+
+:help_for_cannon
+help_iftrouble
+return
+
 
 :scifac_defcheck
 wait 16
@@ -196,11 +202,12 @@ wait 16
 
 save_bank raynor
 multirun raynor_bank
-wait 63202
+wait 6320
 
 :ion_loop
-wait 64005
+wait 3505
 
+help_iftrouble
 goto ion_loop
 
 :raynor_bank
