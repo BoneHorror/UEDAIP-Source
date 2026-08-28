@@ -25,7 +25,7 @@ build 2 control_tower 80
 build 16 scv 80
 aicontrol global_disable_spell_focus
 max_workers 18
-max_force 250
+max_force 500
 define_max 16 scv
 define_max 28 marine
 define_max 18 firebat
@@ -286,6 +286,7 @@ goto noguard_defense
 :debug_defense
 print DefenseDebugTraceRed
 :ng_def_exec
+max_force 1000
 defensebuild_gg 1 siege_tank
 defenseuse_gg 1 siege_tank
 defensebuild_gg 1 102
@@ -310,7 +311,7 @@ goto loop_ng
 :help_request
 wait 1633
 
-wait_secure
 help_iftrouble
+wait_secure
 goto help_request
 
