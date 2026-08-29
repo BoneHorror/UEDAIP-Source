@@ -423,7 +423,6 @@ wait 500
 
 attack_do
 attack_clear
-panic terran_town
 build 13 scv 80
 build 2 starport 80
 tech spider_mines 30
@@ -475,6 +474,7 @@ wait 500
 
 attack_do
 attack_clear
+expand 1 terran_town
 build 15 scv 80
 defensebuild_aa 1 valkyrie
 defenseuse_aa 1 valkyrie
@@ -555,6 +555,7 @@ wait 500
 
 attack_do
 attack_clear
+expand 1 terran_town
 train 1 valkyrie
 train 2 siege_tank
 train 2 valkyrie
