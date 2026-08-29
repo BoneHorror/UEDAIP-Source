@@ -82,6 +82,7 @@ train 4 hydralisk
 train 6 zergling
 attack_add 4 hydralisk
 attack_add 6 zergling
+upgrade_jump 13 Exactly_Call 74 7 hard_ultras
 attack_to Loc.18 Loc.113
 #brown exit to right entrance
 wait 500
@@ -114,8 +115,12 @@ define_max 8 ultralisk
 place_guard defiler 0
 upgrade 1 z_melee_attack 30
 upgrade 1 z_missile_attack 30
-wait 4015
+wait 2515
 
+upgrade_jump 13 Exactly 74 7 hard_skip_1
+wait 1500
+
+:hard_skip_1
 train 24 zergling
 train 4 ultralisk
 attack_add 24 zergling
@@ -130,8 +135,12 @@ upgrade 1 hydralisk_speed 30
 upgrade 1 zergling_speed 30
 upgrade 1 ultralisk_armor 30
 define_max 14 ultralisk
-wait 5325
+wait 3325
 
+upgrade_jump 13 Exactly 74 7 hard_skip_2
+wait 2000
+
+:hard_skip_2
 build 2 hive 80
 train 1 hdefiler
 train 10 ultralisk
@@ -174,6 +183,7 @@ wait 2735
 attack_add 3 ultralisk
 attack_add 12 hydralisk
 attack_add 16 zergling
+upgrade_jump 13 Exactly_Call 74 7 hard_defiler
 attack_prepare
 wait 500
 
@@ -188,7 +198,9 @@ wait 2686
 
 train 1 hdefiler
 train 12 ultralisk
+upgrade_jump 13 Exactly 74 6 easy_nodef1
 attack_add 1 hdefiler
+:easy_nodef1
 attack_add 12 ultralisk
 attack_prepare
 deaths 5 Add 1 zealot block1
@@ -203,7 +215,9 @@ wait 2140
 
 train 1 hdefiler
 train 18 ultralisk
+upgrade_jump 13 Exactly 74 6 easy_nodef2
 attack_add 1 hdefiler
+:easy_nodef2
 attack_add 18 ultralisk
 attack_prepare
 deaths 5 Add 2 zealot block1
@@ -222,6 +236,7 @@ train 26 hydralisk
 train 6 ultralisk
 attack_add 26 hydralisk
 attack_add 6 ultralisk
+upgrade_jump 13 Exactly_Call 74 7 hard_defiler
 attack_prepare
 wait 500
 
@@ -271,6 +286,14 @@ wait 500
 attack_do
 attack_clear
 goto block1
+
+:hard_ultras
+attack_add 2 ultralisk
+return
+
+:hard_defiler
+attack_add 1 defiler
+return
 
 :ultra_debug
 wait_train 32 ultralisk

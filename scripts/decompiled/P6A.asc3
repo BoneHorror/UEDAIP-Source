@@ -21,6 +21,7 @@ build 1 spire 80
 build 1 queen_nest 80
 build 1 hive 80
 build 1 greater_spire 80
+build 2 nydus_canal 80
 max_force 1010
 define_max 42 drone
 define_max 26 hydralisk
@@ -32,22 +33,22 @@ define_max 4 queen
 define_max 255 defiler
 define_max 6 guardian
 define_max 6 infested_terran
+define_max 16 clone_broodling
 define_max 255 devourer
 define_max 255 ultralisk
+define_max 255 broodling
 idle_orders DisableBuiltin 0 0 0 0 0 0 0
 defensebuild_gg 2 infested_terran
 defenseuse_gg 2 infested_terran
 defenseuse_gg 2 broodling
 defensebuild_gg 3 zergling
 defenseuse_gg 3 zergling
+defensebuild_gg 2 clone_broodling
+defenseuse_gg 2 clone_broodling
 defensebuild_gg 2 hydralisk
 defenseuse_gg 2 hydralisk
 defensebuild_gg 1 lurker
 defenseuse_gg 1 lurker
-defensebuild_gg 1 queen
-defenseuse_gg 1 queen
-defensebuild_gg 1 guardian
-defenseuse_gg 1 guardian
 defensebuild_ag 2 hydralisk
 defenseuse_ag 2 hydralisk
 defensebuild_ag 2 scourge
@@ -110,8 +111,21 @@ upgrade 1 z_flyer_carapace 30
 upgrade 1 z_carapace 30
 wait 1215
 
+upgrade_jump 13 Exactly 74 6 easy_skip_def
+defensebuild_gg 1 queen
+defenseuse_gg 1 queen
+defensebuild_gg 1 guardian
+defenseuse_gg 1 guardian
 train 18 zergling
 attack_add 18 zergling
+goto easy_skipped_1
+
+:easy_skip_def
+train 12 clone_broodling
+attack_add 12 clone_broodling
+goto easy_skipped_1
+
+:easy_skipped_1
 attack_to Loc.112 Loc.92
 #straight from orange to left entrance
 wait 500
@@ -172,12 +186,15 @@ wait 3225
 allies_watch 1 zerg_town
 build 20 drone 80
 train 4 hydralisk
-train 6 mutalisk
+train 8 mutalisk
 train 4 lurker
 train 6 scourge
+train 8 clone_broodling
 attack_add 6 mutalisk
 attack_add 4 lurker
 attack_add 6 scourge
+attack_add 8 clone_broodling
+upgrade_jump 13 Exactly_Call 74 7 hard_guardian
 attack_prepare
 wait 500
 
@@ -208,6 +225,7 @@ train 3 guardian
 train 6 scourge
 attack_add 3 guardian
 attack_add 6 scourge
+upgrade_jump 13 Exactly_Call 74 7 hard_infested
 attack_prepare
 wait 500
 
@@ -258,12 +276,13 @@ upgrade 3 z_flyer_carapace 30
 upgrade 3 z_carapace 30
 wait 1115
 
-train 8 mutalisk
+train 10 mutalisk
 train 4 infested_terran
 train 8 scourge
 attack_add 8 mutalisk
 attack_add 4 infested_terran
 attack_add 8 scourge
+upgrade_jump 13 Exactly_Call 74 7 hard_guardian
 attack_prepare
 wait 500
 
@@ -307,6 +326,8 @@ train 4 mutalisk
 train 4 infested_terran
 train 4 lurker
 train 6 scourge
+train 10 clone_broodling
+attack_add 10 clone_broodling
 attack_add 8 hydralisk
 attack_add 4 mutalisk
 attack_add 4 infested_terran
@@ -323,6 +344,15 @@ wait 500
 attack_do
 attack_clear
 goto block3
+
+:hard_infested
+attack_add 2 infested_terran
+return
+
+:hard_guardian
+train 2 guardian
+attack_add 2 guardian
+return
 
 :zerg_town
 start_town
