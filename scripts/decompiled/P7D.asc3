@@ -33,6 +33,7 @@ define_max 16 hornet
 check_transports
 wait 1500
 
+multirun help_us
 expand 1 support_town
 wait 3000
 
@@ -85,6 +86,14 @@ wait 480
 
 wait_upgrades
 stop
+
+:help_us
+wait 5
+
+help_iftrouble
+wait_rand 1875 3325
+
+goto help_us
 
 :support_town
 start_town
