@@ -15,6 +15,7 @@ build 5 drone 80
 build 2 creep_colony 80
 build 1 sunken_colony 80
 build 1 spore_colony 80
+build 1 nydus_canal 80
 player_need 1 evolution_chamber
 max_workers 12
 wait 3500
