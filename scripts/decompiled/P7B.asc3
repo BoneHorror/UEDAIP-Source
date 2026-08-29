@@ -21,6 +21,7 @@ build 1 shield_battery 80
 max_workers 20
 wait 2500
 
+upgrade_jump 13 Exactly_Call 74 6 easy_extra_wait
 build 10 probe 80
 :valk_wait1
 wait 50
@@ -51,6 +52,7 @@ attack_clear
 deaths 6 Subtract 1 valkyrie block1
 wait 2665
 
+upgrade_jump 13 Exactly_Call 74 6 easy_extra_wait
 build 20 probe 80
 :valk_wait3
 wait 50
@@ -67,6 +69,7 @@ attack_clear
 deaths 6 Subtract 1 valkyrie block1
 wait 3400
 
+upgrade_jump 13 Exactly_Call 74 6 easy_extra_wait
 :valk_wait4
 wait 50
 
@@ -217,3 +220,9 @@ attack_do
 attack_clear
 deaths 6 Subtract 1 valkyrie block1
 goto block1
+
+:easy_extra_wait
+wait 2025
+
+return
+
