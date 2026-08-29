@@ -188,8 +188,10 @@ train 2 htassadar
 upgrade 2 p_plasma_shield 30
 upgrade 1 reaver_capacity 30
 tech psionic_storm 30
+upgrade_jump 13 Exactly 74 7 hard_fl_1
 wait 3500
 
+:hard_fl_1
 train 2 htassadar
 attack_add 6 zealot
 attack_add 2 htassadar
@@ -203,7 +205,10 @@ train 2 htassadar
 upgrade 2 p_plating 30
 upgrade 2 p_air_weapon 30
 upgrade 1 carrier_capacity 30
-wait 3380
+upgrade_jump 13 Exactly 74 7 hard_fl_2
+wait 3300
+
+:hard_fl_2
 
 call 1st_bank_attack
 upgrade 1 one_with_khala 30
@@ -248,8 +253,10 @@ train 6 scout
 upgrade 1 observer_sight 30
 upgrade 3 p_armor 30
 upgrade 3 p_air_weapon 30
+upgrade_jump 13 Exactly 74 7 hard_fl_3
 wait 2015
 
+:hard_fl_3
 attack_add 6 scout
 prep_down 1 1 carrier
 attack_prepare
@@ -259,8 +266,10 @@ wait 500
 attack_do
 attack_clear
 upgrade 2 one_with_khala 30
+upgrade_jump 13 Exactly 74 7 hard_fl_4
 wait 2500
 
+:hard_fl_4
 prep_down 3 4 scout
 attack_prepare
 call revenge
@@ -328,7 +337,10 @@ wait 500
 
 attack_do
 attack_clear
+upgrade_jump 13 Exactly 74 7 hard_fl_5
 wait 3000
+
+:hard_fl_5
 
 prep_down 0 4 scout
 attack_add 4 dragoon
