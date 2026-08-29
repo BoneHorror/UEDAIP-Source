@@ -85,11 +85,13 @@ upgrade 3 p_plating 30
 wait 480
 
 wait_upgrades
+:void
 stop
 
 :help_us
 wait 5
 
+upgrade_jump 13 AtMost 74 6 void
 help_iftrouble
 wait_rand 1875 3325
 
