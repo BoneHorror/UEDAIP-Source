@@ -442,11 +442,11 @@ build 1 machine_shop 80
 return
 
 :upg_raynor
-wait 17280
+wait 12525
 
 upgrade_jump 2 Set t_ship_weapon 1 upg_raynor
 upgrade_jump 2 Set t_ship_plating 1 upg_raynor
-wait 17280 
+wait 18950 
 
 upgrade_jump 2 Set t_ship_weapon 2 upg_raynor
 upgrade_jump 2 Set t_ship_plating 2 upg_raynor
