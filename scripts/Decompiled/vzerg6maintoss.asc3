@@ -107,28 +107,27 @@ multirun templar_ensure
 under_attack 0
 wait 2600
 
+upgrade 1 carrier_capacity 70
 upgrade 1 shuttle_speed 50
 upgrade 1 p_plasma_shield 70
 upgrade 1 dragoon_range 60
 upgrade 1 p_armor 60
 upgrade 1 p_plating 50
-upgrade 1 scout_sight 60
 upgrade 1 p_ground_weapon 70
 upgrade 1 p_air_weapon 60
 upgrade 1 zealot_speed 60
 tech hallucination 30
 wait 480
+
 load_bank vz2bonus
-wait_upgrades
 wait 5800
 
-upgrade 1 scout_speed 60
+upgrade 1 scout_sight 60
 upgrade 2 p_plasma_shield 60
 upgrade 2 p_ground_weapon 60
 upgrade 2 p_air_weapon 60
 upgrade 2 p_armor 50
 upgrade 2 p_plating 40
-upgrade 1 carrier_capacity 70
 upgrade 1 templar_mana 30
 upgrade 1 scarab_damage 50
 upgrade 1 observer_speed 30
@@ -143,20 +142,14 @@ idle_orders 148 64 1 high_templar 1024 shuttle 30 own|allied|notenemies|incombat
 idle_orders 148 64 1 high_templar 1024 arbiter 60 own|allied|notenemies|incombat
 idle_orders 148 64 1 high_templar 1024 zealot 40 own|allied|notenemies|incombat
 idle_orders 148 64 1 high_templar 1024 ultralisk 80 incombat
-idle_orders 148 64 1 htassadar 1024 zealot 40 own|allied|notenemies|incombat
-idle_orders 148 64 1 htassadar 1024 dragoon 30 own|allied|notenemies|incombat
 idle_orders 148 64 1 htassadar 1024 reaver 70 own|allied|notenemies|incombat
 idle_orders 148 64 1 htassadar 1024 carrier 80 own|allied|notenemies|incombat
 idle_orders 148 64 1 htassadar 1024 scout 50 own|allied|notenemies|incombat
-idle_orders 148 64 1 htassadar 1024 shuttle 30 own|allied|notenemies|incombat
 idle_orders 148 64 1 htassadar 1024 arbiter 60 own|allied|notenemies|incombat
-idle_orders 148 64 1 htassadar 1024 zealot 40 own|allied|notenemies|incombat
 idle_orders 148 64 1 htassadar 1024 ultralisk 80 incombat
-wait 480
-
-wait_upgrades
 wait 6500
 
+upgrade 1 scout_speed 60
 upgrade 3 p_plasma_shield 30
 upgrade 3 p_ground_weapon 70
 upgrade 3 p_air_weapon 50
@@ -170,16 +163,14 @@ idle_orders 137 16 1 arbiter 65535 archon 70 incombat|health(LessThan,120)|own|N
 idle_orders 137 16 1 harbiter 65535 carrier 80 incombat|health(LessThan,200)|own|NotEnemies
 idle_orders 137 16 1 harbiter 65535 reaver 60 incombat|health(LessThan,85)|own|NotEnemies
 idle_orders 137 16 1 harbiter 65535 archon 70 incombat|health(LessThan,120)|own|NotEnemies
-idle_orders 142 256 1 high_templar 324 ultralisk 50 incombat|count(AtLeast 2 60 14)
-idle_orders 142 128 1 high_templar 548 hydralisk 80 incombat|count(AtLeast 4 60 14)
-idle_orders 142 128 1 high_templar 548 group_men 90 incombat|count(AtLeast 5 60 14)
-idle_orders 142 128 1 high_templar 548 group_men 60 incombat|count(AtLeast 3 40 14)
-idle_orders 142 128 1 high_templar 548 group_men 90 incombat|count(AtLeast 5 60 6)|NotEnemies
-idle_orders 142 128 1 high_templar 548 group_men 60 incombat|count(AtLeast 3 40 6)|NotEnemies
-idle_orders 142 256 1 htassadar 324 ultralisk 50 incombat|count(AtLeast 2 60 14)
-idle_orders 142 128 1 htassadar 548 hydralisk 80 incombat|count(AtLeast 4 60 14)
-idle_orders 142 128 1 htassadar 548 group_men 90 incombat|count(AtLeast 5 60 14)
-idle_orders 142 128 1 htassadar 548 group_men 60 incombat|count(AtLeast 3 40 14)
+idle_orders 142 256 1 high_templar 324 ultralisk|guardian 50 incombat|count(AtLeast 2 80 14)
+idle_orders 142 128 1 high_templar 548 hydralisk|mutalisk 80 incombat|count(AtLeast 4 80 14)
+idle_orders 142 128 1 high_templar 548 group_men 90 incombat|count(AtLeast 5 80 14)
+idle_orders 142 128 1 high_templar 548 group_men 60 incombat|count(AtLeast 3 60 14)
+idle_orders 142 256 1 htassadar 324 ultralisk|guardian 50 incombat|count(AtLeast 2 80 14)
+idle_orders 142 128 1 htassadar 548 hydralisk|mutalisk 80 incombat|count(AtLeast 4 80 14)
+idle_orders 142 128 1 htassadar 548 group_men 90 incombat|count(AtLeast 5 80 14)
+idle_orders 142 128 1 htassadar 548 group_men 60 incombat|count(AtLeast 3 6 14)
 wait 480
 
 wait_upgrades
@@ -295,6 +286,7 @@ wait 500
 
 attack_do
 attack_clear
+upgrade_jump 13 Exactly_Call 74 7 hard_robo_reavers
 bank_data Exactly 1 vz2bonus claimed weaker_rea
 train 2 scout
 train 4 hornet
@@ -416,6 +408,7 @@ attack_do
 attack_clear
 wait 500
 
+upgrade_jump 13 Exactly_Call 74 7 hard_legion_goons
 bank_data Exactly 1 vz2bonus claimed weaker_leg
 train 20 zealot
 attack_add 20 zealot
@@ -459,6 +452,7 @@ attack_do
 attack_clear
 wait 600
 
+upgrade_jump 13 Exactly_Call 74 7 hard_carrier_opening
 train 12 dragoon
 train 2 reaver
 train 3 scout
@@ -513,6 +507,7 @@ train 6 scout
 train 2 reaver
 train 18 dragoon
 train 8 scout
+upgrade_jump 13 Exactly_Call 74 7 hard_arbiter
 attack_add 16 zealot
 attack_add 18 dragoon
 attack_add 8 scout
@@ -599,6 +594,7 @@ train 10 zealot
 train 6 scout
 train 18 dragoon
 train 8 scout
+upgrade_jump 13 Exactly_Call 74 7 hard_arbiter
 attack_add 10 zealot
 attack_add 18 dragoon
 attack_add 8 scout
@@ -613,6 +609,55 @@ attack_add 2 reaver
 wait 433
 
 goto weaker_consist
+
+:hard_arbiter
+train 1 harbiter
+attack_add 1 harbiter
+return
+
+:hard_carrier_opening
+train 3 carrier
+place_guard carrier 0
+place_guard harbiter 0
+wait_train 2 carrier
+train 4 dragoon
+wait_train 3 carrier
+train 6 dragoon
+wait 480
+
+attack_add 3 carrier
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+attack_add 6 dragoon
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+return
+
+:hard_legion_goons
+train 10 dragoon
+attack_add 10 dragoon
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+return
+
+:hard_robo_reavers
+train 5 reaver
+attack_add 5 reaver
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+return
 
 #placeholder for code cleanup
 :protoss_kills
@@ -738,6 +783,7 @@ wait 25
 
 multirun ai2_income
 multirun help_request
+upgrade_jump 13 Exactly_Call 74 7 hard_reset_cash
 guard_all
 wait 1560
 
@@ -908,6 +954,7 @@ multirun blockz
 wait 25
 
 multirun help_request
+upgrade_jump 13 Exactly_Call 74 7 hard_reset_cash
 guard_all
 wait 1788
 
@@ -998,6 +1045,11 @@ attack_clear
 wait 1200
 
 goto blockz
+
+:hard_reset_cash
+resources 13 Set Ore 24 protoss_kills
+resources 13 Set Gas 8 protoss_kills
+return
 
 :sacrifice
 wait 16
