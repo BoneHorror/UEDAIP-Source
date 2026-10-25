@@ -522,7 +522,9 @@ return
 :attackscript
 wait 150
 
+upgrade_jump 13 Exactly 74 7 h_check_temple_area
 if_owned protoss_temple attackscript
+:attack_continue
 under_attack 1
 defensebuild_gg 4 zealot
 defenseuse_gg 4 zealot
@@ -640,6 +642,12 @@ wait 500
 attack_do
 attack_clear
 goto atkloop
+
+:h_check_temple_area
+wait 15
+
+bring_jump 14 AtLeast 8 group_men Loc.84 attack_continue 
+goto attackscript
 
 :templar_ensure
 wait_train 4 high_templar
