@@ -94,6 +94,7 @@ wait 500
 
 attack_do
 attack_clear
+:easy_cut
 wait 5500
 
 attack_add 3 ultralisk
@@ -102,9 +103,11 @@ wait 500
 
 attack_do
 attack_clear
+upgrade_jump 13 Exactly 74 6 easy_cut
 multirun help_request
 wait 450
 
+upgrade_jump 13 Exactly 74 7 h_faster_steadier
 multirun slow_and_steady
 :its_over_man
 wait 60
@@ -115,6 +118,7 @@ goto its_over_man
 :slow_and_steady
 wait 6780
 
+:h_faster_steadier
 attack_add 2 ultralisk
 attack_add 10 zergling
 attack_prepare
