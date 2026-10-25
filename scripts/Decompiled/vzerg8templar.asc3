@@ -85,17 +85,19 @@ wait 25
 
 multirun bank_stuff
 multirun templar_ensure
+upgrade_jump 13 Exactly 74 7 h_blue_opener
 wait 3100
 
 idle_orders 148 64 1 high_templar 1024 zealot 40 own|allied|notenemies|incombat
 idle_orders 148 64 1 high_templar 1024 dragoon 30 own|allied|notenemies|incombat
 idle_orders 148 64 1 high_templar 1024 reaver 70 own|allied|notenemies|incombat
+idle_orders 148 64 1 high_templar 1024 zealot 40 own|allied|notenemies|incombat
+:h_blue_return
 idle_orders 148 64 1 high_templar 1024 carrier 80 own|allied|notenemies|incombat
 idle_orders 148 64 1 high_templar 1024 scout 50 own|allied|notenemies|incombat
 idle_orders 148 64 1 high_templar 1024 shuttle 30 own|allied|notenemies|incombat
 idle_orders 148 64 1 high_templar 1024 arbiter 60 own|allied|notenemies|incombat
-idle_orders 148 64 1 high_templar 1024 zealot 40 own|allied|notenemies|incombat
-idle_orders 148 64 1 high_templar 1024 ultralisk 80 incombat
+idle_orders 148 64 1 high_templar 1024 ultralisk|hydralisk|mutalisk|guardian 80 incombat
 wait 1725
 
 train 8 zealot
@@ -204,6 +206,18 @@ wait 500
 attack_do
 attack_clear
 goto block1
+
+:h_blue_opener
+build 1 stargate 80
+check_transports
+define_max 3 scout
+defensebuild_gg 1 scout
+defenseuse_gg 1 scout
+defensebuild_ag 1 scout
+defenseuse_ag 1 scout
+upgrade 1 p_air_weapon 30
+place_guard scout 2
+goto h_blue_return
 
 :templar_ensure
 wait_train 4 high_templar
