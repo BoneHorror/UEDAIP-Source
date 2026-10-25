@@ -35,8 +35,10 @@ upgrade 1 overlord_sight 30
 wait 3480
 
 wait_upgrades
+upgrade_jump 13 Exactly 74 7 hskip_wait
 wait 5000
 
+:hskip_wait
 upgrade 1 z_flyer_attack 30
 wait 480
 
@@ -95,8 +97,12 @@ attack_add 2 guardian
 attack_prepare
 attack_do
 attack_clear
-wait 6720
+wait 4610
 
+upgrade_jump 13 Exactly 74 7 h_skip_slow_wait
+wait 2110
+
+:h_skip_slow_wait
 attack_add 2 mutalisk
 attack_add 2 scourge
 attack_prepare
@@ -135,6 +141,7 @@ upgrade 1 z_missile_attack 30
 wait 3500
 
 attack_add 4 hydralisk
+upgrade_jump 13 Exactly_Call 74 7 h_supp_1
 attack_prepare
 wait 500
 
@@ -147,6 +154,7 @@ wait 4000
 
 attack_add 4 hydralisk
 attack_add 2 hdefiler
+upgrade_jump 13 Exactly_Call 74 7 h_supp_2
 attack_prepare
 wait 500
 
@@ -162,6 +170,7 @@ wait 4500
 
 attack_add 2 ultralisk
 attack_add 2 hdefiler
+upgrade_jump 13 Exactly_Call 74 7 h_supp_3
 attack_prepare
 wait 500
 
@@ -178,6 +187,7 @@ attack_clear
 wait 1833
 
 attack_add 1 hdefiler
+upgrade_jump 13 Exactly_Call 74 7 h_supp_2
 attack_prepare
 wait 500
 
@@ -199,6 +209,7 @@ wait 3566
 train 2 hdefiler
 attack_add 3 ultralisk
 attack_add 2 hdefiler
+upgrade_jump 13 Exactly_Call 74 7 h_supp_3
 attack_prepare
 wait 500
 
@@ -217,3 +228,15 @@ wait 500
 attack_do
 attack_clear
 goto defiler_loop
+
+:h_supp_1
+attack_add 1 hdefiler
+return
+
+:h_supp_2
+attack_add 2 ultralisk
+return
+
+:h_supp_3
+attack_rand 5 7 hydralisk
+return
