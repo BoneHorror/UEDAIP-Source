@@ -106,6 +106,7 @@ supply 6 Set 355 Max 0 Protoss loop1str
 supply 3 Set 250 Max 0 Protoss loop1str
 wait 8425
 
+upgrade_jump 13 Exactly_Call 74 7 h_help_get
 multirun templar_ensure
 train 1 htassadar
 train 2 high_templar
@@ -315,6 +316,7 @@ idle_orders 148 64 1 htassadar 512 shuttle 30 own|allied|notenemies|incombat
 idle_orders 148 64 1 htassadar 512 arbiter 60 own|allied|notenemies|incombat
 idle_orders 148 64 1 htassadar 512 zealot 40 own|allied|notenemies|incombat
 idle_orders 148 64 1 htassadar 512 ultralisk|guardian 80 incombat
+upgrade_jump 13 Exactly 74 7 waitskip_1
 bring_jump 3 Exactly 0 nexus Loc.3 waitskip_1
 bring_jump 3 Exactly 0 nexus Loc.65 waitskip_1
 wait 2500
@@ -348,6 +350,7 @@ attack_add 2 htassadar
 call attack_selection
 attack_do
 attack_clear
+upgrade_jump 13 Exactly 74 7 waitskip_2
 bring_jump 3 Exactly 0 nexus Loc.3 waitskip_2
 bring_jump 3 Exactly 0 nexus Loc.65 waitskip_2
 wait 2500
@@ -373,6 +376,7 @@ attack_add 2 corsair
 call attack_selection
 attack_do
 attack_clear
+upgrade_jump 13 Exactly 74 7 waitskip_3
 bring_jump 3 Exactly 0 nexus Loc.3 waitskip_3
 bring_jump 3 Exactly 0 nexus Loc.65 waitskip_3
 wait 1500
@@ -411,6 +415,7 @@ attack_do
 attack_clear
 wait 1050
 
+upgrade_jump 13 Exactly 74 7 waitskip_4
 bring_jump 3 Exactly 0 nexus Loc.3 waitskip_4
 bring_jump 3 Exactly 0 nexus Loc.65 waitskip_4
 wait 1250
@@ -909,3 +914,14 @@ return
 :ge_skip
 return
 
+:h_help_get
+multirun get_help
+return
+
+:get_help
+wait 83
+
+wait_rand 1050 1850
+help_iftrouble
+
+goto get_help

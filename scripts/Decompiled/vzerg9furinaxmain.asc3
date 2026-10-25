@@ -94,6 +94,7 @@ wait 480
 goto ua_loop
 
 :attack_script
+upgrade_jump 13 Exactly_Call 74 7 h_help_get
 wait 3500
 
 attack_add 2 zealot
@@ -741,3 +742,15 @@ return
 
 :ge_skip
 return
+
+:h_help_get
+multirun get_help
+return
+
+:get_help
+wait 65
+
+wait_rand 833 1550
+help_iftrouble
+
+goto get_help

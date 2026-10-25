@@ -61,6 +61,7 @@ wait 500
 
 attack_do
 attack_clear
+upgrade_jump 13 Exactly_Call 74 7 h_setup
 wait 4000
 
 attack_add 3 dragoon
@@ -98,6 +99,7 @@ wait 500
 
 attack_do
 attack_clear
+upgrade_jump 13 Exactly 74 6 block1
 upgrade 1 scarab_damage 30
 :block1
 wait 2500
@@ -172,6 +174,12 @@ attack_add 1 reaver
 define_max 20 dragoon
 attack_add 8 dragoon
 goto block1
+
+:h_setup
+defensebuild_gg 1 scout
+defenseuse_gg 1 scout
+defensebuild_gg 1 reaver
+return
 
 :allieswatchidle
 wait 8000
