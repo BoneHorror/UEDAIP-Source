@@ -48,6 +48,7 @@ farms_timing
 under_attack 0
 wait 50
 
+upgrade_jump 13 Exactly_Call 74 7 h_teal_opener_atk
 :1block
 wait 16
 
@@ -284,6 +285,19 @@ wait 500
 attack_do
 attack_clear
 goto block1
+
+:h_teal_opener_atk
+build 1 cybernetics_core 80
+attack_add 1 reaver
+attack_add 4 zealot
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+defensebuild_gg 1 dragoon
+defensebuild_ag 1 dragoon
+return
 
 :vp10_town
 build 1 nexus 150
@@ -640,8 +654,10 @@ defenseuse_ag 1 dragoon
 defensebuild_aa 1 scout
 defenseuse_aa 1 scout
 upgrade 1 shuttle_speed 30
-under_attack 0
-wait 4200
+wait 250
+
+upgrade_jump 13 Exactly_Call 74 7 h_orange_guards
+wait 3950
 
 wait_force 1 reaver
 attack_add 1 reaver
@@ -779,6 +795,13 @@ wait 500
 attack_do
 attack_clear
 goto reaverloop
+
+:h_orange_guards
+define_max 4 scout
+guard scout Loc.4 1 3 60
+guard scout (349,3665) 1 3 60
+#spots on and under Blue nexus against Impaler cheese
+return
 
 :small_outpost
 start_town
