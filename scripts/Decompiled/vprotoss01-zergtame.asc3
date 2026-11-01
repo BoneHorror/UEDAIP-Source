@@ -67,6 +67,7 @@ attack_do
 attack_clear
 wait 50
 
+upgrade_jump 13 Exactly 74 7 h_skip_1
 train 6 zergling
 attack_add 6 zergling
 attack_prepare
@@ -74,6 +75,17 @@ wait 300
 
 attack_do
 attack_clear
+goto after_h
+
+:h_skip_1
+train 4 hydralisk
+attack_add 4 hydralisk
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+:after_h
 build 16 drone 80
 wait_buildstart 14 drone
 defensebuild_gg 1 mutalisk
@@ -88,6 +100,7 @@ train 3 hydralisk
 train 6 zergling
 attack_add 6 zergling
 attack_add 3 hydralisk
+upgrade_jump 13 Exactly_Call 74 7 h_addmuta
 attack_prepare
 wait 500
 
@@ -106,6 +119,7 @@ expand 2 small_exp
 multirun ambushN
 train 16 zergling
 attack_add 15 zergling
+upgrade_jump 13 Exactly_Call 74 7 h_addmutaL
 attack_prepare
 wait 500
 
@@ -160,6 +174,7 @@ wait 400
 train 30 zergling
 attack_add 2 ultralisk
 attack_add 30 zergling
+upgrade_jump 13 Exactly_Call 74 7 h_addmutaL
 attack_prepare
 wait 500
 
@@ -209,12 +224,23 @@ attack_do
 attack_clear
 attack_add 10 zergling
 attack_add 10 hydralisk
+upgrade_jump 13 Exactly_Call 74 7 h_addmutaL
 attack_prepare
 wait 500
 
 attack_do
 attack_clear
 goto block1
+
+:h_addmuta
+train 2 mutalisk
+attack_add 2 mutalisk
+return
+
+:h_addmutaL
+train 4 mutalisk
+attack_add 4 mutalisk
+return
 
 :mutaharass
 wait 16
@@ -317,6 +343,13 @@ return
 build 1 sunken_colony 80
 return
 
+:h_south_opener
+build 2 hatchery 80
+build 2 creep_colony 80
+build 2 sunken_colony 80
+train 4 zergling
+return
+
 :south_zerg
 define_max 42 drone
 define_max 40 zergling
@@ -333,6 +366,7 @@ build 7 drone 80
 wait 130
 
 wait_buildstart 7 drone
+upgrade_jump 13 Exactly_Call 74 7 h_south_opener
 defensebuild_gg 2 zergling
 build 10 drone 80
 build 1 hydralisk_den 80
