@@ -315,6 +315,21 @@ wait 2250
 
 goto request_help
 
+:h_cash
+resources 13 Add Ore 6000 request_help
+resources 13 Add Gas 4000 request_help
+defensebuild_gg 1 hzergling
+defenseuse_gg 1 hzergling
+defensebuild_gg 1 hhydralisk
+defenseuse_gg 1 hhydralisk
+defensebuild_ag 1 hhydralisk
+defenseuse_ag 1 hhydralisk
+define_max 4 hzergling
+define_max 3 hhydralisk
+max_force 733
+upgrade_jump 13 Set 48 1 request_help
+return
+
 :fenris_hunters
 default_min 1
 wait 1
@@ -342,6 +357,7 @@ defensebuild_ga 1 zergling
 defenseuse_ga 1 zergling
 wait 266
 
+upgrade_jump 13 Exactly_Call 74 7 h_cash
 capt_expand
 upgrade 1 zergling_speed 30
 tech lurker_aspect 30
@@ -369,6 +385,7 @@ wait 3500
 
 upgrade 1 defiler_mana 30
 attack_add 3 hydralisk
+upgrade_jump 13 Exactly_Call 74 7 h_killers
 attack_prepare
 wait 300
 
@@ -388,6 +405,7 @@ idle_orders 144 64 1 defiler 512 heavy_marine|medic|ghost|phantom|marine|firebat
 wait 2000
 
 attack_add 2 ultralisk
+upgrade_jump 13 Exactly_Call 74 7 h_devour
 attack_prepare
 wait 300
 
@@ -409,6 +427,7 @@ wait 2500
 
 attack_add 2 ultralisk
 attack_add 4 hydralisk
+upgrade_jump 13 Exactly_Call 74 7 h_devour
 attack_prepare
 wait 300
 
@@ -418,12 +437,28 @@ wait 2500
 
 attack_add 2 lurker
 attack_add 7 zergling
+upgrade_jump 13 Exactly_Call 74 7 h_killers
 attack_prepare
 wait 300
 
 attack_do
 attack_clear
 goto hunters
+
+:h_killers
+train 2 hhydralisk
+attack_add 2 hhydralisk
+return
+
+:h_devour
+train 3 hzergling
+attack_rand 2 3 hzergling
+return
+
+:h_wait
+wait 12033
+
+return
 
 :fenix
 wait 50
@@ -479,6 +514,7 @@ wait 665
 goto uloop
 
 :fenix_attacks
+upgrade_jump 13 Exactly_Call 74 7 h_wait
 wait 200
 
 attack_rand 6 7 zealot
