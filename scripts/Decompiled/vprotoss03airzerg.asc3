@@ -15,9 +15,6 @@ creep 4
 build 1 spawning_pool 80
 build 1 lair 80
 build 1 evolution_chamber 80
-build 5 creep_colony 80
-build 3 sunken_colony 80
-build 2 spore_colony 80
 build 1 spire 80
 build 8 drone 80
 tech burrowing 30
@@ -61,6 +58,11 @@ wait 300
 attack_do
 attack_clear
 upgrade_jump 13 Exactly_Call 74 7 h_setup
+upgrade_jump 13 Exactly 74 6 e_no_rebuild
+build 5 creep_colony 80
+build 3 sunken_colony 80
+build 2 spore_colony 80
+:e_no_rebuild
 train 2 mutalisk
 build 20 drone 80
 allies_watch 4 def_exp
@@ -200,6 +202,10 @@ defensebuild_ag 1 hmutalisk
 defenseuse_ag 1 hmutalisk
 defensebuild_ga 1 hmutalisk
 defenseuse_ga 1 hmutalisk
+creep 4
+build 9 creep_colony 80
+build 5 sunken_colony 80
+build 4 spore_colony 80
 return
 
 :AmbushBae1
