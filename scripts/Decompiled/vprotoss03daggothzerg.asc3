@@ -68,6 +68,7 @@ build 18 drone 80
 upgrade 1 overlord_speed 30
 train 1 hhydralisk
 attack_add 1 hhydralisk
+upgrade_jump 13 Exactly_Call 74 7 h_impaler_small
 attack_prepare
 wait 500
 
@@ -130,6 +131,7 @@ train 2 ultralisk
 train 8 hydralisk
 attack_add 8 hydralisk
 attack_add 2 ultralisk
+upgrade_jump 13 Exactly_Call 74 7 h_impaler_small
 attack_prepare
 wait 500
 
@@ -179,12 +181,25 @@ train 3 mutalisk
 train 16 hydralisk
 attack_add 3 mutalisk
 attack_add 16 hydralisk
+upgrade_jump 13 Exactly_Call 74 7 h_impaler_big
 attack_prepare
 wait 500
 
 attack_do
 attack_clear
 goto block1
+
+:h_impaler_small
+train 1 hydralisk
+train 1 lurker
+attack_add 1 lurker
+return
+
+:h_impaler_big
+train 3 hydralisk
+train 3 lurker
+attack_add 3 lurker
+return
 
 :AmbushDa1
 wait 50
