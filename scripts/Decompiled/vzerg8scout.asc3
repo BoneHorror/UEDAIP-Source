@@ -78,7 +78,7 @@ goto 2block
 
 :cont2
 build 3 gateway 80
-train 2 dark_templar
+build 1 citadel_of_adun 80
 build 1 forge 80
 build 1 stargate 80
 defensebuild_ag 1 dragoon
@@ -101,6 +101,7 @@ defensebuild_ga 1 scout
 defenseuse_ga 1 scout
 defensebuild_aa 1 scout
 defenseuse_aa 1 scout
+build 1 templar_archives 80
 train 2 zealot
 train 2 dragoon
 wait 650
@@ -141,6 +142,7 @@ wait 500
 :attack
 attack_do
 attack_clear
+train 2 dark_templar
 panic small_outpost
 upgrade 1 p_ground_weapon 30
 upgrade 1 scarab_damage 30
