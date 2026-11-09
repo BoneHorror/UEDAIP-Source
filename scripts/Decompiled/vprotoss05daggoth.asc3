@@ -233,6 +233,7 @@ attack_rand 2 4 mutalisk
 return
 
 :AStrg
+upgrade_jump 13 Exactly 74 7 h_as_trg
 time_jump 33 target_random
 random_jump 64 AS_3
 random_jump 85 AS_1
@@ -250,6 +251,14 @@ return
 
 :AS_3
 attack_to Loc.37 Loc.35
+return
+
+:h_as_trg
+time_jump 18 target_random
+random_jump 45 AS_3
+random_jump 64 AS_1
+random_jump 85 AS_2
+attack_prepare
 return
 
 #:AmbushDa1
@@ -383,6 +392,7 @@ wait_buildstart 10 scv
 allies_watch 11 terran_expansion
 build 1 machine_shop 80
 build 1 academy 80
+upgrade_jump 13 Exactly_Call 74 7 h_dukie
 train 14 marine
 attack_add 14 marine
 call target_player
@@ -555,7 +565,11 @@ wait 500
 
 attack_do
 attack_clear
-wait 2000
+upgrade_jump 13 Exactly 74 7 h_skip_wait_1
+wait 1200
+
+:h_skip_wait_1
+wait 800
 
 train 4 wraith
 train 4 vulture
@@ -582,7 +596,11 @@ wait 500
 
 attack_do
 attack_clear
-wait 1850
+upgrade_jump 13 Exactly 74 7 h_skip_wait_2
+wait 1000
+
+:h_skip_wait_2
+wait 850
 
 train 1 siege_tank
 train 30 marine
@@ -656,6 +674,11 @@ build 1 starport 80
 build 1 control_tower 80
 return
 
+:h_dukie
+resources 13 Add Ore 2500 rc_1
+resources 13 Add Gas 1200 rc_1
+return
+
 :target_daggoth
 #attack only daggoth
 random_jump 85 dgt_trg_1
@@ -719,7 +742,12 @@ wait 80
 goto check_safety
 
 :broken_truce
+upgrade_jump 13 Exactly 74 7 h_more_focus
 deaths 0 Add 1 scorpion check_safety
+stop
+
+:h_more_focus
+deaths 0 Add 7 scorpion check_safety
 stop
 
 :grand_exchange
