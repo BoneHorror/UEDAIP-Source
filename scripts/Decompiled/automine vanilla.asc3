@@ -203,9 +203,13 @@ upgrade_jump 13 Set 62 1 void
 if_owned drone void
 if_owned overlord void
 if_owned hhydralisk void
+deaths 0 Exactly 27 98 pl_ec_skip
+deaths 0 Exactly 31 98 pl_ec_skip
+#skip terran checks in T+P vP campaign maps
 if_owned scv void
 if_owned command_center void
 if_owned marine void
+:pl_ec_skip
 multirun ec_hallu_io
 multirun ec_storm_io
 multirun ec_stasis_io
