@@ -65,7 +65,7 @@ wait 50
 multirun randomTree
 wait 2820
 
-upgrade_jump 13 Exactly_Call 74 7 h_alt
+upgrade_jump 13 Exactly 74 7 h_alt
 place_guard htassadar 0
 attack_add 8 zealot
 call TargetTree
