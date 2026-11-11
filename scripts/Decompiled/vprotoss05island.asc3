@@ -41,6 +41,7 @@ define_max 4 guardian
 define_max 2 devourer
 define_max 2 queen
 define_max 2 defiler
+define_max 2 ultralisk
 define_max 255 broodling
 idle_orders DisableBuiltin 0 0 0 0 0 0 0
 idle_orders 10 16 9 mutalisk 180 heavy_marine|ghost|death_knight|marine|dragoon|hydralisk|goliath|revenant|scout|corsair|mutalisk|wraith|scourge 90 Health(LessThan 82)
@@ -107,7 +108,7 @@ train 6 zergling
 train 1 hydralisk
 attack_add 6 zergling
 attack_add 1 hydralisk
-attack_to Loc.44 Loc.15
+attack_to Loc.44 Loc.29
 wait 300
 
 attack_timeout 240
@@ -127,6 +128,7 @@ wait 500
 
 train 3 mutalisk
 attack_add 3 mutalisk
+upgrade_jump 13 Exactly_Call 74 7 h_small_hydras
 attack_to Loc.62 Loc.29
 wait 300
 
@@ -174,11 +176,13 @@ train 2 mutalisk
 train 2 guardian
 attack_add 4 hydralisk
 attack_add 2 guardian
+upgrade_jump 13 Exactly_Call 74 7 h_zerglings
 call attackTrg
 wait 300
 
 attack_do
 attack_clear
+upgrade_jump 13 Exactly 74 7 h_skip1
 train 8 zergling
 attack_add 8 zergling
 call attackTrg
@@ -187,6 +191,7 @@ wait 300
 attack_timeout 210
 attack_do
 attack_clear
+:h_skip1
 allies_watch 8 def_exp
 upgrade 2 z_carapace 30
 upgrade 1 zergling_attack 30
@@ -199,6 +204,7 @@ train 3 mutalisk
 attack_add 3 mutalisk
 attack_add 6 zergling
 attack_add 1 infested_terran
+upgrade_jump 13 Exactly_Call 74 7 h_hydras
 call attackTrg
 wait 300
 
@@ -212,6 +218,7 @@ guard queen Loc.45 1 3 60
 idle_orders 119 64 1 defiler 512 ultralisk 70 own|allied|notenemies|incombat
 idle_orders 119 64 1 defiler 512 infested_terran 50 own|allied|notenemies|incombat
 idle_orders 119 64 1 defiler 512 zergling 30 own|allied|notenemies|incombat|Count(AtLeast 3 80 14)
+upgrade_jump 13 Exactly_Call 74 7 h_setup_ultra
 wait 1215
 
 train 4 scourge
@@ -228,6 +235,7 @@ train 1 defiler
 train 12 zergling
 attack_add 1 defiler
 attack_add 12 zergling
+upgrade_jump 13 Exactly_Call 74 7 h_ultra
 call attackTrg
 wait 300
 
@@ -269,6 +277,7 @@ train 3 hydralisk
 attack_add 6 scourge
 attack_add 3 hydralisk
 attack_add 3 infested_terran
+upgrade_jump 13 Exactly_Call 74 7 h_ultra
 call attackTrg
 wait 300
 
@@ -341,6 +350,7 @@ attack_add 4 mutalisk
 attack_add 2 devourer
 attack_add 1 defiler
 attack_add 16 zergling
+upgrade_jump 13 Exactly_Call 74 7 h_hydras
 call attackTrg
 wait 300
 
@@ -348,6 +358,36 @@ attack_timeout 240
 attack_do
 attack_clear
 goto block1
+
+:h_small_hydras
+train 3 hydralisk
+attack_add 3 hydralisk
+return
+
+:h_zerglings
+train 8 zergling
+attack_add 8 zergling
+return
+
+:h_hydras
+train 6 hydralisk
+attack_add 6 hydralisk
+return
+
+:h_setup_ultra
+build 1 ultralisk_cavern 80
+defensebuild_gg 1 ultralisk
+defenseuse_gg 1 ultralisk
+place_guard ultralisk 0
+wait 300
+
+upgrade 1 ultralisk_armor 30
+return
+
+:h_ultra
+train 2 ultralisk
+attack_add 2 ultralisk
+return
 
 #:AmbushDa1
 #wait 50
@@ -396,8 +436,12 @@ wait 1050
 
 random_jump 128 config_1
 build 1 hydralisk_den 80
+wait 9000
+
+upgrade_jump 13 AtMost 74 6 config_2
+place_guard ultralisk 0
 :config_2
-wait 24500
+wait 15500
 
 max_workers 255
 :d_loop
@@ -407,6 +451,10 @@ goto d_loop
 
 :config_1
 build 1 spire 80
+wait 9000
+
+upgrade_jump 13 AtMost 74 6 config_2
+place_guard ultralisk 0
 goto config_2
 
 :attackTrg
@@ -563,6 +611,7 @@ wait 500
 
 attack_do
 attack_clear
+upgrade_jump 3 Exactly_Call 74 6 easy_set_cash
 multirun dropship_replenish
 upgrade 1 t_infantry_weapon 60
 wait 900
@@ -719,6 +768,10 @@ attack_do
 attack_clear
 goto late
 
+:easy_set_cash
+upgrade_jump 13 Set 74 7 raynor_p10
+return
+
 :raynor_p8
 #build 1 command_center 120
 #wait_build 1 command_center
@@ -760,6 +813,7 @@ wait_build 1 factory
 build 1 missile_turret 80
 upgrade 1 marine_range 30
 multirun earlyp8
+upgrade_jump 0 Exactly_Call 74 6 easy_set_cash
 define_max 3 dropship
 upgrade 1 t_infantry_armor 50
 idle_orders 92 256 2 marine 368 bunker 50 Own|NotEnemies|Self(Order(Guard))
@@ -1025,6 +1079,7 @@ build 1 machine_shop 80
 build 14 scv 80
 build 1 starport 80
 wait_build 1 starport
+upgrade_jump 0 Exactly_Call 74 6 easy_set_cash
 build 1 control_tower 80
 tech siege_mode 30
 define_max 5 dropship
