@@ -65,6 +65,7 @@ wait 50
 multirun randomTree
 wait 2820
 
+upgrade_jump 13 Exactly_Call 74 7 h_alt
 place_guard htassadar 0
 attack_add 8 zealot
 call TargetTree
@@ -124,6 +125,7 @@ tech stasis_field 40
 upgrade 2 p_plating 40
 wait 2200
 
+:h_return
 attack_add 5 corsair
 call TargetTree
 wait 100
@@ -220,6 +222,73 @@ wait 100
 attack_do
 attack_clear
 goto airloop
+
+:h_alt
+tech psionic_storm 50
+place_guard htassadar 0
+attack_add 8 zealot
+attack_add 4 dragoon
+call TargetTree
+wait 100
+
+attack_do
+attack_clear
+upgrade 1 arbiter_mana 40
+upgrade 1 p_armor 40
+upgrade 2 p_air_weapon 40
+wait 2350
+
+idle_orders 142 97 1 high_templar 324 reaver 50 incombat|count(AtLeast 2 60 14)
+idle_orders 142 63 1 high_templar 548 dragoon|revenant|dark_templar|corsair|scout 30 incombat|count(AtLeast 4 60 14)
+idle_orders 142 63 1 high_templar 548 group_men 40 incombat|count(AtLeast 5 60 14)
+idle_orders 142 63 1 high_templar 548 group_men 20 incombat|count(AtLeast 3 40 14)
+idle_orders 142 128 1 htassadar 324 reaver 50 incombat|count(AtLeast 2 60 14)
+idle_orders 142 64 1 htassadar 548 dragoon|revenant|dark_templar|corsair|scout 30 incombat|count(AtLeast 4 60 14)
+idle_orders 142 64 1 htassadar 548 group_men 40 incombat|count(AtLeast 5 60 14)
+idle_orders 142 64 1 htassadar 548 group_men 20 incombat|count(AtLeast 3 40 14)
+attack_add 4 zealot
+attack_add 1 htassadar
+attack_add 6 dragoon
+attack_add 2 corsair
+call TargetTree
+wait 100
+
+attack_do
+attack_clear
+
+upgrade 3 p_air_weapon 40
+upgrade 2 p_plasma_shield 40
+wait 2665
+
+
+attack_add 6 zealot
+attack_add 1 harbiter
+attack_add 4 corsair
+call TargetTree
+wait 100
+
+attack_do
+attack_clear
+upgrade 3 p_plasma_shield 40
+upgrade 1 p_plating 40
+wait 2335
+
+attack_add 6 dragoon
+attack_add 1 htassadar
+attack_add 7 zealot
+call TargetTree
+wait 100
+
+attack_do
+attack_clear
+upgrade 1 templar_mana 40
+upgrade 2 p_armor 40
+tech stasis_field 40
+upgrade 2 p_plating 40
+wait 380
+
+attack_add 1 harbiter
+goto h_return
 
 :randomTree
 random_jump 85 rt1
