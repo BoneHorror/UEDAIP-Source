@@ -51,6 +51,7 @@ define_max 48 scv
 define_max 3 siege_tank
 define_max 4 goliath
 multirun upg_raynor
+multirun kerri_assault
 upgrade 1 t_infantry_armor 50
 wait 1600
 
@@ -61,7 +62,7 @@ train 3 marine
 train 4 firebat
 attack_add 3 marine
 attack_add 4 firebat
-attack_prepare
+attack_to Loc.17 Loc.18
 wait 500
 
 attack_do
@@ -108,7 +109,7 @@ goto main_idle
 set_attacks 4
 train 3 wraith
 attack_add 3 wraith
-attack_prepare
+attack_to Loc.21 Loc.18
 wait 500
 
 attack_do
@@ -128,13 +129,17 @@ train 6 firebat
 train 2 vulture
 attack_add 2 vulture
 attack_add 6 firebat
-attack_prepare
+attack_to Loc.23 Loc.18
 wait 500
 
 attack_do
 attack_clear
 wait 1745
 
+:delay_buster
+wait 1
+
+if_preparing delay_buster
 set_attacks 5
 train 3 firebat
 train 4 marine
@@ -153,7 +158,7 @@ train 5 firebat
 train 2 goliath
 attack_add 5 firebat
 attack_add 2 goliath
-attack_prepare
+attack_to Loc.20 Loc.19
 wait 500
 
 attack_do
@@ -255,7 +260,7 @@ train 10 marine
 train 2 dropship
 train 16 marine
 attack_add 16 marine
-attack_prepare
+attack_to Loc.22 Loc.18
 wait 300
 
 attack_do
@@ -271,14 +276,14 @@ expand 1 town
 train 8 marine
 train 4 wraith
 attack_add 4 wraith
-attack_prepare
+attack_to Loc.21 Loc.18
 wait 300
 
 attack_do
 attack_clear
 upgrade 1 marine_range 70
 attack_add 8 marine
-attack_prepare
+attack_to Loc.20 Loc.19
 wait 300
 
 attack_do
@@ -298,7 +303,7 @@ train 6 marine
 attack_add 6 marine
 attack_add 2 siege_tank
 attack_add 4 wraith
-attack_prepare
+attack_to Loc.17 Loc.18
 wait 300
 
 attack_do
@@ -306,13 +311,17 @@ attack_clear
 expand 2 town
 wait 1825
 
+:pre_loop
+wait 1
+
+if_preparing pre_loop
 train 2 wraith
 train 12 marine
 train 4 wraith
 train 20 marine
 attack_add 20 marine
 attack_add 4 wraith
-attack_prepare
+attack_to Loc.23 Loc.18
 wait 300
 
 attack_do
@@ -327,7 +336,7 @@ train 2 siege_tank
 train 6 wraith
 expand 2 town
 attack_add 6 wraith
-attack_prepare
+attack_to Loc.19 Loc.18
 wait 300
 
 train 3 goliath
@@ -336,7 +345,7 @@ attack_clear
 upgrade 1 medic_mana 30
 attack_add 3 goliath
 attack_add 2 siege_tank
-attack_prepare
+attack_to Loc.22 Loc.18
 wait 300
 
 attack_do
@@ -590,3 +599,36 @@ wait_secure
 help_iftrouble
 goto help_request
 
+:kerri_assault
+wait 11000
+
+:hold_k
+wait 1
+
+if_preparing hold_k
+attack_add 12 marine
+attack_add 5 firebat
+attack_add 1 siege_tank
+attack_add 4 wraith
+attack_add 2 goliath
+bring_jump 14 AtLeast 2 Any Loc.23 safer_prep
+attack_to Loc.23 Loc.18
+wait 300
+
+attack_timeout 60
+attack_do
+attack_clear
+wait 1500
+
+stop
+
+:safer_prep
+attack_to Loc.24 Loc.18
+wait 300
+
+attack_timeout 60
+attack_do
+attack_clear
+wait 1500
+
+stop
