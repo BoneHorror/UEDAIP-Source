@@ -260,8 +260,11 @@ wait 1500
 
 attack_add 1 scout
 call b_south_shrine
-wait 500
+upgrade_jump 13 Exactly 74 7 h_skip_scout_wait
+wait 480
 
+:h_skip_scout_wait
+wait 15
 attack_do
 attack_clear
 multirun pity_cash
@@ -272,6 +275,7 @@ train 2 scout
 train 1 reaver
 attack_add 2 scout
 attack_add 1 reaver
+upgrade_jump 13 Exactly_Call 74 7 h_blazer_small_men
 call blzr_targeting
 wait 500
 
@@ -293,6 +297,7 @@ train 2 scout
 train 1 archon
 attack_add 2 scout
 attack_add 1 archon
+upgrade_jump 13 Exactly_Call 74 7 h_blazer_small_men
 call b_left_player
 wait 500
 
@@ -312,6 +317,7 @@ train 4 scout
 train 2 reaver
 attack_add 2 reaver
 attack_add 4 scout
+upgrade_jump 13 Exactly_Call 74 7 h_blazer_big_men
 call blzr_targeting
 wait 500
 
@@ -331,6 +337,7 @@ train 1 archon
 attack_add 2 reaver
 attack_add 1 archon
 attack_add 3 scout
+upgrade_jump 13 Exactly_Call 74 7 h_blazer_small_men
 call blzr_targeting
 wait 500
 
@@ -391,6 +398,16 @@ attack_do
 attack_clear
 goto blockb
 
+:h_blazer_big_men
+attack_add 2 zealot
+attack_add 5 dragoon
+return
+
+:h_blazer_small_men
+attack_add 2 zealot
+attack_add 1 dragoon
+return
+
 :pity_cash
 wait 50
 
@@ -439,8 +456,12 @@ define_max 14 hornet
 define_max 5 observer
 define_max 5 shuttle
 define_max 4 reaver
+wait 300
+
+upgrade_jump 13 Exactly 74 6 e_noreav
 defensebuild_gg 1 reaver
 defenseuse_gg 1 reaver
+:e_noreav
 defensebuild_gg 2 hornet
 defenseuse_gg 2 hornet
 defensebuild_ag 1 hornet
@@ -450,7 +471,7 @@ defenseuse_ga 1 hornet
 defensebuild_aa 2 hornet
 defenseuse_aa 2 hornet
 check_transports
-wait 350
+wait 50
 
 upgrade 1 p_plasma_shield 30
 wait 8200
@@ -468,22 +489,42 @@ wait 5655
 upgrade 3 p_plasma_shield 30
 upgrade 3 p_plating 30
 :aegis_loop
+upgrade_jump 13 Exactly 74 7 h_aegis
 wait 16500
 
 guard_all
 goto aegis_loop
 
+:h_aegis
+wait 1500
+
+attack_rand 3 4 hornet
+attack_prepare
+wait 300
+
+attack_do
+attack_clear
+wait_rand 1666 3250
+
+guard_all
+goto h_aegis
+
 :blazer_temple
 max_force 1800
 define_max 4 dragoon
 define_max 3 zealot
+wait 150
+
 defensebuild_gg 1 dragoon
 defenseuse_gg 4 dragoon
 defensebuild_gg 1 zealot
 defenseuse_gg 3 zealot
 defensebuild_ag 1 dragoon
-defenseuse_ag 2 dragoon
-wait 1500
+defenseuse_ag 1 dragoon
+upgrade_jump 13 Exactly 74 7 bdd
+defenseuse_ag 1 dragoon
+:bdd
+wait 1350
 
 multirun blazer_trial
 multirun blazer_kills0

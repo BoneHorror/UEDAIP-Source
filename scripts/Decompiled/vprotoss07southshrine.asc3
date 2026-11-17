@@ -389,8 +389,12 @@ wait 1500
 goto exp_loop
 
 :defend_me_fools
-wait_rand 1657 4200
+wait 1656
 
+upgrade_jump 13 Exactly_Call 74 7 do_defend
+wait_rand 1 2543
+
+:do_defend
 help_iftrouble
 goto defend_me_fools
 
