@@ -30,6 +30,13 @@ define_max 6 mutalisk
 define_max 2 ultralisk
 define_max 1 queen
 define_max 255 scourge
+wait 300
+
+upgrade_jump 13 Exactly_Call 74 7 h_brown_setup
+:wait_until_player
+wait 15
+#wait until Player controls a nexus
+bring_jump 0 Exactly 0 nexus Loc.63 wait_until_player
 defenseuse_gg 2 zergling
 defenseuse_gg 2 hydralisk
 defenseuse_gg 1 mutalisk
@@ -242,6 +249,12 @@ train 4 mutalisk
 attack_add 4 mutalisk
 return
 
+:h_brown_setup
+multirun creep1
+multirun creep2
+multirun hard_ambush
+return
+
 :mutaharass
 wait 16
 bring_jump 3 AtMost 0 sunken_colony Loc.41 mutafactor
@@ -283,6 +296,28 @@ guard zergling Loc.31 1 1 110
 guard zergling Loc.32 1 1 110
 guard zergling Loc.33 1 1 110
 stop
+
+:hard_ambush
+guard zergling Loc.47 3 1 110
+guard zergling Loc.48 3 1 110
+stop
+
+:creep1
+wait 16
+
+bring_jump 14 AtMost 0 Any Loc.45 creep1
+wait_rand 6 14
+issue_order 43 1 creep_colony Loc.45 Loc.45 sunken_colony 0
+stop
+
+:creep2
+wait 16
+
+bring_jump 14 AtMost 0 Any Loc.46 creep2
+wait_rand 1 32
+issue_order 43 1 creep_colony Loc.46 Loc.46 sunken_colony 0
+stop
+
 
 :exp_gas
 start_town
