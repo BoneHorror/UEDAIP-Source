@@ -65,6 +65,7 @@ build 18 drone 80
 upgrade 1 overlord_speed 30
 train 1 hhydralisk
 attack_add 1 hhydralisk
+upgrade_jump 13 Exactly_Call 74 7 h_impaler_setup
 upgrade_jump 13 Exactly_Call 74 7 h_impaler_small
 upgrade_jump 13 Exactly 74 6 e_no_rebuild
 build 6 creep_colony 80
@@ -118,6 +119,7 @@ train 4 hhydralisk
 attack_add 4 hhydralisk
 attack_add 4 hydralisk
 attack_add 2 mutalisk
+upgrade_jump 13 Exactly_Call 74 7 h_impaler_big
 attack_prepare
 wait 500
 
@@ -154,6 +156,7 @@ attack_add 1 ultralisk
 attack_add 6 zergling
 attack_add 4 hhydralisk
 attack_add 7 hydralisk
+upgrade_jump 13 Exactly_Call 74 7 h_impaler_small
 attack_prepare
 wait 500
 
@@ -191,6 +194,13 @@ wait 500
 attack_do
 attack_clear
 goto block1
+
+:h_impaler_setup
+define_max 6 lurker
+place_guard hydralisk 0
+guard lurker Loc.11 1 2 60
+guard lurker Loc.26 1 2 60
+return
 
 :h_impaler_small
 train 1 hydralisk

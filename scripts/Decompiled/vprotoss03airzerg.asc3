@@ -206,6 +206,15 @@ creep 4
 build 9 creep_colony 80
 build 5 sunken_colony 80
 build 4 spore_colony 80
+wait 50
+
+train 3 mutalisk
+attack_add 3 mutalisk
+attack_to Loc.8 Loc.10
+wait 150
+
+attack_do
+attack_clear
 return
 
 :AmbushBae1
