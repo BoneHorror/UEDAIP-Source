@@ -324,10 +324,16 @@ defensebuild_gg 1 hhydralisk
 defenseuse_gg 1 hhydralisk
 defensebuild_ag 1 hhydralisk
 defenseuse_ag 1 hhydralisk
+place_guard hhydralisk 0
+place_guard hhydralisk 1
+place_guard hzergling 0
+place_guard hzergling 1
 define_max 4 hzergling
 define_max 3 hhydralisk
-max_force 733
+max_force 1033
+#set hunter killer regen and Ovie capacity
 upgrade_jump 13 Set 48 1 request_help
+upgrade_jump 13 Set 24 1 request_help
 return
 
 :fenris_hunters
@@ -405,7 +411,7 @@ idle_orders 144 64 1 defiler 512 heavy_marine|medic|ghost|phantom|marine|firebat
 wait 2000
 
 attack_add 2 ultralisk
-upgrade_jump 13 Exactly_Call 74 7 h_devour
+upgrade_jump 13 Exactly_Call 74 7 h_hydra
 attack_prepare
 wait 300
 
@@ -417,6 +423,7 @@ wait 2500
 idle_orders Consume 16 1 defiler 512 zergling 70 NotEnemies|Own|Health(LessThanPercent 80)|Self(Energy(LessThanPercent 50))
 idle_orders Consume 16 1 defiler 512 broodling 70 NotEnemies|Own|Health(LessThanPercent 100)|Self(Energy(LessThanPercent 50))
 attack_add 8 zergling
+upgrade_jump 13 Exactly_Call 74 7 h_devour
 attack_prepare
 wait 300
 
@@ -446,18 +453,21 @@ attack_clear
 goto hunters
 
 :h_killers
-train 2 hhydralisk
 attack_add 2 hhydralisk
 return
 
 :h_devour
-train 3 hzergling
-attack_rand 2 3 hzergling
+attack_add 2 hzergling
+return
+
+:h_hydra
+attack_add 2 hydralisk
 return
 
 :h_wait
-wait 12033
+wait 500
 
+wait_rand 960 1850
 return
 
 :fenix
@@ -514,7 +524,7 @@ wait 665
 goto uloop
 
 :fenix_attacks
-upgrade_jump 13 Exactly_Call 74 7 h_wait
+upgrade_jump 6 Exactly_Call 74 7 h_wait
 wait 200
 
 attack_rand 6 7 zealot
@@ -523,6 +533,7 @@ wait 300
 
 attack_do
 attack_clear
+upgrade_jump 6 Exactly_Call 74 7 h_wait
 wait 950
 
 attack_rand 5 6 dragoon
@@ -534,6 +545,7 @@ wait 300
 
 attack_do
 attack_clear
+upgrade_jump 6 Exactly_Call 74 7 h_wait
 wait 775
 
 attack_add 4 zealot
@@ -543,6 +555,7 @@ wait 300
 
 attack_do
 attack_clear
+upgrade_jump 6 Exactly_Call 74 7 h_wait
 wait 635
 
 notowns_jump robotics_facility r_ats2
