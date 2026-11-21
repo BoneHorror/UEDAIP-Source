@@ -299,8 +299,12 @@ idle_orders 59 80 1 reaver 192 group_men 50 count(AtLeast 2 75 14)|WithoutUnitFl
 idle_orders 59 80 1 reaver 192 group_men 80 count(AtLeast 4 75 14)|WithoutUnitFlags(Air)
 idle_orders 59 1024 1 reaver 4096 probe 90 count(AtLeast 2 75 14)|RandomRate(4500 10024)
 idle_orders 59 1024 1 reaver 4096 probe 120 count(AtLeast 4 75 14)|RandomRate(4500 10024)
-wait 5000
+wait 2000
 
+upgrade_jump 13 Exactly 74 7 h_skip1
+wait 3000
+
+:h_skip1
 train 4 dragoon
 train 2 scout
 call wait_attack
@@ -318,8 +322,12 @@ upgrade 1 p_plating 40
 upgrade 1 p_air_weapon 40
 upgrade 1 shuttle_speed 60
 upgrade 1 scarab_damage 40
-wait 6000
+wait 3000
 
+upgrade_jump 13 Exactly 74 7 h_skip2
+wait 3000
+
+:h_skip2
 defensebuild_gg 1 carrier
 defenseuse_gg 1 carrier
 defensebuild_ga 1 carrier
@@ -345,8 +353,12 @@ upgrade 2 p_plating 40
 upgrade 2 p_air_weapon 40
 guard dragoon Loc.33 1 3 60
 guard dragoon Loc.36 1 3 60
-wait 6000
+wait 3000
 
+upgrade_jump 13 Exactly 74 7 h_skip3
+wait 3000
+
+:h_skip3
 train 1 carrier
 train 4 zealot
 train 2 scout
@@ -370,8 +382,12 @@ upgrade 3 p_plating 30
 upgrade 3 p_air_weapon 30
 defensebuild_ag 1 archon
 defenseuse_ag 1 archon
-wait 6000
+wait 3000
 
+upgrade_jump 13 Exactly 74 7 h_skip4
+wait 3000
+
+:h_skip4
 upgrade 3 p_armor 40
 train 1 carrier
 train 4 zealot
