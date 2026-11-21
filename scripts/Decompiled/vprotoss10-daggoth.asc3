@@ -68,10 +68,12 @@ wait 50
 multirun raynor_picker
 #afterwards wait until bank outcome!
 :bank_delay
+debug_name WaitingForBank
 wait 50
 
 deaths 0 Exactly 0 scout bank_delay
 idle_orders 27 13 1 queen 1532 command_center 80 health(LessThanPercent,66)
+debug_name MovedAfterDelay
 multirun defense_config
 multirun upgrade_block
 multirun expansions
@@ -108,6 +110,7 @@ deaths 0 Exactly 5 scout attack_config4
 #wait_l - 4500
 call wait_s
 
+debug_name GenericAtk
 train 6 zergling
 train 2 hhydralisk
 attack_add 6 zergling
@@ -222,6 +225,7 @@ attack_add 1 mutalisk
 goto block1
 
 :attack_config1
+debug_name MixedAtk
 call wait_s
 
 train 6 zergling
@@ -338,6 +342,7 @@ attack_add 1 mutalisk
 goto block2
 
 :attack_config2
+debug_name AirAtk
 call wait_s
 
 train 4 mutalisk
@@ -452,6 +457,7 @@ attack_add 1 mutalisk
 goto block3
 
 :attack_config3
+debug_name UltraHydraAtk
 define_max 6 ultralisk
 call wait_s
 
@@ -554,6 +560,7 @@ attack_add 2 ultralisk
 goto block4
 
 :attack_config4
+debug_name HydraLurkerAtks
 call wait_s
 
 train 4 hhydralisk
@@ -670,6 +677,7 @@ attack_add 2 ultralisk
 goto block5
 
 :upgrade_block
+debug_name Upgrades
 upgrade 1 zergling_speed 30
 upgrade 1 hydralisk_range 30
 upgrade 1 z_missile_attack 30
@@ -706,6 +714,7 @@ wait 480
 stop
 
 :defense_config
+debug_name DefenseConfig
 deaths 0 Exactly 2 scout defense_config1
 deaths 0 Exactly 3 scout defense_config2
 deaths 0 Exactly 4 scout defense_config3
@@ -837,11 +846,13 @@ defenseuse_aa 1 devourer
 defensebuild_aa 1 guardian
 defenseuse_aa 1 guardian
 :dc_loop
-call wait_s
+debug_name IdleLoop
+wait 150
 
 goto dc_loop
 
 :h_d_setup
+debug_name HardSetup
 creep 4
 build 3 hydralisk_den 80
 build 8 creep_colony 80

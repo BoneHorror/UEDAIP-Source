@@ -143,6 +143,7 @@ attack_clear
 wait 1350
 
 call ally_money_check
+upgrade_jump 13 Exactly 74 7 sw_1
 bring_jump 3 Exactly 0 group_factories Loc.63 sw_1
 #sw stands for skip wait - done if our allies are gone too quickly!
 wait 1650
@@ -221,6 +222,7 @@ idle_orders 119 64 1 hdefiler 336 lurker 40 own|notenemies|incombat
 idle_orders 119 64 1 hdefiler 336 lurker 90 own|notenemies|incombat|Count(AtLeast 2 100 14)
 idle_orders 119 64 1 hdefiler 336 hydralisk 55 own|notenemies|incombat|count(AtLeast 3 60 13)
 call ally_money_check
+upgrade_jump 13 Exactly 74 7 sw_3
 bring_jump 0 Exactly 0 group_factories Loc.63 sw_3
 wait 2500
 
@@ -352,6 +354,7 @@ defenseuse_gg 1 hultralisk
 :block1
 wait 2000
 
+upgrade_jump 13 Exactly 74 7 sw_6
 bring_jump 0 Exactly 0 group_factories Loc.63 sw_6
 wait 4000
 
