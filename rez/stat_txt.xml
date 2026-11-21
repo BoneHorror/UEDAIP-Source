@@ -2079,7 +2079,7 @@ lasts 1056 frames</value>
     <string>
         <id>STR_UP_SCOUT_SIGHT</id>
         <value>aDevelop Apial Sensors
-(Increase Scout sight range and attack speed)</value>
+(Increase Scout sight range and attack speed, double Escort attack speed)</value>
     </string>
     <string>
         <id>STR_UP_SCOUT_SPEED</id>
