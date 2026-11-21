@@ -862,7 +862,7 @@ capt_expand
 wait 800
 
 train 12 hydralisk
-stop
+return
 
 :wait_s
 upgrade_jump 13 Exactly 74 7 h_wait_s
@@ -1038,6 +1038,7 @@ attack_add 3 infested_terran
 return
 
 :expansions
+debug_name ExpansionBlock
 wait_rand 4344 5500
 
 allies_watch 4 gas_expansion
@@ -1164,6 +1165,7 @@ return
 wait 2650
 
 :ge_init
+debug_name GrandExchange
 wait_rand 100 145
 
 call ge_gas
