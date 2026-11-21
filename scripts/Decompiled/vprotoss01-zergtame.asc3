@@ -30,7 +30,7 @@ define_max 6 mutalisk
 define_max 2 ultralisk
 define_max 1 queen
 define_max 255 scourge
-wait 300
+wait 145
 
 upgrade_jump 13 Exactly_Call 74 7 h_brown_setup
 :wait_until_player
@@ -298,8 +298,11 @@ guard zergling Loc.33 1 1 110
 stop
 
 :hard_ambush
-guard zergling Loc.47 3 1 110
-guard zergling Loc.48 3 1 110
+deaths 13 Set 1 hqueen ambushN
+wait 6500
+
+guard hydralisk Loc.47 1 2 60
+guard hydralisk Loc.48 1 2 60
 stop
 
 :creep1
