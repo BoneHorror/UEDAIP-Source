@@ -466,8 +466,12 @@ max_force 1024
 upgrade 1 overlord_speed 30
 upgrade 1 overlord_capacity 30
 build 11 drone 80
-wait 4050
+wait 2050
 
+upgrade_jump 13 Exactly 74 7 skip_hunter_wait
+wait 2000
+
+:skip_hunter_wait
 multirun hunter_packs
 build 14 drone 80
 upgrade 2 z_carapace 30
