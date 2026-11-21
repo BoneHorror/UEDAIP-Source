@@ -76,31 +76,37 @@ multirun defense_config
 multirun upgrade_block
 multirun expansions
 multirun grand_exchange
+upgrade_jump 13 Exactly_Call 74 7 h_d_setup
 deaths 0 Exactly 2 scout attack_config1
 deaths 0 Exactly 3 scout attack_config2
 deaths 0 Exactly 4 scout attack_config3
 deaths 0 Exactly 5 scout attack_config4
 #attack config supply approx power budgets -
 #3x pre loop
-#wait 1500
+#call wait_s
 #7 supply
-#wait 3000
+#call wait_m
 #14 supply
-#wait 2500
+#call wait_sl
 #16 supply
 #loop
-#wait 4500
+#call wait_l
 #32 supply
-#wait 2500
+#call wait_sl
 #24 supply
-#wait 3750
+#call wait_ml
 #18 supply
-#wait 4500
+#call wait_l
 #30 supply
-#wait 3000
+#call wait_m
 #40 supply -> forward +10
 #default attack config below
-wait 1500
+#wait_s - 1500
+#wait_sl - 2500
+#wait_m - 3000
+#wait_ml - 3750
+#wait_l - 4500
+call wait_s
 
 train 6 zergling
 train 2 hhydralisk
@@ -111,7 +117,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 3000
+call wait_m
 
 train 9 hydralisk
 deaths 0 AtLeast_Call 1 corsair icc_small
@@ -121,7 +127,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 2500
+call wait_sl
 
 train 4 mutalisk
 train 2 ultralisk
@@ -134,7 +140,7 @@ attack_do
 attack_clear
 
 :block1
-wait 4500
+call wait_l
 
 train 2 ultralisk
 train 3 mutalisk
@@ -152,7 +158,7 @@ wait 500
 attack_do
 attack_clear
 train 1 queen
-wait 2500
+call wait_sl
 
 train 2 ultralisk
 train 2 mutalisk
@@ -166,7 +172,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 3750
+call wait_ml
 
 train 5 hydralisk
 train 5 lurker
@@ -179,7 +185,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 4500
+call wait_l
 
 train 4 hhydralisk
 train 6 mutalisk
@@ -195,7 +201,7 @@ wait 500
 attack_do
 attack_clear
 train 2 queen
-wait 3000
+call wait_m
 
 train 5 hhydralisk
 train 2 hydralisk
@@ -216,7 +222,7 @@ attack_add 1 mutalisk
 goto block1
 
 :attack_config1
-wait 1500
+call wait_s
 
 train 6 zergling
 train 2 hydralisk
@@ -227,7 +233,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 3000
+call wait_m
 
 train 7 hydralisk
 train 2 mutalisk
@@ -239,7 +245,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 2500
+call wait_sl
 
 train 4 mutalisk
 train 1 ultralisk
@@ -254,7 +260,7 @@ attack_do
 attack_clear
 
 :block2
-wait 4500
+call wait_l
 
 train 2 ultralisk
 train 1 mutalisk
@@ -270,7 +276,7 @@ wait 500
 attack_do
 attack_clear
 train 1 queen
-wait 2500
+call wait_sl
 
 train 2 ultralisk
 train 2 mutalisk
@@ -283,7 +289,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 3750
+call wait_ml
 
 train 7 hydralisk
 train 16 zergling
@@ -295,7 +301,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 4500
+call wait_l
 
 train 4 hhydralisk
 train 6 mutalisk
@@ -311,7 +317,7 @@ wait 500
 attack_do
 attack_clear
 train 2 queen
-wait 3000
+call wait_m
 
 train 5 hhydralisk
 train 2 hydralisk
@@ -332,7 +338,7 @@ attack_add 1 mutalisk
 goto block2
 
 :attack_config2
-wait 1500
+call wait_s
 
 train 4 mutalisk
 attack_add 4 mutalisk
@@ -341,7 +347,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 3000
+call wait_m
 
 train 5 hydralisk
 train 3 mutalisk
@@ -353,7 +359,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 2500
+call wait_sl
 
 train 6 mutalisk
 train 2 guardian
@@ -366,7 +372,7 @@ attack_do
 attack_clear
 
 :block3
-wait 4500
+call wait_l
 
 train 2 ultralisk
 train 6 mutalisk
@@ -385,7 +391,7 @@ wait 500
 attack_do
 attack_clear
 train 1 queen
-wait 2500
+call wait_sl
 
 train 3 ultralisk
 train 7 mutalisk
@@ -400,7 +406,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 3750
+call wait_ml
 
 train 5 hhydralisk
 train 6 mutalisk
@@ -412,7 +418,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 4500
+call wait_l
 
 train 4 hhydralisk
 train 13 mutalisk
@@ -426,7 +432,7 @@ wait 500
 attack_do
 attack_clear
 train 2 queen
-wait 3000
+call wait_m
 
 train 11 mutalisk
 train 4 guardian
@@ -447,7 +453,7 @@ goto block3
 
 :attack_config3
 define_max 6 ultralisk
-wait 1500
+call wait_s
 
 train 1 ultralisk
 train 2 hydralisk
@@ -458,7 +464,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 3000
+call wait_m
 
 train 6 hhydralisk
 deaths 0 AtLeast_Call 1 corsair icc_small
@@ -468,7 +474,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 2500
+call wait_sl
 
 train 5 hydralisk
 train 2 ultralisk
@@ -481,7 +487,7 @@ attack_do
 attack_clear
 
 :block4
-wait 4500
+call wait_l
 
 train 4 ultralisk
 train 12 hydralisk
@@ -495,7 +501,7 @@ wait 500
 attack_do
 attack_clear
 train 1 queen
-wait 2500
+call wait_sl
 
 train 4 ultralisk
 train 6 hhydralisk
@@ -506,7 +512,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 3750
+call wait_ml
 
 train 5 hydralisk
 train 5 lurker
@@ -519,7 +525,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 4500
+call wait_l
 
 train 4 hhydralisk
 train 3 ultralisk
@@ -533,7 +539,7 @@ wait 500
 attack_do
 attack_clear
 train 2 queen
-wait 3000
+call wait_m
 
 train 12 hydralisk
 train 6 ultralisk
@@ -548,7 +554,7 @@ attack_add 2 ultralisk
 goto block4
 
 :attack_config4
-wait 1500
+call wait_s
 
 train 4 hhydralisk
 attack_add 4 hhydralisk
@@ -557,7 +563,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 3000
+call wait_m
 
 train 9 hydralisk
 train 1 lurker
@@ -569,7 +575,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 2500
+call wait_sl
 
 train 6 hydralisk
 train 2 ultralisk
@@ -582,7 +588,7 @@ attack_do
 attack_clear
 
 :block5
-wait 4500
+call wait_l
 
 train 2 ultralisk
 train 2 mutalisk
@@ -600,7 +606,7 @@ wait 500
 attack_do
 attack_clear
 train 1 queen
-wait 2500
+call wait_sl
 
 train 2 ultralisk
 train 2 mutalisk
@@ -614,7 +620,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 3750
+call wait_ml
 
 train 11 hydralisk
 train 5 lurker
@@ -626,7 +632,7 @@ wait 500
 
 attack_do
 attack_clear
-wait 4500
+call wait_l
 
 train 4 hhydralisk
 train 6 mutalisk
@@ -643,7 +649,7 @@ wait 500
 attack_do
 attack_clear
 train 2 queen
-wait 3000
+call wait_m
 
 train 5 hhydralisk
 train 2 hydralisk
@@ -831,9 +837,77 @@ defenseuse_aa 1 devourer
 defensebuild_aa 1 guardian
 defenseuse_aa 1 guardian
 :dc_loop
-wait 1500
+call wait_s
 
 goto dc_loop
+
+:h_d_setup
+creep 4
+build 3 hydralisk_den 80
+build 8 creep_colony 80
+build 3 sunken_colony 80
+build 5 spore_colony 80
+capt_expand
+wait 800
+
+train 12 hydralisk
+stop
+
+:wait_s
+upgrade_jump 13 Exactly 74 7 h_wait_s
+wait 1500
+
+return
+
+:wait_sl
+upgrade_jump 13 Exactly 74 7 h_wait_sl
+wait 2500
+
+return
+
+:wait_m
+upgrade_jump 13 Exactly 74 7 h_wait_m
+wait 3000
+
+return
+
+:wait_ml
+upgrade_jump 13 Exactly 74 7 h_wait_ml
+wait 3750
+
+return
+
+:wait_l
+upgrade_jump 13 Exactly 74 7 h_wait_l
+wait 4500
+
+return
+
+:h_wait_s
+wait 50
+
+return
+
+:h_wait_sl
+wait 300
+
+return
+
+:h_wait_m
+wait 500
+
+return
+
+:h_wait_ml
+wait 750
+
+return
+
+:h_wait_l
+wait 1250
+
+return
+
 
 :raynor_picker
 wait 50
@@ -996,7 +1070,7 @@ wait 10500
 wait 6700
 wait 5505
 :loop
-wait 1500
+call wait_s
 
 goto loop
 
