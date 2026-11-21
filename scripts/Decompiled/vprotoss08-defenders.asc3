@@ -652,6 +652,7 @@ wait 9000
 
 :skip_wait
 #bank data comparison to check how long we're waiting
+upgrade_jump 13 Exactly 74 7 h_alt_tree
 train 1 reaver
 train 8 dragoon
 call wait_attack
@@ -790,6 +791,170 @@ attack_do
 attack_clear
 call release_attack
 goto defender_loop
+
+:h_alt_tree
+tech psionic_storm 60
+train 1 reaver
+train 6 dragoon
+train 8 zealot
+call wait_attack
+call hold_attack
+attack_add 6 dragoon
+attack_add 1 reaver
+attack_add 8 zealot
+call simple_targeting
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+upgrade 2 p_plasma_shield 40
+upgrade 2 p_ground_weapon 40
+upgrade 2 p_armor 40
+upgrade 1 one_with_khala 50
+place_guard scout 0
+idle_orders 142 97 1 high_templar 324 reaver|siege_tank|carrier|corsair|arbiter|science_vessel 50 incombat|count(AtLeast 2 60 14)
+idle_orders 142 63 1 high_templar 548 dragoon|revenant|dark_templar|wraith|scout|firebat|probe 30 incombat|count(AtLeast 4 60 14)
+idle_orders 142 63 1 high_templar 548 group_men 40 incombat|count(AtLeast 5 60 14)
+idle_orders 142 63 1 high_templar 548 group_men 20 incombat|count(AtLeast 3 40 14)
+idle_orders 142 128 1 high_templar 192 group_men 40 Deathrattle
+wait 4500
+
+idle_orders 59 80 1 reaver 192 group_men 50 count(AtLeast 2 75 14)|WithoutUnitFlags(Air)
+idle_orders 59 80 1 reaver 192 group_men 80 count(AtLeast 4 75 14)|WithoutUnitFlags(Air)
+idle_orders 59 1024 1 reaver 4096 probe 90 count(AtLeast 2 75 14)|RandomRate(4500 10024)
+idle_orders 59 1024 1 reaver 4096 probe 120 count(AtLeast 4 75 14)|RandomRate(4500 10024)
+tech recall 30
+train 1 harbiter
+train 2 scout
+train 1 high_templar
+train 12 zealot
+train 4 scout
+upgrade 1 templar_mana 40
+call wait_attack
+call hold_attack
+
+attack_add 1 harbiter
+attack_add 1 high_templar
+attack_add 12 zealot
+attack_add 4 scout
+call simple_targeting
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+idle_orders 137 16 1 arbiter 65535 carrier 80 incombat|health(LessThan,200)|own|NotEnemies
+idle_orders 137 16 1 arbiter 65535 reaver 60 incombat|health(LessThan,85)|own|NotEnemies
+idle_orders 137 16 1 arbiter 65535 archon 70 incombat|health(LessThan,120)|own|NotEnemies
+idle_orders 137 16 1 harbiter 65535 carrier 80 incombat|health(LessThan,200)|own|NotEnemies
+idle_orders 137 16 1 harbiter 65535 reaver 60 incombat|health(LessThan,85)|own|NotEnemies
+idle_orders 137 16 1 harbiter 65535 archon 70 incombat|health(LessThan,120)|own|NotEnemies
+upgrade 3 p_plasma_shield 40
+upgrade 3 p_ground_weapon 40
+upgrade 3 p_armor 50
+upgrade 1 arbiter_mana 50
+wait 4500
+
+train 1 carrier
+train 1 reaver
+train 6 dragoon
+train 5 zealot
+train 2 scout
+train 1 harbiter
+train 1 high_templar
+call wait_attack
+call hold_attack
+
+attack_add 1 carrier
+attack_add 1 reaver
+attack_add 6 dragoon
+attack_add 5 zealot
+attack_add 2 scout
+attack_add 1 harbiter
+attack_add 1 high_templar
+call simple_targeting
+wait 500
+
+attack_do
+attack_clear
+:defender_loop_hard
+wait 3500
+
+train 2 reaver
+train 6 dragoon
+train 2 scout
+train 12 dragoon
+call wait_attack
+call hold_attack
+
+attack_add 2 scout
+attack_add 2 reaver
+attack_add 12 dragoon
+call simple_targeting
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+wait 5000
+
+train 4 high_templar
+train 2 archon
+train 18 zealot
+call wait_attack
+call hold_attack
+
+attack_add 2 archon
+attack_add 18 zealot
+call simple_targeting
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+wait 3500
+
+train 10 zealot
+train 1 high_templar
+train 10 dragoon
+call wait_attack
+call hold_attack
+
+attack_add 1 high_templar
+attack_add 10 zealot
+attack_add 10 dragoon
+call simple_targeting
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+wait 5500
+
+train 2 corsair
+train 4 high_templar
+train 2 archon
+train 2 reaver
+train 8 zealot
+train 1 harbiter
+train 7 dragoon
+call wait_attack
+call hold_attack
+
+attack_add 2 archon
+attack_add 8 zealot
+attack_add 7 dragoon
+attack_add 1 harbiter
+attack_add 2 reaver
+attack_add 2 corsair
+call simple_targeting
+wait 500
+
+attack_do
+attack_clear
+call release_attack
+goto defender_loop_hard
 
 :check_battery
 wait 16
