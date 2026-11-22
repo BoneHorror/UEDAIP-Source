@@ -412,7 +412,8 @@ max_force 1500
 define_max 45 probe
 define_max 15 zealot
 define_max 12 dragoon
-define_max 7 scout
+define_max 4 scout
+define_max 4 corsair
 define_max 3 reaver
 define_max 5 observer
 define_max 5 shuttle
@@ -440,6 +441,17 @@ defensebuild_ga 1 scout
 defenseuse_ga 1 scout
 defensebuild_aa 1 scout
 defenseuse_aa 1 scout
+defensebuild_gg 1 corsair
+defenseuse_gg 1 corsair
+defensebuild_ag 1 corsair
+defenseuse_ag 1 corsair
+defensebuild_ga 1 corsair
+defenseuse_ga 1 corsair
+defensebuild_aa 1 corsair
+defenseuse_aa 1 corsair
+place_guard corsair 2
+place_guard scout 0
+place_guard corsair 1
 upgrade 1 dragoon_range 30
 wait_build 1 robotics_support_bay
 build 2 robotics_facility 80
@@ -485,8 +497,22 @@ wait 500
 attack_do
 attack_clear
 deaths 7 Exactly 1 carrier alliance
-wait 2025
+wait 3025
 
+train 2 scout
+train 3 corsair
+attack_add 2 scout
+attack_add 3 corsair
+attack_to Loc.34 Loc.33
+#leftside garm base or player exp
+wait 500
+
+attack_do
+attack_clear
+deaths 7 Exactly 1 carrier alliance
+wait 3505
+
+upgrade_jump 13 Exactly 74 7 t_hard_mid
 train 1 reaver
 train 2 zealot
 train 2 dragoon
@@ -499,19 +525,23 @@ wait 500
 
 attack_do
 attack_clear
+:t_hard_return2
 deaths 7 Exactly 1 carrier alliance
-wait 2505
+wait 3505
 
-upgrade_jump 13 Exactly 74 7 t_hard_mid
-train 4 scout
-attack_add 4 scout
-attack_to Loc.34 Loc.33
-#leftside garm base or player exp
+wait 2025
+
+train 3 dragoon
+train 2 corsair
+train 3 zealot
+attack_rand 2 3 zealot
+attack_rand 2 3 dragoon
+attack_add 2 corsair
+attack_prepare
 wait 500
 
 attack_do
 attack_clear
-:t_hard_return2
 deaths 7 Exactly 1 carrier alliance
 goto noall_loop
 
@@ -526,10 +556,12 @@ attack_clear
 goto t_hard_return1
 
 :t_hard_mid
+train 3 corsair
 train 2 reaver
-train 4 scout
+train 2 scout
+attack_add 3 corsair
 attack_add 2 reaver
-attack_add 4 scout
+attack_add 2 scout
 attack_to Loc.34 Loc.33
 #leftside garm base or player exp
 wait 500
